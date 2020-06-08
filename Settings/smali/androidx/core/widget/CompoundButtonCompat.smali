@@ -1,0 +1,184 @@
+.class public final Landroidx/core/widget/CompoundButtonCompat;
+.super Ljava/lang/Object;
+.source "CompoundButtonCompat.java"
+
+
+# direct methods
+.method public static getCompoundDrawablesRelative(Landroid/widget/TextView;)[Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static getMaxLines(Landroid/widget/TextView;)I
+    .locals 1
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getMaxLines()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static setLastBaselineToBottomHeight(Landroid/widget/TextView;I)V
+    .locals 3
+
+    invoke-static {p1}, Landroidx/core/app/ActivityManagerCompat;->checkArgumentNonnegative(I)I
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/text/TextPaint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
+
+    move-result-object v0
+
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getIncludeFontPadding()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    iget v0, v0, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
+
+    goto :goto_0
+
+    :cond_0
+    iget v0, v0, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Math;->abs(I)I
+
+    move-result v1
+
+    if-le p1, v1, :cond_1
+
+    sub-int/2addr p1, v0
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getPaddingLeft()I
+
+    move-result v0
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getPaddingTop()I
+
+    move-result v1
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getPaddingRight()I
+
+    move-result v2
+
+    invoke-virtual {p0, v0, v1, v2, p1}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public static setLineHeight(Landroid/widget/TextView;I)V
+    .locals 2
+
+    invoke-static {p1}, Landroidx/core/app/ActivityManagerCompat;->checkArgumentNonnegative(I)I
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/text/TextPaint;->getFontMetricsInt(Landroid/graphics/Paint$FontMetricsInt;)I
+
+    move-result v0
+
+    if-eq p1, v0, :cond_0
+
+    sub-int/2addr p1, v0
+
+    int-to-float p1, p1
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    invoke-virtual {p0, p1, v0}, Landroid/widget/TextView;->setLineSpacing(FF)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static setOverlapAnchor(Landroid/widget/PopupWindow;Z)V
+    .locals 1
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setOverlapAnchor(Z)V
+
+    return-void
+.end method
+
+.method public static setPrecomputedText(Landroid/widget/TextView;Landroidx/core/text/PrecomputedTextCompat;)V
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_0
+
+    invoke-virtual {p1}, Landroidx/core/text/PrecomputedTextCompat;->getPrecomputedText()Landroid/text/PrecomputedText;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Landroidx/core/text/PrecomputedTextCompat$Params;
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getTextMetricsParams()Landroid/text/PrecomputedText$Params;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroidx/core/text/PrecomputedTextCompat$Params;-><init>(Landroid/text/PrecomputedText$Params;)V
+
+    invoke-virtual {p1}, Landroidx/core/text/PrecomputedTextCompat;->getParams()Landroidx/core/text/PrecomputedTextCompat$Params;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroidx/core/text/PrecomputedTextCompat$Params;->equalsWithoutTextDirection(Landroidx/core/text/PrecomputedTextCompat$Params;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :goto_0
+    return-void
+
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "Given text can not be applied to TextView."
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static setWindowLayoutType(Landroid/widget/PopupWindow;I)V
+    .locals 1
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setWindowLayoutType(I)V
+
+    return-void
+.end method

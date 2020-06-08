@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/oneplus_contorl_layout_margin_top4" android:paddingBottom="@dimen/oneplus_contorl_margin_bottom2" android:layout_width="fill_parent" android:layout_height="@dimen/oneplus_contorl_list_item_height_one_line1" android:paddingStart="@dimen/oneplus_contorl_margin_left4" android:paddingEnd="@dimen/oneplus_contorl_margin_right2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?onePlusPrimaryColor" android:gravity="start|bottom|center" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAllCaps="true" android:textDirection="locale" android:layoutDirection="locale" style="@style/oneplus_contorl_text_style_subtitle" />
+</LinearLayout>

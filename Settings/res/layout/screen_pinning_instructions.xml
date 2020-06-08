@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oneplus.settings.edgeeffect.SpringNestScrollView android:id="@id/instructions_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/oneplus_contorl_text_color_secondary_default" android:id="@id/screen_pinning_description" android:paddingTop="@dimen/oneplus_contorl_margin_top2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/screen_pinning_description" android:paddingStart="@dimen/oneplus_contorl_margin_left4" android:paddingEnd="@dimen/oneplus_contorl_margin_left4" style="@style/oneplus_contorl_text_style_subheading" />
+</com.oneplus.settings.edgeeffect.SpringNestScrollView>
