@@ -481,6 +481,8 @@
     invoke-static {v3}, Lcom/oneplus/lib/app/appcompat/MenuWrapperFactory;->isFeatureSupported(Ljava/lang/String;)Z
 
     move-result v3
+    
+    const/4 v3, 0x1
 
     const/4 v4, 0x0
 
