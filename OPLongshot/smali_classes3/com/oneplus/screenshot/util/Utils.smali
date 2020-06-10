@@ -1842,7 +1842,7 @@
 
     move-object v10, v0
 
-    sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
+    sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v4, 0x64
 
@@ -1880,7 +1880,7 @@
 
     move-object v1, v0
 
-    const-string v0, ".jpg"
+    const-string v0, ".png"
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -2110,7 +2110,7 @@
     goto :goto_3
 
     :cond_4
-    const-string v2, "image/jpeg"
+    const-string v2, "image/png"
 
     invoke-virtual {v12, v0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
