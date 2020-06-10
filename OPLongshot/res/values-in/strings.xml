@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_action_bar_title">Tentang</string>
+    <string name="about_app_version_text">Version %s</string>
+    <string name="about_privacy_policy">Kebijakan Privasi</string>
+    <string name="about_release_note_title">Perbarui log:</string>
+    <string name="about_terms_service">Ketentuan Layanan</string>
+    <string name="got_it">Mengerti</string>
+    <string name="loading_text">Memuat...</string>
+    <string name="longshot_guide_not_support">Tangkapan panjang panjang tidak didukung untuk halaman ini.</string>
+    <string name="longshot_guide_support">Ketuk di sini untuk mencoba Tangkapan Layar Panjang.</string>
+    <string name="not_support_longshot">Tangkapan panjang panjang tidak didukung untuk halaman ini.</string>
+    <string name="notification_channel_screenshot">Screenshot</string>
+    <string name="permission_btn_text_denied">Keluar</string>
+    <string name="permission_btn_text_grant">OK</string>
+    <string name="permission_dialog_title">Permission statement</string>
+    <string name="screen_orientation_changed">Orientasi layar tidak bisa diubah saat mengambil tangkapan layar panjang.</string>
+    <string name="screenshot_failed_text">Tak bisa mengambil tangkapan layar karena ruang penyimpanan terbatas/tak diizinkan aplikasi/organisasi Anda.</string>
+    <string name="screenshot_failed_title">Tidak dapat mengambil tangkapan layar.</string>
+    <string name="screenshot_failed_to_capture_text">Mengambil screenshot tidak diizinkan oleh aplikasi atau organisasi</string>
+    <string name="screenshot_failed_to_save_text">Tidak dapat menyimpan screenshot karena ruang penyimpanan terbatas.</string>
+    <string name="screenshot_failed_to_save_unknown_text">Terjadi masalah saat menyimpan screenshot.</string>
+    <string name="screenshot_saved_text">Sentuh untuk melihat tangkapan layar Anda.</string>
+    <string name="screenshot_saved_title">Tangkapan layar diambil.</string>
+    <string name="screenshot_saving_text">Tangkapan layar sedang disimpan.</string>
+    <string name="screenshot_saving_ticker">Menyimpan tangkapan layar...</string>
+    <string name="screenshot_saving_title">Menyimpan tangkapan layar...</string>
+    <string name="screenshot_stoped_text">Tangkapan layar panjang telah berhenti</string>
+    <string name="scrolling">Layar akan otomatis digulung ke bawah saat mengambil tangkapan layar panjang.</string>
+    <string name="select_day">Pilih bulan dan hari</string>
+    <string name="select_hours">Pilih jam</string>
+    <string name="select_minutes">Pilih menit</string>
+    <string name="select_year">Pilih tahun</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_and_save">Ketuk layar untuk berhenti menggulung dan mengambil tangkapan layar panjang.</string>
+    <string name="summary">Ketuk tangkapan layar panjang yang sudah diperoleh untuk mengambil konten yang dapat digulung di bawahnya.</string>
+    <string name="time_picker_header_text">Tetapkan waktu</string>
+    <string name="time_picker_hour_label">jam</string>
+    <string name="time_picker_input_error">Ketik waktu yang berlaku</string>
+    <string name="time_picker_minute_label">menit</string>
+    <string name="time_picker_prompt_label">Ketik dalam waktu</string>
+    <string name="title">Tangkapan Layar Panjang</string>
+    <string name="top_activity_changed">Tidak mendukung ganti apl saat mengambil tangkapan layar panjang.</string>
+</resources>
