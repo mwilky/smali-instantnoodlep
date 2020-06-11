@@ -304,6 +304,76 @@
     move-result-object v1
 
     invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "rice_version"
+
+    invoke-static {v1}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "tweaks_custom_back_double_app"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "tweaks_custom_back_long_app"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "tweaks_custom_home_double_app"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "tweaks_custom_home_long_app"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "tweaks_custom_recent_double_app"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v1, "tweaks_custom_recent_long_app"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
     invoke-virtual {p0}, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->updateSettings()V
 
@@ -322,6 +392,8 @@
     .locals 9
 
     iget-object v0, p0, Lcom/android/server/policy/OpPhoneWindowManager$tsu;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
+    
+    invoke-virtual {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->setCustomApp()V
 
     invoke-static {v0}, Lcom/android/server/policy/OpPhoneWindowManager;->access$800(Lcom/android/server/policy/OpPhoneWindowManager;)Ljava/lang/Object;
 
