@@ -686,8 +686,6 @@
 
     iput-object v5, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mImeSwitchPendingIntent:Landroid/app/PendingIntent;
 
-    iput-boolean v0, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mShowOngoingImeSwitcherForPhones:Z
-
     iput-boolean v0, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mNotificationShown:Z
 
     const/4 v0, 0x0
@@ -756,6 +754,8 @@
     move-result-object v2
 
     iput-object v2, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mSwitchingController:Lcom/android/server/inputmethod/InputMethodSubtypeSwitchingController;
+    
+    invoke-virtual {p0}, Lcom/android/server/inputmethod/InputMethodManagerService;->setHideKeyboardSwitcher()V
 
     return-void
 .end method
@@ -14363,16 +14363,6 @@
 
     invoke-direct {p0, v3, v4}, Lcom/android/server/inputmethod/InputMethodManagerService;->updateSystemUiLocked(II)V
 
-    iget-object v3, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mRes:Landroid/content/res/Resources;
-
-    const v4, 0x111012b
-
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
-
-    move-result v3
-
-    iput-boolean v3, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mShowOngoingImeSwitcherForPhones:Z
-
     iget-boolean v3, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mShowOngoingImeSwitcherForPhones:Z
 
     if-eqz v3, :cond_2
@@ -14912,5 +14902,38 @@
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     :cond_0
+    return-void
+.end method
+
+.method public setHideKeyboardSwitcher()V
+    .locals 3
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mContext:Landroid/content/Context;
+    
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+    
+    const-string/jumbo v1, "tweaks_hide_keyboard_switcher"
+    
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+    
+    if-eqz v0, :cond_show
+    
+    const/4 v0, 0x0
+    
+    goto :goto_jump
+       
+    :cond_show
+    const/4 v0, 0x1
+
+    :goto_jump
+    iput-boolean v0, p0, Lcom/android/server/inputmethod/InputMethodManagerService;->mShowOngoingImeSwitcherForPhones:Z
+   
     return-void
 .end method
