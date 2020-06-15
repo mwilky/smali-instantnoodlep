@@ -32,6 +32,8 @@
 
 
 # static fields
+.field public static mUsbWake:Z
+
 .field private static final BUTTON_OFF_TIMEOUT:I = 0x3e8
 
 .field private static DEBUG:Z = false
@@ -10083,6 +10085,10 @@
     move-result v4
 
     if-eqz v4, :cond_2
+    
+    sget-boolean v4, Lcom/android/server/power/PowerManagerService;->mUsbWake:Z
+    
+    if-eqz v4, :cond_2
 
     const/4 v7, 0x3
 
@@ -10439,6 +10445,8 @@
     .locals 10
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
+    
+    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->setUsbWake(Landroid/content/Context;)V
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -14173,6 +14181,16 @@
     const/4 v5, 0x0
 
     invoke-virtual {v0, v1, v5, v2, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+    
+    const-string/jumbo v1, "tweaks_usb_wake"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mSettingsObserver:Lcom/android/server/power/PowerManagerService$SettingsObserver;
+
+    invoke-virtual {v0, v1, v5, v2, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
     const-string/jumbo v1, "screensaver_activate_on_sleep"
 
@@ -14764,4 +14782,29 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v1
+.end method
+
+.method public static setUsbWake(Landroid/content/Context;)V
+    .registers 4
+    .param p0, "Context"    # Landroid/content/Context;
+
+    .line 962
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    .line 963
+    .local v0, "ContentResolver":Landroid/content/ContentResolver;
+    const-string v1, "tweaks_usb_wake"
+
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    sput-boolean v1, Lcom/android/server/power/PowerManagerService;->mUsbWake:Z
+
+    .line 964
+    return-void
 .end method
