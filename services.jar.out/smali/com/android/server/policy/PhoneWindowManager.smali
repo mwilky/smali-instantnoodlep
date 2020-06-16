@@ -22,6 +22,8 @@
 
 
 # static fields
+.field public static mBlockPowerMenuKeyguard:Z
+
 .field private static AUTHENTICATE_FACEUNLOCK:I = 0x0
 
 .field private static AUTHENTICATE_FINGERPRINT:I = 0x0
@@ -5511,7 +5513,24 @@
     move-result v2
 
     if-eqz v2, :cond_9
+    
+    sget-boolean v2, Lcom/android/server/policy/PhoneWindowManager;->mBlockPowerMenuKeyguard:Z
+    
+    if-eqz v2, :cond_mw
+    
+    invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->isScreenOn()Z
+    
+    move-result v2
+    
+    if-eqz v2, :cond_mw
+    
+    invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->keyguardOn()Z
 
+    move-result v2
+    
+    if-nez v2, :cond_16
+    
+    :cond_mw
     invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getFlags()I
 
     move-result v2
@@ -17546,6 +17565,8 @@
 
 .method public updateSettings()V
     .locals 10
+    
+    invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->setBlockPowerMenuKeyguard()V
 
     iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
 
@@ -18217,4 +18238,26 @@
     .line 117
     :goto_d
     return-void
+.end method
+
+.method public setBlockPowerMenuKeyguard()V
+	.locals 3
+	
+	iget-object v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string/jumbo v1, "tweaks_block_power_menu_keyguard"
+    
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+    
+    sput-boolean v0, Lcom/android/server/policy/PhoneWindowManager;->mBlockPowerMenuKeyguard:Z
+    
+    return-void   
 .end method
