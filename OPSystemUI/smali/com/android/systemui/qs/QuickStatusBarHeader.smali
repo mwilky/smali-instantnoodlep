@@ -8,6 +8,14 @@
 .implements Lcom/android/systemui/statusbar/policy/ZenModeController$Callback;
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/systemui/qs/QuickStatusBarHeader$10;
+    }
+.end annotation
+
+
 # instance fields
 .field private mQsIcons:Landroid/view/View;
 
@@ -123,6 +131,14 @@
     iput-object p2, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mDualToneHandler:Lcom/android/systemui/DualToneHandler;
 
     return-void
+.end method
+
+.method static synthetic access$001(Lcom/android/systemui/qs/QuickStatusBarHeader;)Lcom/android/systemui/qs/QSPanel;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mQsPanel:Lcom/android/systemui/qs/QSPanel;
+
+    return-object v0
 .end method
 
 .method static synthetic access$002(Lcom/android/systemui/qs/QuickStatusBarHeader;I)I
@@ -1589,7 +1605,14 @@
     invoke-virtual {v0, p1}, Lcom/android/systemui/qs/QSPanel;->setExpanded(Z)V
 
     invoke-virtual {p0}, Lcom/android/systemui/qs/QuickStatusBarHeader;->updateEverything()V
+    
+    sget-boolean v0, Lcom/android/mwilky/Renovate;->mQsAnimExpand:Z
 
+    if-eqz v0, :cond_mw
+    
+    invoke-virtual {p0}, Lcom/android/systemui/qs/QuickStatusBarHeader;->setSwipeTileAnimation()V
+
+    :cond_mw
     return-void
 .end method
 
@@ -1870,5 +1893,19 @@
 
     .line 89
     :cond_1e
+    return-void
+.end method
+
+.method public setSwipeTileAnimation()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mHandler:Landroid/os/Handler;
+
+    new-instance v1, Lcom/android/systemui/qs/QuickStatusBarHeader$10;
+
+    invoke-direct {v1, p0}, Lcom/android/systemui/qs/QuickStatusBarHeader$10;-><init>(Lcom/android/systemui/qs/QuickStatusBarHeader;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
     return-void
 .end method
