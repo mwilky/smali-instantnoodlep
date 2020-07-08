@@ -5628,7 +5628,7 @@ PIN 码可能不正确。"</string>
     <string name="usb_summary_charging_only">为此设备充电</string>
     <string name="usb_summary_file_transfers">文件传输</string>
     <string name="usb_summary_file_transfers_power">开启文件传输模式并为其他设备充电</string>
-    <string name="usb_summary_photo_transfers">PTP</string>
+    <string name="usb_summary_photo_transfers">照片传输</string>
     <string name="usb_summary_photo_transfers_power">开启 PTP 模式并为其他设备充电</string>
     <string name="usb_summary_power_only">为连接的设备充电</string>
     <string name="usb_summary_tether">USB 网络共享</string>
@@ -5647,7 +5647,7 @@ PIN 码可能不正确。"</string>
     <string name="usb_use_ethernet_transfers">网络共享</string>
     <string name="usb_use_file_transfers">文件传输</string>
     <string name="usb_use_file_transfers_desc">将文件传输至其他设备</string>
-    <string name="usb_use_photo_transfers">PTP</string>
+    <string name="usb_use_photo_transfers">照片传输</string>
     <string name="usb_use_photo_transfers_desc">如果 MTP 不受支持，则传输照片或文件 (PTP)</string>
     <string name="usb_use_power_only">为连接的设备充电</string>
     <string name="usb_use_tethering">USB 网络共享</string>

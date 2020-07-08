@@ -400,8 +400,23 @@
 
     const/4 v5, 0x1
 
-    if-ne p1, v0, :cond_1
+    if-ne p1, v0, :cond_2
 
+    invoke-direct {p0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->getCurrenMode()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "package_device_default"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    return-void
+
+    :cond_1
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchBtn:Landroid/widget/RadioButton;
 
     invoke-virtual {p1, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
@@ -420,25 +435,38 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHandler:Landroid/os/Handler;
 
-    new-instance v0, Lcom/oneplus/settings/-$$Lambda$OPNotchDisplayGuideActivity$I7MhZGV2MxvtCUd5vNy8iL55-Lo;
+    new-instance v1, Lcom/oneplus/settings/-$$Lambda$OPNotchDisplayGuideActivity$I7MhZGV2MxvtCUd5vNy8iL55-Lo;
 
-    invoke-direct {v0, p0}, Lcom/oneplus/settings/-$$Lambda$OPNotchDisplayGuideActivity$I7MhZGV2MxvtCUd5vNy8iL55-Lo;-><init>(Lcom/oneplus/settings/OPNotchDisplayGuideActivity;)V
+    invoke-direct {v1, p0}, Lcom/oneplus/settings/-$$Lambda$OPNotchDisplayGuideActivity$I7MhZGV2MxvtCUd5vNy8iL55-Lo;-><init>(Lcom/oneplus/settings/OPNotchDisplayGuideActivity;)V
 
-    invoke-virtual {p1, v0, v3, v4}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p1, v1, v3, v4}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    const-string p1, "package_device_default"
-
-    invoke-direct {p0, p1}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->setOverlay(Ljava/lang/String;)Z
+    invoke-direct {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->setOverlay(Ljava/lang/String;)Z
 
     invoke-static {v2, v5}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTracker(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotchMode:Landroid/view/View;
 
-    if-ne p1, v0, :cond_2
+    if-ne p1, v0, :cond_4
 
+    invoke-direct {p0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->getCurrenMode()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "com.android.internal.display.cutout.emulation.noCutout"
+
+    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    return-void
+
+    :cond_3
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchBtn:Landroid/widget/RadioButton;
 
     invoke-virtual {p1, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
@@ -455,9 +483,7 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/RadioButton;->setEnabled(Z)V
 
-    const-string p1, "com.android.internal.display.cutout.emulation.noCutout"
-
-    invoke-direct {p0, p1}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->setOverlay(Ljava/lang/String;)Z
+    invoke-direct {p0, v0}, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->setOverlay(Ljava/lang/String;)Z
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHandler:Landroid/os/Handler;
 
@@ -469,7 +495,7 @@
 
     invoke-static {v2, v1}, Lcom/oneplus/settings/utils/OPUtils;->sendAppTracker(Ljava/lang/String;I)V
 
-    :cond_2
+    :cond_4
     :goto_0
     return-void
 .end method

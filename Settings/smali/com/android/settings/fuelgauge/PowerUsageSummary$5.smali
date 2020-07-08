@@ -50,7 +50,7 @@
 
     const/4 v0, 0x0
 
-    const/16 v1, 0x112
+    const/16 v1, 0x114
 
     aput v1, p1, v0
 

@@ -5606,7 +5606,7 @@ PIN 碼可能不正確。"</string>
     <string name="usb_summary_charging_only">為這個裝置充電</string>
     <string name="usb_summary_file_transfers">檔案傳輸</string>
     <string name="usb_summary_file_transfers_power">檔案傳輸和供電</string>
-    <string name="usb_summary_photo_transfers">PTP</string>
+    <string name="usb_summary_photo_transfers">照片傳輸</string>
     <string name="usb_summary_photo_transfers_power">PTP 和供電</string>
     <string name="usb_summary_power_only">正在為連接的裝置充電</string>
     <string name="usb_summary_tether">USB 網路共用</string>
@@ -5625,7 +5625,7 @@ PIN 碼可能不正確。"</string>
     <string name="usb_use_ethernet_transfers">網路共享</string>
     <string name="usb_use_file_transfers">檔案傳輸</string>
     <string name="usb_use_file_transfers_desc">將檔案轉移到另一個裝置</string>
-    <string name="usb_use_photo_transfers">PTP</string>
+    <string name="usb_use_photo_transfers">照片傳輸</string>
     <string name="usb_use_photo_transfers_desc">如果 MTP 不受支援，則轉移相片或檔案 (PTP)</string>
     <string name="usb_use_power_only">為連接的裝置充電</string>
     <string name="usb_use_tethering">USB 數據連線</string>

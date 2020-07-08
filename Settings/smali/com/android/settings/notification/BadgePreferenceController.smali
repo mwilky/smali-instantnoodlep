@@ -186,12 +186,67 @@
 .end method
 
 .method public updateState(Landroidx/preference/Preference;)V
-    .locals 1
+    .locals 4
 
     iget-object v0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
 
+    if-eqz v0, :cond_5
+
+    instance-of v0, p1, Lcom/android/settings/widget/MasterSwitchPreference;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const-string v3, "com.android.dialer"
+
     if-eqz v0, :cond_2
 
+    check-cast p1, Lcom/android/settings/widget/MasterSwitchPreference;
+
+    iget-object v0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mAdmin:Lcom/android/settingslib/RestrictedLockUtils$EnforcedAdmin;
+
+    invoke-virtual {p1, v0}, Lcom/android/settings/widget/MasterSwitchPreference;->setDisabledByAdmin(Lcom/android/settingslib/RestrictedLockUtils$EnforcedAdmin;)V
+
+    iget-object v0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mChannel:Landroid/app/NotificationChannel;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Landroid/app/NotificationChannel;->canShowBadge()Z
+
+    move-result v0
+
+    invoke-virtual {p1, v0}, Lcom/android/settings/widget/MasterSwitchPreference;->setChecked(Z)V
+
+    iget-object p0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
+
+    iget-object p0, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->pkg:Ljava/lang/String;
+
+    invoke-virtual {v3, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p1, v2}, Landroidx/preference/Preference;->setEnabled(Z)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1, v1}, Landroidx/preference/Preference;->setEnabled(Z)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object p0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
+
+    iget-boolean p0, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->showBadge:Z
+
+    invoke-virtual {p1, p0}, Lcom/android/settings/widget/MasterSwitchPreference;->setChecked(Z)V
+
+    goto :goto_0
+
+    :cond_2
     check-cast p1, Lcom/android/settingslib/RestrictedSwitchPreference;
 
     iget-object v0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mAdmin:Lcom/android/settingslib/RestrictedLockUtils$EnforcedAdmin;
@@ -200,7 +255,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mChannel:Landroid/app/NotificationChannel;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_4
 
     invoke-virtual {v0}, Landroid/app/NotificationChannel;->canShowBadge()Z
 
@@ -212,39 +267,35 @@
 
     iget-object p0, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->pkg:Ljava/lang/String;
 
-    const-string v0, "com.android.dialer"
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_0
+    if-eqz p0, :cond_3
 
-    const/4 p0, 0x0
-
-    invoke-virtual {p1, p0}, Lcom/android/settingslib/RestrictedSwitchPreference;->setEnabled(Z)V
+    invoke-virtual {p1, v2}, Lcom/android/settingslib/RestrictedSwitchPreference;->setEnabled(Z)V
 
     goto :goto_0
 
-    :cond_0
+    :cond_3
     invoke-virtual {p1}, Lcom/android/settingslib/RestrictedSwitchPreference;->isDisabledByAdmin()Z
 
     move-result p0
 
-    xor-int/lit8 p0, p0, 0x1
+    xor-int/2addr p0, v1
 
     invoke-virtual {p1, p0}, Lcom/android/settingslib/RestrictedSwitchPreference;->setEnabled(Z)V
 
     goto :goto_0
 
-    :cond_1
+    :cond_4
     iget-object p0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mAppRow:Lcom/android/settings/notification/NotificationBackend$AppRow;
 
     iget-boolean p0, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->showBadge:Z
 
     invoke-virtual {p1, p0}, Landroidx/preference/TwoStatePreference;->setChecked(Z)V
 
-    :cond_2
+    :cond_5
     :goto_0
     return-void
 .end method

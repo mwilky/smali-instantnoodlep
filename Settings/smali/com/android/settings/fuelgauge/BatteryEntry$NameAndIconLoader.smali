@@ -61,13 +61,13 @@
 
     move-result v1
 
-    if-nez v1, :cond_f
+    if-nez v1, :cond_10
 
     iget-boolean v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->mAbort:Z
 
     if-eqz v1, :cond_1
 
-    goto/16 :goto_8
+    goto/16 :goto_9
 
     :cond_1
     sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->mRequestQueue:Ljava/util/ArrayList;
@@ -394,10 +394,31 @@
 
     move-result-object v2
 
-    iget-object v3, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v4, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    if-nez v3, :cond_d
+    if-nez v4, :cond_e
 
+    const/4 v4, -0x5
+
+    if-ne v3, v4, :cond_d
+
+    iget-object v3, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x7f121553
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    iput-object v3, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+
+    goto :goto_8
+
+    :cond_d
     iget-object v3, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -412,10 +433,11 @@
 
     iput-object v3, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    :cond_d
+    :cond_e
+    :goto_8
     iget-object v3, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
-    if-nez v3, :cond_e
+    if-nez v3, :cond_f
 
     invoke-virtual {v0}, Landroid/content/pm/PackageManager;->getDefaultActivityIcon()Landroid/graphics/drawable/Drawable;
 
@@ -423,7 +445,7 @@
 
     iput-object v0, v1, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
-    :cond_e
+    :cond_f
     new-instance v0, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;
 
     invoke-direct {v0}, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;-><init>()V
@@ -456,12 +478,12 @@
 
     goto/16 :goto_0
 
-    :cond_f
-    :goto_8
+    :cond_10
+    :goto_9
     :try_start_3
     sget-object p0, Lcom/android/settings/fuelgauge/BatteryEntry;->sHandler:Landroid/os/Handler;
 
-    if-eqz p0, :cond_10
+    if-eqz p0, :cond_11
 
     sget-object p0, Lcom/android/settings/fuelgauge/BatteryEntry;->sHandler:Landroid/os/Handler;
 
@@ -469,7 +491,7 @@
 
     invoke-virtual {p0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    :cond_10
+    :cond_11
     sget-object p0, Lcom/android/settings/fuelgauge/BatteryEntry;->mRequestQueue:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
