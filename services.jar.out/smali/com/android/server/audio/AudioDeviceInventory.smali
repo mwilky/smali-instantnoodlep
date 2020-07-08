@@ -1736,10 +1736,6 @@
 
     if-eqz v6, :cond_2
 
-    iget-object v4, v1, Lcom/android/server/audio/AudioDeviceInventory;->mDeviceBroker:Lcom/android/server/audio/AudioDeviceBroker;
-
-    invoke-virtual {v4, p1}, Lcom/android/server/audio/AudioDeviceBroker;->postBluetoothA2dpDeviceConfigChange(Landroid/bluetooth/BluetoothDevice;)V
-
     sget-object v4, Lcom/android/server/audio/AudioDeviceInventory;->prevDisconnectedDeviceAddress:Ljava/lang/String;
 
     if-eqz v4, :cond_1
@@ -1757,6 +1753,10 @@
     iput-boolean v4, v1, Lcom/android/server/audio/AudioDeviceInventory;->mPostA2dpDeviceConfigChange:Z
 
     :cond_1
+    iget-object v4, v1, Lcom/android/server/audio/AudioDeviceInventory;->mDeviceBroker:Lcom/android/server/audio/AudioDeviceBroker;
+
+    invoke-virtual {v4, p1}, Lcom/android/server/audio/AudioDeviceBroker;->postBluetoothA2dpDeviceConfigChange(Landroid/bluetooth/BluetoothDevice;)V
+
     monitor-exit v2
 
     return-void

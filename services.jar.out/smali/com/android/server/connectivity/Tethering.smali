@@ -105,6 +105,8 @@
 
 .field private mRndisEnabled:Z
 
+.field private mSharingTypeChecked:Z
+
 .field private final mStateReceiver:Landroid/content/BroadcastReceiver;
 
 .field private final mStatsService:Landroid/net/INetworkStatsService;
@@ -248,6 +250,8 @@
     iput-object v3, v0, Lcom/android/server/connectivity/Tethering;->mPendingToastMessage:Ljava/lang/String;
 
     iput-boolean v2, v0, Lcom/android/server/connectivity/Tethering;->mWifiTetherEnabled:Z
+
+    iput-boolean v2, v0, Lcom/android/server/connectivity/Tethering;->mSharingTypeChecked:Z
 
     iget-object v2, v0, Lcom/android/server/connectivity/Tethering;->mLog:Landroid/net/util/SharedLog;
 
@@ -594,7 +598,31 @@
     return-object v0
 .end method
 
-.method static synthetic access$2500(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
+.method static synthetic access$2500(Lcom/android/server/connectivity/Tethering;)Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/android/server/connectivity/Tethering;->mSharingTypeChecked:Z
+
+    return v0
+.end method
+
+.method static synthetic access$2502(Lcom/android/server/connectivity/Tethering;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/connectivity/Tethering;->mSharingTypeChecked:Z
+
+    return p1
+.end method
+
+.method static synthetic access$2600(Lcom/android/server/connectivity/Tethering;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->showInconsistentUpstreamToast()V
+
+    return-void
+.end method
+
+.method static synthetic access$2700(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mTetherUpstream:Landroid/net/Network;
@@ -602,7 +630,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2502(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)Landroid/net/Network;
+.method static synthetic access$2702(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)Landroid/net/Network;
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering;->mTetherUpstream:Landroid/net/Network;
@@ -610,7 +638,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$2600(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)V
+.method static synthetic access$2800(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->reportUpstreamChanged(Landroid/net/Network;)V
@@ -618,7 +646,7 @@
     return-void
 .end method
 
-.method static synthetic access$2700(Lcom/android/server/connectivity/Tethering;Landroid/net/NetworkState;)Z
+.method static synthetic access$2900(Lcom/android/server/connectivity/Tethering;Landroid/net/NetworkState;)Z
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->pertainsToCurrentUpstream(Landroid/net/NetworkState;)Z
@@ -626,30 +654,6 @@
     move-result v0
 
     return v0
-.end method
-
-.method static synthetic access$2800(Lcom/android/server/connectivity/Tethering;)Landroid/net/util/InterfaceSet;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mCurrentUpstreamIfaceSet:Landroid/net/util/InterfaceSet;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2802(Lcom/android/server/connectivity/Tethering;Landroid/net/util/InterfaceSet;)Landroid/net/util/InterfaceSet;
-    .locals 0
-
-    iput-object p1, p0, Lcom/android/server/connectivity/Tethering;->mCurrentUpstreamIfaceSet:Landroid/net/util/InterfaceSet;
-
-    return-object p1
-.end method
-
-.method static synthetic access$2900(Lcom/android/server/connectivity/Tethering;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->sendTetherStateChangedBroadcast()V
-
-    return-void
 .end method
 
 .method static synthetic access$300(Lcom/android/server/connectivity/Tethering;)V
@@ -660,7 +664,31 @@
     return-void
 .end method
 
-.method static synthetic access$3000(Lcom/android/server/connectivity/Tethering;)I
+.method static synthetic access$3000(Lcom/android/server/connectivity/Tethering;)Landroid/net/util/InterfaceSet;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mCurrentUpstreamIfaceSet:Landroid/net/util/InterfaceSet;
+
+    return-object v0
+.end method
+
+.method static synthetic access$3002(Lcom/android/server/connectivity/Tethering;Landroid/net/util/InterfaceSet;)Landroid/net/util/InterfaceSet;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/server/connectivity/Tethering;->mCurrentUpstreamIfaceSet:Landroid/net/util/InterfaceSet;
+
+    return-object p1
+.end method
+
+.method static synthetic access$3100(Lcom/android/server/connectivity/Tethering;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->sendTetherStateChangedBroadcast()V
+
+    return-void
+.end method
+
+.method static synthetic access$3200(Lcom/android/server/connectivity/Tethering;)I
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->getWifiNetworkId()I
@@ -670,7 +698,7 @@
     return v0
 .end method
 
-.method static synthetic access$3100(Lcom/android/server/connectivity/Tethering;)I
+.method static synthetic access$3300(Lcom/android/server/connectivity/Tethering;)I
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->getPhoneId()I
@@ -680,7 +708,7 @@
     return v0
 .end method
 
-.method static synthetic access$3200(Lcom/android/server/connectivity/Tethering;)V
+.method static synthetic access$3400(Lcom/android/server/connectivity/Tethering;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->showUpstreamChangedToast()V
@@ -688,7 +716,7 @@
     return-void
 .end method
 
-.method static synthetic access$3300(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Runnable;
+.method static synthetic access$3500(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Runnable;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamLostRunnable:Ljava/lang/Runnable;
@@ -696,7 +724,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3302(Lcom/android/server/connectivity/Tethering;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+.method static synthetic access$3502(Lcom/android/server/connectivity/Tethering;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamLostRunnable:Ljava/lang/Runnable;
@@ -704,7 +732,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$3400(Lcom/android/server/connectivity/Tethering;)Z
+.method static synthetic access$3600(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->isWifiNetworkIdInTracking()Z
@@ -714,7 +742,7 @@
     return v0
 .end method
 
-.method static synthetic access$3500(Lcom/android/server/connectivity/Tethering;)Z
+.method static synthetic access$3700(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->isPhoneIdInTracking()Z
@@ -724,7 +752,7 @@
     return v0
 .end method
 
-.method static synthetic access$3600(Lcom/android/server/connectivity/Tethering;)I
+.method static synthetic access$3800(Lcom/android/server/connectivity/Tethering;)I
     .locals 1
 
     iget v0, p0, Lcom/android/server/connectivity/Tethering;->mLastUpstreamTransport:I
@@ -732,7 +760,7 @@
     return v0
 .end method
 
-.method static synthetic access$3602(Lcom/android/server/connectivity/Tethering;I)I
+.method static synthetic access$3802(Lcom/android/server/connectivity/Tethering;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/server/connectivity/Tethering;->mLastUpstreamTransport:I
@@ -740,7 +768,7 @@
     return p1
 .end method
 
-.method static synthetic access$3700(Lcom/android/server/connectivity/Tethering;)I
+.method static synthetic access$3900(Lcom/android/server/connectivity/Tethering;)I
     .locals 1
 
     iget v0, p0, Lcom/android/server/connectivity/Tethering;->mLastWifiNetworkId:I
@@ -748,34 +776,10 @@
     return v0
 .end method
 
-.method static synthetic access$3702(Lcom/android/server/connectivity/Tethering;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/connectivity/Tethering;->mLastWifiNetworkId:I
-
-    return p1
-.end method
-
-.method static synthetic access$3800(Lcom/android/server/connectivity/Tethering;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->resetPhoneIdTrackingState()V
-
-    return-void
-.end method
-
-.method static synthetic access$3900(Lcom/android/server/connectivity/Tethering;)I
-    .locals 1
-
-    iget v0, p0, Lcom/android/server/connectivity/Tethering;->mLastPhoneId:I
-
-    return v0
-.end method
-
 .method static synthetic access$3902(Lcom/android/server/connectivity/Tethering;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/connectivity/Tethering;->mLastPhoneId:I
+    iput p1, p0, Lcom/android/server/connectivity/Tethering;->mLastWifiNetworkId:I
 
     return p1
 .end method
@@ -793,12 +797,36 @@
 .method static synthetic access$4000(Lcom/android/server/connectivity/Tethering;)V
     .locals 0
 
+    invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->resetPhoneIdTrackingState()V
+
+    return-void
+.end method
+
+.method static synthetic access$4100(Lcom/android/server/connectivity/Tethering;)I
+    .locals 1
+
+    iget v0, p0, Lcom/android/server/connectivity/Tethering;->mLastPhoneId:I
+
+    return v0
+.end method
+
+.method static synthetic access$4102(Lcom/android/server/connectivity/Tethering;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/connectivity/Tethering;->mLastPhoneId:I
+
+    return p1
+.end method
+
+.method static synthetic access$4200(Lcom/android/server/connectivity/Tethering;)V
+    .locals 0
+
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->resetWifiNetworkIdTrackingState()V
 
     return-void
 .end method
 
-.method static synthetic access$4100(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
+.method static synthetic access$4300(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mForwardedDownstreams:Ljava/util/HashSet;
@@ -806,7 +834,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4200(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
+.method static synthetic access$4400(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->getWifiManager()Landroid/net/wifi/WifiManager;
@@ -816,7 +844,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4300()Ljava/lang/String;
+.method static synthetic access$4500()Ljava/lang/String;
     .locals 1
 
     sget-object v0, Lcom/android/server/connectivity/Tethering;->TAG:Ljava/lang/String;
@@ -824,7 +852,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4400(Lcom/android/server/connectivity/Tethering;)Z
+.method static synthetic access$4600(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->upstreamWanted()Z
@@ -834,20 +862,12 @@
     return v0
 .end method
 
-.method static synthetic access$4602(Lcom/android/server/connectivity/Tethering;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$4802(Lcom/android/server/connectivity/Tethering;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering;->mPendingToastMessage:Ljava/lang/String;
 
     return-object p1
-.end method
-
-.method static synthetic access$4900(Lcom/android/server/connectivity/Tethering;IZ)V
-    .locals 0
-
-    invoke-direct {p0, p1, p2}, Lcom/android/server/connectivity/Tethering;->reportUpstreamCheckpoint(IZ)V
-
-    return-void
 .end method
 
 .method static synthetic access$500(Lcom/android/server/connectivity/Tethering;)Landroid/os/Handler;
@@ -858,7 +878,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$5100(Lcom/android/server/connectivity/Tethering;)Lcom/android/server/connectivity/tethering/OffloadController;
+.method static synthetic access$5100(Lcom/android/server/connectivity/Tethering;IZ)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/server/connectivity/Tethering;->reportUpstreamCheckpoint(IZ)V
+
+    return-void
+.end method
+
+.method static synthetic access$5300(Lcom/android/server/connectivity/Tethering;)Lcom/android/server/connectivity/tethering/OffloadController;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mOffloadController:Lcom/android/server/connectivity/tethering/OffloadController;
@@ -866,7 +894,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$5200(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;II)V
+.method static synthetic access$5400(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;II)V
     .locals 0
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/connectivity/Tethering;->notifyInterfaceStateChange(Landroid/net/ip/IpServer;II)V
@@ -874,7 +902,7 @@
     return-void
 .end method
 
-.method static synthetic access$5300(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;Landroid/net/LinkProperties;)V
+.method static synthetic access$5500(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;Landroid/net/LinkProperties;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/connectivity/Tethering;->notifyLinkPropertiesChanged(Landroid/net/ip/IpServer;Landroid/net/LinkProperties;)V
@@ -1503,7 +1531,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x123
+    const/16 v2, 0x125
 
     aput v2, v0, v1
 
@@ -2730,6 +2758,121 @@
     throw v2
 .end method
 
+.method private showInconsistentUpstreamToast()V
+    .locals 7
+
+    const/4 v0, 0x0
+
+    iget v1, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamUserChoice:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-eq v1, v2, :cond_0
+
+    sget-object v1, Lcom/android/server/connectivity/Tethering;->TAG:Ljava/lang/String;
+
+    const-string v3, "Auto Upstream!"
+
+    invoke-static {v1, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v3, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamNetworkMonitor:Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;
+
+    invoke-virtual {v3, v1}, Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;->hasInconsistentUpstreamReserved(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    iget-object v1, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+
+    const v3, 0x50f010b
+
+    invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+
+    invoke-static {v1, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v1, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+
+    const-string/jumbo v3, "phone"
+
+    invoke-virtual {v1, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getSimState()I
+
+    move-result v3
+
+    invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getDataEnabled()Z
+
+    move-result v4
+
+    const/4 v5, 0x5
+
+    if-ne v3, v5, :cond_2
+
+    if-eqz v4, :cond_2
+
+    sget-object v5, Lcom/android/server/connectivity/Tethering;->TAG:Ljava/lang/String;
+
+    const-string v6, "No toast needed, eligible NetworkRequest will be ready later on!"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_2
+    iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamNetworkMonitor:Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;
+
+    iget v6, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamUserChoice:I
+
+    invoke-virtual {v5, v6}, Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;->hasInconsistentUpstreamReserved(I)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_3
+
+    iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+
+    const v6, 0x50f010a
+
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
+
+    invoke-static {v5, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    :cond_3
+    :goto_0
+    iput-boolean v2, p0, Lcom/android/server/connectivity/Tethering;->mSharingTypeChecked:Z
+
+    return-void
+.end method
+
 .method private showPendingUpstreamChangedToast()V
     .locals 3
 
@@ -2842,7 +2985,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v5, 0x50f010b
+    const v5, 0x50f010d
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2887,7 +3030,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v5, 0x50f010a
+    const v5, 0x50f010c
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

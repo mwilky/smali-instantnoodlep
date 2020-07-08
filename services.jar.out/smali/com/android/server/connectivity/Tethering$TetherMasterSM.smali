@@ -217,7 +217,7 @@
     return-void
 .end method
 
-.method static synthetic access$4500(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)Lcom/android/server/connectivity/Tethering$TetherMasterSM$OffloadWrapper;
+.method static synthetic access$4700(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)Lcom/android/server/connectivity/Tethering$TetherMasterSM$OffloadWrapper;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->mOffload:Lcom/android/server/connectivity/Tethering$TetherMasterSM$OffloadWrapper;
@@ -225,7 +225,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4700(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)Ljava/util/ArrayList;
+.method static synthetic access$4900(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)Ljava/util/ArrayList;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->mNotifyList:Ljava/util/ArrayList;
@@ -233,7 +233,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$4800(Lcom/android/server/connectivity/Tethering$TetherMasterSM;ILjava/lang/Object;)V
+.method static synthetic access$5000(Lcom/android/server/connectivity/Tethering$TetherMasterSM;ILjava/lang/Object;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->handleUpstreamNetworkMonitorCallback(ILjava/lang/Object;)V
@@ -241,7 +241,7 @@
     return-void
 .end method
 
-.method static synthetic access$5000(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)Lcom/android/internal/util/State;
+.method static synthetic access$5200(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)Lcom/android/internal/util/State;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->mInitialState:Lcom/android/internal/util/State;
@@ -275,7 +275,7 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$4100(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
+    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$4300(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
 
     move-result-object v1
 
@@ -294,7 +294,7 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$4100(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
+    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$4300(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
 
     move-result-object v1
 
@@ -309,7 +309,7 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$4200(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
+    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$4400(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
 
     move-result-object v1
 
@@ -323,7 +323,7 @@
 
     if-eq p1, v3, :cond_2
 
-    invoke-static {}, Lcom/android/server/connectivity/Tethering;->access$4300()Ljava/lang/String;
+    invoke-static {}, Lcom/android/server/connectivity/Tethering;->access$4500()Ljava/lang/String;
 
     move-result-object v0
 
@@ -381,7 +381,7 @@
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$4100(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
+    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$4300(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashSet;
 
     move-result-object v0
 
@@ -401,7 +401,7 @@
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$4200(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
+    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$4400(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
 
     move-result-object v0
 
@@ -418,7 +418,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$4200(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
+    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$4400(Lcom/android/server/connectivity/Tethering;)Landroid/net/wifi/WifiManager;
 
     move-result-object v0
 
@@ -440,7 +440,7 @@
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$2900(Lcom/android/server/connectivity/Tethering;)V
+    invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->access$3100(Lcom/android/server/connectivity/Tethering;)V
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -454,13 +454,13 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$3000(Lcom/android/server/connectivity/Tethering;)I
+    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$3200(Lcom/android/server/connectivity/Tethering;)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$3100(Lcom/android/server/connectivity/Tethering;)I
+    invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$3300(Lcom/android/server/connectivity/Tethering;)I
 
     move-result v2
 
@@ -480,7 +480,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3200(Lcom/android/server/connectivity/Tethering;)V
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3400(Lcom/android/server/connectivity/Tethering;)V
 
     goto :goto_0
 
@@ -493,7 +493,7 @@
 
     iget-object v6, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v6}, Lcom/android/server/connectivity/Tethering;->access$3300(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Runnable;
+    invoke-static {v6}, Lcom/android/server/connectivity/Tethering;->access$3500(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Runnable;
 
     move-result-object v6
 
@@ -503,7 +503,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3400(Lcom/android/server/connectivity/Tethering;)Z
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3600(Lcom/android/server/connectivity/Tethering;)Z
 
     move-result v3
 
@@ -514,7 +514,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3500(Lcom/android/server/connectivity/Tethering;)Z
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3700(Lcom/android/server/connectivity/Tethering;)Z
 
     move-result v3
 
@@ -523,7 +523,7 @@
     :cond_2
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3200(Lcom/android/server/connectivity/Tethering;)V
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3400(Lcom/android/server/connectivity/Tethering;)V
 
     goto :goto_0
 
@@ -536,7 +536,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/server/connectivity/Tethering$TetherMasterSM$1;-><init>(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)V
 
-    invoke-static {v3, v6}, Lcom/android/server/connectivity/Tethering;->access$3302(Lcom/android/server/connectivity/Tethering;Ljava/lang/Runnable;)Ljava/lang/Runnable;
+    invoke-static {v3, v6}, Lcom/android/server/connectivity/Tethering;->access$3502(Lcom/android/server/connectivity/Tethering;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -546,7 +546,7 @@
 
     iget-object v6, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v6}, Lcom/android/server/connectivity/Tethering;->access$3300(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Runnable;
+    invoke-static {v6}, Lcom/android/server/connectivity/Tethering;->access$3500(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Runnable;
 
     move-result-object v6
 
@@ -560,7 +560,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3600(Lcom/android/server/connectivity/Tethering;)I
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3800(Lcom/android/server/connectivity/Tethering;)I
 
     move-result v3
 
@@ -568,7 +568,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3, v0}, Lcom/android/server/connectivity/Tethering;->access$3602(Lcom/android/server/connectivity/Tethering;I)I
+    invoke-static {v3, v0}, Lcom/android/server/connectivity/Tethering;->access$3802(Lcom/android/server/connectivity/Tethering;I)I
 
     :cond_5
     if-ne v0, v4, :cond_6
@@ -577,7 +577,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3700(Lcom/android/server/connectivity/Tethering;)I
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3900(Lcom/android/server/connectivity/Tethering;)I
 
     move-result v3
 
@@ -585,11 +585,11 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3, v1}, Lcom/android/server/connectivity/Tethering;->access$3702(Lcom/android/server/connectivity/Tethering;I)I
+    invoke-static {v3, v1}, Lcom/android/server/connectivity/Tethering;->access$3902(Lcom/android/server/connectivity/Tethering;I)I
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3800(Lcom/android/server/connectivity/Tethering;)V
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$4000(Lcom/android/server/connectivity/Tethering;)V
 
     :cond_6
     if-nez v0, :cond_7
@@ -598,7 +598,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$3900(Lcom/android/server/connectivity/Tethering;)I
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$4100(Lcom/android/server/connectivity/Tethering;)I
 
     move-result v3
 
@@ -606,11 +606,11 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3, v2}, Lcom/android/server/connectivity/Tethering;->access$3902(Lcom/android/server/connectivity/Tethering;I)I
+    invoke-static {v3, v2}, Lcom/android/server/connectivity/Tethering;->access$4102(Lcom/android/server/connectivity/Tethering;I)I
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$4000(Lcom/android/server/connectivity/Tethering;)V
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$4200(Lcom/android/server/connectivity/Tethering;)V
 
     :cond_7
     return-void
@@ -728,7 +728,7 @@
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v2, v0}, Lcom/android/server/connectivity/Tethering;->access$2700(Lcom/android/server/connectivity/Tethering;Landroid/net/NetworkState;)Z
+    invoke-static {v2, v0}, Lcom/android/server/connectivity/Tethering;->access$2900(Lcom/android/server/connectivity/Tethering;Landroid/net/NetworkState;)Z
 
     move-result v2
 
@@ -808,7 +808,7 @@
     :goto_1
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$2800(Lcom/android/server/connectivity/Tethering;)Landroid/net/util/InterfaceSet;
+    invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$3000(Lcom/android/server/connectivity/Tethering;)Landroid/net/util/InterfaceSet;
 
     move-result-object v2
 
@@ -823,7 +823,7 @@
 
 # virtual methods
 .method protected chooseUpstreamType(Z)V
-    .locals 5
+    .locals 7
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -955,9 +955,42 @@
     nop
 
     :goto_2
-    if-nez v1, :cond_a
+    if-nez v1, :cond_b
 
-    if-eqz p1, :cond_8
+    iget-object v4, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
+
+    invoke-static {v4}, Lcom/android/server/connectivity/Tethering;->access$2400(Lcom/android/server/connectivity/Tethering;)Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;->mobileNetworkRequested()Z
+
+    move-result v4
+
+    iget-object v5, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
+
+    invoke-static {v5}, Lcom/android/server/connectivity/Tethering;->access$400(Lcom/android/server/connectivity/Tethering;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    iget-object v5, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
+
+    invoke-static {v5}, Lcom/android/server/connectivity/Tethering;->access$2500(Lcom/android/server/connectivity/Tethering;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_5
+
+    if-eqz v4, :cond_5
+
+    iget-object v5, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
+
+    invoke-static {v5}, Lcom/android/server/connectivity/Tethering;->access$2600(Lcom/android/server/connectivity/Tethering;)V
+
+    :cond_5
+    if-eqz p1, :cond_9
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -965,7 +998,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -973,17 +1006,17 @@
 
     move-result v2
 
-    if-eq v2, v3, :cond_6
+    if-eq v2, v3, :cond_7
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_6
 
     const/4 v3, 0x1
 
-    if-eq v2, v3, :cond_5
+    if-eq v2, v3, :cond_6
 
     goto :goto_3
 
-    :cond_5
+    :cond_6
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
     invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$2400(Lcom/android/server/connectivity/Tethering;)Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;
@@ -1000,17 +1033,6 @@
 
     goto :goto_3
 
-    :cond_6
-    iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
-
-    invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$2400(Lcom/android/server/connectivity/Tethering;)Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;->registerMobileNetworkRequest()V
-
-    goto :goto_3
-
     :cond_7
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -1023,13 +1045,24 @@
     goto :goto_3
 
     :cond_8
+    iget-object v2, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
+
+    invoke-static {v2}, Lcom/android/server/connectivity/Tethering;->access$2400(Lcom/android/server/connectivity/Tethering;)Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/android/server/connectivity/tethering/UpstreamNetworkMonitor;->registerMobileNetworkRequest()V
+
+    goto :goto_3
+
+    :cond_9
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
     invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$400(Lcom/android/server/connectivity/Tethering;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_9
+    if-eqz v3, :cond_a
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -1037,40 +1070,40 @@
 
     move-result v3
 
-    if-eq v3, v2, :cond_a
-
-    :cond_9
-    const v2, 0x50004
-
-    const-wide/16 v3, 0x2710
-
-    invoke-virtual {p0, v2, v3, v4}, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->sendMessageDelayed(IJ)V
+    if-eq v3, v2, :cond_b
 
     :cond_a
+    const v2, 0x50004
+
+    const-wide/16 v5, 0x2710
+
+    invoke-virtual {p0, v2, v5, v6}, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->sendMessageDelayed(IJ)V
+
+    :cond_b
     :goto_3
     invoke-virtual {p0, v1}, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->setUpstreamNetwork(Landroid/net/NetworkState;)V
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_c
 
     iget-object v2, v1, Landroid/net/NetworkState;->network:Landroid/net/Network;
 
     goto :goto_4
 
-    :cond_b
+    :cond_c
     const/4 v2, 0x0
 
     :goto_4
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$2500(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$2700(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
 
     move-result-object v3
 
-    if-eq v3, v2, :cond_c
+    if-eq v3, v2, :cond_d
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3, v2}, Lcom/android/server/connectivity/Tethering;->access$2502(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)Landroid/net/Network;
+    invoke-static {v3, v2}, Lcom/android/server/connectivity/Tethering;->access$2702(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)Landroid/net/Network;
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -1080,7 +1113,7 @@
 
     iget-object v4, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v4}, Lcom/android/server/connectivity/Tethering;->access$2500(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
+    invoke-static {v4}, Lcom/android/server/connectivity/Tethering;->access$2700(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
 
     move-result-object v4
 
@@ -1088,11 +1121,11 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$2500(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
+    invoke-static {v3}, Lcom/android/server/connectivity/Tethering;->access$2700(Lcom/android/server/connectivity/Tethering;)Landroid/net/Network;
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lcom/android/server/connectivity/Tethering;->access$2600(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)V
+    invoke-static {v3, v4}, Lcom/android/server/connectivity/Tethering;->access$2800(Lcom/android/server/connectivity/Tethering;Landroid/net/Network;)V
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
@@ -1100,11 +1133,11 @@
 
     move-result v3
 
-    if-eqz v3, :cond_c
+    if-eqz v3, :cond_d
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->handleUpstreamChanged()V
 
-    :cond_c
+    :cond_d
     return-void
 .end method
 
@@ -1127,7 +1160,7 @@
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0, p1}, Lcom/android/server/connectivity/Tethering;->access$2802(Lcom/android/server/connectivity/Tethering;Landroid/net/util/InterfaceSet;)Landroid/net/util/InterfaceSet;
+    invoke-static {v0, p1}, Lcom/android/server/connectivity/Tethering;->access$3002(Lcom/android/server/connectivity/Tethering;Landroid/net/util/InterfaceSet;)Landroid/net/util/InterfaceSet;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->mNotifyList:Ljava/util/ArrayList;
 
@@ -1335,7 +1368,7 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v1, p1}, Lcom/android/server/connectivity/Tethering;->access$2700(Lcom/android/server/connectivity/Tethering;Landroid/net/NetworkState;)Z
+    invoke-static {v1, p1}, Lcom/android/server/connectivity/Tethering;->access$2900(Lcom/android/server/connectivity/Tethering;Landroid/net/NetworkState;)Z
 
     move-result v1
 
@@ -1348,7 +1381,7 @@
     :cond_2
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$2800(Lcom/android/server/connectivity/Tethering;)Landroid/net/util/InterfaceSet;
+    invoke-static {v1}, Lcom/android/server/connectivity/Tethering;->access$3000(Lcom/android/server/connectivity/Tethering;)Landroid/net/util/InterfaceSet;
 
     move-result-object v1
 

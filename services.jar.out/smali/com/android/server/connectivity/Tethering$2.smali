@@ -36,7 +36,7 @@
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$2;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0, p1, p2, p3}, Lcom/android/server/connectivity/Tethering;->access$5200(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;II)V
+    invoke-static {v0, p1, p2, p3}, Lcom/android/server/connectivity/Tethering;->access$5400(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;II)V
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$2;->this$0:Lcom/android/server/connectivity/Tethering;
 
-    invoke-static {v0, p1, p2}, Lcom/android/server/connectivity/Tethering;->access$5300(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;Landroid/net/LinkProperties;)V
+    invoke-static {v0, p1, p2}, Lcom/android/server/connectivity/Tethering;->access$5500(Lcom/android/server/connectivity/Tethering;Landroid/net/ip/IpServer;Landroid/net/LinkProperties;)V
 
     return-void
 .end method

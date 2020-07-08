@@ -40,7 +40,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 11
+    .locals 12
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -140,7 +140,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_18
+    if-nez v1, :cond_1b
 
     const-string v1, "android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED"
 
@@ -369,7 +369,7 @@
 
     const/16 v2, 0xa
 
-    if-ne v1, v2, :cond_19
+    if-ne v1, v2, :cond_1c
 
     iget-object v2, p0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -379,7 +379,7 @@
 
     invoke-virtual {v2}, Lcom/android/server/audio/AudioDeviceBroker;->disconnectAllBluetoothProfiles()V
 
-    goto :goto_5
+    goto/16 :goto_5
 
     :cond_12
     const-string v1, "android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION"
@@ -388,7 +388,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_17
+    if-nez v1, :cond_1a
 
     const-string v1, "android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION"
 
@@ -398,7 +398,7 @@
 
     if-eqz v1, :cond_13
 
-    goto :goto_3
+    goto/16 :goto_3
 
     :cond_13
     const-string v1, "android.intent.action.PACKAGES_SUSPENDED"
@@ -407,7 +407,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_19
+    if-eqz v1, :cond_18
 
     const-string v1, "android.intent.extra.changed_uid_list"
 
@@ -423,9 +423,9 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_16
+    if-eqz v2, :cond_17
 
-    if-eqz v1, :cond_16
+    if-eqz v1, :cond_17
 
     array-length v3, v2
 
@@ -441,7 +441,7 @@
     :goto_1
     array-length v4, v1
 
-    if-ge v3, v4, :cond_19
+    if-ge v3, v4, :cond_16
 
     aget-object v4, v2, v3
 
@@ -469,10 +469,105 @@
     goto :goto_1
 
     :cond_16
+    goto :goto_5
+
+    :cond_17
     :goto_2
     return-void
 
-    :cond_17
+    :cond_18
+    new-array v1, v4, [I
+
+    const/16 v3, 0xaf
+
+    aput v3, v1, v2
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1c
+
+    const-string v1, "android.net.conn.CONNECTIVITY_CHANGE"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1c
+
+    const-string v1, "connectivity"
+
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/net/ConnectivityManager;
+
+    invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
+
+    invoke-static {v3}, Lcom/android/server/audio/AudioService;->access$9700(Lcom/android/server/audio/AudioService;)I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v5, "0"
+
+    invoke-virtual {v5, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1c
+
+    if-eqz v2, :cond_19
+
+    invoke-virtual {v2}, Landroid/net/NetworkInfo;->isConnected()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_19
+
+    iget-object v3, p0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
+
+    invoke-static {v3}, Lcom/android/server/audio/AudioService;->access$100(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/AudioService$AudioHandler;
+
+    move-result-object v5
+
+    const/16 v6, 0x28
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/16 v11, 0x1388
+
+    invoke-static/range {v5 .. v11}, Lcom/android/server/audio/AudioService;->access$200(Landroid/os/Handler;IIIILjava/lang/Object;I)V
+
+    :cond_19
+    iget-object v3, p0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
+
+    invoke-static {v3, v4}, Lcom/android/server/audio/AudioService;->access$9702(Lcom/android/server/audio/AudioService;I)I
+
+    const-string v3, "AS.AudioService"
+
+    const-string v4, "Try to do keybox provsion through OTA with Network triggle"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_5
+
+    :cond_1a
     :goto_3
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -480,7 +575,7 @@
 
     goto :goto_5
 
-    :cond_18
+    :cond_1b
     :goto_4
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AudioServiceBroadcastReceiver;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -490,7 +585,7 @@
 
     invoke-virtual {v1, p2}, Lcom/android/server/audio/AudioDeviceBroker;->receiveBtEvent(Landroid/content/Intent;)V
 
-    :cond_19
+    :cond_1c
     :goto_5
     return-void
 .end method

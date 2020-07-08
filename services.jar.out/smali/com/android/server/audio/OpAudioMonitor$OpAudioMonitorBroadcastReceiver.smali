@@ -90,7 +90,7 @@
 
     iget-object v8, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v8}, Lcom/android/server/audio/OpAudioMonitor;->access$200(Lcom/android/server/audio/OpAudioMonitor;)I
+    invoke-static {v8}, Lcom/android/server/audio/OpAudioMonitor;->access$400(Lcom/android/server/audio/OpAudioMonitor;)I
 
     move-result v8
 
@@ -100,7 +100,7 @@
 
     iget-object v4, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v4, v3}, Lcom/android/server/audio/OpAudioMonitor;->access$202(Lcom/android/server/audio/OpAudioMonitor;I)I
+    invoke-static {v4, v3}, Lcom/android/server/audio/OpAudioMonitor;->access$402(Lcom/android/server/audio/OpAudioMonitor;I)I
 
     iget-object v4, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
@@ -110,7 +110,7 @@
 
     div-long/2addr v7, v5
 
-    invoke-static {v4, v7, v8}, Lcom/android/server/audio/OpAudioMonitor;->access$302(Lcom/android/server/audio/OpAudioMonitor;J)J
+    invoke-static {v4, v7, v8}, Lcom/android/server/audio/OpAudioMonitor;->access$502(Lcom/android/server/audio/OpAudioMonitor;J)J
 
     goto :goto_0
 
@@ -123,7 +123,7 @@
 
     iget-object v5, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v5}, Lcom/android/server/audio/OpAudioMonitor;->access$300(Lcom/android/server/audio/OpAudioMonitor;)J
+    invoke-static {v5}, Lcom/android/server/audio/OpAudioMonitor;->access$500(Lcom/android/server/audio/OpAudioMonitor;)J
 
     move-result-wide v5
 
@@ -137,7 +137,7 @@
 
     iget-object v10, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v10}, Lcom/android/server/audio/OpAudioMonitor;->access$200(Lcom/android/server/audio/OpAudioMonitor;)I
+    invoke-static {v10}, Lcom/android/server/audio/OpAudioMonitor;->access$400(Lcom/android/server/audio/OpAudioMonitor;)I
 
     move-result v10
 
@@ -149,11 +149,11 @@
 
     iget-object v11, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v11}, Lcom/android/server/audio/OpAudioMonitor;->access$200(Lcom/android/server/audio/OpAudioMonitor;)I
+    invoke-static {v11}, Lcom/android/server/audio/OpAudioMonitor;->access$400(Lcom/android/server/audio/OpAudioMonitor;)I
 
     move-result v12
 
-    invoke-static {v11, v12}, Lcom/android/server/audio/OpAudioMonitor;->access$400(Lcom/android/server/audio/OpAudioMonitor;I)I
+    invoke-static {v11, v12}, Lcom/android/server/audio/OpAudioMonitor;->access$600(Lcom/android/server/audio/OpAudioMonitor;I)I
 
     move-result v11
 
@@ -199,7 +199,7 @@
 
     iget-object v13, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v13}, Lcom/android/server/audio/OpAudioMonitor;->access$200(Lcom/android/server/audio/OpAudioMonitor;)I
+    invoke-static {v13}, Lcom/android/server/audio/OpAudioMonitor;->access$400(Lcom/android/server/audio/OpAudioMonitor;)I
 
     move-result v13
 
@@ -218,11 +218,11 @@
     :cond_1
     iget-object v4, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v4, v8, v9}, Lcom/android/server/audio/OpAudioMonitor;->access$302(Lcom/android/server/audio/OpAudioMonitor;J)J
+    invoke-static {v4, v8, v9}, Lcom/android/server/audio/OpAudioMonitor;->access$502(Lcom/android/server/audio/OpAudioMonitor;J)J
 
     iget-object v4, v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;->this$0:Lcom/android/server/audio/OpAudioMonitor;
 
-    invoke-static {v4, v3}, Lcom/android/server/audio/OpAudioMonitor;->access$202(Lcom/android/server/audio/OpAudioMonitor;I)I
+    invoke-static {v4, v3}, Lcom/android/server/audio/OpAudioMonitor;->access$402(Lcom/android/server/audio/OpAudioMonitor;I)I
 
     :goto_0
     move-object/from16 v31, v2
@@ -272,7 +272,7 @@
 
     const/4 v10, 0x3
 
-    invoke-static {v9, v10, v3}, Lcom/android/server/audio/OpAudioMonitor;->access$500(Lcom/android/server/audio/OpAudioMonitor;II)Z
+    invoke-static {v9, v10, v3}, Lcom/android/server/audio/OpAudioMonitor;->access$700(Lcom/android/server/audio/OpAudioMonitor;II)Z
 
     move-result v9
 
@@ -414,7 +414,7 @@
 
     move-object/from16 v24, v4
 
-    invoke-static/range {v16 .. v24}, Lcom/android/server/audio/OpAudioMonitor;->access$600(Lcom/android/server/audio/OpAudioMonitor;JJJILjava/lang/String;)V
+    invoke-static/range {v16 .. v24}, Lcom/android/server/audio/OpAudioMonitor;->access$800(Lcom/android/server/audio/OpAudioMonitor;JJJILjava/lang/String;)V
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -653,7 +653,7 @@
 
     move-object/from16 v24, v5
 
-    invoke-static/range {v16 .. v24}, Lcom/android/server/audio/OpAudioMonitor;->access$600(Lcom/android/server/audio/OpAudioMonitor;JJJILjava/lang/String;)V
+    invoke-static/range {v16 .. v24}, Lcom/android/server/audio/OpAudioMonitor;->access$800(Lcom/android/server/audio/OpAudioMonitor;JJJILjava/lang/String;)V
 
     new-instance v1, Ljava/lang/StringBuilder;
 

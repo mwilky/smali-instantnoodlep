@@ -6471,7 +6471,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v3, 0x10f
+    const/16 v3, 0x111
 
     aput v3, v0, v2
 

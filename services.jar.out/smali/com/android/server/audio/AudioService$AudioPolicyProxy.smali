@@ -96,7 +96,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {p1}, Lcom/android/server/audio/AudioService;->access$11008(Lcom/android/server/audio/AudioService;)I
+    invoke-static {p1}, Lcom/android/server/audio/AudioService;->access$11108(Lcom/android/server/audio/AudioService;)I
 
     move-result v2
 
@@ -155,7 +155,7 @@
 
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mPolicyCallback:Landroid/media/audiopolicy/IAudioPolicyCallback;
 
-    invoke-static {p1, v0}, Lcom/android/server/audio/AudioService;->access$11100(Lcom/android/server/audio/AudioService;Landroid/media/audiopolicy/IAudioPolicyCallback;)V
+    invoke-static {p1, v0}, Lcom/android/server/audio/AudioService;->access$11200(Lcom/android/server/audio/AudioService;Landroid/media/audiopolicy/IAudioPolicyCallback;)V
 
     :cond_1
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mProjection:Landroid/media/projection/IMediaProjection;
@@ -297,7 +297,7 @@
 
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
-    invoke-static {v0}, Lcom/android/server/audio/AudioService;->access$11300(Lcom/android/server/audio/AudioService;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/android/server/audio/AudioService;->access$11400(Lcom/android/server/audio/AudioService;)Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -332,7 +332,7 @@
 
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
-    invoke-static {v1}, Lcom/android/server/audio/AudioService;->access$11300(Lcom/android/server/audio/AudioService;)Ljava/util/HashMap;
+    invoke-static {v1}, Lcom/android/server/audio/AudioService;->access$11400(Lcom/android/server/audio/AudioService;)Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -354,7 +354,7 @@
 
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
-    invoke-static {v0}, Lcom/android/server/audio/AudioService;->access$11400(Lcom/android/server/audio/AudioService;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/audio/AudioService;->access$11500(Lcom/android/server/audio/AudioService;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -365,7 +365,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lcom/android/server/audio/AudioService;->access$11502(Lcom/android/server/audio/AudioService;Landroid/media/audiopolicy/IAudioPolicyCallback;)Landroid/media/audiopolicy/IAudioPolicyCallback;
+    invoke-static {v1, v2}, Lcom/android/server/audio/AudioService;->access$11602(Lcom/android/server/audio/AudioService;Landroid/media/audiopolicy/IAudioPolicyCallback;)Landroid/media/audiopolicy/IAudioPolicyCallback;
 
     monitor-exit v0
 

@@ -661,7 +661,7 @@
     goto/16 :goto_1
 
     :cond_1
-    const/16 v0, 0x110
+    const/16 v0, 0x112
 
     const/4 v1, 0x0
 

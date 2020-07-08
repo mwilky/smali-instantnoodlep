@@ -2783,7 +2783,7 @@
 
     if-nez v10, :cond_5
 
-    const v5, 0x50f012b
+    const v5, 0x50f012d
 
     const v1, 0x33954bf
 

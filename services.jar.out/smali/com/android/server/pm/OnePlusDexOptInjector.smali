@@ -96,3 +96,15 @@
 
     return-void
 .end method
+
+.method public static startUser(IZ)V
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/pm/OnePlusDexOptInjector;->makeSureInstanceInitialized()V
+
+    sget-object v0, Lcom/android/server/pm/OnePlusDexOptInjector;->sOnePlusDexOptManager:Lcom/android/server/pm/IOnePlusDexOptManager;
+
+    invoke-interface {v0, p0, p1}, Lcom/android/server/pm/IOnePlusDexOptManager;->startUser(IZ)V
+
+    return-void
+.end method

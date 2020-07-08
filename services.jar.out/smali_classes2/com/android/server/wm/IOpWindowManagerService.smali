@@ -10,5 +10,11 @@
 .method public abstract forceDarkSystemUI(I)I
 .end method
 
+.method public abstract isFullscreenScene()Z
+.end method
+
+.method public abstract setFullscreenScene(Z)V
+.end method
+
 .method public abstract stopFreezingDisplayLocked(Lcom/android/server/wm/DisplayContent;)V
 .end method

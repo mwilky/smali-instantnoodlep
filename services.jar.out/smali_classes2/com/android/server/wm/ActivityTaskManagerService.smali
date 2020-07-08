@@ -3473,7 +3473,7 @@
 
     new-array v7, v5, [I
 
-    const/16 v8, 0xeb
+    const/16 v8, 0xec
 
     aput v8, v7, v4
 

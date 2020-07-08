@@ -809,7 +809,7 @@
 
     new-array v2, v1, [I
 
-    const/16 v4, 0x10c
+    const/16 v4, 0x10e
 
     aput v4, v2, v0
 
@@ -5092,6 +5092,10 @@
 
     if-eqz v2, :cond_c
 
+    iget-boolean v2, p0, Lcom/android/server/wm/DisplayContent;->isDefaultDisplay:Z
+
+    if-eqz v2, :cond_c
+
     iget-object v2, p0, Lcom/android/server/wm/DisplayContent;->mIrisManager:Lcom/oneplus/iris/IOneplusIrisManager;
 
     if-nez v2, :cond_b
@@ -5163,6 +5167,10 @@
     invoke-virtual/range {v3 .. v8}, Landroid/hardware/display/DisplayManagerInternal;->setDisplayProperties(IZFIZ)V
 
     iget-boolean v2, p0, Lcom/android/server/wm/DisplayContent;->mIirsChipEnable:Z
+
+    if-eqz v2, :cond_d
+
+    iget-boolean v2, p0, Lcom/android/server/wm/DisplayContent;->isDefaultDisplay:Z
 
     if-eqz v2, :cond_d
 

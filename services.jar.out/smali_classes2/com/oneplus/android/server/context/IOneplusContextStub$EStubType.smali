@@ -51,6 +51,8 @@
 
 .field public static final enum oneplus_batteryoutlier:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
+.field public static final enum oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
 .field public static final enum oneplus_batterystatsservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
 .field public static final enum oneplus_bluetooth_service_information:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
@@ -1086,7 +1088,17 @@
 
     sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wireless_charge_disconnect_detector:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    const/16 v0, 0x58
+    new-instance v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const-string v14, "oneplus_batterystats_service"
+
+    const/16 v15, 0x58
+
+    invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v0, 0x59
 
     new-array v0, v0, [Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1589,6 +1601,12 @@
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wireless_charge_disconnect_detector:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x57
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v2, 0x58
 
     aput-object v1, v0, v2
 

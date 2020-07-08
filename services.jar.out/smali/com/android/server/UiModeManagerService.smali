@@ -2259,7 +2259,7 @@
 
     iget-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnabled:Z
 
-    if-eq v0, p1, :cond_0
+    if-eq v0, p1, :cond_1
 
     iput-boolean p1, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnabled:Z
 
@@ -2291,7 +2291,21 @@
 
     invoke-direct {p0}, Lcom/android/server/UiModeManagerService;->enableThemeMode()V
 
+    goto :goto_0
+
     :cond_0
+    const-string v0, "OPFD"
+
+    const-string v1, "Op Disable ForceDark during CarMode"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mForceDark:Z
+
+    :cond_1
+    :goto_0
     iput p2, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnableFlags:I
 
     return-void

@@ -18,3 +18,6 @@
 
 .method public abstract shutdown()V
 .end method
+
+.method public abstract startUser(IZ)V
+.end method
