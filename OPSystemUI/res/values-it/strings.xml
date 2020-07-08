@@ -566,6 +566,7 @@ Se li riattivi, potrebbero essere applicati costi per l'utilizzo dei dati."</str
     <string name="development_settings_summary">Imposta opzioni per lo sviluppo di applicazioni</string>
     <string name="development_settings_title">Opzioni sviluppatore</string>
     <string name="device_services">Servizi del dispositivo</string>
+    <string name="dialog_mhs_error">Attendere durante la verifica..</string>
     <string name="direct_boot_unaware_dialog_message">"Nota: dopo il riavvio, devi sbloccare il telefono per poter avviare l'app."</string>
     <string name="disable_carrier_button_text">Disattiva eSIM</string>
     <string name="disable_overlays">Disabilita overlay HW</string>
@@ -604,7 +605,7 @@ Se li riattivi, potrebbero essere applicati costi per l'utilizzo dei dati."</str
     <string name="enable_terminal_summary">"Abilita l'app Terminale che offre l'accesso alla shell locale"</string>
     <string name="enable_terminal_title">Terminale locale</string>
     <string name="enabled_by_admin">"Attivata dall'amministratore"</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Termina</string>
     <string name="error_disable_esim_msg">Impossibile disattivare la eSIM a causa di un errore.</string>
     <string name="error_disable_esim_title">Impossibile disattivare la eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -676,7 +677,7 @@ Una volta raffreddato, il telefono funzionerà normalmente."</string>
     <string name="high_temp_title">Il telefono si sta scaldando</string>
     <string name="home">Home page Impostazioni</string>
     <string name="hotspot_apm_message">Impossibile connettersi alle reti mobili quando la modalità Aereo è attivata. Disattiva la modalità Aereo e riprova.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Inserisci una scheda SIM per utilizzare Mobile Hotspot e altre opzioni di tethering</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Inserisci una scheda SIM per utilizzare Hotspot mobile e altre opzioni di tethering</string>
     <string name="hotspot_operator_dialog_nosim_title">Nessuna scheda SIM</string>
     <string name="hotspot_operator_dialog_othererror_msg">Non sei abbonato al tethering Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Errore di tethering Wi-Fi</string>
@@ -953,7 +954,7 @@ Riprova tra %2$d secondi."</string>
     <string name="lockscreen_unlock_left">Anche la scorciatoia sinistra consente di sbloccare</string>
     <string name="lockscreen_unlock_right">Anche la scorciatoia destra consente di sbloccare</string>
     <string name="long_press_power_navigation_assist_content">"Tieni premuto il \"tasto di accensione\" 
-per un app di assistenza"</string>
+per l'assistente vocale"</string>
     <string name="long_press_power_navigation_power_content">Premi contemporaneamente il \"tasto di accensione\" e il \"tasto per aumentare il volume\" per spegnere</string>
     <string name="long_press_power_navigation_setting_button">Modifica impostazioni</string>
     <string name="manage_bubbles_text">Gestisci</string>
@@ -969,6 +970,8 @@ per un app di assistenza"</string>
     <string name="media_projection_remember_text">Non mostrare più</string>
     <string name="media_transfer_this_device_name">Questo dispositivo</string>
     <string name="menu_ime">Selettore tastiera</string>
+    <string name="mhs_app">Apri My Verizon</string>
+    <string name="mhs_call_back_error">Connessione dati non disponibile.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s %2$s</string>
     <string name="mobile_data">Dati mobili</string>
@@ -985,6 +988,12 @@ Disattivare la connessione dati mobili?"</string>
 Disattivare la connessione dati mobili?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s - %2$s</string>
+    <string name="mobile_hotspot">Hotspot mobile</string>
+    <string name="mobile_hotspot_airplane_off_error">"Per attivare l'Hotspot, disabilita la modalità aereo"</string>
+    <string name="mobile_hotspot_authoration_error">"Per usare Hotspot Mobile, è necessario abbonarsi ai servizi Hotspot Mobile.
+
+ Per abbonarti a Hotspot Mobile visita my verizon o chiama il servizio clienti al (800) 922-0204."</string>
+    <string name="mobile_hotspot_data_off_error">"Per attivare l'Hotspot, abilita la rete dati"</string>
     <string name="mock_location_app">Seleziona app di posizione fittizia</string>
     <string name="mock_location_app_not_set">Nessuna app di posizione fittizia impostata</string>
     <string name="mock_location_app_set">App di posizione fittizia: %1$s</string>
@@ -1142,7 +1151,7 @@ Sei inoltre connesso a una VPN, da cui è possibile monitorare la tua attività 
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Associazione in corso...</string>
     <string name="op_earphone_connected_fail">Associazione non riuscita. Controllare lo stato degli auricolari e del Bluetooth.</string>
-    <string name="op_earphone_connected_success">Associazione riuscita. Tocca per eseguire ulteriori impostazioni.</string>
+    <string name="op_earphone_connected_success">Associazione riuscita. Tocca per altre impostazioni.</string>
     <string name="op_earphone_device">TOCCA PER ASSOCIARE</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Scorri verso il basso per i servizi di emergenza</string>
@@ -1196,7 +1205,7 @@ Sei inoltre connesso a una VPN, da cui è possibile monitorare la tua attività 
 2.Disattivazione dell'hotspot
 3.Spegnimento della torcia"</string>
     <string name="overheat_dialog_purple_button">Spegni ora</string>
-    <string name="overheat_dialog_purple_message">Il telefono si spegnerà dopo 5 secondi</string>
+    <string name="overheat_dialog_purple_message">Il telefono verrà spento dopo 5 secondi</string>
     <string name="overheat_dialog_red_message">Si annulleranno tutti i processi applicativi per abbassare la temperatura</string>
     <string name="overheat_dialog_title">La temperatura del telefono è troppo alta</string>
     <string name="overheat_notification_alert">La temperatura del telefono è troppo alta, pertanto le funzioni ad alto consumo energetico saranno disattivate per abbassare la temperatura</string>

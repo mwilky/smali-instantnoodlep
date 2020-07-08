@@ -44,9 +44,10 @@
     <string name="continue_call">Tęsti</string>
     <string name="delete">Šalinti</string>
     <string name="denoise_notification">Mažo prioriteto pranešimas</string>
+    <string name="dialog_mhs_error">Palaukite, kol tvirtinama..</string>
     <string name="drag_to_add_tiles">Vilkite, kad įkeltumėte plyteles</string>
     <string name="edit_mode_hint">Vilkite plyteles, kad pertvarkytumėte. Bakstelėkite, kad parodytumėte arba paslėptumėte.</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Baigti</string>
     <string name="face_unlock_camera_error">Atrakinti veidu nepavyko. Kamerą naudoja kitos programos</string>
     <string name="face_unlock_fail">Nepavyko, bakstelėkite čia ir bandykite dar kartą</string>
     <string name="face_unlock_light_view_notify">Įsijungia ekrano apšvietimas, kad būtų lengviau atpažinti veidą.</string>
@@ -86,12 +87,14 @@ Jei telefonas bus nustatytas iš naujo, norėdami juo vėl naudotis turėsite į
     <string name="kg_wrong_pin_warning">Dar turite 2 bandymus</string>
     <string name="kg_wrong_pin_warning_one">Dar turite 1 bandymą</string>
     <string name="loading_text">Įkeliama...</string>
-    <string name="long_press_power_navigation_assist_content">"Paspauskite ir palaikykite \"maitinimo mygtuką\" 
-, kad įjungtumėte pagalbinę programą"</string>
+    <string name="long_press_power_navigation_assist_content">"Kad įjungtumėte balso asistentą, paspauskite ir palaikykite \"maitinimo mygtuką\" 
+"</string>
     <string name="long_press_power_navigation_power_content">Jei norite išjungti, vienu metu paspauskite \"maitinimo\" ir \"garsumo didinimo\" mygtukus</string>
     <string name="long_press_power_navigation_setting_button">Koreguoti nustatymus</string>
     <string name="maxxaudio_disable">Išjungti</string>
     <string name="maxxaudio_enable">Įjungti</string>
+    <string name="mhs_app">Atidaryti „My Verizon“</string>
+    <string name="mhs_call_back_error">Duomenų ryšys negalimas.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_data_off_alert">"Jei nesate prisijungę prie „Wi-Fi“, negalėsite naudotis internetu, el. paštu ir kitomis programomis, kurioms reikalingas duomenų ryšys.
 
@@ -100,6 +103,12 @@ Išjungti mobiliųjų duomenų ryšį?"</string>
 
 Išjungti mobiliųjų duomenų ryšį?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
+    <string name="mobile_hotspot">Mobilusis interneto prieigos taškas</string>
+    <string name="mobile_hotspot_airplane_off_error">Jei norite įjungti mobilųjį interneto prieigos tašką, išjunkite lėktuvo režimą</string>
+    <string name="mobile_hotspot_authoration_error">"Jei norite naudoti mobilųjį interneto prieigos tašką, turite užsisakyti mobiliojo interneto prieigos taško paslaugas.
+
+Jei norite užsisakyti mobiliojo interneto prieigos taško paslaugą, apsilankykite „my verizon“ arba skambinkite į klientų aptarnavimo centrą numeriu (800) 922 0204."</string>
+    <string name="mobile_hotspot_data_off_error">Jei norite įjungti mobilųjį interneto prieigos tašką, įjunkite mobiliuosius duomenis</string>
     <string name="nav_bar_guide_positive">SUPRATAU</string>
     <string name="nav_bar_guide_title">Braukite nuo apačios, kad pasirodytų naršymo juosta. Jei naršymo juostos slėpti nebenorite, bakstelėkite čia.</string>
     <string name="non_op_earphone_notification_content">„OnePlus“ siūlo keletą naujų jūsų ausinėms skirtų funkcijų. Paspauskite pranešimą, kad išbandytumėte.</string>
@@ -107,9 +116,9 @@ Išjungti mobiliųjų duomenų ryšį?"</string>
     <string name="notification_content_disable_button">Palieskite, kad išjungtumėte</string>
     <string name="notification_content_disable_button_in_nav">Užrakinus HW mygtukus, naršymo juosta išjungiama</string>
     <string name="notification_title_disable_button">HW MYGTUKAI UŽRAKINTI</string>
-    <string name="ok">Gerai</string>
+    <string name="ok">GERAI</string>
     <string name="oneplus_laboratory_added_toast">Sveikiname! „OnePlus“ laboratorija įkelta į parametrus</string>
-    <string name="oneplus_not_show">Daugiau šito nerodyti</string>
+    <string name="oneplus_not_show">Daugiau neberodyti</string>
     <string name="oneplus_screen_features_not_available_toast">Įjungus, ekrano funkcijos, pavyzdžiui, kalibravimo funkcija, neveiks</string>
     <string name="oneplus_threekey_navigation_disturb_changed">Pasikeitė „Netrukdyti“!</string>
     <string name="oneplus_threekey_navigation_next">KITAS</string>
@@ -163,8 +172,8 @@ Išjungti mobiliųjų duomenų ryšį?"</string>
     <string name="overheat_dialog_red_message">Kad temperatūra sumažėtų, bus išjungti visi programėlių procesai</string>
     <string name="overheat_dialog_title">Jūsų telefono temperatūra per aukšta</string>
     <string name="overheat_notification_alert">Jūsų telefono temperatūra per aukšta, todėl temperatūrai sumažinti išjungtos daug energijos vartojančios funkcijos</string>
-    <string name="overheat_notification_resume">Telefono temperatūra atkurta, o telefoną dabar galima naudoti įprastai</string>
-    <string name="overheat_notification_title_resume">Telefono temperatūra atkurta</string>
+    <string name="overheat_notification_resume">Telefono temperatūra atstatyta ir telefoną dabar galima naudoti įprastai</string>
+    <string name="overheat_notification_title_resume">Telefono temperatūra atstatyta</string>
     <string name="overheat_toast_content">Jūsų telefono temperatūra per aukšta, todėl temperatūrai sumažinti išjungtos daug energijos vartojančios funkcijos</string>
     <string name="permission_btn_text_denied">Išeiti</string>
     <string name="permission_btn_text_grant">Gerai</string>
@@ -223,7 +232,7 @@ Išjungti mobiliųjų duomenų ryšį?"</string>
     <string name="recents_deep_clean_option">Gilus išvalymas</string>
     <string name="recents_empty_no_apps_open">Nėra atidarytų programėlių</string>
     <string name="recents_empty_recently_closed">Neseniai uždarytos programėlės</string>
-    <string name="recents_normal_clean_description">Išvalykite užduočių sąrašą ir talpyklą neišvalant fone veikiančių procesų.</string>
+    <string name="recents_normal_clean_description">Išvalyti užduočių sąrašą ir podėlį, neišjungiant foninių procesų.</string>
     <string name="recents_normal_clean_option">Įprastas valymas</string>
     <string name="recents_option_note">Šį parametrą galite pakeisti išplėstinių -> parametrų lange.</string>
     <string name="recents_option_title">Kaip norite elgtis?</string>

@@ -287,7 +287,7 @@ Aktifkan mode Pesawat?"</string>
 Aktifkan mode Pesawat?"</string>
     <string name="alarm_template">pukul %1$s</string>
     <string name="alarm_template_far">pada %1$s</string>
-    <string name="alert_button_cancel">BATALKAN</string>
+    <string name="alert_button_cancel">BATAL</string>
     <string name="alert_button_settings">PENGATURAN</string>
     <string name="alert_message_assisted_dialing">Tidak dapat mendeteksi negara rujukan dari kartu SIM Anda. Silakan pilih negara rujukan secara manual.</string>
     <string name="alert_title_assisted_dialing">Memanggil Nomor Lewat Asisten</string>
@@ -566,6 +566,7 @@ Jika Anda melanjutkan, tarif penggunaan data mungkin berlaku."</string>
     <string name="development_settings_summary">Menyetel opsi untuk pengembangan apl</string>
     <string name="development_settings_title">Opsi developer</string>
     <string name="device_services">Layanan Perangkat</string>
+    <string name="dialog_mhs_error">Mohon Tunggu selama memverifikasi..</string>
     <string name="direct_boot_unaware_dialog_message">Catatan: Setelah boot ulang, aplikasi ini tidak dapat dimulai hingga kunci ponsel dibuka</string>
     <string name="disable_carrier_button_text">Nonaktifkan eSIM</string>
     <string name="disable_overlays">Nonaktifkan lapisan HW</string>
@@ -604,7 +605,7 @@ Jika Anda melanjutkan, tarif penggunaan data mungkin berlaku."</string>
     <string name="enable_terminal_summary">Aktifkan aplikasi terminal yang menawarkan akses kerangka lokal</string>
     <string name="enable_terminal_title">Terminal lokal</string>
     <string name="enabled_by_admin">Diaktifkan oleh admin</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Akhiri</string>
     <string name="error_disable_esim_msg">eSIM tidak dapat dinonaktifkan karena terjadi error.</string>
     <string name="error_disable_esim_title">Tidak dapat menonaktifkan eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -629,7 +630,7 @@ Jika Anda melanjutkan, tarif penggunaan data mungkin berlaku."</string>
     <string name="face_unlock_timeout">Terlalu banyak percobaan gagal. Coba lagi nanti</string>
     <string name="failed_to_open_app_settings_toast">Gagal membuka setelan untuk %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Sentuh sensor sidik jari</string>
-    <string name="fingerprint_not_found">Cobalah lagi</string>
+    <string name="fingerprint_not_found">Coba lagi</string>
     <string name="force_allow_on_external">Paksa izinkan aplikasi di eksternal</string>
     <string name="force_allow_on_external_summary">Membuat semua aplikasi dapat ditulis ke penyimpanan eksternal, terlepas dari nilai manifes</string>
     <string name="force_msaa">Paksa 4x MSAA</string>
@@ -953,7 +954,7 @@ Coba lagi dalam %2$d detik."</string>
     <string name="lockscreen_unlock_left">Pintasan kiri juga membuka kunci</string>
     <string name="lockscreen_unlock_right">Pintasan kanan juga membuka kunci</string>
     <string name="long_press_power_navigation_assist_content">"Tekan dan tahan \"tombol daya\" 
-untuk Apl Asisten"</string>
+untuk Asisten Suara"</string>
     <string name="long_press_power_navigation_power_content">Tekan \"tombol daya\" dan \"tombol volume naik\" secara bersamaan untuk mematikan</string>
     <string name="long_press_power_navigation_setting_button">Ubah pengaturan</string>
     <string name="manage_bubbles_text">Kelola</string>
@@ -969,6 +970,8 @@ untuk Apl Asisten"</string>
     <string name="media_projection_remember_text">Jangan tampilkan lagi</string>
     <string name="media_transfer_this_device_name">Perangkat ini</string>
     <string name="menu_ime">Pengalih keyboard</string>
+    <string name="mhs_app">Buka My Verizon</string>
+    <string name="mhs_call_back_error">Sambungan data tidak tersedia.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Data seluler</string>
@@ -985,6 +988,12 @@ Matikan koneksi data seluler?"</string>
 Matikan koneksi data seluler?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Hotspot Seluler</string>
+    <string name="mobile_hotspot_airplane_off_error">Matikan mode pesawat untuk dapat mengaktifkan Hotspot</string>
+    <string name="mobile_hotspot_authoration_error">"Agar dapat menggunakan Hotspot Seluler, Anda perlu berlangganan Layanan Hotspot Seluler.
+
+Untuk berlangganan Hotspot Seluler kunjungi my verizon atau telepon layanan pelanggan di (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Nyalakan Data seluler untuk dapat mengaktifkan Hotspot</string>
     <string name="mock_location_app">Pilih aplikasi lokasi palsu</string>
     <string name="mock_location_app_not_set">Tidak ada aplikasi lokasi palsu yang disetel</string>
     <string name="mock_location_app_set">Aplikasi lokasi palsu: %1$s</string>
@@ -1124,11 +1133,11 @@ Anda juga tersambung ke VPN, yang dapat memantau aktivitas jaringan."</string>
     <string name="notification_unblockable_desc">Notifikasi ini tidak dapat diubah.</string>
     <string name="oem_unlock_enable">Buka kunci OEM</string>
     <string name="oem_unlock_enable_summary">Izinkan bootloader dibuka kuncinya</string>
-    <string name="ok">OK</string>
+    <string name="ok">OKE</string>
     <string name="okay">Oke</string>
     <string name="oneplus_laboratory_added_toast">Selamat! OnePlus laboratory telah ditambahkan ke Pengaturan</string>
     <string name="oneplus_not_show">Jangan tampilkan lagi</string>
-    <string name="oneplus_screen_features_not_available_toast">Jika fungsi ini diaktifkan, fitur seperti kalibrasi layar tidak akan tersedia</string>
+    <string name="oneplus_screen_features_not_available_toast">Saat fungsi ini diaktifkan, beberapa fitur seperti kalibrasi layar tidak dapat digunakan</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'Jangan Ganggu' diubah!"</string>
     <string name="oneplus_threekey_navigation_next">BERIKUTNYA</string>
     <string name="oneplus_threekey_navigation_silence">Hening total</string>
@@ -1142,7 +1151,7 @@ Anda juga tersambung ke VPN, yang dapat memantau aktivitas jaringan."</string>
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Memasangkan...</string>
     <string name="op_earphone_connected_fail">Gagal Memasangkan. Anda dapat memeriksa status headset dan Bluetooth.</string>
-    <string name="op_earphone_connected_success">Berpasangan. Ketuk untuk mengatur lainnya.</string>
+    <string name="op_earphone_connected_success">Dipasangkan. Ketuk untuk mengatur selengkapnya.</string>
     <string name="op_earphone_device">KETUK UNTUK MEMASANGKAN</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Geser ke bawah untuk layanan darurat</string>
@@ -1191,13 +1200,13 @@ Anda juga tersambung ke VPN, yang dapat memantau aktivitas jaringan."</string>
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Keluaran media</string>
     <string name="overheat_dialog_orange_button">Lakukan sekarang</string>
-    <string name="overheat_dialog_orange_message">"Operasi berikut akan dilakukan untuk menurunkan suhu
-1.Kurangi kecerahan
-2.Matikan hotspot
-3.Matikan senter"</string>
+    <string name="overheat_dialog_orange_message">"Operasi berikut akan dijalankan untuk menurunkan suhu
+1.Mengurangi kecerahan layar
+2.Menonaktifkan hotspot
+3.Mematikan senter"</string>
     <string name="overheat_dialog_purple_button">Matikan sekarang</string>
-    <string name="overheat_dialog_purple_message">Ponsel akan mati setelah 5 detik</string>
-    <string name="overheat_dialog_red_message">Akan menghapus semua proses aplikasi untuk menurunkan suhu</string>
+    <string name="overheat_dialog_purple_message">Ponsel akan dimatikan setelah 5 detik</string>
+    <string name="overheat_dialog_red_message">Akan membersihkan semua proses aplikasi untuk menurunkan suhu</string>
     <string name="overheat_dialog_title">Suhu ponsel Anda terlalu tinggi</string>
     <string name="overheat_notification_alert">Suhu ponsel terlalu tinggi, dan fungsi yang banyak mengonsumsi daya dimatikan untuk menurunkannya</string>
     <string name="overheat_notification_resume">Suhu ponsel telah dipulihkan dan ponsel dapat digunakan seperti biasa</string>
@@ -1380,13 +1389,13 @@ Anda juga tersambung ke VPN, yang dapat memantau aktivitas jaringan."</string>
     <string name="quick_settings_game_mode_demo_all">notifikasi akan diblokir dan tombol kapasitif akan dikunci</string>
     <string name="quick_settings_game_mode_demo_button">tombol kapasitif akan dikunci</string>
     <string name="quick_settings_game_mode_demo_notification">notifikasi akan diblokir</string>
-    <string name="quick_settings_game_mode_label">Mode game</string>
+    <string name="quick_settings_game_mode_label">Mode Game</string>
     <string name="quick_settings_game_mode_summary_off">Mode Game nonaktif, ketuk untuk mengaktifkan</string>
     <string name="quick_settings_game_mode_summary_on">Mode Game aktif, ketuk untuk menonaktifkan</string>
     <string name="quick_settings_header_onboarding_text">Sentuh lama ikon untuk opsi lainnya</string>
     <string name="quick_settings_hotspot_label">Hotspot</string>
     <string name="quick_settings_hotspot_no_password">Buka Jaringan</string>
-    <string name="quick_settings_hotspot_password">Kata sandi</string>
+    <string name="quick_settings_hotspot_password">Kata Sandi</string>
     <string name="quick_settings_hotspot_secondary_label_data_saver_enabled">Penghemat Kuota aktif</string>
     <string name="quick_settings_hotspot_secondary_label_transient">Mengaktifkan…</string>
     <string name="quick_settings_hotspot_secure_lock">Buka kunci perangkat untuk menampilkan kata sandi</string>
@@ -1451,7 +1460,7 @@ Penghemat baterai"</string>
     <string name="recents_deep_clean_option">Pembersihan total</string>
     <string name="recents_empty_no_apps_open">Tidak ada aplikasi terbuka</string>
     <string name="recents_empty_recently_closed">Apl yang baru ditutup</string>
-    <string name="recents_normal_clean_description">Membersihkan daftar tugas dan tembolok tanpa membersihkan proses latar belakang.</string>
+    <string name="recents_normal_clean_description">Membersihkan daftar tugas dan cache tanpa membersihkan proses latar belakang.</string>
     <string name="recents_normal_clean_option">Pembersihan normal</string>
     <string name="recents_option_note">Anda dapat mengubah ini di Pengaturan > Lanjutkan.</string>
     <string name="recents_option_title">Mana yang lebih Anda suka</string>

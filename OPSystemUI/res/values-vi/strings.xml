@@ -566,6 +566,7 @@ Nếu tiếp tục, bạn có thể bị tính phí sử dụng dữ liệu."</s
     <string name="development_settings_summary">Đặt tùy chọn cho phát triển ứng dụng</string>
     <string name="development_settings_title">Tùy chọn nhà phát triển</string>
     <string name="device_services">Dịch vụ cho thiết bị</string>
+    <string name="dialog_mhs_error">Vui lòng đợi khi đang xác minh..</string>
     <string name="direct_boot_unaware_dialog_message">Lưu ý: Sau khi khởi động lại, ứng dụng này không thể khởi động cho đến khi bạn mở khóa điện thoại</string>
     <string name="disable_carrier_button_text">Vô hiệu hóa eSIM</string>
     <string name="disable_overlays">Tắt các lớp phủ phần cứng</string>
@@ -604,7 +605,7 @@ Nếu tiếp tục, bạn có thể bị tính phí sử dụng dữ liệu."</s
     <string name="enable_terminal_summary">Bật ứng dụng dòng lệnh cung cấp quyền truy cập vỏ cục bộ</string>
     <string name="enable_terminal_title">Dòng lệnh cục bộ</string>
     <string name="enabled_by_admin">Do quản trị viên bật</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Kết thúc</string>
     <string name="error_disable_esim_msg">Không thể tắt eSIM do lỗi.</string>
     <string name="error_disable_esim_title">Không thể tắt eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Hãy thử lại sau %2$d giây."</string>
     <string name="lockscreen_unlock_left">Lối tắt bên trái cũng mở khóa</string>
     <string name="lockscreen_unlock_right">Lối tắt bên phải cũng mở khóa</string>
     <string name="long_press_power_navigation_assist_content">"Nhấn và giữ \"nút nguồn\" 
-để vào Ứng dụng Trợ lý"</string>
+để vào Hỗ trợ bằng Giọng nói"</string>
     <string name="long_press_power_navigation_power_content">Nhấn đồng thời \"nút nguồn\" và \"nút tăng âm lượng\" để tắt nguồn</string>
     <string name="long_press_power_navigation_setting_button">Sửa đổi cài đặt</string>
     <string name="manage_bubbles_text">Quản lý</string>
@@ -969,6 +970,8 @@ Hãy thử lại sau %2$d giây."</string>
     <string name="media_projection_remember_text">Không hiển thị lại</string>
     <string name="media_transfer_this_device_name">Thiết bị này</string>
     <string name="menu_ime">Trình chuyển đổi bàn phím</string>
+    <string name="mhs_app">Mở Verizon của tôi</string>
+    <string name="mhs_call_back_error">Kết nối dữ liệu không khả dụng.</string>
     <string name="mobile263">Chuyển vùng OnePlus</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Dữ liệu di động</string>
@@ -985,6 +988,12 @@ Tắt kết nối dữ liệu di động?"</string>
 Tắt kết nối dữ liệu di động?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Điểm truy cập Di động</string>
+    <string name="mobile_hotspot_airplane_off_error">Để bật Điểm truy cập, vui lòng tắt chế độ máy bay</string>
+    <string name="mobile_hotspot_authoration_error">"Để sử dụng Điểm truy cập Di động, bạn sẽ cần phải đăng ký Dịch vụ Điểm truy cập Di động.
+
+Để đăng ký Điểm truy cập Di động, vui lòng truy cập Verizon của tôi hoặc gọi điện đến bộ phận chăm sóc khách hàng theo số (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Để bật Điểm truy cập, vui lòng bật Dữ liệu di động</string>
     <string name="mock_location_app">Chọn ứng dụng vị trí mô phỏng</string>
     <string name="mock_location_app_not_set">Chưa đặt ứng dụng vị trí mô phỏng nào</string>
     <string name="mock_location_app_set">Ứng dụng vị trí mô phỏng: %1$s</string>
@@ -1380,7 +1389,7 @@ Bạn cũng được kết nối với VPN. Dịch vụ này có thể giám sá
     <string name="quick_settings_game_mode_demo_all">các thông báo sẽ bị chặn và các nút điện dung sẽ bị khóa</string>
     <string name="quick_settings_game_mode_demo_button">các nút điện dung sẽ bị khóa</string>
     <string name="quick_settings_game_mode_demo_notification">các thông báo sẽ bị chặn</string>
-    <string name="quick_settings_game_mode_label">Chế độ Chơi Game</string>
+    <string name="quick_settings_game_mode_label">Chế độ chơi game</string>
     <string name="quick_settings_game_mode_summary_off">Chế độ chơi game đang tắt, chạm để bật</string>
     <string name="quick_settings_game_mode_summary_on">Chế độ chơi game đang bật, chạm để tắt</string>
     <string name="quick_settings_header_onboarding_text">Chạm và giữ các biểu tượng để xem thêm tùy chọn khác</string>

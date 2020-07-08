@@ -566,6 +566,7 @@
     <string name="development_settings_summary">ตั้งค่าตัวเลือกสำหรับการพัฒนาแอปพลิเคชัน</string>
     <string name="development_settings_title">สำหรับนักพัฒนาซอฟต์แวร์</string>
     <string name="device_services">บริการของอุปกรณ์</string>
+    <string name="dialog_mhs_error">กำลังรอในขณะที่ยืนยัน..</string>
     <string name="direct_boot_unaware_dialog_message">หมายเหตุ: หลังจากเริ่มต้นใหม่ แอปนี้จะไม่สามารถเริ่มการทำงานได้จนกว่าคุณจะปลดล็อกโทรศัพท์</string>
     <string name="disable_carrier_button_text">ปิดใช้ eSIM</string>
     <string name="disable_overlays">ปิดใช้งานการวางซ้อน HW</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">เปิดใช้งานแอปเทอร์มินัลที่ให้การเข้าถึงเชลล์ในตัวเครื่อง</string>
     <string name="enable_terminal_title">เทอร์มินัลในตัวเครื่อง</string>
     <string name="enabled_by_admin">เปิดใช้โดยผู้ดูแลระบบ</string>
-    <string name="end_call">End</string>
+    <string name="end_call">สิ้นสุด</string>
     <string name="error_disable_esim_msg">ปิดใช้ eSIM ไม่ได้เนื่องจากมีข้อผิดพลาด</string>
     <string name="error_disable_esim_title">ปิดใช้ eSIM ไม่ได้</string>
     <string name="ethernet_label">อีเทอร์เน็ต</string>
@@ -953,7 +954,7 @@
     <string name="lockscreen_unlock_left">ทางลัดทางซ้ายปลดล็อกได้ด้วย</string>
     <string name="lockscreen_unlock_right">ทางลัดทางขวาปลดล็อกได้ด้วย</string>
     <string name="long_press_power_navigation_assist_content">"กด \"ปุ่มเปิด/ปิด\" ค้างไว้ 
-สำหรับแอปผู้ช่วย"</string>
+สำหรับผู้ช่วยเสียง"</string>
     <string name="long_press_power_navigation_power_content">กด \"ปุ่มเปิด/ปิด\" และ \"ปุ่มเพิ่มระดับเสียง\" ค้างไว้พร้อมกันเพื่อปิดเครื่อง</string>
     <string name="long_press_power_navigation_setting_button">แก้ไขการตั้งค่า</string>
     <string name="manage_bubbles_text">จัดการ</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">ไม่ต้องแสดงข้อความนี้อีก</string>
     <string name="media_transfer_this_device_name">อุปกรณ์นี้</string>
     <string name="menu_ime">ปุ่มสลับแป้นพิมพ์</string>
+    <string name="mhs_app">เปิด My Verizon</string>
+    <string name="mhs_call_back_error">การเชื่อมต่อข้อมูลไม่พร้อมใช้งาน</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s %2$s</string>
     <string name="mobile_data">เน็ตมือถือ</string>
@@ -985,6 +988,12 @@
 ปิดการเชื่อมต่อข้อมูลมือถือหรือไม่"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">ฮอตสปอตมือถือ</string>
+    <string name="mobile_hotspot_airplane_off_error">เพื่อเปิดฮอตสปอต กรุณาปิดโหมดเครื่องบิน</string>
+    <string name="mobile_hotspot_authoration_error">"เพื่อใช้ฮอตสปอตมือถือ คุณจะต้องสมัครใช้งานบริการฮอตสปอตมือถือ
+
+เพื่อสมัครใช้งานฮอตสปอตมือถือ ให้เยี่ยมชม My Verizon หรือโทรหาฝ่ายดูแลลูกค้าที่ (800) 922–0204"</string>
+    <string name="mobile_hotspot_data_off_error">เพื่อเปิดฮอตสปอต กรุณาเปิดข้อมูลมือถือ</string>
     <string name="mock_location_app">เลือกแอปจำลองสถานที่</string>
     <string name="mock_location_app_not_set">ไม่ได้ตั้งค่าแอปจำลองสถานที่</string>
     <string name="mock_location_app_set">แอปจำลองสถานที่: %1$s</string>
@@ -1071,7 +1080,7 @@
     <string name="music_controls_no_title">ไม่มีชื่อ</string>
     <string name="nav_bar">แถบนำทาง</string>
     <string name="nav_bar_default">(ค่าเริ่มต้น)</string>
-    <string name="nav_bar_guide_positive">รับทราบ</string>
+    <string name="nav_bar_guide_positive">เข้าใจแล้ว</string>
     <string name="nav_bar_guide_title">ปัดนิ้วขึ้นจากด้านล่างสุดเพื่อแสดงแถบการนำทาง ในการหยุดซ่อนการนำทาง กรุณาแตะที่นี่</string>
     <string name="nav_bar_layout">การจัดวาง</string>
     <string name="no_application">ไม่มี</string>
@@ -1162,7 +1171,7 @@
     <string name="op_notification_alert_title">สำคัญ</string>
     <string name="op_notification_channel_summary_low">การแจ้งเตือนที่สำคัญน้อยกว่าไม่มีเสียงหรือการสั่น</string>
     <string name="op_notification_section_header_gentle">การแจ้งเตือนอื่นๆ</string>
-    <string name="op_notification_silence_title">อื่น ๆ</string>
+    <string name="op_notification_silence_title">อื่นๆ</string>
     <string name="op_quick_settings_night_display_label">โหมดกลางคืน</string>
     <string name="op_quick_settings_night_display_summary_off">โหมดกลางคืนปิด แตะเพื่อเปิด</string>
     <string name="op_quick_settings_night_display_summary_on">โหมดกลางคืนเปิด แตะเพื่อปิด</string>
@@ -1198,7 +1207,7 @@
     <string name="overheat_dialog_purple_button">ปิดเครื่องทันที</string>
     <string name="overheat_dialog_purple_message">โทรศัพท์จะปิดเครื่องหลังจากผ่านไป 5 วินาที</string>
     <string name="overheat_dialog_red_message">จะมีการล้างการประมวลผลแอปพลิเคชันเพื่อลดอุณหภูมิ</string>
-    <string name="overheat_dialog_title">อุณหภูมิโทรศัพท์ของคุณสูงมาก</string>
+    <string name="overheat_dialog_title">โทรศัพท์ของคุณมีอุณหภูมิสูงมาก</string>
     <string name="overheat_notification_alert">โทรศัพท์ของคุณมีอุณหภูมิสูงมาก และฟังก์ชันต่างๆ ที่ใช้พลังงานสูงจะถูกปิดเพื่อลดอุณหภูมิ</string>
     <string name="overheat_notification_resume">อุณหภูมิของโทรศัพท์กลับสู่สถานะปกติและสามารถใช้โทรศัพท์ได้ตามปกติแล้ว</string>
     <string name="overheat_notification_title_resume">อุณหภูมิของโทรศัพท์กลับสู่สถานะปกติ</string>
@@ -1307,7 +1316,7 @@
     <string name="qs_dnd_until">จนถึง %s</string>
     <string name="qs_edit">แก้ไข</string>
     <string name="qs_panel_life_mode">การใช้ชีวิต</string>
-    <string name="qs_panel_none">ไม่มี</string>
+    <string name="qs_panel_none">ไม่มีเลย</string>
     <string name="qs_panel_set_up">ตั้งค่า</string>
     <string name="qs_panel_work_mode">การทำงาน</string>
     <string name="qs_rearrange">จัดเรียงการตั้งค่าด่วนใหม่</string>
@@ -1380,12 +1389,12 @@
     <string name="quick_settings_game_mode_demo_all">การแจ้งเตือนจะถูกปิดกั้นและปุ่มสัมผัสจะถูกล็อค</string>
     <string name="quick_settings_game_mode_demo_button">ปุ่มสัมผัสจะถูกล็อค</string>
     <string name="quick_settings_game_mode_demo_notification">การแจ้งเตือนจะถูกปิดกั้น</string>
-    <string name="quick_settings_game_mode_label">โหมดกำลังเล่นเกม</string>
+    <string name="quick_settings_game_mode_label">โหมดการเล่นเกม</string>
     <string name="quick_settings_game_mode_summary_off">โหมดการเล่นเกมปิด แตะเพื่อเปิด</string>
     <string name="quick_settings_game_mode_summary_on">โหมดการเล่นเกมเปิด แตะเพื่อปิด</string>
     <string name="quick_settings_header_onboarding_text">แตะไอคอนค้างไว้เพื่อดูตัวเลือกอื่นๆ</string>
     <string name="quick_settings_hotspot_label">ฮอตสปอต</string>
-    <string name="quick_settings_hotspot_no_password">เปิดเน็ตเวิร์ก</string>
+    <string name="quick_settings_hotspot_no_password">เปิดเครือข่าย</string>
     <string name="quick_settings_hotspot_password">รหัสผ่าน</string>
     <string name="quick_settings_hotspot_secondary_label_data_saver_enabled">เปิดประหยัดเน็ตอยู่</string>
     <string name="quick_settings_hotspot_secondary_label_transient">กำลังเปิด...</string>
@@ -1411,8 +1420,8 @@
     <string name="quick_settings_op_car_mode_dnd_summary_on">โหมด DND รถยนต์เปิดอยู่ แตะเพื่อปิด</string>
     <string name="quick_settings_power_saving_label">ตัวประหยัดแบตเตอรี่</string>
     <string name="quick_settings_read_mode_label">โหมดการอ่าน</string>
-    <string name="quick_settings_read_mode_summary_off">Reading Mode ปิด แตะเพื่อเปิด</string>
-    <string name="quick_settings_read_mode_summary_on">Reading Mode เปิด แตะเพื่อปิด</string>
+    <string name="quick_settings_read_mode_summary_off">โหมดการอ่านปิด แตะเพื่อเปิด</string>
+    <string name="quick_settings_read_mode_summary_on">โหมดการอ่านเปิด แตะเพื่อปิด</string>
     <string name="quick_settings_reset_confirmation_button">ซ่อน</string>
     <string name="quick_settings_reset_confirmation_message">จะปรากฏอีกครั้งเมื่อคุณเปิดใช้ในการตั้งค่าครั้งถัดไป</string>
     <string name="quick_settings_reset_confirmation_title">ซ่อน %1$s ไหม</string>
@@ -1451,7 +1460,7 @@
     <string name="recents_deep_clean_option">ล้างแบบ Deep</string>
     <string name="recents_empty_no_apps_open">ไม่มีแอปพลิเคชั่นเปิดอยู่</string>
     <string name="recents_empty_recently_closed">แอปที่ปิดไปล่าสุด</string>
-    <string name="recents_normal_clean_description">ล้างรายการงานและแคชโดยไม่ล้างการประมวลผลในเบื้องหลัง</string>
+    <string name="recents_normal_clean_description">ล้างรายการงานและแคชโดยไม่ต้องล้างการประมวลผลเบื้องหลัง</string>
     <string name="recents_normal_clean_option">การล้างปกติ</string>
     <string name="recents_option_note">คุณสามารถเปลี่ยนแปลงได้ใน การตั้งค่า -> ขั้นสูง</string>
     <string name="recents_option_title">คุณชอบวิธีใดมากกว่า</string>
@@ -1511,7 +1520,7 @@
     <string name="screenrecord_start_label">เริ่มต้นการบันทึก</string>
     <string name="screenrecord_stop_label">หยุด</string>
     <string name="screenrecord_taps_label">แสดงการแตะ</string>
-    <string name="screenshot_delete_confirmation">ลบภาพหน้าจอแล้ว</string>
+    <string name="screenshot_delete_confirmation">ลบสกรีนช็อตแล้ว</string>
     <string name="screenshot_failed_title">บันทึกภาพหน้าจอไม่ได้</string>
     <string name="screenshot_failed_to_capture_text">แอปหรือองค์กรของคุณไม่อนุญาตให้จับภาพหน้าจอ</string>
     <string name="screenshot_failed_to_save_text">บันทึกภาพหน้าจอไม่ได้เนื่องจากพื้นที่เก็บข้อมูลมีจำกัด</string>
@@ -1745,7 +1754,7 @@
     <string name="volume_dialog_title">ตัวควบคุมระดับเสียง %s</string>
     <string name="volume_dnd_silent">ทางลัดปุ่มปรับระดับเสียง</string>
     <string name="volume_footer_no_disturb">ห้ามรบกวน</string>
-    <string name="volume_footer_ring">เสียงเข้า</string>
+    <string name="volume_footer_ring">เสียง</string>
     <string name="volume_footer_slient">เงียบ</string>
     <string name="volume_footer_vibrate">ไม่มีเสียง (สั่น)</string>
     <string name="volume_odi_captions_content_description">การวางซ้อนคำบรรยายภาพ</string>

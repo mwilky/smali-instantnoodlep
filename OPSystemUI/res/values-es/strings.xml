@@ -293,7 +293,7 @@
     <string name="alert_title_assisted_dialing">Marcación asistida</string>
     <string name="allow_mock_location">Ubicaciones simuladas</string>
     <string name="allow_mock_location_summary">Permitir ubicaciones simuladas</string>
-    <string name="allow_notification">Permite las notificaciones</string>
+    <string name="allow_notification">Permitir notificaciones</string>
     <string name="always_use_accessory">Abrir siempre %1$s al conectar %2$s</string>
     <string name="always_use_device">Abrir siempre %1$s al conectar %2$s</string>
     <string name="animator_duration_scale_title">Escala de duración de animación</string>
@@ -566,6 +566,7 @@ Si vuelves a activar el uso de datos, es posible que se apliquen cargos."</strin
     <string name="development_settings_summary">Establecer opciones de desarrollo de aplicaciones</string>
     <string name="development_settings_title">Opciones para desarrolladores</string>
     <string name="device_services">Servicios del dispositivo</string>
+    <string name="dialog_mhs_error">Espera mientras comprobamos..</string>
     <string name="direct_boot_unaware_dialog_message">Nota: Después de reiniciar, tienes que desbloquear el teléfono para que esta aplicación se pueda iniciar</string>
     <string name="disable_carrier_button_text">Inhabilita la tarjeta eSIM</string>
     <string name="disable_overlays">Inhabilitar superposiciones de hardware</string>
@@ -604,7 +605,7 @@ Si vuelves a activar el uso de datos, es posible que se apliquen cargos."</strin
     <string name="enable_terminal_summary">Habilitar aplicación de terminal que ofrece acceso a shell local</string>
     <string name="enable_terminal_title">Terminal local</string>
     <string name="enabled_by_admin">Habilitada por el administrador</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Finalizar</string>
     <string name="error_disable_esim_msg">No se puede mostrar la tarjeta eSIM debido a un error.</string>
     <string name="error_disable_esim_title">No se puede inhabilitar la tarjeta eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -629,7 +630,7 @@ Si vuelves a activar el uso de datos, es posible que se apliquen cargos."</strin
     <string name="face_unlock_timeout">Demasiados intentos fallidos. Inténtalo de nuevo más tarde</string>
     <string name="failed_to_open_app_settings_toast">Error al abrir los ajustes de %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Toca el sensor de huellas digitales</string>
-    <string name="fingerprint_not_found">Intentar de nuevo</string>
+    <string name="fingerprint_not_found">Inténtalo de nuevo</string>
     <string name="force_allow_on_external">Forzar permitir aplicaciones de forma externa</string>
     <string name="force_allow_on_external_summary">Hacer que cualquier aplicación se pueda escribir en un dispositivo de almacenamiento externo independientemente de los valores definidos</string>
     <string name="force_msaa">Forzar MSAA 4x</string>
@@ -953,7 +954,7 @@ Vuelve a intentarlo dentro de %2$d segundos."</string>
     <string name="lockscreen_unlock_left">Desbloquear también con el acceso directo a la izquierda</string>
     <string name="lockscreen_unlock_right">Desbloquear también con el acceso directo a la derecha</string>
     <string name="long_press_power_navigation_assist_content">"Mantén pulsado el \"botón de encendido\" 
-para acceder a la aplicación de asistente"</string>
+para acceder al asistente de voz"</string>
     <string name="long_press_power_navigation_power_content">Pulsa el \"botón de encendido\" y el \"botón de subir volumen\" simultáneamente para apagar</string>
     <string name="long_press_power_navigation_setting_button">Modificar ajustes</string>
     <string name="manage_bubbles_text">Gestionar</string>
@@ -969,6 +970,8 @@ para acceder a la aplicación de asistente"</string>
     <string name="media_projection_remember_text">No volver a mostrar</string>
     <string name="media_transfer_this_device_name">Este dispositivo</string>
     <string name="menu_ime">Cambio de teclado</string>
+    <string name="mhs_app">Abrir Mi Verizon</string>
+    <string name="mhs_call_back_error">Conexión de datos no disponible.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Datos móviles</string>
@@ -985,6 +988,12 @@ para acceder a la aplicación de asistente"</string>
 ¿Desactivar la conexión de datos móviles?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s ‑ %2$s</string>
+    <string name="mobile_hotspot">Punto de acceso móvil</string>
+    <string name="mobile_hotspot_airplane_off_error">Para activar el punto de acceso, desactiva el modo avión</string>
+    <string name="mobile_hotspot_authoration_error">"Para usar el punto de acceso móvil, tienes que suscribirte a los servicios de acceso móvil.
+
+Para suscribirte al punto de acceso móvil, visita Mi Verizon o llama al servicio de atención al cliente en (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Para activar el punto de acceso, activa los datos móviles</string>
     <string name="mock_location_app">Elegir aplicación para simular ubicación</string>
     <string name="mock_location_app_not_set">Aplicación para simular ubicación no establecida</string>
     <string name="mock_location_app_set">Aplicación para simular ubicación: %1$s</string>
@@ -1379,7 +1388,7 @@ También estás conectado a una red VPN, que puede supervisar tu actividad de re
     <string name="quick_settings_game_mode_demo">Cuando el modo de juego está activado, %s, puedes desactivarlo en el centro de control o tocando la notificación.</string>
     <string name="quick_settings_game_mode_demo_all">las notificaciones y los botones capacitivos se bloquearán</string>
     <string name="quick_settings_game_mode_demo_button">los botones capacitivos se bloquearán</string>
-    <string name="quick_settings_game_mode_demo_notification">las notificaciones se bloquearán</string>
+    <string name="quick_settings_game_mode_demo_notification">las notificaciones se bloquarán</string>
     <string name="quick_settings_game_mode_label">Modo de juego</string>
     <string name="quick_settings_game_mode_summary_off">Modo de juego desactivado. Tocar para activar</string>
     <string name="quick_settings_game_mode_summary_on">Modo de juego activado. Tocar para desactivar</string>
@@ -1424,7 +1433,7 @@ También estás conectado a una red VPN, que puede supervisar tu actividad de re
     <string name="quick_settings_rssi_label">RSSI</string>
     <string name="quick_settings_secondary_label_until">Hasta las %s</string>
     <string name="quick_settings_settings_label">Ajustes</string>
-    <string name="quick_settings_switch_user_storage_insufficient">El almacenamiento está lleno, no se puede cambiar de usuario</string>
+    <string name="quick_settings_switch_user_storage_insufficient">El almacenamiento está lleno, no se puede cambiar el usuario</string>
     <string name="quick_settings_tethering_label">Compartir conexión</string>
     <string name="quick_settings_time_label">Hora</string>
     <string name="quick_settings_ui_mode_night_label">Tema oscuro</string>
@@ -1764,7 +1773,7 @@ Cualquier usuario puede actualizar las aplicaciones del resto de usuarios."</str
     <string name="volume_stream_content_description_vibrate">%1$s. Toca para poner el dispositivo en vibración. Los servicios de accesibilidad pueden silenciarse.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Toca para activar la vibración.</string>
     <string name="volume_up_silent">Salir de No molestar al subir el volumen</string>
-    <string name="volume_vibrate">Vibrar</string>
+    <string name="volume_vibrate">Vibración</string>
     <string name="volume_zen_end_now">Desactivar</string>
     <string name="vpn_footer">Puede que la red esté supervisada</string>
     <string name="vpn_settings_not_available">Los ajustes de VPN no están disponibles para este usuario</string>
@@ -1801,12 +1810,12 @@ Cualquier usuario puede actualizar las aplicaciones del resto de usuarios."</str
     <string name="wifi_verbose_logging">Habilitar registro de Wi-Fi detallado</string>
     <string name="wifi_verbose_logging_summary">Aumentar el nivel de registro de Wi-Fi y mostrar por SSID RSSI en el selector Wi-Fi</string>
     <string name="window_animation_scale_title">Escala de animación de ventana</string>
-    <string name="work_life_balance_mode">Equilibrio entre el trabajo y la vida personal</string>
+    <string name="work_life_balance_mode">Equilibrio entre trabajo y vida personal</string>
     <string name="yes_bubbles">Permitir</string>
     <string name="zen_alarm_warning">No oirás la próxima alarma (%1$s)</string>
     <string name="zen_alarm_warning_indef">No oirás la próxima alarma (%1$s) a menos que desactives esta opción antes</string>
     <string name="zen_alarms_introduction">No te molestarán los sonidos ni las vibraciones, excepto las alarmas. Seguirás escuchando el contenido que quieras reproducir, como música, vídeos y juegos.</string>
-    <string name="zen_important_interruptions">Notificaciones prioritarias</string>
+    <string name="zen_important_interruptions">Notificaciones de prioridad</string>
     <string name="zen_interruption_level_all">Todas las notificaciones</string>
     <string name="zen_interruption_level_priority">Solo interrupciones prioritarias</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

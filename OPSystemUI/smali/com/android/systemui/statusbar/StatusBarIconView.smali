@@ -1098,41 +1098,8 @@
 .end method
 
 .method private updateDecorColor()V
-    .locals 3
+    .locals 0
 
-    iget v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDecorColor:I
-
-    iget v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDarkAmount:F
-
-    const/4 v2, -0x1
-
-    invoke-static {v0, v2, v1}, Lcom/android/systemui/statusbar/notification/NotificationUtils;->interpolateColors(IIF)I
-
-    move-result v0
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDotPaint:Landroid/graphics/Paint;
-
-    invoke-virtual {v1}, Landroid/graphics/Paint;->getColor()I
-
-    move-result v1
-
-    if-eq v1, v0, :cond_0
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDotPaint:Landroid/graphics/Paint;
-
-    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
-
-    iget v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDotAppearAmount:F
-
-    const/4 v1, 0x0
-
-    cmpl-float v0, v0, v1
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V
-
-    :cond_0
     return-void
 .end method
 
@@ -1240,7 +1207,7 @@
 
     iget v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mCurrentSetColor:I
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mMatrixColorFilter:Landroid/graphics/ColorMatrixColorFilter;
 
@@ -1271,6 +1238,29 @@
 
     move-result v0
 
+    iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDotPaint:Landroid/graphics/Paint;
+
+    invoke-virtual {v1}, Landroid/graphics/Paint;->getColor()I
+
+    move-result v1
+
+    if-eq v1, v0, :cond_1
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDotPaint:Landroid/graphics/Paint;
+
+    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
+
+    iget v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDotAppearAmount:F
+
+    const/4 v2, 0x0
+
+    cmpl-float v1, v1, v2
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/widget/ImageView;->invalidate()V
+
+    :cond_1
     iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mMatrix:[F
 
     const v2, 0x3f2b851f    # 0.67f
@@ -1297,7 +1287,7 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDozer:Lcom/android/systemui/statusbar/notification/NotificationIconDozeHelper;
 
     iget v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDarkAmount:F
@@ -1988,7 +1978,7 @@
 
     if-eqz v0, :cond_3
 
-    iget v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mDecorColor:I
+    iget v0, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mCurrentSetColor:I
 
     invoke-static {v0}, Landroid/graphics/Color;->alpha(I)I
 

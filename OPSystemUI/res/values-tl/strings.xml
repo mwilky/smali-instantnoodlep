@@ -293,7 +293,7 @@ I-on ang Airplane mode?"</string>
     <string name="alert_title_assisted_dialing">Assisted Dialing</string>
     <string name="allow_mock_location">Payagan ang mga kunwaring lokasyon</string>
     <string name="allow_mock_location_summary">Payagan ang mga kunwaring lokasyon</string>
-    <string name="allow_notification">Payagan ang mga paunawa</string>
+    <string name="allow_notification">Payagan ang mga notification</string>
     <string name="always_use_accessory">Palaging buksan ang %1$s kapag nakakonekta ang %2$s</string>
     <string name="always_use_device">Palaging buksan ang %1$s kapag nakakonekta ang %2$s</string>
     <string name="animator_duration_scale_title">Scale ng tagal ng animator</string>
@@ -550,7 +550,7 @@ Kung magpapatuloy ka, maaaring may mga singil sa paggamit ng data."</string>
     <string name="debug_monitoring_category">Pagsubaybay</string>
     <string name="debug_networking_category">Networking</string>
     <string name="debug_view_attributes">I-enable ang pagsisiyasat sa attribute na view</string>
-    <string name="delete">Burahin</string>
+    <string name="delete">I-delete</string>
     <string name="demo_mode">Demo mode ng System UI</string>
     <string name="denoise_notification">Mga notipikasyong mababa ang prayoridad</string>
     <string name="description_direction_left">Mag-slide pakaliwa para sa %s.</string>
@@ -566,6 +566,7 @@ Kung magpapatuloy ka, maaaring may mga singil sa paggamit ng data."</string>
     <string name="development_settings_summary">Magtakda ng mga pagpipilian para sa pagbuo ng app</string>
     <string name="development_settings_title">Mga opsyon ng developer</string>
     <string name="device_services">Mga Serbisyo ng Device</string>
+    <string name="dialog_mhs_error">Maghintay habang vine-verify..</string>
     <string name="direct_boot_unaware_dialog_message">"Tandaan: Pagkatapos ng pag-reboot, hindi makakapagsimula ang app na ito hangga't hindi mo ina-unlock ang iyong telepono"</string>
     <string name="disable_carrier_button_text">I-disable ang eSIM</string>
     <string name="disable_overlays">Wag paganahin HW overlay</string>
@@ -604,7 +605,7 @@ Kung magpapatuloy ka, maaaring may mga singil sa paggamit ng data."</string>
     <string name="enable_terminal_summary">Paganahin ang terminal app na nag-aalok ng lokal na shell access</string>
     <string name="enable_terminal_title">Lokal na terminal</string>
     <string name="enabled_by_admin">Na-enable ng admin</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Ibaba</string>
     <string name="error_disable_esim_msg">Hindi ma-disable ang eSIM dahil sa isang error.</string>
     <string name="error_disable_esim_title">Hindi ma-disable ang eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -629,7 +630,7 @@ Kung magpapatuloy ka, maaaring may mga singil sa paggamit ng data."</string>
     <string name="face_unlock_timeout">Masyadong maraming bigong pagtatangka. Subukan ulit sa ibang pagkakataon</string>
     <string name="failed_to_open_app_settings_toast">Nabigong buksan ang mga setting para sa %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Pindutin ang fingerprint sensor</string>
-    <string name="fingerprint_not_found">Subukang muli</string>
+    <string name="fingerprint_not_found">Subuking muli</string>
     <string name="force_allow_on_external">Puwersahang payagan ang mga app sa external</string>
     <string name="force_allow_on_external_summary">Ginagawang kwalipikado ang anumang app na mailagay sa external na storage, anuman ang mga value ng manifest</string>
     <string name="force_msaa">Puwersahin ang 4x MSAA</string>
@@ -676,7 +677,7 @@ Kapag nakapag-cool down na ang iyong telepono, gagana na ito nang normal."</stri
     <string name="high_temp_title">Umiinit ang telepono</string>
     <string name="home">Home ng Mga Setting</string>
     <string name="hotspot_apm_message">Hindi makakonekta sa mga mobile na network habang ang pamamaraang Airplane ay gumagana. Huwag paganahin ang pamamaraang Airplane at subukin muli.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Magkabit ng isang SIM card para magamit ang Mobile Hotspot at iba pang opsyon sa pag-tether</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Maglagay ng SIM card para magamit ang Mobile Hotspot at ang iba pang opsyon sa pag-tether</string>
     <string name="hotspot_operator_dialog_nosim_title">Walang SIM card</string>
     <string name="hotspot_operator_dialog_othererror_msg">Hindi ka naka-subscribe sa pag-tether ng Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Nagka-error sa pag-tether ng Wi-Fi</string>
@@ -953,7 +954,7 @@ Subukang muli sa loob ng %2$d (na) segundo."</string>
     <string name="lockscreen_unlock_left">Ina-unlock din ng kaliwang shortcut ang</string>
     <string name="lockscreen_unlock_right">Ina-unlock din ng kanang shortcut ang</string>
     <string name="long_press_power_navigation_assist_content">"Pindutin nang matagal ang \"power button\" 
-para sa Assist App"</string>
+para sa Voice Assistant"</string>
     <string name="long_press_power_navigation_power_content">Pindutin ang \"power button\" at \"volume up button\" nang magkasabay para i-off</string>
     <string name="long_press_power_navigation_setting_button">Baguhin ang mga setting</string>
     <string name="manage_bubbles_text">Pamahalaan</string>
@@ -969,6 +970,8 @@ para sa Assist App"</string>
     <string name="media_projection_remember_text">Huwag ipakitang muli</string>
     <string name="media_transfer_this_device_name">Ang device na ito</string>
     <string name="menu_ime">Keyboard switcher</string>
+    <string name="mhs_app">Buksan ang My Verizon</string>
+    <string name="mhs_call_back_error">Hindi available ang koneksyon sa data.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobile data</string>
@@ -985,6 +988,12 @@ I-off ang koneksyon sa mobile data?"</string>
 I-off ang koneksyon sa mobile data?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Mobile Hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Para i-on ang Hotspot, paki-off ang airplane mode</string>
+    <string name="mobile_hotspot_authoration_error">"Para gamitin ang Mobile Hotspot, kakailanganin mong mag-subscribe sa Mga Serbisyo ng Mobile Hotspot.
+
+Para mag-subscribe sa Mobile Hotspot, bisitahin ang my verizon o tumawag sa customer care sa (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Para i-on ang Hotspot, paki-on ang Mobile data</string>
     <string name="mock_location_app">Pumili ng app para sa kunwaring lokasyon</string>
     <string name="mock_location_app_not_set">Walang nakatakdang app para sa kunwaring lokasyon</string>
     <string name="mock_location_app_set">App para sa kunwaring lokasyon: %1$s</string>
@@ -1071,7 +1080,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="music_controls_no_title">Walang pamagat</string>
     <string name="nav_bar">Navigation bar</string>
     <string name="nav_bar_default">(default)</string>
-    <string name="nav_bar_guide_positive">NAKUHA KO</string>
+    <string name="nav_bar_guide_positive">OK</string>
     <string name="nav_bar_guide_title">Mag-swipe pataas mula sa ibaba para ipakita ang navigation bar. Para ihinto ang pagtatago sa navigation, paki-tap dito.</string>
     <string name="nav_bar_layout">Layout</string>
     <string name="no_application">Wala</string>
@@ -1142,7 +1151,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Pinapares...</string>
     <string name="op_earphone_connected_fail">Hindi napares. Maaari mong tingnan ang status ng headset at Bluetooth.</string>
-    <string name="op_earphone_connected_success">Napares na. I-tap upang magtakda pa.</string>
+    <string name="op_earphone_connected_success">Napares na. I-tap para magtakda pa.</string>
     <string name="op_earphone_device">I-TAP PARA IPARES</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Mag-swipe pababa para sa mga pang-emergency na serbisyo</string>
@@ -1190,18 +1199,18 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="output_service_bt_wifi">Bluetooth at Wi-Fi</string>
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Output ng media</string>
-    <string name="overheat_dialog_orange_button">Isakatuparan ngayon</string>
-    <string name="overheat_dialog_orange_message">"Isasagawa ang mga sumusunod na hakbang para mapababa ang temperatura
-1. Babawasan ang liwanag
-2.Io-off ang hotspot
-3.Io-off ang flashlight"</string>
+    <string name="overheat_dialog_orange_button">I-execute ngayon</string>
+    <string name="overheat_dialog_orange_message">"Isasagawa ang mga sumusunod na operasyon para bumaba ang temperatura
+1.Bawasan ang liwanag
+2.I-off ang hotspot
+3.I-off ang flashlight"</string>
     <string name="overheat_dialog_purple_button">I-off ngayon</string>
-    <string name="overheat_dialog_purple_message">Io-off ang telepono pagkatapos ng 5 segundo</string>
-    <string name="overheat_dialog_red_message">Buburahin ang lahat ng proseso para mapababa ang temperatura</string>
-    <string name="overheat_dialog_title">Masyadong mataas ang temperatura ng iyong telepono</string>
-    <string name="overheat_notification_alert">Masyadong mataas ang temperatura ng iyong telepono, at na-off ang mga function na malakas sa paggamit ng power para mapababa ang temperatura</string>
-    <string name="overheat_notification_resume">Naitama na ang temperatura ng telepono at magagamit na ito nang normal</string>
-    <string name="overheat_notification_title_resume">Naitama na ang temperatura ng telepono</string>
+    <string name="overheat_dialog_purple_message">Io-off ang telepono pagkalipas ng 5 segundo</string>
+    <string name="overheat_dialog_red_message">Iki-clear ang lahat ng proseso ng application upang mapababa ang temperatura</string>
+    <string name="overheat_dialog_title">Napakataas ng temperatura ng telepono mo</string>
+    <string name="overheat_notification_alert">Masyadong mataas ang temperatura ng iyong telepono, at ini-off ang mga function na malakas kumonsumo ng baterya para pababain ang temperatura</string>
+    <string name="overheat_notification_resume">Naibalik ang temperatura ng telepono at magagamit nang normal ang telepono</string>
+    <string name="overheat_notification_title_resume">Naibalik ang temperatura ng telepono</string>
     <string name="overheat_toast_content">Napakataas ng temperatura ng telepono mo, at ini-off ang mga function na malakas kumain ng baterya para mapababa ang temperatura</string>
     <string name="overlay_display_devices_title">I-simulate, ika-2 display</string>
     <string name="overview">Pangkalahatang-ideya</string>
@@ -1380,7 +1389,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="quick_settings_game_mode_demo_all">maba-block ang mga notification at mala-lock ang mga capacitive na button</string>
     <string name="quick_settings_game_mode_demo_button">mala-lock ang mga capacitive na button</string>
     <string name="quick_settings_game_mode_demo_notification">maba-block ang mga notification</string>
-    <string name="quick_settings_game_mode_label">Mode sa Gaming</string>
+    <string name="quick_settings_game_mode_label">Gaming mode</string>
     <string name="quick_settings_game_mode_summary_off">Naka-off ang Gaming mode, i-tap upang i-on</string>
     <string name="quick_settings_game_mode_summary_on">Naka-on ang Gaming mode, i-tap upang i-off</string>
     <string name="quick_settings_header_onboarding_text">Pindutin nang matagal ang mga icon para sa higit pang opsyon</string>
@@ -1451,7 +1460,7 @@ Pangtipid sa baterya"</string>
     <string name="recents_deep_clean_option">Malalim na paglinis</string>
     <string name="recents_empty_no_apps_open">Walang bukas na aplikasyon</string>
     <string name="recents_empty_recently_closed">Kamakailan na sinaran na apps</string>
-    <string name="recents_normal_clean_description">I-clear ang listahan ng gawain at cache nang hindi kini-clear ang mga proseso sa background.</string>
+    <string name="recents_normal_clean_description">I-clear ang listahan ng task at cache nang hindi kini-clear ang mga proseso sa background.</string>
     <string name="recents_normal_clean_option">Normal na pag-clear</string>
     <string name="recents_option_note">Maaari mo itong baguhin sa Pantugma -> Pasulong.</string>
     <string name="recents_option_title">Aling paraan ang mas nais mo</string>

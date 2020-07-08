@@ -44,9 +44,10 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="continue_call">Jätka</string>
     <string name="delete">Kustuta</string>
     <string name="denoise_notification">Madala tähtsusega teated</string>
+    <string name="dialog_mhs_error">Oodake, kuni kinnitame..</string>
     <string name="drag_to_add_tiles">Paanide lisamiseks lohistage</string>
     <string name="edit_mode_hint">Paanide ümber paigutamiseks lohistage neid. Kuvamiseks või peitmiseks toksake.</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Lõpeta</string>
     <string name="face_unlock_camera_error">Näotuvastusega lukuvabastus nurjus. Kaamerat kasutavad teised rakendused</string>
     <string name="face_unlock_fail">Nurjus. Uuesti proovimiseks puudutage siin</string>
     <string name="face_unlock_light_view_notify">Ekraan süttib näotuvastuse hõlbustamiseks.</string>
@@ -57,9 +58,9 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="face_unlock_retry_other">Näotuvastusega avamine nurjus. Proovige mõnel muul viisil avada</string>
     <string name="face_unlock_tap_to_retry">Uuesti proovimiseks puudutage siin</string>
     <string name="face_unlock_timeout">Liiga palju nurjunud kaitseid. Proovige hiljem uuesti</string>
-    <string name="fingerprint_not_found">Proovige uuesti</string>
+    <string name="fingerprint_not_found">Proovi uuesti</string>
     <string name="hotspot_apm_message">Kui lennurežiim on aktiivne, ei saa mobiilsidevõrkudega ühendust luua. Keelake lennurežiim ja proovige uuesti.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Sisestage SIM-kaart, et kasutada Mobile Hotspoti ja muid sidumisvalikuid</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Sisestage SIM-kaart, et kasutada mobiilset kuumpunkti ja muid sidumisvalikuid</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM-kaart puudub</string>
     <string name="hotspot_operator_dialog_othererror_msg">Te pole Wi-Fi sidumist tellinud</string>
     <string name="hotspot_operator_dialog_othererror_title">Wi-Fi sidumisviga</string>
@@ -86,12 +87,14 @@ Pärast telefoni lähtestamist peate sisestama selle telefoniga seotud Google'i 
     <string name="kg_wrong_pin_warning">Teil on veel 2 võimalust</string>
     <string name="kg_wrong_pin_warning_one">Teil on veel 1 võimalus</string>
     <string name="loading_text">Laadimine...</string>
-    <string name="long_press_power_navigation_assist_content">"Assistendirakenduse avamiseks hoidke all \"toitenuppu\" 
+    <string name="long_press_power_navigation_assist_content">"Häälassistendi avamiseks hoidke all \"toitenuppu\" 
 "</string>
     <string name="long_press_power_navigation_power_content">Toite väljalülitamiseks hoidke korraga all \"toitenuppu\" ja \"helitugevuse suurendamise nuppu\"</string>
     <string name="long_press_power_navigation_setting_button">Muuda sätteid</string>
     <string name="maxxaudio_disable">Keela</string>
     <string name="maxxaudio_enable">Luba</string>
+    <string name="mhs_app">Ava My Verizon</string>
+    <string name="mhs_call_back_error">Andmeühendus pole saadaval.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_data_off_alert">"Interneti, e-posti või muid andmesideühendust vajavaid rakendusi saate kasutada ainult siis, kui teil on Wi-Fi ühendus.
 
@@ -100,7 +103,13 @@ Kas lülitada mobiilandmeside välja?"</string>
 
 Kas lülitada mobiilandmesideühendus välja?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
-    <string name="nav_bar_guide_positive">SAIN ARU</string>
+    <string name="mobile_hotspot">Mobiilne kuumpunkt</string>
+    <string name="mobile_hotspot_airplane_off_error">Kuumpunkti sisselülitamiseks lülitage lennukirežiim välja</string>
+    <string name="mobile_hotspot_authoration_error">"Mobiilse kuumpunkti kasutamiseks peate tellima mobiilse kuumpunkti teenused.
+
+Mobiilse kuupunkti tellimuse tühistamiseks külastage veebisaiti My Verizon või helistage klienditoele telefonil (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Kuumpunkti sisselülitamiseks lülitage mobiilne andmeside välja</string>
+    <string name="nav_bar_guide_positive">SELGE</string>
     <string name="nav_bar_guide_title">Navigatsiooniriba kuvamiseks nipsake alt üles. Kui soovite navigatsiooniriba peitmise lõpetada, puudutage siin.</string>
     <string name="non_op_earphone_notification_content">OnePlus pakub peakomplektile uusi funktsioone. Proovimiseks klõpsake teadet.</string>
     <string name="non_op_earphone_notification_title">Soovitused</string>
@@ -109,7 +118,7 @@ Kas lülitada mobiilandmesideühendus välja?"</string>
     <string name="notification_title_disable_button">HW NUPUD ON LUKUS</string>
     <string name="ok">OK</string>
     <string name="oneplus_laboratory_added_toast">Palju õnne! OnePlus labor on lisatud sätetesse</string>
-    <string name="oneplus_not_show">Ära seda rohkem näita</string>
+    <string name="oneplus_not_show">Ära seda enam kuva</string>
     <string name="oneplus_screen_features_not_available_toast">Kui funktsioon on sisse lülitatud, ei saa kasutada selliseid funktsioone nagu ekraani kalibreerimine</string>
     <string name="oneplus_threekey_navigation_disturb_changed">Funktsioon „Ära sega“ on muutunud.</string>
     <string name="oneplus_threekey_navigation_next">EDASI</string>
@@ -160,11 +169,11 @@ Kas lülitada mobiilandmesideühendus välja?"</string>
 3.Taskulambi väljalülitamine"</string>
     <string name="overheat_dialog_purple_button">Lülita kohe välja</string>
     <string name="overheat_dialog_purple_message">Telefon lülitatakse viie sekundi pärast välja</string>
-    <string name="overheat_dialog_red_message">Temperatuuri alandamiseks lõpetatakse rakenduste toimingud</string>
+    <string name="overheat_dialog_red_message">Temperatuuri alandamiseks rakenduse protsessid lõpetatakse</string>
     <string name="overheat_dialog_title">Telefon on liiga kuum</string>
     <string name="overheat_notification_alert">Telefon on liiga kuum ning temperatuuri alandamiseks lülitatakse suure energiatarbega funktsioonid välja</string>
-    <string name="overheat_notification_resume">Telefoni temperatuur on nüüd normikohane ja telefoni saab jälle tavapäraselt kasutada</string>
-    <string name="overheat_notification_title_resume">Telefoni temperatuur on normikohane</string>
+    <string name="overheat_notification_resume">Telefoni temperatuur on taastunud ja seda saab jälle normaalselt kasutada</string>
+    <string name="overheat_notification_title_resume">Telefoni temperatuur on taastunud</string>
     <string name="overheat_toast_content">Telefon on liiga kuum ning temperatuuri alandamiseks lülitatakse suure energiatarbega funktsioonid välja</string>
     <string name="permission_btn_text_denied">Välju</string>
     <string name="permission_btn_text_grant">OK</string>

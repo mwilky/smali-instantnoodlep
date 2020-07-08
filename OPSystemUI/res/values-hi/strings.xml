@@ -288,7 +288,7 @@
     <string name="alarm_template">%1$s बजे</string>
     <string name="alarm_template_far">%1$s पर</string>
     <string name="alert_button_cancel">रद्द करें</string>
-    <string name="alert_button_settings">सेटिंग</string>
+    <string name="alert_button_settings">सेटिंग्स</string>
     <string name="alert_message_assisted_dialing">SIM कार्ड से आपके संदर्भ देश का पता नहीं चल सका. कृपया संदर्भ देश को मैन्युअल रूप से चुनें.</string>
     <string name="alert_title_assisted_dialing">सहायक डायलिंग</string>
     <string name="allow_mock_location">कृत्रिम स्‍थानों को अनुमति दें</string>
@@ -566,6 +566,7 @@
     <string name="development_settings_summary">ऐप्लिकेशन विकास के लिए विकल्‍प सेट करें</string>
     <string name="development_settings_title">डेवलपर के लिए सेटिंग और टूल</string>
     <string name="device_services">डिवाइस सेवाएं</string>
+    <string name="dialog_mhs_error">कृपया सत्यापित करते हुए प्रतीक्षा करें..</string>
     <string name="direct_boot_unaware_dialog_message">नोट: पुनः बूट करने के बाद, यह ऐप्लिकेशन तब तक शुरू नहीं हो सकता है जब तक कि आप अपना फ़ोन अनलॉक ना कर लें</string>
     <string name="disable_carrier_button_text">eSIM अक्षम करें</string>
     <string name="disable_overlays">एचडब्ल्यू ओवरले बंद करें</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">लोकल शेल तक पहुंचने की सुविधा देने वाले टर्मिनल ऐप को चालू करें</string>
     <string name="enable_terminal_title">स्थानीय टर्मिनल</string>
     <string name="enabled_by_admin">एडमिन की ओर से चालू किया गया</string>
-    <string name="end_call">End</string>
+    <string name="end_call">समाप्त करें</string>
     <string name="error_disable_esim_msg">किसी गड़बड़ी की वजह से ई-सिम बंद नहीं किया जा सकता.</string>
     <string name="error_disable_esim_title">ई-सिम बंद नहीं किया जा सकता</string>
     <string name="ethernet_label">ईथरनेट</string>
@@ -716,8 +717,8 @@
     <string name="interruption_level_alarms_twoline">"केवल
 अलार्म"</string>
     <string name="interruption_level_game">गेम</string>
-    <string name="interruption_level_movie">मूवी</string>
-    <string name="interruption_level_music">म्यूज़िक</string>
+    <string name="interruption_level_movie">फ़िल्में</string>
+    <string name="interruption_level_music">संगीत</string>
     <string name="interruption_level_none">पूरी तरह शांत</string>
     <string name="interruption_level_none_twoline">"पूरी तरह
 शांत"</string>
@@ -952,8 +953,8 @@
     <string name="lockscreen_shortcut_right">दायां शॉर्टकट</string>
     <string name="lockscreen_unlock_left">बाएं शॉर्टकट से भी अनलॉक होता है</string>
     <string name="lockscreen_unlock_right">दाएं शॉर्टकट से भी अनलॉक होता है</string>
-    <string name="long_press_power_navigation_assist_content">"सहायक ऐप के लिए \"पावर बटन\" 
-दबाकर रखें"</string>
+    <string name="long_press_power_navigation_assist_content">"वॉइस असिस्टेंट के लिए \" पावर बटन\" 
+ को दबाकर रखें"</string>
     <string name="long_press_power_navigation_power_content">बंद करने के लिए \"पावर बटन\" and \"वॉल्यूम बढ़ाने वाले बटन\" को एक साथ दबाएँ</string>
     <string name="long_press_power_navigation_setting_button">सेटिंग में बदलाव करें</string>
     <string name="manage_bubbles_text">प्रबंधित करें</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">फिर से न दिखाएं</string>
     <string name="media_transfer_this_device_name">यह डिवाइस</string>
     <string name="menu_ime">कीबोर्ड स्विचर</string>
+    <string name="mhs_app">My Verizon खोलें</string>
+    <string name="mhs_call_back_error">डेटा रोमिंग उपलब्ध नहीं है</string>
     <string name="mobile263">OnePlus रोमिंग</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">मोबाइल डेटा</string>
@@ -985,6 +988,12 @@
 मोबाइल डेटा को बंद करें?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">मोबाइल हॉटस्पॉट</string>
+    <string name="mobile_hotspot_airplane_off_error">हॉटस्पॉट चालू करने के लिए, कृपया हवाई जहाज मोड बंद करें</string>
+    <string name="mobile_hotspot_authoration_error">"मोबाइल हॉटस्पॉट का उपयोग करने के लिए, आपको मोबाइल हॉटस्पॉट सेवाओं की सदस्यता लेनी होगी।
+
+ मोबाइल सदस्यता के लिए my verizon पर जाएँ या (800) 922–0204 पर ग्राहक सेवा पर कॉल करें।"</string>
+    <string name="mobile_hotspot_data_off_error">हॉटस्पॉट चालू करने के लिए, कृपया मोबाइल डेटा चालू करें</string>
     <string name="mock_location_app">जगह की नकली जानकारी देने के लिए ऐप चुनें</string>
     <string name="mock_location_app_not_set">जगह की नकली जानकारी देने के लिए ऐप सेट नहीं है</string>
     <string name="mock_location_app_set">जगह की नकली जानकारी देने वाला ऐप: %1$s</string>
@@ -1071,7 +1080,7 @@
     <string name="music_controls_no_title">कोई शीर्षक नहीं</string>
     <string name="nav_bar">नेविगेशन बार</string>
     <string name="nav_bar_default">(डिफ़ॉल्ट)</string>
-    <string name="nav_bar_guide_positive">समझ में आ गया</string>
+    <string name="nav_bar_guide_positive">समझ आ गया</string>
     <string name="nav_bar_guide_title">नेविगेशन बार दिखाने के लिए नीचे से ऊपर की ओर स्वाइप करें। नेविगेशन को रोकने के लिए, कृपया यहां टैप करें।</string>
     <string name="nav_bar_layout">लेआउट</string>
     <string name="no_application">कुछ भी नहीं</string>
@@ -1142,7 +1151,7 @@
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">जोड़ा जा रहा है...</string>
     <string name="op_earphone_connected_fail">जुड़ने में विफल। आप हेडसेट और ब्लूटूथ स्थिति की जांच कर सकते हैं ।</string>
-    <string name="op_earphone_connected_success">पेयर हो गया। अधिक एक्सेस कार्ड टैप करें।</string>
+    <string name="op_earphone_connected_success">जुड़ गया। अधिक एक्सेस कार्ड टैप करें।</string>
     <string name="op_earphone_device">जोड़ने के लिए टैप करें</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">आपातकालीन सेवाओं के लिए नीचे की ओर स्वाइप करें</string>
@@ -1199,7 +1208,7 @@
     <string name="overheat_dialog_purple_message">5 सेकंड के बाद फ़ोन बंद हो जाएगा</string>
     <string name="overheat_dialog_red_message">तापमान कम करने के लिए सभी एप्लिकेशन प्रक्रियाओं को साफ किया जाएगा</string>
     <string name="overheat_dialog_title">आपके फ़ोन का तापमान बहुत अधिक है</string>
-    <string name="overheat_notification_alert">आपके फ़ोन का तापमान बहुत अधिक है और तापमान कम करने के लिए पावर की उच्च खपत करने वाले फ़ंक्शन बंद कर दिए गए हैं</string>
+    <string name="overheat_notification_alert">आपके फ़ोन का तापमान बहुत अधिक है और तापमान कम करने के लिए पॉवर की उच्च खपत करने वाले फ़ंक्शन बंद कर दिए गए हैं</string>
     <string name="overheat_notification_resume">फ़ोन का तापमान रीस्टोर कर दिया गया है और फ़ोन का सामान्य रूप से उपयोग किया जा सकता है</string>
     <string name="overheat_notification_title_resume">फ़ोन का तापमान रीस्टोर कर दिया गया है</string>
     <string name="overheat_toast_content">आपके फ़ोन का तापमान बहुत अधिक है और तापमान कम करने के लिए पॉवर की उच्च खपत करने वाले फ़ंक्शन बंद कर दिए गए हैं</string>
@@ -1298,7 +1307,7 @@
     <string name="profile_owned_footer">प्रोफ़ाइल को मॉनीटर किया जा सकता है</string>
     <string name="qr_bubble_hint">संदेशों को पढ़ने और उनका जवाब देने के लिए बबल पर टैप करें</string>
     <string name="qr_portrait_hint">त्वरित उत्तर पोर्ट्रेट में बंद कर दिया है</string>
-    <string name="qr_portrait_turn_on">चालू करें</string>
+    <string name="qr_portrait_turn_on">टर्न ऑन</string>
     <string name="qs_dnd_keep">रखें</string>
     <string name="qs_dnd_prompt_app">एक ऐप्लिकेशन (%s) ने परेशान न करें को चालू कर दिया था.</string>
     <string name="qs_dnd_prompt_auto_rule">एक ऑटोमैटिक नियम (%s) ने परेशान न करें को चालू कर दिया था.</string>
@@ -1806,7 +1815,7 @@
     <string name="zen_alarm_warning">आपको %1$s पर अपना अगला अलार्म नहीं सुनाई देगा</string>
     <string name="zen_alarm_warning_indef">आपको %1$s पर अपना अगला अलार्म तब तक सुनाई नहीं देगा जब तक कि आप अलार्म को इस समय से पहले बंद नहीं कर देते</string>
     <string name="zen_alarms_introduction">आपको अलार्म छोड़कर दूसरी आवाज़ों और कंपनों से परेशान नहीं किया जाएगा. आपको अब भी संगीत, वीडियो और गेम सहित वह सब कुछ सुनाई देगा जो आपने चलाने के लिए चुना है.</string>
-    <string name="zen_important_interruptions">प्राथमिकता वाली सूचनाएँ</string>
+    <string name="zen_important_interruptions">प्राथमिकता सूचनाएँ</string>
     <string name="zen_interruption_level_all">सभी नोटिफिकेशंस</string>
     <string name="zen_interruption_level_priority">सिर्फ़ ज़रूरी</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

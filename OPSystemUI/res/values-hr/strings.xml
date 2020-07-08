@@ -566,6 +566,7 @@ Ako nastavite, moguća je naplata za potrošeni podatkovni promet."</string>
     <string name="development_settings_summary">Postavljanje opcija za razvoj aplikacije</string>
     <string name="development_settings_title">Za razvojne programere</string>
     <string name="device_services">Usluge uređaja</string>
+    <string name="dialog_mhs_error">Pričekajte na završetak provjere..</string>
     <string name="direct_boot_unaware_dialog_message">Napomena: ova se aplikacija ne može pokrenuti nakon ponovnog pokretanja dok ne otključate telefon</string>
     <string name="disable_carrier_button_text">Onemogući eSIM</string>
     <string name="disable_overlays">Onemogući dijeljenje mem.</string>
@@ -604,7 +605,7 @@ Ako nastavite, moguća je naplata za potrošeni podatkovni promet."</string>
     <string name="enable_terminal_summary">Omogući aplikaciju terminala koja nudi pristup lokalnoj ovojnici</string>
     <string name="enable_terminal_title">Lokalni terminal</string>
     <string name="enabled_by_admin">Omogućio administrator</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Završi</string>
     <string name="error_disable_esim_msg">Onemogućivanje eSIM-a nije uspjelo zbog pogreške.</string>
     <string name="error_disable_esim_title">Nije moguće onemogućiti eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Pokušajte ponovo za %2$d s."</string>
     <string name="lockscreen_unlock_left">Lijevi prečac također otključava</string>
     <string name="lockscreen_unlock_right">Desni prečac također otključava</string>
     <string name="long_press_power_navigation_assist_content">"Pritisnite i zadržite \"gumb za uključivanje\" 
-da biste aktivirali aplikaciju za pomoć"</string>
+da biste aktivirali Govornog pomoćnika"</string>
     <string name="long_press_power_navigation_power_content">Za isključivanje pritisnite istodobno \"gumb za uključivanje\" i \"gumb za pojačavanje zvuka\"</string>
     <string name="long_press_power_navigation_setting_button">Izmijeni postavke</string>
     <string name="manage_bubbles_text">Upravljanje</string>
@@ -969,6 +970,8 @@ da biste aktivirali aplikaciju za pomoć"</string>
     <string name="media_projection_remember_text">Ne prikazuj ponovo</string>
     <string name="media_transfer_this_device_name">Ovaj uređaj</string>
     <string name="menu_ime">Izmjena tipkovnice</string>
+    <string name="mhs_app">Otvori Moj Verizon</string>
+    <string name="mhs_call_back_error">Podatkovna veza nije dostupna.</string>
     <string name="mobile263">OnePlus u roamingu</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobilni podaci</string>
@@ -985,6 +988,12 @@ da biste aktivirali aplikaciju za pomoć"</string>
 Želite li isključiti vezu mobilnih podataka?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobilna pristupna točka</string>
+    <string name="mobile_hotspot_airplane_off_error">Da biste uključili pristupnu točku, isključite zrakoplovni način rada</string>
+    <string name="mobile_hotspot_authoration_error">"Da biste upotrebljavali mobilnu pristupnu točku, morate se pretplatiti na usluge Mobilne pristupne točke.
+
+Da biste se pretplatili na mobilnu pristupnu točku, posjetite Moj verizon ili nazovite službu za korisnike na (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Da biste uključili pristupnu točku, uključite mobilne podatke</string>
     <string name="mock_location_app">Odabir aplikacije za lažnu lokaciju</string>
     <string name="mock_location_app_not_set">Aplikacija za lažnu lokaciju nije postavljena</string>
     <string name="mock_location_app_set">Aplikacija za lažnu lokaciju: %1$s</string>
@@ -1071,7 +1080,7 @@ Povezani ste i s VPN-om koji može nadzirati vašu mrežnu aktivnost."</string>
     <string name="music_controls_no_title">Bez naslova</string>
     <string name="nav_bar">Navigacijska traka</string>
     <string name="nav_bar_default">(zadano)</string>
-    <string name="nav_bar_guide_positive">U REDU</string>
+    <string name="nav_bar_guide_positive">RAZUMIJEM</string>
     <string name="nav_bar_guide_title">Prijeđite prstom od dolje prema gore za prikazivanje navigacijske trake. Ako želite zaustaviti skrivanje navigacije, dodirnite ovdje.</string>
     <string name="nav_bar_layout">Izgled</string>
     <string name="no_application">Ništa</string>

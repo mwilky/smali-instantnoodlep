@@ -27,7 +27,7 @@
 # instance fields
 .field private mAuthenticatedSuccess:Z
 
-.field private mDialogShowing:Z
+.field private mDialogShowingRequest:Z
 
 .field private final mFingerprintClientActiveCallback:Landroid/hardware/fingerprint/IFingerprintClientActiveCallback;
 
@@ -86,7 +86,7 @@
 
     iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mIsFaceUnlocked:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowing:Z
+    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
 
     new-instance v0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$1;
 
@@ -852,7 +852,7 @@
 
     invoke-static {v3, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowing:Z
+    iget-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
 
     if-nez p1, :cond_1
 
@@ -1036,7 +1036,7 @@
     return-void
 
     :cond_8
-    iput-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowing:Z
+    iput-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
 
     invoke-static {}, Lcom/oneplus/systemui/biometrics/OpFodHelper;->getInstance()Lcom/oneplus/systemui/biometrics/OpFodHelper;
 
@@ -1062,7 +1062,7 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
 
-    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->isRequestShowing()Z
+    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->isRequestShowing()Z
 
     move-result v0
 
@@ -1098,7 +1098,7 @@
 
     iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
 
-    invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->isRequestShowing()Z
+    invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->isRequestShowing()Z
 
     move-result p1
 
@@ -1127,7 +1127,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->removeFromWindow()V
+    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->removeFromWindow()V
 
     :cond_0
     return-void
@@ -1585,6 +1585,14 @@
     return p0
 .end method
 
+.method isDialogShowingRequest()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
+
+    return p0
+.end method
+
 .method isFaceUnlocked()Z
     .locals 0
 
@@ -1713,7 +1721,7 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
 
-    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->isRequestShowing()Z
+    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->isRequestShowing()Z
 
     move-result v0
 
@@ -2104,7 +2112,7 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
 
-    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->isRequestShowing()Z
+    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->isRequestShowing()Z
 
     move-result v0
 
@@ -2252,7 +2260,7 @@
     goto :goto_0
 
     :cond_2
-    iget-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowing:Z
+    iget-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
 
     if-eqz p1, :cond_3
 
@@ -2280,25 +2288,27 @@
 
     :cond_3
     :goto_0
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
+
     iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mFodDialogView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;
 
     invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->addToWindow()V
 
-    iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
 
-    invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->addToWindow()V
-
-    const/4 p1, 0x1
-
-    iput-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowing:Z
+    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->addToWindow()V
 
     return-void
 .end method
 
 .method public showFodDialog(Landroid/os/Bundle;Ljava/lang/String;)V
-    .locals 2
+    .locals 3
 
     sget-boolean v0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->DEBUG:Z
+
+    const-string v1, "OpBiometricDialogImpl"
 
     if-eqz v0, :cond_0
 
@@ -2306,9 +2316,9 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v1, "showFodDialog: reason= "
+    const-string/jumbo v2, "showFodDialog: reason= "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2316,14 +2326,16 @@
 
     move-result-object v0
 
-    const-string v1, "OpBiometricDialogImpl"
-
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowing:Z
+    iget-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mDialogShowingRequest:Z
 
     if-nez v0, :cond_1
+
+    const-string/jumbo v0, "showFodDialog: !mDialogShowingRequest"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mHandler:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$FingerprintUIHandler;
 
@@ -2602,7 +2614,7 @@
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->mTransparentIconView:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;
 
-    invoke-virtual {v0, p0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl$OpFingerprintBlockTouchView;->setDialog(Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;)V
+    invoke-virtual {v0, p0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->setDialog(Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;)V
 
     sget-boolean v0, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->SHOW_TRANSPARENT_ICON_VIEW:Z
 

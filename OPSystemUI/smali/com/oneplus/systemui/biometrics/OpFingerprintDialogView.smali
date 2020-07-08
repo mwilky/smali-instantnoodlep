@@ -6,6 +6,14 @@
 .implements Lcom/oneplus/systemui/biometrics/OpFodHelper$OnFingerprintStateChangeListener;
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
+    }
+.end annotation
+
+
 # static fields
 .field private static final DEBUG_ONEPLUS:Z
 
@@ -31,9 +39,7 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mHighlightView:Landroid/view/ViewGroup;
-
-.field private mHighlightViewAttached:Z
+.field private mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
 
 .field private mLayout:Landroid/view/ViewGroup;
 
@@ -42,8 +48,6 @@
 .field private mOpFodDisplayController:Lcom/oneplus/systemui/biometrics/OpFodDisplayController;
 
 .field private mOpFodIconViewController:Lcom/oneplus/systemui/biometrics/OpFodIconViewController;
-
-.field private mPendingDismissDialog:Z
 
 .field mPendingHideDialog:Z
 
@@ -79,8 +83,6 @@
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingHideDialog:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
 
     new-instance v1, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$2;
 
@@ -188,9 +190,13 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/view/ViewGroup;
+    check-cast v0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
 
-    iput-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
+
+    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
+
+    invoke-virtual {v0, p2}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->setDialog(Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;)V
 
     iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mContext:Landroid/content/Context;
 
@@ -216,7 +222,7 @@
 
     new-instance v0, Lcom/oneplus/systemui/biometrics/OpFodIconViewController;
 
-    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
+    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
 
     iget-object v2, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mLayout:Landroid/view/ViewGroup;
 
@@ -505,75 +511,6 @@
 
     invoke-direct {p0, p1}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->handleOnKeyguardBouncerChanged(Z)V
 
-    return-void
-.end method
-
-.method private addHighlightView()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->isAttachedToWindow()Z
-
-    move-result v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "addHighlightView: mHighlightViewAttached= "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v2, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v2, ", reallyAttached= "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "OpFingerprintDialogView"
-
-    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
-
-    if-nez v1, :cond_1
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mFodWindowManager:Lcom/oneplus/systemui/biometrics/OpFodWindowManager;
-
-    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0, v1}, Lcom/oneplus/systemui/biometrics/OpFodWindowManager;->addHighlightViewToWindow(Landroid/view/ViewGroup;)V
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
-
-    goto :goto_0
-
-    :cond_0
-    const-string p0, "addHighlightView: highlight view is already attached."
-
-    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_1
-    const-string p0, "addHighlightView: try to add highlight view, but it is already attached before."
-
-    invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_0
     return-void
 .end method
 
@@ -1322,81 +1259,6 @@
     return-void
 .end method
 
-.method private removeHighlightView()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->isAttachedToWindow()Z
-
-    move-result v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "removeHighlightView: mHighlightViewAttached= "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v2, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v2, ", reallyAttached= "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpFingerprintDialogView"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->isAttachedToWindow()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mWindowManager:Landroid/view/WindowManager;
-
-    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Landroid/view/ViewGroup;
-
-    invoke-interface {v0, v1}, Landroid/view/WindowManager;->removeViewImmediate(Landroid/view/View;)V
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightViewAttached:Z
-
-    goto :goto_0
-
-    :cond_0
-    const-string p0, "removeHighlightView: highlight view isn\'t attached"
-
-    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_1
-    const-string p0, "removeHighlightView: try to remove highlight view, but is is already removed before."
-
-    invoke-static {v1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_0
-    return-void
-.end method
-
 .method private resetState()V
     .locals 4
 
@@ -1764,7 +1626,9 @@
     invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/OpFodWindowManager;->addFpViewToWindow()V
 
     :goto_0
-    invoke-direct {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->addHighlightView()V
+    iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
+
+    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->addToWindow()V
 
     return-void
 .end method
@@ -1984,11 +1848,13 @@
     invoke-interface {v0, p0}, Landroid/view/WindowManager;->removeViewImmediate(Landroid/view/View;)V
 
     :cond_0
+    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
+
+    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->removeFromWindow()V
+
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mAnimatingAway:Z
-
-    invoke-direct {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->removeHighlightView()V
 
     return-void
 .end method
@@ -2200,7 +2066,7 @@
 .end method
 
 .method public onAttachedToWindow()V
-    .locals 3
+    .locals 4
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onAttachedToWindow()V
 
@@ -2226,53 +2092,55 @@
 
     iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingHideDialog:Z
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mDialogImpl:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v1}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->isDialogShowingRequest()Z
 
-    const-string v2, "onAttachedToWindow: isKeyguardDone= "
+    move-result v1
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardDone()Z
+    const-string v3, "onAttachedToWindow: isKeyguardDone= "
 
-    move-result v2
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
-    const-string v2, ", mPendingDismissDialog= "
+    invoke-virtual {v3}, Lcom/oneplus/keyguard/OpKeyguardUpdateMonitor;->isKeyguardDone()Z
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v3
 
-    iget-boolean v2, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingDismissDialog:Z
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    const-string v3, ", isDialogShowingRequest= "
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    const-string v2, "OpFingerprintDialogView"
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v2
 
-    const/4 v1, 0x1
+    const-string v3, "OpFingerprintDialogView"
 
-    iput-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
+    invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingDismissDialog:Z
+    const/4 v2, 0x1
 
-    if-eqz v1, :cond_0
+    iput-boolean v2, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
 
-    const-string v1, "onAttachedToWindow: should dismiss now."
+    if-nez v1, :cond_0
 
-    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v0, "onAttachedToWindow: remove window now."
 
-    invoke-virtual {p0, v0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->startDismiss(Z)V
+    invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingDismissDialog:Z
+    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mWindowManager:Landroid/view/WindowManager;
+
+    invoke-interface {v0, p0}, Landroid/view/WindowManager;->removeViewImmediate(Landroid/view/View;)V
 
     goto :goto_0
 
@@ -2309,26 +2177,51 @@
 .end method
 
 .method protected onDetachedFromWindow()V
-    .locals 2
+    .locals 3
 
-    const-string v0, "OpFingerprintDialogView"
+    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mDialogImpl:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
 
-    const-string v1, "onDetachedFromWindow"
+    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->isDialogShowingRequest()Z
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onDetachedFromWindow: isDialogShowingRequest="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "OpFingerprintDialogView"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->resetState()V
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingHideDialog:Z
+    iput-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingHideDialog:Z
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onDetachedFromWindow()V
 
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
+    iput-boolean v1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingDismissDialog:Z
+    if-eqz v0, :cond_0
 
+    const-string v0, "Because fingerprint is still on detecting state, add the window again"
+
+    invoke-static {v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->addToWindow()V
+
+    :cond_0
     return-void
 .end method
 
@@ -2613,36 +2506,39 @@
 .method public startDismiss(Z)V
     .locals 3
 
-    iget-boolean v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
+    iget-object v0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mDialogImpl:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
 
-    const-string v1, "OpFingerprintDialogView"
+    invoke-virtual {v0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->isDialogShowingRequest()Z
 
-    if-nez v0, :cond_0
+    move-result v0
 
-    const-string/jumbo p1, "startDismiss: window has already been removed or not attached yet."
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 p1, 0x1
-
-    iput-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mPendingDismissDialog:Z
-
-    return-void
-
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string/jumbo v2, "startDismiss: starting..., authenticated: "
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string p1, ", mShowOnWindow: "
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string p1, ", isDialogShowingRequest: "
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     const-string p1, ", callers: "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/4 p1, 0x2
 
@@ -2650,35 +2546,51 @@
 
     move-result-object p1
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    const-string v0, "OpFingerprintDialogView"
 
-    const-wide/16 v0, 0x8
+    invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-wide/16 v1, 0x8
 
     const-string p1, "OpFingerprintDialogView.hide"
 
-    invoke-static {v0, v1, p1}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
+    invoke-static {v1, v2, p1}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->removeHighlightView()V
+    iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mHighlightView:Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView$OpFingerprintHighlightView;
+
+    invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/AddRemoveRequestingView;->removeFromWindow()V
 
     iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mOpFodDisplayController:Lcom/oneplus/systemui/biometrics/OpFodDisplayController;
 
     invoke-virtual {p1}, Lcom/oneplus/systemui/biometrics/OpFodDisplayController;->dismiss()V
 
+    iget-boolean p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mShowOnWindow:Z
+
+    if-eqz p1, :cond_0
+
     iget-object p1, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mWindowManager:Landroid/view/WindowManager;
 
     invoke-interface {p1, p0}, Landroid/view/WindowManager;->removeViewImmediate(Landroid/view/View;)V
 
+    goto :goto_0
+
+    :cond_0
+    const-string/jumbo p1, "startDismiss: window is not added yet, remove it after attached"
+
+    invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
     iget-object p0, p0, Lcom/oneplus/systemui/biometrics/OpFingerprintDialogView;->mDialogImpl:Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;
 
     invoke-virtual {p0}, Lcom/oneplus/systemui/biometrics/OpBiometricDialogImpl;->onFingerprintDialogDismissDone()V
 
-    invoke-static {v0, v1}, Landroid/os/Trace;->traceEnd(J)V
+    invoke-static {v1, v2}, Landroid/os/Trace;->traceEnd(J)V
 
     return-void
 .end method

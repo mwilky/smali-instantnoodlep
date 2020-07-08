@@ -44,9 +44,10 @@
     <string name="continue_call">অবিরত রাখুন</string>
     <string name="delete">মুছে ফেলুন</string>
     <string name="denoise_notification">কম অগ্রাধিকারের বিজ্ঞপ্তি</string>
+    <string name="dialog_mhs_error">অনুগ্রহ করে যাচাই করার জন্য অপেক্ষা করুন..</string>
     <string name="drag_to_add_tiles">টাইল যোগ করতে টেনে আনুন</string>
     <string name="edit_mode_hint">পুনরায় সাজাতে টাইলগুলি টেনে আনুন। দেখাতে বা লুকাতে আলতো চাপুন।</string>
-    <string name="end_call">End</string>
+    <string name="end_call">শেষ</string>
     <string name="face_unlock_camera_error">ফেস আনলক করা গেল না, অন্য অ্যাপ ক্যামেরা ব্যবহার করছে</string>
     <string name="face_unlock_fail">অসফল, আবার চেষ্টা করতে এখানে ট্যাপ করুন</string>
     <string name="face_unlock_light_view_notify">মুখ চিনে নিতে সাহায্য করতে স্ক্রিনে আলো জ্বলছে।</string>
@@ -64,8 +65,8 @@
     <string name="hotspot_operator_dialog_othererror_msg">আপনি Wifi টেদারিং এ সাবস্ক্রাইব করেননি</string>
     <string name="hotspot_operator_dialog_othererror_title">Wifi টেদারিং ত্রুটি</string>
     <string name="interruption_level_game">গেম</string>
-    <string name="interruption_level_movie">চলচ্চিত্র</string>
-    <string name="interruption_level_music">সঙ্গীত</string>
+    <string name="interruption_level_movie">মুভি</string>
+    <string name="interruption_level_music">মিউজিক</string>
     <string name="keyguard_fingerprint_unlock">আনলক করতে আঙ্গুলের ছাপ ব্যবহার করুন</string>
     <string name="keyguard_indication_charging_time_fast_vooc">(সম্পূর্ণ হতে %s)</string>
     <string name="keyguard_plugged_in_charging_warp">%s • Warp চার্জিং</string>
@@ -86,12 +87,14 @@
     <string name="kg_wrong_pin_warning">আপনার এখনও 2টি সুযোগ আছে</string>
     <string name="kg_wrong_pin_warning_one">আপনার এখনও 1টি সুযোগ আছে</string>
     <string name="loading_text">লোড হচ্ছে...</string>
-    <string name="long_press_power_navigation_assist_content">"Assist অ্যাপের জন্য \"পাওয়ার বোতাম\" 
-টিকে টিপে ধরে রাখুন"</string>
+    <string name="long_press_power_navigation_assist_content">"ভয়েস সহযোগীর জন্য \"
+ পাওয়ার বাটন \"চেপে ধরে রাখুন"</string>
     <string name="long_press_power_navigation_power_content">পাওয়ার অফ করার জন্য \"পাওয়ার বোতাম\" এবং \"ভলিউম আপ বোতাম\"টিকে একসাথে টিপুন</string>
     <string name="long_press_power_navigation_setting_button">সেটিংস পরিবর্তন করুন</string>
     <string name="maxxaudio_disable">অক্ষম করুন</string>
     <string name="maxxaudio_enable">সক্ষম করুন</string>
+    <string name="mhs_app">My Verizon খুলুন</string>
+    <string name="mhs_call_back_error">ডাটা সংযোগ পাওয়া যায় নি।</string>
     <string name="mobile263">OnePlus রোমিং</string>
     <string name="mobile_data_off_alert">"আপনি Wi-Fi ব্যবহার না করা পর্যন্ত, আপনি ইন্টারনেট, ইমেল বা একটি ডেটা সংযোগ প্রয়োজন এমন অ্যাপগুলি ব্যবহার করতে পারবেন না৷
 
@@ -100,6 +103,12 @@
 
 মোবাইল ডেটা সংযোগ বন্ধ করবেন?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
+    <string name="mobile_hotspot">মোবাইল হটস্পট</string>
+    <string name="mobile_hotspot_airplane_off_error">হটস্পট চালু করতে, অনুগ্রহ করে এয়ারপ্লেন মোড বন্ধ করুন</string>
+    <string name="mobile_hotspot_authoration_error">"মোবাইল হটস্পট ব্যবহার করতে, আপনার মোবাইল হটস্পট পরিষেবাতে সাবস্ক্রাইব করার প্রয়োজন হবে। 
+
+ মোবাইল হটস্পট সাবস্ক্রাইব করতে My Verizon পরিদর্শন করুন অথবা কাস্টমার কেয়ারের (800) 922–0204 এই নম্বরে কল করুন।"</string>
+    <string name="mobile_hotspot_data_off_error">হটস্পট চালু করতে, অনুগ্রহ করে মোবাইল ডাটা চালু করুন</string>
     <string name="nav_bar_guide_positive">বুঝেছি</string>
     <string name="nav_bar_guide_title">নেভিগেশন বার দেখানোর জন্য নীচে থেকে উপরে সোয়াইপ করুন। নেভিগেশন আড়াল করাকে বন্ধ করতে চাইলে, অনুগ্রহ করে এখানে ট্যাপ করুন।</string>
     <string name="non_op_earphone_notification_content">OnePlus আপনার হেডসেটের জন্য কিছু নতুন বৈশিষ্ট্য নিয়ে এসেছে। তাদের ব্যবহার করে দেখুন বিজ্ঞপ্তিতে ক্লিক করুন।</string>
@@ -213,7 +222,7 @@
     <string name="quick_settings_read_mode_label">পঠন মোড</string>
     <string name="quick_settings_read_mode_summary_off">পঠন মোড বন্ধ, চালু করতে আলতো চাপুন</string>
     <string name="quick_settings_read_mode_summary_on">পঠন মোড চালু, বন্ধ করতে আলতো চাপুন</string>
-    <string name="quick_settings_switch_user_storage_insufficient">সঞ্চয়স্থান পূর্ণ আছে, ব্যবহারকারী পাল্টানো যাবে না</string>
+    <string name="quick_settings_switch_user_storage_insufficient">সঞ্চয়স্থান পূর্ণ হয়েছে, ব্যবহারকারী পাল্টানো যাবে না</string>
     <string name="recents_deep_clean_button_text">গভীর স্ক্যান</string>
     <string name="recents_deep_clean_description">ব্যাকগ্রাউন্ড প্রক্রিয়া সাফ করে দেয় যা অনভিপ্রেত ফলাফল দিতে পারে। কিছু অ্যাপ কাজ করা থামাতে পারে এবং আপনি সেগুলি আবার শুরু না করা পর্যন্ত হয়তো বিজ্ঞপ্তি পাবেন না।</string>
     <string name="recents_deep_clean_dialog_checkbox_text">পুনরায় প্রদর্শন করবেন না</string>
@@ -234,7 +243,7 @@
     <string name="select_hours">ঘণ্টা বেছে নিন</string>
     <string name="select_minutes">মিনিট বেছে নিন</string>
     <string name="select_year">বছর বেছে নিন</string>
-    <string name="sim_status_uss_network_roam">রোম</string>
+    <string name="sim_status_uss_network_roam">রোমিং</string>
     <string name="time_picker_header_text">সময় সেট করুন</string>
     <string name="time_picker_hour_label">ঘণ্টা</string>
     <string name="time_picker_input_error">সঠিক সময় লিখুন</string>

@@ -491,7 +491,7 @@ Auswahl"</string>
     <string name="connected_via_network_scorer_default">Automatisch über Anbieter von Netzwerkbewertungen verbunden</string>
     <string name="connected_via_passpoint">Über %1$s verbunden</string>
     <string name="content_description_menu_button">Menü</string>
-    <string name="continue_call">Fortsetzen</string>
+    <string name="continue_call">Weiter</string>
     <string name="convert_to_fbe_warning">"Du möchtest von Datenpartitions- zur dateibasierten Verschlüsselung wechseln.
 Achtung! Dadurch werden alle deine Daten gelöscht.
 Es handelt sich um eine Alphaversion, die möglicherweise nicht korrekt funktioniert.
@@ -564,6 +564,7 @@ Wenn du weiterhin mobile Daten nutzt, können Gebühren anfallen."</string>
     <string name="development_settings_summary">Optionen zur App-Entwicklung festlegen</string>
     <string name="development_settings_title">Entwickleroptionen</string>
     <string name="device_services">Gerätedienste</string>
+    <string name="dialog_mhs_error">Bitte warten Sie, während die Überprüfung läuft...</string>
     <string name="direct_boot_unaware_dialog_message">Hinweis: Nach einem Neustart wird diese App erst gestartet, wenn du dein Smartphone entsperrst</string>
     <string name="disable_carrier_button_text">eSIM deaktivieren</string>
     <string name="disable_overlays">HW-Overlays deaktivieren</string>
@@ -602,7 +603,7 @@ Wenn du weiterhin mobile Daten nutzt, können Gebühren anfallen."</string>
     <string name="enable_terminal_summary">Terminal-App mit Zugriff auf lokale Shell aktivieren</string>
     <string name="enable_terminal_title">Lokales Terminal</string>
     <string name="enabled_by_admin">Vom Administrator aktiviert</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Beenden</string>
     <string name="error_disable_esim_msg">Die eSim kann aufgrund eines Fehlers nicht deaktiviert werden.</string>
     <string name="error_disable_esim_title">Die eSIM kann nicht deaktiviert werden</string>
     <string name="ethernet_label">Ethernet</string>
@@ -951,7 +952,7 @@ Bitte versuche es in %2$d Sekunden noch einmal."</string>
     <string name="lockscreen_unlock_left">Linke Verknüpfung entsperrt außerdem</string>
     <string name="lockscreen_unlock_right">Rechte Verknüpfung entsperrt außerdem</string>
     <string name="long_press_power_navigation_assist_content">"Die \"Ein-/Ausschalttaste\" 
-zum Aktivieren der Assistenten-App gedrückt halten"</string>
+zum Aktivieren der Sprachassistenten gedrückt halten"</string>
     <string name="long_press_power_navigation_power_content">Die \"Ein-/Ausschalttaste\" und die \"Lauter-Taste\" gleichzeitig drücken, um auszuschalten</string>
     <string name="long_press_power_navigation_setting_button">Einstellungen ändern</string>
     <string name="manage_bubbles_text">Verwalten</string>
@@ -967,6 +968,8 @@ zum Aktivieren der Assistenten-App gedrückt halten"</string>
     <string name="media_projection_remember_text">Nicht mehr anzeigen</string>
     <string name="media_transfer_this_device_name">Dieses Gerät</string>
     <string name="menu_ime">Tastaturwechsler</string>
+    <string name="mhs_app">My Verizon öffnen</string>
+    <string name="mhs_call_back_error">Datenverbindung ist nicht verfügbar.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobile Daten</string>
@@ -983,6 +986,12 @@ Die mobile Datenverbindung deaktivieren?"</string>
 Die mobile Datenverbindung deaktivieren?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobiler Hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Deaktivieren Sie den Flugzeugmodus, um den Hotspot zu aktivieren</string>
+    <string name="mobile_hotspot_authoration_error">"Um den mobilen Hotspot zu verwenden, müssen Sie die mobilen Hotspot-Services abonnieren.
+
+Besuchen Sie dazu My Verizon, oder rufen Sie den Kundendienst unter (800) 922–0204 an."</string>
+    <string name="mobile_hotspot_data_off_error">Aktivieren Sie die mobile Datenverbindung, um den Hotspot zu aktivieren</string>
     <string name="mock_location_app">App für simulierte Standorte auswählen</string>
     <string name="mock_location_app_not_set">Keine App für simulierte Standorte eingerichtet</string>
     <string name="mock_location_app_set">App für simulierte Standorte: %1$s</string>
@@ -1069,7 +1078,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="music_controls_no_title">Kein Titel</string>
     <string name="nav_bar">Navigationsleiste</string>
     <string name="nav_bar_default">(Standard)</string>
-    <string name="nav_bar_guide_positive">OK</string>
+    <string name="nav_bar_guide_positive">VERSTANDEN</string>
     <string name="nav_bar_guide_title">Wischen Sie von unten nach oben, um die Navigationsleiste anzuzeigen. Tippen Sie hier, um das Ausblenden der Navigation zu beenden.</string>
     <string name="nav_bar_layout">Layout</string>
     <string name="no_application">Keine</string>
@@ -1160,7 +1169,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="op_notification_alert_title">Wichtig</string>
     <string name="op_notification_channel_summary_low">Weniger wichtige Benachrichtigungen ohne Ton oder Vibration.</string>
     <string name="op_notification_section_header_gentle">Sonstige Benachrichtigungen</string>
-    <string name="op_notification_silence_title">Andere</string>
+    <string name="op_notification_silence_title">Sonstige</string>
     <string name="op_quick_settings_night_display_label">Nachtmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nacht-Modus deaktiviert, zum Aktivieren tippen</string>
     <string name="op_quick_settings_night_display_summary_on">Nacht-Modus aktiviert, zum Deaktivieren tippen</string>
@@ -1195,7 +1204,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
 3. Die Taschenlampe ausschalten"</string>
     <string name="overheat_dialog_purple_button">Jetzt ausschalten</string>
     <string name="overheat_dialog_purple_message">Das Telefon wird nach 5 Sekunden ausgeschaltet</string>
-    <string name="overheat_dialog_red_message">Zum Senken der Temperatur werden alle Anwendungsprozesse gelöscht</string>
+    <string name="overheat_dialog_red_message">Zum Senken der Temperatur alle Anwendungsprozesse löschen</string>
     <string name="overheat_dialog_title">Die Temperatur Ihres Telefons ist zu hoch</string>
     <string name="overheat_notification_alert">Die Temperatur Ihres Telefons ist zu hoch und zum Senken der Temperatur werden Funktionen mit hohem Stromverbrauch deaktiviert</string>
     <string name="overheat_notification_resume">Die Temperatur des Telefons wurde wiederhergestellt und das Telefon kann normal verwendet werden</string>
@@ -1296,7 +1305,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="profile_owned_footer">Profil wird eventuell überwacht.</string>
     <string name="qr_bubble_hint">Zum Lesen und Beantworten von Nachrichten die Blase antippen</string>
     <string name="qr_portrait_hint">Schnelle Antwort ist im Querformat deaktiviert</string>
-    <string name="qr_portrait_turn_on">AKTIVIEREN</string>
+    <string name="qr_portrait_turn_on">EINSCHALTEN</string>
     <string name="qs_dnd_keep">Beibehalten</string>
     <string name="qs_dnd_prompt_app">\"Bitte nicht stören\" wurde von einer App aktiviert (%s).</string>
     <string name="qs_dnd_prompt_auto_rule">\"Bitte nicht stören\" wurde von einer automatischen Regel aktiviert (%s).</string>
@@ -1449,7 +1458,7 @@ Energiesparmodus"</string>
     <string name="recents_deep_clean_option">Tiefenbereinigung</string>
     <string name="recents_empty_no_apps_open">Keine Anwendung geöffnet</string>
     <string name="recents_empty_recently_closed">Zuletzt geschlossene Apps</string>
-    <string name="recents_normal_clean_description">Aufgabenliste und Cache löschen, ohne Hintergrundprozesse zu löschen.</string>
+    <string name="recents_normal_clean_description">Aufgabenliste und Cache bereinigen, ohne Hintergrundprozesse zu bereinigen.</string>
     <string name="recents_normal_clean_option">Normales Bereinigen</string>
     <string name="recents_option_note">Das können Sie in den Einstellungen -> Erweitert ändern.</string>
     <string name="recents_option_title">Welche Methode bevorzugen Sie</string>

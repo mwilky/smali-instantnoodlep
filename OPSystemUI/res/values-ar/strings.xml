@@ -287,13 +287,13 @@
 هل تريد تشغيل وضع الطائرة؟"</string>
     <string name="alarm_template">في %1$s</string>
     <string name="alarm_template_far">يوم %1$s</string>
-    <string name="alert_button_cancel">إلغاء</string>
+    <string name="alert_button_cancel">إلغاء الأمر</string>
     <string name="alert_button_settings">الإعدادات</string>
     <string name="alert_message_assisted_dialing">لا يمكن اكتشاف البلد المرجعي من بطاقة SIM. يُرجى تحديد البلد المرجعي يدويًا.</string>
     <string name="alert_title_assisted_dialing">الاتصال المساعد</string>
     <string name="allow_mock_location">السماح بمواقع وهمية</string>
     <string name="allow_mock_location_summary">السماح بمواقع وهمية</string>
-    <string name="allow_notification">سماح بالإخطارات</string>
+    <string name="allow_notification">السماح بالإشعارات</string>
     <string name="always_use_accessory">فتح تطبيق %1$s دائمًا عند توصيل %2$s</string>
     <string name="always_use_device">فتح تطبيق %1$s دائمًا عند توصيل %2$s</string>
     <string name="animator_duration_scale_title">طول مدة الرسوم المتحركة</string>
@@ -566,6 +566,7 @@
     <string name="development_settings_summary">تعيين خيارات تطوير التطبيق</string>
     <string name="development_settings_title">خيارات مطور البرامج</string>
     <string name="device_services">خدمات الأجهزة</string>
+    <string name="dialog_mhs_error">يُرجى الانتظار بينما يتم التحقق..</string>
     <string name="direct_boot_unaware_dialog_message">ملاحظة: بعد إعادة التشغيل، يتعذر بدء هذا التطبيق إلى أن تلغي قفل هاتفك.</string>
     <string name="disable_carrier_button_text">‏إيقاف شريحة eSIM</string>
     <string name="disable_overlays">إيقاف تراكبات الأجهزة</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">تفعيل تطبيق طرفي يوفر إمكانية الدخول إلى واجهة النظام المحلية</string>
     <string name="enable_terminal_title">تطبيق طرفي محلي</string>
     <string name="enabled_by_admin">فعَّل المشرف هذا الإعداد.</string>
-    <string name="end_call">End</string>
+    <string name="end_call">إنهاء</string>
     <string name="error_disable_esim_msg">‏يتعذّر إيقاف eSIM بسبب خطأ.</string>
     <string name="error_disable_esim_title">‏يتعذّر إيقاف eSIM.</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@
     <string name="lockscreen_unlock_left">اختصار اليسار يلغي أيضًا تأمين</string>
     <string name="lockscreen_unlock_right">اختصار اليمين يلغي أيضًا تأمين</string>
     <string name="long_press_power_navigation_assist_content">"اضغط مع الاستمرار على \"زر الطاقة\" 
-لتطبيق Assist"</string>
+للمساعد الصوتي"</string>
     <string name="long_press_power_navigation_power_content">اضغط على \"زر الطاقة\" و\"زر رفع الصوت\" بالتزامن لإيقاف التشغيل</string>
     <string name="long_press_power_navigation_setting_button">تعديل الإعدادات</string>
     <string name="manage_bubbles_text">إدارة</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">عدم الإظهار مرة أخرى</string>
     <string name="media_transfer_this_device_name">هذا الجهاز</string>
     <string name="menu_ime">مفتاح تبديل لوحة المفاتيح</string>
+    <string name="mhs_app">افتح تطبيق My Verizon</string>
+    <string name="mhs_call_back_error">اتصال البيانات غير متاح.</string>
     <string name="mobile263">خدمة تجوال OnePlus</string>
     <string name="mobile_carrier_text_format">%1$s، %2$s</string>
     <string name="mobile_data">بيانات الجوّال</string>
@@ -985,6 +988,12 @@
  هل تريد إيقاف تشغيل اتصال بيانات الجوال؟"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">نقطة اتصال</string>
+    <string name="mobile_hotspot_airplane_off_error">لتشغيل نقطة الاتصال، يُرجى إيقاف تشغيل وضع الطائرة</string>
+    <string name="mobile_hotspot_authoration_error">"لاستخدام نقطة اتصال الجوال، سيتعين عليك الاشتراك في خدمات نقطة الاتصال.
+
+للاشتراك في نقطة الاتصال، تفضل بزيارة My Verizon أو اتصل بخدمة العملاء على (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">لتشغيل نقطة الاتصال، يُرجى تشغيل بيانات الجوال</string>
     <string name="mock_location_app">اختيار تطبيق الموقع الزائف</string>
     <string name="mock_location_app_not_set">لم يتم تعيين تطبيق موقع زائف</string>
     <string name="mock_location_app_set">تطبيق الموقع الزائف: %1$s</string>
@@ -1071,7 +1080,7 @@
     <string name="music_controls_no_title">بلا عنوان</string>
     <string name="nav_bar">شريط التنقل</string>
     <string name="nav_bar_default">(تلقائي)</string>
-    <string name="nav_bar_guide_positive">حصلت عليه</string>
+    <string name="nav_bar_guide_positive">حسنًا</string>
     <string name="nav_bar_guide_title">اسحب لأعلى من أسفل لإظهار شريط التنقل. لإيقاف إخفاء التنقل، يُرجى النقر هنا.</string>
     <string name="nav_bar_layout">التنسيق</string>
     <string name="no_application">لا شيء</string>
@@ -1140,7 +1149,7 @@
     <string name="ongoing_privacy_chip_content_single_app">التطبيق %1$s يستخدم %2$s.</string>
     <string name="ongoing_privacy_dialog_last_separator">" و "</string>
     <string name="ongoing_privacy_dialog_separator">"، "</string>
-    <string name="op_earphone_connect">اقتران...</string>
+    <string name="op_earphone_connect">جارِ الاقتران...</string>
     <string name="op_earphone_connected_fail">فشل الاقتران. يمكنك التحقق من حالة سماعة الرأس والبلوتوث.</string>
     <string name="op_earphone_connected_success">مقترن. اضغط لتعيين المزيد.</string>
     <string name="op_earphone_device">اضغط للاقتران</string>
@@ -1193,13 +1202,13 @@
     <string name="overheat_dialog_orange_button">تنفيذ الآن</string>
     <string name="overheat_dialog_orange_message">"سيتم تنفيذ العمليات التالية لخفض درجة الحرارة
 1.تقليل السطوع
-2.إيقاف تشغيل نقطة الاتصال
+2.إيقاف تشغيل نقطة الاتصال 
 3.إيقاف تشغيل المصباح"</string>
-    <string name="overheat_dialog_purple_button">إيقاف التشغيل الآن</string>
-    <string name="overheat_dialog_purple_message">سيتم إيقاف تشغيل الهاتف بعد 5 ثوانٍ</string>
+    <string name="overheat_dialog_purple_button">إيقاف الآن</string>
+    <string name="overheat_dialog_purple_message">سيتم إيقاف الهاتف بعد 5 ثوانٍ</string>
     <string name="overheat_dialog_red_message">ستمسح كافة عمليات التطبيقات لتقليل درجة الحرارة</string>
     <string name="overheat_dialog_title">درجة حرارة هاتفك مرتفعة للغاية</string>
-    <string name="overheat_notification_alert">درجة حرارة هاتفك مرتفعة للغاية، وقد تم إيقاف تشغيل الوظائف ذات الاستهلاك العالي للطاقة لخفض درجة الحرارة</string>
+    <string name="overheat_notification_alert">درجة حرارة هاتفك مرتفعة للغاية، وتم إيقاف تشغيل الوظائف ذات الاستهلاك العالي للطاقة لخفض درجة الحرارة</string>
     <string name="overheat_notification_resume">تمت استعادة درجة حرارة الهاتف ويمكن استخدامه الآن بشكل طبيعي</string>
     <string name="overheat_notification_title_resume">تمت استعادة درجة حرارة الهاتف</string>
     <string name="overheat_toast_content">درجة حرارة هاتفك مرتفعة للغاية، وقد تم إيقاف تشغيل الوظائف مرتفعة الاستهلاك للطاقة لخفض درجة الحرارة</string>
@@ -1451,7 +1460,7 @@
     <string name="recents_deep_clean_option">مسح عميق</string>
     <string name="recents_empty_no_apps_open">لا توجد تطبيقات مفتوحة</string>
     <string name="recents_empty_recently_closed">التطبيقات المغلقة مؤخرًا</string>
-    <string name="recents_normal_clean_description">مسح قائمة المهام والذاكرة الخاصة بها دون مسح العمليات التي تتم في الخلفية.</string>
+    <string name="recents_normal_clean_description">مسح قائمة المهام وذاكرة التخزين المؤقت دون مسح عمليات الخلفية.</string>
     <string name="recents_normal_clean_option">المسح العادي</string>
     <string name="recents_option_note">يمكنك تغيير هذا الإعداد في--> خيارات متقدمة.</string>
     <string name="recents_option_title">ما الطريقة التي تفضلها</string>

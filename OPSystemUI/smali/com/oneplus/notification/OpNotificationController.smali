@@ -253,7 +253,9 @@
 
     const-string v0, "com.whatsapp"
 
-    filled-new-array {v1, v0}, [Ljava/lang/String;
+    const-string v2, "com.netease.cloudmusic"
+
+    filled-new-array {v1, v0, v2}, [Ljava/lang/String;
 
     move-result-object v0
 
@@ -2279,7 +2281,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v4, 0xce
+    const/16 v4, 0xcf
 
     aput v4, p2, v2
 

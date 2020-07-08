@@ -566,6 +566,7 @@ Si reprens l'ús de les dades, es poden aplicar càrrecs."</string>
     <string name="development_settings_summary">"Defineix les opcions per al desenvolupament d'aplicacions"</string>
     <string name="development_settings_title">Opcions per a desenvolupadors</string>
     <string name="device_services">Serveis per a dispositius</string>
+    <string name="dialog_mhs_error">Espereu mentre es fa la verificació..</string>
     <string name="direct_boot_unaware_dialog_message">"Nota: després de reiniciar, l'aplicació no s'iniciarà fins que no desbloquegis el telèfon"</string>
     <string name="disable_carrier_button_text">"Desactiva l'eSIM"</string>
     <string name="disable_overlays">Desactiva superposicions maquinari</string>
@@ -604,7 +605,7 @@ Si reprens l'ús de les dades, es poden aplicar càrrecs."</string>
     <string name="enable_terminal_summary">"Activa l'aplicació de terminal que ofereix accés al shell local"</string>
     <string name="enable_terminal_title">Terminal local</string>
     <string name="enabled_by_admin">"Activat per l'administrador"</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Finalitza</string>
     <string name="error_disable_esim_msg">"S'ha produït un error i no es pot desactivar l'eSIM."</string>
     <string name="error_disable_esim_title">"No es pot desactivar l'eSIM"</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Torna-ho a provar d'aquí a %2$d segons."</string>
     <string name="lockscreen_unlock_left">"La drecera de l'esquerra també desbloqueja el dispositiu"</string>
     <string name="lockscreen_unlock_right">La drecera de la dreta també desbloqueja el dispositiu</string>
     <string name="long_press_power_navigation_assist_content">"Mantingueu premut el \"botó d'engegada\" 
-per a l'aplicació d'assistència"</string>
+per a l'Assistent de veu"</string>
     <string name="long_press_power_navigation_power_content">"Premeu el \"botó d'engegada\" i el \"botó d'apujar el volum\" simultàniament per apagar"</string>
     <string name="long_press_power_navigation_setting_button">Modifica la configuració</string>
     <string name="manage_bubbles_text">Gestiona</string>
@@ -969,6 +970,8 @@ per a l'aplicació d'assistència"</string>
     <string name="media_projection_remember_text">No ho tornis a mostrar</string>
     <string name="media_transfer_this_device_name">Aquest dispositiu</string>
     <string name="menu_ime">Commutador del teclat</string>
+    <string name="mhs_app">Obre My Verizon</string>
+    <string name="mhs_call_back_error">La connexió de dades no està disponible.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Dades mòbils</string>
@@ -985,6 +988,12 @@ Voleu desactivar la connexió de dades mòbils?"</string>
 Voleu desactivar la connexió de dades?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s - %2$s</string>
+    <string name="mobile_hotspot">Zona Wi-Fi mòbil</string>
+    <string name="mobile_hotspot_airplane_off_error">Per activar la zona Wi-Fi, desactiveu el mode avió</string>
+    <string name="mobile_hotspot_authoration_error">"Per utilitzar la zona Wi-Fi mòbil, haureu de subscrivir-vos als Serveis de la zona Wi-Fi mòbil.
+
+Per subscriure-us a la zona Wi-Fi mòbil, visiteu my verizon o truqueu a atenció al client al número de telèfon (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Per activar la zona Wi-Fi, activeu les dades mòbils</string>
     <string name="mock_location_app">"Selecciona una aplicació d'ubicació simulada"</string>
     <string name="mock_location_app_not_set">"No s'ha definit cap aplicació d'ubicació simulada"</string>
     <string name="mock_location_app_set">"Aplicació d'ubicació simulada: %1$s"</string>
@@ -1192,15 +1201,15 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="output_title">Sortida de contingut multimèdia</string>
     <string name="overheat_dialog_orange_button">Executa ara</string>
     <string name="overheat_dialog_orange_message">"Es realitzaran aquestes accions per reduir la temperatura
-1. Reduir la brillantor
-2. Desactivar el punt de connexió
-3. Apagar la llanterna"</string>
+1. Redueix la brillantor
+2. Desactiva el punt de connexió
+3. Apaga la llanterna"</string>
     <string name="overheat_dialog_purple_button">Apaga ara</string>
     <string name="overheat_dialog_purple_message">"El telèfon s'apagarà després de 5 segons"</string>
     <string name="overheat_dialog_red_message">"Esborrarà tots els processos d'aplicacions per reduir la temperatura"</string>
-    <string name="overheat_dialog_title">La temperatura del telèfon és massa alta</string>
+    <string name="overheat_dialog_title">La temperatura del vostre telèfon és massa alta</string>
     <string name="overheat_notification_alert">"La temperatura del vostre telèfon és massa alta, i s'han desactivat les funcions de consum d'energia alt per reduir la temperatura"</string>
-    <string name="overheat_notification_resume">"La temperatura del telèfon s'ha restaurat i ja es pot utilitzar amb normalitat"</string>
+    <string name="overheat_notification_resume">"La temperatura del telèfon s'ha restaurat i el telèfon es pot utilitzar amb normalitat"</string>
     <string name="overheat_notification_title_resume">"La temperatura del telèfon s'ha restaurat"</string>
     <string name="overheat_toast_content">"La temperatura del vostre telèfon és massa alta, i s'han desactivat les funcions de consum d'energia alt per reduir la temperatura"</string>
     <string name="overlay_display_devices_title">Simula pantalles secundàries</string>
@@ -1380,7 +1389,7 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="quick_settings_game_mode_demo_all">les notificacions es bloquejaran i els botons capacitius també es bloquejaran</string>
     <string name="quick_settings_game_mode_demo_button">el botons capacitius es bloquejaran</string>
     <string name="quick_settings_game_mode_demo_notification">les notificacions es bloquejaran</string>
-    <string name="quick_settings_game_mode_label">Mode joc</string>
+    <string name="quick_settings_game_mode_label">Mode de joc</string>
     <string name="quick_settings_game_mode_summary_off">Mode de joc desactivat, toqueu per activar-lo</string>
     <string name="quick_settings_game_mode_summary_on">Mode de joc activat, toqueu per desactivar-lo</string>
     <string name="quick_settings_header_onboarding_text">Mantén premudes les icones per veure més opcions</string>
@@ -1764,7 +1773,7 @@ Qualsevol usuari pot actualitzar les aplicacions de la resta d'usuaris."</string
     <string name="volume_stream_content_description_vibrate">"%1$s. Toca per activar la vibració. Pot ser que els serveis d'accessibilitat se silenciïn."</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Toca per activar la vibració.</string>
     <string name="volume_up_silent">Surt del mode No molestis apujant el volum</string>
-    <string name="volume_vibrate">Vibra</string>
+    <string name="volume_vibrate">Vibració</string>
     <string name="volume_zen_end_now">Desactiva ara</string>
     <string name="vpn_footer">És possible que la xarxa estigui supervisada.</string>
     <string name="vpn_settings_not_available">La configuració de la VPN no està disponible per a aquest usuari.</string>
@@ -1801,7 +1810,7 @@ Qualsevol usuari pot actualitzar les aplicacions de la resta d'usuaris."</string
     <string name="wifi_verbose_logging">Activa el registre Wi‑Fi detallat</string>
     <string name="wifi_verbose_logging_summary">"Augmenta nivell de registre Wi‑Fi, mostra'l per SSID RSSI al selector de Wi‑Fi"</string>
     <string name="window_animation_scale_title">"Escala d'animació finestra"</string>
-    <string name="work_life_balance_mode">Balanç treball-vida</string>
+    <string name="work_life_balance_mode">Equilibri treball-vida</string>
     <string name="yes_bubbles">Permet</string>
     <string name="zen_alarm_warning">%1$s no sentiràs la pròxima alarma</string>
     <string name="zen_alarm_warning_indef">Si no desactives aquesta opció abans, no sentiràs la pròxima alarma (%1$s)</string>

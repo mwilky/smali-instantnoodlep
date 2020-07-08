@@ -7810,7 +7810,7 @@
 .method protected onAttachedToWindow()V
     .locals 3
 
-    invoke-super {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->onAttachedToWindow()V
+    invoke-super {p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->onAttachedToWindow()V
 
     invoke-static {p0}, Lcom/android/systemui/fragments/FragmentHostManager;->get(Landroid/view/View;)Lcom/android/systemui/fragments/FragmentHostManager;
 
@@ -7960,7 +7960,7 @@
 .method protected onDetachedFromWindow()V
     .locals 3
 
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+    invoke-super {p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->onDetachedFromWindow()V
 
     invoke-static {p0}, Lcom/android/systemui/fragments/FragmentHostManager;->get(Landroid/view/View;)Lcom/android/systemui/fragments/FragmentHostManager;
 

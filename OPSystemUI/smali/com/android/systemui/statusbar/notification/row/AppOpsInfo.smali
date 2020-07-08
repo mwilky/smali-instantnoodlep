@@ -491,6 +491,14 @@
     return p0
 .end method
 
+.method public getAppName()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/notification/row/AppOpsInfo;->mAppName:Ljava/lang/String;
+
+    return-object p0
+.end method
+
 .method public getContentView()Landroid/view/View;
     .locals 0
 
