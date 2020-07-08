@@ -150,7 +150,7 @@
     return p0
 .end method
 
-.method public static pa(I)[B
+.method public static qa(I)[B
     .locals 2
 
     const/4 v0, 0x4
@@ -164,7 +164,7 @@
     return-object v0
 .end method
 
-.method public static qa(I)[B
+.method public static ra(I)[B
     .locals 2
 
     const/4 v0, 0x4

@@ -4,21 +4,13 @@
 
 
 # static fields
-.field private static Aoa:Landroid/util/Spline; = null
-
-.field private static Boa:Landroid/util/Spline; = null
-
-.field private static Coa:Landroid/util/Spline; = null
-
 .field private static final DEBUG:Z = true
 
-.field private static Doa:Landroid/util/Spline; = null
+.field private static final Eoa:[F
 
-.field private static Eoa:Landroid/util/Spline; = null
+.field private static final Foa:[F
 
-.field private static Foa:Landroid/util/Spline; = null
-
-.field private static Goa:Landroid/util/Spline; = null
+.field private static Goa:[F = null
 
 .field private static Hoa:Landroid/util/Spline; = null
 
@@ -54,55 +46,63 @@
 
 .field private static Voa:Landroid/util/Spline;
 
-.field private static Woa:[I
+.field private static Woa:Landroid/util/Spline;
 
-.field private static Xoa:[I
+.field private static Xoa:Landroid/util/Spline;
 
-.field private static Yoa:[I
+.field private static Yoa:Landroid/util/Spline;
 
-.field private static Zoa:I
+.field private static Zoa:Landroid/util/Spline;
 
-.field private static _oa:I
+.field private static _oa:Landroid/util/Spline;
 
-.field private static apa:Landroid/graphics/ColorSpace$Rgb;
+.field private static apa:Landroid/util/Spline;
 
-.field private static bpa:[I
+.field private static bpa:Landroid/util/Spline;
 
-.field private static cpa:[I
+.field private static cpa:Landroid/util/Spline;
 
-.field private static final ioa:[F
+.field private static dpa:Landroid/util/Spline;
 
-.field private static final joa:[F
+.field private static epa:Landroid/util/Spline;
 
-.field private static koa:[F
+.field private static fpa:Landroid/util/Spline;
 
-.field private static loa:Landroid/util/Spline;
+.field private static gpa:Landroid/util/Spline;
 
-.field private static moa:Landroid/util/Spline;
+.field private static hpa:Landroid/util/Spline;
 
-.field private static noa:Landroid/util/Spline;
+.field private static ipa:Landroid/util/Spline;
 
-.field private static ooa:Landroid/util/Spline;
+.field private static jpa:Landroid/util/Spline;
 
-.field private static poa:Landroid/util/Spline;
+.field private static kpa:Landroid/util/Spline;
 
-.field private static qoa:Landroid/util/Spline;
+.field private static lpa:Landroid/util/Spline;
 
-.field private static roa:Landroid/util/Spline;
+.field private static mpa:Landroid/util/Spline;
 
-.field private static soa:Landroid/util/Spline;
+.field private static npa:Landroid/util/Spline;
 
-.field private static uoa:Landroid/util/Spline;
+.field private static opa:Landroid/util/Spline;
 
-.field private static voa:Landroid/util/Spline;
+.field private static ppa:Landroid/util/Spline;
 
-.field private static woa:Landroid/util/Spline;
+.field private static qpa:[I
 
-.field private static xoa:Landroid/util/Spline;
+.field private static rpa:[I
 
-.field private static yoa:Landroid/util/Spline;
+.field private static spa:[I
 
-.field private static zoa:Landroid/util/Spline;
+.field private static tpa:I
+
+.field private static upa:I
+
+.field private static vpa:Landroid/graphics/ColorSpace$Rgb;
+
+.field private static wpa:[I
+
+.field private static xpa:[I
 
 
 # direct methods
@@ -121,7 +121,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/oneplus/android/server/display/vdb;->ioa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/vdb;->Eoa:[F
 
     const/4 v0, 0x6
 
@@ -129,7 +129,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/oneplus/android/server/display/vdb;->joa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/vdb;->Foa:[F
 
     return-void
 
@@ -173,7 +173,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xea
+    const/16 v2, 0xeb
 
     aput v2, v0, v1
 
@@ -198,7 +198,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/oneplus/android/server/display/vdb;->bpa:[I
+    sput-object v1, Lcom/oneplus/android/server/display/vdb;->wpa:[I
 
     const v1, 0x1070048
 
@@ -206,7 +206,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/oneplus/android/server/display/vdb;->cpa:[I
+    sput-object v1, Lcom/oneplus/android/server/display/vdb;->xpa:[I
 
     const v1, 0x10e005c
 
@@ -214,7 +214,7 @@
 
     move-result v1
 
-    sput v1, Lcom/oneplus/android/server/display/vdb;->Zoa:I
+    sput v1, Lcom/oneplus/android/server/display/vdb;->tpa:I
 
     const v1, 0x10e005b
 
@@ -222,7 +222,7 @@
 
     move-result v1
 
-    sput v1, Lcom/oneplus/android/server/display/vdb;->_oa:I
+    sput v1, Lcom/oneplus/android/server/display/vdb;->upa:I
 
     const v1, 0x107004f
 
@@ -230,7 +230,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/oneplus/android/server/display/vdb;->Woa:[I
+    sput-object v1, Lcom/oneplus/android/server/display/vdb;->qpa:[I
 
     const v1, 0x107001c
 
@@ -662,79 +662,79 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->loa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Hoa:Landroid/util/Spline;
 
     invoke-static {v1, v4}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->moa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Ioa:Landroid/util/Spline;
 
     invoke-static {v1, v5}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->noa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Joa:Landroid/util/Spline;
 
     invoke-static {v1, v6}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->ooa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Koa:Landroid/util/Spline;
 
     invoke-static {v1, v7}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->poa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Loa:Landroid/util/Spline;
 
     invoke-static {v1, v8}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->qoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Moa:Landroid/util/Spline;
 
     invoke-static {v1, v9}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->roa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Noa:Landroid/util/Spline;
 
     invoke-static {v1, v10}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->soa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Ooa:Landroid/util/Spline;
 
     invoke-static {v1, v11}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->uoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Poa:Landroid/util/Spline;
 
     invoke-static {v1, v12}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->voa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Qoa:Landroid/util/Spline;
 
     invoke-static {v1, v13}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->woa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Roa:Landroid/util/Spline;
 
     invoke-static {v1, v14}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->xoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Soa:Landroid/util/Spline;
 
     invoke-static {v1, v15}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->yoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Toa:Landroid/util/Spline;
 
     move-object/from16 v2, v16
 
@@ -742,7 +742,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->zoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Uoa:Landroid/util/Spline;
 
     move-object/from16 v2, v17
 
@@ -750,7 +750,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Aoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Voa:Landroid/util/Spline;
 
     move-object/from16 v2, v18
 
@@ -758,7 +758,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Boa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Woa:Landroid/util/Spline;
 
     move-object/from16 v2, v19
 
@@ -766,7 +766,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Coa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Xoa:Landroid/util/Spline;
 
     move-object/from16 v2, v20
 
@@ -774,7 +774,7 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/oneplus/android/server/display/vdb;->Doa:Landroid/util/Spline;
+    sput-object v1, Lcom/oneplus/android/server/display/vdb;->Yoa:Landroid/util/Spline;
 
     move-object/from16 v1, p0
 
@@ -784,7 +784,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Eoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Zoa:Landroid/util/Spline;
 
     move-object/from16 v2, v22
 
@@ -792,7 +792,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Foa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->_oa:Landroid/util/Spline;
 
     move-object/from16 v2, v23
 
@@ -800,7 +800,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Goa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->apa:Landroid/util/Spline;
 
     move-object/from16 v2, v24
 
@@ -808,7 +808,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Hoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->bpa:Landroid/util/Spline;
 
     move-object/from16 v2, v25
 
@@ -816,7 +816,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Ioa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->cpa:Landroid/util/Spline;
 
     move-object/from16 v2, v26
 
@@ -824,7 +824,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Joa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->dpa:Landroid/util/Spline;
 
     move-object/from16 v2, v27
 
@@ -832,7 +832,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Koa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->epa:Landroid/util/Spline;
 
     move-object/from16 v2, v28
 
@@ -840,7 +840,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Loa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->fpa:Landroid/util/Spline;
 
     move-object/from16 v2, v29
 
@@ -848,7 +848,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Moa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->gpa:Landroid/util/Spline;
 
     move-object/from16 v2, v30
 
@@ -856,7 +856,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Noa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->hpa:Landroid/util/Spline;
 
     move-object/from16 v2, v31
 
@@ -864,7 +864,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Ooa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->ipa:Landroid/util/Spline;
 
     move-object/from16 v2, v32
 
@@ -872,7 +872,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Poa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->jpa:Landroid/util/Spline;
 
     move-object/from16 v2, v33
 
@@ -880,7 +880,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Qoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->kpa:Landroid/util/Spline;
 
     move-object/from16 v2, v34
 
@@ -888,7 +888,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Roa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->lpa:Landroid/util/Spline;
 
     move-object/from16 v2, v35
 
@@ -896,7 +896,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Soa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->mpa:Landroid/util/Spline;
 
     move-object/from16 v2, v36
 
@@ -904,7 +904,7 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Toa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->npa:Landroid/util/Spline;
 
     move-object/from16 v2, v37
 
@@ -912,19 +912,19 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/vdb;->Uoa:Landroid/util/Spline;
+    sput-object v2, Lcom/oneplus/android/server/display/vdb;->opa:Landroid/util/Spline;
 
     invoke-static {v1, v0}, Landroid/util/Spline;->createSpline([F[F)Landroid/util/Spline;
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/display/vdb;->Voa:Landroid/util/Spline;
+    sput-object v0, Lcom/oneplus/android/server/display/vdb;->ppa:Landroid/util/Spline;
 
     new-instance v0, Landroid/graphics/ColorSpace$Rgb;
 
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->joa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Foa:[F
 
-    sget-object v4, Lcom/oneplus/android/server/display/vdb;->ioa:[F
+    sget-object v4, Lcom/oneplus/android/server/display/vdb;->Eoa:[F
 
     const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
 
@@ -934,7 +934,7 @@
 
     invoke-direct/range {v1 .. v6}, Landroid/graphics/ColorSpace$Rgb;-><init>(Ljava/lang/String;[F[FD)V
 
-    sput-object v0, Lcom/oneplus/android/server/display/vdb;->apa:Landroid/graphics/ColorSpace$Rgb;
+    sput-object v0, Lcom/oneplus/android/server/display/vdb;->vpa:Landroid/graphics/ColorSpace$Rgb;
 
     new-instance v0, Lcom/oneplus/android/server/display/vdb;
 
@@ -1130,31 +1130,31 @@
 
 
 # virtual methods
-.method public Cf()[I
+.method public Ef()[I
     .locals 0
 
-    sget-object p0, Lcom/oneplus/android/server/display/vdb;->cpa:[I
+    sget-object p0, Lcom/oneplus/android/server/display/vdb;->xpa:[I
 
     return-object p0
 .end method
 
-.method public Df()I
+.method public Ff()I
     .locals 0
 
-    sget p0, Lcom/oneplus/android/server/display/vdb;->_oa:I
+    sget p0, Lcom/oneplus/android/server/display/vdb;->upa:I
 
     return p0
 .end method
 
-.method public Ef()I
+.method public Gf()I
     .locals 0
 
-    sget p0, Lcom/oneplus/android/server/display/vdb;->Zoa:I
+    sget p0, Lcom/oneplus/android/server/display/vdb;->tpa:I
 
     return p0
 .end method
 
-.method public Ff()[[I
+.method public Hf()[[I
     .locals 10
 
     const/4 p0, 0x6
@@ -1165,7 +1165,7 @@
 
     new-array v2, v1, [I
 
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Woa:[I
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->qpa:[I
 
     const/4 v4, 0x0
 
@@ -1296,7 +1296,7 @@
     return-object v0
 .end method
 
-.method public Gf()[[I
+.method public If()[[I
     .locals 3
 
     const/4 p0, 0x6
@@ -1394,117 +1394,117 @@
         0xff
         0x0
     .end array-data
-.end method
-
-.method public Hf()[[I
-    .locals 3
-
-    const/4 p0, 0x6
-
-    new-array p0, p0, [[I
-
-    const/4 v0, 0x3
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_0
-
-    const/4 v2, 0x0
-
-    aput-object v1, p0, v2
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_1
-
-    const/4 v2, 0x1
-
-    aput-object v1, p0, v2
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_2
-
-    const/4 v2, 0x2
-
-    aput-object v1, p0, v2
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_3
-
-    aput-object v1, p0, v0
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_4
-
-    const/4 v2, 0x4
-
-    aput-object v1, p0, v2
-
-    new-array v0, v0, [I
-
-    fill-array-data v0, :array_5
-
-    const/4 v1, 0x5
-
-    aput-object v0, p0, v1
-
-    return-object p0
-
-    :array_0
-    .array-data 4
-        0xff
-        0x0
-        0x0
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x0
-        0xff
-        0x0
-    .end array-data
-
-    :array_2
-    .array-data 4
-        0x0
-        0x0
-        0xff
-    .end array-data
-
-    :array_3
-    .array-data 4
-        0x0
-        0xff
-        0xff
-    .end array-data
-
-    :array_4
-    .array-data 4
-        0xff
-        0x0
-        0xff
-    .end array-data
-
-    :array_5
-    .array-data 4
-        0xff
-        0xff
-        0x0
-    .end array-data
-.end method
-
-.method public If()[I
-    .locals 0
-
-    sget-object p0, Lcom/oneplus/android/server/display/vdb;->bpa:[I
-
-    return-object p0
 .end method
 
 .method public Jf()[[I
+    .locals 3
+
+    const/4 p0, 0x6
+
+    new-array p0, p0, [[I
+
+    const/4 v0, 0x3
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_0
+
+    const/4 v2, 0x0
+
+    aput-object v1, p0, v2
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_1
+
+    const/4 v2, 0x1
+
+    aput-object v1, p0, v2
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_2
+
+    const/4 v2, 0x2
+
+    aput-object v1, p0, v2
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_3
+
+    aput-object v1, p0, v0
+
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_4
+
+    const/4 v2, 0x4
+
+    aput-object v1, p0, v2
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_5
+
+    const/4 v1, 0x5
+
+    aput-object v0, p0, v1
+
+    return-object p0
+
+    :array_0
+    .array-data 4
+        0xff
+        0x0
+        0x0
+    .end array-data
+
+    :array_1
+    .array-data 4
+        0x0
+        0xff
+        0x0
+    .end array-data
+
+    :array_2
+    .array-data 4
+        0x0
+        0x0
+        0xff
+    .end array-data
+
+    :array_3
+    .array-data 4
+        0x0
+        0xff
+        0xff
+    .end array-data
+
+    :array_4
+    .array-data 4
+        0xff
+        0x0
+        0xff
+    .end array-data
+
+    :array_5
+    .array-data 4
+        0xff
+        0xff
+        0x0
+    .end array-data
+.end method
+
+.method public Kf()[I
+    .locals 0
+
+    sget-object p0, Lcom/oneplus/android/server/display/vdb;->wpa:[I
+
+    return-object p0
+.end method
+
+.method public Lf()[[I
     .locals 3
 
     const/4 p0, 0x6
@@ -1625,7 +1625,7 @@
 
     aget-object v1, p0, v0
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->loa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Hoa:Landroid/util/Spline;
 
     int-to-float p1, p1
 
@@ -1639,7 +1639,7 @@
 
     aget-object v1, p0, v0
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->moa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Ioa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1653,7 +1653,7 @@
 
     aget-object v1, p0, v0
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->noa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Joa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1667,7 +1667,7 @@
 
     aget-object v1, p0, v3
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->ooa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Koa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1679,7 +1679,7 @@
 
     aget-object v1, p0, v3
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->poa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Loa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1691,7 +1691,7 @@
 
     aget-object v1, p0, v3
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->qoa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Moa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1703,7 +1703,7 @@
 
     aget-object v1, p0, v4
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->roa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Noa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1715,7 +1715,7 @@
 
     aget-object v0, p0, v4
 
-    sget-object v1, Lcom/oneplus/android/server/display/vdb;->soa:Landroid/util/Spline;
+    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Ooa:Landroid/util/Spline;
 
     invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1727,7 +1727,7 @@
 
     aget-object v0, p0, v4
 
-    sget-object v1, Lcom/oneplus/android/server/display/vdb;->uoa:Landroid/util/Spline;
+    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Poa:Landroid/util/Spline;
 
     invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -1763,436 +1763,10 @@
 
     aget-object v2, v0, v1
 
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->loa:Landroid/util/Spline;
-
-    int-to-float p1, p1
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v2, v0, v1
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->moa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    const/4 v4, 0x1
-
-    aput v3, v2, v4
-
-    aget-object v2, v0, v1
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->noa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    const/4 v5, 0x2
-
-    aput v3, v2, v5
-
-    aget-object v2, v0, v4
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->ooa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v2, v0, v4
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->poa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v4
-
-    aget-object v2, v0, v4
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->qoa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v5
-
-    aget-object v2, v0, v5
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->roa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v2, v0, v5
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->soa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v4
-
-    aget-object v2, v0, v5
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->uoa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v5
-
-    aget-object v2, v0, p0
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->voa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v2, v0, p0
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->woa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v4
-
-    aget-object p0, v0, p0
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->xoa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, p0, v5
-
-    const/4 p0, 0x4
-
-    aget-object v2, v0, p0
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->yoa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v2, v0, p0
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->zoa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v4
-
-    aget-object p0, v0, p0
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Aoa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, p0, v5
-
-    const/4 p0, 0x5
-
-    aget-object v2, v0, p0
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Boa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v1, v0, p0
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Coa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, v1, v4
-
-    aget-object p0, v0, p0
-
-    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Doa:Landroid/util/Spline;
-
-    invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result p1
-
-    float-to-int p1, p1
-
-    aput p1, p0, v5
-
-    return-object v0
-.end method
-
-.method public aa(I)[[I
-    .locals 5
-
-    const/4 p0, 0x3
-
-    filled-new-array {p0, p0}, [I
-
-    move-result-object p0
-
-    const-class v0, I
-
-    invoke-static {v0, p0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, [[I
-
-    const/4 v0, 0x0
-
-    aget-object v1, p0, v0
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Eoa:Landroid/util/Spline;
-
-    int-to-float p1, p1
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, v1, v0
-
-    aget-object v1, p0, v0
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Foa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    const/4 v3, 0x1
-
-    aput v2, v1, v3
-
-    aget-object v1, p0, v0
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Goa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    const/4 v4, 0x2
-
-    aput v2, v1, v4
-
-    aget-object v1, p0, v3
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Hoa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, v1, v0
-
-    aget-object v1, p0, v3
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Ioa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, v1, v3
-
-    aget-object v1, p0, v3
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Joa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, v1, v4
-
-    aget-object v1, p0, v4
-
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Koa:Landroid/util/Spline;
-
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v2
-
-    float-to-int v2, v2
-
-    aput v2, v1, v0
-
-    aget-object v0, p0, v4
-
-    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Loa:Landroid/util/Spline;
-
-    invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v1
-
-    float-to-int v1, v1
-
-    aput v1, v0, v3
-
-    aget-object v0, p0, v4
-
-    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Moa:Landroid/util/Spline;
-
-    invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result p1
-
-    float-to-int p1, p1
-
-    aput p1, v0, v4
-
-    return-object p0
-.end method
-
-.method public ba(I)[[I
-    .locals 6
-
-    const/4 p0, 0x3
-
-    const/4 v0, 0x6
-
-    filled-new-array {v0, p0}, [I
-
-    move-result-object v0
-
-    const-class v1, I
-
-    invoke-static {v1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [[I
-
-    const/4 v1, 0x0
-
-    aget-object v2, v0, v1
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Eoa:Landroid/util/Spline;
-
-    int-to-float p1, p1
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    aput v3, v2, v1
-
-    aget-object v2, v0, v1
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Foa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    const/4 v4, 0x1
-
-    aput v3, v2, v4
-
-    aget-object v2, v0, v1
-
-    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Goa:Landroid/util/Spline;
-
-    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
-
-    move-result v3
-
-    float-to-int v3, v3
-
-    const/4 v5, 0x2
-
-    aput v3, v2, v5
-
-    aget-object v2, v0, v4
-
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Hoa:Landroid/util/Spline;
 
+    int-to-float p1, p1
+
     invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
 
     move-result v3
@@ -2201,7 +1775,7 @@
 
     aput v3, v2, v1
 
-    aget-object v2, v0, v4
+    aget-object v2, v0, v1
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Ioa:Landroid/util/Spline;
 
@@ -2211,9 +1785,11 @@
 
     float-to-int v3, v3
 
+    const/4 v4, 0x1
+
     aput v3, v2, v4
 
-    aget-object v2, v0, v4
+    aget-object v2, v0, v1
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Joa:Landroid/util/Spline;
 
@@ -2223,9 +1799,11 @@
 
     float-to-int v3, v3
 
+    const/4 v5, 0x2
+
     aput v3, v2, v5
 
-    aget-object v2, v0, v5
+    aget-object v2, v0, v4
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Koa:Landroid/util/Spline;
 
@@ -2237,7 +1815,7 @@
 
     aput v3, v2, v1
 
-    aget-object v2, v0, v5
+    aget-object v2, v0, v4
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Loa:Landroid/util/Spline;
 
@@ -2249,7 +1827,7 @@
 
     aput v3, v2, v4
 
-    aget-object v2, v0, v5
+    aget-object v2, v0, v4
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Moa:Landroid/util/Spline;
 
@@ -2261,7 +1839,7 @@
 
     aput v3, v2, v5
 
-    aget-object v2, v0, p0
+    aget-object v2, v0, v5
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Noa:Landroid/util/Spline;
 
@@ -2273,7 +1851,7 @@
 
     aput v3, v2, v1
 
-    aget-object v2, v0, p0
+    aget-object v2, v0, v5
 
     sget-object v3, Lcom/oneplus/android/server/display/vdb;->Ooa:Landroid/util/Spline;
 
@@ -2285,19 +1863,17 @@
 
     aput v3, v2, v4
 
-    aget-object p0, v0, p0
+    aget-object v2, v0, v5
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Poa:Landroid/util/Spline;
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Poa:Landroid/util/Spline;
 
-    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
 
-    move-result v2
+    move-result v3
 
-    float-to-int v2, v2
+    float-to-int v3, v3
 
-    aput v2, p0, v5
-
-    const/4 p0, 0x4
+    aput v3, v2, v5
 
     aget-object v2, v0, p0
 
@@ -2335,7 +1911,7 @@
 
     aput v2, p0, v5
 
-    const/4 p0, 0x5
+    const/4 p0, 0x4
 
     aget-object v2, v0, p0
 
@@ -2349,9 +1925,47 @@
 
     aput v3, v2, v1
 
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Uoa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v4
+
+    aget-object p0, v0, p0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Voa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, p0, v5
+
+    const/4 p0, 0x5
+
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Woa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
     aget-object v1, v0, p0
 
-    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Uoa:Landroid/util/Spline;
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Xoa:Landroid/util/Spline;
 
     invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
 
@@ -2363,7 +1977,393 @@
 
     aget-object p0, v0, p0
 
-    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Voa:Landroid/util/Spline;
+    sget-object v1, Lcom/oneplus/android/server/display/vdb;->Yoa:Landroid/util/Spline;
+
+    invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result p1
+
+    float-to-int p1, p1
+
+    aput p1, p0, v5
+
+    return-object v0
+.end method
+
+.method public aa(I)[[I
+    .locals 5
+
+    const/4 p0, 0x3
+
+    filled-new-array {p0, p0}, [I
+
+    move-result-object p0
+
+    const-class v0, I
+
+    invoke-static {v0, p0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [[I
+
+    const/4 v0, 0x0
+
+    aget-object v1, p0, v0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->Zoa:Landroid/util/Spline;
+
+    int-to-float p1, p1
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, v1, v0
+
+    aget-object v1, p0, v0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->_oa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    const/4 v3, 0x1
+
+    aput v2, v1, v3
+
+    aget-object v1, p0, v0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->apa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    const/4 v4, 0x2
+
+    aput v2, v1, v4
+
+    aget-object v1, p0, v3
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->bpa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, v1, v0
+
+    aget-object v1, p0, v3
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->cpa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, v1, v3
+
+    aget-object v1, p0, v3
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->dpa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, v1, v4
+
+    aget-object v1, p0, v4
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->epa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, v1, v0
+
+    aget-object v0, p0, v4
+
+    sget-object v1, Lcom/oneplus/android/server/display/vdb;->fpa:Landroid/util/Spline;
+
+    invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    aput v1, v0, v3
+
+    aget-object v0, p0, v4
+
+    sget-object v1, Lcom/oneplus/android/server/display/vdb;->gpa:Landroid/util/Spline;
+
+    invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result p1
+
+    float-to-int p1, p1
+
+    aput p1, v0, v4
+
+    return-object p0
+.end method
+
+.method public ba(I)[[I
+    .locals 6
+
+    const/4 p0, 0x3
+
+    const/4 v0, 0x6
+
+    filled-new-array {v0, p0}, [I
+
+    move-result-object v0
+
+    const-class v1, I
+
+    invoke-static {v1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [[I
+
+    const/4 v1, 0x0
+
+    aget-object v2, v0, v1
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->Zoa:Landroid/util/Spline;
+
+    int-to-float p1, p1
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
+    aget-object v2, v0, v1
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->_oa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    const/4 v4, 0x1
+
+    aput v3, v2, v4
+
+    aget-object v2, v0, v1
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->apa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    const/4 v5, 0x2
+
+    aput v3, v2, v5
+
+    aget-object v2, v0, v4
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->bpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
+    aget-object v2, v0, v4
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->cpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v4
+
+    aget-object v2, v0, v4
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->dpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v5
+
+    aget-object v2, v0, v5
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->epa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
+    aget-object v2, v0, v5
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->fpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v4
+
+    aget-object v2, v0, v5
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->gpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v5
+
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->hpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->ipa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v4
+
+    aget-object p0, v0, p0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->jpa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, p0, v5
+
+    const/4 p0, 0x4
+
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->kpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->lpa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v4
+
+    aget-object p0, v0, p0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->mpa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, p0, v5
+
+    const/4 p0, 0x5
+
+    aget-object v2, v0, p0
+
+    sget-object v3, Lcom/oneplus/android/server/display/vdb;->npa:Landroid/util/Spline;
+
+    invoke-virtual {v3, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v3
+
+    float-to-int v3, v3
+
+    aput v3, v2, v1
+
+    aget-object v1, v0, p0
+
+    sget-object v2, Lcom/oneplus/android/server/display/vdb;->opa:Landroid/util/Spline;
+
+    invoke-virtual {v2, p1}, Landroid/util/Spline;->interpolate(F)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    aput v2, v1, v4
+
+    aget-object p0, v0, p0
+
+    sget-object v1, Lcom/oneplus/android/server/display/vdb;->ppa:Landroid/util/Spline;
 
     invoke-virtual {v1, p1}, Landroid/util/Spline;->interpolate(F)F
 

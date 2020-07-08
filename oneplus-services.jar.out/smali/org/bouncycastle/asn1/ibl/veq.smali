@@ -174,7 +174,17 @@
 
 
 # virtual methods
-.method public Aj()Z
+.method public Cj()Z
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/veq;->params:Lorg/bouncycastle/asn1/vdb;
+
+    instance-of p0, p0, Lorg/bouncycastle/asn1/qbh;
+
+    return p0
+.end method
+
+.method public Dj()Z
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/veq;->params:Lorg/bouncycastle/asn1/vdb;
@@ -198,14 +208,4 @@
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/veq;->params:Lorg/bouncycastle/asn1/vdb;
 
     return-object p0
-.end method
-
-.method public zj()Z
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/veq;->params:Lorg/bouncycastle/asn1/vdb;
-
-    instance-of p0, p0, Lorg/bouncycastle/asn1/qbh;
-
-    return p0
 .end method

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final Gxa:Z
+.field private final hya:Z
 
-.field private final Hxa:[[B
+.field private final iya:[[B
 
 .field private final limit:I
 
@@ -44,13 +44,13 @@
 
     iput p2, p0, Lorg/bouncycastle/asn1/dma;->limit:I
 
-    iput-boolean p3, p0, Lorg/bouncycastle/asn1/dma;->Gxa:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/asn1/dma;->hya:Z
 
     const/16 p1, 0xb
 
     new-array p1, p1, [[B
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma;->Hxa:[[B
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma;->iya:[[B
 
     return-void
 .end method
@@ -688,7 +688,7 @@
 
 
 # virtual methods
-.method Fg()Lorg/bouncycastle/asn1/cno;
+.method Ig()Lorg/bouncycastle/asn1/cno;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -715,7 +715,7 @@
     return-object v0
 .end method
 
-.method protected Gg()I
+.method protected Jg()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -842,7 +842,7 @@
     throw p0
 
     :cond_4
-    iget-boolean p1, p0, Lorg/bouncycastle/asn1/dma;->Gxa:Z
+    iget-boolean p1, p0, Lorg/bouncycastle/asn1/dma;->hya:Z
 
     if-eqz p1, :cond_5
 
@@ -914,7 +914,7 @@
     return-object p0
 
     :cond_9
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma;->Hxa:[[B
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma;->iya:[[B
 
     invoke-static {p2, v2, p0}, Lorg/bouncycastle/asn1/dma;->zta(ILorg/bouncycastle/asn1/ba;[[B)Lorg/bouncycastle/asn1/vdb;
 
@@ -1007,7 +1007,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Gg()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Jg()I
 
     move-result v4
 
@@ -1168,7 +1168,7 @@
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/dma;-><init>(Ljava/io/InputStream;)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Fg()Lorg/bouncycastle/asn1/cno;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma;->Ig()Lorg/bouncycastle/asn1/cno;
 
     move-result-object p0
 

@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field BD:I
+.field QD:Lcom/android/server/am/m$you;
 
-.field CD:Z
+.field RD:I
+
+.field SD:Z
 
 .field final synthetic this$1:Lcom/android/server/am/m$zta;
-
-.field zD:Lcom/android/server/am/m$you;
 
 
 # direct methods
@@ -34,11 +34,11 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lcom/android/server/am/m$zta$zta;->BD:I
+    iput p1, p0, Lcom/android/server/am/m$zta$zta;->RD:I
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/am/m$zta$zta;->CD:Z
+    iput-boolean p1, p0, Lcom/android/server/am/m$zta$zta;->SD:Z
 
     return-void
 .end method

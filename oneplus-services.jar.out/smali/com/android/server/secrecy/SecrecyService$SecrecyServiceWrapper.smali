@@ -153,7 +153,7 @@
 
     iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService$SecrecyServiceWrapper;->this$0:Lcom/android/server/secrecy/SecrecyService;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/SecrecyService;->Ka()Z
+    invoke-virtual {p0}, Lcom/android/server/secrecy/SecrecyService;->La()Z
 
     move-result p0
 
@@ -165,7 +165,7 @@
 
     iget-object v0, p0, Lcom/android/server/secrecy/SecrecyService$SecrecyServiceWrapper;->this$0:Lcom/android/server/secrecy/SecrecyService;
 
-    invoke-virtual {v0}, Lcom/android/server/secrecy/SecrecyService;->Ka()Z
+    invoke-virtual {v0}, Lcom/android/server/secrecy/SecrecyService;->La()Z
 
     move-result v0
 

@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method private Ab(I)Z
+.method private Bb(I)Z
     .locals 2
 
     invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->vju(I)Z
@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    invoke-direct {v0, p0}, Lcom/android/server/am/irq$you;->Ab(I)Z
+    invoke-direct {v0, p0}, Lcom/android/server/am/irq$you;->Bb(I)Z
 
     move-result p0
 

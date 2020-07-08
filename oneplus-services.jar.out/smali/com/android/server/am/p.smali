@@ -13,11 +13,11 @@
 
 
 # instance fields
-.field private QD:Lcom/android/server/am/les;
+.field private eE:Lcom/android/server/am/les;
 
-.field private RD:Lcom/android/server/vdb;
+.field private fE:Lcom/android/server/zgw;
 
-.field private SD:Lcom/android/server/am/v;
+.field private gE:Lcom/android/server/am/x;
 
 .field private mInited:Z
 
@@ -215,7 +215,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/p;->QD:Lcom/android/server/am/les;
+    iget-object p0, p0, Lcom/android/server/am/p;->eE:Lcom/android/server/am/les;
 
     invoke-virtual {p0}, Lcom/android/server/am/les;->clearImportantUids()V
 
@@ -283,9 +283,9 @@
     return-wide v0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/p;->SD:Lcom/android/server/am/v;
+    iget-object p0, p0, Lcom/android/server/am/p;->gE:Lcom/android/server/am/x;
 
-    invoke-virtual {p0}, Lcom/android/server/am/v;->getJobTimeout()J
+    invoke-virtual {p0}, Lcom/android/server/am/x;->getJobTimeout()J
 
     move-result-wide v0
 
@@ -316,11 +316,11 @@
 
     invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/android/server/vdb;->getInstance()Lcom/android/server/vdb;
+    invoke-static {}, Lcom/android/server/zgw;->getInstance()Lcom/android/server/zgw;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/vdb;->initFromLMS(Lcom/android/server/LocationManagerService;Lcom/android/server/LocationManagerService$LocationManagerServiceInner;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/zgw;->initFromLMS(Lcom/android/server/LocationManagerService;Lcom/android/server/LocationManagerService$LocationManagerServiceInner;)V
 
     return-void
 .end method
@@ -338,7 +338,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/am/p;->QD:Lcom/android/server/am/les;
+    iput-object v1, p0, Lcom/android/server/am/p;->eE:Lcom/android/server/am/les;
 
     invoke-static {}, Lcom/android/server/am/irq;->getInstance()Lcom/android/server/am/irq;
 
@@ -348,29 +348,29 @@
 
     invoke-virtual {v1, v2, p1, p2}, Lcom/android/server/am/irq;->zta(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/wm/ActivityTaskManagerService;)V
 
-    invoke-static {p1}, Lcom/android/server/am/v;->you(Lcom/android/server/am/ActivityManagerService;)Lcom/android/server/am/v;
+    invoke-static {p1}, Lcom/android/server/am/x;->you(Lcom/android/server/am/ActivityManagerService;)Lcom/android/server/am/x;
 
     move-result-object p2
 
-    iput-object p2, p0, Lcom/android/server/am/p;->SD:Lcom/android/server/am/v;
+    iput-object p2, p0, Lcom/android/server/am/p;->gE:Lcom/android/server/am/x;
 
     iget-object p2, p1, Lcom/android/server/am/ActivityManagerService;->mContext:Landroid/content/Context;
 
     invoke-static {p2, p1}, Lcom/oneplus/server/kth;->zta(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
 
-    invoke-static {}, Lcom/android/server/vdb;->getInstance()Lcom/android/server/vdb;
+    invoke-static {}, Lcom/android/server/zgw;->getInstance()Lcom/android/server/zgw;
 
     move-result-object p2
 
-    iput-object p2, p0, Lcom/android/server/am/p;->RD:Lcom/android/server/vdb;
+    iput-object p2, p0, Lcom/android/server/am/p;->fE:Lcom/android/server/zgw;
 
-    iget-object p2, p0, Lcom/android/server/am/p;->RD:Lcom/android/server/vdb;
+    iget-object p2, p0, Lcom/android/server/am/p;->fE:Lcom/android/server/zgw;
 
-    invoke-virtual {p2, p1}, Lcom/android/server/vdb;->zta(Lcom/android/server/am/ActivityManagerService;)V
+    invoke-virtual {p2, p1}, Lcom/android/server/zgw;->zta(Lcom/android/server/am/ActivityManagerService;)V
 
-    iget-object p1, p0, Lcom/android/server/am/p;->RD:Lcom/android/server/vdb;
+    iget-object p1, p0, Lcom/android/server/am/p;->fE:Lcom/android/server/zgw;
 
-    invoke-virtual {p1, p3}, Lcom/android/server/vdb;->zta(Landroid/content/pm/IPackageManager;)V
+    invoke-virtual {p1, p3}, Lcom/android/server/zgw;->zta(Landroid/content/pm/IPackageManager;)V
 
     const/4 p1, 0x1
 
@@ -395,7 +395,7 @@
     return p0
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/vdb;->isBlockedGpsUid(I)Z
+    invoke-static {p1}, Lcom/android/server/zgw;->isBlockedGpsUid(I)Z
 
     move-result p0
 
@@ -433,7 +433,7 @@
     return p0
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/am/v;->isJobRestrict(Lcom/android/server/job/controllers/JobStatus;)Z
+    invoke-static {p1}, Lcom/android/server/am/x;->isJobRestrict(Lcom/android/server/job/controllers/JobStatus;)Z
 
     move-result p0
 
@@ -582,7 +582,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1, p2, p3}, Lcom/android/server/am/v;->reportRestrictJob(Lcom/android/server/job/controllers/JobStatus;J)V
+    invoke-static {p1, p2, p3}, Lcom/android/server/am/x;->reportRestrictJob(Lcom/android/server/job/controllers/JobStatus;J)V
 
     return-void
 .end method
@@ -641,7 +641,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/am/p;->QD:Lcom/android/server/am/les;
+    iget-object p0, p0, Lcom/android/server/am/p;->eE:Lcom/android/server/am/les;
 
     invoke-virtual {p0, p4, p3}, Lcom/android/server/am/les;->dump(Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -715,7 +715,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1, p2}, Lcom/android/server/am/v;->startMonitoring(Lcom/android/server/job/JobServiceContext;Lcom/android/server/job/controllers/JobStatus;)V
+    invoke-static {p1, p2}, Lcom/android/server/am/x;->startMonitoring(Lcom/android/server/job/JobServiceContext;Lcom/android/server/job/controllers/JobStatus;)V
 
     return-void
 .end method
@@ -745,7 +745,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1, p2}, Lcom/android/server/am/v;->stopMonitoring(Lcom/android/server/job/JobServiceContext;Lcom/android/server/job/controllers/JobStatus;)V
+    invoke-static {p1, p2}, Lcom/android/server/am/x;->stopMonitoring(Lcom/android/server/job/JobServiceContext;Lcom/android/server/job/controllers/JobStatus;)V
 
     return-void
 .end method
@@ -790,7 +790,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/p;->QD:Lcom/android/server/am/les;
+    iget-object p0, p0, Lcom/android/server/am/p;->eE:Lcom/android/server/am/les;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/les;->updateImportantUids(Lcom/android/server/am/ConnectionRecord;Lcom/android/server/am/ProcessRecord;)V
 
@@ -807,7 +807,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/p;->QD:Lcom/android/server/am/les;
+    iget-object p0, p0, Lcom/android/server/am/p;->eE:Lcom/android/server/am/les;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/les;->updateImportantUids(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ProcessRecord;)V
 
@@ -824,7 +824,7 @@
     return-void
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/am/p;->QD:Lcom/android/server/am/les;
+    iget-object p0, p0, Lcom/android/server/am/p;->eE:Lcom/android/server/am/les;
 
     invoke-virtual {p0}, Lcom/android/server/am/les;->updateLastImportantUidsIfNeeded()V
 
@@ -841,7 +841,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1, p2, p3, p4}, Lcom/android/server/vdb;->updateLocationReceiverUidsChange(IZZZ)V
+    invoke-static {p1, p2, p3, p4}, Lcom/android/server/zgw;->updateLocationReceiverUidsChange(IZZZ)V
 
     return-void
 .end method

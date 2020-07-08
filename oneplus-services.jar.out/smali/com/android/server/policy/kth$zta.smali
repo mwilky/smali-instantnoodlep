@@ -15,8 +15,6 @@
 
 
 # instance fields
-.field aN:Ljava/lang/String;
-
 .field mPackageName:Ljava/lang/String;
 
 .field mShortcutId:Ljava/lang/String;
@@ -24,6 +22,8 @@
 .field mUid:I
 
 .field final synthetic this$0:Lcom/android/server/policy/kth;
+
+.field vN:Ljava/lang/String;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 .method public T(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/kth$zta;->aN:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/policy/kth$zta;->vN:Ljava/lang/String;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 .method public getAction()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/policy/kth$zta;->aN:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/policy/kth$zta;->vN:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/policy/kth$zta;->aN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/policy/kth$zta;->vN:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

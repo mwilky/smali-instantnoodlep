@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field Hi:Ljava/time/LocalDateTime;
+.field Wi:Ljava/time/LocalDateTime;
 
-.field Ii:Ljava/time/LocalDateTime;
+.field Xi:Ljava/time/LocalDateTime;
 
 .field mDuration:Ljava/time/Duration;
 
@@ -34,9 +34,9 @@
 
     sget-object p1, Ljava/time/LocalDateTime;->MAX:Ljava/time/LocalDateTime;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     sget-object p1, Ljava/time/Duration;->ZERO:Ljava/time/Duration;
 
@@ -54,9 +54,9 @@
 
     sget-object p1, Ljava/time/LocalDateTime;->MAX:Ljava/time/LocalDateTime;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     sget-object p1, Ljava/time/Duration;->ZERO:Ljava/time/Duration;
 
@@ -64,17 +64,17 @@
 
     if-eqz p2, :cond_0
 
+    invoke-virtual {p2}, Lcom/android/server/OpPowerControllerService$tsu;->ea()Ljava/time/LocalDateTime;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
+
     invoke-virtual {p2}, Lcom/android/server/OpPowerControllerService$tsu;->da()Ljava/time/LocalDateTime;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
-
-    invoke-virtual {p2}, Lcom/android/server/OpPowerControllerService$tsu;->ca()Ljava/time/LocalDateTime;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     invoke-virtual {p2}, Lcom/android/server/OpPowerControllerService$tsu;->getDuration()Ljava/time/Duration;
 
@@ -95,17 +95,17 @@
 
     sget-object p1, Ljava/time/LocalDateTime;->MAX:Ljava/time/LocalDateTime;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     sget-object p1, Ljava/time/Duration;->ZERO:Ljava/time/Duration;
 
     iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->mDuration:Ljava/time/Duration;
 
-    iput-object p2, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iput-object p2, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
 
-    iput-object p3, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iput-object p3, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     const/4 p1, 0x1
 
@@ -145,18 +145,10 @@
 
 
 # virtual methods
-.method ca()Ljava/time/LocalDateTime;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
-
-    return-object p0
-.end method
-
 .method da()Ljava/time/LocalDateTime;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     return-object p0
 .end method
@@ -171,6 +163,14 @@
     invoke-virtual {p1, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     return-void
+.end method
+
+.method ea()Ljava/time/LocalDateTime;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
+
+    return-object p0
 .end method
 
 .method getDuration()Ljava/time/Duration;
@@ -202,7 +202,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
 
     sget-object v3, Lcom/android/server/OpPowerControllerService;->SIMPLE_DATE_FORMAT:Ljava/time/format/DateTimeFormatter;
 
@@ -226,7 +226,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iget-object v2, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     sget-object v3, Lcom/android/server/OpPowerControllerService;->SIMPLE_DATE_FORMAT:Ljava/time/format/DateTimeFormatter;
 
@@ -282,7 +282,7 @@
 .method you(Ljava/time/LocalDateTime;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Hi:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Wi:Ljava/time/LocalDateTime;
 
     return-void
 .end method
@@ -298,7 +298,7 @@
 .method zta(Ljava/time/LocalDateTime;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Ii:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$tsu;->Xi:Ljava/time/LocalDateTime;
 
     return-void
 .end method

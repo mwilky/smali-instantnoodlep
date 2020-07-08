@@ -58,9 +58,9 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lcom/android/server/oxb;
+    new-instance v0, Lcom/android/server/cjf;
 
-    invoke-direct {v0}, Lcom/android/server/oxb;-><init>()V
+    invoke-direct {v0}, Lcom/android/server/cjf;-><init>()V
 
     sput-object v0, Lcom/android/server/OnePlusNfcService;->CREATOR:Landroid/util/Singleton;
 
@@ -86,15 +86,15 @@
 
     iput-object v0, p0, Lcom/android/server/OnePlusNfcService;->mCardConfigMap:Ljava/util/Map;
 
-    new-instance v0, Lcom/android/server/cjf;
-
-    invoke-direct {v0, p0}, Lcom/android/server/cjf;-><init>(Lcom/android/server/OnePlusNfcService;)V
-
-    iput-object v0, p0, Lcom/android/server/OnePlusNfcService;->mNfcUpdateConfigReceiver:Landroid/content/BroadcastReceiver;
-
     new-instance v0, Lcom/android/server/ear;
 
     invoke-direct {v0, p0}, Lcom/android/server/ear;-><init>(Lcom/android/server/OnePlusNfcService;)V
+
+    iput-object v0, p0, Lcom/android/server/OnePlusNfcService;->mNfcUpdateConfigReceiver:Landroid/content/BroadcastReceiver;
+
+    new-instance v0, Lcom/android/server/ire;
+
+    invoke-direct {v0, p0}, Lcom/android/server/ire;-><init>(Lcom/android/server/OnePlusNfcService;)V
 
     iput-object v0, p0, Lcom/android/server/OnePlusNfcService;->mReceiver:Landroid/content/BroadcastReceiver;
 

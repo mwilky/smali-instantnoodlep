@@ -222,30 +222,6 @@
     return-object p0
 .end method
 
-.method sh()Lorg/bouncycastle/asn1/vdb;
-    .locals 1
-
-    new-instance v0, Lorg/bouncycastle/asn1/C;
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl;->string:[B
-
-    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/C;-><init>([B)V
-
-    return-object v0
-.end method
-
-.method th()Lorg/bouncycastle/asn1/vdb;
-    .locals 1
-
-    new-instance v0, Lorg/bouncycastle/asn1/C;
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl;->string:[B
-
-    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/C;-><init>([B)V
-
-    return-object v0
-.end method
-
 .method public toString()Ljava/lang/String;
     .locals 2
 
@@ -284,6 +260,30 @@
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl;->string:[B
 
     invoke-direct {v0, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+
+    return-object v0
+.end method
+
+.method vh()Lorg/bouncycastle/asn1/vdb;
+    .locals 1
+
+    new-instance v0, Lorg/bouncycastle/asn1/C;
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl;->string:[B
+
+    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/C;-><init>([B)V
+
+    return-object v0
+.end method
+
+.method wh()Lorg/bouncycastle/asn1/vdb;
+    .locals 1
+
+    new-instance v0, Lorg/bouncycastle/asn1/C;
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl;->string:[B
+
+    invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/C;-><init>([B)V
 
     return-object v0
 .end method

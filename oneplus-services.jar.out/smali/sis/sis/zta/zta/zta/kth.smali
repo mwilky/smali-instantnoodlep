@@ -4,235 +4,235 @@
 
 
 # static fields
-.field public static final AXa:I = 0x16
+.field public static final AYa:I = 0x31
 
-.field public static final AYa:I = 0x51
+.field public static final AZa:I = 0x7d
 
 .field public static final BRIGHTNESS:I = 0x7
 
-.field public static final BXa:I = 0x17
+.field public static final BYa:I = 0x32
 
-.field public static final BYa:I = 0x52
+.field public static final BZa:I = 0x7f
 
-.field public static final CXa:I = 0x18
+.field public static final CYa:I = 0x33
 
-.field public static final CYa:I = 0x5a
+.field public static final CZa:I = 0x80
 
 .field public static final DEMO_MODE:I = 0x2e
 
-.field public static final DXa:I = 0x19
+.field public static final DYa:I = 0x34
 
-.field public static final DYa:I = 0x5b
+.field public static final DZa:I = 0x81
 
-.field public static final EXa:I = 0x1a
+.field public static final EYa:I = 0x35
 
-.field public static final EYa:I = 0x5c
+.field public static final EZa:I = 0x82
 
-.field public static final FXa:I = 0x1b
+.field public static final FYa:I = 0x36
 
-.field public static final FYa:I = 0x5d
+.field public static final FZa:I = 0x84
 
-.field public static final GXa:I = 0x1c
+.field public static final GYa:I = 0x37
 
-.field public static final GYa:I = 0x63
+.field public static final GZa:I = 0x85
 
-.field public static final HXa:I = 0x1d
+.field public static final HYa:I = 0x38
 
-.field public static final HYa:I = 0x64
+.field public static final HZa:I = 0x86
 
-.field public static final IXa:I = 0x1f
+.field public static final IXa:I = 0x0
 
-.field public static final IYa:I = 0x65
+.field public static final IYa:I = 0x39
 
-.field public static final JXa:I = 0x20
+.field public static final IZa:I = 0x87
 
-.field public static final JYa:I = 0x66
+.field public static final JXa:I = 0x1
 
-.field public static final KXa:I = 0x21
+.field public static final JYa:I = 0x3a
 
-.field public static final KYa:I = 0x67
+.field public static final JZa:I = 0x88
 
-.field public static final LXa:I = 0x22
+.field public static final KXa:I = 0x2
 
-.field public static final LYa:I = 0x68
+.field public static final KYa:I = 0x3c
 
-.field public static final MXa:I = 0x23
+.field public static final KZa:I = 0x89
 
-.field public static final MYa:I = 0x69
+.field public static final LXa:I = 0x3
 
-.field public static final NXa:I = 0x24
+.field public static final LYa:I = 0x3d
 
-.field public static final NYa:I = 0x6a
+.field public static final MXa:I = 0x4
 
-.field public static final OXa:I = 0x25
+.field public static final MYa:I = 0x3e
 
-.field public static final OYa:I = 0x6b
+.field public static final NXa:I = 0x5
 
-.field public static final PXa:I = 0x26
+.field public static final NYa:I = 0x3f
 
-.field public static final PYa:I = 0x6c
+.field public static final OXa:I = 0x6
 
-.field public static final QXa:I = 0x27
+.field public static final OYa:I = 0x40
 
-.field public static final QYa:I = 0x6d
+.field public static final PXa:I = 0x8
 
-.field public static final RXa:I = 0x28
+.field public static final PYa:I = 0x41
 
-.field public static final RYa:I = 0x6f
+.field public static final QXa:I = 0x9
 
-.field public static final SXa:I = 0x29
+.field public static final QYa:I = 0x42
 
-.field public static final SYa:I = 0x70
+.field public static final RXa:I = 0xa
 
-.field public static final Spa:I = 0x1e
+.field public static final RYa:I = 0x43
 
-.field public static final TXa:I = 0x2a
+.field public static final SXa:I = 0xb
+
+.field public static final SYa:I = 0x44
+
+.field public static final TXa:I = 0xc
 
 .field public static final TYPE_MAX:I = 0x8a
 
-.field public static final TYa:I = 0x71
+.field public static final TYa:I = 0x45
 
-.field public static final UXa:I = 0x2b
+.field public static final UXa:I = 0xe
 
-.field public static final UYa:I = 0x78
+.field public static final UYa:I = 0x46
 
-.field public static final VXa:I = 0x2c
+.field public static final VXa:I = 0xf
 
-.field public static final VYa:I = 0x79
-
-.field public static final Vpa:I = 0xd
+.field public static final VYa:I = 0x47
 
 .field public static final WORK_MODE:I = 0x7e
 
-.field public static final WXa:I = 0x2d
+.field public static final WXa:I = 0x10
 
-.field public static final WYa:I = 0x7a
+.field public static final WYa:I = 0x48
 
-.field public static final XXa:I = 0x2f
+.field public static final XXa:I = 0x11
 
-.field public static final XYa:I = 0x7b
+.field public static final XYa:I = 0x49
 
-.field public static final YXa:I = 0x30
+.field public static final YXa:I = 0x12
 
-.field public static final YYa:I = 0x7c
+.field public static final YYa:I = 0x4a
 
-.field public static final ZXa:I = 0x31
+.field public static final ZXa:I = 0x13
 
-.field public static final ZYa:I = 0x7d
+.field public static final ZYa:I = 0x4b
 
-.field public static final _Xa:I = 0x32
+.field public static final _Xa:I = 0x14
 
-.field public static final _Ya:I = 0x7f
+.field public static final _Ya:I = 0x4c
 
-.field public static final aYa:I = 0x33
+.field public static final aYa:I = 0x15
 
-.field public static final aZa:I = 0x80
+.field public static final aZa:I = 0x50
 
-.field public static final bYa:I = 0x34
+.field public static final bYa:I = 0x16
 
-.field public static final bZa:I = 0x81
+.field public static final bZa:I = 0x51
 
-.field public static final cYa:I = 0x35
+.field public static final cYa:I = 0x17
 
-.field public static final cZa:I = 0x82
+.field public static final cZa:I = 0x52
 
-.field public static final dYa:I = 0x36
+.field public static final dYa:I = 0x18
 
-.field public static final dZa:I = 0x84
+.field public static final dZa:I = 0x5a
 
-.field public static final eYa:I = 0x37
+.field public static final eYa:I = 0x19
 
-.field public static final eZa:I = 0x85
+.field public static final eZa:I = 0x5b
 
-.field public static final fYa:I = 0x38
+.field public static final fYa:I = 0x1a
 
-.field public static final fZa:I = 0x86
+.field public static final fZa:I = 0x5c
 
-.field public static final gXa:I = 0x0
+.field public static final gYa:I = 0x1b
 
-.field public static final gYa:I = 0x39
+.field public static final gZa:I = 0x5d
 
-.field public static final gZa:I = 0x87
+.field public static final hYa:I = 0x1c
 
-.field public static final hXa:I = 0x1
+.field public static final hZa:I = 0x63
 
-.field public static final hYa:I = 0x3a
+.field public static final iYa:I = 0x1d
 
-.field public static final hZa:I = 0x88
+.field public static final iZa:I = 0x64
 
-.field public static final iXa:I = 0x2
+.field public static final jYa:I = 0x1f
 
-.field public static final iYa:I = 0x3c
+.field public static final jZa:I = 0x65
 
-.field public static final iZa:I = 0x89
+.field public static final kYa:I = 0x20
 
-.field public static final jXa:I = 0x3
+.field public static final kZa:I = 0x66
 
-.field public static final jYa:I = 0x3d
+.field public static final lYa:I = 0x21
 
-.field public static final kXa:I = 0x4
+.field public static final lZa:I = 0x67
 
-.field public static final kYa:I = 0x3e
+.field public static final mYa:I = 0x22
 
-.field public static final lXa:I = 0x5
+.field public static final mZa:I = 0x68
 
-.field public static final lYa:I = 0x3f
+.field public static final mqa:I = 0x1e
 
-.field public static final mXa:I = 0x6
+.field public static final nYa:I = 0x23
 
-.field public static final mYa:I = 0x40
+.field public static final nZa:I = 0x69
 
-.field public static final nXa:I = 0x8
+.field public static final oYa:I = 0x24
 
-.field public static final nYa:I = 0x41
+.field public static final oZa:I = 0x6a
 
-.field public static final oXa:I = 0x9
+.field public static final pYa:I = 0x25
 
-.field public static final oYa:I = 0x42
+.field public static final pZa:I = 0x6b
 
-.field public static final pXa:I = 0xa
+.field public static final pqa:I = 0xd
 
-.field public static final pYa:I = 0x43
+.field public static final qYa:I = 0x26
 
-.field public static final qXa:I = 0xb
+.field public static final qZa:I = 0x6c
 
-.field public static final qYa:I = 0x44
+.field public static final rYa:I = 0x27
 
-.field public static final rXa:I = 0xc
+.field public static final rZa:I = 0x6d
 
-.field public static final rYa:I = 0x45
+.field public static final sYa:I = 0x28
 
-.field public static final sXa:I = 0xe
+.field public static final sZa:I = 0x6f
 
-.field public static final sYa:I = 0x46
+.field public static final tYa:I = 0x29
 
-.field public static final tXa:I = 0xf
+.field public static final tZa:I = 0x70
 
-.field public static final tYa:I = 0x47
+.field public static final uYa:I = 0x2a
 
-.field public static final uXa:I = 0x10
+.field public static final uZa:I = 0x71
 
-.field public static final uYa:I = 0x48
+.field public static final vYa:I = 0x2b
 
-.field public static final vXa:I = 0x11
+.field public static final vZa:I = 0x78
 
-.field public static final vYa:I = 0x49
+.field public static final wYa:I = 0x2c
 
-.field public static final wXa:I = 0x12
+.field public static final wZa:I = 0x79
 
-.field public static final wYa:I = 0x4a
+.field public static final xYa:I = 0x2d
 
-.field public static final xXa:I = 0x13
+.field public static final xZa:I = 0x7a
 
-.field public static final xYa:I = 0x4b
+.field public static final yYa:I = 0x2f
 
-.field public static final yXa:I = 0x14
+.field public static final yZa:I = 0x7b
 
-.field public static final yYa:I = 0x4c
+.field public static final zYa:I = 0x30
 
-.field public static final zXa:I = 0x15
-
-.field public static final zYa:I = 0x50
+.field public static final zZa:I = 0x7c
 
 
 # direct methods

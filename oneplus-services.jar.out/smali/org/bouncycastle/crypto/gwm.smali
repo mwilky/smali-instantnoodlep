@@ -158,10 +158,10 @@
     return-object p0
 .end method
 
-.method public abstract oa(I)Lorg/bouncycastle/crypto/kth;
+.method public abstract oxb(II)Lorg/bouncycastle/crypto/kth;
 .end method
 
-.method public abstract oxb(II)Lorg/bouncycastle/crypto/kth;
+.method public abstract pa(I)Lorg/bouncycastle/crypto/kth;
 .end method
 
 .method public zta([B[BI)V

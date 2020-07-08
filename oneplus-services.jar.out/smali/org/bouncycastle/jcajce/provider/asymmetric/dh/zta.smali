@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private l:I
+.field protected PCa:Ljava/security/SecureRandom;
 
-.field protected nCa:Ljava/security/SecureRandom;
+.field private l:I
 
 .field protected strength:I
 
@@ -39,11 +39,11 @@
 
     iget v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->ra(I)I
+    invoke-static {v1}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/gck;->sa(I)I
 
     move-result v1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->nCa:Ljava/security/SecureRandom;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->PCa:Ljava/security/SecureRandom;
 
     if-eqz v2, :cond_0
 
@@ -56,7 +56,7 @@
     :cond_0
     iget v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Vj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yj()Ljava/security/SecureRandom;
 
     move-result-object v3
 
@@ -113,7 +113,7 @@
 
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->strength:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->nCa:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->PCa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -144,7 +144,7 @@
 
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->l:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->nCa:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/zta;->PCa:Ljava/security/SecureRandom;
 
     return-void
 

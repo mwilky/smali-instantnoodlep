@@ -342,7 +342,7 @@
 
     new-array v2, v2, [I
 
-    const/16 v3, 0x10c
+    const/16 v3, 0x10e
 
     aput v3, v2, v1
 
@@ -1086,7 +1086,7 @@
 .method private updateDynamicVsync(I)V
     .locals 1
 
-    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Rwa:Z
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:Z
 
     if-eqz v0, :cond_1
 
@@ -1108,7 +1108,7 @@
 
     move-result-object p1
 
-    iget p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iget p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
     if-nez p0, :cond_0
 
@@ -1298,7 +1298,7 @@
 
     move-result p3
 
-    iget-object p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->Bha:[I
+    iget-object p2, p2, Lcom/android/server/wm/OpScreenModeService$zta;->Wha:[I
 
     iget-object v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->mode:Landroid/view/Display$Mode;
 
@@ -1306,7 +1306,7 @@
 
     move-result v0
 
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Bha:[I
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Wha:[I
 
     array-length v1, p2
 
@@ -1421,7 +1421,7 @@
 
     iget-object v1, p0, Lcom/android/server/wm/OpScreenModeService;->mDefaultMode:Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     const-string v2, "oneplus_screen_resolution_backup"
 
@@ -2023,11 +2023,11 @@
 
     aget-object v3, v1, v0
 
-    iget v3, v3, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iget v3, v3, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
     aget-object v1, v1, v0
 
-    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     iget-object v4, p0, Lcom/android/server/wm/OpScreenModeService;->mParamsMap:Ljava/util/HashMap;
 
@@ -2138,7 +2138,7 @@
 
     iget-object v0, p0, Lcom/android/server/wm/OpScreenModeService;->mDefaultMode:Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget v0, v0, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iget v0, v0, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     invoke-virtual {p0, p1, v0}, Lcom/android/server/wm/OpScreenModeService;->getModeRecord(II)Lcom/android/server/wm/OpScreenModeService$zta;
 
@@ -2352,9 +2352,9 @@
 
     if-nez v0, :cond_0
 
-    new-instance v0, Lcom/android/server/wm/p;
+    new-instance v0, Lcom/android/server/wm/q;
 
-    invoke-direct {v0, p0}, Lcom/android/server/wm/p;-><init>(Lcom/android/server/wm/OpScreenModeService;)V
+    invoke-direct {v0, p0}, Lcom/android/server/wm/q;-><init>(Lcom/android/server/wm/OpScreenModeService;)V
 
     sput-object v0, Lcom/android/server/wm/OpScreenModeService;->sPkgReceiver:Landroid/content/BroadcastReceiver;
 
@@ -2785,7 +2785,7 @@
 
     check-cast v1, Lcom/android/server/wm/OpScreenModeService$zta;
 
-    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iget v1, v1, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
     iput v1, p1, Lcom/android/server/wm/AppWindowToken;->mRefreshRate:I
 
@@ -2995,7 +2995,7 @@
 
     if-eqz v2, :cond_2
 
-    iget v3, v2, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iget v3, v2, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     iget v4, p0, Lcom/android/server/wm/OpScreenModeService;->mResolotionSettings:I
 
@@ -3013,7 +3013,7 @@
 
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v3, v2, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iget v3, v2, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3032,7 +3032,7 @@
     invoke-static {v1, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget p1, v2, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iget p1, v2, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
     iget v2, p0, Lcom/android/server/wm/OpScreenModeService;->mResolotionSettings:I
 

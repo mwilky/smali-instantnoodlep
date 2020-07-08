@@ -259,7 +259,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/lqr;->Hh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/lqr;->Kh()Z
 
     move-result p1
 
@@ -293,7 +293,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/lqr;->Hh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/lqr;->Kh()Z
 
     move-result v0
 
@@ -369,7 +369,7 @@
 
 
 # virtual methods
-.method public Gh()Ljava/util/Enumeration;
+.method public Jh()Ljava/util/Enumeration;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
@@ -398,7 +398,7 @@
 .method public hashCode()I
     .locals 3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Gh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Jh()Ljava/util/Enumeration;
 
     move-result-object v0
 
@@ -471,20 +471,6 @@
     return-object v0
 .end method
 
-.method sh()Lorg/bouncycastle/asn1/vdb;
-    .locals 1
-
-    new-instance v0, Lorg/bouncycastle/asn1/G;
-
-    invoke-direct {v0}, Lorg/bouncycastle/asn1/G;-><init>()V
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
-
-    iput-object p0, v0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
-
-    return-object v0
-.end method
-
 .method public size()I
     .locals 0
 
@@ -495,20 +481,6 @@
     move-result p0
 
     return p0
-.end method
-
-.method th()Lorg/bouncycastle/asn1/vdb;
-    .locals 1
-
-    new-instance v0, Lorg/bouncycastle/asn1/X;
-
-    invoke-direct {v0}, Lorg/bouncycastle/asn1/X;-><init>()V
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
-
-    iput-object p0, v0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
-
-    return-object v0
 .end method
 
 .method public toArray()[Lorg/bouncycastle/asn1/ssp;
@@ -555,6 +527,34 @@
     return-object p0
 .end method
 
+.method vh()Lorg/bouncycastle/asn1/vdb;
+    .locals 1
+
+    new-instance v0, Lorg/bouncycastle/asn1/G;
+
+    invoke-direct {v0}, Lorg/bouncycastle/asn1/G;-><init>()V
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
+
+    iput-object p0, v0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
+
+    return-object v0
+.end method
+
+.method wh()Lorg/bouncycastle/asn1/vdb;
+    .locals 1
+
+    new-instance v0, Lorg/bouncycastle/asn1/X;
+
+    invoke-direct {v0}, Lorg/bouncycastle/asn1/X;-><init>()V
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
+
+    iput-object p0, v0, Lorg/bouncycastle/asn1/obl;->seq:Ljava/util/Vector;
+
+    return-object v0
+.end method
+
 .method abstract zta(Lorg/bouncycastle/asn1/ugm;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -590,11 +590,11 @@
     return v1
 
     :cond_1
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Gh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Jh()Ljava/util/Enumeration;
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Gh()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jh()Ljava/util/Enumeration;
 
     move-result-object p1
 

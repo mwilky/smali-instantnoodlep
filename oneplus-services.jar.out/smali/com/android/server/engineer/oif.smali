@@ -12,6 +12,8 @@
 
 
 # static fields
+.field private static final AL:Ljava/io/File;
+
 .field private static final ENG_RESULT_FILE_PATH:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/ENG_RESULT"
 
 .field public static final ENG_RESULT_LENGTH:I = 0x80
@@ -22,39 +24,37 @@
 
 .field public static final ERROR_NOT_SUPPORTED:I = -0x1
 
-.field public static final SK:I = -0x2
-
 .field public static final STATUS_OK:I = 0x0
 
 .field private static final TAG:Ljava/lang/String; = "OneplusEngineerUtils"
 
-.field private static final TK:I = 0x4
+.field private static final lm:Ljava/lang/String; = "oem.secrecy.support"
 
-.field private static final VK:Ljava/lang/String; = "android.secrecy.SecrecyManagerInternal"
+.field public static final nL:I = -0x2
 
-.field private static final WK:Ljava/lang/String; = "getSecrecyState"
+.field private static final oL:I = 0x4
 
-.field private static final XK:Ljava/lang/String; = "android.os.OemManager"
+.field private static final pL:Ljava/lang/String; = "android.secrecy.SecrecyManagerInternal"
 
-.field private static final Xl:Ljava/lang/String; = "oem.secrecy.support"
+.field private static final qL:Ljava/lang/String; = "getSecrecyState"
 
-.field private static final YK:Ljava/lang/String; = "writeLogToPartition"
+.field private static final rL:Ljava/lang/String; = "android.os.OemManager"
 
-.field private static final ZK:Ljava/lang/String; = "cleanItem"
+.field private static final sL:Ljava/lang/String; = "writeLogToPartition"
 
-.field private static final _K:Ljava/lang/String; = "syncCacheToEmmc"
+.field private static final tL:Ljava/lang/String; = "cleanItem"
 
-.field private static final aL:Ljava/lang/String; = "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
+.field private static final uL:Ljava/lang/String; = "syncCacheToEmmc"
 
-.field private static final bL:Ljava/lang/String; = "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
+.field private static final vL:Ljava/lang/String; = "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
 
-.field public static final cL:B = 0x0t
+.field private static final wL:Ljava/lang/String; = "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
 
-.field public static final dL:B = 0x1t
+.field public static final xL:B = 0x0t
 
-.field public static final eL:B = 0x2t
+.field public static final yL:B = 0x1t
 
-.field private static final fL:Ljava/io/File;
+.field public static final zL:B = 0x2t
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/engineer/oif;->fL:Ljava/io/File;
+    sput-object v0, Lcom/android/server/engineer/oif;->AL:Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -1201,46 +1201,6 @@
     return-object v3
 .end method
 
-.method static rd()Ljava/lang/Object;
-    .locals 4
-
-    const-string v0, "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "getService"
-
-    const/4 v2, 0x0
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
 .method static rtg(Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
@@ -1278,7 +1238,7 @@
 
     move-result-object v0
 
-    invoke-static {}, Lcom/android/server/engineer/oif;->rd()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/server/engineer/oif;->td()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1307,46 +1267,6 @@
     const/4 p0, 0x0
 
     return-object p0
-.end method
-
-.method static sd()Ljava/lang/Object;
-    .locals 4
-
-    const-string v0, "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
-
-    :try_start_0
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    const-string v1, "getService"
-
-    const/4 v2, 0x0
-
-    new-array v3, v2, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    const/4 v0, 0x0
-
-    return-object v0
 .end method
 
 .method static setProductLineTestFlag([B)Z
@@ -1634,7 +1554,7 @@
 
     :cond_3
     :goto_6
-    sget-object p0, Lcom/android/server/engineer/oif;->fL:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/oif;->AL:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -1648,7 +1568,7 @@
 
     invoke-static {p0, v0}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/engineer/oif;->fL:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/oif;->AL:Ljava/io/File;
 
     invoke-static {p0, v0}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
@@ -1762,7 +1682,7 @@
     return v1
 
     :cond_2
-    sget-object v4, Lcom/android/server/engineer/oif;->fL:Ljava/io/File;
+    sget-object v4, Lcom/android/server/engineer/oif;->AL:Ljava/io/File;
 
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
@@ -1975,7 +1895,7 @@
 
     invoke-static {p0, p1}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/engineer/oif;->fL:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/oif;->AL:Ljava/io/File;
 
     invoke-static {p0, p1}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
@@ -2157,28 +2077,44 @@
     return-object p0
 .end method
 
-.method static td()Z
-    .locals 2
+.method static td()Ljava/lang/Object;
+    .locals 4
 
-    const-string v0, "ro.board.platform"
+    const-string v0, "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
 
-    const-string v1, "oem"
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    const-string v1, "mt"
+    const-string v1, "getService"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    const/4 v2, 0x0
 
-    move-result v0
+    new-array v3, v2, [Ljava/lang/Class;
 
-    return v0
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method static tsu(Ljava/lang/Object;)I
@@ -2401,7 +2337,71 @@
     throw p0
 .end method
 
-.method static ud()I
+.method static ud()Ljava/lang/Object;
+    .locals 4
+
+    const-string v0, "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
+
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-string v1, "getService"
+
+    const/4 v2, 0x0
+
+    new-array v3, v2, [Ljava/lang/Class;
+
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method static vd()Z
+    .locals 2
+
+    const-string v0, "ro.board.platform"
+
+    const-string v1, "oem"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "mt"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static wd()I
     .locals 3
 
     const/4 v0, 0x0

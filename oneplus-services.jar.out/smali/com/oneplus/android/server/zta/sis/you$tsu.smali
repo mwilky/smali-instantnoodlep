@@ -15,13 +15,13 @@
 
 
 # instance fields
+.field public Pla:Ljava/lang/String;
+
+.field public Qla:Ljava/lang/String;
+
+.field public Rla:Ljava/lang/String;
+
 .field public packageName:Ljava/lang/String;
-
-.field public ula:Ljava/lang/String;
-
-.field public vla:Ljava/lang/String;
-
-.field public wla:Ljava/lang/String;
 
 
 # direct methods

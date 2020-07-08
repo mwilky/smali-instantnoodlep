@@ -8,14 +8,10 @@
 
 .field public static final TAG:Ljava/lang/String; = "OnePlusDiagnosisUtil"
 
-.field public static final WP:Ljava/lang/String; = "/data/system/power"
+.field public static final qQ:Ljava/lang/String; = "/data/system/power"
 
 
 # instance fields
-.field private TP:Landroid/os/OPDiagnoseManager;
-
-.field private final VP:I
-
 .field private mContext:Landroid/content/Context;
 
 .field private mFilePath:Ljava/lang/String;
@@ -29,6 +25,10 @@
         }
     .end annotation
 .end field
+
+.field private oQ:Landroid/os/OPDiagnoseManager;
+
+.field private final pQ:I
 
 
 # direct methods
@@ -55,11 +55,11 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/android/server/power/you;->VP:I
+    iput p2, p0, Lcom/android/server/power/you;->pQ:I
 
     new-instance p2, Ljava/util/ArrayDeque;
 
-    iget v1, p0, Lcom/android/server/power/you;->VP:I
+    iget v1, p0, Lcom/android/server/power/you;->pQ:I
 
     invoke-direct {p2, v1}, Ljava/util/ArrayDeque;-><init>(I)V
 
@@ -232,7 +232,7 @@
 
     check-cast p1, Landroid/os/OPDiagnoseManager;
 
-    iput-object p1, p0, Lcom/android/server/power/you;->TP:Landroid/os/OPDiagnoseManager;
+    iput-object p1, p0, Lcom/android/server/power/you;->oQ:Landroid/os/OPDiagnoseManager;
 
     return-void
 .end method
@@ -250,7 +250,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/server/power/you;->VP:I
+    iget v1, p0, Lcom/android/server/power/you;->pQ:I
 
     if-lt v0, v1, :cond_0
 
@@ -281,7 +281,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Dd()V
+.method public declared-synchronized Fd()V
     .locals 2
 
     monitor-enter p0
@@ -325,7 +325,7 @@
     throw v0
 .end method
 
-.method public declared-synchronized Ed()V
+.method public declared-synchronized Gd()V
     .locals 7
 
     monitor-enter p0
@@ -547,7 +547,7 @@
     throw v0
 .end method
 
-.method public declared-synchronized Lb()V
+.method public declared-synchronized Mb()V
     .locals 4
 
     monitor-enter p0
@@ -636,7 +636,7 @@
 .method public cno(ILjava/lang/String;)V
     .locals 8
 
-    iget v0, p0, Lcom/android/server/power/you;->VP:I
+    iget v0, p0, Lcom/android/server/power/you;->pQ:I
 
     if-gtz v0, :cond_0
 
@@ -717,7 +717,7 @@
 .method public log(ILjava/lang/String;Ljava/lang/String;)V
     .locals 8
 
-    iget v0, p0, Lcom/android/server/power/you;->VP:I
+    iget v0, p0, Lcom/android/server/power/you;->pQ:I
 
     if-gtz v0, :cond_0
 
@@ -802,7 +802,7 @@
 .method public log(Ljava/lang/String;)V
     .locals 1
 
-    iget v0, p0, Lcom/android/server/power/you;->VP:I
+    iget v0, p0, Lcom/android/server/power/you;->pQ:I
 
     if-gtz v0, :cond_0
 
@@ -996,7 +996,7 @@
 
     move-object/from16 v4, p6
 
-    iget-object v5, v0, Lcom/android/server/power/you;->TP:Landroid/os/OPDiagnoseManager;
+    iget-object v5, v0, Lcom/android/server/power/you;->oQ:Landroid/os/OPDiagnoseManager;
 
     if-eqz v5, :cond_1
 
@@ -1029,12 +1029,12 @@
     invoke-static {v6, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v5, v0, Lcom/android/server/power/you;->TP:Landroid/os/OPDiagnoseManager;
+    iget-object v5, v0, Lcom/android/server/power/you;->oQ:Landroid/os/OPDiagnoseManager;
 
     invoke-virtual {v5, v1, v4}, Landroid/os/OPDiagnoseManager;->writeDiagData(ILjava/lang/String;)Z
 
     :cond_1
-    iget v5, v0, Lcom/android/server/power/you;->VP:I
+    iget v5, v0, Lcom/android/server/power/you;->pQ:I
 
     if-gtz v5, :cond_2
 

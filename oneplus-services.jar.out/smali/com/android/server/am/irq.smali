@@ -16,29 +16,45 @@
 
 
 # static fields
-.field private static final Ax:Ljava/lang/String; = "black_gps.xml"
-
-.field private static final Bx:Ljava/lang/String; = "/data/data_bpm/black_gps.xml"
-
 .field private static final CONFIG_NAME:Ljava/lang/String; = "ProcessFreezer"
-
-.field private static final Cx:Ljava/lang/String; = "black_brd.xml"
 
 .field public static final DEBUG:Z
 
-.field private static final Dx:Ljava/lang/String; = "/data/data_bpm/black_brd.xml"
+.field private static Hv:Z = false
 
-.field private static final Ex:Ljava/lang/String; = "black_alarm.xml"
-
-.field private static final Fx:Ljava/lang/String; = "/data/data_bpm/black_alarm.xml"
-
-.field private static final Gx:I = 0x1
+.field private static final Hx:Z
 
 .field public static final IN_USING:Z = true
 
+.field private static Ix:Lcom/android/server/wm/ActivityTaskManagerService; = null
+
+.field private static final Jx:Ljava/lang/String; = "/system/bpm/brd.xml"
+
+.field private static final Kx:Ljava/lang/String; = "/system/bpm/black_gps.xml"
+
+.field private static final Lx:Ljava/lang/String; = "/system/bpm/black_brd.xml"
+
+.field private static final Mx:Ljava/lang/String; = "/system/bpm/black_alarm.xml"
+
+.field private static final Nx:Ljava/lang/String; = "brd.xml"
+
+.field private static final Ox:Ljava/lang/String; = "/data/data_bpm/brd.xml"
+
+.field private static final Px:Ljava/lang/String; = "black_gps.xml"
+
+.field private static final Qx:Ljava/lang/String; = "/data/data_bpm/black_gps.xml"
+
+.field private static final Rx:Ljava/lang/String; = "black_brd.xml"
+
+.field private static final Sx:Ljava/lang/String; = "/data/data_bpm/black_brd.xml"
+
 .field public static final TAG:Ljava/lang/String; = "BFP"
 
-.field private static final jv:Ljava/lang/String; = "/data/data_bpm/"
+.field private static final Tx:Ljava/lang/String; = "black_alarm.xml"
+
+.field private static final Ux:Ljava/lang/String; = "/data/data_bpm/black_alarm.xml"
+
+.field private static final Vx:I = 0x1
 
 .field private static mActivityManager:Lcom/android/server/am/ActivityManagerService; = null
 
@@ -46,33 +62,17 @@
 
 .field private static mInstance:Lcom/android/server/am/irq; = null
 
-.field private static sv:Z = false
-
-.field private static final sx:Z
-
-.field private static tx:Lcom/android/server/wm/ActivityTaskManagerService; = null
-
-.field private static final ux:Ljava/lang/String; = "/system/bpm/brd.xml"
-
-.field private static final vx:Ljava/lang/String; = "/system/bpm/black_gps.xml"
-
-.field private static final wx:Ljava/lang/String; = "/system/bpm/black_brd.xml"
-
-.field private static final xx:Ljava/lang/String; = "/system/bpm/black_alarm.xml"
-
-.field private static final yx:Ljava/lang/String; = "brd.xml"
-
-.field private static final zx:Ljava/lang/String; = "/data/data_bpm/brd.xml"
+.field private static final yv:Ljava/lang/String; = "/data/data_bpm/"
 
 
 # instance fields
+.field private Fx:Landroid/os/Handler;
+
+.field private Gx:Landroid/os/HandlerThread;
+
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
 .field private mContext:Landroid/content/Context;
-
-.field private qx:Landroid/os/Handler;
-
-.field private rx:Landroid/os/HandlerThread;
 
 
 # direct methods
@@ -91,13 +91,13 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/irq;->sx:Z
+    sput-boolean v1, Lcom/android/server/am/irq;->Hx:Z
 
     const/4 v1, 0x0
 
     sput-object v1, Lcom/android/server/am/irq;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
 
-    sput-object v1, Lcom/android/server/am/irq;->tx:Lcom/android/server/wm/ActivityTaskManagerService;
+    sput-object v1, Lcom/android/server/am/irq;->Ix:Lcom/android/server/wm/ActivityTaskManagerService;
 
     sput-object v1, Lcom/android/server/am/irq;->mActivityTaskManagerInternal:Lcom/android/server/wm/ActivityTaskManagerInternal;
 
@@ -115,7 +115,7 @@
 
     xor-int/2addr v0, v1
 
-    sput-boolean v0, Lcom/android/server/am/irq;->sv:Z
+    sput-boolean v0, Lcom/android/server/am/irq;->Hv:Z
 
     return-void
 .end method
@@ -127,9 +127,9 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/am/irq;->qx:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/server/am/irq;->Fx:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/server/am/irq;->rx:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/irq;->Gx:Landroid/os/HandlerThread;
 
     new-instance v0, Landroid/os/HandlerThread;
 
@@ -137,15 +137,15 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/am/irq;->rx:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/irq;->Gx:Landroid/os/HandlerThread;
 
-    iget-object v0, p0, Lcom/android/server/am/irq;->rx:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/server/am/irq;->Gx:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     new-instance v0, Lcom/android/server/am/irq$rtg;
 
-    iget-object v1, p0, Lcom/android/server/am/irq;->rx:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/android/server/am/irq;->Gx:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -153,12 +153,12 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/am/irq$rtg;-><init>(Lcom/android/server/am/irq;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/server/am/irq;->qx:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/server/am/irq;->Fx:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method private Bo()V
+.method private Eo()V
     .locals 3
 
     const-string v0, "BFP"
@@ -304,7 +304,7 @@
 .method static synthetic access$300()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/irq;->sx:Z
+    sget-boolean v0, Lcom/android/server/am/irq;->Hx:Z
 
     return v0
 .end method
@@ -312,7 +312,7 @@
 .method static synthetic access$400()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/irq;->sv:Z
+    sget-boolean v0, Lcom/android/server/am/irq;->Hv:Z
 
     return v0
 .end method
@@ -421,7 +421,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/irq;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/server/am/irq;->qx:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/server/am/irq;->Fx:Landroid/os/Handler;
 
     new-instance v3, Lcom/android/server/am/irq$tsu;
 
@@ -943,7 +943,7 @@
     goto :goto_4
 
     :cond_7
-    invoke-static {v7}, Lcom/android/server/vdb;->you(Ljava/util/List;)V
+    invoke-static {v7}, Lcom/android/server/zgw;->you(Ljava/util/List;)V
 
     invoke-static {v0, v6}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1034,12 +1034,12 @@
     return-void
 .end method
 
-.method private sc()V
+.method private uc()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/android/server/am/irq;->Bo()V
+    invoke-direct {p0}, Lcom/android/server/am/irq;->Eo()V
 
-    invoke-static {}, Lcom/android/server/am/irq$zta;->sc()V
+    invoke-static {}, Lcom/android/server/am/irq$zta;->uc()V
 
     const-string v0, "/data/data_bpm/black_gps.xml"
 
@@ -1047,7 +1047,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/server/vdb;->you(Ljava/util/List;)V
+    invoke-static {v0}, Lcom/android/server/zgw;->you(Ljava/util/List;)V
 
     invoke-direct {p0}, Lcom/android/server/am/irq;->initOnlineConfig()V
 
@@ -1074,7 +1074,7 @@
 
     if-ge v1, v2, :cond_2
 
-    sget-boolean v0, Lcom/android/server/am/irq;->sx:Z
+    sget-boolean v0, Lcom/android/server/am/irq;->Hx:Z
 
     if-eqz v0, :cond_1
 
@@ -1115,7 +1115,7 @@
 
     if-eqz v1, :cond_5
 
-    sget-boolean v0, Lcom/android/server/am/irq;->sx:Z
+    sget-boolean v0, Lcom/android/server/am/irq;->Hx:Z
 
     if-eqz v0, :cond_4
 
@@ -1149,7 +1149,7 @@
 
     if-eqz v1, :cond_7
 
-    sget-boolean v0, Lcom/android/server/am/irq;->sx:Z
+    sget-boolean v0, Lcom/android/server/am/irq;->Hx:Z
 
     if-eqz v0, :cond_6
 
@@ -1214,7 +1214,7 @@
 .method static synthetic zta(Lcom/android/server/am/irq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/irq;->sc()V
+    invoke-direct {p0}, Lcom/android/server/am/irq;->uc()V
 
     return-void
 .end method
@@ -1448,7 +1448,7 @@
 .method public getLooper()Landroid/os/Looper;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/irq;->rx:Landroid/os/HandlerThread;
+    iget-object p0, p0, Lcom/android/server/am/irq;->Gx:Landroid/os/HandlerThread;
 
     invoke-virtual {p0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
@@ -1464,7 +1464,7 @@
 
     sput-object p2, Lcom/android/server/am/irq;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
 
-    sput-object p3, Lcom/android/server/am/irq;->tx:Lcom/android/server/wm/ActivityTaskManagerService;
+    sput-object p3, Lcom/android/server/am/irq;->Ix:Lcom/android/server/wm/ActivityTaskManagerService;
 
     const-class p1, Lcom/android/server/wm/ActivityTaskManagerInternal;
 
@@ -1476,11 +1476,11 @@
 
     sput-object p1, Lcom/android/server/am/irq;->mActivityTaskManagerInternal:Lcom/android/server/wm/ActivityTaskManagerInternal;
 
-    invoke-static {}, Lcom/android/server/vdb;->getInstance()Lcom/android/server/vdb;
+    invoke-static {}, Lcom/android/server/zgw;->getInstance()Lcom/android/server/zgw;
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Lcom/android/server/vdb;->zta(Lcom/android/server/am/ActivityManagerService;)V
+    invoke-virtual {p1, p2}, Lcom/android/server/zgw;->zta(Lcom/android/server/am/ActivityManagerService;)V
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -1490,7 +1490,7 @@
 
     iput p2, p1, Landroid/os/Message;->what:I
 
-    iget-object p0, p0, Lcom/android/server/am/irq;->qx:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/am/irq;->Fx:Landroid/os/Handler;
 
     const-wide/16 p2, 0x1388
 

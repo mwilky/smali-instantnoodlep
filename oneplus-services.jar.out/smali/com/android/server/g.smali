@@ -1,11 +1,11 @@
 .class Lcom/android/server/g;
-.super Landroid/util/Singleton;
+.super Landroid/content/BroadcastReceiver;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/OpPowerControllerService;
+    value = Lcom/android/server/e$sis;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,64 +13,105 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroid/util/Singleton<",
-        "Lcom/oneplus/android/power/IOpPowerController;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field final synthetic this$1:Lcom/android/server/e$sis;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/android/server/e$sis;)V
     .locals 0
 
-    invoke-direct {p0}, Landroid/util/Singleton;-><init>()V
+    iput-object p1, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected create()Lcom/oneplus/android/power/IOpPowerController;
-    .locals 2
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 1
 
-    const-string p0, "powercontrol"
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
+    move-result-object p1
 
-    move-result-object p0
+    const-string p2, "android.intent.action.SCREEN_ON"
 
-    const-string v0, "OpPowerControllerService"
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-nez p0, :cond_0
+    move-result p2
 
-    const-string v1, "can\'t get service binder: OpPowerController"
+    const/4 v0, 0x1
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    if-eqz p2, :cond_0
+
+    iget-object p1, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
+
+    invoke-static {p1, v0}, Lcom/android/server/e$sis;->zta(Lcom/android/server/e$sis;Z)Z
+
+    iget-object p1, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
+
+    invoke-static {p1}, Lcom/android/server/e$sis;->zta(Lcom/android/server/e$sis;)Landroid/os/Handler;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object p0, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
+
+    invoke-virtual {p0}, Lcom/android/server/e$sis;->updateLightsLocked()V
+
+    goto :goto_0
 
     :cond_0
-    invoke-static {p0}, Lcom/oneplus/android/power/IOpPowerController$Stub;->asInterface(Landroid/os/IBinder;)Lcom/oneplus/android/power/IOpPowerController;
+    const-string p2, "android.intent.action.SCREEN_OFF"
 
-    move-result-object p0
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-nez p0, :cond_1
+    move-result p1
 
-    const-string v1, "can\'t get service interface: OpPowerController"
+    if-eqz p1, :cond_3
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    iget-object p1, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
+
+    const/4 p2, 0x0
+
+    invoke-static {p1, p2}, Lcom/android/server/e$sis;->zta(Lcom/android/server/e$sis;Z)Z
+
+    iget-object p1, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
+
+    iget-object p1, p1, Lcom/android/server/e$sis;->this$0:Lcom/android/server/e;
+
+    invoke-static {p1}, Lcom/android/server/e;->you(Lcom/android/server/e;)I
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    move p2, v0
 
     :cond_1
-    return-object p0
-.end method
+    iget-object p0, p0, Lcom/android/server/g;->this$1:Lcom/android/server/e$sis;
 
-.method protected bridge synthetic create()Ljava/lang/Object;
-    .locals 0
-
-    invoke-virtual {p0}, Lcom/android/server/g;->create()Lcom/oneplus/android/power/IOpPowerController;
+    invoke-static {p0}, Lcom/android/server/e$sis;->zta(Lcom/android/server/e$sis;)Landroid/os/Handler;
 
     move-result-object p0
 
-    return-object p0
+    if-eqz p2, :cond_2
+
+    const-wide/16 p1, 0x1f4
+
+    invoke-virtual {p0, v0, p1, p2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    :cond_3
+    :goto_0
+    return-void
 .end method

@@ -60,11 +60,11 @@
 .method public zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
     .locals 2
 
-    invoke-virtual {p2}, Lcom/android/server/am/OnePlusBGController$wtn;->Nb()D
+    invoke-virtual {p2}, Lcom/android/server/am/OnePlusBGController$wtn;->Ob()D
 
     move-result-wide v0
 
-    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController$wtn;->Nb()D
+    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController$wtn;->Ob()D
 
     move-result-wide p0
 

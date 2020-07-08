@@ -21,53 +21,53 @@
 
 
 # static fields
-.field static final Aq:I = 0x3
+.field static final Eq:Ljava/lang/String; = "unknow"
 
-.field static final Bq:I = 0x4
+.field static final Fq:Ljava/lang/String; = "activity"
 
-.field static final Cq:I = 0x5
+.field static final Gq:Ljava/lang/String; = "service"
+
+.field static final Hq:Ljava/lang/String; = "broadcast"
+
+.field static final Iq:Ljava/lang/String; = "provider"
+
+.field static final Jq:Ljava/lang/String; = "job"
+
+.field static final Kq:Ljava/lang/String; = "notification"
 
 .field static final LEVEL_NONE:I = 0x0
 
-.field static final pq:Ljava/lang/String; = "unknow"
+.field static final Lq:Ljava/lang/String; = "instrumentation"
 
-.field static final qq:Ljava/lang/String; = "activity"
+.field static final Mq:I = 0x0
 
-.field static final rq:Ljava/lang/String; = "service"
+.field static final Nq:I = 0x1
 
-.field static final sq:Ljava/lang/String; = "broadcast"
+.field static final Oq:I = 0x2
 
-.field static final tq:Ljava/lang/String; = "provider"
+.field static final Pq:I = 0x3
 
-.field static final uq:Ljava/lang/String; = "job"
+.field static final Qq:I = 0x4
 
-.field static final vq:Ljava/lang/String; = "notification"
-
-.field static final wq:Ljava/lang/String; = "instrumentation"
-
-.field static final xq:I = 0x0
-
-.field static final yq:I = 0x1
-
-.field static final zq:I = 0x2
+.field static final Rq:I = 0x5
 
 
 # instance fields
-.field private _d:I
+.field private Aq:Ljava/lang/String;
 
-.field private lq:Ljava/lang/String;
+.field private Bq:Z
+
+.field private Cq:Ljava/lang/String;
+
+.field private Dq:Ljava/lang/String;
+
+.field private _d:I
 
 .field private mAction:Ljava/lang/String;
 
 .field private mCallerPackage:Ljava/lang/String;
 
 .field private mReason:Ljava/lang/String;
-
-.field private mq:Z
-
-.field private nq:Ljava/lang/String;
-
-.field private oq:Ljava/lang/String;
 
 
 # direct methods
@@ -82,13 +82,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/ugm$zta;->mq:Z
+    iput-boolean v0, p0, Lcom/android/server/am/ugm$zta;->Bq:Z
 
     iput-object p1, p0, Lcom/android/server/am/ugm$zta;->mReason:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/android/server/am/ugm$zta;->mCallerPackage:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/am/ugm$zta;->lq:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/am/ugm$zta;->Aq:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -106,7 +106,7 @@
 
     xor-int/lit8 p1, p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/am/ugm$zta;->mq:Z
+    iput-boolean p1, p0, Lcom/android/server/am/ugm$zta;->Bq:Z
 
     :cond_0
     return-void
@@ -123,7 +123,7 @@
 .method static synthetic sis(Lcom/android/server/am/ugm$zta;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/ugm$zta;->nq:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/ugm$zta;->Cq:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -131,7 +131,7 @@
 .method static synthetic you(Lcom/android/server/am/ugm$zta;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/ugm$zta;->oq:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/ugm$zta;->Dq:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -147,7 +147,7 @@
 .method static synthetic zta(Lcom/android/server/am/ugm$zta;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->oq:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->Dq:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -162,18 +162,10 @@
 
 
 # virtual methods
-.method public Db()Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->lq:Ljava/lang/String;
-
-    return-object p0
-.end method
-
 .method public Eb()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->mCallerPackage:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->Aq:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -181,20 +173,28 @@
 .method public Fb()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->nq:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->mCallerPackage:Ljava/lang/String;
 
     return-object p0
 .end method
 
-.method public Gb()Z
+.method public Gb()Ljava/lang/String;
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/ugm$zta;->mq:Z
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->Cq:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public Hb()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/am/ugm$zta;->Bq:Z
 
     return p0
 .end method
 
-.method public Hb()Ljava/util/Map;
+.method public Ib()Ljava/util/Map;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -234,7 +234,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/android/server/am/ugm$zta;->lq:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/ugm$zta;->Aq:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -270,7 +270,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v3, p0, Lcom/android/server/am/ugm$zta;->nq:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/ugm$zta;->Cq:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -306,7 +306,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-boolean v3, p0, Lcom/android/server/am/ugm$zta;->mq:Z
+    iget-boolean v3, p0, Lcom/android/server/am/ugm$zta;->Bq:Z
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -324,7 +324,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->oq:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->Dq:Ljava/lang/String;
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -352,7 +352,7 @@
 .method public getDetail()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->oq:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->Dq:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -394,7 +394,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/am/ugm$zta;->mq:Z
+    iget-boolean v1, p0, Lcom/android/server/am/ugm$zta;->Bq:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -402,7 +402,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/ugm$zta;->lq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ugm$zta;->Aq:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -418,7 +418,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/ugm$zta;->nq:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/ugm$zta;->Cq:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -434,7 +434,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->oq:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/ugm$zta;->Dq:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

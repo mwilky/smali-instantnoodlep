@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final EVa:J = 0x55555555L
+.field private static final fWa:J = 0x55555555L
 
-.field private static final FVa:J = 0x5555555555555555L
+.field private static final gWa:J = 0x5555555555555555L
 
-.field private static final GVa:J = -0x5555555555555556L
+.field private static final hWa:J = -0x5555555555555556L
 
 
 # direct methods
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static Da(I)I
+.method public static Ea(I)I
     .locals 1
 
     const v0, 0xffff
@@ -62,7 +62,7 @@
     return p0
 .end method
 
-.method public static Ea(I)J
+.method public static Fa(I)J
     .locals 6
 
     ushr-int/lit8 v0, p0, 0x8
@@ -142,7 +142,7 @@
     return-wide v0
 .end method
 
-.method public static Fa(I)I
+.method public static Ga(I)I
     .locals 1
 
     and-int/lit16 p0, p0, 0xff
@@ -168,7 +168,7 @@
     return p0
 .end method
 
-.method public static Ga(I)I
+.method public static Ha(I)I
     .locals 2
 
     ushr-int/lit8 v0, p0, 0x8
@@ -230,7 +230,7 @@
     return p0
 .end method
 
-.method public static Ha(I)I
+.method public static Ia(I)I
     .locals 2
 
     ushr-int/lit8 v0, p0, 0x7
@@ -292,7 +292,7 @@
     return p0
 .end method
 
-.method public static Ia(I)I
+.method public static Ja(I)I
     .locals 2
 
     ushr-int/lit8 v0, p0, 0x1
@@ -354,7 +354,7 @@
     return p0
 .end method
 
-.method public static Ja(I)I
+.method public static Ka(I)I
     .locals 2
 
     ushr-int/lit8 v0, p0, 0x8

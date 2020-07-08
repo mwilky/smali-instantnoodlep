@@ -96,7 +96,7 @@
     :cond_0
     iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
 
-    invoke-static {v1, p1}, Lcom/oneplus/server/DynamicVsyncManager;->rtg(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
+    invoke-static {v1, p1}, Lcom/oneplus/server/DynamicVsyncManager;->ssp(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
 
     iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager$DockDividerVisibilityListener;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
 

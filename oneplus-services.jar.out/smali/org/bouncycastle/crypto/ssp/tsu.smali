@@ -6,9 +6,9 @@
 # static fields
 .field static final INSTANCE:Lorg/bouncycastle/crypto/ssp/tsu;
 
-.field private static final NEa:Ljava/math/BigInteger;
-
 .field private static final ONE:Ljava/math/BigInteger;
+
+.field private static final oFa:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/crypto/ssp/tsu;->NEa:Ljava/math/BigInteger;
+    sput-object v0, Lorg/bouncycastle/crypto/ssp/tsu;->oFa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -99,7 +99,7 @@
     return-object p1
 
     :cond_1
-    sget-object p0, Lorg/bouncycastle/crypto/ssp/tsu;->NEa:Ljava/math/BigInteger;
+    sget-object p0, Lorg/bouncycastle/crypto/ssp/tsu;->oFa:Ljava/math/BigInteger;
 
     invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/cno;->getM()I
 
@@ -127,7 +127,7 @@
     move-result-object v0
 
     :cond_3
-    sget-object p1, Lorg/bouncycastle/crypto/ssp/tsu;->NEa:Ljava/math/BigInteger;
+    sget-object p1, Lorg/bouncycastle/crypto/ssp/tsu;->oFa:Ljava/math/BigInteger;
 
     invoke-virtual {v0, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 

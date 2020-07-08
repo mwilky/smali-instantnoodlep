@@ -6,11 +6,11 @@
 # static fields
 .field public static final MAX:I = 0xff
 
-.field public static final sWa:I = 0x1
+.field public static final UWa:I = 0x1
 
-.field public static final tWa:I = 0x2
+.field public static final VWa:I = 0x2
 
-.field public static final uWa:I = 0x4
+.field public static final WWa:I = 0x4
 
 
 # direct methods

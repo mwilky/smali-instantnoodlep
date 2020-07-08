@@ -9,11 +9,11 @@
 # static fields
 .field private static DEBUG_ONEPLUS:Z = false
 
-.field private static final Rfa:I = 0x499602d2
-
-.field private static final Sfa:Ljava/lang/String; = "com.android.settings"
-
 .field private static final TAG:Ljava/lang/String;
+
+.field private static final lga:I = 0x499602d2
+
+.field private static final mga:Ljava/lang/String; = "com.android.settings"
 
 
 # direct methods

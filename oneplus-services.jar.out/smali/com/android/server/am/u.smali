@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/app/AlarmManager$OnAlarmListener;
+.implements Lcom/oneplus/config/ConfigObserver$ConfigUpdater;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/v;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/am/OpForceDarkController;->initOnlineConfig()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/v;
+.field final synthetic this$0:Lcom/android/server/am/OpForceDarkController;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/v;)V
+.method constructor <init>(Lcom/android/server/am/OpForceDarkController;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/u;->this$0:Lcom/android/server/am/v;
+    iput-object p1, p0, Lcom/android/server/am/u;->this$0:Lcom/android/server/am/OpForceDarkController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,12 +34,20 @@
 
 
 # virtual methods
-.method public onAlarm()V
-    .locals 0
+.method public updateConfig(Lorg/json/JSONArray;)V
+    .locals 1
 
-    iget-object p0, p0, Lcom/android/server/am/u;->this$0:Lcom/android/server/am/v;
+    const-string p1, "OPFD_CTRL_SVC"
 
-    invoke-static {p0}, Lcom/android/server/am/v;->bio(Lcom/android/server/am/v;)V
+    const-string v0, "Update Config----------------"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object p0, p0, Lcom/android/server/am/u;->this$0:Lcom/android/server/am/OpForceDarkController;
+
+    const/4 p1, 0x0
+
+    invoke-static {p0, p1}, Lcom/android/server/am/OpForceDarkController;->access$800(Lcom/android/server/am/OpForceDarkController;Z)V
 
     return-void
 .end method

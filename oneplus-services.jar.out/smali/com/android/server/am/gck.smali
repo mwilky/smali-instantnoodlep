@@ -4,15 +4,15 @@
 
 
 # static fields
+.field private static final Mn:Z
+
+.field static final Nn:Z
+
+.field private static Pn:Z = false
+
 .field public static final TAG:Ljava/lang/String; = "LOMM-AppRecordTransition"
 
 .field private static debug:Z
-
-.field private static final xn:Z
-
-.field static final yn:Z
-
-.field private static zn:Z
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/gck;->xn:Z
+    sput-boolean v1, Lcom/android/server/am/gck;->Mn:Z
 
     sput-boolean v0, Lcom/android/server/am/gck;->debug:Z
 
@@ -37,9 +37,9 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/android/server/am/gck;->yn:Z
+    sput-boolean v1, Lcom/android/server/am/gck;->Nn:Z
 
-    sget-boolean v1, Lcom/android/server/am/gck;->xn:Z
+    sget-boolean v1, Lcom/android/server/am/gck;->Mn:Z
 
     if-nez v1, :cond_0
 
@@ -47,7 +47,7 @@
 
     if-nez v1, :cond_0
 
-    sget-boolean v1, Lcom/android/server/am/gck;->yn:Z
+    sget-boolean v1, Lcom/android/server/am/gck;->Nn:Z
 
     if-eqz v1, :cond_1
 
@@ -55,7 +55,7 @@
     const/4 v0, 0x1
 
     :cond_1
-    sput-boolean v0, Lcom/android/server/am/gck;->zn:Z
+    sput-boolean v0, Lcom/android/server/am/gck;->Pn:Z
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 .method static a(Ljava/lang/String;)V
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/am/gck;->zn:Z
+    sget-boolean v0, Lcom/android/server/am/gck;->Pn:Z
 
     if-eqz v0, :cond_0
 
@@ -586,7 +586,7 @@
 
     sput-boolean v0, Lcom/android/server/am/gck;->debug:Z
 
-    sget-boolean p1, Lcom/android/server/am/gck;->xn:Z
+    sget-boolean p1, Lcom/android/server/am/gck;->Mn:Z
 
     if-nez p1, :cond_1
 
@@ -594,7 +594,7 @@
 
     if-nez p1, :cond_1
 
-    sget-boolean p1, Lcom/android/server/am/gck;->yn:Z
+    sget-boolean p1, Lcom/android/server/am/gck;->Nn:Z
 
     if-eqz p1, :cond_0
 
@@ -605,7 +605,7 @@
 
     :cond_1
     :goto_0
-    sput-boolean v0, Lcom/android/server/am/gck;->zn:Z
+    sput-boolean v0, Lcom/android/server/am/gck;->Pn:Z
 
     const-string p1, "debug omm switch is on!"
 
@@ -614,7 +614,7 @@
     :cond_2
     sput-boolean v1, Lcom/android/server/am/gck;->debug:Z
 
-    sget-boolean p1, Lcom/android/server/am/gck;->xn:Z
+    sget-boolean p1, Lcom/android/server/am/gck;->Mn:Z
 
     if-nez p1, :cond_4
 
@@ -622,7 +622,7 @@
 
     if-nez p1, :cond_4
 
-    sget-boolean p1, Lcom/android/server/am/gck;->yn:Z
+    sget-boolean p1, Lcom/android/server/am/gck;->Nn:Z
 
     if-eqz p1, :cond_3
 
@@ -633,7 +633,7 @@
 
     :cond_4
     :goto_1
-    sput-boolean v0, Lcom/android/server/am/gck;->zn:Z
+    sput-boolean v0, Lcom/android/server/am/gck;->Pn:Z
 
     const-string p1, "debug omm switch is off!"
 

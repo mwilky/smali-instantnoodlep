@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source ""
 
+# interfaces
+.implements Lcom/oneplus/config/ConfigObserver$ConfigUpdater;
+
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -13,126 +16,617 @@
     name = "you"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<K:",
-        "Ljava/lang/Object;",
-        "V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
 
 # instance fields
-.field private map:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "TK;TV;>;"
-        }
-    .end annotation
-.end field
-
 .field final synthetic this$0:Lcom/android/server/s;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/server/s;Ljava/util/Map;)V
+.method private constructor <init>(Lcom/android/server/s;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "TK;TV;>;)V"
-        }
-    .end annotation
 
     iput-object p1, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/android/server/s$you;->map:Ljava/util/Map;
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/android/server/s;Lcom/android/server/r;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/s$you;-><init>(Lcom/android/server/s;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
-    .locals 3
+.method public resolveConfigFromJSON(Lorg/json/JSONArray;)V
+    .locals 7
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    if-nez p1, :cond_0
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string p0, "OpSmartDoze"
 
-    iget-object p0, p0, Lcom/android/server/s$you;->map:Ljava/util/Map;
+    const-string p1, "[OnlineConfig] config is null!"
 
-    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    invoke-static {p0, p1}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object p0
-
-    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
+    return-void
 
     :cond_0
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v0}, Lcom/android/server/s;->gwm(Lcom/android/server/s;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    if-lez v1, :cond_c
 
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map$Entry;
-
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v3, "short_screen_period_switch"
 
-    const/16 v2, 0x3d
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    move-result v3
 
-    const/16 v2, 0x22
+    if-eqz v3, :cond_1
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
 
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    const-string v4, "short_screen_period_switch"
 
-    move-result-object v1
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result v4
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-static {v3, v4}, Lcom/android/server/s;->sis(Lcom/android/server/s;Z)Z
 
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    const-string v3, "OpSmartDoze"
 
-    move-result v1
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    if-eqz v1, :cond_0
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/16 v1, 0x2c
+    const-string v5, "[OnlineConfig] mEnabledShortScreenPeriodOnline: "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x20
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-static {v5}, Lcom/android/server/s;->cno(Lcom/android/server/s;)Z
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    const-string v3, "short_screen_period"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    const-string v4, "short_screen_period"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v3, v4, v5}, Lcom/android/server/s;->zta(Lcom/android/server/s;J)J
+
+    const-string v3, "OpSmartDoze"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "[OnlineConfig] mShortScreenPeriod: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v5}, Lcom/android/server/s;->kth(Lcom/android/server/s;)J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    const-string v3, "allow_whitelist_access_wakelock_period"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    const-string v4, "allow_whitelist_access_wakelock_period"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v3, v4, v5}, Lcom/android/server/s;->sis(Lcom/android/server/s;J)J
+
+    const-string v3, "OpSmartDoze"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "[OnlineConfig] mAllowWhitelistAccessWakeLockPeriod: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v5}, Lcom/android/server/s;->oif(Lcom/android/server/s;)J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_3
+    const-string v3, "allow_whitelist_access_network_period"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    const-string v4, "allow_whitelist_access_network_period"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v3, v4, v5}, Lcom/android/server/s;->you(Lcom/android/server/s;J)J
+
+    const-string v3, "OpSmartDoze"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "[OnlineConfig] mAllowWhitelistAccessNetWorkPeriod: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v5}, Lcom/android/server/s;->qbh(Lcom/android/server/s;)J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    const-string v3, "idle_time_period"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_5
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    const-string v4, "idle_time_period"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v3, v4, v5}, Lcom/android/server/s;->tsu(Lcom/android/server/s;J)J
+
+    const-string v3, "OpSmartDoze"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "[OnlineConfig] mIdleTimeMills: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v5}, Lcom/android/server/s;->vdb(Lcom/android/server/s;)J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_5
+    const-string v3, "inactive_time_out"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    const-string v4, "inactive_time_out"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v3, v4, v5}, Lcom/android/server/s;->rtg(Lcom/android/server/s;J)J
+
+    const-string v3, "OpSmartDoze"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "[OnlineConfig] mInactiveTimeout: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v5}, Lcom/android/server/s;->obl(Lcom/android/server/s;)J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    const-string v3, "after_inactive_time_out"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_7
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    const-string v4, "after_inactive_time_out"
+
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-static {v3, v4, v5}, Lcom/android/server/s;->ssp(Lcom/android/server/s;J)J
+
+    const-string v2, "OpSmartDoze"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "[OnlineConfig] mAfterInactiveTimeout: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v4, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v4}, Lcom/android/server/s;->oxb(Lcom/android/server/s;)J
+
+    move-result-wide v4
+
+    invoke-virtual {v3, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_7
+    const/4 v2, 0x1
+
+    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    const-string v3, "name"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "always_smart_doze_whitelist"
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_a
+
+    const-string v3, "value"
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v3}, Lcom/android/server/s;->ugm(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/util/ArraySet;->clear()V
+
+    iget-object v3, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v3}, Lcom/android/server/s;->bio(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/util/ArraySet;->clear()V
+
+    move v3, v1
+
+    :goto_0
+    invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
+
+    move-result v4
+
+    if-ge v3, v4, :cond_9
+
+    iget-object v4, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v4}, Lcom/android/server/s;->ugm(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/server/am/AppRecordManager;->getUidFromPackageName(Ljava/lang/String;)I
+
+    move-result v4
+
+    const/4 v5, -0x1
+
+    if-eq v4, v5, :cond_8
+
+    iget-object v5, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v5}, Lcom/android/server/s;->bio(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v5
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v5, v4}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
+
+    :cond_8
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    :cond_1
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_9
+    const-string v2, "OpSmartDoze"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "[OnlineConfig] always_smart_doze_whitelist:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v4, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v4}, Lcom/android/server/s;->ugm(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_a
+    const/4 v2, 0x2
+
+    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v2, "name"
+
+    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "ignore_list"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_c
+
+    const-string v2, "value"
+
+    invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object p1
+
+    iget-object v2, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v2}, Lcom/android/server/s;->gck(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/util/ArraySet;->clear()V
+
+    :goto_1
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v2
+
+    if-ge v1, v2, :cond_b
+
+    iget-object v2, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {v2}, Lcom/android/server/s;->gck(Lcom/android/server/s;)Landroid/util/ArraySet;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Landroid/util/ArraySet;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_b
+    const-string p1, "OpSmartDoze"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "[OnlineConfig] mIgnoreList:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/s$you;->this$0:Lcom/android/server/s;
+
+    invoke-static {p0}, Lcom/android/server/s;->gck(Lcom/android/server/s;)Landroid/util/ArraySet;
 
     move-result-object p0
 
-    return-object p0
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_c
+    monitor-exit v0
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p0
+    :try_end_2
+    .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] Failed to process onlineconfig! \n"
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OpSmartDoze"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_2
+    return-void
+.end method
+
+.method public updateConfig(Lorg/json/JSONArray;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/android/server/s$you;->resolveConfigFromJSON(Lorg/json/JSONArray;)V
+
+    return-void
 .end method

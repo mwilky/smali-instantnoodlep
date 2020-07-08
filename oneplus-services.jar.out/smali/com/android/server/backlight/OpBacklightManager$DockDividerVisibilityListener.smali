@@ -164,7 +164,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->kd()I
+    invoke-virtual {p1}, Lcom/android/server/backlight/zta;->md()I
 
     move-result p1
 

@@ -66,11 +66,11 @@
 
     iget-object p0, p0, Lcom/android/server/secrecy/zta/tsu$zta;->rtg:Lcom/android/server/secrecy/zta/tsu;
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/tsu;->qe()Lcom/android/server/secrecy/zta/sis;
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/tsu;->se()Lcom/android/server/secrecy/zta/sis;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->pe()V
+    invoke-virtual {p0}, Lcom/android/server/secrecy/zta/sis;->re()V
 
     return-void
 .end method

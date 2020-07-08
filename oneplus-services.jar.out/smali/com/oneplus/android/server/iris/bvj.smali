@@ -14,13 +14,13 @@
 
 
 # virtual methods
-.method public N(Z)V
+.method public M(Z)V
     .locals 0
 
     return-void
 .end method
 
-.method public Pf()V
+.method public P(Z)V
     .locals 0
 
     return-void
@@ -38,7 +38,21 @@
     return-void
 .end method
 
+.method public Rf()Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
 .method public S(Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public Sf()V
     .locals 0
 
     return-void
@@ -62,12 +76,6 @@
     return-void
 .end method
 
-.method public W(Z)V
-    .locals 0
-
-    return-void
-.end method
-
 .method public da(I)V
     .locals 0
 
@@ -78,6 +86,14 @@
     .locals 0
 
     return-void
+.end method
+
+.method public ea(I)I
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method public bridge synthetic getIrisCommand(I)I
@@ -159,6 +175,12 @@
 .end method
 
 .method public prepareDisplayModeChange(Lcom/oneplus/iris/OpIrisWindowInfo;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public screenStateChange(I)V
     .locals 0
 
     return-void

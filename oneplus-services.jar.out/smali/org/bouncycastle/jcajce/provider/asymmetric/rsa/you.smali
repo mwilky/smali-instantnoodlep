@@ -12,19 +12,19 @@
 
 
 # instance fields
-.field private hDa:Lorg/bouncycastle/crypto/zta;
+.field private JDa:Lorg/bouncycastle/crypto/zta;
 
-.field private hEa:Ljava/security/AlgorithmParameters;
+.field private JEa:Ljava/security/AlgorithmParameters;
+
+.field private LEa:Ljava/security/spec/AlgorithmParameterSpec;
+
+.field private MEa:Z
+
+.field private NEa:Z
+
+.field private OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
 .field private final helper:Lorg/bouncycastle/jcajce/tsu/tsu;
-
-.field private jEa:Ljava/security/spec/AlgorithmParameterSpec;
-
-.field private kEa:Z
-
-.field private lEa:Z
-
-.field private mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
 
 # direct methods
@@ -41,15 +41,15 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-direct {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     :try_start_0
     invoke-direct {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->zta(Ljavax/crypto/spec/OAEPParameterSpec;)V
@@ -85,17 +85,17 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-direct {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     return-void
 .end method
@@ -113,23 +113,98 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
     new-instance v0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-direct {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
-    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     return-void
+.end method
+
+.method private Cw()[B
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljavax/crypto/BadPaddingException;
+        }
+    .end annotation
+
+    const-string v0, "unable to decrypt block"
+
+    :try_start_0
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
+
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+
+    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->Lg()[B
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    iget-object v4, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->size()I
+
+    move-result v4
+
+    invoke-interface {v1, v2, v3, v4}, Lorg/bouncycastle/crypto/zta;->you([BII)[B
+
+    move-result-object v0
+    :try_end_0
+    .catch Lorg/bouncycastle/crypto/InvalidCipherTextException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->erase()V
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    :try_start_1
+    new-instance v2, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;
+
+    invoke-direct {v2, v0, v1}, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v2
+
+    :catch_1
+    move-exception v1
+
+    new-instance v2, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;
+
+    invoke-direct {v2, v0, v1}, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_0
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->erase()V
+
+    throw v0
 .end method
 
 .method private zta(Ljavax/crypto/spec/OAEPParameterSpec;)V
@@ -174,9 +249,9 @@
 
     invoke-direct {v0, v2, v1, v3}, Lorg/bouncycastle/crypto/tsu/zta;-><init>(Lorg/bouncycastle/crypto/zta;Lorg/bouncycastle/crypto/qbh;[B)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->jEa:Ljava/security/spec/AlgorithmParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->LEa:Ljava/security/spec/AlgorithmParameterSpec;
 
     return-void
 
@@ -206,81 +281,6 @@
     throw p0
 .end method
 
-.method private zw()[B
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljavax/crypto/BadPaddingException;
-        }
-    .end annotation
-
-    const-string v0, "unable to decrypt block"
-
-    :try_start_0
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
-
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
-
-    invoke-virtual {v2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->Ig()[B
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    iget-object v4, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
-
-    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->size()I
-
-    move-result v4
-
-    invoke-interface {v1, v2, v3, v4}, Lorg/bouncycastle/crypto/zta;->you([BII)[B
-
-    move-result-object v0
-    :try_end_0
-    .catch Lorg/bouncycastle/crypto/InvalidCipherTextException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->erase()V
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    :try_start_1
-    new-instance v2, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;
-
-    invoke-direct {v2, v0, v1}, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    :catch_1
-    move-exception v1
-
-    new-instance v2, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;
-
-    invoke-direct {v2, v0, v1}, Lorg/bouncycastle/jcajce/provider/util/BadBlockException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;->erase()V
-
-    throw v0
-.end method
-
 
 # virtual methods
 .method protected engineDoFinal([BII[BI)I
@@ -305,12 +305,12 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     :cond_0
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     instance-of p1, p1, Lorg/bouncycastle/crypto/rtg/wtn;
 
@@ -318,13 +318,13 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p3}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -344,13 +344,13 @@
     throw p0
 
     :cond_2
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p3}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -359,7 +359,7 @@
     if-gt p1, p3, :cond_4
 
     :goto_0
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->zw()[B
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Cw()[B
 
     move-result-object p0
 
@@ -413,12 +413,12 @@
 
     if-eqz p1, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     :cond_0
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     instance-of p1, p1, Lorg/bouncycastle/crypto/rtg/wtn;
 
@@ -426,13 +426,13 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p3}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -452,13 +452,13 @@
     throw p0
 
     :cond_2
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p3}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -467,7 +467,7 @@
     if-gt p1, p3, :cond_3
 
     :goto_0
-    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->zw()[B
+    invoke-direct {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->Cw()[B
 
     move-result-object p0
 
@@ -485,7 +485,7 @@
     .locals 1
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -552,7 +552,7 @@
     .locals 0
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/zta;->c()I
 
@@ -575,11 +575,11 @@
 .method protected engineGetParameters()Ljava/security/AlgorithmParameters;
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hEa:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JEa:Ljava/security/AlgorithmParameters;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->jEa:Ljava/security/spec/AlgorithmParameterSpec;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->LEa:Ljava/security/spec/AlgorithmParameterSpec;
 
     if-eqz v0, :cond_0
 
@@ -592,11 +592,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hEa:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JEa:Ljava/security/AlgorithmParameters;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hEa:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JEa:Ljava/security/AlgorithmParameters;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->jEa:Ljava/security/spec/AlgorithmParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->LEa:Ljava/security/spec/AlgorithmParameterSpec;
 
     invoke-virtual {v0, v1}, Ljava/security/AlgorithmParameters;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
     :try_end_0
@@ -619,7 +619,7 @@
 
     :cond_0
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hEa:Ljava/security/AlgorithmParameters;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JEa:Ljava/security/AlgorithmParameters;
 
     return-object p0
 .end method
@@ -677,7 +677,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hEa:Ljava/security/AlgorithmParameters;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JEa:Ljava/security/AlgorithmParameters;
 
     invoke-virtual {p0, p1, p2, v0, p4}, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
 
@@ -783,7 +783,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
     if-eqz v0, :cond_3
 
@@ -815,7 +815,7 @@
 
     if-eqz v0, :cond_12
 
-    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
     if-eqz v0, :cond_6
 
@@ -847,7 +847,7 @@
 
     check-cast v0, Ljavax/crypto/spec/OAEPParameterSpec;
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->jEa:Ljava/security/spec/AlgorithmParameterSpec;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->LEa:Ljava/security/spec/AlgorithmParameterSpec;
 
     invoke-virtual {v0}, Ljavax/crypto/spec/OAEPParameterSpec;->getMGFAlgorithm()Ljava/lang/String;
 
@@ -942,7 +942,7 @@
 
     invoke-direct {v2, v4, p3, v3, v0}, Lorg/bouncycastle/crypto/tsu/zta;-><init>(Lorg/bouncycastle/crypto/zta;Lorg/bouncycastle/crypto/qbh;Lorg/bouncycastle/crypto/qbh;[B)V
 
-    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iput-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     goto :goto_5
 
@@ -1007,7 +1007,7 @@
 
     :cond_c
     :goto_5
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     instance-of p3, p3, Lorg/bouncycastle/crypto/rtg/wtn;
 
@@ -1022,7 +1022,7 @@
     goto :goto_6
 
     :cond_d
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Vj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yj()Ljava/security/SecureRandom;
 
     move-result-object p4
 
@@ -1034,7 +1034,7 @@
     move-object p3, p2
 
     :goto_6
-    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p2}, Ljava/io/ByteArrayOutputStream;->reset()V
 
@@ -1081,7 +1081,7 @@
 
     :cond_10
     :goto_7
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     const/4 p1, 0x0
 
@@ -1090,7 +1090,7 @@
     goto :goto_8
 
     :cond_11
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0, v1, p3}, Lorg/bouncycastle/crypto/zta;->zta(ZLorg/bouncycastle/crypto/kth;)V
 
@@ -1150,9 +1150,9 @@
 
     if-eqz v1, :cond_1
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
-    iput-boolean v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iput-boolean v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
     return-void
 
@@ -1165,9 +1165,9 @@
 
     if-eqz v0, :cond_2
 
-    iput-boolean v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->lEa:Z
+    iput-boolean v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->NEa:Z
 
-    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->kEa:Z
+    iput-boolean v3, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->MEa:Z
 
     return-void
 
@@ -1222,7 +1222,7 @@
     invoke-direct {p1}, Lorg/bouncycastle/crypto/rtg/wtn;-><init>()V
 
     :goto_0
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     goto/16 :goto_7
 
@@ -1469,11 +1469,11 @@
 .method protected engineUpdate([BII[BI)I
     .locals 0
 
-    iget-object p4, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p4, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p4, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     instance-of p1, p1, Lorg/bouncycastle/crypto/rtg/wtn;
 
@@ -1481,13 +1481,13 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -1507,13 +1507,13 @@
     throw p0
 
     :cond_1
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -1537,11 +1537,11 @@
 .method protected engineUpdate([BII)[B
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     instance-of p1, p1, Lorg/bouncycastle/crypto/rtg/wtn;
 
@@ -1549,13 +1549,13 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -1575,13 +1575,13 @@
     throw p0
 
     :cond_1
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->mEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->OEa:Lorg/bouncycastle/jcajce/provider/asymmetric/util/sis$zta;
 
     invoke-virtual {p1}, Ljava/io/ByteArrayOutputStream;->size()I
 
     move-result p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->hDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/rsa/you;->JDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/zta;->h()I
 

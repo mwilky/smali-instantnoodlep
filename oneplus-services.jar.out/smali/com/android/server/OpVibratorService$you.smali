@@ -85,7 +85,7 @@
     return-object p0
 .end method
 
-.method public ua()I
+.method public va()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/OpVibratorService$you;->mEffect:I
@@ -93,7 +93,7 @@
     return p0
 .end method
 
-.method va()I
+.method wa()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/OpVibratorService$you;->mMaxDuration:I
@@ -101,7 +101,7 @@
     return p0
 .end method
 
-.method wa()I
+.method xa()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/OpVibratorService$you;->mMinDuration:I

@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final Cta:I = 0x0
+.field public static final cua:I = 0x0
 
-.field public static final Dta:I = 0x1
+.field public static final dua:I = 0x1
 
-.field public static final Eta:I = 0x2
+.field public static final eua:I = 0x2
 
-.field private static final Fta:Ljava/lang/String; = "driving_mode_state"
+.field private static final fua:Ljava/lang/String; = "driving_mode_state"
 
 
 # direct methods

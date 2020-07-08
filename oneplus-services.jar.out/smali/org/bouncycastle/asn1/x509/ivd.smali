@@ -35,7 +35,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Gh()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jh()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ywr;->Fh()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ywr;->Ih()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ywr;->Fh()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ywr;->Ih()Ljava/math/BigInteger;
 
     move-result-object p1
 

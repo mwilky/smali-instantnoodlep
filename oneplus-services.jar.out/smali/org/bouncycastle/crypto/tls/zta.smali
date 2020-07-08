@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final fRa:S = 0x0s
+.field public static final HRa:S = 0x0s
 
-.field public static final gRa:S = 0x1s
+.field public static final IRa:S = 0x1s
 
-.field public static final hRa:S = 0x2s
+.field public static final JRa:S = 0x2s
 
 
 # direct methods

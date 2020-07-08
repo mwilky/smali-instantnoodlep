@@ -28,7 +28,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/heytapbusiness/zta;->ad:Lcom/oneplus/android/server/heytapbusiness/sis;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->Kf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->Mf()V
 
     return-void
 .end method

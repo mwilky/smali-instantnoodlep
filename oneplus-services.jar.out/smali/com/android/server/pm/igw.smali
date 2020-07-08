@@ -9,9 +9,9 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "igw"
 
-.field static final VM:[Landroid/content/pm/Signature;
+.field static final pN:[Landroid/content/pm/Signature;
 
-.field static final WM:[[Landroid/content/pm/Signature;
+.field static final qN:[[Landroid/content/pm/Signature;
 
 
 # direct methods
@@ -32,15 +32,15 @@
 
     aput-object v2, v1, v3
 
-    sput-object v1, Lcom/android/server/pm/igw;->VM:[Landroid/content/pm/Signature;
+    sput-object v1, Lcom/android/server/pm/igw;->pN:[Landroid/content/pm/Signature;
 
     new-array v0, v0, [[Landroid/content/pm/Signature;
 
-    sget-object v1, Lcom/android/server/pm/igw;->VM:[Landroid/content/pm/Signature;
+    sget-object v1, Lcom/android/server/pm/igw;->pN:[Landroid/content/pm/Signature;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/android/server/pm/igw;->WM:[[Landroid/content/pm/Signature;
+    sput-object v0, Lcom/android/server/pm/igw;->qN:[[Landroid/content/pm/Signature;
 
     return-void
 .end method
@@ -144,7 +144,7 @@
     move v0, p0
 
     :goto_0
-    sget-object v1, Lcom/android/server/pm/igw;->WM:[[Landroid/content/pm/Signature;
+    sget-object v1, Lcom/android/server/pm/igw;->qN:[[Landroid/content/pm/Signature;
 
     array-length v2, v1
 

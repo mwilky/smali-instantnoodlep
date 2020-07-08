@@ -337,7 +337,7 @@
 
     iget-object p0, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    sget-object p1, Lcom/android/server/OpPowerControllerService$TriggerType;->bya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object p1, Lcom/android/server/OpPowerControllerService$TriggerType;->Dya:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     invoke-static {p0, p1}, Lcom/android/server/OpPowerControllerService;->access$4600(Lcom/android/server/OpPowerControllerService;Lcom/android/server/OpPowerControllerService$TriggerType;)V
 
@@ -557,7 +557,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/i;->Kc()V
+    invoke-virtual {p0}, Lcom/android/server/am/i;->Mc()V
 
     goto/16 :goto_b
 
@@ -688,7 +688,7 @@
 
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->cya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Eya:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     invoke-static {p1, v0}, Lcom/android/server/OpPowerControllerService;->access$4600(Lcom/android/server/OpPowerControllerService;Lcom/android/server/OpPowerControllerService$TriggerType;)V
 
@@ -797,7 +797,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/OpPowerControllerService$rtg;->ja()Ljava/time/LocalDateTime;
+    invoke-virtual {p1}, Lcom/android/server/OpPowerControllerService$rtg;->ka()Ljava/time/LocalDateTime;
 
     move-result-object p1
 
@@ -846,7 +846,7 @@
 
     const-string p1, "No sleep start time, so pass the early restriction!"
 
-    invoke-static {p0, p1}, Lcom/android/server/kth$zta;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, p1}, Lcom/android/server/bio$zta;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_b
 
@@ -908,7 +908,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/OpPowerControllerService$rtg;->ma()V
+    invoke-virtual {v0}, Lcom/android/server/OpPowerControllerService$rtg;->na()V
 
     monitor-exit p1
     :try_end_1
@@ -1021,7 +1021,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/OpPowerControllerService$rtg;->ea()[[D
+    invoke-virtual {p1}, Lcom/android/server/OpPowerControllerService$rtg;->fa()[[D
 
     move-result-object v7
 
@@ -1205,7 +1205,7 @@
 
     const-string v0, "OpPowerControllerService"
 
-    invoke-static {v0, p1}, Lcom/android/server/kth$zta;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, p1}, Lcom/android/server/bio$zta;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-static {}, Lcom/android/server/OpPowerControllerService;->access$3300()D
 
@@ -1278,15 +1278,15 @@
 
     iget-object v0, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    iget-object v0, v0, Lcom/android/server/OpPowerControllerService;->mOnePlusChargingGuarder:Lcom/android/server/igw;
+    iget-object v0, v0, Lcom/android/server/OpPowerControllerService;->mOnePlusChargingGuarder:Lcom/android/server/wtn;
 
     if-eqz v0, :cond_17
 
-    invoke-virtual {v0, p1}, Lcom/android/server/igw;->zta(Ljava/time/LocalTime;)V
+    invoke-virtual {v0, p1}, Lcom/android/server/wtn;->zta(Ljava/time/LocalTime;)V
 
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    iget-object v0, p1, Lcom/android/server/OpPowerControllerService;->mOnePlusChargingGuarder:Lcom/android/server/igw;
+    iget-object v0, p1, Lcom/android/server/OpPowerControllerService;->mOnePlusChargingGuarder:Lcom/android/server/wtn;
 
     invoke-static {p1}, Lcom/android/server/OpPowerControllerService;->access$3100(Lcom/android/server/OpPowerControllerService;)Lcom/android/server/OpPowerControllerService$ssp;
 
@@ -1296,7 +1296,7 @@
 
     move-result-wide v3
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/server/igw;->sis(J)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/server/wtn;->sis(J)V
 
     :cond_17
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
@@ -1459,7 +1459,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService$rtg;->ka()V
+    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService$rtg;->la()V
 
     monitor-exit p1
 

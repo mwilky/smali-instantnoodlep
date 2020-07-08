@@ -450,7 +450,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/qeg;->qeg(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/qeg;->vdw(Z)V
 
     :cond_3
     return-void
@@ -907,13 +907,13 @@
 
     if-eqz p2, :cond_4
 
-    invoke-static {}, Lcom/android/server/wm/ibl;->He()Lcom/android/server/wm/ibl$zta;
+    invoke-static {}, Lcom/android/server/wm/ibl;->Je()Lcom/android/server/wm/ibl$zta;
 
     move-result-object p1
 
     iget-boolean p2, p0, Lcom/oneplus/android/server/scene/ESportMode;->mEnabled:Z
 
-    invoke-virtual {p1, p2}, Lcom/android/server/wm/ibl$zta;->w(Z)V
+    invoke-virtual {p1, p2}, Lcom/android/server/wm/ibl$zta;->v(Z)V
 
     :cond_4
     iget-boolean p1, p0, Lcom/oneplus/android/server/scene/ESportMode;->mEnabled:Z

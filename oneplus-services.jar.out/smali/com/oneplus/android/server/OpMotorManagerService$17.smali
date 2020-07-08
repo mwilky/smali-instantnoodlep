@@ -172,7 +172,7 @@
     :cond_1
     const-string v2, ""
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->mc()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->oc()Ljava/lang/String;
 
     move-result-object v3
 
@@ -204,7 +204,7 @@
 
     move-result-object p0
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->_e()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->bf()I
 
     move-result p1
 
@@ -286,7 +286,7 @@
     return-void
 
     :cond_0
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->lc()Z
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->nc()Z
 
     move-result p1
 
@@ -352,7 +352,7 @@
 
     move-result v2
 
-    sput v2, Lcom/oneplus/android/server/rtg;->Iia:I
+    sput v2, Lcom/oneplus/android/server/rtg;->cja:I
 
     const/4 v2, 0x3
 
@@ -362,7 +362,7 @@
 
     move-result v2
 
-    sput v2, Lcom/oneplus/android/server/rtg;->Jia:I
+    sput v2, Lcom/oneplus/android/server/rtg;->dja:I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -372,7 +372,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->bf()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->df()I
 
     move-result v4
 
@@ -382,7 +382,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v4, Lcom/oneplus/android/server/rtg;->Iia:I
+    sget v4, Lcom/oneplus/android/server/rtg;->cja:I
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -390,7 +390,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v4, Lcom/oneplus/android/server/rtg;->Jia:I
+    sget v4, Lcom/oneplus/android/server/rtg;->dja:I
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -442,7 +442,7 @@
 
     move-result p0
 
-    invoke-static {p0}, Lcom/oneplus/android/server/vdb;->B(Z)Z
+    invoke-static {p0}, Lcom/oneplus/android/server/vdb;->A(Z)Z
 
     goto/16 :goto_2
 
@@ -466,7 +466,7 @@
 
     aget-object p0, p3, v1
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->lc()Z
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->nc()Z
 
     move-result p1
 
@@ -526,7 +526,7 @@
 
     if-eqz p2, :cond_9
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->lc()Z
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->nc()Z
 
     move-result p1
 

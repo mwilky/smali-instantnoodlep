@@ -198,7 +198,7 @@
     move-result-object p0
 
     :goto_1
-    invoke-virtual {p0, v4}, Lcom/oneplus/android/server/vdb$tsu;->z(Z)V
+    invoke-virtual {p0, v4}, Lcom/oneplus/android/server/vdb$tsu;->y(Z)V
 
     goto/16 :goto_9
 
@@ -221,7 +221,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, v3}, Lcom/oneplus/android/server/vdb$tsu;->z(Z)V
+    invoke-virtual {p0, v3}, Lcom/oneplus/android/server/vdb$tsu;->y(Z)V
 
     goto/16 :goto_9
 
@@ -291,7 +291,7 @@
 
     const/4 p1, 0x7
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->_e()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->bf()I
 
     move-result v1
 
@@ -456,7 +456,7 @@
     goto/16 :goto_9
 
     :pswitch_10
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->af()Z
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->cf()Z
 
     move-result p1
 
@@ -578,7 +578,7 @@
     goto/16 :goto_9
 
     :pswitch_15
-    invoke-static {v3}, Lcom/oneplus/android/server/vdb;->A(Z)Z
+    invoke-static {v3}, Lcom/oneplus/android/server/vdb;->z(Z)Z
 
     const-string v1, "171"
 
@@ -1150,7 +1150,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v3}, Lcom/oneplus/android/server/vdb$tsu;->z(Z)V
+    invoke-virtual {p1, v3}, Lcom/oneplus/android/server/vdb$tsu;->y(Z)V
 
     :cond_16
     iget-object p1, p0, Lcom/oneplus/android/server/vdb$you;->this$0:Lcom/oneplus/android/server/vdb;

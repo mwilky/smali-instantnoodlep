@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final DVa:Ljava/math/BigInteger;
+.field protected final eWa:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/sis/you/kth;->DVa:Ljava/math/BigInteger;
+    iput-object p1, p0, Lyou/zta/sis/you/kth;->eWa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -52,9 +52,9 @@
     :cond_1
     check-cast p1, Lyou/zta/sis/you/kth;
 
-    iget-object p0, p0, Lyou/zta/sis/you/kth;->DVa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lyou/zta/sis/you/kth;->eWa:Ljava/math/BigInteger;
 
-    iget-object p1, p1, Lyou/zta/sis/you/kth;->DVa:Ljava/math/BigInteger;
+    iget-object p1, p1, Lyou/zta/sis/you/kth;->eWa:Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
 
@@ -66,7 +66,7 @@
 .method public getCharacteristic()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/kth;->DVa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lyou/zta/sis/you/kth;->eWa:Ljava/math/BigInteger;
 
     return-object p0
 .end method
@@ -74,7 +74,7 @@
 .method public hashCode()I
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/kth;->DVa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lyou/zta/sis/you/kth;->eWa:Ljava/math/BigInteger;
 
     invoke-virtual {p0}, Ljava/math/BigInteger;->hashCode()I
 

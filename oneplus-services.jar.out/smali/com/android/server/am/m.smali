@@ -723,7 +723,7 @@
     return-void
 .end method
 
-.method private ip()V
+.method private lp()V
     .locals 6
 
     const-string v0, "OpAntiBurnController"
@@ -889,7 +889,7 @@
 
     iget-object v3, p0, Lcom/android/server/am/m;->mRawOnlineConfigs:Ljava/util/HashMap;
 
-    invoke-virtual {v4}, Lcom/android/server/am/m$zta;->tb()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/android/server/am/m$zta;->ub()Ljava/lang/String;
 
     move-result-object v5
 
@@ -904,7 +904,7 @@
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Lcom/android/server/am/m$zta;->Lc()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/android/server/am/m$zta;->Nc()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1083,7 +1083,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/m;->mGeneralAppConfig:Lcom/android/server/am/m$zta;
 
-    invoke-virtual {v1}, Lcom/android/server/am/m$zta;->Lc()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/server/am/m$zta;->Nc()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1739,9 +1739,9 @@
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p1, Lcom/android/server/am/m$you;->KD:Z
+    iput-boolean p2, p1, Lcom/android/server/am/m$you;->ZD:Z
 
-    invoke-direct {p0}, Lcom/android/server/am/m;->ip()V
+    invoke-direct {p0}, Lcom/android/server/am/m;->lp()V
 
     invoke-direct {p0}, Lcom/android/server/am/m;->initOnlineConfig()V
 

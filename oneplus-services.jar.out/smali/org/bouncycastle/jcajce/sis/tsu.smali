@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final GSa:[B
+.field private final hTa:[B
 
 
 # direct methods
@@ -20,17 +20,17 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/tsu;->GSa:[B
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/tsu;->hTa:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public zk()[B
+.method public Ck()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/tsu;->GSa:[B
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/tsu;->hTa:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 

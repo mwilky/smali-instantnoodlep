@@ -59,7 +59,7 @@
     return p0
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/engineer/rtg;->g(Z)Z
+    invoke-static {p1}, Lcom/android/server/engineer/rtg;->f(Z)Z
 
     move-result p0
 
@@ -182,7 +182,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/engineer/OneplusEngineerService$BinderService;->this$0:Lcom/android/server/engineer/OneplusEngineerService;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ga()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ha()Ljava/lang/String;
 
     move-result-object p0
 
@@ -541,7 +541,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/engineer/OneplusEngineerService$BinderService;->this$0:Lcom/android/server/engineer/OneplusEngineerService;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ha()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ia()Ljava/lang/String;
 
     move-result-object p0
 
@@ -616,7 +616,7 @@
     return-object p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/engineer/rtg;->od()[B
+    invoke-static {}, Lcom/android/server/engineer/rtg;->qd()[B
 
     move-result-object p0
 
@@ -863,7 +863,7 @@
     return p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/engineer/rtg;->nd()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->pd()Z
 
     move-result p0
 
@@ -953,7 +953,7 @@
     return p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/engineer/rtg;->pd()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->rd()Z
 
     move-result p0
 
@@ -978,7 +978,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/server/engineer/OneplusEngineerService$BinderService;->this$0:Lcom/android/server/engineer/OneplusEngineerService;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ja()Z
+    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ka()Z
 
     move-result p0
 

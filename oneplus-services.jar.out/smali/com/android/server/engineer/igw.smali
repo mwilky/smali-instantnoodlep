@@ -37,7 +37,7 @@
 .method public run()V
     .locals 6
 
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p0
 

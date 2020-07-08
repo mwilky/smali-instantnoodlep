@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public Mpa:Z
+.field public gqa:Z
 
 .field final synthetic this$0:Lcom/oneplus/android/server/iris/sis;
 
@@ -33,7 +33,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis$sis;->Mpa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis$sis;->gqa:Z
 
     return-void
 .end method
@@ -47,9 +47,9 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis$sis;->Mpa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis$sis;->gqa:Z
 
-    iput-boolean p2, p0, Lcom/oneplus/android/server/iris/sis$sis;->Mpa:Z
+    iput-boolean p2, p0, Lcom/oneplus/android/server/iris/sis$sis;->gqa:Z
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis$sis;->Mpa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis$sis;->gqa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -89,7 +89,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/oneplus/android/server/iris/sis$sis;->this$0:Lcom/oneplus/android/server/iris/sis;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis$sis;->Mpa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis$sis;->gqa:Z
 
     invoke-static {v0, v1}, Lcom/oneplus/android/server/iris/sis;->you(Lcom/oneplus/android/server/iris/sis;Z)Z
 

@@ -17,13 +17,13 @@
 
 .field private static final TAG:Ljava/lang/String; = "OnePlusAppKillStatisticsConfig"
 
-.field private static final Zq:Ljava/lang/String; = "AppKill"
+.field private static final or:Ljava/lang/String; = "AppKill"
 
-.field public static _q:Z = true
+.field public static pr:Z = true
 
-.field public static ar:Z = true
+.field public static qr:Z = true
 
-.field static br:I = 0x3
+.field static rr:I = 0x3
 
 .field private static sIntance:Lcom/android/server/am/obl;
 
@@ -159,7 +159,7 @@
 
     move-result v6
 
-    sput v6, Lcom/android/server/am/obl;->br:I
+    sput v6, Lcom/android/server/am/obl;->rr:I
 
     goto :goto_1
 
@@ -184,7 +184,7 @@
 
     move-result v6
 
-    sput-boolean v6, Lcom/android/server/am/obl;->_q:Z
+    sput-boolean v6, Lcom/android/server/am/obl;->pr:Z
 
     goto :goto_1
 
@@ -209,7 +209,7 @@
 
     move-result v6
 
-    sput-boolean v6, Lcom/android/server/am/obl;->ar:Z
+    sput-boolean v6, Lcom/android/server/am/obl;->qr:Z
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -229,19 +229,19 @@
     :goto_2
     invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget p1, Lcom/android/server/am/obl;->br:I
+    sget p1, Lcom/android/server/am/obl;->rr:I
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean p1, Lcom/android/server/am/obl;->_q:Z
+    sget-boolean p1, Lcom/android/server/am/obl;->pr:Z
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean p1, Lcom/android/server/am/obl;->ar:Z
+    sget-boolean p1, Lcom/android/server/am/obl;->qr:Z
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -336,19 +336,19 @@
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v2, Lcom/android/server/am/obl;->br:I
+    sget v2, Lcom/android/server/am/obl;->rr:I
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/am/obl;->_q:Z
+    sget-boolean v1, Lcom/android/server/am/obl;->pr:Z
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/android/server/am/obl;->ar:Z
+    sget-boolean v0, Lcom/android/server/am/obl;->qr:Z
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

@@ -44,11 +44,11 @@
 
     if-ne p0, p1, :cond_1
 
-    invoke-static {}, Lcom/android/server/am/y;->getInstance()Lcom/android/server/am/y;
+    invoke-static {}, Lcom/android/server/am/A;->getInstance()Lcom/android/server/am/A;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/y;->c(Z)Ljava/util/ArrayList;
+    invoke-virtual {p0, p1}, Lcom/android/server/am/A;->b(Z)Ljava/util/ArrayList;
 
     move-result-object p0
 

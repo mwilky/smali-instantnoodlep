@@ -57,22 +57,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " memcType: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/you;->this$0:Lcom/oneplus/android/server/iris/sis;
-
-    iget-object v1, v1, Lcom/oneplus/android/server/iris/bio;->Qqa:Lcom/oneplus/android/server/iris/ssp;
-
-    const/16 v2, 0x102
-
-    invoke-virtual {v1, v2}, Lcom/oneplus/android/server/iris/ssp;->getIrisCommand(I)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

@@ -12,11 +12,11 @@
 
 
 # static fields
-.field private static NK:Lsis/you/zta/zta/zta/zta; = null
-
-.field private static PK:Lcom/android/server/engineer/rtg$zta; = null
-
 .field private static final TAG:Ljava/lang/String; = "OneplusEngineerNative"
+
+.field private static jL:Lsis/you/zta/zta/zta/zta;
+
+.field private static kL:Lcom/android/server/engineer/rtg$zta;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/engineer/rtg$zta;-><init>(Lcom/android/server/engineer/tsu;)V
 
-    sput-object v0, Lcom/android/server/engineer/rtg;->PK:Lcom/android/server/engineer/rtg$zta;
+    sput-object v0, Lcom/android/server/engineer/rtg;->kL:Lcom/android/server/engineer/rtg$zta;
 
     return-void
 .end method
@@ -45,14 +45,14 @@
 .method static F(Ljava/lang/String;)[B
     .locals 2
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0, p0}, Lsis/you/zta/zta/zta/zta;->tsu(Ljava/lang/String;)Ljava/util/ArrayList;
 
@@ -97,7 +97,7 @@
     return-object p0
 .end method
 
-.method private static Np()V
+.method private static Qp()V
     .locals 4
 
     :try_start_0
@@ -105,15 +105,15 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sput-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
-    sget-object v1, Lcom/android/server/engineer/rtg;->PK:Lcom/android/server/engineer/rtg$zta;
+    sget-object v1, Lcom/android/server/engineer/rtg;->kL:Lcom/android/server/engineer/rtg$zta;
 
     const-wide/16 v2, 0x0
 
@@ -150,11 +150,62 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sput-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     :cond_0
     :goto_0
     return-void
+.end method
+
+.method static f(Z)Z
+    .locals 2
+
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
+
+    :try_start_0
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
+
+    invoke-interface {v0, p0}, Lsis/you/zta/zta/zta/zta;->you(Z)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
+
+    :catch_0
+    move-exception p0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "nativeSetPartionWriteProtectState exception caught "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OneplusEngineerNative"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method private static fto([B)Ljava/util/ArrayList;
@@ -210,68 +261,17 @@
     return-object p0
 .end method
 
-.method static g(Z)Z
-    .locals 2
-
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
-
-    :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
-
-    invoke-interface {v0, p0}, Lsis/you/zta/zta/zta/zta;->you(Z)Z
-
-    move-result p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return p0
-
-    :catch_0
-    move-exception p0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "nativeSetPartionWriteProtectState exception caught "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "OneplusEngineerNative"
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
 .method static gwm(II)[B
     .locals 1
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0, p0, p1}, Lsis/you/zta/zta/zta/zta;->getBadBatteryConfig(II)Ljava/util/ArrayList;
 
@@ -316,17 +316,17 @@
     return-object p0
 .end method
 
-.method static nd()Z
+.method static pd()Z
     .locals 3
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0}, Lsis/you/zta/zta/zta/zta;->qbh()Z
 
@@ -367,17 +367,17 @@
     return v0
 .end method
 
-.method static od()[B
+.method static qd()[B
     .locals 3
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0}, Lsis/you/zta/zta/zta/zta;->getProductLineTestResult()Ljava/util/ArrayList;
 
@@ -422,17 +422,17 @@
     return-object v0
 .end method
 
-.method static pd()Z
+.method static rd()Z
     .locals 3
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0}, Lsis/you/zta/zta/zta/zta;->resetProductLineTestResult()Z
 
@@ -473,7 +473,7 @@
     return v0
 .end method
 
-.method static qd()[B
+.method static sd()[B
     .locals 1
 
     const v0, 0x186a1
@@ -488,14 +488,14 @@
 .method static ssp(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0, p0, p1}, Lsis/you/zta/zta/zta/zta;->saveOneplusUsageRecords(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -539,14 +539,14 @@
 .method static ugm(II)Z
     .locals 1
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0, p0, p1}, Lsis/you/zta/zta/zta/zta;->setProductLineTestResult(II)Z
 
@@ -653,14 +653,14 @@
 .method static x(I)[B
     .locals 2
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0, p0}, Lsis/you/zta/zta/zta/zta;->readEngineerData(I)Ljava/util/ArrayList;
 
@@ -708,14 +708,14 @@
 .method static zta(II[B)I
     .locals 1
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-static {p2}, Lcom/android/server/engineer/rtg;->fto([B)Ljava/util/ArrayList;
 
@@ -763,14 +763,14 @@
 .method static zta(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-interface {v0, p0}, Lsis/you/zta/zta/zta/zta;->zta(Ljava/lang/String;)Ljava/lang/String;
 
@@ -814,7 +814,7 @@
 .method static synthetic zta(Lsis/you/zta/zta/zta/zta;)Lsis/you/zta/zta/zta/zta;
     .locals 0
 
-    sput-object p0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sput-object p0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     return-object p0
 .end method
@@ -822,10 +822,10 @@
 .method static zta(Ljava/lang/String;IZI[B)V
     .locals 7
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
@@ -833,7 +833,7 @@
 
     move-result-object v6
 
-    sget-object v1, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v1, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     move-object v2, p0
 
@@ -882,14 +882,14 @@
 .method static zta(I[BI)Z
     .locals 1
 
-    invoke-static {}, Lcom/android/server/engineer/rtg;->Np()V
+    invoke-static {}, Lcom/android/server/engineer/rtg;->Qp()V
 
     :try_start_0
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/engineer/rtg;->NK:Lsis/you/zta/zta/zta/zta;
+    sget-object v0, Lcom/android/server/engineer/rtg;->jL:Lsis/you/zta/zta/zta/zta;
 
     invoke-static {p1}, Lcom/android/server/engineer/rtg;->fto([B)Ljava/util/ArrayList;
 

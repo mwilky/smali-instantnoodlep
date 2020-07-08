@@ -60,9 +60,9 @@
 .method public zta(Lcom/android/server/wm/OpPowerConsumpStats$tsu;Lcom/android/server/wm/OpPowerConsumpStats$tsu;)I
     .locals 2
 
-    iget-wide v0, p2, Lcom/android/server/wm/OpPowerConsumpStats$tsu;->Tba:D
+    iget-wide v0, p2, Lcom/android/server/wm/OpPowerConsumpStats$tsu;->nca:D
 
-    iget-wide p0, p1, Lcom/android/server/wm/OpPowerConsumpStats$tsu;->Tba:D
+    iget-wide p0, p1, Lcom/android/server/wm/OpPowerConsumpStats$tsu;->nca:D
 
     invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
 

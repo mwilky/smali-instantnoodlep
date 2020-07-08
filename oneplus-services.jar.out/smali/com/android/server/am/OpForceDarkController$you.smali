@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field KD:Z
+.field ZD:Z
 
-.field final LD:Ljava/util/List;
+.field final _D:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -27,15 +27,15 @@
     .end annotation
 .end field
 
-.field MD:Ljava/lang/String;
-
-.field VD:I
-
-.field WD:I
-
-.field XD:I
+.field aE:Ljava/lang/String;
 
 .field enable:I
+
+.field pE:I
+
+.field qE:I
+
+.field rE:I
 
 .field final synthetic this$0:Lcom/android/server/am/OpForceDarkController;
 
@@ -50,34 +50,34 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iput-boolean p1, p0, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
     const/4 p1, -0x1
 
     iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
-    iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
-    iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
-    iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iput p1, p0, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method Pc()Lcom/android/server/am/OpForceDarkController$you;
+.method Rc()Lcom/android/server/am/OpForceDarkController$you;
     .locals 3
 
     new-instance v0, Lcom/android/server/am/OpForceDarkController$you;
@@ -86,35 +86,35 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/am/OpForceDarkController$you;-><init>(Lcom/android/server/am/OpForceDarkController;)V
 
-    iget-boolean v1, p0, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
-    iput-boolean v1, v0, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iput-boolean v1, v0, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
     iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
     iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
-    iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
-    iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
-    iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iput v1, v0, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
-    iget-object v1, v0, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
-    iput-object p0, v0, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iput-object p0, v0, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -144,7 +144,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$you;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget v3, p0, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iget v3, p0, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
     invoke-virtual {v2, v3}, Lcom/android/server/am/OpForceDarkController;->debugTriStateDesc(I)Ljava/lang/String;
 
@@ -156,7 +156,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$you;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget v3, p0, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iget v3, p0, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
     invoke-virtual {v2, v3}, Lcom/android/server/am/OpForceDarkController;->debugTriStateDesc(I)Ljava/lang/String;
 
@@ -168,7 +168,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$you;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget v3, p0, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget v3, p0, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
     invoke-virtual {v2, v3}, Lcom/android/server/am/OpForceDarkController;->debugTriStateDesc(I)Ljava/lang/String;
 
@@ -178,7 +178,7 @@
 
     aput-object v2, v1, v3
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -209,7 +209,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iput-boolean v1, p0, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
     const-string v1, "enable"
 
@@ -227,7 +227,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iput v1, p0, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
     const-string v1, "swEnhance"
 
@@ -235,7 +235,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iput v1, p0, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
     const-string v1, "jsInject"
 
@@ -243,7 +243,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iput v1, p0, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
     const-string v1, "compatVers"
 
@@ -262,7 +262,7 @@
 
     if-ge v2, v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
     invoke-virtual {v1, v2}, Lorg/json/JSONArray;->optInt(I)I
 
@@ -291,7 +291,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -309,9 +309,9 @@
 
     if-eqz p1, :cond_1
 
-    iget-boolean v0, p1, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iget-boolean v0, p1, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
-    iget-boolean v1, p0, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
     if-ne v0, v1, :cond_1
 
@@ -321,27 +321,27 @@
 
     if-ne v0, v1, :cond_1
 
-    iget v0, p1, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iget v0, p1, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->VD:I
-
-    if-ne v0, v1, :cond_1
-
-    iget v0, p1, Lcom/android/server/am/OpForceDarkController$you;->WD:I
-
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
     if-ne v0, v1, :cond_1
 
-    iget v0, p1, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget v0, p1, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
     if-ne v0, v1, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget v0, p1, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
-    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$you;->rE:I
+
+    if-ne v0, v1, :cond_1
+
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
+
+    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -349,9 +349,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/OpPowerConsumpStats;->lr()V
+    value = Lcom/android/server/wm/OpPowerConsumpStats;->pr()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

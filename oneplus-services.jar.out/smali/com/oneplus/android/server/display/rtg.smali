@@ -8,35 +8,35 @@
 
 .field private static final ENABLE:I = 0x1
 
-.field private static final Ema:I = 0xc
-
-.field private static final Fma:I = 0x21
-
 .field private static final TAG:Ljava/lang/String; = "OpAssertiveDisplayManager"
+
+.field private static final Zma:I = 0xc
+
+.field private static final _ma:I = 0x21
 
 
 # instance fields
-.field private Ama:Z
+.field private final Rma:I
 
-.field private Bma:Z
+.field private final Sma:I
 
-.field private Cma:Z
+.field private Tma:Z
 
-.field private Dma:Landroid/os/CountDownTimer;
+.field private Uma:Z
+
+.field private Vma:Z
+
+.field private Wma:Z
+
+.field private Xma:Z
+
+.field private Yma:Landroid/os/CountDownTimer;
 
 .field private final mContext:Landroid/content/Context;
 
 .field private mDaemon:Lsis/you/you/zta/zta/you;
 
 .field private mGlobaAmbientLux:F
-
-.field private final wma:I
-
-.field private final xma:I
-
-.field private yma:Z
-
-.field private zma:Z
 
 
 # direct methods
@@ -47,23 +47,23 @@
 
     const/16 v0, 0x1388
 
-    iput v0, p0, Lcom/oneplus/android/server/display/rtg;->wma:I
+    iput v0, p0, Lcom/oneplus/android/server/display/rtg;->Rma:I
 
     const/16 v0, 0x3e8
 
-    iput v0, p0, Lcom/oneplus/android/server/display/rtg;->xma:I
+    iput v0, p0, Lcom/oneplus/android/server/display/rtg;->Sma:I
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->yma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Tma:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->zma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Uma:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Ama:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Vma:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Bma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Wma:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Cma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Xma:Z
 
     iput-object p1, p0, Lcom/oneplus/android/server/display/rtg;->mContext:Landroid/content/Context;
 
@@ -96,7 +96,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/display/rtg;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->zma:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Uma:Z
 
     return p1
 .end method
@@ -112,7 +112,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/display/rtg;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->yma:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Tma:Z
 
     return p1
 .end method
@@ -120,7 +120,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/rtg;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/rtg;->Bma:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/rtg;->Wma:Z
 
     return p0
 .end method
@@ -128,7 +128,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/rtg;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Bma:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Wma:Z
 
     return p1
 .end method
@@ -136,7 +136,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/rtg;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/rtg;->Ama:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/rtg;->Vma:Z
 
     return p0
 .end method
@@ -144,7 +144,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/rtg;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Cma:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Xma:Z
 
     return p1
 .end method
@@ -160,7 +160,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/display/rtg;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Ama:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Vma:Z
 
     return p1
 .end method
@@ -170,7 +170,7 @@
 .method public disablelightSensor()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     if-eqz v0, :cond_0
 
@@ -178,16 +178,16 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iput-object v0, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->yma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Tma:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->zma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Uma:Z
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/rtg;->Cma:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/rtg;->Xma:Z
 
     if-eqz v1, :cond_2
 
@@ -237,7 +237,7 @@
     invoke-static {v2, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Cma:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Xma:Z
 
     :cond_2
     return-void
@@ -248,7 +248,7 @@
 
     iput p1, p0, Lcom/oneplus/android/server/display/rtg;->mGlobaAmbientLux:F
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Cma:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Xma:Z
 
     const/4 v1, 0x0
 
@@ -262,21 +262,21 @@
 
     if-lez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->yma:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Tma:Z
 
     if-nez v0, :cond_1
 
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->yma:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->Tma:Z
 
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->Ama:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->Vma:Z
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Landroid/os/CountDownTimer;->cancel()V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     :cond_0
     new-instance p1, Lcom/oneplus/android/server/display/sis;
@@ -296,12 +296,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iput-object p1, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     goto :goto_1
 
     :cond_1
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Cma:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/rtg;->Xma:Z
 
     if-eqz v0, :cond_3
 
@@ -309,21 +309,21 @@
 
     if-gez p1, :cond_3
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->zma:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/rtg;->Uma:Z
 
     if-nez p1, :cond_3
 
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->zma:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->Uma:Z
 
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->Bma:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/rtg;->Wma:Z
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     if-eqz p1, :cond_2
 
     invoke-virtual {p1}, Landroid/os/CountDownTimer;->cancel()V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/rtg;->Dma:Landroid/os/CountDownTimer;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/rtg;->Yma:Landroid/os/CountDownTimer;
 
     :cond_2
     new-instance p1, Lcom/oneplus/android/server/display/tsu;

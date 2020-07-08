@@ -84,7 +84,7 @@
 
     if-lez p1, :cond_1
 
-    invoke-static {v1}, Lcom/android/server/display/rtg;->cgv(Z)Z
+    invoke-static {v1}, Lcom/android/server/display/rtg;->access$2202(Z)Z
 
     goto :goto_0
 
@@ -104,7 +104,7 @@
     :cond_2
     const/4 p1, 0x1
 
-    invoke-static {p1}, Lcom/android/server/display/rtg;->cgv(Z)Z
+    invoke-static {p1}, Lcom/android/server/display/rtg;->access$2202(Z)Z
 
     :cond_3
     :goto_0

@@ -14,13 +14,13 @@
 # static fields
 .field private static final DEBUG:Z
 
-.field private static final Opa:I = -0x7f7d7e8e
-
 .field private static final TAG:Ljava/lang/String; = "OpIrisConfigController"
+
+.field private static final iqa:I = -0x7f7d7e8e
 
 
 # instance fields
-.field private Npa:Lsis/sis/zta/zta/zta/sis;
+.field private hqa:Lsis/sis/zta/zta/zta/sis;
 
 .field private final mCallback:Lcom/oneplus/android/server/iris/ssp$zta;
 
@@ -119,7 +119,7 @@
 
     :cond_1
     :try_start_0
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v3, :cond_2
 
@@ -127,10 +127,10 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iput-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     :cond_2
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v3, :cond_3
 
@@ -165,7 +165,7 @@
     goto :goto_1
 
     :cond_4
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     invoke-interface {p0, p1, v3}, Lsis/sis/zta/zta/zta/sis;->sis(ILjava/util/ArrayList;)I
 
@@ -215,7 +215,7 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v1, :cond_1
 
@@ -223,10 +223,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     :cond_1
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v1, :cond_2
 
@@ -269,7 +269,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->mCallback:Lcom/oneplus/android/server/iris/ssp$zta;
 
@@ -388,7 +388,7 @@
 
 
 # virtual methods
-.method public Mf()I
+.method public Of()I
     .locals 1
 
     const/16 v0, 0x38
@@ -560,7 +560,7 @@
     const-string v0, "OpIrisConfigController"
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v1, :cond_0
 
@@ -568,10 +568,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     :cond_0
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     if-eqz v1, :cond_1
 
@@ -579,7 +579,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->Npa:Lsis/sis/zta/zta/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
 
     const-wide/32 v1, -0x7f7d7e8e
 

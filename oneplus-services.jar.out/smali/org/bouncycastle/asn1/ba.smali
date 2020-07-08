@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field private final Oxa:I
+.field private final pya:I
 
-.field private Pxa:I
+.field private qya:I
 
 
 # direct methods
@@ -33,9 +33,9 @@
 
     if-ltz p2, :cond_1
 
-    iput p2, p0, Lorg/bouncycastle/asn1/ba;->Oxa:I
+    iput p2, p0, Lorg/bouncycastle/asn1/ba;->pya:I
 
-    iput p2, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iput p2, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez p2, :cond_0
 
@@ -61,7 +61,7 @@
 .method getRemaining()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     return p0
 .end method
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez v0, :cond_0
 
@@ -83,7 +83,7 @@
     return p0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->Mxa:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->nya:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
@@ -91,13 +91,13 @@
 
     if-ltz v0, :cond_2
 
-    iget v1, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget v1, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     const/4 v2, 0x1
 
     sub-int/2addr v1, v2
 
-    iput v1, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iput v1, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez v1, :cond_1
 
@@ -117,7 +117,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lorg/bouncycastle/asn1/ba;->Oxa:I
+    iget v2, p0, Lorg/bouncycastle/asn1/ba;->pya:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -125,7 +125,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -146,7 +146,7 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez v0, :cond_0
 
@@ -159,7 +159,7 @@
 
     move-result p3
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->Mxa:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->nya:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -167,11 +167,11 @@
 
     if-ltz p1, :cond_2
 
-    iget p2, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget p2, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     sub-int/2addr p2, p1
 
-    iput p2, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iput p2, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez p2, :cond_1
 
@@ -193,7 +193,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p3, p0, Lorg/bouncycastle/asn1/ba;->Oxa:I
+    iget p3, p0, Lorg/bouncycastle/asn1/ba;->pya:I
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -201,7 +201,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -222,7 +222,7 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez v0, :cond_0
 
@@ -233,7 +233,7 @@
     :cond_0
     new-array v1, v0, [B
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/ga;->Mxa:Ljava/io/InputStream;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/ga;->nya:Ljava/io/InputStream;
 
     invoke-static {v2, v1}, Lorg/bouncycastle/util/io/you;->readFully(Ljava/io/InputStream;[B)I
 
@@ -241,7 +241,7 @@
 
     sub-int/2addr v0, v2
 
-    iput v0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iput v0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     if-nez v0, :cond_1
 
@@ -262,7 +262,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lorg/bouncycastle/asn1/ba;->Oxa:I
+    iget v2, p0, Lorg/bouncycastle/asn1/ba;->pya:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -270,7 +270,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lorg/bouncycastle/asn1/ba;->Pxa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/ba;->qya:I
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

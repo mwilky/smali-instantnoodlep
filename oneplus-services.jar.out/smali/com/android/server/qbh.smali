@@ -1,5 +1,5 @@
 .class Lcom/android/server/qbh;
-.super Landroid/os/Handler;
+.super Landroid/util/Singleton;
 .source ""
 
 
@@ -13,65 +13,66 @@
     name = null
 .end annotation
 
-
-# instance fields
-.field final synthetic this$0:Lcom/android/server/OnePlusExService;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/util/Singleton<",
+        "Lcom/oneplus/os/IOnePlusExService;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/OnePlusExService;Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
+.method constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/qbh;->this$0:Lcom/android/server/OnePlusExService;
-
-    invoke-direct {p0, p2, p3, p4}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
+    invoke-direct {p0}, Landroid/util/Singleton;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 1
+.method protected create()Lcom/oneplus/os/IOnePlusExService;
+    .locals 2
 
-    iget v0, p1, Landroid/os/Message;->arg1:I
+    const-string p0, "OnePlusExService"
 
-    iget v0, p1, Landroid/os/Message;->arg2:I
+    invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
-    iget p1, p1, Landroid/os/Message;->what:I
+    move-result-object v0
 
-    const/4 v0, 0x1
+    if-nez v0, :cond_0
 
-    if-eq p1, v0, :cond_0
+    const-string v0, "can\'t get service binder: OnePlusExServiceManager"
 
-    goto :goto_0
+    invoke-static {p0, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p0, 0x0
+
+    return-object p0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/qbh;->this$0:Lcom/android/server/OnePlusExService;
+    invoke-static {v0}, Lcom/oneplus/os/IOnePlusExService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/oneplus/os/IOnePlusExService;
 
-    invoke-static {p1}, Lcom/android/server/OnePlusExService;->access$100(Lcom/android/server/OnePlusExService;)V
+    move-result-object v0
 
-    iget-object p1, p0, Lcom/android/server/qbh;->this$0:Lcom/android/server/OnePlusExService;
+    if-nez v0, :cond_1
 
-    invoke-static {p1}, Lcom/android/server/OnePlusExService;->access$200(Lcom/android/server/OnePlusExService;)Landroid/os/PowerManager$WakeLock;
+    const-string v1, "can\'t get service interface: OnePlusExServiceManager"
 
-    move-result-object p1
+    invoke-static {p0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p1}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
+    :cond_1
+    return-object v0
+.end method
 
-    move-result p1
+.method protected bridge synthetic create()Ljava/lang/Object;
+    .locals 0
 
-    if-eqz p1, :cond_1
-
-    iget-object p0, p0, Lcom/android/server/qbh;->this$0:Lcom/android/server/OnePlusExService;
-
-    invoke-static {p0}, Lcom/android/server/OnePlusExService;->access$200(Lcom/android/server/OnePlusExService;)Landroid/os/PowerManager$WakeLock;
+    invoke-virtual {p0}, Lcom/android/server/qbh;->create()Lcom/oneplus/os/IOnePlusExService;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    :cond_1
-    :goto_0
-    return-void
+    return-object p0
 .end method

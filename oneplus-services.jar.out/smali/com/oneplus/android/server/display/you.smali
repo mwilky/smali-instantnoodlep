@@ -7,11 +7,11 @@
 
 
 # instance fields
+.field private final synthetic Qma:Z
+
 .field private final synthetic ad:Lcom/android/server/display/color/DisplayTransformManager;
 
 .field private final synthetic bd:I
-
-.field private final synthetic vma:Z
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     iput p2, p0, Lcom/oneplus/android/server/display/you;->bd:I
 
-    iput-boolean p3, p0, Lcom/oneplus/android/server/display/you;->vma:Z
+    iput-boolean p3, p0, Lcom/oneplus/android/server/display/you;->Qma:Z
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     iget v1, p0, Lcom/oneplus/android/server/display/you;->bd:I
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/you;->vma:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/you;->Qma:Z
 
     invoke-static {v0, v1, p0, p1}, Lcom/oneplus/android/server/display/gwm;->zta(Lcom/android/server/display/color/DisplayTransformManager;IZLandroid/animation/ValueAnimator;)V
 

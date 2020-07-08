@@ -25,37 +25,37 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
-.field public static final enum Mya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+.field public static final enum Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
-.field public static final enum Nya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+.field public static final enum Sza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
-.field public static final enum Oya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+.field public static final enum Tza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
-.field public static final enum Pya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+.field public static final enum Uza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
-.field public static final enum Qya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+.field public static final enum Vza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum Wza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum Xza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum Yza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum Zza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum _za:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum aAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum nza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+
+.field public static final enum oza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
 .field public static final enum pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
 .field public static final enum qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
 .field public static final enum rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum sza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum tza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum uza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum vza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum wza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum xza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum yza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
-
-.field public static final enum zza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Mya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->nza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -90,7 +90,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Nya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->oza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -100,7 +100,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Sza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -110,7 +110,7 @@
 
     invoke-direct {v0, v6, v5}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Oya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -120,7 +120,7 @@
 
     invoke-direct {v0, v7, v6}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Tza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -130,7 +130,7 @@
 
     invoke-direct {v0, v8, v7}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Pya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -140,7 +140,7 @@
 
     invoke-direct {v0, v9, v8}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->sza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Uza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -150,7 +150,7 @@
 
     invoke-direct {v0, v10, v9}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Qya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -160,7 +160,7 @@
 
     invoke-direct {v0, v11, v10}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->tza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Vza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -170,7 +170,7 @@
 
     invoke-direct {v0, v12, v11}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->uza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Wza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -180,7 +180,7 @@
 
     invoke-direct {v0, v13, v12}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->vza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Xza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -190,7 +190,7 @@
 
     invoke-direct {v0, v14, v13}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->wza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Yza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -200,7 +200,7 @@
 
     invoke-direct {v0, v15, v14}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->xza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Zza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -210,7 +210,7 @@
 
     invoke-direct {v0, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->yza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->_za:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
@@ -220,77 +220,77 @@
 
     invoke-direct {v0, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->zza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->aAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     const/16 v0, 0x10
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
-    sget-object v14, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Mya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v14, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->nza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v14, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Nya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->oza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Sza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Oya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Tza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Pya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->sza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Uza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v8
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Qya:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v9
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->tza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Vza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v10
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->uza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Wza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v11
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->vza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Xza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v12
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->wza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Yza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     aput-object v1, v0, v13
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->xza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->Zza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     const/16 v2, 0xd
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->yza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->_za:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     const/16 v2, 0xe
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->zza:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;->aAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$CriteriaType;
 
     const/16 v2, 0xf
 

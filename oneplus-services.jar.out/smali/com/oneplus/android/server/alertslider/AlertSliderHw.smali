@@ -14,43 +14,43 @@
 
 
 # static fields
-.field private static final Bia:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/tri_state_hall_data"
-
 .field private static final DEBUG:Z
-
-.field public static final Nka:I = 0x2
-
-.field public static final Oka:I = 0x3
-
-.field public static final Pka:I = -0x1
 
 .field public static final SWITCH_STATE_ON:I = 0x1
 
 .field private static final TAG:Ljava/lang/String; = "AlertSliderHw"
 
-.field private static final Vka:Ljava/lang/String; = "/sys/bus/platform/devices/soc:tri_state_key/hall_data_calib"
+.field private static final Wia:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/tri_state_hall_data"
 
-.field private static final Wka:Ljava/lang/String; = "tri-state-key"
+.field public static final ila:I = 0x2
 
-.field private static final Xka:Ljava/lang/String; = "soc:tri_state_key"
+.field public static final jla:I = 0x3
 
-.field private static final Yka:I = 0x1
+.field public static final kla:I = -0x1
 
-.field private static final Zka:I = 0x2
+.field private static final qla:Ljava/lang/String; = "/sys/bus/platform/devices/soc:tri_state_key/hall_data_calib"
 
-.field private static final _ka:I = 0x4
+.field private static final rla:Ljava/lang/String; = "tri-state-key"
+
+.field private static final sla:Ljava/lang/String; = "soc:tri_state_key"
+
+.field private static final tla:I = 0x1
+
+.field private static final ula:I = 0x2
+
+.field private static final vla:I = 0x4
 
 
 # instance fields
-.field private Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
-
-.field private Ska:Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
-
-.field private Tka:Lcom/oneplus/android/server/alertslider/zta;
-
-.field private Uka:Landroid/os/PowerManager$WakeLock;
-
 .field private mContext:Landroid/content/Context;
+
+.field private mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+
+.field private nla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
+
+.field private ola:Lcom/oneplus/android/server/alertslider/zta;
+
+.field private pla:Landroid/os/PowerManager$WakeLock;
 
 
 # direct methods
@@ -73,17 +73,17 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;-><init>(Lcom/oneplus/android/server/alertslider/AlertSliderHw;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iput-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     new-instance v0, Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;-><init>(Lcom/oneplus/android/server/alertslider/AlertSliderHw;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Ska:Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
+    iput-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->nla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
 
     iput-object p1, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mContext:Landroid/content/Context;
 
-    iput-object p2, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Tka:Lcom/oneplus/android/server/alertslider/zta;
+    iput-object p2, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->ola:Lcom/oneplus/android/server/alertslider/zta;
 
     const-string p2, "power"
 
@@ -101,7 +101,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Uka:Landroid/os/PowerManager$WakeLock;
+    iput-object p1, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->pla:Landroid/os/PowerManager$WakeLock;
 
     return-void
 .end method
@@ -345,29 +345,6 @@
     const-string p1, "readStringFromFile invalid file path"
 
     goto/16 :goto_1
-.end method
-
-.method private wc(I)V
-    .locals 2
-
-    iget-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v1, "three_Key_mode"
-
-    invoke-static {v0, v1, p1}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Tka:Lcom/oneplus/android/server/alertslider/zta;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/alertslider/sis;->J(I)V
-
-    :cond_0
-    return-void
 .end method
 
 .method private static writeStringToFile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
@@ -618,10 +595,33 @@
     throw v4
 .end method
 
+.method private xc(I)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "three_Key_mode"
+
+    invoke-static {v0, v1, p1}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->ola:Lcom/oneplus/android/server/alertslider/zta;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/alertslider/sis;->J(I)V
+
+    :cond_0
+    return-void
+.end method
+
 .method static synthetic you(Lcom/oneplus/android/server/alertslider/AlertSliderHw;)Landroid/os/PowerManager$WakeLock;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Uka:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->pla:Landroid/os/PowerManager$WakeLock;
 
     return-object p0
 .end method
@@ -629,7 +629,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/alertslider/AlertSliderHw;)Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     return-object p0
 .end method
@@ -637,7 +637,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/alertslider/AlertSliderHw;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->wc(I)V
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->xc(I)V
 
     return-void
 .end method
@@ -652,7 +652,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object v0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->checkSwitchExists()Z
 
@@ -660,7 +660,7 @@
 
     if-eqz v0, :cond_6
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->hf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->jf()Z
 
     move-result v0
 
@@ -692,7 +692,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v10, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object v10, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     invoke-virtual {v10}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->getSwitchStatePath()Ljava/lang/String;
 
@@ -787,7 +787,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object v3, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     invoke-virtual {v3}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->getSwitchStatePath()Ljava/lang/String;
 
@@ -828,7 +828,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->getSwitchStatePath()Ljava/lang/String;
 
@@ -854,7 +854,7 @@
 
     new-instance v4, Ljava/io/FileReader;
 
-    iget-object v5, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object v5, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     invoke-virtual {v5}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->getSwitchStatePath()Ljava/lang/String;
 
@@ -895,7 +895,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Rka:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
+    iget-object p0, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->mla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->getSwitchStatePath()Ljava/lang/String;
 
@@ -927,63 +927,12 @@
     throw p0
 .end method
 
-.method public hf()Z
-    .locals 4
-
-    sget-boolean p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->DEBUG:Z
-
-    const/16 v0, 0x33
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz p0, :cond_0
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "isSupportSocAlertSlider: "
-
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    new-array v3, v2, [I
-
-    aput v0, v3, v1
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v3, "AlertSliderHw"
-
-    invoke-static {v3, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    new-array p0, v2, [I
-
-    aput v0, p0, v1
-
-    invoke-static {p0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public init()Z
     .locals 8
 
     const-string v0, "AlertSliderHw"
 
-    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Ska:Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
+    iget-object v1, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->nla:Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;
 
     invoke-virtual {v1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$zta;->startMonitor()V
 
@@ -995,7 +944,7 @@
     .catch Lcom/oneplus/android/server/alertslider/AlertSliderHw$AlertSliderUnsupportException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v2, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Tka:Lcom/oneplus/android/server/alertslider/zta;
+    iget-object v2, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->ola:Lcom/oneplus/android/server/alertslider/zta;
 
     invoke-virtual {v2, v1}, Lcom/oneplus/android/server/alertslider/zta;->init(I)V
     :try_end_1
@@ -1013,7 +962,7 @@
 
     const/4 v2, 0x0
 
-    iput-object v2, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->Tka:Lcom/oneplus/android/server/alertslider/zta;
+    iput-object v2, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->ola:Lcom/oneplus/android/server/alertslider/zta;
 
     :goto_0
     const/4 v2, 0x3
@@ -1029,7 +978,7 @@
     if-ne v1, v2, :cond_1
 
     :cond_0
-    invoke-direct {p0, v1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->wc(I)V
+    invoke-direct {p0, v1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->xc(I)V
 
     :cond_1
     const-string p0, "/mnt/vendor/persist/engineermode/tri_state_hall_data"
@@ -1122,4 +1071,55 @@
     invoke-static {v0, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return v1
+.end method
+
+.method public jf()Z
+    .locals 4
+
+    sget-boolean p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->DEBUG:Z
+
+    const/16 v0, 0x33
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-eqz p0, :cond_0
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "isSupportSocAlertSlider: "
+
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    new-array v3, v2, [I
+
+    aput v0, v3, v1
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v3, "AlertSliderHw"
+
+    invoke-static {v3, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    new-array p0, v2, [I
+
+    aput v0, p0, v1
+
+    invoke-static {p0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p0
+
+    return p0
 .end method

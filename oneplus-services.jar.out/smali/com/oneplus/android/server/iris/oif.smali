@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private Tqa:Lcom/oneplus/android/server/iris/dma;
+.field private ora:Lcom/oneplus/android/server/iris/dma;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iput-object p1, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     return-void
 .end method
@@ -89,7 +89,7 @@
     invoke-virtual {v2}, Ljava/lang/NumberFormatException;->printStackTrace()V
 
     :goto_1
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v2, v0, v1}, Lcom/oneplus/android/server/iris/dma;->lqr(J)V
 
@@ -135,15 +135,15 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4, v2}, Lcom/oneplus/android/server/iris/dma;->sa(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4, v2, v0}, Lcom/oneplus/android/server/iris/dma;->gwm(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4, v2, v1}, Lcom/oneplus/android/server/iris/dma;->ibl(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -207,15 +207,15 @@
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4, v2}, Lcom/oneplus/android/server/iris/dma;->ra(Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4, v2, v1}, Lcom/oneplus/android/server/iris/dma;->oif(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4, v2, v0}, Lcom/oneplus/android/server/iris/dma;->bvj(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -270,11 +270,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v2, v1}, Lcom/oneplus/android/server/iris/dma;->qa(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/oif;->Tqa:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/oif;->ora:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v2, v1, v0}, Lcom/oneplus/android/server/iris/dma;->qbh(Ljava/lang/String;Ljava/lang/String;)V
 

@@ -1,14 +1,11 @@
 .class Lcom/android/server/irq;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source ""
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/vdw;->frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/qeg;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,89 +15,218 @@
 
 
 # instance fields
-.field final synthetic Sg:Ljava/lang/String;
-
-.field final synthetic this$0:Lcom/android/server/vdw;
-
-.field final synthetic val$packageName:Ljava/lang/String;
+.field final synthetic this$0:Lcom/android/server/qeg;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/vdw;Ljava/lang/String;Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/server/qeg;Landroid/os/Looper;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/vdw;
+    iput-object p1, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
 
-    iput-object p2, p0, Lcom/android/server/irq;->val$packageName:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/android/server/irq;->Sg:Ljava/lang/String;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 4
 
-    new-instance v0, Landroid/content/Intent;
+    invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
-    const-string v1, "oneplus.action.front_package_changed"
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    iget p1, p1, Landroid/os/Message;->what:I
 
-    iget-object v1, p0, Lcom/android/server/irq;->val$packageName:Ljava/lang/String;
+    const/4 v1, 0x1
 
-    const-string v2, "frontpackage"
+    if-eq p1, v1, :cond_1
 
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    const/4 v0, 0x2
 
-    iget-object v1, p0, Lcom/android/server/irq;->Sg:Ljava/lang/String;
+    if-eq p1, v0, :cond_8
 
-    const-string v2, "lfrontpackage"
+    const/4 v0, 0x3
 
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    if-eq p1, v0, :cond_8
 
-    const-string v1, "com.heytap.speechassist"
+    const/4 v0, 0x4
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    if-eq p1, v0, :cond_8
 
-    iget-object v1, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/vdw;
+    const/4 v0, 0x5
 
-    invoke-static {v1}, Lcom/android/server/vdw;->you(Lcom/android/server/vdw;)Landroid/content/Context;
+    if-eq p1, v0, :cond_0
 
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-
-    invoke-static {}, Lcom/android/server/vdw;->access$500()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "front package name: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/irq;->val$packageName:Ljava/lang/String;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "CommonFrontMonitor"
-
-    invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    goto/16 :goto_0
 
     :cond_0
+    iget-object p0, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {p0}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;)V
+
+    goto/16 :goto_0
+
+    :cond_1
+    if-nez v0, :cond_2
+
+    const-string p0, "CommonFrontMonitor"
+
+    const-string p1, "[scene] arguments is null while handling CMD_FETCH_CONFIG"
+
+    invoke-static {p0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_2
+    new-array p1, v1, [I
+
+    const/16 v2, 0xd7
+
+    const/4 v3, 0x0
+
+    aput v2, p1, v3
+
+    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    const-string p1, "CONFIG_NAME_VIDEO_ENHANCEMENT"
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    iget-object v2, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {v2, p1}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;Ljava/lang/String;)V
+
+    :cond_3
+    new-array p1, v1, [I
+
+    const/16 v2, 0x82
+
+    aput v2, p1, v3
+
+    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    const-string p1, "CONFIG_NAME_SMART5G"
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_4
+
+    iget-object v2, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {v2, p1}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;Ljava/lang/String;)V
+
+    :cond_4
+    new-array p1, v1, [I
+
+    const/16 v2, 0x116
+
+    aput v2, p1, v3
+
+    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_5
+
+    const-string p1, "CONFIG_NAME_FASTOUTPUT"
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    iget-object v2, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {v2, p1}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;Ljava/lang/String;)V
+
+    :cond_5
+    new-array p1, v1, [I
+
+    const/16 v2, 0x13a
+
+    aput v2, p1, v3
+
+    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    const-string p1, "CONFIG_NAME_GAME_DOLBY"
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_6
+
+    iget-object v2, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {v2, p1}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;Ljava/lang/String;)V
+
+    :cond_6
+    new-array p1, v1, [I
+
+    const/16 v1, 0x14b
+
+    aput v1, p1, v3
+
+    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    const-string p1, "CONFIG_NAME_IMAGE_QUALITY"
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_7
+
+    iget-object v1, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {v1, p1}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;Ljava/lang/String;)V
+
+    :cond_7
+    invoke-static {}, Lcom/android/server/qeg;->access$200()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_8
+
+    const-string p1, "CONFIG_NAME_LMKD_WATERMARK"
+
+    invoke-virtual {v0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_8
+
+    iget-object p0, p0, Lcom/android/server/irq;->this$0:Lcom/android/server/qeg;
+
+    invoke-static {p0, p1}, Lcom/android/server/qeg;->zta(Lcom/android/server/qeg;Ljava/lang/String;)V
+
+    :cond_8
+    :goto_0
     return-void
 .end method

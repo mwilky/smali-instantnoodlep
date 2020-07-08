@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static instance:Lcom/oneplus/android/server/scene/oif; = null
+.field private static final Yta:Ljava/lang/String; = "game_mode_answer_no_incallui"
 
-.field private static final wta:Ljava/lang/String; = "game_mode_answer_no_incallui"
+.field private static instance:Lcom/oneplus/android/server/scene/oif;
 
 
 # instance fields
+.field private Wta:Z
+
+.field private final Xta:Landroid/database/ContentObserver;
+
 .field private mContext:Landroid/content/Context;
-
-.field private uta:Z
-
-.field private final vta:Landroid/database/ContentObserver;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->uta:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->Wta:Z
 
     new-instance v0, Lcom/oneplus/android/server/scene/qbh;
 
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/oneplus/android/server/scene/qbh;-><init>(Lcom/oneplus/android/server/scene/oif;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/oif;->vta:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/oif;->Xta:Landroid/database/ContentObserver;
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
 
@@ -52,16 +52,16 @@
     return-void
 .end method
 
-.method private Av()V
+.method private Dv()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->uta:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->Wta:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->uta:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->Wta:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
 
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->vta:Landroid/database/ContentObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->Xta:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, p0}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -140,7 +140,7 @@
 
 
 # virtual methods
-.method public ag()V
+.method public dg()V
     .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -163,11 +163,11 @@
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/oif;->logd(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/oif;->Av()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/scene/oif;->Dv()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->uta:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->Wta:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
 
@@ -181,7 +181,7 @@
 
     move-result-object v1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->vta:Landroid/database/ContentObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->Xta:Landroid/database/ContentObserver;
 
     const/4 v2, 0x0
 
@@ -192,7 +192,7 @@
     return-void
 .end method
 
-.method public ea(I)V
+.method public fa(I)V
     .locals 3
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;

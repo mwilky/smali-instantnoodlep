@@ -108,7 +108,7 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mOpScreenDecor:Lcom/android/server/wm/o;
+.field private mOpScreenDecor:Lcom/android/server/wm/p;
 
 .field public mScreenCompatDefaultEnabledList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -1924,7 +1924,7 @@
 
     if-eqz v0, :cond_b
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
     if-eqz v0, :cond_b
 
@@ -2074,9 +2074,9 @@
 
     :cond_9
     :goto_5
-    iget-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iget-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
-    iget-boolean v1, v1, Lcom/android/server/wm/o;->sha:Z
+    iget-boolean v1, v1, Lcom/android/server/wm/p;->Nha:Z
 
     if-eq v1, v2, :cond_b
 
@@ -2203,9 +2203,9 @@
     invoke-static {p2, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_a
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
-    invoke-virtual {p0, v2}, Lcom/android/server/wm/o;->x(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/server/wm/p;->w(Z)V
 
     :cond_b
     return-void
@@ -2342,13 +2342,13 @@
 
     iput-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mScreenCompatThirdPartyAppList:Ljava/util/ArrayList;
 
-    new-instance v1, Lcom/android/server/wm/o;
+    new-instance v1, Lcom/android/server/wm/p;
 
     iget-object v2, p0, Lcom/android/server/wm/OpScreenCompat;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, v2}, Lcom/android/server/wm/o;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v2}, Lcom/android/server/wm/p;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iput-object v1, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
     :cond_2
     sget-boolean v1, Lcom/android/server/wm/OpScreenCompat;->IS_SUPPORT_HIDE_CAMERA_NOTCH:Z
@@ -2635,11 +2635,11 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iget-object v0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, v0, Lcom/android/server/wm/o;->sha:Z
+    iget-boolean v0, v0, Lcom/android/server/wm/p;->Nha:Z
 
     if-eqz v0, :cond_2
 
@@ -2675,9 +2675,9 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
-    iget p0, p0, Lcom/android/server/wm/o;->uha:I
+    iget p0, p0, Lcom/android/server/wm/p;->Pha:I
 
     monitor-exit v0
 
@@ -2826,9 +2826,9 @@
 
     iget-object v1, v1, Lcom/android/server/wm/WindowManagerService;->mH:Lcom/android/server/wm/WindowManagerService$H;
 
-    new-instance v2, Lcom/android/server/wm/l;
+    new-instance v2, Lcom/android/server/wm/m;
 
-    invoke-direct {v2, p0, p1, p2, v0}, Lcom/android/server/wm/l;-><init>(Lcom/android/server/wm/OpScreenCompat;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;Z)V
+    invoke-direct {v2, p0, p1, p2, v0}, Lcom/android/server/wm/m;-><init>(Lcom/android/server/wm/OpScreenCompat;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;Z)V
 
     invoke-virtual {v1, v2}, Lcom/android/server/wm/WindowManagerService$H;->post(Ljava/lang/Runnable;)Z
 
@@ -2937,11 +2937,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/o;
+    iget-object p0, p0, Lcom/android/server/wm/OpScreenCompat;->mOpScreenDecor:Lcom/android/server/wm/p;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/server/wm/o;->onConfigurationChanged()V
+    invoke-virtual {p0}, Lcom/android/server/wm/p;->onConfigurationChanged()V
 
     :cond_0
     return-void

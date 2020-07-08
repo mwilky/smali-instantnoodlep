@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field private final synthetic ad:Lcom/android/server/z;
+.field private final synthetic ad:Landroid/content/Intent;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/android/server/z;)V
+.method public synthetic constructor <init>(Landroid/content/Intent;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/rtg;->ad:Lcom/android/server/z;
+    iput-object p1, p0, Lcom/android/server/rtg;->ad:Landroid/content/Intent;
 
     return-void
 .end method
@@ -26,9 +26,9 @@
 .method public final run()V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/rtg;->ad:Lcom/android/server/z;
+    iget-object p0, p0, Lcom/android/server/rtg;->ad:Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/server/z;->Na()V
+    invoke-static {p0}, Lcom/android/server/B;->you(Landroid/content/Intent;)V
 
     return-void
 .end method

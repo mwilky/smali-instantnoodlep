@@ -16,19 +16,19 @@
     .end annotation
 .end field
 
-.field private static final MU:[I
-
 .field private static final TAG:Ljava/lang/String; = "OnePlusEsportApisController"
+
+.field private static final gV:[I
 
 
 # instance fields
-.field private IU:Z
+.field private cV:Z
 
-.field private JU:Z
+.field private dV:Z
 
-.field private KU:Landroid/util/BoostFramework;
+.field private eV:Landroid/util/BoostFramework;
 
-.field private LU:Lcom/android/server/net/NetworkPolicyManagerService;
+.field private fV:Lcom/android/server/net/NetworkPolicyManagerService;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/server/zta/you;->MU:[I
+    sput-object v0, Lcom/android/server/zta/you;->gV:[I
 
     new-instance v0, Lcom/android/server/zta/zta;
 
@@ -69,21 +69,21 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/zta/you;->IU:Z
+    iput-boolean v0, p0, Lcom/android/server/zta/you;->cV:Z
 
-    iput-boolean v0, p0, Lcom/android/server/zta/you;->JU:Z
+    iput-boolean v0, p0, Lcom/android/server/zta/you;->dV:Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/zta/you;->KU:Landroid/util/BoostFramework;
+    iput-object v0, p0, Lcom/android/server/zta/you;->eV:Landroid/util/BoostFramework;
 
-    iput-object v0, p0, Lcom/android/server/zta/you;->LU:Lcom/android/server/net/NetworkPolicyManagerService;
+    iput-object v0, p0, Lcom/android/server/zta/you;->fV:Lcom/android/server/net/NetworkPolicyManagerService;
 
     new-instance v0, Landroid/util/BoostFramework;
 
     invoke-direct {v0}, Landroid/util/BoostFramework;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/zta/you;->KU:Landroid/util/BoostFramework;
+    iput-object v0, p0, Lcom/android/server/zta/you;->eV:Landroid/util/BoostFramework;
 
     return-void
 .end method
@@ -126,15 +126,30 @@
     return-void
 
     :cond_0
-    iput-object p1, p0, Lcom/android/server/zta/you;->LU:Lcom/android/server/net/NetworkPolicyManagerService;
+    iput-object p1, p0, Lcom/android/server/zta/you;->fV:Lcom/android/server/net/NetworkPolicyManagerService;
 
+    return-void
+.end method
+
+.method public s(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/zta/you;->cV:Z
+
+    iget-object p0, p0, Lcom/android/server/zta/you;->fV:Lcom/android/server/net/NetworkPolicyManagerService;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0, p1}, Lcom/android/server/net/NetworkPolicyManagerService;->setRestrictBackgroundByEsport(Z)V
+
+    :cond_0
     return-void
 .end method
 
 .method public setKeepAlive(Z)Z
     .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/zta/you;->JU:Z
+    iget-boolean v0, p0, Lcom/android/server/zta/you;->dV:Z
 
     const/4 v1, 0x1
 
@@ -148,9 +163,9 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/zta/you;->KU:Landroid/util/BoostFramework;
+    iget-object p1, p0, Lcom/android/server/zta/you;->eV:Landroid/util/BoostFramework;
 
-    sget-object v4, Lcom/android/server/zta/you;->MU:[I
+    sget-object v4, Lcom/android/server/zta/you;->gV:[I
 
     invoke-virtual {p1, v2, v4}, Landroid/util/BoostFramework;->perfLockAcquire(I[I)I
 
@@ -167,7 +182,7 @@
     invoke-static {v3, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iput-boolean v1, p0, Lcom/android/server/zta/you;->JU:Z
+    iput-boolean v1, p0, Lcom/android/server/zta/you;->dV:Z
 
     goto :goto_1
 
@@ -177,7 +192,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object p1, p0, Lcom/android/server/zta/you;->KU:Landroid/util/BoostFramework;
+    iget-object p1, p0, Lcom/android/server/zta/you;->eV:Landroid/util/BoostFramework;
 
     invoke-virtual {p1}, Landroid/util/BoostFramework;->perfLockRelease()I
 
@@ -194,7 +209,7 @@
     invoke-static {v3, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    iput-boolean v2, p0, Lcom/android/server/zta/you;->JU:Z
+    iput-boolean v2, p0, Lcom/android/server/zta/you;->dV:Z
 
     goto :goto_1
 
@@ -235,7 +250,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/zta/you;->IU:Z
+    iget-boolean v1, p0, Lcom/android/server/zta/you;->cV:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -250,29 +265,14 @@
     :cond_0
     if-nez p1, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/zta/you;->IU:Z
+    iget-boolean v0, p0, Lcom/android/server/zta/you;->cV:Z
 
     if-nez v0, :cond_1
 
     return-void
 
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/android/server/zta/you;->t(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/server/zta/you;->s(Z)V
 
-    return-void
-.end method
-
-.method public t(Z)V
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/zta/you;->IU:Z
-
-    iget-object p0, p0, Lcom/android/server/zta/you;->LU:Lcom/android/server/net/NetworkPolicyManagerService;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0, p1}, Lcom/android/server/net/NetworkPolicyManagerService;->setRestrictBackgroundByEsport(Z)V
-
-    :cond_0
     return-void
 .end method

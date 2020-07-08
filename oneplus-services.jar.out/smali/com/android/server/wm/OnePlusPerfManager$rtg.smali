@@ -61,7 +61,7 @@
 
 
 # virtual methods
-.method public Ke()V
+.method public Me()V
     .locals 1
 
     const-string v0, ""

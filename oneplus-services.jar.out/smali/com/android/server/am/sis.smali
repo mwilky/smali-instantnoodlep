@@ -17,9 +17,17 @@
 # static fields
 .field private static final ACTION_SHUTDOWN:Ljava/lang/String; = "android.intent.action.ACTION_SHUTDOWN"
 
-.field private static final Fm:Ljava/lang/String; = "NYNCG4I0TI"
+.field public static final PACKAGE_NAME:Ljava/lang/String; = "pkg"
 
-.field private static Gm:Ljava/util/HashMap; = null
+.field private static final RECENT_TASK_LOCKED_LIST:Ljava/lang/String; = "com_oneplus_systemui_recent_task_lockd_list"
+
+.field public static final TAG:Ljava/lang/String; = "AppDiedStatistics"
+
+.field private static final URI_RECENT_TASK_LOCKED_LISTL:Landroid/net/Uri;
+
+.field private static final Um:Ljava/lang/String; = "NYNCG4I0TI"
+
+.field private static Vm:Ljava/util/HashMap; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -30,47 +38,39 @@
     .end annotation
 .end field
 
-.field private static final Hm:Ljava/lang/String; = "/data/system/AppDiedStatistics.json"
+.field private static final Wm:Ljava/lang/String; = "/data/system/AppDiedStatistics.json"
 
-.field private static final Im:Ljava/lang/String; = "oneplus.intent.action.MDM_APP_KILL"
+.field private static final Xm:Ljava/lang/String; = "oneplus.intent.action.MDM_APP_KILL"
 
-.field private static final Jm:Ljava/lang/String; = "oneplus.intent.action.LOCAL_APP_KILL"
+.field private static final Ym:Ljava/lang/String; = "oneplus.intent.action.LOCAL_APP_KILL"
 
-.field private static final Km:Z
+.field private static final Zm:Z
 
-.field public static final Lm:Ljava/lang/String; = "L"
+.field public static final _m:Ljava/lang/String; = "L"
 
-.field public static final Mm:Ljava/lang/String; = "T"
+.field public static final an:Ljava/lang/String; = "T"
 
-.field public static final Nm:Ljava/lang/String; = "U"
+.field public static final bn:Ljava/lang/String; = "U"
 
-.field public static final Om:Ljava/lang/String; = "ttm"
+.field public static final cn:Ljava/lang/String; = "ttm"
 
-.field public static final PACKAGE_NAME:Ljava/lang/String; = "pkg"
+.field private static debug:Z = false
 
-.field public static final Pm:Ljava/lang/String; = "ttk"
+.field public static final dn:Ljava/lang/String; = "ttk"
 
-.field public static final Qm:Ljava/lang/String; = "array"
-
-.field private static final RECENT_TASK_LOCKED_LIST:Ljava/lang/String; = "com_oneplus_systemui_recent_task_lockd_list"
-
-.field public static final TAG:Ljava/lang/String; = "AppDiedStatistics"
-
-.field private static final URI_RECENT_TASK_LOCKED_LISTL:Landroid/net/Uri;
-
-.field private static debug:Z
+.field public static final en:Ljava/lang/String; = "array"
 
 .field private static sIntance:Lcom/android/server/am/sis;
 
 
 # instance fields
-.field private Bm:Lorg/json/JSONArray;
+.field private Qm:Lorg/json/JSONArray;
 
-.field private Cm:Lorg/json/JSONObject;
+.field private Rm:Lorg/json/JSONObject;
 
-.field private Dm:J
+.field private Sm:J
 
-.field private Em:Ljava/util/ArrayList;
+.field private Tm:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -159,7 +159,7 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v1, Lcom/android/server/am/sis;->Gm:Ljava/util/HashMap;
+    sput-object v1, Lcom/android/server/am/sis;->Vm:Ljava/util/HashMap;
 
     const-string v1, "persist.sys.appkill.test"
 
@@ -167,7 +167,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/am/sis;->Km:Z
+    sput-boolean v0, Lcom/android/server/am/sis;->Zm:Z
 
     return-void
 .end method
@@ -197,13 +197,13 @@
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iput-object v0, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/sis;->Cm:Lorg/json/JSONObject;
+    iput-object v0, p0, Lcom/android/server/am/sis;->Rm:Lorg/json/JSONObject;
 
     const/4 v0, 0x0
 
@@ -211,7 +211,7 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/sis;->Dm:J
+    iput-wide v0, p0, Lcom/android/server/am/sis;->Sm:J
 
     new-instance v0, Lcom/android/server/am/sis$tsu;
 
@@ -223,7 +223,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/lang/Object;
 
@@ -237,11 +237,11 @@
 
     iput-object v0, p0, Lcom/android/server/am/sis;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    sget-boolean v0, Lcom/android/server/am/obl;->ar:Z
+    sget-boolean v0, Lcom/android/server/am/obl;->qr:Z
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->kya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Mya:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object p0, p0, Lcom/android/server/am/sis;->mAppStateListener:Lcom/android/server/am/sis$zta;
 
@@ -257,7 +257,22 @@
     return-void
 .end method
 
-.method private _m()Lorg/json/JSONObject;
+.method private a(Ljava/lang/String;)V
+    .locals 0
+
+    sget-boolean p0, Lcom/android/server/am/sis;->debug:Z
+
+    if-eqz p0, :cond_0
+
+    const-string p0, "AppDiedStatistics"
+
+    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    return-void
+.end method
+
+.method private cn()Lorg/json/JSONObject;
     .locals 5
 
     iget-object v0, p0, Lcom/android/server/am/sis;->mLock:Ljava/lang/Object;
@@ -280,13 +295,13 @@
 
     const-string v2, "ttm"
 
-    iget-wide v3, p0, Lcom/android/server/am/sis;->Dm:J
+    iget-wide v3, p0, Lcom/android/server/am/sis;->Sm:J
 
     invoke-virtual {v1, v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     const-string v2, "array"
 
-    iget-object p0, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object p0, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1, v2, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_1
@@ -336,22 +351,43 @@
     throw p0
 .end method
 
-.method private a(Ljava/lang/String;)V
+.method static synthetic cno(Lcom/android/server/am/sis;)Ljava/lang/Object;
     .locals 0
 
-    sget-boolean p0, Lcom/android/server/am/sis;->debug:Z
+    iget-object p0, p0, Lcom/android/server/am/sis;->mLock:Ljava/lang/Object;
 
-    if-eqz p0, :cond_0
+    return-object p0
+.end method
 
-    const-string p0, "AppDiedStatistics"
+.method private static deleteFile(Ljava/lang/String;)V
+    .locals 1
 
-    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    new-instance v0, Ljava/io/File;
+
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    return-void
 
     :cond_0
+    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    invoke-virtual {v0}, Ljava/io/File;->delete()Z
+
+    :cond_1
     return-void
 .end method
 
-.method private static an()Ljava/lang/String;
+.method private static dn()Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/util/Date;
@@ -371,7 +407,7 @@
     return-object v0
 .end method
 
-.method private bn()V
+.method private en()V
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/am/sis;->mLock:Ljava/lang/Object;
@@ -456,9 +492,9 @@
 
     invoke-direct {v4, v3}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    iput-object v4, p0, Lcom/android/server/am/sis;->Cm:Lorg/json/JSONObject;
+    iput-object v4, p0, Lcom/android/server/am/sis;->Rm:Lorg/json/JSONObject;
 
-    iget-object v3, p0, Lcom/android/server/am/sis;->Cm:Lorg/json/JSONObject;
+    iget-object v3, p0, Lcom/android/server/am/sis;->Rm:Lorg/json/JSONObject;
 
     const-string v4, "array"
 
@@ -468,7 +504,7 @@
 
     if-eqz v3, :cond_2
 
-    iget-object v3, p0, Lcom/android/server/am/sis;->Cm:Lorg/json/JSONObject;
+    iget-object v3, p0, Lcom/android/server/am/sis;->Rm:Lorg/json/JSONObject;
 
     const-string v4, "array"
 
@@ -476,10 +512,10 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iput-object v3, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     :cond_2
-    iget-object v3, p0, Lcom/android/server/am/sis;->Cm:Lorg/json/JSONObject;
+    iget-object v3, p0, Lcom/android/server/am/sis;->Rm:Lorg/json/JSONObject;
 
     const-string v4, "ttk"
 
@@ -637,7 +673,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/sis;->Cm:Lorg/json/JSONObject;
+    iget-object v3, p0, Lcom/android/server/am/sis;->Rm:Lorg/json/JSONObject;
 
     invoke-virtual {v3}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -649,7 +685,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v3, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v3}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
@@ -669,7 +705,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/sis;->Dm:J
+    iget-wide v3, p0, Lcom/android/server/am/sis;->Sm:J
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -694,202 +730,12 @@
     throw p0
 .end method
 
-.method private cn()Z
+.method private fn()Z
     .locals 0
 
-    sget-boolean p0, Lcom/android/server/am/sis;->Km:Z
+    sget-boolean p0, Lcom/android/server/am/sis;->Zm:Z
 
     return p0
-.end method
-
-.method static synthetic cno(Lcom/android/server/am/sis;)Ljava/lang/Object;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/am/sis;->mLock:Ljava/lang/Object;
-
-    return-object p0
-.end method
-
-.method private static deleteFile(Ljava/lang/String;)V
-    .locals 1
-
-    new-instance v0, Ljava/io/File;
-
-    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
-
-    :cond_1
-    return-void
-.end method
-
-.method private dn()Z
-    .locals 3
-
-    new-instance v0, Lorg/json/JSONObject;
-
-    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
-
-    invoke-direct {p0}, Lcom/android/server/am/sis;->_m()Lorg/json/JSONObject;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "/data/system/AppDiedStatistics.json"
-
-    invoke-static {v0, v1}, Lcom/android/server/am/sis;->sis(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "persistToDisk isok = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v2, " data = "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v1, "AppDiedStatistics"
-
-    invoke-static {v1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v0
-.end method
-
-.method private en()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/am/sis;->mLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_0
-    new-instance v1, Lorg/json/JSONArray;
-
-    invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
-
-    iput-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
-
-    const/4 v1, 0x0
-
-    iput v1, p0, Lcom/android/server/am/sis;->mTotalCount:I
-
-    const-string p0, "/data/system/AppDiedStatistics.json"
-
-    invoke-static {p0}, Lcom/android/server/am/sis;->deleteFile(Ljava/lang/String;)V
-
-    const-string p0, "AppDiedStatistics"
-
-    const-string v1, "resetLocalData after mdm"
-
-    invoke-static {p0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
-.method private fn()V
-    .locals 5
-
-    sget-boolean v0, Lcom/android/server/am/obl;->_q:Z
-
-    if-eqz v0, :cond_1
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    new-instance v1, Ljava/util/HashMap;
-
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    new-instance v2, Lorg/json/JSONObject;
-
-    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
-
-    invoke-direct {p0}, Lcom/android/server/am/sis;->_m()Lorg/json/JSONObject;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "data"
-
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v2, "appid"
-
-    const-string v3, "NYNCG4I0TI"
-
-    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/server/am/sis;->mContext:Landroid/content/Context;
-
-    const-string v4, "appkill"
-
-    invoke-virtual {v2, v3, v4, v1, v0}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
-
-    :cond_0
-    invoke-direct {p0}, Lcom/android/server/am/sis;->en()V
-
-    :cond_1
-    return-void
 .end method
 
 .method private gck(ILjava/lang/String;)V
@@ -900,7 +746,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1004,14 +850,168 @@
     return-wide v0
 .end method
 
-.method private isHighUsedApp(Ljava/lang/String;)Z
-    .locals 0
+.method private gn()Z
+    .locals 3
 
-    invoke-static {}, Lcom/android/server/am/y;->getInstance()Lcom/android/server/am/y;
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    invoke-direct {p0}, Lcom/android/server/am/sis;->cn()Lorg/json/JSONObject;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/y;->D(Ljava/lang/String;)Z
+    invoke-virtual {p0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "/data/system/AppDiedStatistics.json"
+
+    invoke-static {v0, v1}, Lcom/android/server/am/sis;->sis(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "persistToDisk isok = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " data = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v1, "AppDiedStatistics"
+
+    invoke-static {v1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v0
+.end method
+
+.method private hn()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/am/sis;->mLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    new-instance v1, Lorg/json/JSONArray;
+
+    invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
+
+    iput-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
+
+    const/4 v1, 0x0
+
+    iput v1, p0, Lcom/android/server/am/sis;->mTotalCount:I
+
+    const-string p0, "/data/system/AppDiedStatistics.json"
+
+    invoke-static {p0}, Lcom/android/server/am/sis;->deleteFile(Ljava/lang/String;)V
+
+    const-string p0, "AppDiedStatistics"
+
+    const-string v1, "resetLocalData after mdm"
+
+    invoke-static {p0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method private in()V
+    .locals 5
+
+    sget-boolean v0, Lcom/android/server/am/obl;->pr:Z
+
+    if-eqz v0, :cond_1
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    new-instance v2, Lorg/json/JSONObject;
+
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
+
+    invoke-direct {p0}, Lcom/android/server/am/sis;->cn()Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "data"
+
+    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v2, "appid"
+
+    const-string v3, "NYNCG4I0TI"
+
+    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {}, Lnet/oneplus/odm/OpDeviceManagerInjector;->getInstance()Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/android/server/am/sis;->mContext:Landroid/content/Context;
+
+    const-string v4, "appkill"
+
+    invoke-virtual {v2, v3, v4, v1, v0}, Lnet/oneplus/odm/OpDeviceManagerInjector;->preserveOsData(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V
+
+    :cond_0
+    invoke-direct {p0}, Lcom/android/server/am/sis;->hn()V
+
+    :cond_1
+    return-void
+.end method
+
+.method private isHighUsedApp(Ljava/lang/String;)Z
+    .locals 0
+
+    invoke-static {}, Lcom/android/server/am/A;->getInstance()Lcom/android/server/am/A;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lcom/android/server/am/A;->D(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1117,7 +1117,7 @@
     const/4 v3, 0x1
 
     :try_start_0
-    iget-object v4, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v4, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v4}, Lorg/json/JSONArray;->length()I
 
@@ -1125,7 +1125,7 @@
 
     if-ge v2, v4, :cond_1
 
-    iget-object v4, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v4, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v4, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
@@ -1228,7 +1228,7 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1, p1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
@@ -1247,7 +1247,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
@@ -1288,7 +1288,7 @@
     const/4 v3, 0x1
 
     :try_start_0
-    iget-object v4, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v4, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v4}, Lorg/json/JSONArray;->length()I
 
@@ -1296,7 +1296,7 @@
 
     if-ge v2, v4, :cond_1
 
-    iget-object v4, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v4, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v4, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
@@ -1399,7 +1399,7 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1, p1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
@@ -1418,7 +1418,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
@@ -1455,7 +1455,7 @@
 .method static synthetic rtg(Lcom/android/server/am/sis;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->dn()Z
+    invoke-direct {p0}, Lcom/android/server/am/sis;->gn()Z
 
     move-result p0
 
@@ -1477,7 +1477,7 @@
     const/4 v3, 0x1
 
     :try_start_0
-    iget-object v4, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v4, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v4}, Lorg/json/JSONArray;->length()I
 
@@ -1485,7 +1485,7 @@
 
     if-ge v2, v4, :cond_1
 
-    iget-object v4, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v4, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v4, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
@@ -1588,7 +1588,7 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1, p1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
@@ -1607,7 +1607,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Bm:Lorg/json/JSONArray;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Qm:Lorg/json/JSONArray;
 
     invoke-virtual {v1}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
@@ -1809,7 +1809,7 @@
 .method static synthetic ssp(Lcom/android/server/am/sis;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/sis;->Dm:J
+    iget-wide v0, p0, Lcom/android/server/am/sis;->Sm:J
 
     return-wide v0
 .end method
@@ -1893,7 +1893,7 @@
 .method static synthetic tsu(Lcom/android/server/am/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->fn()V
+    invoke-direct {p0}, Lcom/android/server/am/sis;->in()V
 
     return-void
 .end method
@@ -1928,7 +1928,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2171,7 +2171,7 @@
 
     invoke-direct {v8}, Landroid/content/IntentFilter;-><init>()V
 
-    sget-boolean v1, Lcom/android/server/am/obl;->_q:Z
+    sget-boolean v1, Lcom/android/server/am/obl;->pr:Z
 
     const/4 v9, 0x0
 
@@ -2191,7 +2191,7 @@
 
     const-wide/16 v3, 0x3e8
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->cn()Z
+    invoke-direct {p0}, Lcom/android/server/am/sis;->fn()Z
 
     move-result v1
 
@@ -2226,7 +2226,7 @@
 
     const-wide/16 v3, 0x3e8
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->cn()Z
+    invoke-direct {p0}, Lcom/android/server/am/sis;->fn()Z
 
     move-result p1
 
@@ -2260,9 +2260,9 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/am/sis;->Dm:J
+    iput-wide v0, p0, Lcom/android/server/am/sis;->Sm:J
 
-    invoke-direct {p0}, Lcom/android/server/am/sis;->bn()V
+    invoke-direct {p0}, Lcom/android/server/am/sis;->en()V
 
     return-void
 .end method
@@ -2270,7 +2270,7 @@
 .method sis(ILjava/lang/String;)V
     .locals 3
 
-    sget-boolean v0, Lcom/android/server/am/obl;->ar:Z
+    sget-boolean v0, Lcom/android/server/am/obl;->qr:Z
 
     if-nez v0, :cond_0
 
@@ -2294,7 +2294,7 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2302,11 +2302,11 @@
 
     if-eqz v1, :cond_1
 
-    iget-object p2, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    iget-object p2, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     :goto_0
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -2322,19 +2322,19 @@
 
     if-nez p2, :cond_2
 
-    iget-object p2, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     goto :goto_0
 
     :cond_2
     :goto_1
-    iget-object p1, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result p1
 
-    sget p2, Lcom/android/server/am/obl;->br:I
+    sget p2, Lcom/android/server/am/obl;->rr:I
 
     add-int/lit8 p2, p2, 0x1
 
@@ -2349,7 +2349,7 @@
     :goto_2
     if-ge v1, p1, :cond_3
 
-    iget-object v2, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p2}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
@@ -2366,7 +2366,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lcom/android/server/am/sis;->Em:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/am/sis;->Tm:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->toString()Ljava/lang/String;
 

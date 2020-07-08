@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/k;->oc(I)V
+    value = Lcom/android/server/wm/l;->ht()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,14 @@
 
 
 # instance fields
-.field private PO:I
-
-.field private SO:F
-
-.field final synthetic this$0:Lcom/android/server/wm/k;
+.field final synthetic this$0:Lcom/android/server/wm/l;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/k;)V
+.method constructor <init>(Lcom/android/server/wm/l;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    iput-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,198 +37,129 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
 
+    const-string p1, "OpQuickReply"
+
+    :try_start_0
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
-    move-result p1
-
-    const/4 v0, 0x5
-
-    const/4 v1, 0x1
-
-    if-eqz p1, :cond_4
-
-    if-eq p1, v1, :cond_3
-
-    const/4 v2, 0x2
-
-    if-eq p1, v2, :cond_0
-
-    const/4 p2, 0x3
-
-    if-eq p1, p2, :cond_3
-
-    const-string p0, "OpQuickReply"
-
-    const-string p1, "Unsupported Touch event "
-
-    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_0
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    iget v0, p0, Lcom/android/server/wm/h;->PO:I
-
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
-
     move-result p2
 
-    iget v2, p0, Lcom/android/server/wm/h;->SO:F
+    if-nez p2, :cond_1
 
-    sub-float/2addr p2, v2
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    float-to-int p2, p2
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    add-int/2addr v0, p2
+    const-string v0, "click to go switch from "
 
-    invoke-static {p1, v0}, Lcom/android/server/wm/k;->tsu(Lcom/android/server/wm/k;I)I
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    iget-object v0, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    invoke-static {p1}, Lcom/android/server/wm/k;->ugm(Lcom/android/server/wm/k;)I
+    invoke-static {v0}, Lcom/android/server/wm/l;->ibl(Lcom/android/server/wm/l;)I
 
-    move-result p1
+    move-result v0
 
-    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-static {p2}, Lcom/android/server/wm/k;->zgw(Lcom/android/server/wm/k;)I
-
-    move-result p2
-
-    if-le p1, p2, :cond_1
-
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p1}, Lcom/android/server/wm/k;->zgw(Lcom/android/server/wm/k;)I
-
-    move-result p2
-
-    :goto_0
-    invoke-static {p1, p2}, Lcom/android/server/wm/k;->tsu(Lcom/android/server/wm/k;I)I
-
-    goto :goto_1
-
-    :cond_1
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p1}, Lcom/android/server/wm/k;->ugm(Lcom/android/server/wm/k;)I
-
-    move-result p1
-
-    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p2}, Lcom/android/server/wm/k;->sis(Lcom/android/server/wm/k;)I
-
-    move-result p2
-
-    if-ge p1, p2, :cond_2
-
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p1}, Lcom/android/server/wm/k;->sis(Lcom/android/server/wm/k;)I
-
-    move-result p2
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    iget-object p0, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p0}, Lcom/android/server/wm/k;->tsu(Lcom/android/server/wm/k;)V
-
-    return v1
-
-    :cond_3
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p1}, Lcom/android/server/wm/k;->vdb(Lcom/android/server/wm/k;)Landroid/view/WindowManager$LayoutParams;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
 
-    iget p2, p2, Landroid/view/WindowManager$LayoutParams;->x:I
+    invoke-static {p1, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {p1, p2}, Lcom/android/server/wm/k;->tsu(Lcom/android/server/wm/k;I)I
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p1}, Lcom/android/server/wm/k;->zta(Lcom/android/server/wm/k;)Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
-
-    invoke-static {p2}, Lcom/android/server/wm/k;->ugm(Lcom/android/server/wm/k;)I
+    invoke-static {p2}, Lcom/android/server/wm/l;->ibl(Lcom/android/server/wm/l;)I
 
     move-result p2
 
-    const-string v2, "quickreply_imbutton_x"
+    const/4 v0, 0x0
 
-    invoke-static {p1, v2, p2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    const/4 v1, 0x2
 
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    if-ne p2, v1, :cond_0
 
-    invoke-static {p1}, Lcom/android/server/wm/k;->gwm(Lcom/android/server/wm/k;)Lcom/android/server/wm/k$zta;
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    move-result-object p1
+    invoke-static {p2, v0}, Lcom/android/server/wm/l;->sis(Lcom/android/server/wm/l;I)I
 
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+    goto :goto_0
 
-    iget-object p0, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    :cond_0
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    invoke-static {p0}, Lcom/android/server/wm/k;->gwm(Lcom/android/server/wm/k;)Lcom/android/server/wm/k$zta;
+    invoke-static {p2, v1}, Lcom/android/server/wm/l;->sis(Lcom/android/server/wm/l;I)I
 
-    move-result-object p0
+    :goto_0
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    const-wide/16 p1, 0x1388
+    invoke-static {p2}, Lcom/android/server/wm/l;->gwm(Lcom/android/server/wm/l;)Lcom/android/server/wm/l$zta;
 
-    invoke-virtual {p0, v0, p1, p2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    move-result-object p2
 
-    return v1
+    const/16 v1, 0x8
 
-    :cond_4
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    invoke-virtual {p2, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-static {p1}, Lcom/android/server/wm/k;->vdb(Lcom/android/server/wm/k;)Landroid/view/WindowManager$LayoutParams;
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    move-result-object p1
+    invoke-static {p2}, Lcom/android/server/wm/l;->zta(Lcom/android/server/wm/l;)Landroid/content/Context;
 
-    const/high16 v2, 0x3f800000    # 1.0f
+    move-result-object p2
 
-    iput v2, p1, Landroid/view/WindowManager$LayoutParams;->alpha:F
+    invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    move-result-object p2
 
-    invoke-static {p1}, Lcom/android/server/wm/k;->gwm(Lcom/android/server/wm/k;)Lcom/android/server/wm/k$zta;
+    const-string v1, "quickreply_ime_position"
 
-    move-result-object p1
+    iget-object v2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-static {v2}, Lcom/android/server/wm/l;->ibl(Lcom/android/server/wm/l;)I
 
-    iget-object p1, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/k;
+    move-result v2
 
-    invoke-static {p1}, Lcom/android/server/wm/k;->vdb(Lcom/android/server/wm/k;)Landroid/view/WindowManager$LayoutParams;
+    invoke-static {p2, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    move-result-object v0
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
+    invoke-static {p2, v0}, Lcom/android/server/wm/l;->tsu(Lcom/android/server/wm/l;I)I
 
-    invoke-static {p1, v0}, Lcom/android/server/wm/k;->tsu(Lcom/android/server/wm/k;I)I
+    iget-object p2, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
 
-    iput v0, p0, Lcom/android/server/wm/h;->PO:I
+    invoke-static {p2}, Lcom/android/server/wm/l;->zta(Lcom/android/server/wm/l;)Landroid/content/Context;
 
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
+    move-result-object p2
 
-    move-result p1
+    invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    iput p1, p0, Lcom/android/server/wm/h;->SO:F
+    move-result-object p2
 
-    return v1
+    const-string v0, "quickreply_imbutton_x"
+
+    iget-object p0, p0, Lcom/android/server/wm/h;->this$0:Lcom/android/server/wm/l;
+
+    invoke-static {p0}, Lcom/android/server/wm/l;->ugm(Lcom/android/server/wm/l;)I
+
+    move-result p0
+
+    invoke-static {p2, v0, p0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    const-string p2, "click to go switch fail: "
+
+    invoke-static {p1, p2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_1
+    :goto_1
+    const/4 p0, 0x1
+
+    return p0
 .end method

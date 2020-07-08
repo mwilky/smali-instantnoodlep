@@ -39,7 +39,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/server/wm/ibl;->Ge()V
+    invoke-static {}, Lcom/android/server/wm/ibl;->Ie()V
 
     return-void
 .end method

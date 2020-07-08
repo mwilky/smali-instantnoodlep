@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public Ig()[B
+.method public Lg()[B
     .locals 0
 
     iget-object p0, p0, Ljava/io/ByteArrayOutputStream;->buf:[B

@@ -1,11 +1,14 @@
 .class Lcom/android/server/d;
-.super Landroid/os/Handler;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/c$sis;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/e;->chargeVibration()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,28 +18,56 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/server/c$sis;
+.field final synthetic this$0:Lcom/android/server/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/c$sis;)V
+.method constructor <init>(Lcom/android/server/e;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/d;->this$1:Lcom/android/server/c$sis;
+    iput-object p1, p0, Lcom/android/server/d;->this$0:Lcom/android/server/e;
 
-    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
-    .locals 0
+.method public run()V
+    .locals 2
 
-    iget-object p0, p0, Lcom/android/server/d;->this$1:Lcom/android/server/c$sis;
+    invoke-static {}, Lcom/android/server/e;->access$800()Landroid/content/Context;
 
-    invoke-virtual {p0}, Lcom/android/server/c$sis;->updateLightsLocked()V
+    move-result-object p0
+
+    const-string v0, "vibrator"
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/os/Vibrator;
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [J
+
+    fill-array-data v0, :array_0
+
+    const/4 v1, -0x1
+
+    invoke-virtual {p0, v0, v1}, Landroid/os/Vibrator;->vibrate([JI)V
 
     return-void
+
+    nop
+
+    :array_0
+    .array-data 8
+        0x0
+        0xa
+        0x96
+        0xc
+    .end array-data
 .end method

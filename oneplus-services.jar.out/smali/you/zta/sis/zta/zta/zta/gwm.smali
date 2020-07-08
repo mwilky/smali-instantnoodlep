@@ -320,7 +320,7 @@
 
 
 # virtual methods
-.method public Vk()Lyou/zta/sis/zta/cno;
+.method public Yk()Lyou/zta/sis/zta/cno;
     .locals 1
 
     invoke-static {}, Lyou/zta/sis/sis/tsu;->create()[I
@@ -338,7 +338,7 @@
     return-object p0
 .end method
 
-.method public Wk()Ljava/lang/String;
+.method public Zk()Ljava/lang/String;
     .locals 0
 
     const-string p0, "SecP224R1Field"
@@ -346,7 +346,7 @@
     return-object p0
 .end method
 
-.method public Xk()Z
+.method public _k()Z
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/gwm;->x:[I
@@ -358,7 +358,7 @@
     return p0
 .end method
 
-.method public Yk()Lyou/zta/sis/zta/cno;
+.method public al()Lyou/zta/sis/zta/cno;
     .locals 5
 
     iget-object v0, p0, Lyou/zta/sis/zta/zta/zta/gwm;->x:[I
@@ -437,7 +437,7 @@
     return-object p0
 .end method
 
-.method public Zk()Z
+.method public bl()Z
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/gwm;->x:[I

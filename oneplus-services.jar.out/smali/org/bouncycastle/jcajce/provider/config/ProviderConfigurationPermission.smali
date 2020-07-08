@@ -8,29 +8,29 @@
 
 .field private static final ADDITIONAL_EC_PARAMETERS:I = 0x20
 
+.field private static final ADa:Ljava/lang/String; = "threadlocaldhdefaultparams"
+
 .field private static final ALL:I = 0x3f
+
+.field private static final BDa:Ljava/lang/String; = "dhdefaultparams"
+
+.field private static final CDa:Ljava/lang/String; = "acceptableeccurves"
+
+.field private static final DDa:Ljava/lang/String; = "additionalecparameters"
 
 .field private static final DH_DEFAULT_PARAMS:I = 0x8
 
 .field private static final EC_IMPLICITLY_CA:I = 0x2
 
+.field private static final EDa:Ljava/lang/String; = "all"
+
 .field private static final THREAD_LOCAL_DH_DEFAULT_PARAMS:I = 0x4
 
 .field private static final THREAD_LOCAL_EC_IMPLICITLY_CA:I = 0x1
 
-.field private static final XCa:Ljava/lang/String; = "threadlocalecimplicitlyca"
+.field private static final yDa:Ljava/lang/String; = "threadlocalecimplicitlyca"
 
-.field private static final YCa:Ljava/lang/String; = "ecimplicitlyca"
-
-.field private static final ZCa:Ljava/lang/String; = "threadlocaldhdefaultparams"
-
-.field private static final _Ca:Ljava/lang/String; = "dhdefaultparams"
-
-.field private static final aDa:Ljava/lang/String; = "acceptableeccurves"
-
-.field private static final bDa:Ljava/lang/String; = "additionalecparameters"
-
-.field private static final cDa:Ljava/lang/String; = "all"
+.field private static final zDa:Ljava/lang/String; = "ecimplicitlyca"
 
 
 # instance fields

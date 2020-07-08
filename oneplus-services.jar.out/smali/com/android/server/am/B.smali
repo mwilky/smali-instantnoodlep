@@ -1,375 +1,213 @@
 .class Lcom/android/server/am/B;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source ""
 
 
-# static fields
-.field public static final bn:I = 0x2
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/am/C;
+.end annotation
 
-.field public static final cn:I = 0x4
-
-.field public static final jG:I = 0x8
-
-.field public static final kG:I = 0x800
-
-.field public static final lG:I = 0x2000
-
-.field public static final nG:I = 0x20000000
-
-.field public static final oG:I = 0x40000000
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
-.field public Tm:I
-
-.field public final eG:Ljava/lang/String;
-
-.field public final fG:Lcom/android/server/am/tsu;
-
-.field gG:Z
-
-.field private hG:I
-
-.field private final iG:Ljava/lang/Object;
-
-.field public final mPackageName:Ljava/lang/String;
-
-.field public final mPid:I
-
-.field public mPss:J
-
-.field public final mUid:I
+.field final synthetic this$0:Lcom/android/server/am/C;
 
 
 # direct methods
-.method public constructor <init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
-    .locals 1
+.method constructor <init>(Lcom/android/server/am/C;)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lcom/android/server/am/B;->this$0:Lcom/android/server/am/C;
 
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/android/server/am/B;->gG:Z
-
-    iput v0, p0, Lcom/android/server/am/B;->hG:I
-
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/am/B;->iG:Ljava/lang/Object;
-
-    iput p1, p0, Lcom/android/server/am/B;->mUid:I
-
-    iput p2, p0, Lcom/android/server/am/B;->mPid:I
-
-    iput-object p3, p0, Lcom/android/server/am/B;->eG:Ljava/lang/String;
-
-    iput-boolean p5, p0, Lcom/android/server/am/B;->gG:Z
-
-    iput-object p6, p0, Lcom/android/server/am/B;->fG:Lcom/android/server/am/tsu;
-
-    iput-object p4, p0, Lcom/android/server/am/B;->mPackageName:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
-    .locals 7
-
-    iget v1, p5, Lcom/android/server/am/tsu;->mUid:I
-
-    move-object v0, p0
-
-    move v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move v5, p4
-
-    move-object v6, p5
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/B;-><init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method Zc()V
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget v0, p0, Lcom/android/server/am/B;->hG:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p0, Lcom/android/server/am/B;->hG:I
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method _c()I
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget v0, p0, Lcom/android/server/am/B;->hG:I
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method ad()V
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget v0, p0, Lcom/android/server/am/B;->hG:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    iput v0, p0, Lcom/android/server/am/B;->hG:I
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method public bd()V
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/B;->iG:Ljava/lang/Object;
+    invoke-static {}, Lcom/android/server/am/C;->access$100()Lcom/android/server/am/C;
 
-    monitor-enter v0
+    move-result-object p1
 
-    :try_start_0
-    iget v1, p0, Lcom/android/server/am/B;->mPid:I
+    const-string v0, "Slient5G"
 
-    const/4 v2, 0x0
+    if-nez p1, :cond_0
 
-    invoke-static {v1, v2, v2}, Landroid/os/Debug;->getPss(I[J[J)J
+    const-string p0, "# mDebugReceiver # onReceive # sInstance is null, return"
 
-    move-result-wide v1
-
-    iput-wide v1, p0, Lcom/android/server/am/B;->mPss:J
-
-    monitor-exit v0
+    :goto_0
+    invoke-static {v0, p0}, Lcom/android/server/bio$zta;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    :catchall_0
-    move-exception p0
+    :cond_0
+    if-nez p2, :cond_1
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
-.method cd()V
-    .locals 1
-
-    monitor-enter p0
-
-    const/4 v0, 0x0
-
-    :try_start_0
-    iput v0, p0, Lcom/android/server/am/B;->hG:I
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-.end method
-
-.method fto(I)V
-    .locals 1
-
-    iget v0, p0, Lcom/android/server/am/B;->Tm:I
-
-    not-int p1, p1
-
-    and-int/2addr p1, v0
-
-    iput p1, p0, Lcom/android/server/am/B;->Tm:I
-
-    return-void
-.end method
-
-.method public getFlag()I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/am/B;->Tm:I
-
-    return p0
-.end method
-
-.method public getPackageName()Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/am/B;->mPackageName:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method public getPid()I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/am/B;->mPid:I
-
-    return p0
-.end method
-
-.method public getPss()J
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/am/B;->iG:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    :try_start_0
-    iget-wide v1, p0, Lcom/android/server/am/B;->mPss:J
-
-    monitor-exit v0
-
-    return-wide v1
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
-.method isShowing()Z
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/am/B;->Tm:I
-
-    and-int/lit16 p0, p0, 0x2000
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
+    const-string p0, "# mDebugReceiver # onReceive # intent is null, return"
 
     goto :goto_0
 
-    :cond_0
-    const/4 p0, 0x0
+    :cond_1
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    :goto_0
-    return p0
-.end method
+    move-result-object p1
 
-.method oxb(I)V
-    .locals 1
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/android/server/am/B;->Tm:I
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    or-int/2addr p1, v0
+    const-string v2, "# mDebugReceiver # onReceive # action="
 
-    iput p1, p0, Lcom/android/server/am/B;->Tm:I
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/android/server/bio$zta;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string v1, ""
+
+    :try_start_0
+    const-string v2, "com.S5G.action.debug"
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    const-string p1, "code"
+
+    invoke-virtual {p2, p1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "# mGeneralReceiver # onReceive # code = "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lcom/android/server/bio$zta;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string p1, "dump"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    iget-object p0, p0, Lcom/android/server/am/B;->this$0:Lcom/android/server/am/C;
+
+    invoke-static {p0}, Lcom/android/server/am/C;->zta(Lcom/android/server/am/C;)V
+
+    goto :goto_2
+
+    :cond_2
+    const-string p1, "addPkg"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const-string v2, "pkg"
+
+    if-eqz p1, :cond_3
+
+    :try_start_1
+    invoke-virtual {p2, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iget-object p0, p0, Lcom/android/server/am/B;->this$0:Lcom/android/server/am/C;
+
+    const/4 p2, 0x1
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    :goto_1
+    invoke-static {p0, p1, p2}, Lcom/android/server/am/C;->zta(Lcom/android/server/am/C;Ljava/lang/String;Ljava/lang/Boolean;)V
+
+    goto :goto_2
+
+    :cond_3
+    const-string p1, "removePkg"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    invoke-virtual {p2, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iget-object p0, p0, Lcom/android/server/am/B;->this$0:Lcom/android/server/am/C;
+
+    const/4 p2, 0x0
+
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string p2, "mDebugReceiver code:"
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p2, " Exception e:"
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Lcom/android/server/bio$zta;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_4
+    :goto_2
     return-void
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "ProcRecord { "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    const-string v1, "uid="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/B;->mUid:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", pkg="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/android/server/am/B;->mPackageName:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", pid="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/B;->mPid:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", procName="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/am/B;->eG:Ljava/lang/String;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " }"
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method

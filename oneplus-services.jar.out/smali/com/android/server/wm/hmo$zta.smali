@@ -18,9 +18,7 @@
 
 
 # instance fields
-.field private final eba:F
-
-.field private final fba:F
+.field private final Aba:F
 
 .field private final mDuration:J
 
@@ -29,6 +27,8 @@
 .field private final mInterpolator:Landroid/animation/TimeInterpolator;
 
 .field private final mToAlpha:F
+
+.field private final zba:F
 
 
 # direct methods
@@ -49,11 +49,11 @@
 
     int-to-float p1, p3
 
-    iput p1, p0, Lcom/android/server/wm/hmo$zta;->eba:F
+    iput p1, p0, Lcom/android/server/wm/hmo$zta;->zba:F
 
     int-to-float p1, p4
 
-    iput p1, p0, Lcom/android/server/wm/hmo$zta;->fba:F
+    iput p1, p0, Lcom/android/server/wm/hmo$zta;->Aba:F
 
     iput-wide p5, p0, Lcom/android/server/wm/hmo$zta;->mDuration:J
 
@@ -91,9 +91,9 @@
 
     add-float/2addr p4, v0
 
-    iget v0, p0, Lcom/android/server/wm/hmo$zta;->fba:F
+    iget v0, p0, Lcom/android/server/wm/hmo$zta;->Aba:F
 
-    iget p0, p0, Lcom/android/server/wm/hmo$zta;->eba:F
+    iget p0, p0, Lcom/android/server/wm/hmo$zta;->zba:F
 
     sub-float/2addr v0, p0
 

@@ -85,7 +85,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x10c
+    const/16 v2, 0x10e
 
     aput v2, v0, v1
 
@@ -444,7 +444,7 @@
     move v0, v5
 
     :goto_0
-    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->R(Z)V
+    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->Q(Z)V
 
     iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mContext:Landroid/content/Context;
 
@@ -470,7 +470,7 @@
     move v0, v5
 
     :goto_1
-    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->V(Z)V
+    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->U(Z)V
 
     iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mContext:Landroid/content/Context;
 
@@ -496,7 +496,7 @@
     move v0, v5
 
     :goto_2
-    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->S(Z)V
+    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->R(Z)V
 
     iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mContext:Landroid/content/Context;
 
@@ -522,7 +522,7 @@
     move v0, v5
 
     :goto_3
-    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->W(Z)V
+    invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/bio;->V(Z)V
 
     iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mContext:Landroid/content/Context;
 
@@ -543,7 +543,7 @@
     move v5, v7
 
     :cond_5
-    invoke-virtual {v1, v5}, Lcom/oneplus/android/server/iris/bio;->U(Z)V
+    invoke-virtual {v1, v5}, Lcom/oneplus/android/server/iris/bio;->T(Z)V
 
     invoke-direct {p0}, Lcom/oneplus/android/server/iris/OpIrisService;->updateColorMode()V
 
@@ -577,7 +577,7 @@
 
     iget-boolean v1, v1, Landroid/os/PowerSaveState;->batterySaverEnabled:Z
 
-    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/iris/bio;->N(Z)V
+    invoke-virtual {v0, v1}, Lcom/oneplus/android/server/iris/bio;->M(Z)V
 
     iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
@@ -694,7 +694,7 @@
     move v2, v4
 
     :goto_0
-    invoke-virtual {p0, v2}, Lcom/oneplus/android/server/iris/bio;->Q(Z)V
+    invoke-virtual {p0, v2}, Lcom/oneplus/android/server/iris/bio;->P(Z)V
 
     return-void
 .end method
@@ -847,8 +847,23 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mIrisManager:Lcom/oneplus/android/server/iris/bio;
+
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/bio;->Rf()Z
+
+    move-result v0
+
     iget-object p0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mIrisManager:Lcom/oneplus/android/server/iris/bio;
 
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/bio;->ea(I)I
+
+    move-result p0
+
+    return p0
+
+    :cond_1
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/bio;->getPreferedModeId(I)I
 
     move-result p0
@@ -1008,6 +1023,39 @@
     return-void
 .end method
 
+.method public screenStateChange(I)V
+    .locals 2
+
+    sget-boolean v0, Lcom/oneplus/android/server/iris/OpIrisService;->DEBUG:Z
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "screenStateChange state: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OpIrisService"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mIrisManager:Lcom/oneplus/android/server/iris/bio;
+
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/bio;->screenStateChange(I)V
+
+    return-void
+.end method
+
 .method public setIrisCommand(Ljava/lang/String;)V
     .locals 2
 
@@ -1090,7 +1138,7 @@
 
     iget-boolean p1, p1, Landroid/os/PowerSaveState;->batterySaverEnabled:Z
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/bio;->N(Z)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/bio;->M(Z)V
 
     return-void
 .end method

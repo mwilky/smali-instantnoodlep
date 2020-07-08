@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public time:Ljava/lang/String;
+.field public Ola:Lcom/oneplus/android/server/zta/sis/you$tsu;
 
-.field public tla:Lcom/oneplus/android/server/zta/sis/you$tsu;
+.field public time:Ljava/lang/String;
 
 
 # direct methods

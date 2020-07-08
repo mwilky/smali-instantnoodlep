@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field private final kSa:Ljava/lang/String;
+.field private final MSa:Ljava/lang/String;
 
-.field private final lSa:Ljava/lang/String;
+.field private final NSa:Ljava/lang/String;
 
-.field private final mSa:Ljava/lang/String;
+.field private final OSa:Ljava/lang/String;
 
-.field private final nSa:Ljava/lang/String;
+.field private final PSa:Ljava/lang/String;
 
-.field private final oSa:Ljava/lang/String;
+.field private final QSa:Ljava/lang/String;
 
-.field private final pSa:Ljava/lang/String;
+.field private final RSa:Ljava/lang/String;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->kSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->MSa:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -59,11 +59,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->lSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->NSa:Ljava/lang/String;
 
     const-string v0, "-----BEGIN PKCS7-----"
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->mSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->OSa:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->nSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->PSa:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -99,11 +99,11 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->oSa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->QSa:Ljava/lang/String;
 
     const-string p1, "-----END PKCS7-----"
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->pSa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->RSa:Ljava/lang/String;
 
     return-void
 .end method
@@ -207,7 +207,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->kSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->MSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -215,7 +215,7 @@
 
     if-nez v2, :cond_1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->lSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->NSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -223,7 +223,7 @@
 
     if-nez v2, :cond_1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->mSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->OSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -239,7 +239,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->nSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->PSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -247,7 +247,7 @@
 
     if-nez v2, :cond_3
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->oSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->QSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -255,7 +255,7 @@
 
     if-nez v2, :cond_3
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->pSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/you;->RSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

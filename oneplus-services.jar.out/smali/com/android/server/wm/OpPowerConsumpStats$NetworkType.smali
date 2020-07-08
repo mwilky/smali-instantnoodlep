@@ -27,9 +27,9 @@
 
 .field public static final enum CELLULAR:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
 
-.field public static final enum LBa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
-
 .field public static final enum WIFI:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
+
+.field public static final enum mCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
 
 
 # instance fields
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v4, v3, v3}, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->LBa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->mCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
 
     const/4 v0, 0x3
 
@@ -82,7 +82,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->LBa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->mCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
 
     aput-object v1, v0, v3
 

@@ -11,17 +11,17 @@
 
 
 # instance fields
-.field private JKa:[B
-
-.field private NKa:Lorg/bouncycastle/asn1/ibl/vdw;
-
 .field private curve:Lyou/zta/sis/zta/rtg;
 
 .field private g:Lorg/bouncycastle/asn1/ibl/les;
 
 .field private h:Ljava/math/BigInteger;
 
+.field private kLa:[B
+
 .field private n:Ljava/math/BigInteger;
+
+.field private oLa:Lorg/bouncycastle/asn1/ibl/vdw;
 
 
 # direct methods
@@ -175,7 +175,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/vju;->JKa:[B
+    iput-object p1, p0, Lorg/bouncycastle/asn1/ibl/vju;->kLa:[B
 
     return-void
 
@@ -226,7 +226,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/ibl/vju;->JKa:[B
+    iput-object p2, p0, Lorg/bouncycastle/asn1/ibl/vju;->kLa:[B
 
     invoke-static {p1}, Lyou/zta/sis/zta/you;->tsu(Lyou/zta/sis/zta/rtg;)Z
 
@@ -247,7 +247,7 @@
     invoke-direct {p2, p1}, Lorg/bouncycastle/asn1/ibl/vdw;-><init>(Ljava/math/BigInteger;)V
 
     :goto_0
-    iput-object p2, p0, Lorg/bouncycastle/asn1/ibl/vju;->NKa:Lorg/bouncycastle/asn1/ibl/vdw;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/ibl/vju;->oLa:Lorg/bouncycastle/asn1/ibl/vdw;
 
     goto :goto_1
 
@@ -431,7 +431,7 @@
 
 
 # virtual methods
-.method public Bj()Lorg/bouncycastle/asn1/ibl/les;
+.method public Ej()Lorg/bouncycastle/asn1/ibl/les;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->g:Lorg/bouncycastle/asn1/ibl/les;
@@ -439,29 +439,29 @@
     return-object p0
 .end method
 
-.method public Cj()Lorg/bouncycastle/asn1/ibl/cgv;
+.method public Fj()Lorg/bouncycastle/asn1/ibl/cgv;
     .locals 2
 
     new-instance v0, Lorg/bouncycastle/asn1/ibl/cgv;
 
     iget-object v1, p0, Lorg/bouncycastle/asn1/ibl/vju;->curve:Lyou/zta/sis/zta/rtg;
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->JKa:[B
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->kLa:[B
 
     invoke-direct {v0, v1, p0}, Lorg/bouncycastle/asn1/ibl/cgv;-><init>(Lyou/zta/sis/zta/rtg;[B)V
 
     return-object v0
 .end method
 
-.method public Dj()Lorg/bouncycastle/asn1/ibl/vdw;
+.method public Gj()Lorg/bouncycastle/asn1/ibl/vdw;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->NKa:Lorg/bouncycastle/asn1/ibl/vdw;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->oLa:Lorg/bouncycastle/asn1/ibl/vdw;
 
     return-object p0
 .end method
 
-.method public Ej()Ljava/math/BigInteger;
+.method public Hj()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->h:Ljava/math/BigInteger;
@@ -469,7 +469,7 @@
     return-object p0
 .end method
 
-.method public Fj()Ljava/math/BigInteger;
+.method public Ij()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->n:Ljava/math/BigInteger;
@@ -490,7 +490,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->g:Lorg/bouncycastle/asn1/ibl/les;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/les;->Gj()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/les;->Jj()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 
@@ -500,7 +500,7 @@
 .method public getSeed()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->JKa:[B
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/vju;->kLa:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -524,7 +524,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/ibl/vju;->NKa:Lorg/bouncycastle/asn1/ibl/vdw;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/ibl/vju;->oLa:Lorg/bouncycastle/asn1/ibl/vdw;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
@@ -532,7 +532,7 @@
 
     iget-object v2, p0, Lorg/bouncycastle/asn1/ibl/vju;->curve:Lyou/zta/sis/zta/rtg;
 
-    iget-object v3, p0, Lorg/bouncycastle/asn1/ibl/vju;->JKa:[B
+    iget-object v3, p0, Lorg/bouncycastle/asn1/ibl/vju;->kLa:[B
 
     invoke-direct {v1, v2, v3}, Lorg/bouncycastle/asn1/ibl/cgv;-><init>(Lyou/zta/sis/zta/rtg;[B)V
 

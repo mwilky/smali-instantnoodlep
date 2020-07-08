@@ -1,257 +1,375 @@
-.class Lcom/android/server/am/d;
-.super Landroid/content/BroadcastReceiver;
+.class Lcom/android/server/am/D;
+.super Ljava/lang/Object;
 .source ""
 
 
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/am/OnePlusHighPowerDetector;->rm()V
-.end annotation
+# static fields
+.field public static final GG:I = 0x8
 
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
+.field public static final HG:I = 0x800
+
+.field public static final IG:I = 0x2000
+
+.field public static final JG:I = 0x20000000
+
+.field public static final KG:I = 0x40000000
+
+.field public static final sn:I = 0x2
+
+.field public static final tn:I = 0x4
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+.field public final AG:Ljava/lang/String;
+
+.field public final CG:Lcom/android/server/am/tsu;
+
+.field DG:Z
+
+.field private EG:I
+
+.field private final FG:Ljava/lang/Object;
+
+.field public hn:I
+
+.field public final mPackageName:Ljava/lang/String;
+
+.field public final mPid:I
+
+.field public mPss:J
+
+.field public final mUid:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/OnePlusHighPowerDetector;)V
-    .locals 0
+.method public constructor <init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
+    .locals 1
 
-    iput-object p1, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/server/am/D;->DG:Z
+
+    iput v0, p0, Lcom/android/server/am/D;->EG:I
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lcom/android/server/am/D;->FG:Ljava/lang/Object;
+
+    iput p1, p0, Lcom/android/server/am/D;->mUid:I
+
+    iput p2, p0, Lcom/android/server/am/D;->mPid:I
+
+    iput-object p3, p0, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+
+    iput-boolean p5, p0, Lcom/android/server/am/D;->DG:Z
+
+    iput-object p6, p0, Lcom/android/server/am/D;->CG:Lcom/android/server/am/tsu;
+
+    iput-object p4, p0, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
+    .locals 7
+
+    iget v1, p5, Lcom/android/server/am/tsu;->mUid:I
+
+    move-object v0, p0
+
+    move v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move v5, p4
+
+    move-object v6, p5
+
+    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/D;-><init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 9
+.method ad()V
+    .locals 1
 
-    const/4 p1, 0x1
-
-    new-array v0, p1, [I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x12
-
-    aput v2, v0, v1
-
-    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 v0, -0x1
-
-    const-string v2, "level"
-
-    invoke-virtual {p2, v2, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v2
-
-    const-string v3, "scale"
-
-    invoke-virtual {p2, v3, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result p2
-
-    if-nez p2, :cond_1
-
-    const-string p0, "OHPD"
-
-    const-string p1, "[BgDetect] batt scale is 0"
-
-    invoke-static {p0, p1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_1
-    const/16 v0, 0x64
-
-    mul-int/2addr v2, v0
-
-    div-int/2addr v2, p2
-
-    if-gt v2, v0, :cond_5
-
-    if-gez v2, :cond_2
-
-    goto/16 :goto_0
-
-    :cond_2
-    sget-object p2, Lcom/android/server/am/OnePlusHighPowerDetector;->GB:Ljava/lang/Object;
-
-    monitor-enter p2
+    monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget v0, p0, Lcom/android/server/am/D;->EG:I
 
-    iget v0, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Xy:I
+    add-int/lit8 v0, v0, 0x1
 
-    if-lez v0, :cond_4
+    iput v0, p0, Lcom/android/server/am/D;->EG:I
 
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+    monitor-exit p0
 
-    iget v0, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Xy:I
+    return-void
 
-    sub-int/2addr v0, v2
+    :catchall_0
+    move-exception v0
 
-    if-lt v0, p1, :cond_4
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+    throw v0
+.end method
 
-    move-result-wide v3
+.method bd()I
+    .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+    monitor-enter p0
 
-    iget-wide v5, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Yy:J
+    :try_start_0
+    iget v0, p0, Lcom/android/server/am/D;->EG:I
 
-    const-wide/16 v7, 0x0
+    monitor-exit p0
 
-    cmp-long v0, v5, v7
+    return v0
 
-    if-lez v0, :cond_3
+    :catchall_0
+    move-exception v0
 
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    iget-wide v5, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Yy:J
+    throw v0
+.end method
 
-    sub-long v5, v3, v5
+.method cd()V
+    .locals 1
 
-    sget-object v0, Lcom/android/server/am/OnePlusHighPowerDetector;->tB:[I
+    monitor-enter p0
 
-    aget v0, v0, v1
+    :try_start_0
+    iget v0, p0, Lcom/android/server/am/D;->EG:I
 
-    int-to-long v7, v0
+    add-int/lit8 v0, v0, -0x1
 
-    cmp-long v0, v5, v7
+    iput v0, p0, Lcom/android/server/am/D;->EG:I
 
-    if-gtz v0, :cond_3
+    monitor-exit p0
 
-    const-string v0, "OHPD"
+    return-void
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    :catchall_0
+    move-exception v0
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const-string v6, "[BgDetect] batt level ("
+    throw v0
+.end method
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public dd()V
+    .locals 3
 
-    iget-object v6, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object v0, p0, Lcom/android/server/am/D;->FG:Ljava/lang/Object;
 
-    iget v6, v6, Lcom/android/server/am/OnePlusHighPowerDetector;->Xy:I
+    monitor-enter v0
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    :try_start_0
+    iget v1, p0, Lcom/android/server/am/D;->mPid:I
 
-    const-string v6, " to "
+    const/4 v2, 0x0
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v2, v2}, Landroid/os/Debug;->getPss(I[J[J)J
 
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-wide v1
 
-    const-string v6, ") within "
+    iput-wide v1, p0, Lcom/android/server/am/D;->mPss:J
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iget-wide v6, v6, Lcom/android/server/am/OnePlusHighPowerDetector;->Yy:J
-
-    sub-long v6, v3, v6
-
-    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v0, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput-boolean p1, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Zy:Z
-
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iget-boolean v0, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Jz:Z
-
-    if-nez v0, :cond_3
-
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput v2, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Lz:I
-
-    iget-object v0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput-boolean p1, v0, Lcom/android/server/am/OnePlusHighPowerDetector;->Jz:Z
-
-    iget-object p1, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput-boolean v1, p1, Lcom/android/server/am/OnePlusHighPowerDetector;->Kz:Z
-
-    iget-object p1, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput v1, p1, Lcom/android/server/am/OnePlusHighPowerDetector;->Mz:I
-
-    const-string p1, "OHPD"
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "[BgDetect] Native monitoring start, reset the counter, level = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iget v1, v1, Lcom/android/server/am/OnePlusHighPowerDetector;->Lz:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_3
-    iget-object p1, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput-wide v3, p1, Lcom/android/server/am/OnePlusHighPowerDetector;->Yy:J
-
-    :cond_4
-    iget-object p0, p0, Lcom/android/server/am/d;->this$0:Lcom/android/server/am/OnePlusHighPowerDetector;
-
-    iput v2, p0, Lcom/android/server/am/OnePlusHighPowerDetector;->Xy:I
-
-    monitor-exit p2
+    monitor-exit v0
 
     return-void
 
     :catchall_0
     move-exception p0
 
-    monitor-exit p2
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p0
+.end method
 
-    :cond_5
-    :goto_0
+.method ed()V
+    .locals 1
+
+    monitor-enter p0
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    iput v0, p0, Lcom/android/server/am/D;->EG:I
+
+    monitor-exit p0
+
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method fto(I)V
+    .locals 1
+
+    iget v0, p0, Lcom/android/server/am/D;->hn:I
+
+    not-int p1, p1
+
+    and-int/2addr p1, v0
+
+    iput p1, p0, Lcom/android/server/am/D;->hn:I
+
+    return-void
+.end method
+
+.method public getFlag()I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/am/D;->hn:I
+
+    return p0
+.end method
+
+.method public getPackageName()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public getPid()I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/am/D;->mPid:I
+
+    return p0
+.end method
+
+.method public getPss()J
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/server/am/D;->FG:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    iget-wide v1, p0, Lcom/android/server/am/D;->mPss:J
+
+    monitor-exit v0
+
+    return-wide v1
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
+.method isShowing()Z
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/am/D;->hn:I
+
+    and-int/lit16 p0, p0, 0x2000
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method oxb(I)V
+    .locals 1
+
+    iget v0, p0, Lcom/android/server/am/D;->hn:I
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Lcom/android/server/am/D;->hn:I
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "ProcRecord { "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "uid="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/am/D;->mUid:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", pkg="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", pid="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/am/D;->mPid:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", procName="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, " }"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method

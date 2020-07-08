@@ -4,17 +4,9 @@
 
 
 # static fields
-.field private static final PARAM_BACKCOVER_COLOR:I = 0x2
+.field private static final AW:I = 0x17
 
-.field private static final PARAM_INTRANET:I = 0x1
-
-.field private static final TAG:Ljava/lang/String; = "ParamReader"
-
-.field private static final eW:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
-
-.field private static final fW:I = 0x7
-
-.field private static gW:Ljava/util/ArrayList;
+.field private static DW:Ljava/util/ArrayList; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -24,7 +16,17 @@
     .end annotation
 .end field
 
-.field private static hW:Z
+.field private static EW:Z = false
+
+.field private static final PARAM_BACKCOVER_COLOR:I = 0x2
+
+.field private static final PARAM_INTRANET:I = 0x1
+
+.field private static final TAG:Ljava/lang/String; = "ParamReader"
+
+.field private static final yW:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
+
+.field private static final zW:I = 0x7
 
 
 # direct methods
@@ -35,11 +37,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/secrecy/zta/zta/sis;->gW:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/secrecy/zta/zta/sis;->DW:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/sis;->hW:Z
+    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/sis;->EW:Z
 
     return-void
 .end method
@@ -50,6 +52,152 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method public static Ae()Ljava/lang/String;
+    .locals 7
+
+    const-string v0, "ParamReader"
+
+    const-string v1, ""
+
+    :try_start_0
+    new-instance v2, Lcom/android/server/secrecy/zta/zta/you;
+
+    invoke-direct {v2}, Lcom/android/server/secrecy/zta/zta/you;-><init>()V
+
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->getOneplusParamService()Lsis/you/you/sis/zta/zta;
+
+    move-result-object v3
+
+    const/4 v4, 0x7
+
+    invoke-interface {v3, v4, v2}, Lsis/you/you/sis/zta/zta;->zta(ILsis/you/you/sis/zta/zta$sis;)V
+
+    sget-object v2, Lcom/android/server/secrecy/zta/zta/sis;->DW:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    new-array v2, v2, [B
+
+    const/4 v3, 0x0
+
+    move v4, v3
+
+    :goto_0
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->DW:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+
+    if-ge v4, v5, :cond_1
+
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->DW:Ljava/util/ArrayList;
+
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Byte;
+
+    invoke-virtual {v5}, Ljava/lang/Byte;->byteValue()B
+
+    move-result v5
+
+    if-nez v5, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->DW:Ljava/util/ArrayList;
+
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Byte;
+
+    invoke-virtual {v5}, Ljava/lang/Byte;->byteValue()B
+
+    move-result v5
+
+    aput-byte v5, v2, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    :goto_1
+    new-array v5, v4, [B
+
+    invoke-static {v2, v3, v5, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    new-instance v2, Ljava/lang/String;
+
+    invoke-direct {v2, v5}, Ljava/lang/String;-><init>([B)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+
+    :try_start_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "getUpgradeTime P~ result = "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    move-object v1, v2
+
+    goto :goto_3
+
+    :catch_0
+    move-exception v1
+
+    move-object v6, v2
+
+    move-object v2, v1
+
+    move-object v1, v6
+
+    goto :goto_2
+
+    :catch_1
+    move-exception v2
+
+    :goto_2
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "getParamBuf throws exception: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_3
+    return-object v1
 .end method
 
 .method public static B(I)Z
@@ -113,10 +261,92 @@
     return v1
 .end method
 
+.method public static Be()Z
+    .locals 7
+
+    const-string v0, "ParamReader"
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    :try_start_0
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->getOneplusParamService()Lsis/you/you/sis/zta/zta;
+
+    move-result-object v3
+
+    invoke-interface {v3, v1}, Lsis/you/you/sis/zta/zta;->getParamIntSYNC(I)I
+
+    move-result v3
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+
+    :try_start_1
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "isFlashedInternal P~ result = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v0, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v4
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v4
+
+    move v3, v2
+
+    :goto_0
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "getParamIntSYNC throws exception: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v0, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_1
+    const/4 v0, 0x3
+
+    if-ne v3, v0, :cond_0
+
+    goto :goto_2
+
+    :cond_0
+    move v1, v2
+
+    :goto_2
+    return v1
+.end method
+
 .method static synthetic cno(Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
-    sput-object p0, Lcom/android/server/secrecy/zta/zta/sis;->gW:Ljava/util/ArrayList;
+    sput-object p0, Lcom/android/server/secrecy/zta/zta/sis;->DW:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -378,6 +608,67 @@
     return-object v3
 .end method
 
+.method public static getCarrierId()I
+    .locals 5
+
+    const-string v0, "ParamReader"
+
+    const/4 v1, 0x0
+
+    :try_start_0
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->getOneplusParamService()Lsis/you/you/sis/zta/zta;
+
+    move-result-object v2
+
+    const/16 v3, 0x17
+
+    invoke-interface {v2, v3}, Lsis/you/you/sis/zta/zta;->getParamIntSYNC(I)I
+
+    move-result v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "getCarrierId result = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "getCarrierId throws exception: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
+    return v1
+.end method
+
 .method private static getOneplusParamService()Lsis/you/you/sis/zta/zta;
     .locals 3
 
@@ -416,238 +707,71 @@
     return-object v0
 .end method
 
-.method static synthetic v(Z)Z
-    .locals 0
-
-    sput-boolean p0, Lcom/android/server/secrecy/zta/zta/sis;->hW:Z
-
-    return p0
-.end method
-
-.method public static ye()Ljava/lang/String;
-    .locals 7
+.method public static setCarrierId(I)Z
+    .locals 4
 
     const-string v0, "ParamReader"
 
-    const-string v1, ""
+    const/4 v1, 0x0
 
     :try_start_0
-    new-instance v2, Lcom/android/server/secrecy/zta/zta/you;
-
-    invoke-direct {v2}, Lcom/android/server/secrecy/zta/zta/you;-><init>()V
-
     invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->getOneplusParamService()Lsis/you/you/sis/zta/zta;
-
-    move-result-object v3
-
-    const/4 v4, 0x7
-
-    invoke-interface {v3, v4, v2}, Lsis/you/you/sis/zta/zta;->zta(ILsis/you/you/sis/zta/zta$sis;)V
-
-    sget-object v2, Lcom/android/server/secrecy/zta/zta/sis;->gW:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v2
-
-    new-array v2, v2, [B
-
-    const/4 v3, 0x0
-
-    move v4, v3
-
-    :goto_0
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->gW:Ljava/util/ArrayList;
-
-    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
-
-    move-result v5
-
-    if-ge v4, v5, :cond_1
-
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->gW:Ljava/util/ArrayList;
-
-    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/Byte;
-
-    invoke-virtual {v5}, Ljava/lang/Byte;->byteValue()B
-
-    move-result v5
-
-    if-nez v5, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->gW:Ljava/util/ArrayList;
-
-    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/Byte;
-
-    invoke-virtual {v5}, Ljava/lang/Byte;->byteValue()B
-
-    move-result v5
-
-    aput-byte v5, v2, v4
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    :goto_1
-    new-array v5, v4, [B
-
-    invoke-static {v2, v3, v5, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    new-instance v2, Ljava/lang/String;
-
-    invoke-direct {v2, v5}, Ljava/lang/String;-><init>([B)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
-
-    :try_start_1
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "getUpgradeTime P~ result = "
-
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    move-object v1, v2
-
-    goto :goto_3
-
-    :catch_0
-    move-exception v1
-
-    move-object v6, v2
-
-    move-object v2, v1
-
-    move-object v1, v6
-
-    goto :goto_2
-
-    :catch_1
-    move-exception v2
-
-    :goto_2
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "getParamBuf throws exception: "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    const/16 v3, 0x17
 
-    :goto_3
-    return-object v1
-.end method
+    invoke-interface {v2, v3, p0}, Lsis/you/you/sis/zta/zta;->zta(II)Z
 
-.method public static ze()Z
-    .locals 7
+    move-result v1
 
-    const-string v0, "ParamReader"
+    new-instance p0, Ljava/lang/StringBuilder;
 
-    const/4 v1, 0x1
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/4 v2, 0x0
+    const-string v2, "setCarrierId result = "
 
-    :try_start_0
-    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->getOneplusParamService()Lsis/you/you/sis/zta/zta;
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-interface {v3, v1}, Lsis/you/you/sis/zta/zta;->getParamIntSYNC(I)I
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result v3
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
-
-    :try_start_1
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "isFlashedInternal P~ result = "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v0, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v4
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    :catch_1
-    move-exception v4
+    :catch_0
+    move-exception p0
 
-    move v3, v2
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "setCarrierId throws exception: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "getParamIntSYNC throws exception: "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v0, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :goto_1
-    const/4 v0, 0x3
-
-    if-ne v3, v0, :cond_0
-
-    goto :goto_2
-
-    :cond_0
-    move v1, v2
-
-    :goto_2
     return v1
+.end method
+
+.method static synthetic u(Z)Z
+    .locals 0
+
+    sput-boolean p0, Lcom/android/server/secrecy/zta/zta/sis;->EW:Z
+
+    return p0
 .end method

@@ -73,7 +73,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/android/server/you/wtn;->Ee()Z
+    invoke-virtual {p1}, Lcom/android/server/you/wtn;->Ge()Z
 
     move-result p1
 

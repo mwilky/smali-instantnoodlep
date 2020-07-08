@@ -15,8 +15,6 @@
 
 
 # instance fields
-.field public final aC:Z
-
 .field public final mCurAdj:I
 
 .field public final mPid:I
@@ -26,6 +24,8 @@
 .field public final mThread:Landroid/app/IApplicationThread;
 
 .field public final mUid:I
+
+.field public final pC:Z
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     iput p4, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mCurAdj:I
 
-    iput-boolean p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->aC:Z
+    iput-boolean p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->pC:Z
 
     iput-object p6, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mThread:Landroid/app/IApplicationThread;
 

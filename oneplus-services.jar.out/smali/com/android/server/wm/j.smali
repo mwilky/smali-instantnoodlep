@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/k;->setBubbleExpanded(Z)V
+    value = Lcom/android/server/wm/l;->pc(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/k;
+.field final synthetic this$0:Lcom/android/server/wm/l;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/k;)V
+.method constructor <init>(Lcom/android/server/wm/l;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/k;
+    iput-object p1, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,16 +34,55 @@
 
 
 # virtual methods
-.method public run()V
+.method public onGlobalLayout()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/k;
+    iget-object v0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/l;
 
-    invoke-static {v0}, Lcom/android/server/wm/k;->gck(Lcom/android/server/wm/k;)V
+    iget-object v0, v0, Lcom/android/server/wm/l;->Oga:Landroid/view/View;
 
-    iget-object p0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/k;
+    if-eqz v0, :cond_0
 
-    invoke-static {p0}, Lcom/android/server/wm/k;->oif(Lcom/android/server/wm/k;)V
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    iget-object p0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/l;
+
+    iget-object p0, p0, Lcom/android/server/wm/l;->Oga:Landroid/view/View;
+
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result p0
+
+    sput p0, Lcom/android/server/wm/l;->jha:I
+
+    sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz p0, :cond_0
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "sIMEButtonSize = "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v0, Lcom/android/server/wm/l;->jha:I
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OpQuickReply"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     return-void
 .end method

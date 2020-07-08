@@ -45,7 +45,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_11
+    if-eqz p1, :cond_13
 
     const-string p1, "code"
 
@@ -65,7 +65,7 @@
 
     iget-object p0, p0, Lcom/oneplus/server/you;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
 
-    invoke-static {p0, v0}, Lcom/oneplus/server/DynamicVsyncManager;->ssp(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
+    invoke-static {p0, v0}, Lcom/oneplus/server/DynamicVsyncManager;->cno(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
 
     goto/16 :goto_0
 
@@ -82,7 +82,7 @@
 
     iget-object p0, p0, Lcom/oneplus/server/you;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
 
-    invoke-static {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->ssp(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
+    invoke-static {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->cno(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
 
     goto/16 :goto_0
 
@@ -411,7 +411,7 @@
 
     invoke-static {p0, p1, p2}, Lcom/oneplus/server/DynamicVsyncManager;->kth(Lcom/oneplus/server/DynamicVsyncManager;D)D
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_c
     const-string p2, "@delay@"
@@ -434,7 +434,7 @@
 
     invoke-static {p0, p1, p2}, Lcom/oneplus/server/DynamicVsyncManager;->bio(Lcom/oneplus/server/DynamicVsyncManager;D)D
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_d
     const-string p2, "@reverse@"
@@ -510,13 +510,43 @@
 
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result p2
 
-    if-eqz p1, :cond_11
+    if-eqz p2, :cond_11
 
     iget-object p0, p0, Lcom/oneplus/server/you;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
 
     invoke-static {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->tsu(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
+
+    goto :goto_0
+
+    :cond_11
+    const-string p2, "flingon"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_12
+
+    iget-object p0, p0, Lcom/oneplus/server/you;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
+
+    invoke-static {p0, v0}, Lcom/oneplus/server/DynamicVsyncManager;->rtg(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
+
+    goto :goto_0
+
+    :cond_12
+    const-string p2, "flingoff"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_13
+
+    iget-object p0, p0, Lcom/oneplus/server/you;->this$0:Lcom/oneplus/server/DynamicVsyncManager;
+
+    invoke-static {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->rtg(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -527,7 +557,7 @@
 
     invoke-virtual {p0}, Ljava/lang/Exception;->getStackTrace()[Ljava/lang/StackTraceElement;
 
-    :cond_11
+    :cond_13
     :goto_0
     return-void
 .end method

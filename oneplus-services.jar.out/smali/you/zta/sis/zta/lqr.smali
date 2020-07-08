@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic val$a:B
+.field final synthetic aVa:Lyou/zta/sis/zta/wtn$zta;
 
-.field final synthetic zUa:Lyou/zta/sis/zta/wtn$zta;
+.field final synthetic val$a:B
 
 
 # direct methods
 .method constructor <init>(Lyou/zta/sis/zta/wtn$zta;B)V
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/sis/zta/lqr;->zUa:Lyou/zta/sis/zta/wtn$zta;
+    iput-object p1, p0, Lyou/zta/sis/zta/lqr;->aVa:Lyou/zta/sis/zta/wtn$zta;
 
     iput-byte p2, p0, Lyou/zta/sis/zta/lqr;->val$a:B
 
@@ -52,7 +52,7 @@
 
     invoke-direct {p1}, Lyou/zta/sis/zta/cgv;-><init>()V
 
-    iget-object v0, p0, Lyou/zta/sis/zta/lqr;->zUa:Lyou/zta/sis/zta/wtn$zta;
+    iget-object v0, p0, Lyou/zta/sis/zta/lqr;->aVa:Lyou/zta/sis/zta/wtn$zta;
 
     iget-byte p0, p0, Lyou/zta/sis/zta/lqr;->val$a:B
 

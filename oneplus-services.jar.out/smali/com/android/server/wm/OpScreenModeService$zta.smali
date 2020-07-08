@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field Aha:I
+.field Uha:I
 
-.field Bha:[I
+.field Vha:I
+
+.field Wha:[I
 
 .field mode:Landroid/view/Display$Mode;
 
 .field final synthetic this$0:Lcom/android/server/wm/OpScreenModeService;
-
-.field zha:I
 
 
 # direct methods
@@ -36,15 +36,15 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     const/4 v0, 0x0
 
     new-array v1, v0, [I
 
-    iput-object v1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Bha:[I
+    iput-object v1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Wha:[I
 
     iput-object p2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->mode:Landroid/view/Display$Mode;
 
@@ -58,7 +58,7 @@
 
     if-ne v1, v3, :cond_0
 
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     iput v0, p1, Lcom/android/server/wm/OpScreenModeService;->mHighResolution:I
 
@@ -76,7 +76,7 @@
     move-result-object p1
 
     :goto_1
-    iput-object p1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Bha:[I
+    iput-object p1, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Wha:[I
 
     goto :goto_3
 
@@ -89,7 +89,7 @@
 
     if-ne v1, v3, :cond_3
 
-    iput v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Aha:I
+    iput v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Vha:I
 
     invoke-static {p1}, Lcom/android/server/wm/OpScreenModeService;->access$200(Lcom/android/server/wm/OpScreenModeService;)Ljava/lang/String;
 
@@ -166,7 +166,7 @@
 
     if-gez p1, :cond_4
 
-    iput v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iput v2, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
     goto :goto_4
 
@@ -208,7 +208,7 @@
     if-gez p1, :cond_6
 
     :cond_5
-    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->zha:I
+    iput v0, p0, Lcom/android/server/wm/OpScreenModeService$zta;->Uha:I
 
     :cond_6
     :goto_4

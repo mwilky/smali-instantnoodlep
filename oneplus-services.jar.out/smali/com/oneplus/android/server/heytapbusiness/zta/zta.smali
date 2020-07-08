@@ -23,11 +23,11 @@
 
 
 # static fields
-.field protected static final Jpa:Ljava/lang/String; = "com.nearme.instant.platform"
+.field protected static final dqa:Ljava/lang/String; = "com.nearme.instant.platform"
 
-.field protected static final Kpa:Ljava/lang/String; = "miniprogram"
+.field protected static final eqa:Ljava/lang/String; = "miniprogram"
 
-.field protected static final Lpa:I = 0x14
+.field protected static final fqa:I = 0x14
 
 
 # instance fields
@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public abstract Lf()Ljava/lang/String;
+.method public abstract Nf()Ljava/lang/String;
 .end method
 
 .method public abstract dump(Ljava/io/PrintWriter;)V

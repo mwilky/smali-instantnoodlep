@@ -27,17 +27,17 @@
 
 
 # instance fields
+.field Bt:J
+
+.field Ct:J
+
+.field Dt:I
+
+.field Et:Ljava/lang/String;
+
 .field createTime:Ljava/lang/String;
 
-.field mt:J
-
-.field nt:J
-
-.field ot:I
-
 .field pkgName:Ljava/lang/String;
-
-.field pt:Ljava/lang/String;
 
 .field final synthetic this$0:Lcom/android/server/am/les;
 
@@ -66,17 +66,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->mt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Bt:J
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->nt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Ct:J
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/am/les$sis;->ot:I
+    iput v0, p0, Lcom/android/server/am/les$sis;->Dt:I
 
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/server/am/les$sis;->pt:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/les$sis;->Et:Ljava/lang/String;
 
     monitor-enter p0
 
@@ -89,9 +89,9 @@
 
     iput-object v0, p0, Lcom/android/server/am/les$sis;->pkgName:Ljava/lang/String;
 
-    iget-object p2, p2, Lcom/android/server/am/les$igw;->Kt:Ljava/lang/String;
+    iget-object p2, p2, Lcom/android/server/am/les$igw;->Zt:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/server/am/les$sis;->pt:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/les$sis;->Et:Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/am/les;->dma(Lcom/android/server/am/les;)Ljava/text/SimpleDateFormat;
 
@@ -115,7 +115,7 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/am/les$sis;->mt:J
+    iput-wide p1, p0, Lcom/android/server/am/les$sis;->Bt:J
 
     monitor-exit p0
 
@@ -160,17 +160,17 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->mt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Bt:J
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->nt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Ct:J
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/android/server/am/les$sis;->ot:I
+    iput p1, p0, Lcom/android/server/am/les$sis;->Dt:I
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/am/les$sis;->pt:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/les$sis;->Et:Ljava/lang/String;
 
     monitor-enter p2
 
@@ -187,21 +187,21 @@
 
     iput-object p1, p0, Lcom/android/server/am/les$sis;->createTime:Ljava/lang/String;
 
-    iget-wide v0, p2, Lcom/android/server/am/les$sis;->mt:J
+    iget-wide v0, p2, Lcom/android/server/am/les$sis;->Bt:J
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->mt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Bt:J
 
-    iget-wide v0, p2, Lcom/android/server/am/les$sis;->nt:J
+    iget-wide v0, p2, Lcom/android/server/am/les$sis;->Ct:J
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->nt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Ct:J
 
-    iget p1, p2, Lcom/android/server/am/les$sis;->ot:I
+    iget p1, p2, Lcom/android/server/am/les$sis;->Dt:I
 
-    iput p1, p0, Lcom/android/server/am/les$sis;->ot:I
+    iput p1, p0, Lcom/android/server/am/les$sis;->Dt:I
 
-    iget-object p1, p2, Lcom/android/server/am/les$sis;->pt:Ljava/lang/String;
+    iget-object p1, p2, Lcom/android/server/am/les$sis;->Et:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/android/server/am/les$sis;->pt:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/les$sis;->Et:Ljava/lang/String;
 
     monitor-exit p2
 
@@ -225,13 +225,13 @@
     return-void
 .end method
 
-.method private Kn()V
+.method private Nn()V
     .locals 4
 
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/android/server/am/les$sis;->ot:I
+    iget v0, p0, Lcom/android/server/am/les$sis;->Dt:I
 
     if-nez v0, :cond_0
 
@@ -239,11 +239,11 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/am/les$sis;->mt:J
+    iget-wide v2, p0, Lcom/android/server/am/les$sis;->Bt:J
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/server/am/les$sis;->nt:J
+    iput-wide v0, p0, Lcom/android/server/am/les$sis;->Ct:J
 
     :cond_0
     monitor-exit p0
@@ -260,15 +260,15 @@
     throw v0
 .end method
 
-.method private _a(I)V
+.method private ab(I)V
     .locals 0
 
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/am/les$sis;->Kn()V
+    invoke-direct {p0}, Lcom/android/server/am/les$sis;->Nn()V
 
-    iput p1, p0, Lcom/android/server/am/les$sis;->ot:I
+    iput p1, p0, Lcom/android/server/am/les$sis;->Dt:I
 
     monitor-exit p0
 
@@ -294,9 +294,9 @@
     return v0
 
     :cond_0
-    iget-wide v1, p0, Lcom/android/server/am/les$sis;->mt:J
+    iget-wide v1, p0, Lcom/android/server/am/les$sis;->Bt:J
 
-    iget-wide v3, p1, Lcom/android/server/am/les$sis;->mt:J
+    iget-wide v3, p1, Lcom/android/server/am/les$sis;->Bt:J
 
     cmp-long v1, v1, v3
 
@@ -341,7 +341,7 @@
 .method static synthetic zta(Lcom/android/server/am/les$sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/les$sis;->Kn()V
+    invoke-direct {p0}, Lcom/android/server/am/les$sis;->Nn()V
 
     return-void
 .end method
@@ -349,7 +349,7 @@
 .method static synthetic zta(Lcom/android/server/am/les$sis;I)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/am/les$sis;->_a(I)V
+    invoke-direct {p0, p1}, Lcom/android/server/am/les$sis;->ab(I)V
 
     return-void
 .end method
@@ -392,23 +392,23 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/android/server/am/les$sis;->ot:I
+    iget v0, p0, Lcom/android/server/am/les$sis;->Dt:I
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/les$sis;->Kn()V
+    invoke-direct {p0}, Lcom/android/server/am/les$sis;->Nn()V
 
     :cond_0
-    iget v0, p1, Lcom/android/server/am/les$sis;->ot:I
+    iget v0, p1, Lcom/android/server/am/les$sis;->Dt:I
 
     if-nez v0, :cond_1
 
-    invoke-direct {p1}, Lcom/android/server/am/les$sis;->Kn()V
+    invoke-direct {p1}, Lcom/android/server/am/les$sis;->Nn()V
 
     :cond_1
-    iget-wide v0, p0, Lcom/android/server/am/les$sis;->nt:J
+    iget-wide v0, p0, Lcom/android/server/am/les$sis;->Ct:J
 
-    iget-wide v2, p1, Lcom/android/server/am/les$sis;->nt:J
+    iget-wide v2, p1, Lcom/android/server/am/les$sis;->Ct:J
 
     cmp-long v0, v0, v2
 
@@ -421,9 +421,9 @@
     return p1
 
     :cond_2
-    iget-wide v0, p0, Lcom/android/server/am/les$sis;->nt:J
+    iget-wide v0, p0, Lcom/android/server/am/les$sis;->Ct:J
 
-    iget-wide v2, p1, Lcom/android/server/am/les$sis;->nt:J
+    iget-wide v2, p1, Lcom/android/server/am/les$sis;->Ct:J
 
     cmp-long p1, v0, v2
 

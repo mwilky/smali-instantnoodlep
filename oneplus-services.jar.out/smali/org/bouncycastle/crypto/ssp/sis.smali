@@ -34,7 +34,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/ssp/sis;->param:Lorg/bouncycastle/crypto/wtn/rtg;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/bvj;->Wj()Ljava/security/SecureRandom;
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/bvj;->Zj()Ljava/security/SecureRandom;
 
     move-result-object p0
 

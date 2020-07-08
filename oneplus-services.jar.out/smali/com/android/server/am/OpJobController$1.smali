@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/v;
+    value = Lcom/android/server/am/x;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/v;
+.field final synthetic this$0:Lcom/android/server/am/x;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/v;)V
+.method constructor <init>(Lcom/android/server/am/x;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/OpJobController$1;->this$0:Lcom/android/server/am/v;
+    iput-object p1, p0, Lcom/android/server/am/OpJobController$1;->this$0:Lcom/android/server/am/x;
 
     invoke-direct {p0}, Landroid/app/IUidObserver$Stub;-><init>()V
 
@@ -61,7 +61,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/server/am/v;->access$000()Lcom/android/server/am/v;
+    invoke-static {}, Lcom/android/server/am/x;->access$000()Lcom/android/server/am/x;
 
     move-result-object p0
 
@@ -70,7 +70,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/am/v;->access$100(I)Z
+    invoke-static {p1}, Lcom/android/server/am/x;->access$100(I)Z
 
     move-result p0
 
@@ -92,13 +92,13 @@
 
     move-result-object p2
 
-    invoke-static {p0, p2}, Lcom/android/server/am/v;->rtg(ILjava/lang/String;)V
+    invoke-static {p0, p2}, Lcom/android/server/am/x;->rtg(ILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/server/am/v;->access$000()Lcom/android/server/am/v;
+    invoke-static {}, Lcom/android/server/am/x;->access$000()Lcom/android/server/am/x;
 
     move-result-object p0
 
-    invoke-static {p0, p1}, Lcom/android/server/am/v;->you(Lcom/android/server/am/v;I)V
+    invoke-static {p0, p1}, Lcom/android/server/am/x;->you(Lcom/android/server/am/x;I)V
 
     :cond_1
     return-void
@@ -123,7 +123,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/server/am/v;->access$000()Lcom/android/server/am/v;
+    invoke-static {}, Lcom/android/server/am/x;->access$000()Lcom/android/server/am/x;
 
     move-result-object p0
 
@@ -132,7 +132,7 @@
     return-void
 
     :cond_0
-    invoke-static {p1}, Lcom/android/server/am/v;->access$100(I)Z
+    invoke-static {p1}, Lcom/android/server/am/x;->access$100(I)Z
 
     move-result p0
 
@@ -160,13 +160,13 @@
 
     move-result-object p3
 
-    invoke-static {p0, p3}, Lcom/android/server/am/v;->rtg(ILjava/lang/String;)V
+    invoke-static {p0, p3}, Lcom/android/server/am/x;->rtg(ILjava/lang/String;)V
 
-    invoke-static {}, Lcom/android/server/am/v;->access$000()Lcom/android/server/am/v;
+    invoke-static {}, Lcom/android/server/am/x;->access$000()Lcom/android/server/am/x;
 
     move-result-object p0
 
-    invoke-static {p0, p1, p2}, Lcom/android/server/am/v;->zta(Lcom/android/server/am/v;II)V
+    invoke-static {p0, p1, p2}, Lcom/android/server/am/x;->zta(Lcom/android/server/am/x;II)V
 
     :cond_1
     return-void
