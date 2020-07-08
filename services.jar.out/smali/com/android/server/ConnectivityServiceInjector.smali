@@ -458,7 +458,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x10b
+    const/16 v2, 0x10c
 
     aput v2, v0, v1
 
@@ -567,7 +567,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x10b
+    const/16 v2, 0x10c
 
     aput v2, v0, v1
 

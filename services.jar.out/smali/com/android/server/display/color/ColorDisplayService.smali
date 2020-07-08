@@ -298,7 +298,7 @@
 
     new-array v3, v2, [I
 
-    const/16 v4, 0x10d
+    const/16 v4, 0x10f
 
     aput v4, v3, v0
 
@@ -310,7 +310,7 @@
 
     new-array v3, v2, [I
 
-    const/16 v5, 0x10c
+    const/16 v5, 0x10e
 
     aput v5, v3, v0
 
@@ -3317,7 +3317,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x10d
+    const/16 v3, 0x10f
 
     aput v3, v1, v2
 
@@ -3329,7 +3329,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0x10c
+    const/16 v3, 0x10e
 
     aput v3, v1, v2
 
@@ -3941,7 +3941,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v2, 0x10d
+    const/16 v2, 0x10f
 
     const/4 v3, 0x0
 
@@ -3957,7 +3957,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v4, 0x10c
+    const/16 v4, 0x10e
 
     aput v4, v1, v3
 
@@ -4223,7 +4223,7 @@
     :goto_1
     new-array v2, v3, [I
 
-    const/16 v5, 0x10d
+    const/16 v5, 0x10f
 
     aput v5, v2, v4
 
@@ -4235,7 +4235,7 @@
 
     new-array v2, v3, [I
 
-    const/16 v3, 0x10c
+    const/16 v3, 0x10e
 
     aput v3, v2, v4
 

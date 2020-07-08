@@ -187,7 +187,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x10f
+    const/16 v3, 0x111
 
     aput v3, v1, v2
 

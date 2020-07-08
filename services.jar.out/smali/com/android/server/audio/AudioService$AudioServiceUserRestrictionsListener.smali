@@ -63,7 +63,7 @@
 
     iget-object v2, p0, Lcom/android/server/audio/AudioService$AudioServiceUserRestrictionsListener;->this$0:Lcom/android/server/audio/AudioService;
 
-    invoke-static {v2, v0, p1}, Lcom/android/server/audio/AudioService;->access$9700(Lcom/android/server/audio/AudioService;ZI)V
+    invoke-static {v2, v0, p1}, Lcom/android/server/audio/AudioService;->access$9800(Lcom/android/server/audio/AudioService;ZI)V
 
     :cond_0
     nop
@@ -132,7 +132,7 @@
 
     iget-object v2, p0, Lcom/android/server/audio/AudioService$AudioServiceUserRestrictionsListener;->this$0:Lcom/android/server/audio/AudioService;
 
-    invoke-static {v2, v0, v4, p1}, Lcom/android/server/audio/AudioService;->access$9800(Lcom/android/server/audio/AudioService;ZII)V
+    invoke-static {v2, v0, v4, p1}, Lcom/android/server/audio/AudioService;->access$9900(Lcom/android/server/audio/AudioService;ZII)V
 
     :cond_5
     return-void

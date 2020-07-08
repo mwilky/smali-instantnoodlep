@@ -171,7 +171,7 @@
 .end method
 
 .method private handleConfigChangeEvent(Lorg/json/JSONObject;Ljava/lang/String;)V
-    .locals 10
+    .locals 11
 
     const-string v0, "DisplayOLC"
 
@@ -185,7 +185,7 @@
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    const v3, -0x3ef647d8
+    const-string v3, "LoadingSwitch"
 
     const-string v4, "HBMThresholdDelta"
 
@@ -195,36 +195,41 @@
 
     const/4 v7, 0x2
 
-    const/4 v8, 0x0
+    const/4 v8, 0x3
 
-    const/4 v9, 0x1
+    const/4 v9, 0x0
 
-    if-eq v2, v3, :cond_3
+    const/4 v10, 0x1
 
-    const v3, -0xf572f25
-
-    if-eq v2, v3, :cond_2
-
-    const v3, 0xed85780
-
-    if-eq v2, v3, :cond_1
+    sparse-switch v2, :sswitch_data_0
 
     :cond_0
     goto :goto_0
 
-    :cond_1
+    :sswitch_0
     :try_start_1
+    invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    move v1, v8
+
+    goto :goto_0
+
+    :sswitch_1
     invoke-virtual {p2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    move v1, v9
+    move v1, v10
 
     goto :goto_0
 
-    :cond_2
+    :sswitch_2
     invoke-virtual {p2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -235,25 +240,65 @@
 
     goto :goto_0
 
-    :cond_3
+    :sswitch_3
     invoke-virtual {p2, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    move v1, v8
+    move v1, v9
 
     :goto_0
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_7
 
-    if-eq v1, v9, :cond_6
+    if-eq v1, v10, :cond_5
 
-    if-eq v1, v7, :cond_4
+    if-eq v1, v7, :cond_3
+
+    if-eq v1, v8, :cond_1
 
     goto/16 :goto_2
 
-    :cond_4
+    :cond_1
+    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "LoadingSwitch: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v2, p0, Lcom/android/server/display/DisplayOLC;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "loading_switch"
+
+    if-eqz v1, :cond_2
+
+    move v9, v10
+
+    :cond_2
+    invoke-static {v2, v3, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    goto/16 :goto_2
+
+    :cond_3
     invoke-virtual {p1, v5}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
 
     move-result v1
@@ -282,16 +327,16 @@
 
     const-string/jumbo v3, "use_curve_gen_algo"
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_4
 
-    move v8, v9
+    move v9, v10
 
-    :cond_5
-    invoke-static {v2, v3, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    :cond_4
+    invoke-static {v2, v3, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     goto/16 :goto_2
 
-    :cond_6
+    :cond_5
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v1
@@ -299,9 +344,7 @@
     const/4 v2, 0x0
 
     :goto_1
-    const/4 v3, 0x3
-
-    if-ge v2, v3, :cond_7
+    if-ge v2, v8, :cond_6
 
     sget-object v3, Lcom/android/server/display/DisplayOLC;->HBM_THRESHOLD_DELTA:[I
 
@@ -349,10 +392,10 @@
 
     goto :goto_1
 
-    :cond_7
+    :cond_6
     goto :goto_2
 
-    :cond_8
+    :cond_7
     invoke-virtual {p1, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -383,12 +426,12 @@
 
     sget v1, Lcom/android/server/display/DisplayOLC;->mOpMinBrightnessLevel:I
 
-    if-ltz v1, :cond_9
+    if-ltz v1, :cond_8
 
-    sget v8, Lcom/android/server/display/DisplayOLC;->mOpMinBrightnessLevel:I
+    sget v9, Lcom/android/server/display/DisplayOLC;->mOpMinBrightnessLevel:I
 
-    :cond_9
-    sput v8, Lcom/android/server/display/DisplayOLC;->mOpMinBrightnessLevel:I
+    :cond_8
+    sput v9, Lcom/android/server/display/DisplayOLC;->mOpMinBrightnessLevel:I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -474,6 +517,16 @@
 
     :goto_3
     return-void
+
+    nop
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x3ef647d8 -> :sswitch_3
+        -0xf572f25 -> :sswitch_2
+        0xed85780 -> :sswitch_1
+        0x4c19d770 -> :sswitch_0
+    .end sparse-switch
 .end method
 
 .method private initOnlineConfig()Z

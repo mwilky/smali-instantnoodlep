@@ -392,7 +392,7 @@
 
     new-array v0, v1, [I
 
-    const/16 v2, 0xd7
+    const/16 v2, 0xd8
 
     aput v2, v0, v3
 

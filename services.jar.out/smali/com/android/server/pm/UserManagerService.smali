@@ -2824,7 +2824,7 @@
 
     new-array v7, v6, [I
 
-    const/16 v8, 0x129
+    const/16 v8, 0x12b
 
     aput v8, v7, v3
 

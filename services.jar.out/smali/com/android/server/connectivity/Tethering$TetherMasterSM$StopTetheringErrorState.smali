@@ -34,7 +34,7 @@
 .method public enter()V
     .locals 2
 
-    invoke-static {}, Lcom/android/server/connectivity/Tethering;->access$4300()Ljava/lang/String;
+    invoke-static {}, Lcom/android/server/connectivity/Tethering;->access$4500()Ljava/lang/String;
 
     move-result-object v0
 

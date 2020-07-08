@@ -1120,7 +1120,15 @@
     return-object v0
 .end method
 
-.method static synthetic access$1500()I
+.method static synthetic access$1500(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/NotificationManagerService$WorkerHandler;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService;->mHandler:Lcom/android/server/notification/NotificationManagerService$WorkerHandler;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1600()I
     .locals 1
 
     sget v0, Lcom/android/server/notification/NotificationManagerService;->MY_UID:I
@@ -1128,20 +1136,12 @@
     return v0
 .end method
 
-.method static synthetic access$1600()I
+.method static synthetic access$1700()I
     .locals 1
 
     sget v0, Lcom/android/server/notification/NotificationManagerService;->MY_PID:I
 
     return v0
-.end method
-
-.method static synthetic access$1700(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/NotificationManagerService$WorkerHandler;
-    .locals 1
-
-    iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService;->mHandler:Lcom/android/server/notification/NotificationManagerService$WorkerHandler;
-
-    return-object v0
 .end method
 
 .method static synthetic access$1800(Lcom/android/server/notification/NotificationManagerService;)V

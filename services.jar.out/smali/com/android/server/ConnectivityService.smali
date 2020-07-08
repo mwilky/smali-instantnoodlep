@@ -1960,7 +1960,7 @@
 
     new-array v0, v2, [I
 
-    const/16 v2, 0x123
+    const/16 v2, 0x125
 
     const/4 v5, 0x0
 
@@ -7552,7 +7552,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xda
+    const/16 v3, 0xdb
 
     aput v3, v1, v2
 
@@ -7718,7 +7718,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xda
+    const/16 v3, 0xdb
 
     aput v3, v1, v2
 
@@ -11740,7 +11740,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x123
+    const/16 v2, 0x125
 
     aput v2, v0, v1
 
@@ -20123,7 +20123,7 @@
 
     move-result-object v1
 
-    const v2, 0x50f0120
+    const v2, 0x50f0122
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

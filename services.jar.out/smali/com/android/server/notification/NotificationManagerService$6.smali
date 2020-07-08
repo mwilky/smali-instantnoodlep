@@ -133,11 +133,11 @@
 
     iget-object v7, v0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1500()I
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1600()I
 
     move-result v8
 
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1600()I
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1700()I
 
     move-result v9
 
@@ -179,11 +179,11 @@
 
     iget-object v7, v0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1500()I
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1600()I
 
     move-result v8
 
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1600()I
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->access$1700()I
 
     move-result v9
 

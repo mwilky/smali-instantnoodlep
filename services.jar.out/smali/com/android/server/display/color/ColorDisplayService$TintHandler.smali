@@ -102,7 +102,7 @@
     :pswitch_1
     new-array v0, v4, [I
 
-    const/16 v1, 0x10d
+    const/16 v1, 0x10f
 
     aput v1, v0, v2
 
@@ -114,7 +114,7 @@
 
     new-array v0, v4, [I
 
-    const/16 v1, 0x10c
+    const/16 v1, 0x10e
 
     aput v1, v0, v2
 

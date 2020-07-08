@@ -231,7 +231,7 @@
     :cond_0
     new-array v0, v0, [I
 
-    const/16 v1, 0xc2
+    const/16 v1, 0xc3
 
     aput v1, v0, v2
 
@@ -437,7 +437,7 @@
     :cond_1
     new-array v1, v1, [I
 
-    const/16 v3, 0xc2
+    const/16 v3, 0xc3
 
     aput v3, v1, v2
 

@@ -6397,7 +6397,7 @@
     :cond_48
     new-array v0, v3, [I
 
-    const/16 v6, 0x11b
+    const/16 v6, 0x11d
 
     aput v6, v0, v16
 

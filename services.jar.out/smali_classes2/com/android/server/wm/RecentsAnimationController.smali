@@ -144,7 +144,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x10c
+    const/16 v2, 0x10e
 
     aput v2, v0, v1
 

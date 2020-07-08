@@ -99,7 +99,7 @@
 
     new-array v1, v1, [I
 
-    const/16 v4, 0x110
+    const/16 v4, 0x112
 
     aput v4, v1, v2
 

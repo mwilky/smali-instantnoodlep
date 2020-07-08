@@ -7194,6 +7194,8 @@
 
     invoke-static {v2, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
+    invoke-static/range {p1 .. p2}, Lcom/android/server/pm/OnePlusDexOptInjector;->startUser(IZ)V
+
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v20

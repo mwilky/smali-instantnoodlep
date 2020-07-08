@@ -33,7 +33,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xb8
+    const/16 v2, 0xb9
 
     aput v2, v0, v1
 

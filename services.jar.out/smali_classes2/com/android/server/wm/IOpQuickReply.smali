@@ -69,6 +69,9 @@
 .method public abstract isQuickReplyRunning()Z
 .end method
 
+.method public abstract killApplicationProcess(Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
+.end method
+
 .method public abstract notifyImeShow(Ljava/lang/String;)V
 .end method
 

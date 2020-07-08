@@ -938,7 +938,7 @@
 
     new-array v2, v1, [I
 
-    const/16 v3, 0xfb
+    const/16 v3, 0xfc
 
     aput v3, v2, v0
 
@@ -950,7 +950,7 @@
 
     new-array v1, v1, [I
 
-    const/16 v2, 0xfc
+    const/16 v2, 0xfd
 
     aput v2, v1, v0
 
@@ -10353,7 +10353,7 @@
     :cond_44
     new-array v0, v7, [I
 
-    const/16 v2, 0xcd
+    const/16 v2, 0xce
 
     aput v2, v0, v1
 
@@ -10382,7 +10382,7 @@
     :cond_45
     new-array v0, v7, [I
 
-    const/16 v2, 0x11b
+    const/16 v2, 0x11d
 
     aput v2, v0, v1
 
@@ -48629,7 +48629,7 @@
 
     new-array v0, v3, [I
 
-    const/16 v1, 0xcd
+    const/16 v1, 0xce
 
     aput v1, v0, v2
 
@@ -64834,6 +64834,8 @@
 
     :cond_8
     :goto_2
+    invoke-static/range {p1 .. p1}, Lcom/android/server/am/OpMemoryTrackerInjector;->checkLeakProcess(Lcom/android/server/am/ProcessRecord;)V
+
     return-void
 .end method
 

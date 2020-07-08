@@ -21,7 +21,25 @@
 
 .field private static final APPID:Ljava/lang/String; = "RBS8PPYT2W"
 
+.field private static final APP_HEAD:Ljava/lang/String; = "x-api-key"
+
+.field private static final APP_HEAD_VALUE:Ljava/lang/String; = "zfQ8IMsGsJ4sNsZeNvG5hGTIS565ojd4EbuQmMw1"
+
 .field private static final AWL:Ljava/lang/String; = "widevine.lost"
+
+.field private static final JSON_KEYBOX_TAG:Ljava/lang/String; = "keybox"
+
+.field private static final JSON_SHAREKEY_TAG:Ljava/lang/String; = "sharedKey"
+
+.field private static final JSON_SIGN_TAG:Ljava/lang/String; = "sign"
+
+.field private static final KEYBOX_SERVER_URL:Ljava/lang/String; = "https://kb-ota.1plus.io/v1/keybox"
+
+.field private static final NO_KEYBOX_JASON:Ljava/lang/String; = "Nokeybox"
+
+.field private static final OTA_GET_LICENSE:Ljava/lang/String; = "otaGetLicense"
+
+.field private static final OTA_INSTALL_KEYBOX:Ljava/lang/String; = "otaInstallKeybox"
 
 .field private static final TAG:Ljava/lang/String; = "OpAudioMonitor"
 
@@ -45,7 +63,11 @@
 
 .field private mCurrentStreamType:I
 
+.field private mDebug:Z
+
 .field private mHsTime:J
+
+.field private mKeyboxJson:Ljava/lang/String;
 
 .field mPkStartTime:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -72,6 +94,10 @@
     .locals 9
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, "Nokeybox"
+
+    iput-object v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mKeyboxJson:Ljava/lang/String;
 
     new-instance v0, Lcom/android/server/audio/OpAudioMonitor$OpAudioMonitorBroadcastReceiver;
 
@@ -104,6 +130,10 @@
     iput v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mCurrentDevice:I
 
     iput v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mCurrentStreamType:I
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mDebug:Z
 
     iput-object p1, p0, Lcom/android/server/audio/OpAudioMonitor;->mContext:Landroid/content/Context;
 
@@ -201,7 +231,25 @@
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/server/audio/OpAudioMonitor;)I
+.method static synthetic access$200(Lcom/android/server/audio/OpAudioMonitor;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    invoke-direct {p0, p1}, Lcom/android/server/audio/OpAudioMonitor;->getKeyboxFromServer(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic access$302(Lcom/android/server/audio/OpAudioMonitor;Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/server/audio/OpAudioMonitor;->mKeyboxJson:Ljava/lang/String;
+
+    return-object p1
+.end method
+
+.method static synthetic access$400(Lcom/android/server/audio/OpAudioMonitor;)I
     .locals 1
 
     iget v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mRingerMode:I
@@ -209,7 +257,7 @@
     return v0
 .end method
 
-.method static synthetic access$202(Lcom/android/server/audio/OpAudioMonitor;I)I
+.method static synthetic access$402(Lcom/android/server/audio/OpAudioMonitor;I)I
     .locals 0
 
     iput p1, p0, Lcom/android/server/audio/OpAudioMonitor;->mRingerMode:I
@@ -217,7 +265,7 @@
     return p1
 .end method
 
-.method static synthetic access$300(Lcom/android/server/audio/OpAudioMonitor;)J
+.method static synthetic access$500(Lcom/android/server/audio/OpAudioMonitor;)J
     .locals 2
 
     iget-wide v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mStartTime:J
@@ -225,7 +273,7 @@
     return-wide v0
 .end method
 
-.method static synthetic access$302(Lcom/android/server/audio/OpAudioMonitor;J)J
+.method static synthetic access$502(Lcom/android/server/audio/OpAudioMonitor;J)J
     .locals 0
 
     iput-wide p1, p0, Lcom/android/server/audio/OpAudioMonitor;->mStartTime:J
@@ -233,7 +281,7 @@
     return-wide p1
 .end method
 
-.method static synthetic access$400(Lcom/android/server/audio/OpAudioMonitor;I)I
+.method static synthetic access$600(Lcom/android/server/audio/OpAudioMonitor;I)I
     .locals 1
 
     invoke-direct {p0, p1}, Lcom/android/server/audio/OpAudioMonitor;->convertRingerMode2AlertSlider(I)I
@@ -243,7 +291,7 @@
     return v0
 .end method
 
-.method static synthetic access$500(Lcom/android/server/audio/OpAudioMonitor;II)Z
+.method static synthetic access$700(Lcom/android/server/audio/OpAudioMonitor;II)Z
     .locals 1
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/audio/OpAudioMonitor;->wasStreamActiveRecently(II)Z
@@ -253,12 +301,63 @@
     return v0
 .end method
 
-.method static synthetic access$600(Lcom/android/server/audio/OpAudioMonitor;JJJILjava/lang/String;)V
+.method static synthetic access$800(Lcom/android/server/audio/OpAudioMonitor;JJJILjava/lang/String;)V
     .locals 0
 
     invoke-direct/range {p0 .. p8}, Lcom/android/server/audio/OpAudioMonitor;->setMdmEvent(JJJILjava/lang/String;)V
 
     return-void
+.end method
+
+.method private static byte2Hex([B)Ljava/lang/String;
+    .locals 5
+
+    new-instance v0, Ljava/lang/StringBuffer;
+
+    invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    array-length v3, p0
+
+    if-ge v2, v3, :cond_1
+
+    aget-byte v3, p0, v2
+
+    and-int/lit16 v3, v3, 0xff
+
+    invoke-static {v3}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-ne v3, v4, :cond_0
+
+    const-string v3, "0"
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    return-object v2
 .end method
 
 .method private convertDevice2MdmType(I)I
@@ -350,6 +449,277 @@
 
     :cond_3
     const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method private getKeyboxFromServer(Ljava/lang/String;)Ljava/lang/String;
+    .locals 10
+
+    iget-boolean v0, p0, Lcom/android/server/audio/OpAudioMonitor;->mDebug:Z
+
+    const-string v1, "OpAudioMonitor"
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "license: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :try_start_0
+    new-instance v2, Ljava/net/URL;
+
+    const-string v3, "https://kb-ota.1plus.io/v1/keybox"
+
+    invoke-direct {v2, v3}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/net/HttpURLConnection;
+
+    const-string v4, "POST"
+
+    invoke-virtual {v3, v4}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v3, v4}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+
+    invoke-virtual {v3, v4}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v3, v4}, Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+
+    const-string v4, "Content-Type"
+
+    const-string v5, "application/json;charset=utf-8"
+
+    invoke-virtual {v3, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v4, "x-api-key"
+
+    const-string/jumbo v5, "zfQ8IMsGsJ4sNsZeNvG5hGTIS565ojd4EbuQmMw1"
+
+    invoke-virtual {v3, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Ljava/net/HttpURLConnection;->connect()V
+
+    new-instance v4, Ljava/io/BufferedWriter;
+
+    new-instance v5, Ljava/io/OutputStreamWriter;
+
+    invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+
+    move-result-object v6
+
+    const-string v7, "UTF-8"
+
+    invoke-direct {v5, v6, v7}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/lang/String;)V
+
+    invoke-direct {v4, v5}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
+
+    invoke-virtual {v4, p1}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
+
+    invoke-virtual {v4}, Ljava/io/BufferedWriter;->close()V
+
+    invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getResponseCode()I
+
+    move-result v5
+
+    const/16 v6, 0xc8
+
+    if-ne v5, v6, :cond_2
+
+    invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+
+    move-result-object v6
+
+    invoke-static {v6, v0}, Lcom/android/server/audio/OpAudioMonitor;->inputstr2StrReader(Ljava/io/InputStream;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    iget-boolean v8, p0, Lcom/android/server/audio/OpAudioMonitor;->mDebug:Z
+
+    if-eqz v8, :cond_1
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v9, "result============="
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v9, "count: "
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/io/InputStream;->available()I
+
+    move-result v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-static {v1, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_1
+    return-object v7
+
+    :cond_2
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
+
+    :goto_0
+    return-object v0
+.end method
+
+.method private static getSHA256Str(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    const-string v0, ""
+
+    :try_start_0
+    const-string v1, "SHA-256"
+
+    invoke-static {v1}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    const-string v2, "UTF-8"
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/security/MessageDigest;->update([B)V
+
+    invoke-virtual {v1}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/android/server/audio/OpAudioMonitor;->byte2Hex([B)Ljava/lang/String;
+
+    move-result-object v2
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v0, v2
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
+
+    nop
+
+    :goto_0
+    return-object v0
+.end method
+
+.method private static inputstr2StrReader(Ljava/io/InputStream;Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    const-string v0, ""
+
+    if-eqz p1, :cond_0
+
+    :try_start_0
+    const-string v1, ""
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
+    const-string/jumbo v1, "utf-8"
+
+    move-object p1, v1
+
+    :cond_1
+    new-instance v1, Ljava/io/BufferedReader;
+
+    new-instance v2, Ljava/io/InputStreamReader;
+
+    invoke-direct {v2, p0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/lang/String;)V
+
+    invoke-direct {v1, v2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+
+    new-instance v2, Ljava/lang/StringBuffer;
+
+    invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
+
+    :goto_0
+    invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v3
+
+    move-object v0, v3
+
+    if-eqz v3, :cond_2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const-string v3, "\n"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v3
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v3
+
+    :catch_0
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     return-object v0
 .end method
@@ -874,6 +1244,107 @@
     invoke-virtual/range {v0 .. v6}, Landroid/app/AlarmManager;->setExact(IJLjava/lang/String;Landroid/app/AlarmManager$OnAlarmListener;Landroid/os/Handler;)V
 
     :cond_1
+    return-void
+.end method
+
+.method public otaInstallWidevineKeybox()V
+    .locals 7
+
+    const-string v0, "can not get OneplusDrmKey service"
+
+    const-string v1, "OpAudioMonitor"
+
+    const/4 v2, 0x0
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "default"
+
+    const-string/jumbo v5, "ro.boot.serialno"
+
+    invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lcom/android/server/audio/OpAudioMonitor;->getSHA256Str(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "|"
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "ro.boot.project_name"
+
+    invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    :try_start_0
+    invoke-static {}, Lvendor/oneplus/hardware/drmkey/V1_0/IOneplusDrmKey;->getService()Lvendor/oneplus/hardware/drmkey/V1_0/IOneplusDrmKey;
+
+    move-result-object v4
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+
+    move-object v2, v4
+
+    nop
+
+    :try_start_1
+    const-string/jumbo v4, "otaGetLicense"
+
+    new-instance v5, Lcom/android/server/audio/OpAudioMonitor$2;
+
+    invoke-direct {v5, p0}, Lcom/android/server/audio/OpAudioMonitor$2;-><init>(Lcom/android/server/audio/OpAudioMonitor;)V
+
+    invoke-interface {v2, v4, v3, v5}, Lvendor/oneplus/hardware/drmkey/V1_0/IOneplusDrmKey;->sendCommand(Ljava/lang/String;Ljava/lang/String;Lvendor/oneplus/hardware/drmkey/V1_0/IOneplusDrmKey$sendCommandCallback;)V
+
+    const-string/jumbo v4, "otaInstallKeybox"
+
+    iget-object v5, p0, Lcom/android/server/audio/OpAudioMonitor;->mKeyboxJson:Ljava/lang/String;
+
+    new-instance v6, Lcom/android/server/audio/OpAudioMonitor$3;
+
+    invoke-direct {v6, p0}, Lcom/android/server/audio/OpAudioMonitor$3;-><init>(Lcom/android/server/audio/OpAudioMonitor;)V
+
+    invoke-interface {v2, v4, v5, v6}, Lvendor/oneplus/hardware/drmkey/V1_0/IOneplusDrmKey;->sendCommand(Ljava/lang/String;Ljava/lang/String;Lvendor/oneplus/hardware/drmkey/V1_0/IOneplusDrmKey$sendCommandCallback;)V
+
+    const-string v4, "Nokeybox"
+
+    iput-object v4, p0, Lcom/android/server/audio/OpAudioMonitor;->mKeyboxJson:Ljava/lang/String;
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v4
+
+    invoke-virtual {v4}, Landroid/os/RemoteException;->printStackTrace()V
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_0
+    return-void
+
+    :catch_1
+    move-exception v4
+
+    invoke-virtual {v4}, Landroid/os/RemoteException;->printStackTrace()V
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     return-void
 .end method
 

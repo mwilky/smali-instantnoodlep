@@ -65318,7 +65318,7 @@
 .end method
 
 .method private verifyIntentFiltersIfNeeded(IIZLandroid/content/pm/PackageParser$Package;)V
-    .locals 23
+    .locals 24
 
     move-object/from16 v1, p0
 
@@ -65418,23 +65418,25 @@
 
     move-result-object v0
 
-    const/4 v14, 0x1
+    const/4 v14, 0x0
+
+    const/4 v15, 0x1
 
     if-eqz v0, :cond_5
 
-    move v4, v14
+    move v4, v15
 
     goto :goto_0
 
     :cond_5
-    const/4 v4, 0x0
+    move v4, v14
 
     :goto_0
-    move v15, v4
+    move/from16 v16, v4
 
     if-nez p3, :cond_7
 
-    if-eqz v15, :cond_7
+    if-eqz v16, :cond_7
 
     sget-boolean v4, Lcom/android/server/pm/PackageManagerService;->DEBUG_DOMAIN_VERIFICATION:Z
 
@@ -65484,9 +65486,9 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    move/from16 v17, v3
+    move/from16 v18, v3
 
-    move/from16 v16, v4
+    move/from16 v17, v4
 
     :goto_1
     :try_start_1
@@ -65521,7 +65523,7 @@
 
     check-cast v6, Landroid/content/pm/PackageParser$ActivityIntentInfo;
 
-    invoke-virtual {v6, v14}, Landroid/content/pm/PackageParser$ActivityIntentInfo;->handlesWebUris(Z)Z
+    invoke-virtual {v6, v15}, Landroid/content/pm/PackageParser$ActivityIntentInfo;->handlesWebUris(Z)Z
 
     move-result v7
 
@@ -65529,7 +65531,7 @@
 
     const/4 v7, 0x1
 
-    move/from16 v17, v7
+    move/from16 v18, v7
 
     :cond_8
     invoke-virtual {v6}, Landroid/content/pm/PackageParser$ActivityIntentInfo;->needsVerification()Z
@@ -65557,7 +65559,7 @@
     :cond_9
     const/4 v4, 0x1
 
-    move/from16 v16, v4
+    move/from16 v17, v4
 
     goto :goto_3
 
@@ -65569,7 +65571,7 @@
     goto :goto_1
 
     :cond_c
-    if-eqz v16, :cond_10
+    if-eqz v17, :cond_10
 
     iget v5, v1, Lcom/android/server/pm/PackageManagerService;->mIntentFilterVerificationToken:I
 
@@ -65581,16 +65583,16 @@
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v18
+    move-result-object v19
 
     :goto_4
-    invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v19 .. v19}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
     if-eqz v3, :cond_10
 
-    invoke-interface/range {v18 .. v18}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v19 .. v19}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -65602,21 +65604,21 @@
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v19
+    move-result-object v20
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    move/from16 v20, v2
+    move/from16 v21, v2
 
     :goto_5
     :try_start_2
-    invoke-interface/range {v19 .. v19}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v20 .. v20}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_f
 
-    invoke-interface/range {v19 .. v19}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v20 .. v20}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -65669,9 +65671,9 @@
 
     move/from16 v4, p1
 
-    move-object/from16 v21, v6
+    move-object/from16 v22, v6
 
-    move-object/from16 v22, v7
+    move-object/from16 v23, v7
 
     move-object v7, v12
 
@@ -65679,33 +65681,33 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    add-int/lit8 v20, v20, 0x1
+    add-int/lit8 v21, v21, 0x1
 
     goto :goto_6
 
     :cond_e
-    move-object/from16 v21, v6
+    move-object/from16 v22, v6
 
-    move-object/from16 v22, v7
+    move-object/from16 v23, v7
 
     :goto_6
-    move-object/from16 v7, v22
+    move-object/from16 v7, v23
 
     goto :goto_5
 
     :cond_f
-    move-object/from16 v22, v7
+    move-object/from16 v23, v7
 
-    move/from16 v2, v20
+    move/from16 v2, v21
 
     goto :goto_4
 
     :catchall_0
     move-exception v0
 
-    move/from16 v3, v17
+    move/from16 v3, v18
 
-    move/from16 v2, v20
+    move/from16 v2, v21
 
     goto/16 :goto_9
 
@@ -65735,7 +65737,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-le v2, v14, :cond_11
+    if-le v2, v15, :cond_11
 
     const-string/jumbo v3, "s"
 
@@ -65769,9 +65771,9 @@
     goto :goto_8
 
     :cond_13
-    if-eqz v15, :cond_15
+    if-eqz v16, :cond_15
 
-    if-eqz v17, :cond_15
+    if-eqz v18, :cond_15
 
     sget-boolean v0, Lcom/android/server/pm/PackageManagerService;->DEBUG_DOMAIN_VERIFICATION:Z
 
@@ -65834,7 +65836,7 @@
     :catchall_2
     move-exception v0
 
-    move/from16 v3, v17
+    move/from16 v3, v18
 
     goto :goto_9
 
@@ -89321,7 +89323,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xd7
+    const/16 v2, 0xd8
 
     aput v2, v0, v1
 
@@ -96690,7 +96692,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v11, 0xd7
+    const/16 v11, 0xd8
 
     aput v11, v1, v10
 
@@ -96884,7 +96886,7 @@
 
     add-int/lit8 v12, v12, 0x1
 
-    const/16 v11, 0xd7
+    const/16 v11, 0xd8
 
     goto :goto_3
 
@@ -96904,7 +96906,7 @@
     :cond_6
     add-int/lit8 v5, v5, 0x1
 
-    const/16 v11, 0xd7
+    const/16 v11, 0xd8
 
     goto/16 :goto_1
 
@@ -97047,7 +97049,7 @@
 
     new-array v2, v0, [I
 
-    const/16 v4, 0xd7
+    const/16 v4, 0xd8
 
     aput v4, v2, v10
 
@@ -97129,7 +97131,7 @@
     :cond_f
     new-array v2, v0, [I
 
-    const/16 v4, 0xd7
+    const/16 v4, 0xd8
 
     aput v4, v2, v10
 

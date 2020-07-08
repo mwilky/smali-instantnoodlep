@@ -39,7 +39,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xce
+    const/16 v2, 0xcf
 
     aput v2, v0, v1
 
@@ -448,7 +448,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x111
+    const/16 v2, 0x113
 
     aput v2, v0, v1
 
@@ -490,6 +490,42 @@
     check-cast v0, Lcom/android/server/wm/IOpWindowManagerService;
 
     sput-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sOpWindowManagerService:Lcom/android/server/wm/IOpWindowManagerService;
+
+    :cond_0
+    return-void
+.end method
+
+.method public static isFullscreenScene()Z
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/wm/OpWindowManagerServiceInjector;->initInstance()V
+
+    sget-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sOpWindowManagerService:Lcom/android/server/wm/IOpWindowManagerService;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lcom/android/server/wm/IOpWindowManagerService;->isFullscreenScene()Z
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public static setFullscreenScene(Z)V
+    .locals 1
+
+    invoke-static {}, Lcom/android/server/wm/OpWindowManagerServiceInjector;->initInstance()V
+
+    sget-object v0, Lcom/android/server/wm/OpWindowManagerServiceInjector;->sOpWindowManagerService:Lcom/android/server/wm/IOpWindowManagerService;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p0}, Lcom/android/server/wm/IOpWindowManagerService;->setFullscreenScene(Z)V
 
     :cond_0
     return-void
