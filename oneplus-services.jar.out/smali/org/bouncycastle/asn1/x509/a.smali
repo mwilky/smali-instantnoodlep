@@ -8,10 +8,6 @@
 
 .field public static final AFFILIATION_CHANGED:I = 0x10
 
-.field public static final AFa:I = 0x1
-
-.field public static final BFa:I = 0x8000
-
 .field public static final CA_COMPROMISE:I = 0x20
 
 .field public static final CERTIFICATE_HOLD:I = 0x2
@@ -26,19 +22,23 @@
 
 .field public static final UNUSED:I = 0x80
 
-.field public static final tFa:I = 0x80
+.field public static final VFa:I = 0x80
 
-.field public static final uFa:I = 0x40
+.field public static final WFa:I = 0x40
 
-.field public static final vFa:I = 0x20
+.field public static final XFa:I = 0x20
 
-.field public static final wFa:I = 0x10
+.field public static final YFa:I = 0x10
 
-.field public static final xFa:I = 0x8
+.field public static final ZFa:I = 0x8
 
-.field public static final yFa:I = 0x4
+.field public static final _Fa:I = 0x4
 
-.field public static final zFa:I = 0x2
+.field public static final aGa:I = 0x2
+
+.field public static final bGa:I = 0x1
+
+.field public static final cGa:I = 0x8000
 
 
 # direct methods
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->ia(I)I
+    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->ja(I)I
 
     move-result p1
 
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->vh()I
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->yh()I
 
     move-result p1
 

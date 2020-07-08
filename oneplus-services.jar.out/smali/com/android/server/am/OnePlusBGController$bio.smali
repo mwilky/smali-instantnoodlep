@@ -18,13 +18,13 @@
 
 
 # instance fields
+.field Dr:J
+
+.field Er:J
+
 .field mTimeStamp:J
 
 .field mUid:I
-
-.field mr:J
-
-.field or:J
 
 .field final synthetic this$0:Lcom/android/server/am/OnePlusBGController;
 
@@ -57,9 +57,9 @@
 
     iput-wide p3, p0, Lcom/android/server/am/OnePlusBGController$bio;->mTimeStamp:J
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$bio;->mr:J
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$bio;->Dr:J
 
-    iput-wide p7, p0, Lcom/android/server/am/OnePlusBGController$bio;->or:J
+    iput-wide p7, p0, Lcom/android/server/am/OnePlusBGController$bio;->Er:J
 
     return-void
 .end method
@@ -110,13 +110,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$bio;->or:J
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$bio;->Er:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/am/OnePlusBGController$bio;->mr:J
+    iget-wide v1, p0, Lcom/android/server/am/OnePlusBGController$bio;->Dr:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

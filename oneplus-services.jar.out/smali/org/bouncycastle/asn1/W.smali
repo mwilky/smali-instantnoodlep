@@ -28,7 +28,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/vdb;->th()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/vdb;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p1
 

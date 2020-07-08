@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field private key:Lorg/bouncycastle/crypto/wtn/kth;
+.field private UNa:Lorg/bouncycastle/crypto/wtn/cno;
 
-.field private sNa:Lorg/bouncycastle/crypto/wtn/cno;
+.field private key:Lorg/bouncycastle/crypto/wtn/kth;
 
 
 # direct methods
@@ -95,7 +95,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/zta/zta;->sNa:Lorg/bouncycastle/crypto/wtn/cno;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/zta/zta;->UNa:Lorg/bouncycastle/crypto/wtn/cno;
 
     return-void
 
@@ -118,7 +118,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/zta/zta;->sNa:Lorg/bouncycastle/crypto/wtn/cno;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/zta/zta;->UNa:Lorg/bouncycastle/crypto/wtn/cno;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/crypto/wtn/cno;->equals(Ljava/lang/Object;)Z
 
@@ -126,7 +126,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/zta/zta;->sNa:Lorg/bouncycastle/crypto/wtn/cno;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/zta/zta;->UNa:Lorg/bouncycastle/crypto/wtn/cno;
 
     invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/cno;->getP()Ljava/math/BigInteger;
 

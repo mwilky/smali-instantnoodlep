@@ -4,31 +4,31 @@
 
 
 # static fields
-.field public static final SET_ORIENTATION:I = 0x101
+.field public static final A_a:I = 0x106
 
-.field public static final SZa:I = 0x107
+.field public static final B_a:I = 0x108
+
+.field public static final C_a:I = 0x109
+
+.field public static final D_a:I = 0x10a
+
+.field public static final E_a:I = 0x10b
+
+.field public static final SET_ORIENTATION:I = 0x101
 
 .field public static final TYPE_MAX:I = 0x10c
 
-.field public static final UZa:I = 0x100
+.field public static final t_a:I = 0x107
 
-.field public static final VZa:I = 0x102
+.field public static final v_a:I = 0x100
 
-.field public static final WZa:I = 0x103
+.field public static final w_a:I = 0x102
 
-.field public static final XZa:I = 0x104
+.field public static final x_a:I = 0x103
 
-.field public static final YZa:I = 0x105
+.field public static final y_a:I = 0x104
 
-.field public static final ZZa:I = 0x106
-
-.field public static final _Za:I = 0x108
-
-.field public static final a_a:I = 0x109
-
-.field public static final b_a:I = 0x10a
-
-.field public static final c_a:I = 0x10b
+.field public static final z_a:I = 0x105
 
 
 # direct methods

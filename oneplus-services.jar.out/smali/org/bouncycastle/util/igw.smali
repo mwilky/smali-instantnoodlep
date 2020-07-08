@@ -200,20 +200,6 @@
     return p0
 .end method
 
-.method public static pa(I)[B
-    .locals 2
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->you(I[BI)V
-
-    return-object v0
-.end method
-
 .method public static qa(I)[B
     .locals 2
 
@@ -223,7 +209,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->sis(I[BI)V
+    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->you(I[BI)V
 
     return-object v0
 .end method
@@ -248,6 +234,20 @@
     int-to-short p0, p0
 
     return p0
+.end method
+
+.method public static ra(I)[B
+    .locals 2
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    invoke-static {p0, v0, v1}, Lorg/bouncycastle/util/igw;->sis(I[BI)V
+
+    return-object v0
 .end method
 
 .method public static rtg([J)[B

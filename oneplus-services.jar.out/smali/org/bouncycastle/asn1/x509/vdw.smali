@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final LFa:Ljava/lang/String; = "1.3.6.1.5.5.7.2"
+.field private static final mGa:Ljava/lang/String; = "1.3.6.1.5.5.7.2"
 
-.field public static final MFa:Lorg/bouncycastle/asn1/x509/vdw;
+.field public static final nGa:Lorg/bouncycastle/asn1/x509/vdw;
 
-.field public static final NFa:Lorg/bouncycastle/asn1/x509/vdw;
+.field public static final oGa:Lorg/bouncycastle/asn1/x509/vdw;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/x509/vdw;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/x509/vdw;->MFa:Lorg/bouncycastle/asn1/x509/vdw;
+    sput-object v0, Lorg/bouncycastle/asn1/x509/vdw;->nGa:Lorg/bouncycastle/asn1/x509/vdw;
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/vdw;
 
@@ -29,7 +29,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/x509/vdw;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lorg/bouncycastle/asn1/x509/vdw;->NFa:Lorg/bouncycastle/asn1/x509/vdw;
+    sput-object v0, Lorg/bouncycastle/asn1/x509/vdw;->oGa:Lorg/bouncycastle/asn1/x509/vdw;
 
     return-void
 .end method

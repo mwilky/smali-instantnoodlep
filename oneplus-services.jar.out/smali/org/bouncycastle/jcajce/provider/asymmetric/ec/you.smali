@@ -207,7 +207,7 @@
 
     check-cast p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->uk()Lorg/bouncycastle/crypto/wtn/obl;
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/BCECPublicKey;->xk()Lorg/bouncycastle/crypto/wtn/obl;
 
     move-result-object p0
 

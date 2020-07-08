@@ -21,11 +21,11 @@
 
 
 # instance fields
-.field private DD:Ljava/lang/String;
+.field private TD:Ljava/lang/String;
 
-.field private final ED:Ljava/lang/Object;
+.field private final UD:Ljava/lang/Object;
 
-.field private final FD:Ljava/util/List;
+.field private final VD:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -35,11 +35,11 @@
     .end annotation
 .end field
 
-.field private GD:I
+.field private WD:I
 
-.field private HD:I
+.field private XD:I
 
-.field private JD:Ljava/util/HashMap;
+.field private YD:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -67,7 +67,7 @@
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     const/4 p1, 0x0
 
@@ -77,27 +77,27 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iput p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
-    iput p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iput p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
     return-void
 .end method
 
-.method private Hb(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
+.method private Ib(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -117,7 +117,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/am/OpForceDarkController$zta$zta;-><init>(Lcom/android/server/am/OpForceDarkController$zta;Lcom/android/server/am/OpForceDarkController$1;)V
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -129,23 +129,23 @@
     return-object v0
 .end method
 
-.method private fp()Lcom/android/server/am/OpForceDarkController$you;
+.method private ip()Lcom/android/server/am/OpForceDarkController$you;
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     const/4 v2, -0x1
 
     if-eq v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     invoke-interface {v1, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -158,13 +158,13 @@
     return-object p0
 
     :cond_0
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     if-eq v1, v2, :cond_1
 
-    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     invoke-interface {v1, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -197,15 +197,15 @@
     throw p0
 .end method
 
-.method private gp()V
+.method private jp()V
     .locals 8
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     const-string v2, "OnePlus.ForceDark.Global.Config.DEFAULT"
 
@@ -217,9 +217,9 @@
 
     if-eqz v1, :cond_0
 
-    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
-    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     monitor-exit v0
 
@@ -228,7 +228,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     invoke-static {v1, v3}, Lcom/android/server/am/OpForceDarkController;->access$1800(Lcom/android/server/am/OpForceDarkController;Ljava/lang/String;)I
 
@@ -237,7 +237,7 @@
     move v3, v2
 
     :goto_0
-    iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -247,7 +247,7 @@
 
     if-ge v3, v4, :cond_3
 
-    iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     invoke-interface {v4, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -255,20 +255,20 @@
 
     check-cast v4, Lcom/android/server/am/OpForceDarkController$you;
 
-    iget-boolean v6, v4, Lcom/android/server/am/OpForceDarkController$you;->KD:Z
+    iget-boolean v6, v4, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
 
     if-eqz v6, :cond_1
 
-    iput v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iput v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
-    iget v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     if-ne v6, v5, :cond_1
 
-    iput v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iput v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     :cond_1
-    iget-object v4, v4, Lcom/android/server/am/OpForceDarkController$you;->LD:Ljava/util/List;
+    iget-object v4, v4, Lcom/android/server/am/OpForceDarkController$you;->_D:Ljava/util/List;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -280,7 +280,7 @@
 
     if-eqz v4, :cond_2
 
-    iput v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iput v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     goto :goto_1
 
@@ -299,17 +299,17 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     aput-object v6, v4, v2
 
-    iget v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     if-eq v2, v5, :cond_4
 
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    iget v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     invoke-interface {v2, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -333,13 +333,13 @@
 
     const/4 v2, 0x2
 
-    iget v7, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget v7, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     if-eq v7, v5, :cond_5
 
-    iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     invoke-interface {v5, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -379,10 +379,10 @@
     throw p0
 .end method
 
-.method private hp()V
+.method private kp()V
     .locals 3
 
-    invoke-virtual {p0}, Lcom/android/server/am/OpForceDarkController$zta;->Nc()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/server/am/OpForceDarkController$zta;->Pc()Ljava/util/List;
 
     move-result-object v0
 
@@ -420,7 +420,7 @@
 .method static synthetic you(Lcom/android/server/am/OpForceDarkController$zta;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->gp()V
+    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->jp()V
 
     return-void
 .end method
@@ -448,31 +448,31 @@
     iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
     :cond_1
-    iget p0, p1, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iget p0, p1, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
     if-ne p0, v0, :cond_2
 
-    iget p0, p2, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iget p0, p2, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
-    iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
     :cond_2
-    iget p0, p1, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iget p0, p1, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
     if-ne p0, v0, :cond_3
 
-    iget p0, p2, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iget p0, p2, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
-    iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
     :cond_3
-    iget p0, p1, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget p0, p1, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
     if-ne p0, v0, :cond_4
 
-    iget p0, p2, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget p0, p2, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
-    iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iput p0, p1, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
     :cond_4
     :goto_0
@@ -489,10 +489,10 @@
 
 
 # virtual methods
-.method Lc()Ljava/lang/String;
+.method Nc()Ljava/lang/String;
     .locals 9
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -501,7 +501,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -544,7 +544,7 @@
 
     const/4 v7, 0x0
 
-    iget-object v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     aput-object v8, v6, v7
 
@@ -560,7 +560,7 @@
 
     const/4 v7, 0x2
 
-    iget v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -570,7 +570,7 @@
 
     const/4 v7, 0x3
 
-    iget v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -590,7 +590,7 @@
 
     iget-object v7, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget-object v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     invoke-static {v7, v8}, Lcom/android/server/am/OpForceDarkController;->access$1800(Lcom/android/server/am/OpForceDarkController;Ljava/lang/String;)I
 
@@ -629,7 +629,7 @@
     throw p0
 .end method
 
-.method Mc()Ljava/util/List;
+.method Oc()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -640,12 +640,12 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     monitor-exit v0
 
@@ -661,7 +661,7 @@
     throw p0
 .end method
 
-.method Nc()Ljava/util/List;
+.method Pc()Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -672,14 +672,14 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -701,7 +701,7 @@
     throw p0
 .end method
 
-.method Oc()Z
+.method Qc()Z
     .locals 0
 
     iget-boolean p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->isPrivileged:Z
@@ -714,7 +714,7 @@
 .method bvj(II)I
     .locals 10
 
-    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->fp()Lcom/android/server/am/OpForceDarkController$you;
+    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->ip()Lcom/android/server/am/OpForceDarkController$you;
 
     move-result-object v0
 
@@ -900,15 +900,15 @@
     move v0, v3
 
     :goto_6
-    invoke-direct {p0, p2}, Lcom/android/server/am/OpForceDarkController$zta;->Hb(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
+    invoke-direct {p0, p2}, Lcom/android/server/am/OpForceDarkController$zta;->Ib(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
 
     move-result-object p2
 
-    iget v4, p2, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iget v4, p2, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     if-eq v4, v1, :cond_e
 
-    iput v1, p2, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iput v1, p2, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
@@ -916,7 +916,7 @@
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     aput-object v6, v5, v2
 
@@ -954,7 +954,7 @@
 
     invoke-static {v4, p0, v2}, Lcom/android/server/am/OpForceDarkController;->access$200(Lcom/android/server/am/OpForceDarkController;Ljava/lang/String;Z)V
 
-    iput-boolean v3, p2, Lcom/android/server/am/OpForceDarkController$zta$zta;->CD:Z
+    iput-boolean v3, p2, Lcom/android/server/am/OpForceDarkController$zta$zta;->SD:Z
 
     :cond_e
     return v0
@@ -976,7 +976,7 @@
 .method public clone()Lcom/android/server/am/OpForceDarkController$zta;
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -987,33 +987,33 @@
 
     invoke-direct {v1, v2}, Lcom/android/server/am/OpForceDarkController$zta;-><init>(Lcom/android/server/am/OpForceDarkController;)V
 
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
-    iput-object v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->isPrivileged:Z
 
     iput-boolean v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->isPrivileged:Z
 
-    iget-object v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     invoke-interface {v2, v3}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    iget-object v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iget-object v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->JD:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->YD:Ljava/util/HashMap;
 
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
-    iget v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
-    iput v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iput v2, v1, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
-    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iget p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
-    iput p0, v1, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iput p0, v1, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     monitor-exit v0
 
@@ -1047,11 +1047,11 @@
 .method oif(II)V
     .locals 8
 
-    invoke-direct {p0, p2}, Lcom/android/server/am/OpForceDarkController$zta;->Hb(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
+    invoke-direct {p0, p2}, Lcom/android/server/am/OpForceDarkController$zta;->Ib(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
 
     move-result-object v0
 
-    iget v1, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iget v1, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     const/4 v2, -0x1
 
@@ -1062,17 +1062,17 @@
     packed-switch p1, :pswitch_data_0
 
     :pswitch_0
-    iput v2, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iput v2, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     goto :goto_0
 
     :pswitch_1
-    iput v3, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iput v3, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     goto :goto_0
 
     :pswitch_2
-    iput v4, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iput v4, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     :goto_0
     iget-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
@@ -1081,7 +1081,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     aput-object v5, v2, v3
 
@@ -1095,7 +1095,7 @@
 
     iget-object v6, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget v7, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iget v7, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     invoke-virtual {v6, v7}, Lcom/android/server/am/OpForceDarkController;->debugTriStateDesc(I)Ljava/lang/String;
 
@@ -1111,11 +1111,11 @@
 
     invoke-static {p1, v2, v3}, Lcom/android/server/am/OpForceDarkController;->access$200(Lcom/android/server/am/OpForceDarkController;Ljava/lang/String;Z)V
 
-    iget p1, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iget p1, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     if-eq v1, p1, :cond_0
 
-    iput-boolean v4, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->CD:Z
+    iput-boolean v4, v0, Lcom/android/server/am/OpForceDarkController$zta$zta;->SD:Z
 
     iget-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
@@ -1143,7 +1143,7 @@
 .method r(I)Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -1161,7 +1161,7 @@
     :try_start_1
     const-string v2, "pkgName"
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -1179,25 +1179,25 @@
 
     const-string p0, "swDark"
 
-    iget v2, p1, Lcom/android/server/am/OpForceDarkController$you;->VD:I
+    iget v2, p1, Lcom/android/server/am/OpForceDarkController$you;->pE:I
 
     invoke-virtual {v1, p0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string p0, "swEnhance"
 
-    iget v2, p1, Lcom/android/server/am/OpForceDarkController$you;->WD:I
+    iget v2, p1, Lcom/android/server/am/OpForceDarkController$you;->qE:I
 
     invoke-virtual {v1, p0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string p0, "jsInject"
 
-    iget v2, p1, Lcom/android/server/am/OpForceDarkController$you;->XD:I
+    iget v2, p1, Lcom/android/server/am/OpForceDarkController$you;->rE:I
 
     invoke-virtual {v1, p0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string p0, ""
 
-    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1207,7 +1207,7 @@
 
     const-string p0, "specialActions"
 
-    iget-object p1, p1, Lcom/android/server/am/OpForceDarkController$you;->MD:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/OpForceDarkController$you;->aE:Ljava/lang/String;
 
     invoke-virtual {v1, p0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -1244,51 +1244,51 @@
 .method final s(I)Lcom/android/server/am/OpForceDarkController$you;
     .locals 8
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    invoke-direct {p0, p1}, Lcom/android/server/am/OpForceDarkController$zta;->Hb(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
+    invoke-direct {p0, p1}, Lcom/android/server/am/OpForceDarkController$zta;->Ib(I)Lcom/android/server/am/OpForceDarkController$zta$zta;
 
     move-result-object p1
 
-    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     if-eqz v1, :cond_0
 
-    iget-boolean v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->CD:Z
+    iget-boolean v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->SD:Z
 
     if-nez v1, :cond_0
 
-    iget-object p0, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object p0, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     monitor-exit v0
 
     return-object p0
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->fp()Lcom/android/server/am/OpForceDarkController$you;
+    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->ip()Lcom/android/server/am/OpForceDarkController$you;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/server/am/OpForceDarkController$you;->Pc()Lcom/android/server/am/OpForceDarkController$you;
+    invoke-virtual {v1}, Lcom/android/server/am/OpForceDarkController$you;->Rc()Lcom/android/server/am/OpForceDarkController$you;
 
     move-result-object v1
 
-    iput-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iput-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
-    iget v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     const/4 v2, -0x1
 
     if-eq v1, v2, :cond_1
 
-    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    iget v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iget v3, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
     invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1299,7 +1299,7 @@
     invoke-direct {p0, v1, v2}, Lcom/android/server/am/OpForceDarkController$zta;->zta(Lcom/android/server/am/OpForceDarkController$you;Lcom/android/server/am/OpForceDarkController$you;)V
 
     :cond_1
-    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
@@ -1309,11 +1309,11 @@
 
     invoke-direct {p0, v1, v2}, Lcom/android/server/am/OpForceDarkController$zta;->zta(Lcom/android/server/am/OpForceDarkController$you;Lcom/android/server/am/OpForceDarkController$you;)V
 
-    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v1, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     iget v1, v1, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
-    iget v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iget v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     const/4 v3, 0x1
 
@@ -1321,24 +1321,24 @@
 
     if-ne v2, v3, :cond_2
 
-    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     iput v3, v2, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
     goto :goto_0
 
     :cond_2
-    iget v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->BD:I
+    iget v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
 
     if-nez v2, :cond_3
 
-    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     iput v4, v2, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
     :cond_3
     :goto_0
-    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v2, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     iget v2, v2, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
@@ -1352,7 +1352,7 @@
 
     new-array v6, v6, [Ljava/lang/Object;
 
-    iget-object v7, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     aput-object v7, v6, v4
 
@@ -1368,7 +1368,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget-object v3, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object v3, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     iget v3, v3, Lcom/android/server/am/OpForceDarkController$you;->enable:I
 
@@ -1385,9 +1385,9 @@
     invoke-static {v2, p0, v4}, Lcom/android/server/am/OpForceDarkController;->access$200(Lcom/android/server/am/OpForceDarkController;Ljava/lang/String;Z)V
 
     :cond_4
-    iput-boolean v4, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->CD:Z
+    iput-boolean v4, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->SD:Z
 
-    iget-object p0, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->zD:Lcom/android/server/am/OpForceDarkController$you;
+    iget-object p0, p1, Lcom/android/server/am/OpForceDarkController$zta$zta;->QD:Lcom/android/server/am/OpForceDarkController$you;
 
     monitor-exit v0
 
@@ -1406,14 +1406,14 @@
 .method sis(Lcom/android/server/am/OpForceDarkController$zta;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
-    invoke-virtual {p1}, Lcom/android/server/am/OpForceDarkController$zta;->Mc()Ljava/util/List;
+    invoke-virtual {p1}, Lcom/android/server/am/OpForceDarkController$zta;->Oc()Ljava/util/List;
 
     move-result-object p1
 
@@ -1445,10 +1445,10 @@
     throw p0
 .end method
 
-.method tb()Ljava/lang/String;
+.method ub()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -1464,14 +1464,14 @@
 
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->ED:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/server/am/OpForceDarkController$zta;->UD:Ljava/lang/Object;
 
     monitor-enter v1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -1479,15 +1479,15 @@
 
     if-lez v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->clear()V
 
     const/4 v2, -0x1
 
-    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->GD:I
+    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->WD:I
 
-    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->HD:I
+    iput v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->XD:I
 
     :cond_1
     const-string v2, "pkgName"
@@ -1496,7 +1496,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     const-string v2, "privileged"
 
@@ -1545,7 +1545,7 @@
 
     if-eqz v4, :cond_2
 
-    iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->FD:Ljava/util/List;
+    iget-object v4, p0, Lcom/android/server/am/OpForceDarkController$zta;->VD:Ljava/util/List;
 
     invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1562,7 +1562,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1578,9 +1578,9 @@
     goto :goto_0
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->gp()V
+    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->jp()V
 
-    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->hp()V
+    invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController$zta;->kp()V
 
     monitor-exit v1
 
@@ -1607,7 +1607,7 @@
 .method z(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->DD:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$zta;->TD:Ljava/lang/String;
 
     return-void
 .end method

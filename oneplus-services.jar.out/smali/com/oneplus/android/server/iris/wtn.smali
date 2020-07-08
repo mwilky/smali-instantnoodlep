@@ -219,7 +219,7 @@
     move v6, v7
 
     :goto_2
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->U(Z)V
+    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->T(Z)V
 
     goto/16 :goto_7
 
@@ -258,7 +258,7 @@
     move v6, v7
 
     :goto_3
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->W(Z)V
+    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->V(Z)V
 
     goto :goto_7
 
@@ -297,7 +297,7 @@
     move v6, v7
 
     :goto_4
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->S(Z)V
+    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->R(Z)V
 
     goto :goto_7
 
@@ -336,7 +336,7 @@
     move v6, v7
 
     :goto_5
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->V(Z)V
+    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->U(Z)V
 
     goto :goto_7
 
@@ -375,7 +375,7 @@
     move v6, v7
 
     :goto_6
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->R(Z)V
+    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->Q(Z)V
 
     :cond_7
     :goto_7

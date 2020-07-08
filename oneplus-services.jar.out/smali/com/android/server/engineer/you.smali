@@ -13,17 +13,17 @@
 
 
 # static fields
-.field private static final NL:Ljava/lang/String; = "sys_engineer_config_list"
-
-.field private static final OL:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
-
-.field private static final PL:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
-
 .field private static final TAG:Ljava/lang/String; = "you"
+
+.field private static final hM:Ljava/lang/String; = "sys_engineer_config_list"
+
+.field private static final iM:Ljava/lang/String; = "/data/engineermode/sys_engineer_config_list.xml"
+
+.field private static final jM:Ljava/lang/String; = "/system/etc/sys_engineer_config_list.xml"
 
 
 # instance fields
-.field private final iL:Lcom/android/server/engineer/you$zta;
+.field private final DL:Lcom/android/server/engineer/you$zta;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-virtual {p0, p1, v0}, Lcom/android/server/engineer/ibl;->zta(Lcom/android/server/engineer/ibl$zta;Lcom/android/server/engineer/ibl$zta;)V
 
-    iput-object p2, p0, Lcom/android/server/engineer/you;->iL:Lcom/android/server/engineer/you$zta;
+    iput-object p2, p0, Lcom/android/server/engineer/you;->DL:Lcom/android/server/engineer/you$zta;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/server/engineer/ibl;->init()V
@@ -87,7 +87,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->h(Z)Lcom/android/server/engineer/ibl$zta;
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->g(Z)Lcom/android/server/engineer/ibl$zta;
 
     move-result-object p0
 
@@ -105,7 +105,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->h(Z)Lcom/android/server/engineer/ibl$zta;
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->g(Z)Lcom/android/server/engineer/ibl$zta;
 
     move-result-object p0
 
@@ -123,7 +123,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->h(Z)Lcom/android/server/engineer/ibl$zta;
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->g(Z)Lcom/android/server/engineer/ibl$zta;
 
     move-result-object p0
 
@@ -141,7 +141,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->h(Z)Lcom/android/server/engineer/ibl$zta;
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->g(Z)Lcom/android/server/engineer/ibl$zta;
 
     move-result-object p0
 
@@ -154,30 +154,30 @@
     return p0
 .end method
 
-.method vd()Z
+.method xd()Z
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->h(Z)Lcom/android/server/engineer/ibl$zta;
+    invoke-virtual {p0, v0}, Lcom/android/server/engineer/ibl;->g(Z)Lcom/android/server/engineer/ibl$zta;
 
     move-result-object p0
 
     check-cast p0, Lcom/android/server/engineer/you$you;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->vd()Z
+    invoke-virtual {p0}, Lcom/android/server/engineer/you$you;->xd()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public xd()V
+.method public zd()V
     .locals 1
 
-    invoke-super {p0}, Lcom/android/server/engineer/ibl;->xd()V
+    invoke-super {p0}, Lcom/android/server/engineer/ibl;->zd()V
 
-    iget-object p0, p0, Lcom/android/server/engineer/you;->iL:Lcom/android/server/engineer/you$zta;
+    iget-object p0, p0, Lcom/android/server/engineer/you;->DL:Lcom/android/server/engineer/you$zta;
 
     if-eqz p0, :cond_0
 

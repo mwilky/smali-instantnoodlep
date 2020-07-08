@@ -18,47 +18,49 @@
 # static fields
 .field private static final DISABLE_COLOR_FAST:I = 0x0
 
+.field private static final Kpa:I = 0x38
+
+.field private static final Lpa:I = 0x0
+
+.field private static final Mpa:Ljava/lang/String; = "56-1"
+
+.field private static final Npa:Ljava/lang/String; = "56-0"
+
+.field private static final Opa:I = 0x0
+
+.field private static final Ppa:I = 0x1
+
+.field private static final Qpa:I = 0x2
+
+.field private static final Rpa:I = 0x3
+
+.field private static final Spa:I = 0x4
+
 .field private static final TAG:Ljava/lang/String; = "OpOIMCColorManager"
 
-.field private static final ppa:I = 0x38
-
-.field private static final qpa:I = 0x0
-
-.field private static final rpa:Ljava/lang/String; = "56-1"
-
-.field private static final spa:Ljava/lang/String; = "56-0"
-
-.field private static final tpa:I = 0x0
-
-.field private static final upa:I = 0x1
-
-.field private static final vpa:I = 0x2
-
-.field private static final wpa:I = 0x3
-
-.field private static final xpa:I = 0x4
-
-.field private static final ypa:I = 0x2
+.field private static final Tpa:I = 0x2
 
 
 # instance fields
-.field public dpa:Ljava/lang/String;
+.field public Apa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GrayColor;
 
-.field public epa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;
+.field public Bpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;
 
-.field public fpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GrayColor;
+.field public Cpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;
 
-.field public gpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;
+.field public Dpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;
 
-.field public hpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;
+.field private Epa:Z
 
-.field public ipa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;
+.field private Fpa:Z
 
-.field private jpa:Z
+.field private Gpa:Z
 
-.field private kpa:Z
+.field private Hpa:Z
 
-.field private lpa:Z
+.field private Ipa:Z
+
+.field public Jpa:I
 
 .field private mContext:Landroid/content/Context;
 
@@ -66,11 +68,9 @@
 
 .field protected mOneplusIrisManager:Lcom/oneplus/iris/IOneplusIrisManager;
 
-.field private mpa:Z
+.field public ypa:Ljava/lang/String;
 
-.field private npa:Z
-
-.field public opa:I
+.field public zpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;
 
 
 # direct methods
@@ -81,21 +81,21 @@
 
     const-string v0, "normal"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->dpa:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->ypa:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->jpa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Epa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->kpa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Fpa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->lpa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Gpa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->mpa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Hpa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->npa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Ipa:Z
 
-    iput v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->opa:I
+    iput v0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Jpa:I
 
     iput-object p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->mContext:Landroid/content/Context;
 
@@ -103,31 +103,31 @@
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/android/server/display/OpOIMCColorManager$GrayColor;-><init>(Lcom/oneplus/android/server/display/OpOIMCColorManager;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->fpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GrayColor;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Apa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GrayColor;
 
     new-instance v1, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;-><init>(Lcom/oneplus/android/server/display/OpOIMCColorManager;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->epa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->zpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorBalance;
 
     new-instance v1, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;-><init>(Lcom/oneplus/android/server/display/OpOIMCColorManager;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->hpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Cpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$ColorDisable;
 
     new-instance v1, Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;-><init>(Lcom/oneplus/android/server/display/OpOIMCColorManager;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->gpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Bpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$PaperColor;
 
     new-instance v1, Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;-><init>(Lcom/oneplus/android/server/display/OpOIMCColorManager;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->ipa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;
+    iput-object v1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Dpa:Lcom/oneplus/android/server/display/OpOIMCColorManager$GoogleMatrix;
 
     sget-object p1, Lcom/oneplus/android/context/IOneplusContext$EType;->ONEPLUS_COLORDISPLAY_MANAGER:Lcom/oneplus/android/context/IOneplusContext$EType;
 
@@ -143,7 +143,7 @@
 
     new-array p1, p1, [I
 
-    const/16 v1, 0x10c
+    const/16 v1, 0x10e
 
     aput v1, p1, v0
 
@@ -170,7 +170,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/display/OpOIMCColorManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->npa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Ipa:Z
 
     return p0
 .end method
@@ -178,7 +178,7 @@
 .method static synthetic rtg(Lcom/oneplus/android/server/display/OpOIMCColorManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->npa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Ipa:Z
 
     return p1
 .end method
@@ -186,7 +186,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/display/OpOIMCColorManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->lpa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Gpa:Z
 
     return p0
 .end method
@@ -194,7 +194,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/display/OpOIMCColorManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->lpa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Gpa:Z
 
     return p1
 .end method
@@ -202,7 +202,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/OpOIMCColorManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->mpa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Hpa:Z
 
     return p0
 .end method
@@ -210,7 +210,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/display/OpOIMCColorManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->mpa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Hpa:Z
 
     return p1
 .end method
@@ -218,7 +218,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/OpOIMCColorManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->kpa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Fpa:Z
 
     return p0
 .end method
@@ -226,7 +226,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/OpOIMCColorManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->kpa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Fpa:Z
 
     return p1
 .end method
@@ -234,7 +234,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/display/OpOIMCColorManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->jpa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Epa:Z
 
     return p0
 .end method
@@ -242,7 +242,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/display/OpOIMCColorManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->jpa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/display/OpOIMCColorManager;->Epa:Z
 
     return p1
 .end method

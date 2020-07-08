@@ -15,55 +15,31 @@
 # static fields
 .field private static final DEBUG:Z
 
+.field private static final DX:I = 0x145
+
+.field private static final EX:I = 0xe1
+
+.field static final FX:I = 0x96
+
+.field private static final GX:I = 0x12c
+
+.field static final HX:I = 0x0
+
+.field static final IX:I = 0x1
+
+.field static final JX:I = 0x2
+
+.field static final KX:I = 0x3
+
 .field private static final TAG:Ljava/lang/String; = "OpVCWindow"
-
-.field private static final hX:I = 0x145
-
-.field private static final iX:I = 0xe1
-
-.field static final jX:I = 0x96
-
-.field private static final kX:I = 0x12c
-
-.field static final lX:I = 0x0
-
-.field static final nX:I = 0x1
-
-.field static final oX:I = 0x2
-
-.field static final pX:I = 0x3
 
 
 # instance fields
-.field private TW:Lcom/android/server/you/wtn$you;
+.field private AX:I
 
-.field private UW:Z
+.field BX:Landroid/animation/Animator$AnimatorListener;
 
-.field private final VW:Landroid/graphics/Rect;
-
-.field private WW:Landroid/animation/AnimatorSet;
-
-.field private XW:Landroid/animation/AnimatorSet;
-
-.field private YW:Landroid/animation/ValueAnimator;
-
-.field private ZW:Z
-
-.field private _W:Z
-
-.field private aX:Landroid/content/res/Configuration;
-
-.field private bX:I
-
-.field private cX:I
-
-.field private dX:I
-
-.field private eX:I
-
-.field fX:Landroid/animation/Animator$AnimatorListener;
-
-.field gX:Landroid/animation/Animator$AnimatorListener;
+.field CX:Landroid/animation/Animator$AnimatorListener;
 
 .field private volatile mContentHeight:I
 
@@ -76,6 +52,30 @@
 .field private mWindow:Landroid/view/Window;
 
 .field private mWindowManager:Landroid/view/WindowManager;
+
+.field private oX:Lcom/android/server/you/wtn$you;
+
+.field private pX:Z
+
+.field private final qX:Landroid/graphics/Rect;
+
+.field private rX:Landroid/animation/AnimatorSet;
+
+.field private sX:Landroid/animation/AnimatorSet;
+
+.field private tX:Landroid/animation/ValueAnimator;
+
+.field private uX:Z
+
+.field private vX:Z
+
+.field private wX:Landroid/content/res/Configuration;
+
+.field private xX:I
+
+.field private yX:I
+
+.field private zX:I
 
 
 # direct methods
@@ -98,7 +98,7 @@
 
     iput-boolean v0, p0, Lcom/android/server/you/wtn;->mCreated:Z
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->UW:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->pX:Z
 
     iput v0, p0, Lcom/android/server/you/wtn;->mContentHeight:I
 
@@ -106,39 +106,39 @@
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/you/wtn;->VW:Landroid/graphics/Rect;
+    iput-object v1, p0, Lcom/android/server/you/wtn;->qX:Landroid/graphics/Rect;
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->ZW:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->uX:Z
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->_W:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->vX:Z
 
     const/16 v1, 0x3a
 
-    iput v1, p0, Lcom/android/server/you/wtn;->bX:I
+    iput v1, p0, Lcom/android/server/you/wtn;->xX:I
 
     const/16 v1, 0x145
 
-    iput v1, p0, Lcom/android/server/you/wtn;->cX:I
+    iput v1, p0, Lcom/android/server/you/wtn;->yX:I
 
     const/16 v1, 0x18
 
-    iput v1, p0, Lcom/android/server/you/wtn;->dX:I
+    iput v1, p0, Lcom/android/server/you/wtn;->zX:I
 
     const/16 v1, 0xe
 
-    iput v1, p0, Lcom/android/server/you/wtn;->eX:I
+    iput v1, p0, Lcom/android/server/you/wtn;->AX:I
 
     new-instance v1, Lcom/android/server/you/bio;
 
     invoke-direct {v1, p0}, Lcom/android/server/you/bio;-><init>(Lcom/android/server/you/wtn;)V
 
-    iput-object v1, p0, Lcom/android/server/you/wtn;->fX:Landroid/animation/Animator$AnimatorListener;
+    iput-object v1, p0, Lcom/android/server/you/wtn;->BX:Landroid/animation/Animator$AnimatorListener;
 
     new-instance v1, Lcom/android/server/you/igw;
 
     invoke-direct {v1, p0}, Lcom/android/server/you/igw;-><init>(Lcom/android/server/you/wtn;)V
 
-    iput-object v1, p0, Lcom/android/server/you/wtn;->gX:Landroid/animation/Animator$AnimatorListener;
+    iput-object v1, p0, Lcom/android/server/you/wtn;->CX:Landroid/animation/Animator$AnimatorListener;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -218,15 +218,15 @@
 
     invoke-direct {p1, v0}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
 
-    iput-object p1, p0, Lcom/android/server/you/wtn;->aX:Landroid/content/res/Configuration;
+    iput-object p1, p0, Lcom/android/server/you/wtn;->wX:Landroid/content/res/Configuration;
 
     return-void
 .end method
 
-.method private Kq()V
+.method private Nq()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_0
 
@@ -242,9 +242,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->_W:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->vX:Z
 
-    iget-object p0, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object p0, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p0}, Landroid/animation/AnimatorSet;->cancel()V
 
@@ -252,10 +252,10 @@
     return-void
 .end method
 
-.method private Lq()V
+.method private Oq()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_0
 
@@ -271,9 +271,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->ZW:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->uX:Z
 
-    iget-object p0, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object p0, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p0}, Landroid/animation/AnimatorSet;->cancel()V
 
@@ -281,14 +281,14 @@
     return-void
 .end method
 
-.method private Mq()V
+.method private Pq()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/you/wtn;->mDecor:Landroid/view/View;
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/you/wtn;->UW:Z
+    iget-boolean v0, p0, Lcom/android/server/you/wtn;->pX:Z
 
     if-eqz v0, :cond_1
 
@@ -328,9 +328,9 @@
 
     invoke-virtual {p0}, Lcom/android/server/you/wtn;->onStop()V
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->UW:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->pX:Z
 
-    iput-object v1, p0, Lcom/android/server/you/wtn;->TW:Lcom/android/server/you/wtn$you;
+    iput-object v1, p0, Lcom/android/server/you/wtn;->oX:Lcom/android/server/you/wtn$you;
 
     return-void
 
@@ -345,9 +345,9 @@
 
     invoke-virtual {p0}, Lcom/android/server/you/wtn;->onStop()V
 
-    iput-boolean v0, p0, Lcom/android/server/you/wtn;->UW:Z
+    iput-boolean v0, p0, Lcom/android/server/you/wtn;->pX:Z
 
-    iput-object v1, p0, Lcom/android/server/you/wtn;->TW:Lcom/android/server/you/wtn$you;
+    iput-object v1, p0, Lcom/android/server/you/wtn;->oX:Lcom/android/server/you/wtn$you;
 
     throw v2
 
@@ -360,7 +360,7 @@
     return-void
 .end method
 
-.method private Nq()V
+.method private Qq()V
     .locals 2
 
     invoke-virtual {p0}, Lcom/android/server/you/wtn;->isShowing()Z
@@ -380,7 +380,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/you/wtn;->VW:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/server/you/wtn;->qX:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
@@ -417,7 +417,7 @@
     return-void
 .end method
 
-.method private Oq()V
+.method private Rq()V
     .locals 13
 
     const-string v0, "alpha"
@@ -433,7 +433,7 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object v1, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     if-eqz v1, :cond_1
 
@@ -547,9 +547,9 @@
 
     invoke-direct {v2}, Landroid/animation/AnimatorSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iput-object v2, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
-    iget-object v2, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object v2, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     const/4 v3, 0x4
 
@@ -567,21 +567,21 @@
 
     invoke-virtual {v2, v3}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     const-wide/16 v1, 0x145
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
-    iget-object v1, p0, Lcom/android/server/you/wtn;->gX:Landroid/animation/Animator$AnimatorListener;
+    iget-object v1, p0, Lcom/android/server/you/wtn;->CX:Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    iput-boolean v10, p0, Lcom/android/server/you/wtn;->ZW:Z
+    iput-boolean v10, p0, Lcom/android/server/you/wtn;->uX:Z
 
-    iget-object p0, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iget-object p0, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p0}, Landroid/animation/AnimatorSet;->start()V
     :try_end_0
@@ -619,7 +619,7 @@
 .method static synthetic bio(Lcom/android/server/you/wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Nq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Qq()V
 
     return-void
 .end method
@@ -643,7 +643,7 @@
 .method static synthetic gck(Lcom/android/server/you/wtn;)Landroid/animation/ValueAnimator;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/you/wtn;->YW:Landroid/animation/ValueAnimator;
+    iget-object p0, p0, Lcom/android/server/you/wtn;->tX:Landroid/animation/ValueAnimator;
 
     return-object p0
 .end method
@@ -659,7 +659,7 @@
 .method static synthetic kth(Lcom/android/server/you/wtn;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/you/wtn;->bX:I
+    iget p0, p0, Lcom/android/server/you/wtn;->xX:I
 
     return p0
 .end method
@@ -692,7 +692,7 @@
 .method static synthetic rtg(Lcom/android/server/you/wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Mq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Pq()V
 
     return-void
 .end method
@@ -700,7 +700,7 @@
 .method static synthetic sis(Lcom/android/server/you/wtn;)Lcom/android/server/you/wtn$you;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/you/wtn;->TW:Lcom/android/server/you/wtn$you;
+    iget-object p0, p0, Lcom/android/server/you/wtn;->oX:Lcom/android/server/you/wtn$you;
 
     return-object p0
 .end method
@@ -708,7 +708,7 @@
 .method static synthetic ssp(Lcom/android/server/you/wtn;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/you/wtn;->ZW:Z
+    iget-boolean p0, p0, Lcom/android/server/you/wtn;->uX:Z
 
     return p0
 .end method
@@ -789,7 +789,7 @@
 .method static synthetic tsu(Lcom/android/server/you/wtn;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/you/wtn;->_W:Z
+    iget-boolean p0, p0, Lcom/android/server/you/wtn;->vX:Z
 
     return p0
 .end method
@@ -805,7 +805,7 @@
 .method static synthetic you(Lcom/android/server/you/wtn;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/you/wtn;->cX:I
+    iget p0, p0, Lcom/android/server/you/wtn;->yX:I
 
     return p0
 .end method
@@ -813,7 +813,7 @@
 .method static synthetic you(Lcom/android/server/you/wtn;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/you/wtn;->WW:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/android/server/you/wtn;->rX:Landroid/animation/AnimatorSet;
 
     return-object p1
 .end method
@@ -893,11 +893,11 @@
 
     invoke-virtual {p1, v0}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    iget v0, p0, Lcom/android/server/you/wtn;->cX:I
+    iget v0, p0, Lcom/android/server/you/wtn;->yX:I
 
     iget-object v1, p0, Lcom/android/server/you/wtn;->mContext:Landroid/content/Context;
 
-    iget v2, p0, Lcom/android/server/you/wtn;->bX:I
+    iget v2, p0, Lcom/android/server/you/wtn;->xX:I
 
     invoke-direct {p0, v1, v2}, Lcom/android/server/you/wtn;->tsu(Landroid/content/Context;I)I
 
@@ -915,7 +915,7 @@
 .method static synthetic you(Lcom/android/server/you/wtn;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/you/wtn;->ZW:Z
+    iput-boolean p1, p0, Lcom/android/server/you/wtn;->uX:Z
 
     return p1
 .end method
@@ -949,7 +949,7 @@
 .method static synthetic zta(Lcom/android/server/you/wtn;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     return-object p1
 .end method
@@ -957,7 +957,7 @@
 .method static synthetic zta(Lcom/android/server/you/wtn;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/you/wtn;->YW:Landroid/animation/ValueAnimator;
+    iput-object p1, p0, Lcom/android/server/you/wtn;->tX:Landroid/animation/ValueAnimator;
 
     return-object p1
 .end method
@@ -965,7 +965,7 @@
 .method static synthetic zta(Lcom/android/server/you/wtn;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/you/wtn;->_W:Z
+    iput-boolean p1, p0, Lcom/android/server/you/wtn;->vX:Z
 
     return p1
 .end method
@@ -1001,7 +1001,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_1
 
@@ -1149,9 +1149,9 @@
 
     invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iput-object v0, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0, p1}, Landroid/animation/AnimatorSet;->play(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
 
@@ -1159,21 +1159,21 @@
 
     invoke-virtual {p1, v2}, Landroid/animation/AnimatorSet$Builder;->with(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
 
-    iget-object p1, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object p1, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     int-to-long v0, v10
 
     invoke-virtual {p1, v0, v1}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 
-    iget-object p1, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object p1, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->fX:Landroid/animation/Animator$AnimatorListener;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->BX:Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {p1, v0}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    iput-boolean v7, p0, Lcom/android/server/you/wtn;->_W:Z
+    iput-boolean v7, p0, Lcom/android/server/you/wtn;->vX:Z
 
-    iget-object p0, p0, Lcom/android/server/you/wtn;->XW:Landroid/animation/AnimatorSet;
+    iget-object p0, p0, Lcom/android/server/you/wtn;->sX:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p0}, Landroid/animation/AnimatorSet;->start()V
     :try_end_1
@@ -1208,13 +1208,13 @@
     return-void
 .end method
 
-.method public Ee()Z
+.method public Ge()Z
     .locals 10
 
     const/4 v0, 0x0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/you/wtn;->aX:Landroid/content/res/Configuration;
+    iget-object v1, p0, Lcom/android/server/you/wtn;->wX:Landroid/content/res/Configuration;
 
     iget-object p0, p0, Lcom/android/server/you/wtn;->mContext:Landroid/content/Context;
 
@@ -1402,7 +1402,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Lq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Oq()V
 
     const/4 v0, 0x0
 
@@ -1464,7 +1464,7 @@
 .method zta(Landroid/view/WindowManager$LayoutParams;)V
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->VW:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->qX:Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
@@ -1493,7 +1493,7 @@
 
     iget-object v0, p0, Lcom/android/server/you/wtn;->mContext:Landroid/content/Context;
 
-    iget v1, p0, Lcom/android/server/you/wtn;->eX:I
+    iget v1, p0, Lcom/android/server/you/wtn;->AX:I
 
     invoke-direct {p0, v0, v1}, Lcom/android/server/you/wtn;->tsu(Landroid/content/Context;I)I
 
@@ -1515,7 +1515,7 @@
 
     iget-object v0, p0, Lcom/android/server/you/wtn;->mContext:Landroid/content/Context;
 
-    iget v1, p0, Lcom/android/server/you/wtn;->dX:I
+    iget v1, p0, Lcom/android/server/you/wtn;->zX:I
 
     invoke-direct {p0, v0, v1}, Lcom/android/server/you/wtn;->tsu(Landroid/content/Context;I)I
 
@@ -1530,7 +1530,7 @@
 .method public zta(Lcom/android/server/you/wtn$you;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/you/wtn;->TW:Lcom/android/server/you/wtn$you;
+    iput-object p1, p0, Lcom/android/server/you/wtn;->oX:Lcom/android/server/you/wtn$you;
 
     return-void
 .end method
@@ -1556,11 +1556,11 @@
 
     invoke-static {v0}, Lcom/android/server/you/wtn;->logd(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/android/server/you/wtn;->VW:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/server/you/wtn;->qX:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p2}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
-    iget-boolean p2, p0, Lcom/android/server/you/wtn;->UW:Z
+    iget-boolean p2, p0, Lcom/android/server/you/wtn;->pX:Z
 
     if-eqz p2, :cond_1
 
@@ -1568,11 +1568,11 @@
 
     if-eqz p2, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Kq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Nq()V
 
     invoke-direct {p0, p1}, Lcom/android/server/you/wtn;->tc(Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Nq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Qq()V
 
     iget-object p1, p0, Lcom/android/server/you/wtn;->mDecor:Landroid/view/View;
 
@@ -1580,7 +1580,7 @@
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Oq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Rq()V
 
     :cond_0
     return-void
@@ -1655,7 +1655,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/you/wtn;->UW:Z
+    iput-boolean p1, p0, Lcom/android/server/you/wtn;->pX:Z
 
     new-instance p1, Landroid/content/res/Configuration;
 
@@ -1671,9 +1671,9 @@
 
     invoke-direct {p1, p2}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
 
-    iput-object p1, p0, Lcom/android/server/you/wtn;->aX:Landroid/content/res/Configuration;
+    iput-object p1, p0, Lcom/android/server/you/wtn;->wX:Landroid/content/res/Configuration;
 
-    invoke-direct {p0}, Lcom/android/server/you/wtn;->Oq()V
+    invoke-direct {p0}, Lcom/android/server/you/wtn;->Rq()V
 
     return-void
 .end method

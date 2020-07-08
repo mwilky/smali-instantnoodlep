@@ -4,49 +4,49 @@
 
 
 # static fields
-.field private static final OVa:B = 0x0t
+.field private static final AWa:B = -0x2t
 
-.field private static final PVa:B = 0x1t
+.field private static final BWa:B = -0x1t
 
-.field private static final QVa:B = 0x2t
+.field private static final CWa:B = 0x0t
 
-.field private static final RVa:B = 0x3t
+.field private static final DWa:B = 0x10t
 
-.field private static final SVa:B = 0x4t
+.field private static final EWa:B = 0x20t
 
-.field private static final TVa:B = 0x5t
+.field private static final FWa:B = 0x30t
 
-.field private static final UVa:B = 0x6t
+.field private static final GWa:B = 0x40t
 
-.field private static final VVa:B = 0x7t
+.field private static final HWa:B = 0x50t
 
-.field private static final WVa:B = 0x8t
+.field private static final IWa:B = 0x60t
 
-.field private static final XVa:B = 0x9t
+.field private static final JWa:[S
 
-.field private static final YVa:B = 0xat
+.field private static final KWa:[B
 
-.field private static final ZVa:B = -0x2t
+.field private static final pWa:B = 0x0t
 
-.field private static final _Va:B = -0x1t
+.field private static final qWa:B = 0x1t
 
-.field private static final aWa:B = 0x0t
+.field private static final rWa:B = 0x2t
 
-.field private static final bWa:B = 0x10t
+.field private static final sWa:B = 0x3t
 
-.field private static final cWa:B = 0x20t
+.field private static final tWa:B = 0x4t
 
-.field private static final dWa:B = 0x30t
+.field private static final uWa:B = 0x5t
 
-.field private static final eWa:B = 0x40t
+.field private static final vWa:B = 0x6t
 
-.field private static final fWa:B = 0x50t
+.field private static final wWa:B = 0x7t
 
-.field private static final gWa:B = 0x60t
+.field private static final xWa:B = 0x8t
 
-.field private static final hWa:[S
+.field private static final yWa:B = 0x9t
 
-.field private static final iWa:[B
+.field private static final zWa:B = 0xat
 
 
 # direct methods
@@ -57,13 +57,13 @@
 
     new-array v1, v0, [S
 
-    sput-object v1, Lorg/bouncycastle/util/encoders/ssp;->hWa:[S
+    sput-object v1, Lorg/bouncycastle/util/encoders/ssp;->JWa:[S
 
     const/16 v1, 0x70
 
     new-array v2, v1, [B
 
-    sput-object v2, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sput-object v2, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     new-array v2, v0, [B
 
@@ -155,7 +155,7 @@
 
     invoke-static {v2, v1, v7, v4}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     array-length v7, v1
 
@@ -165,7 +165,7 @@
 
     invoke-static {v1, v4, v7, v3}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v3, 0xb
 
@@ -173,7 +173,7 @@
 
     invoke-static {v1, v6, v3, v7}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v7, 0x18
 
@@ -181,7 +181,7 @@
 
     invoke-static {v1, v7, v8, v4}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v7, 0x28
 
@@ -189,7 +189,7 @@
 
     invoke-static {v1, v7, v8, v5}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v7, 0x3a
 
@@ -197,7 +197,7 @@
 
     invoke-static {v1, v7, v8, v4}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v7, 0x48
 
@@ -205,7 +205,7 @@
 
     invoke-static {v1, v7, v8, v4}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v7, 0x59
 
@@ -213,7 +213,7 @@
 
     invoke-static {v1, v7, v8, v5}, Lorg/bouncycastle/util/encoders/ssp;->fill([BIIB)V
 
-    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v1, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     const/16 v7, 0x68
 
@@ -238,7 +238,7 @@
 
     aget-byte v5, v3, v5
 
-    sget-object v8, Lorg/bouncycastle/util/encoders/ssp;->hWa:[S
+    sget-object v8, Lorg/bouncycastle/util/encoders/ssp;->JWa:[S
 
     shl-int/2addr v7, v6
 
@@ -352,7 +352,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v4, Lorg/bouncycastle/util/encoders/ssp;->hWa:[S
+    sget-object v4, Lorg/bouncycastle/util/encoders/ssp;->JWa:[S
 
     and-int/lit8 v0, v0, 0x7f
 
@@ -382,7 +382,7 @@
 
     or-int/2addr v4, v6
 
-    sget-object v6, Lorg/bouncycastle/util/encoders/ssp;->iWa:[B
+    sget-object v6, Lorg/bouncycastle/util/encoders/ssp;->KWa:[B
 
     and-int/lit16 v2, v2, 0xff
 

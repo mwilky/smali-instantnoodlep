@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final KQa:I = -0x1f000000
+.field private static final lRa:I = -0x1f000000
 
-.field private static final LQa:J = -0x1f00000000000000L
+.field private static final mRa:J = -0x1f00000000000000L
 
 
 # direct methods
@@ -116,38 +116,6 @@
     return-void
 .end method
 
-.method public static bk()[B
-    .locals 3
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    const/16 v2, -0x80
-
-    aput-byte v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static ck()[I
-    .locals 3
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
-    const/4 v1, 0x0
-
-    const/high16 v2, -0x80000000
-
-    aput v2, v0, v1
-
-    return-object v0
-.end method
-
 .method public static cno([J[J)V
     .locals 13
 
@@ -196,7 +164,39 @@
     return-void
 .end method
 
-.method public static dk()[J
+.method public static ek()[B
+    .locals 3
+
+    const/16 v0, 0x10
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    const/16 v2, -0x80
+
+    aput-byte v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static fk()[I
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    const/4 v1, 0x0
+
+    const/high16 v2, -0x80000000
+
+    aput v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static gk()[J
     .locals 4
 
     const/4 v0, 0x2
@@ -212,7 +212,7 @@
     return-object v0
 .end method
 
-.method public static ek()[J
+.method public static hk()[J
     .locals 4
 
     const/4 v0, 0x2

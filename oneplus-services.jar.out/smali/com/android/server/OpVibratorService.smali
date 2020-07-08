@@ -2215,7 +2215,7 @@
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, Lcom/android/server/OpVibratorService$zta;-><init>(Lcom/android/server/OpVibratorService;Lcom/android/server/t;)V
+    invoke-direct {p1, p0, p2}, Lcom/android/server/OpVibratorService$zta;-><init>(Lcom/android/server/OpVibratorService;Lcom/android/server/v;)V
 
     iput-object p1, p0, Lcom/android/server/OpVibratorService;->mConfigUpdater:Lcom/android/server/OpVibratorService$zta;
 
@@ -3622,15 +3622,15 @@
 
     check-cast v5, Lcom/android/server/OpVibratorService$you;
 
-    invoke-virtual {v5}, Lcom/android/server/OpVibratorService$you;->wa()I
+    invoke-virtual {v5}, Lcom/android/server/OpVibratorService$you;->xa()I
 
     move-result v6
 
-    invoke-virtual {v5}, Lcom/android/server/OpVibratorService$you;->va()I
+    invoke-virtual {v5}, Lcom/android/server/OpVibratorService$you;->wa()I
 
     move-result v7
 
-    invoke-virtual {v5}, Lcom/android/server/OpVibratorService$you;->ua()I
+    invoke-virtual {v5}, Lcom/android/server/OpVibratorService$you;->va()I
 
     move-result v5
 

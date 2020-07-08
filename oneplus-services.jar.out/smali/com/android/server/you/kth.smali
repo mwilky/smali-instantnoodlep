@@ -18,33 +18,33 @@
 
 
 # static fields
-.field static final NW:I = 0x28
-
-.field static final OW:I = 0x96
-
-.field static final PW:F = 300.0f
-
-.field static final QW:I = 0x0
-
-.field static final RW:I = 0x1
-
 .field static final SWIPE_DOWN:I = 0x4
 
 .field static final SWIPE_LEFT:I = 0x2
 
 .field static final SWIPE_RIGHT:I = 0x3
 
+.field static final iX:I = 0x28
+
+.field static final jX:I = 0x96
+
+.field static final kX:F = 300.0f
+
+.field static final lX:I = 0x0
+
+.field static final nX:I = 0x1
+
 
 # instance fields
-.field MW:I
+.field hX:I
 
-.field private PO:I
+.field private lP:I
 
-.field private QO:I
+.field private nP:I
 
-.field private SO:F
+.field private oP:F
 
-.field private UO:F
+.field private pP:F
 
 .field final synthetic this$0:Lcom/android/server/you/wtn;
 
@@ -59,7 +59,7 @@
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/android/server/you/kth;->MW:I
+    iput p1, p0, Lcom/android/server/you/kth;->hX:I
 
     return-void
 .end method
@@ -112,7 +112,7 @@
 
     move-result v0
 
-    iget v6, p0, Lcom/android/server/you/kth;->SO:F
+    iget v6, p0, Lcom/android/server/you/kth;->oP:F
 
     sub-float/2addr v0, v6
 
@@ -122,13 +122,13 @@
 
     move-result p2
 
-    iget v6, p0, Lcom/android/server/you/kth;->UO:F
+    iget v6, p0, Lcom/android/server/you/kth;->pP:F
 
     sub-float/2addr p2, v6
 
     float-to-int p2, p2
 
-    iget v6, p0, Lcom/android/server/you/kth;->MW:I
+    iget v6, p0, Lcom/android/server/you/kth;->hX:I
 
     const/16 v7, -0x28
 
@@ -138,21 +138,21 @@
 
     if-le v0, v8, :cond_1
 
-    iput v4, p0, Lcom/android/server/you/kth;->MW:I
+    iput v4, p0, Lcom/android/server/you/kth;->hX:I
 
     goto :goto_1
 
     :cond_1
     if-ge v0, v7, :cond_2
 
-    iput v5, p0, Lcom/android/server/you/kth;->MW:I
+    iput v5, p0, Lcom/android/server/you/kth;->hX:I
 
     goto :goto_1
 
     :cond_2
     if-ge p2, v7, :cond_3
 
-    iput v2, p0, Lcom/android/server/you/kth;->MW:I
+    iput v2, p0, Lcom/android/server/you/kth;->hX:I
 
     goto :goto_1
 
@@ -161,7 +161,7 @@
 
     const/4 p1, 0x4
 
-    iput p1, p0, Lcom/android/server/you/kth;->MW:I
+    iput p1, p0, Lcom/android/server/you/kth;->hX:I
 
     goto :goto_1
 
@@ -175,7 +175,7 @@
     move p2, v1
 
     :cond_5
-    iget v0, p0, Lcom/android/server/you/kth;->QO:I
+    iget v0, p0, Lcom/android/server/you/kth;->nP:I
 
     add-int/2addr v0, p2
 
@@ -200,11 +200,11 @@
     if-ne v6, v4, :cond_a
 
     :cond_8
-    iget p2, p0, Lcom/android/server/you/kth;->PO:I
+    iget p2, p0, Lcom/android/server/you/kth;->lP:I
 
     add-int/2addr p2, v0
 
-    iget v1, p0, Lcom/android/server/you/kth;->MW:I
+    iget v1, p0, Lcom/android/server/you/kth;->hX:I
 
     if-ne v1, v5, :cond_9
 
@@ -248,7 +248,7 @@
     return v2
 
     :cond_c
-    iget v0, p0, Lcom/android/server/you/kth;->MW:I
+    iget v0, p0, Lcom/android/server/you/kth;->hX:I
 
     if-eqz v0, :cond_16
 
@@ -256,7 +256,7 @@
 
     move-result v0
 
-    iget v6, p0, Lcom/android/server/you/kth;->SO:F
+    iget v6, p0, Lcom/android/server/you/kth;->oP:F
 
     sub-float/2addr v0, v6
 
@@ -266,13 +266,13 @@
 
     move-result p2
 
-    iget v6, p0, Lcom/android/server/you/kth;->UO:F
+    iget v6, p0, Lcom/android/server/you/kth;->pP:F
 
     sub-float/2addr p2, v6
 
     float-to-int p2, p2
 
-    iget v6, p0, Lcom/android/server/you/kth;->MW:I
+    iget v6, p0, Lcom/android/server/you/kth;->hX:I
 
     const/16 v7, 0x96
 
@@ -359,11 +359,11 @@
     :goto_5
     if-eqz p2, :cond_15
 
-    iget p2, p0, Lcom/android/server/you/kth;->MW:I
+    iget p2, p0, Lcom/android/server/you/kth;->hX:I
 
     if-ne p2, v2, :cond_14
 
-    iget p2, p0, Lcom/android/server/you/kth;->PO:I
+    iget p2, p0, Lcom/android/server/you/kth;->lP:I
 
     iput p2, p1, Landroid/view/WindowManager$LayoutParams;->x:I
 
@@ -375,14 +375,14 @@
 
     aput v4, v0, v1
 
-    iget v1, p0, Lcom/android/server/you/kth;->QO:I
+    iget v1, p0, Lcom/android/server/you/kth;->nP:I
 
     aput v1, v0, v2
 
     goto :goto_6
 
     :cond_14
-    iget p2, p0, Lcom/android/server/you/kth;->QO:I
+    iget p2, p0, Lcom/android/server/you/kth;->nP:I
 
     iput p2, p1, Landroid/view/WindowManager$LayoutParams;->y:I
 
@@ -394,7 +394,7 @@
 
     aput v4, v0, v1
 
-    iget v1, p0, Lcom/android/server/you/kth;->PO:I
+    iget v1, p0, Lcom/android/server/you/kth;->lP:I
 
     aput v1, v0, v2
 
@@ -407,7 +407,7 @@
 
     iput v3, p1, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
-    iget p2, p0, Lcom/android/server/you/kth;->MW:I
+    iget p2, p0, Lcom/android/server/you/kth;->hX:I
 
     iget-object v0, p0, Lcom/android/server/you/kth;->this$0:Lcom/android/server/you/wtn;
 
@@ -513,25 +513,25 @@
 
     iget v0, p1, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    iput v0, p0, Lcom/android/server/you/kth;->PO:I
+    iput v0, p0, Lcom/android/server/you/kth;->lP:I
 
     iget v0, p1, Landroid/view/WindowManager$LayoutParams;->y:I
 
-    iput v0, p0, Lcom/android/server/you/kth;->QO:I
+    iput v0, p0, Lcom/android/server/you/kth;->nP:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/you/kth;->SO:F
+    iput v0, p0, Lcom/android/server/you/kth;->oP:F
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result p2
 
-    iput p2, p0, Lcom/android/server/you/kth;->UO:F
+    iput p2, p0, Lcom/android/server/you/kth;->pP:F
 
-    iput v1, p0, Lcom/android/server/you/kth;->MW:I
+    iput v1, p0, Lcom/android/server/you/kth;->hX:I
 
     iget-object p2, p0, Lcom/android/server/you/kth;->this$0:Lcom/android/server/you/wtn;
 

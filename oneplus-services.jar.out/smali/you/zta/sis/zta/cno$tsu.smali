@@ -152,7 +152,7 @@
 
     sget-object v2, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
 
-    sget-object v3, Lyou/zta/sis/zta/sis;->NEa:Ljava/math/BigInteger;
+    sget-object v3, Lyou/zta/sis/zta/sis;->oFa:Ljava/math/BigInteger;
 
     sget-object v4, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
 
@@ -375,7 +375,7 @@
 
 
 # virtual methods
-.method public Vk()Lyou/zta/sis/zta/cno;
+.method public Yk()Lyou/zta/sis/zta/cno;
     .locals 3
 
     iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
@@ -408,7 +408,7 @@
     return-object v1
 .end method
 
-.method public Wk()Ljava/lang/String;
+.method public Zk()Ljava/lang/String;
     .locals 0
 
     const-string p0, "Fp"
@@ -416,7 +416,7 @@
     return-object p0
 .end method
 
-.method public Yk()Lyou/zta/sis/zta/cno;
+.method public al()Lyou/zta/sis/zta/cno;
     .locals 12
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->isZero()Z
@@ -425,7 +425,7 @@
 
     if-nez v0, :cond_8
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->Xk()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->_k()Z
 
     move-result v0
 
@@ -546,7 +546,7 @@
     return-object p0
 
     :cond_2
-    sget-object v0, Lyou/zta/sis/zta/sis;->NEa:Ljava/math/BigInteger;
+    sget-object v0, Lyou/zta/sis/zta/sis;->oFa:Ljava/math/BigInteger;
 
     iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
 

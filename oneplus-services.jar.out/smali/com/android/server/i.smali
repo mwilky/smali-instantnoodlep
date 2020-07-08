@@ -1,9 +1,6 @@
 .class Lcom/android/server/i;
-.super Ljava/lang/Object;
+.super Landroid/util/Singleton;
 .source ""
-
-# interfaces
-.implements Landroid/app/AlarmManager$OnAlarmListener;
 
 
 # annotations
@@ -16,65 +13,64 @@
     name = null
 .end annotation
 
-
-# instance fields
-.field final synthetic this$0:Lcom/android/server/OpPowerControllerService;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/util/Singleton<",
+        "Lcom/oneplus/android/power/IOpPowerController;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/OpPowerControllerService;)V
+.method constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/i;->this$0:Lcom/android/server/OpPowerControllerService;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/util/Singleton;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAlarm()V
-    .locals 4
+.method protected create()Lcom/oneplus/android/power/IOpPowerController;
+    .locals 2
 
-    invoke-static {}, Lcom/android/server/OpPowerControllerService;->access$000()Ljava/lang/Object;
+    const-string p0, "powercontrol"
 
-    move-result-object v0
+    invoke-static {p0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
-    monitor-enter v0
+    move-result-object p0
 
-    :try_start_0
-    iget-object v1, p0, Lcom/android/server/i;->this$0:Lcom/android/server/OpPowerControllerService;
+    const-string v0, "OpPowerControllerService"
 
-    const-wide/16 v2, 0x0
+    if-nez p0, :cond_0
 
-    invoke-static {v1, v2, v3}, Lcom/android/server/OpPowerControllerService;->access$102(Lcom/android/server/OpPowerControllerService;J)J
+    const-string v1, "can\'t get service binder: OpPowerController"
 
-    iget-object v1, p0, Lcom/android/server/i;->this$0:Lcom/android/server/OpPowerControllerService;
-
-    invoke-static {v1}, Lcom/android/server/OpPowerControllerService;->access$200(Lcom/android/server/OpPowerControllerService;)Z
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-ne v1, v2, :cond_0
-
-    iget-object p0, p0, Lcom/android/server/i;->this$0:Lcom/android/server/OpPowerControllerService;
-
-    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService;->restrictNetwork()V
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    monitor-exit v0
+    invoke-static {p0}, Lcom/oneplus/android/power/IOpPowerController$Stub;->asInterface(Landroid/os/IBinder;)Lcom/oneplus/android/power/IOpPowerController;
 
-    return-void
+    move-result-object p0
 
-    :catchall_0
-    move-exception p0
+    if-nez p0, :cond_1
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const-string v1, "can\'t get service interface: OpPowerController"
 
-    throw p0
+    invoke-static {v0, v1}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    return-object p0
+.end method
+
+.method protected bridge synthetic create()Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0}, Lcom/android/server/i;->create()Lcom/oneplus/android/power/IOpPowerController;
+
+    move-result-object p0
+
+    return-object p0
 .end method

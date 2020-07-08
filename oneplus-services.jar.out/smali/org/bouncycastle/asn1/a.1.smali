@@ -24,7 +24,7 @@
 
     const/16 p1, 0x24
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->ha(I)V
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->ia(I)V
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/16 p1, 0x24
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->ha(I)V
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/vdw;->ia(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     return-object v0
 .end method
 
-.method public ph()Ljava/io/OutputStream;
+.method public sh()Ljava/io/OutputStream;
     .locals 1
 
     const/16 v0, 0x3e8

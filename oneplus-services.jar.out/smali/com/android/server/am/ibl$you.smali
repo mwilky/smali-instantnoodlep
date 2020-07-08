@@ -297,7 +297,7 @@
     :cond_4
     iget-object p1, p0, Lcom/android/server/am/ibl$you;->this$0:Lcom/android/server/am/ibl;
 
-    invoke-static {}, Lcom/android/server/am/ibl;->wb()Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/server/am/ibl;->xb()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -315,7 +315,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/ugm;->Ib()V
+    invoke-virtual {p0}, Lcom/android/server/am/ugm;->Jb()V
 
     :cond_5
     :goto_1

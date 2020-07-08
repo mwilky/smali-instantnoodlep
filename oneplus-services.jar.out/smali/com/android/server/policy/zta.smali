@@ -28,7 +28,7 @@
 
     iget-object p0, p0, Lcom/android/server/policy/zta;->ad:Lcom/android/server/policy/cjf;
 
-    invoke-virtual {p0}, Lcom/android/server/policy/cjf;->Cd()V
+    invoke-virtual {p0}, Lcom/android/server/policy/cjf;->Ed()V
 
     return-void
 .end method

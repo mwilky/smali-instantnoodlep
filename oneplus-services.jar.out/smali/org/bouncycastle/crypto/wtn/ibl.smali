@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private JKa:[B
-
-.field private VQa:Lyou/zta/sis/zta/wtn;
-
-.field private WQa:Ljava/math/BigInteger;
-
 .field private curve:Lyou/zta/sis/zta/rtg;
 
 .field private h:Ljava/math/BigInteger;
 
+.field private kLa:[B
+
 .field private n:Ljava/math/BigInteger;
+
+.field private wRa:Lyou/zta/sis/zta/wtn;
+
+.field private xRa:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -68,7 +68,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->WQa:Ljava/math/BigInteger;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->xRa:Ljava/math/BigInteger;
 
     if-eqz p1, :cond_1
 
@@ -80,7 +80,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->VQa:Lyou/zta/sis/zta/wtn;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->wRa:Lyou/zta/sis/zta/wtn;
 
     iput-object p3, p0, Lorg/bouncycastle/crypto/wtn/ibl;->n:Ljava/math/BigInteger;
 
@@ -90,7 +90,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->JKa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->kLa:[B
 
     return-void
 
@@ -126,7 +126,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->pl()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sl()Z
 
     move-result p1
 
@@ -170,7 +170,7 @@
 
 
 # virtual methods
-.method public Ej()Ljava/math/BigInteger;
+.method public Hj()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->h:Ljava/math/BigInteger;
@@ -178,7 +178,7 @@
     return-object p0
 .end method
 
-.method public Fj()Ljava/math/BigInteger;
+.method public Ij()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->n:Ljava/math/BigInteger;
@@ -214,9 +214,9 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->VQa:Lyou/zta/sis/zta/wtn;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->wRa:Lyou/zta/sis/zta/wtn;
 
-    iget-object v3, p1, Lorg/bouncycastle/crypto/wtn/ibl;->VQa:Lyou/zta/sis/zta/wtn;
+    iget-object v3, p1, Lorg/bouncycastle/crypto/wtn/ibl;->wRa:Lyou/zta/sis/zta/wtn;
 
     invoke-virtual {v1, v3}, Lyou/zta/sis/zta/wtn;->bio(Lyou/zta/sis/zta/wtn;)Z
 
@@ -267,7 +267,7 @@
 .method public getG()Lyou/zta/sis/zta/wtn;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->VQa:Lyou/zta/sis/zta/wtn;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->wRa:Lyou/zta/sis/zta/wtn;
 
     return-object p0
 .end method
@@ -275,7 +275,7 @@
 .method public getSeed()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->JKa:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->kLa:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -295,7 +295,7 @@
 
     mul-int/lit8 v0, v0, 0x25
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->VQa:Lyou/zta/sis/zta/wtn;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/wtn/ibl;->wRa:Lyou/zta/sis/zta/wtn;
 
     invoke-virtual {v1}, Lyou/zta/sis/zta/wtn;->hashCode()I
 
@@ -326,13 +326,13 @@
     return p0
 .end method
 
-.method public declared-synchronized mk()Ljava/math/BigInteger;
+.method public declared-synchronized pk()Ljava/math/BigInteger;
     .locals 2
 
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->WQa:Ljava/math/BigInteger;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->xRa:Ljava/math/BigInteger;
 
     if-nez v0, :cond_0
 
@@ -344,10 +344,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->WQa:Ljava/math/BigInteger;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->xRa:Ljava/math/BigInteger;
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->WQa:Ljava/math/BigInteger;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/wtn/ibl;->xRa:Ljava/math/BigInteger;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

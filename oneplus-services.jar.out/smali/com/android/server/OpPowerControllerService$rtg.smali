@@ -15,11 +15,11 @@
 
 
 # static fields
-.field private static final Oi:Ljava/lang/String; = "idle-records.xml"
+.field private static final cj:Ljava/lang/String; = "idle-records.xml"
 
 
 # instance fields
-.field private final Ki:Ljava/util/ArrayList;
+.field private final Zi:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -29,11 +29,11 @@
     .end annotation
 .end field
 
-.field private Li:Ljava/time/LocalTime;
+.field private _i:Ljava/time/LocalTime;
 
-.field private Mi:Ljava/time/Duration;
+.field private aj:Ljava/time/Duration;
 
-.field private Ni:Ljava/time/LocalDateTime;
+.field private bj:Ljava/time/LocalDateTime;
 
 .field public mFile:Landroid/util/AtomicFile;
 
@@ -52,7 +52,7 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-static {}, Landroid/os/Environment;->getDataDirectory()Ljava/io/File;
 
@@ -390,13 +390,13 @@
     invoke-virtual {v8, v9}, Lcom/android/server/OpPowerControllerService$tsu;->zta(Ljava/time/Duration;)V
 
     :cond_9
-    invoke-virtual {v8}, Lcom/android/server/OpPowerControllerService$tsu;->da()Ljava/time/LocalDateTime;
+    invoke-virtual {v8}, Lcom/android/server/OpPowerControllerService$tsu;->ea()Ljava/time/LocalDateTime;
 
     move-result-object v9
 
     if-eqz v9, :cond_a
 
-    invoke-virtual {v8}, Lcom/android/server/OpPowerControllerService$tsu;->ca()Ljava/time/LocalDateTime;
+    invoke-virtual {v8}, Lcom/android/server/OpPowerControllerService$tsu;->da()Ljava/time/LocalDateTime;
 
     move-result-object v9
 
@@ -408,7 +408,7 @@
 
     if-eqz v9, :cond_a
 
-    iget-object v9, v1, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v9, v1, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v9, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -740,7 +740,7 @@
 
     invoke-interface {p1, v1, v2, v0}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
@@ -748,7 +748,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v3, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -756,7 +756,7 @@
 
     if-ge v2, v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -788,7 +788,7 @@
 
     const-string v4, "localStart"
 
-    invoke-virtual {v3}, Lcom/android/server/OpPowerControllerService$tsu;->da()Ljava/time/LocalDateTime;
+    invoke-virtual {v3}, Lcom/android/server/OpPowerControllerService$tsu;->ea()Ljava/time/LocalDateTime;
 
     move-result-object v5
 
@@ -802,7 +802,7 @@
 
     const-string v4, "localEnd"
 
-    invoke-virtual {v3}, Lcom/android/server/OpPowerControllerService$tsu;->ca()Ljava/time/LocalDateTime;
+    invoke-virtual {v3}, Lcom/android/server/OpPowerControllerService$tsu;->da()Ljava/time/LocalDateTime;
 
     move-result-object v5
 
@@ -849,7 +849,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/OpPowerControllerService$rtg;->ga()Ljava/time/LocalTime;
+    invoke-virtual {v0}, Lcom/android/server/OpPowerControllerService$rtg;->ha()Ljava/time/LocalTime;
 
     move-result-object v0
 
@@ -859,7 +859,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService$rtg;->fa()Ljava/time/Duration;
+    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService$rtg;->ga()Ljava/time/Duration;
 
     move-result-object p0
 
@@ -911,15 +911,15 @@
 
 
 # virtual methods
-.method public ea()[[D
+.method public fa()[[D
     .locals 8
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -944,7 +944,7 @@
     move v3, v2
 
     :goto_0
-    iget-object v4, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -954,7 +954,7 @@
 
     aget-object v4, v1, v3
 
-    iget-object v5, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -962,7 +962,7 @@
 
     check-cast v5, Lcom/android/server/OpPowerControllerService$tsu;
 
-    invoke-virtual {v5}, Lcom/android/server/OpPowerControllerService$tsu;->da()Ljava/time/LocalDateTime;
+    invoke-virtual {v5}, Lcom/android/server/OpPowerControllerService$tsu;->ea()Ljava/time/LocalDateTime;
 
     move-result-object v5
 
@@ -980,7 +980,7 @@
 
     aget-object v4, v1, v3
 
-    iget-object v5, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1021,18 +1021,10 @@
     throw p0
 .end method
 
-.method public fa()Ljava/time/Duration;
+.method public ga()Ljava/time/Duration;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Mi:Ljava/time/Duration;
-
-    return-object p0
-.end method
-
-.method public ga()Ljava/time/LocalTime;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Li:Ljava/time/LocalTime;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->aj:Ljava/time/Duration;
 
     return-object p0
 .end method
@@ -1040,12 +1032,12 @@
 .method public getSize()I
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -1065,15 +1057,23 @@
     throw p0
 .end method
 
-.method public ha()Ljava/time/LocalDateTime;
+.method public ha()Ljava/time/LocalTime;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ni:Ljava/time/LocalDateTime;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->_i:Ljava/time/LocalTime;
 
     return-object p0
 .end method
 
 .method public ia()Ljava/time/LocalDateTime;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->bj:Ljava/time/LocalDateTime;
+
+    return-object p0
+.end method
+
+.method public ja()Ljava/time/LocalDateTime;
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->this$0:Lcom/android/server/OpPowerControllerService;
@@ -1099,7 +1099,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/OpPowerControllerService$rtg;->ga()Ljava/time/LocalTime;
+    invoke-virtual {v0}, Lcom/android/server/OpPowerControllerService$rtg;->ha()Ljava/time/LocalTime;
 
     move-result-object v0
 
@@ -1109,7 +1109,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService$rtg;->fa()Ljava/time/Duration;
+    invoke-virtual {p0}, Lcom/android/server/OpPowerControllerService$rtg;->ga()Ljava/time/Duration;
 
     move-result-object p0
 
@@ -1139,7 +1139,7 @@
     return-object p0
 .end method
 
-.method public ja()Ljava/time/LocalDateTime;
+.method public ka()Ljava/time/LocalDateTime;
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->this$0:Lcom/android/server/OpPowerControllerService;
@@ -1159,7 +1159,7 @@
     return-object p0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Li:Ljava/time/LocalTime;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->_i:Ljava/time/LocalTime;
 
     if-nez v0, :cond_1
 
@@ -1172,7 +1172,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Li:Ljava/time/LocalTime;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->_i:Ljava/time/LocalTime;
 
     invoke-static {v0, p0}, Ljava/time/LocalDateTime;->of(Ljava/time/LocalDate;Ljava/time/LocalTime;)Ljava/time/LocalDateTime;
 
@@ -1198,7 +1198,7 @@
     return-object p0
 .end method
 
-.method public ka()V
+.method public la()V
     .locals 3
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
@@ -1230,9 +1230,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/server/o;
+    new-instance v2, Lcom/android/server/q;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/server/o;-><init>(Lcom/android/server/OpPowerControllerService$rtg;Ljava/io/ByteArrayOutputStream;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/server/q;-><init>(Lcom/android/server/OpPowerControllerService$rtg;Ljava/io/ByteArrayOutputStream;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_0
@@ -1253,15 +1253,15 @@
     return-void
 .end method
 
-.method public la()V
+.method public ma()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
@@ -1271,11 +1271,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Li:Ljava/time/LocalTime;
+    iput-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->_i:Ljava/time/LocalTime;
 
-    iput-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Mi:Ljava/time/Duration;
+    iput-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->aj:Ljava/time/Duration;
 
-    iput-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ni:Ljava/time/LocalDateTime;
+    iput-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->bj:Ljava/time/LocalDateTime;
 
     iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->mFile:Landroid/util/AtomicFile;
 
@@ -1294,15 +1294,15 @@
     throw p0
 .end method
 
-.method public ma()V
+.method public na()V
     .locals 5
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
@@ -1408,12 +1408,12 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_6
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1519,7 +1519,7 @@
 .method public sis(Ljava/time/LocalDateTime;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ni:Ljava/time/LocalDateTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->bj:Ljava/time/LocalDateTime;
 
     return-void
 .end method
@@ -1527,12 +1527,12 @@
 .method public you(Ljava/io/PrintWriter;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1573,7 +1573,7 @@
 .method you(Ljava/time/Duration;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Mi:Ljava/time/Duration;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->aj:Ljava/time/Duration;
 
     invoke-static {}, Lcom/android/server/OpPowerControllerService;->access$5600()Z
 
@@ -1589,7 +1589,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Mi:Ljava/time/Duration;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->aj:Ljava/time/Duration;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1614,12 +1614,12 @@
 
     invoke-direct {v0, v1, p1, p2}, Lcom/android/server/OpPowerControllerService$tsu;-><init>(Lcom/android/server/OpPowerControllerService;Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;)V
 
-    iget-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object p2, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
@@ -1631,14 +1631,14 @@
 
     if-le p2, v1, :cond_0
 
-    iget-object p2, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
     invoke-virtual {p2, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Ki:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Zi:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1687,7 +1687,7 @@
 .method zta(Ljava/time/LocalTime;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->Li:Ljava/time/LocalTime;
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$rtg;->_i:Ljava/time/LocalTime;
 
     invoke-static {}, Lcom/android/server/OpPowerControllerService;->access$5600()Z
 
@@ -1703,7 +1703,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->Li:Ljava/time/LocalTime;
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$rtg;->_i:Ljava/time/LocalTime;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

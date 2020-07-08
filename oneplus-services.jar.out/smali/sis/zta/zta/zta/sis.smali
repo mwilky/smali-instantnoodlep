@@ -4,21 +4,21 @@
 
 
 # static fields
-.field public static final AWa:I = 0x5
-
-.field public static final BWa:I = 0x6
-
 .field public static final CUSTOM:I = 0x1
 
 .field public static final MAX:I = 0x8
 
 .field public static final SRGB:I = 0x7
 
-.field public static final xWa:I = 0x2
+.field public static final ZWa:I = 0x2
 
-.field public static final yWa:I = 0x3
+.field public static final _Wa:I = 0x3
 
-.field public static final zWa:I = 0x4
+.field public static final aXa:I = 0x4
+
+.field public static final bXa:I = 0x5
+
+.field public static final cXa:I = 0x6
 
 
 # direct methods

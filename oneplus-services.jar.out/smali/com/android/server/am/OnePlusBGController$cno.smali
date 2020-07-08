@@ -142,7 +142,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Eya:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$SnapshotType;->fza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/am/OnePlusBGController$kth;-><init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/OnePlusBGController$SnapshotType;)V
 
@@ -490,7 +490,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    sget-object v2, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Gya:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v2, Lcom/android/server/am/OnePlusBGController$SnapshotType;->hza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-direct {v1, p0, v2, p1}, Lcom/android/server/am/OnePlusBGController$kth;-><init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/OnePlusBGController$SnapshotType;Z)V
 
@@ -849,7 +849,7 @@
     :pswitch_a
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController;->ec()V
+    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController;->fc()V
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 

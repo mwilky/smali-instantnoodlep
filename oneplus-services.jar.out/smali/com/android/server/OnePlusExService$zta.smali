@@ -103,7 +103,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/OnePlusExService;Lcom/android/server/ywr;)V
+.method synthetic constructor <init>(Lcom/android/server/OnePlusExService;Lcom/android/server/qbh;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/OnePlusExService$zta;-><init>(Lcom/android/server/OnePlusExService;)V

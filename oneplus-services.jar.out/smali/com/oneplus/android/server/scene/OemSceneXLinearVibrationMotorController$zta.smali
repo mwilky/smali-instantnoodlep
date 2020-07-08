@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field final Fva:I
+.field final fwa:I
 
-.field final Tm:I
+.field final hn:I
 
 .field final mPkgName:Ljava/lang/String;
 
@@ -30,9 +30,9 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->mPkgName:Ljava/lang/String;
 
-    iput p2, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Fva:I
+    iput p2, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->fwa:I
 
-    iput p3, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Tm:I
+    iput p3, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->hn:I
 
     return-void
 .end method
@@ -42,17 +42,9 @@
 .method public getFlag()I
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Tm:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->hn:I
 
     return p0
-.end method
-
-.method public tb()Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->mPkgName:Ljava/lang/String;
-
-    return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -74,7 +66,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Fva:I
+    iget v1, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->fwa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -82,7 +74,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Tm:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->hn:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -97,10 +89,18 @@
     return-object p0
 .end method
 
-.method public ug()I
+.method public ub()Ljava/lang/String;
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Fva:I
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->mPkgName:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public xg()I
+    .locals 0
+
+    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->fwa:I
 
     return p0
 .end method

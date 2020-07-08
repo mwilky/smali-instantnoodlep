@@ -89,11 +89,11 @@
 
     invoke-static {p0, p1, p2, v2}, Landroid/provider/Settings$System;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    invoke-static {}, Lcom/android/server/wm/ibl;->He()Lcom/android/server/wm/ibl$zta;
+    invoke-static {}, Lcom/android/server/wm/ibl;->Je()Lcom/android/server/wm/ibl$zta;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/wm/ibl$zta;->Ge()V
+    invoke-virtual {p0}, Lcom/android/server/wm/ibl$zta;->Ie()V
 
     goto/16 :goto_0
 

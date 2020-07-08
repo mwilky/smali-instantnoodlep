@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Ri:J
+.field private fj:J
 
 .field private mStartTimeMs:J
 
@@ -86,7 +86,7 @@
 .method public isStopped()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->Ri:J
+    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
 
     const-wide/16 v2, 0x0
 
@@ -105,7 +105,7 @@
     return p0
 .end method
 
-.method public na()J
+.method public oa()J
     .locals 4
 
     invoke-virtual {p0}, Lcom/android/server/wm/OpPowerConsumpStats$oif;->isRunning()Z
@@ -139,7 +139,7 @@
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->mStartTimeMs:J
 
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->Ri:J
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
 
     return-void
 .end method
@@ -176,10 +176,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->Ri:J
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->Ri:J
+    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
 
     iget-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->mStartTimeMs:J
 

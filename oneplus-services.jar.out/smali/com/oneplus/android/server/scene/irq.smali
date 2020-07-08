@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/android/server/scene/a;->Jc(I)V
+    value = Lcom/oneplus/android/server/scene/a;->Kc(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic bua:I
+.field final synthetic Cua:I
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/a;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/irq;->this$0:Lcom/oneplus/android/server/scene/a;
 
-    iput p2, p0, Lcom/oneplus/android/server/scene/irq;->bua:I
+    iput p2, p0, Lcom/oneplus/android/server/scene/irq;->Cua:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public run()V
     .locals 4
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/irq;->bua:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/irq;->Cua:I
 
     if-eqz v0, :cond_2
 

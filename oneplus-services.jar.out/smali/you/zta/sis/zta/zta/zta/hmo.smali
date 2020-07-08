@@ -4,15 +4,15 @@
 
 
 # static fields
+.field static final EVa:[I
+
+.field private static final LVa:I = -0x1
+
 .field private static final M:J = 0xffffffffL
 
+.field private static final NVa:I = 0x7fffffff
+
 .field static final P:[I
-
-.field static final cVa:[I
-
-.field private static final jVa:I = -0x1
-
-.field private static final lVa:I = 0x7fffffff
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/hmo;->cVa:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/hmo;->EVa:[I
 
     return-void
 
@@ -629,7 +629,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->cVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->EVa:[I
 
     invoke-static {v0, p0, p2}, Lyou/zta/sis/sis/kth;->you(I[I[I)I
 
@@ -671,7 +671,7 @@
 .method public static igw([I[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->Yl()[I
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->am()[I
 
     move-result-object v0
 
@@ -881,7 +881,7 @@
 
     if-lt p0, v0, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->cVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->EVa:[I
 
     invoke-static {p1, p2, p0}, Lyou/zta/sis/sis/kth;->ssp(I[I[I)Z
 
@@ -890,7 +890,7 @@
     if-eqz p0, :cond_1
 
     :cond_0
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->cVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->EVa:[I
 
     invoke-static {p1, p0, p2}, Lyou/zta/sis/sis/kth;->bio(I[I[I)I
 
@@ -919,7 +919,7 @@
 
     if-lt p0, p1, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->cVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->EVa:[I
 
     invoke-static {v0, p2, p0}, Lyou/zta/sis/sis/kth;->ssp(I[I[I)Z
 
@@ -928,7 +928,7 @@
     if-eqz p0, :cond_1
 
     :cond_0
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->cVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/hmo;->EVa:[I
 
     invoke-static {v0, p0, p2}, Lyou/zta/sis/sis/kth;->bio(I[I[I)I
 
@@ -988,7 +988,7 @@
 .method public static tsu([I[I[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->Yl()[I
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->am()[I
 
     move-result-object v0
 
@@ -1226,7 +1226,7 @@
 .method public static zta([II[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->Yl()[I
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->am()[I
 
     move-result-object v0
 

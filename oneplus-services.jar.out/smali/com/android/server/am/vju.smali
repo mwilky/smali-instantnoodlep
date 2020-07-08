@@ -257,7 +257,7 @@
 
     sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
-    invoke-static {p0}, Lcom/android/server/am/les;->bud(Z)Z
+    invoke-static {p0}, Lcom/android/server/am/les;->vju(Z)Z
 
     const-string p0, "persist.sys.opbf.debug_log"
 
@@ -273,7 +273,7 @@
 
     move-result p0
 
-    invoke-static {p0}, Lcom/android/server/am/les;->vdw(Z)Z
+    invoke-static {p0}, Lcom/android/server/am/les;->irq(Z)Z
 
     invoke-static {}, Lcom/android/server/am/les;->access$1200()I
 
@@ -667,9 +667,9 @@
 
     move-result p2
 
-    invoke-static {p2}, Lcom/android/server/am/les;->les(Z)Z
+    invoke-static {p2}, Lcom/android/server/am/les;->bud(Z)Z
 
-    invoke-static {v3}, Lcom/android/server/am/les;->irq(Z)Z
+    invoke-static {v3}, Lcom/android/server/am/les;->les(Z)Z
 
     iget-object p0, p0, Lcom/android/server/am/vju;->this$0:Lcom/android/server/am/les;
 
@@ -686,7 +686,7 @@
 
     if-eqz p1, :cond_14
 
-    invoke-static {v3}, Lcom/android/server/am/les;->les(Z)Z
+    invoke-static {v3}, Lcom/android/server/am/les;->bud(Z)Z
 
     const-string p1, "force"
 
@@ -694,7 +694,7 @@
 
     move-result p1
 
-    invoke-static {p1}, Lcom/android/server/am/les;->irq(Z)Z
+    invoke-static {p1}, Lcom/android/server/am/les;->les(Z)Z
 
     iget-object p0, p0, Lcom/android/server/am/vju;->this$0:Lcom/android/server/am/les;
 

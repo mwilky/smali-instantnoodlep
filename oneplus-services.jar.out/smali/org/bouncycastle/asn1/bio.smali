@@ -332,14 +332,14 @@
     return p0
 .end method
 
-.method rh()I
+.method uh()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/bio;->bytes:[B
 
     array-length v0, v0
 
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->ma(I)I
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->na(I)I
 
     move-result v0
 

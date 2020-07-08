@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/secrecy/zta/zta/sis;->ye()Ljava/lang/String;
+    value = Lcom/android/server/secrecy/zta/zta/sis;->Ae()Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,7 +39,7 @@
         }
     .end annotation
 
-    invoke-static {p1}, Lcom/android/server/secrecy/zta/zta/sis;->v(Z)Z
+    invoke-static {p1}, Lcom/android/server/secrecy/zta/zta/sis;->u(Z)Z
 
     invoke-static {p2}, Lcom/android/server/secrecy/zta/zta/sis;->cno(Ljava/util/ArrayList;)Ljava/util/ArrayList;
 

@@ -96,7 +96,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, v0}, Lcom/android/server/policy/vdw;->j(Z)V
+    invoke-virtual {p1, v0}, Lcom/android/server/policy/vdw;->i(Z)V
 
     iget-object p1, p0, Lcom/android/server/policy/OpPhoneWindowManager$you;->this$0:Lcom/android/server/policy/OpPhoneWindowManager;
 
@@ -160,7 +160,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, v1}, Lcom/android/server/policy/vdw;->j(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/server/policy/vdw;->i(Z)V
 
     :cond_4
     :goto_0

@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public Mi()Ljava/math/BigInteger;
+.method public Pi()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/x509/igw;->number:Ljava/math/BigInteger;
@@ -85,7 +85,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/igw;->Mi()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/igw;->Pi()Ljava/math/BigInteger;
 
     move-result-object p0
 

@@ -72,7 +72,7 @@
 
 .field private mHandlerCarMode:Landroid/os/Handler;
 
-.field private final mInstallTask:Lcom/android/server/dma;
+.field private final mInstallTask:Lcom/android/server/ywr;
 
 .field private final mLocationListener:Landroid/location/LocationListener;
 
@@ -107,9 +107,9 @@
 
     sput-boolean v0, Lcom/android/server/OnePlusExService;->ifBootCompleted:Z
 
-    new-instance v0, Lcom/android/server/ywr;
+    new-instance v0, Lcom/android/server/qbh;
 
-    invoke-direct {v0}, Lcom/android/server/ywr;-><init>()V
+    invoke-direct {v0}, Lcom/android/server/qbh;-><init>()V
 
     sput-object v0, Lcom/android/server/OnePlusExService;->SCREATOR:Landroid/util/Singleton;
 
@@ -143,37 +143,37 @@
 
     iput-object v1, p0, Lcom/android/server/OnePlusExService;->outStream:Ljava/io/FileOutputStream;
 
-    new-instance v2, Lcom/android/server/dma;
+    new-instance v2, Lcom/android/server/ywr;
 
-    invoke-direct {v2}, Lcom/android/server/dma;-><init>()V
+    invoke-direct {v2}, Lcom/android/server/ywr;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/OnePlusExService;->mInstallTask:Lcom/android/server/dma;
+    iput-object v2, p0, Lcom/android/server/OnePlusExService;->mInstallTask:Lcom/android/server/ywr;
 
     new-instance v2, Lcom/android/server/OnePlusExService$zta;
 
-    invoke-direct {v2, p0, v1}, Lcom/android/server/OnePlusExService$zta;-><init>(Lcom/android/server/OnePlusExService;Lcom/android/server/ywr;)V
+    invoke-direct {v2, p0, v1}, Lcom/android/server/OnePlusExService$zta;-><init>(Lcom/android/server/OnePlusExService;Lcom/android/server/qbh;)V
 
     iput-object v2, p0, Lcom/android/server/OnePlusExService;->mRingtoneUtils:Lcom/android/server/OnePlusExService$zta;
 
-    new-instance v2, Lcom/android/server/qbh;
+    new-instance v2, Lcom/android/server/oif;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v3
 
-    invoke-direct {v2, p0, v3, v1, v0}, Lcom/android/server/qbh;-><init>(Lcom/android/server/OnePlusExService;Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
+    invoke-direct {v2, p0, v3, v1, v0}, Lcom/android/server/oif;-><init>(Lcom/android/server/OnePlusExService;Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
 
     iput-object v2, p0, Lcom/android/server/OnePlusExService;->mHandler:Landroid/os/Handler;
 
-    new-instance v0, Lcom/android/server/ibl;
+    new-instance v0, Lcom/android/server/gwm;
 
-    invoke-direct {v0, p0}, Lcom/android/server/ibl;-><init>(Lcom/android/server/OnePlusExService;)V
+    invoke-direct {v0, p0}, Lcom/android/server/gwm;-><init>(Lcom/android/server/OnePlusExService;)V
 
     iput-object v0, p0, Lcom/android/server/OnePlusExService;->mLocationListener:Landroid/location/LocationListener;
 
-    new-instance v0, Lcom/android/server/ugm;
+    new-instance v0, Lcom/android/server/vdb;
 
-    invoke-direct {v0, p0}, Lcom/android/server/ugm;-><init>(Lcom/android/server/OnePlusExService;)V
+    invoke-direct {v0, p0}, Lcom/android/server/vdb;-><init>(Lcom/android/server/OnePlusExService;)V
 
     iput-object v0, p0, Lcom/android/server/OnePlusExService;->mCarModeReceiver:Landroid/content/BroadcastReceiver;
 
@@ -1323,7 +1323,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0xef
+    const/16 v3, 0xf0
 
     aput v3, v1, v2
 
@@ -1344,7 +1344,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->zg()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Cg()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     move-result-object v2
 
@@ -1358,7 +1358,7 @@
 
     sget-object v0, Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;->MCL:Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
-    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->zg()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
+    invoke-static {}, Lcom/oneplus/custom/utils/OpCustomizeSettings;->Cg()Lcom/oneplus/custom/utils/OpCustomizeSettings$CUSTOM_TYPE;
 
     move-result-object v1
 
@@ -1654,9 +1654,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/server/bvj;
+    new-instance v2, Lcom/android/server/ibl;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/server/bvj;-><init>(Lcom/android/server/OnePlusExService;Ljava/lang/String;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/server/ibl;-><init>(Lcom/android/server/OnePlusExService;Ljava/lang/String;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1709,7 +1709,7 @@
 .method private showCarModeNotification(ILandroid/content/Context;IILandroid/app/Notification$Builder;)V
     .locals 8
 
-    new-instance v7, Lcom/android/server/gwm;
+    new-instance v7, Lcom/android/server/ugm;
 
     move-object v0, v7
 
@@ -1725,7 +1725,7 @@
 
     move v6, p4
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/server/gwm;-><init>(Lcom/android/server/OnePlusExService;Landroid/app/Notification$Builder;Landroid/content/Context;III)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/server/ugm;-><init>(Lcom/android/server/OnePlusExService;Landroid/app/Notification$Builder;Landroid/content/Context;III)V
 
     iput-object v7, p0, Lcom/android/server/OnePlusExService;->mCarModeRunnable:Ljava/lang/Runnable;
 
@@ -2034,9 +2034,9 @@
 
     iget-object v0, p0, Lcom/android/server/OnePlusExService;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/server/oif;
+    new-instance v1, Lcom/android/server/bvj;
 
-    invoke-direct {v1, p0}, Lcom/android/server/oif;-><init>(Lcom/android/server/OnePlusExService;)V
+    invoke-direct {v1, p0}, Lcom/android/server/bvj;-><init>(Lcom/android/server/OnePlusExService;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -2891,7 +2891,7 @@
     :cond_1
     iget-object p0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/a;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->qg()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->tg()V
 
     goto :goto_0
 
@@ -2900,7 +2900,7 @@
 
     if-eqz p0, :cond_4
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->sg()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->vg()V
 
     goto :goto_0
 
@@ -3010,7 +3010,7 @@
 
     iget-object p0, p0, Lcom/android/server/OnePlusExService;->mSceneModeController:Lcom/oneplus/android/server/scene/a;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->rg()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->ug()V
 
     goto :goto_0
 
@@ -3035,9 +3035,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/OnePlusExService;->mInstallTask:Lcom/android/server/dma;
+    iget-object p0, p0, Lcom/android/server/OnePlusExService;->mInstallTask:Lcom/android/server/ywr;
 
-    invoke-virtual {p0, v0, p1}, Lcom/android/server/dma;->zta(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/server/ywr;->zta(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_0
     return-void

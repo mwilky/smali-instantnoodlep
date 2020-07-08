@@ -36,7 +36,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->hf()Z
+    invoke-virtual {p1}, Lcom/oneplus/android/server/alertslider/AlertSliderHw;->jf()Z
 
     move-result p1
 
@@ -58,7 +58,7 @@
 
     iput p1, p0, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->mStateNbits:I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->Bu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/alertslider/AlertSliderHw$you;->Eu()V
 
     goto :goto_0
 
@@ -81,7 +81,7 @@
     return-void
 .end method
 
-.method private Bu()V
+.method private Eu()V
     .locals 9
 
     const-string v0, ""

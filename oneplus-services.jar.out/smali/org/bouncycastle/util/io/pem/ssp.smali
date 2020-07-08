@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final aya:I = 0x40
+.field private static final Cya:I = 0x40
 
 
 # instance fields
-.field private final _xa:I
+.field private final Bya:I
 
 .field private buf:[C
 
@@ -41,7 +41,7 @@
     const/4 p1, 0x2
 
     :goto_0
-    iput p1, p0, Lorg/bouncycastle/util/io/pem/ssp;->_xa:I
+    iput p1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
 
     return-void
 .end method
@@ -196,7 +196,7 @@
 
     add-int/lit8 v0, v0, 0xa
 
-    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->_xa:I
+    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
 
     add-int/2addr v0, v1
 
@@ -257,7 +257,7 @@
 
     add-int/2addr v3, v2
 
-    iget v2, p0, Lorg/bouncycastle/util/io/pem/ssp;->_xa:I
+    iget v2, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
 
     add-int/2addr v3, v2
 
@@ -266,7 +266,7 @@
     goto :goto_0
 
     :cond_0
-    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->_xa:I
+    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
 
     add-int/2addr v0, v1
 
@@ -289,7 +289,7 @@
 
     div-int/lit8 v1, v1, 0x40
 
-    iget p0, p0, Lorg/bouncycastle/util/io/pem/ssp;->_xa:I
+    iget p0, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
 
     mul-int/2addr v1, p0
 

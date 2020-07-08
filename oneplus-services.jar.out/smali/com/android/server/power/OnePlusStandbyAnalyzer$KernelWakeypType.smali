@@ -25,19 +25,19 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
-.field public static final enum Mza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
-
-.field public static final enum Nza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
-
-.field public static final enum Oza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
-
-.field public static final enum Pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
-
-.field public static final enum Qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
-
-.field public static final enum Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
-
 .field public static final enum modem:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+
+.field public static final enum nAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+
+.field public static final enum oAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+
+.field public static final enum pAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+
+.field public static final enum qAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+
+.field public static final enum rAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+
+.field public static final enum sAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
 
 # instance fields
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v2, v1, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Mza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->nAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v3, v2, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Nza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->oAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
@@ -86,7 +86,7 @@
 
     invoke-direct {v0, v5, v4, v5}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Oza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->pAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
@@ -96,7 +96,7 @@
 
     invoke-direct {v0, v6, v5, v6}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->qAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
@@ -106,7 +106,7 @@
 
     invoke-direct {v0, v7, v6, v7}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->rAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
@@ -116,17 +116,17 @@
 
     invoke-direct {v0, v8, v7, v8}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->sAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
-    sget-object v8, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Mza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object v8, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->nAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     aput-object v8, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Nza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->oAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     aput-object v1, v0, v2
 
@@ -134,19 +134,19 @@
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Oza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->pAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Pza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->qAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Qza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->rAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->sAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     aput-object v1, v0, v7
 
@@ -206,7 +206,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->Rza:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
+    sget-object p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;->sAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KernelWakeypType;
 
     return-object p0
 .end method

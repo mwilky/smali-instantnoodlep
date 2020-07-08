@@ -80,7 +80,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Gj()Lyou/zta/sis/zta/wtn;
+.method public declared-synchronized Jj()Lyou/zta/sis/zta/wtn;
     .locals 2
 
     monitor-enter p0
@@ -125,7 +125,7 @@
     throw v0
 .end method
 
-.method public Hj()[B
+.method public Kj()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/les;->encoding:Lorg/bouncycastle/asn1/ibl;
@@ -141,7 +141,7 @@
     return-object p0
 .end method
 
-.method public Ij()Z
+.method public Lj()Z
     .locals 3
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/les;->encoding:Lorg/bouncycastle/asn1/ibl;

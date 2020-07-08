@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final bFa:[B
+.field private final DFa:[B
 
-.field private final cFa:I
+.field private final EFa:I
 
 
 # direct methods
@@ -25,13 +25,13 @@
 
     invoke-direct {p0, p1}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
 
-    iput p2, p0, Lorg/bouncycastle/jcajce/sis/zta;->cFa:I
+    iput p2, p0, Lorg/bouncycastle/jcajce/sis/zta;->EFa:I
 
     invoke-static {p3}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/zta;->bFa:[B
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/zta;->DFa:[B
 
     return-void
 .end method
@@ -48,10 +48,10 @@
     return-object p0
 .end method
 
-.method public kh()[B
+.method public nh()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->bFa:[B
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->DFa:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -60,10 +60,10 @@
     return-object p0
 .end method
 
-.method public lh()I
+.method public oh()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->cFa:I
+    iget p0, p0, Lorg/bouncycastle/jcajce/sis/zta;->EFa:I
 
     return p0
 .end method

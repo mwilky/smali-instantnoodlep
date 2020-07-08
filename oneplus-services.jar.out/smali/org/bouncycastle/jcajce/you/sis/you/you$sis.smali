@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final tSa:Ljava/util/Map;
+.field private final VSa:Ljava/util/Map;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-interface {v0, v1, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->Vdb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->web:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {v2}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -60,7 +60,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->ceb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->Eeb:Lorg/bouncycastle/asn1/bvj;
 
     invoke-static {v3}, Lorg/bouncycastle/util/cno;->valueOf(I)Ljava/lang/Integer;
 
@@ -68,7 +68,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->keb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->Meb:Lorg/bouncycastle/asn1/bvj;
 
     const/16 v2, 0x100
 
@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;->tSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;->VSa:Ljava/util/Map;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 .method public rtg(Lorg/bouncycastle/asn1/x509/zta;)I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;->tSa:Ljava/util/Map;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;->VSa:Ljava/util/Map;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 

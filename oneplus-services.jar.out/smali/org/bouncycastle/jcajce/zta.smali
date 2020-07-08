@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private final MRa:Ljava/security/KeyStore$ProtectionParameter;
+.field private final nSa:Ljava/security/KeyStore$ProtectionParameter;
 
-.field private final NRa:Z
+.field private final oSa:Z
 
 .field private final out:Ljava/io/OutputStream;
 
@@ -32,9 +32,9 @@
 
     iput-object p1, p0, Lorg/bouncycastle/jcajce/zta;->out:Ljava/io/OutputStream;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/zta;->MRa:Ljava/security/KeyStore$ProtectionParameter;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/zta;->nSa:Ljava/security/KeyStore$ProtectionParameter;
 
-    iput-boolean p3, p0, Lorg/bouncycastle/jcajce/zta;->NRa:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/jcajce/zta;->oSa:Z
 
     return-void
 .end method
@@ -74,15 +74,15 @@
 .method public getProtectionParameter()Ljava/security/KeyStore$ProtectionParameter;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta;->MRa:Ljava/security/KeyStore$ProtectionParameter;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/zta;->nSa:Ljava/security/KeyStore$ProtectionParameter;
 
     return-object p0
 .end method
 
-.method public ok()Z
+.method public rk()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/zta;->NRa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/zta;->oSa:Z
 
     return p0
 .end method

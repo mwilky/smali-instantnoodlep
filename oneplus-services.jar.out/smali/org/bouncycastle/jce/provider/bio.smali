@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private final kSa:Ljava/lang/String;
+.field private final MSa:Ljava/lang/String;
 
-.field private final lSa:Ljava/lang/String;
+.field private final NSa:Ljava/lang/String;
 
-.field private final nSa:Ljava/lang/String;
+.field private final PSa:Ljava/lang/String;
 
-.field private final oSa:Ljava/lang/String;
+.field private final QSa:Ljava/lang/String;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jce/provider/bio;->kSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jce/provider/bio;->MSa:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jce/provider/bio;->lSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jce/provider/bio;->NSa:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jce/provider/bio;->nSa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jce/provider/bio;->PSa:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -91,7 +91,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jce/provider/bio;->oSa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jce/provider/bio;->QSa:Ljava/lang/String;
 
     return-void
 .end method
@@ -180,7 +180,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->kSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->MSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -188,7 +188,7 @@
 
     if-nez v2, :cond_1
 
-    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->lSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->NSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -204,7 +204,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->nSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->PSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -212,7 +212,7 @@
 
     if-nez v2, :cond_3
 
-    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->oSa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jce/provider/bio;->QSa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 

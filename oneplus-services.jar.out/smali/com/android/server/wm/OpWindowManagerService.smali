@@ -33,6 +33,8 @@
 
 .field private mHandler:Landroid/os/Handler;
 
+.field private mIsFullscreen:Z
+
 .field mOpForceDarkStatus:Z
 
 .field private mWindowManagerConfigObserver:Lcom/oneplus/config/ConfigObserver;
@@ -830,6 +832,14 @@
     return-object p0
 .end method
 
+.method public isFullscreenScene()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/wm/OpWindowManagerService;->mIsFullscreen:Z
+
+    return p0
+.end method
+
 .method public isKeyguardDone()Z
     .locals 1
 
@@ -1211,6 +1221,14 @@
     invoke-static {p2}, Lcom/android/server/wm/OpQuickReplyInjector;->setBubbleExpanded(Z)V
 
     :cond_0
+    return-void
+.end method
+
+.method public setFullscreenScene(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/wm/OpWindowManagerService;->mIsFullscreen:Z
+
     return-void
 .end method
 

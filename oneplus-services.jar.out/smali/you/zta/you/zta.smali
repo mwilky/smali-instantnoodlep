@@ -71,11 +71,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Fj()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ej()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Hj()Ljava/math/BigInteger;
 
     move-result-object v5
 

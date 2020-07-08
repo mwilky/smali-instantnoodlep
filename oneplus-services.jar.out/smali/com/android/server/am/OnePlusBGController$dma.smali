@@ -15,31 +15,31 @@
 
 
 # instance fields
-.field public Br:D
+.field public Fr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-.field public Cr:D
+.field public Gr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
-.field public Dr:D
+.field public Hr:Z
 
-.field public Or:D
+.field public Ir:D
+
+.field public Jr:Z
+
+.field public Kr:Z
+
+.field public Lr:Lcom/android/server/am/OnePlusBGController$OptType;
+
+.field public Qr:D
+
+.field public Rr:D
+
+.field public Sr:D
+
+.field public cs:D
 
 .field public mPkgName:Ljava/lang/String;
 
 .field public mUid:I
-
-.field public pr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
-
-.field public qr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
-
-.field public rr:Z
-
-.field public tr:D
-
-.field public ur:Z
-
-.field public vr:Z
-
-.field public wr:Lcom/android/server/am/OnePlusBGController$OptType;
 
 
 # direct methods
@@ -60,55 +60,55 @@
 
     move-wide v1, p3
 
-    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Br:D
+    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Qr:D
 
     move-wide v1, p5
 
-    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Cr:D
+    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Rr:D
 
     move-wide v1, p7
 
-    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Dr:D
+    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Sr:D
 
-    iget-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Br:D
+    iget-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Qr:D
 
-    iget-wide v3, v0, Lcom/android/server/am/OnePlusBGController$dma;->Cr:D
-
-    add-double/2addr v1, v3
-
-    iget-wide v3, v0, Lcom/android/server/am/OnePlusBGController$dma;->Dr:D
+    iget-wide v3, v0, Lcom/android/server/am/OnePlusBGController$dma;->Rr:D
 
     add-double/2addr v1, v3
 
-    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Or:D
+    iget-wide v3, v0, Lcom/android/server/am/OnePlusBGController$dma;->Sr:D
+
+    add-double/2addr v1, v3
+
+    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->cs:D
 
     move-wide v1, p9
 
-    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->tr:D
+    iput-wide v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Ir:D
 
     move-object/from16 v1, p11
 
-    iput-object v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->pr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    iput-object v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Fr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
     move-object/from16 v1, p12
 
-    iput-object v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->qr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+    iput-object v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Gr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
     move/from16 v1, p13
 
-    iput-boolean v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->rr:Z
+    iput-boolean v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Hr:Z
 
     move/from16 v1, p14
 
-    iput-boolean v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->ur:Z
+    iput-boolean v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Jr:Z
 
     move/from16 v1, p15
 
-    iput-boolean v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->vr:Z
+    iput-boolean v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Kr:Z
 
     move-object/from16 v1, p16
 
-    iput-object v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->wr:Lcom/android/server/am/OnePlusBGController$OptType;
+    iput-object v1, v0, Lcom/android/server/am/OnePlusBGController$dma;->Lr:Lcom/android/server/am/OnePlusBGController$OptType;
 
     return-void
 .end method
@@ -142,25 +142,25 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$dma;->Br:D
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$dma;->Qr:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$dma;->Cr:D
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$dma;->Rr:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$dma;->Dr:D
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusBGController$dma;->Sr:D
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$dma;->vr:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$dma;->Kr:Z
 
     if-eqz v1, :cond_0
 
@@ -174,7 +174,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$dma;->ur:Z
+    iget-boolean v1, p0, Lcom/android/server/am/OnePlusBGController$dma;->Jr:Z
 
     if-eqz v1, :cond_1
 
@@ -188,7 +188,7 @@
     :goto_1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$dma;->wr:Lcom/android/server/am/OnePlusBGController$OptType;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$dma;->Lr:Lcom/android/server/am/OnePlusBGController$OptType;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

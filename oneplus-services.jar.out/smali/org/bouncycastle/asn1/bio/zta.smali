@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static final cLa:Ljava/util/Hashtable;
+.field static final ELa:Ljava/util/Hashtable;
 
-.field static final hIa:Ljava/util/Hashtable;
+.field static final JIa:Ljava/util/Hashtable;
 
 
 # direct methods
@@ -17,99 +17,99 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/bio/zta;->cLa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/asn1/bio/zta;->ELa:Ljava/util/Hashtable;
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/bio/zta;->hIa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/asn1/bio/zta;->JIa:Ljava/util/Hashtable;
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->JLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->kMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "B-571"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->HLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->iMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "B-409"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->FLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->gMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "B-283"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->CLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->dMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "B-233"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->yLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->_La:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "B-163"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->ILa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->jMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "K-571"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->GLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->hMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "K-409"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->ELa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->fMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "K-283"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->BLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->cMa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "K-233"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->wLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->YLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "K-163"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->rLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->TLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "P-521"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->qLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->SLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "P-384"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->pLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->RLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "P-256"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->nLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->PLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "P-224"
 
     invoke-static {v1, v0}, Lorg/bouncycastle/asn1/bio/zta;->zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
 
-    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->lLa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/asn1/ywr/vdw;->NLa:Lorg/bouncycastle/asn1/bvj;
 
     const-string v1, "P-192"
 
@@ -129,7 +129,7 @@
 .method public static Ja(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->cLa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->ELa:Ljava/util/Hashtable;
 
     invoke-static {p0}, Lorg/bouncycastle/util/Strings;->toUpperCase(Ljava/lang/String;)Ljava/lang/String;
 
@@ -147,7 +147,7 @@
 .method public static dma(Lorg/bouncycastle/asn1/bvj;)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->hIa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->JIa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -171,7 +171,7 @@
 .method public static getByName(Ljava/lang/String;)Lorg/bouncycastle/asn1/ibl/vju;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->cLa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->ELa:Ljava/util/Hashtable;
 
     invoke-static {p0}, Lorg/bouncycastle/util/Strings;->toUpperCase(Ljava/lang/String;)Ljava/lang/String;
 
@@ -200,7 +200,7 @@
 .method public static getNames()Ljava/util/Enumeration;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->cLa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->ELa:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -212,11 +212,11 @@
 .method static zta(Ljava/lang/String;Lorg/bouncycastle/asn1/bvj;)V
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->cLa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->ELa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->hIa:Ljava/util/Hashtable;
+    sget-object v0, Lorg/bouncycastle/asn1/bio/zta;->JIa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1, p0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

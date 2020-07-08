@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static Xl()[J
+.method public static _l()[J
     .locals 1
 
     const/4 v0, 0x4
@@ -26,7 +26,7 @@
     return-object v0
 .end method
 
-.method public static Yl()[I
+.method public static am()[I
     .locals 1
 
     const/16 v0, 0x10
@@ -36,7 +36,7 @@
     return-object v0
 .end method
 
-.method public static Zl()[J
+.method public static bm()[J
     .locals 1
 
     const/16 v0, 0x8
@@ -63,7 +63,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/rtg;->Xl()[J
+    invoke-static {}, Lyou/zta/sis/sis/rtg;->_l()[J
 
     move-result-object v0
 

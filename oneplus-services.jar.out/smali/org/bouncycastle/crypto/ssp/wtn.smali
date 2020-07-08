@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final fNa:I = 0x1
+.field public static final HNa:I = 0x1
 
-.field public static final gNa:I = 0x2
+.field public static final INa:I = 0x2
 
-.field public static final hNa:I = 0x3
+.field public static final JNa:I = 0x3
 
 
 # instance fields
-.field private digest:Lorg/bouncycastle/crypto/qbh;
+.field private GNa:I
 
-.field private eNa:I
+.field private digest:Lorg/bouncycastle/crypto/qbh;
 
 .field private v:I
 
@@ -35,7 +35,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/ssp/wtn;->eNa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/ssp/wtn;->GNa:I
 
     check-cast p1, Lorg/bouncycastle/crypto/oif;
 
@@ -222,7 +222,7 @@
 
     new-array p1, p1, [B
 
-    iget v4, p0, Lorg/bouncycastle/crypto/ssp/wtn;->eNa:I
+    iget v4, p0, Lorg/bouncycastle/crypto/ssp/wtn;->GNa:I
 
     add-int/2addr p2, v4
 
@@ -317,7 +317,7 @@
     :cond_7
     add-int/lit8 v7, v6, -0x1
 
-    iget v8, p0, Lorg/bouncycastle/crypto/ssp/wtn;->eNa:I
+    iget v8, p0, Lorg/bouncycastle/crypto/ssp/wtn;->GNa:I
 
     if-ne v6, p2, :cond_8
 
@@ -443,26 +443,6 @@
     return-object v0
 .end method
 
-.method public oa(I)Lorg/bouncycastle/crypto/kth;
-    .locals 2
-
-    div-int/lit8 p1, p1, 0x8
-
-    const/4 v0, 0x3
-
-    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/crypto/ssp/wtn;->a(II)[B
-
-    move-result-object p0
-
-    new-instance v0, Lorg/bouncycastle/crypto/wtn/cjf;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1, p1}, Lorg/bouncycastle/crypto/wtn/cjf;-><init>([BII)V
-
-    return-object v0
-.end method
-
 .method public oxb(II)Lorg/bouncycastle/crypto/kth;
     .locals 4
 
@@ -493,4 +473,24 @@
     invoke-direct {v1, v2, p0, v3, p2}, Lorg/bouncycastle/crypto/wtn/ire;-><init>(Lorg/bouncycastle/crypto/kth;[BII)V
 
     return-object v1
+.end method
+
+.method public pa(I)Lorg/bouncycastle/crypto/kth;
+    .locals 2
+
+    div-int/lit8 p1, p1, 0x8
+
+    const/4 v0, 0x3
+
+    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/crypto/ssp/wtn;->a(II)[B
+
+    move-result-object p0
+
+    new-instance v0, Lorg/bouncycastle/crypto/wtn/cjf;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1, p1}, Lorg/bouncycastle/crypto/wtn/cjf;-><init>([BII)V
+
+    return-object v0
 .end method

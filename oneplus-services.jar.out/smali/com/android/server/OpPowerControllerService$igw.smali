@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/g;)V
+.method synthetic constructor <init>(Lcom/android/server/i;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/OpPowerControllerService$igw;-><init>()V

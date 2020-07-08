@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private gC:J
-
 .field public final mUid:I
 
 .field final synthetic this$0:Lcom/android/server/am/OnePlusMemoryTracker;
+
+.field private vC:J
 
 
 # direct methods
@@ -32,21 +32,21 @@
 
     iput p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->mUid:I
 
-    invoke-virtual {p0}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->Jc()V
+    invoke-virtual {p0}, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->Lc()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Ic()Z
+.method public Kc()Z
     .locals 4
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->gC:J
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->vC:J
 
     sub-long/2addr v0, v2
 
@@ -69,14 +69,14 @@
     return p0
 .end method
 
-.method public Jc()V
+.method public Lc()V
     .locals 2
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->gC:J
+    iput-wide v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->vC:J
 
     return-void
 .end method

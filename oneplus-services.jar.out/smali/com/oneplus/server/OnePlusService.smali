@@ -26,7 +26,7 @@
 
 .field private mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
-.field private mOpCommonFrontMonitor:Lcom/android/server/vdw;
+.field private mOpCommonFrontMonitor:Lcom/android/server/qeg;
 
 .field private opams:Lcom/android/server/am/vdb;
 
@@ -132,7 +132,7 @@
 .method public flingEvent(Ljava/lang/String;I)V
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rwa:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:Z
 
     if-eqz p0, :cond_0
 
@@ -250,7 +250,7 @@
 .method public getDynamicVsyncConfig(Ljava/lang/String;)I
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rwa:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:Z
 
     if-eqz p0, :cond_0
 
@@ -316,6 +316,16 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public isFullscreenScene()Z
+    .locals 0
+
+    invoke-static {}, Lcom/android/server/wm/OpWindowManagerServiceInjector;->isFullscreenScene()Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method public isInConfigList(ILjava/lang/String;)Z
@@ -545,7 +555,7 @@
 .method public resume(Ljava/lang/String;)V
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rwa:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:Z
 
     if-eqz p0, :cond_0
 
@@ -627,21 +637,21 @@
 
     iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOnePlusThemeController:Lcom/oneplus/server/zta/sis;
 
-    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Eg()V
+    invoke-virtual {v0}, Lcom/oneplus/server/zta/sis;->Hg()V
 
-    invoke-static {}, Lcom/android/server/vdw;->getInstance()Lcom/android/server/vdw;
+    invoke-static {}, Lcom/android/server/qeg;->getInstance()Lcom/android/server/qeg;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOpCommonFrontMonitor:Lcom/android/server/vdw;
+    iput-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOpCommonFrontMonitor:Lcom/android/server/qeg;
 
-    iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOpCommonFrontMonitor:Lcom/android/server/vdw;
+    iget-object v0, p0, Lcom/oneplus/server/OnePlusService;->mOpCommonFrontMonitor:Lcom/android/server/qeg;
 
     iget-object v1, p0, Lcom/oneplus/server/OnePlusService;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lcom/android/server/vdw;->init(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/android/server/qeg;->init(Landroid/content/Context;)V
 
-    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->Rwa:Z
+    sget-boolean v0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:Z
 
     if-nez v0, :cond_0
 
@@ -673,7 +683,7 @@
 .method public updateVelocity(Ljava/lang/String;FD)V
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->Rwa:Z
+    sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:Z
 
     if-eqz p0, :cond_0
 

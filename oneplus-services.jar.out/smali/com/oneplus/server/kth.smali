@@ -8,21 +8,21 @@
 
 .field public static final IN_USING:Z = true
 
+.field private static Ixa:Landroid/app/PendingIntent; = null
+
+.field private static final Jxa:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
+
 .field public static final TAG:Ljava/lang/String; = "DozeManager"
 
-.field private static final ev:Ljava/lang/String; = "deviceidle"
+.field private static mAlarmManager:Landroid/app/AlarmManager; = null
 
-.field private static gxa:Landroid/app/PendingIntent; = null
+.field private static mInstance:Lcom/oneplus/server/kth; = null
 
-.field private static final hxa:Ljava/lang/String; = "com.oneplus.android.screenOffCheckProcessState"
+.field private static mScreenOffIntent:Landroid/content/Intent; = null
 
-.field private static mAlarmManager:Landroid/app/AlarmManager;
+.field private static screenOffCheckDelayTime:J = 0x0L
 
-.field private static mInstance:Lcom/oneplus/server/kth;
-
-.field private static mScreenOffIntent:Landroid/content/Intent;
-
-.field private static screenOffCheckDelayTime:J
+.field private static final uv:Ljava/lang/String; = "deviceidle"
 
 
 # instance fields
@@ -80,7 +80,33 @@
     return-void
 .end method
 
-.method private Rc(I)Z
+.method private Aq()[Ljava/lang/String;
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
+
+    if-eqz v0, :cond_0
+
+    const-string v1, "get_uid"
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, ":0"
+
+    :goto_0
+    invoke-direct {p0, v0}, Lcom/oneplus/server/kth;->kd(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private Sc(I)Z
     .locals 4
 
     const-string v0, "DozeManager"
@@ -179,7 +205,7 @@
     return p0
 .end method
 
-.method private Sc(I)V
+.method private Tc(I)V
     .locals 5
 
     iget-object v0, p0, Lcom/oneplus/server/kth;->mActivityManager:Lcom/android/server/am/ActivityManagerService;
@@ -253,7 +279,7 @@
 .method static synthetic access$100()Landroid/app/PendingIntent;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/server/kth;->gxa:Landroid/app/PendingIntent;
+    sget-object v0, Lcom/oneplus/server/kth;->Ixa:Landroid/app/PendingIntent;
 
     return-object v0
 .end method
@@ -415,7 +441,7 @@
     return-object p0
 .end method
 
-.method private mw()[Ljava/lang/String;
+.method private pw()[Ljava/lang/String;
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
@@ -441,10 +467,10 @@
     return-object p0
 .end method
 
-.method private nw()V
+.method private qw()V
     .locals 4
 
-    invoke-direct {p0}, Lcom/oneplus/server/kth;->mw()[Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/server/kth;->pw()[Ljava/lang/String;
 
     move-result-object v0
 
@@ -537,7 +563,7 @@
 
     if-lt v2, v3, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->Rc(I)Z
+    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->Sc(I)Z
 
     move-result v3
 
@@ -549,7 +575,7 @@
 
     if-nez v3, :cond_2
 
-    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->Sc(I)V
+    invoke-direct {p0, v2}, Lcom/oneplus/server/kth;->Tc(I)V
 
     :cond_2
     :goto_1
@@ -559,32 +585,6 @@
 
     :cond_3
     return-void
-.end method
-
-.method private xq()[Ljava/lang/String;
-    .locals 2
-
-    iget-object v0, p0, Lcom/oneplus/server/kth;->mAudioManager:Landroid/media/AudioManager;
-
-    if-eqz v0, :cond_0
-
-    const-string v1, "get_uid"
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getParameters(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v0, ":0"
-
-    :goto_0
-    invoke-direct {p0, v0}, Lcom/oneplus/server/kth;->kd(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method private you(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
@@ -640,7 +640,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/server/kth;->gxa:Landroid/app/PendingIntent;
+    sput-object v0, Lcom/oneplus/server/kth;->Ixa:Landroid/app/PendingIntent;
 
     invoke-virtual {p2, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
@@ -666,7 +666,7 @@
 .method static synthetic zta(Lcom/oneplus/server/kth;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/kth;->nw()V
+    invoke-direct {p0}, Lcom/oneplus/server/kth;->qw()V
 
     return-void
 .end method

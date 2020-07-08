@@ -99,7 +99,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/iris/kth$zta;->this$0:Lcom/oneplus/android/server/iris/kth;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/kth;->Of()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/kth;->Qf()V
 
     iget-object p1, p0, Lcom/oneplus/android/server/iris/kth$zta;->this$0:Lcom/oneplus/android/server/iris/kth;
 
@@ -159,14 +159,14 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/iris/kth$zta;->this$0:Lcom/oneplus/android/server/iris/kth;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/kth;->Of()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/kth;->Qf()V
 
     goto/16 :goto_3
 
     :cond_5
     iget-object p0, p0, Lcom/oneplus/android/server/iris/kth$zta;->this$0:Lcom/oneplus/android/server/iris/kth;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/kth;->Nf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/kth;->Pf()V
 
     goto/16 :goto_4
 
@@ -225,7 +225,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/iris/kth$zta;->this$0:Lcom/oneplus/android/server/iris/kth;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/kth;->Of()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/kth;->Qf()V
 
     iget-object p1, p0, Lcom/oneplus/android/server/iris/kth$zta;->this$0:Lcom/oneplus/android/server/iris/kth;
 

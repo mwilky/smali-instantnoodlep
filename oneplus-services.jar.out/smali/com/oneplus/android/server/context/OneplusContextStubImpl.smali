@@ -13,9 +13,7 @@
 
 
 # instance fields
-.field private mContext:Landroid/content/Context;
-
-.field private uma:Landroid/util/ArrayMap;
+.field private Pma:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -25,6 +23,8 @@
         }
     .end annotation
 .end field
+
+.field private mContext:Landroid/content/Context;
 
 
 # direct methods
@@ -49,11 +49,11 @@
 
     invoke-direct {v0, v1}, Landroid/util/ArrayMap;-><init>(I)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     iput-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->mContext:Landroid/content/Context;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_onlineconfig:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_windowmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -89,7 +89,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_permissioncontrolservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -112,7 +112,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_consumption_statistics:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -135,7 +135,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_colordisplay:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -158,7 +158,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_reserve_app:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -181,7 +181,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_openid:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -204,7 +204,7 @@
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_heytap_business:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -227,7 +227,7 @@
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_motor:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -250,7 +250,7 @@
 
     if-eqz v1, :cond_7
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -275,7 +275,7 @@
 
     if-eqz v1, :cond_8
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_opservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -297,7 +297,7 @@
 
     if-eqz v1, :cond_8
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_highpowerdetect:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -320,7 +320,7 @@
 
     if-eqz v1, :cond_9
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -342,7 +342,7 @@
 
     if-eqz v1, :cond_9
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_standbydetect:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -352,7 +352,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystatsservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -362,7 +362,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batteryoutlier:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -373,7 +373,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_9
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_param_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -408,7 +408,7 @@
     if-eqz v1, :cond_b
 
     :cond_a
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_vibratorservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -419,7 +419,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_b
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_phonewindowmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -429,7 +429,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_alertslider_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -451,7 +451,7 @@
 
     if-eqz v1, :cond_c
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_audiomonitor_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -462,7 +462,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_c
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -484,13 +484,13 @@
 
     if-eqz v1, :cond_d
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_fast_charge:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/c;
+    new-instance v4, Lcom/android/server/e;
 
-    invoke-direct {v4}, Lcom/android/server/c;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/e;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -507,7 +507,7 @@
 
     if-eqz v1, :cond_e
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_process_resident:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -530,20 +530,20 @@
 
     if-eqz v1, :cond_f
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_aggressive_doze:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/veq;
+    new-instance v4, Lcom/android/server/cgv;
 
-    invoke-direct {v4}, Lcom/android/server/veq;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/cgv;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_f
     new-array v1, v0, [I
 
-    const/16 v3, 0x12b
+    const/16 v3, 0x12d
 
     aput v3, v1, v2
 
@@ -553,13 +553,13 @@
 
     if-eqz v1, :cond_10
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smart_doze:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/q;
+    new-instance v4, Lcom/android/server/s;
 
-    invoke-direct {v4}, Lcom/android/server/q;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/s;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -576,13 +576,13 @@
 
     if-eqz v1, :cond_11
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smart_power_control:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     iget-object v4, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->mContext:Landroid/content/Context;
 
-    invoke-static {v4}, Lcom/android/server/s;->getInstance(Landroid/content/Context;)Lcom/android/server/s;
+    invoke-static {v4}, Lcom/android/server/u;->getInstance(Landroid/content/Context;)Lcom/android/server/u;
 
     move-result-object v4
 
@@ -591,7 +591,7 @@
     :cond_11
     new-array v1, v0, [I
 
-    const/16 v3, 0xcb
+    const/16 v3, 0xcc
 
     aput v3, v1, v2
 
@@ -601,18 +601,18 @@
 
     if-eqz v1, :cond_12
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_process_adj_control:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/am/w;
+    new-instance v4, Lcom/android/server/am/y;
 
-    invoke-direct {v4}, Lcom/android/server/am/w;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/am/y;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_12
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_nfc:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -624,7 +624,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0xb4
+    const/16 v3, 0xb5
 
     aput v3, v1, v2
 
@@ -634,7 +634,7 @@
 
     if-eqz v1, :cond_13
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wifi:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -647,7 +647,7 @@
     :cond_13
     new-array v1, v0, [I
 
-    const/16 v3, 0xba
+    const/16 v3, 0xbb
 
     aput v3, v1, v2
 
@@ -657,7 +657,7 @@
 
     if-eqz v1, :cond_14
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_oputil:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -680,7 +680,7 @@
 
     if-eqz v1, :cond_15
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_appbootmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -703,7 +703,7 @@
 
     if-eqz v1, :cond_16
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_applocker:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -716,7 +716,7 @@
     :cond_16
     new-array v1, v0, [I
 
-    const/16 v3, 0xb8
+    const/16 v3, 0xb9
 
     aput v3, v1, v2
 
@@ -726,7 +726,7 @@
 
     if-eqz v1, :cond_17
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_perf_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -749,7 +749,7 @@
 
     if-eqz v1, :cond_18
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickpay:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -760,7 +760,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_18
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_activitystarter:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -782,7 +782,7 @@
 
     if-eqz v1, :cond_19
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_launcherappsservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -795,7 +795,7 @@
     :cond_19
     new-array v1, v0, [I
 
-    const/16 v3, 0xb9
+    const/16 v3, 0xba
 
     aput v3, v1, v2
 
@@ -805,11 +805,11 @@
 
     if-eqz v1, :cond_1a
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_restartprocessmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    invoke-static {}, Lcom/android/server/am/y;->getInstance()Lcom/android/server/am/y;
+    invoke-static {}, Lcom/android/server/am/A;->getInstance()Lcom/android/server/am/A;
 
     move-result-object v4
 
@@ -841,7 +841,7 @@
     if-eqz v1, :cond_1c
 
     :cond_1b
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screencompat:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -854,7 +854,7 @@
     :cond_1c
     new-array v1, v0, [I
 
-    const/16 v3, 0xbb
+    const/16 v3, 0xbc
 
     aput v3, v1, v2
 
@@ -864,7 +864,7 @@
 
     if-eqz v1, :cond_1d
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_uididle:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -877,7 +877,7 @@
     :cond_1d
     new-array v1, v0, [I
 
-    const/16 v3, 0xbc
+    const/16 v3, 0xbd
 
     aput v3, v1, v2
 
@@ -887,7 +887,7 @@
 
     if-eqz v1, :cond_1e
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenshotimprovement:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -900,7 +900,7 @@
     :cond_1e
     new-array v1, v0, [I
 
-    const/16 v3, 0xbd
+    const/16 v3, 0xbe
 
     aput v3, v1, v2
 
@@ -910,20 +910,20 @@
 
     if-eqz v1, :cond_1f
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_gps_notification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/obl;
+    new-instance v4, Lcom/android/server/oxb;
 
-    invoke-direct {v4, p1}, Lcom/android/server/obl;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/server/oxb;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1f
     new-array v1, v0, [I
 
-    const/16 v3, 0xbe
+    const/16 v3, 0xbf
 
     aput v3, v1, v2
 
@@ -933,7 +933,7 @@
 
     if-eqz v1, :cond_20
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_zenmode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -956,7 +956,7 @@
 
     if-eqz v1, :cond_21
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smartboost:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -967,7 +967,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_21
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaypowercontroller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -989,7 +989,7 @@
 
     if-eqz v1, :cond_22
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_memorytracker:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1002,7 +1002,7 @@
     :cond_22
     new-array v1, v0, [I
 
-    const/16 v3, 0x13f
+    const/16 v3, 0x141
 
     aput v3, v1, v2
 
@@ -1012,7 +1012,7 @@
 
     if-eqz v1, :cond_23
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_proximity_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1035,7 +1035,7 @@
 
     if-eqz v1, :cond_24
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_apprecord:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1058,20 +1058,20 @@
 
     if-eqz v1, :cond_25
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_alarm_alignment:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/vju;
+    new-instance v4, Lcom/android/server/bud;
 
-    invoke-direct {v4}, Lcom/android/server/vju;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/bud;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_25
     new-array v1, v0, [I
 
-    const/16 v3, 0xbf
+    const/16 v3, 0xc0
 
     aput v3, v1, v2
 
@@ -1081,7 +1081,7 @@
 
     if-eqz v1, :cond_26
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_networkpolicymanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1104,7 +1104,7 @@
 
     if-eqz v1, :cond_27
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenmode_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1117,7 +1117,7 @@
     :cond_27
     new-array v1, v0, [I
 
-    const/16 v3, 0xc9
+    const/16 v3, 0xca
 
     aput v3, v1, v2
 
@@ -1127,7 +1127,7 @@
 
     if-eqz v1, :cond_28
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_dexoptmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1140,7 +1140,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_28
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_powerkey_launch:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1150,7 +1150,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_shutdown_chord:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1160,7 +1160,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_secrecy:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1172,7 +1172,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_engineer:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1186,7 +1186,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0xca
+    const/16 v3, 0xcb
 
     aput v3, v1, v2
 
@@ -1196,7 +1196,7 @@
 
     if-eqz v1, :cond_29
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_skipdoframe:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1209,7 +1209,7 @@
     :cond_29
     new-array v1, v0, [I
 
-    const/16 v3, 0xcc
+    const/16 v3, 0xcd
 
     aput v3, v1, v2
 
@@ -1219,20 +1219,20 @@
 
     if-eqz v1, :cond_2a
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_screenrotationimprovement:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/wm/r;
+    new-instance v4, Lcom/android/server/wm/s;
 
-    invoke-direct {v4, p1}, Lcom/android/server/wm/r;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/server/wm/s;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2a
     new-array v1, v0, [I
 
-    const/16 v3, 0xce
+    const/16 v3, 0xcf
 
     aput v3, v1, v2
 
@@ -1242,7 +1242,7 @@
 
     if-eqz v1, :cond_2b
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_activitytaskmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1252,7 +1252,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_displaycontent:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1265,7 +1265,7 @@
     :cond_2b
     new-array v1, v0, [I
 
-    const/16 v3, 0x101
+    const/16 v3, 0x102
 
     aput v3, v1, v2
 
@@ -1275,7 +1275,7 @@
 
     if-eqz v1, :cond_2c
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_onehandmode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1285,7 +1285,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_windowmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1296,19 +1296,19 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2c
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_alarm_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/bud;
+    new-instance v4, Lcom/android/server/les;
 
-    invoke-direct {v4}, Lcom/android/server/bud;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/les;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     new-array v1, v0, [I
 
-    const/16 v3, 0xcd
+    const/16 v3, 0xce
 
     aput v3, v1, v2
 
@@ -1318,7 +1318,7 @@
 
     if-eqz v1, :cond_2d
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_jankmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1339,7 +1339,7 @@
 
     if-eqz v1, :cond_2e
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_china_gms:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1360,7 +1360,7 @@
 
     if-eqz v1, :cond_2f
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_package_manager_helper:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1383,7 +1383,7 @@
 
     if-eqz v1, :cond_30
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_connor:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1406,7 +1406,7 @@
 
     if-eqz v1, :cond_31
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scenemode:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1429,18 +1429,18 @@
 
     if-eqz v1, :cond_32
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickreply:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    invoke-static {p1}, Lcom/android/server/wm/k;->getInstance(Landroid/content/Context;)Lcom/android/server/wm/k;
+    invoke-static {p1}, Lcom/android/server/wm/l;->getInstance(Landroid/content/Context;)Lcom/android/server/wm/l;
 
     move-result-object v4
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_32
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_carkit_identification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1452,7 +1452,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0xdf
+    const/16 v3, 0xe0
 
     aput v3, v1, v2
 
@@ -1462,7 +1462,7 @@
 
     if-eqz v1, :cond_33
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_verificationcode_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1485,7 +1485,7 @@
 
     if-eqz v1, :cond_34
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_background_freeze:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1498,7 +1498,7 @@
     :cond_34
     new-array v1, v0, [I
 
-    const/16 v3, 0xda
+    const/16 v3, 0xdb
 
     aput v3, v1, v2
 
@@ -1508,7 +1508,7 @@
 
     if-eqz v1, :cond_35
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_opsla:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1519,7 +1519,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_35
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scene_call_block:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1529,7 +1529,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_longshot_manager_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1539,7 +1539,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_compatibility_helper:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1549,7 +1549,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_ads:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1559,17 +1559,17 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_op_instant_app:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v4, Lcom/android/server/f;
+    new-instance v4, Lcom/android/server/h;
 
-    invoke-direct {v4}, Lcom/android/server/f;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/h;-><init>()V
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_fingerprint_acccelerate:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1579,7 +1579,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_game_shake:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1593,7 +1593,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0x111
+    const/16 v3, 0x113
 
     aput v3, v1, v2
 
@@ -1603,7 +1603,7 @@
 
     if-eqz v1, :cond_36
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_force_dark_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1616,7 +1616,7 @@
     :cond_36
     new-array v1, v0, [I
 
-    const/16 v3, 0x10d
+    const/16 v3, 0x10f
 
     aput v3, v1, v2
 
@@ -1628,7 +1628,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0x10c
+    const/16 v3, 0x10e
 
     aput v3, v1, v2
 
@@ -1639,7 +1639,7 @@
     if-eqz v1, :cond_38
 
     :cond_37
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_iris_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1650,39 +1650,62 @@
     invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_38
-    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
-    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_antiburn_manager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v3, Lcom/android/server/am/m;
+    new-instance v4, Lcom/android/server/am/m;
 
-    invoke-direct {v3}, Lcom/android/server/am/m;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/am/m;-><init>()V
 
-    invoke-virtual {p1, v1, v3}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-array p1, v0, [I
+    new-array v1, v0, [I
 
-    const/16 v0, 0x147
+    const/16 v3, 0x149
 
-    aput v0, p1, v2
+    aput v3, v1, v2
 
-    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
 
-    move-result p1
+    move-result v1
 
-    if-eqz p1, :cond_39
+    if-eqz v1, :cond_39
 
-    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
-    sget-object p1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wireless_charge_disconnect_detector:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+    sget-object v3, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wireless_charge_disconnect_detector:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    new-instance v0, Lcom/android/server/z;
+    new-instance v4, Lcom/android/server/B;
 
-    invoke-direct {v0}, Lcom/android/server/z;-><init>()V
+    invoke-direct {v4}, Lcom/android/server/B;-><init>()V
 
-    invoke-virtual {p0, p1, v0}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, v4}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_39
+    new-array v0, v0, [I
+
+    const/16 v1, 0x13e
+
+    aput v1, v0, v2
+
+    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3a
+
+    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
+
+    sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    new-instance v1, Lcom/android/server/am/r;
+
+    invoke-direct {v1, p1}, Lcom/android/server/am/r;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {p0, v0, v1}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_3a
     return-void
 .end method
 
@@ -1724,9 +1747,9 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/sis/zta;->if()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/sis/zta;->kf()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1759,7 +1782,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smart_power_control:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1767,16 +1790,16 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/server/s;
+    check-cast v1, Lcom/android/server/u;
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {v1}, Lcom/android/server/s;->onBootComplete()V
+    invoke-virtual {v1}, Lcom/android/server/u;->onBootComplete()V
 
     :cond_2
     new-array v1, v0, [I
 
-    const/16 v2, 0x109
+    const/16 v2, 0x10a
 
     aput v2, v1, v3
 
@@ -1792,10 +1815,10 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->mContext:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/server/am/A;->init(Landroid/content/Context;)Lcom/android/server/am/A;
+    invoke-static {v1}, Lcom/android/server/am/C;->init(Landroid/content/Context;)Lcom/android/server/am/C;
 
     :cond_3
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_engineer:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1828,7 +1851,7 @@
 
     if-eqz v1, :cond_5
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_openid:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1843,7 +1866,7 @@
     :cond_5
     new-array v1, v0, [I
 
-    const/16 v2, 0x13f
+    const/16 v2, 0x141
 
     aput v2, v1, v3
 
@@ -1853,7 +1876,7 @@
 
     if-eqz v1, :cond_6
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_proximity_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1868,7 +1891,7 @@
     invoke-virtual {v1, v2}, Lcom/android/server/display/rtg;->init(Landroid/content/Context;)V
 
     :cond_6
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1883,7 +1906,7 @@
     invoke-virtual {v1}, Lcom/android/server/OnePlusExService;->bootComplete()V
 
     :cond_7
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_windowmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1912,7 +1935,7 @@
 
     if-eqz v1, :cond_9
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_quickreply:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1920,11 +1943,11 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/server/wm/k;
+    check-cast v1, Lcom/android/server/wm/l;
 
     if-eqz v1, :cond_9
 
-    invoke-virtual {v1}, Lcom/android/server/wm/k;->bootComplete()V
+    invoke-virtual {v1}, Lcom/android/server/wm/l;->bootComplete()V
 
     :cond_9
     new-array v1, v0, [I
@@ -1937,7 +1960,7 @@
 
     if-eqz v1, :cond_a
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_apperror_dialog:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1950,7 +1973,7 @@
     :cond_a
     new-array v1, v0, [I
 
-    const/16 v2, 0x10d
+    const/16 v2, 0x10f
 
     aput v2, v1, v3
 
@@ -1962,7 +1985,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0x10c
+    const/16 v1, 0x10e
 
     aput v1, v0, v3
 
@@ -1973,7 +1996,7 @@
     if-eqz v0, :cond_c
 
     :cond_b
-    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_iris_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1994,7 +2017,7 @@
 .method public queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     invoke-virtual {p0, p1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2033,7 +2056,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2065,7 +2088,7 @@
     invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_windowmanagerservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2082,7 +2105,7 @@
     invoke-virtual {p1, v1}, Lcom/android/server/wm/OpWindowManagerService;->publish(Landroid/content/Context;)V
 
     :cond_1
-    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_power_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2097,7 +2120,7 @@
     invoke-virtual {p1}, Lcom/android/server/OpPowerControllerService;->publish()V
 
     :cond_2
-    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_opservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2130,7 +2153,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_permissioncontrolservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2145,7 +2168,7 @@
     invoke-virtual {v1, v2}, Lcom/oneplus/android/server/permissioncontrol/OPPermissionControlService;->publish(Landroid/content/Context;)V
 
     :cond_4
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2162,7 +2185,7 @@
     invoke-virtual {v1, v2}, Lcom/android/server/OnePlusExService;->publish(Landroid/content/Context;)V
 
     :cond_5
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_param_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2191,7 +2214,7 @@
 
     if-eqz v1, :cond_7
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_colordisplay:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2208,7 +2231,7 @@
     invoke-virtual {v1, v2}, Lcom/oneplus/android/server/display/OpColorDisplayService;->publish(Landroid/content/Context;)V
 
     :cond_7
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_nfc:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2227,7 +2250,7 @@
     :cond_8
     new-array v1, p1, [I
 
-    const/16 v2, 0xb4
+    const/16 v2, 0xb5
 
     aput v2, v1, v3
 
@@ -2237,7 +2260,7 @@
 
     if-eqz v1, :cond_9
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wifi:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2266,7 +2289,7 @@
 
     if-eqz v1, :cond_a
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_heytap_business:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2281,7 +2304,7 @@
     invoke-virtual {v1}, Lcom/oneplus/android/server/heytapbusiness/sis;->onStart()V
 
     :cond_a
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_secrecy:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2298,7 +2321,7 @@
     invoke-virtual {v1, v2}, Lcom/android/server/secrecy/SecrecyService;->publish(Landroid/content/Context;)V
 
     :cond_b
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_engineer:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2315,7 +2338,7 @@
     invoke-virtual {v1, v2}, Lcom/android/server/engineer/OneplusEngineerService;->publish(Landroid/content/Context;)V
 
     :cond_c
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scene_call_block:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2330,7 +2353,7 @@
     invoke-virtual {v1}, Lcom/oneplus/android/server/scene/OnePlusSceneCallBlockService;->publish()V
 
     :cond_d
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_longshot_manager_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2351,7 +2374,7 @@
     invoke-virtual {v1, v0}, Lcom/oneplus/server/longshot/OpLongScreenshotManagerService;->publish(Landroid/content/Context;)V
 
     :cond_e
-    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_bluetooth_service_information:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2363,7 +2386,7 @@
 
     new-array v0, p1, [I
 
-    const/16 v1, 0x10d
+    const/16 v1, 0x10f
 
     aput v1, v0, v3
 
@@ -2375,7 +2398,7 @@
 
     new-array p1, p1, [I
 
-    const/16 v0, 0x10c
+    const/16 v0, 0x10e
 
     aput v0, p1, v3
 
@@ -2386,7 +2409,7 @@
     if-eqz p1, :cond_10
 
     :cond_f
-    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object p1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_iris_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2457,7 +2480,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_motor:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2482,7 +2505,7 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_openid:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2507,7 +2530,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_heytap_business:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2520,7 +2543,7 @@
     invoke-virtual {v1}, Lcom/oneplus/android/server/heytapbusiness/sis;->onSystemReady()V
 
     :cond_4
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_opservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2535,7 +2558,7 @@
     invoke-virtual {v1}, Lcom/oneplus/server/OnePlusService;->systemReady()V
 
     :cond_5
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_exservice:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2550,7 +2573,7 @@
     invoke-virtual {v1}, Lcom/android/server/OnePlusExService;->systemRunning()V
 
     :cond_6
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_nfc:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2577,7 +2600,7 @@
 
     if-eqz v1, :cond_8
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_colordisplay:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2592,7 +2615,7 @@
     invoke-virtual {v1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->systemReady()V
 
     :cond_8
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_restartprocessmanager:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2600,18 +2623,18 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/server/am/y;
+    check-cast v1, Lcom/android/server/am/A;
 
     if-eqz v1, :cond_9
 
     iget-object v2, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v1, v2}, Lcom/android/server/am/y;->systemReady(Landroid/content/Context;)V
+    invoke-virtual {v1, v2}, Lcom/android/server/am/A;->systemReady(Landroid/content/Context;)V
 
     :cond_9
     new-array v1, v0, [I
 
-    const/16 v2, 0xbd
+    const/16 v2, 0xbe
 
     aput v2, v1, v3
 
@@ -2621,7 +2644,7 @@
 
     if-eqz v1, :cond_a
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_gps_notification:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2629,12 +2652,12 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/server/obl;
+    check-cast v1, Lcom/android/server/oxb;
 
-    invoke-virtual {v1}, Lcom/android/server/obl;->systemReady()V
+    invoke-virtual {v1}, Lcom/android/server/oxb;->systemReady()V
 
     :cond_a
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_secrecy:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2649,7 +2672,7 @@
     invoke-virtual {v1}, Lcom/android/server/secrecy/SecrecyService;->systemReady()V
 
     :cond_b
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_engineer:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2666,7 +2689,7 @@
     :cond_c
     new-array v1, v0, [I
 
-    const/16 v2, 0x139
+    const/16 v2, 0x13b
 
     aput v2, v1, v3
 
@@ -2697,7 +2720,7 @@
 
     if-eqz v1, :cond_e
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_smartboost:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2743,7 +2766,7 @@
 
     invoke-virtual {v1}, Lcom/android/server/am/a;->initOnlineConfig()V
 
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_scene_call_block:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2762,7 +2785,7 @@
     :cond_10
     new-array v1, v0, [I
 
-    const/16 v2, 0x115
+    const/16 v2, 0x117
 
     aput v2, v1, v3
 
@@ -2800,7 +2823,7 @@
     :cond_12
     new-array v1, v0, [I
 
-    const/16 v2, 0xb8
+    const/16 v2, 0xb9
 
     aput v2, v1, v3
 
@@ -2855,7 +2878,7 @@
     :goto_0
     new-array v1, v0, [I
 
-    const/16 v2, 0x10d
+    const/16 v2, 0x10f
 
     aput v2, v1, v3
 
@@ -2867,7 +2890,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v2, 0x10c
+    const/16 v2, 0x10e
 
     aput v2, v1, v3
 
@@ -2878,7 +2901,7 @@
     if-eqz v1, :cond_16
 
     :cond_15
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_iris_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2895,7 +2918,7 @@
     invoke-virtual {v1, v2}, Lcom/oneplus/android/server/iris/OpIrisService;->systemReady(Landroid/content/Context;)V
 
     :cond_16
-    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->uma:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/oneplus/android/server/context/OneplusContextStubImpl;->Pma:Landroid/util/ArrayMap;
 
     sget-object v2, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_wifi:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -2912,7 +2935,7 @@
     :cond_17
     new-array v0, v0, [I
 
-    const/16 v1, 0xc9
+    const/16 v1, 0xca
 
     aput v1, v0, v3
 

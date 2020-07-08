@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method private static Fd(I)I
+.method private static Gd(I)I
     .locals 2
 
     const/4 v0, 0x0
@@ -32,7 +32,7 @@
     return v0
 .end method
 
-.method public static Ka(I)I
+.method public static La(I)I
     .locals 2
 
     mul-int v0, p0, p0
@@ -328,7 +328,7 @@
     :cond_0
     aget v3, p1, v1
 
-    invoke-static {v3}, Lyou/zta/sis/sis/you;->Fd(I)I
+    invoke-static {v3}, Lyou/zta/sis/sis/you;->Gd(I)I
 
     move-result v3
 

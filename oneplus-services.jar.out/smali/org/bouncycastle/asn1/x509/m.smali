@@ -89,7 +89,7 @@
     move-result-object p2
 
     :cond_1
-    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->yKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->_Ka:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -97,7 +97,7 @@
 
     if-nez p0, :cond_6
 
-    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->BKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->cLa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -108,7 +108,7 @@
     goto :goto_1
 
     :cond_2
-    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->pKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->RKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -131,7 +131,7 @@
 
     if-nez p0, :cond_5
 
-    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->jza:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->Lza:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -139,7 +139,7 @@
 
     if-nez p0, :cond_5
 
-    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->nKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->PKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 
@@ -147,7 +147,7 @@
 
     if-nez p0, :cond_5
 
-    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->xKa:Lorg/bouncycastle/asn1/bvj;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/q;->ZKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1, p0}, Lorg/bouncycastle/asn1/vdb;->equals(Ljava/lang/Object;)Z
 

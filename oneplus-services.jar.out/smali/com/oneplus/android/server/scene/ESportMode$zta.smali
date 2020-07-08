@@ -106,7 +106,7 @@
 
     invoke-static {p1, v0}, Lcom/oneplus/android/server/scene/ESportMode;->access$002(Lcom/oneplus/android/server/scene/ESportMode;Z)Z
 
-    invoke-static {}, Lcom/android/server/wm/ibl;->He()Lcom/android/server/wm/ibl$zta;
+    invoke-static {}, Lcom/android/server/wm/ibl;->Je()Lcom/android/server/wm/ibl$zta;
 
     move-result-object p1
 
@@ -116,7 +116,7 @@
 
     move-result p2
 
-    invoke-virtual {p1, p2}, Lcom/android/server/wm/ibl$zta;->w(Z)V
+    invoke-virtual {p1, p2}, Lcom/android/server/wm/ibl$zta;->v(Z)V
 
     iget-object p0, p0, Lcom/oneplus/android/server/scene/ESportMode$zta;->this$0:Lcom/oneplus/android/server/scene/ESportMode;
 

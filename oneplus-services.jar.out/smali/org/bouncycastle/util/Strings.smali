@@ -71,18 +71,6 @@
     return-void
 .end method
 
-.method public static _l()Lorg/bouncycastle/util/qbh;
-    .locals 2
-
-    new-instance v0, Lorg/bouncycastle/util/Strings$StringListImpl;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lorg/bouncycastle/util/Strings$StringListImpl;-><init>(Lorg/bouncycastle/util/oif;)V
-
-    return-object v0
-.end method
-
 .method public static bb(Ljava/lang/String;)[B
     .locals 0
 
@@ -124,6 +112,18 @@
     goto :goto_0
 
     :cond_0
+    return-object v0
+.end method
+
+.method public static dm()Lorg/bouncycastle/util/qbh;
+    .locals 2
+
+    new-instance v0, Lorg/bouncycastle/util/Strings$StringListImpl;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lorg/bouncycastle/util/Strings$StringListImpl;-><init>(Lorg/bouncycastle/util/oif;)V
+
     return-object v0
 .end method
 

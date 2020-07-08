@@ -1,14 +1,11 @@
 .class Lcom/android/server/oif;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source ""
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/OnePlusExService;->bootComplete()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/server/OnePlusExService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,68 +19,59 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/OnePlusExService;)V
+.method constructor <init>(Lcom/android/server/OnePlusExService;Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2, p3, p4}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 1
 
-    sget-boolean v0, Lcom/android/server/OnePlusExService;->debugOnePlus:Z
+    iget v0, p1, Landroid/os/Message;->arg1:I
 
-    if-eqz v0, :cond_0
+    iget v0, p1, Landroid/os/Message;->arg2:I
 
-    const-string v0, "OnePlusExService"
+    iget p1, p1, Landroid/os/Message;->what:I
 
-    const-string v1, "[scene] bootComplete"
+    const/4 v0, 0x1
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    if-eq p1, v0, :cond_0
+
+    goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
+    iget-object p1, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
 
-    invoke-static {v0}, Lcom/android/server/OnePlusExService;->access$300(Lcom/android/server/OnePlusExService;)Lcom/oneplus/android/server/scene/a;
+    invoke-static {p1}, Lcom/android/server/OnePlusExService;->access$100(Lcom/android/server/OnePlusExService;)V
 
-    move-result-object v0
+    iget-object p1, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
 
-    if-nez v0, :cond_1
+    invoke-static {p1}, Lcom/android/server/OnePlusExService;->access$200(Lcom/android/server/OnePlusExService;)Landroid/os/PowerManager$WakeLock;
 
-    iget-object v0, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
+    move-result-object p1
 
-    invoke-static {v0}, Lcom/android/server/OnePlusExService;->access$400(Lcom/android/server/OnePlusExService;)Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
-    move-result-object v1
+    move-result p1
 
-    invoke-static {v1}, Lcom/oneplus/android/server/scene/a;->getInstance(Landroid/content/Context;)Lcom/oneplus/android/server/scene/a;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/android/server/OnePlusExService;->access$302(Lcom/android/server/OnePlusExService;Lcom/oneplus/android/server/scene/a;)Lcom/oneplus/android/server/scene/a;
-
-    :cond_1
-    iget-object v0, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
-
-    invoke-static {v0}, Lcom/android/server/OnePlusExService;->access$300(Lcom/android/server/OnePlusExService;)Lcom/oneplus/android/server/scene/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/a;->bootComplete()V
+    if-eqz p1, :cond_1
 
     iget-object p0, p0, Lcom/android/server/oif;->this$0:Lcom/android/server/OnePlusExService;
 
-    invoke-static {p0}, Lcom/android/server/OnePlusExService;->access$300(Lcom/android/server/OnePlusExService;)Lcom/oneplus/android/server/scene/a;
+    invoke-static {p0}, Lcom/android/server/OnePlusExService;->access$200(Lcom/android/server/OnePlusExService;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/scene/a;->startMonitor()V
+    invoke-virtual {p0}, Landroid/os/PowerManager$WakeLock;->release()V
 
+    :cond_1
+    :goto_0
     return-void
 .end method

@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final IFa:[B
-
 .field public static final INSTANCE:Lorg/bouncycastle/asn1/z;
+
+.field private static final jGa:[B
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     new-array v0, v0, [B
 
-    sput-object v0, Lorg/bouncycastle/asn1/z;->IFa:[B
+    sput-object v0, Lorg/bouncycastle/asn1/z;->jGa:[B
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     return p0
 .end method
 
-.method rh()I
+.method uh()I
     .locals 0
 
     const/4 p0, 0x2
@@ -62,7 +62,7 @@
         }
     .end annotation
 
-    sget-object p0, Lorg/bouncycastle/asn1/z;->IFa:[B
+    sget-object p0, Lorg/bouncycastle/asn1/z;->jGa:[B
 
     const/4 v0, 0x5
 

@@ -547,7 +547,7 @@
 
     iput-boolean p1, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController;->mLastEnableAwinic:Z
 
-    const/16 v0, 0xeb
+    const/16 v0, 0xec
 
     const-string v1, "enableXLinearVibrator: "
 
@@ -791,7 +791,7 @@
 
     if-eqz p0, :cond_0
 
-    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->Fva:I
+    iget p0, p0, Lcom/oneplus/android/server/scene/OemSceneXLinearVibrationMotorController$zta;->fwa:I
 
     monitor-exit v0
 

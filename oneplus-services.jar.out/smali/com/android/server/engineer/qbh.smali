@@ -161,7 +161,51 @@
     return-void
 .end method
 
-.method private gm()Ljava/lang/String;
+.method private isMultiSimEnabled()Z
+    .locals 2
+
+    const-string p0, "persist.radio.multisim.config"
+
+    invoke-static {p0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_1
+
+    const-string v1, "dsds"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "dsda"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "tsts"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :cond_1
+    return v0
+.end method
+
+.method private jm()Ljava/lang/String;
     .locals 11
 
     new-instance v0, Ljava/io/File;
@@ -228,7 +272,7 @@
     move-object v2, v1
 
     :goto_1
-    invoke-static {}, Lcom/android/server/engineer/rtg;->od()[B
+    invoke-static {}, Lcom/android/server/engineer/rtg;->qd()[B
 
     move-result-object v4
 
@@ -408,50 +452,6 @@
     return-object p0
 .end method
 
-.method private isMultiSimEnabled()Z
-    .locals 2
-
-    const-string p0, "persist.radio.multisim.config"
-
-    invoke-static {p0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_1
-
-    const-string v1, "dsds"
-
-    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string v1, "dsda"
-
-    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const-string v1, "tsts"
-
-    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    :cond_1
-    return v0
-.end method
-
 .method private kth(Ljava/io/PrintWriter;)V
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
@@ -614,13 +614,13 @@
 
     invoke-direct {p0}, Lcom/android/server/engineer/zta;-><init>()V
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->md()V
+    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->od()V
 
     new-instance p0, Lcom/android/server/engineer/zta;
 
     invoke-direct {p0}, Lcom/android/server/engineer/zta;-><init>()V
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->ld()V
+    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->nd()V
 
     const-string p0, "OK"
 
@@ -784,7 +784,7 @@
     goto :goto_2
 
     :cond_3
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p1
 
@@ -795,7 +795,7 @@
     :cond_4
     iget-object p0, p0, Lcom/android/server/engineer/qbh;->Gb:Lcom/android/server/engineer/OneplusEngineerService;
 
-    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ja()Z
+    invoke-virtual {p0}, Lcom/android/server/engineer/OneplusEngineerService;->Ka()Z
 
     move-result p0
 
@@ -2889,7 +2889,7 @@
 
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-static {}, Lcom/android/server/engineer/oif;->rd()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/server/engineer/oif;->td()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -3228,7 +3228,7 @@
     goto/16 :goto_9
 
     :pswitch_1
-    invoke-direct {p0}, Lcom/android/server/engineer/qbh;->gm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/engineer/qbh;->jm()Ljava/lang/String;
 
     move-result-object p0
 
@@ -3342,7 +3342,7 @@
     goto :goto_2
 
     :pswitch_4
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p0
 
@@ -3698,7 +3698,7 @@
     goto :goto_a
 
     :pswitch_d
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p0
 
@@ -3707,7 +3707,7 @@
     return-void
 
     :cond_d
-    invoke-static {}, Lcom/android/server/engineer/rtg;->nd()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->pd()Z
 
     move-result p0
 
@@ -3931,7 +3931,7 @@
     goto/16 :goto_8
 
     :pswitch_0
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p0
 
@@ -4922,7 +4922,7 @@
     goto/16 :goto_7
 
     :cond_3
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p0
 
@@ -4958,7 +4958,7 @@
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-static {}, Lcom/android/server/engineer/oif;->rd()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/server/engineer/oif;->td()Ljava/lang/Object;
 
     move-result-object p1
 
@@ -5064,7 +5064,7 @@
     goto/16 :goto_7
 
     :cond_6
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result p1
 
@@ -5136,7 +5136,7 @@
     goto :goto_5
 
     :cond_7
-    invoke-static {}, Lcom/android/server/engineer/oif;->rd()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/server/engineer/oif;->td()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -5248,7 +5248,7 @@
 
 # virtual methods
 .method public onCommand(Ljava/lang/String;)I
-    .locals 17
+    .locals 18
 
     move-object/from16 v1, p0
 
@@ -5286,7 +5286,7 @@
 
     move-result v5
     :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_e
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz v5, :cond_1
@@ -5296,7 +5296,7 @@
     return v6
 
     :cond_1
-    if-eqz v2, :cond_25
+    if-eqz v2, :cond_28
 
     :try_start_1
     sget-object v5, Lcom/android/server/engineer/qbh;->TAG:Ljava/lang/String;
@@ -5321,13 +5321,13 @@
 
     move-result v5
 
-    const/16 v10, 0xc
+    const/16 v14, 0xc
 
-    const/4 v12, 0x4
+    const/4 v9, 0x4
 
-    const/4 v13, 0x6
+    const/4 v11, 0x6
 
-    const/4 v14, 0x1
+    const/4 v12, 0x1
 
     sparse-switch v5, :sswitch_data_0
 
@@ -5425,6 +5425,19 @@
     goto/16 :goto_1
 
     :sswitch_7
+    const-string v5, "--get_carrier_id"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    const/16 v5, 0x35
+
+    goto/16 :goto_1
+
+    :sswitch_8
     const-string v5, "--execute_launch_wifi_mmi"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5437,7 +5450,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_8
+    :sswitch_9
     const-string v5, "--execute_check_calibration_status"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5450,7 +5463,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_9
+    :sswitch_a
     const-string v5, "--execute_add_cover_ui"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5463,7 +5476,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_a
+    :sswitch_b
     const-string v5, "--query_battery_status"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5476,7 +5489,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_b
+    :sswitch_c
     const-string v5, "--generate_attk_key_pair"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5489,7 +5502,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_c
+    :sswitch_d
     const-string v5, "--execute_switch_wifi_mmi"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5502,7 +5515,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_d
+    :sswitch_e
     const-string v5, "--query_serial_number"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5515,7 +5528,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_e
+    :sswitch_f
     const-string v5, "--execute_power_off"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5528,7 +5541,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_f
+    :sswitch_10
     const-string v5, "--query_write_protect"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5537,11 +5550,11 @@
 
     if-eqz v5, :cond_2
 
-    move v5, v14
+    move v5, v12
 
     goto/16 :goto_1
 
-    :sswitch_10
+    :sswitch_11
     const-string v5, "--verify_attk_key_pair"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5554,7 +5567,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_11
+    :sswitch_12
     const-string v5, "--query_download_mode"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5567,7 +5580,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_12
+    :sswitch_13
     const-string v5, "--query_sd_card_exists"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5576,11 +5589,11 @@
 
     if-eqz v5, :cond_2
 
-    move v5, v10
+    move v5, v14
 
     goto/16 :goto_1
 
-    :sswitch_13
+    :sswitch_14
     const-string v5, "--execute_model_test"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5593,7 +5606,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_14
+    :sswitch_15
     const-string v5, "--reset_engineer_result"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5606,7 +5619,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_15
+    :sswitch_16
     const-string v5, "--export_attk_public_key"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5619,8 +5632,34 @@
 
     goto/16 :goto_1
 
-    :sswitch_16
+    :sswitch_17
     const-string v5, "-mmi"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    const/16 v5, 0x39
+
+    goto/16 :goto_1
+
+    :sswitch_18
+    const-string v5, "-get"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    const/16 v5, 0x3a
+
+    goto/16 :goto_1
+
+    :sswitch_19
+    const-string v5, "-bcc"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5632,8 +5671,8 @@
 
     goto/16 :goto_1
 
-    :sswitch_17
-    const-string v5, "-get"
+    :sswitch_1a
+    const-string v5, "-wp"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5645,33 +5684,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_18
-    const-string v5, "-bcc"
-
-    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    const/16 v5, 0x35
-
-    goto/16 :goto_1
-
-    :sswitch_19
-    const-string v5, "-wp"
-
-    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    const/16 v5, 0x36
-
-    goto/16 :goto_1
-
-    :sswitch_1a
+    :sswitch_1b
     const-string v5, "--get_tee_version"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5684,7 +5697,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_1b
+    :sswitch_1c
     const-string v5, "--update_back_cover_color"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5697,7 +5710,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_1c
+    :sswitch_1d
     const-string v5, "--execute_stop_mmi"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5710,7 +5723,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_1d
+    :sswitch_1e
     const-string v5, "--execute_remove_cover_ui"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5723,7 +5736,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_1e
+    :sswitch_1f
     const-string v5, "--query_indicate_info"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5736,7 +5749,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_1f
+    :sswitch_20
     const-string v5, "--query_pcb_number"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5749,7 +5762,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_20
+    :sswitch_21
     const-string v5, "--enable_rpmb"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5762,7 +5775,20 @@
 
     goto/16 :goto_1
 
-    :sswitch_21
+    :sswitch_22
+    const-string v5, "--set_carrier_id"
+
+    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    const/16 v5, 0x36
+
+    goto/16 :goto_1
+
+    :sswitch_23
     const-string v5, "--execute_check_key_status"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5775,7 +5801,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_22
+    :sswitch_24
     const-string v5, "--query_battery_level"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5788,7 +5814,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_23
+    :sswitch_25
     const-string v5, "--verify_ali_key"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5801,7 +5827,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_24
+    :sswitch_26
     const-string v5, "--verify_attk_key_pair_only"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5814,7 +5840,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_25
+    :sswitch_27
     const-string v5, "--reset_write_protect"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5827,7 +5853,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_26
+    :sswitch_28
     const-string v5, "--reset_download_mode"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5840,7 +5866,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_27
+    :sswitch_29
     const-string v5, "--provision_keybox"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5853,7 +5879,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_28
+    :sswitch_2a
     const-string v5, "--install_keybox"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5866,7 +5892,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_29
+    :sswitch_2b
     const-string v5, "--query_engineer_result"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5875,11 +5901,11 @@
 
     if-eqz v5, :cond_2
 
-    move v5, v13
+    move v5, v11
 
     goto/16 :goto_1
 
-    :sswitch_2a
+    :sswitch_2c
     const-string v5, "--execute_start_dsocket"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5892,7 +5918,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_2b
+    :sswitch_2d
     const-string v5, "--query_download_status"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5901,11 +5927,11 @@
 
     if-eqz v5, :cond_2
 
-    move v5, v12
+    move v5, v9
 
     goto/16 :goto_1
 
-    :sswitch_2c
+    :sswitch_2e
     const-string v5, "--reset_back_cover_color"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5918,7 +5944,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_2d
+    :sswitch_2f
     const-string v5, "--query_sim_state"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5931,7 +5957,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_2e
+    :sswitch_30
     const-string v5, "--execute_master_clear"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5944,7 +5970,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_2f
+    :sswitch_31
     const-string v5, "--crypto_eng_verify"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5957,7 +5983,7 @@
 
     goto/16 :goto_1
 
-    :sswitch_30
+    :sswitch_32
     const-string v5, "--get_device_id"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5970,7 +5996,7 @@
 
     goto :goto_1
 
-    :sswitch_31
+    :sswitch_33
     const-string v5, "--query_back_cover_color"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5983,7 +6009,7 @@
 
     goto :goto_1
 
-    :sswitch_32
+    :sswitch_34
     const-string v5, "--update_serial_number"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5996,7 +6022,7 @@
 
     goto :goto_1
 
-    :sswitch_33
+    :sswitch_35
     const-string v5, "--execute_reboot_device"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6009,7 +6035,7 @@
 
     goto :goto_1
 
-    :sswitch_34
+    :sswitch_36
     const-string v5, "--get_config_params"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6022,7 +6048,7 @@
 
     goto :goto_1
 
-    :sswitch_35
+    :sswitch_37
     const-string v5, "--execute_detect_ms_result"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6035,7 +6061,7 @@
 
     goto :goto_1
 
-    :sswitch_36
+    :sswitch_38
     const-string v5, "--execute_stop_dsocket"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6048,7 +6074,7 @@
 
     goto :goto_1
 
-    :sswitch_37
+    :sswitch_39
     const-string v5, "--query_version"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6061,14 +6087,14 @@
 
     goto :goto_1
 
-    :sswitch_38
+    :sswitch_3a
     const-string v5, "--verify_keybox"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
     :try_end_1
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_e
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v5, :cond_2
@@ -6082,11 +6108,13 @@
     const/4 v5, -0x1
 
     :goto_1
-    const-string v9, "OK:"
+    const/16 v17, 0xd8
+
+    const-string v15, "OK:"
 
     packed-switch v5, :pswitch_data_0
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :pswitch_0
     :try_start_2
@@ -6096,55 +6124,55 @@
 
     invoke-virtual {v5}, Ljava/lang/String;->hashCode()I
 
-    move-result v11
+    move-result v10
 
-    const/16 v15, 0x76
+    const/16 v13, 0x76
 
-    if-eq v11, v15, :cond_9
+    if-eq v10, v13, :cond_9
 
-    const/16 v15, 0xc4a
+    const/16 v13, 0xc4a
 
-    if-eq v11, v15, :cond_8
+    if-eq v10, v13, :cond_8
 
-    const/16 v15, 0xc51
+    const/16 v13, 0xc51
 
-    if-eq v11, v15, :cond_7
+    if-eq v10, v13, :cond_7
 
-    const/16 v15, 0xc8f
+    const/16 v13, 0xc8f
 
-    if-eq v11, v15, :cond_6
+    if-eq v10, v13, :cond_6
 
-    const/16 v15, 0xed9
+    const/16 v13, 0xed9
 
-    if-eq v11, v15, :cond_5
+    if-eq v10, v13, :cond_5
 
-    const v15, 0x17c42
+    const v13, 0x17c42
 
-    if-eq v11, v15, :cond_4
+    if-eq v10, v13, :cond_4
 
-    const v15, 0x184e5
+    const v13, 0x184e5
 
-    if-eq v11, v15, :cond_3
+    if-eq v10, v13, :cond_3
 
     goto :goto_2
 
     :cond_3
-    const-string v11, "dlm"
+    const-string v10, "dlm"
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_a
 
-    move/from16 v16, v13
+    move/from16 v16, v11
 
     goto :goto_3
 
     :cond_4
-    const-string v11, "bcc"
+    const-string v10, "bcc"
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -6155,22 +6183,9 @@
     goto :goto_3
 
     :cond_5
-    const-string v11, "wp"
+    const-string v10, "wp"
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_a
-
-    move/from16 v16, v14
-
-    goto :goto_3
-
-    :cond_6
-    const-string v11, "ds"
-
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -6180,10 +6195,23 @@
 
     goto :goto_3
 
-    :cond_7
-    const-string v11, "bs"
+    :cond_6
+    const-string v10, "ds"
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_a
+
+    move/from16 v16, v9
+
+    goto :goto_3
+
+    :cond_7
+    const-string v10, "bs"
+
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -6194,9 +6222,9 @@
     goto :goto_3
 
     :cond_8
-    const-string v11, "bl"
+    const-string v10, "bl"
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -6207,9 +6235,9 @@
     goto :goto_3
 
     :cond_9
-    const-string v11, "v"
+    const-string v10, "v"
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
     :try_end_2
@@ -6229,7 +6257,7 @@
     :goto_3
     packed-switch v16, :pswitch_data_1
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :pswitch_1
     :try_start_3
@@ -6248,7 +6276,7 @@
     :goto_4
     invoke-virtual {v3, v4}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_b
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -6277,78 +6305,78 @@
     :try_start_5
     const-string v5, "/sys/class/power_supply/battery/short_c_hw_status"
 
-    invoke-static {v5, v14}, Lcom/android/server/engineer/oif;->tsu(Ljava/lang/String;I)I
+    invoke-static {v5, v12}, Lcom/android/server/engineer/oif;->tsu(Ljava/lang/String;I)I
 
     move-result v5
 
     invoke-virtual/range {p0 .. p0}, Landroid/os/ShellCommand;->getNextArg()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v10
 
-    if-eqz v9, :cond_d
+    if-eqz v10, :cond_d
 
-    invoke-virtual {v9}, Ljava/lang/String;->length()I
+    invoke-virtual {v10}, Ljava/lang/String;->length()I
 
-    move-result v11
+    move-result v13
 
-    if-ne v11, v10, :cond_d
+    if-ne v13, v14, :cond_d
 
-    const-string v11, "[0-9]*"
+    const-string v13, "[0-9]*"
 
-    invoke-static {v11}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    invoke-static {v13}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
-    move-result-object v11
+    move-result-object v13
 
-    invoke-virtual {v11, v9}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    invoke-virtual {v13, v10}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
-    move-result-object v11
+    move-result-object v13
 
-    invoke-virtual {v11}, Ljava/util/regex/Matcher;->matches()Z
+    invoke-virtual {v13}, Ljava/util/regex/Matcher;->matches()Z
 
-    move-result v11
+    move-result v13
 
-    if-nez v11, :cond_c
+    if-nez v13, :cond_c
 
     goto :goto_5
 
     :cond_c
-    invoke-virtual {v9, v6, v12}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v10, v6, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v13
 
-    invoke-virtual {v9, v12, v13}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v12
-
-    const/16 v15, 0x8
-
-    invoke-virtual {v9, v13, v15}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v9, v15, v10}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+    invoke-virtual {v10, v9, v11}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v9
 
-    new-instance v10, Ljava/lang/StringBuilder;
+    const/16 v15, 0x8
 
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v10, v11, v15}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v6
 
-    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v15, v14}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v10
 
-    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v14, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v10, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v14, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v14, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -6381,7 +6409,7 @@
     invoke-virtual {v3, v6}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     :goto_6
-    if-ne v5, v14, :cond_e
+    if-ne v5, v12, :cond_e
 
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
 
@@ -6402,11 +6430,11 @@
     :goto_8
     const-string v3, "/sys/class/power_supply/battery/short_ic_otp_status"
 
-    invoke-static {v3, v14}, Lcom/android/server/engineer/oif;->tsu(Ljava/lang/String;I)I
+    invoke-static {v3, v12}, Lcom/android/server/engineer/oif;->tsu(Ljava/lang/String;I)I
 
     move-result v3
 
-    if-ne v3, v14, :cond_f
+    if-ne v3, v12, :cond_f
 
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
 
@@ -6431,7 +6459,7 @@
 
     move-result-object v3
 
-    invoke-static {v13}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+    invoke-static {v11}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -6613,7 +6641,7 @@
 
     invoke-virtual {v4, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_15
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -6625,7 +6653,7 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_5 .. :try_end_5} :catch_1
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :catch_1
     :try_start_6
@@ -6644,7 +6672,7 @@
     :try_start_7
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Gb:Lcom/android/server/engineer/OneplusEngineerService;
 
-    invoke-virtual {v3}, Lcom/android/server/engineer/OneplusEngineerService;->Ha()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/engineer/OneplusEngineerService;->Ia()Ljava/lang/String;
 
     move-result-object v3
 
@@ -6665,7 +6693,7 @@
     :goto_10
     invoke-virtual {v3, v4}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_16
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -6681,7 +6709,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v5, v1, Lcom/android/server/engineer/qbh;->Gb:Lcom/android/server/engineer/OneplusEngineerService;
 
@@ -6717,7 +6745,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
@@ -6731,10 +6759,10 @@
 
     invoke-virtual {v4, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :pswitch_6
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result v3
 
@@ -6753,7 +6781,7 @@
 
     :cond_18
     :try_start_8
-    invoke-static {}, Lcom/android/server/engineer/rtg;->nd()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->pd()Z
 
     move-result v3
 
@@ -6788,7 +6816,7 @@
 
     move-result v1
     :try_end_9
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_9 .. :try_end_9} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_9 .. :try_end_9} :catch_e
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
     invoke-static {v7, v8}, Landroid/os/Binder;->restoreCallingIdentity(J)V
@@ -6854,7 +6882,7 @@
     :goto_11
     invoke-virtual {v2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_1a
     iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -6901,7 +6929,7 @@
     :goto_12
     invoke-virtual {v2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_1b
     const-string v3, "stop"
@@ -6913,7 +6941,7 @@
     .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_5
     .catchall {:try_start_c .. :try_end_c} :catchall_0
 
-    if-eqz v2, :cond_25
+    if-eqz v2, :cond_28
 
     :try_start_d
     const-class v2, Landroid/app/ActivityManagerInternal;
@@ -6957,7 +6985,7 @@
     :goto_13
     invoke-virtual {v2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_1c
     iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -7041,17 +7069,17 @@
     :goto_14
     invoke-virtual {v1, v2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :pswitch_9
-    invoke-static {}, Lcom/android/server/engineer/oif;->td()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
 
     move-result v2
     :try_end_f
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_f .. :try_end_f} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_f .. :try_end_f} :catch_e
     .catchall {:try_start_f .. :try_end_f} :catchall_0
 
-    if-eqz v2, :cond_25
+    if-eqz v2, :cond_28
 
     :try_start_10
     invoke-virtual/range {p0 .. p0}, Landroid/os/ShellCommand;->getNextArgRequired()Ljava/lang/String;
@@ -7068,7 +7096,7 @@
 
     iget-object v2, v1, Lcom/android/server/engineer/qbh;->Gb:Lcom/android/server/engineer/OneplusEngineerService;
 
-    invoke-virtual {v2}, Lcom/android/server/engineer/OneplusEngineerService;->Ja()Z
+    invoke-virtual {v2}, Lcom/android/server/engineer/OneplusEngineerService;->Ka()Z
 
     move-result v2
 
@@ -7081,7 +7109,7 @@
     :goto_15
     invoke-virtual {v2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_1d
     iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -7102,7 +7130,7 @@
 
     :catch_6
     :try_start_11
-    invoke-static {}, Lcom/android/server/engineer/rtg;->nd()Z
+    invoke-static {}, Lcom/android/server/engineer/rtg;->pd()Z
 
     move-result v2
 
@@ -7119,7 +7147,7 @@
 
     const-string v2, "WP OFF"
     :try_end_11
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_11 .. :try_end_11} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_11 .. :try_end_11} :catch_e
     .catchall {:try_start_11 .. :try_end_11} :catchall_0
 
     goto :goto_14
@@ -7153,7 +7181,7 @@
     :goto_16
     invoke-virtual {v2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    goto/16 :goto_18
+    goto/16 :goto_19
 
     :cond_20
     iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
@@ -7169,7 +7197,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_25
+    if-eqz v2, :cond_28
 
     invoke-virtual/range {p0 .. p0}, Landroid/os/ShellCommand;->getNextArg()Ljava/lang/String;
 
@@ -7241,7 +7269,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v3, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
@@ -7253,14 +7281,230 @@
 
     move-result-object v2
     :try_end_13
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_13 .. :try_end_13} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_13 .. :try_end_13} :catch_e
     .catchall {:try_start_13 .. :try_end_13} :catchall_0
 
     goto/16 :goto_14
 
     :pswitch_b
     :try_start_14
-    new-array v2, v14, [I
+    new-array v2, v12, [I
+
+    const/4 v3, 0x0
+
+    aput v17, v2, v3
+
+    invoke-static {v2}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_27
+
+    invoke-virtual/range {p0 .. p0}, Landroid/os/ShellCommand;->getNextArgRequired()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v2
+
+    sget-object v3, Lcom/android/server/engineer/qbh;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "set carrier id command, carrier id: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    if-lez v2, :cond_26
+
+    const/4 v3, 0x3
+
+    if-ge v2, v3, :cond_26
+
+    invoke-static {v2}, Lcom/android/server/secrecy/zta/zta/sis;->setCarrierId(I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_25
+
+    iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    const-string v3, "OK:SET OK"
+
+    :goto_17
+    invoke-virtual {v2, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    goto/16 :goto_19
+
+    :cond_25
+    iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    const-string v3, "FAIL:SET FAIL"
+
+    goto :goto_17
+
+    :cond_26
+    iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    const-string v3, "FAIL:INVALID ID"
+
+    goto :goto_17
+
+    :cond_27
+    iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    const-string v3, "OK:NO NEED SET"
+    :try_end_14
+    .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_8
+    .catchall {:try_start_14 .. :try_end_14} :catchall_0
+
+    goto :goto_17
+
+    :catch_8
+    move-exception v0
+
+    move-object v2, v0
+
+    :try_start_15
+    sget-object v3, Lcom/android/server/engineer/qbh;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "set carrier id command exception caught : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v3, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    const-string v2, "FAIL:SET ERROR"
+    :try_end_15
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_15 .. :try_end_15} :catch_e
+    .catchall {:try_start_15 .. :try_end_15} :catchall_0
+
+    goto/16 :goto_14
+
+    :pswitch_c
+    :try_start_16
+    new-array v2, v12, [I
+
+    const/4 v3, 0x0
+
+    aput v17, v2, v3
+
+    invoke-static {v2}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_28
+
+    invoke-static {}, Lcom/android/server/secrecy/zta/zta/sis;->getCarrierId()I
+
+    move-result v2
+
+    sget-object v3, Lcom/android/server/engineer/qbh;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "get carrier id command, current carrier id: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v4, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    :try_end_16
+    .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_16} :catch_9
+    .catchall {:try_start_16 .. :try_end_16} :catchall_0
+
+    goto/16 :goto_19
+
+    :catch_9
+    move-exception v0
+
+    move-object v2, v0
+
+    :try_start_17
+    sget-object v3, Lcom/android/server/engineer/qbh;->TAG:Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "get carrier id command exception caught : "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v3, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    const-string v2, "FAIL:GET ERROR"
+    :try_end_17
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_17 .. :try_end_17} :catch_e
+    .catchall {:try_start_17 .. :try_end_17} :catchall_0
+
+    goto/16 :goto_14
+
+    :pswitch_d
+    :try_start_18
+    new-array v2, v12, [I
 
     const/16 v3, 0x9d
 
@@ -7272,7 +7516,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_25
+    if-eqz v2, :cond_28
 
     const-string v2, "sprint"
 
@@ -7286,125 +7530,60 @@
 
     move-result v2
 
-    if-eqz v2, :cond_25
+    if-eqz v2, :cond_28
 
     iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
 
     invoke-direct {v1, v2}, Lcom/android/server/engineer/qbh;->cno(Ljava/io/PrintWriter;)V
-    :try_end_14
-    .catch Landroid/os/RemoteException; {:try_start_14 .. :try_end_14} :catch_8
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_14 .. :try_end_14} :catch_c
-    .catchall {:try_start_14 .. :try_end_14} :catchall_0
+    :try_end_18
+    .catch Landroid/os/RemoteException; {:try_start_18 .. :try_end_18} :catch_a
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_18 .. :try_end_18} :catch_e
+    .catchall {:try_start_18 .. :try_end_18} :catchall_0
 
-    goto :goto_18
-
-    :catch_8
-    move-exception v0
-
-    move-object v1, v0
-
-    :goto_17
-    :try_start_15
-    invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
-    :try_end_15
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_15 .. :try_end_15} :catch_c
-    .catchall {:try_start_15 .. :try_end_15} :catchall_0
-
-    goto :goto_18
-
-    :pswitch_c
-    :try_start_16
-    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
-
-    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->zta(Ljava/lang/String;Ljava/io/PrintWriter;)V
-    :try_end_16
-    .catch Landroid/os/RemoteException; {:try_start_16 .. :try_end_16} :catch_9
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_16 .. :try_end_16} :catch_c
-    .catchall {:try_start_16 .. :try_end_16} :catchall_0
-
-    goto :goto_18
-
-    :catch_9
-    move-exception v0
-
-    move-object v1, v0
-
-    goto :goto_17
-
-    :pswitch_d
-    :try_start_17
-    iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
-
-    invoke-direct {v1, v2}, Lcom/android/server/engineer/qbh;->kth(Ljava/io/PrintWriter;)V
-    :try_end_17
-    .catch Landroid/os/RemoteException; {:try_start_17 .. :try_end_17} :catch_a
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_17 .. :try_end_17} :catch_c
-    .catchall {:try_start_17 .. :try_end_17} :catchall_0
-
-    goto :goto_18
+    goto :goto_19
 
     :catch_a
     move-exception v0
 
     move-object v1, v0
 
-    goto :goto_17
+    :goto_18
+    :try_start_19
+    invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
+    :try_end_19
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_19 .. :try_end_19} :catch_e
+    .catchall {:try_start_19 .. :try_end_19} :catchall_0
+
+    goto :goto_19
 
     :pswitch_e
-    :try_start_18
+    :try_start_1a
     iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
 
-    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->you(Ljava/lang/String;Ljava/io/PrintWriter;)V
-    :try_end_18
-    .catch Landroid/os/RemoteException; {:try_start_18 .. :try_end_18} :catch_b
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_18 .. :try_end_18} :catch_c
-    .catchall {:try_start_18 .. :try_end_18} :catchall_0
+    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->zta(Ljava/lang/String;Ljava/io/PrintWriter;)V
+    :try_end_1a
+    .catch Landroid/os/RemoteException; {:try_start_1a .. :try_end_1a} :catch_b
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1a .. :try_end_1a} :catch_e
+    .catchall {:try_start_1a .. :try_end_1a} :catchall_0
 
-    goto :goto_18
+    goto :goto_19
 
     :catch_b
     move-exception v0
 
     move-object v1, v0
 
-    goto :goto_17
+    goto :goto_18
 
     :pswitch_f
-    :try_start_19
-    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+    :try_start_1b
+    iget-object v2, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
 
-    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->sis(Ljava/lang/String;Ljava/io/PrintWriter;)V
-
-    goto :goto_18
-
-    :pswitch_10
-    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
-
-    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->rtg(Ljava/lang/String;Ljava/io/PrintWriter;)V
-
-    goto :goto_18
-
-    :pswitch_11
-    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
-
-    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->ssp(Ljava/lang/String;Ljava/io/PrintWriter;)V
-
-    goto :goto_18
-
-    :pswitch_12
-    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
-
-    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->tsu(Ljava/lang/String;Ljava/io/PrintWriter;)V
-    :try_end_19
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_19 .. :try_end_19} :catch_c
-    .catchall {:try_start_19 .. :try_end_19} :catchall_0
-
-    goto :goto_18
-
-    :catchall_0
-    move-exception v0
-
-    move-object v1, v0
+    invoke-direct {v1, v2}, Lcom/android/server/engineer/qbh;->kth(Ljava/io/PrintWriter;)V
+    :try_end_1b
+    .catch Landroid/os/RemoteException; {:try_start_1b .. :try_end_1b} :catch_c
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1b .. :try_end_1b} :catch_e
+    .catchall {:try_start_1b .. :try_end_1b} :catchall_0
 
     goto :goto_19
 
@@ -7413,78 +7592,143 @@
 
     move-object v1, v0
 
-    :try_start_1a
-    invoke-virtual {v1}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
-    :try_end_1a
-    .catchall {:try_start_1a .. :try_end_1a} :catchall_0
+    goto :goto_18
 
-    :cond_25
-    :goto_18
+    :pswitch_10
+    :try_start_1c
+    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->you(Ljava/lang/String;Ljava/io/PrintWriter;)V
+    :try_end_1c
+    .catch Landroid/os/RemoteException; {:try_start_1c .. :try_end_1c} :catch_d
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1c .. :try_end_1c} :catch_e
+    .catchall {:try_start_1c .. :try_end_1c} :catchall_0
+
+    goto :goto_19
+
+    :catch_d
+    move-exception v0
+
+    move-object v1, v0
+
+    goto :goto_18
+
+    :pswitch_11
+    :try_start_1d
+    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->sis(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    goto :goto_19
+
+    :pswitch_12
+    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->rtg(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    goto :goto_19
+
+    :pswitch_13
+    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->ssp(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    goto :goto_19
+
+    :pswitch_14
+    iget-object v3, v1, Lcom/android/server/engineer/qbh;->Hb:Ljava/io/PrintWriter;
+
+    invoke-direct {v1, v2, v3}, Lcom/android/server/engineer/qbh;->tsu(Ljava/lang/String;Ljava/io/PrintWriter;)V
+    :try_end_1d
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1d .. :try_end_1d} :catch_e
+    .catchall {:try_start_1d .. :try_end_1d} :catchall_0
+
+    goto :goto_19
+
+    :catchall_0
+    move-exception v0
+
+    move-object v1, v0
+
+    goto :goto_1a
+
+    :catch_e
+    move-exception v0
+
+    move-object v1, v0
+
+    :try_start_1e
+    invoke-virtual {v1}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
+    :try_end_1e
+    .catchall {:try_start_1e .. :try_end_1e} :catchall_0
+
+    :cond_28
+    :goto_19
     invoke-static {v7, v8}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     const/4 v1, 0x0
 
     return v1
 
-    :goto_19
+    :goto_1a
     invoke-static {v7, v8}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     throw v1
 
-    nop
-
     :sswitch_data_0
     .sparse-switch
-        -0x7c7ee80e -> :sswitch_38
-        -0x779f4d3f -> :sswitch_37
-        -0x7430403c -> :sswitch_36
-        -0x6f6b949c -> :sswitch_35
-        -0x6bc999a6 -> :sswitch_34
-        -0x69f0f8ba -> :sswitch_33
-        -0x65299362 -> :sswitch_32
-        -0x60f7be46 -> :sswitch_31
-        -0x60415fa5 -> :sswitch_30
-        -0x60361868 -> :sswitch_2f
-        -0x5c039fa6 -> :sswitch_2e
-        -0x545a992e -> :sswitch_2d
-        -0x41a803ed -> :sswitch_2c
-        -0x401e878e -> :sswitch_2b
-        -0x3d93faf0 -> :sswitch_2a
-        -0x3afc672a -> :sswitch_29
-        -0x3397a030 -> :sswitch_28
-        -0x2a7530aa -> :sswitch_27
-        -0x28c3f196 -> :sswitch_26
-        -0x226aaa21 -> :sswitch_25
-        -0x20dab99e -> :sswitch_24
-        -0x194d63e8 -> :sswitch_23
-        -0x17160e05 -> :sswitch_22
-        -0x1290a56d -> :sswitch_21
-        -0xde8b811 -> :sswitch_20
-        -0xc9159d0 -> :sswitch_1f
-        -0x862ee63 -> :sswitch_1e
-        -0x71598f3 -> :sswitch_1d
-        -0x5815fca -> :sswitch_1c
-        -0x1cd6367 -> :sswitch_1b
-        -0x4d2d5c -> :sswitch_1a
-        0xb7c6 -> :sswitch_19
-        0x15f0f5 -> :sswitch_18
-        0x160409 -> :sswitch_17
-        0x161b7c -> :sswitch_16
-        0x1dbb813 -> :sswitch_15
-        0x816af5d -> :sswitch_14
-        0xf240492 -> :sswitch_13
-        0x194b0174 -> :sswitch_12
-        0x1f170223 -> :sswitch_11
-        0x1fb407c9 -> :sswitch_10
-        0x25704998 -> :sswitch_f
-        0x26942d4b -> :sswitch_e
-        0x2fd2c31d -> :sswitch_d
-        0x35c1b0e0 -> :sswitch_c
-        0x40ec43c5 -> :sswitch_b
-        0x4110485b -> :sswitch_a
-        0x45553c24 -> :sswitch_9
-        0x55700ba8 -> :sswitch_8
-        0x57ace341 -> :sswitch_7
+        -0x7c7ee80e -> :sswitch_3a
+        -0x779f4d3f -> :sswitch_39
+        -0x7430403c -> :sswitch_38
+        -0x6f6b949c -> :sswitch_37
+        -0x6bc999a6 -> :sswitch_36
+        -0x69f0f8ba -> :sswitch_35
+        -0x65299362 -> :sswitch_34
+        -0x60f7be46 -> :sswitch_33
+        -0x60415fa5 -> :sswitch_32
+        -0x60361868 -> :sswitch_31
+        -0x5c039fa6 -> :sswitch_30
+        -0x545a992e -> :sswitch_2f
+        -0x41a803ed -> :sswitch_2e
+        -0x401e878e -> :sswitch_2d
+        -0x3d93faf0 -> :sswitch_2c
+        -0x3afc672a -> :sswitch_2b
+        -0x3397a030 -> :sswitch_2a
+        -0x2a7530aa -> :sswitch_29
+        -0x28c3f196 -> :sswitch_28
+        -0x226aaa21 -> :sswitch_27
+        -0x20dab99e -> :sswitch_26
+        -0x194d63e8 -> :sswitch_25
+        -0x17160e05 -> :sswitch_24
+        -0x1290a56d -> :sswitch_23
+        -0x10075aa1 -> :sswitch_22
+        -0xde8b811 -> :sswitch_21
+        -0xc9159d0 -> :sswitch_20
+        -0x862ee63 -> :sswitch_1f
+        -0x71598f3 -> :sswitch_1e
+        -0x5815fca -> :sswitch_1d
+        -0x1cd6367 -> :sswitch_1c
+        -0x4d2d5c -> :sswitch_1b
+        0xb7c6 -> :sswitch_1a
+        0x15f0f5 -> :sswitch_19
+        0x160409 -> :sswitch_18
+        0x161b7c -> :sswitch_17
+        0x1dbb813 -> :sswitch_16
+        0x816af5d -> :sswitch_15
+        0xf240492 -> :sswitch_14
+        0x194b0174 -> :sswitch_13
+        0x1f170223 -> :sswitch_12
+        0x1fb407c9 -> :sswitch_11
+        0x25704998 -> :sswitch_10
+        0x26942d4b -> :sswitch_f
+        0x2fd2c31d -> :sswitch_e
+        0x35c1b0e0 -> :sswitch_d
+        0x40ec43c5 -> :sswitch_c
+        0x4110485b -> :sswitch_b
+        0x45553c24 -> :sswitch_a
+        0x55700ba8 -> :sswitch_9
+        0x57ace341 -> :sswitch_8
+        0x599331eb -> :sswitch_7
         0x643ca528 -> :sswitch_6
         0x6a8d7408 -> :sswitch_5
         0x70914a99 -> :sswitch_4
@@ -7496,17 +7740,24 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
-        :pswitch_12
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_14
+        :pswitch_13
+        :pswitch_13
+        :pswitch_13
         :pswitch_12
         :pswitch_12
         :pswitch_12
@@ -7514,39 +7765,34 @@
         :pswitch_11
         :pswitch_11
         :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
+        :pswitch_11
         :pswitch_10
         :pswitch_10
         :pswitch_10
         :pswitch_10
+        :pswitch_10
+        :pswitch_10
+        :pswitch_10
+        :pswitch_10
+        :pswitch_10
         :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_f
-        :pswitch_e
-        :pswitch_e
-        :pswitch_e
-        :pswitch_e
-        :pswitch_e
-        :pswitch_e
-        :pswitch_e
         :pswitch_e
         :pswitch_e
         :pswitch_d
-        :pswitch_c
         :pswitch_c
         :pswitch_b
         :pswitch_a

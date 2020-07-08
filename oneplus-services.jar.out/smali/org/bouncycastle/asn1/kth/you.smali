@@ -4,21 +4,21 @@
 
 
 # static fields
-.field public static final lFa:I = 0x80
+.field public static final NFa:I = 0x80
 
-.field public static final mFa:I = 0x40
+.field public static final OFa:I = 0x40
 
-.field public static final nFa:I = 0x20
+.field public static final PFa:I = 0x20
 
-.field public static final oFa:I = 0x10
+.field public static final QFa:I = 0x10
 
-.field public static final pFa:I = 0x8
+.field public static final RFa:I = 0x8
 
-.field public static final qFa:I = 0x4
+.field public static final SFa:I = 0x4
 
-.field public static final rFa:I = 0x2
+.field public static final TFa:I = 0x2
 
-.field public static final sFa:I = 0x1
+.field public static final UFa:I = 0x1
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->ia(I)I
+    invoke-static {p1}, Lorg/bouncycastle/asn1/sis;->ja(I)I
 
     move-result p1
 
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->vh()I
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->yh()I
 
     move-result p1
 

@@ -3216,7 +3216,7 @@
     :cond_5
     new-array v1, v1, [I
 
-    const/16 v3, 0xe0
+    const/16 v3, 0xe1
 
     aput v3, v1, v2
 
@@ -3547,7 +3547,7 @@
 
     new-array p2, p2, [I
 
-    const/16 v0, 0xeb
+    const/16 v0, 0xec
 
     aput v0, p2, v1
 
@@ -3860,7 +3860,7 @@
 
     if-eqz v3, :cond_11
 
-    sget-object v3, Lcom/android/server/policy/dma;->dO:[I
+    sget-object v3, Lcom/android/server/policy/dma;->yO:[I
 
     sget-object v21, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
@@ -5287,7 +5287,7 @@
 
     if-eqz v4, :cond_1d
 
-    sget-object v4, Lcom/android/server/policy/dma;->dO:[I
+    sget-object v4, Lcom/android/server/policy/dma;->yO:[I
 
     sget-object v5, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
@@ -6723,7 +6723,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/server/policy/kth;->zd()V
+    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Bd()V
 
     :cond_0
     return-void
@@ -7001,7 +7001,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Iya:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->jza:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
     goto :goto_0
 

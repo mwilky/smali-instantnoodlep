@@ -18,11 +18,11 @@
 
 
 # static fields
-.field private static final xSa:Ljava/lang/reflect/Constructor;
+.field private static final ZSa:Ljava/lang/reflect/Constructor;
 
 
 # instance fields
-.field private hDa:Lorg/bouncycastle/crypto/bio/zta;
+.field private JDa:Lorg/bouncycastle/crypto/bio/zta;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->xSa:Ljava/lang/reflect/Constructor;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->ZSa:Ljava/lang/reflect/Constructor;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     return-void
 .end method
@@ -95,7 +95,7 @@
 .method static synthetic zta(Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;)Lorg/bouncycastle/crypto/bio/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     return-object p0
 .end method
@@ -120,7 +120,7 @@
     .end annotation
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0, p1, p2}, Lorg/bouncycastle/crypto/bio/zta;->doFinal([BI)I
 
@@ -133,7 +133,7 @@
     :catch_0
     move-exception p0
 
-    sget-object p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->xSa:Ljava/lang/reflect/Constructor;
+    sget-object p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->ZSa:Ljava/lang/reflect/Constructor;
 
     if-eqz p1, :cond_0
 
@@ -185,7 +185,7 @@
 .method public e()Lorg/bouncycastle/crypto/rtg;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/bio/zta;->e()Lorg/bouncycastle/crypto/rtg;
 
@@ -197,7 +197,7 @@
 .method public getOutputSize(I)I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0, p1}, Lorg/bouncycastle/crypto/bio/zta;->getOutputSize(I)I
 
@@ -209,7 +209,7 @@
 .method public irq()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/bio/zta;->e()Lorg/bouncycastle/crypto/rtg;
 
@@ -225,7 +225,7 @@
 .method public sis(I)I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0, p1}, Lorg/bouncycastle/crypto/bio/zta;->sis(I)I
 
@@ -237,7 +237,7 @@
 .method public updateAAD([BII)V
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0, p1, p2, p3}, Lorg/bouncycastle/crypto/bio/zta;->sis([BII)V
 
@@ -252,7 +252,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0, p1, p2, p3}, Lorg/bouncycastle/crypto/bio/zta;->zta(B[BI)I
 
@@ -269,7 +269,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     move-object v1, p1
 
@@ -296,7 +296,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->hDa:Lorg/bouncycastle/crypto/bio/zta;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$zta;->JDa:Lorg/bouncycastle/crypto/bio/zta;
 
     invoke-interface {p0, p1, p2}, Lorg/bouncycastle/crypto/bio/zta;->zta(ZLorg/bouncycastle/crypto/kth;)V
 

@@ -6,7 +6,7 @@
 # static fields
 .field public static final Q:Ljava/math/BigInteger;
 
-.field private static final sUa:[I
+.field private static final UUa:[I
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/ywr;->sUa:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/ywr;->UUa:[I
 
     return-void
 
@@ -110,7 +110,7 @@
 
 
 # virtual methods
-.method public Vk()Lyou/zta/sis/zta/cno;
+.method public Yk()Lyou/zta/sis/zta/cno;
     .locals 1
 
     invoke-static {}, Lyou/zta/sis/sis/tsu;->create()[I
@@ -128,7 +128,7 @@
     return-object p0
 .end method
 
-.method public Wk()Ljava/lang/String;
+.method public Zk()Ljava/lang/String;
     .locals 0
 
     const-string p0, "SecP224K1Field"
@@ -136,7 +136,7 @@
     return-object p0
 .end method
 
-.method public Xk()Z
+.method public _k()Z
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
@@ -148,7 +148,7 @@
     return p0
 .end method
 
-.method public Yk()Lyou/zta/sis/zta/cno;
+.method public al()Lyou/zta/sis/zta/cno;
     .locals 8
 
     iget-object v0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I
@@ -283,7 +283,7 @@
     return-object p0
 
     :cond_1
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/ywr;->sUa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/ywr;->UUa:[I
 
     invoke-static {v2, p0, v2}, Lyou/zta/sis/zta/zta/zta/dma;->tsu([I[I[I)V
 
@@ -309,7 +309,7 @@
     return-object p0
 .end method
 
-.method public Zk()Z
+.method public bl()Z
     .locals 2
 
     iget-object p0, p0, Lyou/zta/sis/zta/zta/zta/ywr;->x:[I

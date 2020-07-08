@@ -7,19 +7,19 @@
 
 
 # static fields
-.field public static final bIa:I = 0x1
+.field public static final DIa:I = 0x1
 
-.field public static final cIa:I = 0x3
+.field public static final EIa:I = 0x3
 
-.field public static final dIa:I = 0x4
+.field public static final FIa:I = 0x4
+
+.field public static final GIa:I = 0x5
+
+.field public static final HIa:I = 0x6
+
+.field public static final IIa:I = 0x8
 
 .field public static final dNSName:I = 0x2
-
-.field public static final eIa:I = 0x5
-
-.field public static final fIa:I = 0x6
-
-.field public static final gIa:I = 0x8
 
 .field public static final iPAddress:I = 0x7
 

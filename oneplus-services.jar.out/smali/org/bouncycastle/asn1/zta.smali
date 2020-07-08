@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final jFa:Z
+.field protected final LFa:Z
 
 .field protected final octets:[B
 
@@ -17,7 +17,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/vdb;-><init>()V
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/zta;->jFa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/zta;->LFa:Z
 
     iput p2, p0, Lorg/bouncycastle/asn1/zta;->tag:I
 
@@ -353,7 +353,7 @@
 .method public hashCode()I
     .locals 2
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->jFa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->LFa:Z
 
     iget v1, p0, Lorg/bouncycastle/asn1/zta;->tag:I
 
@@ -373,42 +373,9 @@
 .method public isConstructed()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/zta;->jFa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/zta;->LFa:Z
 
     return p0
-.end method
-
-.method rh()I
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget v0, p0, Lorg/bouncycastle/asn1/zta;->tag:I
-
-    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->na(I)I
-
-    move-result v0
-
-    iget-object v1, p0, Lorg/bouncycastle/asn1/zta;->octets:[B
-
-    array-length v1, v1
-
-    invoke-static {v1}, Lorg/bouncycastle/asn1/ia;->ma(I)I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/zta;->octets:[B
-
-    array-length p0, p0
-
-    add-int/2addr v0, p0
-
-    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
@@ -437,7 +404,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->uh()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->xh()I
 
     move-result v1
 
@@ -484,7 +451,40 @@
     return-object p0
 .end method
 
-.method public uh()I
+.method uh()I
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    iget v0, p0, Lorg/bouncycastle/asn1/zta;->tag:I
+
+    invoke-static {v0}, Lorg/bouncycastle/asn1/ia;->oa(I)I
+
+    move-result v0
+
+    iget-object v1, p0, Lorg/bouncycastle/asn1/zta;->octets:[B
+
+    array-length v1, v1
+
+    invoke-static {v1}, Lorg/bouncycastle/asn1/ia;->na(I)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/zta;->octets:[B
+
+    array-length p0, p0
+
+    add-int/2addr v0, p0
+
+    return v0
+.end method
+
+.method public xh()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/asn1/zta;->tag:I
@@ -500,7 +500,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->jFa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->LFa:Z
 
     if-eqz v0, :cond_0
 
@@ -535,9 +535,9 @@
     :cond_0
     check-cast p1, Lorg/bouncycastle/asn1/zta;
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->jFa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->LFa:Z
 
-    iget-boolean v2, p1, Lorg/bouncycastle/asn1/zta;->jFa:Z
+    iget-boolean v2, p1, Lorg/bouncycastle/asn1/zta;->LFa:Z
 
     if-ne v0, v2, :cond_1
 

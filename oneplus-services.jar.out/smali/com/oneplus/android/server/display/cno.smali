@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
-    .locals 5
+    .locals 6
 
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 
@@ -48,7 +48,7 @@
     move-result-object p1
 
     :goto_0
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_7
 
     const/4 p2, -0x1
 
@@ -58,11 +58,13 @@
 
     const-string v1, "op_gamut_game_mode"
 
-    const-string v2, "hdr_mode"
+    const-string v2, "loading_switch"
 
-    const/4 v3, 0x0
+    const-string v3, "hdr_mode"
 
-    const/4 v4, 0x1
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
 
     sparse-switch v0, :sswitch_data_0
 
@@ -88,7 +90,7 @@
 
     if-eqz p1, :cond_1
 
-    move p2, v4
+    move p2, v5
 
     goto :goto_1
 
@@ -114,7 +116,7 @@
 
     if-eqz p1, :cond_1
 
-    move p2, v3
+    move p2, v4
 
     goto :goto_1
 
@@ -132,6 +134,17 @@
     goto :goto_1
 
     :sswitch_5
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 p2, 0x7
+
+    goto :goto_1
+
+    :sswitch_6
     const-string v0, "oem_screen_better_value"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -144,8 +157,8 @@
 
     goto :goto_1
 
-    :sswitch_6
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_7
+    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -176,95 +189,24 @@
 
     move-result p2
 
-    invoke-static {p1, v2, v3, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v2, v5, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
-    const/16 p2, 0x17
-
     iget-object p0, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
-    invoke-static {p0}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1100(Lcom/oneplus/android/server/display/OpColorDisplayService;)Lcom/oneplus/android/server/display/OpColorModeManager;
+    if-ne p1, v5, :cond_2
 
-    move-result-object p0
-
-    if-ne p1, v4, :cond_2
-
-    invoke-virtual {p0, p2, v4}, Lcom/oneplus/android/server/display/OpColorModeManager;->gwm(IZ)V
+    invoke-static {p0, v5}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1202(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
 
     goto/16 :goto_3
 
     :cond_2
-    invoke-virtual {p0, p2, v3}, Lcom/oneplus/android/server/display/OpColorModeManager;->gwm(IZ)V
+    invoke-static {p0, v4}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1202(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
 
     goto/16 :goto_3
 
     :pswitch_1
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$500(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_6
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$900(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1, v4}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1002(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
-
-    goto :goto_2
-
-    :cond_3
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1, v3}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1002(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
-
-    goto :goto_2
-
-    :pswitch_2
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$500(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_6
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$600(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_4
-
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1, v4}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$702(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
-
-    goto :goto_2
-
-    :cond_4
-    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p1, v3}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$702(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
-
-    :goto_2
-    iget-object p0, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
-
-    invoke-static {p0}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$800(Lcom/oneplus/android/server/display/OpColorDisplayService;)V
-
-    goto :goto_3
-
-    :pswitch_3
     iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
     invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$200(Lcom/oneplus/android/server/display/OpColorDisplayService;)Landroid/content/Context;
@@ -281,7 +223,112 @@
 
     move-result p2
 
-    invoke-static {p1, v1, v3, p2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v3, v4, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result p1
+
+    const/16 p2, 0x17
+
+    iget-object p0, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p0}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1100(Lcom/oneplus/android/server/display/OpColorDisplayService;)Lcom/oneplus/android/server/display/OpColorModeManager;
+
+    move-result-object p0
+
+    if-ne p1, v5, :cond_3
+
+    invoke-virtual {p0, p2, v5}, Lcom/oneplus/android/server/display/OpColorModeManager;->gwm(IZ)V
+
+    goto/16 :goto_3
+
+    :cond_3
+    invoke-virtual {p0, p2, v4}, Lcom/oneplus/android/server/display/OpColorModeManager;->gwm(IZ)V
+
+    goto/16 :goto_3
+
+    :pswitch_2
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$500(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$900(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1, v5}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1002(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
+
+    goto :goto_2
+
+    :cond_4
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1, v4}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$1002(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
+
+    goto :goto_2
+
+    :pswitch_3
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$500(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$600(Lcom/oneplus/android/server/display/OpColorDisplayService;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_5
+
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1, v5}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$702(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
+
+    goto :goto_2
+
+    :cond_5
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1, v4}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$702(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)Z
+
+    :goto_2
+    iget-object p0, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p0}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$800(Lcom/oneplus/android/server/display/OpColorDisplayService;)V
+
+    goto :goto_3
+
+    :pswitch_4
+    iget-object p1, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$200(Lcom/oneplus/android/server/display/OpColorDisplayService;)Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
+
+    invoke-static {p2}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$300(Lcom/oneplus/android/server/display/OpColorDisplayService;)I
+
+    move-result p2
+
+    invoke-static {p1, v1, v4, p2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -295,34 +342,34 @@
 
     goto :goto_3
 
-    :pswitch_4
-    new-array p1, v4, [I
+    :pswitch_5
+    new-array p1, v5, [I
 
-    const/16 p2, 0x10d
+    const/16 p2, 0x10f
 
-    aput p2, p1, v3
-
-    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result p1
-
-    if-nez p1, :cond_6
-
-    new-array p1, v4, [I
-
-    const/16 p2, 0x10c
-
-    aput p2, p1, v3
+    aput p2, p1, v4
 
     invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
 
     move-result p1
 
-    if-eqz p1, :cond_5
+    if-nez p1, :cond_7
+
+    new-array p1, v5, [I
+
+    const/16 p2, 0x10e
+
+    aput p2, p1, v4
+
+    invoke-static {p1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
 
     goto :goto_3
 
-    :cond_5
+    :cond_6
     iget-object p0, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
     invoke-static {p0}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$100(Lcom/oneplus/android/server/display/OpColorDisplayService;)Lcom/oneplus/android/server/display/gwm;
@@ -333,19 +380,20 @@
 
     goto :goto_3
 
-    :pswitch_5
+    :pswitch_6
     iget-object p0, p0, Lcom/oneplus/android/server/display/cno;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;
 
-    invoke-static {p0, v4}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$000(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)V
+    invoke-static {p0, v5}, Lcom/oneplus/android/server/display/OpColorDisplayService;->access$000(Lcom/oneplus/android/server/display/OpColorDisplayService;Z)V
 
-    :cond_6
+    :cond_7
     :goto_3
     return-void
 
     :sswitch_data_0
     .sparse-switch
-        -0x5aa036b4 -> :sswitch_6
-        -0x563eaf93 -> :sswitch_5
+        -0x5aa036b4 -> :sswitch_7
+        -0x563eaf93 -> :sswitch_6
+        -0x186dc869 -> :sswitch_5
         0xcf535d2 -> :sswitch_4
         0xf66fb82 -> :sswitch_3
         0x2eb945cb -> :sswitch_2
@@ -355,7 +403,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_5
+        :pswitch_6
+        :pswitch_6
         :pswitch_5
         :pswitch_4
         :pswitch_3

@@ -27,11 +27,11 @@
 
 .field public static final enum END:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
-.field public static final enum Fya:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
+.field public static final enum NBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
 .field public static final enum START:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
-.field public static final enum lBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
+.field public static final enum gza:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->lBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->NBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
@@ -76,7 +76,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->Fya:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->gza:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
     const/4 v0, 0x4
 
@@ -86,7 +86,7 @@
 
     aput-object v5, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->lBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->NBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
     aput-object v1, v0, v2
 
@@ -94,7 +94,7 @@
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->Fya:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;->gza:Lcom/android/server/power/OnePlusStandbyAnalyzer$SnapshotType;
 
     aput-object v1, v0, v4
 

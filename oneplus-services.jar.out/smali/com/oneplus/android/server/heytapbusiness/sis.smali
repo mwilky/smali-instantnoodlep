@@ -7,18 +7,20 @@
 
 
 # static fields
-.field private static final Apa:Ljava/lang/String; = "com.nearme.instant.platform"
-
-.field private static final Bpa:[Ljava/lang/String;
-
 .field private static final DEBUG:Z
 
 .field private static final PARAM_ENC_TARGET_SW_ID:I = 0x18
 
 .field private static final TAG:Ljava/lang/String; = "OpHeytapBusiness"
 
+.field private static final Vpa:Ljava/lang/String; = "com.nearme.instant.platform"
+
+.field private static final Wpa:[Ljava/lang/String;
+
 
 # instance fields
+.field private Upa:I
+
 .field private mBinder:Landroid/os/IBinder;
 
 .field private mContext:Landroid/content/Context;
@@ -26,8 +28,6 @@
 .field private mHandler:Landroid/os/Handler;
 
 .field private mHandlerThread:Landroid/os/HandlerThread;
-
-.field private zpa:I
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/heytapbusiness/sis;->Bpa:[Ljava/lang/String;
+    sput-object v0, Lcom/oneplus/android/server/heytapbusiness/sis;->Wpa:[Ljava/lang/String;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 
     const/high16 v0, -0x80000000
 
-    iput v0, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->zpa:I
+    iput v0, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->Upa:I
 
     new-instance v0, Lcom/oneplus/android/server/heytapbusiness/OpHeytapBusinessManagerService$1;
 
@@ -83,14 +83,14 @@
     return-void
 .end method
 
-.method private Zu()Ljava/lang/String;
+.method private bv()Ljava/lang/String;
     .locals 2
 
-    iget p0, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->zpa:I
+    iget p0, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->Upa:I
 
     if-ltz p0, :cond_0
 
-    sget-object v0, Lcom/oneplus/android/server/heytapbusiness/sis;->Bpa:[Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/heytapbusiness/sis;->Wpa:[Ljava/lang/String;
 
     array-length v1, v0
 
@@ -107,7 +107,7 @@
     return-object p0
 .end method
 
-.method private _u()Lcom/oneplus/os/IParamService;
+.method private cv()Lcom/oneplus/os/IParamService;
     .locals 3
 
     const-string p0, "OpHeytapBusiness"
@@ -167,13 +167,13 @@
     return-object p0
 .end method
 
-.method private av()V
+.method private dv()V
     .locals 3
 
     const-string v0, "OpHeytapBusiness"
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->_u()Lcom/oneplus/os/IParamService;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->cv()Lcom/oneplus/os/IParamService;
 
     move-result-object v1
 
@@ -185,7 +185,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->zpa:I
+    iput v1, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->Upa:I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -195,7 +195,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->zpa:I
+    iget v2, p0, Lcom/oneplus/android/server/heytapbusiness/sis;->Upa:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -203,7 +203,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->Zu()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->bv()Ljava/lang/String;
 
     move-result-object p0
 
@@ -250,7 +250,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/heytapbusiness/sis;)Ljava/lang/String;
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->Zu()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->bv()Ljava/lang/String;
 
     move-result-object p0
 
@@ -267,10 +267,10 @@
 
 
 # virtual methods
-.method public synthetic Kf()V
+.method public synthetic Mf()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->Zu()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->bv()Ljava/lang/String;
 
     move-result-object p0
 
@@ -284,7 +284,7 @@
 
     const-string v0, "OpHeytapBusiness"
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->av()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/heytapbusiness/sis;->dv()V
 
     new-instance v1, Landroid/os/HandlerThread;
 

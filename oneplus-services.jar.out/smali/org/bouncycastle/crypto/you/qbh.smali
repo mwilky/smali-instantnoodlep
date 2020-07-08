@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final ANa:I = 0x30
+.field private static final bOa:I = 0x30
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->finish()V
 
-    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->xNa:J
+    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->ZNa:J
 
     invoke-static {v0, v1, p1, p2}, Lorg/bouncycastle/util/igw;->zta(J[BI)V
 
@@ -67,19 +67,19 @@
 
     invoke-static {v0, v1, p1, v2}, Lorg/bouncycastle/util/igw;->zta(J[BI)V
 
-    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->yNa:J
+    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->_Na:J
 
     add-int/lit8 v2, p2, 0x18
 
     invoke-static {v0, v1, p1, v2}, Lorg/bouncycastle/util/igw;->zta(J[BI)V
 
-    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->RNa:J
+    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->sOa:J
 
     add-int/lit8 v2, p2, 0x20
 
     invoke-static {v0, v1, p1, v2}, Lorg/bouncycastle/util/igw;->zta(J[BI)V
 
-    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->WNa:J
+    iget-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->xOa:J
 
     add-int/lit8 p2, p2, 0x28
 
@@ -95,7 +95,7 @@
 .method public fto()[B
     .locals 1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->Zj()I
+    invoke-virtual {p0}, Lorg/bouncycastle/crypto/you/cno;->bk()I
 
     move-result v0
 
@@ -129,7 +129,7 @@
 
     const-wide v0, -0x344462a23efa6128L    # -6.771107636816954E56
 
-    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->xNa:J
+    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->ZNa:J
 
     const-wide v0, 0x629a292a367cd507L    # 9.641589608180943E166
 
@@ -141,23 +141,23 @@
 
     const-wide v0, 0x152fecd8f70e5939L
 
-    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->yNa:J
+    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->_Na:J
 
     const-wide v0, 0x67332667ffc00b31L    # 1.3331733573491853E189
 
-    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->RNa:J
+    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->sOa:J
 
     const-wide v0, -0x714bb57897a7eaefL    # -7.790218494879152E-238
 
-    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->WNa:J
+    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->xOa:J
 
     const-wide v0, -0x24f3d1f29b067059L    # -3.9066766103558855E130
 
-    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->XNa:J
+    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->yOa:J
 
     const-wide v0, 0x47b5481dbefa4fa4L    # 2.8288236605994657E37
 
-    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->YNa:J
+    iput-wide v0, p0, Lorg/bouncycastle/crypto/you/cno;->zOa:J
 
     return-void
 .end method

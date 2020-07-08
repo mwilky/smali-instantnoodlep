@@ -6,33 +6,35 @@
 # static fields
 .field public static final DEBUG_ONEPLUS:Z
 
-.field private static final Nj:I = 0x0
-
 .field private static final OP_OPBF_SWITCH:Ljava/lang/String; = "oneplus_opbf_switch"
-
-.field private static final Oj:I = 0x1
-
-.field private static final Pj:I = 0x2
-
-.field private static Qq:Landroid/os/IDeviceIdleController; = null
-
-.field private static final Rq:I = 0x0
 
 .field private static final SEPARATOR:Ljava/lang/String; = "|"
 
-.field private static final Sq:I = 0x1
-
 .field public static final TAG:Ljava/lang/String; = "OnePlusAppBootManager"
 
-.field private static final Tq:Ljava/lang/String; = "doze_mode_policy"
+.field private static final bk:I = 0x0
 
-.field private static final Uq:I = 0x1
+.field private static final ck:I = 0x1
 
-.field private static final Vq:I = 0x0
+.field private static final dk:I = 0x2
 
-.field private static Wq:Lcom/android/server/am/vdb; = null
+.field private static er:Landroid/os/IDeviceIdleController; = null
 
-.field private static Xq:Ljava/util/Set; = null
+.field private static final fr:I = 0x0
+
+.field private static final gr:I = 0x1
+
+.field private static final hr:Ljava/lang/String; = "doze_mode_policy"
+
+.field private static final ie:Ljava/lang/String; = "\\|"
+
+.field private static final ir:I = 0x1
+
+.field private static final jr:I = 0x0
+
+.field private static kr:Lcom/android/server/am/vdb; = null
+
+.field private static lr:Ljava/util/Set; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -42,13 +44,11 @@
     .end annotation
 .end field
 
-.field private static final Yq:Ljava/lang/String; = "setted_pkg_list"
+.field private static mContext:Landroid/content/Context; = null
 
-.field private static final ie:Ljava/lang/String; = "\\|"
+.field private static final mr:Ljava/lang/String; = "setted_pkg_list"
 
-.field private static mContext:Landroid/content/Context;
-
-.field private static opSmartPowerControl:Lcom/android/server/s;
+.field private static opSmartPowerControl:Lcom/android/server/u;
 
 
 # direct methods
@@ -61,17 +61,17 @@
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/server/am/vdb;->Qq:Landroid/os/IDeviceIdleController;
+    sput-object v0, Lcom/android/server/am/vdb;->er:Landroid/os/IDeviceIdleController;
 
     sput-object v0, Lcom/android/server/am/vdb;->mContext:Landroid/content/Context;
 
-    sput-object v0, Lcom/android/server/am/vdb;->Wq:Lcom/android/server/am/vdb;
+    sput-object v0, Lcom/android/server/am/vdb;->kr:Lcom/android/server/am/vdb;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sput-object v0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     return-void
 .end method
@@ -120,15 +120,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/server/s;
+    check-cast v0, Lcom/android/server/u;
 
-    sput-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sput-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
-    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0, p0}, Lcom/android/server/s;->hmo(Ljava/lang/String;)Z
+    invoke-virtual {v0, p0}, Lcom/android/server/u;->hmo(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -153,7 +153,7 @@
 
     move-result-object p0
 
-    sget-object p1, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object p1, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     invoke-interface {p1}, Ljava/util/Set;->clear()V
 
@@ -164,7 +164,7 @@
 
     if-ge p1, v0, :cond_0
 
-    sget-object v0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     aget-object v1, p0, p1
 
@@ -181,7 +181,7 @@
 .method private static Fb(Ljava/lang/String;)V
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     if-eqz v0, :cond_0
 
@@ -191,11 +191,11 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     invoke-interface {v0, p0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    invoke-static {}, Lcom/android/server/am/vdb;->vn()V
+    invoke-static {}, Lcom/android/server/am/vdb;->yn()V
 
     :cond_0
     return-void
@@ -229,13 +229,13 @@
 
     if-eqz p0, :cond_1
 
-    invoke-static {}, Lcom/android/server/am/ibl;->yb()Ljava/util/Set;
+    invoke-static {}, Lcom/android/server/am/ibl;->zb()Ljava/util/Set;
 
     move-result-object p0
 
-    sput-object p0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sput-object p0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
-    invoke-static {}, Lcom/android/server/am/vdb;->vn()V
+    invoke-static {}, Lcom/android/server/am/vdb;->yn()V
 
     :cond_1
     :goto_0
@@ -308,11 +308,11 @@
 
     if-eqz v4, :cond_4
 
-    invoke-static {}, Lcom/android/server/am/vdb;->un()Lcom/android/server/s;
+    invoke-static {}, Lcom/android/server/am/vdb;->xn()Lcom/android/server/u;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/android/server/s;->sa()Landroid/util/ArrayMap;
+    invoke-virtual {v4}, Lcom/android/server/u;->ta()Landroid/util/ArrayMap;
 
     move-result-object v4
 
@@ -395,7 +395,7 @@
 
     :cond_4
     :try_start_2
-    invoke-static {}, Lcom/android/server/am/vdb;->tn()Landroid/os/IDeviceIdleController;
+    invoke-static {}, Lcom/android/server/am/vdb;->wn()Landroid/os/IDeviceIdleController;
 
     move-result-object v4
 
@@ -644,7 +644,7 @@
     goto :goto_3
 
     :cond_3
-    invoke-static {}, Lcom/android/server/am/vdb;->tn()Landroid/os/IDeviceIdleController;
+    invoke-static {}, Lcom/android/server/am/vdb;->wn()Landroid/os/IDeviceIdleController;
 
     move-result-object v2
 
@@ -730,7 +730,7 @@
 .method public static final getInstance(Landroid/content/Context;)Lcom/android/server/am/vdb;
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/vdb;->Wq:Lcom/android/server/am/vdb;
+    sget-object v0, Lcom/android/server/am/vdb;->kr:Lcom/android/server/am/vdb;
 
     if-nez v0, :cond_0
 
@@ -738,10 +738,10 @@
 
     invoke-direct {v0, p0}, Lcom/android/server/am/vdb;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/server/am/vdb;->Wq:Lcom/android/server/am/vdb;
+    sput-object v0, Lcom/android/server/am/vdb;->kr:Lcom/android/server/am/vdb;
 
     :cond_0
-    sget-object p0, Lcom/android/server/am/vdb;->Wq:Lcom/android/server/am/vdb;
+    sget-object p0, Lcom/android/server/am/vdb;->kr:Lcom/android/server/am/vdb;
 
     return-object p0
 .end method
@@ -778,15 +778,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/server/s;
+    check-cast v0, Lcom/android/server/u;
 
-    sput-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sput-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
-    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0, p0}, Lcom/android/server/s;->isWhitelisted(Ljava/lang/String;)Z
+    invoke-virtual {v0, p0}, Lcom/android/server/u;->isWhitelisted(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -805,7 +805,7 @@
 .method public static n(Ljava/lang/String;)Z
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     if-eqz v0, :cond_0
 
@@ -901,11 +901,11 @@
 
     if-ne p2, v4, :cond_2
 
-    invoke-static {}, Lcom/android/server/am/vdb;->un()Lcom/android/server/s;
+    invoke-static {}, Lcom/android/server/am/vdb;->xn()Lcom/android/server/u;
 
     move-result-object p1
 
-    invoke-virtual {p1, p0, v4}, Lcom/android/server/s;->zta(Ljava/lang/String;I)Z
+    invoke-virtual {p1, p0, v4}, Lcom/android/server/u;->zta(Ljava/lang/String;I)Z
 
     move-result p0
 
@@ -914,22 +914,22 @@
     :cond_2
     if-ne p2, p1, :cond_3
 
-    invoke-static {}, Lcom/android/server/am/vdb;->un()Lcom/android/server/s;
+    invoke-static {}, Lcom/android/server/am/vdb;->xn()Lcom/android/server/u;
 
     move-result-object p2
 
-    invoke-virtual {p2, p0, p1}, Lcom/android/server/s;->zta(Ljava/lang/String;I)Z
+    invoke-virtual {p2, p0, p1}, Lcom/android/server/u;->zta(Ljava/lang/String;I)Z
 
     move-result p0
 
     goto :goto_0
 
     :cond_3
-    invoke-static {}, Lcom/android/server/am/vdb;->un()Lcom/android/server/s;
+    invoke-static {}, Lcom/android/server/am/vdb;->xn()Lcom/android/server/u;
 
     move-result-object p1
 
-    invoke-virtual {p1, p0, v0}, Lcom/android/server/s;->zta(Ljava/lang/String;I)Z
+    invoke-virtual {p1, p0, v0}, Lcom/android/server/u;->zta(Ljava/lang/String;I)Z
 
     move-result p0
 
@@ -950,7 +950,7 @@
     invoke-virtual {p1, p0, v4}, Lcom/android/server/am/ibl;->you(Ljava/lang/String;I)I
 
     :try_start_0
-    invoke-static {}, Lcom/android/server/am/vdb;->tn()Landroid/os/IDeviceIdleController;
+    invoke-static {}, Lcom/android/server/am/vdb;->wn()Landroid/os/IDeviceIdleController;
 
     move-result-object p1
 
@@ -979,7 +979,7 @@
     invoke-virtual {p2, p0, p1}, Lcom/android/server/am/ibl;->you(Ljava/lang/String;I)I
 
     :try_start_1
-    invoke-static {}, Lcom/android/server/am/vdb;->tn()Landroid/os/IDeviceIdleController;
+    invoke-static {}, Lcom/android/server/am/vdb;->wn()Landroid/os/IDeviceIdleController;
 
     move-result-object p1
 
@@ -999,10 +999,10 @@
     return v0
 .end method
 
-.method private static tn()Landroid/os/IDeviceIdleController;
+.method private static wn()Landroid/os/IDeviceIdleController;
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/vdb;->Qq:Landroid/os/IDeviceIdleController;
+    sget-object v0, Lcom/android/server/am/vdb;->er:Landroid/os/IDeviceIdleController;
 
     if-eqz v0, :cond_0
 
@@ -1019,17 +1019,17 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/am/vdb;->Qq:Landroid/os/IDeviceIdleController;
+    sput-object v0, Lcom/android/server/am/vdb;->er:Landroid/os/IDeviceIdleController;
 
-    sget-object v0, Lcom/android/server/am/vdb;->Qq:Landroid/os/IDeviceIdleController;
+    sget-object v0, Lcom/android/server/am/vdb;->er:Landroid/os/IDeviceIdleController;
 
     return-object v0
 .end method
 
-.method private static un()Lcom/android/server/s;
+.method private static xn()Lcom/android/server/u;
     .locals 1
 
-    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
     if-eqz v0, :cond_0
 
@@ -1042,20 +1042,49 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/server/s;
+    check-cast v0, Lcom/android/server/u;
 
-    sput-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sput-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
-    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/s;
+    sget-object v0, Lcom/android/server/am/vdb;->opSmartPowerControl:Lcom/android/server/u;
 
     return-object v0
 .end method
 
-.method private static vn()V
+.method public static yb()Z
+    .locals 2
+
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lcom/android/server/am/ibl;->zta(Lcom/android/server/pm/PackageManagerService;)Lcom/android/server/am/ibl;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/server/am/ibl;->yb()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method private static yn()V
     .locals 4
 
     :try_start_0
-    sget-object v0, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v0, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     if-eqz v0, :cond_2
 
@@ -1065,7 +1094,7 @@
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v2, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -1089,7 +1118,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v3, Lcom/android/server/am/vdb;->Xq:Ljava/util/Set;
+    sget-object v3, Lcom/android/server/am/vdb;->lr:Ljava/util/Set;
 
     invoke-interface {v3}, Ljava/util/Set;->size()I
 
@@ -1150,35 +1179,6 @@
     return-void
 .end method
 
-.method public static xb()Z
-    .locals 2
-
-    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
-
-    move-result v0
-
-    const/16 v1, 0x3e8
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Lcom/android/server/am/ibl;->zta(Lcom/android/server/pm/PackageManagerService;)Lcom/android/server/am/ibl;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/server/am/ibl;->xb()Z
-
-    move-result v0
-
-    return v0
-.end method
-
 .method public static zta(Landroid/content/Context;I)I
     .locals 6
 
@@ -1226,7 +1226,7 @@
 
     if-nez p1, :cond_6
 
-    invoke-static {}, Lcom/android/server/am/vdb;->xb()Z
+    invoke-static {}, Lcom/android/server/am/vdb;->yb()Z
 
     move-result v1
 
@@ -1303,7 +1303,7 @@
     :cond_6
     if-ne p1, v4, :cond_7
 
-    invoke-static {}, Lcom/android/server/am/vdb;->xb()Z
+    invoke-static {}, Lcom/android/server/am/vdb;->yb()Z
 
     move-result v1
 

@@ -27,9 +27,9 @@
 
 .field public static final enum BASE:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
-.field public static final enum QBa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+.field public static final enum rCa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
-.field public static final enum RBa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+.field public static final enum sCa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->QBa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->rCa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->RBa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->sCa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
@@ -70,11 +70,11 @@
 
     new-array v0, v0, [Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
-    sget-object v4, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->QBa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sget-object v4, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->rCa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     aput-object v4, v0, v1
 
-    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->RBa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
+    sget-object v1, Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;->sCa:Lcom/oneplus/android/server/scene/OemSceneActivityController$ActivityMode;
 
     aput-object v1, v0, v2
 

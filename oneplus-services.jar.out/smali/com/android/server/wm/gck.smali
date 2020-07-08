@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic laa:Z
+.field final synthetic Gaa:Z
 
 .field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/server/wm/gck;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iput-boolean p3, p0, Lcom/android/server/wm/gck;->laa:Z
+    iput-boolean p3, p0, Lcom/android/server/wm/gck;->Gaa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
 
     iget-object v1, p0, Lcom/android/server/wm/gck;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iget-boolean p0, p0, Lcom/android/server/wm/gck;->laa:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/gck;->Gaa:Z
 
     invoke-static {v0, v1, p0}, Lcom/android/server/wm/OPAppSwitchManagerService;->access$800(Lcom/android/server/wm/OPAppSwitchManagerService;Lcom/android/server/wm/ActivityRecord;Z)V
     :try_end_0

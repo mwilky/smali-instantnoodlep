@@ -15,19 +15,19 @@
 
 
 # static fields
-.field static final synthetic cr:[I
+.field static final synthetic tr:[I
 
-.field static final synthetic dr:[I
+.field static final synthetic ur:[I
 
-.field static final synthetic er:[I
+.field static final synthetic vr:[I
 
-.field static final synthetic fr:[I
+.field static final synthetic wr:[I
 
-.field static final synthetic gr:[I
+.field static final synthetic xr:[I
 
-.field static final synthetic hr:[I
+.field static final synthetic yr:[I
 
-.field static final synthetic ir:[I
+.field static final synthetic zr:[I
 
 
 # direct methods
@@ -42,14 +42,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/server/am/lqr;->ir:[I
+    sput-object v0, Lcom/android/server/am/lqr;->zr:[I
 
     const/4 v0, 0x1
 
     :try_start_0
-    sget-object v1, Lcom/android/server/am/lqr;->ir:[I
+    sget-object v1, Lcom/android/server/am/lqr;->zr:[I
 
-    sget-object v2, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Dya:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v2, Lcom/android/server/am/OnePlusBGController$SnapshotType;->eza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -63,9 +63,9 @@
     const/4 v1, 0x2
 
     :try_start_1
-    sget-object v2, Lcom/android/server/am/lqr;->ir:[I
+    sget-object v2, Lcom/android/server/am/lqr;->zr:[I
 
-    sget-object v3, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Gya:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v3, Lcom/android/server/am/OnePlusBGController$SnapshotType;->hza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -79,9 +79,9 @@
     const/4 v2, 0x3
 
     :try_start_2
-    sget-object v3, Lcom/android/server/am/lqr;->ir:[I
+    sget-object v3, Lcom/android/server/am/lqr;->zr:[I
 
-    sget-object v4, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Eya:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v4, Lcom/android/server/am/OnePlusBGController$SnapshotType;->fza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
@@ -95,9 +95,9 @@
     const/4 v3, 0x4
 
     :try_start_3
-    sget-object v4, Lcom/android/server/am/lqr;->ir:[I
+    sget-object v4, Lcom/android/server/am/lqr;->zr:[I
 
-    sget-object v5, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Fya:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v5, Lcom/android/server/am/OnePlusBGController$SnapshotType;->gza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -116,12 +116,12 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/am/lqr;->hr:[I
+    sput-object v4, Lcom/android/server/am/lqr;->yr:[I
 
     :try_start_4
-    sget-object v4, Lcom/android/server/am/lqr;->hr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->yr:[I
 
-    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->uya:Lcom/android/server/am/OnePlusBGController$CleanType;
+    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->Wya:Lcom/android/server/am/OnePlusBGController$CleanType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -133,9 +133,9 @@
 
     :catch_4
     :try_start_5
-    sget-object v4, Lcom/android/server/am/lqr;->hr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->yr:[I
 
-    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->vya:Lcom/android/server/am/OnePlusBGController$CleanType;
+    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->Xya:Lcom/android/server/am/OnePlusBGController$CleanType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -147,9 +147,9 @@
 
     :catch_5
     :try_start_6
-    sget-object v4, Lcom/android/server/am/lqr;->hr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->yr:[I
 
-    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->wya:Lcom/android/server/am/OnePlusBGController$CleanType;
+    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->Yya:Lcom/android/server/am/OnePlusBGController$CleanType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -161,9 +161,9 @@
 
     :catch_6
     :try_start_7
-    sget-object v4, Lcom/android/server/am/lqr;->hr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->yr:[I
 
-    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->xya:Lcom/android/server/am/OnePlusBGController$CleanType;
+    sget-object v5, Lcom/android/server/am/OnePlusBGController$CleanType;->Zya:Lcom/android/server/am/OnePlusBGController$CleanType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -182,10 +182,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/am/lqr;->gr:[I
+    sput-object v4, Lcom/android/server/am/lqr;->xr:[I
 
     :try_start_8
-    sget-object v4, Lcom/android/server/am/lqr;->gr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->xr:[I
 
     sget-object v5, Lcom/android/server/am/OnePlusBGController$MySipperType;->T:Lcom/android/server/am/OnePlusBGController$MySipperType;
 
@@ -199,7 +199,7 @@
 
     :catch_8
     :try_start_9
-    sget-object v4, Lcom/android/server/am/lqr;->gr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->xr:[I
 
     sget-object v5, Lcom/android/server/am/OnePlusBGController$MySipperType;->M:Lcom/android/server/am/OnePlusBGController$MySipperType;
 
@@ -213,7 +213,7 @@
 
     :catch_9
     :try_start_a
-    sget-object v4, Lcom/android/server/am/lqr;->gr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->xr:[I
 
     sget-object v5, Lcom/android/server/am/OnePlusBGController$MySipperType;->B:Lcom/android/server/am/OnePlusBGController$MySipperType;
 
@@ -234,10 +234,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/am/lqr;->fr:[I
+    sput-object v4, Lcom/android/server/am/lqr;->wr:[I
 
     :try_start_b
-    sget-object v4, Lcom/android/server/am/lqr;->fr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->wr:[I
 
     sget-object v5, Lcom/android/server/am/OnePlusBGController$NetType;->PUBLIC:Lcom/android/server/am/OnePlusBGController$NetType;
 
@@ -251,9 +251,9 @@
 
     :catch_b
     :try_start_c
-    sget-object v4, Lcom/android/server/am/lqr;->fr:[I
+    sget-object v4, Lcom/android/server/am/lqr;->wr:[I
 
-    sget-object v5, Lcom/android/server/am/OnePlusBGController$NetType;->Aya:Lcom/android/server/am/OnePlusBGController$NetType;
+    sget-object v5, Lcom/android/server/am/OnePlusBGController$NetType;->bza:Lcom/android/server/am/OnePlusBGController$NetType;
 
     invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
@@ -272,10 +272,10 @@
 
     new-array v4, v4, [I
 
-    sput-object v4, Lcom/android/server/am/lqr;->er:[I
+    sput-object v4, Lcom/android/server/am/lqr;->vr:[I
 
     :try_start_d
-    sget-object v4, Lcom/android/server/am/lqr;->er:[I
+    sget-object v4, Lcom/android/server/am/lqr;->vr:[I
 
     sget-object v5, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;->BG:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;
 
@@ -289,7 +289,7 @@
 
     :catch_d
     :try_start_e
-    sget-object v4, Lcom/android/server/am/lqr;->er:[I
+    sget-object v4, Lcom/android/server/am/lqr;->vr:[I
 
     sget-object v5, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;->TOP:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;
 
@@ -303,7 +303,7 @@
 
     :catch_e
     :try_start_f
-    sget-object v4, Lcom/android/server/am/lqr;->er:[I
+    sget-object v4, Lcom/android/server/am/lqr;->vr:[I
 
     sget-object v5, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;->ACC_BG:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;
 
@@ -317,7 +317,7 @@
 
     :catch_f
     :try_start_10
-    sget-object v4, Lcom/android/server/am/lqr;->er:[I
+    sget-object v4, Lcom/android/server/am/lqr;->vr:[I
 
     sget-object v5, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;->ACC_TOP:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;
 
@@ -338,10 +338,10 @@
 
     new-array v3, v3, [I
 
-    sput-object v3, Lcom/android/server/am/lqr;->dr:[I
+    sput-object v3, Lcom/android/server/am/lqr;->ur:[I
 
     :try_start_11
-    sget-object v3, Lcom/android/server/am/lqr;->dr:[I
+    sget-object v3, Lcom/android/server/am/lqr;->ur:[I
 
     sget-object v4, Lcom/android/server/am/OnePlusBGController$ProcType;->B:Lcom/android/server/am/OnePlusBGController$ProcType;
 
@@ -355,9 +355,9 @@
 
     :catch_11
     :try_start_12
-    sget-object v3, Lcom/android/server/am/lqr;->dr:[I
+    sget-object v3, Lcom/android/server/am/lqr;->ur:[I
 
-    sget-object v4, Lcom/android/server/am/OnePlusBGController$ProcType;->Bya:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sget-object v4, Lcom/android/server/am/OnePlusBGController$ProcType;->cza:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
@@ -369,7 +369,7 @@
 
     :catch_12
     :try_start_13
-    sget-object v3, Lcom/android/server/am/lqr;->dr:[I
+    sget-object v3, Lcom/android/server/am/lqr;->ur:[I
 
     sget-object v4, Lcom/android/server/am/OnePlusBGController$ProcType;->F:Lcom/android/server/am/OnePlusBGController$ProcType;
 
@@ -390,10 +390,10 @@
 
     new-array v3, v3, [I
 
-    sput-object v3, Lcom/android/server/am/lqr;->cr:[I
+    sput-object v3, Lcom/android/server/am/lqr;->tr:[I
 
     :try_start_14
-    sget-object v3, Lcom/android/server/am/lqr;->cr:[I
+    sget-object v3, Lcom/android/server/am/lqr;->tr:[I
 
     sget-object v4, Lcom/android/server/am/OnePlusBGController$RomType;->ALPHA:Lcom/android/server/am/OnePlusBGController$RomType;
 
@@ -407,9 +407,9 @@
 
     :catch_14
     :try_start_15
-    sget-object v0, Lcom/android/server/am/lqr;->cr:[I
+    sget-object v0, Lcom/android/server/am/lqr;->tr:[I
 
-    sget-object v3, Lcom/android/server/am/OnePlusBGController$RomType;->Cya:Lcom/android/server/am/OnePlusBGController$RomType;
+    sget-object v3, Lcom/android/server/am/OnePlusBGController$RomType;->dza:Lcom/android/server/am/OnePlusBGController$RomType;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -421,9 +421,9 @@
 
     :catch_15
     :try_start_16
-    sget-object v0, Lcom/android/server/am/lqr;->cr:[I
+    sget-object v0, Lcom/android/server/am/lqr;->tr:[I
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$RomType;->tya:Lcom/android/server/am/OnePlusBGController$RomType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$RomType;->Vya:Lcom/android/server/am/OnePlusBGController$RomType;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

@@ -27,17 +27,17 @@
 
 
 # instance fields
-.field private final ODa:Z
+.field private final pEa:Z
 
-.field private final ORa:Ljava/security/cert/CRLSelector;
+.field private final pSa:Ljava/security/cert/CRLSelector;
 
-.field private final PDa:Z
+.field private final qEa:Z
 
-.field private final QDa:Ljava/math/BigInteger;
+.field private final rEa:Ljava/math/BigInteger;
 
-.field private final RDa:[B
+.field private final sEa:[B
 
-.field private final SDa:Z
+.field private final tEa:Z
 
 
 # direct methods
@@ -50,37 +50,37 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/tsu;->ORa:Ljava/security/cert/CRLSelector;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/tsu;->pSa:Ljava/security/cert/CRLSelector;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/tsu$zta;->you(Lorg/bouncycastle/jcajce/tsu$zta;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/tsu;->ODa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/tsu;->pEa:Z
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/tsu$zta;->sis(Lorg/bouncycastle/jcajce/tsu$zta;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/tsu;->PDa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/tsu;->qEa:Z
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/tsu$zta;->tsu(Lorg/bouncycastle/jcajce/tsu$zta;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/tsu;->QDa:Ljava/math/BigInteger;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/tsu;->rEa:Ljava/math/BigInteger;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/tsu$zta;->rtg(Lorg/bouncycastle/jcajce/tsu$zta;)[B
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/tsu;->RDa:[B
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/tsu;->sEa:[B
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/tsu$zta;->ssp(Lorg/bouncycastle/jcajce/tsu$zta;)Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/tsu;->SDa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/tsu;->tEa:Z
 
     return-void
 .end method
@@ -96,7 +96,7 @@
 .method static synthetic zta(Lorg/bouncycastle/jcajce/tsu;)Ljava/security/cert/CRLSelector;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->ORa:Ljava/security/cert/CRLSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->pSa:Ljava/security/cert/CRLSelector;
 
     return-object p0
 .end method
@@ -135,10 +135,16 @@
 
 
 # virtual methods
-.method public ch()[B
+.method public clone()Ljava/lang/Object;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->RDa:[B
+    return-object p0
+.end method
+
+.method public fh()[B
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->sEa:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 
@@ -147,40 +153,10 @@
     return-object p0
 .end method
 
-.method public clone()Ljava/lang/Object;
-    .locals 0
-
-    return-object p0
-.end method
-
-.method public dh()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->QDa:Ljava/math/BigInteger;
-
-    return-object p0
-.end method
-
-.method public eh()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/tsu;->PDa:Z
-
-    return p0
-.end method
-
-.method public fh()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/tsu;->ODa:Z
-
-    return p0
-.end method
-
 .method public getCertificateChecking()Ljava/security/cert/X509Certificate;
     .locals 1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->ORa:Ljava/security/cert/CRLSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->pSa:Ljava/security/cert/CRLSelector;
 
     instance-of v0, p0, Ljava/security/cert/X509CRLSelector;
 
@@ -200,10 +176,34 @@
     return-object p0
 .end method
 
-.method public gh()Z
+.method public gh()Ljava/math/BigInteger;
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/tsu;->SDa:Z
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->rEa:Ljava/math/BigInteger;
+
+    return-object p0
+.end method
+
+.method public hh()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/tsu;->qEa:Z
+
+    return p0
+.end method
+
+.method public ih()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/tsu;->pEa:Z
+
+    return p0
+.end method
+
+.method public jh()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/tsu;->tEa:Z
 
     return p0
 .end method
@@ -228,7 +228,7 @@
     if-nez v0, :cond_1
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->ORa:Ljava/security/cert/CRLSelector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/tsu;->pSa:Ljava/security/cert/CRLSelector;
 
     invoke-interface {p0, p1}, Ljava/security/cert/CRLSelector;->match(Ljava/security/cert/CRL;)Z
 
@@ -246,7 +246,7 @@
     const/4 v2, 0x0
 
     :try_start_0
-    sget-object v3, Lorg/bouncycastle/asn1/x509/gwm;->ODa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v3, Lorg/bouncycastle/asn1/x509/gwm;->pEa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj;->getId()Ljava/lang/String;
 
@@ -273,7 +273,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_2
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/tsu;->fh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/tsu;->ih()Z
 
     move-result v3
 
@@ -284,7 +284,7 @@
     return v2
 
     :cond_3
-    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/tsu;->eh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/jcajce/tsu;->hh()Z
 
     move-result v3
 
@@ -297,15 +297,15 @@
     :cond_4
     if-eqz v1, :cond_5
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/tsu;->QDa:Ljava/math/BigInteger;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/tsu;->rEa:Ljava/math/BigInteger;
 
     if-eqz v3, :cond_5
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ywr;->Fh()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ywr;->Ih()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/tsu;->QDa:Ljava/math/BigInteger;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/tsu;->rEa:Ljava/math/BigInteger;
 
     invoke-virtual {v1, v3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
@@ -318,11 +318,11 @@
     return v2
 
     :cond_5
-    iget-boolean v1, p0, Lorg/bouncycastle/jcajce/tsu;->SDa:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/jcajce/tsu;->tEa:Z
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/gwm;->RDa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/gwm;->sEa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/bvj;->getId()Ljava/lang/String;
 
@@ -332,7 +332,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/tsu;->RDa:[B
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/tsu;->sEa:[B
 
     if-nez v1, :cond_6
 

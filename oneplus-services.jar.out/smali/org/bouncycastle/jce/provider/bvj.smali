@@ -4,11 +4,11 @@
 
 
 # static fields
-.field static final zTa:Lorg/bouncycastle/jce/provider/bvj;
+.field static final aUa:Lorg/bouncycastle/jce/provider/bvj;
 
 
 # instance fields
-.field private yTa:I
+.field private _Ta:I
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/jce/provider/bvj;-><init>(I)V
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/bvj;->zTa:Lorg/bouncycastle/jce/provider/bvj;
+    sput-object v0, Lorg/bouncycastle/jce/provider/bvj;->aUa:Lorg/bouncycastle/jce/provider/bvj;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iput p1, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
     return-void
 .end method
@@ -55,21 +55,21 @@
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iput p1, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method Dk()Z
+.method Gk()Z
     .locals 1
 
-    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/bvj;->zTa:Lorg/bouncycastle/jce/provider/bvj;
+    sget-object v0, Lorg/bouncycastle/jce/provider/bvj;->aUa:Lorg/bouncycastle/jce/provider/bvj;
 
-    iget v0, v0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget v0, v0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
     if-ne p0, v0, :cond_0
 
@@ -84,10 +84,10 @@
     return p0
 .end method
 
-.method Si()I
+.method Vi()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
     return p0
 .end method
@@ -101,9 +101,9 @@
 
     new-instance v1, Lorg/bouncycastle/jce/provider/bvj;
 
-    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->Si()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->Vi()I
 
     move-result p1
 
@@ -119,13 +119,13 @@
 .method you(Lorg/bouncycastle/jce/provider/bvj;)Z
     .locals 1
 
-    iget v0, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget v0, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->Si()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->Vi()I
 
     move-result p1
 
-    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget p0, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
     xor-int/2addr p0, p1
 
@@ -147,15 +147,15 @@
 .method zta(Lorg/bouncycastle/jce/provider/bvj;)V
     .locals 1
 
-    iget v0, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iget v0, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->Si()I
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/bvj;->Vi()I
 
     move-result p1
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Lorg/bouncycastle/jce/provider/bvj;->yTa:I
+    iput p1, p0, Lorg/bouncycastle/jce/provider/bvj;->_Ta:I
 
     return-void
 .end method

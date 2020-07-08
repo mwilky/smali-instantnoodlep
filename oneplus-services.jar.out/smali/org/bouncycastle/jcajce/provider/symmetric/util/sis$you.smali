@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field private hDa:Lorg/bouncycastle/crypto/ssp;
+.field private JDa:Lorg/bouncycastle/crypto/ssp;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/crypto/igw/rtg;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, p1, p2}, Lorg/bouncycastle/crypto/igw/rtg;-><init>(Lorg/bouncycastle/crypto/rtg;Lorg/bouncycastle/crypto/igw/zta;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     return-void
 .end method
@@ -65,7 +65,7 @@
 .method public cgv()Z
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     instance-of p0, p0, Lorg/bouncycastle/crypto/bio/rtg;
 
@@ -92,7 +92,7 @@
     .end annotation
 
     :try_start_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0, p1, p2}, Lorg/bouncycastle/crypto/ssp;->doFinal([BI)I
 
@@ -119,7 +119,7 @@
 .method public e()Lorg/bouncycastle/crypto/rtg;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/ssp;->e()Lorg/bouncycastle/crypto/rtg;
 
@@ -131,7 +131,7 @@
 .method public getOutputSize(I)I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp;->getOutputSize(I)I
 
@@ -143,7 +143,7 @@
 .method public irq()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0}, Lorg/bouncycastle/crypto/ssp;->e()Lorg/bouncycastle/crypto/rtg;
 
@@ -159,7 +159,7 @@
 .method public sis(I)I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0, p1}, Lorg/bouncycastle/crypto/ssp;->sis(I)I
 
@@ -188,7 +188,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0, p1, p2, p3}, Lorg/bouncycastle/crypto/ssp;->zta(B[BI)I
 
@@ -205,7 +205,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     move-object v1, p1
 
@@ -232,7 +232,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->hDa:Lorg/bouncycastle/crypto/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/sis$you;->JDa:Lorg/bouncycastle/crypto/ssp;
 
     invoke-virtual {p0, p1, p2}, Lorg/bouncycastle/crypto/ssp;->zta(ZLorg/bouncycastle/crypto/kth;)V
 

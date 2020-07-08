@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final XQa:I = 0x8
+.field private static ARa:[B = null
 
-.field private static final YQa:I = 0x10
+.field public static final yRa:I = 0x8
 
-.field private static ZQa:[B
+.field private static final zRa:I = 0x10
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/bouncycastle/crypto/wtn/sis;->ZQa:[B
+    sput-object v0, Lorg/bouncycastle/crypto/wtn/sis;->ARa:[B
 
     return-void
 
@@ -270,7 +270,7 @@
 
     aget-byte v4, p0, v4
 
-    sget-object v5, Lorg/bouncycastle/crypto/wtn/sis;->ZQa:[B
+    sget-object v5, Lorg/bouncycastle/crypto/wtn/sis;->ARa:[B
 
     mul-int/lit8 v6, v2, 0x8
 

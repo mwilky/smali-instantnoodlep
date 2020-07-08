@@ -144,7 +144,7 @@
     return-void
 .end method
 
-.method private Aw()Ljava/lang/String;
+.method private Dw()Ljava/lang/String;
     .locals 6
 
     invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
@@ -232,7 +232,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v4}, Lorg/bouncycastle/asn1/wtn;->Uc(I)Ljava/lang/String;
+    invoke-direct {p0, v4}, Lorg/bouncycastle/asn1/wtn;->Vc(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -242,7 +242,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/wtn;->Uc(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/wtn;->Vc(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -255,7 +255,7 @@
     return-object p0
 .end method
 
-.method private Uc(I)Ljava/lang/String;
+.method private Vc(I)Ljava/lang/String;
     .locals 1
 
     const/16 p0, 0xa
@@ -449,7 +449,7 @@
 
 
 # virtual methods
-.method public Bh()Ljava/lang/String;
+.method public Eh()Ljava/lang/String;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/wtn;->time:[B
@@ -461,7 +461,7 @@
     return-object p0
 .end method
 
-.method protected Ch()Z
+.method protected Fh()Z
     .locals 4
 
     const/4 v0, 0x0
@@ -498,7 +498,7 @@
     return v0
 .end method
 
-.method protected Dh()Z
+.method protected Gh()Z
     .locals 1
 
     const/16 v0, 0xa
@@ -528,7 +528,7 @@
     return p0
 .end method
 
-.method protected Eh()Z
+.method protected Hh()Z
     .locals 1
 
     const/16 v0, 0xc
@@ -582,7 +582,7 @@
 
     if-eqz v2, :cond_3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Ch()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Fh()Z
 
     move-result v2
 
@@ -599,7 +599,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Eh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Hh()Z
 
     move-result v2
 
@@ -616,7 +616,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Dh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Gh()Z
 
     move-result v2
 
@@ -671,7 +671,7 @@
     goto :goto_4
 
     :cond_4
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Ch()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Fh()Z
 
     move-result v1
 
@@ -691,7 +691,7 @@
     goto :goto_3
 
     :cond_5
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Eh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Hh()Z
 
     move-result v1
 
@@ -708,7 +708,7 @@
     goto :goto_2
 
     :cond_6
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Dh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Gh()Z
 
     move-result v1
 
@@ -758,7 +758,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Ch()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Fh()Z
 
     move-result v2
 
@@ -775,7 +775,7 @@
     goto :goto_5
 
     :cond_9
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Eh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Hh()Z
 
     move-result v2
 
@@ -792,7 +792,7 @@
     goto :goto_5
 
     :cond_a
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Dh()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Gh()Z
 
     move-result v2
 
@@ -825,7 +825,7 @@
     goto/16 :goto_1
 
     :goto_6
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Ch()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/wtn;->Fh()Z
 
     move-result p0
 
@@ -1095,7 +1095,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/wtn;->Aw()Ljava/lang/String;
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/wtn;->Dw()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1196,14 +1196,14 @@
     return p0
 .end method
 
-.method rh()I
+.method uh()I
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/wtn;->time:[B
 
     array-length p0, p0
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->ma(I)I
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->na(I)I
 
     move-result v0
 
@@ -1214,7 +1214,7 @@
     return v0
 .end method
 
-.method sh()Lorg/bouncycastle/asn1/vdb;
+.method vh()Lorg/bouncycastle/asn1/vdb;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/v;

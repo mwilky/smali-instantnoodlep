@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field protected Qqa:Lcom/oneplus/android/server/iris/ssp;
+.field protected lra:Lcom/oneplus/android/server/iris/ssp;
 
 
 # direct methods
@@ -33,17 +33,17 @@
 
     invoke-direct {v0}, Lcom/oneplus/android/server/iris/ssp;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/bio;->Qqa:Lcom/oneplus/android/server/iris/ssp;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/bio;->lra:Lcom/oneplus/android/server/iris/ssp;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract N(Z)V
+.method public abstract M(Z)V
 .end method
 
-.method public abstract Pf()V
+.method public abstract P(Z)V
 .end method
 
 .method public abstract Q(Z)V
@@ -52,7 +52,13 @@
 .method public abstract R(Z)V
 .end method
 
+.method public abstract Rf()Z
+.end method
+
 .method public abstract S(Z)V
+.end method
+
+.method public abstract Sf()V
 .end method
 
 .method public abstract T(Z)V
@@ -64,19 +70,19 @@
 .method public abstract V(Z)V
 .end method
 
-.method public abstract W(Z)V
-.end method
-
 .method public abstract da(I)V
 .end method
 
 .method public abstract dump(Ljava/io/PrintWriter;[Ljava/lang/String;)V
 .end method
 
+.method public abstract ea(I)I
+.end method
+
 .method public getIrisCommand(I)I
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Qqa:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->lra:Lcom/oneplus/android/server/iris/ssp;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/ssp;->getIrisCommand(I)I
 
@@ -127,10 +133,13 @@
 .method public abstract prepareDisplayModeChange(Lcom/oneplus/iris/OpIrisWindowInfo;)V
 .end method
 
+.method public abstract screenStateChange(I)V
+.end method
+
 .method public setIrisCommand(Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Qqa:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->lra:Lcom/oneplus/android/server/iris/ssp;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/ssp;->setIrisCommand(Ljava/lang/String;)V
 

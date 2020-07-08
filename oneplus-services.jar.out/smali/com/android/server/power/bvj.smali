@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->Mg()V
+    value = Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->Pg()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -72,7 +72,7 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->be()V
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->de()V
 
     goto/16 :goto_1
 
@@ -105,7 +105,7 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->Rd()V
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->Td()V
 
     goto/16 :goto_1
 
@@ -138,7 +138,7 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->Qd()V
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->Sd()V
 
     goto/16 :goto_1
 
@@ -171,7 +171,7 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->ee()V
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->ge()V
 
     goto/16 :goto_1
 
@@ -204,7 +204,7 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->ce()V
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->ee()V
 
     goto/16 :goto_1
 
@@ -237,7 +237,7 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->de()V
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer;->fe()V
 
     goto/16 :goto_1
 
@@ -270,9 +270,9 @@
 
     iget-object p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$cno;->this$0:Lcom/android/server/power/OnePlusStandbyAnalyzer;
 
-    sget-object p1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TelephonyType;->pBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$TelephonyType;
+    sget-object p1, Lcom/android/server/power/OnePlusStandbyAnalyzer$TelephonyType;->RBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$TelephonyType;
 
-    sget-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->SAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sget-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     const/4 v1, 0x0
 

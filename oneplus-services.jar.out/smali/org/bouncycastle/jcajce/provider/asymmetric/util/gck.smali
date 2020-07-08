@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method public static ra(I)I
+.method public static sa(I)I
     .locals 1
 
     const/16 v0, 0x400

@@ -163,7 +163,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0x119
+    const/16 v3, 0x11b
 
     aput v3, v1, v2
 
@@ -183,7 +183,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0x11b
+    const/16 v1, 0x11d
 
     aput v1, v0, v2
 
@@ -608,7 +608,7 @@
 
     if-nez p1, :cond_2
 
-    invoke-virtual {v2}, Lcom/android/server/am/tsu;->Ra()I
+    invoke-virtual {v2}, Lcom/android/server/am/tsu;->Sa()I
 
     move-result v3
 
@@ -2042,13 +2042,13 @@
 
     check-cast v3, Lcom/android/server/am/tsu;
 
-    invoke-virtual {v3}, Lcom/android/server/am/tsu;->Pa()Ljava/util/HashMap;
+    invoke-virtual {v3}, Lcom/android/server/am/tsu;->Qa()Ljava/util/HashMap;
 
     move-result-object v4
 
     if-eqz v4, :cond_2
 
-    invoke-virtual {v3}, Lcom/android/server/am/tsu;->Pa()Ljava/util/HashMap;
+    invoke-virtual {v3}, Lcom/android/server/am/tsu;->Qa()Ljava/util/HashMap;
 
     move-result-object v4
 
@@ -2071,7 +2071,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v3}, Lcom/android/server/am/tsu;->Pa()Ljava/util/HashMap;
+    invoke-virtual {v3}, Lcom/android/server/am/tsu;->Qa()Ljava/util/HashMap;
 
     move-result-object v4
 
@@ -2100,7 +2100,7 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/server/am/B;
+    check-cast v5, Lcom/android/server/am/D;
 
     invoke-static {}, Lcom/android/server/am/AppRecordTransition;->getInstance()Lcom/android/server/am/AppRecordTransition;
 
@@ -2108,7 +2108,7 @@
 
     iget v7, v3, Lcom/android/server/am/tsu;->mUid:I
 
-    iget v8, v5, Lcom/android/server/am/B;->mPid:I
+    iget v8, v5, Lcom/android/server/am/D;->mPid:I
 
     invoke-virtual {v6, v7, v8}, Lcom/android/server/am/AppRecordTransition;->isPersistProcess(II)Z
 
@@ -2119,7 +2119,7 @@
     goto :goto_1
 
     :cond_4
-    invoke-virtual {v5}, Lcom/android/server/am/B;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/android/server/am/D;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2274,7 +2274,7 @@
 
     check-cast v1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {v1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/B;
+    invoke-virtual {v1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
 
     move-result-object v2
 
@@ -2744,7 +2744,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/B;
+    invoke-virtual {p1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
 
     move-result-object v0
 
@@ -3107,7 +3107,7 @@
 
     check-cast p0, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Qa()I
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ra()I
 
     move-result p0
 
@@ -3231,7 +3231,7 @@
 
     check-cast p0, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ra()I
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Sa()I
 
     move-result p0
 
@@ -3623,7 +3623,7 @@
 
     if-eqz p0, :cond_4
 
-    sget-boolean p0, Lcom/android/server/am/obl;->ar:Z
+    sget-boolean p0, Lcom/android/server/am/obl;->qr:Z
 
     if-eqz p0, :cond_4
 
@@ -3664,7 +3664,7 @@
 
     check-cast p0, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Sa()Z
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ta()Z
 
     move-result p0
 
@@ -3787,7 +3787,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Ua()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Va()V
 
     goto :goto_0
 
@@ -3823,7 +3823,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Va()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Wa()V
 
     goto :goto_0
 
@@ -4193,19 +4193,19 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ra()I
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Sa()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/B;
+    invoke-virtual {p0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/android/server/am/B;->bd()V
+    invoke-virtual {v0}, Lcom/android/server/am/D;->dd()V
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/tsu;->notePSSChanged(II)V
 
@@ -4371,7 +4371,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Wa()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Xa()V
 
     goto :goto_0
 
@@ -4419,7 +4419,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Xa()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->Ya()V
 
     goto :goto_0
 
@@ -4482,7 +4482,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ya()V
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Za()V
 
     return-void
 .end method
@@ -4494,7 +4494,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->Za()V
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->_a()V
 
     return-void
 .end method
@@ -4527,7 +4527,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->_a()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->ab()V
 
     goto :goto_0
 
@@ -4575,7 +4575,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->ab()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->bb()V
 
     goto :goto_0
 
@@ -4623,7 +4623,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->bb()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->db()V
 
     goto :goto_0
 
@@ -4686,7 +4686,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->db()V
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->eb()V
 
     return-void
 .end method
@@ -4698,7 +4698,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/tsu;->eb()V
+    invoke-virtual {p0}, Lcom/android/server/am/tsu;->fb()V
 
     return-void
 .end method
@@ -4731,7 +4731,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->fb()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->gb()V
 
     goto :goto_0
 
@@ -4838,7 +4838,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1}, Lcom/android/server/am/tsu;->gb()V
+    invoke-virtual {p1}, Lcom/android/server/am/tsu;->hb()V
 
     goto :goto_0
 
@@ -5015,7 +5015,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/am/tsu;->Pa()Ljava/util/HashMap;
+    invoke-virtual {v0}, Lcom/android/server/am/tsu;->Qa()Ljava/util/HashMap;
 
     move-result-object v2
 
@@ -5312,11 +5312,11 @@
 .method public schedulePerformPoll()V
     .locals 0
 
-    invoke-static {}, Lcom/android/server/lqr;->getInstance()Lcom/android/server/lqr;
+    invoke-static {}, Lcom/android/server/veq;->getInstance()Lcom/android/server/veq;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/lqr;->schedulePerformPoll()V
+    invoke-virtual {p0}, Lcom/android/server/veq;->schedulePerformPoll()V
 
     return-void
 .end method

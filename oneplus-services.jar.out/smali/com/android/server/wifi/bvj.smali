@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wifi/ire;->Cr()V
+    value = Lcom/android/server/wifi/ire;->Fr()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -69,7 +69,7 @@
 
     invoke-static {v2}, Lcom/android/server/wifi/ire;->zta(Ljava/io/FileDescriptor;)Ljava/io/FileDescriptor;
 
-    invoke-static {}, Lcom/android/server/wifi/ire;->Fe()Ljava/io/FileDescriptor;
+    invoke-static {}, Lcom/android/server/wifi/ire;->He()Ljava/io/FileDescriptor;
 
     move-result-object v2
 
@@ -157,7 +157,7 @@
 
     :cond_0
     :goto_0
-    invoke-static {}, Lcom/android/server/wifi/ire;->Fe()Ljava/io/FileDescriptor;
+    invoke-static {}, Lcom/android/server/wifi/ire;->He()Ljava/io/FileDescriptor;
 
     move-result-object v2
 
