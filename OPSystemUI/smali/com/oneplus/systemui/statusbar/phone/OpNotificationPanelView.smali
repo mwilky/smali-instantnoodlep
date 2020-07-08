@@ -16,6 +16,8 @@
 
 .field protected mLockIcon:Lcom/android/systemui/statusbar/phone/LockIcon;
 
+.field private mMonitorCallback:Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
+
 .field protected mNeedShowOTAWizard:Z
 
 .field private mNotificationAppearAnimation:Landroid/animation/AnimatorSet;
@@ -58,6 +60,12 @@
     invoke-direct {p1, p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView$1;-><init>(Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;)V
 
     iput-object p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->mUpdateCameraStateTimeout:Ljava/lang/Runnable;
+
+    new-instance p1, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView$5;
+
+    invoke-direct {p1, p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView$5;-><init>(Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;)V
+
+    iput-object p1, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->mMonitorCallback:Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
 
     sget-object p1, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->TAG:Ljava/lang/String;
 
@@ -118,6 +126,32 @@
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->notifyBarPanelExpansionChanged()V
 
     return-void
+.end method
+
+.method static synthetic access$500(Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;)Lcom/android/systemui/statusbar/phone/KeyguardAffordanceHelper;
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->getKeyguardAffordanceHelper()Lcom/android/systemui/statusbar/phone/KeyguardAffordanceHelper;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private getKeyguardAffordanceHelper()Lcom/android/systemui/statusbar/phone/KeyguardAffordanceHelper;
+    .locals 2
+
+    const-class v0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;
+
+    const-string v1, "mAffordanceHelper"
+
+    invoke-static {v0, p0, v1}, Lcom/oneplus/util/OpReflectionUtils;->getValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/android/systemui/statusbar/phone/KeyguardAffordanceHelper;
+
+    return-object p0
 .end method
 
 .method private getKeyguardClockPositionAlgorithm()Lcom/android/systemui/statusbar/phone/KeyguardClockPositionAlgorithm;
@@ -833,6 +867,42 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method protected onAttachedToWindow()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->onAttachedToWindow()V
+
+    iget-object v0, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->mMonitorCallback:Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
+
+    invoke-virtual {v0, p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->registerCallback(Lcom/android/keyguard/KeyguardUpdateMonitorCallback;)V
+
+    return-void
+.end method
+
+.method protected onDetachedFromWindow()V
+    .locals 1
+
+    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+
+    iget-object v0, p0, Landroid/widget/FrameLayout;->mContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpNotificationPanelView;->mMonitorCallback:Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
+
+    invoke-virtual {v0, p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->removeCallback(Lcom/android/keyguard/KeyguardUpdateMonitorCallback;)V
+
+    return-void
 .end method
 
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z

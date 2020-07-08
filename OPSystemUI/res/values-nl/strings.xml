@@ -293,7 +293,7 @@ Vliegtuigmodus inschakelen?"</string>
     <string name="alert_title_assisted_dialing">Begeleid bellen</string>
     <string name="allow_mock_location">Neplocaties toestaan</string>
     <string name="allow_mock_location_summary">Neplocaties toestaan</string>
-    <string name="allow_notification">Notificaties toestaan</string>
+    <string name="allow_notification">Meldingen toestaan</string>
     <string name="always_use_accessory">%1$s altijd openen wanneer %2$s is verbonden</string>
     <string name="always_use_device">%1$s altijd openen wanneer %2$s is verbonden</string>
     <string name="animator_duration_scale_title">Duur van animatieschaal</string>
@@ -566,6 +566,7 @@ Als je hervat, kunnen er kosten voor datagebruik in rekening worden gebracht."</
     <string name="development_settings_summary">Opties instellen voor appontwikkeling</string>
     <string name="development_settings_title">Ontwikkelaarsopties</string>
     <string name="device_services">Apparaatservices</string>
+    <string name="dialog_mhs_error">Even geduld tijdens het verifiëren..</string>
     <string name="direct_boot_unaware_dialog_message">Opmerking: Wanneer je telefoon opnieuw is opgestart, kan deze app pas worden gestart nadat je je telefoon hebt ontgrendeld</string>
     <string name="disable_carrier_button_text">Simkaart uitschakelen</string>
     <string name="disable_overlays">HW-overlays uitschakelen</string>
@@ -604,7 +605,7 @@ Als je hervat, kunnen er kosten voor datagebruik in rekening worden gebracht."</
     <string name="enable_terminal_summary">Terminal-app inschakelen die lokale shell-toegang biedt</string>
     <string name="enable_terminal_title">Lokale terminal</string>
     <string name="enabled_by_admin">Ingeschakeld door beheerder</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Beëindigen</string>
     <string name="error_disable_esim_msg">De e-simkaart kan niet worden uitgeschakeld vanwege een fout.</string>
     <string name="error_disable_esim_title">E-simkaart kan niet worden uitgeschakeld</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Probeer het over %2$d seconden opnieuw."</string>
     <string name="lockscreen_unlock_left">Snelkoppeling links ontgrendelt ook</string>
     <string name="lockscreen_unlock_right">Snelkoppeling rechts ontgrendelt ook</string>
     <string name="long_press_power_navigation_assist_content">"Houd de \"aan-uitknop\" 
-ingedrukt voor de assistent-app"</string>
+ingedrukt voor de spraakassistent"</string>
     <string name="long_press_power_navigation_power_content">Druk tegelijkertijd op de \"aan-uitknop\" en \"volume omhoog-knop\" om uit te schakelen</string>
     <string name="long_press_power_navigation_setting_button">Instellingen wijzigen</string>
     <string name="manage_bubbles_text">Beheren</string>
@@ -969,6 +970,8 @@ ingedrukt voor de assistent-app"</string>
     <string name="media_projection_remember_text">Niet opnieuw weergeven</string>
     <string name="media_transfer_this_device_name">Dit apparaat</string>
     <string name="menu_ime">Toetsenbordschakelaar</string>
+    <string name="mhs_app">Mijn Verizon openen</string>
+    <string name="mhs_call_back_error">Gegevensverbinding is niet beschikbaar.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobiele data</string>
@@ -985,6 +988,12 @@ De mobiele dataverbinding uitschakelen?"</string>
 De mobiele dataverbinding uitschakelen?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Mobiele hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Schakel de vliegtuigmodus uit om de hotspot in te schakelen</string>
+    <string name="mobile_hotspot_authoration_error">"Als u Mobiele hotspot wilt gebruiken, moet u zich abonneren op de Mobiele hotspot-diensten.
+
+Als u zich wilt abonneren op Mobiele hotspot, bezoekt u mijn Verizon of belt u de klantenservice op (800) 922-0204."</string>
+    <string name="mobile_hotspot_data_off_error">Schakel de mobiele gegevens in om de hotspot in te schakelen</string>
     <string name="mock_location_app">App voor neplocatie selecteren</string>
     <string name="mock_location_app_not_set">Geen app voor neplocatie ingesteld</string>
     <string name="mock_location_app_set">App voor neplocatie: %1$s</string>
@@ -1380,7 +1389,7 @@ Je bent ook verbonden met een VPN, waarmee je netwerkactiviteit kan worden gecon
     <string name="quick_settings_game_mode_demo_all">meldingen worden geblokkeerd en capacitieve knoppen wordt vergrendeld</string>
     <string name="quick_settings_game_mode_demo_button">capacitieve knoppen wordt vergrendeld</string>
     <string name="quick_settings_game_mode_demo_notification">meldingen worden geblokkeerd</string>
-    <string name="quick_settings_game_mode_label">Spelmodus</string>
+    <string name="quick_settings_game_mode_label">Gamemodus</string>
     <string name="quick_settings_game_mode_summary_off">Gamemodus uitgeschakeld, tik aan om in te schakelen</string>
     <string name="quick_settings_game_mode_summary_on">Gamemodus ingeschakeld, tik aan om uit te schakelen</string>
     <string name="quick_settings_header_onboarding_text">Tik op pictogrammen en houd ze vast voor meer opties</string>
@@ -1764,7 +1773,7 @@ Elke gebruiker kan apps updaten voor alle andere gebruikers."</string>
     <string name="volume_stream_content_description_vibrate">%1$s. Tik om in te stellen op trillen. Toegankelijkheidsservices kunnen zijn gedempt.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Tik om in te stellen op trillen.</string>
     <string name="volume_up_silent">"'Niet storen' afsluiten bij volume omhoog"</string>
-    <string name="volume_vibrate">Vibreren</string>
+    <string name="volume_vibrate">Trillen</string>
     <string name="volume_zen_end_now">Nu uitschakelen</string>
     <string name="vpn_footer">Netwerk kan worden gecontroleerd</string>
     <string name="vpn_settings_not_available">Instellingen voor VPN zijn niet beschikbaar voor deze gebruiker</string>

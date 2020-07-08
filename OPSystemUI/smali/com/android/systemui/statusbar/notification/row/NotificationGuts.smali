@@ -419,7 +419,7 @@
 .end method
 
 .method public closeControls(IIZZ)V
-    .locals 2
+    .locals 3
 
     const-class v0, Lcom/android/systemui/statusbar/notification/row/NotificationBlockingHelperManager;
 
@@ -433,35 +433,84 @@
 
     move-result v0
 
+    sget-boolean v1, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz v1, :cond_1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "closeControls app = "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->mGutsContent:Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v2}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;->getAppName()Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ","
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v2, 0xa
+
+    invoke-static {v2}, Landroid/os/Debug;->getCallers(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "NotificationGuts"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
-    if-nez v1, :cond_1
+    if-nez v1, :cond_3
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->mClosedListener:Lcom/android/systemui/statusbar/notification/row/NotificationGuts$OnGutsClosedListener;
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_2
 
     invoke-interface {p1, p0}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts$OnGutsClosedListener;->onGutsClosed(Lcom/android/systemui/statusbar/notification/row/NotificationGuts;)V
 
-    :cond_0
+    :cond_2
     return-void
 
-    :cond_1
+    :cond_3
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->mGutsContent:Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
     invoke-interface {v1, p3, p4}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;->handleCloseControls(ZZ)Z
 
     move-result p3
 
-    if-eqz p3, :cond_2
+    if-eqz p3, :cond_4
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
-    :cond_2
+    :cond_4
     xor-int/lit8 p3, v0, 0x1
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->animateClose(IIZ)V
@@ -474,11 +523,11 @@
 
     iget-object p1, p0, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->mClosedListener:Lcom/android/systemui/statusbar/notification/row/NotificationGuts$OnGutsClosedListener;
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_5
 
     invoke-interface {p1, p0}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts$OnGutsClosedListener;->onGutsClosed(Lcom/android/systemui/statusbar/notification/row/NotificationGuts;)V
 
-    :cond_3
+    :cond_5
     return-void
 .end method
 
@@ -542,6 +591,26 @@
     invoke-direct {p0, v0}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->drawableStateChanged(Landroid/graphics/drawable/Drawable;)V
 
     return-void
+.end method
+
+.method public getAppName()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->mGutsContent:Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;->getAppName()Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
 .end method
 
 .method public getGutsContent()Lcom/android/systemui/statusbar/notification/row/NotificationGuts$GutsContent;

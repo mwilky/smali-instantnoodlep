@@ -566,6 +566,7 @@
     <string name="development_settings_summary">Установити параметри для розробки програми</string>
     <string name="development_settings_title">Параметри розробника</string>
     <string name="device_services">Сервіси на пристрої</string>
+    <string name="dialog_mhs_error">Зачекайте, триває перевірка...</string>
     <string name="direct_boot_unaware_dialog_message">Примітка: щоб запустити цей додаток після перезавантаження, спершу потрібно буде розблокувати телефон</string>
     <string name="disable_carrier_button_text">Вимкнути eSIM-карту</string>
     <string name="disable_overlays">Вимк. апаратн. накладання</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">Увімк. програму-термінал, що надає локальний доступ до оболонки</string>
     <string name="enable_terminal_title">Локальний термінал</string>
     <string name="enabled_by_admin">Увімкнено адміністратором</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Завершити</string>
     <string name="error_disable_esim_msg">Не вдається вимкнути eSIM-карту через помилку.</string>
     <string name="error_disable_esim_title">Не вдається вимкнути eSIM-карту</string>
     <string name="ethernet_label">Ethernet</string>
@@ -629,7 +630,7 @@
     <string name="face_unlock_timeout">Забагато невдалих спроб. Повторіть спробу пізніше.</string>
     <string name="failed_to_open_app_settings_toast">Не вдалося відкрити налаштування для програми %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Торкніться сканера відбитків пальців</string>
-    <string name="fingerprint_not_found">Повторити</string>
+    <string name="fingerprint_not_found">Повторіть спробу</string>
     <string name="force_allow_on_external">Примусово записувати додатки в зовнішню пам’ять</string>
     <string name="force_allow_on_external_summary">Можна записувати додатки в зовнішню пам’ять, незалежно від значень у маніфесті</string>
     <string name="force_msaa">Примус. запустити 4x MSAA</string>
@@ -676,7 +677,7 @@
     <string name="high_temp_title">Телефон нагрівається</string>
     <string name="home">Головний екран налаштувань</string>
     <string name="hotspot_apm_message">"Увімкнений режим польоту блокує можливість встановлення з'єднання з мобільними мережами. Вимкніть режим польоту та повторіть спробу."</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Вставте SIM-картку, щоб скористатися мобільною точкою доступу та іншими функціями модема</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Вставте SIM-карту, щоб скористатися мобільною точкою доступу та іншими функціями модема</string>
     <string name="hotspot_operator_dialog_nosim_title">Відсутня SIM-картка</string>
     <string name="hotspot_operator_dialog_othererror_msg">Ви не оформили передплату на послугу модема через Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Помилка послуги модема через Wi-Fi</string>
@@ -716,7 +717,7 @@
     <string name="interruption_level_alarms_twoline">"Лише
 сигнали"</string>
     <string name="interruption_level_game">Гра</string>
-    <string name="interruption_level_movie">Відео</string>
+    <string name="interruption_level_movie">Фільм</string>
     <string name="interruption_level_music">Музика</string>
     <string name="interruption_level_none">Без сигналів</string>
     <string name="interruption_level_none_twoline">"Без
@@ -953,7 +954,7 @@
     <string name="lockscreen_unlock_left">Комбінація клавіш ліворуч також розблоковує</string>
     <string name="lockscreen_unlock_right">Комбінація клавіш праворуч також розблоковує</string>
     <string name="long_press_power_navigation_assist_content">"Натисніть і утримуйте \"кнопку живлення\" 
-, щоб відкрити додаток-помічник"</string>
+, щоб запустити голосовий помічник"</string>
     <string name="long_press_power_navigation_power_content">Одночасно натисніть \"кнопку живлення\" й \"кнопку збільшення гучності\", щоб вимкнути</string>
     <string name="long_press_power_navigation_setting_button">Змінити налаштування</string>
     <string name="manage_bubbles_text">Керувати</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">Більше не показувати</string>
     <string name="media_transfer_this_device_name">Цей пристрій</string>
     <string name="menu_ime">Вибір клавіатури</string>
+    <string name="mhs_app">Відкрити My Verizon</string>
+    <string name="mhs_call_back_error">Передавання даних недоступне.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Мобільний трафік</string>
@@ -985,6 +988,12 @@
 Вимкнути мобільні дані?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Мобільна точка доступу</string>
+    <string name="mobile_hotspot_airplane_off_error">Щоб увімкнути точку доступу, вимкніть режим \"У літаку\"</string>
+    <string name="mobile_hotspot_authoration_error">"Щоб скористатися мобільною точкою доступу, потрібно оформити передплату на цю службу.
+
+Щоб оформити передплату на точку доступу, відвідайте My Verizon або зверніться у сервісний центр за номером (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Щоб увімкнути точку доступу, увімкніть мобільні дані</string>
     <string name="mock_location_app">Вибрати додаток для фіктивних місцезнаходжень</string>
     <string name="mock_location_app_not_set">Додаток для фіктивних місцезнаходжень не вибрано</string>
     <string name="mock_location_app_set">Додаток для фіктивних місцезнаходжень: %1$s</string>
@@ -1071,7 +1080,7 @@
     <string name="music_controls_no_title">Без назви</string>
     <string name="nav_bar">Панель навігації</string>
     <string name="nav_bar_default">(за умовчанням)</string>
-    <string name="nav_bar_guide_positive">ГАРАЗД</string>
+    <string name="nav_bar_guide_positive">ЗРОЗУМІЛО</string>
     <string name="nav_bar_guide_title">Проведіть по екрану знизу догори, щоб відкрити панель навігації. Щоб вона відображалася постійно, торкніться тут.</string>
     <string name="nav_bar_layout">Макет</string>
     <string name="no_application">Нічого</string>
@@ -1140,10 +1149,10 @@
     <string name="ongoing_privacy_chip_content_single_app">Додаток %1$s використовує %2$s.</string>
     <string name="ongoing_privacy_dialog_last_separator">" і "</string>
     <string name="ongoing_privacy_dialog_separator">", "</string>
-    <string name="op_earphone_connect">Об’єднання в пару…</string>
+    <string name="op_earphone_connect">Створення пари…</string>
     <string name="op_earphone_connected_fail">Не вдалося створити пару. Перевірте гарнітуру та статус Bluetooth.</string>
-    <string name="op_earphone_connected_success">Пристрої об’єднано в пару. Торкніться, щоб переглянути додаткові налаштування.</string>
-    <string name="op_earphone_device">ТОРКНІТЬСЯ, ЩОБ ОБ’ЄДНАТИ В ПАРУ</string>
+    <string name="op_earphone_connected_success">Пару створено. Торкніться, щоб виконати інші налаштування.</string>
+    <string name="op_earphone_device">ТОРКНІТЬСЯ, ЩОБ СТВОРИТИ ПАРУ</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Проведіть пальцем униз, щоб перейти до екстрених служб</string>
     <string name="op_keyguard_indication_face_unlocked">Розблоковано за допомогою Face Unlock</string>
@@ -1380,7 +1389,7 @@
     <string name="quick_settings_game_mode_demo_all">сповіщення та ємнісні кнопки буде заблоковано</string>
     <string name="quick_settings_game_mode_demo_button">ємнісні кнопки буде заблоковано</string>
     <string name="quick_settings_game_mode_demo_notification">сповіщення буде заблоковано</string>
-    <string name="quick_settings_game_mode_label">Режим гри</string>
+    <string name="quick_settings_game_mode_label">Ігровий режим</string>
     <string name="quick_settings_game_mode_summary_off">Ігровий режим вимкнено. Торкніться, щоб увімкнути.</string>
     <string name="quick_settings_game_mode_summary_on">Ігровий режим увімкнено. Торкніться, щоб вимкнути.</string>
     <string name="quick_settings_header_onboarding_text">Утримуйте значки, щоб переглянути більше опцій</string>
@@ -1451,7 +1460,7 @@
     <string name="recents_deep_clean_option">Глибоке очищення</string>
     <string name="recents_empty_no_apps_open">Немає відкритих додатків</string>
     <string name="recents_empty_recently_closed">Нещодавно закриті додатки</string>
-    <string name="recents_normal_clean_description">Очистити список завдань і кеш, не завершуючи фонові процеси</string>
+    <string name="recents_normal_clean_description">Очистьте список завдань і кеш, не скасовуючи процеси, запущені у фоновому режимі.</string>
     <string name="recents_normal_clean_option">Звичайне очищення</string>
     <string name="recents_option_note">Ви можете змінити це в Налаштуваннях -> Розширені.</string>
     <string name="recents_option_title">Який спосіб ви бажаєте обрати?</string>

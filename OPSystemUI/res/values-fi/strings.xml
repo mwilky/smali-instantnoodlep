@@ -566,6 +566,7 @@ Jos jatkat käyttöä, datan käytöstä saatetaan periä maksuja."</string>
     <string name="development_settings_summary">Valitse sovellusten kehittämisasetukset</string>
     <string name="development_settings_title">Kehittäjäasetukset</string>
     <string name="device_services">Laitepalvelut</string>
+    <string name="dialog_mhs_error">Tarkistetaan, odota...</string>
     <string name="direct_boot_unaware_dialog_message">Huom. Jotta voit käynnistää tämän sovelluksen uudelleenkäynnistyksen jälkeen, sinun täytyy avata puhelimen lukitus.</string>
     <string name="disable_carrier_button_text">Poista eSIM käytöstä</string>
     <string name="disable_overlays">Poista HW-peittokuvat käytöstä</string>
@@ -604,7 +605,7 @@ Jos jatkat käyttöä, datan käytöstä saatetaan periä maksuja."</string>
     <string name="enable_terminal_summary">Ota käyttöön päätesov. joka mahdollistaa paikall. liittymäkäytön</string>
     <string name="enable_terminal_title">Paikallinen pääte</string>
     <string name="enabled_by_admin">Järjestelmänvalvojan sallima</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Lopeta</string>
     <string name="error_disable_esim_msg">Tapahtui virhe, eikä eSIMiä voitu poistaa käytöstä.</string>
     <string name="error_disable_esim_title">eSIMiä ei voi poistaa käytöstä</string>
     <string name="ethernet_label">Ethernet</string>
@@ -676,7 +677,7 @@ Kun puhelin on jäähtynyt, se toimii normaalisti."</string>
     <string name="high_temp_title">Puhelin lämpenee</string>
     <string name="home">Asetusten etusivu</string>
     <string name="hotspot_apm_message">Mobiiliverkkoihin ei voi yhdistää, kun lentotila on käytössä. Ota lentotila pois käytöstä ja yritä uudelleen.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Asenna SIM-kortti käyttääksesi mobiilihotspotia ja muita Internet-yhteyden jakamisvaihtoehtoja</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Asenna SIM-kortti käyttääksesi mobiili-hotspotia ja muita Internet-yhteyden jakamisvaihtoehtoja</string>
     <string name="hotspot_operator_dialog_nosim_title">Ei SIM-korttia</string>
     <string name="hotspot_operator_dialog_othererror_msg">Et ole tilannut Wi-Fi-yhteyden jakamista</string>
     <string name="hotspot_operator_dialog_othererror_title">Wi-Fi-yhteyden jakamisvirhe</string>
@@ -952,7 +953,7 @@ Yritä uudelleen %2$d sekunnin kuluttua."</string>
     <string name="lockscreen_shortcut_right">Oikea pikakuvake</string>
     <string name="lockscreen_unlock_left">Myös vasen pikakuvake avaa lukituksen</string>
     <string name="lockscreen_unlock_right">Myös oikea pikakuvake avaa lukituksen</string>
-    <string name="long_press_power_navigation_assist_content">"Avaa apusovellus painamalla \"virtapainiketta\"
+    <string name="long_press_power_navigation_assist_content">"Avaa Puheavustaja painamalla \"virtapainiketta\"
 pitkään"</string>
     <string name="long_press_power_navigation_power_content">Sammuta painamalla \"virtapainiketta\" ja \"äänenvoimakkuuden lisäyspainiketta\" yhtä aikaa</string>
     <string name="long_press_power_navigation_setting_button">Muuta asetuksia</string>
@@ -969,6 +970,8 @@ pitkään"</string>
     <string name="media_projection_remember_text">Älä näytä uudelleen</string>
     <string name="media_transfer_this_device_name">Tämä laite</string>
     <string name="menu_ime">Näppäimistövalitsin</string>
+    <string name="mhs_app">Avaa My Verizon</string>
+    <string name="mhs_call_back_error">Datasiirto ei ole käytettävissä.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobiilitiedonsiirto</string>
@@ -985,6 +988,12 @@ Kytketäänkö mobiilidatayhteys pois päältä?"</string>
 Kytketäänkö mobiilidatayhteys pois päältä?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobiili-hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Ota hotspot käyttöön poistamalla lentokonetila käytöstä</string>
+    <string name="mobile_hotspot_authoration_error">"Mobiili-hotspotin käyttöä varten on tilattava Mobile Hotspot -palvelu.
+
+Tilaa Mobile Hotspot -palvelu My Verizon -sovelluksessa tai soittamalla asiakaspalveluun numeroon (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Ota hotspot käyttöön ottamalla mobiilidata käyttöön</string>
     <string name="mock_location_app">Valitse valesijaintisovellus</string>
     <string name="mock_location_app_not_set">Valesijaintisovellusta ei ole valittu.</string>
     <string name="mock_location_app_set">Valesijaintisovellus: %1$s</string>
@@ -1199,7 +1208,7 @@ Olet myös yhteydessä VPN:ään, joka voi valvoa toimintaasi verkossa."</string
     <string name="overheat_dialog_purple_message">Puhelin sammutetaan 5 sekunnin kuluttua</string>
     <string name="overheat_dialog_red_message">Tyhjentää kaikki sovellusprosessit lämpötilan alentamiseksi</string>
     <string name="overheat_dialog_title">Puhelin on liian kuuma</string>
-    <string name="overheat_notification_alert">Puhelimesi lämpötila on liian korkea. Korkeat virrankuluttajatoiminnot sammutetaan lämpötilan alentamiseksi</string>
+    <string name="overheat_notification_alert">Puhelin on liian kuuma, ja paljon virtaa käyttävät toiminnot on poistettu käytöstä lämpötilan laskemiseksi</string>
     <string name="overheat_notification_resume">Puhelimen lämpötila on palautettu, ja puhelinta voi käyttää normaalisti</string>
     <string name="overheat_notification_title_resume">Puhelimen lämpötila on palautettu</string>
     <string name="overheat_toast_content">Puhelin on liian kuuma, ja paljon virtaa käyttävät toiminnot on poistettu käytöstä lämpötilan laskemiseksi</string>
@@ -1313,7 +1322,7 @@ Olet myös yhteydessä VPN:ään, joka voi valvoa toimintaasi verkossa."</string
     <string name="qs_rearrange">Järjestä pika-asetukset uudelleen</string>
     <string name="qs_status_phone_muted">Puhelin mykistetty</string>
     <string name="qs_status_phone_vibrate">Puhelin värinätilassa</string>
-    <string name="quick_launch_exit">Lopeta</string>
+    <string name="quick_launch_exit">Poistu</string>
     <string name="quick_launch_exit_hint">Poistu nostamalla sormi näytöltä</string>
     <string name="quick_reply">VASTAA</string>
     <string name="quick_settings">Pika-asetukset</string>
@@ -1764,7 +1773,7 @@ Kaikki käyttäjät voivat päivittää sovelluksia muille käyttäjille."</stri
     <string name="volume_stream_content_description_vibrate">%1$s. Siirry värinätilaan koskettamalla. Myös esteettömyyspalvelut saattavat mykistyä.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Siirry värinätilaan napauttamalla.</string>
     <string name="volume_up_silent">Poistu Älä häiritse -tilasta, kun äänenvoimakkuus nousee</string>
-    <string name="volume_vibrate">Värinä</string>
+    <string name="volume_vibrate">Värise</string>
     <string name="volume_zen_end_now">Sammuta nyt</string>
     <string name="vpn_footer">Verkkoa saatetaan valvoa</string>
     <string name="vpn_settings_not_available">Tämä käyttäjä ei voi käyttää VPN-asetuksia</string>

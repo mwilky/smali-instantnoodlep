@@ -565,6 +565,7 @@ Jeśli włączysz ją ponownie, może zostać naliczona opłata za użycie danyc
     <string name="development_settings_summary">Ustaw opcje związane z programowaniem aplikacji.</string>
     <string name="development_settings_title">Opcje programistyczne</string>
     <string name="device_services">Usługi urządzenia</string>
+    <string name="dialog_mhs_error">Poczekaj na zweryfikowanie...</string>
     <string name="direct_boot_unaware_dialog_message">Uwaga: po restarcie ta aplikacja będzie mogła uruchomić się dopiero po odblokowaniu telefonu</string>
     <string name="disable_carrier_button_text">Wyłącz eSIM</string>
     <string name="disable_overlays">Wyłącz nakładki HW</string>
@@ -603,7 +604,7 @@ Jeśli włączysz ją ponownie, może zostać naliczona opłata za użycie danyc
     <string name="enable_terminal_summary">Włącz terminal, który umożliwia dostęp do powłoki lokalnej</string>
     <string name="enable_terminal_title">Terminal lokalny</string>
     <string name="enabled_by_admin">Włączone przez administratora</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Zakończ</string>
     <string name="error_disable_esim_msg">Nie można wyłączyć karty eSIM z powodu błędu.</string>
     <string name="error_disable_esim_title">Nie można wyłączyć karty eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -952,7 +953,7 @@ Spróbuj ponownie za %2$d s."</string>
     <string name="lockscreen_unlock_left">Lewy skrót również odblokowuje</string>
     <string name="lockscreen_unlock_right">Prawy skrót również odblokowuje</string>
     <string name="long_press_power_navigation_assist_content">"Naciśnij i przytrzymaj \"przycisk zasilania\",
-aby uruchomić aplikację asystującą"</string>
+aby uruchomić asystenta głosowego"</string>
     <string name="long_press_power_navigation_power_content">Naciśnij równocześnie \"przycisk zasilania\" i \"przycisk zwiększania głośności\", aby wyłączyć zasilanie</string>
     <string name="long_press_power_navigation_setting_button">Zmień ustawienia</string>
     <string name="manage_bubbles_text">Zarządzaj</string>
@@ -968,6 +969,8 @@ aby uruchomić aplikację asystującą"</string>
     <string name="media_projection_remember_text">Nie pokazuj ponownie</string>
     <string name="media_transfer_this_device_name">To urządzenie</string>
     <string name="menu_ime">Przełączanie klawiatury</string>
+    <string name="mhs_app">Otwórz portal My Verizon</string>
+    <string name="mhs_call_back_error">Połączenie danych jest niedostępne.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Dane mobilne</string>
@@ -984,6 +987,12 @@ Wyłączyć połączenie danych mobilnych?"</string>
 Wyłączyć połączenie danych mobilnych?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobilny hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Aby włączyć hotspot, wyłącz tryb samolotowy</string>
+    <string name="mobile_hotspot_authoration_error">"Aby korzystać z mobilnego hotspotu, potrzebujesz subskrypcji powiązanych usług.
+
+Aby uzyskać subskrypcję usług mobilnego hotspotu, odwiedź portal My Verizon lub skontaktuj się z działem obsługi klienta pod numerem (800) 922-0204."</string>
+    <string name="mobile_hotspot_data_off_error">Aby włączyć hotspot, włącz dane mobilne</string>
     <string name="mock_location_app">Aplikacja do pozorowania lokalizacji</string>
     <string name="mock_location_app_not_set">Nie ustawiono aplikacji do pozorowania lokalizacji</string>
     <string name="mock_location_app_set">Aplikacja do pozorowania lokalizacji: %1$s</string>
@@ -1141,7 +1150,7 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
     <string name="ongoing_privacy_dialog_separator">", "</string>
     <string name="op_earphone_connect">Parowanie...</string>
     <string name="op_earphone_connected_fail">Nie udało się sparować. Możesz sprawdzić status słuchawek i Bluetooth.</string>
-    <string name="op_earphone_connected_success">Sparowano. Dotknij, aby ustawić więcej opcji.</string>
+    <string name="op_earphone_connected_success">Sparowano. Dotknij, aby ustawić więcej.</string>
     <string name="op_earphone_device">DOTKNIJ, ABY SPAROWAĆ</string>
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_indicator_hint_text">Przesuń palec w dół, aby skontaktować się ze służbami ratunkowymi</string>
@@ -1195,8 +1204,8 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
 2.Wyłączenie hotspotu
 3.Wyłączenie latarki"</string>
     <string name="overheat_dialog_purple_button">Wyłącz teraz</string>
-    <string name="overheat_dialog_purple_message">Telefon zostanie wyłączony po 5 sekundach</string>
-    <string name="overheat_dialog_red_message">Procesy aplikacji zostaną wyczyszczone, aby obniżyć temperaturę</string>
+    <string name="overheat_dialog_purple_message">Telefon wyłączy się po 5 sekundach</string>
+    <string name="overheat_dialog_red_message">Procesy aplikacji zostaną wyczyszczone, aby obniżyć temperaturę telefonu</string>
     <string name="overheat_dialog_title">Temperatura telefonu jest zbyt wysoka</string>
     <string name="overheat_notification_alert">Temperatura telefonu jest zbyt wysoka. Aby obniżyć temperaturę, wyłączono funkcje wysokiego zużycia energii</string>
     <string name="overheat_notification_resume">Prawidłowa temperatura telefonu została przywrócona i możesz normalnie z niego korzystać</string>
@@ -1450,7 +1459,7 @@ Oszczędzanie baterii"</string>
     <string name="recents_deep_clean_option">Głębokie czyszczenie</string>
     <string name="recents_empty_no_apps_open">Brak otwartych aplikacji</string>
     <string name="recents_empty_recently_closed">Ostatnio zamknięte aplikacje</string>
-    <string name="recents_normal_clean_description">Czyszczenie listy zadań i pamięci podręcznej bez czyszczenia procesów w tle.</string>
+    <string name="recents_normal_clean_description">Wyczyść listę zadań i pamięć podręczną bez czyszczenia procesów w tle.</string>
     <string name="recents_normal_clean_option">Zwykłe czyszczenie</string>
     <string name="recents_option_note">Możesz zmienić to w Ustawieniach -> Zaawansowane.</string>
     <string name="recents_option_title">Jaki sposób wolisz</string>

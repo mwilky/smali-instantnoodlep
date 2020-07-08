@@ -44,9 +44,10 @@ Hidupkan Mod Pesawat?"</string>
     <string name="continue_call">Teruskan</string>
     <string name="delete">Padam</string>
     <string name="denoise_notification">Pemberitahuan keutamaan rendah</string>
+    <string name="dialog_mhs_error">Sila Tunggu semasa mengesahkan..</string>
     <string name="drag_to_add_tiles">Seret untuk menambah jubin</string>
     <string name="edit_mode_hint">Seret jubin untuk menyusun semula. Ketik untuk paparkan atau sembunyikan.</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Tamatkan</string>
     <string name="face_unlock_camera_error">Buka Kunci Muka gagal, kamera sedang digunakan oleh aplikasi lain</string>
     <string name="face_unlock_fail">Tidak berjaya. Ketik di sini untuk cuba lagi</string>
     <string name="face_unlock_light_view_notify">Skrin menyala untuk membantu pengecaman muka.</string>
@@ -87,11 +88,13 @@ Jika telefon anda ditetapkan semula, anda perlu memasukkan maklumat akaun Google
     <string name="kg_wrong_pin_warning_one">Anda masih mempunyai 1 peluang</string>
     <string name="loading_text">Sedang memuat...</string>
     <string name="long_press_power_navigation_assist_content">"Tekan dan tahan \"butang kuasa\" 
-untuk Aplikasi Pembantu"</string>
+untuk Pembantu Suara"</string>
     <string name="long_press_power_navigation_power_content">Tekan \"butang kuasa\" dan \"butang tambah kelantangan\" secara serentak untuk mematikan kuasa</string>
     <string name="long_press_power_navigation_setting_button">Tetapan ubah suai</string>
     <string name="maxxaudio_disable">Lumpuhkan</string>
     <string name="maxxaudio_enable">Bolehkan</string>
+    <string name="mhs_app">Buka Verizon Saya</string>
+    <string name="mhs_call_back_error">Sambungan data tidak tersedia.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_data_off_alert">"Melainkan anda menggunakan Wi-Fi, anda tidak akan dapat menggunakan Internet, E-mel atau aplikasi lain yang memerlukan sambungan data.
 
@@ -100,7 +103,13 @@ Matikan sambungan data mudah alih?"</string>
 
 Matikan sambungan data mudah alih?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
-    <string name="nav_bar_guide_positive">SUDAH DAPAT</string>
+    <string name="mobile_hotspot">Hotspot Mudah Alih</string>
+    <string name="mobile_hotspot_airplane_off_error">Untuk menghidupkan Hotspot, sila matikan mod pesawat</string>
+    <string name="mobile_hotspot_authoration_error">"Untuk menggunakan Hotspot Mudah Alih, anda perlu melanggan Perkhidmatan Hotspot Mudah Alih.
+
+Untuk melanggan Hotspot Mudah Alih, kunjungi Verizon saya atau hubungi khidmat pelanggan di (800) 922-0204."</string>
+    <string name="mobile_hotspot_data_off_error">Untuk menghidupkan Hotspot, sila hidupkan Data mudah alih</string>
+    <string name="nav_bar_guide_positive">FAHAM</string>
     <string name="nav_bar_guide_title">Leret ke atas dari bawah untuk menunjukkan bar navigasi. Untuk berhenti menyembunyikan navigasi, sila ketik di sini.</string>
     <string name="non_op_earphone_notification_content">OnePlus menawarkan beberapa ciri baru bagi set kepala anda. Klik pada pemberitahuan untuk mencubanya.</string>
     <string name="non_op_earphone_notification_title">Petua</string>
@@ -223,7 +232,7 @@ Matikan sambungan data mudah alih?"</string>
     <string name="recents_deep_clean_option">Pembersihan dalam</string>
     <string name="recents_empty_no_apps_open">Tiada aplikasi terbuka</string>
     <string name="recents_empty_recently_closed">Aplikasi yang baru ditutup</string>
-    <string name="recents_normal_clean_description">Padamkan senarai tugas dan cache, tanpa memadamkan proses latar belakang.</string>
+    <string name="recents_normal_clean_description">Padamkan senarai tugas dan cache, tanpa proses memadamkan latar belakang.</string>
     <string name="recents_normal_clean_option">Pembersihan biasa</string>
     <string name="recents_option_note">Anda boleh ubah ini di Seting-> Lanjutan.</string>
     <string name="recents_option_title">Cara mana yang anda suka</string>

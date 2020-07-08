@@ -293,7 +293,7 @@ Vill du slå på flygplansläget?"</string>
     <string name="alert_title_assisted_dialing">Assisterad uppringning</string>
     <string name="allow_mock_location">Tillåt skenplatser</string>
     <string name="allow_mock_location_summary">Tillåt skenplatser</string>
-    <string name="allow_notification">Tillåt meddelanden</string>
+    <string name="allow_notification">Tillåt aviseringar</string>
     <string name="always_use_accessory">Öppna alltid %1$s när %2$s är ansluten</string>
     <string name="always_use_device">Öppna alltid %1$s när %2$s är ansluten</string>
     <string name="animator_duration_scale_title">Längdskala för Animator</string>
@@ -550,7 +550,7 @@ Om du fortsätter kan avgifter för dataanvändning tillkomma."</string>
     <string name="debug_monitoring_category">Övervakning</string>
     <string name="debug_networking_category">Nätverk</string>
     <string name="debug_view_attributes">Aktivera inspektion av visningsattribut</string>
-    <string name="delete">Ta bort</string>
+    <string name="delete">Radera</string>
     <string name="demo_mode">Demoläge för systemgränssnitt</string>
     <string name="denoise_notification">Lågprioritetsmeddelande</string>
     <string name="description_direction_left">Dra åt vänster för %s .</string>
@@ -566,6 +566,7 @@ Om du fortsätter kan avgifter för dataanvändning tillkomma."</string>
     <string name="development_settings_summary">Ange alternativ för apputveckling</string>
     <string name="development_settings_title">Utvecklaralternativ</string>
     <string name="device_services">Enhetstjänster</string>
+    <string name="dialog_mhs_error">Vänta tills verifieringen avslutas...</string>
     <string name="direct_boot_unaware_dialog_message">Obs! När du har startat om enheten måste du låsa upp mobilen innan du kan starta den här appen</string>
     <string name="disable_carrier_button_text">Inaktivera eSIM</string>
     <string name="disable_overlays">Inaktivera HW-överlagringar</string>
@@ -604,7 +605,7 @@ Om du fortsätter kan avgifter för dataanvändning tillkomma."</string>
     <string name="enable_terminal_summary">Aktivera en terminalapp som ger åtkomst till hyllor lokalt</string>
     <string name="enable_terminal_title">Lokal terminal</string>
     <string name="enabled_by_admin">Aktiverad av administratör</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Avsluta</string>
     <string name="error_disable_esim_msg">Det gick inte att inaktivera eSIM-kortet på grund av ett fel.</string>
     <string name="error_disable_esim_title">Det gick inte att inaktivera eSIM-kortet</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Försök igen om %2$d sekunder."</string>
     <string name="lockscreen_unlock_left">Lås även upp enheten med vänster genväg</string>
     <string name="lockscreen_unlock_right">Lås även upp enheten med höger genväg</string>
     <string name="long_press_power_navigation_assist_content">"Håll \"strömbrytaren\" 
-intryckt för att öppna assistentappen"</string>
+intryckt för att öppna röstassistenten"</string>
     <string name="long_press_power_navigation_power_content">Tryck på \"strömbrytaren\" och \"volymhöjningsknappen\" samtidigt för att stänga av</string>
     <string name="long_press_power_navigation_setting_button">Ändra inställningar</string>
     <string name="manage_bubbles_text">Hantera</string>
@@ -969,6 +970,8 @@ intryckt för att öppna assistentappen"</string>
     <string name="media_projection_remember_text">Visa inte igen</string>
     <string name="media_transfer_this_device_name">Den här enheten</string>
     <string name="menu_ime">Byt mellan meny/tangentbord</string>
+    <string name="mhs_app">Öppna My Verizon</string>
+    <string name="mhs_call_back_error">Dataanslutningen är inte tillgänglig.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s %2$s</string>
     <string name="mobile_data">Mobildata</string>
@@ -985,6 +988,12 @@ Vill du avbryta mobildataanslutningen?"</string>
 Vill du avbryta mobildataanslutningen?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Trådlös surfzon</string>
+    <string name="mobile_hotspot_airplane_off_error">Stäng av flygplansläge för att sätta på trådlös surfzon</string>
+    <string name="mobile_hotspot_authoration_error">"För att använda trådlös surfzon måste du prenumerera på tjänster för trådlös surfzon.
+
+Besök My Verizon eller ring kundtjänst på (800) 922–0204 för att prenumerera på trådlös surfzon."</string>
+    <string name="mobile_hotspot_data_off_error">Sätt på mobildata för att sätta på trådlös surfzon</string>
     <string name="mock_location_app">Välj app för påhittad plats</string>
     <string name="mock_location_app_not_set">Ingen app för påhittad plats har angetts</string>
     <string name="mock_location_app_set">App för påhittad plats: %1$s</string>
@@ -1298,7 +1307,7 @@ Du är även ansluten till ett VPN som kan övervaka nätverksaktivitet."</strin
     <string name="profile_owned_footer">Det kan hända att profilen övervakas</string>
     <string name="qr_bubble_hint">Tryck på bubblan för att läsa och svara på meddelanden</string>
     <string name="qr_portrait_hint">Snabbsvar är avstängt i stående</string>
-    <string name="qr_portrait_turn_on">SLÅ PÅ</string>
+    <string name="qr_portrait_turn_on">SÄTT PÅ</string>
     <string name="qs_dnd_keep">Behåll</string>
     <string name="qs_dnd_prompt_app">Stör ej aktiverades via en app (%s).</string>
     <string name="qs_dnd_prompt_auto_rule">Stör ej aktiverades via en automatisk regel (%s).</string>

@@ -248,7 +248,7 @@
     :cond_7
     new-array v2, v6, [I
 
-    const/16 v5, 0x112
+    const/16 v5, 0x114
 
     aput v5, v2, v7
 

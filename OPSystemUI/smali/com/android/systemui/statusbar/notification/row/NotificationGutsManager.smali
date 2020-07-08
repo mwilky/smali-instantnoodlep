@@ -897,13 +897,80 @@
 .method public openGuts(Landroid/view/View;IILcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;)Z
     .locals 9
 
+    sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz v0, :cond_1
+
+    instance-of v0, p1, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
+
+    if-eqz v0, :cond_1
+
+    move-object v0, p1
+
+    check-cast v0, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;
+
+    const-string v1, "NotificationGutsManager"
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->getGuts()Lcom/android/systemui/statusbar/notification/row/NotificationGuts;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "openGuts = "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/row/ExpandableNotificationRow;->getGuts()Lcom/android/systemui/statusbar/notification/row/NotificationGuts;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/notification/row/NotificationGuts;->getAppName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ","
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v0, 0xa
+
+    invoke-static {v0}, Landroid/os/Debug;->getCallers(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "can\'t get guts"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    :goto_0
     invoke-interface {p4}, Lcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;->getGutsView()Landroid/view/View;
 
     move-result-object v0
 
     instance-of v0, v0, Lcom/android/systemui/statusbar/notification/row/NotificationInfo;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/notification/row/NotificationGutsManager;->mStatusBarStateController:Lcom/android/systemui/plugins/statusbar/StatusBarStateController;
 
@@ -911,13 +978,13 @@
 
     const/4 v2, 0x1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_2
 
     check-cast v0, Lcom/android/systemui/statusbar/StatusBarStateControllerImpl;
 
     invoke-virtual {v0, v2}, Lcom/android/systemui/statusbar/StatusBarStateControllerImpl;->setLeaveOpenOnKeyguardHide(Z)V
 
-    :cond_0
+    :cond_2
     new-instance v0, Lcom/android/systemui/statusbar/notification/row/-$$Lambda$NotificationGutsManager$ujQD4EmV_laISDNVyhlRbAQC7J4;
 
     move-object v3, v0
@@ -950,7 +1017,7 @@
 
     return v2
 
-    :cond_1
+    :cond_3
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/android/systemui/statusbar/notification/row/NotificationGutsManager;->openGutsInternal(Landroid/view/View;IILcom/android/systemui/plugins/statusbar/NotificationMenuRowPlugin$MenuItem;)Z
 
     move-result p0

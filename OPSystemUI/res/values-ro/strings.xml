@@ -566,6 +566,7 @@ Dacă reluați, este posibil să se aplice taxe pentru utilizarea datelor."</str
     <string name="development_settings_summary">Setați opțiuni pentru dezvoltarea aplicației</string>
     <string name="development_settings_title">Opțiuni pentru dezvoltatori</string>
     <string name="device_services">Servicii pentru dispozitiv</string>
+    <string name="dialog_mhs_error">Așteptați, se fac verificări...</string>
     <string name="direct_boot_unaware_dialog_message">Notă: după repornire, această aplicație nu poate porni până nu deblocați telefonul</string>
     <string name="disable_carrier_button_text">Dezactivați cardul eSIM</string>
     <string name="disable_overlays">Dezactivați suprapun. HW</string>
@@ -604,7 +605,7 @@ Dacă reluați, este posibil să se aplice taxe pentru utilizarea datelor."</str
     <string name="enable_terminal_summary">Activați aplicația terminal care oferă acces la shell local</string>
     <string name="enable_terminal_title">Aplicație terminal locală</string>
     <string name="enabled_by_admin">Activat de administrator</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Terminare</string>
     <string name="error_disable_esim_msg">Cardul eSIM nu poate fi dezactivat din cauza unei erori.</string>
     <string name="error_disable_esim_title">Nu se poate dezactiva cardul eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -952,8 +953,8 @@ Dacă telefonul este resetat, nu îl veți putea utiliza decât după ce introdu
     <string name="lockscreen_shortcut_right">Comanda rapidă din dreapta</string>
     <string name="lockscreen_unlock_left">Comanda rapidă din stânga și deblochează</string>
     <string name="lockscreen_unlock_right">Comanda rapidă din dreapta și deblochează</string>
-    <string name="long_press_power_navigation_assist_content">"Țineți apăsat „butonul de pornire” 
-pentru aplicația Asistent"</string>
+    <string name="long_press_power_navigation_assist_content">"Țineți apăsat „butonul de pornire”
+pentru aplicația Asistent voce"</string>
     <string name="long_press_power_navigation_power_content">Apăsați simultan butoanele de „pornire” și de „creștere a volumului” pentru a opri aparatul</string>
     <string name="long_press_power_navigation_setting_button">Modificare setări</string>
     <string name="manage_bubbles_text">Gestionați</string>
@@ -969,6 +970,8 @@ pentru aplicația Asistent"</string>
     <string name="media_projection_remember_text">Nu se mai afișează</string>
     <string name="media_transfer_this_device_name">Acest dispozitiv</string>
     <string name="menu_ime">Comutator tastatură</string>
+    <string name="mhs_app">Deschidere My Verizon</string>
+    <string name="mhs_call_back_error">Conexiunea de date nu este disponibilă.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Date mobile</string>
@@ -985,6 +988,12 @@ Dezactivați conexiunea de date mobile?"</string>
 Dezactivați conexiunea de date mobile?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Punct de acces</string>
+    <string name="mobile_hotspot_airplane_off_error">Pentru a putea activa Punctul de acces, dezactivați modul avion</string>
+    <string name="mobile_hotspot_authoration_error">"Pentru a putea folosi Punctul de acces, trebuie să vă abonați la Servicii punct de acces.
+
+Pentru a vă abona la Punct de acces, accesați my verizon sau sunați la Asistență clienți, la numărul (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Pentru a putea activa Punctul de acces, activați datele mobile</string>
     <string name="mock_location_app">Selectați aplicația pentru locația de testare</string>
     <string name="mock_location_app_not_set">Nicio aplicație setată pentru locația de testare</string>
     <string name="mock_location_app_set">Aplicația pentru locația de testare: %1$s</string>
@@ -1130,7 +1139,7 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="oneplus_not_show">Nu afișa din nou</string>
     <string name="oneplus_screen_features_not_available_toast">Când sunt activate, caracteristicile precum calibrarea ecranului nu vor fi disponibile</string>
     <string name="oneplus_threekey_navigation_disturb_changed">S-a schimbat „Nu deranjați”!</string>
-    <string name="oneplus_threekey_navigation_next">URMĂTORUL</string>
+    <string name="oneplus_threekey_navigation_next">URMĂTOAREA</string>
     <string name="oneplus_threekey_navigation_silence">Silențios total</string>
     <string name="oneplus_threekey_navigation_slider_has_changed">Alert slider s-a schimbat!</string>
     <string name="oneplus_threekey_navigation_sound">Toate sunetele permise</string>
@@ -1162,7 +1171,7 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="op_notification_alert_title">Important</string>
     <string name="op_notification_channel_summary_low">Notificările mai puțin importante fără sunet sau vibrații.</string>
     <string name="op_notification_section_header_gentle">Alte notificări</string>
-    <string name="op_notification_silence_title">Altul</string>
+    <string name="op_notification_silence_title">Altele</string>
     <string name="op_quick_settings_night_display_label">Mod noapte</string>
     <string name="op_quick_settings_night_display_summary_off">Modul noapte este dezactivat, atingeți pentru a îl activa</string>
     <string name="op_quick_settings_night_display_summary_on">Modul noapte este activat, atingeți pentru a îl dezactiva</string>
@@ -1191,16 +1200,16 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Ieșire media</string>
     <string name="overheat_dialog_orange_button">Execută acum</string>
-    <string name="overheat_dialog_orange_message">"Se vor lua următoarele măsuri pentru a reduce temperatura
+    <string name="overheat_dialog_orange_message">"Operațiunile următoarele vor fi efectuate pentru a reduce temperatura
 1. Reduceți luminozitatea
 2. Dezactivați punctul de acces
 3. Dezactivați lanterna"</string>
     <string name="overheat_dialog_purple_button">Oprire acum</string>
     <string name="overheat_dialog_purple_message">Telefonul va fi oprit după 5 secunde</string>
-    <string name="overheat_dialog_red_message">Toate procesele de aplicație vor fi închise pentru a reduce temperatura</string>
-    <string name="overheat_dialog_title">Temperatura telefonului este prea mare</string>
+    <string name="overheat_dialog_red_message">Toate procesele aplicației vor fi eliminate pentru a scădea temperatura</string>
+    <string name="overheat_dialog_title">Temperatura telefonului dvs. este prea mare</string>
     <string name="overheat_notification_alert">Temperatura telefonului este prea mare, funcțiile cu consum mare de energie sunt dezactivate pentru a reduce temperatura</string>
-    <string name="overheat_notification_resume">Temperatura normală a fost restabilită, telefonul poate fi utilizat în mod normal</string>
+    <string name="overheat_notification_resume">Temperatura telefonului a fost restabilită, iar telefonul poate fi utilizat în mod normal</string>
     <string name="overheat_notification_title_resume">Temperatura telefonului a fost restabilită</string>
     <string name="overheat_toast_content">Temperatura telefonului dvs. este prea mare, iar funcțiile cu consum mare de energie sunt dezactivate pentru a reduce temperatura</string>
     <string name="overlay_display_devices_title">Simulați afișaje secundare</string>

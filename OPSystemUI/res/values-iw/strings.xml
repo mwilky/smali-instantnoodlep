@@ -566,6 +566,7 @@
     <string name="development_settings_summary">הגדרת אפשרויות לפיתוח אפליקציות</string>
     <string name="development_settings_title">אפשרויות מפתח</string>
     <string name="device_services">שירותים למכשיר</string>
+    <string name="dialog_mhs_error">נא להמתין בעוד המערכת מאמתת..</string>
     <string name="direct_boot_unaware_dialog_message">שים לב: לאחר הפעלה מחדש של המכשיר, ניתן להפעיל את האפליקציה רק לאחר שתבטל את נעילת הטלפון</string>
     <string name="disable_carrier_button_text">‏השבתת ה-eSIM</string>
     <string name="disable_overlays">‏השבת שכבות על של HW</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">הפעל אפליקציית מסוף המציעה גישה מקומית למעטפת</string>
     <string name="enable_terminal_title">מסוף מקומי</string>
     <string name="enabled_by_admin">מופעל על ידי מנהל המכשיר</string>
-    <string name="end_call">End</string>
+    <string name="end_call">סיים</string>
     <string name="error_disable_esim_msg">‏לא ניתן להשבית את כרטיס ה-eSIM עקב שגיאה.</string>
     <string name="error_disable_esim_title">‏לא ניתן להשבית את כרטיס ה-eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@
     <string name="lockscreen_unlock_left">קיצור דרך שמאלי גם מבטל נעילה</string>
     <string name="lockscreen_unlock_right">קיצור דרך ימני גם מבטל נעילה</string>
     <string name="long_press_power_navigation_assist_content">"לחץ והחזק את \"מקש ההפעלה\" 
-עבור יישום Assist"</string>
+עבור עוזר קולי"</string>
     <string name="long_press_power_navigation_power_content">לחץ את \"מקש ההפעלה\" ואת \"מקש הגברת עוצמת הקול\" בו זמנית כדי לכבות</string>
     <string name="long_press_power_navigation_setting_button">שנה את ההגדרות</string>
     <string name="manage_bubbles_text">ניהול</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">אל תציג שוב</string>
     <string name="media_transfer_this_device_name">המכשיר הזה</string>
     <string name="menu_ime">מחליף מקלדת</string>
+    <string name="mhs_app">פתח My Verizon</string>
+    <string name="mhs_call_back_error">חיבור נתונים אינו זמין.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">נתונים סלולריים</string>
@@ -985,6 +988,12 @@
 לכבות חיבור נתוני נייד?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s ‏— %2$s</string>
+    <string name="mobile_hotspot">נקודת גישה ניידת</string>
+    <string name="mobile_hotspot_airplane_off_error">כדי להפעיל את נקודת הגישה, נא לכבות מצב טיסה</string>
+    <string name="mobile_hotspot_authoration_error">"כדי להשתמש בנקודת גישה, יש צורך להירשם כמנוי לשירותי נקודת גישה.
+
+כדי להירשם לנקודת גישה יש לבקר ב- My Verizon או להתקשר לשירות לקוחות בטלפון ‏0204‏-922 ‏(800)."</string>
+    <string name="mobile_hotspot_data_off_error">כדי להפעיל את נקודת הגישה, נא להפעיל נתוני נייד</string>
     <string name="mock_location_app">בחר אפליקציה של מיקום מדומה</string>
     <string name="mock_location_app_not_set">לא הוגדרה אפליקציה של מיקום מדומה</string>
     <string name="mock_location_app_set">אפליקציה של מיקום מדומה: %1$s</string>
@@ -1127,7 +1136,7 @@
     <string name="ok">אישור</string>
     <string name="okay">אישור</string>
     <string name="oneplus_laboratory_added_toast">ברכות! מעבדת OnePlus נוספה להגדרות</string>
-    <string name="oneplus_not_show">אל תציג שוב</string>
+    <string name="oneplus_not_show">אל תציג הודעה זו שוב</string>
     <string name="oneplus_screen_features_not_available_toast">בעת הפעלת אפשרות זאת, תכונות כגון כיול מסך לא יהיו זמינות</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"מצב 'נא לא להפריע' השתנה!"</string>
     <string name="oneplus_threekey_navigation_next">הבא</string>
@@ -1298,7 +1307,7 @@
     <string name="profile_owned_footer">ייתכן שהפרופיל נתון למעקב</string>
     <string name="qr_bubble_hint">לקריאה ומענה על הודעות, הקש על הבועה</string>
     <string name="qr_portrait_hint">מענה מהיר מכובה בדיוקן</string>
-    <string name="qr_portrait_turn_on">הפעלה</string>
+    <string name="qr_portrait_turn_on">הפעל</string>
     <string name="qs_dnd_keep">שמירה</string>
     <string name="qs_dnd_prompt_app">"מצב 'נא לא להפריע' הופעל על ידי אפליקציה (%s)."</string>
     <string name="qs_dnd_prompt_auto_rule">"מצב 'נא לא להפריע' הופעל על ידי כלל אוטומטי (%s)."</string>
@@ -1448,7 +1457,7 @@
     <string name="recents_deep_clean_dialog_message">סריקה עמוקה תנקה את כל תהליכי הרקע, דבר שעשוי להוביל לתוצאות לא מכוונות. יישומים מסוימים עשויים להפסיק לפעול וייתכן שלא תקבל התראות עד שתפעיל אותם מחדש. אנא אשר.</string>
     <string name="recents_deep_clean_dialog_title">זהירות</string>
     <string name="recents_deep_clean_message">צא מכל היישומים</string>
-    <string name="recents_deep_clean_option">ניקוי עמוק</string>
+    <string name="recents_deep_clean_option">סריקה עמוקה</string>
     <string name="recents_empty_no_apps_open">אין יישומים פתוחים</string>
     <string name="recents_empty_recently_closed">יישומים שנסגרו לאחרונה</string>
     <string name="recents_normal_clean_description">נקה את רשימת המשימות ואת המטמון מבלי לנקות תהליכים ברקע.</string>
@@ -1801,12 +1810,12 @@
     <string name="wifi_verbose_logging">‏הפעלת רישום מפורט של Wi‑Fi ביומן</string>
     <string name="wifi_verbose_logging_summary">‏העלה את רמת הרישום של Wi‑Fi ביומן, הצג לכל SSID RSSI ב-Wi‑Fi Picker</string>
     <string name="window_animation_scale_title">קנה מידה לאנימציה של חלון</string>
-    <string name="work_life_balance_mode">איזון חיים/עבודה</string>
+    <string name="work_life_balance_mode">איזון חיים-עבודה</string>
     <string name="yes_bubbles">כן, זה בסדר</string>
     <string name="zen_alarm_warning">לא תשמע את ההתראה הבאה שלך %1$s</string>
     <string name="zen_alarm_warning_indef">לא תשמע את ההתראה הבאה שלך %1$s, אלא אם תשבית קודם את ההגדרה הזו</string>
     <string name="zen_alarms_introduction">כדי לא להפריע לך, המכשיר לא ירטוט ולא ישמיע שום צליל, חוץ מהתראות. המצב הזה לא ישפיע על צלילים שהם חלק מתוכן שבחרת להפעיל, כמו מוזיקה, סרטונים ומשחקים.</string>
-    <string name="zen_important_interruptions">התראות עדיפות</string>
+    <string name="zen_important_interruptions">עדיפות התראות</string>
     <string name="zen_interruption_level_all">כל ההתראות</string>
     <string name="zen_interruption_level_priority">עדיפות בלבד</string>
     <string name="zen_mode_and_condition">%1$s‏. %2$s</string>

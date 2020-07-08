@@ -566,6 +566,7 @@ Pokud jej obnovíte, mohou vám být účtovány poplatky za využití dat."</st
     <string name="development_settings_summary">Umožňuje nastavit možnosti pro vývoj aplikací</string>
     <string name="development_settings_title">Pro vývojáře</string>
     <string name="device_services">Služby zařízení</string>
+    <string name="dialog_mhs_error">Počkejte, probíhá ověřování...</string>
     <string name="direct_boot_unaware_dialog_message">Poznámka: Po restartování se tato aplikace nespustí, dokud telefon neodemknete.</string>
     <string name="disable_carrier_button_text">Deaktivovat eSIM kartu</string>
     <string name="disable_overlays">Zakázat hardwarové vrstvy</string>
@@ -604,7 +605,7 @@ Pokud jej obnovíte, mohou vám být účtovány poplatky za využití dat."</st
     <string name="enable_terminal_summary">Aktivovat terminálovou aplikaci pro místní přístup k prostředí shell</string>
     <string name="enable_terminal_title">Místní terminál</string>
     <string name="enabled_by_admin">Zapnuto administrátorem</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Ukončit</string>
     <string name="error_disable_esim_msg">eSIM kartu kvůli chybě nelze deaktivovat.</string>
     <string name="error_disable_esim_title">Nelze deaktivovat eSIM kartu</string>
     <string name="ethernet_label">Ethernet</string>
@@ -676,7 +677,7 @@ Až telefon vychladne, bude fungovat normálně."</string>
     <string name="high_temp_title">Telefon se zahřívá</string>
     <string name="home">Domovská stránka Nastavení</string>
     <string name="hotspot_apm_message">Při povolení režimu letadlo se nelze připojit k žádné mobilní síti. Vypněte režim letadlo a opakujte akci.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Vložte kartu SIM, abyste mohli používat Mobilní hotspot a další možnosti sdílení internetového připojení</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Vložte kartu SIM, abyste mohli používat mobilní hotspot a další možnosti sdílení internetového připojení</string>
     <string name="hotspot_operator_dialog_nosim_title">Žádná karta SIM</string>
     <string name="hotspot_operator_dialog_othererror_msg">Nejste přihlášeni ke sdílení Wi-Fi</string>
     <string name="hotspot_operator_dialog_othererror_title">Chyba sdílení Wi-Fi</string>
@@ -961,7 +962,7 @@ Zkuste to znovu za %2$d s."</string>
     <string name="lockscreen_unlock_left">Zkratka vlevo také odemyká</string>
     <string name="lockscreen_unlock_right">Zkratka vpravo také odemyká</string>
     <string name="long_press_power_navigation_assist_content">"Stisknutím a podržením \"tlačítka napájení\"
-otevřete asistenční aplikaci"</string>
+otevřete hlasového pomocníka"</string>
     <string name="long_press_power_navigation_power_content">Současným stisknutím a podržením \"tlačítka napájení\" a \"tlačítka zvýšení hlasitosti\" vypnete zařízení</string>
     <string name="long_press_power_navigation_setting_button">Změnit nastavení</string>
     <string name="manage_bubbles_text">Spravovat</string>
@@ -977,6 +978,8 @@ otevřete asistenční aplikaci"</string>
     <string name="media_projection_remember_text">Tuto zprávu příště nezobrazovat</string>
     <string name="media_transfer_this_device_name">Toto zařízení</string>
     <string name="menu_ime">Přepínač klávesnice</string>
+    <string name="mhs_app">Otevřít aplikaci My Verizon</string>
+    <string name="mhs_call_back_error">Datové připojení není k dispozici.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobilní data</string>
@@ -993,6 +996,12 @@ Vypnout mobilní datové připojení?"</string>
 Vypnout mobilní datové připojení?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Chcete-li zapnout hotspot, vypněte nejprve režim letadlo</string>
+    <string name="mobile_hotspot_authoration_error">"Chcete-li používat hotspot, musíte si předplatit služby hotspotu.
+
+Chcete-li si předplatit hotspot, navštivte aplikaci My Verizon nebo zavolejte na zákaznickou linku na čísle (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Chcete-li zapnout hotspot, zapněte mobilní data</string>
     <string name="mock_location_app">Vybrat aplikaci k simulování polohy</string>
     <string name="mock_location_app_not_set">Aplikace k simulování polohy není nastavena</string>
     <string name="mock_location_app_set">Aplikace k simulování polohy: %1$s</string>
@@ -1198,8 +1207,8 @@ Jste také připojeni k síti VPN, která může sledovat vaši aktivitu v sí
     <string name="output_service_bt_wifi">Bluetooth a Wi-Fi</string>
     <string name="output_service_wifi">Wi-Fi</string>
     <string name="output_title">Výstup médií</string>
-    <string name="overheat_dialog_orange_button">Provést nyní</string>
-    <string name="overheat_dialog_orange_message">"Ke snížení teploty provedeme tyto akce
+    <string name="overheat_dialog_orange_button">Spustit nyní</string>
+    <string name="overheat_dialog_orange_message">"Ke snížení teploty provedeme tyto operace:
 1. Snížení jasu
 2. Vypnutí hotspotu
 3. Vypnutí svítilny"</string>

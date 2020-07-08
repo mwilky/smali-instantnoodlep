@@ -566,6 +566,7 @@ Hvis du fortsætter, bliver du muligvis opkrævet betaling for dit dataforbrug."
     <string name="development_settings_summary">Konfigurer valgmuligheder for appudvikling</string>
     <string name="development_settings_title">Indstillinger for udviklere</string>
     <string name="device_services">Enhedstjenester</string>
+    <string name="dialog_mhs_error">Vent, mens der bekræftes...</string>
     <string name="direct_boot_unaware_dialog_message">Bemærk! Efter en genstart kan denne app ikke starte, før du låser din telefon op</string>
     <string name="disable_carrier_button_text">Deaktiver eSIM</string>
     <string name="disable_overlays">Deaktiver HW-overlejring</string>
@@ -604,7 +605,7 @@ Hvis du fortsætter, bliver du muligvis opkrævet betaling for dit dataforbrug."
     <string name="enable_terminal_summary">Aktivér terminalappen, der giver lokal shell-adgang</string>
     <string name="enable_terminal_title">Lokal terminal</string>
     <string name="enabled_by_admin">Aktiveret af administratoren</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Afslut</string>
     <string name="error_disable_esim_msg">eSIM kan ikke deaktiveres på grund af en fejl.</string>
     <string name="error_disable_esim_title">eSIM kan ikke deaktiveres</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Prøv igen om %2$d sekunder."</string>
     <string name="lockscreen_unlock_left">Venstre genvej låser også op</string>
     <string name="lockscreen_unlock_right">Højre genvej låser også op</string>
     <string name="long_press_power_navigation_assist_content">"Tryk og hold på \"tænd/sluk-knappen\" 
-for at åbne assistentappen"</string>
+for at åbne stemmeassistent"</string>
     <string name="long_press_power_navigation_power_content">Tryk på \"tænd/sluk-knappen\" og \"lydstyrke op-knappen\" samtidigt for at slukke</string>
     <string name="long_press_power_navigation_setting_button">Rediger indstillinger</string>
     <string name="manage_bubbles_text">Administrer</string>
@@ -969,6 +970,8 @@ for at åbne assistentappen"</string>
     <string name="media_projection_remember_text">Vis ikke igen</string>
     <string name="media_transfer_this_device_name">Denne enhed</string>
     <string name="menu_ime">Tastaturskifter</string>
+    <string name="mhs_app">Åbn My Verizon</string>
+    <string name="mhs_call_back_error">Dataforbindelse er ikke tilgængelig.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobildata</string>
@@ -985,6 +988,12 @@ Sluk for mobildataforbindelsen?"</string>
 Sluk for mobildataforbindelsen?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobilt hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Deaktiver flytilstand for at slå hotspot til</string>
+    <string name="mobile_hotspot_authoration_error">"Hvis du vil bruge mobilt hotspot, skal du abonnere på tjenesterne for mobilt hotspot.
+
+Hvis du vil abonnere på mobilt hotspot, skal du gå til My Verizon eller ringe til kundeservice på (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Aktivér mobildata for at slå hotspot til</string>
     <string name="mock_location_app">Vælg app til falsk placering</string>
     <string name="mock_location_app_not_set">Der er ikke angivet nogen app til falsk placering</string>
     <string name="mock_location_app_set">App til falsk placering: %1$s</string>
@@ -1128,7 +1137,7 @@ Du har også forbindelse til et VPN, som kan overvåge din netværksaktivitet."<
     <string name="okay">OK</string>
     <string name="oneplus_laboratory_added_toast">Tillykke! OnePlus-laboratoriet er blevet føjet til Indstillinger</string>
     <string name="oneplus_not_show">Vis ikke dette igen</string>
-    <string name="oneplus_screen_features_not_available_toast">Når slået til vil funktioner som skærmkalibrering ikke være tilgængelig</string>
+    <string name="oneplus_screen_features_not_available_toast">Når de er slået til, vil funktioner som skærmkalibrering ikke være tilgængelige</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'Må ikke forstyrres' er ændret!"</string>
     <string name="oneplus_threekey_navigation_next">NÆSTE</string>
     <string name="oneplus_threekey_navigation_silence">Total stilhed</string>
@@ -1298,7 +1307,7 @@ Du har også forbindelse til et VPN, som kan overvåge din netværksaktivitet."<
     <string name="profile_owned_footer">Profilen kan overvåges</string>
     <string name="qr_bubble_hint">Tryk på boblen for at læse og svare på beskeder</string>
     <string name="qr_portrait_hint">Hurtigt svar er slået fra i stående</string>
-    <string name="qr_portrait_turn_on">SLÅ TIL</string>
+    <string name="qr_portrait_turn_on">TÆNDE</string>
     <string name="qs_dnd_keep">Behold</string>
     <string name="qs_dnd_prompt_app">Tilstanden Forstyr ikke blev aktiveret af en app (%s).</string>
     <string name="qs_dnd_prompt_auto_rule">Tilstanden Forstyr ikke blev aktiveret af en automatisk regel (%s).</string>
@@ -1448,7 +1457,7 @@ Batterisparefunktion"</string>
     <string name="recents_deep_clean_dialog_message">Dybdegående rengøring sletter alle baggrundsprocesser, som kan føre til utilsigtede resultater. Nogle apps vil muligvis holde op med at fungere og vil ikke modtage meddelelser, til du genstarter dem. Du bedes bekræfte.</string>
     <string name="recents_deep_clean_dialog_title">Forsigtig</string>
     <string name="recents_deep_clean_message">Afslut alle programmer</string>
-    <string name="recents_deep_clean_option">Dybdegående sletning</string>
+    <string name="recents_deep_clean_option">Dybdegående rengøring</string>
     <string name="recents_empty_no_apps_open">Ingen åbne applikationer</string>
     <string name="recents_empty_recently_closed">Nyligt lukkede apps</string>
     <string name="recents_normal_clean_description">Ryd opgavelisten og cachen uden at slette baggrundsprocesser.</string>

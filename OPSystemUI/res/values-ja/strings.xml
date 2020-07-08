@@ -566,6 +566,7 @@
     <string name="development_settings_summary">アプリ開発オプションを設定する</string>
     <string name="development_settings_title">開発者向けオプション</string>
     <string name="device_services">デバイス サービス</string>
+    <string name="dialog_mhs_error">検証中、しばらくお待ちください...</string>
     <string name="direct_boot_unaware_dialog_message">注: 再起動後、スマートフォンのロックを解除するまでこのアプリを起動することはできません</string>
     <string name="disable_carrier_button_text">eSIM を無効にする</string>
     <string name="disable_overlays">HWオーバーレイを無効化</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">ローカルシェルアクセスを提供するターミナルアプリを有効にします</string>
     <string name="enable_terminal_title">ローカルターミナル</string>
     <string name="enabled_by_admin">管理者が有効にしました</string>
-    <string name="end_call">End</string>
+    <string name="end_call">終了する</string>
     <string name="error_disable_esim_msg">エラーのため、eSIM を無効にできません。</string>
     <string name="error_disable_esim_title">eSIM を無効にできません</string>
     <string name="ethernet_label">イーサネット</string>
@@ -676,7 +677,7 @@
     <string name="high_temp_title">スマートフォンの温度が上昇中</string>
     <string name="home">設定のホーム</string>
     <string name="hotspot_apm_message">機内モード有効時はモバイルネットワークに接続できません。機能モードを無効にして、もう一度やり直してください。</string>
-    <string name="hotspot_operator_dialog_nosim_msg">モバイルホットスポットや他のテザリングオプションを使用するには、SIM カードを挿入してください</string>
+    <string name="hotspot_operator_dialog_nosim_msg">SIM カードを挿入して、モバイルホットスポットと他のテザリングオプションを使用</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM カードはありません</string>
     <string name="hotspot_operator_dialog_othererror_msg">WiFi テザリングにサブスクライブされていません</string>
     <string name="hotspot_operator_dialog_othererror_title">WiFi テザリングエラー</string>
@@ -952,7 +953,8 @@
     <string name="lockscreen_shortcut_right">右ショートカット</string>
     <string name="lockscreen_unlock_left">左ショートカットでもロックを解除</string>
     <string name="lockscreen_unlock_right">右ショートカットでもロックを解除</string>
-    <string name="long_press_power_navigation_assist_content">アシスタントアプリを使用するには、「電源ボタン」を長押ししてください</string>
+    <string name="long_press_power_navigation_assist_content">"音声アシスタントを使用するには、
+「電源ボタン」を長押ししてください"</string>
     <string name="long_press_power_navigation_power_content">電源をオフにするには、「電源ボタン」と「音量大ボタン」を同時に押してください</string>
     <string name="long_press_power_navigation_setting_button">設定を変更</string>
     <string name="manage_bubbles_text">管理</string>
@@ -968,6 +970,8 @@
     <string name="media_projection_remember_text">次回から表示しない</string>
     <string name="media_transfer_this_device_name">このデバイス</string>
     <string name="menu_ime">キーボードを切り替え</string>
+    <string name="mhs_app">My Verizon を開く</string>
+    <string name="mhs_call_back_error">データ接続は使用できません.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s、%2$s</string>
     <string name="mobile_data">モバイルデータ</string>
@@ -984,6 +988,12 @@
 モバイルデータ接続をオフにしますか？"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">モバイルホットスポット</string>
+    <string name="mobile_hotspot_airplane_off_error">ホットスポットをオンにするには、機内モードをオフにしてください</string>
+    <string name="mobile_hotspot_authoration_error">"モバイルホットスポットを使用するには、モバイルホットスポットサービスに登録する必要があります。
+
+モバイルホットスポットに登録するには、My Verizon にアクセスするか、カスタマーケア（ （800）922–0204）までお電話でお問い合わせください。"</string>
+    <string name="mobile_hotspot_data_off_error">ホットスポットをオンにするには、モバイルデータをオフにしてください</string>
     <string name="mock_location_app">仮の現在地情報アプリを選択</string>
     <string name="mock_location_app_not_set">仮の現在地情報アプリが設定されていません</string>
     <string name="mock_location_app_set">仮の現在地情報アプリ: %1$s</string>
@@ -1450,7 +1460,7 @@
     <string name="recents_deep_clean_option">ディープクリア</string>
     <string name="recents_empty_no_apps_open">最近開いたアプリケーションはありません</string>
     <string name="recents_empty_recently_closed">最近閉じたアプリ</string>
-    <string name="recents_normal_clean_description">バックグラウンド処理を消去しないでタスクリストとキャッシュを消去します。</string>
+    <string name="recents_normal_clean_description">バックグランドプロセスを終了することなく、タスクリストとキャッシュを消去します。</string>
     <string name="recents_normal_clean_option">通常のクリア</string>
     <string name="recents_option_note">これは、設定 -> 詳細設定で変更することができます。</string>
     <string name="recents_option_title">お好きな方法をお選びください</string>
@@ -1558,7 +1568,7 @@
     <string name="show_silently">通知をポップアップで知らせる</string>
     <string name="show_touches">タップを表示</string>
     <string name="show_touches_summary">タップを視覚表示する</string>
-    <string name="sim_status_uss_network_roam">ローミング</string>
+    <string name="sim_status_uss_network_roam">ローム</string>
     <string name="simulate_color_space">色空間シミュレート</string>
     <string name="slice_permission_allow">許可</string>
     <string name="slice_permission_checkbox">すべてのアプリのスライスを表示することを「%1$s」に許可する</string>

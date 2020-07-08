@@ -293,7 +293,7 @@
     <string name="alert_title_assisted_dialing">Потпомогнато повикување</string>
     <string name="allow_mock_location">Овозможи лажни локации</string>
     <string name="allow_mock_location_summary">Овозможи лажни локации</string>
-    <string name="allow_notification">Дозволи известувања</string>
+    <string name="allow_notification">Дозволи ги сите известувања</string>
     <string name="always_use_accessory">Секогаш отворај ја %1$s кога е поврзан %2$s</string>
     <string name="always_use_device">Секогаш отворај ја %1$s кога е поврзан %2$s</string>
     <string name="animator_duration_scale_title">Скала за времетраење на аниматор</string>
@@ -566,6 +566,7 @@
     <string name="development_settings_summary">Постави опции за развој на апликација</string>
     <string name="development_settings_title">Програмерски опции</string>
     <string name="device_services">Услуги за уредот</string>
+    <string name="dialog_mhs_error">Почекајте, се проверува...</string>
     <string name="direct_boot_unaware_dialog_message">Забелешка: по рестартирање, апликацијава не може да се вклучи додека не го отклучите телефонот</string>
     <string name="disable_carrier_button_text">Оневозможи ја eSIM</string>
     <string name="disable_overlays">Оневозможи HW преклопувања</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">Овозможи апликација на терминал што овозможува локален пристап кон школка.</string>
     <string name="enable_terminal_title">Локален терминал</string>
     <string name="enabled_by_admin">Овозможено од администраторот</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Прекини</string>
     <string name="error_disable_esim_msg">eSIM-картичката не може да се оневозможи поради грешка.</string>
     <string name="error_disable_esim_title">Не може да се оневозможи eSIM</string>
     <string name="ethernet_label">Етернет</string>
@@ -953,7 +954,7 @@
     <string name="lockscreen_unlock_left">Левата кратенка исто така отклучува</string>
     <string name="lockscreen_unlock_right">Десната кратенка исто така отклучува</string>
     <string name="long_press_power_navigation_assist_content">"Притиснете и држете на \" копчето за вклучување\" 
-за апликацијата Помошник"</string>
+за Гласовен помошник"</string>
     <string name="long_press_power_navigation_power_content">Истовремено притиснете ги \"копчето за вклучување\" и \"копчето за појачување на звукот\" за да исклучите</string>
     <string name="long_press_power_navigation_setting_button">Модифицирај ги поставките</string>
     <string name="manage_bubbles_text">Управување</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">Не покажувај повторно</string>
     <string name="media_transfer_this_device_name">Овој уред</string>
     <string name="menu_ime">Менувач на тастатура</string>
+    <string name="mhs_app">Отвори My Verizon</string>
+    <string name="mhs_call_back_error">Не се достапни податоци за поврзувањето.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Мобилен интернет</string>
@@ -985,6 +988,12 @@
 Дали да се исклучи поврзувањето преку мобилен интернет?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s - %2$s</string>
+    <string name="mobile_hotspot">Мобилен хотспот</string>
+    <string name="mobile_hotspot_airplane_off_error">За да вклучите хотспот, исклучете го режимот за патување со авион</string>
+    <string name="mobile_hotspot_authoration_error">"За да користите мобилен хотспот, ќе треба да се претплатите на услугите за мобилен хотспот.
+
+За да се претплатите на мобилен хотспот, посетете го my verizon или јавете се на корисничката поддршка на (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">За да вклучите хотспот, вклучете го мобилниот интернет</string>
     <string name="mock_location_app">Изберете апликација за лажна локација</string>
     <string name="mock_location_app_not_set">Нема поставено апликација за лажна локација</string>
     <string name="mock_location_app_set">Апликација за лажна локација: %1$s</string>
@@ -1128,7 +1137,7 @@ YИсто така, поврзани сте на VPN којашто може д�
     <string name="okay">Во ред</string>
     <string name="oneplus_laboratory_added_toast">Честитаме! Лабораторијата на OnePlus е додадена во Поставки</string>
     <string name="oneplus_not_show">Не прикажувај го ова пак</string>
-    <string name="oneplus_screen_features_not_available_toast">Кога се вклучени, функциите како што е калибрацијата на екранот, нема да бидат достапни</string>
+    <string name="oneplus_screen_features_not_available_toast">Кога се вклучени, функциите, како калибрацијата на екранот, нема да бидат достапни</string>
     <string name="oneplus_threekey_navigation_disturb_changed">Сменета е состојбата „Не вознемирувај“!</string>
     <string name="oneplus_threekey_navigation_next">СЛЕДНО</string>
     <string name="oneplus_threekey_navigation_silence">Целосна тишина</string>
@@ -1199,7 +1208,7 @@ YИсто така, поврзани сте на VPN којашто може д�
     <string name="overheat_dialog_purple_message">Телефонот ќе се исклучи по 5 секунди</string>
     <string name="overheat_dialog_red_message">Ќе ги исклучиме процесите на сите апликации за температурата да се намали</string>
     <string name="overheat_dialog_title">Температурата на телефонот е превисока</string>
-    <string name="overheat_notification_alert">Температурата на телефонот е превисока, за да се спушти ќе бидат исклучени функциите што трошат многу енергија</string>
+    <string name="overheat_notification_alert">Температурата на телефонот е превисока, ќе бидат исклучени функциите што трошат многу енергија за да се спушти</string>
     <string name="overheat_notification_resume">Температурата на телефонот е спуштена и сега можете да го употребувате нормално</string>
     <string name="overheat_notification_title_resume">Температурата на телефонот е спуштена</string>
     <string name="overheat_toast_content">temperature of the phone is too high</string>
@@ -1298,7 +1307,7 @@ YИсто така, поврзани сте на VPN којашто може д�
     <string name="profile_owned_footer">Профилот можеби се следи</string>
     <string name="qr_bubble_hint">Допрете на меурчето за да ги читате и да одговорите на пораките</string>
     <string name="qr_portrait_hint">Брзиот одговор е исклучен во портрет</string>
-    <string name="qr_portrait_turn_on">АКТИВИРАЈ</string>
+    <string name="qr_portrait_turn_on">ВКЛУЧИ</string>
     <string name="qs_dnd_keep">Задржи</string>
     <string name="qs_dnd_prompt_app">Една апликација (%s) ја вклучи „Не вознемирувај“.</string>
     <string name="qs_dnd_prompt_auto_rule">Едно автоматско правило (%s) ја вклучи „Не вознемирувај“.</string>
@@ -1764,7 +1773,7 @@ YИсто така, поврзани сте на VPN којашто може д�
     <string name="volume_stream_content_description_vibrate">%1$s. Допрете за да поставите на вибрации. Можеби ќе се исклучи звукот на услугите за достапност.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Допрете за да се постави на вибрации.</string>
     <string name="volume_up_silent">Излези од „Не вознемирувај“ при зголемување на звукот</string>
-    <string name="volume_vibrate">Вибрирај</string>
+    <string name="volume_vibrate">Вибрации</string>
     <string name="volume_zen_end_now">Исклучи сега</string>
     <string name="vpn_footer">Мрежата може да се следи</string>
     <string name="vpn_settings_not_available">Поставките за ВПН не се достапни за овој корисник</string>

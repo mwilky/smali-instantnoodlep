@@ -566,6 +566,7 @@ Devam ettirirseniz veri kullanımı için sizden ödeme alınabilir."</string>
     <string name="development_settings_summary">Uygulama geliştirme için seçenekleri ayarla</string>
     <string name="development_settings_title">Geliştirici seçenekleri</string>
     <string name="device_services">Cihaz Hizmetleri</string>
+    <string name="dialog_mhs_error">Doğrulanırken lütfen bekleyin..</string>
     <string name="direct_boot_unaware_dialog_message">Not: Yeniden başlatma sonrasında, telefonunuzun kilidi açılıncaya kadar bu uygulama başlatılamaz</string>
     <string name="disable_carrier_button_text">"eSIM'i devre dışı bırak"</string>
     <string name="disable_overlays">Donanım katmanlarını devre dışı bırak</string>
@@ -604,7 +605,7 @@ Devam ettirirseniz veri kullanımı için sizden ödeme alınabilir."</string>
     <string name="enable_terminal_summary">Yerel kabuk erişimi sunan terminal uygulamasını etkinleştir</string>
     <string name="enable_terminal_title">Yerel terminal</string>
     <string name="enabled_by_admin">Yönetici tarafından etkinleştirildi</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Sonlandır</string>
     <string name="error_disable_esim_msg">Bir hata nedeniyle eSIM devre dışı bırakılamıyor.</string>
     <string name="error_disable_esim_title">eSIM devre dışı bırakılamıyor</string>
     <string name="ethernet_label">Ethernet</string>
@@ -952,7 +953,7 @@ Telefonunuz sıfırlanırsa, tekrar kullanabilmek için bu telefonla ilişkilend
     <string name="lockscreen_shortcut_right">Sağ kısayol</string>
     <string name="lockscreen_unlock_left">Sol kısayol aynı zamanda kilidi açar</string>
     <string name="lockscreen_unlock_right">Sağ kısayol aynı zamanda kilidi açar</string>
-    <string name="long_press_power_navigation_assist_content">"Yardım uygulaması için \"güç düğmesini\" 
+    <string name="long_press_power_navigation_assist_content">"Sesli Yardımcı için \"güç düğmesini\" 
 basılı tutun"</string>
     <string name="long_press_power_navigation_power_content">Kapatmak için \"güç düğmesine\" ve \"ses artırma düğmesine\" aynı anda basın</string>
     <string name="long_press_power_navigation_setting_button">Ayarları değiştir</string>
@@ -969,6 +970,8 @@ basılı tutun"</string>
     <string name="media_projection_remember_text">Bir daha gösterme</string>
     <string name="media_transfer_this_device_name">Bu cihaz</string>
     <string name="menu_ime">Klavye değiştirici</string>
+    <string name="mhs_app">My Verizon uygulamasını aç</string>
+    <string name="mhs_call_back_error">Veri bağlantısı kullanılamıyor.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%2$s, %1$s</string>
     <string name="mobile_data">Mobil veriler</string>
@@ -985,6 +988,12 @@ Mobil veri bağlantısı kapatılsın mı?"</string>
 Mobil veri bağlantısı kapatılsın mı?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Mobil Ortak Erişim Noktası</string>
+    <string name="mobile_hotspot_airplane_off_error">Ortak Erişim Noktasını açmak için, lütfen uçak modunu kapatın</string>
+    <string name="mobile_hotspot_authoration_error">"Mobil Ortak Erişim Noktasını kullanmak için, Mobil Ortak Erişim Noktası Servislerine abone olmanız gerekir.
+
+Mobil Ortak Erişim Noktasına abone olmak için, My Verizon sitesini ziyaret edin veya (800) 922–0204 numaralı telefondan müşteri hizmetlerini arayın."</string>
+    <string name="mobile_hotspot_data_off_error">Ortak Erişim Noktasını açmak için, lütfen Mobil veriyi açın</string>
     <string name="mock_location_app">Sahte konum uygulamasını seç</string>
     <string name="mock_location_app_not_set">Sahte konum uygulaması ayarlanmadı</string>
     <string name="mock_location_app_set">Sahte konum uygulaması: %1$s</string>
@@ -1127,7 +1136,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="ok">Tamam</string>
     <string name="okay">Tamam</string>
     <string name="oneplus_laboratory_added_toast">Tebrikler! OnePlus Laboratuvar Ayarlara eklendi</string>
-    <string name="oneplus_not_show">Bunu tekrar gösterme</string>
+    <string name="oneplus_not_show">Bunu bir daha gösterme</string>
     <string name="oneplus_screen_features_not_available_toast">Açık durumdayken, ekran ayarlama gibi özellikler kullanılamaz</string>
     <string name="oneplus_threekey_navigation_disturb_changed">"'Rahatsız Etmeyin' değişti!"</string>
     <string name="oneplus_threekey_navigation_next">İLERİ</string>
@@ -1191,9 +1200,9 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="output_service_wifi">Kablosuz</string>
     <string name="output_title">Medya çıkışı</string>
     <string name="overheat_dialog_orange_button">Şimdi uygula</string>
-    <string name="overheat_dialog_orange_message">"Sıcaklığı düşürmek için şu işlemler uygulanacak
+    <string name="overheat_dialog_orange_message">"Sıcaklığı düşürmek için aşağıdaki işlemler uygulanacak
 1.Parlaklığı azalt
-2.Ortak erişim noktasını kapat
+2.Etkin noktayı kapat
 3.El fenerini kapat"</string>
     <string name="overheat_dialog_purple_button">Şimdi kapat</string>
     <string name="overheat_dialog_purple_message">Telefon 5 saniye sonra kapatılacak</string>
@@ -1313,7 +1322,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="qs_rearrange">"Hızlı Ayarlar'ı Yeniden Düzenle"</string>
     <string name="qs_status_phone_muted">Telefonun sesi kapalı</string>
     <string name="qs_status_phone_vibrate">Telefonun titreşimi açık</string>
-    <string name="quick_launch_exit">Çıkış</string>
+    <string name="quick_launch_exit">Çık</string>
     <string name="quick_launch_exit_hint">Çıkmak için parmağınızı ekrandan kaldırın</string>
     <string name="quick_reply">YANIT</string>
     <string name="quick_settings">Hızlı Ayarlar</string>
@@ -1386,7 +1395,7 @@ Ayrıca, ağ etkinliğinizi izleyebilen bir VPN'ye de bağlısınız."</string>
     <string name="quick_settings_header_onboarding_text">Daha fazla seçenek için simgelere dokunun ve basılı tutun</string>
     <string name="quick_settings_hotspot_label">Hotspot</string>
     <string name="quick_settings_hotspot_no_password">Açık ağ</string>
-    <string name="quick_settings_hotspot_password">Şifre</string>
+    <string name="quick_settings_hotspot_password">Parola</string>
     <string name="quick_settings_hotspot_secondary_label_data_saver_enabled">Veri Tasarrufu açık</string>
     <string name="quick_settings_hotspot_secondary_label_transient">Açılıyor…</string>
     <string name="quick_settings_hotspot_secure_lock">Parolanızı görmek için cihaz kilidini açın</string>
@@ -1451,7 +1460,7 @@ Pil tasarrufu"</string>
     <string name="recents_deep_clean_option">Derin temizlik</string>
     <string name="recents_empty_no_apps_open">Hiç açık uygulama yok</string>
     <string name="recents_empty_recently_closed">En son kapatılan uygulamalar</string>
-    <string name="recents_normal_clean_description">Arka plan işlemlerini silmeden görev listesini ve önbelleği temizleyin.</string>
+    <string name="recents_normal_clean_description">Arka plan işlemlerini temizlemeden görev listesini ve önbelleği temizleyin.</string>
     <string name="recents_normal_clean_option">Normal temizleme</string>
     <string name="recents_option_note">Bu özelliği Ayarlar -> Gelişmiş seçeneklerini kullanarak değiştirebilirsiniz.</string>
     <string name="recents_option_title">Hangi yolu tercih edersiniz?</string>

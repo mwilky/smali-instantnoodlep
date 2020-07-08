@@ -566,6 +566,7 @@ Nëse vazhdon, mund të zbatohen tarifa për përdorimin e të dhënave."</strin
     <string name="development_settings_summary">Cakto opsionet për zhvillimin e aplikacionit</string>
     <string name="development_settings_title">Opsionet e zhvilluesit</string>
     <string name="device_services">Shërbimet e pajisjes</string>
+    <string name="dialog_mhs_error">Ju lutemi prisni ndërsa bëhet verifikimi..</string>
     <string name="direct_boot_unaware_dialog_message">Shënim: Pas një rinisjeje, ky aplikacion nuk mund të niset derisa të shkyçësh telefonin</string>
     <string name="disable_carrier_button_text">Çaktivizo kartën eSIM</string>
     <string name="disable_overlays">Çaktivizo mbishtresimin e HW-së</string>
@@ -604,7 +605,7 @@ Nëse vazhdon, mund të zbatohen tarifa për përdorimin e të dhënave."</strin
     <string name="enable_terminal_summary">Aktivizo aplikacionin terminal që ofron qasje në guaskën lokale</string>
     <string name="enable_terminal_title">Terminali lokal</string>
     <string name="enabled_by_admin">Aktivizuar nga administratori</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Fund</string>
     <string name="error_disable_esim_msg">Karta eSIM nuk mund të çaktivizohet për shkak të një gabimi.</string>
     <string name="error_disable_esim_title">Karta eSIM nuk mund të çaktivizohet</string>
     <string name="ethernet_label">Eternet</string>
@@ -953,7 +954,7 @@ Provo sërish për %2$d sekonda."</string>
     <string name="lockscreen_unlock_left">Shkurtorja majtas shkyç po ashtu</string>
     <string name="lockscreen_unlock_right">Shkurtorja djathtas shkyç po ashtu</string>
     <string name="long_press_power_navigation_assist_content">"Shtypni dhe mbani shtypur \"butonin e energjisë\" 
-për aplikacionin Assist"</string>
+për asistentin me zë"</string>
     <string name="long_press_power_navigation_power_content">Shtypni njëkohësisht \"butonin e energjisë\" dhe \"butonin e rritjes së volumit\" për ta fikur</string>
     <string name="long_press_power_navigation_setting_button">Modifiko cilësimet</string>
     <string name="manage_bubbles_text">Menaxho</string>
@@ -969,6 +970,8 @@ për aplikacionin Assist"</string>
     <string name="media_projection_remember_text">Mos e shfaq sërish</string>
     <string name="media_transfer_this_device_name">Kjo pajisje</string>
     <string name="menu_ime">Ndërruesi i tastierës</string>
+    <string name="mhs_app">Hapni My Verizon</string>
+    <string name="mhs_call_back_error">Lidhja e internetit celular nuk është e disponueshme.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s %2$s</string>
     <string name="mobile_data">Të dhënat celulare</string>
@@ -985,6 +988,12 @@ Doni të çaktivizoni lidhjen e internetit celular?"</string>
 Doni të çaktivizoni lidhjen e internetit celular?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s - %2$s</string>
+    <string name="mobile_hotspot">Hotspoti celular</string>
+    <string name="mobile_hotspot_airplane_off_error">Për të aktivizuar hotspotin, ju lutemi çaktivizoni modalitetin e aeroplanit</string>
+    <string name="mobile_hotspot_authoration_error">"Për të përdorur hotspotin celular, duhet të abonoheni në shërbimet e hotspotit celular.
+
+Për t'u abonuar në hotspotin celular, vizitoni My Verizon ose telefononi kujdesin ndaj klientit në (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Për të aktivizuar hotspotin, ju lutemi aktivizoni internetin celular</string>
     <string name="mock_location_app">Zgjidh apl. që simulon vendndodhjen</string>
     <string name="mock_location_app_not_set">Nuk është vendosur asnjë aplikacion që simulon vendndodhjen</string>
     <string name="mock_location_app_set">Aplikacioni për simulimin e vendndodhjes: %1$s</string>

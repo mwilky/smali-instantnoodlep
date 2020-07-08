@@ -621,7 +621,7 @@
 
     new-array v2, v1, [I
 
-    const/16 v3, 0x10a
+    const/16 v3, 0x10b
 
     aput v3, v2, v0
 
@@ -1397,7 +1397,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x12a
+    const/16 v2, 0x12c
 
     aput v2, v0, v1
 
@@ -1527,7 +1527,7 @@
 
     new-array v0, v1, [I
 
-    const/16 v3, 0x103
+    const/16 v3, 0x104
 
     aput v3, v0, v2
 
@@ -1980,7 +1980,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x137
+    const/16 v2, 0x139
 
     aput v2, v0, v1
 
@@ -2012,7 +2012,7 @@
 
     new-array v1, v0, [I
 
-    const/16 v3, 0x14b
+    const/16 v3, 0x14d
 
     aput v3, v1, v2
 
@@ -2080,7 +2080,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x10a
+    const/16 v2, 0x10b
 
     aput v2, v0, v1
 
@@ -2210,7 +2210,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x11a
+    const/16 v2, 0x11c
 
     aput v2, v0, v1
 
@@ -2421,7 +2421,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0xe0
+    const/16 v2, 0xe1
 
     aput v2, v0, v1
 
@@ -2604,7 +2604,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x12c
+    const/16 v2, 0x12e
 
     aput v2, v0, v1
 

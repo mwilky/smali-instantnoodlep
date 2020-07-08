@@ -597,7 +597,7 @@
 
     invoke-interface {v2, v3, v0}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->setIconVisibility(Ljava/lang/String;Z)V
 
-    const/16 v2, 0xe5
+    const/16 v2, 0xe6
 
     const/4 v3, 0x1
 

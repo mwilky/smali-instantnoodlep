@@ -1618,7 +1618,7 @@
 
     new-array v6, v1, [I
 
-    const/16 v7, 0xe5
+    const/16 v7, 0xe6
 
     aput v7, v6, v2
 

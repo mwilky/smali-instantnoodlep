@@ -550,7 +550,7 @@ Ak ho znovu zapnete, môžu vám byť účtované poplatky za spotrebu dát."</s
     <string name="debug_monitoring_category">Monitorovanie</string>
     <string name="debug_networking_category">Siete</string>
     <string name="debug_view_attributes">Kontrola atribútov zobrazenia</string>
-    <string name="delete">Vymazať</string>
+    <string name="delete">Odstrániť</string>
     <string name="demo_mode">Ukážka používateľského rozhrania systému</string>
     <string name="denoise_notification">Upozornenie s nízkou prioritou</string>
     <string name="description_direction_left">Prejdite prstom doľava: %s.</string>
@@ -566,6 +566,7 @@ Ak ho znovu zapnete, môžu vám byť účtované poplatky za spotrebu dát."</s
     <string name="development_settings_summary">Možnosti nastavenia vývoja aplikácií</string>
     <string name="development_settings_title">Pre vývojárov</string>
     <string name="device_services">Služby zariadenia</string>
+    <string name="dialog_mhs_error">Počkajte, kým prebieha overovanie...</string>
     <string name="direct_boot_unaware_dialog_message">Poznámka: Po reštartovaní sa táto aplikácia spustí až vtedy, keď odomknete telefón</string>
     <string name="disable_carrier_button_text">Zakázať eSIM kartu</string>
     <string name="disable_overlays">Zakázať hardvérové prekrytia</string>
@@ -604,7 +605,7 @@ Ak ho znovu zapnete, môžu vám byť účtované poplatky za spotrebu dát."</s
     <string name="enable_terminal_summary">Povoliť terminálovú apl. na miestny prístup k prostrediu shell</string>
     <string name="enable_terminal_title">Miestny terminál</string>
     <string name="enabled_by_admin">Povolené správcom</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Ukončiť</string>
     <string name="error_disable_esim_msg">eSIM karta sa nedá deaktivovať, pretože sa vyskytla chyba.</string>
     <string name="error_disable_esim_title">eSIM karta sa nedá deaktivovať</string>
     <string name="ethernet_label">Ethernet</string>
@@ -952,7 +953,7 @@ Skúste to znova o %2$d s."</string>
     <string name="lockscreen_shortcut_right">Pravá skratka</string>
     <string name="lockscreen_unlock_left">Ľavá skratka tiež odomkne</string>
     <string name="lockscreen_unlock_right">Pravá skratka tiež odomkne</string>
-    <string name="long_press_power_navigation_assist_content">"Na otvorenie asistenčnej aplikácie stlačte a podržte \"tlačidlo napájania\" 
+    <string name="long_press_power_navigation_assist_content">"Na otvorenie Hlasového asistenta stlačte a podržte \"tlačidlo napájania\" 
 "</string>
     <string name="long_press_power_navigation_power_content">Na vypnutie súčasne stlačte \"tlačidlo napájania\" a \"tlačidlo zvýšenia hlasitosti\"</string>
     <string name="long_press_power_navigation_setting_button">Upraviť nastavenia</string>
@@ -969,6 +970,8 @@ Skúste to znova o %2$d s."</string>
     <string name="media_projection_remember_text">Nabudúce nezobrazovať</string>
     <string name="media_transfer_this_device_name">Toto zariadenie</string>
     <string name="menu_ime">Prepínač klávesnice</string>
+    <string name="mhs_app">Otvoriť aplikáciu My Verizon</string>
+    <string name="mhs_call_back_error">Dátové pripojenie nie je k dispozícii.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobilné dáta</string>
@@ -985,6 +988,12 @@ Vypnúť mobilné dátové pripojenie?"</string>
 Vypnúť mobilné dátové pripojenie?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobilný hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">Na zapnutie hotspotu vypnite najprv režim lietadlo</string>
+    <string name="mobile_hotspot_authoration_error">"Ak chcete používať Mobilný hotspot, musíte si predplatiť služby Mobilného hotspotu.
+
+Ak si chcete predplatiť Mobilný hotspot navštívte pobočku spoločnosti Verizon alebo zavolajte na zákaznícku linku na čísle (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Na zapnutie hotspotu zapnite mobilné dáta</string>
     <string name="mock_location_app">Vybrať aplikáciu na simuláciu polohy</string>
     <string name="mock_location_app_not_set">Žiadna aplikácia na simuláciu polohy</string>
     <string name="mock_location_app_set">Aplikácia na simuláciu polohy: %1$s</string>
@@ -1451,7 +1460,7 @@ Máte tiež aktívne pripojenie k sieti VPN, ktorá môže sledovať vašu akti
     <string name="recents_deep_clean_option">Dôkladné vyčistenie</string>
     <string name="recents_empty_no_apps_open">Nie sú otvorené žiadne aplikácie</string>
     <string name="recents_empty_recently_closed">Naposledy zatvorené aplikácie</string>
-    <string name="recents_normal_clean_description">Vymaže zoznam úloh a medzipamäť, bez vyčistenia procesov na pozadí.</string>
+    <string name="recents_normal_clean_description">Vymaže zoznam úloh a pamäť cache, bez vyčistenia procesov na pozadí.</string>
     <string name="recents_normal_clean_option">Normálne vyčistenie</string>
     <string name="recents_option_note">Toto môžete zmeniť prejdením do ponuky Nastavenia -> Rozšírené.</string>
     <string name="recents_option_title">Aký spôsob preferujete?</string>

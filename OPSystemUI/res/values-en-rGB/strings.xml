@@ -566,6 +566,7 @@ If you resume, charges may apply for data usage."</string>
     <string name="development_settings_summary">Set options for app development</string>
     <string name="development_settings_title">Developer options</string>
     <string name="device_services">Device Services</string>
+    <string name="dialog_mhs_error">Please wait while verifying...</string>
     <string name="direct_boot_unaware_dialog_message">"Note: After a reboot, this app can't start until you unlock your phone"</string>
     <string name="disable_carrier_button_text">Disable eSIM</string>
     <string name="disable_overlays">Disable HW overlays</string>
@@ -952,8 +953,8 @@ Try again in %2$d seconds."</string>
     <string name="lockscreen_shortcut_right">Right shortcut</string>
     <string name="lockscreen_unlock_left">Left shortcut also unlocks</string>
     <string name="lockscreen_unlock_right">Right shortcut also unlocks</string>
-    <string name="long_press_power_navigation_assist_content">"Press and hold \"power button\" 
-for Assist App"</string>
+    <string name="long_press_power_navigation_assist_content">"Press and hold the \"power button\" 
+for Voice Assistant"</string>
     <string name="long_press_power_navigation_power_content">Press \"power button\" and \"volume up button\" simultaneously to power off</string>
     <string name="long_press_power_navigation_setting_button">Modify settings</string>
     <string name="manage_bubbles_text">Manage</string>
@@ -969,6 +970,8 @@ for Assist App"</string>
     <string name="media_projection_remember_text">"Don't show again"</string>
     <string name="media_transfer_this_device_name">This device</string>
     <string name="menu_ime">Keyboard switcher</string>
+    <string name="mhs_app">Open My Verizon</string>
+    <string name="mhs_call_back_error">Data connection is not available.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobile data</string>
@@ -985,6 +988,12 @@ Turn off the mobile data connection?"</string>
 Turn off the mobile data connection?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobile Hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">To turn on Hotspot, please turn off flight mode</string>
+    <string name="mobile_hotspot_authoration_error">"To use Mobile Hotspot, you will need to subscribe to the Mobile Hotspot Services.
+
+To subscribe to Mobile Hotspot, visit My Verizon or call customer care at (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">To turn on Hotspot, please turn on mobile data</string>
     <string name="mock_location_app">Select mock location app</string>
     <string name="mock_location_app_not_set">No mock location app set</string>
     <string name="mock_location_app_set">Mock location app: %1$s</string>
@@ -1199,7 +1208,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="overheat_dialog_purple_message">The phone will be powered off after 5 seconds</string>
     <string name="overheat_dialog_red_message">All application processes will be cleared to lower the temperature</string>
     <string name="overheat_dialog_title">The temperature of your phone is too high</string>
-    <string name="overheat_notification_alert">The temperature of your phone is too high. High power consuming functions are turned off to lower the temperature</string>
+    <string name="overheat_notification_alert">The temperature of your phone is too high and high power-consuming functions are turned off to lower the temperature</string>
     <string name="overheat_notification_resume">"The phone's temperature has been restored and the phone can be used normally"</string>
     <string name="overheat_notification_title_resume">"The phone's temperature has been restored"</string>
     <string name="overheat_toast_content">The temperature of your phone is too high. High power consumption functions have been turned off to lower the temperature</string>

@@ -5512,14 +5512,6 @@
 
     iget-boolean v3, v3, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->alwaysShowNetworkTypeIcon:Z
 
-    if-nez v3, :cond_15
-
-    iget-object v3, v0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mFiveGState:Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;
-
-    invoke-virtual {v3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->isConnectedOnSaMode()Z
-
-    move-result v3
-
     if-eqz v3, :cond_14
 
     goto :goto_e
@@ -5575,14 +5567,6 @@
     if-nez v7, :cond_19
 
     iget-boolean v3, v3, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->alwaysShowNetworkTypeIcon:Z
-
-    if-nez v3, :cond_19
-
-    iget-object v3, v0, Lcom/android/systemui/statusbar/policy/MobileSignalController;->mFiveGState:Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;
-
-    invoke-virtual {v3}, Lcom/android/systemui/statusbar/policy/FiveGServiceClient$FiveGServiceState;->isConnectedOnSaMode()Z
-
-    move-result v3
 
     if-eqz v3, :cond_18
 

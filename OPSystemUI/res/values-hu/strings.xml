@@ -566,6 +566,7 @@ Ha a folytatást választja, szolgáltatója adathasználati díjat számíthat 
     <string name="development_settings_summary">Alkalmazásfejlesztési beállítások megadása</string>
     <string name="development_settings_title">Fejlesztői beállítások</string>
     <string name="device_services">Eszközszolgáltatások</string>
+    <string name="dialog_mhs_error">Kérjük, várjon az azonosításra..</string>
     <string name="direct_boot_unaware_dialog_message">Megjegyzés: Újraindítás után ez az alkalmazás csak a telefon feloldását követően indul el</string>
     <string name="disable_carrier_button_text">Az e-SIM-kártya letiltása</string>
     <string name="disable_overlays">HW fedvények letiltása</string>
@@ -604,7 +605,7 @@ Ha a folytatást választja, szolgáltatója adathasználati díjat számíthat 
     <string name="enable_terminal_summary">Végalkalmazás engedélyezése a helyi rendszerhéj eléréséhez</string>
     <string name="enable_terminal_title">Helyi végpont</string>
     <string name="enabled_by_admin">A rendszergazda bekapcsolta</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Befejezés</string>
     <string name="error_disable_esim_msg">Hiba történt, így az eSIM-et nem lehet letiltani.</string>
     <string name="error_disable_esim_title">Nem lehet letiltani az eSIM-et</string>
     <string name="ethernet_label">Ethernet</string>
@@ -952,8 +953,8 @@ Próbálja újra %2$d másodperc múlva."</string>
     <string name="lockscreen_shortcut_right">Jobb oldali parancsikon</string>
     <string name="lockscreen_unlock_left">A bal oldali parancsikon szintén feloldja a zárolást</string>
     <string name="lockscreen_unlock_right">A jobb oldali parancsikon szintén feloldja a zárolást</string>
-    <string name="long_press_power_navigation_assist_content">"Tartsa nyomva a \"bekapcsológombot\"
- az Assist alkalmazás megnyitásához"</string>
+    <string name="long_press_power_navigation_assist_content">"Tartsa nyomva a \"bekapcsológombot\" 
+ a Hangsegéd alkalmazás megnyitásához"</string>
     <string name="long_press_power_navigation_power_content">Nyomja meg egyszerre a \"bekapcsológombot\" és a \"hangerő fel gombot\" a kikapcsoláshoz</string>
     <string name="long_press_power_navigation_setting_button">Beállítások módosítása</string>
     <string name="manage_bubbles_text">Kezelés</string>
@@ -969,6 +970,8 @@ Próbálja újra %2$d másodperc múlva."</string>
     <string name="media_projection_remember_text">Ne jelenjen meg többé</string>
     <string name="media_transfer_this_device_name">Ez az eszköz</string>
     <string name="menu_ime">Billentyűzetváltó</string>
+    <string name="mhs_app">My Verizon megnyitása</string>
+    <string name="mhs_call_back_error">Adatkapcsolat nem érhető el.</string>
     <string name="mobile263">OnePlus barangolás</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobiladatok</string>
@@ -985,6 +988,12 @@ Kikapcsolja a mobiladat-kapcsolatot?"</string>
 Kikapcsolja a mobiladat-kapcsolatot?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">A Hotspot bekapcsolásához kapcsolja ki a repülőgép üzemmódot</string>
+    <string name="mobile_hotspot_authoration_error">"A Hotspot használatához elő kell fizetnie a Hotspot szolgáltatásokra.
+
+A Hotspotra történő előfizetéshez látogassa meg a My Verizont vagy hívja az ügyfélszolgálatot a (800) 922–0204 számon."</string>
+    <string name="mobile_hotspot_data_off_error">A Hotspot bekapcsolásához kapcsolja be a mobiladat-forgalmat</string>
     <string name="mock_location_app">Helyimitáló alkalmazás kiválasztása</string>
     <string name="mock_location_app_not_set">Nincs kiválasztott helyimitáló alkalmazás</string>
     <string name="mock_location_app_set">Helyimitáló alkalmazás: %1$s</string>
@@ -1127,8 +1136,8 @@ VPN-hez is kapcsolódik, amely szintén figyelheti hálózati tevékenységét."
     <string name="ok">OK</string>
     <string name="okay">OK</string>
     <string name="oneplus_laboratory_added_toast">Gratulálunk! Az OnePlus laboratórium bekerült a Beállításokba</string>
-    <string name="oneplus_not_show">Ne jelenjen meg ismét</string>
-    <string name="oneplus_screen_features_not_available_toast">Ha be van kapcsolva, bizonyos funkciók, mint például a képernyő kalibrálása, nem lesznek elérhetők</string>
+    <string name="oneplus_not_show">Ne mutassa ezt újra</string>
+    <string name="oneplus_screen_features_not_available_toast">Bekapcsolt állapotban olyan funkciók, mint a képernyő-kalibrálás, nem lesznek elérhetők</string>
     <string name="oneplus_threekey_navigation_disturb_changed">A \"Ne zavarj\" megváltozott!</string>
     <string name="oneplus_threekey_navigation_next">KÖVETKEZŐ</string>
     <string name="oneplus_threekey_navigation_silence">Teljes csend</string>
@@ -1806,7 +1815,7 @@ Bármely felhasználó frissítheti az alkalmazásokat valamennyi felhasználó 
     <string name="zen_alarm_warning">Nem fogja hallani az ébresztést ekkor: %1$s</string>
     <string name="zen_alarm_warning_indef">Nem fogja hallani a következő ébresztést ekkor: %1$s, ha előbb ezt nem kapcsolja ki</string>
     <string name="zen_alarms_introduction">Az ébresztéseken kívül nem fogja Önt más hang és rezgés megzavarni. Továbbra is lesz hangjuk azoknak a tartalmaknak, amelyeket Ön elindít, például zenék, videók és játékok.</string>
-    <string name="zen_important_interruptions">Magas prioritású értesítések</string>
+    <string name="zen_important_interruptions">Magas prioritású üzenetek</string>
     <string name="zen_interruption_level_all">Minden értesítés</string>
     <string name="zen_interruption_level_priority">Csak prioritásos</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

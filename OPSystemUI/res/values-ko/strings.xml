@@ -566,6 +566,7 @@
     <string name="development_settings_summary">앱 개발 옵션 설정</string>
     <string name="development_settings_title">개발자 옵션</string>
     <string name="device_services">기기 서비스</string>
+    <string name="dialog_mhs_error">확인하는 동안 기다려 주세요..</string>
     <string name="direct_boot_unaware_dialog_message">참고: 재부팅한 후 이 앱은 휴대전화를 잠금 해제해야 시작됩니다.</string>
     <string name="disable_carrier_button_text">eSIM 사용 중지</string>
     <string name="disable_overlays">HW 오버레이 사용 안함</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">로컬 셸 액세스를 제공하는 터미널 앱 사용</string>
     <string name="enable_terminal_title">로컬 터미널</string>
     <string name="enabled_by_admin">관리자가 사용 설정함</string>
-    <string name="end_call">End</string>
+    <string name="end_call">종료</string>
     <string name="error_disable_esim_msg">오류로 인해 eSIM을 사용 중지할 수 없습니다.</string>
     <string name="error_disable_esim_title">eSIM을 사용 중지할 수 없음</string>
     <string name="ethernet_label">이더넷</string>
@@ -676,7 +677,7 @@
     <string name="high_temp_title">휴대전화 온도가 높음</string>
     <string name="home">설정 홈</string>
     <string name="hotspot_apm_message">비행기 모드가 활성화된 동안 모바일 네트워크에 연결할 수 없습니다. 비행기 모드를 비활성화하고 다시 시도하십시오.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요</string>
+    <string name="hotspot_operator_dialog_nosim_msg">모바일 핫스팟 및 기타 테더링 옵션을 사용하려면 SIM 카드를 삽입하세요.</string>
     <string name="hotspot_operator_dialog_nosim_title">SIM 카드 없음</string>
     <string name="hotspot_operator_dialog_othererror_msg">귀하는 Wi-Fi 테더링에 가입하지 않았습니다.</string>
     <string name="hotspot_operator_dialog_othererror_title">Wi-Fi 테더링 오류</string>
@@ -953,7 +954,7 @@
     <string name="lockscreen_unlock_left">왼쪽 바로가기도 잠금 해제 가능</string>
     <string name="lockscreen_unlock_right">오른쪽 바로가기도 잠금 해제 가능</string>
     <string name="long_press_power_navigation_assist_content">"\"전원 버튼\"을 길게 눌러
-도우미 앱 사용"</string>
+음성 도우미 사용"</string>
     <string name="long_press_power_navigation_power_content">\"전원 버튼\"과 \"볼륨 높이기 버튼\"를 동시에 눌러 전원 끄기</string>
     <string name="long_press_power_navigation_setting_button">설정 수정</string>
     <string name="manage_bubbles_text">관리</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">다시 표시 안함</string>
     <string name="media_transfer_this_device_name">이 기기</string>
     <string name="menu_ime">키보드 전환 도구</string>
+    <string name="mhs_app">My Verizon 열기</string>
+    <string name="mhs_call_back_error">데이터 연결을 사용할 수 없습니다.</string>
     <string name="mobile263">OnePlus 로밍</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">모바일 데이터</string>
@@ -985,6 +988,12 @@
 모바일 데이터 연결을 해제하시겠습니까?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s, %2$s</string>
+    <string name="mobile_hotspot">모바일 핫스팟</string>
+    <string name="mobile_hotspot_airplane_off_error">핫스팟을 켜려면 비행기 모드를 끄세요.</string>
+    <string name="mobile_hotspot_authoration_error">"모바일 핫스팟을 사용하려면 모바일 핫스팟 서비스에 가입해야 합니다.
+
+모바일 핫스팟에 가입하려면 My Verizon을 방문하거나 고객 지원 센터 (800) 922–0204로 문의하세요."</string>
+    <string name="mobile_hotspot_data_off_error">핫스팟을 켜려면 모바일 데이터를 켜세요.</string>
     <string name="mock_location_app">모의 위치 앱 선택</string>
     <string name="mock_location_app_not_set">모의 위치 앱이 설정되어 있지 않음</string>
     <string name="mock_location_app_set">모의 위치 앱: %1$s</string>
@@ -1198,10 +1207,10 @@
     <string name="overheat_dialog_purple_button">지금 전원 끄기</string>
     <string name="overheat_dialog_purple_message">5초 후에 휴대폰 전원이 꺼집니다.</string>
     <string name="overheat_dialog_red_message">온도를 낮추기 위해 모든 응용 프로그램 프로세스를 취소합니다.</string>
-    <string name="overheat_dialog_title">휴대폰의 온도가 너무 높습니다.</string>
+    <string name="overheat_dialog_title">휴대폰의 온도가 너무 높습니다</string>
     <string name="overheat_notification_alert">휴대폰의 온도가 너무 높습니다. 온도를 낮추기 위해 전력 소비량이 높은 기능이 꺼집니다.</string>
     <string name="overheat_notification_resume">휴대폰의 온도가 정상으로 돌아왔습니다. 휴대폰을 정상적으로 사용할 수 있습니다.</string>
-    <string name="overheat_notification_title_resume">휴대폰의 온도가 정상으로 돌아왔습니다.</string>
+    <string name="overheat_notification_title_resume">휴대폰의 온도가 정상으로 돌아왔습니다</string>
     <string name="overheat_toast_content">휴대폰의 온도가 너무 높습니다. 온도를 낮추기 위해 전력 소비량이 높은 기능이 꺼집니다.</string>
     <string name="overlay_display_devices_title">보조 디스플레이 시뮬레이션</string>
     <string name="overview">최근 사용</string>
@@ -1297,7 +1306,7 @@
     <string name="process_kernel_label">Android OS</string>
     <string name="profile_owned_footer">프로필이 모니터링될 수 있음</string>
     <string name="qr_bubble_hint">말풍선을 탭하여 메시지를 읽고 답장</string>
-    <string name="qr_portrait_hint">빠른 회신이 세로 방향에서 꺼져 있습니다.</string>
+    <string name="qr_portrait_hint">빠른 회신이 세로 모드에서 꺼져 있습니다.</string>
     <string name="qr_portrait_turn_on">켜기</string>
     <string name="qs_dnd_keep">유지</string>
     <string name="qs_dnd_prompt_app">방해 금지 모드가 앱(%s)에 의해 사용 설정되었습니다.</string>

@@ -1023,7 +1023,7 @@
 .end method
 
 .method public onCreateSliceProvider()Z
-    .locals 3
+    .locals 4
 
     monitor-enter p0
 
@@ -1107,7 +1107,13 @@
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+    invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-class v3, Lcom/android/systemui/keyguard/KeyguardSliceProvider;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const/4 v2, 0x0
 

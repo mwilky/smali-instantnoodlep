@@ -26,7 +26,7 @@
 
     sget p1, Lcom/android/systemui/R$drawable;->ic_recovery:I
 
-    const v0, 0x50f0151
+    const v0, 0x50f0153
 
     invoke-direct {p0, p1, v0}, Lcom/android/systemui/globalactions/GlobalActionsDialog$SinglePressAction;-><init>(II)V
 

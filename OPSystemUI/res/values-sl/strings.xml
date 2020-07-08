@@ -566,6 +566,7 @@ Izbor"</string>
     <string name="development_settings_summary">Nastavi možnosti za razvoj aplikacij</string>
     <string name="development_settings_title">Možnosti za razvijalce</string>
     <string name="device_services">Storitve naprave</string>
+    <string name="dialog_mhs_error">Počakajte, da dokončano preverjanje.</string>
     <string name="direct_boot_unaware_dialog_message">Opomba: po vnovičnem zagonu te aplikacije ni mogoče zagnati, če ne odklenete telefona.</string>
     <string name="disable_carrier_button_text">Onemogoči kartico e-SIM</string>
     <string name="disable_overlays">Onem. strojni medp.</string>
@@ -604,7 +605,7 @@ Izbor"</string>
     <string name="enable_terminal_summary">Omogočanje terminalske aplikacije za dostop do lokalne lupine</string>
     <string name="enable_terminal_title">Lokalni terminal</string>
     <string name="enabled_by_admin">Omogočil skrbnik</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Končaj</string>
     <string name="error_disable_esim_msg">Digitalne kartice e-SIM zaradi napake ni mogoče onemogočiti.</string>
     <string name="error_disable_esim_title">Digitalne kartice e-SIM ni mogoče onemogočiti</string>
     <string name="ethernet_label">Ethernet</string>
@@ -629,7 +630,7 @@ Izbor"</string>
     <string name="face_unlock_timeout">Število dovoljenih poskusov je preseženo. Poskusite znova pozneje</string>
     <string name="failed_to_open_app_settings_toast">Ni mogoče odpreti nastavitev za %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Dotaknite se tipala prstnih odtisov</string>
-    <string name="fingerprint_not_found">Poskusi znova</string>
+    <string name="fingerprint_not_found">Poskusite znova</string>
     <string name="force_allow_on_external">Vsili omogočanje aplikacij v zunanji shrambi</string>
     <string name="force_allow_on_external_summary">Poskrbi, da je ne glede na vrednosti v manifestu mogoče vsako aplikacijo zapisati v zunanjo shrambo</string>
     <string name="force_msaa">Vsili 4x MSAA</string>
@@ -716,7 +717,7 @@ Ali želite, da se še naprej prikazujejo?"</string>
     <string name="interruption_level_alarms_twoline">"Samo
 alarmi"</string>
     <string name="interruption_level_game">Igre</string>
-    <string name="interruption_level_movie">Filmi</string>
+    <string name="interruption_level_movie">Film</string>
     <string name="interruption_level_music">Glasba</string>
     <string name="interruption_level_none">Popolna tišina</string>
     <string name="interruption_level_none_twoline">"Popolna
@@ -952,7 +953,8 @@ Poskusite znova čez %2$d s."</string>
     <string name="lockscreen_shortcut_right">Desna bližnjica</string>
     <string name="lockscreen_unlock_left">Levo bližnjico uporabi tudi za odklepanje</string>
     <string name="lockscreen_unlock_right">Desno bližnjico uporabi tudi za odklepanje</string>
-    <string name="long_press_power_navigation_assist_content">Pritisnite in zadržite »gumb za vklop«, da zaženete aplikacijo za pomoč</string>
+    <string name="long_press_power_navigation_assist_content">"Pritisnite in zadržite »gumb za vklop«, 
+da zaženete aplikacijo Voice Assistant"</string>
     <string name="long_press_power_navigation_power_content">Za izklop hkrati pritisnite »gumb za vklop« in »gumb za zvišanje glasnosti«</string>
     <string name="long_press_power_navigation_setting_button">Spremeni nastavitve</string>
     <string name="manage_bubbles_text">Upravljanje</string>
@@ -968,6 +970,8 @@ Poskusite znova čez %2$d s."</string>
     <string name="media_projection_remember_text">Tega ne prikaži več</string>
     <string name="media_transfer_this_device_name">Ta naprava</string>
     <string name="menu_ime">Preklopnik tipkovnice</string>
+    <string name="mhs_app">Odpri spletno stran My Verizon</string>
+    <string name="mhs_call_back_error">Podatkovna povezava ni na voljo.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Mobilni podatki</string>
@@ -984,6 +988,12 @@ Ali želite izklopiti mobilno podatkovno povezavo?"</string>
 Ali želite izklopiti mobilno podatkovno povezavo?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Dostopna točka</string>
+    <string name="mobile_hotspot_airplane_off_error">Če želite vklopiti dostopno točko, izklopite letalski način.</string>
+    <string name="mobile_hotspot_authoration_error">"Za uporabo dostopne točke se morate naročiti na storitve dostopne točke.
+
+Če se želite naročit na dostopno točko, obiščite spletno stran My Verizon ali pokličite podporo uporabnikom na številko (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Če želite vklopiti dostopno točko, vklopite podatkovno povezavo.</string>
     <string name="mock_location_app">Izberite aplikacijo za simulirano lokacijo</string>
     <string name="mock_location_app_not_set">Aplikacija za simulirano lokacijo ni nastavljena</string>
     <string name="mock_location_app_set">Aplikacija za simulirano lokacijo: %1$s</string>
@@ -1297,7 +1307,7 @@ Povezani ste tudi z omrežjem VPN, ki lahko nadzira vašo omrežno dejavnost."</
     <string name="profile_owned_footer">Profil je morda nadziran</string>
     <string name="qr_bubble_hint">Tapnite na oblaček, da preberite sporočila in nanje odgovorite</string>
     <string name="qr_portrait_hint">Hiter odgovor je izključen v načinu portreta</string>
-    <string name="qr_portrait_turn_on">VKLOP</string>
+    <string name="qr_portrait_turn_on">VKLOPI</string>
     <string name="qs_dnd_keep">Obdrži</string>
     <string name="qs_dnd_prompt_app">Aplikacija (%s) je vklopila način »ne moti«.</string>
     <string name="qs_dnd_prompt_auto_rule">Samodejno pravilo (%s) je vklopilo način »ne moti«.</string>
@@ -1763,7 +1773,7 @@ Vsak uporabnik lahko posodobi aplikacije za vse druge uporabnike."</string>
     <string name="volume_stream_content_description_vibrate">%1$s. Dotaknite se, če želite nastaviti vibriranje. V storitvah za ljudi s posebnimi potrebami bo morda izklopljen zvok.</string>
     <string name="volume_stream_content_description_vibrate_a11y">%1$s. Dotaknite se, če želite nastaviti vibriranje.</string>
     <string name="volume_up_silent">Zapustitev načina »ne moti« pri povečanju glasnosti</string>
-    <string name="volume_vibrate">Vibriraj</string>
+    <string name="volume_vibrate">Vibriranje</string>
     <string name="volume_zen_end_now">Izklopi</string>
     <string name="vpn_footer">Omrežje je lahko nadzorovano</string>
     <string name="vpn_settings_not_available">Nastavitve VPN niso na voljo za tega uporabnika</string>
@@ -1805,7 +1815,7 @@ Vsak uporabnik lahko posodobi aplikacije za vse druge uporabnike."</string>
     <string name="zen_alarm_warning">Naslednjega alarma ob %1$s ne boste slišali</string>
     <string name="zen_alarm_warning_indef">Naslednjega alarma ob %1$s ne boste slišali, razen če prej te nastavitve ne izklopite</string>
     <string name="zen_alarms_introduction">Ne bodo vas motili zvoki ali vibriranje, razen v primeru alarmov. Še vedno pa boste slišali vse, kar se boste odločili predvajati, vključno z glasbo, videoposnetki in igrami.</string>
-    <string name="zen_important_interruptions">Pomembna obvestila</string>
+    <string name="zen_important_interruptions">Samo pomembna obvestila</string>
     <string name="zen_interruption_level_all">Vsa obvestila</string>
     <string name="zen_interruption_level_priority">Samo prednostno</string>
     <string name="zen_mode_and_condition">%1$s. %2$s</string>

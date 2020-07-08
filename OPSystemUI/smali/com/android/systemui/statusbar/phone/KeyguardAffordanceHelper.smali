@@ -1967,6 +1967,16 @@
     return-void
 .end method
 
+.method public resetTargetedView()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardAffordanceHelper;->mTargetedView:Landroid/view/View;
+
+    return-void
+.end method
+
 .method public startHintAnimation(ZLjava/lang/Runnable;)V
     .locals 0
 

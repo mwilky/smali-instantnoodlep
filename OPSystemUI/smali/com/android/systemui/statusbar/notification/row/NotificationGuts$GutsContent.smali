@@ -18,6 +18,14 @@
 .method public abstract getActualHeight()I
 .end method
 
+.method public getAppName()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, ""
+
+    return-object p0
+.end method
+
 .method public abstract getContentView()Landroid/view/View;
 .end method
 

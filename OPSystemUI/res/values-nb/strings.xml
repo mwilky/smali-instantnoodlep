@@ -566,6 +566,7 @@ Hvis du fortsetter, kan avgifter for databruk påløpe."</string>
     <string name="development_settings_summary">Angi alternativer for apputvikling</string>
     <string name="development_settings_title">Utvikleralternativer</string>
     <string name="device_services">Enhetstjenester</string>
+    <string name="dialog_mhs_error">Vent mens det bekreftes..</string>
     <string name="direct_boot_unaware_dialog_message">Merk: Etter en omstart kan ikke denne appen starte før du låser opp telefonen din</string>
     <string name="disable_carrier_button_text">Deaktiver e-SIM-kortet</string>
     <string name="disable_overlays">Slå av maskinvareoverlegg</string>
@@ -604,7 +605,7 @@ Hvis du fortsetter, kan avgifter for databruk påløpe."</string>
     <string name="enable_terminal_summary">Aktiver terminalappen som gir lokal kommandolistetilgang</string>
     <string name="enable_terminal_title">Lokal terminal</string>
     <string name="enabled_by_admin">Aktivert av administratoren</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Slutt</string>
     <string name="error_disable_esim_msg">E-SIM-kortet kan ikke deaktiveres på grunn av en feil.</string>
     <string name="error_disable_esim_title">Kan ikke deaktivere e-SIM-kortet</string>
     <string name="ethernet_label">Ethernet</string>
@@ -953,7 +954,7 @@ Prøv på nytt om %2$d sekunder."</string>
     <string name="lockscreen_unlock_left">Venstre hurtigtast låser også opp</string>
     <string name="lockscreen_unlock_right">Høyre hurtigtast låser også opp</string>
     <string name="long_press_power_navigation_assist_content">"Trykk og hold \"strømknapp\" 
-for Assist App"</string>
+for Taleassistent"</string>
     <string name="long_press_power_navigation_power_content">Trykk \"strømknapp\" og \"volum opp knapp\" samtidig for å slå av</string>
     <string name="long_press_power_navigation_setting_button">Endre innstillinger</string>
     <string name="manage_bubbles_text">Administrer</string>
@@ -969,6 +970,8 @@ for Assist App"</string>
     <string name="media_projection_remember_text">Ikke vis igjen</string>
     <string name="media_transfer_this_device_name">Denne enheten</string>
     <string name="menu_ime">Bytteknapp for tastatur</string>
+    <string name="mhs_app">Åpne Min Verizon</string>
+    <string name="mhs_call_back_error">Datatilkobling er ikke tilgjengelig.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s %2$s</string>
     <string name="mobile_data">Mobildata</string>
@@ -985,6 +988,12 @@ Slå av tilkoblingen for mobildata?"</string>
 Slå av tilkoblingen for mobildata?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Mobil Hotspot</string>
+    <string name="mobile_hotspot_airplane_off_error">For å slå på Hotspot, skru av flymodus</string>
+    <string name="mobile_hotspot_authoration_error">"For å bruke Hotspot, må du abonnere på Hotspot tjenester.
+
+For å abonnere på Hotspot besøk My Verizon eller ring kundeservice på (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">For å slå på Hotspot, skru på mobildata</string>
     <string name="mock_location_app">Velg app for fiktiv plassering</string>
     <string name="mock_location_app_not_set">Ingen app for fiktiv plassering er angitt</string>
     <string name="mock_location_app_set">App for fiktiv plassering: %1$s</string>
@@ -1169,11 +1178,11 @@ Du er også tilkoblet en VPN som kan overvåke nettverksaktiviteten din."</strin
     <string name="op_reverse_charge_notification_btn">STOPPE</string>
     <string name="op_reverse_charge_notification_discharging">Lader den tilkoblede enheten</string>
     <string name="op_reverse_charge_notification_subtitle">For å lade de andre Qi-aktiverte enhetene trådløst</string>
-    <string name="op_reverse_charge_notification_title">Omvendt gebyr</string>
-    <string name="op_reverse_charge_tile_label">Omvendt gebyr</string>
-    <string name="op_reverse_charge_toast_charging">Lading registrert, Omvendt lading er deaktivert</string>
-    <string name="op_reverse_charge_toast_low_battery">Batteri lavt, Omvendt lading er deaktivert</string>
-    <string name="op_reverse_charge_toast_over_heat">Overoppheting registrert, Omvendt lading er deaktivert</string>
+    <string name="op_reverse_charge_notification_title">Reverslading</string>
+    <string name="op_reverse_charge_tile_label">Reverslading</string>
+    <string name="op_reverse_charge_toast_charging">Lading registrert, Reverslading er deaktivert</string>
+    <string name="op_reverse_charge_toast_low_battery">Batteri lavt, Reverslading er deaktivert</string>
+    <string name="op_reverse_charge_toast_over_heat">Overoppheting registrert, Reverslading er deaktivert</string>
     <string name="open_saver_setting_action">Innstillinger</string>
     <string name="orb_search_action">Søkehandling</string>
     <string name="osu_completing_sign_up">Fullfører registreringen …</string>

@@ -1756,7 +1756,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v3, 0x136
+    const/16 v3, 0x138
 
     aput v3, v1, v2
 
@@ -3095,9 +3095,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/KeyguardIndicationController;->getKeyguardCallback()Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
-
-    move-result-object v1
+    iget-object v1, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mUpdateMonitorCallback:Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
 
     invoke-virtual {v0, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->removeCallback(Lcom/android/keyguard/KeyguardUpdateMonitorCallback;)V
 
@@ -3116,6 +3114,37 @@
     invoke-virtual {v0, p0}, Lcom/android/systemui/statusbar/phone/UnlockMethodCache;->removeListener(Lcom/android/systemui/statusbar/phone/UnlockMethodCache$OnUnlockMethodChangedListener;)V
 
     :cond_0
+    iget-object v0, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mKeyguardStateCallback:Lcom/android/systemui/statusbar/KeyguardIndicationController$KeyguardStateCallback;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mContext:Landroid/content/Context;
+
+    check-cast v0, Lcom/android/systemui/SystemUIApplication;
+
+    const-class v1, Lcom/android/systemui/keyguard/KeyguardViewMediator;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/SystemUIApplication;->getComponent(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/systemui/keyguard/KeyguardViewMediator;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/KeyguardIndicationController;->mKeyguardStateCallback:Lcom/android/systemui/statusbar/KeyguardIndicationController$KeyguardStateCallback;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->removeStateMonitorCallback(Lcom/android/internal/policy/IKeyguardStateCallback;)V
+
+    :cond_1
+    const-class v0, Lcom/android/systemui/statusbar/policy/ConfigurationController;
+
+    invoke-static {v0}, Lcom/android/systemui/Dependency;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/systemui/statusbar/policy/ConfigurationController;
+
+    invoke-interface {v0, p0}, Lcom/android/systemui/statusbar/policy/CallbackController;->removeCallback(Ljava/lang/Object;)V
+
     return-void
 .end method
 

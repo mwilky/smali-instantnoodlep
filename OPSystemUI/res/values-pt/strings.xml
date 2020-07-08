@@ -566,6 +566,7 @@ Se retomar o uso de dados, o serviço poderá ser cobrado."</string>
     <string name="development_settings_summary">Define as opções para o desenvolvimento do app</string>
     <string name="development_settings_title">Opções do desenvolvedor</string>
     <string name="device_services">Serviços do dispositivo</string>
+    <string name="dialog_mhs_error">Aguarde enquanto verifico..</string>
     <string name="direct_boot_unaware_dialog_message">Observação: após uma reinicialização, não é possível iniciar este app até que você desbloqueie seu smartphone</string>
     <string name="disable_carrier_button_text">Desativar eSIM</string>
     <string name="disable_overlays">Desativar sobreposição HW</string>
@@ -604,7 +605,7 @@ Se retomar o uso de dados, o serviço poderá ser cobrado."</string>
     <string name="enable_terminal_summary">Ativar o app terminal que oferece acesso ao shell local</string>
     <string name="enable_terminal_title">Terminal local</string>
     <string name="enabled_by_admin">Ativado pelo administrador</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Terminar</string>
     <string name="error_disable_esim_msg">Não é possível desativar o eSIM devido a um erro.</string>
     <string name="error_disable_esim_title">Não é possível desativar o eSIM</string>
     <string name="ethernet_label">Ethernet</string>
@@ -629,7 +630,7 @@ Se retomar o uso de dados, o serviço poderá ser cobrado."</string>
     <string name="face_unlock_timeout">Demasiadas tentativas falhadas. Tente novamente mais tarde</string>
     <string name="failed_to_open_app_settings_toast">Falha ao abrir as configurações de %1$s</string>
     <string name="fingerprint_dialog_touch_sensor">Toque no sensor de impressão digital</string>
-    <string name="fingerprint_not_found">Tentar novamente</string>
+    <string name="fingerprint_not_found">Tente novamente</string>
     <string name="force_allow_on_external">Forçar permissão de apps em armazenamento externo</string>
     <string name="force_allow_on_external_summary">Qualificar apps para gravação em armazenamento externo, independentemente de valores de manifestos</string>
     <string name="force_msaa">Forçar 4x MSAA</string>
@@ -953,7 +954,7 @@ Tente novamente em %2$d segundos."</string>
     <string name="lockscreen_unlock_left">O atalho à esquerda também desbloqueia</string>
     <string name="lockscreen_unlock_right">O atalho à direita também desbloqueia</string>
     <string name="long_press_power_navigation_assist_content">"Prima continuamente o \"botão Ligar\" 
-para a aplicação de assistente"</string>
+para o Assistente por voz"</string>
     <string name="long_press_power_navigation_power_content">Prima continuamente o \"botão Ligar\" e o\"botão para aumentar o volume\" em simultâneo para desligar</string>
     <string name="long_press_power_navigation_setting_button">Modificar definições</string>
     <string name="manage_bubbles_text">Gerenciar</string>
@@ -969,6 +970,8 @@ para a aplicação de assistente"</string>
     <string name="media_projection_remember_text">Não mostrar novamente</string>
     <string name="media_transfer_this_device_name">Este dispositivo</string>
     <string name="menu_ime">Alternador de teclado</string>
+    <string name="mhs_app">Abrir o My Verizon</string>
+    <string name="mhs_call_back_error">Não está disponível uma ligação de dados.</string>
     <string name="mobile263">Roaming OnePlus</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Dados móveis</string>
@@ -985,6 +988,12 @@ Desligar a ligação de dados móveis?"</string>
 Desligar a ligação de dados móveis?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s — %2$s</string>
+    <string name="mobile_hotspot">Ponto de acesso</string>
+    <string name="mobile_hotspot_airplane_off_error">Para ativar o Ponto de acesso, desative o modo de avião</string>
+    <string name="mobile_hotspot_authoration_error">"Para utilizar o Ponto de acesso, deve subscrever os Serviços do Ponto de acesso.
+
+Para subscrever o Ponto de acesso, visite my verizon ou ligue para o apoio ao cliente com o número (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Para ativar o Ponto de acesso, ative os dados móveis</string>
     <string name="mock_location_app">Selecionar app de local fictício</string>
     <string name="mock_location_app_not_set">Nenhum app de local fictício definido</string>
     <string name="mock_location_app_set">App de local fictício: %1$s</string>
@@ -1127,7 +1136,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="ok">OK</string>
     <string name="okay">Ok</string>
     <string name="oneplus_laboratory_added_toast">Parabéns! O laboratório OnePlus foi adicionado às Definições</string>
-    <string name="oneplus_not_show">Não voltar a mostrar isto</string>
+    <string name="oneplus_not_show">Não mostrar novamente</string>
     <string name="oneplus_screen_features_not_available_toast">Quando ativada, funcionalidades como a calibração do ecrã não estarão disponíveis</string>
     <string name="oneplus_threekey_navigation_disturb_changed">\"Não incomodar\" foi alterado!</string>
     <string name="oneplus_threekey_navigation_next">SEGUINTE</string>
@@ -1298,7 +1307,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="profile_owned_footer">O perfil pode ser monitorado</string>
     <string name="qr_bubble_hint">Toque no balão para ler e responder a mensagens</string>
     <string name="qr_portrait_hint">A resposta rápida está desligada no retrato</string>
-    <string name="qr_portrait_turn_on">LIGAR</string>
+    <string name="qr_portrait_turn_on">ATIVAR</string>
     <string name="qs_dnd_keep">Manter</string>
     <string name="qs_dnd_prompt_app">O recurso Não perturbe foi ativado por um app (%s).</string>
     <string name="qs_dnd_prompt_auto_rule">O recurso Não perturbe foi ativado por uma regra automática (%s).</string>
@@ -1424,7 +1433,7 @@ Você também está conectado a uma VPN, que pode monitorar sua atividade de red
     <string name="quick_settings_rssi_label">RSSI</string>
     <string name="quick_settings_secondary_label_until">Até %s</string>
     <string name="quick_settings_settings_label">Configurações</string>
-    <string name="quick_settings_switch_user_storage_insufficient">Armazenamento cheio, não é posível mudar de utilizador</string>
+    <string name="quick_settings_switch_user_storage_insufficient">Armazenamento cheio, não é possível mudar de utilizador</string>
     <string name="quick_settings_tethering_label">Tethering</string>
     <string name="quick_settings_time_label">Hora</string>
     <string name="quick_settings_ui_mode_night_label">Tema escuro</string>

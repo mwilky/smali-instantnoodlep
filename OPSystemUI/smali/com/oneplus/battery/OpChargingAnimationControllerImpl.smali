@@ -567,7 +567,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x136
+    const/16 v2, 0x138
 
     aput v2, v0, v1
 
@@ -707,7 +707,7 @@
 
     new-array v0, v0, [I
 
-    const/16 v1, 0x136
+    const/16 v1, 0x138
 
     aput v1, v0, v2
 
@@ -935,7 +935,7 @@
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
-    const/16 v1, 0x136
+    const/16 v1, 0x138
 
     const/4 v2, 0x0
 
@@ -1058,7 +1058,7 @@
 
     const/4 v1, 0x0
 
-    const/16 v2, 0x136
+    const/16 v2, 0x138
 
     aput v2, v0, v1
 
@@ -1172,7 +1172,7 @@
 
     new-array v1, v3, [I
 
-    const/16 v2, 0x136
+    const/16 v2, 0x138
 
     aput v2, v1, v0
 

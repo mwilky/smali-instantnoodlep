@@ -566,6 +566,7 @@
     <string name="development_settings_summary">Настройка параметров для разработчиков</string>
     <string name="development_settings_title">Для разработчиков</string>
     <string name="device_services">Сервисы устройства</string>
+    <string name="dialog_mhs_error">Дождитесь завершения проверки...</string>
     <string name="direct_boot_unaware_dialog_message">Примечание. Чтобы запустить это приложение после перезагрузки, разблокируйте экран.</string>
     <string name="disable_carrier_button_text">Отключить eSIM</string>
     <string name="disable_overlays">Откл. аппарат. наложения</string>
@@ -604,7 +605,7 @@
     <string name="enable_terminal_summary">Разрешить терминальный доступ к локальной оболочке</string>
     <string name="enable_terminal_title">Локальный терминальный доступ</string>
     <string name="enabled_by_admin">Включено администратором</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Завершить</string>
     <string name="error_disable_esim_msg">Не удалось отключить eSIM.</string>
     <string name="error_disable_esim_title">Произошла ошибка</string>
     <string name="ethernet_label">Ethernet</string>
@@ -676,7 +677,7 @@
     <string name="high_temp_title">Телефон нагревается</string>
     <string name="home">Настройки</string>
     <string name="hotspot_apm_message">Не удается подключиться к мобильным сетям при включенном самолетном режиме. Выключите самолетный режим и повторите попытку.</string>
-    <string name="hotspot_operator_dialog_nosim_msg">Вставьте SIM-карту, чтобы использовать мобильную точку доступа и другие варианты режима модема</string>
+    <string name="hotspot_operator_dialog_nosim_msg">Вставьте SIM-карту, чтобы использовать мобильную точку доступа и другие функции модема</string>
     <string name="hotspot_operator_dialog_nosim_title">Нет SIM-карты</string>
     <string name="hotspot_operator_dialog_othererror_msg">Вы не подписаны на услугу Wi-Fi модема</string>
     <string name="hotspot_operator_dialog_othererror_title">Ошибка режима Wi-Fi модема</string>
@@ -814,7 +815,7 @@
     <string name="keyguard_plugged_in">Идет зарядка (%s)</string>
     <string name="keyguard_plugged_in_charging_fast">Идет быстрая зарядка (%s)</string>
     <string name="keyguard_plugged_in_charging_slowly">Идет медленная зарядка (%s)</string>
-    <string name="keyguard_plugged_in_charging_warp">%s • Зарядка Warp</string>
+    <string name="keyguard_plugged_in_charging_warp">%s • Зарядка Warp Charge</string>
     <string name="keyguard_plugged_in_wireless">%s • Беспроводная зарядка</string>
     <string name="keyguard_plugged_in_wireless_warp">Беспроводная зарядка Warp • %s</string>
     <string name="keyguard_sim_error_message_short">Ошибка SIM-карты.</string>
@@ -952,8 +953,8 @@
     <string name="lockscreen_shortcut_right">Ярлык справа</string>
     <string name="lockscreen_unlock_left">Ярлык слева также разблокирует экран</string>
     <string name="lockscreen_unlock_right">Ярлык справа также разблокирует экран</string>
-    <string name="long_press_power_navigation_assist_content">"Нажмите и удерживайте \"кнопку питания\" 
-для открытия приложения помощи"</string>
+    <string name="long_press_power_navigation_assist_content">"Нажмите и удерживайте \"кнопку питания,\" 
+чтобы открыть голосовой помощник"</string>
     <string name="long_press_power_navigation_power_content">Нажмите \"кнопку питания\" и \"кнопку увеличения громкости\" одновременно для выключения питания</string>
     <string name="long_press_power_navigation_setting_button">Изменить настройки</string>
     <string name="manage_bubbles_text">Настроить</string>
@@ -969,6 +970,8 @@
     <string name="media_projection_remember_text">Больше не показывать</string>
     <string name="media_transfer_this_device_name">Это устройство</string>
     <string name="menu_ime">Переключение раскладки</string>
+    <string name="mhs_app">Открыть \"Мой Verizon\"</string>
+    <string name="mhs_call_back_error">Подключение для данных недоступно.</string>
     <string name="mobile263">OnePlus roaming</string>
     <string name="mobile_carrier_text_format">%1$s, %2$s</string>
     <string name="mobile_data">Моб. Интернет</string>
@@ -985,6 +988,12 @@
 Выключить передачу мобильных данных?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
     <string name="mobile_data_text_format">%1$s – %2$s</string>
+    <string name="mobile_hotspot">Мобильная точка доступа</string>
+    <string name="mobile_hotspot_airplane_off_error">Чтобы включить точку доступа, отключите авиарежим</string>
+    <string name="mobile_hotspot_authoration_error">"Для работы с мобильной точкой доступа оформите подписку на сервисы Mobile Hotspot.
+
+Чтобы оформить подписку на сервисы Mobile Hotspot, посетите раздел \"Мой Verizon\" или позвоните в отдел клиентской поддержки (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Чтобы включить точку доступа, включите мобильные данные</string>
     <string name="mock_location_app">Выбрать приложение для фиктивных местоположений</string>
     <string name="mock_location_app_not_set">Нет приложения для фиктивных местоположений</string>
     <string name="mock_location_app_set">Приложение для создания фиктивных местоположений: %1$s</string>
@@ -1745,7 +1754,7 @@
     <string name="volume_dialog_title">%s: регулировка громкости</string>
     <string name="volume_dnd_silent">Кнопки регулировки громкости</string>
     <string name="volume_footer_no_disturb">Не беспокоить</string>
-    <string name="volume_footer_ring">Звонок</string>
+    <string name="volume_footer_ring">Со звуком</string>
     <string name="volume_footer_slient">Без звука</string>
     <string name="volume_footer_vibrate">Бесшумный (вибрация)</string>
     <string name="volume_odi_captions_content_description">Наложение субтитров</string>

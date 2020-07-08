@@ -44,9 +44,10 @@ Ieslēgt Lidojuma režīmu?"</string>
     <string name="continue_call">Turpināt</string>
     <string name="delete">Dzēst</string>
     <string name="denoise_notification">Paziņojums ar zemu prioritāti</string>
+    <string name="dialog_mhs_error">Lūdzu, uzgaidiet, kamēr notiek verifikācija...</string>
     <string name="drag_to_add_tiles">Velciet, lai pievienotu elementus</string>
     <string name="edit_mode_hint">Velciet elementus, lai mainītu to izkārtojumu. Pieskarieties, lai parādītu vai slēptu tos.</string>
-    <string name="end_call">End</string>
+    <string name="end_call">Beigt</string>
     <string name="face_unlock_camera_error">Atbloķēšana ar seju neizdevās, kameru izmanto citas lietotnes</string>
     <string name="face_unlock_fail">Neizdevās. Pieskarieties šeit, lai mēģinātu vēlreiz</string>
     <string name="face_unlock_light_view_notify">Ekrāns ieslēdzas, lai palīdzētu veikt sejas atpazīšanu.</string>
@@ -87,11 +88,13 @@ Ja tālrunis tika atiestatīts, jums būs jāievada ar šo tālruni saistītā G
     <string name="kg_wrong_pin_warning_one">Jums ir vēl 1 mēģinājums</string>
     <string name="loading_text">Notiek ielāde...</string>
     <string name="long_press_power_navigation_assist_content">"Nospiediet un turiet \"ieslēgšanas/izslēgšanas pogu\" 
-, lai piekļūtu asistenta lietotnei"</string>
+, lai piekļūtu Balss asistentam"</string>
     <string name="long_press_power_navigation_power_content">Vienlaikus nospiediet \"ieslēgšanas/izslēgšanas pogu\" un \"skaļuma palielināšanas pogu\", lai izslēgtu</string>
     <string name="long_press_power_navigation_setting_button">Modificēt iestatījumus</string>
     <string name="maxxaudio_disable">Atspējot</string>
     <string name="maxxaudio_enable">Iespējot</string>
+    <string name="mhs_app">Atvērt My Verizon</string>
+    <string name="mhs_call_back_error">Datu savienojums nav pieejams.</string>
     <string name="mobile263">OnePlus Roaming</string>
     <string name="mobile_data_off_alert">"Neizmantojot Wi-Fi, jūs nevarēsiet lietot internetu, e-pastu vai citas lietotnes, kurām nepieciešams datu savienojums.
 
@@ -100,6 +103,12 @@ Vai izslēgt mobilo datu savienojumu?"</string>
 
 Vai izslēgt mobilo datu savienojumu?"</string>
     <string name="mobile_data_off_alert_video_call">You turned off Mobile Data.Do you want to continue with current Video Call or End it?</string>
+    <string name="mobile_hotspot">Mobilais tīklājs</string>
+    <string name="mobile_hotspot_airplane_off_error">Lai ieslēgtu tīklāju, lūdzu, izslēdziet lidojuma režīmu</string>
+    <string name="mobile_hotspot_authoration_error">"Lai izmantotu mobilo tīklāju, jums jāabonē mobilā tīklāja pakalpojumi.
+
+Lai abonētu mobilo tīklāju, apmeklējiet My Verizon vai zvaniet klientu apkalpošanas dienestam uz tālruņa numuru (800) 922–0204."</string>
+    <string name="mobile_hotspot_data_off_error">Lai ieslēgtu tīklāju, lūdzu, ieslēdziet mobilos datus</string>
     <string name="nav_bar_guide_positive">SAPRATU</string>
     <string name="nav_bar_guide_title">Pavelciet uz augšu no apakšējās malas, lai atvērtu navigācijas joslu. Lai pārtrauktu navigācijas slēpšanu, lūdzu, pieskarieties šeit.</string>
     <string name="non_op_earphone_notification_content">OnePlus jūsu austiņām ar mikrofonu piedāvā dažas jaunas funkcijas. Noklikšķiniet uz paziņojuma, lai tās izmēģinātu.</string>
@@ -161,7 +170,7 @@ Vai izslēgt mobilo datu savienojumu?"</string>
     <string name="overheat_dialog_purple_button">Izslēgt tagad</string>
     <string name="overheat_dialog_purple_message">Tālrunis tiks izslēgts pēc 5 sekundēm</string>
     <string name="overheat_dialog_red_message">Lai samazinātu temperatūru, tiks pārtrauktas visas lietotņu darbības</string>
-    <string name="overheat_dialog_title">Jūsu tālruņa temperatūra ir pārāk augsta</string>
+    <string name="overheat_dialog_title">Tālruņa temperatūra ir pārāk augsta</string>
     <string name="overheat_notification_alert">Tālruņa temperatūra ir pārāk augsta, tādēļ daudz enerģijas patērējošās funkcijas tika izslēgtas, lai samazinātu temperatūru</string>
     <string name="overheat_notification_resume">Tālrunim ir atjaunota normāla temperatūra, un to atkal var izmantot kā parasti</string>
     <string name="overheat_notification_title_resume">Tālrunim ir atjaunota normāla temperatūra</string>
@@ -248,7 +257,7 @@ Vai izslēgt mobilo datu savienojumu?"</string>
     <string name="volume_footer_slient">Klusums</string>
     <string name="volume_footer_vibrate">Klusums (vibrēt)</string>
     <string name="volume_vibrate">Vibrēt</string>
-    <string name="work_life_balance_mode">Darba un privātās dzīves līdzsvarošanas režīmi</string>
+    <string name="work_life_balance_mode">Darba un privātās dzīves līdzsvarošanas režīms</string>
     <string name="zen_important_interruptions">Svarīgie paziņojumi</string>
     <string name="zen_interruption_level_all">Visi paziņojumi</string>
     <string name="zen_no_interruptions">Klusums</string>
