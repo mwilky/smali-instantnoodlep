@@ -1294,6 +1294,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="op_earphone_title">OnePlus Bullets Wireless</string>
     <string name="op_emergency_bubble_text">SOS</string>
     <string name="op_emergency_indicator_hint_text">Swipe down for emergency services</string>
+    <string name="op_front_camera_animation_file_prefix" />
     <string name="op_keyguard_indication_face_unlocked">Kept unlocked by Face Unlock</string>
     <string name="op_keyguard_indication_trust_unlocked">Kept unlocked by Smart Lock</string>
     <string name="op_kg_prompt_reason_face_timeout_bouncer_password">Use password or finger to unlock</string>
@@ -1813,6 +1814,9 @@ be monitored"</string>
     <string name="tethering_hardware_offload">Tethering hardware acceleration</string>
     <string name="tethering_hardware_offload_summary">Use tethering hardware acceleration if available</string>
     <string name="tethering_settings_not_available">Tethering settings are not available for this user</string>
+    <string name="textclock_template"><annotation id="color">"It's"</annotation>"
+"<annotation id="bold"><annotation id="line-height1">^1</annotation>"
+"<annotation id="line-height2">^2</annotation></annotation></string>
     <string name="theme">Theme</string>
     <string name="themepicker_overlayable_package">com.android.wallpaper</string>
     <string name="thermal_shutdown_dialog_message">"Your phone was too hot, so it turned off to cool down. Your phone is now running normally.

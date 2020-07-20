@@ -558,7 +558,7 @@
 
     iget-object p1, p0, Lcom/oneplus/notification/OpNotificationController;->mContext:Landroid/content/Context;
 
-    const v2, 0x50f00b3
+    const v2, 0x50f00bb
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1614,9 +1614,9 @@
 
     const/16 v2, 0x1a
 
-    const v3, 0x50f00b4
+    const v3, 0x50f00bc
 
-    const v4, 0x50f00b5
+    const v4, 0x50f00bd
 
     const/4 v5, 0x2
 
@@ -1992,7 +1992,7 @@
 
     move-result v5
 
-    const v6, 0x50f00b3
+    const v6, 0x50f00bb
 
     const-string v7, "android.substName"
 
@@ -2173,7 +2173,7 @@
 
     iget-object v5, v0, Lcom/oneplus/notification/OpNotificationController;->mContext:Landroid/content/Context;
 
-    const v6, 0x50f00b3
+    const v6, 0x50f00bb
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -4,6 +4,6 @@
 
 
 # static fields
-.field public static final TextAppearance_Leanback_SearchTextEdit:I = 0x7f12039c
+.field public static final TextAppearance_Leanback_SearchTextEdit:I = 0x7f13039c
 
-.field public static final Widget_Leanback_ImageCardView:I = 0x7f120490
+.field public static final Widget_Leanback_ImageCardView:I = 0x7f130490

@@ -1438,7 +1438,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "shouldForceShowFod: reason= "
+    const-string/jumbo v10, "shouldForceShowFod: reason= "
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1521,7 +1521,7 @@
 
     if-eqz p1, :cond_3
 
-    const-string p1, "shouldForceShowFod: add to window."
+    const-string/jumbo p1, "shouldForceShowFod: add to window."
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1542,7 +1542,7 @@
     goto :goto_2
 
     :cond_3
-    const-string p1, "shouldForceShowFod: already added to window, update ui."
+    const-string/jumbo p1, "shouldForceShowFod: already added to window, update ui."
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2416,7 +2416,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "shouldHideDismissButton: "
+    const-string/jumbo v1, "shouldHideDismissButton: "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

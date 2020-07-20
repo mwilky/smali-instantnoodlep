@@ -158,7 +158,7 @@
 .end method
 
 .method public onScreenTurnedOff()V
-    .locals 1
+    .locals 2
 
     invoke-super {p0}, Lcom/android/keyguard/KeyguardUpdateMonitorCallback;->onScreenTurnedOff()V
 
@@ -168,15 +168,27 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager$3;->this$0:Lcom/oneplus/aod/OpAodDisplayViewManager;
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager$3;->this$0:Lcom/oneplus/aod/OpAodDisplayViewManager;
 
-    invoke-static {p0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->access$700(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpFpAodIndicationText;
+    invoke-static {v0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->access$700(Lcom/oneplus/aod/OpAodDisplayViewManager;)Lcom/oneplus/aod/OpFpAodIndicationText;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-virtual {p0}, Lcom/oneplus/aod/OpFpAodIndicationText;->resetState()V
+    invoke-virtual {v0}, Lcom/oneplus/aod/OpFpAodIndicationText;->resetState()V
 
     :cond_0
+    iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager$3;->this$0:Lcom/oneplus/aod/OpAodDisplayViewManager;
+
+    invoke-static {v0}, Lcom/oneplus/aod/OpAodDisplayViewManager;->access$100(Lcom/oneplus/aod/OpAodDisplayViewManager;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/oneplus/aod/OpAodDisplayViewManager$3$5;
+
+    invoke-direct {v1, p0}, Lcom/oneplus/aod/OpAodDisplayViewManager$3$5;-><init>(Lcom/oneplus/aod/OpAodDisplayViewManager$3;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
     return-void
 .end method
 

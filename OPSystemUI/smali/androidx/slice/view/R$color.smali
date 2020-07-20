@@ -4,4 +4,4 @@
 
 
 # static fields
-.field public static final switch_thumb_normal_material_light:I = 0x7f060456
+.field public static final switch_thumb_normal_material_light:I = 0x7f060459

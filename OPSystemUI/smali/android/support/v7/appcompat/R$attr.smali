@@ -22,38 +22,38 @@
 
 .field public static final colorAccent:I = 0x7f040092
 
-.field public static final colorButtonNormal:I = 0x7f040094
+.field public static final colorButtonNormal:I = 0x7f040095
 
-.field public static final colorControlActivated:I = 0x7f040095
+.field public static final colorControlActivated:I = 0x7f040096
 
-.field public static final colorControlHighlight:I = 0x7f040096
+.field public static final colorControlHighlight:I = 0x7f040097
 
-.field public static final colorControlNormal:I = 0x7f040097
+.field public static final colorControlNormal:I = 0x7f040098
 
-.field public static final colorSwitchThumbNormal:I = 0x7f04009c
+.field public static final colorSwitchThumbNormal:I = 0x7f04009d
 
-.field public static final dropDownListViewStyle:I = 0x7f0400eb
+.field public static final dropDownListViewStyle:I = 0x7f0400ed
 
-.field public static final editTextStyle:I = 0x7f0400f1
+.field public static final editTextStyle:I = 0x7f0400f3
 
-.field public static final imageButtonStyle:I = 0x7f04017b
+.field public static final imageButtonStyle:I = 0x7f040180
 
-.field public static final listMenuViewStyle:I = 0x7f0401ed
+.field public static final listMenuViewStyle:I = 0x7f0401f2
 
-.field public static final listPopupWindowStyle:I = 0x7f0401ee
+.field public static final listPopupWindowStyle:I = 0x7f0401f3
 
-.field public static final radioButtonStyle:I = 0x7f040319
+.field public static final radioButtonStyle:I = 0x7f04031e
 
-.field public static final ratingBarStyle:I = 0x7f04031b
+.field public static final ratingBarStyle:I = 0x7f040320
 
-.field public static final searchViewStyle:I = 0x7f04033e
+.field public static final searchViewStyle:I = 0x7f040343
 
-.field public static final seekBarStyle:I = 0x7f040343
+.field public static final seekBarStyle:I = 0x7f040348
 
-.field public static final spinnerStyle:I = 0x7f040366
+.field public static final spinnerStyle:I = 0x7f04036c
 
-.field public static final switchStyle:I = 0x7f040381
+.field public static final switchStyle:I = 0x7f040387
 
-.field public static final toolbarNavigationButtonStyle:I = 0x7f0403b3
+.field public static final toolbarNavigationButtonStyle:I = 0x7f0403bb
 
-.field public static final toolbarStyle:I = 0x7f0403b4
+.field public static final toolbarStyle:I = 0x7f0403bc

@@ -98,54 +98,54 @@
 
 .field public static final oneplus_contorl_text_color_secondary_light:I = 0x7f060311
 
-.field public static final op_btn_volume_media_icon_bg_dark:I = 0x7f060332
+.field public static final op_btn_volume_media_icon_bg_dark:I = 0x7f060335
 
-.field public static final op_btn_volume_media_icon_bg_light:I = 0x7f060333
+.field public static final op_btn_volume_media_icon_bg_light:I = 0x7f060336
 
-.field public static final op_home_handle_dark_color:I = 0x7f06034f
+.field public static final op_home_handle_dark_color:I = 0x7f060352
 
-.field public static final op_home_handle_light_color:I = 0x7f060350
+.field public static final op_home_handle_light_color:I = 0x7f060353
 
-.field public static final op_nav_bar_background_dark:I = 0x7f060357
+.field public static final op_nav_bar_background_dark:I = 0x7f06035a
 
-.field public static final op_nav_bar_background_light:I = 0x7f060358
+.field public static final op_nav_bar_background_light:I = 0x7f06035b
 
-.field public static final op_nav_bar_background_transparent:I = 0x7f060359
+.field public static final op_nav_bar_background_transparent:I = 0x7f06035c
 
-.field public static final op_nav_bar_key_dark:I = 0x7f06035a
+.field public static final op_nav_bar_key_dark:I = 0x7f06035d
 
-.field public static final op_nav_bar_key_light:I = 0x7f06035b
+.field public static final op_nav_bar_key_light:I = 0x7f06035e
 
-.field public static final op_nav_bar_key_transparent:I = 0x7f06035c
+.field public static final op_nav_bar_key_transparent:I = 0x7f06035f
 
-.field public static final op_notification_info_secondary_color:I = 0x7f06035e
+.field public static final op_notification_info_secondary_color:I = 0x7f060361
 
-.field public static final op_volume_dialog_row_icon_color_dark:I = 0x7f060392
+.field public static final op_volume_dialog_row_icon_color_dark:I = 0x7f060395
 
-.field public static final op_volume_dialog_row_icon_color_light:I = 0x7f060393
+.field public static final op_volume_dialog_row_icon_color_light:I = 0x7f060396
 
-.field public static final qs_detail_button_white:I = 0x7f0603ed
+.field public static final qs_detail_button_white:I = 0x7f0603f0
 
-.field public static final qs_tile_disabled_color:I = 0x7f0603f2
+.field public static final qs_tile_disabled_color:I = 0x7f0603f5
 
-.field public static final qs_tile_icon:I = 0x7f0603f4
+.field public static final qs_tile_icon:I = 0x7f0603f7
 
-.field public static final remote_input_hint:I = 0x7f060424
+.field public static final remote_input_hint:I = 0x7f060427
 
-.field public static final remote_input_text_enabled:I = 0x7f060427
+.field public static final remote_input_text_enabled:I = 0x7f06042a
 
-.field public static final screen_pinning_request_window_bg:I = 0x7f06042b
+.field public static final screen_pinning_request_window_bg:I = 0x7f06042e
 
-.field public static final smart_reply_button_background:I = 0x7f060448
+.field public static final smart_reply_button_background:I = 0x7f06044b
 
-.field public static final smart_reply_button_stroke:I = 0x7f060449
+.field public static final smart_reply_button_stroke:I = 0x7f06044c
 
-.field public static final smart_reply_button_text:I = 0x7f06044a
+.field public static final smart_reply_button_text:I = 0x7f06044d
 
-.field public static final smart_reply_button_text_dark_bg:I = 0x7f06044b
+.field public static final smart_reply_button_text_dark_bg:I = 0x7f06044e
 
-.field public static final system_bar_background_opaque:I = 0x7f060461
+.field public static final system_bar_background_opaque:I = 0x7f060464
 
-.field public static final system_bar_background_transparent:I = 0x7f060462
+.field public static final system_bar_background_transparent:I = 0x7f060465
 
-.field public static final transparent:I = 0x7f0604a6
+.field public static final transparent:I = 0x7f0604a9

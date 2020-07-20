@@ -107,10 +107,13 @@
     <item type="id" name="analog_background" />
     <item type="id" name="analog_clock" />
     <item type="id" name="analog_clock_view" />
+    <item type="id" name="analog_date_container" />
+    <item type="id" name="analog_date_view" />
     <item type="id" name="analog_dot" />
     <item type="id" name="analog_hour" />
     <item type="id" name="analog_min" />
     <item type="id" name="analog_outer" />
+    <item type="id" name="analog_sec" />
     <item type="id" name="animation_view_assist" />
     <item type="id" name="animation_view_container" />
     <item type="id" name="animation_view_pow" />
@@ -300,6 +303,7 @@
     <item type="id" name="current_time" />
     <item type="id" name="custom" />
     <item type="id" name="customPanel" />
+    <item type="id" name="custom_clock_view" />
     <item type="id" name="customize_container" />
     <item type="id" name="customizer_transparent_view" />
     <item type="id" name="cutout_space_view" />
@@ -924,6 +928,7 @@
     <item type="id" name="recent_apps" />
     <item type="id" name="record_button" />
     <item type="id" name="recycler_view" />
+    <item type="id" name="red_clock_view" />
     <item type="id" name="release_note_detail" />
     <item type="id" name="release_note_panel" />
     <item type="id" name="release_note_title" />

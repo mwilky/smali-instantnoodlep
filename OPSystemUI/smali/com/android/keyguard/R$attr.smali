@@ -4,4 +4,4 @@
 
 
 # static fields
-.field public static final wallpaperTextColor:I = 0x7f0403cf
+.field public static final wallpaperTextColor:I = 0x7f0403d7

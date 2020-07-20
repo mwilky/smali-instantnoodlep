@@ -4,6 +4,7 @@
 
 # interfaces
 .implements Lcom/android/systemui/statusbar/phone/HighlightHintController$OnHighlightHintStateChangeListener;
+.implements Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector$OnBurnInPreventListener;
 
 
 # instance fields
@@ -64,6 +65,21 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method public onBurnInPreventTrigger(I)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/systemui/statusbar/phone/OpPhoneStatusBarView;->mStatusbarContent:Landroid/view/ViewGroup;
+
+    if-eqz p0, :cond_0
+
+    int-to-float p1, p1
+
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setTranslationX(F)V
+
+    :cond_0
+    return-void
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V

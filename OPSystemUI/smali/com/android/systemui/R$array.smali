@@ -40,8 +40,12 @@
 
 .field public static final tv_pip_settings_class_name:I = 0x7f030139
 
-.field public static final warp_anim:I = 0x7f03013c
+.field public static final type_clock_hours:I = 0x7f03013a
 
-.field public static final warpcharge_wired_anim:I = 0x7f03013d
+.field public static final type_clock_minutes:I = 0x7f03013b
 
-.field public static final warpcharge_wireless_anim:I = 0x7f03013e
+.field public static final warp_anim:I = 0x7f03013e
+
+.field public static final warpcharge_wired_anim:I = 0x7f03013f
+
+.field public static final warpcharge_wireless_anim:I = 0x7f030140
