@@ -58,7 +58,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0a0744
+    const v0, 0x7f0a0741
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -72,7 +72,7 @@
 
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    const p1, 0x7f0a074d
+    const p1, 0x7f0a074a
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

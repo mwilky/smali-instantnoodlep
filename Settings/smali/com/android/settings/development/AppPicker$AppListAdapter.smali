@@ -248,7 +248,7 @@
 
     invoke-direct {v1, p1}, Lcom/android/settings/development/AppPicker$MyApplicationInfo;-><init>(Lcom/android/settings/development/AppPicker;)V
 
-    const p1, 0x7f120b48
+    const p1, 0x7f120b60
 
     invoke-virtual {p2, p1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -278,7 +278,7 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d027c
+    const p2, 0x7f0d027d
 
     invoke-virtual {p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 

@@ -59,7 +59,7 @@
 
     iput-boolean p3, p0, Lcom/android/settingslib/RestrictedSwitchPreference;->mUseAdditionalSummary:Z
 
-    const p4, 0x7f0d02cc
+    const p4, 0x7f0d02cd
 
     invoke-virtual {p0, p4}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -141,7 +141,7 @@
 
     if-eqz p1, :cond_4
 
-    const p1, 0x7f0d02cb
+    const p1, 0x7f0d02cc
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -224,12 +224,12 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f12069d
+    const v1, 0x7f1206b3
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f120619
+    const v1, 0x7f120620
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -237,7 +237,7 @@
     move-result-object v0
 
     :cond_1
-    const v1, 0x7f0a05ed
+    const v1, 0x7f0a05ea
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

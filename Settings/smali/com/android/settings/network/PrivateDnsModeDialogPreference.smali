@@ -45,7 +45,7 @@
 
     sget-object v0, Lcom/android/settings/network/PrivateDnsModeDialogPreference;->PRIVATE_DNS_MAP:Ljava/util/Map;
 
-    const v1, 0x7f0a0598
+    const v1, 0x7f0a0595
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -57,7 +57,7 @@
 
     sget-object v0, Lcom/android/settings/network/PrivateDnsModeDialogPreference;->PRIVATE_DNS_MAP:Ljava/util/Map;
 
-    const v1, 0x7f0a0599
+    const v1, 0x7f0a0596
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -69,7 +69,7 @@
 
     sget-object v0, Lcom/android/settings/network/PrivateDnsModeDialogPreference;->PRIVATE_DNS_MAP:Ljava/util/Map;
 
-    const v1, 0x7f0a059a
+    const v1, 0x7f0a0597
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -95,7 +95,7 @@
 
     invoke-direct {p1, v1, v0}, Lcom/android/settings/utils/AnnotationSpan$LinkInfo;-><init>(Ljava/lang/String;Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0d02c6
+    const p1, 0x7f0d02c7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -115,7 +115,7 @@
 
     invoke-direct {p1, v0, p2}, Lcom/android/settings/utils/AnnotationSpan$LinkInfo;-><init>(Ljava/lang/String;Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0d02c6
+    const p1, 0x7f0d02c7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -135,7 +135,7 @@
 
     invoke-direct {p1, p3, p2}, Lcom/android/settings/utils/AnnotationSpan$LinkInfo;-><init>(Ljava/lang/String;Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0d02c6
+    const p1, 0x7f0d02c7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -155,7 +155,7 @@
 
     invoke-direct {p1, p3, p2}, Lcom/android/settings/utils/AnnotationSpan$LinkInfo;-><init>(Ljava/lang/String;Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0d02c6
+    const p1, 0x7f0d02c7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -240,7 +240,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1207e3
+    const v1, 0x7f1207fb
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -400,7 +400,7 @@
 
     iput-object v2, p0, Lcom/android/settings/network/PrivateDnsModeDialogPreference;->mMode:Ljava/lang/String;
 
-    const v2, 0x7f0a059b
+    const v2, 0x7f0a0598
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -424,7 +424,7 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f0a059c
+    const v1, 0x7f0a0599
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -444,7 +444,7 @@
 
     iget-object p0, p0, Lcom/android/settings/network/PrivateDnsModeDialogPreference;->mMode:Ljava/lang/String;
 
-    const v3, 0x7f0a0599
+    const v3, 0x7f0a0596
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -462,7 +462,7 @@
 
     invoke-virtual {v1, p0}, Landroid/widget/RadioGroup;->check(I)V
 
-    const p0, 0x7f0a0597
+    const p0, 0x7f0a0594
 
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -476,7 +476,7 @@
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    const p1, 0x7f1207e3
+    const p1, 0x7f1207fb
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -506,7 +506,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f121284
+    const p1, 0x7f12129c
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -548,7 +548,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
     :cond_0
-    const v0, 0x7f0a05ed
+    const v0, 0x7f0a05ea
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -608,7 +608,7 @@
     return-void
 
     :pswitch_data_0
-    .packed-switch 0x7f0a0598
+    .packed-switch 0x7f0a0595
         :pswitch_2
         :pswitch_1
         :pswitch_0

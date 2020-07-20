@@ -48,7 +48,7 @@
 
     const/4 v2, 0x1
 
-    const v3, 0x7f12147e
+    const v3, 0x7f121496
 
     if-eqz v0, :cond_2
 
@@ -79,7 +79,7 @@
 
     invoke-virtual {v0, p1, v4}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    const p1, 0x7f12147d
+    const p1, 0x7f121495
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

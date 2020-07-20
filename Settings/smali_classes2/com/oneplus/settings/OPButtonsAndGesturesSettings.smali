@@ -497,7 +497,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/OPButtonsAndGesturesSettings;->mLongPressPowerButtonPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f1210b6
+    const v0, 0x7f1210ce
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -506,7 +506,7 @@
     :cond_5
     iget-object p0, p0, Lcom/oneplus/settings/OPButtonsAndGesturesSettings;->mLongPressPowerButtonPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f12120a
+    const v0, 0x7f121222
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 

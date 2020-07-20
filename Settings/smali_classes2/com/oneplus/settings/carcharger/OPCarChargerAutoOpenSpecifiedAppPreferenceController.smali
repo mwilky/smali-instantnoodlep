@@ -97,7 +97,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/carcharger/OPCarChargerAutoOpenSpecifiedAppPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120c6d
+    const v0, 0x7f120c85
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

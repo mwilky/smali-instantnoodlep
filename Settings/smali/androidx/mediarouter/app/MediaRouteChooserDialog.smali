@@ -139,7 +139,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteChooserDialog;->mAdapter:Landroidx/mediarouter/app/MediaRouteChooserDialog$RouteAdapter;
 
-    const p1, 0x7f0a0427
+    const p1, 0x7f0a042c
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -171,7 +171,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
-    const p1, 0x7f0a042b
+    const p1, 0x7f0a0430
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 

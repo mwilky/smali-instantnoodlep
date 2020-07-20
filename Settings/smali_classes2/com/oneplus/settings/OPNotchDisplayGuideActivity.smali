@@ -377,7 +377,7 @@
 
     if-eqz v0, :cond_0
 
-    const p1, 0x7f12070f
+    const p1, 0x7f120725
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -505,7 +505,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d01d3
+    const p1, 0x7f0d01d4
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -549,7 +549,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mOverlayManager:Landroid/content/om/IOverlayManager;
 
-    const p1, 0x7f0a04f8
+    const p1, 0x7f0a04f5
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -561,7 +561,7 @@
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a04d7
+    const p1, 0x7f0a04d4
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -573,7 +573,7 @@
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a04f6
+    const p1, 0x7f0a04f3
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -583,7 +583,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchBtn:Landroid/widget/RadioButton;
 
-    const p1, 0x7f0a04d5
+    const p1, 0x7f0a04d2
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -593,7 +593,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotchBtn:Landroid/widget/RadioButton;
 
-    const p1, 0x7f0a02ab
+    const p1, 0x7f0a02b0
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -603,7 +603,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mFullScreenModeGuideTitle:Landroid/widget/TextView;
 
-    const p1, 0x7f0a04f9
+    const p1, 0x7f0a04f6
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -613,7 +613,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchModeTitle:Landroid/widget/TextView;
 
-    const p1, 0x7f0a04d2
+    const p1, 0x7f0a04cf
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -623,7 +623,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchModeTitleSummary:Landroid/widget/TextView;
 
-    const p1, 0x7f0a04d8
+    const p1, 0x7f0a04d5
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -633,7 +633,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotchModeTitle:Landroid/widget/TextView;
 
-    const p1, 0x7f0a04d9
+    const p1, 0x7f0a04d6
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -655,7 +655,7 @@
 
     if-eqz p1, :cond_0
 
-    const v0, 0x7f120d8d
+    const v0, 0x7f120da5
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -666,7 +666,7 @@
     :cond_0
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mFullScreenModeGuideTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f120d8c
+    const v0, 0x7f120da4
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -676,7 +676,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchModeTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f12100f
+    const v0, 0x7f121027
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -686,7 +686,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotchModeTitleSummary:Landroid/widget/TextView;
 
-    const v0, 0x7f12100e
+    const v0, 0x7f121026
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -696,7 +696,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotchModeTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f120def
+    const v0, 0x7f120e07
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -706,7 +706,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotchModeTitleSummary:Landroid/widget/TextView;
 
-    const v0, 0x7f120dee
+    const v0, 0x7f120e06
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -715,7 +715,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_1
-    const p1, 0x7f0a04f7
+    const p1, 0x7f0a04f4
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -725,7 +725,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotch:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a04d6
+    const p1, 0x7f0a04d3
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -747,13 +747,13 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotch:Landroid/widget/ImageView;
 
-    const v0, 0x7f0804b5
+    const v0, 0x7f0804be
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotch:Landroid/widget/ImageView;
 
-    const v0, 0x7f08047f
+    const v0, 0x7f080488
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -762,13 +762,13 @@
     :cond_2
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mShowNotch:Landroid/widget/ImageView;
 
-    const v0, 0x7f0804b6
+    const v0, 0x7f0804bf
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
     iget-object p1, p0, Lcom/oneplus/settings/OPNotchDisplayGuideActivity;->mHideNotch:Landroid/widget/ImageView;
 
-    const v0, 0x7f080480
+    const v0, 0x7f080489
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 

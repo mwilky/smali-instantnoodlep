@@ -132,7 +132,7 @@
 
     :cond_2
     :goto_1
-    const p1, 0x7f0804c3
+    const p1, 0x7f0804cc
 
     const/4 v0, 0x0
 

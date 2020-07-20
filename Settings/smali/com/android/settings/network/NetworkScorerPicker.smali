@@ -207,7 +207,7 @@
 
     invoke-direct {v3, v4, v5}, Lcom/android/settings/widget/RadioButtonPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v4, 0x7f120b08
+    const v4, 0x7f120b20
 
     invoke-virtual {v3, v4}, Landroidx/preference/Preference;->setTitle(I)V
 

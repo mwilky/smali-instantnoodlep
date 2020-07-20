@@ -84,7 +84,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f1219a2
+    const v0, 0x7f1219ba
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -93,7 +93,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f1219a4
+    const v0, 0x7f1219bc
 
     const/4 v1, 0x1
 
@@ -112,7 +112,7 @@
     :goto_0
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f1219a0
+    const v0, 0x7f1219b8
 
     new-instance v1, Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment$2;
 
@@ -120,7 +120,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f1219a1
+    const v0, 0x7f1219b9
 
     new-instance v1, Lcom/android/settings/wifi/WifiScanModeActivity$AlertDialogFragment$1;
 

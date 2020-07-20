@@ -87,7 +87,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a057a
+    const v3, 0x7f0a0577
 
     if-nez p2, :cond_0
 
@@ -322,7 +322,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0a057a
+    const v2, 0x7f0a0577
 
     if-ne p2, v0, :cond_1
 

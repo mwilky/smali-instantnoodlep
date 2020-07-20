@@ -55,7 +55,7 @@
 
     invoke-direct {p0, p1}, Lcom/oneplus/settings/ui/OPRestrictedSwitchPreference;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0d0215
+    const v0, 0x7f0d0216
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -278,7 +278,7 @@
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setCancelable(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v2, 0x7f120cf2
+    const v2, 0x7f120d0a
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -566,7 +566,7 @@
 
     invoke-virtual {v1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setCancelable(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v2, 0x7f120e04
+    const v2, 0x7f120e1c
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -586,7 +586,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120df8
+    const v3, 0x7f120e10
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -598,7 +598,7 @@
 
     invoke-virtual {v1, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p1, 0x7f120df9
+    const p1, 0x7f120e11
 
     new-instance v0, Lcom/android/settingslib/-$$Lambda$OPInputMethodPreference$NtGeHnMX1DAJE-2ckpe_W-H3DV4;
 
@@ -675,7 +675,7 @@
 
     invoke-static {v2, v3, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    const v1, 0x7f12070c
+    const v1, 0x7f120722
 
     new-array v2, v0, [Ljava/lang/Object;
 

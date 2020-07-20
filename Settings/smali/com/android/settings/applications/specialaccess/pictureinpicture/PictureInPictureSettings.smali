@@ -356,7 +356,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/widget/EmptyTextSettings;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const p1, 0x7f1211f0
+    const p1, 0x7f121208
 
     invoke-virtual {p0, p1}, Lcom/android/settings/widget/EmptyTextSettings;->setEmptyText(I)V
 

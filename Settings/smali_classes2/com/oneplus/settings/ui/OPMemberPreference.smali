@@ -51,7 +51,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d0218
+    const p1, 0x7f0d0219
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -77,7 +77,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d0218
+    const p1, 0x7f0d0219
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -105,7 +105,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d0218
+    const p1, 0x7f0d0219
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -131,7 +131,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d0218
+    const p1, 0x7f0d0219
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -562,7 +562,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0775
+    const v0, 0x7f0a0772
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -572,7 +572,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mTvTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f0a076e
+    const v0, 0x7f0a076b
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -582,7 +582,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mTvContent:Landroid/widget/TextView;
 
-    const v0, 0x7f0a035b
+    const v0, 0x7f0a0360
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -592,7 +592,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mIvAvatarBg:Lcom/oneplus/settings/ui/OPMemberImageView;
 
-    const v0, 0x7f0a035c
+    const v0, 0x7f0a0361
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -602,7 +602,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mIvAvatarDef:Lcom/oneplus/settings/ui/OPMemberImageView;
 
-    const v0, 0x7f0a035d
+    const v0, 0x7f0a0362
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -612,7 +612,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mIvAvatarTag:Lcom/oneplus/settings/ui/OPMemberImageView;
 
-    const v0, 0x7f0a0770
+    const v0, 0x7f0a076d
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -630,7 +630,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12115b
+    const v1, 0x7f121173
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -674,7 +674,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/ui/OPMemberPreference;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f12115a
+    const v6, 0x7f121172
 
     invoke-virtual {v2, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

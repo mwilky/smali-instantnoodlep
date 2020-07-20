@@ -19,7 +19,7 @@
 
     iput p1, p0, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->mPercent:I
 
-    const p1, 0x7f0d0300
+    const p1, 0x7f0d0301
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 

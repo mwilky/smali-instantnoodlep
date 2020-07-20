@@ -125,7 +125,7 @@
 
     move-result v0
 
-    const v1, 0x7f1209b4
+    const v1, 0x7f1209cc
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -133,7 +133,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f1209ac
+    const p1, 0x7f1209c4
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -144,7 +144,7 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    const p1, 0x7f121157
+    const p1, 0x7f12116f
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 

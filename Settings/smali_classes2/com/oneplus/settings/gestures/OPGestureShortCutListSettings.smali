@@ -70,7 +70,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d01db
+    const p1, 0x7f0d01dc
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -158,7 +158,7 @@
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    const p1, 0x7f0a04d3
+    const p1, 0x7f0a04d0
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -172,9 +172,9 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/gestures/OPGestureShortCutListSettings;->mGestureShortcutListView:Landroid/widget/ListView;
 
-    const v1, 0x7f08057c
+    const v1, 0x7f080585
 
-    const v2, 0x7f08057b
+    const v2, 0x7f080584
 
     const v3, 0x7f070385
 

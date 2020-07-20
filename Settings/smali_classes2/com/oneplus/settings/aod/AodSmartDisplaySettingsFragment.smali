@@ -196,7 +196,7 @@
 
     if-eqz p1, :cond_3
 
-    const v0, 0x7f120c38
+    const v0, 0x7f120c50
 
     invoke-virtual {p1, v0, v0}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

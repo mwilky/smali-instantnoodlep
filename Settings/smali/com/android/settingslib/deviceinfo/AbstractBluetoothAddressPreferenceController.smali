@@ -145,7 +145,7 @@
     :cond_1
     iget-object p0, p0, Lcom/android/settingslib/deviceinfo/AbstractBluetoothAddressPreferenceController;->mBtAddress:Landroidx/preference/Preference;
 
-    const v0, 0x7f121573
+    const v0, 0x7f12158b
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 

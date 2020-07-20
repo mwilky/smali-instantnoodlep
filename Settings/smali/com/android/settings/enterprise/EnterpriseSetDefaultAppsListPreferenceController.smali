@@ -334,7 +334,7 @@
     goto :goto_1
 
     :pswitch_1
-    const v7, 0x7f1205cc
+    const v7, 0x7f1205d3
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -356,7 +356,7 @@
     goto :goto_1
 
     :pswitch_3
-    const v7, 0x7f1205c4
+    const v7, 0x7f1205cb
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -378,7 +378,7 @@
     goto :goto_1
 
     :pswitch_5
-    const v7, 0x7f1205c3
+    const v7, 0x7f1205ca
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -387,7 +387,7 @@
     goto :goto_1
 
     :pswitch_6
-    const v7, 0x7f1205c1
+    const v7, 0x7f1205c8
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -451,7 +451,7 @@
 
     if-ne v5, v8, :cond_4
 
-    const v5, 0x7f120186
+    const v5, 0x7f12018d
 
     new-array v8, v8, [Ljava/lang/Object;
 
@@ -470,7 +470,7 @@
     goto :goto_3
 
     :cond_4
-    const v5, 0x7f120187
+    const v5, 0x7f12018e
 
     const/4 v10, 0x3
 
@@ -636,14 +636,14 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f120a1d
+    const v2, 0x7f120a35
 
     invoke-virtual {v4, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
     goto :goto_1
 
     :cond_2
-    const v2, 0x7f1211e5
+    const v2, 0x7f1211fd
 
     invoke-virtual {v4, v2}, Landroidx/preference/Preference;->setTitle(I)V
 

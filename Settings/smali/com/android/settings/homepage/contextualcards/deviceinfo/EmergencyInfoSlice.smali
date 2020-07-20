@@ -58,7 +58,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/EmergencyInfoSlice;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12067c
+    const v3, 0x7f120692
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -68,7 +68,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/EmergencyInfoSlice;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f12067a
+    const v4, 0x7f120690
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -92,7 +92,7 @@
 
     iget-object v4, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/EmergencyInfoSlice;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f08016b
+    const v6, 0x7f080174
 
     invoke-static {v4, v6}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 

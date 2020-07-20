@@ -53,7 +53,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01f1
+    const p1, 0x7f0d01f2
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -71,7 +71,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01f1
+    const p1, 0x7f0d01f2
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -89,7 +89,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01f1
+    const p1, 0x7f0d01f2
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -107,7 +107,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01f1
+    const p1, 0x7f0d01f2
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -162,7 +162,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1210c6
+    const v2, 0x7f1210de
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -179,7 +179,7 @@
     :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120e9b
+    const v2, 0x7f120eb3
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -370,7 +370,7 @@
 
     move-result v2
 
-    const v4, 0x7f0a0777
+    const v4, 0x7f0a0774
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -380,7 +380,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTVColorTitle:Landroid/widget/TextView;
 
-    const v4, 0x7f0a0776
+    const v4, 0x7f0a0773
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -390,7 +390,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTVBrightnessTitle:Landroid/widget/TextView;
 
-    const v4, 0x7f0a076d
+    const v4, 0x7f0a076a
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -400,7 +400,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTVColorStrong:Landroid/widget/TextView;
 
-    const v4, 0x7f0a076c
+    const v4, 0x7f0a0769
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -410,7 +410,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTVBrightnessStrong:Landroid/widget/TextView;
 
-    const v4, 0x7f0a075c
+    const v4, 0x7f0a0759
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -420,7 +420,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTRColor:Landroid/widget/TableRow;
 
-    const v4, 0x7f0a075a
+    const v4, 0x7f0a0757
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -430,7 +430,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTRBrightness:Landroid/widget/TableRow;
 
-    const v4, 0x7f0a075b
+    const v4, 0x7f0a0758
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -440,7 +440,7 @@
 
     iput-object v4, p0, Lcom/oneplus/settings/ui/OPNightModeLevelPreferenceCategory;->mTRBrightnessTitle:Landroid/widget/TableRow;
 
-    const v4, 0x7f0a063f
+    const v4, 0x7f0a063c
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -460,7 +460,7 @@
 
     invoke-virtual {v4, v1}, Lcom/oneplus/lib/widget/OPProgressBar;->setProgress(I)V
 
-    const v1, 0x7f0a063e
+    const v1, 0x7f0a063b
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

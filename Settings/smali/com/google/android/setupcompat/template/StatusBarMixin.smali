@@ -24,7 +24,7 @@
 
     iput-object p1, p0, Lcom/google/android/setupcompat/template/StatusBarMixin;->partnerCustomizationLayout:Lcom/google/android/setupcompat/PartnerCustomizationLayout;
 
-    const v0, 0x7f0a06c8
+    const v0, 0x7f0a06c5
 
     invoke-virtual {p1, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 

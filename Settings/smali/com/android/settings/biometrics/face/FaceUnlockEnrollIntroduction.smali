@@ -153,7 +153,7 @@
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_0
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06d2
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -161,7 +161,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f121433
+    const v1, 0x7f12144b
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -173,17 +173,17 @@
 
     move-result v2
 
-    const v3, 0x7f120d3b
+    const v3, 0x7f120d53
 
     if-eqz v2, :cond_1
 
     invoke-virtual {p0, v3}, Lcom/android/settings/biometrics/face/FaceUnlockEnrollIntroduction;->setHeaderText(I)V
 
-    const v2, 0x7f120d4d
+    const v2, 0x7f120d65
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
-    const v0, 0x7f0a05f1
+    const v0, 0x7f0a05ee
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -202,22 +202,22 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f1210a0
+    const v2, 0x7f1210b8
 
     invoke-virtual {p0, v2}, Lcom/android/settings/biometrics/face/FaceUnlockEnrollIntroduction;->setHeaderText(I)V
 
-    const v2, 0x7f12109f
+    const v2, 0x7f1210b7
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
     :cond_2
-    const v2, 0x7f120d3a
+    const v2, 0x7f120d52
 
     invoke-virtual {p0, v2}, Lcom/android/settings/biometrics/face/FaceUnlockEnrollIntroduction;->setHeaderText(I)V
 
-    const v2, 0x7f120d39
+    const v2, 0x7f120d51
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -234,11 +234,11 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f120f00
+    const v1, 0x7f120f18
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    const v0, 0x7f0a02ac
+    const v0, 0x7f0a02b1
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -366,7 +366,7 @@
 
     if-eqz p1, :cond_2
 
-    const p1, 0x7f0a06c9
+    const p1, 0x7f0a06c6
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -378,7 +378,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextSize(F)V
 
-    const p1, 0x7f0a06d5
+    const p1, 0x7f0a06d2
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -391,7 +391,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextSize(F)V
 
     :cond_2
-    const p1, 0x7f0a031e
+    const p1, 0x7f0a0323
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -596,7 +596,7 @@
 .method protected setHeaderText(I)V
     .locals 1
 
-    const v0, 0x7f0a06c9
+    const v0, 0x7f0a06c6
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

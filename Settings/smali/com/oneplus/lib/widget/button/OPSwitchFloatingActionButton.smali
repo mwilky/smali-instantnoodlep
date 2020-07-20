@@ -103,7 +103,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f080609
+    const v2, 0x7f080612
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -151,7 +151,7 @@
 
     invoke-virtual {p1, p3, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const p1, 0x7f0a0470
+    const p1, 0x7f0a0475
 
     invoke-virtual {p0, p1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -171,7 +171,7 @@
 
     invoke-virtual {p3, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    const p1, 0x7f0a06f0
+    const p1, 0x7f0a06ed
 
     invoke-virtual {p0, p1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -293,7 +293,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080609
+    const v1, 0x7f080612
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

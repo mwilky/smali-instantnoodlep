@@ -97,7 +97,7 @@
 .method public getLayoutResource()I
     .locals 0
 
-    const p0, 0x7f0d031f
+    const p0, 0x7f0d0320
 
     return p0
 .end method

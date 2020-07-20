@@ -196,7 +196,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f030105
+    const v2, 0x7f030106
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -208,7 +208,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f030104
+    const v3, 0x7f030105
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -232,7 +232,7 @@
 
     iget-object v2, p0, Lcom/android/settingslib/development/AbstractLogdSizePreferenceController;->mLogdSize:Landroidx/preference/ListPreference;
 
-    const v3, 0x7f030102
+    const v3, 0x7f030103
 
     invoke-virtual {v2, v3}, Landroidx/preference/ListPreference;->setEntries(I)V
 
@@ -255,7 +255,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f030103
+    const v5, 0x7f030104
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

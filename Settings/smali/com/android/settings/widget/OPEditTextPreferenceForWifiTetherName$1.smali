@@ -94,7 +94,7 @@
 
     move-result-object p2
 
-    const v1, 0x7f0d0270
+    const v1, 0x7f0d0271
 
     const/4 v2, 0x0
 
@@ -102,7 +102,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f1210d3
+    const v0, 0x7f1210eb
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -120,7 +120,7 @@
 
     iget-object p0, p0, Lcom/android/settings/widget/OPEditTextPreferenceForWifiTetherName$1;->this$0:Lcom/android/settings/widget/OPEditTextPreferenceForWifiTetherName;
 
-    const v0, 0x7f0a0352
+    const v0, 0x7f0a0357
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

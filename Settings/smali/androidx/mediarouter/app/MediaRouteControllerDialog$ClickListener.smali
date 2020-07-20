@@ -54,7 +54,7 @@
     goto/16 :goto_2
 
     :cond_0
-    const v1, 0x7f0a042e
+    const v1, 0x7f0a0433
 
     if-ne p1, v1, :cond_5
 
@@ -104,7 +104,7 @@
 
     invoke-virtual {p1}, Landroid/support/v4/media/session/MediaControllerCompat$TransportControls;->pause()V
 
-    const v2, 0x7f120acd
+    const v2, 0x7f120ae5
 
     goto :goto_1
 
@@ -129,7 +129,7 @@
 
     invoke-virtual {p1}, Landroid/support/v4/media/session/MediaControllerCompat$TransportControls;->stop()V
 
-    const v2, 0x7f120acf
+    const v2, 0x7f120ae7
 
     goto :goto_1
 
@@ -154,7 +154,7 @@
 
     invoke-virtual {p1}, Landroid/support/v4/media/session/MediaControllerCompat$TransportControls;->play()V
 
-    const v2, 0x7f120ace
+    const v2, 0x7f120ae6
 
     :cond_4
     :goto_1
@@ -219,7 +219,7 @@
     goto :goto_3
 
     :cond_5
-    const v0, 0x7f0a042c
+    const v0, 0x7f0a0431
 
     if-ne p1, v0, :cond_9
 

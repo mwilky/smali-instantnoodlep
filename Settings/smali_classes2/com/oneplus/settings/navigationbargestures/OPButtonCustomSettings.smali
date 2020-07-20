@@ -611,9 +611,9 @@
 
     move-result v0
 
-    const v1, 0x7f03009b
+    const v1, 0x7f03009c
 
-    const v2, 0x7f03009f
+    const v2, 0x7f0300a0
 
     if-nez v0, :cond_5
 
@@ -722,13 +722,13 @@
 
     move-result v0
 
-    const v1, 0x7f030089
+    const v1, 0x7f03008a
 
-    const v2, 0x7f030085
+    const v2, 0x7f030086
 
-    const v5, 0x7f0300a0
+    const v5, 0x7f0300a1
 
-    const v6, 0x7f03009c
+    const v6, 0x7f03009d
 
     if-nez v0, :cond_7
 
@@ -768,13 +768,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v7, 0x7f030086
+    const v7, 0x7f030087
 
     invoke-virtual {v0, v7}, Landroidx/preference/ListPreference;->setEntries(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v7, 0x7f03008a
+    const v7, 0x7f03008b
 
     invoke-virtual {v0, v7}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -783,13 +783,13 @@
     :cond_8
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v7, 0x7f03009d
+    const v7, 0x7f03009e
 
     invoke-virtual {v0, v7}, Landroidx/preference/ListPreference;->setEntries(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v7, 0x7f0300a1
+    const v7, 0x7f0300a2
 
     invoke-virtual {v0, v7}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -912,13 +912,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f030084
+    const v1, 0x7f030085
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f030088
+    const v1, 0x7f030089
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -944,13 +944,13 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f030087
+    const v1, 0x7f030088
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f03008b
+    const v1, 0x7f03008c
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -959,13 +959,13 @@
     :cond_d
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f03009e
+    const v1, 0x7f03009f
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setEntries(I)V
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mHomeLongPressAction:Landroidx/preference/ListPreference;
 
-    const v1, 0x7f0300a2
+    const v1, 0x7f0300a3
 
     invoke-virtual {v0, v1}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -980,7 +980,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/navigationbargestures/OPButtonCustomSettings;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1207b8
+    const v1, 0x7f1207d0
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

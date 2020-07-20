@@ -32,7 +32,7 @@
 .method protected getNextButton()Lcom/oneplus/lib/widget/button/OPButton;
     .locals 1
 
-    const v0, 0x7f0a045c
+    const v0, 0x7f0a0461
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

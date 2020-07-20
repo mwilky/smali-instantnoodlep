@@ -161,7 +161,7 @@
     goto :goto_0
 
     :cond_1
-    const v3, 0x7f120623
+    const v3, 0x7f12062a
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -225,7 +225,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0801c7
+    const v2, 0x7f0801d0
 
     invoke-static {p0, v2}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -938,7 +938,7 @@
 
     move-result v0
 
-    const v1, 0x7f08032f
+    const v1, 0x7f080338
 
     if-nez v0, :cond_0
 
@@ -1090,13 +1090,13 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f121620
+    const v1, 0x7f121638
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    const v2, 0x7f121623
+    const v2, 0x7f12163b
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

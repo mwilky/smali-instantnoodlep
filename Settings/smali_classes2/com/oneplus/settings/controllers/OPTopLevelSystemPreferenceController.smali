@@ -91,7 +91,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/controllers/OPTopLevelSystemPreferenceController;->mUpdatePreference:Lcom/oneplus/settings/system/OPSystemUpdatePreference;
 
-    const p1, 0x7f12108f
+    const p1, 0x7f1210a7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

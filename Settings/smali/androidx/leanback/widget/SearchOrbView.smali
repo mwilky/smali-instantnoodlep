@@ -124,7 +124,7 @@
 
     iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0a062e
+    const v2, 0x7f0a062b
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -134,7 +134,7 @@
 
     iget-object v1, p0, Landroidx/leanback/widget/SearchOrbView;->mRootView:Landroid/view/View;
 
-    const v2, 0x7f0a0305
+    const v2, 0x7f0a030a
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -247,7 +247,7 @@
 
     if-nez p1, :cond_1
 
-    const p1, 0x7f0803c2
+    const p1, 0x7f0803cb
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

@@ -148,7 +148,7 @@
 
     const v0, 0x3fa66666    # 1.3f
 
-    const v1, 0x7f0803e1
+    const v1, 0x7f0803ea
 
     invoke-direct {p0, v1, v0}, Landroidx/leanback/widget/StreamingTextView;->getScaledBitmap(IF)Landroid/graphics/Bitmap;
 
@@ -156,7 +156,7 @@
 
     iput-object v1, p0, Landroidx/leanback/widget/StreamingTextView;->mOneDot:Landroid/graphics/Bitmap;
 
-    const v1, 0x7f0803e3
+    const v1, 0x7f0803ec
 
     invoke-direct {p0, v1, v0}, Landroidx/leanback/widget/StreamingTextView;->getScaledBitmap(IF)Landroid/graphics/Bitmap;
 

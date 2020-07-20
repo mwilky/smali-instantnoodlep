@@ -37,7 +37,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f12082e
+    const v4, 0x7f120846
 
     invoke-direct {v1, v2, v3, v4}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -57,7 +57,7 @@
 
     const/4 v3, 0x1
 
-    const v4, 0x7f120711
+    const v4, 0x7f120727
 
     invoke-direct {v1, v2, v3, v4}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -83,7 +83,7 @@
 
     const/4 v3, 0x3
 
-    const v5, 0x7f120718
+    const v5, 0x7f12072e
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -97,7 +97,7 @@
 
     const/4 v3, 0x5
 
-    const v5, 0x7f120713
+    const v5, 0x7f120729
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -111,7 +111,7 @@
 
     const/4 v3, 0x4
 
-    const v5, 0x7f12071a
+    const v5, 0x7f120730
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -125,7 +125,7 @@
 
     const/4 v3, 0x6
 
-    const v5, 0x7f121529
+    const v5, 0x7f121541
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -139,7 +139,7 @@
 
     const/4 v3, 0x7
 
-    const v5, 0x7f121528
+    const v5, 0x7f121540
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -153,7 +153,7 @@
 
     const/16 v3, 0x8
 
-    const v5, 0x7f120722
+    const v5, 0x7f120738
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -167,7 +167,7 @@
 
     const/16 v3, 0x9
 
-    const v5, 0x7f120723
+    const v5, 0x7f120739
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -193,7 +193,7 @@
 
     const/16 v3, 0xb
 
-    const v5, 0x7f120721
+    const v5, 0x7f120737
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -205,7 +205,7 @@
 
     sget-object v2, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->FILTER_WRITE_SETTINGS:Lcom/android/settingslib/applications/ApplicationsState$AppFilter;
 
-    const v3, 0x7f120724
+    const v3, 0x7f12073a
 
     const/16 v5, 0xc
 
@@ -221,7 +221,7 @@
 
     const/16 v5, 0xd
 
-    const v6, 0x7f120719
+    const v6, 0x7f12072f
 
     invoke-direct {v1, v2, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -251,7 +251,7 @@
 
     const/16 v3, 0x10
 
-    const v5, 0x7f12071c
+    const v5, 0x7f120732
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -293,7 +293,7 @@
     :goto_0
     const/16 v3, 0x12
 
-    const v5, 0x7f120c3c
+    const v5, 0x7f120c54
 
     invoke-direct {v1, v2, v3, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -329,12 +329,12 @@
 
     if-nez v6, :cond_2
 
-    const v6, 0x7f120c3b
+    const v6, 0x7f120c53
 
     goto :goto_2
 
     :cond_2
-    const v6, 0x7f1205cb
+    const v6, 0x7f1205d2
 
     :goto_2
     invoke-direct {v2, v3, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
@@ -365,7 +365,7 @@
 
     const/16 v5, 0x15
 
-    const v6, 0x7f120b67
+    const v6, 0x7f120b7f
 
     invoke-direct {v2, v3, v5, v6}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -395,7 +395,7 @@
 
     const/16 v4, 0x17
 
-    const v5, 0x7f120f4d
+    const v5, 0x7f120f65
 
     invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -411,7 +411,7 @@
 
     const/16 v4, 0x18
 
-    const v5, 0x7f120f51
+    const v5, 0x7f120f69
 
     invoke-direct {v2, v3, v4, v5}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 
@@ -427,7 +427,7 @@
 
     const/16 v3, 0x19
 
-    const v4, 0x7f120f4b
+    const v4, 0x7f120f63
 
     invoke-direct {v1, v2, v3, v4}, Lcom/android/settings/applications/manageapplications/AppFilterItem;-><init>(Lcom/android/settingslib/applications/ApplicationsState$AppFilter;II)V
 

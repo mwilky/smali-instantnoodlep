@@ -58,7 +58,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207e5
+    const p0, 0x7f1207fd
 
     return p0
 .end method
@@ -182,7 +182,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120a65
+    const v2, 0x7f120a7d
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -257,7 +257,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0300fc
+    const v13, 0x7f0300fd
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
 

@@ -235,9 +235,9 @@
     move v1, v2
 
     :goto_4
-    const v4, 0x7f080341
+    const v4, 0x7f08034a
 
-    const v5, 0x7f120448
+    const v5, 0x7f12044f
 
     if-nez v0, :cond_6
 
@@ -268,7 +268,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->mButtonsPref:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v1, 0x7f120a16
+    const v1, 0x7f120a2e
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -425,13 +425,13 @@
 
     invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120429
+    const v1, 0x7f120430
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     invoke-virtual {v0, v2, v3, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f1203ef
+    const v1, 0x7f1203f6
 
     const/4 v2, 0x0
 
@@ -559,7 +559,7 @@
     :cond_1
     iget-object p0, p0, Lcom/android/settings/applications/AppStorageSettings;->mButtonsPref:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v0, 0x7f12130f
+    const v0, 0x7f121327
 
     invoke-virtual {p0, v0}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -580,13 +580,13 @@
 
     iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->mButtonsPref:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v2, 0x7f120448
+    const v2, 0x7f12044f
 
     invoke-virtual {v1, v2}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object v1
 
-    const v2, 0x7f080341
+    const v2, 0x7f08034a
 
     invoke-virtual {v1, v2}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -967,7 +967,7 @@
 
     const/4 p2, 0x1
 
-    const v0, 0x7f120641
+    const v0, 0x7f120648
 
     const/4 v1, 0x0
 
@@ -992,7 +992,7 @@
 
     move-result-object p2
 
-    const v1, 0x7f120448
+    const v1, 0x7f12044f
 
     invoke-virtual {p2, v1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -1004,7 +1004,7 @@
 
     move-result-object p2
 
-    const v1, 0x7f120443
+    const v1, 0x7f12044a
 
     invoke-virtual {p2, v1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -1037,7 +1037,7 @@
 
     move-result-object p2
 
-    const v2, 0x7f120442
+    const v2, 0x7f120449
 
     invoke-virtual {p2, v2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -1049,7 +1049,7 @@
 
     move-result-object p2
 
-    const v2, 0x7f120441
+    const v2, 0x7f120448
 
     invoke-virtual {p2, v2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -1063,7 +1063,7 @@
 
     invoke-virtual {p1, v0, p2}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p0, 0x7f12063c
+    const p0, 0x7f120643
 
     invoke-virtual {p1, p0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -1473,11 +1473,11 @@
 
     invoke-virtual {p1, v0}, Lcom/android/settings/applications/AppStorageSizesController$Builder;->setCacheSizePreference(Landroidx/preference/Preference;)Lcom/android/settings/applications/AppStorageSizesController$Builder;
 
-    const v0, 0x7f120468
+    const v0, 0x7f12046f
 
     invoke-virtual {p1, v0}, Lcom/android/settings/applications/AppStorageSizesController$Builder;->setComputingString(I)Lcom/android/settings/applications/AppStorageSizesController$Builder;
 
-    const v0, 0x7f12087b
+    const v0, 0x7f120893
 
     invoke-virtual {p1, v0}, Lcom/android/settings/applications/AppStorageSizesController$Builder;->setErrorString(I)Lcom/android/settings/applications/AppStorageSizesController$Builder;
 
@@ -1525,7 +1525,7 @@
 
     iget-object p1, p0, Lcom/android/settings/applications/AppStorageSettings;->mChangeStorageButton:Landroid/widget/Button;
 
-    const v1, 0x7f120428
+    const v1, 0x7f12042f
 
     invoke-virtual {p1, v1}, Landroid/widget/Button;->setText(I)V
 
@@ -1535,13 +1535,13 @@
 
     iget-object p1, p0, Lcom/android/settings/applications/AppStorageSettings;->mButtonsPref:Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v1, 0x7f120440
+    const v1, 0x7f120447
 
     invoke-virtual {p1, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object p1
 
-    const v1, 0x7f080341
+    const v1, 0x7f08034a
 
     invoke-virtual {p1, v1}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -1579,7 +1579,7 @@
 
     iget-object p1, p0, Lcom/android/settings/applications/AppStorageSettings;->mClearUriButton:Landroid/widget/Button;
 
-    const v0, 0x7f120447
+    const v0, 0x7f12044e
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
 

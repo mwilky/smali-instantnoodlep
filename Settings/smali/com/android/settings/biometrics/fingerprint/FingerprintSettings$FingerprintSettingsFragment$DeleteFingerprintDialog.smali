@@ -128,7 +128,7 @@
 
     aput-object v0, p1, v1
 
-    const v0, 0x7f12072f
+    const v0, 0x7f120747
 
     invoke-virtual {p0, v0, p1}, Landroidx/fragment/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -144,15 +144,15 @@
 
     invoke-virtual {v0, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p1, 0x7f12072d
+    const p1, 0x7f120745
 
     invoke-virtual {v0, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p1, 0x7f12141f
+    const p1, 0x7f121437
 
     invoke-virtual {v0, p1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p1, 0x7f1203ef
+    const p1, 0x7f1203f6
 
     const/4 v1, 0x0
 

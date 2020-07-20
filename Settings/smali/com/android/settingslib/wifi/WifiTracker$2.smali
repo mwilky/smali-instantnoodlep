@@ -205,7 +205,7 @@
 
     if-eqz p2, :cond_6
 
-    const p0, 0x50f0140
+    const p0, 0x50f0148
 
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -268,7 +268,7 @@
 
     invoke-direct {v6, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v7, 0x7f120217
+    const v7, 0x7f12021e
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -282,7 +282,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f1207a6
+    const v6, 0x7f1207be
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f120b5f
+    const v6, 0x7f120b77
 
     invoke-virtual {p1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

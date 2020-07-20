@@ -70,66 +70,66 @@
 .method private getPreferredNetworkModeSummaryResId(I)I
     .locals 3
 
-    const v0, 0x7f121238
+    const v0, 0x7f121250
 
-    const v1, 0x7f121231
+    const v1, 0x7f121249
 
     packed-switch p1, :pswitch_data_0
 
     return v1
 
     :pswitch_0
-    const p0, 0x7f121239
+    const p0, 0x7f121251
 
     return p0
 
     :pswitch_1
-    const p0, 0x7f12124b
+    const p0, 0x7f121263
 
     return p0
 
     :pswitch_2
-    const p0, 0x7f12123b
+    const p0, 0x7f121253
 
     return p0
 
     :pswitch_3
-    const p0, 0x7f12123d
+    const p0, 0x7f121255
 
     return p0
 
     :pswitch_4
-    const p0, 0x7f12124d
+    const p0, 0x7f121265
 
     return p0
 
     :pswitch_5
-    const p0, 0x7f12123a
+    const p0, 0x7f121252
 
     return p0
 
     :pswitch_6
-    const p0, 0x7f12124c
+    const p0, 0x7f121264
 
     return p0
 
     :pswitch_7
-    const p0, 0x7f12123c
+    const p0, 0x7f121254
 
     return p0
 
     :pswitch_8
-    const p0, 0x7f12124f
+    const p0, 0x7f121267
 
     return p0
 
     :pswitch_9
-    const p0, 0x7f12124e
+    const p0, 0x7f121266
 
     return p0
 
     :pswitch_a
-    const p0, 0x7f12123e
+    const p0, 0x7f121256
 
     return p0
 
@@ -171,27 +171,27 @@
     return v1
 
     :pswitch_d
-    const p0, 0x7f121237
+    const p0, 0x7f12124f
 
     return p0
 
     :pswitch_e
-    const p0, 0x7f121234
+    const p0, 0x7f12124c
 
     return p0
 
     :pswitch_f
-    const p0, 0x7f12122b
+    const p0, 0x7f121243
 
     return p0
 
     :pswitch_10
-    const p0, 0x7f121230
+    const p0, 0x7f121248
 
     return p0
 
     :pswitch_11
-    const p0, 0x7f12122d
+    const p0, 0x7f121245
 
     return p0
 
@@ -206,32 +206,32 @@
 
     if-eq p0, p1, :cond_2
 
-    const p0, 0x7f12122c
+    const p0, 0x7f121244
 
     return p0
 
     :cond_2
-    const p0, 0x7f12122e
+    const p0, 0x7f121246
 
     return p0
 
     :pswitch_13
-    const p0, 0x7f121233
+    const p0, 0x7f12124b
 
     return p0
 
     :pswitch_14
-    const p0, 0x7f121251
+    const p0, 0x7f121269
 
     return p0
 
     :pswitch_15
-    const p0, 0x7f121232
+    const p0, 0x7f12124a
 
     return p0
 
     :pswitch_16
-    const p0, 0x7f121252
+    const p0, 0x7f12126a
 
     return p0
 

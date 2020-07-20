@@ -98,7 +98,7 @@
 
     invoke-direct {v3, p1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f12158c
+    const p1, 0x7f1215a4
 
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -122,7 +122,7 @@
 
     invoke-virtual {v3, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f12158b
+    const p1, 0x7f1215a3
 
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -146,11 +146,11 @@
 
     invoke-direct {p1, p0, v0, v1}, Lcom/android/settings/deviceinfo/PrivateVolumeForget$ForgetConfirmFragment$1;-><init>(Lcom/android/settings/deviceinfo/PrivateVolumeForget$ForgetConfirmFragment;Landroid/os/storage/StorageManager;Ljava/lang/String;)V
 
-    const p0, 0x7f121598
+    const p0, 0x7f1215b0
 
     invoke-virtual {v3, p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p0, 0x7f1203ef
+    const p0, 0x7f1203f6
 
     const/4 p1, 0x0
 

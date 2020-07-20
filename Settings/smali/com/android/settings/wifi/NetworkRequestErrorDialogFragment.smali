@@ -120,11 +120,11 @@
 
     if-ne p1, v1, :cond_1
 
-    const p1, 0x7f120af4
+    const p1, 0x7f120b0c
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f120af5
+    const p1, 0x7f120b0d
 
     new-instance v1, Lcom/android/settings/wifi/-$$Lambda$NetworkRequestErrorDialogFragment$7_Krzx6JGM4tH4YA-fKluuB7V0Y;
 
@@ -132,7 +132,7 @@
 
     invoke-virtual {v0, p1, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f1203ef
+    const p1, 0x7f1203f6
 
     new-instance v1, Lcom/android/settings/wifi/-$$Lambda$NetworkRequestErrorDialogFragment$yqnVunFMc2vfWDswc1vtYoaBvEY;
 
@@ -143,11 +143,11 @@
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f120af1
+    const p1, 0x7f120b09
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f120be3
+    const p1, 0x7f120bfb
 
     new-instance v1, Lcom/android/settings/wifi/-$$Lambda$NetworkRequestErrorDialogFragment$Ktwt2L5d1Hs-XIiQ1FheTk_6zL0;
 

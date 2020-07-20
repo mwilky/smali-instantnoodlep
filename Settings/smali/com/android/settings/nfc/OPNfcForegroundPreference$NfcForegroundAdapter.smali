@@ -94,7 +94,7 @@
 
     move-result-object p2
 
-    const v2, 0x7f0d01e2
+    const v2, 0x7f0d01e3
 
     invoke-virtual {p2, v2, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -104,7 +104,7 @@
 
     invoke-direct {p3, p0}, Lcom/android/settings/nfc/OPNfcForegroundPreference$NfcForegroundAdapter$ViewHolder;-><init>(Lcom/android/settings/nfc/OPNfcForegroundPreference$NfcForegroundAdapter;)V
 
-    const v2, 0x7f0a045d
+    const v2, 0x7f0a0462
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -112,7 +112,7 @@
 
     iput-object v2, p3, Lcom/android/settings/nfc/OPNfcForegroundPreference$NfcForegroundAdapter$ViewHolder;->root:Landroid/view/View;
 
-    const v2, 0x7f0a029b
+    const v2, 0x7f0a02a0
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

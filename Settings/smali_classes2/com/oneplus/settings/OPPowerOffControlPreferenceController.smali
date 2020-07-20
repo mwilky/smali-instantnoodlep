@@ -131,7 +131,7 @@
 
     invoke-direct {p1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f12120c
+    const v0, 0x7f121224
 
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

@@ -47,7 +47,7 @@
 
     invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
 
-    const v0, 0x7f0a0371
+    const v0, 0x7f0a0376
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -57,7 +57,7 @@
 
     iput-object v0, p0, Lcom/android/settings/localepicker/LocaleDragCell;->mLabel:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0365
+    const v0, 0x7f0a036a
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -67,7 +67,7 @@
 
     iput-object v0, p0, Lcom/android/settings/localepicker/LocaleDragCell;->mLocalized:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0409
+    const v0, 0x7f0a040e
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

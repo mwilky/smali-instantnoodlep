@@ -73,12 +73,12 @@
 
     if-eqz p1, :cond_1
 
-    const p1, 0x7f1208f6
+    const p1, 0x7f12090e
 
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f1208f5
+    const p1, 0x7f12090d
 
     :goto_0
     invoke-virtual {p0, p1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
@@ -204,7 +204,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f1208f8
+    const v0, 0x7f120910
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

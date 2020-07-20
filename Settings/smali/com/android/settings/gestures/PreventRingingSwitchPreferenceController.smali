@@ -67,7 +67,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setOnPreferenceClickListener(Landroidx/preference/Preference$OnPreferenceClickListener;)V
 
-    const v0, 0x7f0a06ed
+    const v0, 0x7f0a06ea
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

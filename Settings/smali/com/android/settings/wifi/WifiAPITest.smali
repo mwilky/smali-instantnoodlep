@@ -82,7 +82,7 @@
 .method public onCreatePreferences(Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 0
 
-    const p1, 0x7f0d037a
+    const p1, 0x7f0d037b
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->addPreferencesFromResource(I)V
 

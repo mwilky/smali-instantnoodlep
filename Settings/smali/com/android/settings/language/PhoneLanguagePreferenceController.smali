@@ -73,12 +73,12 @@
 
     if-eqz p1, :cond_1
 
-    const p1, 0x7f1208f6
+    const p1, 0x7f12090e
 
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f1208f5
+    const p1, 0x7f12090d
 
     :goto_0
     invoke-virtual {p0, p1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;

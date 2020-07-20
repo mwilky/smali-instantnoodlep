@@ -45,7 +45,7 @@
 
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const p0, 0x7f120949
+    const p0, 0x7f120961
 
     invoke-virtual {v0, p0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

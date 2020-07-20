@@ -66,7 +66,7 @@
 
     move-result p2
 
-    const p3, 0x7f12198c    # 1.9419993E38f
+    const p3, 0x7f1219a4
 
     const/4 v0, 0x0
 

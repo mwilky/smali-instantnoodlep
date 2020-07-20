@@ -60,7 +60,7 @@
 .method public getNameResource(Landroid/bluetooth/BluetoothDevice;)I
     .locals 0
 
-    const p0, 0x7f12037c
+    const p0, 0x7f120383
 
     return p0
 .end method

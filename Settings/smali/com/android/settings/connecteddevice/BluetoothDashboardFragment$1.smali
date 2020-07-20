@@ -101,7 +101,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f12039f
+    const v0, 0x7f1203a6
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -115,7 +115,7 @@
 
     iput-object v0, p2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
-    const v0, 0x7f1208a1
+    const v0, 0x7f1208b9
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

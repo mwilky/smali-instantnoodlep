@@ -70,7 +70,7 @@
 
     sget p2, Lcom/oneplus/commonctrl/R$styleable;->SeekBarPreference_android_layout:I
 
-    const p3, 0x7f0d02a7
+    const p3, 0x7f0d02a8
 
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -98,7 +98,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/lib/preference/Preference;->onBindView(Landroid/view/View;)V
 
-    const v0, 0x7f0a063d
+    const v0, 0x7f0a063a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -110,7 +110,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setVisibility(I)V
 
-    const v0, 0x7f0a0525
+    const v0, 0x7f0a0522
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

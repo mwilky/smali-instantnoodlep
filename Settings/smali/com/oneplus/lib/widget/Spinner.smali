@@ -152,7 +152,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f080499
+    const v5, 0x7f0804a2
 
     iget-object v6, p0, Lcom/oneplus/lib/widget/Spinner;->mPopupContext:Landroid/content/Context;
 
@@ -172,7 +172,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f080498
+    const v5, 0x7f0804a1
 
     iget-object v6, p0, Lcom/oneplus/lib/widget/Spinner;->mPopupContext:Landroid/content/Context;
 
@@ -194,7 +194,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f080497
+    const v6, 0x7f0804a0
 
     iget-object v7, p0, Lcom/oneplus/lib/widget/Spinner;->mPopupContext:Landroid/content/Context;
 

@@ -469,7 +469,7 @@
     :cond_5
     iget-object p1, p0, Lcom/android/internal/app/AlertActivity;->mAlert:Lcom/android/internal/app/AlertController;
 
-    const v0, 0x7f080364
+    const v0, 0x7f08036d
 
     invoke-virtual {p1, v0}, Lcom/android/internal/app/AlertController;->setIcon(I)V
 
@@ -481,9 +481,9 @@
 
     move-result v0
 
-    const v4, 0x7f120b47
+    const v4, 0x7f120b5f
 
-    const v5, 0x7f121a5d
+    const v5, 0x7f121a75
 
     if-eqz v0, :cond_6
 
@@ -491,7 +491,7 @@
 
     iput-object v0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    const v0, 0x7f120b55
+    const v0, 0x7f120b6d
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -526,7 +526,7 @@
 
     iput-object v0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    const v0, 0x7f1211d1
+    const v0, 0x7f1211e9
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -549,7 +549,7 @@
     goto :goto_3
 
     :cond_7
-    const v0, 0x7f120a08
+    const v0, 0x7f120a20
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -557,7 +557,7 @@
 
     iput-object v0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    const v0, 0x7f120a07
+    const v0, 0x7f120a1f
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -565,7 +565,7 @@
 
     iput-object v0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v0, 0x7f120a06
+    const v0, 0x7f120a1e
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -573,7 +573,7 @@
 
     iput-object v0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    const v0, 0x7f120a04
+    const v0, 0x7f120a1c
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -631,7 +631,7 @@
     :cond_8
     iget-object p1, p0, Lcom/android/settings/wifi/WifiNoInternetDialog;->mAlwaysAllow:Landroid/widget/CheckBox;
 
-    const v0, 0x7f120a05
+    const v0, 0x7f120a1d
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -645,7 +645,7 @@
     :goto_4
     iget-object p1, p0, Lcom/android/settings/wifi/WifiNoInternetDialog;->mAlwaysAllow:Landroid/widget/CheckBox;
 
-    const v0, 0x7f120b54
+    const v0, 0x7f120b6c
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 

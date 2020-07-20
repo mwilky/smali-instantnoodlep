@@ -46,7 +46,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f1215ac
+    const v0, 0x7f1215c4
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -64,7 +64,7 @@
 
     iput-object v1, p2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
-    const v1, 0x7f1208d9
+    const v1, 0x7f1208f1
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -78,7 +78,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120878
+    const v1, 0x7f120890
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -175,7 +175,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a62
+    const v1, 0x7f120a7a
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -199,7 +199,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a4d
+    const v1, 0x7f120a65
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -223,7 +223,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a4c
+    const v1, 0x7f120a64
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -247,7 +247,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a55
+    const v1, 0x7f120a6d
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -271,7 +271,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a5f
+    const v1, 0x7f120a77
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -295,7 +295,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a5d
+    const v1, 0x7f120a75
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -319,7 +319,7 @@
 
     invoke-direct {p2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f12159c
+    const v0, 0x7f1215b4
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     iput-object v0, p2, Landroid/provider/SearchIndexableData;->intentAction:Ljava/lang/String;
 
-    const v0, 0x7f12048f
+    const v0, 0x7f120496
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -355,7 +355,7 @@
 
     iput-object v0, p2, Landroid/provider/SearchIndexableData;->intentTargetPackage:Ljava/lang/String;
 
-    const v0, 0x7f12048e
+    const v0, 0x7f120495
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

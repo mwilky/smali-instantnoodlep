@@ -147,7 +147,7 @@
 
     iget-object p0, p0, Lcom/android/settings/widget/SummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f121630
+    const v0, 0x7f121648
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -162,7 +162,7 @@
 
     iget-object p0, p0, Lcom/android/settings/widget/SummaryUpdater;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120629
+    const v0, 0x7f120630
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -196,7 +196,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12122a
+    const v2, 0x7f121242
 
     const/4 v3, 0x2
 

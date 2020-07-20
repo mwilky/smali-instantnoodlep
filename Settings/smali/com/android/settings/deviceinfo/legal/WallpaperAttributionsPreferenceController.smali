@@ -65,7 +65,7 @@
 
     iget-object p1, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f1210bc
+    const v0, 0x7f1210d4
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -84,7 +84,7 @@
 
     iget-object p1, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f1210bf
+    const v0, 0x7f1210d7
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -99,7 +99,7 @@
 
     move-result p1
 
-    const v0, 0x7f1210bb
+    const v0, 0x7f1210d3
 
     if-nez p1, :cond_6
 
@@ -120,7 +120,7 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120e6e
+    const v2, 0x7f120e86
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -136,7 +136,7 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120e6f
+    const v2, 0x7f120e87
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -159,7 +159,7 @@
 
     iget-object p1, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f1210bd
+    const v0, 0x7f1210d5
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -174,7 +174,7 @@
 
     iget-object p1, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f1210be
+    const v0, 0x7f1210d6
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -231,7 +231,7 @@
 
     iget-object p0, p0, Lcom/android/settings/deviceinfo/legal/WallpaperAttributionsPreferenceController;->mPreference:Landroidx/preference/Preference;
 
-    const p1, 0x7f1210c0
+    const p1, 0x7f1210d8
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

@@ -38,7 +38,7 @@
 
     invoke-direct {p0, p1, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d0229
+    const v0, 0x7f0d022a
 
     iput v0, p0, Lcom/oneplus/settings/quickpay/QuickPayLottieAnimPreference;->resid:I
 
@@ -66,7 +66,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p2, 0x7f0d0229
+    const p2, 0x7f0d022a
 
     iput p2, p0, Lcom/oneplus/settings/quickpay/QuickPayLottieAnimPreference;->resid:I
 
@@ -96,7 +96,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p2, 0x7f0d0229
+    const p2, 0x7f0d022a
 
     iput p2, p0, Lcom/oneplus/settings/quickpay/QuickPayLottieAnimPreference;->resid:I
 
@@ -172,7 +172,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0320
+    const v0, 0x7f0a0325
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

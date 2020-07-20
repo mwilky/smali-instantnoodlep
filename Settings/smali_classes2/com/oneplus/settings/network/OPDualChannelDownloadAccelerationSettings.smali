@@ -201,7 +201,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d0254
+    const p1, 0x7f0d0255
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -231,7 +231,7 @@
 
     invoke-virtual {p1, v0}, Lcom/oneplus/settings/apploader/OPApplicationLoader;->setAppType(I)V
 
-    const p1, 0x7f0a04b2
+    const p1, 0x7f0a04af
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0d0255
+    const v0, 0x7f0d0256
 
     const/4 v1, 0x0
 

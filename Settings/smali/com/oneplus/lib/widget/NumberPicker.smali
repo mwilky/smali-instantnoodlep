@@ -311,7 +311,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0d01f4
+    const p3, 0x7f0d01f5
 
     invoke-virtual {p2, v1, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -582,7 +582,7 @@
 
     if-nez v7, :cond_7
 
-    const v7, 0x7f0a0327
+    const v7, 0x7f0a032c
 
     invoke-virtual {p0, v7}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -634,7 +634,7 @@
     iput-object v8, p0, Lcom/oneplus/lib/widget/NumberPicker;->mDecrementButton:Landroid/widget/ImageButton;
 
     :goto_5
-    const p2, 0x7f0a047f
+    const p2, 0x7f0a0480
 
     invoke-virtual {p0, p2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

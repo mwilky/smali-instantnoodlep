@@ -174,7 +174,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0a069f
+    const v0, 0x7f0a069c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -221,8 +221,8 @@
     .sparse-switch
         0x1020019 -> :sswitch_3
         0x102001a -> :sswitch_2
-        0x7f0a0546 -> :sswitch_1
-        0x7f0a06a0 -> :sswitch_0
+        0x7f0a0543 -> :sswitch_1
+        0x7f0a069d -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -239,7 +239,7 @@
 
     const/4 p3, 0x0
 
-    const v0, 0x7f0d0379
+    const v0, 0x7f0d037a
 
     invoke-virtual {p1, v0, p2, p3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -320,7 +320,7 @@
 
     iput-object p2, p0, Lcom/android/settings/wifi/AddNetworkFragment;->mCancelBtn:Landroid/widget/Button;
 
-    const p2, 0x7f0a06a0
+    const p2, 0x7f0a069d
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -328,7 +328,7 @@
 
     check-cast p2, Landroid/widget/ImageButton;
 
-    const p3, 0x7f0a0546
+    const p3, 0x7f0a0543
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

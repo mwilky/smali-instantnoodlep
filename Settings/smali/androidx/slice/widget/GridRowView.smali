@@ -1720,7 +1720,7 @@
 
     move-result v10
 
-    const v11, 0x7f0a0717
+    const v11, 0x7f0a0714
 
     if-eqz v10, :cond_a
 
@@ -1767,7 +1767,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v10, 0x7f0a0716
+    const v10, 0x7f0a0713
 
     invoke-virtual {v9, v10}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

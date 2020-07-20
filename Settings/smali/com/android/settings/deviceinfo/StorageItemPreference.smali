@@ -31,11 +31,11 @@
 
     iput p1, p0, Lcom/android/settings/deviceinfo/StorageItemPreference;->mProgressPercent:I
 
-    const p1, 0x7f0d02ff
+    const p1, 0x7f0d0300
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const p1, 0x7f120a51
+    const p1, 0x7f120a69
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

@@ -151,7 +151,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120804
+    const p0, 0x7f12081c
 
     return p0
 .end method
@@ -201,7 +201,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f12070f
+    const v1, 0x7f120725
 
     invoke-static {p1, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -228,7 +228,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f03007c
+    const v2, 0x7f03007d
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -236,7 +236,7 @@
 
     iput-object v2, p0, Lcom/android/settings/display/PreviewSeekBarPreferenceFragment;->mEntries:[Ljava/lang/String;
 
-    const v2, 0x7f03007d
+    const v2, 0x7f03007e
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -286,7 +286,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f12169d
+    const p1, 0x7f1216b5
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setTitle(I)V
 
@@ -302,7 +302,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12070f
+    const v0, 0x7f120725
 
     const/4 v1, 0x0
 

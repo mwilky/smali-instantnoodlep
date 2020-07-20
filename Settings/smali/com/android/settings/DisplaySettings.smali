@@ -807,13 +807,13 @@
 
     move-result-object v0
 
-    const v2, 0x7f03007c
+    const v2, 0x7f03007d
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f03007d
+    const v3, 0x7f03007e
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1026,9 +1026,9 @@
     :cond_c
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mVideoEnhancerPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f121631
+    const v3, 0x7f121649
 
-    const v4, 0x7f121630
+    const v4, 0x7f121648
 
     if-eqz v0, :cond_e
 
@@ -1144,7 +1144,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f12061c
+    const p1, 0x7f120623
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1218,7 +1218,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1213a2
+    const p1, 0x7f1213ba
 
     const/4 p2, 0x1
 
@@ -1244,7 +1244,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207dd
+    const p0, 0x7f1207f5
 
     return p0
 .end method
@@ -1809,7 +1809,7 @@
 
     if-eqz v2, :cond_6
 
-    const v3, 0x7f120ddf
+    const v3, 0x7f120df7
 
     invoke-virtual {v2, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -2321,7 +2321,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12113f
+    const v2, 0x7f121157
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2348,7 +2348,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f121140
+    const v2, 0x7f121158
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2363,7 +2363,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12113b
+    const v2, 0x7f121153
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2388,7 +2388,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f121141
+    const v2, 0x7f121159
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2403,7 +2403,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12113c
+    const v2, 0x7f121154
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2422,7 +2422,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12113d
+    const v2, 0x7f121155
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2439,7 +2439,7 @@
 
     iget-object v0, v0, Lcom/android/settings/DisplaySettings;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12113e
+    const v2, 0x7f121156
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

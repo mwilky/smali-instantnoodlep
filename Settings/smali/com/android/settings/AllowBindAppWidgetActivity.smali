@@ -282,7 +282,7 @@
 
     iput-object v3, v2, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v3, 0x7f1204d7
+    const v3, 0x7f1204de
 
     invoke-virtual {p0, v3}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 

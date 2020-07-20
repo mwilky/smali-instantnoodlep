@@ -60,7 +60,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f12044c
+    const v2, 0x7f120453
 
     const/4 v3, 0x3
 
@@ -120,7 +120,7 @@
 
     if-ge v1, v3, :cond_0
 
-    const v1, 0x7f0806e5
+    const v1, 0x7f0806f7
 
     invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
@@ -160,7 +160,7 @@
 
     if-eqz p0, :cond_2
 
-    const p2, 0x7f0a06e2
+    const p2, 0x7f0a06df
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -205,7 +205,7 @@
 
     if-ge v1, v2, :cond_0
 
-    const v1, 0x7f0806e5
+    const v1, 0x7f0806f7
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 

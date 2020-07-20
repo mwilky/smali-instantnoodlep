@@ -67,7 +67,7 @@
 
     check-cast v3, Landroid/widget/LinearLayout$LayoutParams;
 
-    const v4, 0x7f0a06c4
+    const v4, 0x7f0a06c1
 
     if-eqz p1, :cond_1
 

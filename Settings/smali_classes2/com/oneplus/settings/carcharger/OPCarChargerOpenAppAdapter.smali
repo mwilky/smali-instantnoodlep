@@ -119,7 +119,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter;)V
 
-    const v1, 0x7f0a053c
+    const v1, 0x7f0a0539
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -127,7 +127,7 @@
 
     check-cast v1, Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0a076b
+    const v1, 0x7f0a0768
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -137,7 +137,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0305
+    const v1, 0x7f0a030a
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a044b
+    const v1, 0x7f0a0450
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -165,7 +165,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->bottomLine:Landroid/view/View;
 
-    const v1, 0x7f0a02c0
+    const v1, 0x7f0a02c5
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -173,7 +173,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v1, 0x7f0a05c2
+    const v1, 0x7f0a05bf
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -209,7 +209,7 @@
 
     iget-object v4, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v5, 0x7f120c6f
+    const v5, 0x7f120c87
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -224,7 +224,7 @@
 
     iget-object v4, v0, Lcom/oneplus/settings/carcharger/OPCarChargerOpenAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v5, 0x7f120c6e
+    const v5, 0x7f120c86
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 

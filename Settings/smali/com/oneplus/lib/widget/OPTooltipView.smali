@@ -79,7 +79,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/OPTooltipView;->mContentView:Landroid/widget/LinearLayout;
 
-    const p1, 0x7f0a0744
+    const p1, 0x7f0a0741
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/OPTooltipView;->mTitle:Landroid/widget/TextView;
 
-    const p1, 0x7f0a03f9
+    const p1, 0x7f0a03fe
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

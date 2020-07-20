@@ -165,7 +165,7 @@
 .method private init()V
     .locals 1
 
-    const v0, 0x7f0d02e0
+    const v0, 0x7f0d02e1
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 

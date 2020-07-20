@@ -277,7 +277,7 @@
     move v1, v4
 
     :goto_0
-    const v5, 0x7f120558
+    const v5, 0x7f12055f
 
     const-string v6, "%.2f"
 
@@ -324,7 +324,7 @@
     move-result-object p1
 
     :goto_1
-    const p2, 0x7f12058b
+    const p2, 0x7f120592
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -363,7 +363,7 @@
     move-result-object p1
 
     :goto_2
-    const p2, 0x7f12058a
+    const p2, 0x7f120591
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -824,7 +824,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1217c6
+    const p1, 0x7f1217de
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

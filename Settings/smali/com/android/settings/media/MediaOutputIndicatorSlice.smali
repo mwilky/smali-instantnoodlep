@@ -167,7 +167,7 @@
 
     iget-object v3, p0, Lcom/android/settings/media/MediaOutputIndicatorSlice;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120a43
+    const v4, 0x7f120a5b
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -293,7 +293,7 @@
     :cond_9
     iget-object p0, p0, Lcom/android/settings/media/MediaOutputIndicatorSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120a3e
+    const v2, 0x7f120a56
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

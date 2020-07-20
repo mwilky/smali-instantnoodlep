@@ -439,7 +439,7 @@
 
     if-lez v1, :cond_0
 
-    const v1, 0x7f1209cb
+    const v1, 0x7f1209e3
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -452,7 +452,7 @@
 
     if-lez v1, :cond_1
 
-    const v1, 0x7f1209d6
+    const v1, 0x7f1209ee
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -709,7 +709,7 @@
 
     if-lez v1, :cond_c
 
-    const v1, 0x7f1209d7
+    const v1, 0x7f1209ef
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -726,12 +726,12 @@
 
     if-eqz p1, :cond_d
 
-    const p1, 0x7f1209cf
+    const p1, 0x7f1209e7
 
     goto :goto_2
 
     :cond_d
-    const p1, 0x7f1209d8
+    const p1, 0x7f1209f0
 
     :goto_2
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
@@ -1515,7 +1515,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a0541
+    const v0, 0x7f0a053e
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1567,7 +1567,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06d2
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1587,7 +1587,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080307
+    const v3, 0x7f080310
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1608,7 +1608,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0804ee
+    const v3, 0x7f0804f7
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1678,7 +1678,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setVisibility(I)V
 
     :cond_5
-    const v0, 0x7f0a0545
+    const v0, 0x7f0a0542
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1724,7 +1724,7 @@
 
     invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    const v0, 0x7f0a0542
+    const v0, 0x7f0a053f
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1848,7 +1848,7 @@
 
     const/16 v0, 0x3a
 
-    const v3, 0x7f12172f
+    const v3, 0x7f121747
 
     invoke-virtual {p0, v3}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

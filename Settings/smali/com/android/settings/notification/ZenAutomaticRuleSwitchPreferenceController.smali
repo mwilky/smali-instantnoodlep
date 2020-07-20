@@ -40,7 +40,7 @@
 
     check-cast p1, Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v0, 0x7f0a06ed
+    const v0, 0x7f0a06ea
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f121b1c
+    const v1, 0x7f121b34
 
     invoke-virtual {v0, v1, v1}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

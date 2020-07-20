@@ -143,7 +143,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings$1;->this$0:Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings;
 
-    const v0, 0x7f0a04bc
+    const v0, 0x7f0a04b9
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f120c40
+    const v2, 0x7f120c58
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -163,7 +163,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0804a2
+    const v2, 0x7f0804ab
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

@@ -75,13 +75,13 @@
 
     iget-object p1, p0, Lcom/android/settings/connecteddevice/usb/ConnectedUsbDeviceUpdater;->mUsbPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f121778
+    const v0, 0x7f121790
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setTitle(I)V
 
     iget-object p1, p0, Lcom/android/settings/connecteddevice/usb/ConnectedUsbDeviceUpdater;->mUsbPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f08038a
+    const v0, 0x7f080393
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -123,7 +123,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1205ea
+    const v0, 0x7f1205f1
 
     invoke-virtual {p1, v0}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -175,7 +175,7 @@
 
     if-eq p4, p5, :cond_5
 
-    const p5, 0x7f12177e
+    const p5, 0x7f121796
 
     if-eq p4, v0, :cond_1
 
@@ -186,7 +186,7 @@
 
     if-nez p4, :cond_2
 
-    const p5, 0x7f12177f
+    const p5, 0x7f121797
 
     goto :goto_1
 
@@ -195,7 +195,7 @@
 
     if-nez p4, :cond_3
 
-    const p5, 0x7f121784
+    const p5, 0x7f12179c
 
     goto :goto_1
 
@@ -204,7 +204,7 @@
 
     if-nez p4, :cond_4
 
-    const p5, 0x7f121781
+    const p5, 0x7f121799
 
     goto :goto_1
 
@@ -213,7 +213,7 @@
 
     if-nez p2, :cond_a
 
-    const p5, 0x7f12177c
+    const p5, 0x7f121794
 
     goto :goto_1
 
@@ -222,7 +222,7 @@
 
     if-nez p4, :cond_6
 
-    const p5, 0x7f121780
+    const p5, 0x7f121798
 
     goto :goto_1
 
@@ -231,7 +231,7 @@
 
     if-nez p4, :cond_7
 
-    const p5, 0x7f121785
+    const p5, 0x7f12179d
 
     goto :goto_1
 
@@ -240,7 +240,7 @@
 
     if-nez p4, :cond_8
 
-    const p5, 0x7f121782
+    const p5, 0x7f12179a
 
     goto :goto_1
 
@@ -249,12 +249,12 @@
 
     if-nez p2, :cond_9
 
-    const p5, 0x7f12177d
+    const p5, 0x7f121795
 
     goto :goto_1
 
     :cond_9
-    const p5, 0x7f121783
+    const p5, 0x7f12179b
 
     :cond_a
     :goto_1

@@ -207,7 +207,7 @@
 
     invoke-direct {v0, v3, v2}, Landroidx/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v3, 0x7f120b7b
+    const v3, 0x7f120b93
 
     invoke-virtual {v0, v3}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -233,7 +233,7 @@
 
     invoke-direct {v3, p0, v2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p0, 0x7f120b4e
+    const p0, 0x7f120b66
 
     invoke-virtual {v3, p0}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -299,7 +299,7 @@
 
     if-le v6, v5, :cond_5
 
-    const v5, 0x7f120b7c
+    const v5, 0x7f120b94
 
     invoke-virtual {v4, v5}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -933,7 +933,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/android/settingslib/RestrictedSwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v1, 0x7f120bc3
+    const v1, 0x7f120bdb
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 

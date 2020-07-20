@@ -127,7 +127,7 @@
 
     if-eqz p0, :cond_0
 
-    const v0, 0x7f12142e
+    const v0, 0x7f121446
 
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(I)V
 

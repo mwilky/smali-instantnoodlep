@@ -129,7 +129,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0a07d5
+    const p1, 0x7f0a07d2
 
     const-string v1, "wifi_network_list_fragment"
 
@@ -143,7 +143,7 @@
 .method public final onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
-    const p0, 0x7f0d0385
+    const p0, 0x7f0d0386
 
     const/4 p3, 0x0
 
@@ -159,19 +159,19 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const v0, 0x7f0803a8
+    const v0, 0x7f0803b1
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->setHeaderIconImageResource(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mTitle:Landroid/widget/TextView;
 
-    const v1, 0x7f12191d
+    const v1, 0x7f121935
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mSummary:Landroid/widget/TextView;
 
-    const v1, 0x7f12191e
+    const v1, 0x7f121936
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -187,7 +187,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppChooseSavedWifiNetworkFragment;->mButtonLeft:Landroid/widget/Button;
 
-    const v1, 0x7f1203ef
+    const v1, 0x7f1203f6
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 

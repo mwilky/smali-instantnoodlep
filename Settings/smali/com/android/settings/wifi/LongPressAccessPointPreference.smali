@@ -27,7 +27,7 @@
 
     iput-object p6, p0, Lcom/android/settings/wifi/LongPressAccessPointPreference;->mFragment:Landroidx/fragment/app/Fragment;
 
-    const p1, 0x7f0d01fd
+    const p1, 0x7f0d01fe
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 

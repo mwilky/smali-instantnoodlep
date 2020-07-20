@@ -151,7 +151,7 @@
     return-void
 
     :cond_0
-    const p2, 0x7f120d52
+    const p2, 0x7f120d6a
 
     const/4 v0, 0x0
 
@@ -163,7 +163,7 @@
 
     invoke-interface {p1, p2}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    const p2, 0x7f0804d4
+    const p2, 0x7f0804dd
 
     invoke-interface {p1, p2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

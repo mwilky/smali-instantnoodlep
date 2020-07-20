@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d02e2
+    const v1, 0x7f0d02e3
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -101,7 +101,7 @@
 
     iput-object v0, p0, Lcom/android/settingslib/widget/BarView;->mBarView:Landroid/view/View;
 
-    const v0, 0x7f0a030b
+    const v0, 0x7f0a0310
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

@@ -105,14 +105,14 @@
 
     if-ne p1, v0, :cond_0
 
-    const p1, 0x7f0d0233
+    const p1, 0x7f0d0234
 
     invoke-direct {p0, p1}, Lcom/oneplus/settings/ui/OPScreenColorModeView;->setLayoutResource(I)V
 
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f0d0232
+    const p1, 0x7f0d0233
 
     invoke-direct {p0, p1}, Lcom/oneplus/settings/ui/OPScreenColorModeView;->setLayoutResource(I)V
 
@@ -143,7 +143,7 @@
 .method public onBindViewHolder(Landroid/view/View;)V
     .locals 8
 
-    const v0, 0x7f0a07cc
+    const v0, 0x7f0a07c9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -157,7 +157,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/viewpager/widget/ViewPager;->setOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$OnPageChangeListener;)V
 
-    const v1, 0x7f0a02b1
+    const v1, 0x7f0a02b6
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -175,13 +175,13 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0d0235
+    const v2, 0x7f0d0236
 
     invoke-virtual {p1, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v3
 
-    const v4, 0x7f0a0318
+    const v4, 0x7f0a031d
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -189,7 +189,7 @@
 
     check-cast v5, Landroid/widget/ImageView;
 
-    const v6, 0x7f0805df
+    const v6, 0x7f0805e8
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -203,7 +203,7 @@
 
     check-cast v6, Landroid/widget/ImageView;
 
-    const v7, 0x7f0805e0
+    const v7, 0x7f0805e9
 
     invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -217,7 +217,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    const v2, 0x7f0805e1
+    const v2, 0x7f0805ea
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

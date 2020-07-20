@@ -47,7 +47,7 @@
 
     const/4 p2, 0x1
 
-    const v0, 0x7f121620
+    const v0, 0x7f121638
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -61,7 +61,7 @@
 
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    const p1, 0x7f0a06a8
+    const p1, 0x7f0a06a5
 
     invoke-virtual {p0, p1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -79,7 +79,7 @@
 
     invoke-virtual {p1, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a06a7
+    const p1, 0x7f0a06a4
 
     invoke-virtual {p0, p1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -140,7 +140,7 @@
 
     move-result p1
 
-    const v0, 0x7f0a06a8
+    const v0, 0x7f0a06a5
 
     if-ne p1, v0, :cond_0
 

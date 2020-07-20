@@ -92,7 +92,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
-    const p0, 0x7f0d0249
+    const p0, 0x7f0d024a
 
     const/4 p3, 0x0
 
@@ -273,7 +273,7 @@
 
     if-eqz v0, :cond_2
 
-    const p2, 0x7f0a0617
+    const p2, 0x7f0a0614
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -374,7 +374,7 @@
 
     if-eqz p2, :cond_3
 
-    const p2, 0x7f0a065c
+    const p2, 0x7f0a0659
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -417,7 +417,7 @@
 
     iget-object v0, p0, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->mSkipOrClearButton:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f12150d
+    const v1, 0x7f121525
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -430,7 +430,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/password/ChooseLockPassword$ChooseLockPasswordFragment;->mSkipOrClearButton:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f1209b5
+    const v1, 0x7f1209cd
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

@@ -541,7 +541,7 @@
 
     if-eqz v0, :cond_a
 
-    const v0, 0x7f1216ba
+    const v0, 0x7f1216d2
 
     goto :goto_7
 
@@ -595,17 +595,17 @@
 
     if-eqz v0, :cond_b
 
-    const v0, 0x7f1216b5
+    const v0, 0x7f1216cd
 
     goto :goto_8
 
     :cond_b
-    const v0, 0x7f1216b3
+    const v0, 0x7f1216cb
 
     goto :goto_8
 
     :cond_c
-    const v0, 0x7f1216b7
+    const v0, 0x7f1216cf
 
     :goto_8
     invoke-virtual {v2, v0}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
@@ -787,7 +787,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p0, 0x7f1216b6
+    const p0, 0x7f1216ce
 
     invoke-virtual {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

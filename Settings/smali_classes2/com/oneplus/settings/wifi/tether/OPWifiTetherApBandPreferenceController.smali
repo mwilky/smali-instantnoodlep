@@ -73,7 +73,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f03012c
+    const p2, 0x7f03012d
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -81,7 +81,7 @@
 
     iput-object p2, p0, Lcom/oneplus/settings/wifi/tether/OPWifiTetherApBandPreferenceController;->mBandEntries:[Ljava/lang/String;
 
-    const p2, 0x7f03012f
+    const p2, 0x7f030130
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -306,13 +306,13 @@
 
     invoke-direct {p1, p2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p2, 0x7f12138c
+    const p2, 0x7f1213a4
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    const p2, 0x7f121805
+    const p2, 0x7f12181d
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -488,7 +488,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/wifi/tether/OPWifiTetherApBandPreferenceController;->preference:Lcom/oneplus/settings/widget/OPHotspotApBandSelectionPreference;
 
-    const v0, 0x7f1218b3
+    const v0, 0x7f1218cb
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 

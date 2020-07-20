@@ -49,15 +49,15 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setNoun(Ljava/lang/String;)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
-    const v1, 0x7f120b94
+    const v1, 0x7f120bac
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setWarningDialogTitle(I)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
-    const v1, 0x7f120b93
+    const v1, 0x7f120bab
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setWarningDialogSummary(I)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
-    const v1, 0x7f120b5a
+    const v1, 0x7f120b72
 
     invoke-virtual {v0, v1}, Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;->setEmptyText(I)Lcom/android/settings/utils/ManagedServiceSettings$Config$Builder;
 
@@ -250,7 +250,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120bb8
+    const v0, 0x7f120bd0
 
     const/4 v1, 0x0
 

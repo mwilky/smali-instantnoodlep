@@ -115,12 +115,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f121364
+    const v0, 0x7f12137c
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f12136a
+    const v0, 0x7f121382
 
     :goto_0
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getResources()Landroid/content/res/Resources;
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121363
+    const v1, 0x7f12137b
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 

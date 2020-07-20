@@ -312,7 +312,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0d0364
+    const p3, 0x7f0d0365
 
     const/4 v0, 0x0
 
@@ -324,7 +324,7 @@
 
     invoke-direct {p3}, Lcom/android/settings/UsageStatsActivity$AppViewHolder;-><init>()V
 
-    const v0, 0x7f0a052d
+    const v0, 0x7f0a052a
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -334,7 +334,7 @@
 
     iput-object v0, p3, Lcom/android/settings/UsageStatsActivity$AppViewHolder;->pkgName:Landroid/widget/TextView;
 
-    const v0, 0x7f0a037f
+    const v0, 0x7f0a0384
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -344,7 +344,7 @@
 
     iput-object v0, p3, Lcom/android/settings/UsageStatsActivity$AppViewHolder;->lastTimeUsed:Landroid/widget/TextView;
 
-    const v0, 0x7f0a0793
+    const v0, 0x7f0a0790
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

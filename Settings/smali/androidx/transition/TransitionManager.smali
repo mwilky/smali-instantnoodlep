@@ -152,7 +152,7 @@
     :cond_3
     const/4 v0, 0x0
 
-    const v1, 0x7f0a075e
+    const v1, 0x7f0a075b
 
     invoke-virtual {p0, v1, v0}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 

@@ -39,11 +39,11 @@
 .method private init()V
     .locals 1
 
-    const v0, 0x7f0d0296
+    const v0, 0x7f0d0297
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const v0, 0x7f0d02a3
+    const v0, 0x7f0d02a4
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -57,7 +57,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const p0, 0x7f0a077a
+    const p0, 0x7f0a0777
 
     invoke-virtual {p1, p0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

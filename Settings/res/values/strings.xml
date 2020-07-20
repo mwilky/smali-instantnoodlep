@@ -364,12 +364,19 @@ Just bring the devices together (typically back to back) and then tap your scree
     <string name="angle_enabled_app_set">ANGLE enabled application: %1$s</string>
     <string name="animator_duration_scale_title">Animator duration scale</string>
     <string name="another_migration_already_in_progress">Another migration is already in progress.</string>
-    <string name="aod_clock_analog">Analog</string>
+    <string name="aod_clock_analog">Analog 1</string>
+    <string name="aod_clock_analog_1">Analog 2</string>
+    <string name="aod_clock_analog_2">Analog 3</string>
+    <string name="aod_clock_bold">Bold</string>
     <string name="aod_clock_default">Default</string>
+    <string name="aod_clock_digital">Digital 1</string>
+    <string name="aod_clock_digital_1">Digital 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalism</string>
+    <string name="aod_clock_minimalism">Minimalism 1</string>
+    <string name="aod_clock_minimalism_1">Minimalism 2</string>
     <string name="aod_clock_none">None</string>
     <string name="aod_clock_select_style_text">Select the clock style</string>
+    <string name="aod_clock_text_clock">Text clock</string>
     <string name="aod_horizon_light">Horizon light</string>
     <string name="aod_horizon_light_effect_1">Blue</string>
     <string name="aod_horizon_light_effect_2">Red</string>
@@ -1748,6 +1755,21 @@ If this keeps happening, you may need to uninstall the app to improve battery pe
     <string name="dual_cdma_sim_warning_notification_channel_title">SIM combination</string>
     <string name="dual_cdma_sim_warning_notification_summary">Using %1$s may limit functionality. Tap to learn more.</string>
     <string name="eab_provisioned_switch_string">EAB/Presence Provisioned</string>
+    <string name="earphone_function_control_click_left">Double-click on left earbud</string>
+    <string name="earphone_function_control_click_right">Double-click on right earbud</string>
+    <string name="earphone_function_control_last_song">Previous Track</string>
+    <string name="earphone_function_control_next_song">Next Track</string>
+    <string name="earphone_function_control_play_pause">Play/Pause</string>
+    <string name="earphone_function_introduction">Function Description</string>
+    <string name="earphone_function_listening_breeno">Voice Assistant</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: %1$s</string>
+    <string name="earphone_support_current_version">Current version:</string>
+    <string name="earphone_support_update_ota">Auto-update firmware</string>
+    <string name="earphone_support_wifi_data">Allow automatic updates using mobile data</string>
+    <string name="earphone_usage_guide_complete">Done</string>
     <string name="edge_to_edge_navigation_summary">To go Home, swipe up from the bottom of the screen. To switch apps, swipe up from the bottom, hold, then release. To go back, swipe from either the left or right edge.</string>
     <string name="edge_to_edge_navigation_title">Gesture navigation</string>
     <string name="emergency_address_summary">Used as your location when you make an emergency call over Wi‑Fi</string>
@@ -1943,6 +1965,8 @@ For more details, contact your organization's admin."</string>
     <string name="filter_personal_apps">Personal</string>
     <string name="filter_work_apps">Work</string>
     <string name="filter_write_settings_apps">Can modify system settings</string>
+    <string name="find_my_bluetooth_earphone">Find My Buds</string>
+    <string name="find_my_bluetooth_earphone_summary">Play sounds to locate Earbuds when in range, or view last location when out of range</string>
     <string name="fingerprint_add_fingerprint">Add fingerprint</string>
     <string name="fingerprint_add_fingerprint_summary">Place your finger on the sensor then lift after you feel a vibration.</string>
     <string name="fingerprint_add_max">You can add up to %d fingerprints</string>
@@ -7330,39 +7354,39 @@ Update settings to:
     <string name="zzz_op_direct_boot_inputmethod_unaware_dialog_message">"If you restart your phone and have a screen lock set, this keyboard can't start until you unlock your phone"</string>
     <string name="zzz_op_ime_security_warning">%1$s may be able to collect all the text you type, including personal data like passwords and credit card numbers</string>
     <string name="zzz_op_ime_warning_confirm">TURN ON</string>
-    <item type="string" name="APKTOOL_DUMMY_4e5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4e6">false</item>
-    <item type="string" name="APKTOOL_DUMMY_4e9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_60d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_725">false</item>
-    <item type="string" name="APKTOOL_DUMMY_79b">false</item>
-    <item type="string" name="APKTOOL_DUMMY_79c">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7a8">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7a9">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7aa">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7ab">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7ac">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7ad">false</item>
-    <item type="string" name="APKTOOL_DUMMY_7ae">false</item>
-    <item type="string" name="APKTOOL_DUMMY_b4f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c25">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c26">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c27">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c28">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c56">false</item>
-    <item type="string" name="APKTOOL_DUMMY_c57">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ce3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_de3">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e2d">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e2f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e31">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e7f">false</item>
-    <item type="string" name="APKTOOL_DUMMY_e80">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ed0">false</item>
-    <item type="string" name="APKTOOL_DUMMY_ed1">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1074">false</item>
-    <item type="string" name="APKTOOL_DUMMY_1075">false</item>
-    <item type="string" name="APKTOOL_DUMMY_16fb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4ec">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4ed">false</item>
+    <item type="string" name="APKTOOL_DUMMY_4f0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_614">false</item>
+    <item type="string" name="APKTOOL_DUMMY_73d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7b3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7b4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c1">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c2">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c3">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c4">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c5">false</item>
+    <item type="string" name="APKTOOL_DUMMY_7c6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_b67">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c3d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c3e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c3f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c40">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c6e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_c6f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_cfb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_dfb">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e45">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e47">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e49">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e97">false</item>
+    <item type="string" name="APKTOOL_DUMMY_e98">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ee8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_ee9">false</item>
+    <item type="string" name="APKTOOL_DUMMY_108c">false</item>
+    <item type="string" name="APKTOOL_DUMMY_108d">false</item>
+    <item type="string" name="APKTOOL_DUMMY_1713">false</item>
     <string name="renovate_version">RENOVATE ICE version</string>
     <string name="hardware_keys_action_kill">Kill foreground app</string>
     <string name="hardware_keys_action_screenshot">Full screenshot</string>

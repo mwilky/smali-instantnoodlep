@@ -57,7 +57,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0d01fa
+    const v2, 0x7f0d01fb
 
     invoke-virtual {v0, v2, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    const p2, 0x7f0a0559
+    const p2, 0x7f0a0556
 
     invoke-virtual {p0, p2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -157,7 +157,7 @@
 
     iput-object p2, p0, Lcom/oneplus/lib/widget/HintSearchView;->mHintView:Landroid/widget/TextView;
 
-    const p2, 0x7f0a055a
+    const p2, 0x7f0a0557
 
     invoke-virtual {p0, p2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
 
     iput-object p2, p0, Lcom/oneplus/lib/widget/HintSearchView;->mIconSearch:Landroid/widget/ImageView;
 
-    const p2, 0x7f0a055b
+    const p2, 0x7f0a0558
 
     invoke-virtual {p0, p2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

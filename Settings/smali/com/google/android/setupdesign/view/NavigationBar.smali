@@ -158,11 +158,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d032e
+    const v1, 0x7f0d032f
 
     invoke-static {v0, v1, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const v0, 0x7f0a06de
+    const v0, 0x7f0a06db
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -172,7 +172,7 @@
 
     iput-object v0, p0, Lcom/google/android/setupdesign/view/NavigationBar;->nextButton:Landroid/widget/Button;
 
-    const v0, 0x7f0a06dc
+    const v0, 0x7f0a06d9
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -182,7 +182,7 @@
 
     iput-object v0, p0, Lcom/google/android/setupdesign/view/NavigationBar;->backButton:Landroid/widget/Button;
 
-    const v0, 0x7f0a06dd
+    const v0, 0x7f0a06da
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

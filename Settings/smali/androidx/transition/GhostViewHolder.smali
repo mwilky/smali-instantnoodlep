@@ -35,7 +35,7 @@
 
     iget-object p1, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    const v0, 0x7f0a02b6
+    const v0, 0x7f0a02bb
 
     invoke-virtual {p1, v0, p0}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
@@ -57,7 +57,7 @@
 .method static getHolder(Landroid/view/ViewGroup;)Landroidx/transition/GhostViewHolder;
     .locals 1
 
-    const v0, 0x7f0a02b6
+    const v0, 0x7f0a02bb
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
 
@@ -387,7 +387,7 @@
     :cond_1
     iget-object p1, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    const v0, 0x7f0a02b6
+    const v0, 0x7f0a02bb
 
     const/4 v2, 0x0
 

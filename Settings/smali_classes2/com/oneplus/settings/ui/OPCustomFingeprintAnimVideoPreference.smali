@@ -612,7 +612,7 @@
     return-void
 
     :cond_0
-    const v2, 0x7f0a07ab
+    const v2, 0x7f0a07a8
 
     invoke-virtual {v1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -624,7 +624,7 @@
 
     invoke-virtual {v2, v4}, Landroid/widget/ScrollView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const v2, 0x7f0a07aa
+    const v2, 0x7f0a07a7
 
     invoke-virtual {v1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -660,7 +660,7 @@
     invoke-virtual {v4, v5}, Landroid/view/View;->setBackgroundColor(I)V
 
     :goto_0
-    const v4, 0x7f0a07b0
+    const v4, 0x7f0a07ad
 
     invoke-virtual {v1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -668,7 +668,7 @@
 
     check-cast v4, Landroid/view/TextureView;
 
-    const v5, 0x7f0a07ad
+    const v5, 0x7f0a07aa
 
     invoke-virtual {v1, v5}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -676,7 +676,7 @@
 
     check-cast v5, Landroid/widget/ImageView;
 
-    const v6, 0x7f0a07ac
+    const v6, 0x7f0a07a9
 
     invoke-virtual {v1, v6}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
 
     check-cast v6, Landroid/widget/ImageView;
 
-    const v7, 0x7f0a07a9
+    const v7, 0x7f0a07a6
 
     invoke-virtual {v1, v7}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -754,13 +754,13 @@
 
     iget-object v8, v0, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f120ff7
+    const v9, 0x7f12100f
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
-    const v9, 0x7f080567
+    const v9, 0x7f080570
 
     invoke-direct {v6, v0, v8, v9, v7}, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -774,13 +774,13 @@
 
     iget-object v9, v0, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f120ff2
+    const v10, 0x7f12100a
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
-    const v10, 0x7f080563
+    const v10, 0x7f08056c
 
     invoke-direct {v8, v0, v9, v10, v5}, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -788,13 +788,13 @@
 
     iget-object v10, v0, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;->mContext:Landroid/content/Context;
 
-    const v11, 0x7f120ff5
+    const v11, 0x7f12100d
 
     invoke-virtual {v10, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f080564
+    const v11, 0x7f08056d
 
     const/4 v12, 0x1
 
@@ -804,13 +804,13 @@
 
     iget-object v11, v0, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;->mContext:Landroid/content/Context;
 
-    const v13, 0x7f120ff4
+    const v13, 0x7f12100c
 
     invoke-virtual {v11, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
-    const v13, 0x7f080565
+    const v13, 0x7f08056e
 
     const/4 v14, 0x2
 
@@ -820,13 +820,13 @@
 
     iget-object v13, v0, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;->mContext:Landroid/content/Context;
 
-    const v15, 0x7f120ff8
+    const v15, 0x7f121010
 
     invoke-virtual {v13, v15}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v13
 
-    const v15, 0x7f080566
+    const v15, 0x7f08056f
 
     const/16 v3, 0x9
 
@@ -844,13 +844,13 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120ff6
+    const v3, 0x7f12100e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f080568
+    const v3, 0x7f080571
 
     invoke-direct {v13, v0, v2, v3, v15}, Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference$AnimEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomFingeprintAnimVideoPreference;Ljava/lang/String;II)V
 
@@ -1043,7 +1043,7 @@
     invoke-virtual {v4, v2}, Lcom/oneplus/lib/widget/recyclerview/LinearLayoutManager;->scrollToPosition(I)V
 
     :cond_f
-    const v2, 0x7f0a07aa
+    const v2, 0x7f0a07a7
 
     invoke-virtual {v1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

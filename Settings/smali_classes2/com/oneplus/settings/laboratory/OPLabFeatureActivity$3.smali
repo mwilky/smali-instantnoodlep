@@ -65,7 +65,7 @@
 
     invoke-direct {v1, p1, v2}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const v2, 0x7f120e11
+    const v2, 0x7f120e29
 
     invoke-virtual {p2, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -88,7 +88,7 @@
     :cond_0
     invoke-virtual {p1, p2}, Landroid/view/View;->setSelected(Z)V
 
-    const v0, 0x7f0a03a4
+    const v0, 0x7f0a03a9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

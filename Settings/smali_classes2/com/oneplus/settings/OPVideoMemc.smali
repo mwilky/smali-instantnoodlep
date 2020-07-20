@@ -46,7 +46,7 @@
 
     invoke-virtual {v0}, Landroidx/preference/PreferenceGroup;->removeAll()V
 
-    const v0, 0x7f120e48
+    const v0, 0x7f120e60
 
     const/4 v1, 0x0
 
@@ -359,9 +359,9 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPVideoMemc;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
 
-    const v0, 0x7f120e46
+    const v0, 0x7f120e5e
 
-    const v2, 0x7f120e41
+    const v2, 0x7f120e59
 
     invoke-virtual {p1, v0, v2}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 
@@ -536,7 +536,7 @@
 
     iget-object v4, p0, Lcom/oneplus/settings/OPVideoMemc;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120e4c
+    const v5, 0x7f120e64
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

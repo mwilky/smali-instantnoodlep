@@ -423,7 +423,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1211c3
+    const v1, 0x7f1211db    # 1.9416E38f
 
     const/4 v2, 0x1
 
@@ -793,7 +793,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12083c
+    const v2, 0x7f120854
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -803,7 +803,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120a91
+    const v2, 0x7f120aa9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -819,7 +819,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120a7f
+    const v2, 0x7f120a97
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -858,7 +858,7 @@
     :cond_0
     iget-object p1, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12194f
+    const v2, 0x7f121967
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -866,7 +866,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121660
+    const v3, 0x7f121678
 
     new-array v4, v0, [Ljava/lang/Object;
 
@@ -878,7 +878,7 @@
 
     iget-object v4, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12165f
+    const v5, 0x7f121677
 
     new-array v6, v0, [Ljava/lang/Object;
 
@@ -912,7 +912,7 @@
     :cond_2
     iget-object p1, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f121662
+    const v0, 0x7f12167a
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -920,7 +920,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f121661
+    const v3, 0x7f121679
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1099,7 +1099,7 @@
 
     move-result p1
 
-    const v1, 0x7f12083c
+    const v1, 0x7f120854
 
     if-eqz p1, :cond_1
 
@@ -1111,7 +1111,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120a90
+    const v3, 0x7f120aa8
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1142,7 +1142,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120a92
+    const v3, 0x7f120aaa
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1175,7 +1175,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f1205fe
+    const v2, 0x7f120605
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1312,7 +1312,7 @@
 
     invoke-direct {v2, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f12083c
+    const v5, 0x7f120854
 
     invoke-virtual {v2, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -1320,7 +1320,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/tether/WifiTetherSwitchBarController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f12083b
+    const v5, 0x7f120853
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

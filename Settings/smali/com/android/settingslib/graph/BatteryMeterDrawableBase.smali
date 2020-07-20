@@ -235,7 +235,7 @@
 
     invoke-virtual {v3}, Landroid/content/res/TypedArray;->recycle()V
 
-    const v2, 0x7f12026e
+    const v2, 0x7f120275
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

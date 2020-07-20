@@ -97,7 +97,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a050f
+    const v1, 0x7f0a050c
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -109,7 +109,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0510
+    const v1, 0x7f0a050d
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0511
+    const v1, 0x7f0a050e
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -133,7 +133,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0512
+    const v1, 0x7f0a050f
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +145,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0513
+    const v1, 0x7f0a0510
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -157,7 +157,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0514
+    const v1, 0x7f0a0511
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -169,7 +169,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0515
+    const v1, 0x7f0a0512
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -181,7 +181,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0516
+    const v1, 0x7f0a0513
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -193,7 +193,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0517
+    const v1, 0x7f0a0514
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -205,7 +205,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0518
+    const v1, 0x7f0a0515
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -217,7 +217,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/opfinger/OPFingerPrintFodBgAnimView;->mFodBgView:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0519
+    const v1, 0x7f0a0516
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

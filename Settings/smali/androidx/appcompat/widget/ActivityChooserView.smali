@@ -203,7 +203,7 @@
 
     iget-object p2, p0, Landroidx/appcompat/widget/ActivityChooserView;->mDefaultActivityButton:Landroid/widget/FrameLayout;
 
-    const v0, 0x7f0a0317
+    const v0, 0x7f0a031c
 
     invoke-virtual {p2, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

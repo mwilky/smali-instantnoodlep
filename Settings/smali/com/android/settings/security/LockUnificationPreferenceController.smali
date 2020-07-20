@@ -105,7 +105,7 @@
 
     iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121730
+    const v1, 0x7f121748
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120996
+    const v1, 0x7f1209ae
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -296,7 +296,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120997
+    const v2, 0x7f1209af
 
     invoke-virtual {v1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -521,7 +521,7 @@
     :cond_3
     iget-object p1, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f12172f
+    const v0, 0x7f121747
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -570,7 +570,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12172f
+    const v1, 0x7f121747
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

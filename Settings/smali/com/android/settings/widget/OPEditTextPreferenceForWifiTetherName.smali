@@ -277,7 +277,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0d026f
+    const v2, 0x7f0d0270
 
     const/4 v3, 0x0
 
@@ -325,7 +325,7 @@
 
     iget-object v1, p0, Lcom/android/settings/widget/OPEditTextPreferenceForWifiTetherName;->mCheckBox:Landroid/widget/CheckBox;
 
-    const v2, 0x7f120c98
+    const v2, 0x7f120cb0
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setText(I)V
 

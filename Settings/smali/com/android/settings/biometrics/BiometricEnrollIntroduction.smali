@@ -129,7 +129,7 @@
 .method protected initViews()V
     .locals 2
 
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06d2
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -463,7 +463,7 @@
 
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    const p1, 0x7f12070f
+    const p1, 0x7f120725
 
     const/4 v0, 0x0
 
@@ -611,7 +611,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f120660
+    const v3, 0x7f120667
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

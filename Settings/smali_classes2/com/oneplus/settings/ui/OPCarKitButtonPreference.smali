@@ -137,7 +137,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->setDividerAllowedAbove(Z)V
 
-    const v1, 0x7f0a03b7
+    const v1, 0x7f0a03bc
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     iput-object v1, p0, Lcom/oneplus/settings/ui/OPCarKitButtonPreference;->mLeftIcon:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a05f4
+    const v1, 0x7f0a05f1
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -195,7 +195,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a03bd
+    const v0, 0x7f0a03c2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

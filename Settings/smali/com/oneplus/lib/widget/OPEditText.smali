@@ -144,7 +144,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f08049e
+    const v1, 0x7f0804a7
 
     invoke-virtual {v0, v1, p0}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
@@ -166,7 +166,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f08049b
+    const v1, 0x7f0804a4
 
     invoke-virtual {v0, v1, p0}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 

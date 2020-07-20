@@ -160,7 +160,7 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter;)V
 
-    const v2, 0x7f0a053c
+    const v2, 0x7f0a0539
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
 
     check-cast v2, Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a076b
+    const v2, 0x7f0a0768
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a0305
+    const v2, 0x7f0a030a
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a044b
+    const v2, 0x7f0a0450
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -198,7 +198,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a06e2
+    const v2, 0x7f0a06df
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -206,7 +206,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v2, 0x7f0a02c0
+    const v2, 0x7f0a02c5
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -214,7 +214,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v2, 0x7f0a06ee
+    const v2, 0x7f0a06eb
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -252,7 +252,7 @@
 
     iget-object v3, v1, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v4, 0x7f121030
+    const v4, 0x7f121048
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 

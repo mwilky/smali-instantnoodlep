@@ -282,7 +282,7 @@
     invoke-virtual {p0, v1}, Landroid/app/Activity;->setTheme(I)V
 
     :cond_3
-    const v1, 0x7f0d02e3
+    const v1, 0x7f0d02e4
 
     invoke-super {p0, v1}, Landroid/app/Activity;->setContentView(I)V
 

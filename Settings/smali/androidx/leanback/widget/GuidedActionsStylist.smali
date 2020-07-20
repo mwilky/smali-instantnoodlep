@@ -80,7 +80,7 @@
 
     invoke-direct {v0}, Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;-><init>()V
 
-    const v1, 0x7f0a02d5
+    const v1, 0x7f0a02da
 
     iput v1, v0, Landroidx/leanback/widget/ItemAlignmentFacet$ItemAlignmentDef;->mViewId:I
 
@@ -1281,12 +1281,12 @@
 
     if-eqz p2, :cond_1
 
-    const p2, 0x7f0a02cf
+    const p2, 0x7f0a02d4
 
     goto :goto_1
 
     :cond_1
-    const p2, 0x7f0a02ce
+    const p2, 0x7f0a02d3
 
     :goto_1
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1301,12 +1301,12 @@
 
     if-eqz p2, :cond_2
 
-    const p2, 0x7f0a02d9
+    const p2, 0x7f0a02de
 
     goto :goto_2
 
     :cond_2
-    const p2, 0x7f0a02d8
+    const p2, 0x7f0a02dd
 
     :goto_2
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1328,12 +1328,12 @@
 
     if-eqz p2, :cond_4
 
-    const p2, 0x7f0a02d7
+    const p2, 0x7f0a02dc
 
     goto :goto_3
 
     :cond_4
-    const p2, 0x7f0a02d6
+    const p2, 0x7f0a02db
 
     :goto_3
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1360,7 +1360,7 @@
 
     iget-object p1, p0, Landroidx/leanback/widget/GuidedActionsStylist;->mMainView:Landroid/view/ViewGroup;
 
-    const p2, 0x7f0a02dc
+    const p2, 0x7f0a02e1
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1372,7 +1372,7 @@
 
     iget-object p1, p0, Landroidx/leanback/widget/GuidedActionsStylist;->mMainView:Landroid/view/ViewGroup;
 
-    const p2, 0x7f0a02dd
+    const p2, 0x7f0a02e2
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

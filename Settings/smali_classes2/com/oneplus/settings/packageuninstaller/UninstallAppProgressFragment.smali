@@ -72,7 +72,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
 
-    const p3, 0x7f0d026a
+    const p3, 0x7f0d026b
 
     const/4 v0, 0x0
 
@@ -142,7 +142,7 @@
 
     iput-object p2, p0, Lcom/oneplus/settings/packageuninstaller/UninstallAppProgressFragment;->mDeviceManagerButton:Landroid/widget/Button;
 
-    const p2, 0x7f0a07a4
+    const p2, 0x7f0a07a1
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0a0483
+    const p2, 0x7f0a0484
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

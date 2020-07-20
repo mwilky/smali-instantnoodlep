@@ -106,7 +106,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setVisible(Z)V
 
-    const v0, 0x7f0d01dd
+    const v0, 0x7f0d01de
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -224,7 +224,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0a07b0
+    const v0, 0x7f0a07ad
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -447,7 +447,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a06c9
+    const v0, 0x7f0a06c6
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -457,7 +457,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextSize(F)V
 
-    const v0, 0x7f0a06a5
+    const v0, 0x7f0a06a2
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -467,7 +467,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    const v0, 0x7f0a05e4
+    const v0, 0x7f0a05e1
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -477,7 +477,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    const v0, 0x7f0a06d7
+    const v0, 0x7f0a06d4
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -789,7 +789,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a04c5
+    const v1, 0x7f0a04c2
 
     const/4 v2, 0x0
 
@@ -877,7 +877,7 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0a06c9
+    const v1, 0x7f0a06c6
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1622,7 +1622,7 @@
 
     if-eq v0, v1, :cond_1
 
-    const v1, 0x7f0a0679
+    const v1, 0x7f0a0676
 
     if-eq v0, v1, :cond_0
 
@@ -1680,7 +1680,7 @@
 
     if-eqz p1, :cond_2
 
-    const p1, 0x7f120ca7
+    const p1, 0x7f120cbf
 
     invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1822,11 +1822,11 @@
     :goto_1
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
-    const p1, 0x7f121439
+    const p1, 0x7f121451
 
     invoke-virtual {p0, p1}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollEnrolling;->setHeaderText(I)V
 
-    const p1, 0x7f0a06a5
+    const p1, 0x7f0a06a2
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1836,7 +1836,7 @@
 
     iput-object p1, p0, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollEnrolling;->mStartMessage:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05e4
+    const p1, 0x7f0a05e1
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1896,7 +1896,7 @@
 
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const p1, 0x7f0a04c4
+    const p1, 0x7f0a04c1
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -2109,12 +2109,12 @@
 
     if-eq p1, p2, :cond_1
 
-    const p2, 0x7f120d50
+    const p2, 0x7f120d68
 
     goto :goto_1
 
     :cond_1
-    const p2, 0x7f121428
+    const p2, 0x7f121440
 
     :goto_1
     invoke-virtual {p0, p2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
@@ -2242,9 +2242,9 @@
 
     move-result v0
 
-    const v3, 0x7f120fea
+    const v3, 0x7f121002
 
-    const v4, 0x7f120d57
+    const v4, 0x7f120d6f
 
     const/16 v5, 0x44c
 
@@ -2333,7 +2333,7 @@
     goto :goto_1
 
     :cond_7
-    const p1, 0x7f120d56
+    const p1, 0x7f120d6e
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -2344,7 +2344,7 @@
     goto :goto_1
 
     :cond_8
-    const p1, 0x7f120d54
+    const p1, 0x7f120d6c
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -2355,7 +2355,7 @@
     goto :goto_1
 
     :cond_9
-    const p1, 0x7f120d55
+    const p1, 0x7f120d6d
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -3147,7 +3147,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a06c9
+    const v0, 0x7f0a06c6
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -3272,11 +3272,11 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f12114d
+    const v2, 0x7f121165
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v2, 0x7f12114e
+    const v2, 0x7f121166
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -3286,7 +3286,7 @@
 
     invoke-virtual {v1, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setCancelable(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v0, 0x7f120cef
+    const v0, 0x7f120d07
 
     new-instance v2, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollEnrolling$1;
 

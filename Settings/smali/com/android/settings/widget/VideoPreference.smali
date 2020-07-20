@@ -290,7 +290,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setVisible(Z)V
 
-    const p1, 0x7f0d0370
+    const p1, 0x7f0d0371
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -413,7 +413,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0a07b0
+    const v0, 0x7f0a07ad
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -421,7 +421,7 @@
 
     check-cast v0, Landroid/view/TextureView;
 
-    const v1, 0x7f0a07ad
+    const v1, 0x7f0a07aa
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -429,7 +429,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    const v2, 0x7f0a07ac
+    const v2, 0x7f0a07a9
 
     invoke-virtual {p1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -437,7 +437,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    const v3, 0x7f0a07a9
+    const v3, 0x7f0a07a6
 
     invoke-virtual {p1, v3}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

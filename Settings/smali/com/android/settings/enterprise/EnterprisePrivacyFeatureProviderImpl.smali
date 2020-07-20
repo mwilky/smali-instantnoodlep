@@ -175,7 +175,7 @@
 
     iget-object v3, p0, Lcom/android/settings/enterprise/EnterprisePrivacyFeatureProviderImpl;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f12049e
+    const v4, 0x7f1204a5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -248,7 +248,7 @@
 
     iget-object v4, p0, Lcom/android/settings/enterprise/EnterprisePrivacyFeatureProviderImpl;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f12049e
+    const v5, 0x7f1204a5
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -322,7 +322,7 @@
 
     iget-object v3, p0, Lcom/android/settings/enterprise/EnterprisePrivacyFeatureProviderImpl;->mResources:Landroid/content/res/Resources;
 
-    const v4, 0x7f120647
+    const v4, 0x7f12064e
 
     const/4 v5, 0x1
 
@@ -341,7 +341,7 @@
     :cond_1
     iget-object v1, p0, Lcom/android/settings/enterprise/EnterprisePrivacyFeatureProviderImpl;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f120645
+    const v3, 0x7f12064c
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -352,7 +352,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/settings/enterprise/EnterprisePrivacyFeatureProviderImpl;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f120646
+    const v3, 0x7f12064d
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -362,7 +362,7 @@
 
     iget-object v1, p0, Lcom/android/settings/enterprise/EnterprisePrivacyFeatureProviderImpl;->mResources:Landroid/content/res/Resources;
 
-    const v3, 0x7f120929
+    const v3, 0x7f120941
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

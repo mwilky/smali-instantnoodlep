@@ -117,9 +117,19 @@
 
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object p0, p0, Lcom/android/settings/bluetooth/BluetoothDeviceUpdater;->mDevicePreferenceCallback:Lcom/android/settings/connecteddevice/DevicePreferenceCallback;
+    iget-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDeviceUpdater;->mDevicePreferenceCallback:Lcom/android/settings/connecteddevice/DevicePreferenceCallback;
 
-    invoke-interface {p0, v1}, Lcom/android/settings/connecteddevice/DevicePreferenceCallback;->onDeviceAdded(Landroidx/preference/Preference;)V
+    invoke-interface {p1, v1}, Lcom/android/settings/connecteddevice/DevicePreferenceCallback;->onDeviceAdded(Landroidx/preference/Preference;)V
+
+    iget-object p0, p0, Lcom/android/settings/bluetooth/BluetoothDeviceUpdater;->mFragment:Lcom/android/settings/dashboard/DashboardFragment;
+
+    instance-of p1, p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
+
+    if-eqz p1, :cond_1
+
+    check-cast p0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
+
+    invoke-virtual {p0, v1}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->checkOnePlusPods(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
 
     :cond_1
     return-void
@@ -288,7 +298,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1205ea
+    const v0, 0x7f1205f1
 
     invoke-virtual {p1, v0}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

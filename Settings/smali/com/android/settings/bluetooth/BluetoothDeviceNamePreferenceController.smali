@@ -166,7 +166,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120303
+    const v1, 0x7f12030a
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

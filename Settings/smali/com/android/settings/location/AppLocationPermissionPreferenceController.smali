@@ -149,7 +149,7 @@
     :goto_0
     iget-object p0, p0, Lcom/android/settings/location/LocationBasePreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120961
+    const v0, 0x7f120979
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -160,7 +160,7 @@
     :cond_2
     iget-object p0, p0, Lcom/android/settings/location/LocationBasePreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f12094e
+    const v0, 0x7f120966
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

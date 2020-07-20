@@ -74,7 +74,7 @@
     if-eqz p4, :cond_1
 
     :cond_0
-    const p1, 0x7f0d02c9
+    const p1, 0x7f0d02ca
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -284,7 +284,7 @@
     invoke-virtual {p0, v1}, Landroidx/preference/Preference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     :cond_1
-    const v1, 0x7f0a0798
+    const v1, 0x7f0a0795
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -323,7 +323,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0a0764
+    const v4, 0x7f0a0761
 
     invoke-virtual {p1, v4}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -356,7 +356,7 @@
 
     :cond_5
     :goto_2
-    const v0, 0x7f0a03e2
+    const v0, 0x7f0a03e7
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

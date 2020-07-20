@@ -112,7 +112,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120e0e
+    const v0, 0x7f120e26
 
     const/16 v1, 0xbb8
 
@@ -142,9 +142,9 @@
 
     move-result v0
 
-    const v1, 0x7f080517
+    const v1, 0x7f080520
 
-    const v2, 0x7f080519
+    const v2, 0x7f080522
 
     const v3, 0x7f060359
 
@@ -190,7 +190,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureDetailActivity;->mLikeImageButton:Landroid/widget/ImageButton;
 
-    const v2, 0x7f08051a
+    const v2, 0x7f080523
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -235,7 +235,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureDetailActivity;->mDislikeImageButton:Landroid/widget/ImageButton;
 
-    const v0, 0x7f080518
+    const v0, 0x7f080521
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -342,17 +342,17 @@
 
     move-result p1
 
-    const v0, 0x7f0a04dc
+    const v0, 0x7f0a04d9
 
     if-eq p1, v0, :cond_9
 
-    const v0, 0x7f0a04de
+    const v0, 0x7f0a04db
 
     const/4 v1, 0x1
 
     if-eq p1, v0, :cond_8
 
-    const v0, 0x7f0a04eb
+    const v0, 0x7f0a04e8
 
     if-eq p1, v0, :cond_0
 
@@ -422,19 +422,19 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f120e09
+    const v2, 0x7f120e21
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v2, 0x7f120e0a
+    const v2, 0x7f120e22
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v2, 0x7f121096
+    const v2, 0x7f1210ae
 
     invoke-virtual {v1, v2, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v2, 0x7f121095
+    const v2, 0x7f1210ad
 
     invoke-virtual {v1, v2, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -590,7 +590,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d01e3
+    const p1, 0x7f0d01e4
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -677,7 +677,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureDetailActivity;->mSharedPreferences:Landroid/content/SharedPreferences;
 
-    const p1, 0x7f0a04e4
+    const p1, 0x7f0a04e1
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -687,7 +687,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureDetailActivity;->mDescriptionSummary:Landroid/widget/TextView;
 
-    const p1, 0x7f0a04e3
+    const p1, 0x7f0a04e0
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -695,7 +695,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const p1, 0x7f0a04e2
+    const p1, 0x7f0a04df
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -703,7 +703,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const p1, 0x7f0a04eb
+    const p1, 0x7f0a04e8
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -711,7 +711,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureDetailActivity;->mActiviteFeatureToggle:Landroid/view/View;
 
-    const p1, 0x7f0a04ea
+    const p1, 0x7f0a04e7
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -781,7 +781,7 @@
     invoke-virtual {p1, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
     :goto_2
-    const p1, 0x7f0a04e5
+    const p1, 0x7f0a04e2
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -837,7 +837,7 @@
     invoke-virtual {p1, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_3
-    const p1, 0x7f0a04de
+    const p1, 0x7f0a04db
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -847,7 +847,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureDetailActivity;->mLikeImageButton:Landroid/widget/ImageButton;
 
-    const p1, 0x7f0a04dc
+    const p1, 0x7f0a04d9
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

@@ -68,7 +68,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setOrder(I)V
 
-    const p1, 0x7f12190c
+    const p1, 0x7f121924
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

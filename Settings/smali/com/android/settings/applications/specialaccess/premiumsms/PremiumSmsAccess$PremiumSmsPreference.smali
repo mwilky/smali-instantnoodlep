@@ -55,7 +55,7 @@
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
-    const p1, 0x7f030101
+    const p1, 0x7f030102
 
     invoke-virtual {p0, p1}, Landroidx/preference/ListPreference;->setEntries(I)V
 

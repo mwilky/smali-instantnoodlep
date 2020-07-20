@@ -1061,7 +1061,7 @@
 
     iget-object v12, v1, Lcom/android/settings/applications/ProcStatsData;->mContext:Landroid/content/Context;
 
-    const v13, 0x7f121295
+    const v13, 0x7f1212ad
 
     invoke-virtual {v12, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1129,7 +1129,7 @@
 
     iget-object v8, v1, Lcom/android/settings/applications/ProcStatsData;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f121294
+    const v9, 0x7f1212ac
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1194,7 +1194,7 @@
 
     iget-object v8, v1, Lcom/android/settings/applications/ProcStatsData;->mContext:Landroid/content/Context;
 
-    const v9, 0x7f121292
+    const v9, 0x7f1212aa
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1259,7 +1259,7 @@
 
     iget-object v3, v1, Lcom/android/settings/applications/ProcStatsData;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f121291
+    const v8, 0x7f1212a9
 
     invoke-virtual {v3, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -115,7 +115,7 @@
 
     iget-object v2, p0, Lcom/android/settings/datausage/DataUsageSummary$SummaryProvider;->mActivity:Landroid/app/Activity;
 
-    const v3, 0x7f12057b
+    const v3, 0x7f120582
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -221,7 +221,7 @@
     :cond_4
     iget-object v2, p0, Lcom/android/settings/datausage/DataUsageSummary$SummaryProvider;->mActivity:Landroid/app/Activity;
 
-    const v3, 0x7f12058e
+    const v3, 0x7f120595
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 

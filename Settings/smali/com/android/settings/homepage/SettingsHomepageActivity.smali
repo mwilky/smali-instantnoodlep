@@ -127,7 +127,7 @@
     invoke-virtual {p0, v3}, Landroid/app/Activity;->requestWindowFeature(I)Z
 
     :cond_0
-    const v2, 0x7f0d02e8
+    const v2, 0x7f0d02e9
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->setContentView(I)V
 
@@ -296,7 +296,7 @@
 
     invoke-static {p1, v0}, Lcom/oneplus/settings/utils/OPUtils;->setLightNavigationBar(Landroid/view/Window;I)V
 
-    const p1, 0x7f0a062c
+    const p1, 0x7f0a0629
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -324,7 +324,7 @@
 
     invoke-direct {p1}, Lcom/android/settings/homepage/TopLevelSettings;-><init>()V
 
-    const v0, 0x7f0a03dd
+    const v0, 0x7f0a03e2
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/homepage/SettingsHomepageActivity;->showFragment(Landroidx/fragment/app/Fragment;I)V
 
@@ -348,7 +348,7 @@
 .method setHomepageContainerPaddingTop()V
     .locals 3
 
-    const v0, 0x7f0a02fb
+    const v0, 0x7f0a0300
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

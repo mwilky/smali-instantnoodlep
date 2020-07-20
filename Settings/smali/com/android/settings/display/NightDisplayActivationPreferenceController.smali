@@ -98,12 +98,12 @@
 
     if-eqz v0, :cond_1
 
-    const v4, 0x7f120b2c
+    const v4, 0x7f120b44
 
     goto :goto_0
 
     :cond_1
-    const v4, 0x7f120b2f
+    const v4, 0x7f120b47
 
     :goto_0
     new-array v2, v2, [Ljava/lang/Object;
@@ -149,12 +149,12 @@
 
     if-eqz v0, :cond_4
 
-    const v2, 0x7f120b2e
+    const v2, 0x7f120b46
 
     goto :goto_2
 
     :cond_4
-    const v2, 0x7f120b31
+    const v2, 0x7f120b49
 
     :goto_2
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -168,12 +168,12 @@
 
     if-eqz v0, :cond_6
 
-    const v2, 0x7f120b2d
+    const v2, 0x7f120b45
 
     goto :goto_3
 
     :cond_6
-    const v2, 0x7f120b30
+    const v2, 0x7f120b48
 
     :goto_3
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -234,7 +234,7 @@
 
     check-cast p1, Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v0, 0x7f0a0467
+    const v0, 0x7f0a046c
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a0466
+    const v0, 0x7f0a046b
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

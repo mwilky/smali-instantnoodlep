@@ -76,7 +76,7 @@
 
     sget-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const p1, 0x7f121516
+    const p1, 0x7f12152e
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -91,7 +91,7 @@
 
     sget-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const p1, 0x7f120842
+    const p1, 0x7f12085a
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -102,7 +102,7 @@
     :cond_1
     const/4 p1, 0x1
 
-    const v0, 0x7f120844
+    const v0, 0x7f12085c
 
     if-ne p0, p1, :cond_2
 

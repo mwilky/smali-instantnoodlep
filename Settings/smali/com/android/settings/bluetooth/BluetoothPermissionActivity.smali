@@ -192,7 +192,7 @@
 
     const/4 p1, 0x0
 
-    const v1, 0x7f0a03f9
+    const v1, 0x7f0a03fe
 
     const/4 v2, 0x0
 
@@ -251,7 +251,7 @@
 
     aput-object p2, v2, v4
 
-    const p1, 0x7f120388
+    const p1, 0x7f12038f
 
     invoke-virtual {p0, p1, v2}, Lcom/android/internal/app/AlertActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -300,7 +300,7 @@
 
     aput-object p2, v2, v4
 
-    const p1, 0x7f12033b
+    const p1, 0x7f120342
 
     invoke-virtual {p0, p1, v2}, Lcom/android/internal/app/AlertActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -349,7 +349,7 @@
 
     aput-object p2, v2, v4
 
-    const p1, 0x7f120365
+    const p1, 0x7f12036c
 
     invoke-virtual {p0, p1, v2}, Lcom/android/internal/app/AlertActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -396,7 +396,7 @@
 
     aput-object p2, v2, p1
 
-    const p1, 0x7f1202f0
+    const p1, 0x7f1202f7
 
     invoke-virtual {p0, p1, v2}, Lcom/android/internal/app/AlertActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -409,7 +409,7 @@
     iput-object p1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
     :goto_0
-    const p1, 0x7f121a5d
+    const p1, 0x7f121a75
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -419,7 +419,7 @@
 
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const p1, 0x7f120b47
+    const p1, 0x7f120b5f
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -585,7 +585,7 @@
 
     if-ne p1, v2, :cond_1
 
-    const p1, 0x7f1202f2
+    const p1, 0x7f1202f9
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -600,7 +600,7 @@
     :cond_1
     if-ne p1, v0, :cond_2
 
-    const p1, 0x7f120367
+    const p1, 0x7f12036e
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -617,7 +617,7 @@
 
     if-ne p1, v0, :cond_3
 
-    const p1, 0x7f12033e
+    const p1, 0x7f120345
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -634,7 +634,7 @@
 
     if-ne p1, v0, :cond_4
 
-    const p1, 0x7f12038b
+    const p1, 0x7f120392
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 

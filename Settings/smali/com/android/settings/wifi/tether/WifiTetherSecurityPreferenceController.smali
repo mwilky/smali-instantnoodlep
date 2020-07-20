@@ -61,7 +61,7 @@
 
     move-result p1
 
-    const p2, 0x7f030158
+    const p2, 0x7f030159
 
     if-eqz p1, :cond_0
 
@@ -71,7 +71,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f030156
+    const v0, 0x7f030157
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -100,7 +100,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f030155
+    const v0, 0x7f030156
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -127,7 +127,7 @@
 
     move-result p1
 
-    const p2, 0x7f030157
+    const p2, 0x7f030158
 
     if-eqz p1, :cond_2
 
@@ -166,7 +166,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f030154
+    const v0, 0x7f030155
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -309,13 +309,13 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f12138c
+    const v1, 0x7f1213a4
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f121805
+    const v1, 0x7f12181d
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -474,19 +474,19 @@
 
     invoke-direct {p1, p2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p2, 0x7f121893
+    const p2, 0x7f1218ab
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    const p2, 0x7f1211aa
+    const p2, 0x7f1211c2
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object p1
 
-    const p2, 0x7f1204cc
+    const p2, 0x7f1204d3
 
     iget-object v0, p0, Lcom/android/settings/wifi/tether/WifiTetherSecurityPreferenceController;->noneDialogCLickListner:Landroid/content/DialogInterface$OnClickListener;
 
@@ -535,7 +535,7 @@
 
     invoke-direct {p1, p2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p2, 0x7f1219ab
+    const p2, 0x7f1219c3
 
     invoke-virtual {p1, p2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 

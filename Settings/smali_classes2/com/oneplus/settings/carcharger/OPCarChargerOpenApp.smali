@@ -200,7 +200,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120c70
+    const v0, 0x7f120c88
 
     invoke-virtual {p1, v0}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -210,7 +210,7 @@
 
     invoke-virtual {p1, v0}, Landroid/app/ActionBar;->setHomeButtonEnabled(Z)V
 
-    const p1, 0x7f0a04b4
+    const p1, 0x7f0a04b1
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -244,7 +244,7 @@
 
     invoke-virtual {p1, v1}, Lcom/oneplus/settings/apploader/OPApplicationLoader;->setAppType(I)V
 
-    const p1, 0x7f0a03c9
+    const p1, 0x7f0a03ce
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -270,7 +270,7 @@
 
     new-instance p1, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v2, 0x7f120c6d
+    const v2, 0x7f120c85
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f0300eb
+    const v2, 0x7f0300ec
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

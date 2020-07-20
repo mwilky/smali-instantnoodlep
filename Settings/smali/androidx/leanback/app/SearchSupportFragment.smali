@@ -252,7 +252,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0a03ad
+    const p2, 0x7f0a03b2
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -260,7 +260,7 @@
 
     check-cast p2, Landroidx/leanback/widget/BrowseFrameLayout;
 
-    const p3, 0x7f0a03a9
+    const p3, 0x7f0a03ae
 
     invoke-virtual {p2, p3}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -354,7 +354,7 @@
 
     move-result-object p3
 
-    const v1, 0x7f0a03a7
+    const v1, 0x7f0a03ac
 
     invoke-virtual {p3, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentById(I)Landroidx/fragment/app/Fragment;
 

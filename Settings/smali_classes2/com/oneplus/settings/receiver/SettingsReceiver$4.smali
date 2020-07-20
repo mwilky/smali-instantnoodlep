@@ -186,7 +186,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/receiver/SettingsReceiver$4;->val$mContext:Landroid/content/Context;
 
-    const p1, 0x7f1211c7
+    const p1, 0x7f1211df
 
     const/4 v0, 0x1
 

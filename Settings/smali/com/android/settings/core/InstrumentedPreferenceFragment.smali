@@ -272,7 +272,7 @@
 
     invoke-virtual {p3, p2}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    const v1, 0x7f0a05c8
+    const v1, 0x7f0a05c5
 
     invoke-virtual {p3, v1}, Lcom/oneplus/settings/edgeeffect/SpringRelativeLayout;->addSpringView(I)V
 

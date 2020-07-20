@@ -98,7 +98,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f0a03dd
+    const v0, 0x7f0a03e2
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/FragmentManager;->findFragmentById(I)Landroidx/fragment/app/Fragment;
 
@@ -255,7 +255,7 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f12070f
+    const v0, 0x7f120725
 
     invoke-static {p0, v0, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -457,7 +457,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f12070f
+    const p1, 0x7f120725
 
     const/4 v0, 0x0
 

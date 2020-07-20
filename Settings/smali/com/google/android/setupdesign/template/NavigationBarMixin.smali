@@ -28,7 +28,7 @@
 
     iget-object p0, p0, Lcom/google/android/setupdesign/template/NavigationBarMixin;->templateLayout:Lcom/google/android/setupcompat/internal/TemplateLayout;
 
-    const v0, 0x7f0a06d8
+    const v0, 0x7f0a06d5
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 

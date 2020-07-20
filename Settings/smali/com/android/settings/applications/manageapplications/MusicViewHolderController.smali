@@ -113,13 +113,13 @@
 .method public setupView(Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;)V
     .locals 3
 
-    const v0, 0x7f080212
+    const v0, 0x7f08021b
 
     invoke-virtual {p1, v0}, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->setIcon(I)V
 
     iget-object v0, p0, Lcom/android/settings/applications/manageapplications/MusicViewHolderController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1201d8
+    const v1, 0x7f1201df
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

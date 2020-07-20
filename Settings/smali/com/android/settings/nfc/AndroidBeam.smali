@@ -188,7 +188,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f1207da
+    const v0, 0x7f1207f2
 
     invoke-static {p0, p1, v0, p2}, Lcom/android/settingslib/HelpUtils;->prepareHelpMenuItem(Landroid/app/Activity;Landroid/view/Menu;ILjava/lang/String;)Z
 
@@ -267,7 +267,7 @@
     return-object p1
 
     :cond_0
-    const p3, 0x7f0d0209
+    const p3, 0x7f0d020a
 
     const/4 v0, 0x0
 
@@ -299,7 +299,7 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    const p3, 0x7f080229
+    const p3, 0x7f080232
 
     invoke-virtual {p2, p3}, Landroid/widget/ImageView;->setImageResource(I)V
 

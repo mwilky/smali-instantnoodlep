@@ -36,7 +36,7 @@
 
     iput-object p2, p0, Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog$RecyclerAdapter$RouteViewHolder;->mItemView:Landroid/view/View;
 
-    const v0, 0x7f0a043d
+    const v0, 0x7f0a0442
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -46,7 +46,7 @@
 
     iput-object v0, p0, Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog$RecyclerAdapter$RouteViewHolder;->mImageView:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a043f
+    const v0, 0x7f0a0444
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -56,7 +56,7 @@
 
     iput-object v0, p0, Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog$RecyclerAdapter$RouteViewHolder;->mProgressBar:Landroid/widget/ProgressBar;
 
-    const v0, 0x7f0a043e
+    const v0, 0x7f0a0443
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

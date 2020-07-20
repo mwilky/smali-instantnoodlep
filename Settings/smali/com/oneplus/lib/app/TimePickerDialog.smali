@@ -70,7 +70,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0d0261
+    const p3, 0x7f0d0262
 
     const/4 p4, 0x0
 
@@ -100,7 +100,7 @@
 
     invoke-virtual {p0, p3, p1, p0}, Lcom/oneplus/lib/app/OPAlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    const p1, 0x7f0a073b
+    const p1, 0x7f0a0738
 
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -144,7 +144,7 @@
 
     invoke-virtual {p1, p0}, Lcom/oneplus/lib/widget/TimePicker;->setOnTimeChangedListener(Lcom/oneplus/lib/widget/TimePicker$OnTimeChangedListener;)V
 
-    const p1, 0x7f0a073e
+    const p1, 0x7f0a073b
 
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

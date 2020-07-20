@@ -55,7 +55,7 @@
 
     invoke-direct {p0, p1, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d026c
+    const v0, 0x7f0d026d
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutResId:I
 
@@ -71,7 +71,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mGuideViews:Ljava/util/ArrayList;
 
-    const v0, 0x7f0d026e
+    const v0, 0x7f0d026f
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutItemID:I
 
@@ -85,7 +85,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p2, 0x7f0d026c
+    const p2, 0x7f0d026d
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutResId:I
 
@@ -101,7 +101,7 @@
 
     iput-object p2, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mGuideViews:Ljava/util/ArrayList;
 
-    const p2, 0x7f0d026e
+    const p2, 0x7f0d026f
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutItemID:I
 
@@ -117,7 +117,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p2, 0x7f0d026c
+    const p2, 0x7f0d026d
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutResId:I
 
@@ -131,7 +131,7 @@
 
     iput-object p2, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mGuideViews:Ljava/util/ArrayList;
 
-    const p2, 0x7f0d026e
+    const p2, 0x7f0d026f
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutItemID:I
 
@@ -218,7 +218,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02cc
+    const v4, 0x7f0a02d1
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -232,7 +232,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
-    const v4, 0x7f0a02ca
+    const v4, 0x7f0a02cf
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -246,7 +246,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
-    const v4, 0x7f0a02c9
+    const v4, 0x7f0a02ce
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -340,7 +340,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0509
+    const v0, 0x7f0a0506
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -350,11 +350,11 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mDotContainer:Lcom/oneplus/lib/design/widget/OPPageIndicator;
 
-    const v0, 0x7f0a0508
+    const v0, 0x7f0a0505
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
-    const v0, 0x7f0a050b
+    const v0, 0x7f0a0508
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -403,7 +403,7 @@
 
     check-cast v1, Landroid/view/View;
 
-    const v2, 0x7f0a02c9
+    const v2, 0x7f0a02ce
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -490,14 +490,14 @@
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f0d026d
+    const p1, 0x7f0d026e
 
     iput p1, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutItemID:I
 
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f0d026e
+    const p1, 0x7f0d026f
 
     iput p1, p0, Lcom/oneplus/settings/ui/OPViewPagerGuideCategory;->mLayoutItemID:I
 

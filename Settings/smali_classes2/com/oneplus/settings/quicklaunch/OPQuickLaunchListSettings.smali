@@ -201,7 +201,7 @@
 
     if-eqz p1, :cond_0
 
-    const v0, 0x7f12100c
+    const v0, 0x7f121024
 
     invoke-virtual {p1, v0}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -313,7 +313,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f12100a
+    const v0, 0x7f121022
 
     invoke-virtual {p3, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

@@ -33,7 +33,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/preference/DialogPreference;->setDialogLayoutResource(I)V
 
-    const p1, 0x7f0d02b0
+    const p1, 0x7f0d02b1
 
     invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->setListItemLayoutResource(I)V
 
@@ -45,7 +45,7 @@
 .method protected onBindListItem(Landroid/view/View;I)V
     .locals 3
 
-    const v0, 0x7f0a0583
+    const v0, 0x7f0a0580
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -97,7 +97,7 @@
 
     if-eqz p0, :cond_0
 
-    const p2, 0x7f0a06e2
+    const p2, 0x7f0a06df
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

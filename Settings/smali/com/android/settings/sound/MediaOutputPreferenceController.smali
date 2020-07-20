@@ -152,7 +152,7 @@
 
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120a3d
+    const v0, 0x7f120a55
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -229,7 +229,7 @@
     goto :goto_0
 
     :cond_5
-    const p1, 0x7f120a3e
+    const p1, 0x7f120a56
 
     :goto_0
     invoke-virtual {p0, p1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;

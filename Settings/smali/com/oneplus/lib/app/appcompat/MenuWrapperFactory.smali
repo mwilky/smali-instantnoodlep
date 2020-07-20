@@ -120,7 +120,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300cc
+    const v1, 0x7f0300cd
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -247,7 +247,7 @@
     return-object p0
 
     :cond_0
-    const p1, 0x7f120d14
+    const p1, 0x7f120d2c
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -273,7 +273,7 @@
 .method public static getGesturePackageName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    const v0, 0x7f120d14
+    const v0, 0x7f120d2c
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -383,7 +383,7 @@
 .method public static getGestureSummarybyGestureKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    const v0, 0x7f120d14
+    const v0, 0x7f120d2c
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -432,7 +432,7 @@
 
     if-eqz v1, :cond_2
 
-    const p1, 0x7f120dd1
+    const p1, 0x7f120de9
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -449,7 +449,7 @@
 
     if-eqz v1, :cond_3
 
-    const p1, 0x7f120dd3
+    const p1, 0x7f120deb
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -466,7 +466,7 @@
 
     if-eqz v1, :cond_4
 
-    const p1, 0x7f120dd5
+    const p1, 0x7f120ded
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -483,7 +483,7 @@
 
     if-eqz v1, :cond_5
 
-    const p1, 0x7f120dd2
+    const p1, 0x7f120dea
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -500,7 +500,7 @@
 
     if-eqz v1, :cond_6
 
-    const p1, 0x7f1207b8
+    const p1, 0x7f1207d0
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -679,7 +679,7 @@
 .method public static getShortCutIdByGestureKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    const v0, 0x7f120d14
+    const v0, 0x7f120d2c
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1201,7 +1201,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300cf
+    const v1, 0x7f0300d0
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1451,7 +1451,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0300ea
+    const v8, 0x7f0300eb
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1492,7 +1492,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0300e9
+    const v8, 0x7f0300ea
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

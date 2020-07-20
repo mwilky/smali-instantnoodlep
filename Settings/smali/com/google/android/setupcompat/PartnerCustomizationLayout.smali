@@ -249,7 +249,7 @@
 
     if-nez p1, :cond_0
 
-    const p1, 0x7f0a06c6
+    const p1, 0x7f0a06c3
 
     :cond_0
     invoke-super {p0, p1}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findContainer(I)Landroid/view/ViewGroup;
@@ -650,7 +650,7 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d0277
+    const p2, 0x7f0d0278
 
     :cond_0
     const/4 v0, 0x0

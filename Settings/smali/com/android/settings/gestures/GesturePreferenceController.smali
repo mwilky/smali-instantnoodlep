@@ -78,12 +78,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f12079a
+    const p0, 0x7f1207b2
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f120799
+    const p0, 0x7f1207b1
 
     :goto_0
     invoke-virtual {v0, p0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;

@@ -621,7 +621,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0a0455
+    const v2, 0x7f0a045a
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -651,7 +651,7 @@
     const-string v3, ""
 
     :goto_0
-    const v4, 0x7f120af3
+    const v4, 0x7f120b0b
 
     const/4 v5, 0x1
 
@@ -686,7 +686,7 @@
     iput-boolean v2, p0, Lcom/android/settings/wifi/NetworkRequestDialogFragment;->mIsSpecifiedSsid:Z
 
     :cond_1
-    const v2, 0x7f0a0454
+    const v2, 0x7f0a0459
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -698,7 +698,7 @@
 
     new-instance v2, Lcom/android/settings/wifi/NetworkRequestDialogFragment$AccessPointAdapter;
 
-    const v3, 0x7f0d027b
+    const v3, 0x7f0d027c
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/NetworkRequestDialogFragment;->getAccessPointList()Ljava/util/List;
 
@@ -718,7 +718,7 @@
 
     invoke-virtual {v2, p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setAdapter(Landroid/widget/ListAdapter;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f1203ef
+    const p1, 0x7f1203f6
 
     new-instance v0, Lcom/android/settings/wifi/-$$Lambda$NetworkRequestDialogFragment$WCubGJZUXXghSB4GzGNKVjh70wc;
 
@@ -726,7 +726,7 @@
 
     invoke-virtual {v2, p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f120af2
+    const p1, 0x7f120b0a
 
     invoke-virtual {v2, p1, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -734,7 +734,7 @@
 
     if-eqz p1, :cond_2
 
-    const p1, 0x7f1218e0
+    const p1, 0x7f1218f8
 
     invoke-virtual {v2, p1, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -951,7 +951,7 @@
 
     if-eqz p0, :cond_0
 
-    const p1, 0x7f120af0
+    const p1, 0x7f120b08
 
     const/4 v0, 0x0
 

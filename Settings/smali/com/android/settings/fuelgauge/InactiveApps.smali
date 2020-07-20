@@ -175,7 +175,7 @@
     const-string v1, "EXEMPTED"
 
     :goto_0
-    const v4, 0x7f121546
+    const v4, 0x7f12155e
 
     const/4 v5, 0x1
 

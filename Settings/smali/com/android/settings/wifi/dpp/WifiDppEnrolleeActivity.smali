@@ -77,7 +77,7 @@
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setTheme(I)V
 
     :cond_0
-    const v0, 0x7f0d0383
+    const v0, 0x7f0d0384
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
 
@@ -168,7 +168,7 @@
 
     move-result-object p1
 
-    const v3, 0x7f0a02a3
+    const v3, 0x7f0a02a8
 
     invoke-virtual {p1, v3, v1, v2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 

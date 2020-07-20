@@ -75,7 +75,7 @@
 
     aput-object p1, v3, v4
 
-    const p1, 0x7f121a64
+    const p1, 0x7f121a7c
 
     invoke-virtual {v1, p1, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -85,7 +85,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f121a63
+    const v3, 0x7f121a7b
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -115,7 +115,7 @@
 
     sget-object p0, Lcom/android/settings/applications/specialaccess/zenaccess/-$$Lambda$ScaryWarningDialogFragment$SbnKl27lVIbIA2Iw6eP0YSmWMao;->INSTANCE:Lcom/android/settings/applications/specialaccess/zenaccess/-$$Lambda$ScaryWarningDialogFragment$SbnKl27lVIbIA2Iw6eP0YSmWMao;
 
-    const p1, 0x7f1205d9
+    const p1, 0x7f1205e0
 
     invoke-virtual {v3, p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

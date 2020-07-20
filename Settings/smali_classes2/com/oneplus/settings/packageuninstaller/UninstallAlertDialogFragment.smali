@@ -135,7 +135,7 @@
 
     if-nez v4, :cond_0
 
-    const v4, 0x7f1216eb
+    const v4, 0x7f121703
 
     new-array v7, v5, [Ljava/lang/Object;
 
@@ -190,7 +190,7 @@
 
     if-eqz p1, :cond_2
 
-    const p1, 0x7f1216ff
+    const p1, 0x7f121717
 
     invoke-virtual {p0, p1}, Landroid/app/DialogFragment;->getString(I)Ljava/lang/String;
 
@@ -201,7 +201,7 @@
     goto/16 :goto_1
 
     :cond_2
-    const p1, 0x7f121700
+    const p1, 0x7f121718
 
     invoke-virtual {p0, p1}, Landroid/app/DialogFragment;->getString(I)Ljava/lang/String;
 
@@ -214,7 +214,7 @@
     :cond_3
     iget-boolean p1, v0, Lcom/oneplus/settings/packageuninstaller/UninstallerActivity$DialogInfo;->allUsers:Z
 
-    const v7, 0x7f121098
+    const v7, 0x7f1210b0
 
     if-eqz p1, :cond_4
 
@@ -243,7 +243,7 @@
 
     move-result p1
 
-    const v8, 0x7f121099
+    const v8, 0x7f1210b1
 
     const/16 v9, 0x3e7
 
@@ -288,7 +288,7 @@
     goto :goto_1
 
     :cond_5
-    const v0, 0x7f1216f0
+    const v0, 0x7f121708
 
     new-array v4, v5, [Ljava/lang/Object;
 
@@ -334,7 +334,7 @@
     goto :goto_1
 
     :cond_7
-    const p1, 0x7f12109a
+    const p1, 0x7f1210b2
 
     invoke-virtual {p0, p1}, Landroid/app/DialogFragment;->getString(I)Ljava/lang/String;
 

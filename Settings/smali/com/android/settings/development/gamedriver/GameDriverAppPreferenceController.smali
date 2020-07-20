@@ -128,7 +128,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f030081
+    const v0, 0x7f030082
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -136,7 +136,7 @@
 
     iput-object v0, p0, Lcom/android/settings/development/gamedriver/GameDriverAppPreferenceController;->mEntryList:[Ljava/lang/CharSequence;
 
-    const v0, 0x7f120780
+    const v0, 0x7f120798
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -144,7 +144,7 @@
 
     iput-object v0, p0, Lcom/android/settings/development/gamedriver/GameDriverAppPreferenceController;->mPreferenceTitle:Ljava/lang/String;
 
-    const v0, 0x7f12077c
+    const v0, 0x7f120794
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -152,7 +152,7 @@
 
     iput-object v0, p0, Lcom/android/settings/development/gamedriver/GameDriverAppPreferenceController;->mPreferenceDefault:Ljava/lang/String;
 
-    const v0, 0x7f12077d
+    const v0, 0x7f120795
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -160,7 +160,7 @@
 
     iput-object v0, p0, Lcom/android/settings/development/gamedriver/GameDriverAppPreferenceController;->mPreferenceGameDriver:Ljava/lang/String;
 
-    const v0, 0x7f12077e
+    const v0, 0x7f120796
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -168,7 +168,7 @@
 
     iput-object v0, p0, Lcom/android/settings/development/gamedriver/GameDriverAppPreferenceController;->mPreferencePrereleaseDriver:Ljava/lang/String;
 
-    const v0, 0x7f12077f
+    const v0, 0x7f120797
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

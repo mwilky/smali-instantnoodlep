@@ -151,7 +151,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settingslib/RestrictedPreference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a03b7
+    const v0, 0x7f0a03bc
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -161,7 +161,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPButtonPreference;->mLeftIcon:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a05f4
+    const v0, 0x7f0a05f1
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a03bd
+    const v0, 0x7f0a03c2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -231,7 +231,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a03bc
+    const v0, 0x7f0a03c1
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

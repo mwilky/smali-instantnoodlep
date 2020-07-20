@@ -41,7 +41,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f120c61
+    const v1, 0x7f120c79
 
     invoke-virtual {p1, v1}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -96,7 +96,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f120c67
+    const v1, 0x7f120c7f
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f120c63
+    const v1, 0x7f120c7b
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -265,7 +265,7 @@
     :cond_5
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120e6e
+    const v2, 0x7f120e86
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -279,7 +279,7 @@
 
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120e6f
+    const v2, 0x7f120e87
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
     :cond_6
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120ed3
+    const v2, 0x7f120eeb
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -327,7 +327,7 @@
     :cond_7
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120eda
+    const v2, 0x7f120ef2
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -358,7 +358,7 @@
     :cond_8
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120e5b
+    const v2, 0x7f120e73
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -374,7 +374,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const v2, 0x7f120e5c
+    const v2, 0x7f120e74
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -393,7 +393,7 @@
     :cond_9
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120e55
+    const v2, 0x7f120e6d
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -409,7 +409,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const v2, 0x7f120e56
+    const v2, 0x7f120e6e
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -428,7 +428,7 @@
     :cond_a
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120e65
+    const v2, 0x7f120e7d
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -444,7 +444,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const v2, 0x7f120e66
+    const v2, 0x7f120e7e
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -463,7 +463,7 @@
     :cond_b
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v2, 0x7f120e60
+    const v2, 0x7f120e78
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -479,7 +479,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const v2, 0x7f120e61
+    const v2, 0x7f120e79
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -518,7 +518,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const v2, 0x7f120cb1
+    const v2, 0x7f120cc9
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -543,7 +543,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->mAuthenticationImage:Landroid/widget/ImageView;
 
-    const v0, 0x7f08044f
+    const v0, 0x7f080458
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -552,7 +552,7 @@
     :cond_e
     iget-object p1, p0, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->mAuthenticationImage:Landroid/widget/ImageView;
 
-    const v0, 0x7f080450
+    const v0, 0x7f080459
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -575,7 +575,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/OPAuthenticationInformationSettings;->mMadeinChina:Landroid/widget/TextView;
 
-    const p1, 0x7f120c66
+    const p1, 0x7f120c7e
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 

@@ -336,7 +336,7 @@
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
-    const v0, 0x7f0a05e0
+    const v0, 0x7f0a05dd
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -346,7 +346,7 @@
 
     iput-object v0, p0, Landroidx/slice/widget/RemoteInputView;->mProgressBar:Landroid/widget/ProgressBar;
 
-    const v0, 0x7f0a05e1
+    const v0, 0x7f0a05de
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

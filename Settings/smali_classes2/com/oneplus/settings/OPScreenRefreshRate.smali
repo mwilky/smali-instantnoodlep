@@ -180,7 +180,7 @@
     goto :goto_1
 
     :cond_1
-    const v0, 0x7f120f9c
+    const v0, 0x7f120fb4
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

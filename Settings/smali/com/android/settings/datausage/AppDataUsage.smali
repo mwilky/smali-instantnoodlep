@@ -1359,13 +1359,13 @@
 
     iget v2, v2, Lcom/android/settingslib/AppItem;->key:I
 
-    const v4, 0x7f120e74
+    const v4, 0x7f120e8c
 
-    const v5, 0x7f121370
+    const v5, 0x7f121388
 
     const v6, 0x7f06032f
 
-    const v7, 0x7f120a24
+    const v7, 0x7f120a3c
 
     const-string v8, "app_list"
 
@@ -1570,7 +1570,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f0300fe
+    const v2, 0x7f0300ff
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -2199,7 +2199,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d0245
+    const v5, 0x7f0d0246
 
     invoke-virtual {v4, v5, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -2302,7 +2302,7 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f121341
+    const v1, 0x7f121359
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

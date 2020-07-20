@@ -349,7 +349,7 @@
 
     move-result v0
 
-    const v2, 0x7f120ea3
+    const v2, 0x7f120ebb
 
     const/4 v3, 0x2
 
@@ -475,7 +475,7 @@
 
     const/4 v3, 0x1
 
-    const v4, 0x7f120ea3
+    const v4, 0x7f120ebb
 
     const/4 v5, 0x0
 

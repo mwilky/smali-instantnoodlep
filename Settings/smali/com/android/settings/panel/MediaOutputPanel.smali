@@ -108,7 +108,7 @@
 
     iget-object p0, p0, Lcom/android/settings/panel/MediaOutputPanel;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120a40
+    const v0, 0x7f120a58
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

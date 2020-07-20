@@ -471,7 +471,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0a0772
+    const p2, 0x7f0a076f
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -479,7 +479,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p2, 0x7f0a035e
+    const p2, 0x7f0a0363
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -487,7 +487,7 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    const p2, 0x7f0a05a1
+    const p2, 0x7f0a059e
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -495,7 +495,7 @@
 
     check-cast p2, Landroid/widget/ProgressBar;
 
-    const p2, 0x7f0a038a
+    const p2, 0x7f0a038f
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -505,7 +505,7 @@
 
     iput-object p2, p0, Lcom/android/settings/network/ExtendedNetworkList;->mListLayout:Landroid/widget/LinearLayout;
 
-    const p2, 0x7f0a0390
+    const p2, 0x7f0a0395
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -515,7 +515,7 @@
 
     iput-object p2, p0, Lcom/android/settings/network/ExtendedNetworkList;->mSearchLayout:Landroid/widget/LinearLayout;
 
-    const p2, 0x7f0a0387
+    const p2, 0x7f0a038c
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

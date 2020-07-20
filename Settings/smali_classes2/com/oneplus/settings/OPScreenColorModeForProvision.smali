@@ -35,7 +35,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/core/SettingsBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d0230
+    const p1, 0x7f0d0231
 
     invoke-virtual {p0, p1}, Lcom/android/settings/core/SettingsBaseActivity;->setContentView(I)V
 
@@ -65,13 +65,13 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0a03dd
+    const v2, 0x7f0a03e2
 
     invoke-virtual {v0, v2, p1, v1}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    const p1, 0x7f0a045c
+    const p1, 0x7f0a0461
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

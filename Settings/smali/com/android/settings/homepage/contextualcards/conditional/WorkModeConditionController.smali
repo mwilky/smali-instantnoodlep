@@ -132,7 +132,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/WorkModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120483
+    const v2, 0x7f12048a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -158,7 +158,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/WorkModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120485
+    const v3, 0x7f12048c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -186,7 +186,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/WorkModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120484
+    const v2, 0x7f12048b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -200,7 +200,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/conditional/WorkModeConditionController;->mAppContext:Landroid/content/Context;
 
-    const v1, 0x7f08036c
+    const v1, 0x7f080375
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

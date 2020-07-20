@@ -86,7 +86,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207e9
+    const p0, 0x7f120801
 
     return p0
 .end method
@@ -212,7 +212,7 @@
 
     iget-object p2, p0, Lcom/android/settings/deletionhelper/AutomaticStorageManagerSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
 
-    const p3, 0x7f12020c
+    const p3, 0x7f120213
 
     invoke-virtual {p2, p3, p3}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

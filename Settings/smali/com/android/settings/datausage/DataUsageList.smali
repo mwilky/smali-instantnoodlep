@@ -765,7 +765,7 @@
 
     iget-object v1, p0, Lcom/android/settings/datausage/DataUsageList;->mUsageAmount:Landroidx/preference/Preference;
 
-    const v2, 0x7f120592
+    const v2, 0x7f120599
 
     const/4 v3, 0x1
 
@@ -841,7 +841,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1202c3
+    const v1, 0x7f1202ca
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -1178,7 +1178,7 @@
 
     iget-object p1, p0, Lcom/android/settings/datausage/DataUsageList;->mHeader:Landroid/view/View;
 
-    const v1, 0x7f0a076f
+    const v1, 0x7f0a076c
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1260,7 +1260,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0a03c9
+    const v0, 0x7f0a03ce
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1560,7 +1560,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f12053c
+    const v1, 0x7f120543
 
     invoke-virtual {p1, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

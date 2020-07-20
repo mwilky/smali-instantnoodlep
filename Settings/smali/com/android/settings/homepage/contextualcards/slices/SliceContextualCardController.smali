@@ -184,7 +184,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/slices/SliceContextualCardController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12048d
+    const v1, 0x7f120494
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

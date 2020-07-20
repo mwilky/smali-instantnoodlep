@@ -162,7 +162,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/settings/quicklaunch/OPApplicationListAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/quicklaunch/OPApplicationListAdapter;)V
 
-    const v1, 0x7f0a053c
+    const v1, 0x7f0a0539
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
 
     check-cast v1, Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0a076b
+    const v1, 0x7f0a0768
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -190,7 +190,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPApplicationListAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a044b
+    const v1, 0x7f0a0450
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -200,7 +200,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPApplicationListAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v1, 0x7f0a06e2
+    const v1, 0x7f0a06df
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const v1, 0x7f0a02c0
+    const v1, 0x7f0a02c5
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -244,7 +244,7 @@
     :goto_0
     const/4 v1, 0x0
 
-    const v2, 0x7f120efb
+    const v2, 0x7f120f13
 
     const/16 v3, 0x3ec
 
@@ -270,7 +270,7 @@
 
     iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPApplicationListAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v3, 0x7f120f60
+    const v3, 0x7f120f78
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -286,7 +286,7 @@
     :cond_2
     iget-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPApplicationListAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v3, 0x7f120c3f
+    const v3, 0x7f120c57
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 

@@ -138,7 +138,7 @@
 
     iput-boolean v0, p0, Lcom/oneplus/lib/preference/Preference;->mShouldDisableView:Z
 
-    const v1, 0x7f0d01fc
+    const v1, 0x7f0d01fd
 
     iput v1, p0, Lcom/oneplus/lib/preference/Preference;->mLayoutResId:I
 
@@ -1014,7 +1014,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :cond_8
-    const v0, 0x7f0a0307
+    const v0, 0x7f0a030c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1194,7 +1194,7 @@
     invoke-virtual {v4, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_e
-    const v0, 0x7f0a0715
+    const v0, 0x7f0a0712
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1202,7 +1202,7 @@
 
     if-eqz v0, :cond_13
 
-    const v4, 0x7f0a0757
+    const v4, 0x7f0a0754
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1297,7 +1297,7 @@
 
     :cond_13
     :goto_6
-    const v0, 0x7f0a0633
+    const v0, 0x7f0a0630
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -151,7 +151,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog;->mRoutes:Ljava/util/List;
 
-    const p1, 0x7f0a043a
+    const p1, 0x7f0a043f
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog;->mAdapter:Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog$RecyclerAdapter;
 
-    const p1, 0x7f0a043c
+    const p1, 0x7f0a0441
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 

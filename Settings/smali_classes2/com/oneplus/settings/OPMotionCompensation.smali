@@ -205,7 +205,7 @@
 
     invoke-virtual {v0}, Landroidx/preference/PreferenceGroup;->removeAll()V
 
-    const v0, 0x7f120e48
+    const v0, 0x7f120e60
 
     const/4 v2, 0x0
 

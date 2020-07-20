@@ -99,7 +99,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0a0382
+    const p2, 0x7f0a0387
 
     invoke-virtual {p0, p2, p1}, Lcom/android/settings/deviceinfo/simstatus/SimStatusDialogFragment;->setText(ILjava/lang/CharSequence;)V
 

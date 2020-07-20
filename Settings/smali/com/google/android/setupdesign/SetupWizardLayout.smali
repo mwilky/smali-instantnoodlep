@@ -191,7 +191,7 @@
 
     if-eqz v3, :cond_7
 
-    const v4, 0x7f0a06d4
+    const v4, 0x7f0a06d1
 
     invoke-virtual {p0, v4}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -362,7 +362,7 @@
 
     if-nez p1, :cond_0
 
-    const p1, 0x7f0a06d3
+    const p1, 0x7f0a06d0
 
     :cond_0
     invoke-super {p0, p1}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findContainer(I)Landroid/view/ViewGroup;
@@ -459,7 +459,7 @@
 .method public getScrollView()Landroid/widget/ScrollView;
     .locals 1
 
-    const v0, 0x7f0a06ca
+    const v0, 0x7f0a06c7
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -503,7 +503,7 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d0342
+    const p2, 0x7f0d0343
 
     :cond_0
     const v0, 0x7f130423
@@ -591,7 +591,7 @@
 .method public setDecorPaddingTop(I)V
     .locals 3
 
-    const v0, 0x7f0a06d4
+    const v0, 0x7f0a06d1
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -666,7 +666,7 @@
 .method public setIllustration(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    const v0, 0x7f0a06d4
+    const v0, 0x7f0a06d1
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -687,7 +687,7 @@
 .method public setIllustrationAspectRatio(F)V
     .locals 1
 
-    const v0, 0x7f0a06d4
+    const v0, 0x7f0a06d1
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -708,7 +708,7 @@
 .method public setLayoutBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    const v0, 0x7f0a06d4
+    const v0, 0x7f0a06d1
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 

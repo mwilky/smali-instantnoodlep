@@ -290,13 +290,13 @@
 
     invoke-virtual {p0, v0}, Lcom/android/settings/network/telephony/RenameMobileNetworkDialogFragment;->populateView(Landroid/view/View;)V
 
-    const v1, 0x7f120aa9
+    const v1, 0x7f120ac1
 
     invoke-virtual {p1, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f120aab
+    const v0, 0x7f120ac3
 
     new-instance v1, Lcom/android/settings/network/telephony/-$$Lambda$RenameMobileNetworkDialogFragment$32uZAtr_w5Fn719afgZJG1yBu8g;
 
@@ -318,7 +318,7 @@
 .method protected populateView(Landroid/view/View;)V
     .locals 5
 
-    const v0, 0x7f0a044c
+    const v0, 0x7f0a0451
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -444,7 +444,7 @@
 
     :cond_3
     :goto_1
-    const v2, 0x7f0a050e
+    const v2, 0x7f0a050b
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -466,7 +466,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v2, 0x7f0a047d
+    const v2, 0x7f0a047e
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -485,7 +485,7 @@
     :cond_4
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const v1, 0x7f0a047e
+    const v1, 0x7f0a047f
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

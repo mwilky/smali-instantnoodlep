@@ -421,7 +421,7 @@
 
     iget-object p0, p0, Lcom/android/settings/vpn2/AppManagementFragment;->mPreferenceAlwaysOn:Lcom/android/settingslib/RestrictedSwitchPreference;
 
-    const v0, 0x7f12182e
+    const v0, 0x7f121846
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -440,7 +440,7 @@
 
     iget-object p0, p0, Lcom/android/settings/vpn2/AppManagementFragment;->mPreferenceAlwaysOn:Lcom/android/settingslib/RestrictedSwitchPreference;
 
-    const v0, 0x7f121830
+    const v0, 0x7f121848
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -943,7 +943,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f12186a
+    const v4, 0x7f121882
 
     new-array v2, v2, [Ljava/lang/Object;
 

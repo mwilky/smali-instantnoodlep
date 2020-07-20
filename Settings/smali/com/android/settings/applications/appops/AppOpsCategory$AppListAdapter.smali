@@ -159,7 +159,7 @@
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p3, 0x7f0a04ef
+    const p3, 0x7f0a04ec
 
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -175,7 +175,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f1201a2
+    const v1, 0x7f1201a9
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -218,7 +218,7 @@
     :goto_0
     invoke-virtual {p3, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p0, 0x7f0a0506
+    const p0, 0x7f0a0503
 
     invoke-virtual {p2, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {p0, p3}, Landroid/view/View;->setVisibility(I)V
 
-    const p0, 0x7f0a0502
+    const p0, 0x7f0a04ff
 
     invoke-virtual {p2, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

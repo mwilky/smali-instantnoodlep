@@ -171,7 +171,7 @@
 
     move-result v4
 
-    const v5, 0x7f0d0251
+    const v5, 0x7f0d0252
 
     invoke-virtual {p1, v0, v5}, Landroid/content/res/TypedArray;->getResourceId(II)I
 

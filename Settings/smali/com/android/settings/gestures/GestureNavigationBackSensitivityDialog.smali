@@ -144,13 +144,13 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f12021b
+    const v2, 0x7f120222
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    const v2, 0x7f12021a
+    const v2, 0x7f120221
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -164,7 +164,7 @@
 
     invoke-direct {v1, p0, v0}, Lcom/android/settings/gestures/-$$Lambda$GestureNavigationBackSensitivityDialog$NtMWYqRc1YuskFHxn0CAzr39Igg;-><init>(Lcom/android/settings/gestures/GestureNavigationBackSensitivityDialog;Landroid/widget/SeekBar;)V
 
-    const p0, 0x7f120be3
+    const p0, 0x7f120bfb
 
     invoke-virtual {p1, p0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

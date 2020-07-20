@@ -77,7 +77,7 @@
 
     iget-object p0, p0, Lcom/bumptech/glide/request/target/ViewTarget;->view:Landroid/view/View;
 
-    const v0, 0x7f0a02b7
+    const v0, 0x7f0a02bc
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -198,7 +198,7 @@
 
     iget-object p0, p0, Lcom/bumptech/glide/request/target/ViewTarget;->view:Landroid/view/View;
 
-    const v0, 0x7f0a02b7
+    const v0, 0x7f0a02bc
 
     invoke-virtual {p0, v0, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

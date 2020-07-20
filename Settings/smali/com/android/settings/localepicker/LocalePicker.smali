@@ -592,9 +592,9 @@
 
     new-instance p1, Lcom/android/settings/localepicker/LocalePicker$1;
 
-    const v6, 0x7f0d01ec
+    const v6, 0x7f0d01ed
 
-    const v7, 0x7f0a03cd
+    const v7, 0x7f0a03d2
 
     move-object v0, p1
 

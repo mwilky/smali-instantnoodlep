@@ -165,7 +165,7 @@
     invoke-virtual {p1, p2, p3}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :goto_0
-    const p2, 0x7f0a0759
+    const p2, 0x7f0a0756
 
     invoke-virtual {v1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

@@ -193,7 +193,7 @@
 
     if-eqz v5, :cond_2
 
-    const v5, 0x7f0805ff
+    const v5, 0x7f080608
 
     invoke-virtual {v4, v5}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {v4, v3}, Lcom/android/settingslib/RestrictedPreference;->setEnabled(Z)V
 
-    const v3, 0x7f120618
+    const v3, 0x7f12061f
 
     invoke-virtual {v4, v3}, Landroidx/preference/Preference;->setSummary(I)V
 

@@ -25,7 +25,7 @@
 .method protected getDefaultLayoutResource()I
     .locals 0
 
-    const p0, 0x7f0d0323
+    const p0, 0x7f0d0324
 
     return p0
 .end method

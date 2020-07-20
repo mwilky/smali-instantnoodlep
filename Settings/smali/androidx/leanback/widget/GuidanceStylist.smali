@@ -48,7 +48,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0a02c8
+    const p2, 0x7f0a02cd
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -58,7 +58,7 @@
 
     iput-object p2, p0, Landroidx/leanback/widget/GuidanceStylist;->mTitleView:Landroid/widget/TextView;
 
-    const p2, 0x7f0a02c4
+    const p2, 0x7f0a02c9
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -68,7 +68,7 @@
 
     iput-object p2, p0, Landroidx/leanback/widget/GuidanceStylist;->mBreadcrumbView:Landroid/widget/TextView;
 
-    const p2, 0x7f0a02c6
+    const p2, 0x7f0a02cb
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -78,7 +78,7 @@
 
     iput-object p2, p0, Landroidx/leanback/widget/GuidanceStylist;->mDescriptionView:Landroid/widget/TextView;
 
-    const p2, 0x7f0a02c7
+    const p2, 0x7f0a02cc
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -88,7 +88,7 @@
 
     iput-object p2, p0, Landroidx/leanback/widget/GuidanceStylist;->mIconView:Landroid/widget/ImageView;
 
-    const p2, 0x7f0a02c5
+    const p2, 0x7f0a02ca
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

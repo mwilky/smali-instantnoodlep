@@ -455,7 +455,7 @@
 
     iget v10, p0, Lcom/android/settings/datausage/ChartDataUsagePreference;->mLimitColor:I
 
-    const v11, 0x7f12057d
+    const v11, 0x7f120584
 
     invoke-direct {p0, v6, v7, v11, v10}, Lcom/android/settings/datausage/ChartDataUsagePreference;->getLabel(JII)Ljava/lang/CharSequence;
 
@@ -503,7 +503,7 @@
 
     iget-wide v0, v2, Landroid/net/NetworkPolicy;->warningBytes:J
 
-    const v2, 0x7f12057e
+    const v2, 0x7f120585
 
     invoke-direct {p0, v0, v1, v2, v4}, Lcom/android/settings/datausage/ChartDataUsagePreference;->getLabel(JII)Ljava/lang/CharSequence;
 

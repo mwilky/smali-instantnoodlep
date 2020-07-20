@@ -129,7 +129,7 @@
 
     new-instance v4, Lcom/android/settings/display/ColorModePreferenceFragment$ColorModeCandidateInfo;
 
-    const v6, 0x7f120453
+    const v6, 0x7f12045a
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -148,7 +148,7 @@
 
     new-instance v4, Lcom/android/settings/display/ColorModePreferenceFragment$ColorModeCandidateInfo;
 
-    const v6, 0x7f120452
+    const v6, 0x7f120459
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -169,7 +169,7 @@
 
     new-instance v4, Lcom/android/settings/display/ColorModePreferenceFragment$ColorModeCandidateInfo;
 
-    const v6, 0x7f120454
+    const v6, 0x7f12045b
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -190,7 +190,7 @@
 
     new-instance v4, Lcom/android/settings/display/ColorModePreferenceFragment$ColorModeCandidateInfo;
 
-    const v6, 0x7f120451
+    const v6, 0x7f120458
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

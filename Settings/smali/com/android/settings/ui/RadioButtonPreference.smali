@@ -39,7 +39,7 @@
 
     iput-object p1, p0, Lcom/android/settings/ui/RadioButtonPreference;->mListener:Lcom/android/settings/ui/RadioButtonPreference$OnClickListener;
 
-    const p1, 0x7f0d02a6
+    const p1, 0x7f0d02a7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -57,7 +57,7 @@
 
     iput-object p1, p0, Lcom/android/settings/ui/RadioButtonPreference;->mListener:Lcom/android/settings/ui/RadioButtonPreference$OnClickListener;
 
-    const p1, 0x7f0d02a6
+    const p1, 0x7f0d02a7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 

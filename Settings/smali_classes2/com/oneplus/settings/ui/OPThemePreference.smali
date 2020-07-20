@@ -25,7 +25,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p2, 0x7f0d025d
+    const p2, 0x7f0d025e
 
     invoke-virtual {p0, p2}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -89,7 +89,7 @@
 .method public initViewStatus(Landroidx/preference/PreferenceViewHolder;)V
     .locals 2
 
-    const v0, 0x7f0a071f
+    const v0, 0x7f0a071c
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -101,7 +101,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    const v0, 0x7f0a0720
+    const v0, 0x7f0a071d
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -111,17 +111,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    const v0, 0x7f0a0722
-
-    invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
-
-    const v0, 0x7f0a0721
+    const v0, 0x7f0a071f
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -132,6 +122,16 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
 
     const v0, 0x7f0a071e
+
+    invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFocusable(Z)V
+
+    const v0, 0x7f0a071b
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -149,7 +149,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a071d
+    const v0, 0x7f0a071a
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -163,7 +163,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
 
-    const v0, 0x7f0a0736
+    const v0, 0x7f0a0733
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -185,7 +185,7 @@
 
     move-result v2
 
-    const v3, 0x7f080573
+    const v3, 0x7f08057c
 
     if-eqz v2, :cond_2
 
@@ -198,12 +198,12 @@
     goto :goto_0
 
     :cond_0
-    const v3, 0x7f08056d
+    const v3, 0x7f080576
 
     goto :goto_0
 
     :cond_1
-    const v3, 0x7f080570
+    const v3, 0x7f080579
 
     :cond_2
     :goto_0
@@ -211,7 +211,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a0731
+    const v0, 0x7f0a072e
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -219,7 +219,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a0729
+    const v0, 0x7f0a0726
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -237,7 +237,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    const v0, 0x7f0a0293
+    const v0, 0x7f0a0296
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    const v0, 0x7f0a0728
+    const v0, 0x7f0a0725
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -253,7 +253,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    const v0, 0x7f0a072a
+    const v0, 0x7f0a0727
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -264,7 +264,7 @@
     :cond_3
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/OPThemePreference;->initViewStatus(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a072f
+    const v0, 0x7f0a072c
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -272,7 +272,7 @@
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a072b
+    const v0, 0x7f0a0728
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -282,7 +282,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mThemeIcon1:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a072c
+    const v0, 0x7f0a0729
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -292,7 +292,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mThemeIcon2:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a072d
+    const v0, 0x7f0a072a
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -302,7 +302,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mThemeIcon3:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a072e
+    const v0, 0x7f0a072b
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -374,7 +374,7 @@
 
     move-result p1
 
-    const v0, 0x7f0a071d
+    const v0, 0x7f0a071a
 
     if-ne p1, v0, :cond_1
 
@@ -390,7 +390,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPThemePreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f120cb2
+    const p1, 0x7f120cca
 
     const/4 v0, 0x0
 
@@ -420,7 +420,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f0a072f
+    const v0, 0x7f0a072c
 
     if-ne p1, v0, :cond_2
 
@@ -441,7 +441,7 @@
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f0a0736
+    const v0, 0x7f0a0733
 
     const/high16 v1, 0x10000000
 
@@ -466,7 +466,7 @@
     goto :goto_0
 
     :cond_3
-    const v0, 0x7f0a0731
+    const v0, 0x7f0a072e
 
     if-ne p1, v0, :cond_4
 
@@ -487,7 +487,7 @@
     goto :goto_0
 
     :cond_4
-    const v0, 0x7f0a0729
+    const v0, 0x7f0a0726
 
     if-ne p1, v0, :cond_5
 

@@ -95,7 +95,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f121344
+    const v0, 0x7f12135c
 
     invoke-virtual {p1, v0}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -167,7 +167,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207e6
+    const p0, 0x7f1207fe
 
     return p0
 .end method
@@ -316,7 +316,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121342
+    const v1, 0x7f12135a
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -504,7 +504,7 @@
 
     if-eqz v9, :cond_0
 
-    const v9, 0x7f121343    # 1.941673E38f
+    const v9, 0x7f12135b
 
     const/4 v10, 0x1
 

@@ -15,23 +15,23 @@
 
     invoke-direct {p0, p1, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d01fd
+    const p1, 0x7f0d01fe
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const p1, 0x7f0d037b
+    const p1, 0x7f0d037c
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
-    const p1, 0x7f08023c
+    const p1, 0x7f080245
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setIcon(I)V
 
-    const p1, 0x7f1218a6
+    const p1, 0x7f1218be
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setTitle(I)V
 
-    const p1, 0x7f080327
+    const p1, 0x7f080330
 
     :try_start_0
     invoke-virtual {p0}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12192c
+    const v1, 0x7f121944
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -35,7 +35,7 @@
 
     iget v0, p0, Lcom/android/settings/accounts/AccountPreference;->mStatus:I
 
-    const v1, 0x7f080382
+    const v1, 0x7f08038b
 
     const-string v2, "AccountPreference"
 
@@ -60,12 +60,12 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f080380
+    const v1, 0x7f080389
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f08035f
+    const v1, 0x7f080368
 
     :cond_2
     :goto_0

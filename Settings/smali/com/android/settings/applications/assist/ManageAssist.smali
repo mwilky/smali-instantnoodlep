@@ -174,7 +174,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f1201ca
+    const v0, 0x7f1201d1
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setTitle(I)V
 

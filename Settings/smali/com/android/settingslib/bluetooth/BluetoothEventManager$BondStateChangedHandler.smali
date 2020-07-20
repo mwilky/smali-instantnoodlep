@@ -217,22 +217,22 @@
     goto :goto_2
 
     :pswitch_1
-    const p0, 0x7f120359
+    const p0, 0x7f120360
 
     goto :goto_1
 
     :pswitch_2
-    const p0, 0x7f120354
+    const p0, 0x7f12035b
 
     goto :goto_1
 
     :pswitch_3
-    const p0, 0x7f12035e
+    const p0, 0x7f120365
 
     goto :goto_1
 
     :pswitch_4
-    const p0, 0x7f12035c
+    const p0, 0x7f120363
 
     :goto_1
     invoke-static {p1, p2, p0}, Lcom/android/settingslib/bluetooth/BluetoothUtils;->showError(Landroid/content/Context;Ljava/lang/String;I)V

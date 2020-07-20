@@ -279,7 +279,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0a03c9
+    const v2, 0x7f0a03ce
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -392,7 +392,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120817
+    const p0, 0x7f12082f
 
     return p0
 .end method

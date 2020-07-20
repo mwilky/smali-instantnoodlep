@@ -124,7 +124,7 @@
 
     if-eqz p2, :cond_0
 
-    const p2, 0x7f0a06d7
+    const p2, 0x7f0a06d4
 
     invoke-virtual {p1, p2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f080307
+    const v0, 0x7f080310
 
     invoke-virtual {p2, v0}, Landroid/app/Activity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -166,7 +166,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0804ee
+    const v0, 0x7f0804f7
 
     invoke-virtual {p2, v0}, Landroid/app/Activity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -222,7 +222,7 @@
 
     if-nez p2, :cond_3
 
-    const p2, 0x7f0a0617
+    const p2, 0x7f0a0614
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -486,7 +486,7 @@
 
     iget-object v0, p0, Lcom/android/settings/password/ChooseLockPattern$ChooseLockPatternFragment;->mSkipOrClearButton:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v1, 0x7f12150d
+    const v1, 0x7f121525
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

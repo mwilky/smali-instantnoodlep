@@ -129,7 +129,7 @@
 
     check-cast p1, Lcom/android/settings/widget/UsageView;
 
-    const v2, 0x7f0a0376
+    const v2, 0x7f0a037b
 
     invoke-virtual {p1, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

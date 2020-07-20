@@ -56,7 +56,7 @@
     goto :goto_0
 
     :cond_0
-    const p2, 0x7f0a0575
+    const p2, 0x7f0a0572
 
     const/4 v1, 0x1
 
@@ -69,7 +69,7 @@
     goto :goto_0
 
     :cond_1
-    const p2, 0x7f0a0300
+    const p2, 0x7f0a0305
 
     if-ne p1, p2, :cond_2
 
@@ -80,7 +80,7 @@
     goto :goto_0
 
     :cond_2
-    const p2, 0x7f0a040b
+    const p2, 0x7f0a0410
 
     if-ne p1, p2, :cond_3
 

@@ -607,7 +607,7 @@
     move-object v2, v1
 
     :goto_0
-    const v3, 0x7f0a060f
+    const v3, 0x7f0a060c
 
     invoke-virtual {p3, v3}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

@@ -325,7 +325,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/multiapp/OPMultiAppListSettings;->mUserManager:Landroid/os/UserManager;
 
-    const v2, 0x7f120e74
+    const v2, 0x7f120e8c
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -721,13 +721,13 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f120e76
+    const v2, 0x7f120e8e
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v2, 0x7f120be3
+    const v2, 0x7f120bfb
 
     new-instance v3, Lcom/oneplus/settings/multiapp/OPMultiAppListSettings$6;
 
@@ -737,7 +737,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1203ef
+    const v0, 0x7f1203f6
 
     new-instance v2, Lcom/oneplus/settings/multiapp/OPMultiAppListSettings$5;
 
@@ -807,7 +807,7 @@
 .method public getEnabledString(Lcom/oneplus/settings/better/OPAppModel;)Ljava/lang/String;
     .locals 2
 
-    const v0, 0x7f120e7b
+    const v0, 0x7f120e93
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -942,7 +942,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/multiapp/OPMultiAppListSettings;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    const v0, 0x7f0a04b2
+    const v0, 0x7f0a04af
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -970,7 +970,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const v0, 0x7f0a03c9
+    const v0, 0x7f0a03ce
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -980,7 +980,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/multiapp/OPMultiAppListSettings;->mLoadingContainer:Landroid/view/View;
 
-    const v1, 0x7f0a03cb
+    const v1, 0x7f0a03d0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1192,7 +1192,7 @@
 
     const/4 p3, 0x0
 
-    const p4, 0x7f120e74
+    const p4, 0x7f120e8c
 
     invoke-virtual {p0, p4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

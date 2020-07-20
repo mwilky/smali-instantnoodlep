@@ -22,7 +22,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p2, 0x7f0d0201
+    const p2, 0x7f0d0202
 
     iput p2, p0, Lcom/android/settings/fuelgauge/ChargingOptLottieAnimPreference;->resid:I
 
@@ -50,7 +50,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p2, 0x7f0d0201
+    const p2, 0x7f0d0202
 
     iput p2, p0, Lcom/android/settings/fuelgauge/ChargingOptLottieAnimPreference;->resid:I
 

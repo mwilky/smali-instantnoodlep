@@ -55,13 +55,13 @@
 
     const/4 p2, 0x1
 
-    const v0, 0x7f1205d2
+    const v0, 0x7f1205d9
 
     invoke-interface {p1, p0, p2, p0, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object p0
 
-    const p1, 0x7f0801ca
+    const p1, 0x7f0801d3
 
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -77,7 +77,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
-    const p2, 0x7f0d036a
+    const p2, 0x7f0d036b
 
     const/4 p3, 0x0
 

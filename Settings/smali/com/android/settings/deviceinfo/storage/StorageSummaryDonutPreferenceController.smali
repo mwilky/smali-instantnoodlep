@@ -36,7 +36,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f1215b1
+    const p2, 0x7f1215c9
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -142,7 +142,7 @@
 
     aput-object v0, p4, v1
 
-    const v0, 0x7f1215bd
+    const v0, 0x7f1215d5
 
     invoke-virtual {p2, v0, p4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f1215bd
+    const v3, 0x7f1215d5
 
     invoke-virtual {v0, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

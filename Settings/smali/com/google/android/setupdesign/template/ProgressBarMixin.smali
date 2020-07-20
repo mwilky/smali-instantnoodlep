@@ -38,7 +38,7 @@
 
     iget-object p0, p0, Lcom/google/android/setupdesign/template/ProgressBarMixin;->templateLayout:Lcom/google/android/setupcompat/internal/TemplateLayout;
 
-    const v0, 0x7f0a06d9
+    const v0, 0x7f0a06d6
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -68,7 +68,7 @@
 
     iget-object p0, p0, Lcom/google/android/setupdesign/template/ProgressBarMixin;->templateLayout:Lcom/google/android/setupcompat/internal/TemplateLayout;
 
-    const v0, 0x7f0a06d9
+    const v0, 0x7f0a06d6
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -115,7 +115,7 @@
 
     iget-object p1, p0, Lcom/google/android/setupdesign/template/ProgressBarMixin;->templateLayout:Lcom/google/android/setupcompat/internal/TemplateLayout;
 
-    const v0, 0x7f0a06da
+    const v0, 0x7f0a06d7
 
     invoke-virtual {p1, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 

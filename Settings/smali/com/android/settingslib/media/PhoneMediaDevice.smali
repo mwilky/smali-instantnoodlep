@@ -134,7 +134,7 @@
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f120a44
+    const v1, 0x7f120a5c
 
     :goto_1
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -175,7 +175,7 @@
 
     iget-object p0, p0, Lcom/android/settingslib/media/MediaDevice;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f080370
+    const v0, 0x7f080379
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -220,7 +220,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120a44
+    const v0, 0x7f120a5c
 
     :goto_0
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -253,7 +253,7 @@
 
     iget-object p1, p0, Lcom/android/settingslib/media/MediaDevice;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f1202ce
+    const v0, 0x7f1202d5
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

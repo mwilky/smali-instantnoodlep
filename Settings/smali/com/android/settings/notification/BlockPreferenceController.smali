@@ -331,7 +331,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSelectable(Z)V
 
-    const v1, 0x7f0a06ed
+    const v1, 0x7f0a06ea
 
     invoke-virtual {p1, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +345,7 @@
 
     if-eqz v1, :cond_b
 
-    const v1, 0x7f120bc3
+    const v1, 0x7f120bdb
 
     invoke-virtual {p1, v1, v1}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

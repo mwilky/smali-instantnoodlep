@@ -153,7 +153,7 @@
 
     iget-object v11, v1, Lcom/oneplus/lib/widget/DatePicker$AbstractDatePickerDelegate;->mDelegator:Lcom/oneplus/lib/widget/DatePicker;
 
-    const v12, 0x7f0a0565
+    const v12, 0x7f0a0562
 
     invoke-virtual {v11, v12}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -215,7 +215,7 @@
 
     iget-object v11, v1, Lcom/oneplus/lib/widget/DatePickerSpinnerDelegate;->mDaySpinner:Lcom/oneplus/lib/widget/NumberPicker;
 
-    const v14, 0x7f0a047f
+    const v14, 0x7f0a0480
 
     invoke-virtual {v11, v14}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -227,7 +227,7 @@
 
     iget-object v11, v1, Lcom/oneplus/lib/widget/DatePicker$AbstractDatePickerDelegate;->mDelegator:Lcom/oneplus/lib/widget/DatePicker;
 
-    const v15, 0x7f0a040d
+    const v15, 0x7f0a0412
 
     invoke-virtual {v11, v15}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
 
     iget-object v2, v1, Lcom/oneplus/lib/widget/DatePicker$AbstractDatePickerDelegate;->mDelegator:Lcom/oneplus/lib/widget/DatePicker;
 
-    const v3, 0x7f0a07db
+    const v3, 0x7f0a07d8
 
     invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -1277,7 +1277,7 @@
     const/4 p0, 0x6
 
     :goto_0
-    const p2, 0x7f0a047f
+    const p2, 0x7f0a0480
 
     invoke-virtual {p1, p2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

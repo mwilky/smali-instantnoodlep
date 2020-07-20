@@ -41,7 +41,7 @@
 
     if-gtz p3, :cond_0
 
-    const p1, 0x7f12053a
+    const p1, 0x7f120541
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -95,7 +95,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120a24
+    const v1, 0x7f120a3c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -113,7 +113,7 @@
 
     iget-object v0, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121370
+    const v1, 0x7f121388
 
     const/4 v2, 0x1
 
@@ -121,7 +121,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f120e74
+    const v4, 0x7f120e8c
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -193,7 +193,7 @@
 
     iget-object v0, v0, Lcom/android/settingslib/net/UidDetail;->label:Ljava/lang/CharSequence;
 
-    const v1, 0x7f121762
+    const v1, 0x7f12177a
 
     iget-object v2, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
 
@@ -217,7 +217,7 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f12058c
+    const v0, 0x7f120593
 
     iget-object v1, p0, Lcom/android/settings/datausage/AppDataUsagePreference;->mContext:Landroid/content/Context;
 

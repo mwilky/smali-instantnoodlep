@@ -96,7 +96,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationSettings$1;->this$0:Lcom/oneplus/settings/network/OPDualChannelDownloadAccelerationSettings;
 
-    const v0, 0x7f0a04bc
+    const v0, 0x7f0a04b9
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

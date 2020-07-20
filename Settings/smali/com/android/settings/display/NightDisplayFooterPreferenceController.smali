@@ -41,7 +41,7 @@
 .method public updateState(Landroidx/preference/Preference;)V
     .locals 0
 
-    const p0, 0x7f120b45
+    const p0, 0x7f120b5d
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setTitle(I)V
 

@@ -179,7 +179,7 @@
 
     sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v2, 0x7f120f93
+    const v2, 0x7f120fab
 
     invoke-virtual {v0, v2}, Landroid/app/Application;->getText(I)Ljava/lang/CharSequence;
 
@@ -198,7 +198,7 @@
 
     sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v1, 0x7f120f90
+    const v1, 0x7f120fa8
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->getText(I)Ljava/lang/CharSequence;
 

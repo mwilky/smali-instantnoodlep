@@ -84,9 +84,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f03006e
+    const v2, 0x7f03006f
 
-    const v3, 0x7f030069
+    const v3, 0x7f03006a
 
     const/4 v4, 0x1
 
@@ -181,22 +181,22 @@
     goto/16 :goto_3
 
     :pswitch_1
-    const v0, 0x7f03006c
+    const v0, 0x7f03006d
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f03006d
+    const v0, 0x7f03006e
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
     goto/16 :goto_3
 
     :pswitch_2
-    const v0, 0x7f03006a
+    const v0, 0x7f03006b
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f03006b
+    const v0, 0x7f03006c
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -215,11 +215,11 @@
 
     if-eqz v0, :cond_3
 
-    const v0, 0x7f030077
+    const v0, 0x7f030078
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f030078
+    const v0, 0x7f030079
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -244,11 +244,11 @@
 
     if-nez v5, :cond_4
 
-    const v0, 0x7f030072
+    const v0, 0x7f030073
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f030073
+    const v0, 0x7f030074
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -267,17 +267,17 @@
 
     if-eqz v0, :cond_5
 
-    const v0, 0x7f030070
+    const v0, 0x7f030071
 
     goto :goto_1
 
     :cond_5
-    const v0, 0x7f030071
+    const v0, 0x7f030072
 
     :goto_1
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f030074
+    const v0, 0x7f030075
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -292,11 +292,11 @@
 
     if-nez v0, :cond_7
 
-    const v0, 0x7f030075
+    const v0, 0x7f030076
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f030076
+    const v0, 0x7f030077
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -318,17 +318,17 @@
 
     if-eqz v0, :cond_9
 
-    const v0, 0x7f030068
+    const v0, 0x7f030069
 
     goto :goto_2
 
     :cond_9
-    const v0, 0x7f03006f
+    const v0, 0x7f030070
 
     :goto_2
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const v0, 0x7f030079
+    const v0, 0x7f03007a
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -344,11 +344,11 @@
 
     if-eqz p0, :cond_b
 
-    const p0, 0x7f0300f7
+    const p0, 0x7f0300f8
 
     invoke-virtual {p1, p0}, Landroidx/preference/ListPreference;->setEntries(I)V
 
-    const p0, 0x7f0300f9
+    const p0, 0x7f0300fa
 
     invoke-virtual {p1, p0}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
@@ -379,25 +379,25 @@
 
     invoke-virtual {p1, v0}, Landroidx/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
-    const v0, 0x7f120aeb
+    const v0, 0x7f120b03
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    const v3, 0x7f120afd
+    const v3, 0x7f120b15
 
-    const v4, 0x7f120afc
+    const v4, 0x7f120b14
 
     const/16 v5, 0xa
 
-    const v6, 0x7f120aea
+    const v6, 0x7f120b02
 
     packed-switch p2, :pswitch_data_0
 
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120aa6
+    const v0, 0x7f120abe
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -542,7 +542,7 @@
 
     if-eqz p2, :cond_4
 
-    const p0, 0x7f121236
+    const p0, 0x7f12124e
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -598,7 +598,7 @@
 
     if-eqz p0, :cond_7
 
-    const p0, 0x7f121235
+    const p0, 0x7f12124d
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -626,7 +626,7 @@
 
     invoke-virtual {p1, p0}, Landroidx/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
-    const p0, 0x7f120ae8
+    const p0, 0x7f120b00
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -656,7 +656,7 @@
 
     invoke-virtual {p1, p0}, Landroidx/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
-    const p0, 0x7f120ae9
+    const p0, 0x7f120b01
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setSummary(I)V
 

@@ -41,7 +41,7 @@
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const v0, 0x7f0d02f8
+    const v0, 0x7f0d02f9
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 

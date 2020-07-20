@@ -138,7 +138,7 @@
 
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f0a0697
+    const v1, 0x7f0a0694
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

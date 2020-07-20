@@ -161,7 +161,7 @@
 .method protected getDefaultLayoutResource()I
     .locals 0
 
-    const p0, 0x7f0d0320
+    const p0, 0x7f0d0321
 
     return p0
 .end method
@@ -227,7 +227,7 @@
 .method public onBindView(Landroid/view/View;)V
     .locals 5
 
-    const v0, 0x7f0a06d1
+    const v0, 0x7f0a06ce
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -241,7 +241,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a06ce
+    const v0, 0x7f0a06cb
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -275,7 +275,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_0
-    const v0, 0x7f0a06cd
+    const v0, 0x7f0a06ca
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -287,7 +287,7 @@
 
     if-eqz v1, :cond_3
 
-    const v3, 0x7f0a06cc
+    const v3, 0x7f0a06c9
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -81,7 +81,7 @@
     :catch_1
     iget-object p0, p0, Lcom/android/settings/vpn2/ConfigDialogFragment;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f121851
+    const p1, 0x7f121869
 
     const/4 p2, 0x1
 
@@ -278,7 +278,7 @@
 
     iget-object p0, p0, Lcom/android/settings/vpn2/ConfigDialogFragment;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f121847
+    const p1, 0x7f12185f
 
     const/4 p2, 0x1
 

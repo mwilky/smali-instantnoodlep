@@ -36,7 +36,7 @@
 
     invoke-direct {p0, p1}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f0d021c
+    const p1, 0x7f0d021d
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -66,7 +66,7 @@
 .method protected getSecondTargetResId()I
     .locals 0
 
-    const p0, 0x7f0d02a0
+    const p0, 0x7f0d02a1
 
     return p0
 .end method

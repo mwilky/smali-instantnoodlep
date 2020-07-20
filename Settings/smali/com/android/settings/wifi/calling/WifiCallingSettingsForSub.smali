@@ -402,25 +402,25 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/calling/WifiCallingSettingsForSub;->mButtonWfcMode:Lcom/android/settings/wifi/calling/ListWithEntrySummaryPreference;
 
-    const v3, 0x7f03013a
+    const v3, 0x7f03013b
 
     invoke-virtual {v0, v3}, Landroidx/preference/ListPreference;->setEntries(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/calling/WifiCallingSettingsForSub;->mButtonWfcMode:Lcom/android/settings/wifi/calling/ListWithEntrySummaryPreference;
 
-    const v3, 0x7f03013e
+    const v3, 0x7f03013f
 
     invoke-virtual {v0, v3}, Landroidx/preference/ListPreference;->setEntryValues(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/calling/WifiCallingSettingsForSub;->mButtonWfcMode:Lcom/android/settings/wifi/calling/ListWithEntrySummaryPreference;
 
-    const v4, 0x7f03013c
+    const v4, 0x7f03013d
 
     invoke-virtual {v0, v4}, Lcom/android/settings/wifi/calling/ListWithEntrySummaryPreference;->setEntrySummaries(I)V
 
     iget-object v0, p0, Lcom/android/settings/wifi/calling/WifiCallingSettingsForSub;->mButtonWfcRoamingMode:Lcom/android/settings/wifi/calling/ListWithEntrySummaryPreference;
 
-    const v5, 0x7f030139
+    const v5, 0x7f03013a
 
     invoke-virtual {v0, v5}, Landroidx/preference/ListPreference;->setEntries(I)V
 
@@ -823,7 +823,7 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    const v1, 0x7f1218c8
+    const v1, 0x7f1218e0
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -833,7 +833,7 @@
 
     aput-object v1, v0, v2
 
-    const v1, 0x7f1218c7
+    const v1, 0x7f1218df
 
     invoke-virtual {p1, v1, v0}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -853,7 +853,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0804a2
+    const v0, 0x7f0804ab
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -869,7 +869,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0a06ed
+    const v0, 0x7f0a06ea
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1101,7 +1101,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
 
-    const v0, 0x7f0d037c
+    const v0, 0x7f0d037d
 
     const/4 v1, 0x0
 
@@ -1109,7 +1109,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a057d
+    const v1, 0x7f0a057a
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1490,7 +1490,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f1218ce
+    const p2, 0x7f1218e6
 
     invoke-virtual {p1, p2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

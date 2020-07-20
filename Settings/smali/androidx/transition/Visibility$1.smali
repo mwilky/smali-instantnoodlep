@@ -48,7 +48,7 @@
 
     iget-object v0, p0, Landroidx/transition/Visibility$1;->val$startView:Landroid/view/View;
 
-    const v1, 0x7f0a060f
+    const v1, 0x7f0a060c
 
     const/4 v2, 0x0
 

@@ -53,7 +53,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPButtonsAndGesturesSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120c9a
+    const v1, 0x7f120cb2
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -74,7 +74,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPButtonsAndGesturesSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1203d5
+    const v1, 0x7f1203dc
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -98,7 +98,7 @@
 
     aput-object v0, v3, p1
 
-    const v0, 0x7f12087d
+    const v0, 0x7f120895
 
     invoke-virtual {v1, v0, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -106,7 +106,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/OPButtonsAndGesturesSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120f1f
+    const v5, 0x7f120f37
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

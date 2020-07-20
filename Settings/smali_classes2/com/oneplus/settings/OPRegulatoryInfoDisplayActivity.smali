@@ -67,7 +67,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120bfb
+    const v0, 0x7f120c13
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -86,7 +86,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f120bf7
+    const v0, 0x7f120c0f
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -105,7 +105,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f120beb
+    const v0, 0x7f120c03
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -124,7 +124,7 @@
 
     if-eqz v0, :cond_3
 
-    const v0, 0x7f120bf2
+    const v0, 0x7f120c0a
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -143,7 +143,7 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f120c23
+    const v0, 0x7f120c3b
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -247,11 +247,11 @@
 
     invoke-virtual {p1, v4}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
-    const p1, 0x7f0d022c
+    const p1, 0x7f0d022d
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
-    const p1, 0x7f0a0495
+    const p1, 0x7f0a0496
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -261,7 +261,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mBuildModel:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05d8
+    const p1, 0x7f0a05d5
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -271,7 +271,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoUSFCCID:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05d1
+    const p1, 0x7f0a05ce
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -281,7 +281,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoCanada:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05d3
+    const p1, 0x7f0a05d0
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -291,7 +291,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoCanadaIC:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05d2
+    const p1, 0x7f0a05cf
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -301,7 +301,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoCanadaCan:Landroid/widget/TextView;
 
-    const p1, 0x7f0a0471
+    const p1, 0x7f0a0476
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -309,7 +309,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mNorthAmericaAuthenticationInfo:Landroid/view/View;
 
-    const p1, 0x7f0a0472
+    const p1, 0x7f0a0477
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -317,7 +317,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mNorthAmericaSaudiArabia:Landroid/view/View;
 
-    const p1, 0x7f0a032a
+    const p1, 0x7f0a032f
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -325,7 +325,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfo:Landroid/view/View;
 
-    const p1, 0x7f0a032c
+    const p1, 0x7f0a0331
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -335,7 +335,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfoHead:Landroid/widget/TextView;
 
-    const p1, 0x7f0a032b
+    const p1, 0x7f0a0330
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +345,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfoBody:Landroid/widget/TextView;
 
-    const p1, 0x7f0a060c
+    const p1, 0x7f0a0609
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -353,7 +353,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mSaudiArabiaAuthenticationInfo:Landroid/view/View;
 
-    const p1, 0x7f0a05d6
+    const p1, 0x7f0a05d3
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -363,7 +363,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoSaudiArabiaId:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05d9
+    const p1, 0x7f0a05d6
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -373,7 +373,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoUSHacRating:Landroid/widget/TextView;
 
-    const p1, 0x7f0a05da
+    const p1, 0x7f0a05d7
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -385,7 +385,7 @@
 
     sget-object p1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v5, 0x7f120e63
+    const v5, 0x7f120e7b
 
     invoke-virtual {p0, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -401,7 +401,7 @@
 
     sget-object p1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v6, 0x7f120e68
+    const v6, 0x7f120e80
 
     invoke-virtual {p0, v6}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -507,7 +507,7 @@
 
     sget-object p1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v0, 0x7f120e63
+    const v0, 0x7f120e7b
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -521,13 +521,13 @@
 
     if-eqz p1, :cond_6
 
-    const p1, 0x7f120c00
+    const p1, 0x7f120c18
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120bff
+    const p1, 0x7f120c17
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -538,7 +538,7 @@
     :cond_6
     sget-object p1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v1, 0x7f120e68
+    const v1, 0x7f120e80
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -550,13 +550,13 @@
 
     if-eqz p1, :cond_7
 
-    const p1, 0x7f120c04
+    const p1, 0x7f120c1c
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120c03
+    const p1, 0x7f120c1b
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -575,13 +575,13 @@
 
     if-eqz p1, :cond_8
 
-    const p1, 0x7f120bed
+    const p1, 0x7f120c05
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120bec
+    const p1, 0x7f120c04
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -600,13 +600,13 @@
 
     if-eqz p1, :cond_9
 
-    const p1, 0x7f120bf4
+    const p1, 0x7f120c0c
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120bf3
+    const p1, 0x7f120c0b
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -625,13 +625,13 @@
 
     if-eqz p1, :cond_a
 
-    const p1, 0x7f120bf9
+    const p1, 0x7f120c11
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120bf8
+    const p1, 0x7f120c10
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -650,13 +650,13 @@
 
     if-eqz p1, :cond_b
 
-    const p1, 0x7f120bfd
+    const p1, 0x7f120c15
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120bfc
+    const p1, 0x7f120c14
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -675,13 +675,13 @@
 
     if-eqz p1, :cond_c
 
-    const p1, 0x7f120c1c
+    const p1, 0x7f120c34
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120c1b
+    const p1, 0x7f120c33
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -700,13 +700,13 @@
 
     if-eqz p1, :cond_d
 
-    const p1, 0x7f120c21
+    const p1, 0x7f120c39
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const p1, 0x7f120c20
+    const p1, 0x7f120c38
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -720,7 +720,7 @@
     :goto_2
     iget-object v1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfoHead:Landroid/widget/TextView;
 
-    const v2, 0x7f120e00
+    const v2, 0x7f120e18
 
     new-array v3, v4, [Ljava/lang/Object;
 
@@ -734,7 +734,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfoBody:Landroid/widget/TextView;
 
-    const v1, 0x7f120dff
+    const v1, 0x7f120e17
 
     new-array v2, v4, [Ljava/lang/Object;
 
@@ -799,7 +799,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v0, 0x7f120e54
+    const v0, 0x7f120e6c
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -830,7 +830,7 @@
     :cond_11
     sget-object p1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v0, 0x7f120e64
+    const v0, 0x7f120e7c
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -846,7 +846,7 @@
 
     const-string v3, "GM1917"
 
-    const v10, 0x7f120e69
+    const v10, 0x7f120e81
 
     if-nez p1, :cond_13
 
@@ -948,7 +948,7 @@
 
     invoke-virtual {p1, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const p1, 0x7f120f64
+    const p1, 0x7f120f7c
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -970,7 +970,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120bfe
+    const v11, 0x7f120c16
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -995,7 +995,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120c02
+    const v11, 0x7f120c1a
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1016,7 +1016,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120bea
+    const v11, 0x7f120c02
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1037,7 +1037,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120bf1
+    const v11, 0x7f120c09
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1058,7 +1058,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120bf6
+    const v11, 0x7f120c0e
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1079,7 +1079,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120c1d
+    const v11, 0x7f120c35
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1100,7 +1100,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120c22
+    const v11, 0x7f120c3a
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1121,7 +1121,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120c15
+    const v11, 0x7f120c2d
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1142,7 +1142,7 @@
 
     move-result-object p1
 
-    const v11, 0x7f120c17
+    const v11, 0x7f120c2f
 
     invoke-static {p0, v11, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -1159,7 +1159,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v11, 0x7f120e54
+    const v11, 0x7f120e6c
 
     invoke-virtual {p0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1187,7 +1187,7 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v11, 0x7f120f68
+    const v11, 0x7f120f80
 
     invoke-virtual {p0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1207,7 +1207,7 @@
 
     if-eqz v0, :cond_1e
 
-    const v0, 0x7f120c01
+    const v0, 0x7f120c19
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1228,7 +1228,7 @@
 
     if-eqz v0, :cond_1f
 
-    const v0, 0x7f120c05
+    const v0, 0x7f120c1d
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1239,7 +1239,7 @@
     :cond_1f
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    const v10, 0x7f120e6d
+    const v10, 0x7f120e85
 
     invoke-virtual {p0, v10}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1251,7 +1251,7 @@
 
     if-eqz v0, :cond_20
 
-    const v0, 0x7f120c09
+    const v0, 0x7f120c21
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1268,7 +1268,7 @@
 
     if-eqz v0, :cond_21
 
-    const v0, 0x7f120bee
+    const v0, 0x7f120c06
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1287,7 +1287,7 @@
 
     if-eqz v0, :cond_22
 
-    const v0, 0x7f120bef
+    const v0, 0x7f120c07
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1304,7 +1304,7 @@
 
     if-eqz v0, :cond_23
 
-    const v0, 0x7f120bf5
+    const v0, 0x7f120c0d
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1323,7 +1323,7 @@
 
     if-eqz v0, :cond_24
 
-    const v0, 0x7f120c08
+    const v0, 0x7f120c20
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1340,7 +1340,7 @@
 
     if-eqz v0, :cond_25
 
-    const v0, 0x7f120bfa
+    const v0, 0x7f120c12
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1359,7 +1359,7 @@
 
     if-eqz v0, :cond_26
 
-    const v0, 0x7f120c07
+    const v0, 0x7f120c1f
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1376,7 +1376,7 @@
 
     if-eqz v0, :cond_27
 
-    const v0, 0x7f120c1e
+    const v0, 0x7f120c36
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1393,7 +1393,7 @@
 
     if-eqz v0, :cond_28
 
-    const v0, 0x7f120c24
+    const v0, 0x7f120c3c
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1410,7 +1410,7 @@
 
     if-eqz v0, :cond_29
 
-    const v0, 0x7f120c16
+    const v0, 0x7f120c2e
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1427,7 +1427,7 @@
 
     if-eqz v0, :cond_2a
 
-    const v0, 0x7f120c18
+    const v0, 0x7f120c30
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1446,7 +1446,7 @@
 
     if-eqz v0, :cond_2b
 
-    const v0, 0x7f120c06
+    const v0, 0x7f120c1e
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1485,7 +1485,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mRegulatoryInfoUSHacRating:Landroid/widget/TextView;
 
-    const v0, 0x7f120c1f
+    const v0, 0x7f120c37
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -1531,13 +1531,13 @@
 
     invoke-virtual {p1, v5}, Landroid/view/View;->setVisibility(I)V
 
-    const p1, 0x7f120c1a
+    const p1, 0x7f120c32
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    const v0, 0x7f120c19
+    const v0, 0x7f120c31
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1545,7 +1545,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfoHead:Landroid/widget/TextView;
 
-    const v2, 0x7f120e00
+    const v2, 0x7f120e18
 
     new-array v3, v4, [Ljava/lang/Object;
 
@@ -1559,7 +1559,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPRegulatoryInfoDisplayActivity;->mIndiaSarInfoBody:Landroid/widget/TextView;
 
-    const v1, 0x7f120dff
+    const v1, 0x7f120e17
 
     new-array v2, v4, [Ljava/lang/Object;
 

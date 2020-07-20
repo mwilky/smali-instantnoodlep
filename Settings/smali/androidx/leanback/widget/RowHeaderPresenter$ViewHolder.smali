@@ -30,7 +30,7 @@
 
     invoke-direct {p0, p1}, Landroidx/leanback/widget/Presenter$ViewHolder;-><init>(Landroid/view/View;)V
 
-    const v0, 0x7f0a0605
+    const v0, 0x7f0a0602
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -40,7 +40,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/RowHeaderPresenter$ViewHolder;->mTitleView:Landroidx/leanback/widget/RowHeaderView;
 
-    const v0, 0x7f0a0606
+    const v0, 0x7f0a0603
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

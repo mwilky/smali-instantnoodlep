@@ -24,7 +24,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1207ec
+    const v1, 0x7f120804
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -36,7 +36,7 @@
 
     if-nez v0, :cond_0
 
-    const v0, 0x7f120929
+    const v0, 0x7f120941
 
     invoke-virtual {p1, v0, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -47,7 +47,7 @@
 .method getHelpIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 1
 
-    const p0, 0x7f1207ec
+    const p0, 0x7f120804
 
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     invoke-static {v0, v2, p2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    const p2, 0x7f1219d7
+    const p2, 0x7f1219ef
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -187,19 +187,19 @@
 
     invoke-direct {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f1219da
+    const v0, 0x7f1219f2
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f0d038c
+    const v0, 0x7f0d038d
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setView(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f1219db
+    const v0, 0x7f1219f3
 
     invoke-virtual {p1, v0, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f1203ef
+    const v0, 0x7f1203f6
 
     const/4 v1, 0x0
 

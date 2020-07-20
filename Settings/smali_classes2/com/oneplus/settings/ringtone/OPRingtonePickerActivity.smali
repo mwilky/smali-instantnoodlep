@@ -1203,7 +1203,7 @@
 
     const-string v6, "-1"
 
-    const v7, 0x7f120ea3
+    const v7, 0x7f120ebb
 
     if-eqz v1, :cond_13
 
@@ -1762,7 +1762,7 @@
 
     iget-object v6, v1, Lcom/oneplus/settings/ringtone/OPRingtonePickerActivity;->mSim1Layout:Landroid/preference/Preference;
 
-    const v7, 0x7f120ea6
+    const v7, 0x7f120ebe
 
     if-eqz v6, :cond_4
 
@@ -1815,7 +1815,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f120ea3
+    const v6, 0x7f120ebb
 
     if-nez v0, :cond_7
 

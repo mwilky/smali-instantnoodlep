@@ -244,7 +244,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120b1b
+    const v0, 0x7f120b33
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -256,7 +256,7 @@
 .method public onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
     .locals 1
 
-    const v0, 0x7f0a0651
+    const v0, 0x7f0a064e
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

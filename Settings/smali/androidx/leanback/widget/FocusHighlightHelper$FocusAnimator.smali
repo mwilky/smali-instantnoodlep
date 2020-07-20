@@ -246,7 +246,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/leanback/widget/FocusHighlightHelper$FocusAnimator;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a03b0
+    const v1, 0x7f0a03b5
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

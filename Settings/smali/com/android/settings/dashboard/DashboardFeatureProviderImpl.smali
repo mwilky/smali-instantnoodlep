@@ -130,7 +130,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f080500
+    const p2, 0x7f080509
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -155,7 +155,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f08050e
+    const p2, 0x7f080517
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -188,7 +188,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f08047e
+    const p2, 0x7f080487
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -213,7 +213,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0805b6
+    const p2, 0x7f0805bf
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -238,7 +238,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0805b3
+    const p2, 0x7f0805bc
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -263,7 +263,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0805b5
+    const p2, 0x7f0805be
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -288,7 +288,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f080444
+    const p2, 0x7f08044d
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -418,7 +418,7 @@
 
     move-result-object p6
 
-    const v0, 0x7f121620
+    const v0, 0x7f121638
 
     if-eqz p6, :cond_3
 
@@ -869,7 +869,7 @@
 
     move-result-object p4
 
-    const p5, 0x7f12164a
+    const p5, 0x7f121662
 
     invoke-virtual {p4, p5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -877,7 +877,7 @@
 
     invoke-virtual {p3, p4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p4, 0x7f1213f4
+    const p4, 0x7f12140c
 
     new-array p5, v1, [Ljava/lang/Object;
 
@@ -889,7 +889,7 @@
 
     invoke-virtual {p3, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p1, 0x7f120641
+    const p1, 0x7f120648
 
     new-instance p4, Lcom/android/settings/dashboard/-$$Lambda$DashboardFeatureProviderImpl$6P-o9T84dGHpyBqqhzxbPIuOBk4;
 

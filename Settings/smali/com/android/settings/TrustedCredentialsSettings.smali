@@ -349,7 +349,7 @@
 
     invoke-direct {v6, v7, v0, v4, v1}, Lcom/android/settings/TrustedCredentialsSettings$ChildAdapter;-><init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$GroupAdapter;ILcom/android/settings/TrustedCredentialsSettings$1;)V
 
-    const v7, 0x7f0d0358
+    const v7, 0x7f0d0359
 
     invoke-virtual {p0, v7, p1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -858,7 +858,7 @@
 
     invoke-virtual {v0, p0, p1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    const p0, 0x7f1216b1
+    const p0, 0x7f1216c9
 
     invoke-virtual {v0, p0}, Landroid/app/Activity;->setTitle(I)V
 
@@ -868,7 +868,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
-    const p3, 0x7f0d0359
+    const p3, 0x7f0d035a
 
     const/4 v0, 0x0
 

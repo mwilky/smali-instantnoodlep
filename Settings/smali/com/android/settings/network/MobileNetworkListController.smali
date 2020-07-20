@@ -160,14 +160,14 @@
 
     if-eqz v5, :cond_2
 
-    const v5, 0x7f120a94
+    const v5, 0x7f120aac
 
     invoke-virtual {v4, v5}, Landroidx/preference/Preference;->setSummary(I)V
 
     goto :goto_1
 
     :cond_2
-    const v5, 0x7f120aa3
+    const v5, 0x7f120abb
 
     invoke-virtual {v4, v5}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -182,7 +182,7 @@
 
     if-eqz v5, :cond_4
 
-    const v5, 0x7f120a95
+    const v5, 0x7f120aad
 
     invoke-virtual {v4, v5}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -191,7 +191,7 @@
     :cond_4
     iget-object v5, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120aad
+    const v6, 0x7f120ac5
 
     const/4 v7, 0x1
 

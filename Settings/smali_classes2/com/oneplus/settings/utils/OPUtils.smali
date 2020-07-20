@@ -865,7 +865,7 @@
 .method public static getQuickMiniProgrameconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 0
 
-    const p1, 0x7f080654
+    const p1, 0x7f080666
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -920,7 +920,7 @@
 .method public static getQuickPayIconByType(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    const v0, 0x7f080653
+    const v0, 0x7f080665
 
     if-eqz p1, :cond_3
 
@@ -939,17 +939,17 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f080447
+    const v0, 0x7f080450
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f080446
+    const v0, 0x7f08044f
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f080655
+    const v0, 0x7f080667
 
     :cond_3
     :goto_0
@@ -1639,7 +1639,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120eda
+    const v2, 0x7f120ef2
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1659,7 +1659,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120edc
+    const v2, 0x7f120ef4
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1679,7 +1679,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120edb
+    const v2, 0x7f120ef3
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1699,7 +1699,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120edd
+    const v2, 0x7f120ef5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2231,7 +2231,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300ad
+    const v1, 0x7f0300ae
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -2302,7 +2302,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300c6
+    const v1, 0x7f0300c7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -3034,7 +3034,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300a3
+    const v1, 0x7f0300a4
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -3394,7 +3394,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0300a9
+    const v3, 0x7f0300aa
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -4356,7 +4356,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300ce
+    const v1, 0x7f0300cf
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -5256,7 +5256,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0300d3
+    const v10, 0x7f0300d4
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -5392,7 +5392,7 @@
 
     new-instance v0, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v9, 0x7f120f3f
+    const v9, 0x7f120f57
 
     invoke-virtual {v1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5406,7 +5406,7 @@
 
     invoke-direct/range {v13 .. v18}, Lcom/oneplus/settings/better/OPAppModel;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 
-    const v9, 0x7f080654
+    const v9, 0x7f080666
 
     invoke-virtual {v1, v9}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -5761,7 +5761,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d02fb
+    const v5, 0x7f0d02fc
 
     const/4 v6, 0x0
 

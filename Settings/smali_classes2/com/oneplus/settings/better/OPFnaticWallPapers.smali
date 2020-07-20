@@ -71,9 +71,9 @@
 
     :array_0
     .array-data 4
-        0x7f080177
-        0x7f080178
-        0x7f080179
+        0x7f080180
+        0x7f080181
+        0x7f080182
     .end array-data
 .end method
 
@@ -255,7 +255,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->mNextButton:Landroid/widget/Button;
 
-    const v0, 0x7f120d81
+    const v0, 0x7f120d99
 
     invoke-virtual {p0, v0}, Landroid/widget/Button;->setText(I)V
 
@@ -264,7 +264,7 @@
     :cond_1
     iget-object v0, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->mNextButton:Landroid/widget/Button;
 
-    const v3, 0x7f120d74
+    const v3, 0x7f120d8c
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -337,7 +337,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->mWallPaperLayout:Landroid/view/View;
 
-    const p1, 0x7f0a02e3
+    const p1, 0x7f0a02e8
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -363,7 +363,7 @@
 
     aput-object v2, v1, v0
 
-    const v2, 0x7f120d80
+    const v2, 0x7f120d98
 
     invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -371,7 +371,7 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p1, 0x7f0a045c
+    const p1, 0x7f0a0461
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -565,7 +565,7 @@
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_1
-    const p1, 0x7f0a07b0
+    const p1, 0x7f0a07ad
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -573,7 +573,7 @@
 
     check-cast p1, Landroid/view/TextureView;
 
-    const v0, 0x7f0a07ad
+    const v0, 0x7f0a07aa
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -583,7 +583,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/better/OPFnaticWallPapers;->imageView:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a07a9
+    const v0, 0x7f0a07a6
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

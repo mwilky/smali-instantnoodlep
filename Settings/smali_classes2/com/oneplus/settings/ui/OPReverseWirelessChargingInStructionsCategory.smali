@@ -15,7 +15,7 @@
 
     invoke-direct {p0, p1, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d022e
+    const p1, 0x7f0d022f
 
     iput p1, p0, Lcom/oneplus/settings/ui/OPReverseWirelessChargingInStructionsCategory;->mLayoutResId:I
 
@@ -31,7 +31,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d022e
+    const p1, 0x7f0d022f
 
     iput p1, p0, Lcom/oneplus/settings/ui/OPReverseWirelessChargingInStructionsCategory;->mLayoutResId:I
 
@@ -49,7 +49,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p1, 0x7f0d022e
+    const p1, 0x7f0d022f
 
     iput p1, p0, Lcom/oneplus/settings/ui/OPReverseWirelessChargingInStructionsCategory;->mLayoutResId:I
 

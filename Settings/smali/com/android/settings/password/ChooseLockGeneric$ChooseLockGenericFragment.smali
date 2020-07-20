@@ -978,7 +978,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f12103a
+    const v3, 0x7f121052
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1055,7 +1055,7 @@
 
     iget-boolean v0, p0, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->mForFingerprint:Z
 
-    const v1, 0x7f12112f
+    const v1, 0x7f121147
 
     if-eqz v0, :cond_0
 
@@ -1173,7 +1173,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f120997
+    const v1, 0x7f1209af
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -1243,22 +1243,22 @@
 
     if-eq v1, v2, :cond_0
 
-    const v1, 0x7f121727
+    const v1, 0x7f12173f
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f121724
+    const v1, 0x7f12173c
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f121726
+    const v1, 0x7f12173e
 
     goto :goto_0
 
     :cond_2
-    const v1, 0x7f121725
+    const v1, 0x7f12173d
 
     :goto_0
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getResources()Landroid/content/res/Resources;
@@ -1290,7 +1290,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03d1
+    const v1, 0x7f0a03d6
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setViewId(I)V
 
@@ -1318,7 +1318,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0a03d3
+    const v3, 0x7f0a03d8
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setViewId(I)V
 
@@ -1330,7 +1330,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0a03d2
+    const v3, 0x7f0a03d7
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setViewId(I)V
 
@@ -1528,7 +1528,7 @@
 
     invoke-virtual {v8, v3}, Lcom/android/settingslib/OPRestrictedPreference;->setDisabledByAdmin(Lcom/android/settingslib/RestrictedLockUtils$EnforcedAdmin;)V
 
-    const v8, 0x7f121729
+    const v8, 0x7f121741
 
     invoke-virtual {v9, v8}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1582,7 +1582,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207f9
+    const p0, 0x7f120811
 
     return p0
 .end method
@@ -2594,7 +2594,7 @@
 
     const/16 v2, 0x64
 
-    const v3, 0x7f12172f
+    const v3, 0x7f121747
 
     invoke-virtual {p0, v3}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -2720,12 +2720,12 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f121721
+    const v0, 0x7f121739
 
     goto :goto_1
 
     :cond_1
-    const v0, 0x7f121720
+    const v0, 0x7f121738
 
     :goto_1
     iget-object v3, p0, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->mFingerprintManager:Landroid/hardware/fingerprint/FingerprintManager;
@@ -2801,7 +2801,7 @@
 
     if-eqz v3, :cond_3
 
-    const v1, 0x7f12171d
+    const v1, 0x7f121735
 
     goto/16 :goto_2
 
@@ -2810,19 +2810,19 @@
 
     if-nez v3, :cond_4
 
-    const v1, 0x7f12171c
+    const v1, 0x7f121734
 
     goto/16 :goto_2
 
     :cond_4
     if-eqz v3, :cond_5
 
-    const v1, 0x7f12171e
+    const v1, 0x7f121736
 
     goto :goto_2
 
     :cond_5
-    const v1, 0x7f12171b
+    const v1, 0x7f121733
 
     goto :goto_2
 
@@ -2831,7 +2831,7 @@
 
     if-eqz v3, :cond_7
 
-    const v1, 0x7f121711
+    const v1, 0x7f121729
 
     goto :goto_2
 
@@ -2840,19 +2840,19 @@
 
     if-nez v3, :cond_8
 
-    const v1, 0x7f121710
+    const v1, 0x7f121728
 
     goto :goto_2
 
     :cond_8
     if-eqz v3, :cond_9
 
-    const v1, 0x7f121712
+    const v1, 0x7f12172a
 
     goto :goto_2
 
     :cond_9
-    const v1, 0x7f12170f
+    const v1, 0x7f121727
 
     goto :goto_2
 
@@ -2861,7 +2861,7 @@
 
     if-eqz v3, :cond_b
 
-    const v1, 0x7f121719
+    const v1, 0x7f121731
 
     goto :goto_2
 
@@ -2870,19 +2870,19 @@
 
     if-nez v3, :cond_c
 
-    const v1, 0x7f121718
+    const v1, 0x7f121730
 
     goto :goto_2
 
     :cond_c
     if-eqz v3, :cond_d
 
-    const v1, 0x7f12171a
+    const v1, 0x7f121732
 
     goto :goto_2
 
     :cond_d
-    const v1, 0x7f121717
+    const v1, 0x7f12172f
 
     goto :goto_2
 
@@ -2891,7 +2891,7 @@
 
     if-eqz v3, :cond_f
 
-    const v1, 0x7f121715
+    const v1, 0x7f12172d
 
     goto :goto_2
 
@@ -2900,19 +2900,19 @@
 
     if-nez v3, :cond_10
 
-    const v1, 0x7f121714
+    const v1, 0x7f12172c
 
     goto :goto_2
 
     :cond_10
     if-eqz v3, :cond_11
 
-    const v1, 0x7f121716
+    const v1, 0x7f12172e
 
     goto :goto_2
 
     :cond_11
-    const v1, 0x7f121713
+    const v1, 0x7f12172b
 
     :goto_2
     new-instance v3, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment$FactoryResetProtectionWarningDialog;
@@ -3185,19 +3185,19 @@
 
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PATTERN:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f12074d
+    const v0, 0x7f120765
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PIN:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f12074e
+    const v0, 0x7f120766
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PASSWORD:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f12074c
+    const v0, 0x7f120764
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
@@ -3210,19 +3210,19 @@
 
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PATTERN:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f121148
+    const v0, 0x7f121160
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PIN:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f121149
+    const v0, 0x7f121161
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PASSWORD:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f121147
+    const v0, 0x7f12115f
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceTitle(Lcom/android/settings/password/ScreenLockType;I)V
 
@@ -3321,7 +3321,7 @@
 
     if-eqz p1, :cond_a
 
-    const v0, 0x7f12050e
+    const v0, 0x7f120515
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -3367,7 +3367,7 @@
     :cond_d
     sget-object p1, Lcom/android/settings/password/ScreenLockType;->PATTERN:Lcom/android/settings/password/ScreenLockType;
 
-    const v0, 0x7f1213ec
+    const v0, 0x7f121404
 
     invoke-direct {p0, p1, v0}, Lcom/android/settings/password/ChooseLockGeneric$ChooseLockGenericFragment;->setPreferenceSummary(Lcom/android/settings/password/ScreenLockType;I)V
 

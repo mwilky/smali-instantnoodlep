@@ -282,7 +282,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f03012f
+    const v1, 0x7f030130
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -292,7 +292,7 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    const v0, 0x7f0a05c0
+    const v0, 0x7f0a05bd
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -320,7 +320,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    const v0, 0x7f0a05c1
+    const v0, 0x7f0a05be
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -348,7 +348,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    const v0, 0x7f0a05bf
+    const v0, 0x7f0a05bc
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

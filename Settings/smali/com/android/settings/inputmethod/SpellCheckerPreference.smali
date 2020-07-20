@@ -19,7 +19,7 @@
 
     iput-object p2, p0, Lcom/android/settings/inputmethod/SpellCheckerPreference;->mScis:[Landroid/view/textservice/SpellCheckerInfo;
 
-    const v0, 0x7f0d02a1
+    const v0, 0x7f0d02a2
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -124,7 +124,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0651
+    const v0, 0x7f0a064e
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -156,7 +156,7 @@
 .method protected onPrepareDialogBuilder(Landroidx/appcompat/app/AlertDialog$Builder;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 2
 
-    const v0, 0x7f12043b
+    const v0, 0x7f120442
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

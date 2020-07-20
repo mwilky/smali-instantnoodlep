@@ -109,7 +109,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f12070f
+    const p1, 0x7f120725
 
     invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -142,18 +142,18 @@
 
     move-result v0
 
-    const v1, 0x7f1209b4
+    const v1, 0x7f1209cc
 
     if-eqz p1, :cond_1
 
-    const v1, 0x7f1209af
+    const v1, 0x7f1209c7
 
     goto :goto_0
 
     :cond_1
     if-eqz v0, :cond_2
 
-    const v1, 0x7f121158
+    const v1, 0x7f121170
 
     :cond_2
     :goto_0
@@ -204,7 +204,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f12070f
+    const p1, 0x7f120725
 
     const/4 v0, 0x0
 

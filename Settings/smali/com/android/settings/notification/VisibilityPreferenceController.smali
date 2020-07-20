@@ -304,7 +304,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120985
+    const v5, 0x7f12099d
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -347,7 +347,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f120e28
+    const v5, 0x7f120e40
 
     invoke-virtual {v2, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -384,7 +384,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f120982
+    const v4, 0x7f12099a
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

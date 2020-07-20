@@ -93,7 +93,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207fb
+    const p0, 0x7f120813
 
     return p0
 .end method
@@ -187,7 +187,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f120497
+    const p1, 0x7f12049e
 
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

@@ -236,7 +236,7 @@
 .method public getDrawableResource(Landroid/bluetooth/BluetoothClass;)I
     .locals 0
 
-    const p0, 0x7f0801b0
+    const p0, 0x7f0801b9
 
     return p0
 .end method
@@ -244,7 +244,7 @@
 .method public getNameResource(Landroid/bluetooth/BluetoothDevice;)I
     .locals 0
 
-    const p0, 0x7f120381
+    const p0, 0x7f120388
 
     return p0
 .end method

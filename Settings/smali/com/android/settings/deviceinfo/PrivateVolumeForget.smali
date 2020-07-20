@@ -125,7 +125,7 @@
     return-object v1
 
     :cond_1
-    const p3, 0x7f0d02fc
+    const p3, 0x7f0d02fd
 
     const/4 v0, 0x0
 
@@ -149,7 +149,7 @@
 
     check-cast p3, Landroid/widget/Button;
 
-    const v1, 0x7f12158d
+    const v1, 0x7f1215a5
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 

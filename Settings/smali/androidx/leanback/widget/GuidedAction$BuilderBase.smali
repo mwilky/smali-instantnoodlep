@@ -226,7 +226,7 @@
 
     iget-object p1, p0, Landroidx/leanback/widget/GuidedAction$BuilderBase;->mContext:Landroid/content/Context;
 
-    const p2, 0x7f120906
+    const p2, 0x7f12091e
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -247,7 +247,7 @@
 
     iget-object p1, p0, Landroidx/leanback/widget/GuidedAction$BuilderBase;->mContext:Landroid/content/Context;
 
-    const p2, 0x7f120905
+    const p2, 0x7f12091d
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

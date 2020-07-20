@@ -146,22 +146,22 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x7f12053e
+    const v0, 0x7f120545
 
     invoke-virtual {p1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v0, 0x7f12053d
+    const v0, 0x7f120544
 
     invoke-virtual {p1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f120540
+    const v0, 0x7f120547
 
     invoke-virtual {p1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v0, 0x7f12053f
+    const v0, 0x7f120546
 
     invoke-virtual {p1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

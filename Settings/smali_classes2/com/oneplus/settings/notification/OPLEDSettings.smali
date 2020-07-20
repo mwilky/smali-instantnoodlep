@@ -331,7 +331,7 @@
     :cond_0
     iget-object v2, p0, Lcom/oneplus/settings/notification/OPLEDSettings;->mGlobalNotificationPreference:Lcom/oneplus/settings/ui/OPLedColorPickerPreference;
 
-    const v4, 0x7f12045c
+    const v4, 0x7f120463
 
     invoke-virtual {v2, v4}, Lcom/oneplus/settings/ui/OPLedColorPickerPreference;->setMessageText(I)V
 
@@ -935,7 +935,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12092e
+    const v1, 0x7f120946
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

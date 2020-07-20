@@ -313,7 +313,7 @@
 
     invoke-direct {v1, p1, v2, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
-    const p1, 0x7f0d0348
+    const p1, 0x7f0d0349
 
     invoke-virtual {v1, p1}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 

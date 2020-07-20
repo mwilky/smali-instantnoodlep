@@ -126,7 +126,7 @@
 
     if-lez v0, :cond_1
 
-    const v1, 0x7f0a02dc
+    const v1, 0x7f0a02e1
 
     invoke-virtual {p0, v1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

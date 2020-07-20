@@ -17,7 +17,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/system/OPSystemUpdatePreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01e6
+    const p1, 0x7f0d01e7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -31,7 +31,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/system/OPSystemUpdatePreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01e6
+    const p1, 0x7f0d01e7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/system/OPSystemUpdatePreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01e6
+    const p1, 0x7f0d01e7
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 

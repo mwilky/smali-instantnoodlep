@@ -88,19 +88,19 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f12148a
+    const v1, 0x7f1214a2
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v1, 0x7f12150b
+    const v1, 0x7f121523
 
     invoke-virtual {v0, v1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v1, 0x7f1207a5
+    const v1, 0x7f1207bd
 
     invoke-virtual {v0, v1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p0, 0x7f121489
+    const p0, 0x7f1214a1
 
     invoke-virtual {v0, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

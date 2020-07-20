@@ -139,7 +139,7 @@
 
     invoke-super {p0}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollIntroduction;->initViews()V
 
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06d2
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f121433
+    const v2, 0x7f12144b
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -157,14 +157,14 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f120df6
+    const v2, 0x7f120e0e
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f121432
+    const v2, 0x7f12144a
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -179,7 +179,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f12142f
+    const v3, 0x7f121447
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -197,7 +197,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_1
-    const v1, 0x7f0a02ac
+    const v1, 0x7f0a02b1
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -254,7 +254,7 @@
 
     move-result v1
 
-    const v2, 0x7f0a06c9
+    const v2, 0x7f0a06c6
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -288,7 +288,7 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f0a065c
+    const v0, 0x7f0a0659
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -716,15 +716,15 @@
 
     if-eqz v2, :cond_2
 
-    const v2, 0x7f0d024d
+    const v2, 0x7f0d024e
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->setContentView(I)V
 
-    const v2, 0x7f120d60
+    const v2, 0x7f120d78
 
     invoke-virtual {p0, v2}, Lcom/android/settings/biometrics/fingerprint/FingerprintEnrollIntroduction;->setHeaderText(I)V
 
-    const v2, 0x7f0a04da
+    const v2, 0x7f0a04d7
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

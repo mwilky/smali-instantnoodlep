@@ -174,7 +174,7 @@
     move p3, p2
 
     :goto_4
-    const v8, 0x7f0a03e0
+    const v8, 0x7f0a03e5
 
     invoke-virtual {p0, v8}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -231,7 +231,7 @@
 
     invoke-virtual {p1, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    const p1, 0x7f0a0332
+    const p1, 0x7f0a0337
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

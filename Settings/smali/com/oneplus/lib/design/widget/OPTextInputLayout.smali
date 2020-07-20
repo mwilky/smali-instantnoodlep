@@ -1877,7 +1877,7 @@
 
     iget-object v0, p0, Lcom/oneplus/lib/design/widget/OPTextInputLayout;->mCounterView:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0504
+    const v1, 0x7f0a0501
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setId(I)V
 
@@ -2320,7 +2320,7 @@
 
     iget-object v1, p0, Lcom/oneplus/lib/design/widget/OPTextInputLayout;->mErrorView:Landroid/widget/TextView;
 
-    const v2, 0x7f0a0505
+    const v2, 0x7f0a0502
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setId(I)V
 
@@ -2843,7 +2843,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f121129
+    const v5, 0x7f121141
 
     const/4 v6, 0x2
 

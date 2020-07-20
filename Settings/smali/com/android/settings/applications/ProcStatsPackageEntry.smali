@@ -197,7 +197,7 @@
 
     if-lez v0, :cond_1
 
-    const v0, 0x7f121523
+    const v0, 0x7f12153b
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -218,7 +218,7 @@
     return-object p0
 
     :cond_1
-    const v0, 0x7f121308
+    const v0, 0x7f121320
 
     new-array v3, v3, [Ljava/lang/Object;
 
@@ -321,7 +321,7 @@
 
     iput-object p2, p0, Lcom/android/settings/applications/ProcStatsPackageEntry;->mUiTargetApp:Landroid/content/pm/ApplicationInfo;
 
-    const p2, 0x7f121293
+    const p2, 0x7f1212ab
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

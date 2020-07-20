@@ -81,7 +81,7 @@
     invoke-static {p0, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline29(Landroid/app/Activity;I)V
 
     :cond_0
-    const p1, 0x7f0d0363
+    const p1, 0x7f0d0364
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -111,7 +111,7 @@
 
     iput-object p1, p0, Lcom/android/settings/UsageStatsActivity;->mPm:Landroid/content/pm/PackageManager;
 
-    const p1, 0x7f0a077d
+    const p1, 0x7f0a077a
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {p1, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    const p1, 0x7f0a056d
+    const p1, 0x7f0a056a
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

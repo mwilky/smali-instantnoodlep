@@ -299,12 +299,12 @@
 
     if-ne v0, v1, :cond_1
 
-    const v0, 0x7f12051e
+    const v0, 0x7f120525
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f12051d
+    const v0, 0x7f120524
 
     :goto_0
     iget-object v1, p0, Lcom/android/settings/display/DarkUIPreferenceController;->mPreference:Landroidx/preference/SwitchPreference;

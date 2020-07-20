@@ -68,7 +68,7 @@
     invoke-static {p0, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline29(Landroid/app/Activity;I)V
 
     :cond_0
-    const p1, 0x7f0d02e9
+    const p1, 0x7f0d02ea
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a03dd
+    const v1, 0x7f0a03e2
 
     const/4 v2, 0x0
 
@@ -107,7 +107,7 @@
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 
-    const p1, 0x7f0a06ed
+    const p1, 0x7f0a06ea
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

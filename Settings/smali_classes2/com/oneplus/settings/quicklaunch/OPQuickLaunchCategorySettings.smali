@@ -92,11 +92,11 @@
 
     invoke-static {p1, v0}, Lcom/oneplus/settings/utils/OPUtils;->setLightNavigationBar(Landroid/view/Window;I)V
 
-    const p1, 0x7f0d0228
+    const p1, 0x7f0d0229
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
-    const p1, 0x7f0a0751
+    const p1, 0x7f0a074e
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -119,7 +119,7 @@
     invoke-virtual {p1, v0}, Landroid/app/ActionBar;->setHomeButtonEnabled(Z)V
 
     :cond_0
-    const p1, 0x7f0a04f3
+    const p1, 0x7f0a04f0
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -129,7 +129,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mViewPager:Landroidx/viewpager/widget/ViewPager;
 
-    const v0, 0x7f0a0701
+    const v0, 0x7f0a06fe
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     iget-object v2, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mFragmentTitles:Ljava/util/List;
 
-    const v3, 0x7f12100d
+    const v3, 0x7f121025
 
     invoke-virtual {p0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -233,7 +233,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchCategorySettings;->mFragmentTitles:Ljava/util/List;
 
-    const v2, 0x7f120c5f
+    const v2, 0x7f120c77
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

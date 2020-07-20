@@ -71,7 +71,7 @@
 
     iget-object p0, p0, Landroidx/leanback/app/SearchSupportFragment;->mSearchBar:Landroidx/leanback/widget/SearchBar;
 
-    const p1, 0x7f0a03ac
+    const p1, 0x7f0a03b1
 
     invoke-virtual {p0, p1}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

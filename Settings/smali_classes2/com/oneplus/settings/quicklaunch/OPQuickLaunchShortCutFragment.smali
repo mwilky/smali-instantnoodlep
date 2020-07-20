@@ -76,7 +76,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300d6
+    const v1, 0x7f0300d7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -215,7 +215,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a04b2
+    const v2, 0x7f0a04af
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -245,7 +245,7 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const v2, 0x7f0a03c9
+    const v2, 0x7f0a03ce
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -253,7 +253,7 @@
 
     iput-object v2, v0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mLoadingContainer:Landroid/view/View;
 
-    const v2, 0x7f0a04bc
+    const v2, 0x7f0a04b9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -619,7 +619,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/quicklaunch/OPQuickLaunchShortCutFragment;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f120e3e
+    const p1, 0x7f120e56
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

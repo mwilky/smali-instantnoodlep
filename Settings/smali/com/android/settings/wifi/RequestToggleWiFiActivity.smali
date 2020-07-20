@@ -109,7 +109,7 @@
 
     const/4 v0, 0x0
 
-    const v2, 0x7f1205d9
+    const v2, 0x7f1205e0
 
     const v3, 0x7f12011a
 
@@ -156,7 +156,7 @@
 
     iput-object v8, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v1, 0x7f1219f6
+    const v1, 0x7f121a0e
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -189,7 +189,7 @@
 
     iput-object p0, v1, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v2, 0x7f1218ba
+    const v2, 0x7f1218d2
 
     new-array v3, v4, [Ljava/lang/Object;
 
@@ -224,7 +224,7 @@
 
     iput-object v8, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v1, 0x7f1219ea
+    const v1, 0x7f121a02
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -257,7 +257,7 @@
 
     iput-object p0, v1, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v2, 0x7f1218bb
+    const v2, 0x7f1218d3
 
     new-array v3, v4, [Ljava/lang/Object;
 

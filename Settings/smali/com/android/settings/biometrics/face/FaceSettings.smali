@@ -659,7 +659,7 @@
 
     const/4 v1, 0x4
 
-    const p1, 0x7f121411
+    const p1, 0x7f121429
 
     invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

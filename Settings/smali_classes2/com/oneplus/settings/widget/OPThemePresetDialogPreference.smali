@@ -81,7 +81,7 @@
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 2
 
-    const v0, 0x7f0a049b
+    const v0, 0x7f0a049c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -95,7 +95,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckedTextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a0498
+    const v0, 0x7f0a0499
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -109,7 +109,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckedTextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a049a
+    const v0, 0x7f0a049b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -123,7 +123,7 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckedTextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0a0499
+    const v0, 0x7f0a049a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +145,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->mThemeMCLChecked:Landroid/widget/CheckedTextView;
 
-    const v0, 0x7f12105f
+    const v0, 0x7f121077
 
     invoke-virtual {p1, v0}, Landroid/widget/CheckedTextView;->setText(I)V
 
@@ -160,7 +160,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->mThemeMCLChecked:Landroid/widget/CheckedTextView;
 
-    const v0, 0x7f12119e
+    const v0, 0x7f1211b6
 
     invoke-virtual {p1, v0}, Landroid/widget/CheckedTextView;->setText(I)V
 
@@ -175,7 +175,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->mThemeMCLChecked:Landroid/widget/CheckedTextView;
 
-    const v0, 0x7f121195
+    const v0, 0x7f1211ad
 
     invoke-virtual {p1, v0}, Landroid/widget/CheckedTextView;->setText(I)V
 
@@ -222,12 +222,12 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f08046e
+    const v0, 0x7f080477
 
     goto :goto_1
 
     :cond_4
-    const v0, 0x7f08046f
+    const v0, 0x7f080478
 
     :goto_1
     iget-object v1, p0, Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;->mThemeColorChecked:Landroid/widget/CheckedTextView;

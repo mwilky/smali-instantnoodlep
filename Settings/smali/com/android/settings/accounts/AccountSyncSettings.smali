@@ -789,7 +789,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207ef
+    const p0, 0x7f120807
 
     return p0
 .end method
@@ -1078,11 +1078,11 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p0, 0x7f1203f3
+    const p0, 0x7f1203fa
 
     invoke-virtual {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p0, 0x7f1203f2
+    const p0, 0x7f1203f9
 
     invoke-virtual {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -1101,7 +1101,7 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
 
-    const v0, 0x7f121640
+    const v0, 0x7f121658
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -1115,13 +1115,13 @@
 
     move-result-object v0
 
-    const v2, 0x7f080242
+    const v2, 0x7f08024b
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v2, 0x7f12163f
+    const v2, 0x7f121657
 
     invoke-virtual {p0, v2}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -1671,7 +1671,7 @@
     :goto_7
     if-nez v12, :cond_b
 
-    const v6, 0x7f121638
+    const v6, 0x7f121650
 
     invoke-virtual {v8, v6}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1680,7 +1680,7 @@
     :cond_b
     if-eqz v3, :cond_c
 
-    const v6, 0x7f12163d
+    const v6, 0x7f121655
 
     invoke-virtual {v8, v6}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1720,7 +1720,7 @@
 
     move-result-object v7
 
-    const v11, 0x7f1208fb
+    const v11, 0x7f120913
 
     move-object/from16 v17, v1
 
@@ -1835,7 +1835,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12163e
+    const v2, 0x7f121656
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setTitle(I)V
 

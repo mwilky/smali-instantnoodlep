@@ -90,7 +90,7 @@
 
     move-result p1
 
-    const v0, 0x7f0a0482
+    const v0, 0x7f0a0483
 
     if-ne p1, v0, :cond_1
 
@@ -164,7 +164,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f120cef
+    const v2, 0x7f120d07
 
     invoke-interface {p1, v1, v0, v1, v2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -366,7 +366,7 @@
 
     sget-object p1, Lcom/oneplus/settings/OPDeviceName;->mView:Landroid/view/View;
 
-    const p2, 0x7f0a0482
+    const p2, 0x7f0a0483
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -442,7 +442,7 @@
 
     move-result v0
 
-    const v2, 0x7f12198c    # 1.9419993E38f
+    const v2, 0x7f1219a4
 
     const/4 v3, 0x0
 

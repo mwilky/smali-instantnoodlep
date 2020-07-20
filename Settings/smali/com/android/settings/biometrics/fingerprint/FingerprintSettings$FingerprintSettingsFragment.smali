@@ -210,7 +210,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x7f08066a
+    const v1, 0x7f08067c
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -486,7 +486,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f120728
+    const v6, 0x7f120740
 
     new-array v7, v2, [Ljava/lang/Object;
 
@@ -604,7 +604,7 @@
 
     invoke-virtual {v6, v3}, Landroidx/preference/Preference;->setPersistent(Z)V
 
-    const v7, 0x7f0804ae
+    const v7, 0x7f0804b7
 
     invoke-virtual {v6, v7}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -681,11 +681,11 @@
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v2, 0x7f120729
+    const v2, 0x7f120741
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
-    const v2, 0x7f08023c
+    const v2, 0x7f080245
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -713,7 +713,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v2, 0x7f120d58
+    const v2, 0x7f120d70
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -733,7 +733,7 @@
 
     move-result v2
 
-    const v5, 0x7f120ff2
+    const v5, 0x7f12100a
 
     const/4 v6, 0x1
 
@@ -760,27 +760,27 @@
     goto :goto_1
 
     :cond_4
-    const v5, 0x7f120ff8
+    const v5, 0x7f121010
 
     goto :goto_1
 
     :cond_5
-    const v5, 0x7f120ff6
+    const v5, 0x7f12100e
 
     goto :goto_1
 
     :cond_6
-    const v5, 0x7f1211a0
+    const v5, 0x7f1211b8
 
     goto :goto_1
 
     :cond_7
-    const v5, 0x7f120ff4
+    const v5, 0x7f12100c
 
     goto :goto_1
 
     :cond_8
-    const v5, 0x7f120ff5
+    const v5, 0x7f12100d
 
     :cond_9
     :goto_1
@@ -798,7 +798,7 @@
 
     invoke-direct {v1, v2, v4}, Landroidx/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v2, 0x7f120feb
+    const v2, 0x7f121003
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -814,7 +814,7 @@
 
     invoke-virtual {v2, v5}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v5, 0x7f120de0
+    const v5, 0x7f120df8
 
     invoke-virtual {v2, v5}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -860,7 +860,7 @@
 
     invoke-virtual {v5, v4}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v4, 0x7f120fed
+    const v4, 0x7f121005
 
     invoke-virtual {v5, v4}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -942,7 +942,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120803
+    const p0, 0x7f12081b
 
     return p0
 .end method
@@ -1361,7 +1361,7 @@
 
     invoke-direct {v7, v5, v0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const v5, 0x7f121444
+    const v5, 0x7f12145c    # 1.94173E38f
 
     invoke-virtual {v0, v5}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -1484,7 +1484,7 @@
 
     move-result-object v2
 
-    const v7, 0x7f121422
+    const v7, 0x7f12143a
 
     invoke-virtual {v2, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1492,7 +1492,7 @@
 
     move-result-object v2
 
-    const v9, 0x7f12114f
+    const v9, 0x7f121167
 
     invoke-virtual {v2, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1504,7 +1504,7 @@
 
     move-result-object v0
 
-    const v7, 0x7f121423
+    const v7, 0x7f12143b
 
     invoke-virtual {v0, v7}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -1961,7 +1961,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f120fef
+    const v2, 0x7f121007
 
     invoke-static {p1, v2, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

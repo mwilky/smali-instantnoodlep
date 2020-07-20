@@ -109,7 +109,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Landroidx/preference/Preference;
 
-    const v0, 0x7f120d2e
+    const v0, 0x7f120d46
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -148,7 +148,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Landroidx/preference/Preference;
 
-    const v0, 0x7f120d0e
+    const v0, 0x7f120d26
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -159,7 +159,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Landroidx/preference/Preference;
 
-    const v0, 0x7f120d0c
+    const v0, 0x7f120d24
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -170,7 +170,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Landroidx/preference/Preference;
 
-    const v0, 0x7f120d0d
+    const v0, 0x7f120d25
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -183,7 +183,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/gestures/OPQuickTurnOnAssistantAppPreferenceController;->mSwitch:Landroidx/preference/Preference;
 
-    const v0, 0x7f120d09
+    const v0, 0x7f120d21
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 

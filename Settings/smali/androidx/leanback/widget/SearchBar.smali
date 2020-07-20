@@ -268,7 +268,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120925
+    const v1, 0x7f12093d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -296,7 +296,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f120928
+    const v3, 0x7f120940
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -315,7 +315,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f120927
+    const v3, 0x7f12093f
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -340,7 +340,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120926
+    const v1, 0x7f12093e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -485,7 +485,7 @@
 
     invoke-super {p0}, Landroid/widget/RelativeLayout;->onFinishInflate()V
 
-    const v0, 0x7f0a03ab
+    const v0, 0x7f0a03b0
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -499,7 +499,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->mBarBackground:Landroid/graphics/drawable/Drawable;
 
-    const v0, 0x7f0a03ae
+    const v0, 0x7f0a03b3
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -509,7 +509,7 @@
 
     iput-object v0, p0, Landroidx/leanback/widget/SearchBar;->mSearchTextEditor:Landroidx/leanback/widget/SearchEditText;
 
-    const v0, 0x7f0a03aa
+    const v0, 0x7f0a03af
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -570,7 +570,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setPrivateImeOptions(Ljava/lang/String;)V
 
-    const v0, 0x7f0a03ac
+    const v0, 0x7f0a03b1
 
     invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

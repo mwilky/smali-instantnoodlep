@@ -54,7 +54,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f12077c
+    const p2, 0x7f120794
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -62,7 +62,7 @@
 
     iput-object p2, p0, Lcom/android/settings/development/gamedriver/GameDriverEnableForAllAppsPreferenceController;->mPreferenceDefault:Ljava/lang/String;
 
-    const p2, 0x7f12077d
+    const p2, 0x7f120795
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -70,7 +70,7 @@
 
     iput-object p2, p0, Lcom/android/settings/development/gamedriver/GameDriverEnableForAllAppsPreferenceController;->mPreferenceGameDriver:Ljava/lang/String;
 
-    const p2, 0x7f12077e
+    const p2, 0x7f120796
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

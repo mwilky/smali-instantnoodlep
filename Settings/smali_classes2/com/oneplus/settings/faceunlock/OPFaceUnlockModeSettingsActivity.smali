@@ -90,11 +90,11 @@
 
     if-eq p1, v0, :cond_2
 
-    const v0, 0x7f0a0361
+    const v0, 0x7f0a0366
 
     if-eq p1, v0, :cond_1
 
-    const v0, 0x7f0a0363
+    const v0, 0x7f0a0368
 
     if-eq p1, v0, :cond_0
 
@@ -230,7 +230,7 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
 
-    const p1, 0x7f0a0361
+    const p1, 0x7f0a0366
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -242,7 +242,7 @@
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a0363
+    const p1, 0x7f0a0368
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -254,7 +254,7 @@
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a0362
+    const p1, 0x7f0a0367
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -264,7 +264,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->mSwipeUpButton:Landroid/widget/RadioButton;
 
-    const p1, 0x7f0a0364
+    const p1, 0x7f0a0369
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -274,7 +274,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->mPressPowerkeyButton:Landroid/widget/RadioButton;
 
-    const p1, 0x7f0a04fb
+    const p1, 0x7f0a04f8
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -304,7 +304,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/faceunlock/OPFaceUnlockModeSettingsActivity;->mDoneButton:Landroid/widget/Button;
 
-    const v0, 0x7f120b11
+    const v0, 0x7f120b29
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
 
@@ -321,7 +321,7 @@
 
     if-eqz p1, :cond_2
 
-    const p1, 0x7f0a04c0
+    const p1, 0x7f0a04bd
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
