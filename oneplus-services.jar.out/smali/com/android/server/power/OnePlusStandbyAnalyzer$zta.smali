@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public CQ:J
+.field public KQ:J
 
-.field public DQ:J
+.field public LQ:J
 
-.field public EQ:J
+.field public MQ:J
 
 .field public mPkg:Ljava/lang/String;
 
@@ -34,19 +34,19 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->CQ:J
+    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->KQ:J
 
-    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->DQ:J
+    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->LQ:J
 
-    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->EQ:J
+    iput-wide v0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->MQ:J
 
     iput p1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->mUid:I
 
-    iput-wide p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->EQ:J
+    iput-wide p2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->MQ:J
 
-    iput-wide p4, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->DQ:J
+    iput-wide p4, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->LQ:J
 
-    iput-wide p6, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->CQ:J
+    iput-wide p6, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->KQ:J
 
     return-void
 .end method
@@ -80,13 +80,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->DQ:J
+    iget-wide v2, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->LQ:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->CQ:J
+    iget-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->KQ:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -94,7 +94,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->EQ:J
+    iget-wide v1, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$zta;->MQ:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

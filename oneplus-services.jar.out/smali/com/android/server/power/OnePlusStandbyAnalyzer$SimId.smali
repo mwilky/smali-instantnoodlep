@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
-.field public static final enum LBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
+.field public static final enum gCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
-.field public static final enum MBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
+.field public static final enum hCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
 
 # instance fields
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v2, v1, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->LBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->gCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
@@ -56,17 +56,17 @@
 
     invoke-direct {v0, v3, v2, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->MBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->hCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
-    sget-object v3, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->LBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
+    sget-object v3, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->gCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
     aput-object v3, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->MBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;->hCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$SimId;
 
     aput-object v1, v0, v2
 

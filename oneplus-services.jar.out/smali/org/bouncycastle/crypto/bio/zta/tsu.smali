@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final lRa:I = -0x1f000000
+.field private static final GRa:I = -0x1f000000
 
-.field private static final mRa:J = -0x1f00000000000000L
+.field private static final HRa:J = -0x1f00000000000000L
 
 
 # direct methods
@@ -164,7 +164,7 @@
     return-void
 .end method
 
-.method public static ek()[B
+.method public static fk()[B
     .locals 3
 
     const/16 v0, 0x10
@@ -180,7 +180,7 @@
     return-object v0
 .end method
 
-.method public static fk()[I
+.method public static gk()[I
     .locals 3
 
     const/4 v0, 0x4
@@ -196,22 +196,6 @@
     return-object v0
 .end method
 
-.method public static gk()[J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [J
-
-    const/4 v1, 0x0
-
-    const-wide/high16 v2, -0x8000000000000000L
-
-    aput-wide v2, v0, v1
-
-    return-object v0
-.end method
-
 .method public static hk()[J
     .locals 4
 
@@ -221,7 +205,7 @@
 
     const/4 v1, 0x0
 
-    const-wide/high16 v2, 0x4000000000000000L    # 2.0
+    const-wide/high16 v2, -0x8000000000000000L
 
     aput-wide v2, v0, v1
 
@@ -252,6 +236,22 @@
     aput-wide v1, p0, v0
 
     return-void
+.end method
+
+.method public static ik()[J
+    .locals 4
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [J
+
+    const/4 v1, 0x0
+
+    const-wide/high16 v2, 0x4000000000000000L    # 2.0
+
+    aput-wide v2, v0, v1
+
+    return-object v0
 .end method
 
 .method public static kth([J[J)V

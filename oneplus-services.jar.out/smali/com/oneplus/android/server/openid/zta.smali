@@ -28,7 +28,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/openid/zta;->ad:Lcom/oneplus/android/server/openid/sis;
 
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/openid/sis;->X(Z)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/openid/sis;->Y(Z)V
 
     return-void
 .end method

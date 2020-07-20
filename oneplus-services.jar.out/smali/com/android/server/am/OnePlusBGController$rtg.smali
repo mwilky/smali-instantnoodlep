@@ -159,7 +159,7 @@
 
     iput-wide p1, p0, Lcom/android/server/am/OnePlusBGController$rtg;->Lc:D
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController$rtg;->mm()D
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController$rtg;->nm()D
 
     return-void
 .end method
@@ -180,7 +180,7 @@
     return-void
 .end method
 
-.method private lm()D
+.method private mm()D
     .locals 4
 
     iget-wide v0, p0, Lcom/android/server/am/OnePlusBGController$rtg;->Oc:D
@@ -236,7 +236,7 @@
     return-wide v0
 .end method
 
-.method private mm()D
+.method private nm()D
     .locals 4
 
     iget-wide v0, p0, Lcom/android/server/am/OnePlusBGController$rtg;->Ac:D
@@ -709,7 +709,7 @@
 
     iput-wide v0, p0, Lcom/android/server/am/OnePlusBGController$rtg;->Zc:D
 
-    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController$rtg;->lm()D
+    invoke-direct {p0}, Lcom/android/server/am/OnePlusBGController$rtg;->mm()D
 
     return-void
 .end method

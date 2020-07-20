@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final fWa:J = 0x55555555L
+.field private static final AWa:J = 0x55555555L
 
-.field private static final gWa:J = 0x5555555555555555L
+.field private static final BWa:J = 0x5555555555555555L
 
-.field private static final hWa:J = -0x5555555555555556L
+.field private static final CWa:J = -0x5555555555555556L
 
 
 # direct methods

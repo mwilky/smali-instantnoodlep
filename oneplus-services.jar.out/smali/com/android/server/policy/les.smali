@@ -17,49 +17,49 @@
 # static fields
 .field private static final FLAG_INTERACTIVE:I = 0x20000000
 
-.field private static final KP:J = 0x7d0L
-
 .field private static final MSG_POWER_LONG_PRESS:I = 0xe
 
 .field private static final MSG_POWER_VERY_LONG_PRESS:I = 0x19
 
-.field private static final TP:J = 0x1f4L
+.field private static final VP:J = 0x7d0L
 
-.field private static final VP:J = 0x1f4L
+.field private static final bQ:J = 0x1f4L
 
-.field private static final WP:J = 0x96L
+.field private static final cQ:J = 0x1f4L
 
-.field private static final XP:J = 0x2bcL
+.field private static final dQ:J = 0x96L
 
-.field private static final YP:I = 0x0
+.field private static final eQ:J = 0x2bcL
 
-.field private static final hP:Z
+.field private static final fQ:I = 0x0
 
-.field private static final jP:Ljava/lang/String; = "quick_turn_on_voice_assistant"
+.field private static final qP:Z
 
-.field private static kP:I
+.field private static final sP:Ljava/lang/String; = "quick_turn_on_voice_assistant"
+
+.field private static tP:I
 
 
 # instance fields
-.field private BO:Lcom/android/server/policy/PhoneWindowManager;
+.field private JO:Lcom/android/server/policy/PhoneWindowManager;
 
-.field private CO:Z
+.field private KO:Z
 
-.field private LP:Z
+.field private WP:Z
 
-.field private MP:Z
+.field private XP:Z
 
-.field private NP:Z
+.field private YO:Z
 
-.field private OO:Z
+.field private YP:Z
 
-.field private PO:Z
+.field private ZO:Z
 
-.field private PP:J
+.field private ZP:J
 
-.field private QP:J
+.field private _P:J
 
-.field private RP:J
+.field private aQ:J
 
 .field private mA11yShortcutChordVolumeUpKeyTriggered:Z
 
@@ -96,7 +96,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/policy/les;->hP:Z
+    sput-boolean v0, Lcom/android/server/policy/les;->qP:Z
 
     return-void
 .end method
@@ -114,7 +114,7 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/policy/les;->RP:J
+    iput-wide v0, p0, Lcom/android/server/policy/les;->aQ:J
 
     return-void
 .end method
@@ -122,7 +122,7 @@
 .method static synthetic zta(Lcom/android/server/policy/les;)Lcom/android/server/policy/PhoneWindowManager;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     return-object p0
 .end method
@@ -130,15 +130,15 @@
 .method private zta(Landroid/view/KeyEvent;Z)V
     .locals 6
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->PO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->ZO:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->OO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->YO:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->LP:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->WP:Z
 
     if-eqz v0, :cond_2
 
@@ -150,7 +150,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/policy/les;->PP:J
+    iget-wide v2, p0, Lcom/android/server/policy/les;->ZP:J
 
     const-wide/16 v4, 0x2bc
 
@@ -160,7 +160,7 @@
 
     if-gtz v2, :cond_2
 
-    iget-wide v2, p0, Lcom/android/server/policy/les;->QP:J
+    iget-wide v2, p0, Lcom/android/server/policy/les;->_P:J
 
     add-long/2addr v2, v4
 
@@ -170,9 +170,9 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/policy/les;->MP:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/les;->XP:Z
 
-    iget-object v1, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v1, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     const/4 v2, 0x0
 
@@ -188,7 +188,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->powerLongPress()V
 
@@ -211,7 +211,7 @@
 
     invoke-virtual {v1, p1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    iget-boolean p1, p0, Lcom/android/server/policy/les;->NP:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/les;->YP:Z
 
     if-eqz p1, :cond_1
 
@@ -236,7 +236,7 @@
     :cond_1
     if-nez p2, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iput-boolean v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mBeganFromNonInteractive:Z
 
@@ -260,7 +260,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->powerLongPress()V
 
@@ -314,7 +314,7 @@
     :cond_1
     if-nez p2, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iput-boolean v0, p0, Lcom/android/server/policy/PhoneWindowManager;->mBeganFromNonInteractive:Z
 
@@ -328,11 +328,11 @@
 .method public cancelPendingPowerKeyAction()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->PO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->ZO:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     const/4 v1, 0x1
 
@@ -345,11 +345,11 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->PO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->ZO:Z
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->NP:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->YP:Z
 
     if-eqz v0, :cond_1
 
@@ -368,11 +368,11 @@
 
     iput-object p1, p0, Lcom/android/server/policy/les;->mContext:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iput-object p3, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/policy/les;->NP:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/les;->YP:Z
 
     iput p1, p0, Lcom/android/server/policy/les;->mVeryLongPressTimeout:I
 
@@ -384,27 +384,27 @@
 
     iput-object p2, p0, Lcom/android/server/policy/les;->mHandler:Landroid/os/Handler;
 
-    sget-boolean p2, Lcom/android/server/policy/les;->hP:Z
+    sget-boolean p2, Lcom/android/server/policy/les;->qP:Z
 
     const/4 p3, 0x1
 
     if-eqz p2, :cond_0
 
-    iput-boolean p3, p0, Lcom/android/server/policy/les;->CO:Z
+    iput-boolean p3, p0, Lcom/android/server/policy/les;->KO:Z
 
-    sput p3, Lcom/android/server/policy/les;->kP:I
+    sput p3, Lcom/android/server/policy/les;->tP:I
 
     goto :goto_0
 
     :cond_0
-    iput-boolean p1, p0, Lcom/android/server/policy/les;->CO:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/les;->KO:Z
 
-    sput p1, Lcom/android/server/policy/les;->kP:I
+    sput p1, Lcom/android/server/policy/les;->tP:I
 
     :goto_0
-    sget-boolean p2, Lcom/android/server/policy/les;->hP:Z
+    sget-boolean p2, Lcom/android/server/policy/les;->qP:Z
 
-    iput-boolean p2, p0, Lcom/android/server/policy/les;->PO:Z
+    iput-boolean p2, p0, Lcom/android/server/policy/les;->ZO:Z
 
     iget-object p2, p0, Lcom/android/server/policy/les;->mContext:Landroid/content/Context;
 
@@ -464,25 +464,25 @@
     move p1, v3
 
     :goto_0
-    iget-boolean v4, p0, Lcom/android/server/policy/les;->PO:Z
+    iget-boolean v4, p0, Lcom/android/server/policy/les;->ZO:Z
 
     if-eqz v4, :cond_5
 
     if-nez v0, :cond_5
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->OO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->YO:Z
 
     const-wide/16 v4, 0x0
 
     if-eqz v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->LP:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->WP:Z
 
     if-nez v0, :cond_3
 
-    iget-wide v6, p0, Lcom/android/server/policy/les;->QP:J
+    iget-wide v6, p0, Lcom/android/server/policy/les;->_P:J
 
-    iget-wide v8, p0, Lcom/android/server/policy/les;->RP:J
+    iget-wide v8, p0, Lcom/android/server/policy/les;->aQ:J
 
     sub-long/2addr v6, v8
 
@@ -503,7 +503,7 @@
 
     move-result-wide v6
 
-    iget-wide v8, p0, Lcom/android/server/policy/les;->QP:J
+    iget-wide v8, p0, Lcom/android/server/policy/les;->_P:J
 
     const-wide/16 v10, 0x2bc
 
@@ -526,15 +526,15 @@
 
     if-ne v2, v0, :cond_5
 
-    iget-boolean v0, p0, Lcom/android/server/policy/les;->MP:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/les;->XP:Z
 
     if-eqz v0, :cond_5
 
     if-nez p1, :cond_4
 
-    iput-wide v4, p0, Lcom/android/server/policy/les;->RP:J
+    iput-wide v4, p0, Lcom/android/server/policy/les;->aQ:J
 
-    iput-boolean v3, p0, Lcom/android/server/policy/les;->MP:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/les;->XP:Z
 
     :cond_4
     new-instance p0, Ljava/lang/Long;
@@ -643,7 +643,7 @@
     iput-boolean v0, p0, Lcom/android/server/policy/les;->mA11yShortcutChordVolumeUpKeyTriggered:Z
 
     :cond_4
-    iget-boolean v2, p0, Lcom/android/server/policy/les;->OO:Z
+    iget-boolean v2, p0, Lcom/android/server/policy/les;->YO:Z
 
     if-nez v2, :cond_6
 
@@ -655,15 +655,15 @@
 
     if-nez v2, :cond_6
 
-    iput-boolean v0, p0, Lcom/android/server/policy/les;->OO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/les;->YO:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/les;->MP:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/les;->XP:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/policy/les;->QP:J
+    iput-wide v0, p0, Lcom/android/server/policy/les;->_P:J
 
     invoke-virtual {p0}, Lcom/android/server/policy/les;->cancelPendingPowerKeyAction()V
 
@@ -674,13 +674,13 @@
     :cond_5
     iput-boolean v1, p0, Lcom/android/server/policy/les;->mA11yShortcutChordVolumeUpKeyTriggered:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/les;->OO:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/les;->YO:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getEventTime()J
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/policy/les;->RP:J
+    iput-wide p1, p0, Lcom/android/server/policy/les;->aQ:J
 
     :cond_6
     :goto_2
@@ -699,34 +699,34 @@
     :cond_0
     if-eqz p4, :cond_4
 
-    iget-boolean p3, p0, Lcom/android/server/policy/les;->PO:Z
+    iget-boolean p3, p0, Lcom/android/server/policy/les;->ZO:Z
 
     if-eqz p3, :cond_4
 
     iput-boolean v0, p0, Lcom/android/server/policy/les;->mPowerKeyHandled:Z
 
-    iget-boolean p3, p0, Lcom/android/server/policy/les;->LP:Z
+    iget-boolean p3, p0, Lcom/android/server/policy/les;->WP:Z
 
     const/4 p4, 0x1
 
     if-nez p3, :cond_1
 
-    iput-boolean p5, p0, Lcom/android/server/policy/les;->NP:Z
+    iput-boolean p5, p0, Lcom/android/server/policy/les;->YP:Z
 
     iput p6, p0, Lcom/android/server/policy/les;->mVeryLongPressTimeout:I
 
-    iput-boolean p4, p0, Lcom/android/server/policy/les;->LP:Z
+    iput-boolean p4, p0, Lcom/android/server/policy/les;->WP:Z
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDownTime()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/policy/les;->PP:J
+    iput-wide v0, p0, Lcom/android/server/policy/les;->ZP:J
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/policy/les;->zta(Landroid/view/KeyEvent;Z)V
 
     :cond_1
-    iget-boolean p3, p0, Lcom/android/server/policy/les;->CO:Z
+    iget-boolean p3, p0, Lcom/android/server/policy/les;->KO:Z
 
     if-eqz p3, :cond_2
 
@@ -739,7 +739,7 @@
 
     if-nez p3, :cond_3
 
-    iget-object p3, p0, Lcom/android/server/policy/les;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p3, p0, Lcom/android/server/policy/les;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-boolean p3, p3, Lcom/android/server/policy/PhoneWindowManager;->mPowerKeyHandled:Z
 
@@ -759,15 +759,15 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/les;->LP:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/les;->WP:Z
 
     invoke-virtual {p0}, Lcom/android/server/policy/les;->cancelPendingPowerKeyAction()V
 
-    iget-boolean v1, p0, Lcom/android/server/policy/les;->OO:Z
+    iget-boolean v1, p0, Lcom/android/server/policy/les;->YO:Z
 
     if-eqz v1, :cond_0
 
-    iget-boolean p0, p0, Lcom/android/server/policy/les;->PO:Z
+    iget-boolean p0, p0, Lcom/android/server/policy/les;->ZO:Z
 
     if-eqz p0, :cond_0
 
@@ -815,7 +815,7 @@
     :try_start_0
     const-string v1, "quick_turn_on_voice_assistant"
 
-    sget v2, Lcom/android/server/policy/les;->kP:I
+    sget v2, Lcom/android/server/policy/les;->tP:I
 
     invoke-static {p1, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -835,7 +835,7 @@
     move v1, v3
 
     :goto_0
-    iput-boolean v1, p0, Lcom/android/server/policy/les;->CO:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/les;->KO:Z
 
     const-string v1, "device_provisioned"
 

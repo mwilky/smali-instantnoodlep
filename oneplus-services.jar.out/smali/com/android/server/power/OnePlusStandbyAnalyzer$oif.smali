@@ -73,7 +73,7 @@
 
 
 # virtual methods
-.method public Id()Ljava/lang/String;
+.method public Hd()Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;

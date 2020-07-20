@@ -11,7 +11,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpFingerprintAccelerate"
 
-.field private static mba:Ljava/util/List;
+.field private static vba:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wm/zgw;->mba:Ljava/util/List;
+    sput-object v0, Lcom/android/server/wm/zgw;->vba:Ljava/util/List;
 
     return-void
 .end method
@@ -78,7 +78,7 @@
 .method public isAppSupportsAccelerting(Ljava/lang/String;)Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/wm/zgw;->mba:Ljava/util/List;
+    sget-object p0, Lcom/android/server/wm/zgw;->vba:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 

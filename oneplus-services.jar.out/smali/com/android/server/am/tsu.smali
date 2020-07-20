@@ -50,7 +50,7 @@
         value = {
             "Ljava/util/HashMap<",
             "Ljava/lang/Integer;",
-            "Lcom/android/server/am/D;",
+            "Lcom/android/server/am/H;",
             ">;"
         }
     .end annotation
@@ -154,7 +154,7 @@
     return-void
 .end method
 
-.method private jn()V
+.method private kn()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -189,12 +189,12 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/am/tsu;->oxb(I)V
 
-    invoke-direct {p0, v1}, Lcom/android/server/am/tsu;->sa(Z)V
+    invoke-direct {p0, v1}, Lcom/android/server/am/tsu;->ta(Z)V
 
     return-void
 .end method
 
-.method private kn()V
+.method private ln()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -231,13 +231,13 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-direct {p0, v1}, Lcom/android/server/am/tsu;->ta(Z)V
+    invoke-direct {p0, v1}, Lcom/android/server/am/tsu;->ua(Z)V
 
     :cond_0
     return-void
 .end method
 
-.method private ln()V
+.method private mn()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -272,12 +272,20 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ta(Z)V
+    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ua(Z)V
 
     return-void
 .end method
 
-.method private mn()V
+.method private static myLog(ILjava/lang/String;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/android/server/am/AppRecordManagerService;->myLog(ILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method private nn()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -314,15 +322,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->sa(Z)V
-
-    return-void
-.end method
-
-.method private static myLog(ILjava/lang/String;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lcom/android/server/am/AppRecordManagerService;->myLog(ILjava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ta(Z)V
 
     return-void
 .end method
@@ -377,48 +377,6 @@
     throw v0
 .end method
 
-.method private sa(Z)V
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "notifyRegPSensor: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/tsu;->mUid:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-static {v1, v0}, Lcom/android/server/am/tsu;->myLog(ILjava/lang/String;)V
-
-    invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
-
-    move-result-object v0
-
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Uya:Lcom/android/server/am/AppRecordManager$ListenerType;
-
-    iget p0, p0, Lcom/android/server/am/tsu;->mUid:I
-
-    invoke-virtual {v0, v1, p0, p1}, Lcom/android/server/am/ssp;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;IZ)V
-
-    return-void
-.end method
-
 .method private sis(IIZ)V
     .locals 4
 
@@ -436,7 +394,7 @@
 
     if-ne v1, v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/am/tsu;->kn()V
+    invoke-direct {p0}, Lcom/android/server/am/tsu;->ln()V
 
     goto :goto_0
 
@@ -453,7 +411,7 @@
 
     if-nez v1, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/am/tsu;->ln()V
+    invoke-direct {p0}, Lcom/android/server/am/tsu;->mn()V
 
     :cond_1
     :goto_0
@@ -523,7 +481,7 @@
 
     if-ne p2, v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/am/tsu;->jn()V
+    invoke-direct {p0}, Lcom/android/server/am/tsu;->kn()V
 
     goto :goto_1
 
@@ -534,7 +492,7 @@
 
     if-nez p2, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/am/tsu;->mn()V
+    invoke-direct {p0}, Lcom/android/server/am/tsu;->nn()V
 
     :cond_3
     :goto_1
@@ -542,6 +500,48 @@
 .end method
 
 .method private ta(Z)V
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "notifyRegPSensor: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/am/tsu;->mUid:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-static {v1, v0}, Lcom/android/server/am/tsu;->myLog(ILjava/lang/String;)V
+
+    invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->mza:Lcom/android/server/am/AppRecordManager$ListenerType;
+
+    iget p0, p0, Lcom/android/server/am/tsu;->mUid:I
+
+    invoke-virtual {v0, v1, p0, p1}, Lcom/android/server/am/ssp;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;IZ)V
+
+    return-void
+.end method
+
+.method private ua(Z)V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -592,7 +592,7 @@
             "()",
             "Ljava/util/HashMap<",
             "Ljava/lang/Integer;",
-            "Lcom/android/server/am/D;",
+            "Lcom/android/server/am/H;",
             ">;"
         }
     .end annotation
@@ -733,9 +733,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/server/am/D;
+    check-cast v2, Lcom/android/server/am/H;
 
-    invoke-virtual {v2}, Lcom/android/server/am/D;->isShowing()Z
+    invoke-virtual {v2}, Lcom/android/server/am/H;->isShowing()Z
 
     move-result v2
 
@@ -1140,7 +1140,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Tya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->lza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget v2, p0, Lcom/android/server/am/tsu;->mUid:I
 
@@ -1325,7 +1325,7 @@
     throw v0
 .end method
 
-.method public cjf(I)Lcom/android/server/am/D;
+.method public cjf(I)Lcom/android/server/am/H;
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/am/tsu;->ln:Ljava/util/HashMap;
@@ -1343,7 +1343,7 @@
 
     move-result-object p0
 
-    check-cast p0, Lcom/android/server/am/D;
+    check-cast p0, Lcom/android/server/am/H;
 
     monitor-exit v0
 
@@ -1732,7 +1732,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->Tya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v1, Lcom/android/server/am/AppRecordManager$ListenerType;->lza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget v2, p0, Lcom/android/server/am/tsu;->mUid:I
 
@@ -2002,9 +2002,9 @@
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/server/am/D;
+    check-cast v3, Lcom/android/server/am/H;
 
-    iget-object v4, v3, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
+    iget-object v4, v3, Lcom/android/server/am/H;->mPackageName:Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/am/tsu;->ln:Ljava/util/HashMap;
 
@@ -2016,9 +2016,9 @@
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/server/am/D;
+    check-cast v3, Lcom/android/server/am/H;
 
-    iget-object v5, v3, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object v5, v3, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -2039,11 +2039,11 @@
     invoke-virtual {v1, v2, p1}, Lcom/android/server/am/AppRecordTransition;->removeProc(II)V
 
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/server/am/D;->ed()V
+    invoke-virtual {v1}, Lcom/android/server/am/H;->dd()V
 
     iget-object v1, p0, Lcom/android/server/am/tsu;->ln:Ljava/util/HashMap;
 
@@ -2113,7 +2113,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ta(Z)V
+    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ua(Z)V
 
     :cond_0
     invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
@@ -2498,7 +2498,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ta(Z)V
+    invoke-direct {p0, v0}, Lcom/android/server/am/tsu;->ua(Z)V
 
     :cond_0
     invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
@@ -2604,7 +2604,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-virtual {p0, p3}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p3}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v0
 
@@ -2617,12 +2617,12 @@
     :cond_0
     if-eqz p4, :cond_1
 
-    invoke-virtual {v0}, Lcom/android/server/am/D;->ad()V
+    invoke-virtual {v0}, Lcom/android/server/am/H;->_c()V
 
     goto :goto_0
 
     :cond_1
-    invoke-virtual {v0}, Lcom/android/server/am/D;->bd()I
+    invoke-virtual {v0}, Lcom/android/server/am/H;->ad()I
 
     move-result v1
 
@@ -2630,11 +2630,11 @@
 
     if-lt v1, v2, :cond_2
 
-    invoke-virtual {v0}, Lcom/android/server/am/D;->cd()V
+    invoke-virtual {v0}, Lcom/android/server/am/H;->bd()V
 
     :cond_2
     :goto_0
-    invoke-virtual {v0}, Lcom/android/server/am/D;->bd()I
+    invoke-virtual {v0}, Lcom/android/server/am/H;->ad()I
 
     move-result v1
 
@@ -2642,12 +2642,12 @@
 
     if-lez v1, :cond_3
 
-    invoke-virtual {v0, v2}, Lcom/android/server/am/D;->oxb(I)V
+    invoke-virtual {v0, v2}, Lcom/android/server/am/H;->oxb(I)V
 
     goto :goto_1
 
     :cond_3
-    invoke-virtual {v0, v2}, Lcom/android/server/am/D;->fto(I)V
+    invoke-virtual {v0, v2}, Lcom/android/server/am/H;->fto(I)V
 
     :goto_1
     invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ua()Z
@@ -2865,7 +2865,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0, p3}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p3}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v1
 
@@ -2878,33 +2878,33 @@
     :cond_1
     if-eqz p4, :cond_2
 
-    invoke-virtual {v1}, Lcom/android/server/am/D;->ad()V
+    invoke-virtual {v1}, Lcom/android/server/am/H;->_c()V
 
     goto :goto_0
 
     :cond_2
-    invoke-virtual {v1}, Lcom/android/server/am/D;->bd()I
+    invoke-virtual {v1}, Lcom/android/server/am/H;->ad()I
 
     move-result v4
 
     if-lt v4, v2, :cond_3
 
-    invoke-virtual {v1}, Lcom/android/server/am/D;->cd()V
+    invoke-virtual {v1}, Lcom/android/server/am/H;->bd()V
 
     :cond_3
     :goto_0
-    invoke-virtual {v1}, Lcom/android/server/am/D;->bd()I
+    invoke-virtual {v1}, Lcom/android/server/am/H;->ad()I
 
     move-result v2
 
     if-lez v2, :cond_4
 
-    invoke-virtual {v1, v3}, Lcom/android/server/am/D;->oxb(I)V
+    invoke-virtual {v1, v3}, Lcom/android/server/am/H;->oxb(I)V
 
     goto :goto_1
 
     :cond_4
-    invoke-virtual {v1, v3}, Lcom/android/server/am/D;->fto(I)V
+    invoke-virtual {v1, v3}, Lcom/android/server/am/H;->fto(I)V
 
     :goto_1
     invoke-virtual {p0}, Lcom/android/server/am/tsu;->Ua()Z
@@ -3298,7 +3298,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v1
 
@@ -3308,13 +3308,13 @@
 
     const/4 v3, 0x2
 
-    invoke-virtual {v1, v3}, Lcom/android/server/am/D;->oxb(I)V
+    invoke-virtual {v1, v3}, Lcom/android/server/am/H;->oxb(I)V
 
     invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
 
     move-result-object v1
 
-    sget-object v3, Lcom/android/server/am/AppRecordManager$ListenerType;->Rya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v3, Lcom/android/server/am/AppRecordManager$ListenerType;->jza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget v4, p0, Lcom/android/server/am/tsu;->mUid:I
 
@@ -3406,7 +3406,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v1
 
@@ -3416,13 +3416,13 @@
 
     const/4 v3, 0x4
 
-    invoke-virtual {v1, v3}, Lcom/android/server/am/D;->oxb(I)V
+    invoke-virtual {v1, v3}, Lcom/android/server/am/H;->oxb(I)V
 
     invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
 
     move-result-object v1
 
-    sget-object v3, Lcom/android/server/am/AppRecordManager$ListenerType;->Sya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v3, Lcom/android/server/am/AppRecordManager$ListenerType;->kza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget v4, p0, Lcom/android/server/am/tsu;->mUid:I
 
@@ -3508,7 +3508,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v1
 
@@ -3516,13 +3516,13 @@
 
     const/4 v2, 0x2
 
-    invoke-virtual {v1, v2}, Lcom/android/server/am/D;->fto(I)V
+    invoke-virtual {v1, v2}, Lcom/android/server/am/H;->fto(I)V
 
     invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/server/am/AppRecordManager$ListenerType;->Rya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v2, Lcom/android/server/am/AppRecordManager$ListenerType;->jza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget v3, p0, Lcom/android/server/am/tsu;->mUid:I
 
@@ -3618,7 +3618,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p1}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v1
 
@@ -3626,13 +3626,13 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Lcom/android/server/am/D;->fto(I)V
+    invoke-virtual {v1, v2}, Lcom/android/server/am/H;->fto(I)V
 
     invoke-static {}, Lcom/android/server/am/ssp;->getInstance()Lcom/android/server/am/ssp;
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/server/am/AppRecordManager$ListenerType;->Sya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v2, Lcom/android/server/am/AppRecordManager$ListenerType;->kza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget v3, p0, Lcom/android/server/am/tsu;->mUid:I
 
@@ -3960,9 +3960,9 @@
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/server/am/D;
+    check-cast v3, Lcom/android/server/am/H;
 
-    invoke-virtual {v3}, Lcom/android/server/am/D;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/am/H;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -4368,7 +4368,7 @@
 
     if-eqz p3, :cond_1
 
-    new-instance p3, Lcom/android/server/am/D;
+    new-instance p3, Lcom/android/server/am/H;
 
     move-object v2, p3
 
@@ -4384,16 +4384,16 @@
 
     move-object v8, p0
 
-    invoke-direct/range {v2 .. v8}, Lcom/android/server/am/D;-><init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
+    invoke-direct/range {v2 .. v8}, Lcom/android/server/am/H;-><init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
 
     const/high16 p4, 0x40000000    # 2.0f
 
-    invoke-virtual {p3, p4}, Lcom/android/server/am/D;->oxb(I)V
+    invoke-virtual {p3, p4}, Lcom/android/server/am/H;->oxb(I)V
 
     goto :goto_0
 
     :cond_1
-    new-instance p3, Lcom/android/server/am/D;
+    new-instance p3, Lcom/android/server/am/H;
 
     move-object v2, p3
 
@@ -4407,7 +4407,7 @@
 
     move-object v7, p0
 
-    invoke-direct/range {v2 .. v7}, Lcom/android/server/am/D;-><init>(ILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
+    invoke-direct/range {v2 .. v7}, Lcom/android/server/am/H;-><init>(ILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
 
     :goto_0
     iget-object p4, p0, Lcom/android/server/am/tsu;->ln:Ljava/util/HashMap;

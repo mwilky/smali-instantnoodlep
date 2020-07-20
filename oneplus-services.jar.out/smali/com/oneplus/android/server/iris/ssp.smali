@@ -16,13 +16,13 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpIrisConfigController"
 
-.field private static final iqa:I = -0x7f7d7e8e
+.field private static final tqa:I = -0x7f7d7e8e
 
 
 # instance fields
-.field private hqa:Lsis/sis/zta/zta/zta/sis;
-
 .field private final mCallback:Lcom/oneplus/android/server/iris/ssp$zta;
+
+.field private sqa:Lsis/sis/zta/zta/zta/sis;
 
 
 # direct methods
@@ -119,7 +119,7 @@
 
     :cond_1
     :try_start_0
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v3, :cond_2
 
@@ -127,10 +127,10 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iput-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     :cond_2
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v3, :cond_3
 
@@ -165,7 +165,7 @@
     goto :goto_1
 
     :cond_4
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     invoke-interface {p0, p1, v3}, Lsis/sis/zta/zta/zta/sis;->sis(ILjava/util/ArrayList;)I
 
@@ -215,7 +215,7 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v1, :cond_1
 
@@ -223,10 +223,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     :cond_1
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v1, :cond_2
 
@@ -269,7 +269,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     iget-object v3, p0, Lcom/oneplus/android/server/iris/ssp;->mCallback:Lcom/oneplus/android/server/iris/ssp$zta;
 
@@ -388,7 +388,7 @@
 
 
 # virtual methods
-.method public Of()I
+.method public Nf()I
     .locals 1
 
     const/16 v0, 0x38
@@ -446,19 +446,13 @@
 .method public setIrisCommand(Ljava/lang/String;)V
     .locals 6
 
-    sget-boolean v0, Lcom/oneplus/android/server/iris/ssp;->DEBUG:Z
-
-    const-string v1, "OpIrisConfigController"
-
-    if-eqz v0, :cond_0
-
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "setIrisCommand cmd = "
+    const-string v1, "setIrisCommand cmd = "
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -466,32 +460,33 @@
 
     move-result-object v0
 
+    const-string v1, "OpIrisConfigController"
+
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_0
-    if-nez p1, :cond_1
+    if-nez p1, :cond_0
 
     return-void
 
-    :cond_1
+    :cond_0
     const-string v0, "-"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_1
 
     array-length v0, p1
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_2
 
-    :cond_2
+    :cond_1
     const-string v0, "setIrisCommand Failed, cmd string is empty"
 
     invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3
+    :cond_2
     const/4 v0, 0x0
 
     aget-object v2, p1, v0
@@ -509,7 +504,7 @@
     :goto_0
     array-length v4, v3
 
-    if-ge v0, v4, :cond_4
+    if-ge v0, v4, :cond_3
 
     add-int/lit8 v4, v0, 0x1
 
@@ -525,14 +520,14 @@
 
     goto :goto_0
 
-    :cond_4
+    :cond_3
     array-length p1, v3
 
     invoke-direct {p0, v2, v3, p1}, Lcom/oneplus/android/server/iris/ssp;->cno(I[II)I
 
     move-result p0
 
-    if-gez p0, :cond_5
+    if-gez p0, :cond_4
 
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -550,7 +545,7 @@
 
     invoke-static {v1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5
+    :cond_4
     return-void
 .end method
 
@@ -560,7 +555,7 @@
     const-string v0, "OpIrisConfigController"
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     if-nez v1, :cond_0
 
@@ -568,10 +563,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iput-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     :cond_0
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     if-eqz v1, :cond_1
 
@@ -579,7 +574,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->hqa:Lsis/sis/zta/zta/zta/sis;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/ssp;->sqa:Lsis/sis/zta/zta/zta/sis;
 
     const-wide/32 v1, -0x7f7d7e8e
 

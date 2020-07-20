@@ -8,29 +8,29 @@
 
 .field private static final ADDITIONAL_EC_PARAMETERS:I = 0x20
 
-.field private static final ADa:Ljava/lang/String; = "threadlocaldhdefaultparams"
-
 .field private static final ALL:I = 0x3f
-
-.field private static final BDa:Ljava/lang/String; = "dhdefaultparams"
-
-.field private static final CDa:Ljava/lang/String; = "acceptableeccurves"
-
-.field private static final DDa:Ljava/lang/String; = "additionalecparameters"
 
 .field private static final DH_DEFAULT_PARAMS:I = 0x8
 
 .field private static final EC_IMPLICITLY_CA:I = 0x2
 
-.field private static final EDa:Ljava/lang/String; = "all"
+.field private static final TDa:Ljava/lang/String; = "threadlocalecimplicitlyca"
 
 .field private static final THREAD_LOCAL_DH_DEFAULT_PARAMS:I = 0x4
 
 .field private static final THREAD_LOCAL_EC_IMPLICITLY_CA:I = 0x1
 
-.field private static final yDa:Ljava/lang/String; = "threadlocalecimplicitlyca"
+.field private static final UDa:Ljava/lang/String; = "ecimplicitlyca"
 
-.field private static final zDa:Ljava/lang/String; = "ecimplicitlyca"
+.field private static final VDa:Ljava/lang/String; = "threadlocaldhdefaultparams"
+
+.field private static final WDa:Ljava/lang/String; = "dhdefaultparams"
+
+.field private static final XDa:Ljava/lang/String; = "acceptableeccurves"
+
+.field private static final YDa:Ljava/lang/String; = "additionalecparameters"
+
+.field private static final ZDa:Ljava/lang/String; = "all"
 
 
 # instance fields
@@ -63,7 +63,7 @@
 
     iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission;->actions:Ljava/lang/String;
 
-    invoke-direct {p0, p2}, Lorg/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission;->rd(Ljava/lang/String;)I
+    invoke-direct {p0, p2}, Lorg/bouncycastle/jcajce/provider/config/ProviderConfigurationPermission;->td(Ljava/lang/String;)I
 
     move-result p1
 
@@ -72,7 +72,7 @@
     return-void
 .end method
 
-.method private rd(Ljava/lang/String;)I
+.method private td(Ljava/lang/String;)I
     .locals 2
 
     new-instance p0, Ljava/util/StringTokenizer;

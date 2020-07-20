@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private Nma:Ljava/util/ArrayList;
+.field private Yma:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -33,7 +33,7 @@
     .end annotation
 .end field
 
-.field private Oma:Lcom/oneplus/config/ConfigGrabber;
+.field private Zma:Lcom/oneplus/config/ConfigGrabber;
 
 .field private mConfigs:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -77,7 +77,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/zta;->Oma:Lcom/oneplus/config/ConfigGrabber;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/zta;->Zma:Lcom/oneplus/config/ConfigGrabber;
 
     iput-object v0, p0, Lcom/oneplus/android/server/sis/zta;->mObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -102,7 +102,7 @@
 
     invoke-direct {v0, p1, v1}, Lcom/oneplus/config/ConfigGrabber;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/sis/zta;->Oma:Lcom/oneplus/config/ConfigGrabber;
+    iput-object v0, p0, Lcom/oneplus/android/server/sis/zta;->Zma:Lcom/oneplus/config/ConfigGrabber;
 
     new-instance v0, Lcom/oneplus/config/ConfigObserver;
 
@@ -120,18 +120,18 @@
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/sis/zta;->Nma:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/oneplus/android/server/sis/zta;->Yma:Ljava/util/ArrayList;
 
     return-void
 .end method
 
-.method private Pu()V
+.method private Qu()V
     .locals 4
 
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/zta;->Nma:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/zta;->Yma:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -139,7 +139,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v1, p0, Lcom/oneplus/android/server/sis/zta;->Nma:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/sis/zta;->Yma:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -250,7 +250,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/sis/zta;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/sis/zta;->Pu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/sis/zta;->Qu()V
 
     return-void
 .end method
@@ -299,7 +299,7 @@
     return-void
 .end method
 
-.method public kf()V
+.method public jf()V
     .locals 2
 
     sget-boolean v0, Lcom/oneplus/android/server/sis/zta;->DEBUG:Z
@@ -313,7 +313,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/oneplus/android/server/sis/zta;->Oma:Lcom/oneplus/config/ConfigGrabber;
+    iget-object v0, p0, Lcom/oneplus/android/server/sis/zta;->Zma:Lcom/oneplus/config/ConfigGrabber;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigGrabber;->grabAllConfig()Ljava/util/HashMap;
 
@@ -374,7 +374,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget-object p0, p0, Lcom/oneplus/android/server/sis/zta;->Nma:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/sis/zta;->Yma:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

@@ -15,43 +15,45 @@
 
 
 # instance fields
-.field Ica:Ljava/lang/String;
-
-.field Jca:J
-
-.field Kca:J
-
-.field Lca:Z
-
-.field Mca:I
-
-.field Nca:D
-
-.field Oca:J
-
-.field Pca:J
-
-.field Qca:I
-
-.field Rca:D
-
-.field Sca:J
+.field Sca:Ljava/lang/String;
 
 .field Tca:J
 
 .field Uca:J
 
-.field Vca:I
+.field Vca:Z
 
-.field Wca:D
+.field Wca:I
 
-.field Xca:J
+.field Xca:D
 
 .field Yca:J
 
 .field Zca:J
 
-.field _ca:Ljava/util/ArrayList;
+.field _ca:I
+
+.field ada:D
+
+.field bda:J
+
+.field cda:J
+
+.field dda:J
+
+.field duration:J
+
+.field eda:I
+
+.field fda:D
+
+.field gda:J
+
+.field hda:J
+
+.field ida:J
+
+.field jda:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -61,7 +63,7 @@
     .end annotation
 .end field
 
-.field ada:Ljava/util/ArrayList;
+.field kda:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -71,7 +73,7 @@
     .end annotation
 .end field
 
-.field bda:Ljava/util/ArrayList;
+.field lda:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -81,7 +83,7 @@
     .end annotation
 .end field
 
-.field cda:Ljava/util/HashMap;
+.field mda:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -92,7 +94,7 @@
     .end annotation
 .end field
 
-.field dda:Ljava/util/HashMap;
+.field nda:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -103,9 +105,7 @@
     .end annotation
 .end field
 
-.field duration:J
-
-.field eda:Ljava/util/ArrayList;
+.field oda:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -115,7 +115,7 @@
     .end annotation
 .end field
 
-.field fda:Ljava/util/ArrayList;
+.field pda:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -125,7 +125,7 @@
     .end annotation
 .end field
 
-.field gda:Ljava/util/HashMap;
+.field qda:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -149,97 +149,97 @@
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Ica:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Sca:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
-
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Jca:J
-
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Kca:J
-
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->duration:J
-
-    const/4 p1, 0x0
-
-    iput-boolean p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Lca:Z
-
-    iput p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Mca:I
-
-    const-wide/16 v2, 0x0
-
-    iput-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Nca:D
-
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Oca:J
-
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Pca:J
-
-    iput p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Qca:I
-
-    iput-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Rca:D
-
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Sca:J
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Tca:J
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Uca:J
 
-    iput p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Vca:I
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->duration:J
 
-    iput-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Wca:D
+    const/4 p1, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Xca:J
+    iput-boolean p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Vca:Z
+
+    iput p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Wca:I
+
+    const-wide/16 v2, 0x0
+
+    iput-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Xca:D
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Yca:J
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Zca:J
 
+    iput p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->_ca:I
+
+    iput-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:D
+
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:J
+
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->cda:J
+
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->dda:J
+
+    iput p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->eda:I
+
+    iput-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->fda:D
+
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->gda:J
+
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->hda:J
+
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ida:J
+
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->_ca:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->jda:Ljava/util/ArrayList;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->kda:Ljava/util/ArrayList;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->lda:Ljava/util/ArrayList;
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->cda:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mda:Ljava/util/HashMap;
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->dda:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->nda:Ljava/util/HashMap;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->eda:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->oda:Ljava/util/ArrayList;
 
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->fda:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->pda:Ljava/util/ArrayList;
 
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->gda:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->qda:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -279,7 +279,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Ica:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Sca:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -297,7 +297,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Jca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Tca:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -315,7 +315,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Kca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Uca:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -373,7 +373,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Mca:I
+    iget v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Wca:I
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -391,7 +391,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Nca:D
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Xca:D
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -409,7 +409,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Oca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Yca:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -427,7 +427,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Pca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Zca:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -445,7 +445,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Qca:I
+    iget v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->_ca:I
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -463,7 +463,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Rca:D
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:D
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -481,7 +481,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Sca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -499,7 +499,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Tca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->cda:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -517,7 +517,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Uca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->dda:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -535,7 +535,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Vca:I
+    iget v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->eda:I
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -553,7 +553,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Wca:D
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->fda:D
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -571,7 +571,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Xca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->gda:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -589,7 +589,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Yca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->hda:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -607,7 +607,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Zca:J
+    iget-wide v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ida:J
 
     invoke-virtual {p1, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -625,7 +625,7 @@
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->_ca:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->jda:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -644,7 +644,7 @@
     move v1, p1
 
     :goto_0
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->_ca:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->jda:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -654,7 +654,7 @@
 
     if-ge v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->_ca:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->jda:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -699,7 +699,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->kda:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -716,7 +716,7 @@
     move v1, p1
 
     :goto_1
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->kda:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -724,7 +724,7 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->kda:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -769,7 +769,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->lda:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -786,7 +786,7 @@
     move v1, p1
 
     :goto_2
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->lda:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -806,7 +806,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->lda:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -835,7 +835,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->cda:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mda:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->size()I
 
@@ -849,7 +849,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->cda:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mda:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -874,7 +874,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->cda:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->mda:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -924,7 +924,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->dda:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->nda:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->size()I
 
@@ -938,7 +938,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->dda:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->nda:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -963,7 +963,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->dda:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->nda:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1005,7 +1005,7 @@
     goto :goto_4
 
     :cond_6
-    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->gda:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->qda:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 

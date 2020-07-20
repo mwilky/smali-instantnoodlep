@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field private ZEa:I
+.field private TFa:I
+
+.field private UFa:I
 
 .field private scheme:I
 
-.field private yFa:I
-
-.field private zFa:I
+.field private tFa:I
 
 
 # direct methods
@@ -64,11 +64,11 @@
 
     iput p2, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->scheme:I
 
-    iput p4, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->ZEa:I
+    iput p4, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->tFa:I
 
-    iput p5, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->yFa:I
+    iput p5, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->TFa:I
 
-    iput p3, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->zFa:I
+    iput p3, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->UFa:I
 
     return-void
 .end method
@@ -181,21 +181,21 @@
 
     if-lez p1, :cond_0
 
-    iget v6, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->ZEa:I
+    iget v6, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->tFa:I
 
     if-eqz v6, :cond_0
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->rFa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->wFa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->RFa:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->scheme:I
 
-    iget v5, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->zFa:I
+    iget v5, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->UFa:I
 
-    iget v7, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->yFa:I
+    iget v7, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->TFa:I
 
     const/4 v9, 0x0
 
@@ -240,7 +240,7 @@
 
     check-cast p1, Lorg/bouncycastle/jcajce/sis/sis;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/sis/sis;->ph()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {p1}, Lorg/bouncycastle/jcajce/sis/sis;->qh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object p1
 
@@ -266,9 +266,9 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->rFa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->wFa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->RFa:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->scheme:I
 
@@ -279,7 +279,7 @@
     return-object p1
 
     :cond_1
-    iget v5, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->zFa:I
+    iget v5, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->UFa:I
 
     invoke-virtual {v8}, Ljavax/crypto/spec/PBEKeySpec;->getKeyLength()I
 
@@ -295,9 +295,9 @@
 
     new-instance p1, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->rFa:Ljava/lang/String;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->wFa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->RFa:Lorg/bouncycastle/asn1/bvj;
 
     iget v4, p0, Lorg/bouncycastle/jcajce/you/tsu/bio$zta;->scheme:I
 

@@ -28,7 +28,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/openid/you;->ad:Lcom/oneplus/android/server/openid/cno;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/openid/cno;->ag()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/openid/cno;->bg()V
 
     return-void
 .end method

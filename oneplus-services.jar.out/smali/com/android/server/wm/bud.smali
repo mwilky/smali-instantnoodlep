@@ -1,9 +1,6 @@
-.class Lcom/android/server/wm/bud;
+.class synthetic Lcom/android/server/wm/bud;
 .super Ljava/lang/Object;
 .source ""
-
-# interfaces
-.implements Landroid/app/AlarmManager$OnAlarmListener;
 
 
 # annotations
@@ -12,76 +9,386 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1008
     name = null
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+# static fields
+.field static final synthetic eca:[I
+
+.field static final synthetic fca:[I
+
+.field static final synthetic gca:[I
+
+.field static final synthetic hca:[I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/OpPowerConsumpStats;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
-    iput-object p1, p0, Lcom/android/server/wm/bud;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onAlarm()V
-    .locals 2
-
-    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->access$100()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string p0, "OPCS"
-
-    const-string v0, "# mCalculateAlarmListener # sENABLE false, return"
-
-    invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/bud;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
-
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->oif(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/os/Handler;
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->values()[Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
     move-result-object v0
 
-    const/4 v1, 0x7
+    array-length v0, v0
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
+    new-array v0, v0, [I
 
-    move-result v0
+    sput-object v0, Lcom/android/server/wm/bud;->hca:[I
 
-    if-eqz v0, :cond_1
+    const/4 v0, 0x1
 
-    iget-object v0, p0, Lcom/android/server/wm/bud;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+    :try_start_0
+    sget-object v1, Lcom/android/server/wm/bud;->hca:[I
 
-    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->oif(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/os/Handler;
+    sget-object v2, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->UPDATE:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+    move-result v2
 
-    :cond_1
-    iget-object p0, p0, Lcom/android/server/wm/bud;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+    aput v0, v1, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->oif(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/os/Handler;
+    :catch_0
+    const/4 v1, 0x2
 
-    move-result-object p0
+    :try_start_1
+    sget-object v2, Lcom/android/server/wm/bud;->hca:[I
 
-    invoke-virtual {p0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->Cza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    aput v1, v2, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    invoke-static {}, Lcom/android/internal/os/BatterySipper$DrainType;->values()[Lcom/android/internal/os/BatterySipper$DrainType;
+
+    move-result-object v2
+
+    array-length v2, v2
+
+    new-array v2, v2, [I
+
+    sput-object v2, Lcom/android/server/wm/bud;->gca:[I
+
+    :try_start_2
+    sget-object v2, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v3, Lcom/android/internal/os/BatterySipper$DrainType;->AMBIENT_DISPLAY:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v3}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v3
+
+    aput v0, v2, v3
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v2, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v3, Lcom/android/internal/os/BatterySipper$DrainType;->APP:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v3}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v3
+
+    aput v1, v2, v3
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    const/4 v2, 0x3
+
+    :try_start_4
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->BLUETOOTH:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    aput v2, v3, v4
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->CAMERA:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/4 v5, 0x4
+
+    aput v5, v3, v4
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->CELL:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/4 v5, 0x5
+
+    aput v5, v3, v4
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    :try_start_7
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->FLASHLIGHT:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/4 v5, 0x6
+
+    aput v5, v3, v4
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
+    :try_start_8
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->IDLE:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/4 v5, 0x7
+
+    aput v5, v3, v4
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    :catch_8
+    :try_start_9
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->MEMORY:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0x8
+
+    aput v5, v3, v4
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    :catch_9
+    :try_start_a
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->OVERCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0x9
+
+    aput v5, v3, v4
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :try_start_b
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->PHONE:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0xa
+
+    aput v5, v3, v4
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    :catch_b
+    :try_start_c
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->SCREEN:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0xb
+
+    aput v5, v3, v4
+    :try_end_c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+
+    :catch_c
+    :try_start_d
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->UNACCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0xc
+
+    aput v5, v3, v4
+    :try_end_d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+
+    :catch_d
+    :try_start_e
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->USER:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0xd
+
+    aput v5, v3, v4
+    :try_end_e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
+
+    :catch_e
+    :try_start_f
+    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+
+    sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->WIFI:Lcom/android/internal/os/BatterySipper$DrainType;
+
+    invoke-virtual {v4}, Lcom/android/internal/os/BatterySipper$DrainType;->ordinal()I
+
+    move-result v4
+
+    const/16 v5, 0xe
+
+    aput v5, v3, v4
+    :try_end_f
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
+
+    :catch_f
+    invoke-static {}, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->values()[Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
+
+    move-result-object v3
+
+    array-length v3, v3
+
+    new-array v3, v3, [I
+
+    sput-object v3, Lcom/android/server/wm/bud;->fca:[I
+
+    :try_start_10
+    sget-object v3, Lcom/android/server/wm/bud;->fca:[I
+
+    sget-object v4, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->BY_DROP:Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
+
+    invoke-virtual {v4}, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->ordinal()I
+
+    move-result v4
+
+    aput v0, v3, v4
+    :try_end_10
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
+
+    :catch_10
+    :try_start_11
+    sget-object v3, Lcom/android/server/wm/bud;->fca:[I
+
+    sget-object v4, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->BY_RUN:Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
+
+    invoke-virtual {v4}, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->ordinal()I
+
+    move-result v4
+
+    aput v1, v3, v4
+    :try_end_11
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
+
+    :catch_11
+    :try_start_12
+    sget-object v3, Lcom/android/server/wm/bud;->fca:[I
+
+    sget-object v4, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->BY_AC:Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
+
+    invoke-virtual {v4}, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->ordinal()I
+
+    move-result v4
+
+    aput v2, v3, v4
+    :try_end_12
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
+
+    :catch_12
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->values()[Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+
+    move-result-object v2
+
+    array-length v2, v2
+
+    new-array v2, v2, [I
+
+    sput-object v2, Lcom/android/server/wm/bud;->eca:[I
+
+    :try_start_13
+    sget-object v2, Lcom/android/server/wm/bud;->eca:[I
+
+    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->wza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    aput v0, v2, v3
+    :try_end_13
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
+
+    :catch_13
+    :try_start_14
+    sget-object v0, Lcom/android/server/wm/bud;->eca:[I
+
+    sget-object v2, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->xza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aput v1, v0, v2
+    :try_end_14
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
+
+    :catch_14
     return-void
 .end method

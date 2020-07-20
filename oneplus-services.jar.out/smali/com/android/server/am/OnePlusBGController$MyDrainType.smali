@@ -45,7 +45,7 @@
 
 .field public static final enum WIFI:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
-.field public static final enum _ya:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+.field public static final enum sza:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
 
 # direct methods
@@ -90,7 +90,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/am/OnePlusBGController$MyDrainType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$MyDrainType;->_ya:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$MyDrainType;->sza:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
@@ -178,7 +178,7 @@
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$MyDrainType;->_ya:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$MyDrainType;->sza:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
     aput-object v1, v0, v4
 

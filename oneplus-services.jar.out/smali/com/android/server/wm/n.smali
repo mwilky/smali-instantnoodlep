@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/hardware/display/DisplayManager$DisplayListener;
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/p;-><init>(Landroid/content/Context;)V
+    value = Lcom/android/server/wm/p;->pc(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,24 +34,55 @@
 
 
 # virtual methods
-.method public onDisplayAdded(I)V
-    .locals 0
+.method public onGlobalLayout()V
+    .locals 1
 
-    return-void
-.end method
+    iget-object v0, p0, Lcom/android/server/wm/n;->this$0:Lcom/android/server/wm/p;
 
-.method public onDisplayChanged(I)V
-    .locals 0
+    iget-object v0, v0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     iget-object p0, p0, Lcom/android/server/wm/n;->this$0:Lcom/android/server/wm/p;
 
-    invoke-virtual {p0}, Lcom/android/server/wm/p;->updateOrientation()V
+    iget-object p0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
 
-    return-void
-.end method
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
-.method public onDisplayRemoved(I)V
-    .locals 0
+    move-result p0
 
+    sput p0, Lcom/android/server/wm/p;->uha:I
+
+    sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz p0, :cond_0
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "sIMEButtonSize = "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v0, Lcom/android/server/wm/p;->uha:I
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OpQuickReply"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
     return-void
 .end method

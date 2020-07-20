@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private sGa:I
+.field private NGa:I
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iput v0, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iput p1, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iput p1, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     return-void
 .end method
@@ -53,7 +53,7 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iput p1, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     return-void
 .end method
@@ -67,12 +67,12 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iput p1, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     return-void
 .end method
 
-.method private Gw()I
+.method private Iw()I
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -80,13 +80,13 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     if-gez v0, :cond_1
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Kh()Ljava/util/Enumeration;
 
     move-result-object v1
 
@@ -107,11 +107,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/vdb;->vh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/vdb;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/vdb;->uh()I
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/vdb;->vh()I
 
     move-result v2
 
@@ -120,17 +120,17 @@
     goto :goto_0
 
     :cond_0
-    iput v0, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iput v0, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     :cond_1
-    iget p0, p0, Lorg/bouncycastle/asn1/I;->sGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/I;->NGa:I
 
     return p0
 .end method
 
 
 # virtual methods
-.method uh()I
+.method vh()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -138,7 +138,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/I;->Gw()I
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/I;->Iw()I
 
     move-result p0
 
@@ -161,11 +161,11 @@
         }
     .end annotation
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ugm;->Qj()Lorg/bouncycastle/asn1/ugm;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ugm;->Rj()Lorg/bouncycastle/asn1/ugm;
 
     move-result-object v0
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/I;->Gw()I
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/I;->Iw()I
 
     move-result v1
 
@@ -175,7 +175,7 @@
 
     invoke-virtual {p1, v1}, Lorg/bouncycastle/asn1/ugm;->la(I)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ear;->Kh()Ljava/util/Enumeration;
 
     move-result-object p0
 

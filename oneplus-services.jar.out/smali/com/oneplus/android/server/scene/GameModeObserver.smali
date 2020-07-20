@@ -128,7 +128,7 @@
 
     iget-boolean p0, p0, Lcom/oneplus/android/server/scene/GameModeObserver;->mModeOn:Z
 
-    invoke-virtual {p1, p0}, Lcom/android/server/backlight/OpBacklightManager;->e(Z)V
+    invoke-virtual {p1, p0}, Lcom/android/server/backlight/OpBacklightManager;->d(Z)V
 
     const/4 p0, 0x0
 
@@ -159,7 +159,7 @@
 
     iget-boolean p0, p0, Lcom/oneplus/android/server/scene/GameModeObserver;->mModeOn:Z
 
-    invoke-virtual {v0, p0}, Lcom/android/server/backlight/OpBacklightManager;->e(Z)V
+    invoke-virtual {v0, p0}, Lcom/android/server/backlight/OpBacklightManager;->d(Z)V
 
     return p1
 .end method

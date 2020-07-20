@@ -12,7 +12,7 @@
     return-void
 .end method
 
-.method private static Gd(I)I
+.method private static Hd(I)I
     .locals 2
 
     const/4 v0, 0x0
@@ -328,7 +328,7 @@
     :cond_0
     aget v3, p1, v1
 
-    invoke-static {v3}, Lyou/zta/sis/sis/you;->Gd(I)I
+    invoke-static {v3}, Lyou/zta/sis/sis/you;->Hd(I)I
 
     move-result v3
 

@@ -2968,17 +2968,17 @@
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/OnePlusPerfManager;->autoAcquireOrRelease(Z)Z
 
-    invoke-static {}, Lcom/android/server/am/qeg;->getInstance()Lcom/android/server/am/qeg;
+    invoke-static {}, Lcom/android/server/am/c;->getInstance()Lcom/android/server/am/c;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    invoke-static {}, Lcom/android/server/am/qeg;->getInstance()Lcom/android/server/am/qeg;
+    invoke-static {}, Lcom/android/server/am/c;->getInstance()Lcom/android/server/am/c;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/qeg;->screenStateChangedEvent(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/c;->screenStateChangedEvent(Z)V
 
     :cond_0
     invoke-static {p1}, Lcom/android/server/am/OpBGFrozenInjector;->screenStateChangedEvent(Z)V
@@ -3010,17 +3010,17 @@
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/OnePlusPerfManager;->autoAcquireOrRelease(Z)Z
 
-    invoke-static {}, Lcom/android/server/am/qeg;->getInstance()Lcom/android/server/am/qeg;
+    invoke-static {}, Lcom/android/server/am/c;->getInstance()Lcom/android/server/am/c;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    invoke-static {}, Lcom/android/server/am/qeg;->getInstance()Lcom/android/server/am/qeg;
+    invoke-static {}, Lcom/android/server/am/c;->getInstance()Lcom/android/server/am/c;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/qeg;->screenStateChangedEvent(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/c;->screenStateChangedEvent(Z)V
 
     :cond_0
     invoke-static {p1}, Lcom/android/server/am/OpBGFrozenInjector;->screenStateChangedEvent(Z)V
@@ -3860,7 +3860,7 @@
 
     if-eqz v3, :cond_11
 
-    sget-object v3, Lcom/android/server/policy/dma;->yO:[I
+    sget-object v3, Lcom/android/server/policy/dma;->GO:[I
 
     sget-object v21, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
@@ -5287,7 +5287,7 @@
 
     if-eqz v4, :cond_1d
 
-    sget-object v4, Lcom/android/server/policy/dma;->yO:[I
+    sget-object v4, Lcom/android/server/policy/dma;->GO:[I
 
     sget-object v5, Lcom/android/server/policy/OpPhoneWindowManager;->mKeyLockMode:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
@@ -6723,7 +6723,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Bd()V
+    invoke-virtual {p0}, Lcom/android/server/policy/kth;->Ad()V
 
     :cond_0
     return-void
@@ -7001,7 +7001,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->jza:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
+    sget-object v1, Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;->Fza:Lcom/android/server/policy/OpPhoneWindowManager$KeyLockMode;
 
     goto :goto_0
 

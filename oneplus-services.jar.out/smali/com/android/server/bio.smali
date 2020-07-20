@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method private eb(Ljava/lang/String;)V
+.method private fb(Ljava/lang/String;)V
     .locals 0
 
     iget-object p0, p0, Lcom/android/server/bio;->mLocalLog:Landroid/util/LocalLog;

@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final n_a:I = 0x0
+.field public static final I_a:I = 0x0
 
-.field public static final o_a:I = 0x1
+.field public static final J_a:I = 0x1
 
-.field public static final p_a:I = 0x2
+.field public static final K_a:I = 0x2
 
 
 # direct methods

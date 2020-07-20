@@ -234,7 +234,7 @@
     return-void
 .end method
 
-.method private Km()Ljava/lang/String;
+.method private Lm()Ljava/lang/String;
     .locals 3
 
     iget-object p0, p0, Lcom/android/server/u;->mImm:Landroid/view/inputmethod/InputMethodManager;
@@ -304,7 +304,7 @@
     return-object p0
 .end method
 
-.method private Lm()Ljava/lang/String;
+.method private Mm()Ljava/lang/String;
     .locals 2
 
     new-instance v0, Landroid/content/Intent;
@@ -332,7 +332,7 @@
     return-object p0
 .end method
 
-.method private Mm()Ljava/lang/String;
+.method private Nm()Ljava/lang/String;
     .locals 3
 
     const/4 v0, 0x0
@@ -388,7 +388,7 @@
     return-object v0
 .end method
 
-.method private Nm()V
+.method private Om()V
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/u;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
@@ -424,7 +424,7 @@
     return-void
 .end method
 
-.method private Om()V
+.method private Pm()V
     .locals 5
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -476,7 +476,7 @@
     move-object v0, v1
 
     :goto_1
-    invoke-direct {p0}, Lcom/android/server/u;->Km()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/u;->Lm()Ljava/lang/String;
 
     move-result-object v2
 
@@ -489,7 +489,7 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/u;->Lm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/u;->Mm()Ljava/lang/String;
 
     move-result-object v2
 
@@ -502,7 +502,7 @@
     invoke-virtual {v0, v2}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_4
-    invoke-direct {p0}, Lcom/android/server/u;->Mm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/u;->Nm()Ljava/lang/String;
 
     move-result-object v2
 
@@ -583,7 +583,7 @@
     invoke-virtual {v0, v1}, Landroid/util/TimingLogger;->addSplit(Ljava/lang/String;)V
 
     :cond_8
-    invoke-direct {p0}, Lcom/android/server/u;->Nm()V
+    invoke-direct {p0}, Lcom/android/server/u;->Om()V
 
     if-eqz v0, :cond_9
 
@@ -597,7 +597,7 @@
     return-void
 .end method
 
-.method private Pm()V
+.method private Qm()V
     .locals 2
 
     new-instance v0, Landroid/content/Intent;
@@ -622,7 +622,7 @@
     return-void
 .end method
 
-.method private Qm()V
+.method private Rm()V
     .locals 3
 
     monitor-enter p0
@@ -810,7 +810,7 @@
     return-object v0
 .end method
 
-.method private kb(Ljava/lang/String;)V
+.method private lb(Ljava/lang/String;)V
     .locals 1
 
     sget-object p0, Lcom/android/server/u;->Tj:Lcom/android/server/OpPowerControllerService;
@@ -861,14 +861,14 @@
     return-void
 .end method
 
-.method private lb(Ljava/lang/String;)Z
+.method private mb(Ljava/lang/String;)Z
     .locals 3
 
     sget-object v0, Lcom/android/server/u;->Wj:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/u;->Km()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/u;->Lm()Ljava/lang/String;
 
     move-result-object v0
 
@@ -879,7 +879,7 @@
 
     if-nez v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/u;->Lm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/u;->Mm()Ljava/lang/String;
 
     move-result-object v0
 
@@ -890,7 +890,7 @@
 
     if-nez v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/u;->Mm()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/u;->Nm()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1021,7 +1021,7 @@
     return p0
 .end method
 
-.method private mb(Ljava/lang/String;)I
+.method private nb(Ljava/lang/String;)I
     .locals 2
 
     const/4 v0, -0x1
@@ -1047,7 +1047,7 @@
     return v0
 .end method
 
-.method private nb(Ljava/lang/String;)Z
+.method private ob(Ljava/lang/String;)Z
     .locals 3
 
     const/4 v0, 0x0
@@ -1423,7 +1423,7 @@
 .method private zta(ILjava/lang/String;I)V
     .locals 2
 
-    invoke-direct {p0, p2}, Lcom/android/server/u;->nb(Ljava/lang/String;)Z
+    invoke-direct {p0, p2}, Lcom/android/server/u;->ob(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1448,7 +1448,7 @@
 .method static synthetic zta(Lcom/android/server/u;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/u;->Qm()V
+    invoke-direct {p0}, Lcom/android/server/u;->Rm()V
 
     return-void
 .end method
@@ -2049,9 +2049,9 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/u;->Om()V
+    invoke-direct {p0}, Lcom/android/server/u;->Pm()V
 
-    invoke-direct {p0, p1}, Lcom/android/server/u;->lb(Ljava/lang/String;)Z
+    invoke-direct {p0, p1}, Lcom/android/server/u;->mb(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2361,7 +2361,7 @@
 
     invoke-virtual {p0}, Lcom/android/server/u;->ua()V
 
-    invoke-direct {p0}, Lcom/android/server/u;->Qm()V
+    invoke-direct {p0}, Lcom/android/server/u;->Rm()V
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -2619,7 +2619,7 @@
     :try_start_0
     iput-object p1, p0, Lcom/android/server/u;->Sj:[I
 
-    invoke-direct {p0}, Lcom/android/server/u;->Qm()V
+    invoke-direct {p0}, Lcom/android/server/u;->Rm()V
 
     monitor-exit p0
 
@@ -2706,7 +2706,7 @@
 .method public sis(Ljava/io/PrintWriter;)V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/u;->Om()V
+    invoke-direct {p0}, Lcom/android/server/u;->Pm()V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3231,7 +3231,7 @@
 
     or-int/2addr p2, v0
 
-    invoke-direct {p0, p1}, Lcom/android/server/u;->kb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/u;->lb(Ljava/lang/String;)V
 
     monitor-exit p0
 
@@ -3292,11 +3292,11 @@
     :goto_0
     if-eqz p2, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/u;->Qm()V
+    invoke-direct {p0}, Lcom/android/server/u;->Rm()V
 
     invoke-virtual {p0}, Lcom/android/server/u;->writeConfigFileLocked()V
 
-    invoke-direct {p0}, Lcom/android/server/u;->Pm()V
+    invoke-direct {p0}, Lcom/android/server/u;->Qm()V
 
     :cond_3
     sget-boolean p0, Lcom/android/server/u;->DEBUG_ONEPLUS:Z

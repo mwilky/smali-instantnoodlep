@@ -337,7 +337,7 @@
 
     iget-object p0, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    sget-object p1, Lcom/android/server/OpPowerControllerService$TriggerType;->Dya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object p1, Lcom/android/server/OpPowerControllerService$TriggerType;->Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     invoke-static {p0, p1}, Lcom/android/server/OpPowerControllerService;->access$4600(Lcom/android/server/OpPowerControllerService;Lcom/android/server/OpPowerControllerService$TriggerType;)V
 
@@ -553,11 +553,11 @@
     goto/16 :goto_b
 
     :pswitch_3
-    invoke-static {}, Lcom/android/server/am/i;->getInstance()Lcom/android/server/am/i;
+    invoke-static {}, Lcom/android/server/am/m;->getInstance()Lcom/android/server/am/m;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/android/server/am/i;->Mc()V
+    invoke-virtual {p0}, Lcom/android/server/am/m;->Lc()V
 
     goto/16 :goto_b
 
@@ -688,7 +688,7 @@
 
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Eya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     invoke-static {p1, v0}, Lcom/android/server/OpPowerControllerService;->access$4600(Lcom/android/server/OpPowerControllerService;Lcom/android/server/OpPowerControllerService$TriggerType;)V
 

@@ -2100,7 +2100,7 @@
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/server/am/D;
+    check-cast v5, Lcom/android/server/am/H;
 
     invoke-static {}, Lcom/android/server/am/AppRecordTransition;->getInstance()Lcom/android/server/am/AppRecordTransition;
 
@@ -2108,7 +2108,7 @@
 
     iget v7, v3, Lcom/android/server/am/tsu;->mUid:I
 
-    iget v8, v5, Lcom/android/server/am/D;->mPid:I
+    iget v8, v5, Lcom/android/server/am/H;->mPid:I
 
     invoke-virtual {v6, v7, v8}, Lcom/android/server/am/AppRecordTransition;->isPersistProcess(II)Z
 
@@ -2119,7 +2119,7 @@
     goto :goto_1
 
     :cond_4
-    invoke-virtual {v5}, Lcom/android/server/am/D;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/android/server/am/H;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -2274,7 +2274,7 @@
 
     check-cast v1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {v1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {v1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v2
 
@@ -2744,7 +2744,7 @@
 
     check-cast p1, Lcom/android/server/am/tsu;
 
-    invoke-virtual {p1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v0
 
@@ -4199,13 +4199,13 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/android/server/am/D;->dd()V
+    invoke-virtual {v0}, Lcom/android/server/am/H;->cd()V
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/tsu;->notePSSChanged(II)V
 

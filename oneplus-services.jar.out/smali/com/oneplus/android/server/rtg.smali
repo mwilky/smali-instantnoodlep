@@ -4,71 +4,71 @@
 
 
 # static fields
-.field private static final Aia:I = 0x1
+.field private static final Kia:I = 0x0
 
-.field private static final Bia:I = 0x2
+.field private static final Lia:I = 0x1
 
-.field private static final Cia:I = 0xc
+.field private static final Mia:I = 0x2
 
-.field private static final Dia:I = 0xb
+.field private static final Nia:I = 0xc
 
-.field private static final Eia:I = 0x2
+.field private static final Oia:I = 0xb
 
-.field private static final Fia:I = 0x3
+.field private static final Pia:I = 0x2
 
-.field private static final Gia:I = 0x4
+.field private static final Qia:I = 0x3
 
-.field private static final Hia:I = 0x5
+.field private static final Ria:I = 0x4
 
-.field public static final Iia:I = 0x6
-
-.field public static final Jia:I = 0x7
-
-.field public static final Kia:I = 0x8
-
-.field public static final Lia:I = 0x9
-
-.field public static final Mia:I = 0xa
-
-.field public static final Nia:I = 0xb
-
-.field private static final Oia:I = -0x1
-
-.field private static final Pia:I = 0x4
-
-.field private static final Qia:[I
-
-.field private static final Ria:[I
-
-.field private static Sia:I = 0x0
+.field private static final Sia:I = 0x5
 
 .field private static final TAG:Ljava/lang/String; = "MotorCalibrateHelper"
 
-.field private static Tia:I = 0x0
+.field public static final Tia:I = 0x6
 
-.field private static final Uia:Ljava/lang/String; = "/sys/bus/platform/devices/vendor:motor_pl/hall_data"
+.field public static final Uia:I = 0x7
 
-.field private static final Via:Ljava/lang/String; = "/sys/bus/platform/devices/vendor:motor_pl/hall_calibration"
+.field public static final Via:I = 0x8
 
-.field private static final Wia:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/hall_calibration"
+.field public static final Wia:I = 0x9
 
-.field private static Xia:[I
+.field public static final Xia:I = 0xa
 
-.field private static Yia:[I
+.field public static final Yia:I = 0xb
 
-.field private static Zia:[Ljava/lang/String;
+.field private static final Zia:I = -0x1
 
-.field private static _ia:Ljava/lang/String;
+.field private static final _ia:I = 0x4
 
-.field public static aja:I
+.field private static final aja:[I
 
-.field public static bja:I
+.field private static final bja:[I
 
-.field public static cja:I
+.field private static cja:I = 0x0
 
-.field public static dja:I
+.field private static dja:I = 0x0
 
-.field private static final zia:I
+.field private static final eja:Ljava/lang/String; = "/sys/bus/platform/devices/vendor:motor_pl/hall_data"
+
+.field private static final fja:Ljava/lang/String; = "/sys/bus/platform/devices/vendor:motor_pl/hall_calibration"
+
+.field private static final gja:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/hall_calibration"
+
+.field private static hja:[I
+
+.field private static ija:[I
+
+.field private static jja:[Ljava/lang/String;
+
+.field private static kja:Ljava/lang/String;
+
+.field public static lja:I
+
+.field public static mja:I
+
+.field public static nja:I
+
+.field public static oja:I
 
 
 # direct methods
@@ -81,7 +81,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->Qia:[I
+    sput-object v0, Lcom/oneplus/android/server/rtg;->aja:[I
 
     const/4 v0, 0x6
 
@@ -89,47 +89,47 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->Ria:[I
+    sput-object v0, Lcom/oneplus/android/server/rtg;->bja:[I
 
     const/4 v0, 0x2
 
-    sput v0, Lcom/oneplus/android/server/rtg;->Sia:I
+    sput v0, Lcom/oneplus/android/server/rtg;->cja:I
 
     const/4 v1, 0x3
 
-    sput v1, Lcom/oneplus/android/server/rtg;->Tia:I
+    sput v1, Lcom/oneplus/android/server/rtg;->dja:I
 
     const/16 v1, 0xc
 
     new-array v2, v1, [I
 
-    sput-object v2, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sput-object v2, Lcom/oneplus/android/server/rtg;->hja:[I
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->Yia:[I
+    sput-object v0, Lcom/oneplus/android/server/rtg;->ija:[I
 
     new-array v0, v1, [Ljava/lang/String;
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->Zia:[Ljava/lang/String;
+    sput-object v0, Lcom/oneplus/android/server/rtg;->jja:[Ljava/lang/String;
 
     const-string v0, "2"
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->_ia:Ljava/lang/String;
+    sput-object v0, Lcom/oneplus/android/server/rtg;->kja:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/oneplus/android/server/rtg;->aja:I
+    sput v0, Lcom/oneplus/android/server/rtg;->lja:I
 
-    sput v0, Lcom/oneplus/android/server/rtg;->bja:I
+    sput v0, Lcom/oneplus/android/server/rtg;->mja:I
 
     const/16 v0, 0x8
 
-    sput v0, Lcom/oneplus/android/server/rtg;->cja:I
+    sput v0, Lcom/oneplus/android/server/rtg;->nja:I
 
     const/16 v0, 0x28
 
-    sput v0, Lcom/oneplus/android/server/rtg;->dja:I
+    sput v0, Lcom/oneplus/android/server/rtg;->oja:I
 
     return-void
 
@@ -160,20 +160,20 @@
     return-void
 .end method
 
-.method public static Ve()V
+.method public static Ue()V
     .locals 7
 
-    invoke-static {}, Lcom/oneplus/android/server/rtg;->Xe()[I
+    invoke-static {}, Lcom/oneplus/android/server/rtg;->We()[I
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->Yia:[I
+    sput-object v0, Lcom/oneplus/android/server/rtg;->ija:[I
 
-    sget-object v0, Lcom/oneplus/android/server/rtg;->Yia:[I
+    sget-object v0, Lcom/oneplus/android/server/rtg;->ija:[I
 
     if-eqz v0, :cond_0
 
-    sget-object v1, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v1, Lcom/oneplus/android/server/rtg;->hja:[I
 
     const/4 v2, 0x0
 
@@ -187,9 +187,9 @@
 
     aget v4, v0, v2
 
-    sget-object v5, Lcom/oneplus/android/server/rtg;->Qia:[I
+    sget-object v5, Lcom/oneplus/android/server/rtg;->aja:[I
 
-    sget v6, Lcom/oneplus/android/server/rtg;->Sia:I
+    sget v6, Lcom/oneplus/android/server/rtg;->cja:I
 
     aget v5, v5, v6
 
@@ -208,7 +208,7 @@
     aput v0, v1, v3
 
     :goto_0
-    sget-object v0, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v0, Lcom/oneplus/android/server/rtg;->hja:[I
 
     array-length v0, v0
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v1, Lcom/oneplus/android/server/rtg;->hja:[I
 
     aget v1, v1, v2
 
@@ -250,7 +250,7 @@
     return-void
 .end method
 
-.method public static We()Ljava/lang/String;
+.method public static Ve()Ljava/lang/String;
     .locals 2
 
     const-string v0, "MotorCalibrateHelper"
@@ -264,7 +264,7 @@
     return-object v0
 .end method
 
-.method public static Xe()[I
+.method public static We()[I
     .locals 5
 
     const-string v0, "MotorCalibrateHelper"
@@ -354,7 +354,7 @@
     return-object v3
 .end method
 
-.method public static Ye()Z
+.method public static Xe()Z
     .locals 11
 
     const-string v0, ", tempCalibData : "
@@ -464,7 +464,7 @@
 
     invoke-static {v1, v6}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v6, Lcom/oneplus/android/server/rtg;->_ia:Ljava/lang/String;
+    sget-object v6, Lcom/oneplus/android/server/rtg;->kja:Ljava/lang/String;
 
     aput-object v6, v5, v7
 
@@ -641,7 +641,7 @@
     return v3
 .end method
 
-.method public static Ze()Z
+.method public static Ye()Z
     .locals 12
 
     const-string v0, "150"
@@ -673,7 +673,7 @@
     move-result-object v0
 
     :try_start_0
-    invoke-static {}, Lcom/oneplus/android/server/rtg;->We()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/rtg;->Ve()Ljava/lang/String;
 
     move-result-object v1
 
@@ -700,7 +700,7 @@
     :goto_0
     if-ge v4, v3, :cond_0
 
-    sget-object v5, Lcom/oneplus/android/server/rtg;->Zia:[Ljava/lang/String;
+    sget-object v5, Lcom/oneplus/android/server/rtg;->jja:[Ljava/lang/String;
 
     sget-object v6, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -751,10 +751,10 @@
     return v0
 .end method
 
-.method public static _e()Z
+.method public static Ze()Z
     .locals 8
 
-    sget-object v0, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v0, Lcom/oneplus/android/server/rtg;->hja:[I
 
     invoke-static {v0}, Lcom/oneplus/android/server/rtg;->you([I)Z
 
@@ -781,7 +781,7 @@
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    sget-object v7, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v7, Lcom/oneplus/android/server/rtg;->hja:[I
 
     aget v7, v7, v4
 
@@ -810,7 +810,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {}, Lcom/oneplus/android/server/rtg;->We()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/rtg;->Ve()Ljava/lang/String;
 
     move-result-object v0
 
@@ -834,7 +834,7 @@
 
     :cond_1
     :goto_1
-    sget-object v0, Lcom/oneplus/android/server/rtg;->Zia:[Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/rtg;->jja:[Ljava/lang/String;
 
     invoke-static {v0}, Lcom/oneplus/android/server/rtg;->you([Ljava/lang/String;)Z
 
@@ -848,20 +848,20 @@
     goto :goto_1
 .end method
 
-.method public static af()V
+.method public static _e()V
     .locals 6
 
-    invoke-static {}, Lcom/oneplus/android/server/rtg;->Xe()[I
+    invoke-static {}, Lcom/oneplus/android/server/rtg;->We()[I
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/rtg;->Yia:[I
+    sput-object v0, Lcom/oneplus/android/server/rtg;->ija:[I
 
-    sget-object v0, Lcom/oneplus/android/server/rtg;->Yia:[I
+    sget-object v0, Lcom/oneplus/android/server/rtg;->ija:[I
 
     if-eqz v0, :cond_0
 
-    sget-object v1, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v1, Lcom/oneplus/android/server/rtg;->hja:[I
 
     const/4 v2, 0x1
 
@@ -885,9 +885,9 @@
 
     aget v0, v0, v2
 
-    sget-object v2, Lcom/oneplus/android/server/rtg;->Ria:[I
+    sget-object v2, Lcom/oneplus/android/server/rtg;->bja:[I
 
-    sget v5, Lcom/oneplus/android/server/rtg;->Tia:I
+    sget v5, Lcom/oneplus/android/server/rtg;->dja:I
 
     aget v2, v2, v5
 
@@ -896,7 +896,7 @@
     aput v0, v1, v3
 
     :goto_0
-    sget-object v0, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v0, Lcom/oneplus/android/server/rtg;->hja:[I
 
     array-length v0, v0
 
@@ -916,7 +916,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/oneplus/android/server/rtg;->Xia:[I
+    sget-object v1, Lcom/oneplus/android/server/rtg;->hja:[I
 
     aget v1, v1, v4
 
@@ -1511,7 +1511,7 @@
 .method public static x(Z)Z
     .locals 7
 
-    invoke-static {}, Lcom/oneplus/android/server/rtg;->Xe()[I
+    invoke-static {}, Lcom/oneplus/android/server/rtg;->We()[I
 
     move-result-object v0
 
@@ -1528,7 +1528,7 @@
     goto/16 :goto_0
 
     :cond_0
-    invoke-static {}, Lcom/oneplus/android/server/rtg;->We()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/rtg;->Ve()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1576,7 +1576,7 @@
 
     sub-int/2addr v5, v3
 
-    sget v6, Lcom/oneplus/android/server/rtg;->cja:I
+    sget v6, Lcom/oneplus/android/server/rtg;->nja:I
 
     if-le v5, v6, :cond_3
 
@@ -1584,7 +1584,7 @@
 
     sub-int/2addr v5, v3
 
-    sget v6, Lcom/oneplus/android/server/rtg;->dja:I
+    sget v6, Lcom/oneplus/android/server/rtg;->oja:I
 
     if-ge v5, v6, :cond_3
 
@@ -1612,7 +1612,7 @@
 
     invoke-static {v4, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sput v1, Lcom/oneplus/android/server/rtg;->aja:I
+    sput v1, Lcom/oneplus/android/server/rtg;->lja:I
 
     return v1
 
@@ -1625,7 +1625,7 @@
 
     sub-int/2addr v3, v2
 
-    sget v5, Lcom/oneplus/android/server/rtg;->cja:I
+    sget v5, Lcom/oneplus/android/server/rtg;->nja:I
 
     if-le v3, v5, :cond_4
 
@@ -1633,7 +1633,7 @@
 
     sub-int/2addr v3, v2
 
-    sget v5, Lcom/oneplus/android/server/rtg;->dja:I
+    sget v5, Lcom/oneplus/android/server/rtg;->oja:I
 
     if-ge v3, v5, :cond_4
 
@@ -1661,7 +1661,7 @@
 
     invoke-static {v4, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sput v1, Lcom/oneplus/android/server/rtg;->bja:I
+    sput v1, Lcom/oneplus/android/server/rtg;->mja:I
 
     :cond_4
     :goto_0

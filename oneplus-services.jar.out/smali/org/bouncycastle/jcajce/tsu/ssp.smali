@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static iTa:Ljava/util/Map;
+.field private static DTa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -24,9 +24,9 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sput-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
     sget-object v1, Lorg/bouncycastle/asn1/dma/gwm;->md5:Lorg/bouncycastle/asn1/bvj;
 
@@ -34,41 +34,41 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->kgb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->Fgb:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-1"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->heb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->Ceb:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-224"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->eeb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->zeb:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-256"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->feb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->Aeb:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-384"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
-    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->geb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/bio/you;->Beb:Lorg/bouncycastle/asn1/bvj;
 
     const-string v2, "SHA-512"
 
@@ -88,7 +88,7 @@
 .method public static ugm(Lorg/bouncycastle/asn1/bvj;)Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->iTa:Ljava/util/Map;
+    sget-object v0, Lorg/bouncycastle/jcajce/tsu/ssp;->DTa:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

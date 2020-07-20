@@ -165,11 +165,11 @@
 
     new-instance v0, Lcom/android/server/veq$zta;
 
-    invoke-static {}, Lcom/android/server/am/irq;->getInstance()Lcom/android/server/am/irq;
+    invoke-static {}, Lcom/android/server/am/a;->getInstance()Lcom/android/server/am/a;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/server/am/irq;->getLooper()Landroid/os/Looper;
+    invoke-virtual {v1}, Lcom/android/server/am/a;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
@@ -634,7 +634,7 @@
     throw p0
 .end method
 
-.method private vm()V
+.method private wm()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/veq;->DEBUG_ONEPLUS:Z
@@ -685,7 +685,7 @@
     return-void
 .end method
 
-.method private wm()V
+.method private xm()V
     .locals 8
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -852,7 +852,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0}, Lcom/android/server/veq;->vm()V
+    invoke-direct {p0}, Lcom/android/server/veq;->wm()V
 
     :goto_1
     return-void
@@ -911,7 +911,7 @@
 .method static synthetic zta(Lcom/android/server/veq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/veq;->wm()V
+    invoke-direct {p0}, Lcom/android/server/veq;->xm()V
 
     return-void
 .end method

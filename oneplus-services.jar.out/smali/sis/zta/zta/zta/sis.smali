@@ -10,15 +10,15 @@
 
 .field public static final SRGB:I = 0x7
 
-.field public static final ZWa:I = 0x2
+.field public static final tXa:I = 0x2
 
-.field public static final _Wa:I = 0x3
+.field public static final uXa:I = 0x3
 
-.field public static final aXa:I = 0x4
+.field public static final vXa:I = 0x4
 
-.field public static final bXa:I = 0x5
+.field public static final wXa:I = 0x5
 
-.field public static final cXa:I = 0x6
+.field public static final xXa:I = 0x6
 
 
 # direct methods

@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final wGa:[B
+.field private static final RGa:[B
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     new-array v0, v0, [B
 
-    sput-object v0, Lorg/bouncycastle/asn1/L;->wGa:[B
+    sput-object v0, Lorg/bouncycastle/asn1/L;->RGa:[B
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->vGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/lqr;->QGa:Z
 
     if-eqz v0, :cond_0
 
@@ -62,7 +62,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->vh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdb;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -76,7 +76,7 @@
     return v1
 .end method
 
-.method uh()I
+.method vh()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -94,19 +94,19 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->vh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->uh()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->vh()I
 
     move-result v0
 
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->vGa:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/lqr;->QGa:Z
 
     if-eqz v1, :cond_0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->uGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->PGa:I
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->oa(I)I
 
@@ -125,7 +125,7 @@
     :cond_0
     add-int/lit8 v0, v0, -0x1
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->uGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->PGa:I
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->oa(I)I
 
@@ -136,7 +136,7 @@
     return p0
 
     :cond_1
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->uGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->PGa:I
 
     invoke-static {p0}, Lorg/bouncycastle/asn1/ia;->oa(I)I
 
@@ -167,19 +167,19 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->vh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->wh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object v0
 
-    iget-boolean v2, p0, Lorg/bouncycastle/asn1/lqr;->vGa:Z
+    iget-boolean v2, p0, Lorg/bouncycastle/asn1/lqr;->QGa:Z
 
     if-eqz v2, :cond_0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->uGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->PGa:I
 
     invoke-virtual {p1, v1, p0}, Lorg/bouncycastle/asn1/ugm;->writeTag(II)V
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->uh()I
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/vdb;->vh()I
 
     move-result p0
 
@@ -202,7 +202,7 @@
     const/16 v1, 0x80
 
     :goto_0
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->uGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->PGa:I
 
     invoke-virtual {p1, v1, p0}, Lorg/bouncycastle/asn1/ugm;->writeTag(II)V
 
@@ -211,9 +211,9 @@
     goto :goto_1
 
     :cond_2
-    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->uGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/lqr;->PGa:I
 
-    sget-object v0, Lorg/bouncycastle/asn1/L;->wGa:[B
+    sget-object v0, Lorg/bouncycastle/asn1/L;->RGa:[B
 
     invoke-virtual {p1, v1, p0, v0}, Lorg/bouncycastle/asn1/ugm;->you(II[B)V
 

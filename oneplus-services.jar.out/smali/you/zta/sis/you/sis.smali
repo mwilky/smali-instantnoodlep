@@ -4,9 +4,9 @@
 
 
 # static fields
-.field static final _Va:Lyou/zta/sis/you/you;
+.field static final uWa:Lyou/zta/sis/you/you;
 
-.field static final aWa:Lyou/zta/sis/you/you;
+.field static final vWa:Lyou/zta/sis/you/you;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     invoke-direct {v0, v1}, Lyou/zta/sis/you/kth;-><init>(Ljava/math/BigInteger;)V
 
-    sput-object v0, Lyou/zta/sis/you/sis;->_Va:Lyou/zta/sis/you/you;
+    sput-object v0, Lyou/zta/sis/you/sis;->uWa:Lyou/zta/sis/you/you;
 
     new-instance v0, Lyou/zta/sis/you/kth;
 
@@ -35,7 +35,7 @@
 
     invoke-direct {v0, v1}, Lyou/zta/sis/you/kth;-><init>(Ljava/math/BigInteger;)V
 
-    sput-object v0, Lyou/zta/sis/you/sis;->aWa:Lyou/zta/sis/you/you;
+    sput-object v0, Lyou/zta/sis/you/sis;->vWa:Lyou/zta/sis/you/you;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     :cond_1
     new-instance v0, Lyou/zta/sis/you/rtg;
 
-    sget-object v1, Lyou/zta/sis/you/sis;->_Va:Lyou/zta/sis/you/you;
+    sget-object v1, Lyou/zta/sis/you/sis;->uWa:Lyou/zta/sis/you/you;
 
     new-instance v2, Lyou/zta/sis/you/tsu;
 
@@ -140,12 +140,12 @@
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lyou/zta/sis/you/sis;->aWa:Lyou/zta/sis/you/you;
+    sget-object p0, Lyou/zta/sis/you/sis;->vWa:Lyou/zta/sis/you/you;
 
     return-object p0
 
     :cond_1
-    sget-object p0, Lyou/zta/sis/you/sis;->_Va:Lyou/zta/sis/you/you;
+    sget-object p0, Lyou/zta/sis/you/sis;->uWa:Lyou/zta/sis/you/you;
 
     return-object p0
 

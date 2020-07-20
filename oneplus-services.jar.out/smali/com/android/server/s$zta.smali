@@ -548,6 +548,19 @@
 
     invoke-virtual {p1}, Ljava/util/HashMap;->clear()V
 
+    iget-object p1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
+
+    invoke-static {p1}, Lcom/android/server/s;->ibl(Lcom/android/server/s;)Lcom/android/server/net/NetworkPolicyManagerService;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/android/server/net/NetworkPolicyManagerService;->getUidRulesFirstLock()Ljava/lang/Object;
+
+    move-result-object p1
+
+    monitor-enter p1
+
+    :try_start_2
     iget-object p0, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
     invoke-static {p0}, Lcom/android/server/s;->ibl(Lcom/android/server/s;)Lcom/android/server/net/NetworkPolicyManagerService;
@@ -556,7 +569,18 @@
 
     invoke-virtual {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->opUpdateRulesForRestrictPowerUL()V
 
+    monitor-exit p1
+
     goto/16 :goto_f
+
+    :catchall_2
+    move-exception p0
+
+    monitor-exit p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    throw p0
 
     :pswitch_3
     new-instance p1, Ljava/lang/StringBuilder;
@@ -607,7 +631,7 @@
 
     monitor-enter p1
 
-    :try_start_2
+    :try_start_3
     iget-object p0, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
     invoke-static {p0}, Lcom/android/server/s;->bvj(Lcom/android/server/s;)Lcom/android/server/power/PowerManagerService$PmsInner;
@@ -620,12 +644,12 @@
 
     goto/16 :goto_f
 
-    :catchall_2
+    :catchall_3
     move-exception p0
 
     monitor-exit p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
     throw p0
 
@@ -1055,7 +1079,7 @@
 
     monitor-enter v0
 
-    :try_start_3
+    :try_start_4
     iget-object p1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
     invoke-static {p1}, Lcom/android/server/s;->tsu(Lcom/android/server/s;)Landroid/util/ArraySet;
@@ -1065,8 +1089,8 @@
     invoke-virtual {p1}, Landroid/util/ArraySet;->clear()V
 
     monitor-exit v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_4
 
     iget-object p1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
@@ -1074,13 +1098,13 @@
 
     goto/16 :goto_b
 
-    :catchall_3
+    :catchall_4
     move-exception p0
 
-    :try_start_4
+    :try_start_5
     monitor-exit v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
     throw p0
 
@@ -1227,7 +1251,7 @@
 
     monitor-enter v0
 
-    :try_start_5
+    :try_start_6
     iget-object p1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
     invoke-static {p1}, Lcom/android/server/s;->tsu(Lcom/android/server/s;)Landroid/util/ArraySet;
@@ -1237,8 +1261,8 @@
     invoke-virtual {p1}, Landroid/util/ArraySet;->clear()V
 
     monitor-exit v0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_4
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
 
     :goto_b
     iget-object p1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
@@ -1251,13 +1275,13 @@
 
     goto/16 :goto_4
 
-    :catchall_4
+    :catchall_5
     move-exception p0
 
-    :try_start_6
+    :try_start_7
     monitor-exit v0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_4
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_5
 
     throw p0
 
@@ -1412,7 +1436,7 @@
 
     monitor-enter p2
 
-    :try_start_7
+    :try_start_8
     iget-object v1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
     invoke-static {v1}, Lcom/android/server/s;->tsu(Lcom/android/server/s;)Landroid/util/ArraySet;
@@ -1429,12 +1453,12 @@
 
     goto :goto_d
 
-    :catchall_5
+    :catchall_6
     move-exception p0
 
     monitor-exit p2
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_5
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_6
 
     throw p0
 
@@ -1635,7 +1659,7 @@
 
     monitor-enter p1
 
-    :try_start_8
+    :try_start_9
     iget-object p2, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
     invoke-static {p2}, Lcom/android/server/s;->tsu(Lcom/android/server/s;)Landroid/util/ArraySet;
@@ -1645,8 +1669,8 @@
     invoke-virtual {p2}, Landroid/util/ArraySet;->clear()V
 
     monitor-exit p1
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_6
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_7
 
     iget-object p1, p0, Lcom/android/server/s$zta;->this$0:Lcom/android/server/s;
 
@@ -1666,17 +1690,15 @@
 
     return-void
 
-    :catchall_6
+    :catchall_7
     move-exception p0
 
-    :try_start_9
+    :try_start_a
     monitor-exit p1
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_6
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_7
 
     throw p0
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

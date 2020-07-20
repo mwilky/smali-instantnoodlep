@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private RCa:Ljava/security/spec/ECParameterSpec;
+.field private lDa:Ljava/security/spec/ECParameterSpec;
 
-.field private SCa:Ljava/lang/String;
+.field private mDa:Ljava/lang/String;
 
 
 # direct methods
@@ -20,6 +20,34 @@
 
 
 # virtual methods
+.method protected Aa(Ljava/lang/String;)Z
+    .locals 0
+
+    if-eqz p1, :cond_1
+
+    const-string p0, "ASN.1"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method protected engineGetEncoded()[B
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
@@ -45,13 +73,13 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->Aa(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->RCa:Ljava/security/spec/ECParameterSpec;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->lDa:Ljava/security/spec/ECParameterSpec;
 
     if-nez p1, :cond_0
 
@@ -64,13 +92,13 @@
     goto :goto_0
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
     new-instance p1, Lorg/bouncycastle/asn1/ibl/veq;
 
-    invoke-static {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/bio;->Pa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+    invoke-static {p0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/bio;->Qa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 
@@ -97,11 +125,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Jj()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/you/you/rtg;->Ij()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -187,11 +215,11 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    invoke-static {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/bio;->Pa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+    invoke-static {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/bio;->Qa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p1
 
@@ -210,14 +238,14 @@
     :cond_1
     new-instance p1, Ljava/security/spec/ECGenParameterSpec;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     invoke-direct {p1, p0}, Ljava/security/spec/ECGenParameterSpec;-><init>(Ljava/lang/String;)V
 
     return-object p1
 
     :cond_2
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->RCa:Ljava/security/spec/ECParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->lDa:Ljava/security/spec/ECParameterSpec;
 
     const/4 v0, 0x0
 
@@ -268,7 +296,7 @@
 
     :cond_4
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->RCa:Ljava/security/spec/ECParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->lDa:Ljava/security/spec/ECParameterSpec;
 
     return-object p0
 .end method
@@ -297,7 +325,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     invoke-static {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/kth;->zta(Lorg/bouncycastle/asn1/ibl/vju;)Ljava/security/spec/ECParameterSpec;
 
@@ -305,7 +333,7 @@
 
     new-instance v6, Lyou/zta/you/you/tsu;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
 
@@ -333,7 +361,7 @@
 
     invoke-direct/range {v0 .. v5}, Lyou/zta/you/you/tsu;-><init>(Ljava/lang/String;Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
-    iput-object v6, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->RCa:Ljava/security/spec/ECParameterSpec;
+    iput-object v6, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->lDa:Ljava/security/spec/ECParameterSpec;
 
     goto :goto_1
 
@@ -385,11 +413,11 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     check-cast p1, Ljava/security/spec/ECParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->RCa:Ljava/security/spec/ECParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->lDa:Ljava/security/spec/ECParameterSpec;
 
     :goto_1
     return-void
@@ -447,7 +475,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->Aa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -463,7 +491,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Dj()Z
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/veq;->Ej()Z
 
     move-result v0
 
@@ -481,9 +509,9 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
@@ -491,14 +519,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->SCa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->mDa:Ljava/lang/String;
 
     :cond_0
     invoke-static {p1, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/kth;->zta(Lorg/bouncycastle/asn1/ibl/veq;Lyou/zta/sis/zta/rtg;)Ljava/security/spec/ECParameterSpec;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->RCa:Ljava/security/spec/ECParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/ec/zta;->lDa:Ljava/security/spec/ECParameterSpec;
 
     return-void
 
@@ -530,32 +558,4 @@
     const-string p0, "EC AlgorithmParameters "
 
     return-object p0
-.end method
-
-.method protected za(Ljava/lang/String;)Z
-    .locals 0
-
-    if-eqz p1, :cond_1
-
-    const-string p0, "ASN.1"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
 .end method

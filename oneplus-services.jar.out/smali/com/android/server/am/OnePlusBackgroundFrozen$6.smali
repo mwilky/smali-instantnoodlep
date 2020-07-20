@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/les;
+    value = Lcom/android/server/am/ivd;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/les;
+.field final synthetic this$0:Lcom/android/server/am/ivd;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/les;)V
+.method constructor <init>(Lcom/android/server/am/ivd;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/OnePlusBackgroundFrozen$6;->this$0:Lcom/android/server/am/les;
+    iput-object p1, p0, Lcom/android/server/am/OnePlusBackgroundFrozen$6;->this$0:Lcom/android/server/am/ivd;
 
     invoke-direct {p0}, Landroid/app/IProcessObserver$Stub;-><init>()V
 
@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    invoke-static {}, Lcom/android/server/am/les;->access$300()Lcom/android/server/am/les;
+    invoke-static {}, Lcom/android/server/am/ivd;->access$300()Lcom/android/server/am/ivd;
 
     move-result-object p0
 
@@ -60,7 +60,7 @@
     return-void
 
     :cond_0
-    invoke-static {p2}, Lcom/android/server/am/les;->j(I)Z
+    invoke-static {p2}, Lcom/android/server/am/ivd;->j(I)Z
 
     move-result p0
 
@@ -88,7 +88,7 @@
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Lcom/android/server/am/les;->tsu(ILjava/lang/String;)V
+    invoke-static {p0, p1}, Lcom/android/server/am/ivd;->tsu(ILjava/lang/String;)V
 
     :cond_1
     return-void

@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/OpScreenCompat;->isAppWindowCompat(Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;)Z
+    value = Lcom/android/server/wm/p;->pc(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,26 +18,18 @@
 
 
 # instance fields
-.field final synthetic Bha:Landroid/graphics/Rect;
+.field final synthetic this$0:Lcom/android/server/wm/p;
 
-.field final synthetic Cha:Lcom/android/server/wm/WindowState;
+.field private uP:I
 
-.field final synthetic Dha:Z
-
-.field final synthetic this$0:Lcom/android/server/wm/OpScreenCompat;
+.field private wP:F
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/OpScreenCompat;Landroid/graphics/Rect;Lcom/android/server/wm/WindowState;Z)V
+.method constructor <init>(Lcom/android/server/wm/p;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/OpScreenCompat;
-
-    iput-object p2, p0, Lcom/android/server/wm/m;->Bha:Landroid/graphics/Rect;
-
-    iput-object p3, p0, Lcom/android/server/wm/m;->Cha:Lcom/android/server/wm/WindowState;
-
-    iput-boolean p4, p0, Lcom/android/server/wm/m;->Dha:Z
+    iput-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,67 +38,201 @@
 
 
 # virtual methods
-.method public run()V
+.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
 
-    :try_start_0
-    iget-object v0, p0, Lcom/android/server/wm/m;->Bha:Landroid/graphics/Rect;
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
-    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
+    move-result p1
 
-    move-result v0
+    const/4 v0, 0x5
 
-    iget-object v1, p0, Lcom/android/server/wm/m;->Bha:Landroid/graphics/Rect;
+    const/4 v1, 0x1
 
-    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
+    if-eqz p1, :cond_4
 
-    move-result v1
+    if-eq p1, v1, :cond_3
 
-    if-le v0, v1, :cond_0
+    const/4 v2, 0x2
 
-    invoke-static {}, Lcom/android/server/wm/OpScreenCompat;->access$600()I
+    if-eq p1, v2, :cond_0
 
-    move-result v0
+    const/4 p2, 0x3
 
-    goto :goto_0
+    if-eq p1, p2, :cond_3
+
+    const-string p0, "OpQuickReply"
+
+    const-string p1, "Unsupported Touch event "
+
+    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p0, 0x0
+
+    return p0
 
     :cond_0
-    invoke-static {}, Lcom/android/server/wm/OpScreenCompat;->access$700()I
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
 
-    move-result v0
+    iget v0, p0, Lcom/android/server/wm/m;->uP:I
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
+
+    move-result p2
+
+    iget v2, p0, Lcom/android/server/wm/m;->wP:F
+
+    sub-float/2addr p2, v2
+
+    float-to-int p2, p2
+
+    add-int/2addr v0, p2
+
+    invoke-static {p1, v0}, Lcom/android/server/wm/p;->tsu(Lcom/android/server/wm/p;I)I
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->ugm(Lcom/android/server/wm/p;)I
+
+    move-result p1
+
+    iget-object p2, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p2}, Lcom/android/server/wm/p;->zgw(Lcom/android/server/wm/p;)I
+
+    move-result p2
+
+    if-le p1, p2, :cond_1
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->zgw(Lcom/android/server/wm/p;)I
+
+    move-result p2
 
     :goto_0
-    iget-object v1, p0, Lcom/android/server/wm/m;->Cha:Lcom/android/server/wm/WindowState;
-
-    iget-object v1, v1, Lcom/android/server/wm/WindowState;->mClient:Landroid/view/IWindow;
-
-    iget-boolean v2, p0, Lcom/android/server/wm/m;->Dha:Z
-
-    invoke-interface {v1, v2, v0}, Landroid/view/IWindow;->enterScreenCompatMode(ZI)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {p1, p2}, Lcom/android/server/wm/p;->tsu(Lcom/android/server/wm/p;I)I
 
     goto :goto_1
 
-    :catch_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    :cond_1
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {p1}, Lcom/android/server/wm/p;->ugm(Lcom/android/server/wm/p;)I
 
-    const-string v1, "can\'t send notification to win="
+    move-result p1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object p2, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-static {p2}, Lcom/android/server/wm/p;->sis(Lcom/android/server/wm/p;)I
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result p2
+
+    if-ge p1, p2, :cond_2
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->sis(Lcom/android/server/wm/p;)I
+
+    move-result p2
+
+    goto :goto_0
+
+    :cond_2
+    :goto_1
+    iget-object p0, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p0}, Lcom/android/server/wm/p;->tsu(Lcom/android/server/wm/p;)V
+
+    return v1
+
+    :cond_3
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->vdb(Lcom/android/server/wm/p;)Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object p2
+
+    iget p2, p2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    invoke-static {p1, p2}, Lcom/android/server/wm/p;->tsu(Lcom/android/server/wm/p;I)I
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->zta(Lcom/android/server/wm/p;)Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p2}, Lcom/android/server/wm/p;->ugm(Lcom/android/server/wm/p;)I
+
+    move-result p2
+
+    const-string v2, "quickreply_imbutton_x"
+
+    invoke-static {p1, v2, p2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->gwm(Lcom/android/server/wm/p;)Lcom/android/server/wm/p$zta;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object p0, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p0}, Lcom/android/server/wm/p;->gwm(Lcom/android/server/wm/p;)Lcom/android/server/wm/p$zta;
 
     move-result-object p0
 
-    const-string v0, "OpScreenCompat"
+    const-wide/16 p1, 0x1388
 
-    invoke-static {v0, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, v0, p1, p2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    :goto_1
-    return-void
+    return v1
+
+    :cond_4
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->vdb(Lcom/android/server/wm/p;)Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object p1
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    iput v2, p1, Landroid/view/WindowManager$LayoutParams;->alpha:F
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->gwm(Lcom/android/server/wm/p;)Lcom/android/server/wm/p$zta;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p1}, Lcom/android/server/wm/p;->vdb(Lcom/android/server/wm/p;)Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    invoke-static {p1, v0}, Lcom/android/server/wm/p;->tsu(Lcom/android/server/wm/p;I)I
+
+    iput v0, p0, Lcom/android/server/wm/m;->uP:I
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
+
+    move-result p1
+
+    iput p1, p0, Lcom/android/server/wm/m;->wP:F
+
+    return v1
 .end method

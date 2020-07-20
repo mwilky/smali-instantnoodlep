@@ -4,25 +4,25 @@
 
 
 # static fields
-.field public static final Dqa:I = 0x208
+.field public static final L_a:I = 0x200
+
+.field public static final MYa:I = 0x203
+
+.field public static final M_a:I = 0x201
+
+.field public static final NYa:I = 0x204
+
+.field public static final N_a:I = 0x202
+
+.field public static final O_a:I = 0x206
+
+.field public static final P_a:I = 0x207
+
+.field public static final Rqa:I = 0x208
 
 .field public static final TYPE_MAX:I = 0x209
 
-.field public static final q_a:I = 0x200
-
-.field public static final rYa:I = 0x203
-
-.field public static final r_a:I = 0x201
-
-.field public static final sYa:I = 0x204
-
-.field public static final s_a:I = 0x202
-
-.field public static final t_a:I = 0x206
-
-.field public static final u_a:I = 0x207
-
-.field public static final zYa:I = 0x205
+.field public static final UYa:I = 0x205
 
 
 # direct methods

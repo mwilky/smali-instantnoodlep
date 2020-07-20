@@ -64,7 +64,7 @@
     return-object v0
 .end method
 
-.method private irq(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+.method private vdw(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .locals 2
 
     new-instance v0, Landroid/content/pm/PackageInfo;
@@ -110,7 +110,7 @@
 
 
 # virtual methods
-.method public Nf()Ljava/lang/String;
+.method public Mf()Ljava/lang/String;
     .locals 0
 
     const-string p0, "share"
@@ -235,7 +235,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, p1, v1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->irq(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
+    invoke-direct {p0, p1, v1}, Lcom/oneplus/android/server/heytapbusiness/zta/you/you;->vdw(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 

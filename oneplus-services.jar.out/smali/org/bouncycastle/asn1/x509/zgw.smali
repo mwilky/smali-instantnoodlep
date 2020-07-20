@@ -7,17 +7,17 @@
 
 
 # static fields
-.field public static final DIa:I = 0x1
+.field public static final YIa:I = 0x1
 
-.field public static final EIa:I = 0x3
+.field public static final ZIa:I = 0x3
 
-.field public static final FIa:I = 0x4
+.field public static final _Ia:I = 0x4
 
-.field public static final GIa:I = 0x5
+.field public static final aJa:I = 0x5
 
-.field public static final HIa:I = 0x6
+.field public static final bJa:I = 0x6
 
-.field public static final IIa:I = 0x8
+.field public static final cJa:I = 0x8
 
 .field public static final dNSName:I = 0x2
 
@@ -81,7 +81,7 @@
 
     if-ne p1, v0, :cond_4
 
-    invoke-direct {p0, p2}, Lorg/bouncycastle/asn1/x509/zgw;->xd(Ljava/lang/String;)[B
+    invoke-direct {p0, p2}, Lorg/bouncycastle/asn1/x509/zgw;->zd(Ljava/lang/String;)[B
 
     move-result-object p1
 
@@ -484,7 +484,7 @@
     return-void
 .end method
 
-.method private vd(Ljava/lang/String;)[I
+.method private xd(Ljava/lang/String;)[I
     .locals 10
 
     new-instance p0, Ljava/util/StringTokenizer;
@@ -672,7 +672,7 @@
     return-object v3
 .end method
 
-.method private wd(Ljava/lang/String;)[I
+.method private yd(Ljava/lang/String;)[I
     .locals 5
 
     const/16 p0, 0x8
@@ -712,10 +712,52 @@
     return-object p0
 .end method
 
-.method private xd(Ljava/lang/String;)[B
+.method private you(Ljava/lang/String;[BI)V
+    .locals 2
+
+    new-instance p0, Ljava/util/StringTokenizer;
+
+    const-string v0, "./"
+
+    invoke-direct {p0, p1, v0}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    :goto_0
+    invoke-virtual {p0}, Ljava/util/StringTokenizer;->hasMoreTokens()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    add-int/lit8 v0, p1, 0x1
+
+    add-int/2addr p1, p3
+
+    invoke-virtual {p0}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    int-to-byte v1, v1
+
+    aput-byte v1, p2, p1
+
+    move p1, v0
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method private zd(Ljava/lang/String;)[B
     .locals 5
 
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Wa(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Xa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -725,7 +767,7 @@
 
     if-nez v0, :cond_5
 
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Va(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Wa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -734,13 +776,13 @@
     goto :goto_2
 
     :cond_0
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Va(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Ta(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -816,7 +858,7 @@
 
     new-array v0, v1, [B
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->vd(Ljava/lang/String;)[I
+    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->xd(Ljava/lang/String;)[I
 
     move-result-object p1
 
@@ -833,7 +875,7 @@
 
     move-result-object v4
 
-    invoke-direct {p0, v4}, Lorg/bouncycastle/asn1/x509/zgw;->vd(Ljava/lang/String;)[I
+    invoke-direct {p0, v4}, Lorg/bouncycastle/asn1/x509/zgw;->xd(Ljava/lang/String;)[I
 
     move-result-object v4
 
@@ -853,14 +895,14 @@
 
     if-lez v0, :cond_7
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->vd(Ljava/lang/String;)[I
+    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->xd(Ljava/lang/String;)[I
 
     move-result-object p1
 
     goto :goto_3
 
     :cond_7
-    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->wd(Ljava/lang/String;)[I
+    invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/zgw;->yd(Ljava/lang/String;)[I
 
     move-result-object p1
 
@@ -868,48 +910,6 @@
     invoke-direct {p0, p1, v3, v1}, Lorg/bouncycastle/asn1/x509/zgw;->sis([I[BI)V
 
     return-object v3
-.end method
-
-.method private you(Ljava/lang/String;[BI)V
-    .locals 2
-
-    new-instance p0, Ljava/util/StringTokenizer;
-
-    const-string v0, "./"
-
-    invoke-direct {p0, p1, v0}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    :goto_0
-    invoke-virtual {p0}, Ljava/util/StringTokenizer;->hasMoreTokens()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    add-int/lit8 v0, p1, 0x1
-
-    add-int/2addr p1, p3
-
-    invoke-virtual {p0}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v1
-
-    int-to-byte v1, v1
-
-    aput-byte v1, p2, p1
-
-    move p1, v0
-
-    goto :goto_0
-
-    :cond_0
-    return-void
 .end method
 
 .method public static zta(Lorg/bouncycastle/asn1/lqr;Z)Lorg/bouncycastle/asn1/x509/zgw;

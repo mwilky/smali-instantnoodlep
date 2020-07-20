@@ -32,7 +32,7 @@
 
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
-    .locals 8
+    .locals 9
 
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 
@@ -66,7 +66,7 @@
 
     invoke-static {v0, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_8
 
     const/4 p2, -0x1
 
@@ -82,11 +82,13 @@
 
     const-string v4, "op_iris_video_memc_status"
 
-    const-string v5, "op_iris_game_sdr2hdr_status"
+    const-string v5, "accessibility_display_inversion_enabled"
 
-    const/4 v6, 0x1
+    const-string v6, "op_iris_game_sdr2hdr_status"
 
-    const/4 v7, 0x0
+    const/4 v7, 0x1
+
+    const/4 v8, 0x0
 
     sparse-switch v0, :sswitch_data_0
 
@@ -147,7 +149,7 @@
 
     if-eqz p1, :cond_1
 
-    move p2, v7
+    move p2, v8
 
     goto :goto_1
 
@@ -158,12 +160,23 @@
 
     if-eqz p1, :cond_1
 
-    move p2, v6
+    move p2, v7
 
     goto :goto_1
 
     :sswitch_6
     invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    const/4 p2, 0x7
+
+    goto :goto_1
+
+    :sswitch_7
+    invoke-virtual {p1, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -175,16 +188,9 @@
     :goto_1
     packed-switch p2, :pswitch_data_0
 
-    goto/16 :goto_7
+    goto/16 :goto_8
 
     :pswitch_0
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
-
-    invoke-static {p0}, Lcom/oneplus/android/server/iris/OpIrisService;->access$300(Lcom/oneplus/android/server/iris/OpIrisService;)V
-
-    goto/16 :goto_7
-
-    :pswitch_1
     iget-object p1, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
 
     invoke-static {p1}, Lcom/oneplus/android/server/iris/OpIrisService;->access$000(Lcom/oneplus/android/server/iris/OpIrisService;)Landroid/content/Context;
@@ -201,7 +207,7 @@
 
     move-result p2
 
-    invoke-static {p1, v1, v7, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v5, v8, p2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -211,17 +217,24 @@
 
     move-result-object p0
 
-    if-ne p1, v6, :cond_2
+    if-ne p1, v7, :cond_2
 
     goto :goto_2
 
     :cond_2
-    move v6, v7
+    move v7, v8
 
     :goto_2
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->T(Z)V
+    invoke-virtual {p0, v7}, Lcom/oneplus/android/server/iris/bio;->Q(Z)V
 
-    goto/16 :goto_7
+    goto/16 :goto_8
+
+    :pswitch_1
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
+
+    invoke-static {p0}, Lcom/oneplus/android/server/iris/OpIrisService;->access$300(Lcom/oneplus/android/server/iris/OpIrisService;)V
+
+    goto/16 :goto_8
 
     :pswitch_2
     iget-object p1, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
@@ -240,7 +253,7 @@
 
     move-result p2
 
-    invoke-static {p1, v2, v7, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v1, v8, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -250,17 +263,17 @@
 
     move-result-object p0
 
-    if-ne p1, v6, :cond_3
+    if-ne p1, v7, :cond_3
 
     goto :goto_3
 
     :cond_3
-    move v6, v7
+    move v7, v8
 
     :goto_3
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->V(Z)V
+    invoke-virtual {p0, v7}, Lcom/oneplus/android/server/iris/bio;->U(Z)V
 
-    goto :goto_7
+    goto/16 :goto_8
 
     :pswitch_3
     iget-object p1, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
@@ -279,7 +292,7 @@
 
     move-result p2
 
-    invoke-static {p1, v5, v7, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v2, v8, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -289,17 +302,17 @@
 
     move-result-object p0
 
-    if-ne p1, v6, :cond_4
+    if-ne p1, v7, :cond_4
 
     goto :goto_4
 
     :cond_4
-    move v6, v7
+    move v7, v8
 
     :goto_4
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->R(Z)V
+    invoke-virtual {p0, v7}, Lcom/oneplus/android/server/iris/bio;->W(Z)V
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_4
     iget-object p1, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
@@ -318,7 +331,7 @@
 
     move-result p2
 
-    invoke-static {p1, v4, v7, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v6, v8, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -328,17 +341,17 @@
 
     move-result-object p0
 
-    if-ne p1, v6, :cond_5
+    if-ne p1, v7, :cond_5
 
     goto :goto_5
 
     :cond_5
-    move v6, v7
+    move v7, v8
 
     :goto_5
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->U(Z)V
+    invoke-virtual {p0, v7}, Lcom/oneplus/android/server/iris/bio;->S(Z)V
 
-    goto :goto_7
+    goto :goto_8
 
     :pswitch_5
     iget-object p1, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
@@ -357,7 +370,7 @@
 
     move-result p2
 
-    invoke-static {p1, v3, v7, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {p1, v4, v8, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result p1
 
@@ -367,23 +380,65 @@
 
     move-result-object p0
 
-    if-ne p1, v6, :cond_6
+    if-ne p1, v7, :cond_6
 
     goto :goto_6
 
     :cond_6
-    move v6, v7
+    move v7, v8
 
     :goto_6
-    invoke-virtual {p0, v6}, Lcom/oneplus/android/server/iris/bio;->Q(Z)V
+    invoke-virtual {p0, v7}, Lcom/oneplus/android/server/iris/bio;->V(Z)V
+
+    goto :goto_8
+
+    :pswitch_6
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
+
+    invoke-static {p1}, Lcom/oneplus/android/server/iris/OpIrisService;->access$000(Lcom/oneplus/android/server/iris/OpIrisService;)Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
+
+    invoke-static {p2}, Lcom/oneplus/android/server/iris/OpIrisService;->access$100(Lcom/oneplus/android/server/iris/OpIrisService;)I
+
+    move-result p2
+
+    invoke-static {p1, v3, v8, p2}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result p1
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/wtn;->this$0:Lcom/oneplus/android/server/iris/OpIrisService;
+
+    invoke-static {p0}, Lcom/oneplus/android/server/iris/OpIrisService;->access$200(Lcom/oneplus/android/server/iris/OpIrisService;)Lcom/oneplus/android/server/iris/bio;
+
+    move-result-object p0
+
+    if-ne p1, v7, :cond_7
+
+    goto :goto_7
 
     :cond_7
+    move v7, v8
+
     :goto_7
+    invoke-virtual {p0, v7}, Lcom/oneplus/android/server/iris/bio;->R(Z)V
+
+    :cond_8
+    :goto_8
     return-void
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
-        -0x32b44d75 -> :sswitch_6
+        -0x32b44d75 -> :sswitch_7
+        -0x20db1ad9 -> :sswitch_6
         -0x1711e2af -> :sswitch_5
         -0x40e11dc -> :sswitch_4
         0x441983e -> :sswitch_3
@@ -394,12 +449,13 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_6
         :pswitch_5
         :pswitch_4
         :pswitch_3
         :pswitch_2
         :pswitch_1
-        :pswitch_0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

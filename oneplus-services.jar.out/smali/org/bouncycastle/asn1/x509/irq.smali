@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private OJa:Lorg/bouncycastle/asn1/bvj;
+.field private iKa:Lorg/bouncycastle/asn1/bvj;
 
-.field private PJa:Lorg/bouncycastle/asn1/obl;
+.field private jKa:Lorg/bouncycastle/asn1/obl;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/irq;->OJa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/irq;->iKa:Lorg/bouncycastle/asn1/bvj;
 
     return-void
 .end method
@@ -25,9 +25,9 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/irq;->OJa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/irq;->iKa:Lorg/bouncycastle/asn1/bvj;
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/irq;->OJa:Lorg/bouncycastle/asn1/bvj;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/irq;->iKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->size()I
 
@@ -79,7 +79,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     :cond_0
     return-void
@@ -144,15 +144,7 @@
 .method public getPolicyQualifiers()Lorg/bouncycastle/asn1/obl;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
-
-    return-object p0
-.end method
-
-.method public tj()Lorg/bouncycastle/asn1/bvj;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->OJa:Lorg/bouncycastle/asn1/bvj;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     return-object p0
 .end method
@@ -164,11 +156,11 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/irq;->OJa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/irq;->iKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     if-eqz p0, :cond_0
 
@@ -193,11 +185,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/irq;->OJa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/irq;->iKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     if-eqz v1, :cond_2
 
@@ -208,7 +200,7 @@
     const/4 v2, 0x0
 
     :goto_0
-    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     invoke-virtual {v3}, Lorg/bouncycastle/asn1/obl;->size()I
 
@@ -227,7 +219,7 @@
     invoke-virtual {v1, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_0
-    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/irq;->PJa:Lorg/bouncycastle/asn1/obl;
+    iget-object v3, p0, Lorg/bouncycastle/asn1/x509/irq;->jKa:Lorg/bouncycastle/asn1/obl;
 
     invoke-virtual {v3, v2}, Lorg/bouncycastle/asn1/obl;->getObjectAt(I)Lorg/bouncycastle/asn1/ssp;
 
@@ -258,6 +250,14 @@
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object p0
+
+    return-object p0
+.end method
+
+.method public uj()Lorg/bouncycastle/asn1/bvj;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/irq;->iKa:Lorg/bouncycastle/asn1/bvj;
 
     return-object p0
 .end method

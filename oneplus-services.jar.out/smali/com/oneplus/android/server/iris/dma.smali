@@ -4,7 +4,49 @@
 
 
 # instance fields
-.field private Asa:Ljava/util/HashMap;
+.field private Msa:Z
+
+.field private Nsa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Osa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Psa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Qsa:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Rsa:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -15,7 +57,7 @@
     .end annotation
 .end field
 
-.field private Bsa:Ljava/util/HashMap;
+.field private Ssa:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -26,7 +68,7 @@
     .end annotation
 .end field
 
-.field private Csa:Ljava/util/HashMap;
+.field private Tsa:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -37,7 +79,29 @@
     .end annotation
 .end field
 
-.field private Dsa:Ljava/util/HashMap;
+.field private Usa:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Vsa:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Wsa:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -52,49 +116,6 @@
 
 .field private mVersion:J
 
-.field private vsa:Z
-
-.field private wsa:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private xsa:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ysa:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private zsa:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
 .method public constructor <init>()V
@@ -104,7 +125,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/dma;->vsa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/dma;->Msa:Z
 
     const-wide/16 v0, -0x1
 
@@ -118,98 +139,118 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->wsa:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Nsa:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->xsa:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Osa:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->ysa:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Psa:Ljava/util/ArrayList;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Qsa:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->zsa:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Rsa:Ljava/util/HashMap;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Asa:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Ssa:Ljava/util/HashMap;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Bsa:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Tsa:Ljava/util/HashMap;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Csa:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Usa:Ljava/util/HashMap;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Dsa:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Vsa:Ljava/util/HashMap;
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Wsa:Ljava/util/HashMap;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Rf()Z
+.method public Qf()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/dma;->vsa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/dma;->Msa:Z
 
     return p0
 .end method
 
-.method public Tf()V
+.method public Sf()V
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->wsa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Nsa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->xsa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Osa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->ysa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Psa:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->zsa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Qsa:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Rsa:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Asa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Ssa:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Bsa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Tsa:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Csa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/dma;->Usa:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Wsa:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->clear()V
 
     return-void
 .end method
 
-.method public Uf()Ljava/util/HashMap;
+.method public Tf()Ljava/util/HashMap;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -221,12 +262,12 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Asa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Wsa:Ljava/util/HashMap;
 
     return-object p0
 .end method
 
-.method public Vf()Ljava/util/ArrayList;
+.method public Uf()Ljava/util/ArrayList;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -237,17 +278,26 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->ysa:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Qsa:Ljava/util/ArrayList;
 
     return-object p0
 .end method
 
-.method public W(Z)V
+.method public Vf()Ljava/util/HashMap;
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/dma;->vsa:Z
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Ssa:Ljava/util/HashMap;
 
-    return-void
+    return-object p0
 .end method
 
 .method public Wf()Ljava/util/ArrayList;
@@ -261,24 +311,31 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->xsa:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Psa:Ljava/util/ArrayList;
 
     return-object p0
 .end method
 
-.method public Xf()Ljava/util/HashMap;
+.method public X(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/dma;->Msa:Z
+
+    return-void
+.end method
+
+.method public Xf()Ljava/util/ArrayList;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
+            "Ljava/util/ArrayList<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Dsa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Osa:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -295,12 +352,29 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->zsa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Vsa:Ljava/util/HashMap;
 
     return-object p0
 .end method
 
-.method public Zf()Ljava/util/ArrayList;
+.method public Zf()Ljava/util/HashMap;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Rsa:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method public _f()Ljava/util/ArrayList;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -311,7 +385,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->wsa:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Nsa:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -319,7 +393,7 @@
 .method public bvj(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Bsa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Usa:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -338,7 +412,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Csa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Usa:Ljava/util/HashMap;
 
     return-object p0
 .end method
@@ -355,7 +429,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Bsa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Tsa:Ljava/util/HashMap;
 
     return-object p0
 .end method
@@ -379,7 +453,7 @@
 .method public gwm(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->zsa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Vsa:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -389,7 +463,7 @@
 .method public ibl(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Dsa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Tsa:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -407,7 +481,7 @@
 .method public oif(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Csa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Ssa:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -417,7 +491,7 @@
 .method public qa(Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->ysa:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Qsa:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -427,7 +501,7 @@
 .method public qbh(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Asa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Wsa:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -437,7 +511,7 @@
 .method public ra(Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->xsa:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Psa:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -447,7 +521,7 @@
 .method public sa(Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->wsa:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Osa:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -458,6 +532,26 @@
     .locals 0
 
     iput-object p1, p0, Lcom/oneplus/android/server/iris/dma;->mUrl:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public ta(Ljava/lang/String;)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Nsa:Ljava/util/ArrayList;
+
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public ugm(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/dma;->Rsa:Ljava/util/HashMap;
+
+    invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected final nya:Ljava/io/InputStream;
+.field protected final Gya:Ljava/io/InputStream;
 
-.field private oya:I
+.field private Hya:I
 
 
 # direct methods
@@ -15,19 +15,19 @@
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/ga;->nya:Ljava/io/InputStream;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/ga;->Gya:Ljava/io/InputStream;
 
-    iput p2, p0, Lorg/bouncycastle/asn1/ga;->oya:I
+    iput p2, p0, Lorg/bouncycastle/asn1/ga;->Hya:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected ea(Z)V
+.method protected fa(Z)V
     .locals 1
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/ga;->nya:Ljava/io/InputStream;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/ga;->Gya:Ljava/io/InputStream;
 
     instance-of v0, p0, Lorg/bouncycastle/asn1/da;
 
@@ -35,7 +35,7 @@
 
     check-cast p0, Lorg/bouncycastle/asn1/da;
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/da;->fa(Z)V
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/asn1/da;->ga(Z)V
 
     :cond_0
     return-void
@@ -44,7 +44,7 @@
 .method getRemaining()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/ga;->oya:I
+    iget p0, p0, Lorg/bouncycastle/asn1/ga;->Hya:I
 
     return p0
 .end method

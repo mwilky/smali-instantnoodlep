@@ -25,7 +25,7 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum AAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum ABa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum ADB:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -33,7 +33,7 @@
 
 .field public static final enum AUDIOSERVER:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum BAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum BBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum BLUETOOTH:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -43,25 +43,19 @@
 
 .field public static final enum CAMERASERVER:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum CAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum CBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum DAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum DBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum DHCP:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum DRM:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum EAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum EBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum FAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
-.field public static final enum GAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum FBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum GPS:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
-.field public static final enum HAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
-.field public static final enum IAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum INET:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -69,13 +63,7 @@
 
 .field public static final enum INSTALL:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum JAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
-.field public static final enum KAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
 .field public static final enum KEYSTORE:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
-.field public static final enum LAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum LOG:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -83,23 +71,17 @@
 
 .field public static final enum LOOP_RADIO:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum MAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
 .field public static final enum MEDIA:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum MOUNT:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum MTP:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum NAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
 .field public static final enum NET_ADMIN:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum NFC:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum NVRAM:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
-
-.field public static final enum OAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 .field public static final enum PAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -161,19 +143,37 @@
 
 .field public static final enum jBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum tAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum kBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum uAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum lBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum vAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum mBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum wAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum nBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum xAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum oBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum yAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum pBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
-.field public static final enum zAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.field public static final enum qBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum rBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum sBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum uBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum vBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum wBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum xBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum yBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+
+.field public static final enum zBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
 
 # instance fields
@@ -204,7 +204,7 @@
 
     invoke-direct {v0, v3, v2, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->tAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->PAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -240,7 +240,7 @@
 
     invoke-direct {v0, v6, v5, v7}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->uAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->QAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -300,7 +300,7 @@
 
     invoke-direct {v0, v11, v10, v12}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->vAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->RAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -384,7 +384,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->wAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->SAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -444,7 +444,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->xAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->TAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -468,7 +468,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->yAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->UAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -492,7 +492,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->zAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->VAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -516,7 +516,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->AAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->WAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -528,7 +528,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->BAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->XAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -552,7 +552,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->CAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->YAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -564,7 +564,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->DAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->ZAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -576,7 +576,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->EAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->_Aa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -588,7 +588,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->FAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->aBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -600,7 +600,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->GAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->bBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -624,7 +624,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->HAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->cBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -636,7 +636,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->IAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->dBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -648,7 +648,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->JAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->eBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -660,7 +660,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->KAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->fBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -684,7 +684,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->LAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->gBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -696,7 +696,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->MAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->hBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -708,7 +708,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->NAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->iBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -720,7 +720,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->OAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->jBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -732,7 +732,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->PAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->kBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -756,7 +756,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->QAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->lBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -768,7 +768,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->RAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->mBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -792,7 +792,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->SAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->nBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -804,7 +804,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->TAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->oBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -828,7 +828,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->UAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->pBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -840,7 +840,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->VAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->qBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -852,7 +852,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->WAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->rBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -864,7 +864,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->XAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->sBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -888,7 +888,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->YAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -900,7 +900,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->ZAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->uBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -912,7 +912,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->_Aa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->vBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -924,7 +924,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->aBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->wBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -948,7 +948,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->bBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->xBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -960,7 +960,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->cBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->yBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -972,7 +972,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->dBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->zBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -996,7 +996,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->eBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->ABa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -1020,7 +1020,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->fBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->BBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -1032,7 +1032,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->gBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->CBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -1044,7 +1044,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->hBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->DBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -1056,7 +1056,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->iBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->EBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
@@ -1080,7 +1080,7 @@
 
     invoke-direct {v0, v13, v14, v15}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->jBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->FBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v0, 0x4b
 
@@ -1090,7 +1090,7 @@
 
     aput-object v13, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->tAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->PAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     aput-object v1, v0, v2
 
@@ -1102,7 +1102,7 @@
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->uAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->QAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     aput-object v1, v0, v5
 
@@ -1122,7 +1122,7 @@
 
     aput-object v1, v0, v9
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->vAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->RAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     aput-object v1, v0, v10
 
@@ -1158,7 +1158,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->wAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->SAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x10
 
@@ -1188,7 +1188,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->xAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->TAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x15
 
@@ -1200,7 +1200,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->yAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->UAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x17
 
@@ -1212,7 +1212,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->zAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->VAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x19
 
@@ -1224,13 +1224,13 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->AAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->WAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x1b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->BAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->XAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x1c
 
@@ -1242,31 +1242,31 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->CAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->YAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x1e
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->DAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->ZAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x1f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->EAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->_Aa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x20
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->FAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->aBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x21
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->GAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->bBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x22
 
@@ -1278,25 +1278,25 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->HAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->cBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x24
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->IAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->dBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x25
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->JAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->eBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x26
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->KAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->fBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x27
 
@@ -1308,31 +1308,31 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->LAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->gBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x29
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->MAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->hBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x2a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->NAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->iBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x2b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->OAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->jBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x2c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->PAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->kBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x2d
 
@@ -1344,13 +1344,13 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->QAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->lBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x2f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->RAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->mBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x30
 
@@ -1362,13 +1362,13 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->SAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->nBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x32
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->TAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->oBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x33
 
@@ -1380,25 +1380,25 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->UAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->pBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x35
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->VAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->qBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x36
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->WAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->rBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x37
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->XAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->sBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x38
 
@@ -1410,25 +1410,25 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->YAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x3a
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->ZAa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->uBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x3b
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->_Aa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->vBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x3c
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->aBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->wBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x3d
 
@@ -1440,19 +1440,19 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->bBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->xBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x3f
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->cBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->yBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x40
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->dBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->zBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x41
 
@@ -1464,7 +1464,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->eBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->ABa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x43
 
@@ -1476,25 +1476,25 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->fBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->BBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x45
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->gBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->CBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x46
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->hBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->DBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x47
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->iBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->EBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x48
 
@@ -1506,7 +1506,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->jBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->FBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
 
     const/16 v2, 0x4a
 
@@ -1548,7 +1548,7 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Mg()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()I
 
     move-result v4
 
@@ -1595,7 +1595,7 @@
     return-object v0
 .end method
 
-.method public static xa(Ljava/lang/String;)Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
+.method public static ya(Ljava/lang/String;)Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
     .locals 5
 
     invoke-static {}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->values()[Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;
@@ -1611,7 +1611,7 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Og()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1650,17 +1650,17 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Mg()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()I
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Mg()I
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()I
 
     move-result v5
 
     if-ne v4, v5, :cond_0
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Og()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1693,17 +1693,17 @@
 
     aget-object v3, v0, v2
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Mg()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()I
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Mg()I
+    invoke-virtual {p0}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()I
 
     move-result v5
 
     if-ne v4, v5, :cond_0
 
-    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Mg()I
+    invoke-virtual {v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->Ng()I
 
     move-result p0
 
@@ -1722,7 +1722,7 @@
 
 
 # virtual methods
-.method public Mg()I
+.method public Ng()I
     .locals 0
 
     iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->knownUID:I
@@ -1730,7 +1730,7 @@
     return p0
 .end method
 
-.method public Ng()Ljava/lang/String;
+.method public Og()Ljava/lang/String;
     .locals 0
 
     iget p0, p0, Lcom/android/server/power/OnePlusStandbyAnalyzer$KnownUIDs;->knownUID:I

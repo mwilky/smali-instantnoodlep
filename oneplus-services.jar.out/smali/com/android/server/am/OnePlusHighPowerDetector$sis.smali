@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/OnePlusHighPowerDetector;Lcom/android/server/am/b;)V
+.method synthetic constructor <init>(Lcom/android/server/am/OnePlusHighPowerDetector;Lcom/android/server/am/f;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/am/OnePlusHighPowerDetector$sis;-><init>(Lcom/android/server/am/OnePlusHighPowerDetector;)V

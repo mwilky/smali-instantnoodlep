@@ -176,7 +176,10 @@
     return p0
 .end method
 
-.method public th()Lorg/bouncycastle/asn1/vdb;
+.method public abstract toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
+.end method
+
+.method public uh()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/oif;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
@@ -184,7 +187,4 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method public abstract toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
 .end method

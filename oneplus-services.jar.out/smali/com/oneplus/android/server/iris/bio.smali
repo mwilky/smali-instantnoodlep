@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field protected lra:Lcom/oneplus/android/server/iris/ssp;
+.field protected zra:Lcom/oneplus/android/server/iris/ssp;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Lcom/oneplus/android/server/iris/ssp;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/bio;->lra:Lcom/oneplus/android/server/iris/ssp;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
 
     return-void
 .end method
@@ -49,16 +49,16 @@
 .method public abstract Q(Z)V
 .end method
 
+.method public abstract Qf()Z
+.end method
+
 .method public abstract R(Z)V
 .end method
 
-.method public abstract Rf()Z
+.method public abstract Rf()V
 .end method
 
 .method public abstract S(Z)V
-.end method
-
-.method public abstract Sf()V
 .end method
 
 .method public abstract T(Z)V
@@ -68,6 +68,9 @@
 .end method
 
 .method public abstract V(Z)V
+.end method
+
+.method public abstract W(Z)V
 .end method
 
 .method public abstract da(I)V
@@ -82,7 +85,7 @@
 .method public getIrisCommand(I)I
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->lra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/ssp;->getIrisCommand(I)I
 
@@ -139,7 +142,7 @@
 .method public setIrisCommand(Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->lra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
 
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/ssp;->setIrisCommand(Ljava/lang/String;)V
 

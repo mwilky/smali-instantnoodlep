@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Landroid/app/AlarmManager$OnAlarmListener;
 
 
 # annotations
@@ -14,15 +14,6 @@
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/android/server/wm/OpPowerConsumpStats$tsu;",
-        ">;"
-    }
 .end annotation
 
 
@@ -43,30 +34,54 @@
 
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
-
-    check-cast p1, Lcom/android/server/wm/OpPowerConsumpStats$tsu;
-
-    check-cast p2, Lcom/android/server/wm/OpPowerConsumpStats$tsu;
-
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/ivd;->zta(Lcom/android/server/wm/OpPowerConsumpStats$tsu;Lcom/android/server/wm/OpPowerConsumpStats$tsu;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public zta(Lcom/android/server/wm/OpPowerConsumpStats$tsu;Lcom/android/server/wm/OpPowerConsumpStats$tsu;)I
+.method public onAlarm()V
     .locals 2
 
-    iget-wide v0, p2, Lcom/android/server/wm/OpPowerConsumpStats$tsu;->nca:D
+    invoke-static {}, Lcom/android/server/wm/OpPowerConsumpStats;->access$100()Z
 
-    iget-wide p0, p1, Lcom/android/server/wm/OpPowerConsumpStats$tsu;->nca:D
+    move-result v0
 
-    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
+    if-nez v0, :cond_0
 
-    move-result p0
+    const-string p0, "OPCS"
 
-    return p0
+    const-string v0, "# mTrackAlarmListener # sENABLE false, return"
+
+    invoke-static {p0, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/wm/ivd;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->oif(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    const/16 v1, 0xc
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/server/wm/ivd;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {v0}, Lcom/android/server/wm/OpPowerConsumpStats;->oif(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/os/Handler;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    :cond_1
+    iget-object p0, p0, Lcom/android/server/wm/ivd;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
+
+    invoke-static {p0}, Lcom/android/server/wm/OpPowerConsumpStats;->oif(Lcom/android/server/wm/OpPowerConsumpStats;)Landroid/os/Handler;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    return-void
 .end method

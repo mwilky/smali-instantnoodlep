@@ -315,7 +315,7 @@
 
     move-result-object p4
 
-    invoke-virtual {p4, p3}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p4, p3}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object p5
 
@@ -334,7 +334,7 @@
 
     iget-object v1, v1, Lcom/android/server/am/AppRecordTransition;->mProcList:Ljava/util/Set;
 
-    iget-object v2, p5, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object v2, p5, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -346,7 +346,7 @@
 
     iget-object v1, v1, Lcom/android/server/am/AppRecordTransition;->mProcList:Ljava/util/Set;
 
-    iget-object p5, p5, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object p5, p5, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     invoke-interface {v1, p5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -421,7 +421,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {v0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v0
 
@@ -435,11 +435,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lcom/android/server/am/D;->getPss()J
+    invoke-virtual {v0}, Lcom/android/server/am/H;->getPss()J
 
     move-result-wide v7
 
-    iget-object v2, v0, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
@@ -451,7 +451,7 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v0, v0, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     move-object v2, v0
 
@@ -634,7 +634,7 @@
 
     if-eqz p5, :cond_2
 
-    invoke-virtual {p5, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p5, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v3
 
@@ -657,20 +657,20 @@
 
     if-eqz p4, :cond_1
 
-    invoke-virtual {p5, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p5, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object p4
 
     const/16 v0, 0x8
 
-    invoke-virtual {p4, v0}, Lcom/android/server/am/D;->oxb(I)V
+    invoke-virtual {p4, v0}, Lcom/android/server/am/H;->oxb(I)V
 
     :cond_1
-    invoke-virtual {p5, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p5, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object p4
 
-    invoke-virtual {p4}, Lcom/android/server/am/D;->getFlag()I
+    invoke-virtual {p4}, Lcom/android/server/am/H;->getFlag()I
 
     move-result v2
 

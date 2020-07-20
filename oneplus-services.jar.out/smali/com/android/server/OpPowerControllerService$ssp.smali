@@ -61,7 +61,7 @@
     return-void
 .end method
 
-.method private Jm()V
+.method private Km()V
     .locals 6
 
     const/4 v0, 0x0
@@ -103,7 +103,7 @@
     return-void
 .end method
 
-.method private jb(Ljava/lang/String;)Z
+.method private kb(Ljava/lang/String;)Z
     .locals 1
 
     :try_start_0

@@ -14,6 +14,8 @@
 
 .field public static final CESSATION_OF_OPERATION:I = 0x5
 
+.field public static final GCa:I = 0x0
+
 .field public static final KEY_COMPROMISE:I = 0x1
 
 .field public static final PRIVILEGE_WITHDRAWN:I = 0x9
@@ -22,31 +24,29 @@
 
 .field public static final SUPERSEDED:I = 0x4
 
-.field public static final THa:I = 0x8
-
-.field private static final UHa:[Ljava/lang/String;
-
 .field public static final UNSPECIFIED:I = 0x0
 
-.field public static final WFa:I = 0x1
+.field public static final nIa:I = 0x8
 
-.field public static final XFa:I = 0x2
+.field private static final oIa:[Ljava/lang/String;
 
-.field public static final YFa:I = 0x3
+.field public static final qGa:I = 0x1
 
-.field public static final ZFa:I = 0x4
+.field public static final rGa:I = 0x2
 
-.field public static final _Fa:I = 0x5
+.field public static final sGa:I = 0x3
 
-.field public static final aGa:I = 0x6
+.field public static final tGa:I = 0x4
 
-.field public static final bGa:I = 0x9
+.field public static final uGa:I = 0x5
 
-.field private static final cDa:Ljava/util/Hashtable;
+.field public static final vGa:I = 0x6
 
-.field public static final cGa:I = 0xa
+.field public static final wGa:I = 0x9
 
-.field public static final lCa:I
+.field private static final xDa:Ljava/util/Hashtable;
+
+.field public static final xGa:I = 0xa
 
 
 # instance fields
@@ -83,13 +83,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/asn1/x509/wtn;->UHa:[Ljava/lang/String;
+    sput-object v0, Lorg/bouncycastle/asn1/x509/wtn;->oIa:[Ljava/lang/String;
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/x509/wtn;->cDa:Ljava/util/Hashtable;
+    sput-object v0, Lorg/bouncycastle/asn1/x509/wtn;->xDa:Ljava/util/Hashtable;
 
     return-void
 .end method
@@ -153,7 +153,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/wtn;->cDa:Ljava/util/Hashtable;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/wtn;->xDa:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v0}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -161,7 +161,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/wtn;->cDa:Ljava/util/Hashtable;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/wtn;->xDa:Ljava/util/Hashtable;
 
     new-instance v2, Lorg/bouncycastle/asn1/x509/wtn;
 
@@ -170,7 +170,7 @@
     invoke-virtual {v1, v0, v2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
-    sget-object p0, Lorg/bouncycastle/asn1/x509/wtn;->cDa:Ljava/util/Hashtable;
+    sget-object p0, Lorg/bouncycastle/asn1/x509/wtn;->xDa:Ljava/util/Hashtable;
 
     invoke-virtual {p0, v0}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -223,7 +223,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lorg/bouncycastle/asn1/x509/wtn;->UHa:[Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/asn1/x509/wtn;->oIa:[Ljava/lang/String;
 
     aget-object p0, v0, p0
 

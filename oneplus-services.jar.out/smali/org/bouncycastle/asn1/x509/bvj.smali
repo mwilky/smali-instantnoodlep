@@ -7,9 +7,9 @@
 
 
 # static fields
-.field public static final _Ha:I = 0x0
+.field public static final uIa:I = 0x0
 
-.field public static final aIa:I = 0x1
+.field public static final vIa:I = 0x1
 
 
 # instance fields

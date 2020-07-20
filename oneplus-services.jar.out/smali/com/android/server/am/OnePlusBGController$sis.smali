@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/oxb;)V
+.method synthetic constructor <init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/ear;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/am/OnePlusBGController$sis;-><init>(Lcom/android/server/am/OnePlusBGController;)V
@@ -99,7 +99,7 @@
     :goto_0
     iget-object p2, p0, Lcom/android/server/am/OnePlusBGController$sis;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p2}, Lcom/android/server/am/OnePlusBGController;->lqr(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {p2}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result p2
 
@@ -119,7 +119,7 @@
 
     iget-object p2, p0, Lcom/android/server/am/OnePlusBGController$sis;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p2}, Lcom/android/server/am/OnePlusBGController;->lqr(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {p2}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result p2
 
@@ -133,7 +133,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$sis;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->lqr(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result p1
 
@@ -141,7 +141,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$sis;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object p1
 
@@ -172,7 +172,7 @@
 
     if-ne p0, p1, :cond_5
 
-    invoke-static {}, Lcom/android/server/am/OnePlusBGController;->access$1800()Z
+    invoke-static {}, Lcom/android/server/am/OnePlusBGController;->access$1700()Z
 
     move-result p0
 
@@ -259,7 +259,7 @@
 
     iget-object p2, p0, Lcom/android/server/am/OnePlusBGController$sis;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p2}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {p2}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object p2
 
@@ -272,7 +272,7 @@
     :goto_2
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$sis;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object p0
 

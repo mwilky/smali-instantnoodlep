@@ -12,24 +12,6 @@
 
 
 # static fields
-.field public static final Ahb:I = 0xb
-
-.field public static final Bhb:I = 0xc
-
-.field public static final Chb:I = 0xd
-
-.field public static final Dhb:I = 0x0
-
-.field public static final Ehb:I = 0x1
-
-.field public static final Fhb:I = 0x2
-
-.field public static final Ghb:I = 0x3
-
-.field public static final Hhb:I = 0x4
-
-.field public static final Ihb:I = 0x5
-
 .field public static final SHA1:I = 0x1
 
 .field public static final SHA224:I = 0x7
@@ -40,6 +22,24 @@
 
 .field public static final SHA512:I = 0x9
 
-.field public static final yhb:I = 0x0
+.field public static final Thb:I = 0x0
 
-.field public static final zhb:I = 0xa
+.field public static final Uhb:I = 0xa
+
+.field public static final Vhb:I = 0xb
+
+.field public static final Whb:I = 0xc
+
+.field public static final Xhb:I = 0xd
+
+.field public static final Yhb:I = 0x0
+
+.field public static final Zhb:I = 0x1
+
+.field public static final _hb:I = 0x2
+
+.field public static final aib:I = 0x3
+
+.field public static final bib:I = 0x4
+
+.field public static final cib:I = 0x5

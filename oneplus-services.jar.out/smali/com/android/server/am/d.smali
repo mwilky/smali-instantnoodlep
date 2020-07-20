@@ -1,375 +1,314 @@
 .class Lcom/android/server/am/D;
-.super Ljava/lang/Object;
+.super Ljava/lang/Thread;
 .source ""
 
 
-# static fields
-.field public static final GG:I = 0x8
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/am/E;->c(Z)V
+.end annotation
 
-.field public static final HG:I = 0x800
-
-.field public static final IG:I = 0x2000
-
-.field public static final JG:I = 0x20000000
-
-.field public static final KG:I = 0x40000000
-
-.field public static final sn:I = 0x2
-
-.field public static final tn:I = 0x4
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final AG:Ljava/lang/String;
+.field final synthetic dDa:J
 
-.field public final CG:Lcom/android/server/am/tsu;
-
-.field DG:Z
-
-.field private EG:I
-
-.field private final FG:Ljava/lang/Object;
-
-.field public hn:I
-
-.field public final mPackageName:Ljava/lang/String;
-
-.field public final mPid:I
-
-.field public mPss:J
-
-.field public final mUid:I
+.field final synthetic this$0:Lcom/android/server/am/E;
 
 
 # direct methods
-.method public constructor <init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
-    .locals 1
+.method constructor <init>(Lcom/android/server/am/E;Ljava/lang/String;J)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    const/4 v0, 0x0
+    iput-wide p3, p0, Lcom/android/server/am/D;->dDa:J
 
-    iput-boolean v0, p0, Lcom/android/server/am/D;->DG:Z
-
-    iput v0, p0, Lcom/android/server/am/D;->EG:I
-
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/am/D;->FG:Ljava/lang/Object;
-
-    iput p1, p0, Lcom/android/server/am/D;->mUid:I
-
-    iput p2, p0, Lcom/android/server/am/D;->mPid:I
-
-    iput-object p3, p0, Lcom/android/server/am/D;->AG:Ljava/lang/String;
-
-    iput-boolean p5, p0, Lcom/android/server/am/D;->DG:Z
-
-    iput-object p6, p0, Lcom/android/server/am/D;->CG:Lcom/android/server/am/tsu;
-
-    iput-object p4, p0, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
-    .locals 7
-
-    iget v1, p5, Lcom/android/server/am/tsu;->mUid:I
-
-    move-object v0, p0
-
-    move v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move v5, p4
-
-    move-object v6, p5
-
-    invoke-direct/range {v0 .. v6}, Lcom/android/server/am/D;-><init>(IILjava/lang/String;Ljava/lang/String;ZLcom/android/server/am/tsu;)V
+    invoke-direct {p0, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method ad()V
-    .locals 1
+.method public run()V
+    .locals 11
 
-    monitor-enter p0
+    const-string v0, "\n"
 
-    :try_start_0
-    iget v0, p0, Lcom/android/server/am/D;->EG:I
+    const-string v1, "OpRestartProcessManager"
 
-    add-int/lit8 v0, v0, 0x1
+    iget-wide v2, p0, Lcom/android/server/am/D;->dDa:J
 
-    iput v0, p0, Lcom/android/server/am/D;->EG:I
+    invoke-static {v2, v3}, Lcom/android/server/am/E;->zgw(J)J
 
-    monitor-exit p0
+    new-instance v2, Ljava/io/File;
 
-    return-void
+    iget-object v3, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    :catchall_0
-    move-exception v0
+    invoke-static {v3}, Lcom/android/server/am/E;->zta(Lcom/android/server/am/E;)Ljava/io/File;
 
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object v3
 
-    throw v0
-.end method
+    const-string v4, "record.txt"
 
-.method bd()I
-    .locals 1
+    invoke-direct {v2, v3, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    monitor-enter p0
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
 
     :try_start_0
-    iget v0, p0, Lcom/android/server/am/D;->EG:I
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
-    monitor-exit p0
+    move-result v6
 
-    return v0
+    if-eqz v6, :cond_1
 
-    :catchall_0
-    move-exception v0
+    new-instance v6, Ljava/io/File;
 
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v7, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    throw v0
-.end method
+    invoke-static {v7}, Lcom/android/server/am/E;->zta(Lcom/android/server/am/E;)Ljava/io/File;
 
-.method cd()V
-    .locals 1
+    move-result-object v7
 
-    monitor-enter p0
+    const-string v8, "record_backup.txt"
 
-    :try_start_0
-    iget v0, p0, Lcom/android/server/am/D;->EG:I
+    invoke-direct {v6, v7, v8}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    add-int/lit8 v0, v0, -0x1
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    iput v0, p0, Lcom/android/server/am/D;->EG:I
+    move-result v7
 
-    monitor-exit p0
+    if-eqz v7, :cond_0
 
-    return-void
+    invoke-virtual {v6}, Ljava/io/File;->delete()Z
 
-    :catchall_0
-    move-exception v0
+    :cond_0
+    invoke-virtual {v2, v6}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_1
+    iget-object v2, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    throw v0
-.end method
+    new-instance v6, Landroid/util/AtomicFile;
 
-.method public dd()V
-    .locals 3
+    new-instance v7, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/server/am/D;->FG:Ljava/lang/Object;
+    iget-object v8, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    monitor-enter v0
+    invoke-static {v8}, Lcom/android/server/am/E;->zta(Lcom/android/server/am/E;)Ljava/io/File;
 
-    :try_start_0
-    iget v1, p0, Lcom/android/server/am/D;->mPid:I
+    move-result-object v8
 
-    const/4 v2, 0x0
+    invoke-direct {v7, v8, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    invoke-static {v1, v2, v2}, Landroid/os/Debug;->getPss(I[J[J)J
+    invoke-direct {v6, v7}, Landroid/util/AtomicFile;-><init>(Ljava/io/File;)V
 
-    move-result-wide v1
+    invoke-static {v2, v6}, Lcom/android/server/am/E;->zta(Lcom/android/server/am/E;Landroid/util/AtomicFile;)Landroid/util/AtomicFile;
 
-    iput-wide v1, p0, Lcom/android/server/am/D;->mPss:J
+    iget-object v2, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    monitor-exit v0
+    invoke-static {v2}, Lcom/android/server/am/E;->you(Lcom/android/server/am/E;)Landroid/util/AtomicFile;
 
-    return-void
+    move-result-object v2
 
-    :catchall_0
-    move-exception p0
+    invoke-virtual {v2}, Landroid/util/AtomicFile;->startWrite()Ljava/io/FileOutputStream;
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object v5
 
-    throw p0
-.end method
+    new-instance v2, Ljava/lang/StringBuilder;
 
-.method ed()V
-    .locals 1
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    monitor-enter p0
+    const-string v4, "HasWarmUp : "
 
-    const/4 v0, 0x0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :try_start_0
-    iput v0, p0, Lcom/android/server/am/D;->EG:I
+    invoke-static {}, Lcom/android/server/am/E;->access$300()Z
 
-    monitor-exit p0
+    move-result v4
 
-    return-void
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    :catchall_0
-    move-exception v0
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    throw v0
-.end method
+    move-result-object v2
 
-.method fto(I)V
-    .locals 1
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/android/server/am/D;->hn:I
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    not-int p1, p1
+    const-string v6, "WarmUpTime : "
 
-    and-int/2addr p1, v0
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iput p1, p0, Lcom/android/server/am/D;->hn:I
+    invoke-static {}, Lcom/android/server/am/E;->access$400()J
 
-    return-void
-.end method
+    move-result-wide v6
 
-.method public getFlag()I
-    .locals 0
+    invoke-virtual {v4, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/am/D;->hn:I
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    return p0
-.end method
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-.method public getPackageName()Ljava/lang/String;
-    .locals 0
+    move-result-object v0
 
-    iget-object p0, p0, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/String;->getBytes()[B
 
-    return-object p0
-.end method
+    move-result-object v2
 
-.method public getPid()I
-    .locals 0
+    invoke-virtual {v5, v2}, Ljava/io/FileOutputStream;->write([B)V
 
-    iget p0, p0, Lcom/android/server/am/D;->mPid:I
+    invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
 
-    return p0
-.end method
+    move-result-object v0
 
-.method public getPss()J
-    .locals 3
+    invoke-virtual {v5, v0}, Ljava/io/FileOutputStream;->write([B)V
 
-    iget-object v0, p0, Lcom/android/server/am/D;->FG:Ljava/lang/Object;
+    invoke-static {}, Lcom/android/server/am/E;->access$500()Ljava/util/HashMap;
 
-    monitor-enter v0
+    move-result-object v0
 
-    :try_start_0
-    iget-wide v1, p0, Lcom/android/server/am/D;->mPss:J
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
-    monitor-exit v0
+    move-result-object v0
 
-    return-wide v1
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    :catchall_0
-    move-exception p0
+    move-result-object v0
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    throw p0
-.end method
+    move-result v2
 
-.method isShowing()Z
-    .locals 0
+    if-eqz v2, :cond_3
 
-    iget p0, p0, Lcom/android/server/am/D;->hn:I
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    and-int/lit16 p0, p0, 0x2000
+    move-result-object v2
 
-    if-eqz p0, :cond_0
+    check-cast v2, Ljava/lang/String;
 
-    const/4 p0, 0x1
+    invoke-static {}, Lcom/android/server/am/E;->access$500()Ljava/util/HashMap;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/am/E$bio;
+
+    invoke-static {v2}, Lcom/android/server/am/E$bio;->cno(Lcom/android/server/am/E$bio;)Ljava/util/ArrayList;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :goto_1
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lcom/android/server/am/E$cno;
+
+    invoke-static {v6}, Lcom/android/server/am/E$cno;->igw(Lcom/android/server/am/E$cno;)J
+
+    move-result-wide v7
+
+    invoke-static {v6}, Lcom/android/server/am/E$cno;->wtn(Lcom/android/server/am/E$cno;)J
+
+    move-result-wide v9
+
+    add-long/2addr v7, v9
+
+    invoke-static {v6, v7, v8}, Lcom/android/server/am/E$cno;->tsu(Lcom/android/server/am/E$cno;J)J
+
+    goto :goto_1
+
+    :cond_2
+    invoke-virtual {v2}, Lcom/android/server/am/E$bio;->Wc()[B
+
+    move-result-object v2
+
+    invoke-virtual {v5, v2}, Ljava/io/FileOutputStream;->write([B)V
 
     goto :goto_0
 
-    :cond_0
-    const/4 p0, 0x0
+    :cond_3
+    invoke-virtual {v5}, Ljava/io/FileOutputStream;->flush()V
 
-    :goto_0
-    return p0
-.end method
+    iget-object v0, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-.method oxb(I)V
-    .locals 1
+    invoke-static {v0}, Lcom/android/server/am/E;->you(Lcom/android/server/am/E;)Landroid/util/AtomicFile;
 
-    iget v0, p0, Lcom/android/server/am/D;->hn:I
+    move-result-object v0
 
-    or-int/2addr p1, v0
+    invoke-virtual {v0, v5}, Landroid/util/AtomicFile;->finishWrite(Ljava/io/FileOutputStream;)V
 
-    iput p1, p0, Lcom/android/server/am/D;->hn:I
+    invoke-static {}, Lcom/android/server/am/E;->access$1000()Z
 
-    return-void
-.end method
+    move-result v0
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+    if-eqz v0, :cond_4
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "Finishing writting old record"
 
-    const-string v1, "ProcRecord { "
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    goto :goto_2
 
-    const-string v1, "uid="
+    :catchall_0
+    move-exception p0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_3
 
-    iget v1, p0, Lcom/android/server/am/D;->mUid:I
+    :catch_0
+    move-exception v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    :try_start_1
+    const-string v2, "Error writing process statistics"
 
-    const-string v1, ", pkg="
+    invoke-static {v1, v2, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object p0, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    iget-object v1, p0, Lcom/android/server/am/D;->mPackageName:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", pid="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/am/D;->mPid:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", procName="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p0, p0, Lcom/android/server/am/D;->AG:Ljava/lang/String;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " }"
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/server/am/E;->you(Lcom/android/server/am/E;)Landroid/util/AtomicFile;
 
     move-result-object p0
 
-    return-object p0
+    invoke-virtual {p0, v5}, Landroid/util/AtomicFile;->failWrite(Ljava/io/FileOutputStream;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :cond_4
+    :goto_2
+    invoke-static {v3}, Lcom/android/server/am/E;->cgv(Z)Z
+
+    return-void
+
+    :goto_3
+    invoke-static {v3}, Lcom/android/server/am/E;->cgv(Z)Z
+
+    throw p0
 .end method

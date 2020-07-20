@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lorg/bouncycastle/crypto/tsu/tsu;->Nw()Z
+    value = Lorg/bouncycastle/crypto/tsu/tsu;->Pw()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

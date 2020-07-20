@@ -152,7 +152,7 @@
 
     sget-object v2, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
 
-    sget-object v3, Lyou/zta/sis/zta/sis;->oFa:Ljava/math/BigInteger;
+    sget-object v3, Lyou/zta/sis/zta/sis;->JFa:Ljava/math/BigInteger;
 
     sget-object v4, Lyou/zta/sis/zta/sis;->ONE:Ljava/math/BigInteger;
 
@@ -375,7 +375,7 @@
 
 
 # virtual methods
-.method public Yk()Lyou/zta/sis/zta/cno;
+.method public Zk()Lyou/zta/sis/zta/cno;
     .locals 3
 
     iget-object v0, p0, Lyou/zta/sis/zta/cno$tsu;->x:Ljava/math/BigInteger;
@@ -408,7 +408,7 @@
     return-object v1
 .end method
 
-.method public Zk()Ljava/lang/String;
+.method public _k()Ljava/lang/String;
     .locals 0
 
     const-string p0, "Fp"
@@ -416,7 +416,21 @@
     return-object p0
 .end method
 
-.method public al()Lyou/zta/sis/zta/cno;
+.method protected bio(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    .locals 0
+
+    invoke-virtual {p1, p2}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lyou/zta/sis/zta/cno$tsu;->gwm(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bl()Lyou/zta/sis/zta/cno;
     .locals 12
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->isZero()Z
@@ -425,7 +439,7 @@
 
     if-nez v0, :cond_8
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->_k()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->al()Z
 
     move-result v0
 
@@ -546,7 +560,7 @@
     return-object p0
 
     :cond_2
-    sget-object v0, Lyou/zta/sis/zta/sis;->oFa:Ljava/math/BigInteger;
+    sget-object v0, Lyou/zta/sis/zta/sis;->JFa:Ljava/math/BigInteger;
 
     iget-object v2, p0, Lyou/zta/sis/zta/cno$tsu;->q:Ljava/math/BigInteger;
 
@@ -737,20 +751,6 @@
 
     :cond_8
     :goto_0
-    return-object p0
-.end method
-
-.method protected bio(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
-    .locals 0
-
-    invoke-virtual {p1, p2}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lyou/zta/sis/zta/cno$tsu;->gwm(Ljava/math/BigInteger;)Ljava/math/BigInteger;
-
-    move-result-object p0
-
     return-object p0
 .end method
 

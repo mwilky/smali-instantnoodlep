@@ -6,7 +6,7 @@
 # static fields
 .field private static final BC:Lorg/bouncycastle/crypto/you/sis;
 
-.field private static final VNa:Lorg/bouncycastle/crypto/you/sis;
+.field private static final pOa:Lorg/bouncycastle/crypto/you/sis;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     invoke-direct {v0}, Lorg/bouncycastle/crypto/you/tsu;-><init>()V
 
     :goto_0
-    sput-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sput-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     goto :goto_1
 
@@ -87,7 +87,7 @@
 .method public static bud()Lorg/bouncycastle/crypto/qbh;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     if-eqz v0, :cond_0
 
@@ -114,7 +114,7 @@
 .method public static ear()Lorg/bouncycastle/crypto/qbh;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     if-eqz v0, :cond_0
 
@@ -141,7 +141,7 @@
 .method public static i()Lorg/bouncycastle/crypto/qbh;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     if-eqz v0, :cond_0
 
@@ -168,7 +168,7 @@
 .method public static igw()Lorg/bouncycastle/crypto/qbh;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     if-eqz v0, :cond_0
 
@@ -195,7 +195,7 @@
 .method public static vdw()Lorg/bouncycastle/crypto/qbh;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     if-eqz v0, :cond_0
 
@@ -222,7 +222,7 @@
 .method public static ywr()Lorg/bouncycastle/crypto/qbh;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->VNa:Lorg/bouncycastle/crypto/you/sis;
+    sget-object v0, Lorg/bouncycastle/crypto/you/zta;->pOa:Lorg/bouncycastle/crypto/you/sis;
 
     if-eqz v0, :cond_0
 

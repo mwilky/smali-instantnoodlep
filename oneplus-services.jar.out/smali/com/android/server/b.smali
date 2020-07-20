@@ -180,12 +180,12 @@
 
     xor-int/2addr v0, v1
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->ra(Z)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->sa(Z)V
 
     return-void
 .end method
 
-.method private Ym()V
+.method private Zm()V
     .locals 3
 
     new-instance v0, Lcom/oneplus/config/ConfigGrabber;
@@ -205,7 +205,7 @@
     return-void
 .end method
 
-.method private Zm()V
+.method private _m()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/B;->mm:Landroid/content/Context;
@@ -233,7 +233,7 @@
     return-void
 .end method
 
-.method private _m()V
+.method private an()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
@@ -249,7 +249,7 @@
     return-void
 .end method
 
-.method private an()V
+.method private bn()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/B;->mGravitySensor:Landroid/hardware/Sensor;
@@ -262,7 +262,7 @@
 
     const-string v0, "start detecting motion"
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
@@ -302,7 +302,7 @@
     return-void
 .end method
 
-.method private bn()V
+.method private cn()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/B;->mGravitySensor:Landroid/hardware/Sensor;
@@ -315,7 +315,7 @@
 
     const-string v0, "stop detecting motion"
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
@@ -360,7 +360,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -378,7 +378,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -396,7 +396,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -414,7 +414,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -432,7 +432,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -450,7 +450,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -468,7 +468,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -486,7 +486,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -534,21 +534,6 @@
     iput-object v1, p0, Lcom/android/server/B;->om:Landroid/content/Intent;
 
     :cond_1
-    return-void
-.end method
-
-.method private pb(Ljava/lang/String;)V
-    .locals 0
-
-    sget-boolean p0, Lcom/android/server/B;->DEBUG:Z
-
-    if-eqz p0, :cond_0
-
-    const-string p0, "WirelessChargeDisconnectDetector"
-
-    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
     return-void
 .end method
 
@@ -604,7 +589,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    invoke-direct {p0}, Lcom/android/server/B;->bn()V
+    invoke-direct {p0}, Lcom/android/server/B;->cn()V
 
     const/4 v0, 0x0
 
@@ -650,155 +635,25 @@
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     :cond_1
     return-void
 .end method
 
-.method private ra(Z)V
-    .locals 3
+.method private qb(Ljava/lang/String;)V
+    .locals 0
 
-    new-instance v0, Ljava/io/File;
+    sget-boolean p0, Lcom/android/server/B;->DEBUG:Z
 
-    const-string v1, "/sys/class/power_supply/wireless/icon_delay"
+    if-eqz p0, :cond_0
 
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    const-string p0, "WirelessChargeDisconnectDetector"
 
-    const/4 v1, 0x0
-
-    :try_start_0
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    new-instance v2, Ljava/io/FileOutputStream;
-
-    invoke-direct {v2, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    if-eqz p1, :cond_0
-
-    :try_start_1
-    const-string p1, "1"
-
-    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object p1
-
-    :goto_0
-    invoke-virtual {v2, p1}, Ljava/io/FileOutputStream;->write([B)V
-
-    goto :goto_1
+    invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    const-string p1, "0"
-
-    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object p1
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    :goto_1
-    move-object v1, v2
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception p1
-
-    goto :goto_5
-
-    :catch_0
-    move-exception p1
-
-    move-object v1, v2
-
-    goto :goto_3
-
-    :cond_1
-    :goto_2
-    if-eqz v1, :cond_2
-
-    :try_start_2
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-
-    goto :goto_4
-
-    :catch_1
-    move-exception p1
-
-    invoke-virtual {p1}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
-
-    goto :goto_4
-
-    :catchall_1
-    move-exception p1
-
-    move-object v2, v1
-
-    goto :goto_5
-
-    :catch_2
-    move-exception p1
-
-    :goto_3
-    :try_start_3
-    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    if-eqz v1, :cond_2
-
-    :try_start_4
-    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
-
-    :cond_2
-    :goto_4
     return-void
-
-    :goto_5
-    if-eqz v2, :cond_3
-
-    :try_start_5
-    invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
-
-    goto :goto_6
-
-    :catch_3
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
-
-    :cond_3
-    :goto_6
-    throw p1
 .end method
 
 .method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
@@ -1065,7 +920,7 @@
     move v6, v0
 
     :goto_3
-    invoke-direct {p0, v6}, Lcom/android/server/B;->ra(Z)V
+    invoke-direct {p0, v6}, Lcom/android/server/B;->sa(Z)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1081,7 +936,7 @@
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     :cond_3
     invoke-direct {p0}, Lcom/android/server/B;->dump()V
@@ -1123,6 +978,151 @@
     return-object p0
 .end method
 
+.method private sa(Z)V
+    .locals 3
+
+    new-instance v0, Ljava/io/File;
+
+    const-string v1, "/sys/class/power_supply/wireless/icon_delay"
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    const/4 v1, 0x0
+
+    :try_start_0
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    new-instance v2, Ljava/io/FileOutputStream;
+
+    invoke-direct {v2, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    if-eqz p1, :cond_0
+
+    :try_start_1
+    const-string p1, "1"
+
+    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object p1
+
+    :goto_0
+    invoke-virtual {v2, p1}, Ljava/io/FileOutputStream;->write([B)V
+
+    goto :goto_1
+
+    :cond_0
+    const-string p1, "0"
+
+    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object p1
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    :goto_1
+    move-object v1, v2
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_5
+
+    :catch_0
+    move-exception p1
+
+    move-object v1, v2
+
+    goto :goto_3
+
+    :cond_1
+    :goto_2
+    if-eqz v1, :cond_2
+
+    :try_start_2
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+
+    goto :goto_4
+
+    :catch_1
+    move-exception p1
+
+    invoke-virtual {p1}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
+
+    goto :goto_4
+
+    :catchall_1
+    move-exception p1
+
+    move-object v2, v1
+
+    goto :goto_5
+
+    :catch_2
+    move-exception p1
+
+    :goto_3
+    :try_start_3
+    invoke-virtual {p1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    if-eqz v1, :cond_2
+
+    :try_start_4
+    invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
+
+    :cond_2
+    :goto_4
+    return-void
+
+    :goto_5
+    if-eqz v2, :cond_3
+
+    :try_start_5
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
+
+    goto :goto_6
+
+    :catch_3
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/io/IOException;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
+
+    :cond_3
+    :goto_6
+    throw p1
+.end method
+
 .method static synthetic sis(Lcom/android/server/B;F)F
     .locals 0
 
@@ -1134,7 +1134,7 @@
 .method static synthetic sis(Lcom/android/server/B;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/B;->bn()V
+    invoke-direct {p0}, Lcom/android/server/B;->cn()V
 
     return-void
 .end method
@@ -1200,7 +1200,7 @@
 .method static synthetic zta(Lcom/android/server/B;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/B;->Ym()V
+    invoke-direct {p0}, Lcom/android/server/B;->Zm()V
 
     return-void
 .end method
@@ -1216,7 +1216,7 @@
 .method static synthetic zta(Lcom/android/server/B;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1244,7 +1244,7 @@
 
     const-string v0, "end record gravity"
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     monitor-enter p0
 
@@ -1273,7 +1273,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1291,7 +1291,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1309,7 +1309,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/server/B;->mSensorManager:Landroid/hardware/SensorManager;
 
@@ -1354,7 +1354,7 @@
 
     const-string v0, "start record gravity"
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/server/B;->mSensorManager:Landroid/hardware/SensorManager;
 
@@ -1607,7 +1607,7 @@
 
     iput-object v1, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
-    invoke-direct {p0}, Lcom/android/server/B;->Zm()V
+    invoke-direct {p0}, Lcom/android/server/B;->_m()V
 
     new-instance p1, Lcom/oneplus/config/ConfigObserver;
 
@@ -1672,7 +1672,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/B;->bn()V
+    invoke-direct {p0}, Lcom/android/server/B;->cn()V
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
@@ -1710,7 +1710,7 @@
 
     if-ne p1, v3, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/B;->_m()V
+    invoke-direct {p0}, Lcom/android/server/B;->an()V
 
     if-eqz v0, :cond_1
 
@@ -1761,14 +1761,14 @@
 
     const-string v0, "should defer: false"
 
-    invoke-direct {p0, v0}, Lcom/android/server/B;->pb(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/server/B;->qb(Ljava/lang/String;)V
 
     monitor-exit p0
 
     return v1
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/B;->an()V
+    invoke-direct {p0}, Lcom/android/server/B;->bn()V
 
     const/4 v0, 0x1
 

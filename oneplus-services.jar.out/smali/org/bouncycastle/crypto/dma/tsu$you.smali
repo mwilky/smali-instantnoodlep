@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->pi()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->qi()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p0
 
@@ -79,7 +79,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->mh()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->nh()Ljava/math/BigInteger;
 
     move-result-object p2
 
@@ -87,7 +87,7 @@
 
     if-eqz p2, :cond_0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->mh()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->nh()Ljava/math/BigInteger;
 
     move-result-object p2
 
@@ -99,7 +99,7 @@
     move-object v4, v0
 
     :goto_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->Bj()Lorg/bouncycastle/asn1/ibl/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/tsu;->Cj()Lorg/bouncycastle/asn1/ibl/ssp;
 
     move-result-object p1
 
@@ -109,7 +109,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/ssp;->Aj()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/ibl/ssp;->Bj()Ljava/math/BigInteger;
 
     move-result-object p1
 

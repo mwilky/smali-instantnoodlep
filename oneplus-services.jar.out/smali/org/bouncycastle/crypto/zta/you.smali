@@ -94,13 +94,13 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->sl()Z
+    invoke-virtual {p1}, Lyou/zta/sis/zta/wtn;->tl()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -112,7 +112,7 @@
 
     if-nez v2, :cond_0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->pk()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->qk()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -120,7 +120,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/ibl;->Jj()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -141,13 +141,13 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->sl()Z
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->tl()Z
 
     move-result p1
 
     if-nez p1, :cond_1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->gl()Lyou/zta/sis/zta/cno;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/wtn;->hl()Lyou/zta/sis/zta/cno;
 
     move-result-object p0
 

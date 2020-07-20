@@ -1,5 +1,5 @@
 .class Lcom/android/server/am/m$tsu;
-.super Landroid/os/Handler;
+.super Landroid/database/ContentObserver;
 .source ""
 
 
@@ -9,21 +9,9 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x2
     name = "tsu"
 .end annotation
-
-
-# static fields
-.field static final Aa:I = 0x3e8
-
-.field static final Ba:I = 0x3ea
-
-.field static final Ca:Ljava/lang/String; = "pkgChangeAction"
-
-.field static final KEY_PKG_NAME:Ljava/lang/String; = "pkgName"
-
-.field static final KEY_UID:Ljava/lang/String; = "uid"
 
 
 # instance fields
@@ -31,38 +19,43 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/m;Landroid/os/Looper;)V
+.method public constructor <init>(Lcom/android/server/am/m;Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/am/m$tsu;->this$0:Lcom/android/server/am/m;
 
-    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    invoke-direct {p0, p3}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public handleMessage(Landroid/os/Message;)V
+.method public onChange(Z)V
     .locals 1
 
-    invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
+    invoke-static {}, Lcom/android/server/am/m;->access$000()Z
 
-    iget p1, p1, Landroid/os/Message;->what:I
+    move-result p1
 
-    const/16 v0, 0x3e8
+    if-eqz p1, :cond_0
 
-    if-eq p1, v0, :cond_0
+    const-string p1, "OnePlusSmartBoostManager"
 
-    goto :goto_0
+    const-string v0, "smartboost_enable changed!"
+
+    invoke-static {p1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     iget-object p0, p0, Lcom/android/server/am/m$tsu;->this$0:Lcom/android/server/am/m;
 
-    const-string p1, "OnePlusAntiBurnConfig"
+    invoke-static {p0}, Lcom/android/server/am/m;->zta(Lcom/android/server/am/m;)Lcom/android/server/am/m$sis;
 
-    invoke-static {p0, p1}, Lcom/android/server/am/m;->zta(Lcom/android/server/am/m;Ljava/lang/String;)V
+    move-result-object p0
 
-    :goto_0
+    const/16 p1, 0xc
+
+    invoke-virtual {p0, p1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
     return-void
 .end method

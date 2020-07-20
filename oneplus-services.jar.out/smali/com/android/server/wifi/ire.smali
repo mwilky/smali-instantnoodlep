@@ -18,23 +18,15 @@
 
 .field private static final AUTHORITY_URI:Landroid/net/Uri;
 
-.field private static final AZ:I = 0x3
+.field private static final AZ:I = 0x100
 
-.field private static final Aaa:[Ljava/lang/String;
+.field private static final Aaa:S = 0x2as
 
-.field private static final BZ:I = 0x1
+.field private static final BZ:I = 0x0
 
 .field private static final Ba:I = 0xc
 
-.field private static Baa:Ljava/util/ArrayList; = null
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private static final Baa:S = 0x2bs
 
 .field private static final CALLBACK_LISTEN_ALL:I = 0x1
 
@@ -42,243 +34,269 @@
 
 .field private static final CHAR:I = 0x2
 
-.field private static final CZ:I = 0x2
+.field private static final CZ:I = 0x1
 
-.field private static Caa:Ljava/util/ArrayList; = null
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private static final Caa:S = 0x2cs
 
 .field private static final DOUBLE:I = 0x8
 
-.field private static final DZ:I = 0x3
+.field private static final DZ:I = 0x2
 
-.field private static final EZ:I = 0x4
+.field private static final Daa:S = 0x2ds
+
+.field private static final EZ:I = 0x1
+
+.field private static final Eaa:S = 0x2es
 
 .field private static final FLOAT:I = 0x4
 
 .field private static final FOREGROUND_IMPORTANCE_CUTOFF:I = 0x64
 
-.field private static final FZ:I = 0x5
+.field private static final FZ:I = 0x0
 
-.field private static final GZ:I = 0x6
+.field private static final Faa:S = 0x2fs
 
-.field private static HY:Ljava/io/FileDescriptor; = null
+.field private static final GZ:I = 0x1
+
+.field private static final Gaa:S = 0x30s
+
+.field private static final Haa:S = 0x31s
 
 .field private static final INT:I = 0x4
 
 .field private static final INVALID_RSSI:I = -0xc8
 
-.field private static IY:Ljava/lang/String; = null
+.field private static final IZ:I = 0x1
 
-.field private static final IZ:I = 0x8
+.field private static final Iaa:S = 0x37s
 
-.field private static final JY:Ljava/lang/String; = "19867"
+.field private static final JZ:I = 0x2
 
-.field private static final JZ:I = 0x9
+.field private static final Jaa:[Ljava/lang/String;
 
-.field private static final KY:Ljava/lang/String; = "_id"
+.field private static final KZ:I = 0x3
 
-.field private static final KZ:I = 0xa
+.field private static Kaa:Ljava/util/ArrayList; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static final LONG:I = 0x8
 
-.field private static final LY:Ljava/lang/String; = "pkg"
+.field private static final LZ:I = 0x1
 
-.field private static final LZ:I = 0xb
+.field private static Laa:Ljava/util/ArrayList; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static final MSG_GET_ONLINECONFIG:I = 0x1
 
 .field private static final MSG_STOP_LISTENING:I = 0x7
 
-.field private static final MY:Ljava/lang/String; = "mobile"
+.field private static final MZ:I = 0x2
 
-.field private static final MZ:I = 0xd
-
-.field private static final NY:Ljava/lang/String; = "wlan"
-
-.field private static final NZ:I = 0xe
+.field private static final NZ:I = 0x3
 
 .field private static final OP_GAME_MODE_APP:I = 0x3ec
 
-.field private static final OY:Ljava/lang/String; = "SlaOnlineConfig"
+.field private static final OZ:I = 0x4
 
-.field private static final OZ:I = 0xf
+.field private static final PZ:I = 0x5
 
-.field private static final PY:Ljava/lang/String; = "SlaGameWhiteList"
+.field private static QY:Ljava/io/FileDescriptor; = null
 
-.field private static final PZ:I = 0x10
+.field private static final QZ:I = 0x6
 
-.field private static final QY:Ljava/lang/String; = "SlaTopAppWhiteList"
+.field private static RY:Ljava/lang/String; = null
 
-.field private static final QZ:I = 0x11
-
-.field private static final RY:Ljava/lang/String; = "oneplus_link_turbo_value"
-
-.field private static final RZ:I = 0x12
+.field private static final RZ:I = 0x8
 
 .field private static final SHORT:I = 0x2
 
-.field private static final SY:Ljava/lang/String; = "oneplus_smart_link_selection"
+.field private static final SY:Ljava/lang/String; = "19867"
 
-.field private static final SZ:I = 0x1d
+.field private static final SZ:I = 0x9
 
 .field private static final TAG:Ljava/lang/String; = "OpSlaNetlinkHelper"
 
-.field private static final TY:Ljava/lang/String; = "sla_game_mark"
+.field private static final TY:Ljava/lang/String; = "_id"
 
-.field private static final TZ:S = 0x11s
+.field private static final TZ:I = 0xa
 
-.field private static final UY:Ljava/lang/String; = "op_gamemode_removed_packages_by_user"
+.field private static final UY:Ljava/lang/String; = "pkg"
 
-.field private static final UZ:S = 0x12s
+.field private static final UZ:I = 0xb
 
-.field private static final VY:Ljava/lang/String; = "game_mode_apps"
+.field private static final VY:Ljava/lang/String; = "mobile"
 
-.field private static final VZ:S = 0x13s
+.field private static final VZ:I = 0xd
 
 .field private static final WIFI_AUTO_CHANGE_TO_MOBILE_DATA:Ljava/lang/String; = "wifi_auto_change_to_mobile_data"
 
-.field private static final WY:Ljava/lang/String; = "config_current_primary_sub"
+.field private static final WY:Ljava/lang/String; = "wlan"
 
-.field private static final WZ:S = 0x14s
+.field private static final WZ:I = 0xe
 
-.field private static final XY:Ljava/lang/String; = "android.intent.action.ENABLE_DOWNLOAD_SWITCH"
+.field private static final XY:Ljava/lang/String; = "SlaOnlineConfig"
 
-.field private static final XZ:S = 0x15s
+.field private static final XZ:I = 0xf
 
-.field private static final YU:Ljava/lang/String; = "network_restrict"
+.field private static final YY:Ljava/lang/String; = "SlaGameWhiteList"
 
-.field private static final YY:Ljava/lang/String; = "android.intent.action.ENABLE_SLS_APP_SWITCH"
+.field private static final YZ:I = 0x10
 
-.field private static final YZ:S = 0x16s
+.field private static final ZY:Ljava/lang/String; = "SlaTopAppWhiteList"
 
-.field private static final ZU:Landroid/net/Uri;
+.field private static final ZZ:I = 0x11
 
-.field private static final ZY:Ljava/lang/String; = "sla_download_onetime_notify"
+.field private static final _Y:Ljava/lang/String; = "oneplus_link_turbo_value"
 
-.field private static final ZZ:S = 0x17s
+.field private static final _Z:I = 0x12
 
-.field private static final _Y:Ljava/lang/String; = "sls_app_onetime_notify"
+.field private static final aZ:Ljava/lang/String; = "oneplus_smart_link_selection"
 
-.field private static final _Z:S = 0x18s
+.field private static final aaa:I = 0x1d
 
-.field private static final aZ:Ljava/lang/String; = "download_smart_link_aggregation"
+.field private static final bZ:Ljava/lang/String; = "sla_game_mark"
 
-.field private static final aaa:S = 0x19s
+.field private static final baa:S = 0x11s
 
-.field private static final bZ:Ljava/lang/String; = "sla_enable_notify"
+.field private static final cZ:Ljava/lang/String; = "op_gamemode_removed_packages_by_user"
 
-.field private static final baa:S = 0x1as
+.field private static final caa:S = 0x12s
 
-.field private static final cZ:Ljava/lang/String; = "sla_downloading_dm_notify"
+.field private static final dZ:Ljava/lang/String; = "game_mode_apps"
 
-.field private static final caa:S = 0x1bs
+.field private static final daa:S = 0x13s
 
-.field private static final dZ:Ljava/lang/String; = "sla_downloading_ota_notify"
+.field private static final eZ:Ljava/lang/String; = "config_current_primary_sub"
 
-.field private static final daa:S = 0x1cs
+.field private static final eaa:S = 0x14s
 
-.field private static final eZ:Ljava/lang/String; = "sla_downloading_heytap_notify"
+.field private static final fZ:Ljava/lang/String; = "android.intent.action.ENABLE_DOWNLOAD_SWITCH"
 
-.field private static final eaa:S = 0x1ds
+.field private static final faa:S = 0x15s
 
-.field private static final fZ:Ljava/lang/String; = "android.intent.action.GO_ACCELERATION_SETTINGS"
+.field private static final gV:Ljava/lang/String; = "network_restrict"
 
-.field private static final faa:S = 0x1es
+.field private static final gZ:Ljava/lang/String; = "android.intent.action.ENABLE_SLS_APP_SWITCH"
 
-.field private static final gZ:Ljava/lang/String; = "oneplus.intent.action.OP_SLA"
+.field private static final gaa:S = 0x16s
 
-.field private static final gaa:S = 0x1fs
+.field private static final hV:Landroid/net/Uri;
 
-.field private static final hZ:Ljava/lang/String; = "android.net.network.INTERNET_LOST"
+.field private static final hZ:Ljava/lang/String; = "sla_download_onetime_notify"
 
-.field private static final haa:S = 0x20s
+.field private static final haa:S = 0x17s
 
-.field private static final iZ:Ljava/lang/String; = "NETWORK_SLA_STATUS"
+.field private static final iZ:Ljava/lang/String; = "sls_app_onetime_notify"
 
-.field private static final iaa:S = 0x21s
+.field private static final iaa:S = 0x18s
 
-.field private static final jZ:Ljava/lang/String; = "NETWORK_SLS_STATUS"
+.field private static final jZ:Ljava/lang/String; = "download_smart_link_aggregation"
 
-.field private static final jaa:S = 0x22s
+.field private static final jaa:S = 0x19s
 
-.field private static final kZ:Ljava/lang/String; = "NETWORK_SLA_ALERTS"
+.field private static final kZ:Ljava/lang/String; = "sla_enable_notify"
 
-.field private static final kaa:S = 0x23s
+.field private static final kaa:S = 0x1as
 
-.field private static final lZ:Ljava/lang/String; = "wifi_dbs_enable"
+.field private static final lZ:Ljava/lang/String; = "sla_downloading_dm_notify"
 
-.field private static final laa:S = 0x24s
+.field private static final laa:S = 0x1bs
 
 .field private static mDebug:Z = false
 
-.field private static final mZ:J = 0x12cL
+.field private static final mZ:Ljava/lang/String; = "sla_downloading_ota_notify"
 
-.field private static final maa:S = 0x25s
+.field private static final maa:S = 0x1cs
 
-.field private static final nZ:J = 0x1d4c0L
+.field private static final nZ:Ljava/lang/String; = "sla_downloading_heytap_notify"
 
-.field private static final naa:S = 0x26s
+.field private static final naa:S = 0x1ds
 
-.field private static final oZ:J = 0x124f80L
+.field private static final oZ:Ljava/lang/String; = "android.intent.action.GO_ACCELERATION_SETTINGS"
 
-.field private static final oaa:S = 0x27s
+.field private static final oaa:S = 0x1es
 
-.field private static final pZ:J = 0x2710L
+.field private static final pZ:Ljava/lang/String; = "oneplus.intent.action.OP_SLA"
 
-.field private static final paa:S = 0x28s
+.field private static final paa:S = 0x1fs
 
-.field private static final qZ:J = 0x4e20L
+.field private static final qZ:Ljava/lang/String; = "android.net.network.INTERNET_LOST"
 
-.field private static final qaa:S = 0x29s
+.field private static final qaa:S = 0x20s
 
-.field private static final rZ:I = 0x100
+.field private static final rZ:Ljava/lang/String; = "NETWORK_SLA_STATUS"
 
-.field private static final raa:S = 0x2as
+.field private static final raa:S = 0x21s
 
-.field private static final sZ:I = 0x0
+.field private static final sZ:Ljava/lang/String; = "NETWORK_SLS_STATUS"
 
-.field private static final saa:S = 0x2bs
+.field private static final saa:S = 0x22s
 
-.field private static final tZ:I = 0x1
+.field private static final tZ:Ljava/lang/String; = "NETWORK_SLA_ALERTS"
 
-.field private static final taa:S = 0x2cs
+.field private static final taa:S = 0x23s
 
-.field private static final uZ:I = 0x2
+.field private static final uZ:Ljava/lang/String; = "wifi_dbs_enable"
 
-.field private static final uaa:S = 0x2ds
+.field private static final uaa:S = 0x24s
 
-.field private static final vZ:I = 0x1
+.field private static final vZ:J = 0x12cL
 
-.field private static final vaa:S = 0x2es
+.field private static final vaa:S = 0x25s
 
-.field private static final wZ:I = 0x0
+.field private static final wZ:J = 0x1d4c0L
 
-.field private static final waa:S = 0x2fs
+.field private static final waa:S = 0x26s
 
-.field private static final xZ:I = 0x1
+.field private static final xZ:J = 0x124f80L
 
-.field private static final xaa:S = 0x30s
+.field private static final xaa:S = 0x27s
 
-.field private static final yZ:I = 0x1
+.field private static final yZ:J = 0x2710L
 
-.field private static final yaa:S = 0x31s
+.field private static final yaa:S = 0x28s
 
-.field private static final zZ:I = 0x2
+.field private static final zZ:J = 0x4e20L
 
-.field private static final zaa:S = 0x37s
+.field private static final zaa:S = 0x29s
 
 
 # instance fields
 .field private AY:Z
 
-.field private BY:Ljava/util/ArrayList;
+.field private BY:Z
+
+.field private CY:Z
+
+.field private DY:Z
+
+.field private EY:Z
+
+.field private FY:Z
+
+.field private GY:Z
+
+.field private HY:Z
+
+.field private IY:Z
+
+.field private JY:Z
+
+.field private KY:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -288,7 +306,7 @@
     .end annotation
 .end field
 
-.field private CY:Ljava/util/ArrayList;
+.field private LY:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -298,7 +316,7 @@
     .end annotation
 .end field
 
-.field private DY:Ljava/util/ArrayList;
+.field private MY:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -308,7 +326,7 @@
     .end annotation
 .end field
 
-.field private EY:Ljava/util/ArrayList;
+.field private NY:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -318,7 +336,7 @@
     .end annotation
 .end field
 
-.field private FY:Ljava/util/HashMap;
+.field private OY:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -329,7 +347,7 @@
     .end annotation
 .end field
 
-.field private final GY:Ljava/util/HashMap;
+.field private final PY:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -340,57 +358,39 @@
     .end annotation
 .end field
 
-.field private MX:Landroid/os/Handler;
+.field private XX:Landroid/os/Handler;
 
-.field private NX:Ljava/lang/Thread;
+.field private YX:Ljava/lang/Thread;
 
-.field private OX:Landroid/app/NotificationChannel;
+.field private ZX:Landroid/app/NotificationChannel;
 
-.field private QX:Landroid/app/NotificationChannel;
+.field private _X:Landroid/app/NotificationChannel;
 
-.field private RX:Landroid/app/NotificationChannel;
+.field private aY:Landroid/app/NotificationChannel;
 
-.field private SX:Landroid/net/NetworkRequest;
+.field private bY:Landroid/net/NetworkRequest;
 
-.field private UX:Lcom/android/server/pm/PackageManagerService;
+.field private cY:Lcom/android/server/pm/PackageManagerService;
 
-.field private VX:Landroid/app/IActivityManager;
+.field private dY:Landroid/app/IActivityManager;
 
-.field private WX:Landroid/telephony/TelephonyManager;
+.field private eY:Landroid/telephony/TelephonyManager;
 
-.field private XX:Landroid/net/INetd;
+.field private fY:Landroid/net/INetd;
 
-.field private YX:Landroid/net/Network;
+.field private gY:Landroid/net/Network;
 
-.field private ZX:Landroid/net/Network;
+.field private hY:Landroid/net/Network;
 
-.field private _X:Landroid/net/ConnectivityManager$NetworkCallback;
+.field private iY:Landroid/net/ConnectivityManager$NetworkCallback;
 
-.field private aY:I
+.field private jY:I
 
-.field private bY:I
+.field private kY:I
 
-.field private bv:Landroid/app/IProcessObserver;
+.field private lY:I
 
-.field private cY:I
-
-.field private dY:I
-
-.field private eY:I
-
-.field private fY:I
-
-.field private gY:I
-
-.field private hY:J
-
-.field private iY:Z
-
-.field private jY:Z
-
-.field private kY:Z
-
-.field private lY:Z
+.field private lv:Landroid/app/IProcessObserver;
 
 .field private mActivityManager:Landroid/app/ActivityManager;
 
@@ -451,15 +451,15 @@
 
 .field private mUserManager:Landroid/os/UserManager;
 
-.field private nY:Z
+.field private nY:I
 
-.field private oY:Z
+.field private oY:I
 
-.field private pY:Z
+.field private pY:I
 
-.field private qY:Z
+.field private qY:I
 
-.field private rY:Z
+.field private rY:J
 
 .field private sY:Z
 
@@ -490,7 +490,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wifi/ire;->IY:Ljava/lang/String;
+    sput-object v0, Lcom/android/server/wifi/ire;->RY:Ljava/lang/String;
 
     const-string v0, "content://com.oneplus.security.database.SafeProvider"
 
@@ -508,7 +508,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wifi/ire;->ZU:Landroid/net/Uri;
+    sput-object v0, Lcom/android/server/wifi/ire;->hV:Landroid/net/Uri;
 
     const-string v1, "OP_SLA_NOTIFY_WIFI_SCORE"
 
@@ -580,7 +580,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wifi/ire;->Aaa:[Ljava/lang/String;
+    sput-object v0, Lcom/android/server/wifi/ire;->Jaa:[Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -602,7 +602,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    sput-object v0, Lcom/android/server/wifi/ire;->Baa:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/wifi/ire;->Kaa:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -638,7 +638,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    sput-object v0, Lcom/android/server/wifi/ire;->Caa:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/wifi/ire;->Laa:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -652,55 +652,33 @@
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
+    iput-object v1, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
 
     const/4 v1, 0x0
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->aY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->jY:I
 
     const/16 v2, -0xc8
 
-    iput v2, p0, Lcom/android/server/wifi/ire;->bY:I
+    iput v2, p0, Lcom/android/server/wifi/ire;->kY:I
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->cY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->lY:I
 
     const/4 v2, -0x1
 
-    iput v2, p0, Lcom/android/server/wifi/ire;->dY:I
+    iput v2, p0, Lcom/android/server/wifi/ire;->nY:I
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->oY:I
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->fY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->pY:I
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->gY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->qY:I
 
     const-wide/16 v2, 0x0
 
     iput-wide v2, p0, Lcom/android/server/wifi/ire;->mLastUpdateTime:J
 
-    iput-wide v2, p0, Lcom/android/server/wifi/ire;->hY:J
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->iY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->jY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->lY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->nY:Z
-
-    const/4 v2, 0x1
-
-    iput-boolean v2, p0, Lcom/android/server/wifi/ire;->mScreenOn:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->oY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->pY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->qY:Z
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->rY:Z
+    iput-wide v2, p0, Lcom/android/server/wifi/ire;->rY:J
 
     iput-boolean v1, p0, Lcom/android/server/wifi/ire;->sY:Z
 
@@ -712,6 +690,10 @@
 
     iput-boolean v1, p0, Lcom/android/server/wifi/ire;->wY:Z
 
+    const/4 v2, 0x1
+
+    iput-boolean v2, p0, Lcom/android/server/wifi/ire;->mScreenOn:Z
+
     iput-boolean v1, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     iput-boolean v1, p0, Lcom/android/server/wifi/ire;->yY:Z
@@ -720,35 +702,53 @@
 
     iput-boolean v1, p0, Lcom/android/server/wifi/ire;->AY:Z
 
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->BY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->CY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->DY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->EY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->FY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->GY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->HY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->IY:Z
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->JY:Z
+
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->DY:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->MY:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->EY:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->NY:Ljava/util/ArrayList;
 
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->FY:Ljava/util/HashMap;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->OY:Ljava/util/HashMap;
 
     new-instance v3, Ljava/util/HashMap;
 
@@ -760,13 +760,13 @@
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->GY:Ljava/util/HashMap;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->PY:Ljava/util/HashMap;
 
     new-instance v3, Lcom/android/server/wifi/OpSlaNetlinkHelper$2;
 
     invoke-direct {v3, p0}, Lcom/android/server/wifi/OpSlaNetlinkHelper$2;-><init>(Lcom/android/server/wifi/ire;)V
 
-    iput-object v3, p0, Lcom/android/server/wifi/ire;->bv:Landroid/app/IProcessObserver;
+    iput-object v3, p0, Lcom/android/server/wifi/ire;->lv:Landroid/app/IProcessObserver;
 
     iput-object p1, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -778,7 +778,7 @@
 
     check-cast p1, Lcom/android/server/pm/PackageManagerService;
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     iget-object p1, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -796,7 +796,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     iget-object p1, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -862,13 +862,13 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->SX:Landroid/net/NetworkRequest;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->bY:Landroid/net/NetworkRequest;
 
     new-instance p1, Lcom/android/server/wifi/ire$you;
 
     invoke-direct {p1, p0, v2}, Lcom/android/server/wifi/ire$you;-><init>(Lcom/android/server/wifi/ire;I)V
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->_X:Landroid/net/ConnectivityManager$NetworkCallback;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->iY:Landroid/net/ConnectivityManager$NetworkCallback;
 
     iget-object p1, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -886,12 +886,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->VX:Landroid/app/IActivityManager;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->dY:Landroid/app/IActivityManager;
 
     :try_start_0
-    iget-object p1, p0, Lcom/android/server/wifi/ire;->VX:Landroid/app/IActivityManager;
+    iget-object p1, p0, Lcom/android/server/wifi/ire;->dY:Landroid/app/IActivityManager;
 
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->bv:Landroid/app/IProcessObserver;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->lv:Landroid/app/IProcessObserver;
 
     invoke-interface {p1, v2}, Landroid/app/IActivityManager;->registerProcessObserver(Landroid/app/IProcessObserver;)V
     :try_end_0
@@ -939,13 +939,13 @@
 
     invoke-direct {v0, p0, v2}, Lcom/android/server/wifi/ire$zta;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {p0}, Lcom/android/server/wifi/ire;->registerSettingsCallbacks()V
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->pr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->qr()V
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->or()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->pr()V
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->zta(Landroid/os/HandlerThread;)V
 
@@ -975,19 +975,19 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/wifi/ire;->cY:I
+    iput p1, p0, Lcom/android/server/wifi/ire;->lY:I
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->tr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->AY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->JY:Z
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->rr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->sr()V
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Br()V
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     const/4 p1, 0x6
 
@@ -997,9 +997,172 @@
 .end method
 
 .method private Ar()V
+    .locals 5
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->gr()Z
+
+    move-result v0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
+
+    move-result v1
+
+    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->zY:Z
+
+    if-eqz v2, :cond_0
+
+    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->AY:Z
+
+    if-eqz v2, :cond_0
+
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->wr()Z
+
+    move-result v3
+
+    iput-boolean v3, p0, Lcom/android/server/wifi/ire;->vY:Z
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->xr()Z
+
+    move-result v3
+
+    iput-boolean v3, p0, Lcom/android/server/wifi/ire;->wY:Z
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "maybeEnableSla gameSwitchState:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " appSwitchState:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " mSlaGameOnFocus:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->vY:Z
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " mSlaTopAppOnFocus:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->wY:Z
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " mCellConnected:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->tY:Z
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " mMobileHasIpv4:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->AY:Z
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " mSlaCellularUp:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->EY:Z
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v4, " mMobileValidate:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->CY:Z
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "OpSlaNetlinkHelper"
+
+    invoke-static {v4, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    if-eqz v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->vY:Z
+
+    if-nez v0, :cond_2
+
+    :cond_1
+    if-eqz v1, :cond_3
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->wY:Z
+
+    if-eqz v0, :cond_3
+
+    :cond_2
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Nr()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    const-string v0, "enableSla..."
+
+    invoke-static {v4, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
+
+    const/4 v1, 0x2
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->registerMobileNetworkRequest()V
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->tY:Z
+
+    if-eqz v0, :cond_3
+
+    if-eqz v2, :cond_3
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->EY:Z
+
+    if-eqz v0, :cond_3
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->CY:Z
+
+    if-eqz v0, :cond_3
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->setOPSlaEnable()V
+
+    :cond_3
+    return-void
+.end method
+
+.method private Br()V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Zq()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->_q()Z
 
     move-result v0
 
@@ -1007,28 +1170,28 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->gr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->nb(Z)V
+    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->ob(Z)V
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->ob(Z)V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->jr()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->pb(Z)V
 
     :cond_1
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
@@ -1064,10 +1227,10 @@
     return-void
 .end method
 
-.method private Br()V
+.method private Cr()V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
 
     move-result v0
 
@@ -1104,20 +1267,20 @@
     return-void
 .end method
 
-.method private Cr()V
+.method private Dr()V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iput-boolean v0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/server/wifi/ire;->aY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->jY:I
 
     goto :goto_0
 
@@ -1149,7 +1312,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/wifi/ire;->aY:I
+    iget p0, p0, Lcom/android/server/wifi/ire;->jY:I
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1165,18 +1328,18 @@
     return-void
 .end method
 
-.method private Dr()V
+.method private Er()V
     .locals 15
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     if-eqz v0, :cond_a
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->er()Ljava/util/Map;
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->fr()Ljava/util/Map;
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->jr()Ljava/util/ArrayList;
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->kr()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -1192,12 +1355,12 @@
 
     new-array v2, v2, [I
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     monitor-enter v4
 
     :try_start_0
-    iget-object v5, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->clear()V
 
@@ -1227,7 +1390,7 @@
 
     if-ge v0, v8, :cond_8
 
-    iget-object v8, p0, Lcom/android/server/wifi/ire;->FY:Ljava/util/HashMap;
+    iget-object v8, p0, Lcom/android/server/wifi/ire;->OY:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1284,7 +1447,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object v8, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object v8, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1346,7 +1509,7 @@
     goto :goto_2
 
     :cond_4
-    iget-object v12, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iget-object v12, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1389,7 +1552,7 @@
 
     if-nez v0, :cond_7
 
-    iget-object v8, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object v8, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1405,7 +1568,7 @@
 
     if-le v8, v10, :cond_6
 
-    iget-object v9, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iget-object v9, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1500,10 +1663,10 @@
     return-void
 .end method
 
-.method private Er()V
+.method private Fr()V
     .locals 3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->fr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->gr()Z
 
     move-result v0
 
@@ -1540,14 +1703,22 @@
     return-void
 .end method
 
-.method private Fr()V
+.method static synthetic Ge()Ljava/io/FileDescriptor;
     .locals 1
 
-    sget-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sget-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
+
+    return-object v0
+.end method
+
+.method private Gr()V
+    .locals 1
+
+    sget-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
 
     if-eqz v0, :cond_0
 
@@ -1558,9 +1729,9 @@
 
     invoke-direct {v0, p0}, Lcom/android/server/wifi/bvj;-><init>(Lcom/android/server/wifi/ire;)V
 
-    iput-object v0, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
+    iput-object v0, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
 
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
@@ -1577,7 +1748,7 @@
     return-void
 .end method
 
-.method private Gr()V
+.method private Hr()V
     .locals 5
 
     new-instance v0, Landroid/os/Bundle;
@@ -1600,15 +1771,15 @@
 
     invoke-direct {v1, v3, v2, v4}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    iput-object v1, p0, Lcom/android/server/wifi/ire;->OX:Landroid/app/NotificationChannel;
+    iput-object v1, p0, Lcom/android/server/wifi/ire;->ZX:Landroid/app/NotificationChannel;
 
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->OX:Landroid/app/NotificationChannel;
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->ZX:Landroid/app/NotificationChannel;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/app/NotificationChannel;->setBlockableSystem(Z)V
 
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->OX:Landroid/app/NotificationChannel;
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->ZX:Landroid/app/NotificationChannel;
 
     const/4 v4, 0x0
 
@@ -1616,13 +1787,13 @@
 
     iget-object v1, p0, Lcom/android/server/wifi/ire;->mNotificationManager:Landroid/app/NotificationManager;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->OX:Landroid/app/NotificationChannel;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->ZX:Landroid/app/NotificationChannel;
 
     invoke-virtual {v1, v4}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
     iget-object v1, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
-    const v4, 0x50f00d3
+    const v4, 0x50f00db
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1658,7 +1829,7 @@
 
     move-result-object v1
 
-    const v3, 0x50f00d5
+    const v3, 0x50f00dd
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1674,7 +1845,7 @@
 
     move-result-object v1
 
-    const v3, 0x50f00d4
+    const v3, 0x50f00dc
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1694,7 +1865,7 @@
 
     const-string v1, "android.intent.action.GO_ACCELERATION_SETTINGS"
 
-    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->vc(Ljava/lang/String;)Landroid/app/PendingIntent;
 
     move-result-object v1
 
@@ -1712,7 +1883,7 @@
 
     invoke-virtual {v1, v3, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    iput v2, p0, Lcom/android/server/wifi/ire;->gY:I
+    iput v2, p0, Lcom/android/server/wifi/ire;->qY:I
 
     iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -1727,15 +1898,7 @@
     return-void
 .end method
 
-.method static synthetic He()Ljava/io/FileDescriptor;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
-
-    return-object v0
-.end method
-
-.method private Hr()V
+.method private Ir()V
     .locals 6
 
     new-instance v0, Landroid/os/Bundle;
@@ -1758,11 +1921,11 @@
 
     invoke-direct {v1, v3, v2, v4}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    iput-object v1, p0, Lcom/android/server/wifi/ire;->RX:Landroid/app/NotificationChannel;
+    iput-object v1, p0, Lcom/android/server/wifi/ire;->aY:Landroid/app/NotificationChannel;
 
     iget-object v1, p0, Lcom/android/server/wifi/ire;->mNotificationManager:Landroid/app/NotificationManager;
 
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->RX:Landroid/app/NotificationChannel;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->aY:Landroid/app/NotificationChannel;
 
     invoke-virtual {v1, v2}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
@@ -1786,7 +1949,7 @@
 
     move-result-object v2
 
-    const v4, 0x50f00d0
+    const v4, 0x50f00d8
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1794,7 +1957,7 @@
 
     const-string v4, "android.intent.action.ENABLE_DOWNLOAD_SWITCH"
 
-    invoke-direct {p0, v4}, Lcom/android/server/wifi/ire;->uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+    invoke-direct {p0, v4}, Lcom/android/server/wifi/ire;->vc(Ljava/lang/String;)Landroid/app/PendingIntent;
 
     move-result-object v4
 
@@ -1828,7 +1991,7 @@
 
     move-result-object v2
 
-    const v3, 0x50f00d2
+    const v3, 0x50f00da
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1844,7 +2007,7 @@
 
     move-result-object v2
 
-    const v3, 0x50f00d1
+    const v3, 0x50f00d9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1864,7 +2027,7 @@
 
     const-string v2, "android.intent.action.GO_ACCELERATION_SETTINGS"
 
-    invoke-direct {p0, v2}, Lcom/android/server/wifi/ire;->uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+    invoke-direct {p0, v2}, Lcom/android/server/wifi/ire;->vc(Ljava/lang/String;)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -1892,19 +2055,19 @@
 
     invoke-virtual {v1, v3, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    iput v2, p0, Lcom/android/server/wifi/ire;->gY:I
+    iput v2, p0, Lcom/android/server/wifi/ire;->qY:I
 
     return-void
 .end method
 
-.method private Ir()V
+.method private Jr()V
     .locals 6
 
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     const/16 v2, 0x10
 
@@ -1926,15 +2089,15 @@
 
     invoke-direct {v1, v4, v3, v5}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    iput-object v1, p0, Lcom/android/server/wifi/ire;->QX:Landroid/app/NotificationChannel;
+    iput-object v1, p0, Lcom/android/server/wifi/ire;->_X:Landroid/app/NotificationChannel;
 
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->QX:Landroid/app/NotificationChannel;
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->_X:Landroid/app/NotificationChannel;
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v3}, Landroid/app/NotificationChannel;->setBlockableSystem(Z)V
 
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->QX:Landroid/app/NotificationChannel;
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->_X:Landroid/app/NotificationChannel;
 
     const/4 v5, 0x0
 
@@ -1942,13 +2105,13 @@
 
     iget-object v1, p0, Lcom/android/server/wifi/ire;->mNotificationManager:Landroid/app/NotificationManager;
 
-    iget-object v5, p0, Lcom/android/server/wifi/ire;->QX:Landroid/app/NotificationChannel;
+    iget-object v5, p0, Lcom/android/server/wifi/ire;->_X:Landroid/app/NotificationChannel;
 
     invoke-virtual {v1, v5}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
     iget-object v1, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
-    const v5, 0x50f00e1
+    const v5, 0x50f00e9
 
     invoke-virtual {v1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1984,7 +2147,7 @@
 
     move-result-object v1
 
-    const v4, 0x50f00e0
+    const v4, 0x50f00e8
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2000,7 +2163,7 @@
 
     move-result-object v1
 
-    const v4, 0x50f00df
+    const v4, 0x50f00e7
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2020,7 +2183,7 @@
 
     const-string v1, "android.intent.action.GO_ACCELERATION_SETTINGS"
 
-    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+    invoke-direct {p0, v1}, Lcom/android/server/wifi/ire;->vc(Ljava/lang/String;)Landroid/app/PendingIntent;
 
     move-result-object v1
 
@@ -2038,9 +2201,9 @@
 
     invoke-virtual {v1, v4, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    iput v3, p0, Lcom/android/server/wifi/ire;->fY:I
+    iput v3, p0, Lcom/android/server/wifi/ire;->pY:I
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
@@ -2063,7 +2226,7 @@
     return-void
 .end method
 
-.method private Jr()V
+.method private Kr()V
     .locals 6
 
     new-instance v0, Landroid/os/Bundle;
@@ -2086,11 +2249,11 @@
 
     invoke-direct {v1, v3, v2, v4}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    iput-object v1, p0, Lcom/android/server/wifi/ire;->RX:Landroid/app/NotificationChannel;
+    iput-object v1, p0, Lcom/android/server/wifi/ire;->aY:Landroid/app/NotificationChannel;
 
     iget-object v1, p0, Lcom/android/server/wifi/ire;->mNotificationManager:Landroid/app/NotificationManager;
 
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->RX:Landroid/app/NotificationChannel;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->aY:Landroid/app/NotificationChannel;
 
     invoke-virtual {v1, v2}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
@@ -2114,7 +2277,7 @@
 
     move-result-object v2
 
-    const v4, 0x50f00db
+    const v4, 0x50f00e3
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2122,7 +2285,7 @@
 
     const-string v4, "android.intent.action.ENABLE_SLS_APP_SWITCH"
 
-    invoke-direct {p0, v4}, Lcom/android/server/wifi/ire;->uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+    invoke-direct {p0, v4}, Lcom/android/server/wifi/ire;->vc(Ljava/lang/String;)Landroid/app/PendingIntent;
 
     move-result-object v4
 
@@ -2156,7 +2319,7 @@
 
     move-result-object v2
 
-    const v3, 0x50f00dd
+    const v3, 0x50f00e5
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2172,7 +2335,7 @@
 
     move-result-object v2
 
-    const v3, 0x50f00dc
+    const v3, 0x50f00e4
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2192,7 +2355,7 @@
 
     const-string v2, "android.intent.action.GO_ACCELERATION_SETTINGS"
 
-    invoke-direct {p0, v2}, Lcom/android/server/wifi/ire;->uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+    invoke-direct {p0, v2}, Lcom/android/server/wifi/ire;->vc(Ljava/lang/String;)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -2220,19 +2383,19 @@
 
     invoke-virtual {v1, v3, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    iput v2, p0, Lcom/android/server/wifi/ire;->fY:I
+    iput v2, p0, Lcom/android/server/wifi/ire;->pY:I
 
     return-void
 .end method
 
-.method private Kr()V
+.method private Lr()V
     .locals 14
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     if-eqz v0, :cond_8
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->kr()Ljava/util/ArrayList;
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->lr()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -2248,12 +2411,12 @@
 
     new-array v1, v1, [I
 
-    iget-object v3, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     monitor-enter v3
 
     :try_start_0
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
@@ -2270,7 +2433,7 @@
 
     if-ge v5, v7, :cond_7
 
-    iget-object v7, p0, Lcom/android/server/wifi/ire;->FY:Ljava/util/HashMap;
+    iget-object v7, p0, Lcom/android/server/wifi/ire;->OY:Ljava/util/HashMap;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2317,7 +2480,7 @@
     goto/16 :goto_2
 
     :cond_0
-    iget-object v7, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object v7, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2381,7 +2544,7 @@
     goto :goto_2
 
     :cond_3
-    iget-object v11, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iget-object v11, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2422,7 +2585,7 @@
     :cond_4
     add-int/lit8 v6, v6, 0x1
 
-    iget-object v7, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object v7, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -2438,7 +2601,7 @@
 
     if-le v7, v8, :cond_5
 
-    iget-object v8, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iget-object v8, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2521,7 +2684,7 @@
     return-void
 .end method
 
-.method private Lr()V
+.method private Mr()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mHandler:Landroid/os/Handler;
@@ -2532,7 +2695,7 @@
 
     move-result-object p0
 
-    const v1, 0x50f00da
+    const v1, 0x50f00e2
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2547,195 +2710,6 @@
     invoke-virtual {v0, p0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     return-void
-.end method
-
-.method private Mr()Z
-    .locals 7
-
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->mTelephonyManager:Landroid/telephony/TelephonyManager;
-
-    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimState()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x5
-
-    if-ne v3, v0, :cond_0
-
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_0
-    move v0, v2
-
-    :goto_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->sr()Z
-
-    move-result v3
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->xr()Z
-
-    move-result v4
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
-
-    move-result v5
-
-    iput-boolean v5, p0, Lcom/android/server/wifi/ire;->oY:Z
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "slaEnableConditionCheck, mSlaEnableState:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v6, p0, Lcom/android/server/wifi/ire;->eY:I
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v6, " mWifiConnected:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mCellEnabled:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->iY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " simCardReady:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mWifiHasIpv4:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->qY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " isDataRoaming:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mSlaWifiUp:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->uY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " isVpnUsed:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mUsingLTE:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->oY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mUsingPrivateDns:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->pY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mWifiValidate:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->sY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v6, " mDbsEnabled:"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->AY:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    const-string v6, "OpSlaNetlinkHelper"
-
-    invoke-static {v6, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget v5, p0, Lcom/android/server/wifi/ire;->eY:I
-
-    if-nez v5, :cond_1
-
-    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    if-eqz v5, :cond_1
-
-    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->qY:Z
-
-    if-eqz v5, :cond_1
-
-    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->iY:Z
-
-    if-eqz v5, :cond_1
-
-    if-eqz v0, :cond_1
-
-    if-nez v3, :cond_1
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->uY:Z
-
-    if-eqz v0, :cond_1
-
-    if-nez v4, :cond_1
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->oY:Z
-
-    if-eqz v0, :cond_1
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->pY:Z
-
-    if-nez v0, :cond_1
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->sY:Z
-
-    if-eqz v0, :cond_1
-
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->AY:Z
-
-    if-nez p0, :cond_1
-
-    return v1
-
-    :cond_1
-    return v2
 .end method
 
 .method private Nr()Z
@@ -2763,19 +2737,208 @@
     move v0, v2
 
     :goto_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->sr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->tr()Z
 
     move-result v3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->xr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()Z
 
     move-result v4
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
 
     move-result v5
 
-    iput-boolean v5, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iput-boolean v5, p0, Lcom/android/server/wifi/ire;->xY:Z
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "slaEnableConditionCheck, mSlaEnableState:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v6, p0, Lcom/android/server/wifi/ire;->oY:I
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v6, " mWifiConnected:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->uY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mCellEnabled:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->sY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " simCardReady:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mWifiHasIpv4:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->zY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " isDataRoaming:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mSlaWifiUp:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->DY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " isVpnUsed:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mUsingLTE:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->xY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mUsingPrivateDns:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->yY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mWifiValidate:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->BY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v6, " mDbsEnabled:"
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->JY:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "OpSlaNetlinkHelper"
+
+    invoke-static {v6, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget v5, p0, Lcom/android/server/wifi/ire;->oY:I
+
+    if-nez v5, :cond_1
+
+    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->uY:Z
+
+    if-eqz v5, :cond_1
+
+    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->zY:Z
+
+    if-eqz v5, :cond_1
+
+    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->sY:Z
+
+    if-eqz v5, :cond_1
+
+    if-eqz v0, :cond_1
+
+    if-nez v3, :cond_1
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->DY:Z
+
+    if-eqz v0, :cond_1
+
+    if-nez v4, :cond_1
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->xY:Z
+
+    if-eqz v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->yY:Z
+
+    if-nez v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->BY:Z
+
+    if-eqz v0, :cond_1
+
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->JY:Z
+
+    if-nez p0, :cond_1
+
+    return v1
+
+    :cond_1
+    return v2
+.end method
+
+.method private Or()Z
+    .locals 7
+
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getSimState()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x5
+
+    if-ne v3, v0, :cond_0
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v2
+
+    :goto_0
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->tr()Z
+
+    move-result v3
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()Z
+
+    move-result v4
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
+
+    move-result v5
+
+    iput-boolean v5, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -2785,7 +2948,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v6, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v6, p0, Lcom/android/server/wifi/ire;->oY:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2793,7 +2956,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->kY:Z
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->uY:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2801,7 +2964,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->iY:Z
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->sY:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2827,7 +2990,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean v6, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2839,15 +3002,15 @@
 
     invoke-static {v6, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget v5, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v5, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-nez v5, :cond_1
 
-    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->kY:Z
+    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->uY:Z
 
     if-eqz v5, :cond_1
 
-    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->iY:Z
+    iget-boolean v5, p0, Lcom/android/server/wifi/ire;->sY:Z
 
     if-eqz v5, :cond_1
 
@@ -2857,7 +3020,7 @@
 
     if-nez v4, :cond_1
 
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     if-eqz p0, :cond_1
 
@@ -2867,7 +3030,7 @@
     return v2
 .end method
 
-.method private Sq()V
+.method private Tq()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mCm:Landroid/net/ConnectivityManager;
@@ -2890,16 +3053,16 @@
     return-void
 .end method
 
-.method private Tq()V
+.method private Uq()V
     .locals 2
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iput-boolean v0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     const/16 v1, 0xa
 
@@ -2917,7 +3080,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean v1, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2930,44 +3093,44 @@
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget v0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->sr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->tr()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     if-nez v0, :cond_2
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     goto :goto_0
 
     :cond_2
-    iget v0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     if-eqz v0, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     :cond_3
     :goto_0
     return-void
 .end method
 
-.method private Uq()V
+.method private Vq()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -2978,7 +3141,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
 
     move-result v1
 
@@ -2988,7 +3151,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->jr()Z
 
     move-result v1
 
@@ -3002,13 +3165,13 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->jr()Z
 
     move-result v0
 
@@ -3016,13 +3179,13 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->ob(Z)V
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->pb(Z)V
 
     :cond_0
     return-void
 .end method
 
-.method private Vq()V
+.method private Wq()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mNotificationManager:Landroid/app/NotificationManager;
@@ -3031,7 +3194,7 @@
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/android/server/wifi/ire;->gY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->qY:I
 
     const/4 v2, 0x1
 
@@ -3050,7 +3213,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->gY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->qY:I
 
     :cond_1
     iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
@@ -3066,7 +3229,7 @@
     return-void
 .end method
 
-.method private Wq()V
+.method private Xq()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mNotificationManager:Landroid/app/NotificationManager;
@@ -3075,7 +3238,7 @@
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/android/server/wifi/ire;->fY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->pY:I
 
     const/4 v2, 0x1
 
@@ -3094,7 +3257,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/app/NotificationManager;->cancel(Ljava/lang/String;I)V
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->fY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->pY:I
 
     :cond_1
     iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
@@ -3110,7 +3273,7 @@
     return-void
 .end method
 
-.method private Xq()V
+.method private Yq()V
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -3121,7 +3284,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/wifi/ire;->dY:I
+    iget v1, p0, Lcom/android/server/wifi/ire;->nY:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3133,14 +3296,14 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget v0, p0, Lcom/android/server/wifi/ire;->dY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->nY:I
 
     const/4 v2, -0x1
 
     if-eq v0, v2, :cond_0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     const/4 v2, 0x1
 
@@ -3174,10 +3337,37 @@
     return-void
 .end method
 
-.method private Yq()V
+.method private Zb(I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->bc(I)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->GY:Z
+
+    if-nez p1, :cond_0
+
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->IY:Z
+
+    if-nez p1, :cond_0
+
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->HY:Z
+
+    if-nez p1, :cond_0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Wq()V
+
+    :cond_0
+    return-void
+.end method
+
+.method private Zq()V
     .locals 8
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->FY:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->OY:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
@@ -3190,7 +3380,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/server/wifi/ire;->ZU:Landroid/net/Uri;
+    sget-object v3, Lcom/android/server/wifi/ire;->hV:Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -3261,7 +3451,7 @@
     const/4 v3, 0x0
 
     :goto_1
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->FY:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->OY:Ljava/util/HashMap;
 
     new-instance v4, Ljava/lang/Boolean;
 
@@ -3313,60 +3503,6 @@
 
     :cond_3
     throw p0
-.end method
-
-.method private Zb(I)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->bc(I)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->xY:Z
-
-    if-nez p1, :cond_0
-
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->zY:Z
-
-    if-nez p1, :cond_0
-
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->yY:Z
-
-    if-nez p1, :cond_0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Vq()V
-
-    :cond_0
-    return-void
-.end method
-
-.method private Zq()Z
-    .locals 2
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    const-string v1, "download_smart_link_aggregation"
-
-    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p0
-
-    const/4 v1, 0x1
-
-    if-ne p0, v1, :cond_0
-
-    move v0, v1
-
-    :cond_0
-    return v0
 .end method
 
 .method private _b(I)V
@@ -3427,7 +3563,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     invoke-interface {p0, v1, p1}, Landroid/net/INetd;->destroySockets(II)Z
     :try_end_0
@@ -3470,7 +3606,7 @@
 
     const/4 v0, 0x0
 
-    const-string v1, "sla_downloading_dm_notify"
+    const-string v1, "download_smart_link_aggregation"
 
     invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -3497,12 +3633,12 @@
 .method private ac(I)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->CY:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->LY:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/lang/Integer;
 
@@ -3545,7 +3681,7 @@
 
     const/4 v0, 0x0
 
-    const-string v1, "sla_downloading_heytap_notify"
+    const-string v1, "sla_downloading_dm_notify"
 
     invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -3564,7 +3700,7 @@
 .method static synthetic b(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Nr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Or()Z
 
     move-result p0
 
@@ -3574,7 +3710,7 @@
 .method private bc(I)Z
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->GY:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->PY:Ljava/util/HashMap;
 
     new-instance v1, Ljava/lang/Integer;
 
@@ -3588,7 +3724,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->GY:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->PY:Ljava/util/HashMap;
 
     new-instance v2, Ljava/lang/Integer;
 
@@ -3636,7 +3772,7 @@
 
     if-eqz v2, :cond_0
 
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->xY:Z
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->GY:Z
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -3660,7 +3796,7 @@
 
     if-eqz v2, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->zY:Z
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->IY:Z
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -3681,7 +3817,7 @@
 
     if-eqz v0, :cond_2
 
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->yY:Z
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->HY:Z
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
 
@@ -3695,7 +3831,7 @@
 
     :cond_2
     :goto_1
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->GY:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->PY:Ljava/util/HashMap;
 
     new-instance v0, Ljava/lang/Integer;
 
@@ -3714,7 +3850,7 @@
 .method static synthetic bio(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->br()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->dr()Z
 
     move-result p0
 
@@ -3734,7 +3870,7 @@
 .method static synthetic bio(Lcom/android/server/wifi/ire;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->AY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->JY:Z
 
     return p1
 .end method
@@ -3750,7 +3886,7 @@
 
     const/4 v0, 0x0
 
-    const-string v1, "sla_downloading_ota_notify"
+    const-string v1, "sla_downloading_heytap_notify"
 
     invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -3769,7 +3905,7 @@
 .method static synthetic bud(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Er()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Fr()V
 
     return-void
 .end method
@@ -3815,7 +3951,7 @@
 .method static synthetic bvj(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
 
     move-result p0
 
@@ -3825,7 +3961,7 @@
 .method static synthetic c(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->sY:Z
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->BY:Z
 
     return p0
 .end method
@@ -3833,12 +3969,12 @@
 .method private cc(I)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->BY:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->KY:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/lang/Integer;
 
@@ -3865,7 +4001,7 @@
 .method static synthetic cgv(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Fr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Gr()V
 
     return-void
 .end method
@@ -3873,7 +4009,7 @@
 .method static synthetic cjf(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->AY:Z
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->JY:Z
 
     return p0
 .end method
@@ -3881,7 +4017,7 @@
 .method static synthetic cno(Lcom/android/server/wifi/ire;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/wifi/ire;->aY:I
+    iput p1, p0, Lcom/android/server/wifi/ire;->jY:I
 
     return p1
 .end method
@@ -3889,7 +4025,7 @@
 .method static synthetic cno(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->ob(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->pb(Z)V
 
     return-void
 .end method
@@ -3905,7 +4041,7 @@
 .method static synthetic d(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Zq()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->_q()Z
 
     move-result p0
 
@@ -3951,7 +4087,7 @@
 .method static synthetic dma(Lcom/android/server/wifi/ire;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wifi/ire;->cY:I
+    iget p0, p0, Lcom/android/server/wifi/ire;->lY:I
 
     return p0
 .end method
@@ -3959,7 +4095,7 @@
 .method static synthetic dma(Lcom/android/server/wifi/ire;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/wifi/ire;->fY:I
+    iput p1, p0, Lcom/android/server/wifi/ire;->pY:I
 
     return p1
 .end method
@@ -3967,7 +4103,7 @@
 .method static synthetic dma(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->mb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->nb(Z)V
 
     return-void
 .end method
@@ -3983,7 +4119,7 @@
 
     const/4 v0, 0x0
 
-    const-string v1, "sla_enable_notify"
+    const-string v1, "sla_downloading_ota_notify"
 
     invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -4002,7 +4138,7 @@
 .method static synthetic e(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Uq()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Vq()V
 
     return-void
 .end method
@@ -4010,7 +4146,7 @@
 .method static synthetic ear(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->tr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
 
     move-result p0
 
@@ -4052,36 +4188,83 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/server/wifi/ire;->iY:Z
+    iput-boolean v0, p0, Lcom/android/server/wifi/ire;->sY:Z
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->iY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->sY:Z
 
     if-eqz p1, :cond_3
 
-    sget-object p1, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sget-object p1, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
+    iget-object p1, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
 
     if-nez p1, :cond_2
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Fr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Gr()V
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     goto :goto_1
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     :goto_1
     return-void
 .end method
 
-.method private er()Ljava/util/Map;
+.method private er()Z
+    .locals 2
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    const-string v1, "sla_enable_notify"
+
+    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p0
+
+    const/4 v1, 0x1
+
+    if-ne p0, v1, :cond_0
+
+    move v0, v1
+
+    :cond_0
+    return v0
+.end method
+
+.method static synthetic f(Lcom/android/server/wifi/ire;)Ljava/util/ArrayList;
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->kr()Ljava/util/ArrayList;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private fc(I)V
+    .locals 1
+
+    const/16 v0, 0x2e
+
+    invoke-direct {p0, v0, p1}, Lcom/android/server/wifi/ire;->zta(SI)Z
+
+    return-void
+.end method
+
+.method private fr()Ljava/util/Map;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -4238,97 +4421,10 @@
     return-object v1
 .end method
 
-.method static synthetic f(Lcom/android/server/wifi/ire;)Ljava/util/ArrayList;
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->jr()Ljava/util/ArrayList;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private fb(Z)V
-    .locals 2
-
-    const/4 v0, 0x2
-
-    if-eqz p1, :cond_0
-
-    iget p1, p0, Lcom/android/server/wifi/ire;->gY:I
-
-    if-ne p1, v0, :cond_2
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Gr()V
-
-    goto :goto_0
-
-    :cond_0
-    iget p1, p0, Lcom/android/server/wifi/ire;->fY:I
-
-    const/4 v1, 0x1
-
-    if-ne p1, v1, :cond_1
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Wq()V
-
-    iput v0, p0, Lcom/android/server/wifi/ire;->fY:I
-
-    :cond_1
-    iget p1, p0, Lcom/android/server/wifi/ire;->gY:I
-
-    if-ne p1, v1, :cond_2
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Vq()V
-
-    iput v0, p0, Lcom/android/server/wifi/ire;->gY:I
-
-    :cond_2
-    :goto_0
-    return-void
-.end method
-
-.method private fc(I)V
-    .locals 1
-
-    const/16 v0, 0x2e
-
-    invoke-direct {p0, v0, p1}, Lcom/android/server/wifi/ire;->zta(SI)Z
-
-    return-void
-.end method
-
-.method private fr()Z
-    .locals 2
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    const-string v1, "oneplus_link_turbo_value"
-
-    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p0
-
-    const/4 v1, 0x1
-
-    if-ne p0, v1, :cond_0
-
-    move v0, v1
-
-    :cond_0
-    return v0
-.end method
-
 .method static synthetic fto(Lcom/android/server/wifi/ire;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wifi/ire;->aY:I
+    iget p0, p0, Lcom/android/server/wifi/ire;->jY:I
 
     return p0
 .end method
@@ -4336,7 +4432,7 @@
 .method static synthetic g(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->wr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->xr()Z
 
     move-result p0
 
@@ -4346,53 +4442,47 @@
 .method private gb(Z)V
     .locals 2
 
+    const/4 v0, 0x2
+
     if-eqz p1, :cond_0
 
-    const/16 v0, 0x1f
+    iget p1, p0, Lcom/android/server/wifi/ire;->qY:I
+
+    if-ne p1, v0, :cond_2
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Hr()V
 
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x20
+    iget p1, p0, Lcom/android/server/wifi/ire;->pY:I
 
+    const/4 v1, 0x1
+
+    if-ne p1, v1, :cond_1
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Xq()V
+
+    iput v0, p0, Lcom/android/server/wifi/ire;->pY:I
+
+    :cond_1
+    iget p1, p0, Lcom/android/server/wifi/ire;->qY:I
+
+    if-ne p1, v1, :cond_2
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Wq()V
+
+    iput v0, p0, Lcom/android/server/wifi/ire;->qY:I
+
+    :cond_2
     :goto_0
-    const/4 v1, 0x0
-
-    invoke-direct {p0, v0, v1}, Lcom/android/server/wifi/ire;->zta(SI)Z
-
-    move-result p0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "After enableGameRttDetect("
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string p1, "):result="
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "OpSlaNetlinkHelper"
-
-    invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
     return-void
 .end method
 
 .method private gc(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/wifi/ire;->bY:I
+    iput p1, p0, Lcom/android/server/wifi/ire;->kY:I
 
     return-void
 .end method
@@ -4400,7 +4490,7 @@
 .method static synthetic gck(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->qr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->rr()V
 
     return-void
 .end method
@@ -4416,7 +4506,7 @@
 .method static synthetic gck(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->fb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->gb(Z)V
 
     return-void
 .end method
@@ -4475,29 +4565,28 @@
 
     move-result-object p0
 
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
-    const-string v1, "sla_download_onetime_notify"
+    const-string v1, "oneplus_link_turbo_value"
 
     invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result p0
 
-    if-ne p0, v0, :cond_0
+    const/4 v1, 0x1
 
-    goto :goto_0
+    if-ne p0, v1, :cond_0
+
+    move v0, v1
 
     :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
     return v0
 .end method
 
 .method static synthetic gwm(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     return-void
 .end method
@@ -4515,7 +4604,7 @@
 .method static synthetic h(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ir()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->jr()Z
 
     move-result p0
 
@@ -4827,11 +4916,47 @@
 .end method
 
 .method private hb(Z)V
-    .locals 0
+    .locals 2
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->nb(Z)V
+    if-eqz p1, :cond_0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->ob(Z)V
+    const/16 v0, 0x1f
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v0, 0x20
+
+    :goto_0
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, v1}, Lcom/android/server/wifi/ire;->zta(SI)Z
+
+    move-result p0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "After enableGameRttDetect("
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string p1, "):result="
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OpSlaNetlinkHelper"
+
+    invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
@@ -4839,12 +4964,94 @@
 .method static synthetic hmo(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->xY:Z
 
     return p0
 .end method
 
 .method private hr()Z
+    .locals 2
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v0, 0x1
+
+    const-string v1, "sla_download_onetime_notify"
+
+    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p0
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method static synthetic i(Lcom/android/server/wifi/ire;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Nr()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private ib(Z)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->ob(Z)V
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->pb(Z)V
+
+    return-void
+.end method
+
+.method static synthetic ibl(Lcom/android/server/wifi/ire;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->wY:Z
+
+    return p0
+.end method
+
+.method static synthetic igw(Lcom/android/server/wifi/ire;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/wifi/ire;->nY:I
+
+    return p1
+.end method
+
+.method static synthetic igw(Lcom/android/server/wifi/ire;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->hb(Z)V
+
+    return-void
+.end method
+
+.method static synthetic igw(Lcom/android/server/wifi/ire;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->br()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private ir()Z
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
@@ -4871,118 +5078,10 @@
     return v0
 .end method
 
-.method static synthetic i(Lcom/android/server/wifi/ire;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Mr()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private ib(Z)V
-    .locals 2
-
-    const/16 v0, 0x2d
-
-    invoke-direct {p0, v0, p1}, Lcom/android/server/wifi/ire;->zta(SI)Z
-
-    move-result p0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "After enableWhiteListLinkTurbo("
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string p1, "):result="
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "OpSlaNetlinkHelper"
-
-    invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-.end method
-
-.method static synthetic ibl(Lcom/android/server/wifi/ire;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->nY:Z
-
-    return p0
-.end method
-
-.method static synthetic igw(Lcom/android/server/wifi/ire;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/wifi/ire;->dY:I
-
-    return p1
-.end method
-
-.method static synthetic igw(Lcom/android/server/wifi/ire;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->gb(Z)V
-
-    return-void
-.end method
-
-.method static synthetic igw(Lcom/android/server/wifi/ire;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ar()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private ir()Z
-    .locals 2
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    const/4 v0, 0x1
-
-    const-string v1, "sls_app_onetime_notify"
-
-    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p0
-
-    if-ne p0, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
 .method static synthetic ire(Lcom/android/server/wifi/ire;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget p0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     return p0
 .end method
@@ -4990,7 +5089,7 @@
 .method static synthetic irq(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Sq()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Tq()V
 
     return-void
 .end method
@@ -5041,7 +5140,7 @@
 .method private static isVerizonSku()Z
     .locals 2
 
-    sget-object v0, Lcom/android/server/wifi/ire;->IY:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/wifi/ire;->RY:Ljava/lang/String;
 
     const-string v1, "19867"
 
@@ -5064,7 +5163,7 @@
 .method static synthetic ivd(Lcom/android/server/wifi/ire;)Landroid/net/ConnectivityManager$NetworkCallback;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->_X:Landroid/net/ConnectivityManager$NetworkCallback;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->iY:Landroid/net/ConnectivityManager$NetworkCallback;
 
     return-object p0
 .end method
@@ -5072,7 +5171,7 @@
 .method static synthetic j(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->gr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
 
     move-result p0
 
@@ -5080,6 +5179,78 @@
 .end method
 
 .method private jb(Z)V
+    .locals 2
+
+    const/16 v0, 0x2d
+
+    invoke-direct {p0, v0, p1}, Lcom/android/server/wifi/ire;->zta(SI)Z
+
+    move-result p0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "After enableWhiteListLinkTurbo("
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string p1, "):result="
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "OpSlaNetlinkHelper"
+
+    invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method private jr()Z
+    .locals 2
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v0, 0x1
+
+    const-string v1, "sls_app_onetime_notify"
+
+    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p0
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method static synthetic k(Lcom/android/server/wifi/ire;)Landroid/net/Network;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->hY:Landroid/net/Network;
+
+    return-object p0
+.end method
+
+.method private kb(Z)V
     .locals 2
 
     xor-int/lit8 v0, p1, 0x1
@@ -5127,7 +5298,7 @@
     return-void
 .end method
 
-.method private jr()Ljava/util/ArrayList;
+.method private kr()Ljava/util/ArrayList;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -5138,7 +5309,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->DY:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->MY:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -5148,25 +5319,51 @@
 
     if-nez v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->DY:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->MY:Ljava/util/ArrayList;
 
     return-object p0
 
     :cond_0
-    sget-object p0, Lcom/android/server/wifi/ire;->Baa:Ljava/util/ArrayList;
+    sget-object p0, Lcom/android/server/wifi/ire;->Kaa:Ljava/util/ArrayList;
 
     return-object p0
 .end method
 
-.method static synthetic k(Lcom/android/server/wifi/ire;)Landroid/net/Network;
+.method static synthetic kth(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->ZX:Landroid/net/Network;
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Hr()V
+
+    return-void
+.end method
+
+.method static synthetic kth(Lcom/android/server/wifi/ire;I)Z
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->cc(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic kth(Lcom/android/server/wifi/ire;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->vY:Z
+
+    return p1
+.end method
+
+.method static synthetic l(Lcom/android/server/wifi/ire;)Landroid/os/Handler;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mHandler:Landroid/os/Handler;
 
     return-object p0
 .end method
 
-.method private kb(Z)V
+.method private lb(Z)V
     .locals 2
 
     const/16 v0, 0x24
@@ -5202,7 +5399,23 @@
     return-void
 .end method
 
-.method private kr()Ljava/util/ArrayList;
+.method static synthetic les(Lcom/android/server/wifi/ire;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Cr()V
+
+    return-void
+.end method
+
+.method static synthetic lqr(Lcom/android/server/wifi/ire;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Uq()V
+
+    return-void
+.end method
+
+.method private lr()Ljava/util/ArrayList;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -5213,7 +5426,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->EY:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->NY:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -5223,104 +5436,62 @@
 
     if-nez v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->EY:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->NY:Ljava/util/ArrayList;
 
     return-object p0
 
     :cond_0
-    sget-object p0, Lcom/android/server/wifi/ire;->Caa:Ljava/util/ArrayList;
+    sget-object p0, Lcom/android/server/wifi/ire;->Laa:Ljava/util/ArrayList;
 
     return-object p0
 .end method
 
-.method static synthetic kth(Lcom/android/server/wifi/ire;)V
+.method static synthetic m(Lcom/android/server/wifi/ire;)Landroid/net/Network;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Gr()V
-
-    return-void
-.end method
-
-.method static synthetic kth(Lcom/android/server/wifi/ire;I)Z
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->cc(I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic kth(Lcom/android/server/wifi/ire;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->lY:Z
-
-    return p1
-.end method
-
-.method static synthetic l(Lcom/android/server/wifi/ire;)Landroid/os/Handler;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mHandler:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->gY:Landroid/net/Network;
 
     return-object p0
 .end method
 
-.method private lb(Z)V
+.method private mb(Z)V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->jY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->tY:Z
 
     if-eq v0, p1, :cond_1
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->jY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->tY:Z
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->jY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->tY:Z
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->oY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->xY:Z
 
-    iget-object p1, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     const/16 v0, 0xa
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     goto :goto_0
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     :cond_1
     :goto_0
     return-void
 .end method
 
-.method static synthetic les(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Br()V
-
-    return-void
-.end method
-
-.method static synthetic lqr(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Tq()V
-
-    return-void
-.end method
-
-.method private lr()Ljava/lang/String;
+.method private mr()Ljava/lang/String;
     .locals 0
 
     invoke-direct {p0}, Lcom/android/server/wifi/ire;->getTopActivity()Landroid/content/ComponentName;
@@ -5342,48 +5513,10 @@
     return-object p0
 .end method
 
-.method static synthetic m(Lcom/android/server/wifi/ire;)Landroid/net/Network;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->YX:Landroid/net/Network;
-
-    return-object p0
-.end method
-
-.method private mb(Z)V
-    .locals 1
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    const-string v0, "download_smart_link_aggregation"
-
-    invoke-static {p0, v0, p1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    return-void
-.end method
-
-.method private mr()I
-    .locals 1
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->getTopActivity()Landroid/content/ComponentName;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->rtg(Landroid/content/ComponentName;)I
-
-    move-result p0
-
-    return p0
-.end method
-
 .method static synthetic n(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->wr()Z
 
     move-result p0
 
@@ -5399,7 +5532,7 @@
 
     move-result-object p0
 
-    const-string v0, "sla_download_onetime_notify"
+    const-string v0, "download_smart_link_aggregation"
 
     invoke-static {p0, v0, p1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
@@ -5409,7 +5542,7 @@
 .method static synthetic o(Lcom/android/server/wifi/ire;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->mr()I
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->or()I
 
     move-result p0
 
@@ -5425,7 +5558,7 @@
 
     move-result-object p0
 
-    const-string v0, "sls_app_onetime_notify"
+    const-string v0, "sla_download_onetime_notify"
 
     invoke-static {p0, v0, p1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
@@ -5435,7 +5568,7 @@
 .method static synthetic obl(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Yq()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Zq()V
 
     return-void
 .end method
@@ -5468,7 +5601,7 @@
     if-eqz v0, :cond_1
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->GY:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->PY:Ljava/util/HashMap;
 
     new-instance v1, Ljava/lang/Integer;
 
@@ -5484,7 +5617,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->GY:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->PY:Ljava/util/HashMap;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -5503,14 +5636,60 @@
 .method static synthetic oif(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->fr()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->gr()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method private or()V
+.method private or()I
+    .locals 1
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->getTopActivity()Landroid/content/ComponentName;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->rtg(Landroid/content/ComponentName;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic oxb(Lcom/android/server/wifi/ire;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Lr()V
+
+    return-void
+.end method
+
+.method static synthetic p(Lcom/android/server/wifi/ire;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->stopListening()V
+
+    return-void
+.end method
+
+.method private pb(Z)V
+    .locals 1
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const-string v0, "sls_app_onetime_notify"
+
+    invoke-static {p0, v0, p1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    return-void
+.end method
+
+.method private pr()V
     .locals 9
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -5614,23 +5793,15 @@
     return-void
 .end method
 
-.method static synthetic oxb(Lcom/android/server/wifi/ire;)V
+.method static synthetic q(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Kr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Wq()V
 
     return-void
 .end method
 
-.method static synthetic p(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->stopListening()V
-
-    return-void
-.end method
-
-.method private pb(Z)V
+.method private qb(Z)V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
@@ -5656,119 +5827,10 @@
     return-void
 .end method
 
-.method private pr()V
-    .locals 1
-
-    new-instance v0, Lcom/android/server/wifi/wtn;
-
-    invoke-direct {v0, p0}, Lcom/android/server/wifi/wtn;-><init>(Lcom/android/server/wifi/ire;)V
-
-    iput-object v0, p0, Lcom/android/server/wifi/ire;->mFrontPackageListener:Lcom/android/server/OnePlusUtil$zta$you;
-
-    invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
-
-    move-result-object v0
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mFrontPackageListener:Lcom/android/server/OnePlusUtil$zta$you;
-
-    invoke-virtual {v0, p0}, Lcom/android/server/OnePlusUtil$zta;->zta(Lcom/android/server/OnePlusUtil$zta$you;)V
-
-    return-void
-.end method
-
-.method static synthetic q(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Vq()V
-
-    return-void
-.end method
-
-.method private qb(Z)V
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "setWifiState("
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpSlaNetlinkHelper"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    if-nez v0, :cond_2
-
-    if-eqz p1, :cond_2
-
-    sget-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
-
-    if-nez v0, :cond_1
-
-    :cond_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Fr()V
-
-    :cond_1
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Yq()V
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mOnlineConfigHandler:Landroid/os/Handler;
-
-    const/4 p1, 0x1
-
-    invoke-virtual {p0, p1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    goto :goto_0
-
-    :cond_2
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    if-eqz v0, :cond_3
-
-    if-nez p1, :cond_3
-
-    const/16 v0, -0xc8
-
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->gc(I)V
-
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->kY:Z
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
-
-    :cond_3
-    :goto_0
-    return-void
-.end method
-
 .method static synthetic qbh(Lcom/android/server/wifi/ire;)Landroid/os/Handler;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     return-object p0
 .end method
@@ -5776,7 +5838,7 @@
 .method static synthetic qbh(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->jb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->kb(Z)V
 
     return-void
 .end method
@@ -5852,7 +5914,7 @@
 
     if-eqz v3, :cond_3
 
-    iget-object v3, p0, Lcom/android/server/wifi/ire;->DY:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wifi/ire;->MY:Ljava/util/ArrayList;
 
     monitor-enter v3
     :try_end_0
@@ -5860,7 +5922,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->DY:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->MY:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
@@ -5907,7 +5969,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v6, p0, Lcom/android/server/wifi/ire;->DY:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/wifi/ire;->MY:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5921,7 +5983,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     const/4 v3, 0x5
 
@@ -5965,7 +6027,7 @@
 
     if-eqz v3, :cond_5
 
-    iget-object v3, p0, Lcom/android/server/wifi/ire;->EY:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wifi/ire;->NY:Ljava/util/ArrayList;
 
     monitor-enter v3
     :try_end_4
@@ -5973,7 +6035,7 @@
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
 
     :try_start_5
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->EY:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->NY:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
@@ -6020,7 +6082,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v6, p0, Lcom/android/server/wifi/ire;->EY:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/android/server/wifi/ire;->NY:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -6034,7 +6096,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :try_start_6
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     const/4 v3, 0x4
 
@@ -6119,84 +6181,109 @@
 .method static synthetic qeg(Lcom/android/server/wifi/ire;)Landroid/net/NetworkRequest;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->SX:Landroid/net/NetworkRequest;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->bY:Landroid/net/NetworkRequest;
 
     return-object p0
 .end method
 
 .method private qr()V
-    .locals 3
+    .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->WX:Landroid/telephony/TelephonyManager;
+    new-instance v0, Lcom/android/server/wifi/wtn;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v0, p0}, Lcom/android/server/wifi/wtn;-><init>(Lcom/android/server/wifi/ire;)V
 
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    iput-object v0, p0, Lcom/android/server/wifi/ire;->mFrontPackageListener:Lcom/android/server/OnePlusUtil$zta$you;
 
-    if-eqz v1, :cond_0
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
-
-    :cond_0
-    new-instance v0, Lcom/android/server/wifi/igw;
-
-    invoke-direct {v0, p0}, Lcom/android/server/wifi/igw;-><init>(Lcom/android/server/wifi/ire;)V
-
-    iput-object v0, p0, Lcom/android/server/wifi/ire;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
-
-    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
-
-    move-result v0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ur()Z
-
-    move-result v1
-
-    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->oY:Z
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_1
-
-    return-void
-
-    :cond_1
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "subId:"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "OpSlaNetlinkHelper"
-
-    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v1, p0, Lcom/android/server/wifi/ire;->mTelephonyManager:Landroid/telephony/TelephonyManager;
-
-    invoke-virtual {v1, v0}, Landroid/telephony/TelephonyManager;->createForSubscriptionId(I)Landroid/telephony/TelephonyManager;
+    invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wifi/ire;->WX:Landroid/telephony/TelephonyManager;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mFrontPackageListener:Lcom/android/server/OnePlusUtil$zta$you;
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->WX:Landroid/telephony/TelephonyManager;
+    invoke-virtual {v0, p0}, Lcom/android/server/OnePlusUtil$zta;->zta(Lcom/android/server/OnePlusUtil$zta$you;)V
 
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+    return-void
+.end method
 
-    const v1, 0x20000141
+.method private rb(Z)V
+    .locals 2
 
-    invoke-virtual {v0, p0, v1}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
+    new-instance v0, Ljava/lang/StringBuilder;
 
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "setWifiState("
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OpSlaNetlinkHelper"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->uY:Z
+
+    if-nez v0, :cond_2
+
+    if-eqz p1, :cond_2
+
+    sget-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
+
+    if-nez v0, :cond_1
+
+    :cond_0
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Gr()V
+
+    :cond_1
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->uY:Z
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Zq()V
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mOnlineConfigHandler:Landroid/os/Handler;
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p0, p1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    goto :goto_0
+
+    :cond_2
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->uY:Z
+
+    if-eqz v0, :cond_3
+
+    if-nez p1, :cond_3
+
+    const/16 v0, -0xc8
+
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->gc(I)V
+
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->uY:Z
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+
+    :cond_3
+    :goto_0
     return-void
 .end method
 
@@ -6286,7 +6373,7 @@
 
     new-instance v2, Lcom/android/server/wifi/ugm;
 
-    iget-object v3, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v3, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v3}, Lcom/android/server/wifi/ugm;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6308,7 +6395,7 @@
 
     new-instance v2, Lcom/android/server/wifi/vdb;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/vdb;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6328,7 +6415,7 @@
 
     new-instance v2, Lcom/android/server/wifi/zgw;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/zgw;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6348,7 +6435,7 @@
 
     new-instance v2, Lcom/android/server/wifi/obl;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/obl;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6368,7 +6455,7 @@
 
     new-instance v2, Lcom/android/server/wifi/oxb;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/oxb;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6388,7 +6475,7 @@
 
     new-instance v2, Lcom/android/server/wifi/cjf;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/cjf;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6408,7 +6495,7 @@
 
     new-instance v2, Lcom/android/server/wifi/ear;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/ear;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6428,7 +6515,7 @@
 
     new-instance v2, Lcom/android/server/wifi/you;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/you;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6448,7 +6535,7 @@
 
     new-instance v2, Lcom/android/server/wifi/sis;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/sis;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6468,7 +6555,7 @@
 
     new-instance v2, Lcom/android/server/wifi/tsu;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/tsu;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6488,7 +6575,7 @@
 
     new-instance v2, Lcom/android/server/wifi/rtg;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/rtg;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6508,7 +6595,7 @@
 
     new-instance v2, Lcom/android/server/wifi/ssp;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/ssp;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6528,7 +6615,7 @@
 
     new-instance v2, Lcom/android/server/wifi/cno;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/cno;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6540,11 +6627,11 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/server/wifi/ire;->ZU:Landroid/net/Uri;
+    sget-object v1, Lcom/android/server/wifi/ire;->hV:Landroid/net/Uri;
 
     new-instance v2, Lcom/android/server/wifi/kth;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/kth;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6564,7 +6651,7 @@
 
     new-instance v2, Lcom/android/server/wifi/bio;
 
-    iget-object v4, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/android/server/wifi/ire;->XX:Landroid/os/Handler;
 
     invoke-direct {v2, p0, v4}, Lcom/android/server/wifi/bio;-><init>(Lcom/android/server/wifi/ire;Landroid/os/Handler;)V
 
@@ -6574,11 +6661,77 @@
 .end method
 
 .method private rr()V
-    .locals 1
+    .locals 3
 
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->eY:Landroid/telephony/TelephonyManager;
 
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->hb(Z)V
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+
+    if-eqz v1, :cond_0
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
+
+    :cond_0
+    new-instance v0, Lcom/android/server/wifi/igw;
+
+    invoke-direct {v0, p0}, Lcom/android/server/wifi/igw;-><init>(Lcom/android/server/wifi/ire;)V
+
+    iput-object v0, p0, Lcom/android/server/wifi/ire;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+
+    invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
+
+    move-result v0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
+
+    move-result v1
+
+    iput-boolean v1, p0, Lcom/android/server/wifi/ire;->xY:Z
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_1
+
+    return-void
+
+    :cond_1
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "subId:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "OpSlaNetlinkHelper"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v1, p0, Lcom/android/server/wifi/ire;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+
+    invoke-virtual {v1, v0}, Landroid/telephony/TelephonyManager;->createForSubscriptionId(I)Landroid/telephony/TelephonyManager;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/server/wifi/ire;->eY:Landroid/telephony/TelephonyManager;
+
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->eY:Landroid/telephony/TelephonyManager;
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
+
+    const v1, 0x20000141
+
+    invoke-virtual {v0, p0, v1}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     return-void
 .end method
@@ -6593,7 +6746,7 @@
     return p0
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->UX:Lcom/android/server/pm/PackageManagerService;
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->cY:Lcom/android/server/pm/PackageManagerService;
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -6621,7 +6774,7 @@
 .method static synthetic rtg(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->yY:Z
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->HY:Z
 
     return p0
 .end method
@@ -6637,7 +6790,7 @@
 .method private setOPSlaDisable()V
     .locals 5
 
-    iget v0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     const/4 v1, 0x1
 
@@ -6652,7 +6805,7 @@
     const/4 v1, 0x0
 
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     invoke-interface {v2}, Landroid/net/INetd;->setOPSlaDisable()Z
 
@@ -6684,7 +6837,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v4, p0, Lcom/android/server/wifi/ire;->oY:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -6696,13 +6849,13 @@
 
     if-eqz v2, :cond_0
 
-    iput v1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iput v1, p0, Lcom/android/server/wifi/ire;->oY:I
 
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Lcom/android/server/wifi/ire;->mLastUpdateTime:J
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Wq()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Xq()V
 
     :cond_0
     return-void
@@ -6711,22 +6864,22 @@
 .method private setOPSlaEnable()V
     .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->kY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->uY:Z
 
     const-string v1, "OpSlaNetlinkHelper"
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->jY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->tY:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-nez v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     invoke-interface {v0}, Landroid/net/INetd;->setOPSlaEnable()Z
 
@@ -6761,11 +6914,11 @@
     :goto_0
     if-nez v0, :cond_1
 
-    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->kY:Z
+    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->uY:Z
 
     if-eqz v2, :cond_1
 
-    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->jY:Z
+    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->tY:Z
 
     if-eqz v2, :cond_1
 
@@ -6774,7 +6927,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     invoke-interface {v2}, Landroid/net/INetd;->setOPSlaDisable()Z
     :try_end_1
@@ -6803,7 +6956,7 @@
 
     :goto_1
     :try_start_2
-    iget-object v2, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object v2, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     invoke-interface {v2}, Landroid/net/INetd;->setOPSlaEnable()Z
 
@@ -6838,7 +6991,7 @@
 
     const/4 v2, 0x1
 
-    iput v2, p0, Lcom/android/server/wifi/ire;->eY:I
+    iput v2, p0, Lcom/android/server/wifi/ire;->oY:I
 
     :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
@@ -6855,7 +7008,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->kY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->uY:Z
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -6863,7 +7016,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->jY:Z
+    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->tY:Z
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -6871,7 +7024,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget p0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -6887,7 +7040,7 @@
 .method static synthetic sis(Lcom/android/server/wifi/ire;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/wifi/ire;->cY:I
+    iput p1, p0, Lcom/android/server/wifi/ire;->lY:I
 
     return p1
 .end method
@@ -7051,16 +7204,16 @@
 
     if-eqz p2, :cond_7
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->qb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->rb(Z)V
 
-    iget-boolean p3, p0, Lcom/android/server/wifi/ire;->uY:Z
+    iget-boolean p3, p0, Lcom/android/server/wifi/ire;->DY:Z
 
     if-ne p3, p1, :cond_6
 
     return-void
 
     :cond_6
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->qY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->zY:Z
 
     const-string p3, "1"
 
@@ -7074,16 +7227,16 @@
 
     if-eqz p3, :cond_b
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->lb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->mb(Z)V
 
-    iget-boolean p3, p0, Lcom/android/server/wifi/ire;->vY:Z
+    iget-boolean p3, p0, Lcom/android/server/wifi/ire;->EY:Z
 
     if-ne p3, p1, :cond_8
 
     return-void
 
     :cond_8
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->rY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->AY:Z
 
     const-string p3, "2"
 
@@ -7109,7 +7262,7 @@
 
     invoke-static {v7, p3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object v0, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     move-object v2, v6
 
@@ -7150,7 +7303,7 @@
 
     invoke-static {v7, p3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p3, p0, Lcom/android/server/wifi/ire;->XX:Landroid/net/INetd;
+    iget-object p3, p0, Lcom/android/server/wifi/ire;->fY:Landroid/net/INetd;
 
     invoke-interface {p3, v1, v6}, Landroid/net/INetd;->setOPSlaIfaceDown(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -7203,15 +7356,15 @@
 
     if-eqz p2, :cond_a
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->uY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->DY:Z
 
     goto :goto_6
 
     :cond_a
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->vY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->EY:Z
 
     :goto_6
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     :cond_b
     return-void
@@ -7254,7 +7407,7 @@
 .method static synthetic sis(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->xY:Z
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->GY:Z
 
     return p0
 .end method
@@ -7262,12 +7415,73 @@
 .method static synthetic sis(Lcom/android/server/wifi/ire;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->yY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->HY:Z
 
     return p1
 .end method
 
-.method private sr()Z
+.method private sr()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->ib(Z)V
+
+    return-void
+.end method
+
+.method static synthetic ssp(Lcom/android/server/wifi/ire;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/wifi/ire;->oY:I
+
+    return p1
+.end method
+
+.method static synthetic ssp(Lcom/android/server/wifi/ire;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->IY:Z
+
+    return p0
+.end method
+
+.method static synthetic ssp(Lcom/android/server/wifi/ire;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->wY:Z
+
+    return p1
+.end method
+
+.method private stopListening()V
+    .locals 2
+
+    const-string v0, "OpSlaNetlinkHelper"
+
+    const-string v1, "stopListening..."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0}, Llibcore/io/IoUtils;->closeQuietly(Ljava/io/FileDescriptor;)V
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
+
+    iput-object v0, p0, Lcom/android/server/wifi/ire;->YX:Ljava/lang/Thread;
+
+    :cond_0
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+
+    return-void
+.end method
+
+.method private tr()Z
     .locals 3
 
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
@@ -7332,84 +7546,6 @@
     return p0
 .end method
 
-.method static synthetic ssp(Lcom/android/server/wifi/ire;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/wifi/ire;->eY:I
-
-    return p1
-.end method
-
-.method static synthetic ssp(Lcom/android/server/wifi/ire;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->zY:Z
-
-    return p0
-.end method
-
-.method static synthetic ssp(Lcom/android/server/wifi/ire;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->nY:Z
-
-    return p1
-.end method
-
-.method private stopListening()V
-    .locals 2
-
-    const-string v0, "OpSlaNetlinkHelper"
-
-    const-string v1, "stopListening..."
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    sget-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
-
-    if-eqz v0, :cond_0
-
-    invoke-static {v0}, Llibcore/io/IoUtils;->closeQuietly(Ljava/io/FileDescriptor;)V
-
-    const/4 v0, 0x0
-
-    sput-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
-
-    iput-object v0, p0, Lcom/android/server/wifi/ire;->NX:Ljava/lang/Thread;
-
-    :cond_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
-
-    return-void
-.end method
-
-.method private tr()Z
-    .locals 2
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    const-string v1, "wifi_dbs_enable"
-
-    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result p0
-
-    const/4 v1, 0x1
-
-    if-ne p0, v1, :cond_0
-
-    move v0, v1
-
-    :cond_0
-    return v0
-.end method
-
 .method private tsu(S)Ljava/lang/String;
     .locals 2
 
@@ -7419,7 +7555,7 @@
 
     add-int/lit8 p0, p1, -0x11
 
-    sget-object v0, Lcom/android/server/wifi/ire;->Aaa:[Ljava/lang/String;
+    sget-object v0, Lcom/android/server/wifi/ire;->Jaa:[Ljava/lang/String;
 
     array-length v1, v0
 
@@ -7462,7 +7598,7 @@
 .method static synthetic tsu(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->_q()Z
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->ar()Z
 
     move-result p0
 
@@ -7472,12 +7608,47 @@
 .method static synthetic tsu(Lcom/android/server/wifi/ire;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->zY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->IY:Z
 
     return p1
 .end method
 
-.method private uc(Ljava/lang/String;)Landroid/app/PendingIntent;
+.method static synthetic ugm(Lcom/android/server/wifi/ire;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Xq()V
+
+    return-void
+.end method
+
+.method private ur()Z
+    .locals 2
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    const-string v1, "wifi_dbs_enable"
+
+    invoke-static {p0, v1, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result p0
+
+    const/4 v1, 0x1
+
+    if-ne p0, v1, :cond_0
+
+    move v0, v1
+
+    :cond_0
+    return v0
+.end method
+
+.method private vc(Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 2
 
     new-instance v0, Landroid/content/Intent;
@@ -7501,15 +7672,41 @@
     return-object p0
 .end method
 
-.method static synthetic ugm(Lcom/android/server/wifi/ire;)V
+.method static synthetic vdb(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Wq()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     return-void
 .end method
 
-.method private ur()Z
+.method static synthetic vdw(Lcom/android/server/wifi/ire;)Landroid/net/ConnectivityManager;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wifi/ire;->mCm:Landroid/net/ConnectivityManager;
+
+    return-object p0
+.end method
+
+.method static synthetic veq(Lcom/android/server/wifi/ire;)Ljava/util/ArrayList;
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->lr()Ljava/util/ArrayList;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic vju(Lcom/android/server/wifi/ire;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Dr()V
+
+    return-void
+.end method
+
+.method private vr()Z
     .locals 5
 
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
@@ -7596,72 +7793,6 @@
     return p0
 .end method
 
-.method static synthetic vdb(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
-
-    return-void
-.end method
-
-.method static synthetic vdw(Lcom/android/server/wifi/ire;)Landroid/net/ConnectivityManager;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wifi/ire;->mCm:Landroid/net/ConnectivityManager;
-
-    return-object p0
-.end method
-
-.method static synthetic veq(Lcom/android/server/wifi/ire;)Ljava/util/ArrayList;
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->kr()Ljava/util/ArrayList;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic vju(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Cr()V
-
-    return-void
-.end method
-
-.method private vr()Z
-    .locals 2
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->getTopActivity()Landroid/content/ComponentName;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->rtg(Landroid/content/ComponentName;)I
-
-    move-result v0
-
-    const/16 v1, 0x3e8
-
-    if-le v0, v1, :cond_0
-
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->ac(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
 .method private wr()Z
     .locals 2
 
@@ -7677,7 +7808,7 @@
 
     if-le v0, v1, :cond_0
 
-    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->cc(I)Z
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->ac(I)Z
 
     move-result p0
 
@@ -7713,12 +7844,141 @@
 .method static synthetic wtn(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->kb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->lb(Z)V
 
     return-void
 .end method
 
 .method private xr()Z
+    .locals 2
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->getTopActivity()Landroid/content/ComponentName;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->rtg(Landroid/content/ComponentName;)I
+
+    move-result v0
+
+    const/16 v1, 0x3e8
+
+    if-le v0, v1, :cond_0
+
+    invoke-direct {p0, v0}, Lcom/android/server/wifi/ire;->cc(I)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method static synthetic you(Lcom/android/server/wifi/ire;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->ec(I)V
+
+    return-void
+.end method
+
+.method static synthetic you(Lcom/android/server/wifi/ire;Landroid/net/Network;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->handleLost(Landroid/net/Network;)V
+
+    return-void
+.end method
+
+.method static synthetic you(Lcom/android/server/wifi/ire;Ljava/lang/String;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lcom/android/server/wifi/ire;->oif(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method private you(ZLandroid/net/LinkProperties;Landroid/net/NetworkCapabilities;)V
+    .locals 1
+
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p2}, Landroid/net/LinkProperties;->getInterfaceName()Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string v0, "tun0"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_1
+
+    :cond_0
+    if-eqz p3, :cond_2
+
+    const/4 p2, 0x4
+
+    invoke-virtual {p3, p2}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    :cond_1
+    const/4 p2, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 p2, 0x0
+
+    :goto_0
+    if-nez p2, :cond_3
+
+    return-void
+
+    :cond_3
+    if-eqz p1, :cond_4
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+
+    goto :goto_1
+
+    :cond_4
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
+
+    :goto_1
+    return-void
+.end method
+
+.method static synthetic you(Lcom/android/server/wifi/ire;)Z
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->er()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic you(Lcom/android/server/wifi/ire;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->GY:Z
+
+    return p1
+.end method
+
+.method private yr()Z
     .locals 2
 
     :try_start_0
@@ -7798,104 +8058,31 @@
     return p0
 .end method
 
-.method static synthetic you(Lcom/android/server/wifi/ire;I)V
+.method static synthetic ywr(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->ec(I)V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Er()V
 
     return-void
 .end method
 
-.method static synthetic you(Lcom/android/server/wifi/ire;Landroid/net/Network;)V
+.method static synthetic ywr(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->handleLost(Landroid/net/Network;)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->qb(Z)V
 
     return-void
 .end method
 
-.method static synthetic you(Lcom/android/server/wifi/ire;Ljava/lang/String;I)V
+.method static synthetic zgw(Lcom/android/server/wifi/ire;)Z
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/server/wifi/ire;->oif(Ljava/lang/String;I)V
-
-    return-void
-.end method
-
-.method private you(ZLandroid/net/LinkProperties;Landroid/net/NetworkCapabilities;)V
-    .locals 1
-
-    if-eqz p2, :cond_0
-
-    invoke-virtual {p2}, Landroid/net/LinkProperties;->getInterfaceName()Ljava/lang/String;
-
-    move-result-object p2
-
-    const-string v0, "tun0"
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-nez p2, :cond_1
-
-    :cond_0
-    if-eqz p3, :cond_2
-
-    const/4 p2, 0x4
-
-    invoke-virtual {p3, p2}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2
-
-    :cond_1
-    const/4 p2, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    const/4 p2, 0x0
-
-    :goto_0
-    if-nez p2, :cond_3
-
-    return-void
-
-    :cond_3
-    if-eqz p1, :cond_4
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
-
-    goto :goto_1
-
-    :cond_4
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
-
-    :goto_1
-    return-void
-.end method
-
-.method static synthetic you(Lcom/android/server/wifi/ire;)Z
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->dr()Z
-
-    move-result p0
+    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->vY:Z
 
     return p0
 .end method
 
-.method static synthetic you(Lcom/android/server/wifi/ire;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->xY:Z
-
-    return p1
-.end method
-
-.method private yr()V
+.method private zr()V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -7906,7 +8093,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v1, p0, Lcom/android/server/wifi/ire;->oY:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -7931,7 +8118,7 @@
     iput-object v0, p0, Lcom/android/server/wifi/ire;->mMobileNetworkCallback:Landroid/net/ConnectivityManager$NetworkCallback;
 
     :cond_0
-    iget v0, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget v0, p0, Lcom/android/server/wifi/ire;->oY:I
 
     const/4 v1, 0x1
 
@@ -7943,197 +8130,10 @@
     return-void
 .end method
 
-.method static synthetic ywr(Lcom/android/server/wifi/ire;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Dr()V
-
-    return-void
-.end method
-
-.method static synthetic ywr(Lcom/android/server/wifi/ire;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->pb(Z)V
-
-    return-void
-.end method
-
-.method static synthetic zgw(Lcom/android/server/wifi/ire;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/wifi/ire;->lY:Z
-
-    return p0
-.end method
-
-.method private zr()V
-    .locals 5
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->fr()Z
-
-    move-result v0
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->hr()Z
-
-    move-result v1
-
-    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->qY:Z
-
-    if-eqz v2, :cond_0
-
-    iget-boolean v2, p0, Lcom/android/server/wifi/ire;->rY:Z
-
-    if-eqz v2, :cond_0
-
-    const/4 v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->vr()Z
-
-    move-result v3
-
-    iput-boolean v3, p0, Lcom/android/server/wifi/ire;->lY:Z
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->wr()Z
-
-    move-result v3
-
-    iput-boolean v3, p0, Lcom/android/server/wifi/ire;->nY:Z
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "maybeEnableSla gameSwitchState:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " appSwitchState:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " mSlaGameOnFocus:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->lY:Z
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " mSlaTopAppOnFocus:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->nY:Z
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " mCellConnected:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->jY:Z
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " mMobileHasIpv4:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->rY:Z
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " mSlaCellularUp:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->vY:Z
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v4, " mMobileValidate:"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v4, p0, Lcom/android/server/wifi/ire;->tY:Z
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "OpSlaNetlinkHelper"
-
-    invoke-static {v4, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    if-eqz v0, :cond_1
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->lY:Z
-
-    if-nez v0, :cond_2
-
-    :cond_1
-    if-eqz v1, :cond_3
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->nY:Z
-
-    if-eqz v0, :cond_3
-
-    :cond_2
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Mr()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string v0, "enableSla..."
-
-    invoke-static {v4, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/android/server/wifi/ire;->MX:Landroid/os/Handler;
-
-    const/4 v1, 0x2
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->registerMobileNetworkRequest()V
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->jY:Z
-
-    if-eqz v0, :cond_3
-
-    if-eqz v2, :cond_3
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->vY:Z
-
-    if-eqz v0, :cond_3
-
-    iget-boolean v0, p0, Lcom/android/server/wifi/ire;->tY:Z
-
-    if-eqz v0, :cond_3
-
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->setOPSlaEnable()V
-
-    :cond_3
-    return-void
-.end method
-
 .method static synthetic zta(Lcom/android/server/wifi/ire;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/wifi/ire;->gY:I
+    iput p1, p0, Lcom/android/server/wifi/ire;->qY:I
 
     return p1
 .end method
@@ -8141,7 +8141,7 @@
 .method static synthetic zta(Lcom/android/server/wifi/ire;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/wifi/ire;->hY:J
+    iput-wide p1, p0, Lcom/android/server/wifi/ire;->rY:J
 
     return-wide p1
 .end method
@@ -8157,7 +8157,7 @@
 .method static synthetic zta(Ljava/io/FileDescriptor;)Ljava/io/FileDescriptor;
     .locals 0
 
-    sput-object p0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sput-object p0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     return-object p0
 .end method
@@ -8208,7 +8208,7 @@
 
     if-eqz v1, :cond_2
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->YX:Landroid/net/Network;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->gY:Landroid/net/Network;
 
     if-eqz p2, :cond_1
 
@@ -8221,7 +8221,7 @@
     move v2, v0
 
     :cond_1
-    iput-boolean v2, p0, Lcom/android/server/wifi/ire;->qY:Z
+    iput-boolean v2, p0, Lcom/android/server/wifi/ire;->zY:Z
 
     goto :goto_0
 
@@ -8230,7 +8230,7 @@
 
     if-eqz p3, :cond_4
 
-    iput-object p1, p0, Lcom/android/server/wifi/ire;->ZX:Landroid/net/Network;
+    iput-object p1, p0, Lcom/android/server/wifi/ire;->hY:Landroid/net/Network;
 
     if-eqz p2, :cond_3
 
@@ -8243,24 +8243,24 @@
     move v2, v0
 
     :cond_3
-    iput-boolean v2, p0, Lcom/android/server/wifi/ire;->rY:Z
+    iput-boolean v2, p0, Lcom/android/server/wifi/ire;->AY:Z
 
     :cond_4
     :goto_0
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->qY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->zY:Z
 
     if-eqz p1, :cond_5
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->rY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->AY:Z
 
     if-nez p1, :cond_6
 
     :cond_5
-    iget p1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget p1, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-ne p1, v0, :cond_6
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     :cond_6
     return-void
@@ -8317,7 +8317,7 @@
 .method static synthetic zta(Lcom/android/server/wifi/ire;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Lr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Mr()V
 
     return-void
 .end method
@@ -8365,7 +8365,7 @@
 .method static synthetic zta(Lcom/android/server/wifi/ire;Z)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->nb(Z)V
+    invoke-direct {p0, p1}, Lcom/android/server/wifi/ire;->ob(Z)V
 
     return-void
 .end method
@@ -8392,29 +8392,29 @@
 
     if-eqz p1, :cond_2
 
-    iput-boolean p2, p0, Lcom/android/server/wifi/ire;->pY:Z
+    iput-boolean p2, p0, Lcom/android/server/wifi/ire;->yY:Z
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->pY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->yY:Z
 
     if-eqz p1, :cond_1
 
-    iget p1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget p1, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-ne p1, v0, :cond_3
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     goto :goto_0
 
     :cond_2
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->pY:Z
+    iput-boolean p1, p0, Lcom/android/server/wifi/ire;->yY:Z
 
     :cond_3
     :goto_0
@@ -8467,7 +8467,7 @@
     move p2, v3
 
     :goto_0
-    iput-boolean p2, p0, Lcom/android/server/wifi/ire;->sY:Z
+    iput-boolean p2, p0, Lcom/android/server/wifi/ire;->BY:Z
 
     goto :goto_2
 
@@ -8484,15 +8484,15 @@
     move p2, v3
 
     :goto_1
-    iput-boolean p2, p0, Lcom/android/server/wifi/ire;->tY:Z
+    iput-boolean p2, p0, Lcom/android/server/wifi/ire;->CY:Z
 
     :cond_4
     :goto_2
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->sY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->BY:Z
 
     aput p1, v0, v3
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->tY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->CY:Z
 
     aput p1, v0, v1
 
@@ -8505,37 +8505,37 @@
     if-eqz v5, :cond_8
 
     :cond_5
-    iget p1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget p1, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-nez p1, :cond_6
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->sY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->BY:Z
 
     if-eqz p1, :cond_6
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->tY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->CY:Z
 
     if-eqz p1, :cond_6
 
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->Ar()V
 
     goto :goto_3
 
     :cond_6
-    iget p1, p0, Lcom/android/server/wifi/ire;->eY:I
+    iget p1, p0, Lcom/android/server/wifi/ire;->oY:I
 
     if-ne p1, v1, :cond_8
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->sY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->BY:Z
 
     if-eqz p1, :cond_7
 
-    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->tY:Z
+    iget-boolean p1, p0, Lcom/android/server/wifi/ire;->CY:Z
 
     if-nez p1, :cond_8
 
     :cond_7
-    invoke-direct {p0}, Lcom/android/server/wifi/ire;->yr()V
+    invoke-direct {p0}, Lcom/android/server/wifi/ire;->zr()V
 
     :cond_8
     :goto_3
@@ -8555,7 +8555,7 @@
 .method private zta(SI)Z
     .locals 9
 
-    sget-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sget-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     const/4 v1, 0x0
 
@@ -8604,7 +8604,7 @@
 
     array-length p0, v4
 
-    sget-object v3, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sget-object v3, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     const/4 v5, 0x0
 
@@ -8704,7 +8704,7 @@
 .method private zta(S[I)Z
     .locals 9
 
-    sget-object v0, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sget-object v0, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     const-string v1, "OpSlaNetlinkHelper"
 
@@ -8783,7 +8783,7 @@
     :cond_1
     array-length p0, v4
 
-    sget-object v3, Lcom/android/server/wifi/ire;->HY:Ljava/io/FileDescriptor;
+    sget-object v3, Lcom/android/server/wifi/ire;->QY:Ljava/io/FileDescriptor;
 
     const/4 v5, 0x0
 

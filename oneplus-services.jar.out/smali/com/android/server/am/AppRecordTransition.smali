@@ -203,31 +203,31 @@
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Rya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->jza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Iya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->aza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Jya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->bza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Kya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->cza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Nya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->fza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
@@ -239,31 +239,31 @@
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Lya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->dza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Mya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->eza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Oya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->gza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Pya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->hza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
     invoke-static {v0, v1}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->Qya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object v0, Lcom/android/server/am/AppRecordManager$ListenerType;->iza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object p0, p0, Lcom/android/server/am/AppRecordTransition;->mAppStateListener:Lcom/android/server/am/AppRecordTransition$zta;
 
@@ -670,7 +670,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {v0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v0
 
@@ -687,11 +687,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {v0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/server/am/D;->getFlag()I
+    invoke-virtual {v0}, Lcom/android/server/am/H;->getFlag()I
 
     move-result v0
 
@@ -1448,7 +1448,7 @@
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p0, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object p0
 
@@ -1460,7 +1460,7 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    iget-boolean p0, p0, Lcom/android/server/am/D;->DG:Z
+    iget-boolean p0, p0, Lcom/android/server/am/H;->LG:Z
 
     goto :goto_1
 
@@ -1504,7 +1504,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/D;
+    invoke-virtual {p1, p2}, Lcom/android/server/am/tsu;->cjf(I)Lcom/android/server/am/H;
 
     move-result-object p1
 
@@ -1517,7 +1517,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/server/am/AppRecordTransition;->mProcList:Ljava/util/Set;
 
-    iget-object v1, p1, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -1527,7 +1527,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/AppRecordTransition;->mProcList:Ljava/util/Set;
 
-    iget-object p1, p1, Lcom/android/server/am/D;->AG:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/H;->JG:Ljava/lang/String;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 

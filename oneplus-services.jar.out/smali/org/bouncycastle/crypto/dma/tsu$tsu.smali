@@ -50,7 +50,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/veq;->Dj()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/veq;->Ej()Z
 
     move-result v0
 
@@ -85,11 +85,11 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Jj()Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
 
     move-result-object v5
 
@@ -104,7 +104,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/veq;->Cj()Z
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/veq;->Dj()Z
 
     move-result v0
 
@@ -133,11 +133,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Jj()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
 
     move-result-object v4
 
@@ -150,7 +150,7 @@
     invoke-direct/range {v0 .. v5}, Lorg/bouncycastle/crypto/wtn/ibl;-><init>(Lyou/zta/sis/zta/rtg;Lyou/zta/sis/zta/wtn;Ljava/math/BigInteger;Ljava/math/BigInteger;[B)V
 
     :goto_0
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->mi()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/c;->oi()Lorg/bouncycastle/asn1/n;
 
     move-result-object p0
 
@@ -245,7 +245,7 @@
 
     new-instance p1, Lorg/bouncycastle/crypto/wtn/obl;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/les;->Jj()Lyou/zta/sis/zta/wtn;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl/les;->Kj()Lyou/zta/sis/zta/wtn;
 
     move-result-object p0
 

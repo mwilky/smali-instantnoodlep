@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected Xj()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected Yj()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 12
 
     const-wide/16 v0, 0x1
@@ -40,7 +40,7 @@
 
     const-string p0, "04000000000000000000020108A2E0CC0D99F8A5EF"
 
-    invoke-static {p0}, Lorg/bouncycastle/asn1/ywr/irq;->Ka(Ljava/lang/String;)Ljava/math/BigInteger;
+    invoke-static {p0}, Lorg/bouncycastle/asn1/ywr/irq;->La(Ljava/lang/String;)Ljava/math/BigInteger;
 
     move-result-object p0
 
