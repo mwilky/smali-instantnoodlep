@@ -1971,19 +1971,19 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfBoost:Landroid/util/BoostFramework;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_3
 
     iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
-    const/16 v2, 0x1081
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const/16 v3, 0x1081
 
     const/4 v4, -0x1
 
-    invoke-virtual {v0, v2, v1, v4, v3}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v4, v2}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
 
-    sput-boolean v3, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfSendTapHint:Z
+    sput-boolean v2, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfSendTapHint:Z
 
     iget-object v0, p0, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfBoost:Landroid/util/BoostFramework;
 
@@ -1991,7 +1991,7 @@
 
     const/4 v5, 0x2
 
-    invoke-virtual {v0, v2, v1, v4, v5}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
+    invoke-virtual {v0, v3, v1, v4, v5}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
 
     iget-object v0, p0, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfBoost:Landroid/util/BoostFramework;
 
@@ -2003,26 +2003,15 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_2
+    if-ne v0, v5, :cond_1
 
-    iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
-
-    if-eqz v1, :cond_1
-
-    iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget-object v6, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
-
-    invoke-static {v1, v6, v5, v3}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->coldStart(Landroid/content/pm/ApplicationInfo;Ljava/lang/String;IZ)V
-
-    :cond_1
     iget-object v1, p0, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfBoost:Landroid/util/BoostFramework;
 
     iget-object v5, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
     const/4 v6, 0x4
 
-    invoke-virtual {v1, v2, v5, v4, v6}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
+    invoke-virtual {v1, v3, v5, v4, v6}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
 
     move-result v1
 
@@ -2030,25 +2019,14 @@
 
     goto :goto_0
 
-    :cond_2
-    iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
-
-    if-eqz v1, :cond_3
-
-    iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
-
-    iget-object v5, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
-
-    invoke-static {v1, v5, v0, v3}, Lcom/oneplus/houston/apkserver/bridge/HoustonInjector;->coldStart(Landroid/content/pm/ApplicationInfo;Ljava/lang/String;IZ)V
-
-    :cond_3
+    :cond_1
     iget-object v1, p0, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfBoost:Landroid/util/BoostFramework;
 
     iget-object v5, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
     const/4 v6, 0x3
 
-    invoke-virtual {v1, v2, v5, v4, v6}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
+    invoke-virtual {v1, v3, v5, v4, v6}, Landroid/util/BoostFramework;->perfHint(ILjava/lang/String;II)I
 
     move-result v1
 
@@ -2057,20 +2035,20 @@
     :goto_0
     sget v1, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfHandle:I
 
-    if-lez v1, :cond_4
+    if-lez v1, :cond_2
 
-    sput-boolean v3, Lcom/android/server/wm/ActivityStackSupervisor;->mIsPerfBoostAcquired:Z
+    sput-boolean v2, Lcom/android/server/wm/ActivityStackSupervisor;->mIsPerfBoostAcquired:Z
 
-    :cond_4
+    :cond_2
     iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_3
 
     iget-object v1, p1, Lcom/android/server/wm/ActivityRecord;->appInfo:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_3
 
     iget-object v1, p0, Lcom/android/server/wm/ActivityStackSupervisor;->mPerfBoost:Landroid/util/BoostFramework;
 
@@ -2098,7 +2076,7 @@
 
     invoke-virtual {v1, v4, v2, v3}, Landroid/util/BoostFramework;->perfIOPrefetchStart(ILjava/lang/String;Ljava/lang/String;)I
 
-    :cond_5
+    :cond_3
     return-void
 .end method
 

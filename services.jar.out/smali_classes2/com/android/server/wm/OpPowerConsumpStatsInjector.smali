@@ -56,6 +56,36 @@
     return-void
 .end method
 
+.method public static dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+    .locals 2
+
+    sget-boolean v0, Lcom/android/server/wm/OpPowerConsumpStatsInjector;->ENABLED:Z
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string v0, "OpPowerConsumpStatsInjector"
+
+    const-string v1, "dumpDailyPowerFiles"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStatsInjector;->opPowerConsumpStats:Lcom/android/server/wm/IOpPowerConsumpStats;
+
+    if-eqz v0, :cond_1
+
+    sget-boolean v1, Lcom/android/server/wm/OpPowerConsumpStatsInjector;->sIsInited:Z
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0, p0, p1}, Lcom/android/server/wm/IOpPowerConsumpStats;->dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    :cond_1
+    return-void
+.end method
+
 .method public static getResult(Ljava/io/PrintWriter;Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;)V
     .locals 2
 

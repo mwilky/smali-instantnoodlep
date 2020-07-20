@@ -81,6 +81,8 @@
 
 .field public static final enum oneplus_fingerprint_acccelerate:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
+.field public static final enum oneplus_font_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
 .field public static final enum oneplus_force_dark_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
 .field public static final enum oneplus_game_shake:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
@@ -1098,7 +1100,17 @@
 
     sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
-    const/16 v0, 0x59
+    new-instance v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const-string v14, "oneplus_font_controller"
+
+    const/16 v15, 0x59
+
+    invoke-direct {v0, v14, v15}, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_font_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v0, 0x5a
 
     new-array v0, v0, [Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
@@ -1607,6 +1619,12 @@
     sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_batterystats_service:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
 
     const/16 v2, 0x58
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_font_controller:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    const/16 v2, 0x59
 
     aput-object v1, v0, v2
 

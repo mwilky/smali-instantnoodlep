@@ -1,5 +1,5 @@
-.class synthetic Lcom/android/server/ConnectivityService$10;
-.super Ljava/lang/Object;
+.class Lcom/android/server/ConnectivityService$10;
+.super Lcom/android/server/net/BaseNetdEventCallback;
 .source "ConnectivityService.java"
 
 
@@ -9,162 +9,164 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x0
     name = null
 .end annotation
 
 
-# static fields
-.field static final synthetic $SwitchMap$com$android$server$ConnectivityService$UnneededFor:[I
-
-.field static final synthetic $SwitchMap$com$android$server$connectivity$NetworkNotificationManager$NotificationType:[I
+# instance fields
+.field final synthetic this$0:Lcom/android/server/ConnectivityService;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method constructor <init>(Lcom/android/server/ConnectivityService;)V
+    .locals 0
 
-    invoke-static {}, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->values()[Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;
+    iput-object p1, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
+
+    invoke-direct {p0}, Lcom/android/server/net/BaseNetdEventCallback;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onDnsEvent(IIILjava/lang/String;[Ljava/lang/String;IJI)V
+    .locals 3
+
+    const/16 v0, 0xff
+
+    const-string v1, "dns_time_out_check"
+
+    if-ne v0, p3, :cond_0
+
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
+
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v0
 
-    array-length v0, v0
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    new-array v0, v0, [I
+    move-result-object v0
 
-    sput-object v0, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$connectivity$NetworkNotificationManager$NotificationType:[I
-
-    const/4 v0, 0x1
-
-    :try_start_0
-    sget-object v1, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$connectivity$NetworkNotificationManager$NotificationType:[I
-
-    sget-object v2, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->LOGGED_IN:Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;
-
-    invoke-virtual {v2}, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->ordinal()I
-
-    move-result v2
-
-    aput v0, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v0, v1, p9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     goto :goto_0
 
-    :catch_0
-    move-exception v1
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
+
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :goto_0
-    const/4 v1, 0x2
-
-    :try_start_1
-    sget-object v2, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$connectivity$NetworkNotificationManager$NotificationType:[I
-
-    sget-object v3, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->NO_INTERNET:Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;
-
-    invoke-virtual {v3}, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->ordinal()I
-
-    move-result v3
-
-    aput v1, v2, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     goto :goto_1
 
-    :catch_1
-    move-exception v2
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const-string v1, "INetdDnsEventCallback callback invalid!"
+
+    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$700(Ljava/lang/String;)V
 
     :goto_1
-    :try_start_2
-    sget-object v2, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$connectivity$NetworkNotificationManager$NotificationType:[I
+    return-void
+.end method
 
-    sget-object v3, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->LOST_INTERNET:Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;
+.method public onDnsLatency(IIILjava/lang/String;[Ljava/lang/String;IJII)V
+    .locals 4
 
-    invoke-virtual {v3}, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->ordinal()I
+    const/16 v0, 0x3e8
 
-    move-result v3
+    const-string v1, "dns_latency_over_one_sec_uid"
 
-    const/4 v4, 0x3
+    const-string v2, "dns_latency_over_one_sec"
 
-    aput v4, v2, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    if-le p10, v0, :cond_0
 
-    goto :goto_2
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
 
-    :catch_2
-    move-exception v2
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
-    :goto_2
-    :try_start_3
-    sget-object v2, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$connectivity$NetworkNotificationManager$NotificationType:[I
+    move-result-object v0
 
-    sget-object v3, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->PARTIAL_CONNECTIVITY:Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-virtual {v3}, Lcom/android/server/connectivity/NetworkNotificationManager$NotificationType;->ordinal()I
+    move-result-object v0
 
-    move-result v3
+    invoke-static {v0, v2, p10}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    const/4 v4, 0x4
+    iget-object v0, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
 
-    aput v4, v2, v3
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
-    goto :goto_3
+    move-result-object v0
 
-    :catch_3
-    move-exception v2
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    :goto_3
-    invoke-static {}, Lcom/android/server/ConnectivityService$UnneededFor;->values()[Lcom/android/server/ConnectivityService$UnneededFor;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-static {v0, v1, p9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    array-length v2, v2
+    goto :goto_0
 
-    new-array v2, v2, [I
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
 
-    sput-object v2, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$ConnectivityService$UnneededFor:[I
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
-    :try_start_4
-    sget-object v2, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$ConnectivityService$UnneededFor:[I
+    move-result-object v0
 
-    sget-object v3, Lcom/android/server/ConnectivityService$UnneededFor;->TEARDOWN:Lcom/android/server/ConnectivityService$UnneededFor;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-virtual {v3}, Lcom/android/server/ConnectivityService$UnneededFor;->ordinal()I
+    move-result-object v0
 
-    move-result v3
+    const/4 v3, 0x0
 
-    aput v0, v2, v3
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    invoke-static {v0, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    goto :goto_4
+    iget-object v0, p0, Lcom/android/server/ConnectivityService$10;->this$0:Lcom/android/server/ConnectivityService;
 
-    :catch_4
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    invoke-static {v0, v1, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    goto :goto_1
+
+    :catch_0
     move-exception v0
 
-    :goto_4
-    :try_start_5
-    sget-object v0, Lcom/android/server/ConnectivityService$10;->$SwitchMap$com$android$server$ConnectivityService$UnneededFor:[I
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    sget-object v2, Lcom/android/server/ConnectivityService$UnneededFor;->LINGER:Lcom/android/server/ConnectivityService$UnneededFor;
+    const-string v1, "INetdDnsEventCallback callback invalid!"
 
-    invoke-virtual {v2}, Lcom/android/server/ConnectivityService$UnneededFor;->ordinal()I
+    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$700(Ljava/lang/String;)V
 
-    move-result v2
-
-    aput v1, v0, v2
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    goto :goto_5
-
-    :catch_5
-    move-exception v0
-
-    :goto_5
+    :goto_1
     return-void
 .end method

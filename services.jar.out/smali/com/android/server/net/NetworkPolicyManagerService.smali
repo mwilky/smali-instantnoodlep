@@ -12982,6 +12982,14 @@
     throw v1
 .end method
 
+.method public getUidRulesFirstLock()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mUidRulesFirstLock:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
 .method public getUidsWithPolicy(I)[I
     .locals 6
 

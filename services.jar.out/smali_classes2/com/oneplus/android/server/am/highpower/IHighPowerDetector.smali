@@ -25,6 +25,9 @@
 .method public abstract dumpBGCStats(Ljava/io/PrintWriter;Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;)V
 .end method
 
+.method public abstract dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+.end method
+
 .method public abstract enableAggressive(ZLcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;)V
 .end method
 

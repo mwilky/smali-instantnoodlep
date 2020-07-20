@@ -1080,13 +1080,13 @@
 
     move-result-object v4
 
-    move/from16 v14, p2
+    move/from16 v15, p2
 
-    move/from16 v15, p3
+    move/from16 v14, p3
 
     move/from16 v13, p4
 
-    invoke-virtual {v4, v14, v15, v13}, Landroid/net/metrics/NetworkMetrics;->addDnsResult(III)V
+    invoke-virtual {v4, v15, v14, v13}, Landroid/net/metrics/NetworkMetrics;->addDnsResult(III)V
 
     iget-object v11, v1, Lcom/android/server/connectivity/NetdEventListenerService;->mNetdEventCallbackList:[Landroid/net/INetdEventCallback;
 
@@ -1130,6 +1130,28 @@
     move/from16 v13, p8
 
     invoke-interface/range {v4 .. v13}, Landroid/net/INetdEventCallback;->onDnsEvent(IIILjava/lang/String;[Ljava/lang/String;IJI)V
+
+    move-object/from16 v4, v16
+
+    move/from16 v5, p1
+
+    move/from16 v6, p2
+
+    move/from16 v7, p3
+
+    move-object/from16 v8, p5
+
+    move-object/from16 v9, p6
+
+    move/from16 v10, p7
+
+    move-wide v11, v2
+
+    move/from16 v13, p8
+
+    move/from16 v14, p4
+
+    invoke-interface/range {v4 .. v14}, Landroid/net/INetdEventCallback;->onDnsLatency(IIILjava/lang/String;[Ljava/lang/String;IJII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1144,6 +1166,8 @@
 
     :goto_1
     add-int/lit8 v10, v17, 0x1
+
+    move/from16 v14, p3
 
     move/from16 v13, p4
 
