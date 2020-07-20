@@ -7983,7 +7983,7 @@
 
     iget-object v7, p0, Lcom/android/server/audio/AudioService;->mContext:Landroid/content/Context;
 
-    const v8, 0x50f0097
+    const v8, 0x50f009f
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8043,7 +8043,7 @@
 
     iget-object v8, p0, Lcom/android/server/audio/AudioService;->mContext:Landroid/content/Context;
 
-    const v9, 0x50f0098
+    const v9, 0x50f00a0
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -11701,6 +11701,8 @@
     :cond_15
     const/4 v8, 0x0
 
+    const/4 v12, 0x3
+
     move-object/from16 v11, v25
 
     if-eqz v11, :cond_16
@@ -11739,6 +11741,8 @@
 
     move-object v10, v14
 
+    const/4 v12, 0x3
+
     const/4 v8, 0x0
 
     move v9, v8
@@ -11771,7 +11775,7 @@
 
     :cond_19
     :goto_11
-    if-nez v9, :cond_1c
+    if-nez v9, :cond_1e
 
     if-eqz v0, :cond_1b
 
@@ -11804,22 +11808,24 @@
 
     move-result v1
 
-    move v12, v1
+    move v13, v1
 
     goto :goto_13
 
     :cond_1b
     :goto_12
-    move v12, v3
+    move v13, v3
 
     :goto_13
-    iget-object v13, v7, Lcom/android/server/audio/AudioService;->mModeLogger:Lcom/android/server/audio/AudioEventLogger;
+    iget-object v14, v7, Lcom/android/server/audio/AudioService;->mModeLogger:Lcom/android/server/audio/AudioEventLogger;
 
-    new-instance v14, Lcom/android/server/audio/AudioServiceEvents$PhoneStateEvent;
+    new-instance v3, Lcom/android/server/audio/AudioServiceEvents$PhoneStateEvent;
 
-    move-object v1, v14
+    move-object v1, v3
 
     move-object/from16 v2, p4
+
+    move-object v12, v3
 
     move/from16 v3, p3
 
@@ -11829,27 +11835,27 @@
 
     move v4, v8
 
-    move/from16 p2, v8
+    move-object/from16 v26, v10
 
-    move v8, v5
+    move v10, v5
 
-    move v5, v12
+    move v5, v13
 
-    move-object v8, v6
+    move-object v10, v6
 
     move v6, v0
 
     invoke-direct/range {v1 .. v6}, Lcom/android/server/audio/AudioServiceEvents$PhoneStateEvent;-><init>(Ljava/lang/String;IIII)V
 
-    invoke-virtual {v13, v14}, Lcom/android/server/audio/AudioEventLogger;->log(Lcom/android/server/audio/AudioEventLogger$Event;)V
+    invoke-virtual {v14, v12}, Lcom/android/server/audio/AudioEventLogger;->log(Lcom/android/server/audio/AudioEventLogger$Event;)V
 
     const/high16 v1, -0x80000000
 
     invoke-direct {v7, v1}, Lcom/android/server/audio/AudioService;->getActiveStreamType(I)I
 
-    move-result v13
+    move-result v12
 
-    invoke-virtual {v7, v13}, Lcom/android/server/audio/AudioService;->getDeviceForStream(I)I
+    invoke-virtual {v7, v12}, Lcom/android/server/audio/AudioService;->getDeviceForStream(I)I
 
     move-result v14
 
@@ -11857,7 +11863,7 @@
 
     sget-object v2, Lcom/android/server/audio/AudioService;->mStreamVolumeAlias:[I
 
-    aget v2, v2, v13
+    aget v2, v2, v12
 
     aget-object v1, v1, v2
 
@@ -11867,7 +11873,7 @@
 
     sget-object v1, Lcom/android/server/audio/AudioService;->mStreamVolumeAlias:[I
 
-    aget v2, v1, v13
+    aget v2, v1, v12
 
     const/4 v5, 0x1
 
@@ -11881,27 +11887,45 @@
 
     invoke-direct/range {v1 .. v6}, Lcom/android/server/audio/AudioService;->setStreamVolumeInt(IIIZLjava/lang/String;)V
 
+    if-eqz v10, :cond_1c
+
+    const-string v1, "com.tencent"
+
+    invoke-virtual {v10, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1c
+
+    if-nez v8, :cond_1c
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_1d
+
+    :cond_1c
     const/4 v1, 0x1
 
-    invoke-direct {v7, v1, v8}, Lcom/android/server/audio/AudioService;->updateStreamVolumeAlias(ZLjava/lang/String;)V
+    invoke-direct {v7, v1, v10}, Lcom/android/server/audio/AudioService;->updateStreamVolumeAlias(ZLjava/lang/String;)V
 
+    :cond_1d
     invoke-virtual {v7, v9, v0}, Lcom/android/server/audio/AudioService;->updateAbsVolumeMultiModeDevices(II)V
 
     goto :goto_14
 
-    :cond_1c
-    move/from16 p2, v8
-
+    :cond_1e
     move/from16 p1, v9
+
+    move-object/from16 v26, v10
 
     move v9, v4
 
-    move-object v8, v6
+    move-object v10, v6
 
-    move v12, v3
+    move v13, v3
 
     :goto_14
-    return v12
+    return v13
 .end method
 
 .method private setRingerMode(ILjava/lang/String;Z)V

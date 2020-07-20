@@ -210,6 +210,41 @@
     return-void
 .end method
 
+.method public static dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/am/highpower/HighPowerDetectorInjector;->ENABLED:Z
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    sget-object v0, Lcom/oneplus/android/server/am/highpower/HighPowerDetectorInjector;->highPowerDetector:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector;
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;->oneplus_highpowerdetect:Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;
+
+    invoke-static {v0}, Lcom/oneplus/android/server/context/OneplusContextStub;->queryInterface(Lcom/oneplus/android/server/context/IOneplusContextStub$EStubType;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector;
+
+    sput-object v0, Lcom/oneplus/android/server/am/highpower/HighPowerDetectorInjector;->highPowerDetector:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector;
+
+    :cond_1
+    sget-object v0, Lcom/oneplus/android/server/am/highpower/HighPowerDetectorInjector;->highPowerDetector:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector;
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {v0, p0, p1}, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector;->dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    :cond_2
+    return-void
+.end method
+
 .method public static enableAggressive(ZLcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;)V
     .locals 1
 

@@ -41,7 +41,7 @@
 
     iget-object v0, v0, Lcom/android/server/ConnectivityService$7;->this$0:Lcom/android/server/ConnectivityService;
 
-    invoke-static {v0, p2}, Lcom/android/server/ConnectivityService;->access$6202(Lcom/android/server/ConnectivityService;Z)Z
+    invoke-static {v0, p2}, Lcom/android/server/ConnectivityService;->access$6402(Lcom/android/server/ConnectivityService;Z)Z
 
     invoke-static {}, Lcom/android/server/ConnectivityService;->access$1600()Ljava/lang/String;
 
@@ -59,7 +59,7 @@
 
     iget-object v2, v2, Lcom/android/server/ConnectivityService$7;->this$0:Lcom/android/server/ConnectivityService;
 
-    invoke-static {v2}, Lcom/android/server/ConnectivityService;->access$6200(Lcom/android/server/ConnectivityService;)Z
+    invoke-static {v2}, Lcom/android/server/ConnectivityService;->access$6400(Lcom/android/server/ConnectivityService;)Z
 
     move-result v2
 

@@ -2790,7 +2790,7 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f010b
+    const v3, 0x50f0113
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2852,7 +2852,7 @@
 
     iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v6, 0x50f010a
+    const v6, 0x50f0112
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2937,7 +2937,7 @@
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f0106
+    const v3, 0x50f010e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2954,7 +2954,7 @@
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f0107
+    const v3, 0x50f010f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2985,7 +2985,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v5, 0x50f010d
+    const v5, 0x50f0115
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2999,7 +2999,7 @@
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f0109
+    const v3, 0x50f0111
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3030,7 +3030,7 @@
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v5, 0x50f010c
+    const v5, 0x50f0114
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3044,7 +3044,7 @@
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f0108
+    const v3, 0x50f0110
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4784,7 +4784,7 @@
 
     if-ne v2, v10, :cond_6
 
-    const v10, 0x50f00f3
+    const v10, 0x50f00fb
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4793,7 +4793,7 @@
     goto :goto_1
 
     :cond_6
-    const v10, 0x50f0101
+    const v10, 0x50f0109
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4840,7 +4840,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f1    # 6.7240006E-36f
+    const v12, 0x50f00f9
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4853,7 +4853,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00ef    # 6.723999E-36f
+    const v12, 0x50f00f7
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4866,7 +4866,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f0    # 6.724E-36f
+    const v12, 0x50f00f8
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4891,7 +4891,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00ff
+    const v12, 0x50f0107
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4918,7 +4918,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f0100
+    const v12, 0x50f0108
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4943,7 +4943,7 @@
     :cond_e
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00fe
+    const v12, 0x50f0106
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4974,7 +4974,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f8
+    const v12, 0x50f0100
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5001,7 +5001,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f9
+    const v12, 0x50f0101
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5026,7 +5026,7 @@
     :cond_11
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f7
+    const v12, 0x50f00ff
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5057,7 +5057,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00fb
+    const v12, 0x50f0103
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5084,7 +5084,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00fc
+    const v12, 0x50f0104
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5109,7 +5109,7 @@
     :cond_14
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00fa
+    const v12, 0x50f0102
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5136,7 +5136,7 @@
 
     if-nez v5, :cond_16
 
-    const v5, 0x50f00f4
+    const v5, 0x50f00fc
 
     invoke-virtual {v9, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -5149,7 +5149,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f5
+    const v12, 0x50f00fd
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5174,7 +5174,7 @@
     :cond_17
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v12, 0x50f00f2
+    const v12, 0x50f00fa
 
     invoke-virtual {v5, v12}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5217,7 +5217,7 @@
 
     if-nez v5, :cond_1b
 
-    const v5, 0x50f00f4
+    const v5, 0x50f00fc
 
     invoke-virtual {v9, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -5230,7 +5230,7 @@
 
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v11, 0x50f00f5
+    const v11, 0x50f00fd
 
     invoke-virtual {v5, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5255,7 +5255,7 @@
     :cond_1c
     iget-object v5, v1, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
-    const v11, 0x50f00f2
+    const v11, 0x50f00fa
 
     invoke-virtual {v5, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

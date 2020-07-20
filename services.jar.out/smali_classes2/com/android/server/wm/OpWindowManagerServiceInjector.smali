@@ -27,7 +27,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 5
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -73,7 +73,9 @@
 
     const-string v3, "com.oneplus.soundrecorder"
 
-    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
+    const-string v4, "com.oneplus.bbs"
+
+    filled-new-array {v0, v1, v2, v3, v4}, [Ljava/lang/String;
 
     move-result-object v0
 

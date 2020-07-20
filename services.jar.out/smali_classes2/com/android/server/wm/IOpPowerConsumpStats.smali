@@ -12,6 +12,9 @@
 
 
 # virtual methods
+.method public abstract dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+.end method
+
 .method public abstract getResult(Ljava/io/PrintWriter;Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;)V
 .end method
 
