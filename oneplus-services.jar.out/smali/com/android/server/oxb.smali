@@ -247,7 +247,15 @@
     return-object p0
 .end method
 
-.method private tm()Z
+.method static synthetic tsu(Lcom/android/server/oxb;)Landroid/app/NotificationManager;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/oxb;->mNotificationManager:Landroid/app/NotificationManager;
+
+    return-object p0
+.end method
+
+.method private um()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/oxb;->mLocationManager:Landroid/location/LocationManager;
@@ -280,14 +288,6 @@
 
     :goto_0
     return p0
-.end method
-
-.method static synthetic tsu(Lcom/android/server/oxb;)Landroid/app/NotificationManager;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/oxb;->mNotificationManager:Landroid/app/NotificationManager;
-
-    return-object p0
 .end method
 
 .method static synthetic you(Lcom/android/server/oxb;)Landroid/app/ActivityManager;

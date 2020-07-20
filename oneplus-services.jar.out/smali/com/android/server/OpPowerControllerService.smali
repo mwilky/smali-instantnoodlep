@@ -95,6 +95,12 @@
 
 .field private static final DIMENSION:I = 0x2
 
+.field private static final DUMP_DAILY_POWER_FILES_END:Ljava/lang/String; = "**** Daily_Power_File_END ****"
+
+.field private static final DUMP_DAILY_POWER_FILES_PREFIX:Ljava/lang/String; = "****"
+
+.field private static final DUMP_DAILY_POWER_FILES_START:Ljava/lang/String; = "**** Daily_Power_File_START ****"
+
 .field private static final EXTRA_CLASSNAME:Ljava/lang/String; = "classname"
 
 .field public static final FAILED_CODE:I = 0x257
@@ -2640,7 +2646,7 @@
 
     invoke-static {v2, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Eya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     const/4 v3, 0x1
 
@@ -2681,7 +2687,7 @@
     goto :goto_3
 
     :cond_4
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Dya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     if-ne p1, v0, :cond_5
 
@@ -2759,7 +2765,7 @@
 
     iget-object v1, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v2, 0x50f00d9
+    const v2, 0x50f00e1
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2767,7 +2773,7 @@
 
     iget-object v2, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f00d8
+    const v3, 0x50f00e0
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7579,11 +7585,11 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Lcom/android/server/j;->Qg()Z
+    invoke-virtual {v2}, Lcom/android/server/j;->Rg()Z
 
     move-result p0
 
-    invoke-virtual {v4}, Lcom/android/server/j;->Qg()Z
+    invoke-virtual {v4}, Lcom/android/server/j;->Rg()Z
 
     move-result v1
 
@@ -8821,6 +8827,26 @@
     sget-object p1, Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;->BG:Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;
 
     invoke-static {p2, p1}, Lcom/oneplus/android/server/am/highpower/HighPowerDetectorInjector;->dumpBGCStats(Ljava/io/PrintWriter;Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;)V
+
+    invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
+
+    const-string p1, "**** Daily_Power_File_START ****"
+
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    const-string p1, "****"
+
+    invoke-static {p1, p2}, Lcom/android/server/wm/OpPowerConsumpStatsInjector;->dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    const-string p1, "****"
+
+    invoke-static {p1, p2}, Lcom/oneplus/android/server/am/highpower/HighPowerDetectorInjector;->dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
+
+    invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
+
+    const-string p1, "**** Daily_Power_File_END ****"
+
+    invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
     invoke-static {p2}, Lcom/oneplus/android/server/power/StandbyDetectInjector;->dumpStandbyStats(Ljava/io/PrintWriter;)V
 

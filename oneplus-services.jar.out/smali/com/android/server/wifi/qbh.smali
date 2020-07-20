@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wifi/ire;->or()V
+    value = Lcom/android/server/wifi/ire;->pr()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

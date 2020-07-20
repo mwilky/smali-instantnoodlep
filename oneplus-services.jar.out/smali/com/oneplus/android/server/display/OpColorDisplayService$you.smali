@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public lf()V
+.method public kf()V
     .locals 1
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService$you;->this$0:Lcom/oneplus/android/server/display/OpColorDisplayService;

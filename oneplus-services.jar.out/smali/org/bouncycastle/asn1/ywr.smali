@@ -57,7 +57,7 @@
 
     const-string v0, "org.bouncycastle.asn1.allow_unsafe_integer"
 
-    invoke-static {v0}, Lorg/bouncycastle/util/gck;->_a(Ljava/lang/String;)Z
+    invoke-static {v0}, Lorg/bouncycastle/util/gck;->ab(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -269,7 +269,7 @@
 
 
 # virtual methods
-.method public Ih()Ljava/math/BigInteger;
+.method public Jh()Ljava/math/BigInteger;
     .locals 2
 
     new-instance v0, Ljava/math/BigInteger;
@@ -349,7 +349,7 @@
     return-object p0
 .end method
 
-.method uh()I
+.method vh()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/ywr;->bytes:[B

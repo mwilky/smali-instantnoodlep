@@ -32,7 +32,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/oxb;)V
+.method synthetic constructor <init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/ear;)V
     .locals 0
 
     invoke-direct {p0, p1}, Lcom/android/server/am/OnePlusBGController$ssp;-><init>(Lcom/android/server/am/OnePlusBGController;)V
@@ -43,7 +43,7 @@
 
 # virtual methods
 .method public resolveConfigFromJSON(Lorg/json/JSONArray;)V
-    .locals 10
+    .locals 11
 
     if-nez p1, :cond_0
 
@@ -59,7 +59,7 @@
 
     move-result v0
 
-    if-lez v0, :cond_19
+    if-lez v0, :cond_1b
 
     const/4 v0, 0x0
 
@@ -103,7 +103,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->vdb(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ugm(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -152,7 +152,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->zgw(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->vdb(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -201,7 +201,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->obl(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->zgw(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -250,7 +250,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->oxb(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->obl(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -299,7 +299,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->cjf(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->oxb(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -348,7 +348,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ear(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->cjf(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -397,7 +397,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ire(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ear(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -446,7 +446,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->hmo(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ire(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -495,7 +495,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->qbh(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ywr(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -544,7 +544,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->oif(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->qbh(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -593,7 +593,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->bvj(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->oif(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -642,7 +642,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ibl(Lcom/android/server/am/OnePlusBGController;)F
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->bvj(Lcom/android/server/am/OnePlusBGController;)F
 
     move-result v2
 
@@ -691,7 +691,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ywr(Lcom/android/server/am/OnePlusBGController;)I
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->dma(Lcom/android/server/am/OnePlusBGController;)I
 
     move-result v2
 
@@ -720,7 +720,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->fto(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->hmo(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
 
     move-result-object v2
 
@@ -731,7 +731,7 @@
     :try_start_1
     iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->fto(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
+    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->hmo(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
 
     move-result-object v3
 
@@ -778,7 +778,7 @@
 
     iget-object v5, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v5}, Lcom/android/server/am/OnePlusBGController;->fto(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
+    invoke-static {v5}, Lcom/android/server/am/OnePlusBGController;->hmo(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
 
     move-result-object v5
 
@@ -793,7 +793,7 @@
 
     iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->fto(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
+    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->hmo(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashSet;
 
     move-result-object v3
 
@@ -851,7 +851,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->gck(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->wtn(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result v2
 
@@ -864,11 +864,11 @@
     invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
     :cond_10
-    sget-object v1, Lcom/android/server/am/lqr;->tr:[I
+    sget-object v1, Lcom/android/server/am/cjf;->tr:[I
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->wtn(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$RomType;
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->igw(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$RomType;
 
     move-result-object v2
 
@@ -929,7 +929,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->dma(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->gck(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result v2
 
@@ -981,7 +981,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->dma(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->gck(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result v2
 
@@ -1030,7 +1030,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->dma(Lcom/android/server/am/OnePlusBGController;)Z
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->gck(Lcom/android/server/am/OnePlusBGController;)Z
 
     move-result v2
 
@@ -1056,151 +1056,151 @@
 
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    move-result-object p1
-
-    if-eqz p1, :cond_18
-
-    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
-
-    invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->kth(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashMap;
-
     move-result-object v1
 
-    monitor-enter v1
+    if-eqz v1, :cond_18
+
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->cno(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashMap;
+
+    move-result-object v2
+
+    monitor-enter v2
     :try_end_2
     .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_1
 
     :try_start_3
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->kth(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashMap;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "jsonMonitorArray.length()= "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
-
-    move v2, v0
-
-    :goto_4
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v3
-
-    if-ge v2, v3, :cond_17
-
-    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->cno(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashMap;
 
     move-result-object v3
 
-    const-string v4, "pkg"
+    invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "jsonMonitorArray.length()= "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    move v3, v0
+
+    :goto_4
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v4
+
+    if-ge v3, v4, :cond_17
+
+    invoke-virtual {v1, v3}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    const-string v5, "ver"
+    const-string v5, "pkg"
 
-    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "[OnlineConfig] pkg: "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v5}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+    const-string v6, "ver"
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v4
 
-    const-string v6, "[OnlineConfig] ver: "
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, "[OnlineConfig] pkg: "
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v5}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    new-instance v5, Ljava/util/ArrayList;
+    move-result-object v6
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+    invoke-static {v6}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    const-string v6, ","
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v6}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v3
+    const-string v7, "[OnlineConfig] ver: "
 
-    if-eqz v3, :cond_16
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    array-length v6, v3
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-lez v6, :cond_16
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move v6, v0
+    move-result-object v6
+
+    invoke-static {v6}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    new-instance v6, Ljava/util/ArrayList;
+
+    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+
+    const-string v7, ","
+
+    invoke-virtual {v4, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_16
+
+    array-length v7, v4
+
+    if-lez v7, :cond_16
+
+    move v7, v0
 
     :goto_5
-    array-length v7, v3
+    array-length v8, v4
 
-    if-ge v6, v7, :cond_16
+    if-ge v7, v8, :cond_16
 
-    aget-object v7, v3, v6
+    aget-object v8, v4, v7
 
-    invoke-virtual {v7}, Ljava/lang/String;->length()I
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
 
-    move-result v7
+    move-result v8
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    if-lez v7, :cond_15
+    if-lez v8, :cond_15
 
     :try_start_4
-    aget-object v7, v3, v6
+    aget-object v8, v4, v7
 
-    invoke-static {v7}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    move-result v7
+    move-result v8
 
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_4
     .catch Ljava/lang/NumberFormatException; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
@@ -1208,53 +1208,53 @@
     goto :goto_6
 
     :catch_0
-    move-exception v7
+    move-exception v8
 
     :try_start_5
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "[OnlineConfig] Failed to parseInt! \n"
+    const-string v10, "[OnlineConfig] Failed to parseInt! \n"
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-static {v7}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+    invoke-static {v8}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
     :cond_15
     :goto_6
-    add-int/lit8 v6, v6, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_5
 
     :cond_16
-    iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+    iget-object v4, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->kth(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashMap;
+    invoke-static {v4}, Lcom/android/server/am/OnePlusBGController;->cno(Lcom/android/server/am/OnePlusBGController;)Ljava/util/HashMap;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto/16 :goto_4
 
     :cond_17
-    monitor-exit v1
+    monitor-exit v2
 
     goto :goto_7
 
     :catchall_1
     move-exception p0
 
-    monitor-exit v1
+    monitor-exit v2
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
@@ -1262,13 +1262,112 @@
     throw p0
 
     :cond_18
-    const-string p0, "[OnlineConfig] Can\'t locate MonitorList object...."
+    const-string v0, "[OnlineConfig] Can\'t locate MonitorList object...."
+
+    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    :cond_19
+    :goto_7
+    const-string v0, "MaxHistoryDay"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1a
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+
+    const-string v1, "MaxHistoryDay"
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Lcom/android/server/am/OnePlusBGController;->tsu(Lcom/android/server/am/OnePlusBGController;I)I
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "[OnlineConfig] MaxHistoryDay: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+
+    invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->fto(Lcom/android/server/am/OnePlusBGController;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
+
+    :cond_1a
+    const-string v0, "MaxCountOfDay"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1b
+
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+
+    const-string v1, "MaxCountOfDay"
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-static {v0, p1}, Lcom/android/server/am/OnePlusBGController;->rtg(Lcom/android/server/am/OnePlusBGController;I)I
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "[OnlineConfig] MaxCountOfDay: "
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
+
+    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->lqr(Lcom/android/server/am/OnePlusBGController;)I
+
+    move-result p0
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
 
     invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
     :try_end_6
     .catch Lorg/json/JSONException; {:try_start_6 .. :try_end_6} :catch_1
 
-    goto :goto_7
+    goto :goto_8
 
     :catch_1
     move-exception p0
@@ -1291,8 +1390,8 @@
 
     invoke-virtual {p0}, Lorg/json/JSONException;->printStackTrace()V
 
-    :cond_19
-    :goto_7
+    :cond_1b
+    :goto_8
     return-void
 .end method
 

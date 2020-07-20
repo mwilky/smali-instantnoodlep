@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private VTa:Ljava/io/OutputStream;
+.field private ISa:Ljava/security/KeyStore$ProtectionParameter;
 
-.field private WTa:Z
+.field private pUa:Ljava/io/OutputStream;
 
-.field private nSa:Ljava/security/KeyStore$ProtectionParameter;
+.field private qUa:Z
 
 
 # direct methods
@@ -25,10 +25,10 @@
 
 
 # virtual methods
-.method public Fk()Z
+.method public Gk()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/jce/provider/kth;->WTa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/jce/provider/kth;->qUa:Z
 
     return p0
 .end method
@@ -36,7 +36,7 @@
 .method public getOutputStream()Ljava/io/OutputStream;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/kth;->VTa:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/kth;->pUa:Ljava/io/OutputStream;
 
     return-object p0
 .end method
@@ -44,15 +44,15 @@
 .method public getProtectionParameter()Ljava/security/KeyStore$ProtectionParameter;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jce/provider/kth;->nSa:Ljava/security/KeyStore$ProtectionParameter;
+    iget-object p0, p0, Lorg/bouncycastle/jce/provider/kth;->ISa:Ljava/security/KeyStore$ProtectionParameter;
 
     return-object p0
 .end method
 
-.method public ma(Z)V
+.method public na(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jce/provider/kth;->WTa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jce/provider/kth;->qUa:Z
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 .method public setOutputStream(Ljava/io/OutputStream;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/jce/provider/kth;->VTa:Ljava/io/OutputStream;
+    iput-object p1, p0, Lorg/bouncycastle/jce/provider/kth;->pUa:Ljava/io/OutputStream;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
 
     invoke-direct {v0, p1}, Ljava/security/KeyStore$PasswordProtection;-><init>([C)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jce/provider/kth;->nSa:Ljava/security/KeyStore$ProtectionParameter;
+    iput-object v0, p0, Lorg/bouncycastle/jce/provider/kth;->ISa:Ljava/security/KeyStore$ProtectionParameter;
 
     return-void
 .end method
@@ -80,7 +80,7 @@
 .method public zta(Ljava/security/KeyStore$ProtectionParameter;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/jce/provider/kth;->nSa:Ljava/security/KeyStore$ProtectionParameter;
+    iput-object p1, p0, Lorg/bouncycastle/jce/provider/kth;->ISa:Ljava/security/KeyStore$ProtectionParameter;
 
     return-void
 .end method

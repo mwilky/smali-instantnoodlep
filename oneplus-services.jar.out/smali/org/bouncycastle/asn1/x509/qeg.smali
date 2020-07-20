@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private QJa:Lorg/bouncycastle/asn1/bvj;
+.field private kKa:Lorg/bouncycastle/asn1/bvj;
 
-.field private RJa:Lorg/bouncycastle/asn1/ssp;
+.field private lKa:Lorg/bouncycastle/asn1/ssp;
 
 
 # direct methods
@@ -15,15 +15,15 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    sget-object v0, Lorg/bouncycastle/asn1/x509/vdw;->nGa:Lorg/bouncycastle/asn1/x509/vdw;
+    sget-object v0, Lorg/bouncycastle/asn1/x509/vdw;->IGa:Lorg/bouncycastle/asn1/x509/vdw;
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qeg;->QJa:Lorg/bouncycastle/asn1/bvj;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qeg;->kKa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v0, Lorg/bouncycastle/asn1/x;
 
     invoke-direct {v0, p1}, Lorg/bouncycastle/asn1/x;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qeg;->RJa:Lorg/bouncycastle/asn1/ssp;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qeg;->lKa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 .end method
@@ -33,9 +33,9 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/qeg;->QJa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/qeg;->kKa:Lorg/bouncycastle/asn1/bvj;
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/x509/qeg;->RJa:Lorg/bouncycastle/asn1/ssp;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/x509/qeg;->lKa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qeg;->QJa:Lorg/bouncycastle/asn1/bvj;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/qeg;->kKa:Lorg/bouncycastle/asn1/bvj;
 
     const/4 v0, 0x1
 
@@ -71,7 +71,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/qeg;->RJa:Lorg/bouncycastle/asn1/ssp;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/qeg;->lKa:Lorg/bouncycastle/asn1/ssp;
 
     return-void
 
@@ -136,7 +136,7 @@
 .method public getPolicyQualifierId()Lorg/bouncycastle/asn1/bvj;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->QJa:Lorg/bouncycastle/asn1/bvj;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->kKa:Lorg/bouncycastle/asn1/bvj;
 
     return-object p0
 .end method
@@ -148,11 +148,11 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/asn1/cno;-><init>()V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/qeg;->QJa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/qeg;->kKa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->RJa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->lKa:Lorg/bouncycastle/asn1/ssp;
 
     invoke-virtual {v0, p0}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
@@ -163,10 +163,10 @@
     return-object p0
 .end method
 
-.method public uj()Lorg/bouncycastle/asn1/ssp;
+.method public vj()Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->RJa:Lorg/bouncycastle/asn1/ssp;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/qeg;->lKa:Lorg/bouncycastle/asn1/ssp;
 
     return-object p0
 .end method

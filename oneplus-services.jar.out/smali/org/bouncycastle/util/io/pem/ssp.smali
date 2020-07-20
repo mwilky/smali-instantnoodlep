@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static final Cya:I = 0x40
+.field private static final Vya:I = 0x40
 
 
 # instance fields
-.field private final Bya:I
+.field private final Uya:I
 
 .field private buf:[C
 
@@ -41,7 +41,7 @@
     const/4 p1, 0x2
 
     :goto_0
-    iput p1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
+    iput p1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Uya:I
 
     return-void
 .end method
@@ -115,7 +115,7 @@
     return-void
 .end method
 
-.method private pd(Ljava/lang/String;)V
+.method private rd(Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -148,7 +148,7 @@
     return-void
 .end method
 
-.method private qd(Ljava/lang/String;)V
+.method private sd(Ljava/lang/String;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -196,7 +196,7 @@
 
     add-int/lit8 v0, v0, 0xa
 
-    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
+    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Uya:I
 
     add-int/2addr v0, v1
 
@@ -257,7 +257,7 @@
 
     add-int/2addr v3, v2
 
-    iget v2, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
+    iget v2, p0, Lorg/bouncycastle/util/io/pem/ssp;->Uya:I
 
     add-int/2addr v3, v2
 
@@ -266,7 +266,7 @@
     goto :goto_0
 
     :cond_0
-    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
+    iget v1, p0, Lorg/bouncycastle/util/io/pem/ssp;->Uya:I
 
     add-int/2addr v0, v1
 
@@ -289,7 +289,7 @@
 
     div-int/lit8 v1, v1, 0x40
 
-    iget p0, p0, Lorg/bouncycastle/util/io/pem/ssp;->Bya:I
+    iget p0, p0, Lorg/bouncycastle/util/io/pem/ssp;->Uya:I
 
     mul-int/2addr v1, p0
 
@@ -316,7 +316,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/ssp;->qd(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/ssp;->sd(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Lorg/bouncycastle/util/io/pem/you;->getHeaders()Ljava/util/List;
 
@@ -383,7 +383,7 @@
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lorg/bouncycastle/util/io/pem/ssp;->pd(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lorg/bouncycastle/util/io/pem/ssp;->rd(Ljava/lang/String;)V
 
     return-void
 .end method

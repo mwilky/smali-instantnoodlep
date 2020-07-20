@@ -860,7 +860,7 @@
     return-void
 .end method
 
-.method private Rm()Z
+.method private Sm()Z
     .locals 7
 
     const/4 v0, 0x1
@@ -1261,7 +1261,31 @@
     return-object p0
 .end method
 
-.method private ob(Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic obl(Lcom/android/server/x;)J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/android/server/x;->Dk:J
+
+    return-wide v0
+.end method
+
+.method static synthetic oif(Lcom/android/server/x;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/x;->wk:Z
+
+    return p0
+.end method
+
+.method static synthetic oxb(Lcom/android/server/x;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/x;->Gk:I
+
+    return p0
+.end method
+
+.method private pb(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     sget-object v0, Lcom/android/server/x;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -1320,31 +1344,15 @@
     return-object p0
 .end method
 
-.method static synthetic obl(Lcom/android/server/x;)J
-    .locals 2
-
-    iget-wide v0, p0, Lcom/android/server/x;->Dk:J
-
-    return-wide v0
-.end method
-
-.method static synthetic oif(Lcom/android/server/x;)Z
+.method static synthetic qbh(Lcom/android/server/x;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/x;->wk:Z
+    iget-boolean p0, p0, Lcom/android/server/x;->vk:Z
 
     return p0
 .end method
 
-.method static synthetic oxb(Lcom/android/server/x;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/x;->Gk:I
-
-    return p0
-.end method
-
-.method private qa(Z)Z
+.method private ra(Z)Z
     .locals 8
 
     iget-boolean v0, p0, Lcom/android/server/x;->mEnabled:Z
@@ -1559,14 +1567,6 @@
     return v1
 .end method
 
-.method static synthetic qbh(Lcom/android/server/x;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/x;->vk:Z
-
-    return p0
-.end method
-
 .method static synthetic rtg(Lcom/android/server/x;I)I
     .locals 0
 
@@ -1618,7 +1618,7 @@
 .method static synthetic sis(Lcom/android/server/x;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/x;->Rm()Z
+    invoke-direct {p0}, Lcom/android/server/x;->Sm()Z
 
     move-result p0
 
@@ -1889,7 +1889,7 @@
 .method static synthetic zta(Lcom/android/server/x;Z)Z
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/x;->qa(Z)Z
+    invoke-direct {p0, p1}, Lcom/android/server/x;->ra(Z)Z
 
     move-result p0
 
@@ -2471,7 +2471,7 @@
     goto :goto_1
 
     :cond_4
-    invoke-direct {p0, v6}, Lcom/android/server/x;->ob(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v6}, Lcom/android/server/x;->pb(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -4374,7 +4374,7 @@
 
     iget-object v1, v0, Lcom/android/server/x;->Rk:Lcom/android/server/power/you;
 
-    invoke-virtual {v1}, Lcom/android/server/power/you;->Gd()V
+    invoke-virtual {v1}, Lcom/android/server/power/you;->Fd()V
 
     iget-object v1, v0, Lcom/android/server/x;->mContext:Landroid/content/Context;
 

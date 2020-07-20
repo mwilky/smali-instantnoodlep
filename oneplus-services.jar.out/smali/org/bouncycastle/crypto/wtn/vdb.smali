@@ -19,11 +19,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Jj()Ljava/math/BigInteger;
 
     move-result-object v3
 
-    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
 
     move-result-object v4
 

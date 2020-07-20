@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic cna:[[I
+.field final synthetic nna:[[I
 
-.field final synthetic dna:[[I
+.field final synthetic ona:[[I
 
 .field final synthetic this$0:Lcom/oneplus/android/server/display/ywr;
 
@@ -33,9 +33,9 @@
 
     iput-object p1, p0, Lcom/oneplus/android/server/display/gck;->this$0:Lcom/oneplus/android/server/display/ywr;
 
-    iput-object p2, p0, Lcom/oneplus/android/server/display/gck;->cna:[[I
+    iput-object p2, p0, Lcom/oneplus/android/server/display/gck;->nna:[[I
 
-    iput-object p3, p0, Lcom/oneplus/android/server/display/gck;->dna:[[I
+    iput-object p3, p0, Lcom/oneplus/android/server/display/gck;->ona:[[I
 
     iput-object p4, p0, Lcom/oneplus/android/server/display/gck;->zta:[[I
 
@@ -79,11 +79,11 @@
     :goto_1
     if-ge v3, v2, :cond_0
 
-    iget-object v4, p0, Lcom/oneplus/android/server/display/gck;->cna:[[I
+    iget-object v4, p0, Lcom/oneplus/android/server/display/gck;->nna:[[I
 
     aget-object v4, v4, v1
 
-    iget-object v5, p0, Lcom/oneplus/android/server/display/gck;->dna:[[I
+    iget-object v5, p0, Lcom/oneplus/android/server/display/gck;->ona:[[I
 
     aget-object v5, v5, v1
 
@@ -123,7 +123,7 @@
     :cond_1
     iget-object p1, p0, Lcom/oneplus/android/server/display/gck;->this$0:Lcom/oneplus/android/server/display/ywr;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/display/gck;->cna:[[I
+    iget-object v1, p0, Lcom/oneplus/android/server/display/gck;->nna:[[I
 
     invoke-static {p1}, Lcom/oneplus/android/server/display/ywr;->zta(Lcom/oneplus/android/server/display/ywr;)[[I
 
@@ -141,7 +141,7 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lcom/oneplus/android/server/display/gck;->cna:[[I
+    iget-object v1, p0, Lcom/oneplus/android/server/display/gck;->nna:[[I
 
     iget-object v4, p0, Lcom/oneplus/android/server/display/gck;->this$0:Lcom/oneplus/android/server/display/ywr;
 
@@ -183,7 +183,7 @@
 
     aget-object v4, v4, p1
 
-    iget-object v5, p0, Lcom/oneplus/android/server/display/gck;->cna:[[I
+    iget-object v5, p0, Lcom/oneplus/android/server/display/gck;->nna:[[I
 
     aget-object v5, v5, p1
 

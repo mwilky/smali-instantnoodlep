@@ -284,7 +284,7 @@
 
     iput p1, p0, Lcom/android/server/wtn;->vd:I
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->nm()V
+    invoke-direct {p0}, Lcom/android/server/wtn;->om()V
 
     iget-object p1, p0, Lcom/android/server/wtn;->mResolver:Landroid/content/ContentResolver;
 
@@ -468,7 +468,7 @@
 .method static synthetic cjf(Lcom/android/server/wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->nm()V
+    invoke-direct {p0}, Lcom/android/server/wtn;->om()V
 
     return-void
 .end method
@@ -532,7 +532,15 @@
     return-object p0
 .end method
 
-.method private fb(Ljava/lang/String;)Landroid/app/Notification;
+.method static synthetic fto(Lcom/android/server/wtn;)Lcom/android/server/wtn$sis;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wtn;->mHandler:Lcom/android/server/wtn$sis;
+
+    return-object p0
+.end method
+
+.method private gb(Ljava/lang/String;)Landroid/app/Notification;
     .locals 8
 
     new-instance v0, Landroid/content/Intent;
@@ -720,15 +728,42 @@
     return-object p0
 .end method
 
-.method static synthetic fto(Lcom/android/server/wtn;)Lcom/android/server/wtn$sis;
+.method static synthetic gck(Lcom/android/server/wtn;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wtn;->mHandler:Lcom/android/server/wtn$sis;
+    iget-boolean p0, p0, Lcom/android/server/wtn;->Ed:Z
+
+    return p0
+.end method
+
+.method public static getInstance(Landroid/content/Context;)Lcom/android/server/wtn;
+    .locals 1
+
+    sget-object v0, Lcom/android/server/wtn;->mInstance:Lcom/android/server/wtn;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/android/server/wtn;
+
+    invoke-direct {v0, p0}, Lcom/android/server/wtn;-><init>(Landroid/content/Context;)V
+
+    sput-object v0, Lcom/android/server/wtn;->mInstance:Lcom/android/server/wtn;
+
+    :cond_0
+    sget-object p0, Lcom/android/server/wtn;->mInstance:Lcom/android/server/wtn;
 
     return-object p0
 .end method
 
-.method private gb(Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic gwm(Lcom/android/server/wtn;)Lcom/android/server/wtn$you;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wtn;->mContentObserver:Lcom/android/server/wtn$you;
+
+    return-object p0
+.end method
+
+.method private hb(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
 
     const/4 p0, 0x0
@@ -917,41 +952,6 @@
     return-object p0
 .end method
 
-.method static synthetic gck(Lcom/android/server/wtn;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/wtn;->Ed:Z
-
-    return p0
-.end method
-
-.method public static getInstance(Landroid/content/Context;)Lcom/android/server/wtn;
-    .locals 1
-
-    sget-object v0, Lcom/android/server/wtn;->mInstance:Lcom/android/server/wtn;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/server/wtn;
-
-    invoke-direct {v0, p0}, Lcom/android/server/wtn;-><init>(Landroid/content/Context;)V
-
-    sput-object v0, Lcom/android/server/wtn;->mInstance:Lcom/android/server/wtn;
-
-    :cond_0
-    sget-object p0, Lcom/android/server/wtn;->mInstance:Lcom/android/server/wtn;
-
-    return-object p0
-.end method
-
-.method static synthetic gwm(Lcom/android/server/wtn;)Lcom/android/server/wtn$you;
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/wtn;->mContentObserver:Lcom/android/server/wtn$you;
-
-    return-object p0
-.end method
-
 .method static synthetic hmo(Lcom/android/server/wtn;)Z
     .locals 0
 
@@ -1000,7 +1000,23 @@
     return-wide v0
 .end method
 
-.method private nm()V
+.method static synthetic obl(Lcom/android/server/wtn;)Lnet/oneplus/odm/OpDeviceManagerInjector;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wtn;->mOpDeviceManagerInjector:Lnet/oneplus/odm/OpDeviceManagerInjector;
+
+    return-object p0
+.end method
+
+.method static synthetic oif(Lcom/android/server/wtn;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/wtn;->Dd:I
+
+    return p0
+.end method
+
+.method private om()V
     .locals 3
 
     iget v0, p0, Lcom/android/server/wtn;->vd:I
@@ -1011,7 +1027,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->pm()Z
+    invoke-direct {p0}, Lcom/android/server/wtn;->qm()Z
 
     move-result v0
 
@@ -1039,15 +1055,17 @@
     return-void
 .end method
 
-.method static synthetic obl(Lcom/android/server/wtn;)Lnet/oneplus/odm/OpDeviceManagerInjector;
+.method static synthetic oxb(Lcom/android/server/wtn;)Landroid/app/Notification;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wtn;->mOpDeviceManagerInjector:Lnet/oneplus/odm/OpDeviceManagerInjector;
+    invoke-direct {p0}, Lcom/android/server/wtn;->pm()Landroid/app/Notification;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method private obl(Ljava/lang/String;Ljava/lang/String;)V
+.method private oxb(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
 
     const-string p0, " sucessfully!"
@@ -1167,15 +1185,7 @@
     throw v3
 .end method
 
-.method static synthetic oif(Lcom/android/server/wtn;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/wtn;->Dd:I
-
-    return p0
-.end method
-
-.method private om()Landroid/app/Notification;
+.method private pm()Landroid/app/Notification;
     .locals 8
 
     new-instance v0, Landroid/content/Intent;
@@ -1198,7 +1208,7 @@
 
     iget-object v1, p0, Lcom/android/server/wtn;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f00b8
+    const v3, 0x50f00c0
 
     invoke-virtual {v1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1206,7 +1216,7 @@
 
     iget-object v3, p0, Lcom/android/server/wtn;->mContext:Landroid/content/Context;
 
-    const v4, 0x50f00b7
+    const v4, 0x50f00bf
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1232,7 +1242,7 @@
 
     iget-object v5, p0, Lcom/android/server/wtn;->mContext:Landroid/content/Context;
 
-    const v6, 0x50f00b6
+    const v6, 0x50f00be
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -1335,17 +1345,19 @@
     return-object p0
 .end method
 
-.method static synthetic oxb(Lcom/android/server/wtn;)Landroid/app/Notification;
-    .locals 0
+.method static synthetic qbh(Lcom/android/server/wtn;)I
+    .locals 2
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->om()Landroid/app/Notification;
+    iget v0, p0, Lcom/android/server/wtn;->Gd:I
 
-    move-result-object p0
+    add-int/lit8 v1, v0, 0x1
 
-    return-object p0
+    iput v1, p0, Lcom/android/server/wtn;->Gd:I
+
+    return v0
 .end method
 
-.method private pm()Z
+.method private qm()Z
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/wtn;->mTelephonyManager:Landroid/telephony/TelephonyManager;
@@ -1377,7 +1389,7 @@
     return v1
 
     :cond_0
-    invoke-direct {p0, v0}, Lcom/android/server/wtn;->gb(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/server/wtn;->hb(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -1415,18 +1427,6 @@
 
     :cond_1
     return v1
-.end method
-
-.method static synthetic qbh(Lcom/android/server/wtn;)I
-    .locals 2
-
-    iget v0, p0, Lcom/android/server/wtn;->Gd:I
-
-    add-int/lit8 v1, v0, 0x1
-
-    iput v1, p0, Lcom/android/server/wtn;->Gd:I
-
-    return v0
 .end method
 
 .method static synthetic rtg(Lcom/android/server/wtn;I)I
@@ -1628,7 +1628,7 @@
 .method static synthetic zta(Lcom/android/server/wtn;Ljava/lang/String;)Landroid/app/Notification;
     .locals 0
 
-    invoke-direct {p0, p1}, Lcom/android/server/wtn;->fb(Ljava/lang/String;)Landroid/app/Notification;
+    invoke-direct {p0, p1}, Lcom/android/server/wtn;->gb(Ljava/lang/String;)Landroid/app/Notification;
 
     move-result-object p0
 
@@ -1638,7 +1638,7 @@
 .method static synthetic zta(Lcom/android/server/wtn;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/server/wtn;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/server/wtn;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1660,7 +1660,7 @@
 
     const-string v1, "/sys/class/power_supply/battery/op_disable_charge"
 
-    invoke-direct {p0, v0, v1}, Lcom/android/server/wtn;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/server/wtn;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -1704,7 +1704,7 @@
 
     const-string v2, "/sys/class/power_supply/battery/op_disable_charge"
 
-    invoke-direct {p0, v1, v2}, Lcom/android/server/wtn;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v2}, Lcom/android/server/wtn;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v1, 0x2
 

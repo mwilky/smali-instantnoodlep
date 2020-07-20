@@ -175,7 +175,7 @@
 
     invoke-static {p1, v0}, Lcom/android/server/display/rtg;->zta(Lcom/android/server/display/rtg;I)I
 
-    invoke-static {v2}, Lcom/android/server/display/rtg;->veq(Z)Z
+    invoke-static {v2}, Lcom/android/server/display/rtg;->e(Z)Z
 
     iget-object p0, p0, Lcom/android/server/display/you;->this$0:Lcom/android/server/display/rtg;
 

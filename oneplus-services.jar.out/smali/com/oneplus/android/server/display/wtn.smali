@@ -132,7 +132,7 @@
 .method public abstract isAvailable(Landroid/content/Context;)Z
 .end method
 
-.method public nf()I
+.method public mf()I
     .locals 0
 
     iget p0, p0, Lcom/oneplus/android/server/display/wtn;->mFrom:I
@@ -140,7 +140,7 @@
     return p0
 .end method
 
-.method public of()I
+.method public nf()I
     .locals 0
 
     iget p0, p0, Lcom/oneplus/android/server/display/wtn;->mTo:I
@@ -148,7 +148,7 @@
     return p0
 .end method
 
-.method public pf()Z
+.method public of()Z
     .locals 0
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/wtn;->mAnimator:Landroid/animation/ValueAnimator;

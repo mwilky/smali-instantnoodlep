@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/p;->setup()V
+    value = Lcom/android/server/wm/p;->killApplicationProcess(Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,12 +20,20 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/wm/p;
 
+.field final synthetic val$aInfo:Landroid/content/pm/ActivityInfo;
+
+.field final synthetic val$service:Lcom/android/server/wm/ActivityTaskManagerService;
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/p;)V
+.method constructor <init>(Lcom/android/server/wm/p;Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/server/wm/o;->this$0:Lcom/android/server/wm/p;
+
+    iput-object p2, p0, Lcom/android/server/wm/o;->val$service:Lcom/android/server/wm/ActivityTaskManagerService;
+
+    iput-object p3, p0, Lcom/android/server/wm/o;->val$aInfo:Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,40 +42,32 @@
 
 
 # virtual methods
-.method public onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 0
+.method public run()V
+    .locals 2
 
-    iget-object p1, p0, Lcom/android/server/wm/o;->this$0:Lcom/android/server/wm/p;
+    const-string v0, "OpQuickReply"
 
-    invoke-static {p1}, Lcom/android/server/wm/p;->zta(Lcom/android/server/wm/p;)Landroid/view/View;
+    const-string v1, "kill IME before start it"
 
-    move-result-object p1
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    iget-object v0, p0, Lcom/android/server/wm/o;->val$service:Lcom/android/server/wm/ActivityTaskManagerService;
 
-    iget-object p0, p0, Lcom/android/server/wm/o;->this$0:Lcom/android/server/wm/p;
+    iget-object v0, v0, Lcom/android/server/wm/ActivityTaskManagerService;->mService:Lcom/android/server/am/ActivityManagerService;
 
-    invoke-static {p0}, Lcom/android/server/wm/p;->zta(Lcom/android/server/wm/p;)Landroid/view/View;
+    iget-object v1, p0, Lcom/android/server/wm/o;->val$aInfo:Landroid/content/pm/ActivityInfo;
 
-    move-result-object p0
+    iget-object v1, v1, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+    iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    move-result-object p0
+    iget-object p0, p0, Lcom/android/server/wm/o;->val$aInfo:Landroid/content/pm/ActivityInfo;
 
-    const/high16 p1, 0x3f800000    # 1.0f
+    iget-object p0, p0, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
+    iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    move-result-object p0
-
-    const-wide/16 p1, 0x3e8
-
-    invoke-virtual {p0, p1, p2}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
+    invoke-virtual {v0, v1, p0}, Lcom/android/server/am/ActivityManagerService;->killApplicationProcess(Ljava/lang/String;I)V
 
     return-void
 .end method

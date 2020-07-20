@@ -23,75 +23,75 @@
 
 .field static final POWER_SHORT_TAP_SEQUENCE_MAX_INTERVAL_MS:J = 0x1f4L
 
-.field private static final QO:I = 0x9c4
-
-.field static final SO:F = 2.5f
-
 .field private static final TAG:Ljava/lang/String; = "OpPowerKeyLaunchManager"
 
-.field static final UO:I = 0xc9
+.field private static final _O:I = 0x9c4
 
-.field static final VO:I = 0xca
+.field static final aP:F = 2.5f
 
-.field static final WO:I = 0xcb
+.field static final bP:I = 0xc9
 
-.field static final XO:J = 0xbb8L
+.field static final cP:I = 0xca
 
-.field private static final YO:J = 0x78L
+.field static final dP:I = 0xcb
 
-.field private static final ZO:I = 0x3
+.field static final eP:J = 0xbb8L
 
-.field private static final _O:I = 0x5
+.field private static final fP:J = 0x78L
 
-.field static final aP:I = 0x0
+.field private static final gP:I = 0x3
 
-.field static final bP:I = 0x1
+.field private static final hP:I = 0x5
 
-.field static final cP:I = 0x2
+.field static final iP:I = 0x0
 
-.field static final dP:I = 0x3
+.field static final jP:I = 0x1
 
-.field private static final eP:Landroid/net/Uri;
+.field static final kP:I = 0x2
 
-.field private static final fP:I = 0x0
+.field static final lP:I = 0x3
 
-.field private static final gP:I = 0x1
+.field private static final nP:Landroid/net/Uri;
 
-.field private static final hP:Z
+.field private static final oP:I = 0x0
 
-.field private static final iP:J = 0x190L
+.field private static final pP:I = 0x1
 
-.field private static final jP:Ljava/lang/String; = "quick_turn_on_voice_assistant"
+.field private static final qP:Z
 
-.field private static kP:I
+.field private static final rP:J = 0x190L
+
+.field private static final sP:Ljava/lang/String; = "quick_turn_on_voice_assistant"
+
+.field private static tP:I
 
 
 # instance fields
-.field BO:Lcom/android/server/policy/PhoneWindowManager;
+.field JO:Lcom/android/server/policy/PhoneWindowManager;
 
-.field CO:Z
+.field KO:Z
 
-.field DO:Z
+.field LO:Z
 
-.field EO:I
+.field OO:I
 
-.field FO:I
+.field PO:I
 
-.field GO:Z
+.field QO:Z
 
-.field HO:Z
+.field SO:Z
 
-.field IO:Lcom/android/server/GestureLauncherService;
+.field UO:Lcom/android/server/GestureLauncherService;
 
-.field private JO:I
+.field private VO:I
 
-.field KO:I
+.field WO:I
 
-.field private LO:I
+.field private XO:I
 
-.field private OO:Z
+.field private YO:Z
 
-.field private PO:Z
+.field private ZO:Z
 
 .field private mA11yShortcutChordVolumeUpKeyTriggered:Z
 
@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/policy/cjf;->eP:Landroid/net/Uri;
+    sput-object v0, Lcom/android/server/policy/cjf;->nP:Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -142,7 +142,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/server/policy/cjf;->hP:Z
+    sput-boolean v0, Lcom/android/server/policy/cjf;->qP:Z
 
     return-void
 .end method
@@ -162,22 +162,22 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->CO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->KO:Z
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->DO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->LO:Z
 
-    iput v0, p0, Lcom/android/server/policy/cjf;->EO:I
+    iput v0, p0, Lcom/android/server/policy/cjf;->OO:I
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->GO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->QO:Z
 
-    iput v0, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v0, p0, Lcom/android/server/policy/cjf;->WO:I
 
-    iput v0, p0, Lcom/android/server/policy/cjf;->LO:I
+    iput v0, p0, Lcom/android/server/policy/cjf;->XO:I
 
     return-void
 .end method
 
-.method private gq()Landroid/content/ComponentName;
+.method private hq()Landroid/content/ComponentName;
     .locals 5
 
     const-string v0, "OpPowerKeyLaunchManager"
@@ -188,7 +188,7 @@
 
     invoke-direct {v1, v2}, Lcom/android/internal/app/AssistUtils;-><init>(Landroid/content/Context;)V
 
-    iget-object v2, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v2, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget v2, v2, Lcom/android/server/policy/PhoneWindowManager;->mCurrentUserId:I
 
@@ -250,7 +250,7 @@
     return-object v2
 .end method
 
-.method private hq()Z
+.method private iq()Z
     .locals 9
 
     const-string v0, "HAS_ACTIVE_CARD"
@@ -270,7 +270,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/server/policy/cjf;->eP:Landroid/net/Uri;
+    sget-object v2, Lcom/android/server/policy/cjf;->nP:Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -359,17 +359,17 @@
     throw p0
 .end method
 
-.method private iq()V
+.method private jq()V
     .locals 6
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->CO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->KO:Z
 
     if-nez v0, :cond_0
 
     return-void
 
     :cond_0
-    iget v0, p0, Lcom/android/server/policy/cjf;->EO:I
+    iget v0, p0, Lcom/android/server/policy/cjf;->OO:I
 
     const/4 v1, 0x0
 
@@ -394,16 +394,16 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->DO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->LO:Z
 
     :cond_2
-    iput v3, p0, Lcom/android/server/policy/cjf;->EO:I
+    iput v3, p0, Lcom/android/server/policy/cjf;->OO:I
 
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iput-boolean v3, v0, Lcom/android/server/policy/PhoneWindowManager;->mPowerKeyHandled:Z
 
-    iget-boolean v4, p0, Lcom/android/server/policy/cjf;->DO:Z
+    iget-boolean v4, p0, Lcom/android/server/policy/cjf;->LO:Z
 
     if-nez v4, :cond_9
 
@@ -413,7 +413,7 @@
 
     if-eqz v0, :cond_8
 
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget v4, v0, Lcom/android/server/policy/PhoneWindowManager;->mCurrentUserId:I
 
@@ -432,7 +432,7 @@
     invoke-static {v2, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/policy/cjf;->gq()Landroid/content/ComponentName;
+    invoke-direct {p0}, Lcom/android/server/policy/cjf;->hq()Landroid/content/ComponentName;
 
     move-result-object v0
 
@@ -450,12 +450,12 @@
 
     if-eqz v2, :cond_4
 
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     sget-object v1, Lcom/android/server/policy/PhoneWindowManager;->POWER_LONG_PRESS_WITH_GOOGLE_ASSISTANT_HINT:Ljava/lang/String;
 
     :goto_0
-    iget v2, p0, Lcom/android/server/policy/cjf;->FO:I
+    iget v2, p0, Lcom/android/server/policy/cjf;->PO:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/server/policy/PhoneWindowManager;->launchAssistAction(Ljava/lang/String;I)V
 
@@ -476,7 +476,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     sget-object v1, Lcom/android/server/policy/PhoneWindowManager;->HEY_TAP_PACKAGE_NAME:Ljava/lang/String;
 
@@ -506,16 +506,16 @@
     invoke-virtual {v0, v1, v1}, Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;->dismiss(Lcom/android/internal/policy/IKeyguardDismissCallback;Ljava/lang/CharSequence;)V
 
     :cond_7
-    iput-boolean v3, p0, Lcom/android/server/policy/cjf;->GO:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/cjf;->QO:Z
 
     goto :goto_2
 
     :cond_8
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     sget-object v1, Lcom/android/server/policy/PhoneWindowManager;->POWER_LONG_PRESS_WITH_ASSISTANT_HINT:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/server/policy/cjf;->FO:I
+    iget v2, p0, Lcom/android/server/policy/cjf;->PO:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/server/policy/PhoneWindowManager;->launchAssistAction(Ljava/lang/String;I)V
 
@@ -529,13 +529,13 @@
 
     :cond_9
     :goto_2
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-boolean v0, v0, Lcom/android/server/policy/PhoneWindowManager;->mBeganFromNonInteractive:Z
 
     if-nez v0, :cond_f
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->PO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->ZO:Z
 
     if-nez v0, :cond_f
 
@@ -551,7 +551,7 @@
 
     iget-object v1, p0, Lcom/android/server/policy/cjf;->mHandler:Landroid/os/Handler;
 
-    iget-boolean v2, p0, Lcom/android/server/policy/cjf;->DO:Z
+    iget-boolean v2, p0, Lcom/android/server/policy/cjf;->LO:Z
 
     if-eqz v2, :cond_a
 
@@ -584,18 +584,18 @@
     goto :goto_5
 
     :cond_b
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->DO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->LO:Z
 
     if-nez v0, :cond_e
 
-    invoke-direct {p0}, Lcom/android/server/policy/cjf;->gq()Landroid/content/ComponentName;
+    invoke-direct {p0}, Lcom/android/server/policy/cjf;->hq()Landroid/content/ComponentName;
 
     move-result-object v0
 
     if-eqz v0, :cond_e
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object v0, v0, Lcom/android/server/policy/PhoneWindowManager;->mDefaultDisplayPolicy:Lcom/android/server/wm/DisplayPolicy;
 
@@ -630,7 +630,7 @@
 
     move-result-object v4
 
-    invoke-direct {p0}, Lcom/android/server/policy/cjf;->gq()Landroid/content/ComponentName;
+    invoke-direct {p0}, Lcom/android/server/policy/cjf;->hq()Landroid/content/ComponentName;
 
     move-result-object v5
 
@@ -686,9 +686,9 @@
 
     :cond_e
     :goto_4
-    iput-boolean v1, p0, Lcom/android/server/policy/cjf;->GO:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cjf;->QO:Z
 
-    iget-object p0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     invoke-virtual {p0}, Lcom/android/server/policy/PhoneWindowManager;->powerLongPress()V
 
@@ -747,21 +747,21 @@
 .method static synthetic zta(Lcom/android/server/policy/cjf;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/policy/cjf;->iq()V
+    invoke-direct {p0}, Lcom/android/server/policy/cjf;->jq()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method Dd()Z
+.method Cd()Z
     .locals 1
 
     iget-boolean v0, p0, Lcom/android/server/policy/cjf;->mA11yShortcutChordVolumeUpKeyTriggered:Z
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->OO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->YO:Z
 
     if-nez v0, :cond_1
 
@@ -784,14 +784,14 @@
     return p0
 .end method
 
-.method public synthetic Ed()V
+.method public synthetic Dd()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     sget-object v1, Lcom/android/server/policy/PhoneWindowManager;->POWER_LONG_PRESS_WITH_ASSISTANT_HINT:Ljava/lang/String;
 
-    iget p0, p0, Lcom/android/server/policy/cjf;->FO:I
+    iget p0, p0, Lcom/android/server/policy/cjf;->PO:I
 
     invoke-virtual {v0, v1, p0}, Lcom/android/server/policy/PhoneWindowManager;->launchAssistAction(Ljava/lang/String;I)V
 
@@ -801,7 +801,7 @@
 .method public cancelPendingPowerKeyAction()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->CO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->KO:Z
 
     if-eqz v0, :cond_0
 
@@ -813,7 +813,7 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/policy/cjf;->EO:I
+    iput v0, p0, Lcom/android/server/policy/cjf;->OO:I
 
     :cond_0
     return-void
@@ -822,7 +822,7 @@
 .method public handleEmergency(Landroid/util/MutableBoolean;)Z
     .locals 6
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->HO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->SO:Z
 
     const/4 v1, 0x1
 
@@ -833,7 +833,7 @@
     return v1
 
     :cond_0
-    iget v0, p0, Lcom/android/server/policy/cjf;->KO:I
+    iget v0, p0, Lcom/android/server/policy/cjf;->WO:I
 
     const/4 v2, 0x2
 
@@ -920,7 +920,7 @@
 
     invoke-virtual {v3, v0, v4}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    iput-boolean v1, p0, Lcom/android/server/policy/cjf;->HO:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cjf;->SO:Z
 
     iget-object v0, p0, Lcom/android/server/policy/cjf;->mHandler:Landroid/os/Handler;
 
@@ -942,7 +942,7 @@
 
     :cond_5
     :goto_1
-    iget p0, p0, Lcom/android/server/policy/cjf;->KO:I
+    iget p0, p0, Lcom/android/server/policy/cjf;->WO:I
 
     const/4 v0, 0x0
 
@@ -982,9 +982,9 @@
 
     iput-object p1, p0, Lcom/android/server/policy/cjf;->mContext:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iput-object p3, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
-    iget-object p1, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object p1, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object p1, p1, Lcom/android/server/policy/PhoneWindowManager;->mKeyguardDelegate:Lcom/android/server/policy/keyguard/KeyguardServiceDelegate;
 
@@ -998,7 +998,7 @@
 
     iput-object p1, p0, Lcom/android/server/policy/cjf;->mEmergencyAffordanceManager:Lcom/android/internal/util/EmergencyAffordanceManager;
 
-    sget-boolean p1, Lcom/android/server/policy/cjf;->hP:Z
+    sget-boolean p1, Lcom/android/server/policy/cjf;->qP:Z
 
     if-eqz p1, :cond_0
 
@@ -1010,13 +1010,13 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-boolean p1, p0, Lcom/android/server/policy/cjf;->CO:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/cjf;->KO:Z
 
-    sput p1, Lcom/android/server/policy/cjf;->kP:I
+    sput p1, Lcom/android/server/policy/cjf;->tP:I
 
-    sget-boolean p1, Lcom/android/server/policy/cjf;->hP:Z
+    sget-boolean p1, Lcom/android/server/policy/cjf;->qP:Z
 
-    iput-boolean p1, p0, Lcom/android/server/policy/cjf;->PO:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/cjf;->ZO:Z
 
     return-void
 .end method
@@ -1024,7 +1024,7 @@
 .method public initGestureLauncherService(Lcom/android/server/GestureLauncherService;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/cjf;->IO:Lcom/android/server/GestureLauncherService;
+    iput-object p1, p0, Lcom/android/server/policy/cjf;->UO:Lcom/android/server/GestureLauncherService;
 
     return-void
 .end method
@@ -1121,7 +1121,7 @@
     iput-boolean v0, p0, Lcom/android/server/policy/cjf;->mA11yShortcutChordVolumeUpKeyTriggered:Z
 
     :cond_4
-    iget-boolean p2, p0, Lcom/android/server/policy/cjf;->OO:Z
+    iget-boolean p2, p0, Lcom/android/server/policy/cjf;->YO:Z
 
     if-nez p2, :cond_6
 
@@ -1133,14 +1133,14 @@
 
     if-nez p1, :cond_6
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->OO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->YO:Z
 
     goto :goto_2
 
     :cond_5
     iput-boolean v1, p0, Lcom/android/server/policy/cjf;->mA11yShortcutChordVolumeUpKeyTriggered:Z
 
-    iput-boolean v1, p0, Lcom/android/server/policy/cjf;->OO:Z
+    iput-boolean v1, p0, Lcom/android/server/policy/cjf;->YO:Z
 
     :cond_6
     :goto_2
@@ -1150,19 +1150,19 @@
 .method public interceptPowerKeyDown(Landroid/view/KeyEvent;)Z
     .locals 5
 
-    invoke-direct {p0}, Lcom/android/server/policy/cjf;->gq()Landroid/content/ComponentName;
+    invoke-direct {p0}, Lcom/android/server/policy/cjf;->hq()Landroid/content/ComponentName;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/server/policy/cjf;->Dd()Z
+    invoke-virtual {p0}, Lcom/android/server/policy/cjf;->Cd()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->CO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->KO:Z
 
     if-eqz v0, :cond_2
 
@@ -1195,11 +1195,11 @@
 
     const/4 v2, 0x4
 
-    iput v2, p0, Lcom/android/server/policy/cjf;->EO:I
+    iput v2, p0, Lcom/android/server/policy/cjf;->OO:I
 
     iget-object v2, p0, Lcom/android/server/policy/cjf;->mHandler:Landroid/os/Handler;
 
-    iget-boolean v3, p0, Lcom/android/server/policy/cjf;->PO:Z
+    iget-boolean v3, p0, Lcom/android/server/policy/cjf;->ZO:Z
 
     if-eqz v3, :cond_1
 
@@ -1225,7 +1225,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/policy/cjf;->FO:I
+    iput p1, p0, Lcom/android/server/policy/cjf;->PO:I
 
     return v1
 
@@ -1246,13 +1246,13 @@
 .method public isDoubleTapPowerWalletHasNoActiveCard()Z
     .locals 2
 
-    iget v0, p0, Lcom/android/server/policy/cjf;->LO:I
+    iget v0, p0, Lcom/android/server/policy/cjf;->XO:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/policy/cjf;->hq()Z
+    invoke-direct {p0}, Lcom/android/server/policy/cjf;->iq()Z
 
     move-result p0
 
@@ -1269,7 +1269,7 @@
 .method public onKeyguardDone()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->GO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->QO:Z
 
     if-eqz v0, :cond_0
 
@@ -1283,7 +1283,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->GO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->QO:Z
 
     :cond_0
     return-void
@@ -1292,7 +1292,7 @@
 .method public processEmergencyTap(Landroid/view/KeyEvent;ZZ)Z
     .locals 11
 
-    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->HO:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/cjf;->SO:Z
 
     const-string v1, "OpPowerKeyLaunchManager"
 
@@ -1300,7 +1300,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/policy/cjf;->BO:Lcom/android/server/policy/PhoneWindowManager;
+    iget-object v0, p0, Lcom/android/server/policy/cjf;->JO:Lcom/android/server/policy/PhoneWindowManager;
 
     iget-object v0, v0, Lcom/android/server/policy/PhoneWindowManager;->mDefaultDisplayPolicy:Lcom/android/server/wm/DisplayPolicy;
 
@@ -1335,7 +1335,7 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    iput-boolean v2, p0, Lcom/android/server/policy/cjf;->HO:Z
+    iput-boolean v2, p0, Lcom/android/server/policy/cjf;->SO:Z
 
     :cond_1
     iput-boolean p3, p0, Lcom/android/server/policy/cjf;->mCameraDoubleTapPowerEnabled:Z
@@ -1348,7 +1348,7 @@
 
     sub-long/2addr v3, v5
 
-    iget p3, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p3, p0, Lcom/android/server/policy/cjf;->VO:I
 
     const/4 v0, -0x1
 
@@ -1364,12 +1364,12 @@
 
     if-eqz p3, :cond_2
 
-    iput v5, p0, Lcom/android/server/policy/cjf;->JO:I
+    iput v5, p0, Lcom/android/server/policy/cjf;->VO:I
 
     goto :goto_0
 
     :cond_2
-    iput v2, p0, Lcom/android/server/policy/cjf;->JO:I
+    iput v2, p0, Lcom/android/server/policy/cjf;->VO:I
 
     :cond_3
     :goto_0
@@ -1385,7 +1385,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget v0, p0, Lcom/android/server/policy/cjf;->VO:I
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1418,7 +1418,7 @@
     invoke-static {v1, p3}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    iget p3, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p3, p0, Lcom/android/server/policy/cjf;->VO:I
 
     const-wide/16 v0, 0x12c
 
@@ -1448,12 +1448,12 @@
 
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v0, p0, Lcom/android/server/policy/cjf;->WO:I
 
     goto :goto_1
 
     :cond_5
-    iget p3, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p3, p0, Lcom/android/server/policy/cjf;->VO:I
 
     if-nez p3, :cond_6
 
@@ -1469,7 +1469,7 @@
 
     if-lez p3, :cond_6
 
-    iput v2, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v2, p0, Lcom/android/server/policy/cjf;->WO:I
 
     iget p3, p0, Lcom/android/server/policy/cjf;->mPowerButtonConsecutiveTaps:I
 
@@ -1497,7 +1497,7 @@
 
     iput p3, p0, Lcom/android/server/policy/cjf;->mPowerButtonConsecutiveTaps:I
 
-    iget p3, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p3, p0, Lcom/android/server/policy/cjf;->VO:I
 
     if-ne p3, v5, :cond_7
 
@@ -1505,10 +1505,10 @@
 
     if-ne p3, v5, :cond_7
 
-    iput v9, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v9, p0, Lcom/android/server/policy/cjf;->WO:I
 
     :cond_7
-    iget p3, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p3, p0, Lcom/android/server/policy/cjf;->VO:I
 
     if-ne p3, v8, :cond_8
 
@@ -1520,12 +1520,12 @@
 
     if-eqz p3, :cond_8
 
-    iput v5, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v5, p0, Lcom/android/server/policy/cjf;->WO:I
 
     goto :goto_2
 
     :cond_8
-    iget p3, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p3, p0, Lcom/android/server/policy/cjf;->VO:I
 
     if-ne p3, v8, :cond_a
 
@@ -1533,12 +1533,12 @@
 
     if-ne p3, v8, :cond_a
 
-    iput v9, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v9, p0, Lcom/android/server/policy/cjf;->WO:I
 
     goto :goto_2
 
     :cond_9
-    iput v2, p0, Lcom/android/server/policy/cjf;->KO:I
+    iput v2, p0, Lcom/android/server/policy/cjf;->WO:I
 
     iput v9, p0, Lcom/android/server/policy/cjf;->mPowerButtonConsecutiveTaps:I
 
@@ -1552,11 +1552,11 @@
 
     if-eqz p2, :cond_b
 
-    iget p1, p0, Lcom/android/server/policy/cjf;->JO:I
+    iget p1, p0, Lcom/android/server/policy/cjf;->VO:I
 
     if-eq p1, v5, :cond_b
 
-    iget p0, p0, Lcom/android/server/policy/cjf;->KO:I
+    iget p0, p0, Lcom/android/server/policy/cjf;->WO:I
 
     if-nez p0, :cond_b
 
@@ -1613,7 +1613,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->GO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->QO:Z
 
     return-void
 .end method
@@ -1621,7 +1621,7 @@
 .method public updateSettings(Landroid/content/ContentResolver;)V
     .locals 3
 
-    sget v0, Lcom/android/server/policy/cjf;->kP:I
+    sget v0, Lcom/android/server/policy/cjf;->tP:I
 
     const-string v1, "quick_turn_on_voice_assistant"
 
@@ -1641,13 +1641,13 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->CO:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/cjf;->KO:Z
 
     invoke-direct {p0, p1}, Lcom/android/server/policy/cjf;->you(Landroid/content/ContentResolver;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/policy/cjf;->JO:I
+    iput v0, p0, Lcom/android/server/policy/cjf;->VO:I
 
     const/4 v0, -0x2
 
@@ -1657,7 +1657,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/policy/cjf;->LO:I
+    iput p1, p0, Lcom/android/server/policy/cjf;->XO:I
 
     return-void
 .end method

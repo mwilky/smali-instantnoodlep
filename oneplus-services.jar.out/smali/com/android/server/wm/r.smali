@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Landroid/hardware/display/DisplayManager$DisplayListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/s;->zta(Landroid/graphics/Bitmap;II)I
+    value = Lcom/android/server/wm/t;-><init>(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,25 +16,16 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Ljava/lang/Integer;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/s;
+.field final synthetic this$0:Lcom/android/server/wm/t;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/s;)V
+.method constructor <init>(Lcom/android/server/wm/t;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/r;->this$0:Lcom/android/server/wm/s;
+    iput-object p1, p0, Lcom/android/server/wm/r;->this$0:Lcom/android/server/wm/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,32 +34,24 @@
 
 
 # virtual methods
-.method public compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
+.method public onDisplayAdded(I)V
     .locals 0
 
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
-
-    move-result p1
-
-    sub-int/2addr p0, p1
-
-    return p0
+    return-void
 .end method
 
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public onDisplayChanged(I)V
     .locals 0
 
-    check-cast p1, Ljava/lang/Integer;
+    iget-object p0, p0, Lcom/android/server/wm/r;->this$0:Lcom/android/server/wm/t;
 
-    check-cast p2, Ljava/lang/Integer;
+    invoke-virtual {p0}, Lcom/android/server/wm/t;->updateOrientation()V
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/r;->compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
+    return-void
+.end method
 
-    move-result p0
+.method public onDisplayRemoved(I)V
+    .locals 0
 
-    return p0
+    return-void
 .end method

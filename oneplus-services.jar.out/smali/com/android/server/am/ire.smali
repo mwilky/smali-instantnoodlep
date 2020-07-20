@@ -3,26 +3,17 @@
 .source ""
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/io/FilenameFilter;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/OnePlusBGController;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/am/OnePlusBGController;->Hn()Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/android/server/am/OnePlusBGController$wtn;",
-        ">;"
-    }
 .end annotation
 
 
@@ -43,38 +34,23 @@
 
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/OnePlusBGController$wtn;
+    const-string p0, "bgc"
 
-    check-cast p2, Lcom/android/server/am/OnePlusBGController$wtn;
-
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/ire;->zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
+    invoke-virtual {p2, p0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
 
     return p0
-.end method
 
-.method public zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
-    .locals 2
-
-    sget-object p0, Lcom/android/server/am/OnePlusBGController$MySipperType;->B:Lcom/android/server/am/OnePlusBGController$MySipperType;
-
-    invoke-virtual {p2, p0}, Lcom/android/server/am/OnePlusBGController$wtn;->zta(Lcom/android/server/am/OnePlusBGController$MySipperType;)D
-
-    move-result-wide v0
-
-    sget-object p0, Lcom/android/server/am/OnePlusBGController$MySipperType;->B:Lcom/android/server/am/OnePlusBGController$MySipperType;
-
-    invoke-virtual {p1, p0}, Lcom/android/server/am/OnePlusBGController$wtn;->zta(Lcom/android/server/am/OnePlusBGController$MySipperType;)D
-
-    move-result-wide p0
-
-    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
-
-    move-result p0
+    :cond_0
+    const/4 p0, 0x0
 
     return p0
 .end method

@@ -4,11 +4,11 @@
 
 
 # instance fields
+.field private DHa:Lorg/bouncycastle/asn1/x509/zta;
+
+.field private EHa:Lorg/bouncycastle/asn1/ibl;
+
 .field private attributes:Lorg/bouncycastle/asn1/ear;
-
-.field private iHa:Lorg/bouncycastle/asn1/x509/zta;
-
-.field private jHa:Lorg/bouncycastle/asn1/ibl;
 
 .field private publicKey:Lorg/bouncycastle/asn1/sis;
 
@@ -21,7 +21,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Kh()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -49,7 +49,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->iHa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->DHa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->jHa:Lorg/bouncycastle/asn1/ibl;
+    iput-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->EHa:Lorg/bouncycastle/asn1/ibl;
 
     const/4 v1, -0x1
 
@@ -199,13 +199,13 @@
 
     iput-object v0, p0, Lorg/bouncycastle/asn1/dma/vdb;->version:Lorg/bouncycastle/asn1/ywr;
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/vdb;->iHa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/vdb;->DHa:Lorg/bouncycastle/asn1/x509/zta;
 
     new-instance p1, Lorg/bouncycastle/asn1/C;
 
     invoke-direct {p1, p2}, Lorg/bouncycastle/asn1/C;-><init>(Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/vdb;->jHa:Lorg/bouncycastle/asn1/ibl;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/dma/vdb;->EHa:Lorg/bouncycastle/asn1/ibl;
 
     iput-object p3, p0, Lorg/bouncycastle/asn1/dma/vdb;->attributes:Lorg/bouncycastle/asn1/ear;
 
@@ -322,12 +322,12 @@
 .method public getPrivateKeyAlgorithm()Lorg/bouncycastle/asn1/x509/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->iHa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->DHa:Lorg/bouncycastle/asn1/x509/zta;
 
     return-object p0
 .end method
 
-.method public mi()Lorg/bouncycastle/asn1/sis;
+.method public oi()Lorg/bouncycastle/asn1/sis;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->publicKey:Lorg/bouncycastle/asn1/sis;
@@ -335,7 +335,28 @@
     return-object p0
 .end method
 
-.method public oi()Z
+.method public parsePrivateKey()Lorg/bouncycastle/asn1/ssp;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->EHa:Lorg/bouncycastle/asn1/ibl;
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl;->getOctets()[B
+
+    move-result-object p0
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public pi()Z
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->publicKey:Lorg/bouncycastle/asn1/sis;
@@ -353,28 +374,7 @@
     return p0
 .end method
 
-.method public parsePrivateKey()Lorg/bouncycastle/asn1/ssp;
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object p0, p0, Lorg/bouncycastle/asn1/dma/vdb;->jHa:Lorg/bouncycastle/asn1/ibl;
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/ibl;->getOctets()[B
-
-    move-result-object p0
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/vdb;->fromByteArray([B)Lorg/bouncycastle/asn1/vdb;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public pi()Lorg/bouncycastle/asn1/ssp;
+.method public qi()Lorg/bouncycastle/asn1/ssp;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -414,11 +414,11 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->iHa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->DHa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->jHa:Lorg/bouncycastle/asn1/ibl;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/dma/vdb;->EHa:Lorg/bouncycastle/asn1/ibl;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 

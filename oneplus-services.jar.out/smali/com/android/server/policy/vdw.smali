@@ -22,21 +22,21 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpGestures"
 
-.field private static final lQ:I = 0xc8
+.field private static final tQ:I = 0xc8
 
-.field private static final mQ:I = 0x5
+.field private static final uQ:I = 0x5
 
-.field private static final nQ:I = 0x1f4
+.field private static final vQ:I = 0x1f4
 
 
 # instance fields
-.field private ZP:Z
+.field private gQ:Z
 
-.field private _P:I
+.field private hQ:I
 
-.field private aQ:I
+.field private iQ:I
 
-.field private bQ:Ljava/util/ArrayList;
+.field private jQ:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -46,7 +46,7 @@
     .end annotation
 .end field
 
-.field private cQ:Ljava/util/ArrayList;
+.field private kQ:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -56,7 +56,7 @@
     .end annotation
 .end field
 
-.field private dQ:Ljava/util/ArrayList;
+.field private lQ:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -65,20 +65,6 @@
         }
     .end annotation
 .end field
-
-.field private eQ:Z
-
-.field private fQ:I
-
-.field private gQ:Landroid/graphics/Point;
-
-.field private hQ:Landroid/graphics/Point;
-
-.field private iQ:Z
-
-.field jQ:I
-
-.field kQ:I
 
 .field private mActivityManager:Landroid/app/ActivityManager;
 
@@ -88,9 +74,23 @@
 
 .field private mHandler:Landroid/os/Handler;
 
+.field private mQ:Z
+
 .field private mScreenHeight:I
 
 .field private mScreenWidth:I
+
+.field private nQ:I
+
+.field private oQ:Landroid/graphics/Point;
+
+.field private pQ:Landroid/graphics/Point;
+
+.field private qQ:Z
+
+.field rQ:I
+
+.field sQ:I
 
 
 # direct methods
@@ -113,27 +113,27 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/policy/vdw;->eQ:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/vdw;->mQ:Z
 
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/android/server/policy/vdw;->fQ:I
+    iput v1, p0, Lcom/android/server/policy/vdw;->nQ:I
 
     iput v1, p0, Lcom/android/server/policy/vdw;->mScreenHeight:I
 
@@ -141,11 +141,11 @@
 
     iput v0, p0, Lcom/android/server/policy/vdw;->mCurrentUserId:I
 
-    iput-boolean v0, p0, Lcom/android/server/policy/vdw;->iQ:Z
+    iput-boolean v0, p0, Lcom/android/server/policy/vdw;->qQ:Z
 
-    iput v1, p0, Lcom/android/server/policy/vdw;->jQ:I
+    iput v1, p0, Lcom/android/server/policy/vdw;->rQ:I
 
-    iput v1, p0, Lcom/android/server/policy/vdw;->kQ:I
+    iput v1, p0, Lcom/android/server/policy/vdw;->sQ:I
 
     iput-object p1, p0, Lcom/android/server/policy/vdw;->mContext:Landroid/content/Context;
 
@@ -191,7 +191,7 @@
 
     div-int/lit8 p1, p1, 0x3
 
-    iput p1, p0, Lcom/android/server/policy/vdw;->jQ:I
+    iput p1, p0, Lcom/android/server/policy/vdw;->rQ:I
 
     iget p1, p2, Landroid/util/DisplayMetrics;->widthPixels:I
 
@@ -203,7 +203,7 @@
 
     div-int/lit8 p1, p1, 0x3
 
-    iput p1, p0, Lcom/android/server/policy/vdw;->kQ:I
+    iput p1, p0, Lcom/android/server/policy/vdw;->sQ:I
 
     iget p1, p2, Landroid/util/DisplayMetrics;->widthPixels:I
 
@@ -442,7 +442,7 @@
 
     move-result p1
 
-    invoke-direct {p0}, Lcom/android/server/policy/vdw;->kq()I
+    invoke-direct {p0}, Lcom/android/server/policy/vdw;->lq()I
 
     move-result v0
 
@@ -460,7 +460,7 @@
 
     move-result p1
 
-    invoke-direct {p0}, Lcom/android/server/policy/vdw;->lq()I
+    invoke-direct {p0}, Lcom/android/server/policy/vdw;->mq()I
 
     move-result p0
 
@@ -589,22 +589,22 @@
     return v0
 .end method
 
-.method private jq()I
+.method private kq()I
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/vdw;->gck(Ljava/util/ArrayList;)I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
 
     invoke-direct {p0, v1}, Lcom/android/server/policy/vdw;->gck(Ljava/util/ArrayList;)I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     invoke-direct {p0, v2}, Lcom/android/server/policy/vdw;->gck(Ljava/util/ArrayList;)I
 
@@ -635,35 +635,6 @@
     return p0
 .end method
 
-.method private kq()I
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/content/res/Configuration;->orientation:I
-
-    const/4 v1, 0x2
-
-    if-ne v1, v0, :cond_0
-
-    iget p0, p0, Lcom/android/server/policy/vdw;->kQ:I
-
-    return p0
-
-    :cond_0
-    iget p0, p0, Lcom/android/server/policy/vdw;->jQ:I
-
-    return p0
-.end method
-
 .method private lq()I
     .locals 2
 
@@ -683,20 +654,49 @@
 
     if-ne v1, v0, :cond_0
 
-    iget p0, p0, Lcom/android/server/policy/vdw;->jQ:I
+    iget p0, p0, Lcom/android/server/policy/vdw;->sQ:I
 
     return p0
 
     :cond_0
-    iget p0, p0, Lcom/android/server/policy/vdw;->kQ:I
+    iget p0, p0, Lcom/android/server/policy/vdw;->rQ:I
 
     return p0
 .end method
 
-.method private mq()Z
+.method private mq()I
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/content/res/Configuration;->orientation:I
+
+    const/4 v1, 0x2
+
+    if-ne v1, v0, :cond_0
+
+    iget p0, p0, Lcom/android/server/policy/vdw;->rQ:I
+
+    return p0
+
+    :cond_0
+    iget p0, p0, Lcom/android/server/policy/vdw;->sQ:I
+
+    return p0
+.end method
+
+.method private nq()Z
     .locals 5
 
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -708,7 +708,7 @@
 
     if-lez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -734,7 +734,7 @@
     move v0, v2
 
     :goto_1
-    iget-object v4, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -742,9 +742,9 @@
 
     check-cast v3, Landroid/graphics/Point;
 
-    iput-object v3, p0, Lcom/android/server/policy/vdw;->gQ:Landroid/graphics/Point;
+    iput-object v3, p0, Lcom/android/server/policy/vdw;->oQ:Landroid/graphics/Point;
 
-    iget-object v3, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -752,10 +752,10 @@
 
     check-cast v0, Landroid/graphics/Point;
 
-    iput-object v0, p0, Lcom/android/server/policy/vdw;->hQ:Landroid/graphics/Point;
+    iput-object v0, p0, Lcom/android/server/policy/vdw;->pQ:Landroid/graphics/Point;
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/policy/vdw;->jq()I
+    invoke-direct {p0}, Lcom/android/server/policy/vdw;->kq()I
 
     move-result v0
 
@@ -766,7 +766,7 @@
     return v2
 
     :cond_3
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/vdw;->dma(Ljava/util/ArrayList;)Z
 
@@ -774,7 +774,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/vdw;->dma(Ljava/util/ArrayList;)Z
 
@@ -782,7 +782,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     invoke-direct {p0, v0}, Lcom/android/server/policy/vdw;->dma(Ljava/util/ArrayList;)Z
 
@@ -882,7 +882,7 @@
 
     iput p1, p3, Landroid/graphics/Point;->y:I
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -890,12 +890,12 @@
 
     if-le p1, v2, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     :goto_0
     invoke-virtual {p0, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -923,7 +923,7 @@
 
     iput p1, p3, Landroid/graphics/Point;->y:I
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -931,12 +931,12 @@
 
     if-le p1, v2, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -961,7 +961,7 @@
 
     iput p1, p3, Landroid/graphics/Point;->y:I
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -969,12 +969,12 @@
 
     if-le p1, v2, :cond_4
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_4
-    iget-object p0, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -988,7 +988,7 @@
 .method public i(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/policy/vdw;->eQ:Z
+    iput-boolean p1, p0, Lcom/android/server/policy/vdw;->mQ:Z
 
     return-void
 .end method
@@ -1003,7 +1003,7 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/policy/vdw;->eQ:Z
+    iget-boolean v0, p0, Lcom/android/server/policy/vdw;->mQ:Z
 
     if-nez v0, :cond_1
 
@@ -1031,36 +1031,36 @@
     :cond_2
     if-nez v0, :cond_3
 
-    iput-boolean v3, p0, Lcom/android/server/policy/vdw;->ZP:Z
+    iput-boolean v3, p0, Lcom/android/server/policy/vdw;->gQ:Z
 
-    iput v2, p0, Lcom/android/server/policy/vdw;->_P:I
+    iput v2, p0, Lcom/android/server/policy/vdw;->hQ:I
 
-    iput v2, p0, Lcom/android/server/policy/vdw;->aQ:I
+    iput v2, p0, Lcom/android/server/policy/vdw;->iQ:I
 
-    iget-object v4, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
-
-    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
-
-    iget-object v4, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
-    iget-object v4, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
+
+    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
+
+    iget-object v4, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
     :cond_3
-    iget v4, p0, Lcom/android/server/policy/vdw;->_P:I
+    iget v4, p0, Lcom/android/server/policy/vdw;->hQ:I
 
     add-int/2addr v4, v3
 
-    iput v4, p0, Lcom/android/server/policy/vdw;->_P:I
+    iput v4, p0, Lcom/android/server/policy/vdw;->hQ:I
 
-    iget v4, p0, Lcom/android/server/policy/vdw;->_P:I
+    iget v4, p0, Lcom/android/server/policy/vdw;->hQ:I
 
     if-ne v4, v1, :cond_6
 
-    iget v4, p0, Lcom/android/server/policy/vdw;->fQ:I
+    iget v4, p0, Lcom/android/server/policy/vdw;->nQ:I
 
     const/4 v5, -0x1
 
@@ -1072,7 +1072,7 @@
 
     float-to-int v4, v4
 
-    iput v4, p0, Lcom/android/server/policy/vdw;->fQ:I
+    iput v4, p0, Lcom/android/server/policy/vdw;->nQ:I
 
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
@@ -1099,16 +1099,16 @@
     move v4, v2
 
     :goto_0
-    iput-boolean v4, p0, Lcom/android/server/policy/vdw;->iQ:Z
+    iput-boolean v4, p0, Lcom/android/server/policy/vdw;->qQ:Z
 
     :cond_6
-    iget v4, p0, Lcom/android/server/policy/vdw;->aQ:I
+    iget v4, p0, Lcom/android/server/policy/vdw;->iQ:I
 
-    iget v5, p0, Lcom/android/server/policy/vdw;->_P:I
+    iget v5, p0, Lcom/android/server/policy/vdw;->hQ:I
 
     if-ge v4, v5, :cond_7
 
-    iput v5, p0, Lcom/android/server/policy/vdw;->aQ:I
+    iput v5, p0, Lcom/android/server/policy/vdw;->iQ:I
 
     :cond_7
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
@@ -1120,7 +1120,7 @@
     :goto_1
     if-ge v5, v4, :cond_8
 
-    iget v6, p0, Lcom/android/server/policy/vdw;->aQ:I
+    iget v6, p0, Lcom/android/server/policy/vdw;->iQ:I
 
     invoke-direct {p0, p1, v5, v6}, Lcom/android/server/policy/vdw;->zta(Landroid/view/MotionEvent;II)V
 
@@ -1147,15 +1147,15 @@
     goto :goto_2
 
     :cond_a
-    iget p1, p0, Lcom/android/server/policy/vdw;->_P:I
+    iget p1, p0, Lcom/android/server/policy/vdw;->hQ:I
 
     if-ne p1, v1, :cond_b
 
-    iget-boolean p1, p0, Lcom/android/server/policy/vdw;->iQ:Z
+    iget-boolean p1, p0, Lcom/android/server/policy/vdw;->qQ:Z
 
     if-eqz p1, :cond_b
 
-    invoke-direct {p0}, Lcom/android/server/policy/vdw;->mq()Z
+    invoke-direct {p0}, Lcom/android/server/policy/vdw;->nq()Z
 
     move-result p1
 
@@ -1166,21 +1166,21 @@
     invoke-virtual {p1, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     :cond_b
-    iget p1, p0, Lcom/android/server/policy/vdw;->_P:I
+    iget p1, p0, Lcom/android/server/policy/vdw;->hQ:I
 
     sub-int/2addr p1, v3
 
-    iput p1, p0, Lcom/android/server/policy/vdw;->_P:I
+    iput p1, p0, Lcom/android/server/policy/vdw;->hQ:I
 
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->bQ:Ljava/util/ArrayList;
-
-    invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
-
-    iget-object p1, p0, Lcom/android/server/policy/vdw;->cQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->jQ:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    iget-object p0, p0, Lcom/android/server/policy/vdw;->dQ:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/policy/vdw;->kQ:Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
+
+    iget-object p0, p0, Lcom/android/server/policy/vdw;->lQ:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
@@ -1188,9 +1188,9 @@
 
     :cond_c
     :goto_2
-    iput-boolean v2, p0, Lcom/android/server/policy/vdw;->ZP:Z
+    iput-boolean v2, p0, Lcom/android/server/policy/vdw;->gQ:Z
 
-    iput v2, p0, Lcom/android/server/policy/vdw;->_P:I
+    iput v2, p0, Lcom/android/server/policy/vdw;->hQ:I
 
     :cond_d
     :goto_3

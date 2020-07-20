@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
-.field public static final enum UPDATE:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
+.field public static final enum Cza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
-.field public static final enum gza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
+.field public static final enum UPDATE:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->gza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->Cza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
     const/4 v0, 0x2
 
@@ -62,7 +62,7 @@
 
     aput-object v3, v0, v1
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->gza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->Cza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
     aput-object v1, v0, v2
 

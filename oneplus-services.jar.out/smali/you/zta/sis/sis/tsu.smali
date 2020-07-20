@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static am()[I
+.method public static bm()[I
     .locals 1
 
     const/16 v0, 0xe

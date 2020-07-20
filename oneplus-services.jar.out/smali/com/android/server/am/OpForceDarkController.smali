@@ -376,7 +376,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lcom/android/server/am/OpForceDarkController$zta;->Nc()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/server/am/OpForceDarkController$zta;->Mc()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1468,9 +1468,9 @@
 
     iput-object v0, p0, Lcom/android/server/am/OpForceDarkController;->mAppOps:Landroid/app/AppOpsManager;
 
-    new-instance v0, Lcom/android/server/am/t;
+    new-instance v0, Lcom/android/server/am/x;
 
-    invoke-direct {v0, p0}, Lcom/android/server/am/t;-><init>(Lcom/android/server/am/OpForceDarkController;)V
+    invoke-direct {v0, p0}, Lcom/android/server/am/x;-><init>(Lcom/android/server/am/OpForceDarkController;)V
 
     iput-object v0, p0, Lcom/android/server/am/OpForceDarkController;->mAppOpsChangedListener:Landroid/app/AppOpsManager$OnOpChangedListener;
 
@@ -1482,9 +1482,9 @@
 .method private initOnlineConfig()V
     .locals 5
 
-    new-instance v0, Lcom/android/server/am/u;
+    new-instance v0, Lcom/android/server/am/y;
 
-    invoke-direct {v0, p0}, Lcom/android/server/am/u;-><init>(Lcom/android/server/am/OpForceDarkController;)V
+    invoke-direct {v0, p0}, Lcom/android/server/am/y;-><init>(Lcom/android/server/am/OpForceDarkController;)V
 
     new-instance v1, Lcom/oneplus/config/ConfigObserver;
 
@@ -1868,7 +1868,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/OpForceDarkController;->mGeneralAppConfig:Lcom/android/server/am/OpForceDarkController$zta;
 
-    invoke-virtual {v1}, Lcom/android/server/am/OpForceDarkController$zta;->Nc()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/server/am/OpForceDarkController$zta;->Mc()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2571,7 +2571,7 @@
     goto :goto_2
 
     :cond_5
-    invoke-virtual {v2}, Lcom/android/server/am/OpForceDarkController$zta;->Qc()Z
+    invoke-virtual {v2}, Lcom/android/server/am/OpForceDarkController$zta;->Pc()Z
 
     move-result v0
 
@@ -3021,9 +3021,9 @@
     goto :goto_1
 
     :cond_2
-    new-instance p2, Lcom/android/server/am/s;
+    new-instance p2, Lcom/android/server/am/w;
 
-    invoke-direct {p2, p0, v0, p1}, Lcom/android/server/am/s;-><init>(Lcom/android/server/am/OpForceDarkController;ZLandroid/view/View;)V
+    invoke-direct {p2, p0, v0, p1}, Lcom/android/server/am/w;-><init>(Lcom/android/server/am/OpForceDarkController;ZLandroid/view/View;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
     :try_end_0
@@ -3108,7 +3108,7 @@
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p1, Lcom/android/server/am/OpForceDarkController$you;->ZD:Z
+    iput-boolean p2, p1, Lcom/android/server/am/OpForceDarkController$you;->gE:Z
 
     invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController;->parseOPFDVersionCode()V
 

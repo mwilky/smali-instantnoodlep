@@ -29,7 +29,7 @@
 
 .field public static final enum F:Lcom/android/server/am/OnePlusBGController$ProcType;
 
-.field public static final enum cza:Lcom/android/server/am/OnePlusBGController$ProcType;
+.field public static final enum yza:Lcom/android/server/am/OnePlusBGController$ProcType;
 
 
 # instance fields
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v4, v3, v3}, Lcom/android/server/am/OnePlusBGController$ProcType;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->cza:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$ProcType;->yza:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     const/4 v0, 0x3
 
@@ -82,7 +82,7 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->cza:Lcom/android/server/am/OnePlusBGController$ProcType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$ProcType;->yza:Lcom/android/server/am/OnePlusBGController$ProcType;
 
     aput-object v1, v0, v3
 

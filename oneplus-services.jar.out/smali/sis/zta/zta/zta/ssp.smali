@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public flags:I
+.field public BXa:I
 
-.field public gXa:I
+.field public flags:I
 
 .field public height:I
 
@@ -252,9 +252,9 @@
     return v1
 
     :cond_7
-    iget v2, p0, Lsis/zta/zta/zta/ssp;->gXa:I
+    iget v2, p0, Lsis/zta/zta/zta/ssp;->BXa:I
 
-    iget v3, p1, Lsis/zta/zta/zta/ssp;->gXa:I
+    iget v3, p1, Lsis/zta/zta/zta/ssp;->BXa:I
 
     if-eq v2, v3, :cond_8
 
@@ -374,7 +374,7 @@
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lsis/zta/zta/zta/ssp;->gXa:I
+    iget v1, p0, Lsis/zta/zta/zta/ssp;->BXa:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -474,7 +474,7 @@
 
     move-result v2
 
-    iput v2, p0, Lsis/zta/zta/zta/ssp;->gXa:I
+    iput v2, p0, Lsis/zta/zta/zta/ssp;->BXa:I
 
     const-wide/16 v2, 0x18
 
@@ -584,7 +584,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lsis/zta/zta/zta/ssp;->gXa:I
+    iget v1, p0, Lsis/zta/zta/zta/ssp;->BXa:I
 
     invoke-static {v1}, Lsis/zta/zta/zta/tsu;->toString(I)Ljava/lang/String;
 
@@ -658,7 +658,7 @@
 
     add-long/2addr v0, p2
 
-    iget v2, p0, Lsis/zta/zta/zta/ssp;->gXa:I
+    iget v2, p0, Lsis/zta/zta/zta/ssp;->BXa:I
 
     invoke-virtual {p1, v0, v1, v2}, Landroid/os/HwBlob;->putInt32(JI)V
 

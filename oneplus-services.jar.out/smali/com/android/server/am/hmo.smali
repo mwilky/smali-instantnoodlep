@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/OnePlusBGController;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/am/OnePlusBGController;->Hn()Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/android/server/am/OnePlusBGController$wtn;",
+        "Ljava/io/File;",
         ">;"
     }
 .end annotation
@@ -46,33 +46,29 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/OnePlusBGController$wtn;
+    check-cast p1, Ljava/io/File;
 
-    check-cast p2, Lcom/android/server/am/OnePlusBGController$wtn;
+    check-cast p2, Ljava/io/File;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/hmo;->zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/hmo;->zta(Ljava/io/File;Ljava/io/File;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
-    .locals 2
+.method public zta(Ljava/io/File;Ljava/io/File;)I
+    .locals 0
 
-    sget-object p0, Lcom/android/server/am/OnePlusBGController$MySipperType;->T:Lcom/android/server/am/OnePlusBGController$MySipperType;
+    invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
-    invoke-virtual {p2, p0}, Lcom/android/server/am/OnePlusBGController$wtn;->zta(Lcom/android/server/am/OnePlusBGController$MySipperType;)D
+    move-result-object p0
 
-    move-result-wide v0
+    invoke-virtual {p2}, Ljava/io/File;->getName()Ljava/lang/String;
 
-    sget-object p0, Lcom/android/server/am/OnePlusBGController$MySipperType;->T:Lcom/android/server/am/OnePlusBGController$MySipperType;
+    move-result-object p1
 
-    invoke-virtual {p1, p0}, Lcom/android/server/am/OnePlusBGController$wtn;->zta(Lcom/android/server/am/OnePlusBGController$MySipperType;)D
-
-    move-result-wide p0
-
-    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
+    invoke-virtual {p0, p1}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
     move-result p0
 

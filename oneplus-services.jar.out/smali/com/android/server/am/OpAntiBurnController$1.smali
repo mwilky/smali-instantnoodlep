@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/m;
+    value = Lcom/android/server/am/q;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,14 +23,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/m;
+.field final synthetic this$0:Lcom/android/server/am/q;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/m;)V
+.method constructor <init>(Lcom/android/server/am/q;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/OpAntiBurnController$1;->this$0:Lcom/android/server/am/m;
+    iput-object p1, p0, Lcom/android/server/am/OpAntiBurnController$1;->this$0:Lcom/android/server/am/q;
 
     invoke-direct {p0}, Ljava/util/HashSet;-><init>()V
 

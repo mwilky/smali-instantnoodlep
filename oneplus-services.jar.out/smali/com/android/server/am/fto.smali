@@ -3,26 +3,17 @@
 .source ""
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/io/FilenameFilter;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/OnePlusBGController;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/am/OnePlusBGController;->dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/android/server/am/OnePlusBGController$rtg;",
-        ">;"
-    }
 .end annotation
 
 
@@ -43,30 +34,23 @@
 
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/OnePlusBGController$rtg;
+    const-string p0, "bgc"
 
-    check-cast p2, Lcom/android/server/am/OnePlusBGController$rtg;
-
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/fto;->zta(Lcom/android/server/am/OnePlusBGController$rtg;Lcom/android/server/am/OnePlusBGController$rtg;)I
+    invoke-virtual {p2, p0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
 
     return p0
-.end method
 
-.method public zta(Lcom/android/server/am/OnePlusBGController$rtg;Lcom/android/server/am/OnePlusBGController$rtg;)I
-    .locals 2
-
-    iget-wide v0, p2, Lcom/android/server/am/OnePlusBGController$rtg;->zc:D
-
-    iget-wide p0, p1, Lcom/android/server/am/OnePlusBGController$rtg;->zc:D
-
-    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
-
-    move-result p0
+    :cond_0
+    const/4 p0, 0x0
 
     return p0
 .end method

@@ -4,17 +4,17 @@
 
 
 # instance fields
+.field private KRa:Ljava/math/BigInteger;
+
+.field private LRa:Ljava/math/BigInteger;
+
+.field private MRa:Ljava/math/BigInteger;
+
 .field private e:Ljava/math/BigInteger;
 
 .field private p:Ljava/math/BigInteger;
 
-.field private pRa:Ljava/math/BigInteger;
-
 .field private q:Ljava/math/BigInteger;
-
-.field private qRa:Ljava/math/BigInteger;
-
-.field private rRa:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -31,11 +31,11 @@
 
     iput-object p5, p0, Lorg/bouncycastle/crypto/wtn/cgv;->q:Ljava/math/BigInteger;
 
-    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cgv;->pRa:Ljava/math/BigInteger;
+    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cgv;->KRa:Ljava/math/BigInteger;
 
-    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cgv;->qRa:Ljava/math/BigInteger;
+    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cgv;->LRa:Ljava/math/BigInteger;
 
-    iput-object p8, p0, Lorg/bouncycastle/crypto/wtn/cgv;->rRa:Ljava/math/BigInteger;
+    iput-object p8, p0, Lorg/bouncycastle/crypto/wtn/cgv;->MRa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -66,18 +66,10 @@
     return-object p0
 .end method
 
-.method public jk()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->pRa:Ljava/math/BigInteger;
-
-    return-object p0
-.end method
-
 .method public kk()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->qRa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->KRa:Ljava/math/BigInteger;
 
     return-object p0
 .end method
@@ -85,7 +77,15 @@
 .method public lk()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->rRa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->LRa:Ljava/math/BigInteger;
+
+    return-object p0
+.end method
+
+.method public mk()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->MRa:Ljava/math/BigInteger;
 
     return-object p0
 .end method

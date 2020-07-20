@@ -171,7 +171,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/openid/cno;->Y(Z)V
+    invoke-virtual {p0, p1}, Lcom/oneplus/android/server/openid/cno;->Z(Z)V
 
     :cond_2
     return-void

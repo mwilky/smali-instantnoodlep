@@ -291,7 +291,7 @@
 
     const/4 p1, 0x7
 
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->bf()I
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->af()I
 
     move-result v1
 
@@ -456,7 +456,7 @@
     goto/16 :goto_9
 
     :pswitch_10
-    invoke-static {}, Lcom/oneplus/android/server/vdb;->cf()Z
+    invoke-static {}, Lcom/oneplus/android/server/vdb;->bf()Z
 
     move-result p1
 

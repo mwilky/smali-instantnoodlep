@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field private final UCa:Lorg/bouncycastle/asn1/x509/zta;
-
-.field private final VCa:Ljava/lang/String;
-
-.field private final WCa:Lorg/bouncycastle/asn1/bvj;
-
-.field private final XCa:Ljava/lang/String;
-
 .field private final keySize:I
 
+.field private final oDa:Lorg/bouncycastle/asn1/x509/zta;
+
+.field private final pDa:Ljava/lang/String;
+
 .field private params:Lorg/bouncycastle/asn1/dma/oif;
+
+.field private final qDa:Lorg/bouncycastle/asn1/bvj;
+
+.field private final rDa:Ljava/lang/String;
 
 
 # direct methods
@@ -40,15 +40,15 @@
 
     invoke-direct {v0, p1, v1}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->UCa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->oDa:Lorg/bouncycastle/asn1/x509/zta;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->VCa:Ljava/lang/String;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->pDa:Ljava/lang/String;
 
     iput p3, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->keySize:I
 
-    iput-object p4, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->WCa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p4, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->qDa:Lorg/bouncycastle/asn1/bvj;
 
-    iput-object p5, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->XCa:Ljava/lang/String;
+    iput-object p5, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->rDa:Ljava/lang/String;
 
     return-void
 .end method
@@ -126,7 +126,7 @@
 .method protected engineGetEncoded(Ljava/lang/String;)[B
     .locals 0
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->Aa(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -190,7 +190,7 @@
 
     iget v6, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->keySize:I
 
-    iget-object v7, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->UCa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v7, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->oDa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-direct {v4, v5, p1, v6, v7}, Lorg/bouncycastle/asn1/dma/bvj;-><init>([BIILorg/bouncycastle/asn1/x509/zta;)V
 
@@ -198,7 +198,7 @@
 
     new-instance p1, Lorg/bouncycastle/asn1/dma/wtn;
 
-    iget-object v3, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->WCa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->qDa:Lorg/bouncycastle/asn1/bvj;
 
     new-instance v4, Lorg/bouncycastle/asn1/C;
 
@@ -247,7 +247,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Kh()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -303,7 +303,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/you;->Aa(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -334,7 +334,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->VCa:Ljava/lang/String;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->pDa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -342,7 +342,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->XCa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->rDa:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -371,7 +371,7 @@
 
     iget-object p1, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->params:Lorg/bouncycastle/asn1/dma/oif;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/dma;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/oif;->ji()Lorg/bouncycastle/asn1/dma/dma;
 
     move-result-object p1
 
@@ -383,7 +383,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/jcajce/you/tsu/gck$zta;->params:Lorg/bouncycastle/asn1/dma/oif;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/oif;->hi()Lorg/bouncycastle/asn1/dma/wtn;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/wtn;
 
     move-result-object p0
 

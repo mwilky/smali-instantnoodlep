@@ -66,7 +66,7 @@
 
 
 # virtual methods
-.method public Nf()Ljava/lang/String;
+.method public Mf()Ljava/lang/String;
     .locals 0
 
     const-string p0, "wechatpay"

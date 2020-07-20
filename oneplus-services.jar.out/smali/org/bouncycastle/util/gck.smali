@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final BNa:Ljava/lang/ThreadLocal;
+.field private static final WNa:Ljava/lang/ThreadLocal;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
+    sput-object v0, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
 
     return-void
 .end method
@@ -28,7 +28,7 @@
     return-void
 .end method
 
-.method private static Hd(Ljava/lang/String;)Ljava/lang/String;
+.method private static Jd(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/util/wtn;
@@ -44,10 +44,10 @@
     return-object p0
 .end method
 
-.method public static Ya(Ljava/lang/String;)Ljava/math/BigInteger;
+.method public static Za(Ljava/lang/String;)Ljava/math/BigInteger;
     .locals 1
 
-    invoke-static {p0}, Lorg/bouncycastle/util/gck;->Hd(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/bouncycastle/util/gck;->Jd(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -65,7 +65,7 @@
     return-object p0
 .end method
 
-.method public static Za(Ljava/lang/String;)Ljava/util/Set;
+.method public static _a(Ljava/lang/String;)Ljava/util/Set;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -82,7 +82,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    invoke-static {p0}, Lorg/bouncycastle/util/gck;->Hd(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/bouncycastle/util/gck;->Jd(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -125,13 +125,13 @@
     return-object p0
 .end method
 
-.method public static _a(Ljava/lang/String;)Z
+.method public static ab(Ljava/lang/String;)Z
     .locals 2
 
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-static {p0}, Lorg/bouncycastle/util/gck;->Hd(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lorg/bouncycastle/util/gck;->Jd(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -156,14 +156,22 @@
     return v0
 .end method
 
-.method public static ab(Ljava/lang/String;)Z
+.method static synthetic access$000()Ljava/lang/ThreadLocal;
+    .locals 1
+
+    sget-object v0, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
+
+    return-object v0
+.end method
+
+.method public static bb(Ljava/lang/String;)Z
     .locals 2
 
-    invoke-static {p0}, Lorg/bouncycastle/util/gck;->_a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/gck;->ab(Ljava/lang/String;)Z
 
     move-result v0
 
-    sget-object v1, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
+    sget-object v1, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -186,14 +194,14 @@
 
     if-eqz p0, :cond_1
 
-    sget-object p0, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
+    sget-object p0, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0}, Ljava/lang/ThreadLocal;->remove()V
 
     goto :goto_0
 
     :cond_1
-    sget-object p0, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
+    sget-object p0, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
@@ -201,22 +209,14 @@
     return v0
 .end method
 
-.method static synthetic access$000()Ljava/lang/ThreadLocal;
-    .locals 1
-
-    sget-object v0, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
-
-    return-object v0
-.end method
-
 .method public static sis(Ljava/lang/String;Z)Z
     .locals 2
 
-    invoke-static {p0}, Lorg/bouncycastle/util/gck;->_a(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/gck;->ab(Ljava/lang/String;)Z
 
     move-result v0
 
-    sget-object v1, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
+    sget-object v1, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -243,7 +243,7 @@
     :goto_0
     invoke-interface {v1, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p0, Lorg/bouncycastle/util/gck;->BNa:Ljava/lang/ThreadLocal;
+    sget-object p0, Lorg/bouncycastle/util/gck;->WNa:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 

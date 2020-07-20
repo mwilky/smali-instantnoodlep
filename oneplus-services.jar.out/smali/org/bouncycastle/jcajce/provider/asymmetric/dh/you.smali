@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field QCa:Ljavax/crypto/spec/DHParameterSpec;
+.field kDa:Ljavax/crypto/spec/DHParameterSpec;
 
 
 # direct methods
@@ -18,24 +18,52 @@
 
 
 # virtual methods
+.method protected Aa(Ljava/lang/String;)Z
+    .locals 0
+
+    if-eqz p1, :cond_1
+
+    const-string p0, "ASN.1"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method protected engineGetEncoded()[B
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/asn1/dma/kth;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->QCa:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->kDa:Ljavax/crypto/spec/DHParameterSpec;
 
     invoke-virtual {v1}, Ljavax/crypto/spec/DHParameterSpec;->getP()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->QCa:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->kDa:Ljavax/crypto/spec/DHParameterSpec;
 
     invoke-virtual {v2}, Ljavax/crypto/spec/DHParameterSpec;->getG()Ljava/math/BigInteger;
 
     move-result-object v2
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->QCa:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->kDa:Ljavax/crypto/spec/DHParameterSpec;
 
     invoke-virtual {p0}, Ljavax/crypto/spec/DHParameterSpec;->getL()I
 
@@ -67,7 +95,7 @@
 .method protected engineGetEncoded(Ljava/lang/String;)[B
     .locals 0
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Aa(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -125,7 +153,7 @@
 
     check-cast p1, Ljavax/crypto/spec/DHParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->QCa:Ljavax/crypto/spec/DHParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->kDa:Ljavax/crypto/spec/DHParameterSpec;
 
     return-void
 
@@ -181,7 +209,7 @@
     invoke-direct {v1, v2, v3, p1}, Ljavax/crypto/spec/DHParameterSpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;I)V
 
     :goto_0
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->QCa:Ljavax/crypto/spec/DHParameterSpec;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->kDa:Ljavax/crypto/spec/DHParameterSpec;
 
     goto :goto_1
 
@@ -229,7 +257,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->Aa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -269,34 +297,6 @@
     return-object p0
 .end method
 
-.method protected za(Ljava/lang/String;)Z
-    .locals 0
-
-    if-eqz p1, :cond_1
-
-    const-string p0, "ASN.1"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
-.end method
-
 .method protected zta(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
@@ -326,7 +326,7 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->QCa:Ljavax/crypto/spec/DHParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dh/you;->kDa:Ljavax/crypto/spec/DHParameterSpec;
 
     return-object p0
 .end method

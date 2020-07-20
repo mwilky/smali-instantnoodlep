@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method private Id(Ljava/lang/String;)I
+.method private Kd(Ljava/lang/String;)I
     .locals 0
 
     if-nez p1, :cond_0
@@ -39,7 +39,7 @@
     return p0
 .end method
 
-.method private j(Ljava/lang/String;Ljava/lang/String;)Z
+.method private k(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 0
 
     if-ne p1, p2, :cond_0
@@ -91,7 +91,7 @@
 
     iget-object v2, p1, Lorg/bouncycastle/util/io/pem/zta;->name:Ljava/lang/String;
 
-    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/util/io/pem/zta;->j(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/util/io/pem/zta;->k(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -101,7 +101,7 @@
 
     iget-object p1, p1, Lorg/bouncycastle/util/io/pem/zta;->value:Ljava/lang/String;
 
-    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/util/io/pem/zta;->j(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/util/io/pem/zta;->k(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -135,13 +135,13 @@
 
     iget-object v0, p0, Lorg/bouncycastle/util/io/pem/zta;->name:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/zta;->Id(Ljava/lang/String;)I
+    invoke-direct {p0, v0}, Lorg/bouncycastle/util/io/pem/zta;->Kd(Ljava/lang/String;)I
 
     move-result v0
 
     iget-object v1, p0, Lorg/bouncycastle/util/io/pem/zta;->value:Ljava/lang/String;
 
-    invoke-direct {p0, v1}, Lorg/bouncycastle/util/io/pem/zta;->Id(Ljava/lang/String;)I
+    invoke-direct {p0, v1}, Lorg/bouncycastle/util/io/pem/zta;->Kd(Ljava/lang/String;)I
 
     move-result p0
 

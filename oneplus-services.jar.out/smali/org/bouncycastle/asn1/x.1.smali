@@ -30,7 +30,7 @@
 
     if-eqz p2, :cond_1
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/x;->Ea(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/asn1/x;->Fa(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -77,7 +77,7 @@
     return-void
 .end method
 
-.method public static Ea(Ljava/lang/String;)Z
+.method public static Fa(Ljava/lang/String;)Z
     .locals 4
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -297,7 +297,7 @@
     return-object p0
 .end method
 
-.method uh()I
+.method vh()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/x;->string:[B

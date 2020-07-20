@@ -155,11 +155,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Jj()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
 
     move-result-object p1
 
@@ -232,11 +232,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Jj()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/crypto/wtn/ibl;->Ij()Ljava/math/BigInteger;
 
     move-result-object p1
 
@@ -273,11 +273,11 @@
 
     move-result-object v0
 
-    invoke-virtual {p4}, Lyou/zta/you/you/rtg;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {p4}, Lyou/zta/you/you/rtg;->Jj()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    invoke-virtual {p4}, Lyou/zta/you/you/rtg;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {p4}, Lyou/zta/you/you/rtg;->Ij()Ljava/math/BigInteger;
 
     move-result-object p4
 
@@ -542,7 +542,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/ibl/veq;-><init>(Lorg/bouncycastle/asn1/vdb;)V
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/veq;->Dj()Z
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/veq;->Ej()Z
 
     move-result v1
 
@@ -586,11 +586,11 @@
 
     move-result-object v7
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ibl/vju;->Jj()Ljava/math/BigInteger;
 
     move-result-object v8
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ibl/vju;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
 
     move-result-object v9
 
@@ -604,7 +604,7 @@
     goto :goto_1
 
     :cond_0
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/veq;->Cj()Z
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/veq;->Dj()Z
 
     move-result v1
 
@@ -647,11 +647,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Jj()Ljava/math/BigInteger;
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Hj()Ljava/math/BigInteger;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/ibl/vju;->Ij()Ljava/math/BigInteger;
 
     move-result-object v0
 
@@ -752,7 +752,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->mi()Lorg/bouncycastle/asn1/n;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->oi()Lorg/bouncycastle/asn1/n;
 
     move-result-object p0
     :try_end_0
@@ -812,11 +812,11 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->yk()Lyou/zta/you/you/rtg;
+    invoke-virtual {p0}, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->zk()Lyou/zta/you/you/rtg;
 
     move-result-object p0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->yk()Lyou/zta/you/you/rtg;
+    invoke-virtual {p1}, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->zk()Lyou/zta/you/you/rtg;
 
     move-result-object p1
 
@@ -855,7 +855,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/bio;->Pa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+    invoke-static {v0}, Lorg/bouncycastle/jcajce/provider/asymmetric/util/bio;->Qa(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -1068,7 +1068,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->yk()Lyou/zta/you/you/rtg;
+    invoke-virtual {p0}, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->zk()Lyou/zta/you/you/rtg;
 
     move-result-object p0
 
@@ -1141,7 +1141,7 @@
     return-object p0
 .end method
 
-.method yk()Lyou/zta/you/you/rtg;
+.method zk()Lyou/zta/you/you/rtg;
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/jce/provider/JCEECPrivateKey;->ecSpec:Ljava/security/spec/ECParameterSpec;

@@ -168,7 +168,7 @@
     return-void
 .end method
 
-.method private Fm()I
+.method private Gm()I
     .locals 6
 
     const-string p0, "getFastChargeType io close exception :"
@@ -407,7 +407,7 @@
     throw v1
 .end method
 
-.method private Gm()Z
+.method private Hm()Z
     .locals 6
 
     const-string p0, "Failure in reading charger type"
@@ -473,7 +473,7 @@
     return v2
 .end method
 
-.method private Hm()V
+.method private Im()V
     .locals 4
 
     sget-object p0, Lcom/android/server/e;->mContext:Landroid/content/Context;
@@ -547,7 +547,7 @@
     return-void
 .end method
 
-.method private Im()V
+.method private Jm()V
     .locals 3
 
     iget-boolean v0, p0, Lcom/android/server/e;->gi:Z
@@ -556,7 +556,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/e;->Gm()Z
+    invoke-direct {p0}, Lcom/android/server/e;->Hm()Z
 
     move-result v0
 
@@ -616,7 +616,7 @@
     iput-boolean v1, p0, Lcom/android/server/e;->ji:Z
 
     :goto_2
-    invoke-direct {p0}, Lcom/android/server/e;->Fm()I
+    invoke-direct {p0}, Lcom/android/server/e;->Gm()I
 
     move-result v0
 
@@ -677,7 +677,7 @@
 .method static synthetic bio(Lcom/android/server/e;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/e;->Hm()V
+    invoke-direct {p0}, Lcom/android/server/e;->Im()V
 
     return-void
 .end method
@@ -706,7 +706,7 @@
     return-object p0
 .end method
 
-.method private obl(Ljava/lang/String;Ljava/lang/String;)V
+.method private oxb(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
 
     const-string p0, "write sucess!"
@@ -929,7 +929,7 @@
 
     const-string v8, "/proc/chg_skin_thermal_thd"
 
-    invoke-direct {p0, v8, v4}, Lcom/android/server/e;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v8, v4}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     iput v5, p0, Lcom/android/server/e;->zi:I
 
@@ -1016,7 +1016,7 @@
 
     const-string v6, "/proc/wireless/fast_skin_threld"
 
-    invoke-direct {p0, v6, v4}, Lcom/android/server/e;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v6, v4}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     iput v5, p0, Lcom/android/server/e;->xi:I
 
@@ -1122,7 +1122,7 @@
 .method static synthetic zta(Lcom/android/server/e;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/server/e;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1258,7 +1258,7 @@
 
     iput-boolean v4, v0, Lcom/android/server/e;->bi:Z
 
-    invoke-direct {v0, v8, v11}, Lcom/android/server/e;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v8, v11}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1319,7 +1319,7 @@
 
     iput-boolean v4, v0, Lcom/android/server/e;->bi:Z
 
-    invoke-direct {v0, v8, v11}, Lcom/android/server/e;->obl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v8, v11}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1965,7 +1965,7 @@
 
     invoke-virtual {v3, v4, v1, v2, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    invoke-direct {p0}, Lcom/android/server/e;->Hm()V
+    invoke-direct {p0}, Lcom/android/server/e;->Im()V
 
     monitor-exit p1
 
@@ -2129,7 +2129,7 @@
 
     iput v0, p0, Lcom/android/server/e;->mBatteryStatus:I
 
-    invoke-direct {p0}, Lcom/android/server/e;->Im()V
+    invoke-direct {p0}, Lcom/android/server/e;->Jm()V
 
     invoke-static {}, Lcom/android/server/backlight/OpBacklightManager;->getInstance()Lcom/android/server/backlight/OpBacklightManager;
 

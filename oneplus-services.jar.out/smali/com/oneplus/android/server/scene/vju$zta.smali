@@ -54,7 +54,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/vju$zta;->this$0:Lcom/oneplus/android/server/scene/vju;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/vju;->gg()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/scene/vju;->hg()V
 
     :cond_0
     iget-object p0, p0, Lcom/oneplus/android/server/scene/vju$zta;->this$0:Lcom/oneplus/android/server/scene/vju;

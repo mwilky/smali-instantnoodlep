@@ -144,12 +144,12 @@
 .method static synthetic cno(Lcom/android/server/ywr;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/ywr;->sm()V
+    invoke-direct {p0}, Lcom/android/server/ywr;->tm()V
 
     return-void
 .end method
 
-.method private hb(Ljava/lang/String;)V
+.method private ib(Ljava/lang/String;)V
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -315,7 +315,7 @@
     return-object p0
 .end method
 
-.method private qm()V
+.method private rm()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/ywr;->ye:Z
@@ -377,7 +377,27 @@
     return-void
 .end method
 
-.method private rm()V
+.method static synthetic rtg(Lcom/android/server/ywr;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/ywr;->ve:I
+
+    return p0
+.end method
+
+.method static synthetic sis(Lcom/android/server/ywr;)I
+    .locals 2
+
+    iget v0, p0, Lcom/android/server/ywr;->we:I
+
+    add-int/lit8 v1, v0, -0x1
+
+    iput v1, p0, Lcom/android/server/ywr;->we:I
+
+    return v0
+.end method
+
+.method private sm()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/ywr;->ye:Z
@@ -463,27 +483,15 @@
     return-void
 .end method
 
-.method static synthetic rtg(Lcom/android/server/ywr;)I
+.method static synthetic ssp(Lcom/android/server/ywr;)V
     .locals 0
 
-    iget p0, p0, Lcom/android/server/ywr;->ve:I
+    invoke-direct {p0}, Lcom/android/server/ywr;->sm()V
 
-    return p0
+    return-void
 .end method
 
-.method static synthetic sis(Lcom/android/server/ywr;)I
-    .locals 2
-
-    iget v0, p0, Lcom/android/server/ywr;->we:I
-
-    add-int/lit8 v1, v0, -0x1
-
-    iput v1, p0, Lcom/android/server/ywr;->we:I
-
-    return v0
-.end method
-
-.method private sm()V
+.method private tm()V
     .locals 6
 
     const-string p0, "installAPKs: wait internalSD ready for totally "
@@ -708,14 +716,6 @@
     throw v1
 .end method
 
-.method static synthetic ssp(Lcom/android/server/ywr;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/ywr;->rm()V
-
-    return-void
-.end method
-
 .method static synthetic tsu(Lcom/android/server/ywr;)Ljava/util/HashMap;
     .locals 0
 
@@ -748,7 +748,7 @@
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lcom/android/server/ywr;->hb(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/server/ywr;->ib(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -899,7 +899,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/ywr;->qm()V
+    invoke-direct {p0}, Lcom/android/server/ywr;->rm()V
 
     iget v2, p0, Lcom/android/server/ywr;->we:I
 

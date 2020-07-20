@@ -17,23 +17,23 @@
 # static fields
 .field protected static final DEBUG:Z
 
-.field private static final Ssa:Ljava/lang/String; = "com.heytap.openid"
-
 .field protected static final TAG:Ljava/lang/String; = "OpenIdManager"
 
-.field private static final Tsa:Ljava/lang/String; = "oneplus_openid_toggle"
+.field private static final kta:Ljava/lang/String; = "com.heytap.openid"
 
-.field private static final Usa:Landroid/net/Uri;
+.field private static final lta:Ljava/lang/String; = "oneplus_openid_toggle"
 
-.field private static final Vsa:I = 0x1
+.field private static final mta:Landroid/net/Uri;
+
+.field private static final nta:I = 0x1
 
 
 # instance fields
-.field private Psa:Lcom/oneplus/android/server/openid/cno;
+.field private hta:Lcom/oneplus/android/server/openid/cno;
 
-.field private Qsa:Lcom/oneplus/android/server/openid/kth;
+.field private ita:Lcom/oneplus/android/server/openid/kth;
 
-.field private Rsa:Z
+.field private jta:Z
 
 .field private mBinder:Landroid/os/IBinder;
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/openid/sis;->Usa:Landroid/net/Uri;
+    sput-object v0, Lcom/oneplus/android/server/openid/sis;->mta:Landroid/net/Uri;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/openid/sis;->Rsa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/openid/sis;->jta:Z
 
     new-instance v0, Lcom/oneplus/android/server/openid/OpOpenIdManagerService$1;
 
@@ -92,7 +92,7 @@
 
     invoke-direct {p1, v0}, Lcom/oneplus/android/server/openid/cno;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/openid/sis;->Psa:Lcom/oneplus/android/server/openid/cno;
+    iput-object p1, p0, Lcom/oneplus/android/server/openid/sis;->hta:Lcom/oneplus/android/server/openid/cno;
 
     new-instance p1, Lcom/oneplus/android/server/openid/kth;
 
@@ -104,7 +104,7 @@
 
     invoke-direct {p1, v0, v1}, Lcom/oneplus/android/server/openid/kth;-><init>(Landroid/content/Context;Lcom/oneplus/android/server/openid/kth$zta;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/openid/sis;->Qsa:Lcom/oneplus/android/server/openid/kth;
+    iput-object p1, p0, Lcom/oneplus/android/server/openid/sis;->ita:Lcom/oneplus/android/server/openid/kth;
 
     new-instance p1, Lcom/oneplus/android/server/openid/sis$zta;
 
@@ -120,7 +120,7 @@
 .method static synthetic access$600()Landroid/net/Uri;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/android/server/openid/sis;->Usa:Landroid/net/Uri;
+    sget-object v0, Lcom/oneplus/android/server/openid/sis;->mta:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -166,7 +166,7 @@
 
     invoke-static {v0}, Lcom/oneplus/android/server/openid/sis;->enforceSystemOrRoot(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->Psa:Lcom/oneplus/android/server/openid/cno;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->hta:Lcom/oneplus/android/server/openid/cno;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/oneplus/android/server/openid/cno;->clearOpenId(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -241,7 +241,7 @@
 
     invoke-static {v0}, Lcom/oneplus/android/server/openid/sis;->enforceSystemOrRoot(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->Psa:Lcom/oneplus/android/server/openid/cno;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->hta:Lcom/oneplus/android/server/openid/cno;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/oneplus/android/server/openid/cno;->getOpenId(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
@@ -253,7 +253,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/openid/sis;)Lcom/oneplus/android/server/openid/kth;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->Qsa:Lcom/oneplus/android/server/openid/kth;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->ita:Lcom/oneplus/android/server/openid/kth;
 
     return-object p0
 .end method
@@ -269,7 +269,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/openid/sis;)Lcom/oneplus/android/server/openid/cno;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->Psa:Lcom/oneplus/android/server/openid/cno;
+    iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->hta:Lcom/oneplus/android/server/openid/cno;
 
     return-object p0
 .end method
@@ -295,14 +295,14 @@
 .method static synthetic zta(Lcom/oneplus/android/server/openid/sis;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/openid/sis;->Rsa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/openid/sis;->jta:Z
 
     return p0
 .end method
 
 
 # virtual methods
-.method public synthetic X(Z)V
+.method public synthetic Y(Z)V
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -333,7 +333,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/openid/sis;->Rsa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/openid/sis;->jta:Z
 
     return-void
 .end method
@@ -353,13 +353,13 @@
 .method public onBootComplete()V
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/sis;->Psa:Lcom/oneplus/android/server/openid/cno;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/sis;->hta:Lcom/oneplus/android/server/openid/cno;
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/openid/cno;->init()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/openid/sis;->Qsa:Lcom/oneplus/android/server/openid/kth;
+    iget-object v0, p0, Lcom/oneplus/android/server/openid/sis;->ita:Lcom/oneplus/android/server/openid/kth;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/openid/kth;->bg()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/openid/kth;->cg()V
 
     iget-object p0, p0, Lcom/oneplus/android/server/openid/sis;->mSettingsObserver:Lcom/oneplus/android/server/openid/sis$zta;
 

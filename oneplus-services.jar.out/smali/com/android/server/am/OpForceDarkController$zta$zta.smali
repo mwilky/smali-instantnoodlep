@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field QD:Lcom/android/server/am/OpForceDarkController$you;
+.field YD:Lcom/android/server/am/OpForceDarkController$you;
 
-.field RD:I
+.field ZD:I
 
-.field SD:Z
+.field _D:Z
 
 .field final synthetic this$1:Lcom/android/server/am/OpForceDarkController$zta;
 
@@ -34,11 +34,11 @@
 
     const/4 p1, -0x1
 
-    iput p1, p0, Lcom/android/server/am/OpForceDarkController$zta$zta;->RD:I
+    iput p1, p0, Lcom/android/server/am/OpForceDarkController$zta$zta;->ZD:I
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/am/OpForceDarkController$zta$zta;->SD:Z
+    iput-boolean p1, p0, Lcom/android/server/am/OpForceDarkController$zta$zta;->_D:Z
 
     return-void
 .end method

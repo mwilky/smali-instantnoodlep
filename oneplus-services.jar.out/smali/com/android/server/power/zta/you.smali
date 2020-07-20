@@ -6,21 +6,21 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "OPFirewallUtils"
 
-.field public static final WU:Ljava/lang/String; = "com.oneplus.security.database.SafeProvider"
-
-.field public static final XU:Landroid/net/Uri;
-
-.field public static final YU:Ljava/lang/String; = "network_restrict"
-
-.field public static final ZU:Landroid/net/Uri;
-
 .field public static final _ID:Ljava/lang/String; = "_id"
 
-.field public static final _U:Ljava/lang/String; = "pkg"
+.field public static final eV:Ljava/lang/String; = "com.oneplus.security.database.SafeProvider"
 
-.field public static final aV:Ljava/lang/String; = "mobile"
+.field public static final fV:Landroid/net/Uri;
 
-.field public static final bV:Ljava/lang/String; = "wlan"
+.field public static final gV:Ljava/lang/String; = "network_restrict"
+
+.field public static final hV:Landroid/net/Uri;
+
+.field public static final iV:Ljava/lang/String; = "pkg"
+
+.field public static final jV:Ljava/lang/String; = "mobile"
+
+.field public static final kV:Ljava/lang/String; = "wlan"
 
 
 # direct methods
@@ -33,9 +33,9 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/power/zta/you;->XU:Landroid/net/Uri;
+    sput-object v0, Lcom/android/server/power/zta/you;->fV:Landroid/net/Uri;
 
-    sget-object v0, Lcom/android/server/power/zta/you;->XU:Landroid/net/Uri;
+    sget-object v0, Lcom/android/server/power/zta/you;->fV:Landroid/net/Uri;
 
     const-string v1, "network_restrict"
 
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/power/zta/you;->ZU:Landroid/net/Uri;
+    sput-object v0, Lcom/android/server/power/zta/you;->hV:Landroid/net/Uri;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/server/power/zta/you;->ZU:Landroid/net/Uri;
+    sget-object v2, Lcom/android/server/power/zta/you;->hV:Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -274,7 +274,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/server/power/zta/you;->ZU:Landroid/net/Uri;
+    sget-object v2, Lcom/android/server/power/zta/you;->hV:Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -439,7 +439,7 @@
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->ie()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->he()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -449,7 +449,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->ie()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/android/server/power/zta/zta;->he()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -532,7 +532,7 @@
 
     move-result-object p0
 
-    sget-object p1, Lcom/android/server/power/zta/you;->ZU:Landroid/net/Uri;
+    sget-object p1, Lcom/android/server/power/zta/you;->hV:Landroid/net/Uri;
 
     invoke-virtual {p0, p1, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
@@ -543,7 +543,7 @@
 
     move-result-object p0
 
-    sget-object v1, Lcom/android/server/power/zta/you;->ZU:Landroid/net/Uri;
+    sget-object v1, Lcom/android/server/power/zta/you;->hV:Landroid/net/Uri;
 
     const-string v4, "pkg = ? "
 

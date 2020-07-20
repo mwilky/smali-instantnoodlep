@@ -46,7 +46,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lcom/android/server/engineer/oif;->vd()Z
+    invoke-static {}, Lcom/android/server/engineer/oif;->ud()Z
 
     move-result p0
 

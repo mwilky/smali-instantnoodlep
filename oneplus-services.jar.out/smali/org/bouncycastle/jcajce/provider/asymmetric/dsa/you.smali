@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field QCa:Ljava/security/spec/DSAParameterSpec;
+.field kDa:Ljava/security/spec/DSAParameterSpec;
 
 
 # direct methods
@@ -18,24 +18,52 @@
 
 
 # virtual methods
+.method protected Aa(Ljava/lang/String;)Z
+    .locals 0
+
+    if-eqz p1, :cond_1
+
+    const-string p0, "ASN.1"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method protected engineGetEncoded()[B
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/ywr;
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->QCa:Ljava/security/spec/DSAParameterSpec;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->kDa:Ljava/security/spec/DSAParameterSpec;
 
     invoke-virtual {v1}, Ljava/security/spec/DSAParameterSpec;->getP()Ljava/math/BigInteger;
 
     move-result-object v1
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->QCa:Ljava/security/spec/DSAParameterSpec;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->kDa:Ljava/security/spec/DSAParameterSpec;
 
     invoke-virtual {v2}, Ljava/security/spec/DSAParameterSpec;->getQ()Ljava/math/BigInteger;
 
     move-result-object v2
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->QCa:Ljava/security/spec/DSAParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->kDa:Ljava/security/spec/DSAParameterSpec;
 
     invoke-virtual {p0}, Ljava/security/spec/DSAParameterSpec;->getG()Ljava/math/BigInteger;
 
@@ -67,7 +95,7 @@
 .method protected engineGetEncoded(Ljava/lang/String;)[B
     .locals 0
 
-    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Aa(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -125,7 +153,7 @@
 
     check-cast p1, Ljava/security/spec/DSAParameterSpec;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->QCa:Ljava/security/spec/DSAParameterSpec;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->kDa:Ljava/security/spec/DSAParameterSpec;
 
     return-void
 
@@ -174,7 +202,7 @@
 
     invoke-direct {v1, v2, v3, p1}, Ljava/security/spec/DSAParameterSpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
 
-    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->QCa:Ljava/security/spec/DSAParameterSpec;
+    iput-object v1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->kDa:Ljava/security/spec/DSAParameterSpec;
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
@@ -204,7 +232,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->za(Ljava/lang/String;)Z
+    invoke-virtual {p0, p2}, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->Aa(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -256,34 +284,6 @@
     return-object p0
 .end method
 
-.method protected za(Ljava/lang/String;)Z
-    .locals 0
-
-    if-eqz p1, :cond_1
-
-    const-string p0, "ASN.1"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
-.end method
-
 .method protected zta(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
@@ -313,7 +313,7 @@
 
     :cond_1
     :goto_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->QCa:Ljava/security/spec/DSAParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/dsa/you;->kDa:Ljava/security/spec/DSAParameterSpec;
 
     return-object p0
 .end method

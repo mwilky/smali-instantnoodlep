@@ -431,7 +431,34 @@
     return-void
 .end method
 
-.method private Am()J
+.method private Am()Z
+    .locals 3
+
+    iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    const-string v1, "driving_mode_state"
+
+    const/4 v2, -0x2
+
+    invoke-static {p0, v1, v0, v2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+
+    move-result p0
+
+    if-lez p0, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    return v0
+.end method
+
+.method private Bm()J
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/qeg;->oh:Ljava/lang/Object;
@@ -455,7 +482,7 @@
     throw p0
 .end method
 
-.method private Bm()Z
+.method private Cm()Z
     .locals 4
 
     iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
@@ -502,7 +529,7 @@
     return p0
 .end method
 
-.method private Cm()Z
+.method private Dm()Z
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
@@ -528,7 +555,7 @@
     return p0
 .end method
 
-.method private Dm()Z
+.method private Em()Z
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/qeg;->oh:Ljava/lang/Object;
@@ -552,7 +579,7 @@
     throw p0
 .end method
 
-.method private declared-synchronized Em()V
+.method private declared-synchronized Fm()V
     .locals 6
 
     monitor-enter p0
@@ -665,6 +692,235 @@
     sget-boolean v0, Lcom/android/server/qeg;->DBG:Z
 
     return v0
+.end method
+
+.method private cjf(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 6
+
+    const-string p0, "IO close failed : path="
+
+    const-string v0, ",ex->"
+
+    const-string v1, "CommonFrontMonitor"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :try_start_0
+    new-instance v4, Ljava/io/File;
+
+    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Exception : file not exits :"
+
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return v2
+
+    :cond_0
+    new-instance v4, Ljava/io/FileOutputStream;
+
+    invoke-direct {v4, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    :try_start_1
+    invoke-virtual {p2}, Ljava/lang/String;->getBytes()[B
+
+    move-result-object v3
+
+    invoke-virtual {v4, v3}, Ljava/io/FileOutputStream;->write([B)V
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "echo path = "
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, ", "
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
+
+    const/4 v2, 0x1
+
+    goto :goto_2
+
+    :catch_0
+    move-exception p2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p2
+
+    move-object v3, v4
+
+    goto :goto_3
+
+    :catch_1
+    move-exception p2
+
+    move-object v3, v4
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p2
+
+    goto :goto_3
+
+    :catch_2
+    move-exception p2
+
+    :goto_0
+    :try_start_3
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "echo failed : path="
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    if-eqz v3, :cond_1
+
+    :try_start_4
+    invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
+
+    goto :goto_2
+
+    :catch_3
+    move-exception p2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    :goto_1
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    :goto_2
+    return v2
+
+    :goto_3
+    if-eqz v3, :cond_2
+
+    :try_start_5
+    invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_4
+
+    goto :goto_4
+
+    :catch_4
+    move-exception v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    :goto_4
+    throw p2
 .end method
 
 .method private cno(Lorg/json/JSONArray;)V
@@ -964,7 +1220,7 @@
     return-object v0
 .end method
 
-.method private ib(Ljava/lang/String;)Z
+.method private jb(Ljava/lang/String;)Z
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/qeg;->oh:Ljava/lang/Object;
@@ -990,235 +1246,6 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p0
-.end method
-
-.method private oxb(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 6
-
-    const-string p0, "IO close failed : path="
-
-    const-string v0, ",ex->"
-
-    const-string v1, "CommonFrontMonitor"
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    :try_start_0
-    new-instance v4, Ljava/io/File;
-
-    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    move-result v4
-
-    if-nez v4, :cond_0
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "Exception : file not exits :"
-
-    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {v1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return v2
-
-    :cond_0
-    new-instance v4, Ljava/io/FileOutputStream;
-
-    invoke-direct {v4, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    :try_start_1
-    invoke-virtual {p2}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object v3
-
-    invoke-virtual {v4, v3}, Ljava/io/FileOutputStream;->write([B)V
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "echo path = "
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v5, ", "
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {v1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    invoke-virtual {v4}, Ljava/io/FileOutputStream;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
-
-    const/4 v2, 0x1
-
-    goto :goto_2
-
-    :catch_0
-    move-exception p2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception p2
-
-    move-object v3, v4
-
-    goto :goto_3
-
-    :catch_1
-    move-exception p2
-
-    move-object v3, v4
-
-    goto :goto_0
-
-    :catchall_1
-    move-exception p2
-
-    goto :goto_3
-
-    :catch_2
-    move-exception p2
-
-    :goto_0
-    :try_start_3
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "echo failed : path="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {v1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    if-eqz v3, :cond_1
-
-    :try_start_4
-    invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-
-    goto :goto_2
-
-    :catch_3
-    move-exception p2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    :goto_1
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    :goto_2
-    return v2
-
-    :goto_3
-    if-eqz v3, :cond_2
-
-    :try_start_5
-    invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_4
-
-    goto :goto_4
-
-    :catch_4
-    move-exception v2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
-    :goto_4
-    throw p2
 .end method
 
 .method private resolveAdditionalConfig(Ljava/lang/String;)V
@@ -2596,158 +2623,6 @@
     throw p1
 .end method
 
-.method private ym()V
-    .locals 6
-
-    iget-object v0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
-
-    if-eqz v0, :cond_5
-
-    iget-object v0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    iput v1, v0, Landroid/os/Message;->what:I
-
-    new-instance v2, Landroid/os/Bundle;
-
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
-
-    new-array v3, v1, [I
-
-    const/16 v4, 0xd7
-
-    const/4 v5, 0x0
-
-    aput v4, v3, v5
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    iget-boolean v3, p0, Lcom/android/server/qeg;->Ug:Z
-
-    if-nez v3, :cond_0
-
-    const-string v3, "CONFIG_NAME_VIDEO_ENHANCEMENT"
-
-    const-string v4, "BlacklistVideoEnhancerConfig"
-
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    new-array v3, v1, [I
-
-    const/16 v4, 0x82
-
-    aput v4, v3, v5
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-boolean v3, p0, Lcom/android/server/qeg;->Zg:Z
-
-    if-nez v3, :cond_1
-
-    const-string v3, "CONFIG_NAME_SMART5G"
-
-    const-string v4, "Whitelist5GConfig"
-
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    new-array v3, v1, [I
-
-    const/16 v4, 0x116
-
-    aput v4, v3, v5
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    iget-boolean v3, p0, Lcom/android/server/qeg;->ch:Z
-
-    if-nez v3, :cond_2
-
-    const-string v3, "CONFIG_NAME_FASTOUTPUT"
-
-    const-string v4, "WhitelistFastOutputConfig"
-
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_2
-    new-array v1, v1, [I
-
-    const/16 v3, 0x13a
-
-    aput v3, v1, v5
-
-    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    iget-boolean v1, p0, Lcom/android/server/qeg;->fh:Z
-
-    if-nez v1, :cond_3
-
-    const-string v1, "CONFIG_NAME_GAME_DOLBY"
-
-    const-string v3, "WhitelistGameDolbyConfig"
-
-    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_3
-    sget-boolean v1, Lcom/android/server/qeg;->Xh:Z
-
-    if-eqz v1, :cond_4
-
-    const-string v1, "CONFIG_NAME_LMKD_WATERMARK"
-
-    const-string v3, "LMKD_TUNE"
-
-    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_4
-    invoke-virtual {v0, v2}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
-
-    iget-object p0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
-
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    goto :goto_0
-
-    :cond_5
-    sget-boolean p0, Lcom/android/server/qeg;->DBG:Z
-
-    if-eqz p0, :cond_6
-
-    const-string p0, "CommonFrontMonitor"
-
-    const-string v0, "fetchConfig: skip to fetch"
-
-    invoke-static {p0, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_6
-    :goto_0
-    return-void
-.end method
-
 .method static synthetic you(Lcom/android/server/qeg;)Landroid/content/Context;
     .locals 0
 
@@ -2969,37 +2844,162 @@
     throw p1
 .end method
 
-.method private zm()Z
-    .locals 3
+.method private zm()V
+    .locals 6
 
-    iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    if-eqz v0, :cond_5
 
-    move-result-object p0
+    iget-object v0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
 
-    const/4 v0, 0x0
+    if-eqz v0, :cond_5
 
-    const-string v1, "driving_mode_state"
+    invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
-    const/4 v2, -0x2
+    move-result-object v0
 
-    invoke-static {p0, v1, v0, v2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    const/4 v1, 0x1
 
-    move-result p0
+    iput v1, v0, Landroid/os/Message;->what:I
 
-    if-lez p0, :cond_0
+    new-instance v2, Landroid/os/Bundle;
 
-    const/4 v0, 0x1
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
+
+    new-array v3, v1, [I
+
+    const/16 v4, 0xd7
+
+    const/4 v5, 0x0
+
+    aput v4, v3, v5
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-boolean v3, p0, Lcom/android/server/qeg;->Ug:Z
+
+    if-nez v3, :cond_0
+
+    const-string v3, "CONFIG_NAME_VIDEO_ENHANCEMENT"
+
+    const-string v4, "BlacklistVideoEnhancerConfig"
+
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
-    return v0
+    new-array v3, v1, [I
+
+    const/16 v4, 0x82
+
+    aput v4, v3, v5
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    iget-boolean v3, p0, Lcom/android/server/qeg;->Zg:Z
+
+    if-nez v3, :cond_1
+
+    const-string v3, "CONFIG_NAME_SMART5G"
+
+    const-string v4, "Whitelist5GConfig"
+
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_1
+    new-array v3, v1, [I
+
+    const/16 v4, 0x116
+
+    aput v4, v3, v5
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    iget-boolean v3, p0, Lcom/android/server/qeg;->ch:Z
+
+    if-nez v3, :cond_2
+
+    const-string v3, "CONFIG_NAME_FASTOUTPUT"
+
+    const-string v4, "WhitelistFastOutputConfig"
+
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_2
+    new-array v1, v1, [I
+
+    const/16 v3, 0x13a
+
+    aput v3, v1, v5
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    iget-boolean v1, p0, Lcom/android/server/qeg;->fh:Z
+
+    if-nez v1, :cond_3
+
+    const-string v1, "CONFIG_NAME_GAME_DOLBY"
+
+    const-string v3, "WhitelistGameDolbyConfig"
+
+    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_3
+    sget-boolean v1, Lcom/android/server/qeg;->Xh:Z
+
+    if-eqz v1, :cond_4
+
+    const-string v1, "CONFIG_NAME_LMKD_WATERMARK"
+
+    const-string v3, "LMKD_TUNE"
+
+    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_4
+    invoke-virtual {v0, v2}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
+
+    iget-object p0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    goto :goto_0
+
+    :cond_5
+    sget-boolean p0, Lcom/android/server/qeg;->DBG:Z
+
+    if-eqz p0, :cond_6
+
+    const-string p0, "CommonFrontMonitor"
+
+    const-string v0, "fetchConfig: skip to fetch"
+
+    invoke-static {p0, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    :goto_0
+    return-void
 .end method
 
 .method static synthetic zta(Lcom/android/server/qeg;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Em()V
+    invoke-direct {p0}, Lcom/android/server/qeg;->Fm()V
 
     return-void
 .end method
@@ -3058,13 +3058,13 @@
 
     if-eqz p3, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Dm()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Em()Z
 
     move-result p3
 
     if-eqz p3, :cond_2
 
-    invoke-direct {p0, p1}, Lcom/android/server/qeg;->ib(Ljava/lang/String;)Z
+    invoke-direct {p0, p1}, Lcom/android/server/qeg;->jb(Ljava/lang/String;)Z
 
     move-result p3
 
@@ -3076,7 +3076,7 @@
 
     const-string p3, "/sys/module/memplus_core/parameters/memory_plus_wake_memex"
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Am()J
+    invoke-direct {p0}, Lcom/android/server/qeg;->Bm()J
 
     move-result-wide v0
 
@@ -3084,7 +3084,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p3, v0}, Lcom/android/server/qeg;->oxb(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p3, v0}, Lcom/android/server/qeg;->cjf(Ljava/lang/String;Ljava/lang/String;)Z
 
     iput-boolean p6, p0, Lcom/android/server/qeg;->th:Z
 
@@ -3101,7 +3101,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p3, v0}, Lcom/android/server/qeg;->oxb(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p3, v0}, Lcom/android/server/qeg;->cjf(Ljava/lang/String;Ljava/lang/String;)Z
 
     iput-boolean p5, p0, Lcom/android/server/qeg;->th:Z
 
@@ -3118,7 +3118,7 @@
     invoke-static {p3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/qeg;->zm()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Am()Z
 
     move-result p3
 
@@ -3153,7 +3153,7 @@
 
     if-eqz p3, :cond_6
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Cm()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Dm()Z
 
     move-result p3
 
@@ -3514,7 +3514,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Cm()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Dm()Z
 
     move-result v1
 
@@ -3696,7 +3696,7 @@
 
     if-eqz p1, :cond_6
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Em()V
+    invoke-direct {p0}, Lcom/android/server/qeg;->Fm()V
 
     new-instance p1, Lcom/android/server/qeg$rtg;
 
@@ -3897,7 +3897,7 @@
     invoke-virtual {p1}, Lcom/oneplus/config/ConfigObserver;->register()V
 
     :cond_e
-    invoke-direct {p0}, Lcom/android/server/qeg;->ym()V
+    invoke-direct {p0}, Lcom/android/server/qeg;->zm()V
 
     return-void
 

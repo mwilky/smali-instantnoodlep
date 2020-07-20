@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method public Fe()Z
+.method public Ee()Z
     .locals 0
 
     const/4 p0, 0x1

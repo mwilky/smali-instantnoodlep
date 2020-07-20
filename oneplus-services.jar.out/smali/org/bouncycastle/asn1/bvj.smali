@@ -12,9 +12,9 @@
 
 
 # static fields
-.field private static final kGa:J = 0xffffffffffff80L
+.field private static final FGa:J = 0xffffffffffff80L
 
-.field private static final lGa:Ljava/util/concurrent/ConcurrentMap;
+.field private static final GGa:Ljava/util/concurrent/ConcurrentMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentMap<",
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/asn1/bvj;->lGa:Ljava/util/concurrent/ConcurrentMap;
+    sput-object v0, Lorg/bouncycastle/asn1/bvj;->GGa:Ljava/util/concurrent/ConcurrentMap;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/bvj;->ud(Ljava/lang/String;)Z
+    invoke-static {p1}, Lorg/bouncycastle/asn1/bvj;->wd(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -551,7 +551,7 @@
     return v2
 .end method
 
-.method private static ud(Ljava/lang/String;)Z
+.method private static wd(Ljava/lang/String;)Z
     .locals 3
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -612,7 +612,7 @@
 
     invoke-direct {v0, p0}, Lorg/bouncycastle/asn1/bvj$zta;-><init>([B)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->lGa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->GGa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -889,7 +889,7 @@
 
 
 # virtual methods
-.method public Da(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
+.method public Ea(Ljava/lang/String;)Lorg/bouncycastle/asn1/bvj;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/bvj;
@@ -930,7 +930,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/bvj$zta;-><init>([B)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->lGa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->GGa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -940,7 +940,7 @@
 
     if-nez v1, :cond_1
 
-    sget-object v1, Lorg/bouncycastle/asn1/bvj;->lGa:Ljava/util/concurrent/ConcurrentMap;
+    sget-object v1, Lorg/bouncycastle/asn1/bvj;->GGa:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v1, v0, p0}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1032,7 +1032,7 @@
     return p0
 .end method
 
-.method uh()I
+.method vh()I
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {

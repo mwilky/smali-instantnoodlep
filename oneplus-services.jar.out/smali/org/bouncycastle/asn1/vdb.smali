@@ -107,7 +107,7 @@
     return-object p0
 .end method
 
-.method abstract uh()I
+.method abstract vh()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -115,13 +115,13 @@
     .end annotation
 .end method
 
-.method vh()Lorg/bouncycastle/asn1/vdb;
+.method wh()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0
 .end method
 
-.method wh()Lorg/bouncycastle/asn1/vdb;
+.method xh()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     return-object p0

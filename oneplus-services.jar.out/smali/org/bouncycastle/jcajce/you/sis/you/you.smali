@@ -20,57 +20,57 @@
 
 
 # static fields
+.field private static final CDa:I = 0xc800
+
+.field static final DDa:I = 0x1
+
+.field static final EDa:I = 0x0
+
+.field static final FDa:I = 0x1
+
+.field static final GDa:I = 0x2
+
 .field static final KEY:I = 0x2
 
 .field static final NULL:I = 0x0
+
+.field static final QDa:Ljava/lang/String; = "org.bouncycastle.pkcs12.max_it_count"
+
+.field private static final RDa:I = 0x14
+
+.field private static final SDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
 
 .field static final SEALED:I = 0x4
 
 .field static final SECRET:I = 0x3
 
-.field private static final hDa:I = 0xc800
-
-.field static final iDa:I = 0x1
-
-.field static final jDa:I = 0x0
-
-.field static final kDa:I = 0x1
-
-.field static final lDa:I = 0x2
-
-.field static final vDa:Ljava/lang/String; = "org.bouncycastle.pkcs12.max_it_count"
-
-.field private static final wDa:I = 0x14
-
-.field private static final xDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
-
 
 # instance fields
-.field protected PCa:Ljava/security/SecureRandom;
+.field private HDa:Ljava/util/Hashtable;
+
+.field private IDa:Ljava/util/Hashtable;
+
+.field private JDa:Ljava/util/Hashtable;
+
+.field private KDa:Ljava/security/cert/CertificateFactory;
+
+.field private LDa:Lorg/bouncycastle/asn1/bvj;
+
+.field private MDa:Lorg/bouncycastle/asn1/bvj;
+
+.field private NDa:Lorg/bouncycastle/asn1/x509/zta;
+
+.field private ODa:I
+
+.field private PDa:I
 
 .field private certs:Lorg/bouncycastle/jcajce/you/sis/you/you$tsu;
 
 .field private final helper:Lorg/bouncycastle/jcajce/tsu/tsu;
 
+.field protected jDa:Ljava/security/SecureRandom;
+
 .field private keys:Lorg/bouncycastle/jcajce/you/sis/you/you$tsu;
-
-.field private mDa:Ljava/util/Hashtable;
-
-.field private nDa:Ljava/util/Hashtable;
-
-.field private oDa:Ljava/util/Hashtable;
-
-.field private pDa:Ljava/security/cert/CertificateFactory;
-
-.field private qDa:Lorg/bouncycastle/asn1/bvj;
-
-.field private rDa:Lorg/bouncycastle/asn1/bvj;
-
-.field private sDa:Lorg/bouncycastle/asn1/x509/zta;
-
-.field private tDa:I
-
-.field private uDa:I
 
 
 # direct methods
@@ -81,7 +81,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->xDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
+    sput-object v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->SDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
 
     return-void
 .end method
@@ -109,7 +109,7 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     new-instance v0, Lorg/bouncycastle/jcajce/you/sis/you/you$tsu;
 
@@ -121,41 +121,41 @@
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Yj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Zj()Ljava/security/SecureRandom;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PCa:Ljava/security/SecureRandom;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->jDa:Ljava/security/SecureRandom;
 
     new-instance v0, Lorg/bouncycastle/asn1/x509/zta;
 
-    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->kgb:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/gck/zta;->Fgb:Lorg/bouncycastle/asn1/bvj;
 
     sget-object v2, Lorg/bouncycastle/asn1/z;->INSTANCE:Lorg/bouncycastle/asn1/z;
 
     invoke-direct {v0, v1, v2}, Lorg/bouncycastle/asn1/x509/zta;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->sDa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->NDa:Lorg/bouncycastle/asn1/x509/zta;
 
     const v0, 0x19000
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->tDa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->ODa:I
 
     const/16 v0, 0x14
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->uDa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PDa:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->qDa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->LDa:Lorg/bouncycastle/asn1/bvj;
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->rDa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->MDa:Lorg/bouncycastle/asn1/bvj;
 
     :try_start_0
     const-string p2, "X.509"
@@ -164,7 +164,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->pDa:Ljava/security/cert/CertificateFactory;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->KDa:Ljava/security/cert/CertificateFactory;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -198,143 +198,7 @@
     throw p1
 .end method
 
-.method private hmo(Ljava/math/BigInteger;)I
-    .locals 3
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->intValue()I
-
-    move-result p0
-
-    if-ltz p0, :cond_2
-
-    const-string p1, "org.bouncycastle.pkcs12.max_it_count"
-
-    invoke-static {p1}, Lorg/bouncycastle/util/gck;->Ya(Ljava/lang/String;)Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->intValue()I
-
-    move-result v0
-
-    if-lt v0, p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "iteration count "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p0, " greater than "
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/math/BigInteger;->intValue()I
-
-    move-result p0
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    :goto_0
-    return p0
-
-    :cond_2
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string p1, "negative iteration count found"
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method private static ssp(Lorg/bouncycastle/asn1/x509/c;)[B
-    .locals 4
-
-    invoke-static {}, Lorg/bouncycastle/crypto/you/zta;->i()Lorg/bouncycastle/crypto/qbh;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->qeg()I
-
-    move-result v1
-
-    new-array v1, v1, [B
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->mi()Lorg/bouncycastle/asn1/n;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->getBytes()[B
-
-    move-result-object p0
-
-    array-length v2, p0
-
-    const/4 v3, 0x0
-
-    invoke-interface {v0, p0, v3, v2}, Lorg/bouncycastle/crypto/qbh;->update([BII)V
-
-    invoke-interface {v0, v1, v3}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
-
-    return-object v1
-.end method
-
-.method private tsu(Ljava/security/PublicKey;)Lorg/bouncycastle/asn1/x509/b;
-    .locals 0
-
-    :try_start_0
-    invoke-interface {p1}, Ljava/security/PublicKey;->getEncoded()[B
-
-    move-result-object p0
-
-    invoke-static {p0}, Lorg/bouncycastle/asn1/x509/c;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/c;
-
-    move-result-object p0
-
-    new-instance p1, Lorg/bouncycastle/asn1/x509/b;
-
-    invoke-static {p0}, Lorg/bouncycastle/jcajce/you/sis/you/you;->ssp(Lorg/bouncycastle/asn1/x509/c;)[B
-
-    move-result-object p0
-
-    invoke-direct {p1, p0}, Lorg/bouncycastle/asn1/x509/b;-><init>([B)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p1
-
-    :catch_0
-    new-instance p0, Ljava/lang/RuntimeException;
-
-    const-string p1, "error creating key"
-
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method private yw()Ljava/util/Set;
+.method private Aw()Ljava/util/Set;
     .locals 5
 
     new-instance v0, Ljava/util/HashSet;
@@ -411,6 +275,142 @@
     return-object v0
 .end method
 
+.method private hmo(Ljava/math/BigInteger;)I
+    .locals 3
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->intValue()I
+
+    move-result p0
+
+    if-ltz p0, :cond_2
+
+    const-string p1, "org.bouncycastle.pkcs12.max_it_count"
+
+    invoke-static {p1}, Lorg/bouncycastle/util/gck;->Za(Ljava/lang/String;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->intValue()I
+
+    move-result v0
+
+    if-lt v0, p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "iteration count "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p0, " greater than "
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/math/BigInteger;->intValue()I
+
+    move-result p0
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    :goto_0
+    return p0
+
+    :cond_2
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "negative iteration count found"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method private static ssp(Lorg/bouncycastle/asn1/x509/c;)[B
+    .locals 4
+
+    invoke-static {}, Lorg/bouncycastle/crypto/you/zta;->i()Lorg/bouncycastle/crypto/qbh;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lorg/bouncycastle/crypto/qbh;->qeg()I
+
+    move-result v1
+
+    new-array v1, v1, [B
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/c;->oi()Lorg/bouncycastle/asn1/n;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/sis;->getBytes()[B
+
+    move-result-object p0
+
+    array-length v2, p0
+
+    const/4 v3, 0x0
+
+    invoke-interface {v0, p0, v3, v2}, Lorg/bouncycastle/crypto/qbh;->update([BII)V
+
+    invoke-interface {v0, v1, v3}, Lorg/bouncycastle/crypto/qbh;->doFinal([BI)I
+
+    return-object v1
+.end method
+
+.method private tsu(Ljava/security/PublicKey;)Lorg/bouncycastle/asn1/x509/b;
+    .locals 0
+
+    :try_start_0
+    invoke-interface {p1}, Ljava/security/PublicKey;->getEncoded()[B
+
+    move-result-object p0
+
+    invoke-static {p0}, Lorg/bouncycastle/asn1/x509/c;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/x509/c;
+
+    move-result-object p0
+
+    new-instance p1, Lorg/bouncycastle/asn1/x509/b;
+
+    invoke-static {p0}, Lorg/bouncycastle/jcajce/you/sis/you/you;->ssp(Lorg/bouncycastle/asn1/x509/c;)[B
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Lorg/bouncycastle/asn1/x509/b;-><init>([B)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p1
+
+    :catch_0
+    new-instance p0, Ljava/lang/RuntimeException;
+
+    const-string p1, "error creating key"
+
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
 .method private zta(I[CLorg/bouncycastle/asn1/x509/zta;)Ljavax/crypto/Cipher;
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
@@ -432,7 +432,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/dma;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ji()Lorg/bouncycastle/asn1/dma/dma;
 
     move-result-object v0
 
@@ -444,7 +444,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->hi()Lorg/bouncycastle/asn1/dma/wtn;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/wtn;
 
     move-result-object v1
 
@@ -454,7 +454,7 @@
 
     iget-object v2, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->helper:Lorg/bouncycastle/jcajce/tsu/tsu;
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/dma;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ji()Lorg/bouncycastle/asn1/dma/dma;
 
     move-result-object v3
 
@@ -470,7 +470,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/bvj;->qh()Z
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/bvj;->rh()Z
 
     move-result v3
 
@@ -490,7 +490,7 @@
 
     move-result p0
 
-    sget-object v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->xDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
+    sget-object v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->SDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;->rtg(Lorg/bouncycastle/asn1/x509/zta;)I
 
@@ -519,13 +519,13 @@
 
     move-result v6
 
-    sget-object p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->xDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
+    sget-object p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->SDa:Lorg/bouncycastle/jcajce/you/sis/you/you$sis;
 
     invoke-virtual {p0, v1}, Lorg/bouncycastle/jcajce/you/sis/you/you$sis;->rtg(Lorg/bouncycastle/asn1/x509/zta;)I
 
     move-result v7
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/bvj;->ph()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/dma/bvj;->qh()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v8
 
@@ -540,7 +540,7 @@
     move-result-object p0
 
     :goto_0
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->hi()Lorg/bouncycastle/asn1/dma/wtn;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/wtn;
 
     move-result-object p2
 
@@ -556,7 +556,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->hi()Lorg/bouncycastle/asn1/dma/wtn;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/oif;->ii()Lorg/bouncycastle/asn1/dma/wtn;
 
     move-result-object p3
 
@@ -635,7 +635,7 @@
 
     new-array v3, v5, [B
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PCa:Ljava/security/SecureRandom;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->jDa:Ljava/security/SecureRandom;
 
     invoke-virtual {v5, v3}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -657,7 +657,7 @@
 
     invoke-direct {v11, v3, v4}, Lorg/bouncycastle/asn1/dma/ibl;-><init>([BI)V
 
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->qDa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->LDa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj;->getId()Ljava/lang/String;
 
@@ -669,7 +669,7 @@
 
     new-instance v4, Lorg/bouncycastle/asn1/x509/zta;
 
-    iget-object v12, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->qDa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v12, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->LDa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v11}, Lorg/bouncycastle/asn1/dma/ibl;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
 
@@ -889,7 +889,7 @@
 
     new-array v2, v5, [B
 
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PCa:Ljava/security/SecureRandom;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->jDa:Ljava/security/SecureRandom;
 
     invoke-virtual {v3, v2}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -903,7 +903,7 @@
 
     new-instance v12, Lorg/bouncycastle/asn1/x509/zta;
 
-    iget-object v2, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->rDa:Lorg/bouncycastle/asn1/bvj;
+    iget-object v2, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->MDa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v5}, Lorg/bouncycastle/asn1/dma/ibl;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
 
@@ -1445,11 +1445,11 @@
     throw v1
 
     :cond_15
-    invoke-direct/range {p0 .. p0}, Lorg/bouncycastle/jcajce/you/sis/you/you;->yw()Ljava/util/Set;
+    invoke-direct/range {p0 .. p0}, Lorg/bouncycastle/jcajce/you/sis/you/you;->Aw()Ljava/util/Set;
 
     move-result-object v4
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     invoke-virtual {v5}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -1469,7 +1469,7 @@
 
     check-cast v7, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
-    iget-object v9, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v9, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     invoke-virtual {v9, v7}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1724,11 +1724,11 @@
 
     invoke-direct {v9, v2, v3}, Lorg/bouncycastle/asn1/dma/cno;-><init>(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
 
-    iget v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->uDa:I
+    iget v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PDa:I
 
     new-array v10, v1, [B
 
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PCa:Ljava/security/SecureRandom;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->jDa:Ljava/security/SecureRandom;
 
     invoke-virtual {v1, v10}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -1743,13 +1743,13 @@
     move-result-object v7
 
     :try_start_3
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->sDa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->NDa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
-    iget v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->tDa:I
+    iget v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->ODa:I
 
     const/4 v6, 0x0
 
@@ -1765,13 +1765,13 @@
 
     new-instance v2, Lorg/bouncycastle/asn1/x509/qbh;
 
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->sDa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->NDa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-direct {v2, v3, v1}, Lorg/bouncycastle/asn1/x509/qbh;-><init>(Lorg/bouncycastle/asn1/x509/zta;[B)V
 
     new-instance v1, Lorg/bouncycastle/asn1/dma/ywr;
 
-    iget v0, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->tDa:I
+    iget v0, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->ODa:I
 
     invoke-direct {v1, v2, v10, v0}, Lorg/bouncycastle/asn1/dma/ywr;-><init>(Lorg/bouncycastle/asn1/x509/qbh;[BI)V
     :try_end_3
@@ -2006,7 +2006,7 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v3, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
@@ -2021,7 +2021,7 @@
     :cond_0
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2031,7 +2031,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2044,7 +2044,7 @@
     :cond_1
     if-eqz v1, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v0, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
@@ -2075,7 +2075,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2083,7 +2083,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     if-eqz v0, :cond_0
 
@@ -2159,13 +2159,13 @@
     return-object v3
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     invoke-virtual {v0}, Ljava/util/Hashtable;->elements()Ljava/util/Enumeration;
 
     move-result-object v0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     invoke-virtual {p0}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -2237,7 +2237,7 @@
 
     check-cast v2, Ljava/security/cert/X509Certificate;
 
-    sget-object v3, Lorg/bouncycastle/asn1/x509/gwm;->pIa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v3, Lorg/bouncycastle/asn1/x509/gwm;->KIa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v3}, Lorg/bouncycastle/asn1/bvj;->getId()Ljava/lang/String;
 
@@ -2282,7 +2282,7 @@
 
     if-eqz v4, :cond_1
 
-    iget-object v4, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v4, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v5, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
@@ -2335,7 +2335,7 @@
 
     if-nez v5, :cond_3
 
-    iget-object v5, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v5, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     invoke-virtual {v5}, Ljava/util/Hashtable;->keys()Ljava/util/Enumeration;
 
@@ -2349,7 +2349,7 @@
 
     if-eqz v6, :cond_3
 
-    iget-object v6, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v6, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     invoke-interface {v5}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
@@ -2624,7 +2624,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ugm;->ki()Lorg/bouncycastle/asn1/dma/cno;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ugm;->li()Lorg/bouncycastle/asn1/dma/cno;
 
     move-result-object v9
 
@@ -2632,7 +2632,7 @@
 
     invoke-direct {v10}, Ljava/util/Vector;-><init>()V
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ugm;->li()Lorg/bouncycastle/asn1/dma/ywr;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ugm;->mi()Lorg/bouncycastle/asn1/dma/ywr;
 
     move-result-object v2
 
@@ -2642,7 +2642,7 @@
 
     if-eqz v2, :cond_4
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ugm;->li()Lorg/bouncycastle/asn1/dma/ywr;
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ugm;->mi()Lorg/bouncycastle/asn1/dma/ywr;
 
     move-result-object v1
 
@@ -2650,11 +2650,11 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Lorg/bouncycastle/asn1/x509/qbh;->Si()Lorg/bouncycastle/asn1/x509/zta;
+    invoke-virtual {v13}, Lorg/bouncycastle/asn1/x509/qbh;->Ti()Lorg/bouncycastle/asn1/x509/zta;
 
     move-result-object v2
 
-    iput-object v2, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->sDa:Lorg/bouncycastle/asn1/x509/zta;
+    iput-object v2, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->NDa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/dma/ywr;->getSalt()[B
 
@@ -2668,11 +2668,11 @@
 
     move-result v1
 
-    iput v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->tDa:I
+    iput v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->ODa:I
 
     array-length v1, v14
 
-    iput v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->uDa:I
+    iput v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PDa:I
 
     invoke-virtual {v9}, Lorg/bouncycastle/asn1/dma/cno;->getContent()Lorg/bouncycastle/asn1/ssp;
 
@@ -2685,13 +2685,13 @@
     move-result-object v15
 
     :try_start_1
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->sDa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->NDa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
-    iget v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->tDa:I
+    iget v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->ODa:I
 
     const/4 v6, 0x0
 
@@ -2707,7 +2707,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v13}, Lorg/bouncycastle/asn1/x509/qbh;->Kg()[B
+    invoke-virtual {v13}, Lorg/bouncycastle/asn1/x509/qbh;->Lg()[B
 
     move-result-object v13
 
@@ -2727,13 +2727,13 @@
     if-gtz v1, :cond_2
 
     :try_start_2
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->sDa:Lorg/bouncycastle/asn1/x509/zta;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->NDa:Lorg/bouncycastle/asn1/x509/zta;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/x509/zta;->getAlgorithm()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
-    iget v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->tDa:I
+    iget v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->ODa:I
 
     const/4 v6, 0x1
 
@@ -2836,7 +2836,7 @@
 
     invoke-direct {v1}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iput-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     invoke-virtual {v9}, Lorg/bouncycastle/asn1/dma/cno;->getContentType()Lorg/bouncycastle/asn1/bvj;
 
@@ -2942,7 +2942,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v4
 
@@ -2954,7 +2954,7 @@
 
     if-eqz v4, :cond_f
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Bi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v4
 
@@ -2974,17 +2974,17 @@
 
     move-result-object v4
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->yi()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v5
 
     if-eqz v5, :cond_b
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->yi()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Kh()Ljava/util/Enumeration;
 
     move-result-object v3
 
@@ -3150,7 +3150,7 @@
     goto :goto_7
 
     :cond_d
-    iget-object v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iget-object v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     invoke-virtual {v4, v5, v3}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3166,7 +3166,7 @@
     goto :goto_7
 
     :cond_f
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v4
 
@@ -3193,7 +3193,7 @@
 
     invoke-virtual {v5, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v11
 
@@ -3305,7 +3305,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v4
 
@@ -3324,7 +3324,7 @@
     goto/16 :goto_f
 
     :cond_13
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v4
 
@@ -3336,7 +3336,7 @@
 
     if-eqz v4, :cond_1b
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Bi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v4
 
@@ -3360,11 +3360,11 @@
 
     check-cast v5, Lorg/bouncycastle/jce/interfaces/tsu;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->yi()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Kh()Ljava/util/Enumeration;
 
     move-result-object v3
 
@@ -3522,7 +3522,7 @@
     goto/16 :goto_f
 
     :cond_1a
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     invoke-virtual {v3, v11, v1}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3531,7 +3531,7 @@
     :cond_1b
     move-object/from16 v17, v1
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -3543,7 +3543,7 @@
 
     if-eqz v1, :cond_22
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Bi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v1
 
@@ -3559,11 +3559,11 @@
 
     check-cast v4, Lorg/bouncycastle/jce/interfaces/tsu;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->yi()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Kh()Ljava/util/Enumeration;
 
     move-result-object v3
 
@@ -3714,7 +3714,7 @@
     goto :goto_f
 
     :cond_21
-    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->mDa:Ljava/util/Hashtable;
+    iget-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->HDa:Ljava/util/Hashtable;
 
     invoke-virtual {v1, v6, v3}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -3731,7 +3731,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v5
 
@@ -3843,13 +3843,13 @@
 
     invoke-direct {v1}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iput-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v1, Ljava/util/Hashtable;
 
     invoke-direct {v1}, Ljava/util/Hashtable;-><init>()V
 
-    iput-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iput-object v1, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     const/4 v1, 0x0
 
@@ -3866,7 +3866,7 @@
 
     check-cast v3, Lorg/bouncycastle/asn1/dma/ire;
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Ai()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->Bi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v4
 
@@ -3874,7 +3874,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/dma/tsu;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/dma/tsu;->ei()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v5
 
@@ -3889,7 +3889,7 @@
     :try_start_3
     new-instance v5, Ljava/io/ByteArrayInputStream;
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/dma/tsu;->ei()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/dma/tsu;->fi()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object v4
 
@@ -3901,7 +3901,7 @@
 
     invoke-direct {v5, v4}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    iget-object v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->pDa:Ljava/security/cert/CertificateFactory;
+    iget-object v4, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->KDa:Ljava/security/cert/CertificateFactory;
 
     invoke-virtual {v4, v5}, Ljava/security/cert/CertificateFactory;->generateCertificate(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
 
@@ -3909,17 +3909,17 @@
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->yi()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v5
 
     if-eqz v5, :cond_2d
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->yi()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/dma/ire;->zi()Lorg/bouncycastle/asn1/ear;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Jh()Ljava/util/Enumeration;
+    invoke-virtual {v3}, Lorg/bouncycastle/asn1/ear;->Kh()Ljava/util/Enumeration;
 
     move-result-object v3
 
@@ -4061,7 +4061,7 @@
     move-object v13, v5
 
     :goto_14
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v6, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
@@ -4075,7 +4075,7 @@
 
     if-eqz v16, :cond_2e
 
-    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object v3, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     invoke-virtual {v3}, Ljava/util/Hashtable;->isEmpty()Z
 
@@ -4103,7 +4103,7 @@
 
     invoke-direct {v3, v5}, Ljava/lang/String;-><init>([B)V
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     invoke-virtual {v5, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4132,7 +4132,7 @@
 
     invoke-direct {v3, v5}, Ljava/lang/String;-><init>([B)V
 
-    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->oDa:Ljava/util/Hashtable;
+    iget-object v5, v0, Lorg/bouncycastle/jcajce/you/sis/you/you;->JDa:Ljava/util/Hashtable;
 
     invoke-virtual {v5, v3, v4}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4173,7 +4173,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Lorg/bouncycastle/asn1/dma/tsu;->di()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v4}, Lorg/bouncycastle/asn1/dma/tsu;->ei()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v2
 
@@ -4242,7 +4242,7 @@
 
     invoke-virtual {v0, p1, p2}, Lorg/bouncycastle/jcajce/you/sis/you/you$tsu;->put(Ljava/lang/String;Ljava/lang/Object;)V
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance v0, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
@@ -4341,7 +4341,7 @@
 
     if-eq p3, p1, :cond_3
 
-    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->nDa:Ljava/util/Hashtable;
+    iget-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->IDa:Ljava/util/Hashtable;
 
     new-instance p2, Lorg/bouncycastle/jcajce/you/sis/you/you$you;
 
@@ -4553,7 +4553,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jce/provider/kth;->Fk()Z
+    invoke-virtual {v1}, Lorg/bouncycastle/jce/provider/kth;->Gk()Z
 
     move-result v1
 
@@ -4586,7 +4586,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/zta;->rk()Z
+    invoke-virtual {v0}, Lorg/bouncycastle/jcajce/zta;->sk()Z
 
     move-result v0
 
@@ -4677,7 +4677,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ibl;->ji()Ljava/math/BigInteger;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/dma/ibl;->ki()Ljava/math/BigInteger;
 
     move-result-object p1
 
@@ -4786,7 +4786,7 @@
 .method public zta(Ljava/security/SecureRandom;)V
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->PCa:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/you/sis/you/you;->jDa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -4816,7 +4816,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/ibl;->ji()Ljava/math/BigInteger;
+    invoke-virtual {p3}, Lorg/bouncycastle/asn1/dma/ibl;->ki()Ljava/math/BigInteger;
 
     move-result-object p3
 
@@ -4923,7 +4923,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p2}, Lorg/bouncycastle/asn1/dma/ibl;->ji()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lorg/bouncycastle/asn1/dma/ibl;->ki()Ljava/math/BigInteger;
 
     move-result-object p2
 

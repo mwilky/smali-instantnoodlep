@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public cl()Lyou/zta/sis/zta/cno;
+.method public dl()Lyou/zta/sis/zta/cno;
     .locals 4
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->getFieldSize()I
@@ -72,7 +72,7 @@
     throw p0
 .end method
 
-.method public dl()I
+.method public el()I
     .locals 4
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->getFieldSize()I
@@ -114,7 +114,7 @@
     return p0
 
     :cond_1
-    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->_k()Z
+    invoke-virtual {v2}, Lyou/zta/sis/zta/cno;->al()Z
 
     move-result p0
 

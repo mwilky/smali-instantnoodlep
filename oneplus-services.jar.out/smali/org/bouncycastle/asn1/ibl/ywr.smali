@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected Xj()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected Yj()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 9
 
     new-instance p0, Ljava/math/BigInteger;

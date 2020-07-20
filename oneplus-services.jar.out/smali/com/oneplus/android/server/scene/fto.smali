@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/android/server/scene/vju;->Qb(Z)V
+    value = Lcom/oneplus/android/server/scene/vju;->Rb(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

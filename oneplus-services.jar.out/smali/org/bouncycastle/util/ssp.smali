@@ -12,16 +12,16 @@
     return-void
 .end method
 
-.method public static Sa(Ljava/lang/String;)Z
+.method public static Ta(Ljava/lang/String;)Z
     .locals 1
 
-    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Ta(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Va(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Wa(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -42,7 +42,7 @@
     return p0
 .end method
 
-.method public static Ta(Ljava/lang/String;)Z
+.method public static Ua(Ljava/lang/String;)Z
     .locals 5
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -136,7 +136,7 @@
     return v1
 .end method
 
-.method public static Ua(Ljava/lang/String;)Z
+.method public static Va(Ljava/lang/String;)Z
     .locals 3
 
     const-string v0, "/"
@@ -159,13 +159,13 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Ta(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    invoke-static {v1}, Lorg/bouncycastle/util/ssp;->Ta(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -186,7 +186,7 @@
     return v2
 .end method
 
-.method public static Va(Ljava/lang/String;)Z
+.method public static Wa(Ljava/lang/String;)Z
     .locals 8
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -266,7 +266,7 @@
 
     if-lez v7, :cond_3
 
-    invoke-static {v5}, Lorg/bouncycastle/util/ssp;->Ta(Ljava/lang/String;)Z
+    invoke-static {v5}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -341,7 +341,7 @@
     return v1
 .end method
 
-.method public static Wa(Ljava/lang/String;)Z
+.method public static Xa(Ljava/lang/String;)Z
     .locals 3
 
     const-string v0, "/"
@@ -364,13 +364,13 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Va(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Wa(Ljava/lang/String;)Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    invoke-static {v1}, Lorg/bouncycastle/util/ssp;->Va(Ljava/lang/String;)Z
+    invoke-static {v1}, Lorg/bouncycastle/util/ssp;->Wa(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -391,16 +391,16 @@
     return v2
 .end method
 
-.method public static Xa(Ljava/lang/String;)Z
+.method public static Ya(Ljava/lang/String;)Z
     .locals 1
 
-    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Ua(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Va(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Wa(Ljava/lang/String;)Z
+    invoke-static {p0}, Lorg/bouncycastle/util/ssp;->Xa(Ljava/lang/String;)Z
 
     move-result p0
 

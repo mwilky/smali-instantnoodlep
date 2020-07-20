@@ -200,7 +200,7 @@
     return p0
 .end method
 
-.method uh()I
+.method vh()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/w;->string:[B

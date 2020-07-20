@@ -25,7 +25,7 @@
 
 .field public final mUid:I
 
-.field public final pC:Z
+.field public final yC:Z
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     iput p4, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mCurAdj:I
 
-    iput-boolean p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->pC:Z
+    iput-boolean p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->yC:Z
 
     iput-object p6, p0, Lcom/android/server/am/OnePlusMemoryTracker$zta;->mThread:Landroid/app/IApplicationThread;
 

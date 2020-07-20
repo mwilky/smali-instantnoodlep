@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private Lla:Lcom/android/server/am/i;
+.field private Wla:Lcom/android/server/am/m;
 
 
 # direct methods
@@ -16,11 +16,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {}, Lcom/android/server/am/i;->getInstance()Lcom/android/server/am/i;
+    invoke-static {}, Lcom/android/server/am/m;->getInstance()Lcom/android/server/am/m;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta/tsu;->Lla:Lcom/android/server/am/i;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta/tsu;->Wla:Lcom/android/server/am/m;
 
     return-void
 .end method
@@ -30,9 +30,9 @@
 .method public initEnv(Landroid/content/Context;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Lla:Lcom/android/server/am/i;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Wla:Lcom/android/server/am/m;
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/i;->initEnv(Landroid/content/Context;)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/m;->initEnv(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -40,9 +40,9 @@
 .method public initOnlineConfig(Landroid/content/Context;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Lla:Lcom/android/server/am/i;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Wla:Lcom/android/server/am/m;
 
-    invoke-virtual {p0, p1}, Lcom/android/server/am/i;->initOnlineConfig(Landroid/content/Context;)V
+    invoke-virtual {p0, p1}, Lcom/android/server/am/m;->initOnlineConfig(Landroid/content/Context;)V
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 .method public isIopPreloadEnabled()Z
     .locals 0
 
-    invoke-static {}, Lcom/android/server/am/i;->isIopPreloadEnabled()Z
+    invoke-static {}, Lcom/android/server/am/m;->isIopPreloadEnabled()Z
 
     move-result p0
 
@@ -60,9 +60,9 @@
 .method public notifyIOPrefetchStart(ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Lla:Lcom/android/server/am/i;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Wla:Lcom/android/server/am/m;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/i;->notifyIOPrefetchStart(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/m;->notifyIOPrefetchStart(ILjava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -70,9 +70,9 @@
 .method public notifyMemPlus(Ljava/lang/String;II)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Lla:Lcom/android/server/am/i;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Wla:Lcom/android/server/am/m;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/i;->notifyMemPlus(Ljava/lang/String;II)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/m;->notifyMemPlus(Ljava/lang/String;II)V
 
     return-void
 .end method
@@ -80,9 +80,9 @@
 .method public notifyRamBoost(Ljava/lang/String;IZ)V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Lla:Lcom/android/server/am/i;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/tsu;->Wla:Lcom/android/server/am/m;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/i;->notifyRamBoost(Ljava/lang/String;IZ)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/m;->notifyRamBoost(Ljava/lang/String;IZ)V
 
     return-void
 .end method

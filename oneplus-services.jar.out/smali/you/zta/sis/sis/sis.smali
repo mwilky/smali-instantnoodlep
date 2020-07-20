@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static _l()[J
+.method public static am()[J
     .locals 1
 
     const/4 v0, 0x3
@@ -26,22 +26,12 @@
     return-object v0
 .end method
 
-.method public static am()[I
+.method public static bm()[I
     .locals 1
 
     const/16 v0, 0xc
 
     new-array v0, v0, [I
-
-    return-object v0
-.end method
-
-.method public static bm()[J
-    .locals 1
-
-    const/4 v0, 0x6
-
-    new-array v0, v0, [J
 
     return-object v0
 .end method
@@ -63,7 +53,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->_l()[J
+    invoke-static {}, Lyou/zta/sis/sis/sis;->am()[J
 
     move-result-object v0
 
@@ -144,6 +134,16 @@
     const/4 v0, 0x6
 
     new-array v0, v0, [I
+
+    return-object v0
+.end method
+
+.method public static dm()[J
+    .locals 1
+
+    const/4 v0, 0x6
+
+    new-array v0, v0, [J
 
     return-object v0
 .end method

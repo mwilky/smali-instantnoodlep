@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected final RVa:Lyou/zta/sis/zta/gck;
-
 .field protected final curve:Lyou/zta/sis/zta/rtg;
+
+.field protected final lWa:Lyou/zta/sis/zta/gck;
 
 .field protected final parameters:Lyou/zta/sis/zta/you/tsu;
 
@@ -26,7 +26,7 @@
 
     new-instance v0, Lyou/zta/sis/zta/vdb;
 
-    invoke-virtual {p2}, Lyou/zta/sis/zta/you/tsu;->Pl()Ljava/math/BigInteger;
+    invoke-virtual {p2}, Lyou/zta/sis/zta/you/tsu;->Ql()Ljava/math/BigInteger;
 
     move-result-object p2
 
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, p1}, Lyou/zta/sis/zta/vdb;-><init>(Lyou/zta/sis/zta/cno;)V
 
-    iput-object v0, p0, Lyou/zta/sis/zta/you/sis;->RVa:Lyou/zta/sis/zta/gck;
+    iput-object v0, p0, Lyou/zta/sis/zta/you/sis;->lWa:Lyou/zta/sis/zta/gck;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 .method public f()Lyou/zta/sis/zta/gck;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/zta/you/sis;->RVa:Lyou/zta/sis/zta/gck;
+    iget-object p0, p0, Lyou/zta/sis/zta/you/sis;->lWa:Lyou/zta/sis/zta/gck;
 
     return-object p0
 .end method
@@ -118,13 +118,13 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/you/tsu;->Ql()I
+    invoke-virtual {v0}, Lyou/zta/sis/zta/you/tsu;->Rl()I
 
     move-result v0
 
     iget-object v1, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {v1}, Lyou/zta/sis/zta/you/tsu;->Rl()Ljava/math/BigInteger;
+    invoke-virtual {v1}, Lyou/zta/sis/zta/you/tsu;->Sl()Ljava/math/BigInteger;
 
     move-result-object v1
 
@@ -134,7 +134,7 @@
 
     iget-object v2, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {v2}, Lyou/zta/sis/zta/you/tsu;->Sl()Ljava/math/BigInteger;
+    invoke-virtual {v2}, Lyou/zta/sis/zta/you/tsu;->Tl()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -144,7 +144,7 @@
 
     iget-object p0, p0, Lyou/zta/sis/zta/you/sis;->parameters:Lyou/zta/sis/zta/you/tsu;
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Vl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Wl()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -152,7 +152,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Yl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Zl()Ljava/math/BigInteger;
 
     move-result-object v3
 
@@ -168,7 +168,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Wl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Xl()Ljava/math/BigInteger;
 
     move-result-object v2
 
@@ -176,7 +176,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->Zl()Ljava/math/BigInteger;
+    invoke-virtual {p0}, Lyou/zta/sis/zta/you/tsu;->_l()Ljava/math/BigInteger;
 
     move-result-object p0
 

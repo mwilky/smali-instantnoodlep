@@ -1,86 +1,77 @@
-.class final Lcom/android/server/am/A$rtg;
-.super Ljava/lang/Object;
+.class Lcom/android/server/am/a$rtg;
+.super Landroid/os/Handler;
 .source ""
-
-# interfaces
-.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/A;
+    value = Lcom/android/server/am/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x2
     name = "rtg"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/android/server/am/A$cno;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field final synthetic this$0:Lcom/android/server/am/a;
 
 
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>(Lcom/android/server/am/a;Landroid/os/Looper;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lcom/android/server/am/a$rtg;->this$0:Lcom/android/server/am/a;
 
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lcom/android/server/am/z;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/am/A$rtg;-><init>()V
+    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 2
 
-    check-cast p1, Lcom/android/server/am/A$cno;
+    sget-boolean v0, Lcom/android/server/am/a;->DEBUG:Z
 
-    check-cast p2, Lcom/android/server/am/A$cno;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/A$rtg;->zta(Lcom/android/server/am/A$cno;Lcom/android/server/am/A$cno;)I
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result p0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    return p0
-.end method
+    const-string v1, "PolicyHandler "
 
-.method public zta(Lcom/android/server/am/A$cno;Lcom/android/server/am/A$cno;)I
-    .locals 0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {p1}, Lcom/android/server/am/A$cno;->zta(Lcom/android/server/am/A$cno;)J
+    iget v1, p1, Landroid/os/Message;->what:I
 
-    move-result-wide p0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p2}, Lcom/android/server/am/A$cno;->zta(Lcom/android/server/am/A$cno;)J
+    const-string v1, "BFP"
 
-    move-result-wide p1
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    :cond_0
+    iget p1, p1, Landroid/os/Message;->what:I
 
-    move-result-object p1
+    const/4 v0, 0x1
 
-    invoke-virtual {p0, p1}, Ljava/lang/Long;->compareTo(Ljava/lang/Long;)I
+    if-eq p1, v0, :cond_1
 
-    move-result p0
+    goto :goto_0
 
-    return p0
+    :cond_1
+    iget-object p0, p0, Lcom/android/server/am/a$rtg;->this$0:Lcom/android/server/am/a;
+
+    invoke-static {p0}, Lcom/android/server/am/a;->zta(Lcom/android/server/am/a;)V
+
+    :goto_0
+    return-void
 .end method

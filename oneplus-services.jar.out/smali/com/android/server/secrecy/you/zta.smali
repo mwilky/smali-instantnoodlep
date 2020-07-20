@@ -16,21 +16,21 @@
 
 .field public static final DEBUG:Z
 
-.field private static final LW:Ljava/lang/String; = "system/etc/activity_config.xml"
-
-.field private static final NL:Ljava/lang/String; = "className"
-
 .field private static final START_TAG:Ljava/lang/String; = "activityconfig"
 
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.ActivityConfig"
 
 .field private static final TAG_ACTIVITY:Ljava/lang/Object;
 
+.field private static final VL:Ljava/lang/String; = "className"
+
+.field private static final VW:Ljava/lang/String; = "system/etc/activity_config.xml"
+
 .field private static sInstance:Lcom/android/server/secrecy/you/zta;
 
 
 # instance fields
-.field private final KW:Ljava/util/ArrayList;
+.field private final UW:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -67,7 +67,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     new-instance v0, Ljava/lang/Object;
 
@@ -211,7 +211,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    iget-object v3, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -322,7 +322,7 @@
 
 
 # virtual methods
-.method public De()V
+.method public Ce()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/secrecy/you/zta;->mLock:Ljava/lang/Object;
@@ -330,7 +330,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
@@ -354,7 +354,7 @@
     throw p0
 .end method
 
-.method public Ee()V
+.method public De()V
     .locals 2
 
     new-instance v0, Ljava/io/File;
@@ -425,7 +425,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v3, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -433,7 +433,7 @@
 
     if-ge v2, v3, :cond_2
 
-    iget-object v3, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -507,7 +507,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -521,7 +521,7 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object p0, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -611,7 +611,7 @@
     monitor-enter v2
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/secrecy/you/zta;->KW:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/secrecy/you/zta;->UW:Ljava/util/ArrayList;
 
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

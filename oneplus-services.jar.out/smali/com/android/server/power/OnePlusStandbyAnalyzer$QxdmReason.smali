@@ -25,15 +25,15 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
-.field public static final enum rBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+.field public static final enum NBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
-.field public static final enum sBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+.field public static final enum OBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
-.field public static final enum tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+.field public static final enum PBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
-.field public static final enum uBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+.field public static final enum QBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
-.field public static final enum vBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+.field public static final enum RBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->rBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->NBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->sBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->OBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->PBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
@@ -78,7 +78,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->uBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->QBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
@@ -88,29 +88,29 @@
 
     invoke-direct {v0, v6, v5}, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->vBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->RBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
-    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->rBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sget-object v6, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->NBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     aput-object v6, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->sBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->OBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->tBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->PBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->uBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->QBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->vBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;->RBa:Lcom/android/server/power/OnePlusStandbyAnalyzer$QxdmReason;
 
     aput-object v1, v0, v5
 

@@ -67,7 +67,7 @@
 
     new-instance v0, Lorg/bouncycastle/asn1/C;
 
-    invoke-virtual {p1, p2}, Lyou/zta/sis/zta/wtn;->oa(Z)[B
+    invoke-virtual {p1, p2}, Lyou/zta/sis/zta/wtn;->pa(Z)[B
 
     move-result-object p1
 
@@ -80,7 +80,7 @@
 
 
 # virtual methods
-.method public declared-synchronized Jj()Lyou/zta/sis/zta/wtn;
+.method public declared-synchronized Kj()Lyou/zta/sis/zta/wtn;
     .locals 2
 
     monitor-enter p0
@@ -125,7 +125,7 @@
     throw v0
 .end method
 
-.method public Kj()[B
+.method public Lj()[B
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/les;->encoding:Lorg/bouncycastle/asn1/ibl;
@@ -141,7 +141,7 @@
     return-object p0
 .end method
 
-.method public Lj()Z
+.method public Mj()Z
     .locals 3
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/ibl/les;->encoding:Lorg/bouncycastle/asn1/ibl;

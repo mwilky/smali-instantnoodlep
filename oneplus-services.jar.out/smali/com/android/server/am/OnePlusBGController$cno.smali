@@ -134,7 +134,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object p1
 
@@ -142,7 +142,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$SnapshotType;->fza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Bza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/am/OnePlusBGController$kth;-><init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/OnePlusBGController$SnapshotType;)V
 
@@ -215,7 +215,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object p1
 
@@ -227,7 +227,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object p0
 
@@ -282,7 +282,7 @@
 
     iget-object v1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->irq(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->vdw(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v1
 
@@ -294,7 +294,7 @@
     :try_start_0
     iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->irq(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->vdw(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v3
 
@@ -306,7 +306,7 @@
 
     iget-object v3, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->irq(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v3}, Lcom/android/server/am/OnePlusBGController;->vdw(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v3
 
@@ -385,7 +385,7 @@
 
     iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->ssp(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->rtg(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -401,7 +401,7 @@
 
     iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->ssp(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->rtg(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -411,7 +411,7 @@
 
     iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->irq(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->vdw(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -420,7 +420,7 @@
     :try_start_1
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->irq(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->vdw(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object p0
 
@@ -482,7 +482,7 @@
 
     iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->veq(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
+    invoke-static {v0}, Lcom/android/server/am/OnePlusBGController;->cgv(Lcom/android/server/am/OnePlusBGController;)Lcom/android/server/am/OnePlusBGController$cno;
 
     move-result-object v0
 
@@ -490,7 +490,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    sget-object v2, Lcom/android/server/am/OnePlusBGController$SnapshotType;->hza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
+    sget-object v2, Lcom/android/server/am/OnePlusBGController$SnapshotType;->Dza:Lcom/android/server/am/OnePlusBGController$SnapshotType;
 
     invoke-direct {v1, p0, v2, p1}, Lcom/android/server/am/OnePlusBGController$kth;-><init>(Lcom/android/server/am/OnePlusBGController;Lcom/android/server/am/OnePlusBGController$SnapshotType;Z)V
 
@@ -525,7 +525,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->ssp(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {p1}, Lcom/android/server/am/OnePlusBGController;->rtg(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object p1
 
@@ -741,7 +741,7 @@
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->ssp(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
+    invoke-static {v2}, Lcom/android/server/am/OnePlusBGController;->rtg(Lcom/android/server/am/OnePlusBGController;)Landroid/util/SparseArray;
 
     move-result-object v2
 
@@ -849,7 +849,7 @@
     :pswitch_a
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController;->fc()V
+    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController;->ec()V
 
     iget-object p1, p0, Lcom/android/server/am/OnePlusBGController$cno;->this$0:Lcom/android/server/am/OnePlusBGController;
 

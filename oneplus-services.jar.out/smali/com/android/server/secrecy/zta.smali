@@ -54,7 +54,7 @@
     return-object p0
 .end method
 
-.method static je()V
+.method static ie()V
     .locals 5
 
     const-string v0, "RSA"

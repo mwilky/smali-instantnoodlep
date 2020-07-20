@@ -1,86 +1,45 @@
-.class final Lcom/android/server/am/A$tsu;
+.class Lcom/android/server/am/a$tsu;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lcom/oneplus/config/ConfigObserver$ConfigUpdater;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/A;
+    value = Lcom/android/server/am/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x0
     name = "tsu"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lcom/android/server/am/A$cno;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field final synthetic this$0:Lcom/android/server/am/a;
 
 
 # direct methods
-.method private constructor <init>()V
+.method constructor <init>(Lcom/android/server/am/a;)V
     .locals 0
+
+    iput-object p1, p0, Lcom/android/server/am/a$tsu;->this$0:Lcom/android/server/am/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/server/am/z;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/am/A$tsu;-><init>()V
-
-    return-void
-.end method
-
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public updateConfig(Lorg/json/JSONArray;)V
     .locals 0
 
-    check-cast p1, Lcom/android/server/am/A$cno;
+    iget-object p0, p0, Lcom/android/server/am/a$tsu;->this$0:Lcom/android/server/am/a;
 
-    check-cast p2, Lcom/android/server/am/A$cno;
+    invoke-static {p0, p1}, Lcom/android/server/am/a;->zta(Lcom/android/server/am/a;Lorg/json/JSONArray;)V
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/A$tsu;->zta(Lcom/android/server/am/A$cno;Lcom/android/server/am/A$cno;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public zta(Lcom/android/server/am/A$cno;Lcom/android/server/am/A$cno;)I
-    .locals 0
-
-    invoke-static {p1}, Lcom/android/server/am/A$cno;->bio(Lcom/android/server/am/A$cno;)J
-
-    move-result-wide p0
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p0
-
-    invoke-static {p2}, Lcom/android/server/am/A$cno;->bio(Lcom/android/server/am/A$cno;)J
-
-    move-result-wide p1
-
-    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ljava/lang/Long;->compareTo(Ljava/lang/Long;)I
-
-    move-result p0
-
-    return p0
+    return-void
 .end method

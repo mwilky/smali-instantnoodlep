@@ -4,29 +4,29 @@
 
 
 # static fields
-.field private static final AI:I = 0x3
+.field private static final AI:I = 0xf4240
 
-.field private static final BI:Ljava/util/regex/Pattern;
+.field private static final BI:I = 0x1e8480
 
-.field private static final CI:I = 0x1
+.field private static final CI:I = 0x9
 
-.field private static final DI:I = 0x2
+.field private static final DI:I = 0x0
 
-.field private static final EI:Ljava/util/regex/Pattern;
+.field private static final EI:I = 0x2
 
-.field private static final FI:I = 0x6
+.field private static final FI:I = 0x3
 
-.field private static final GI:Ljava/lang/String; = "1.3.6.1.4.1.11129.2.1.17"
+.field private static final GI:I = 0x1
 
-.field private static final HI:I = 0x0
+.field private static final HI:I = 0x2
 
 .field private static final HW_AUTH_PASSWORD:I = 0x1
 
-.field private static final II:I = 0x1
+.field private static final II:I = 0x3
 
-.field private static final JI:I = 0x3
+.field private static final JI:Ljava/util/regex/Pattern;
 
-.field private static final KI:I = 0x4
+.field private static final KI:I = 0x1
 
 .field private static final KM_ERROR_INVALID_INPUT_LENGTH:I = -0x15
 
@@ -46,33 +46,33 @@
 
 .field private static final KM_TAG_USER_AUTH_TYPE:I = 0x1f8
 
-.field private static final LI:I = 0x6
+.field private static final LI:I = 0x2
 
-.field private static final MI:I = 0x7
+.field private static final MI:Ljava/util/regex/Pattern;
 
-.field private static final OI:I = 0x2
+.field private static final OI:I = 0x6
+
+.field private static final QI:Ljava/lang/String; = "1.3.6.1.4.1.11129.2.1.17"
+
+.field private static final RI:I = 0x0
 
 .field static final TAG:Ljava/lang/String; = "KeyAttestationTest"
 
-.field public static final qI:I = 0x0
+.field private static final TI:I = 0x1
 
-.field public static final rI:I = 0x1
+.field private static final UI:I = 0x3
 
-.field private static final sI:I = 0xf4240
+.field private static final VI:I = 0x4
 
-.field private static final tI:I = 0x1e8480
+.field private static final WI:I = 0x6
 
-.field private static final uI:I = 0x9
+.field private static final XI:I = 0x7
 
-.field private static final vI:I = 0x0
+.field private static final ZI:I = 0x2
 
-.field private static final wI:I = 0x2
+.field public static final yI:I = 0x0
 
-.field private static final xI:I = 0x3
-
-.field private static final yI:I = 0x1
-
-.field private static final zI:I = 0x2
+.field public static final zI:I = 0x1
 
 
 # direct methods
@@ -111,7 +111,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/engineer/zta;->BI:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/android/server/engineer/zta;->JI:Ljava/util/regex/Pattern;
 
     const-string v0, "([0-9]{4})-([0-9]{2})-[0-9]{2}"
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/engineer/zta;->EI:Ljava/util/regex/Pattern;
+    sput-object v0, Lcom/android/server/engineer/zta;->MI:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -1260,7 +1260,7 @@
 
 
 # virtual methods
-.method public nd()V
+.method public md()V
     .locals 21
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1399,7 +1399,7 @@
     return-void
 .end method
 
-.method public od()V
+.method public nd()V
     .locals 17
     .annotation system Ldalvik/annotation/Throws;
         value = {

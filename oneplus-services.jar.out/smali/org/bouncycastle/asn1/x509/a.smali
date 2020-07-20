@@ -22,23 +22,23 @@
 
 .field public static final UNUSED:I = 0x80
 
-.field public static final VFa:I = 0x80
+.field public static final pGa:I = 0x80
 
-.field public static final WFa:I = 0x40
+.field public static final qGa:I = 0x40
 
-.field public static final XFa:I = 0x20
+.field public static final rGa:I = 0x20
 
-.field public static final YFa:I = 0x10
+.field public static final sGa:I = 0x10
 
-.field public static final ZFa:I = 0x8
+.field public static final tGa:I = 0x8
 
-.field public static final _Fa:I = 0x4
+.field public static final uGa:I = 0x4
 
-.field public static final aGa:I = 0x2
+.field public static final vGa:I = 0x2
 
-.field public static final bGa:I = 0x1
+.field public static final wGa:I = 0x1
 
-.field public static final cGa:I = 0x8000
+.field public static final xGa:I = 0x8000
 
 
 # direct methods
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->yh()I
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/sis;->zh()I
 
     move-result p1
 

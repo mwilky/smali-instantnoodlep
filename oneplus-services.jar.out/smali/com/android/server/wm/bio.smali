@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic Daa:Lcom/android/server/wm/OPAppSwitchSettings;
+.field final synthetic Maa:Lcom/android/server/wm/OPAppSwitchSettings;
 
 .field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/wm/bio;->this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
-    iput-object p2, p0, Lcom/android/server/wm/bio;->Daa:Lcom/android/server/wm/OPAppSwitchSettings;
+    iput-object p2, p0, Lcom/android/server/wm/bio;->Maa:Lcom/android/server/wm/OPAppSwitchSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public run()V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/bio;->Daa:Lcom/android/server/wm/OPAppSwitchSettings;
+    iget-object p0, p0, Lcom/android/server/wm/bio;->Maa:Lcom/android/server/wm/OPAppSwitchSettings;
 
     invoke-virtual {p0}, Lcom/android/server/wm/OPAppSwitchSettings;->init()V
 

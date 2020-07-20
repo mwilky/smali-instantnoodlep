@@ -27,9 +27,9 @@
 
 .field public static final enum ALPHA:Lcom/android/server/am/OnePlusBGController$RomType;
 
-.field public static final enum Vya:Lcom/android/server/am/OnePlusBGController$RomType;
+.field public static final enum nza:Lcom/android/server/am/OnePlusBGController$RomType;
 
-.field public static final enum dza:Lcom/android/server/am/OnePlusBGController$RomType;
+.field public static final enum zza:Lcom/android/server/am/OnePlusBGController$RomType;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/am/OnePlusBGController$RomType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$RomType;->dza:Lcom/android/server/am/OnePlusBGController$RomType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$RomType;->zza:Lcom/android/server/am/OnePlusBGController$RomType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$RomType;
 
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/am/OnePlusBGController$RomType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$RomType;->Vya:Lcom/android/server/am/OnePlusBGController$RomType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$RomType;->nza:Lcom/android/server/am/OnePlusBGController$RomType;
 
     const/4 v0, 0x3
 
@@ -74,11 +74,11 @@
 
     aput-object v4, v0, v1
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$RomType;->dza:Lcom/android/server/am/OnePlusBGController$RomType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$RomType;->zza:Lcom/android/server/am/OnePlusBGController$RomType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$RomType;->Vya:Lcom/android/server/am/OnePlusBGController$RomType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$RomType;->nza:Lcom/android/server/am/OnePlusBGController$RomType;
 
     aput-object v1, v0, v3
 

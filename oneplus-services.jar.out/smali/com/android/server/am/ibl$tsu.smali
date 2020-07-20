@@ -126,7 +126,7 @@
     return-void
 .end method
 
-.method private nn()Z
+.method private on()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/am/ibl$tsu;->zo:Ljava/util/ArrayList;
@@ -257,7 +257,7 @@
 .method static synthetic zta(Lcom/android/server/am/ibl$tsu;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ibl$tsu;->nn()Z
+    invoke-direct {p0}, Lcom/android/server/am/ibl$tsu;->on()Z
 
     move-result p0
 

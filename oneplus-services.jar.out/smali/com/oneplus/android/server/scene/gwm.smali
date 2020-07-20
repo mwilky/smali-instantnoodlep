@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field final synthetic _ta:I
-
-.field final synthetic aua:Ljava/lang/String;
+.field final synthetic sua:I
 
 .field final synthetic this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
+
+.field final synthetic tua:Ljava/lang/String;
 
 .field final synthetic val$intent:Landroid/content/Intent;
 
@@ -41,11 +41,11 @@
 
     iput p3, p0, Lcom/oneplus/android/server/scene/gwm;->val$userId:I
 
-    iput-object p4, p0, Lcom/oneplus/android/server/scene/gwm;->aua:Ljava/lang/String;
+    iput-object p4, p0, Lcom/oneplus/android/server/scene/gwm;->tua:Ljava/lang/String;
 
     iput-object p5, p0, Lcom/oneplus/android/server/scene/gwm;->val$pkgName:Ljava/lang/String;
 
-    iput p6, p0, Lcom/oneplus/android/server/scene/gwm;->_ta:I
+    iput p6, p0, Lcom/oneplus/android/server/scene/gwm;->sua:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -102,7 +102,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/scene/gwm;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/gwm;->aua:Ljava/lang/String;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/gwm;->tua:Ljava/lang/String;
 
     invoke-static {p1, v0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$602(Lcom/oneplus/android/server/scene/OemSceneCallBlock;Ljava/lang/String;)Ljava/lang/String;
 
@@ -142,7 +142,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/gwm;->aua:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/gwm;->tua:Ljava/lang/String;
 
     const-string v2, "PKG"
 
@@ -163,9 +163,9 @@
     :cond_1
     iget-object p1, p0, Lcom/oneplus/android/server/scene/gwm;->this$0:Lcom/oneplus/android/server/scene/OemSceneCallBlock;
 
-    iget v0, p0, Lcom/oneplus/android/server/scene/gwm;->_ta:I
+    iget v0, p0, Lcom/oneplus/android/server/scene/gwm;->sua:I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/gwm;->aua:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/gwm;->tua:Ljava/lang/String;
 
     invoke-static {p1, v0, p0}, Lcom/oneplus/android/server/scene/OemSceneCallBlock;->access$400(Lcom/oneplus/android/server/scene/OemSceneCallBlock;ILjava/lang/String;)V
 

@@ -3,12 +3,12 @@
 .source ""
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/l;->killApplicationProcess(Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
+    value = Lcom/android/server/wm/p;->it()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/l;
-
-.field final synthetic val$aInfo:Landroid/content/pm/ActivityInfo;
-
-.field final synthetic val$service:Lcom/android/server/wm/ActivityTaskManagerService;
+.field final synthetic this$0:Lcom/android/server/wm/p;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/l;Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
+.method constructor <init>(Lcom/android/server/wm/p;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/k;->this$0:Lcom/android/server/wm/l;
-
-    iput-object p2, p0, Lcom/android/server/wm/k;->val$service:Lcom/android/server/wm/ActivityTaskManagerService;
-
-    iput-object p3, p0, Lcom/android/server/wm/k;->val$aInfo:Landroid/content/pm/ActivityInfo;
+    iput-object p1, p0, Lcom/android/server/wm/k;->this$0:Lcom/android/server/wm/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,32 +34,62 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 1
 
-    const-string v0, "OpQuickReply"
+    const-string p1, "OpQuickReply"
 
-    const-string v1, "kill IME before start it"
+    :try_start_0
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    move-result p2
 
-    iget-object v0, p0, Lcom/android/server/wm/k;->val$service:Lcom/android/server/wm/ActivityTaskManagerService;
+    if-nez p2, :cond_0
 
-    iget-object v0, v0, Lcom/android/server/wm/ActivityTaskManagerService;->mService:Lcom/android/server/am/ActivityManagerService;
+    const-string p2, "click to go settings"
 
-    iget-object v1, p0, Lcom/android/server/wm/k;->val$aInfo:Landroid/content/pm/ActivityInfo;
+    invoke-static {p1, p2}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, v1, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object p2, p0, Lcom/android/server/wm/k;->this$0:Lcom/android/server/wm/p;
 
-    iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/server/wm/p;->exitQuickReply()V
 
-    iget-object p0, p0, Lcom/android/server/wm/k;->val$aInfo:Landroid/content/pm/ActivityInfo;
+    new-instance p2, Landroid/content/Intent;
 
-    iget-object p0, p0, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    const-string v0, "com.oneplus.action.QUICK_REPLY_SETTINGS"
 
-    iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
+    invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1, p0}, Lcom/android/server/am/ActivityManagerService;->killApplicationProcess(Ljava/lang/String;I)V
+    const-string v0, "com.android.settings"
 
-    return-void
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    const/high16 v0, 0x14000000
+
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    iget-object p0, p0, Lcom/android/server/wm/k;->this$0:Lcom/android/server/wm/p;
+
+    invoke-static {p0}, Lcom/android/server/wm/p;->zta(Lcom/android/server/wm/p;)Landroid/content/Context;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    const-string p2, "click to go settings fail: "
+
+    invoke-static {p1, p2, p0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_0
+    :goto_0
+    const/4 p0, 0x1
+
+    return p0
 .end method

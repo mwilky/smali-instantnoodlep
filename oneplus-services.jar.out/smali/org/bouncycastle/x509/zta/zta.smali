@@ -41,7 +41,7 @@
 .method public constructor <init>(Lorg/bouncycastle/asn1/x509/gwm;)V
     .locals 0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->Zi()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/gwm;->_i()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object p1
 
@@ -55,7 +55,7 @@
 .method public constructor <init>(Lorg/bouncycastle/asn1/x509/n;)V
     .locals 0
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/n;->Zi()Lorg/bouncycastle/asn1/ssp;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/n;->_i()Lorg/bouncycastle/asn1/ssp;
 
     move-result-object p1
 
@@ -151,7 +151,7 @@
 
     invoke-direct {v0, v1}, Lorg/bouncycastle/asn1/x509/zgw;-><init>(Lorg/bouncycastle/asn1/x509/q;)V
 
-    sget-object v1, Lorg/bouncycastle/asn1/x509/gwm;->eIa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v1, Lorg/bouncycastle/asn1/x509/gwm;->zIa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v1}, Lorg/bouncycastle/asn1/bvj;->getId()Ljava/lang/String;
 

@@ -1,11 +1,14 @@
 .class Lcom/android/server/am/bud;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/les;
+    value = Lcom/android/server/am/OnePlusBGController;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,78 +16,65 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lcom/android/server/am/OnePlusBGController$wtn;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/les;
+.field final synthetic this$0:Lcom/android/server/am/OnePlusBGController;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/les;)V
+.method constructor <init>(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/bud;->this$0:Lcom/android/server/am/les;
+    iput-object p1, p0, Lcom/android/server/am/bud;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    invoke-static {}, Lcom/android/server/am/les;->access$300()Lcom/android/server/am/les;
+    check-cast p1, Lcom/android/server/am/OnePlusBGController$wtn;
 
-    move-result-object p0
+    check-cast p2, Lcom/android/server/am/OnePlusBGController$wtn;
 
-    if-nez p0, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 p0, 0x4
-
-    const-string p1, "event mPowerSaveWhitelistReceiver onReceive"
-
-    invoke-static {p0, p1}, Lcom/android/server/am/les;->tsu(ILjava/lang/String;)V
-
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "android.os.action.POWER_SAVE_WHITELIST_CHANGED"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    invoke-static {}, Lcom/android/server/am/les;->access$300()Lcom/android/server/am/les;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/android/server/am/les;->cjf(Lcom/android/server/am/les;)V
-
-    goto :goto_0
-
-    :cond_1
-    const-string p1, "smart_power_control_changed"
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/bud;->zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
 
     move-result p0
 
-    if-eqz p0, :cond_2
+    return p0
+.end method
 
-    invoke-static {}, Lcom/android/server/am/les;->access$300()Lcom/android/server/am/les;
+.method public zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
+    .locals 2
 
-    move-result-object p0
+    sget-object p0, Lcom/android/server/am/OnePlusBGController$MySipperType;->T:Lcom/android/server/am/OnePlusBGController$MySipperType;
 
-    invoke-static {p0}, Lcom/android/server/am/les;->ear(Lcom/android/server/am/les;)V
+    invoke-virtual {p2, p0}, Lcom/android/server/am/OnePlusBGController$wtn;->zta(Lcom/android/server/am/OnePlusBGController$MySipperType;)D
 
-    :cond_2
-    :goto_0
-    return-void
+    move-result-wide v0
+
+    sget-object p0, Lcom/android/server/am/OnePlusBGController$MySipperType;->T:Lcom/android/server/am/OnePlusBGController$MySipperType;
+
+    invoke-virtual {p1, p0}, Lcom/android/server/am/OnePlusBGController$wtn;->zta(Lcom/android/server/am/OnePlusBGController$MySipperType;)D
+
+    move-result-wide p0
+
+    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
+
+    move-result p0
+
+    return p0
 .end method

@@ -1,210 +1,144 @@
-.class Lcom/android/server/am/A$you;
+.class public Lcom/android/server/am/a$you;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/A;
+    value = Lcom/android/server/am/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "you"
 .end annotation
 
 
-# instance fields
-.field public VE:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "Lcom/android/server/am/A$bio;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final IN_USING:Z = true
 
-.field public WE:Lcom/android/server/am/A$zta;
-
-.field public XE:D
-
-.field public mId:I
+.field private static mInstance:Lcom/android/server/am/a$you;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lcom/android/server/am/A$you;->mId:I
-
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object p1, p0, Lcom/android/server/am/A$you;->VE:Ljava/util/ArrayList;
-
     return-void
 .end method
 
+.method private Bb(I)Z
+    .locals 2
 
-# virtual methods
-.method public Sc()Lcom/android/server/am/A$zta;
-    .locals 0
+    invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->vju(I)Z
 
-    iget-object p0, p0, Lcom/android/server/am/A$you;->WE:Lcom/android/server/am/A$zta;
+    move-result p0
 
-    return-object p0
-.end method
+    const/4 v0, 0x1
 
-.method public Tc()Ljava/util/ArrayList;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/ArrayList<",
-            "Lcom/android/server/am/A$bio;",
-            ">;"
-        }
-    .end annotation
+    if-eqz p0, :cond_3
 
-    iget-object p0, p0, Lcom/android/server/am/A$you;->VE:Ljava/util/ArrayList;
-
-    return-object p0
-.end method
-
-.method public clear()V
-    .locals 0
-
-    iget-object p0, p0, Lcom/android/server/am/A$you;->VE:Ljava/util/ArrayList;
-
-    invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
-
-    return-void
-.end method
-
-.method public dump()V
-    .locals 5
-
-    const-string v0, "-----------------------------------------------------------------------"
-
-    const-string v1, "OpRestartProcessManager"
-
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Cluster "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v3, p0, Lcom/android/server/am/A$you;->mId:I
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v2, p0, Lcom/android/server/am/A$you;->WE:Lcom/android/server/am/A$zta;
-
-    invoke-virtual {v2}, Lcom/android/server/am/A$zta;->dump()V
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Distance from 0 : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v3, p0, Lcom/android/server/am/A$you;->XE:D
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const-string v2, "All data : "
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object p0, p0, Lcom/android/server/am/A$you;->VE:Ljava/util/ArrayList;
-
-    invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-static {}, Lcom/android/server/OnePlusUtil$you;->getInstance()Lcom/android/server/OnePlusUtil$you;
 
     move-result-object p0
 
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {p0, p1}, Lcom/android/server/OnePlusUtil$you;->ywr(I)Z
 
-    move-result v2
+    move-result p0
 
-    if-eqz v2, :cond_0
+    if-eqz p0, :cond_0
 
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/server/am/A$bio;
-
-    invoke-virtual {v2}, Lcom/android/server/am/A$bio;->dump()V
-
-    goto :goto_0
+    return v0
 
     :cond_0
-    invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p1}, Lcom/android/server/am/AppRecordManager;->getProcState(I)I
 
-    return-void
-.end method
+    move-result p0
 
-.method public getId()I
-    .locals 0
+    const/4 v1, 0x5
 
-    iget p0, p0, Lcom/android/server/am/A$you;->mId:I
+    if-ge p0, v1, :cond_1
+
+    return v0
+
+    :cond_1
+    invoke-static {}, Lcom/android/server/am/a;->access$300()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "isDeliverDisplayChangeLock uid("
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p1, ") ret=false."
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "BFP"
+
+    invoke-static {p1, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    const/4 p0, 0x0
 
     return p0
+
+    :cond_3
+    return v0
 .end method
 
-.method public sis(Ljava/util/ArrayList;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/ArrayList<",
-            "Lcom/android/server/am/A$bio;",
-            ">;)V"
-        }
-    .end annotation
+.method private static getInstance()Lcom/android/server/am/a$you;
+    .locals 1
 
-    iput-object p1, p0, Lcom/android/server/am/A$you;->VE:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/server/am/a$you;->mInstance:Lcom/android/server/am/a$you;
 
-    return-void
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/android/server/am/a$you;
+
+    invoke-direct {v0}, Lcom/android/server/am/a$you;-><init>()V
+
+    sput-object v0, Lcom/android/server/am/a$you;->mInstance:Lcom/android/server/am/a$you;
+
+    :cond_0
+    sget-object v0, Lcom/android/server/am/a$you;->mInstance:Lcom/android/server/am/a$you;
+
+    return-object v0
 .end method
 
-.method public zta(Lcom/android/server/am/A$bio;)V
-    .locals 0
+.method public static isDeliverDisplayChange(I)Z
+    .locals 1
 
-    iget-object p0, p0, Lcom/android/server/am/A$you;->VE:Ljava/util/ArrayList;
+    const/16 v0, 0x2710
 
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    if-ge p0, v0, :cond_0
 
-    return-void
-.end method
+    const/4 p0, 0x1
 
-.method public zta(Lcom/android/server/am/A$zta;)V
-    .locals 0
+    return p0
 
-    iput-object p1, p0, Lcom/android/server/am/A$you;->WE:Lcom/android/server/am/A$zta;
+    :cond_0
+    invoke-static {}, Lcom/android/server/am/a$you;->getInstance()Lcom/android/server/am/a$you;
 
-    return-void
+    move-result-object v0
+
+    invoke-direct {v0, p0}, Lcom/android/server/am/a$you;->Bb(I)Z
+
+    move-result p0
+
+    return p0
 .end method

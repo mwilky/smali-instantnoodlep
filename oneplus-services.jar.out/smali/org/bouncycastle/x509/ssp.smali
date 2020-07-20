@@ -68,12 +68,12 @@
 
 
 # virtual methods
-.method public Pj()Ljava/lang/String;
+.method public Qj()Ljava/lang/String;
     .locals 0
 
     iget-object p0, p0, Lorg/bouncycastle/x509/ssp;->attr:Lorg/bouncycastle/asn1/x509/tsu;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Nh()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Oh()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object p0
 
@@ -89,7 +89,7 @@
 
     iget-object p0, p0, Lorg/bouncycastle/x509/ssp;->attr:Lorg/bouncycastle/asn1/x509/tsu;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Oh()Lorg/bouncycastle/asn1/ear;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/x509/tsu;->Ph()Lorg/bouncycastle/asn1/ear;
 
     move-result-object p0
 

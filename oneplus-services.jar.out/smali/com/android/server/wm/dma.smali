@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic Haa:Landroid/app/Notification$Builder;
+.field final synthetic Qaa:Landroid/app/Notification$Builder;
 
 .field final synthetic this$0:Lcom/android/server/wm/ibl$zta;
 
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lcom/android/server/wm/dma;->this$0:Lcom/android/server/wm/ibl$zta;
 
-    iput-object p2, p0, Lcom/android/server/wm/dma;->Haa:Landroid/app/Notification$Builder;
+    iput-object p2, p0, Lcom/android/server/wm/dma;->Qaa:Landroid/app/Notification$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,7 +83,7 @@
 
     move-result-object v1
 
-    iget-object p0, p0, Lcom/android/server/wm/dma;->Haa:Landroid/app/Notification$Builder;
+    iget-object p0, p0, Lcom/android/server/wm/dma;->Qaa:Landroid/app/Notification$Builder;
 
     invoke-virtual {p0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 

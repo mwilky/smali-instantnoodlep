@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field protected PCa:Ljava/security/SecureRandom;
-
 .field private final helper:Lorg/bouncycastle/jcajce/tsu/tsu;
+
+.field protected jDa:Ljava/security/SecureRandom;
 
 .field protected strength:I
 
@@ -37,12 +37,12 @@
 
     iput p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/zta;->strength:I
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/zta;->PCa:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/zta;->jDa:Ljava/security/SecureRandom;
 
     return-void
 .end method
 
-.method protected final ya(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
+.method protected final za(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

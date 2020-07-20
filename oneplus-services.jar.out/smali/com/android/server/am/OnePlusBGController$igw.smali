@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field public Fr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+.field public Gr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-.field public Gr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+.field public Hr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
-.field public Hr:Z
+.field public Ir:Z
 
-.field public Ir:D
-
-.field public Jr:Z
+.field public Jr:D
 
 .field public Kr:Z
 
-.field public Lr:Lcom/android/server/am/OnePlusBGController$OptType;
+.field public Lr:Z
+
+.field public Mr:Lcom/android/server/am/OnePlusBGController$OptType;
 
 .field public mPkg:Ljava/lang/String;
 
@@ -38,19 +38,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$igw;->Fr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusBGController$igw;->Gr:Lcom/android/server/am/OnePlusBGController$AppBucketRanking;
 
-    iput-object p3, p0, Lcom/android/server/am/OnePlusBGController$igw;->Gr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
+    iput-object p3, p0, Lcom/android/server/am/OnePlusBGController$igw;->Hr:Lcom/android/server/am/OnePlusBGController$MyDrainType;
 
-    iput-boolean p4, p0, Lcom/android/server/am/OnePlusBGController$igw;->Hr:Z
+    iput-boolean p4, p0, Lcom/android/server/am/OnePlusBGController$igw;->Ir:Z
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$igw;->Ir:D
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusBGController$igw;->Jr:D
 
-    iput-boolean p7, p0, Lcom/android/server/am/OnePlusBGController$igw;->Jr:Z
+    iput-boolean p7, p0, Lcom/android/server/am/OnePlusBGController$igw;->Kr:Z
 
-    iput-boolean p8, p0, Lcom/android/server/am/OnePlusBGController$igw;->Kr:Z
+    iput-boolean p8, p0, Lcom/android/server/am/OnePlusBGController$igw;->Lr:Z
 
-    iput-object p9, p0, Lcom/android/server/am/OnePlusBGController$igw;->Lr:Lcom/android/server/am/OnePlusBGController$OptType;
+    iput-object p9, p0, Lcom/android/server/am/OnePlusBGController$igw;->Mr:Lcom/android/server/am/OnePlusBGController$OptType;
 
     return-void
 .end method

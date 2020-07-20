@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Zy:I
+.field private hz:I
 
 .field private mCount:I
 
@@ -40,23 +40,23 @@
 
     iput p1, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->mCount:I
 
-    iput p1, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->Zy:I
+    iput p1, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->hz:I
 
     iput-object p2, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->mProcess:Ljava/lang/String;
 
     iput p3, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->mCount:I
 
-    iput p4, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->Zy:I
+    iput p4, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->hz:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Fc()I
+.method public Ec()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->Zy:I
+    iget p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->hz:I
 
     return p0
 .end method
@@ -96,7 +96,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->Zy:I
+    iget p0, p0, Lcom/android/server/am/OnePlusHighPowerDetector$cno;->hz:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

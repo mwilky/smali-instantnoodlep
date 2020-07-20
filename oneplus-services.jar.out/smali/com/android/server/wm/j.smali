@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/wm/l;->pc(I)V
+    value = Lcom/android/server/wm/p;->it()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/wm/l;
+.field final synthetic this$0:Lcom/android/server/wm/p;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/wm/l;)V
+.method constructor <init>(Lcom/android/server/wm/p;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/l;
+    iput-object p1, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public onGlobalLayout()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/l;
+    iget-object v0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/p;
 
-    iget-object v0, v0, Lcom/android/server/wm/l;->Oga:Landroid/view/View;
+    iget-object v0, v0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -49,15 +49,15 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    iget-object p0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/l;
+    iget-object p0, p0, Lcom/android/server/wm/j;->this$0:Lcom/android/server/wm/p;
 
-    iget-object p0, p0, Lcom/android/server/wm/l;->Oga:Landroid/view/View;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p0
 
-    sput p0, Lcom/android/server/wm/l;->jha:I
+    sput p0, Lcom/android/server/wm/p;->tha:I
 
     sget-boolean p0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -67,11 +67,11 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v0, "sIMEButtonSize = "
+    const-string v0, "sIMButtonSize = "
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/wm/l;->jha:I
+    sget v0, Lcom/android/server/wm/p;->tha:I
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

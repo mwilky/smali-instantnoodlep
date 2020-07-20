@@ -7,7 +7,7 @@
 
 
 # static fields
-.field private static final cDa:[C
+.field private static final xDa:[C
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lorg/bouncycastle/asn1/P;->cDa:[C
+    sput-object v0, Lorg/bouncycastle/asn1/P;->xDa:[C
 
     return-void
 
@@ -239,7 +239,7 @@
 
     if-eq v1, v2, :cond_0
 
-    sget-object v2, Lorg/bouncycastle/asn1/P;->cDa:[C
+    sget-object v2, Lorg/bouncycastle/asn1/P;->xDa:[C
 
     aget-byte v3, p0, v1
 
@@ -251,7 +251,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
 
-    sget-object v2, Lorg/bouncycastle/asn1/P;->cDa:[C
+    sget-object v2, Lorg/bouncycastle/asn1/P;->xDa:[C
 
     aget-byte v3, p0, v1
 
@@ -312,7 +312,7 @@
     return-object p0
 .end method
 
-.method uh()I
+.method vh()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/P;->string:[B

@@ -7,29 +7,29 @@
 
 
 # instance fields
-.field private ZMa:Ljava/util/Set;
+.field private ANa:Ljava/util/Set;
 
-.field private _Ma:Ljava/util/Set;
+.field private BNa:Ljava/util/Set;
 
-.field private aNa:Ljava/util/Set;
+.field private CNa:Ljava/util/Set;
 
-.field private bNa:Ljava/util/Set;
+.field private DNa:Ljava/util/Set;
 
-.field private cNa:Ljava/util/Set;
+.field private ENa:Ljava/util/Set;
 
-.field private dNa:Ljava/util/Set;
+.field private tNa:Ljava/util/Set;
 
-.field private eNa:Ljava/util/Set;
+.field private uNa:Ljava/util/Set;
 
-.field private fNa:Ljava/util/Set;
+.field private vNa:Ljava/util/Set;
 
-.field private gNa:Ljava/util/Set;
+.field private wNa:Ljava/util/Set;
 
-.field private hNa:Ljava/util/Set;
+.field private xNa:Ljava/util/Set;
 
-.field private iNa:Ljava/util/Set;
+.field private yNa:Ljava/util/Set;
 
-.field private jNa:Ljava/util/Set;
+.field private zNa:Ljava/util/Set;
 
 
 # direct methods
@@ -42,42 +42,42 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     return-void
 .end method
 
-.method private static Ad(Ljava/lang/String;)Ljava/lang/String;
+.method private static Cd(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
     const/16 v0, 0x3a
@@ -369,7 +369,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->g(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -510,7 +510,7 @@
     return p0
 .end method
 
-.method private f(Ljava/lang/String;Ljava/lang/String;)Z
+.method private g(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
 
     const/16 v0, 0x40
@@ -563,7 +563,7 @@
     return v2
 
     :cond_1
-    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -575,10 +575,28 @@
     return v3
 .end method
 
-.method private g(Ljava/lang/String;Ljava/lang/String;)Z
+.method private gck([B[B)[B
     .locals 2
 
-    invoke-static {p1}, Lorg/bouncycastle/asn1/x509/bud;->Ad(Ljava/lang/String;)Ljava/lang/String;
+    array-length p0, p1
+
+    mul-int/lit8 v0, p0, 0x2
+
+    new-array v0, v0, [B
+
+    const/4 v1, 0x0
+
+    invoke-static {p1, v1, v0, v1, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    invoke-static {p2, v1, v0, p0, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-object v0
+.end method
+
+.method private h(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 2
+
+    invoke-static {p1}, Lorg/bouncycastle/asn1/x509/bud;->Cd(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -601,7 +619,7 @@
     return v1
 
     :cond_0
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -613,118 +631,6 @@
     const/4 p0, 0x0
 
     return p0
-.end method
-
-.method private gck([B[B)[B
-    .locals 2
-
-    array-length p0, p1
-
-    mul-int/lit8 v0, p0, 0x2
-
-    new-array v0, v0, [B
-
-    const/4 v1, 0x0
-
-    invoke-static {p1, v1, v0, v1, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    invoke-static {p2, v1, v0, p0, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    return-object v0
-.end method
-
-.method private h(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 6
-
-    const-string p0, "."
-
-    invoke-virtual {p2, p0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result p0
-
-    const/4 v0, 0x1
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    :cond_0
-    const/16 p0, 0x2e
-
-    invoke-static {p2, p0}, Lorg/bouncycastle/util/Strings;->zta(Ljava/lang/String;C)[Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {p1, p0}, Lorg/bouncycastle/util/Strings;->zta(Ljava/lang/String;C)[Ljava/lang/String;
-
-    move-result-object p0
-
-    array-length p1, p0
-
-    array-length v1, p2
-
-    const/4 v2, 0x0
-
-    if-gt p1, v1, :cond_1
-
-    return v2
-
-    :cond_1
-    array-length p1, p0
-
-    array-length v1, p2
-
-    sub-int/2addr p1, v1
-
-    const/4 v1, -0x1
-
-    move v3, v1
-
-    :goto_0
-    array-length v4, p2
-
-    if-ge v3, v4, :cond_4
-
-    if-ne v3, v1, :cond_2
-
-    add-int v4, v3, p1
-
-    aget-object v4, p0, v4
-
-    const-string v5, ""
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_3
-
-    return v2
-
-    :cond_2
-    aget-object v4, p2, v3
-
-    add-int v5, v3, p1
-
-    aget-object v5, p0, v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_3
-
-    return v2
-
-    :cond_3
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    :cond_4
-    return v0
 .end method
 
 .method private igw(Ljava/util/Set;)Ljava/lang/String;
@@ -770,7 +676,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/vju;->qj()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {v0}, Lorg/bouncycastle/asn1/x509/vju;->rj()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v1
 
@@ -874,6 +780,100 @@
     aput-object v4, p0, p1
 
     return-object p0
+.end method
+
+.method private j(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 6
+
+    const-string p0, "."
+
+    invoke-virtual {p2, p0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result p0
+
+    const/4 v0, 0x1
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    :cond_0
+    const/16 p0, 0x2e
+
+    invoke-static {p2, p0}, Lorg/bouncycastle/util/Strings;->zta(Ljava/lang/String;C)[Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p1, p0}, Lorg/bouncycastle/util/Strings;->zta(Ljava/lang/String;C)[Ljava/lang/String;
+
+    move-result-object p0
+
+    array-length p1, p0
+
+    array-length v1, p2
+
+    const/4 v2, 0x0
+
+    if-gt p1, v1, :cond_1
+
+    return v2
+
+    :cond_1
+    array-length p1, p0
+
+    array-length v1, p2
+
+    sub-int/2addr p1, v1
+
+    const/4 v1, -0x1
+
+    move v3, v1
+
+    :goto_0
+    array-length v4, p2
+
+    if-ge v3, v4, :cond_4
+
+    if-ne v3, v1, :cond_2
+
+    add-int v4, v3, p1
+
+    aget-object v4, p0, v4
+
+    const-string v5, ""
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_3
+
+    return v2
+
+    :cond_2
+    aget-object v4, p2, v3
+
+    add-int v5, v3, p1
+
+    aget-object v5, p0, v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
+
+    return v2
+
+    :cond_3
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    return v0
 .end method
 
 .method private kth(Ljava/util/Set;Ljava/lang/String;)Ljava/util/Set;
@@ -1122,7 +1122,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -1170,7 +1170,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     invoke-static {p1}, Lorg/bouncycastle/asn1/obl;->getInstance(Ljava/lang/Object;)Lorg/bouncycastle/asn1/obl;
 
@@ -1447,7 +1447,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1487,7 +1487,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1502,7 +1502,7 @@
 
     if-eqz v0, :cond_5
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1517,7 +1517,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1526,7 +1526,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1566,7 +1566,7 @@
 
     if-eqz v0, :cond_8
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1632,7 +1632,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-direct {p0, p2, v0}, Lorg/bouncycastle/asn1/x509/bud;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v0}, Lorg/bouncycastle/asn1/x509/bud;->g(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1750,7 +1750,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->f(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->g(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1791,7 +1791,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/bvj/tsu;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
 
@@ -1931,7 +1931,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1971,7 +1971,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1986,7 +1986,7 @@
 
     if-eqz v0, :cond_5
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2001,7 +2001,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2010,7 +2010,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2050,7 +2050,7 @@
 
     if-eqz v0, :cond_8
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2116,7 +2116,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-direct {p0, p2, v0}, Lorg/bouncycastle/asn1/x509/bud;->g(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v0}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2285,7 +2285,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    invoke-direct {p0, v3, v1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v3, v1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v4
 
@@ -2296,7 +2296,7 @@
     goto :goto_1
 
     :cond_3
-    invoke-direct {p0, v1, v3}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, v3}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -2356,7 +2356,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2396,7 +2396,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2412,7 +2412,7 @@
 
     if-eqz v0, :cond_5
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2427,7 +2427,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2436,7 +2436,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2479,7 +2479,7 @@
 
     if-eqz v0, :cond_8
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -2537,7 +2537,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-direct {p0, p2, v0}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v0}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -2958,7 +2958,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -2970,7 +2970,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, v1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -3123,7 +3123,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -3163,7 +3163,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -3179,7 +3179,7 @@
 
     if-eqz v0, :cond_5
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -3194,7 +3194,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -3203,7 +3203,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p2, p1}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -3246,7 +3246,7 @@
 
     if-eqz v0, :cond_8
 
-    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lorg/bouncycastle/asn1/x509/bud;->j(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -3638,7 +3638,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     goto :goto_0
 
@@ -3668,7 +3668,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     goto :goto_0
 
@@ -3677,7 +3677,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     goto :goto_0
 
@@ -3686,7 +3686,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     goto :goto_0
 
@@ -3695,7 +3695,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     goto :goto_0
 
@@ -3704,7 +3704,7 @@
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     :goto_0
     return-void
@@ -3724,19 +3724,9 @@
     :cond_0
     check-cast p1, Lorg/bouncycastle/asn1/x509/bud;
 
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
-
-    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
-
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3744,19 +3734,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
-
-    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
-
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3764,19 +3744,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
-
-    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
-
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3784,19 +3754,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
-
-    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
-
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3804,19 +3764,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
-
-    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
-
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3824,9 +3774,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3834,9 +3784,59 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p1, p1, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
+
+    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
+
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
+
+    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
+
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
+
+    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
+
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
+
+    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p1, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
+
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
+
+    invoke-direct {p0, v0, v2}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object p1, p1, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
+
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     invoke-direct {p0, p1, v0}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;Ljava/util/Collection;)Z
 
@@ -3853,13 +3853,13 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
     move-result v0
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3867,7 +3867,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3875,7 +3875,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3883,7 +3883,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3891,7 +3891,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3899,7 +3899,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3907,7 +3907,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3915,7 +3915,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3923,7 +3923,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3931,7 +3931,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3939,7 +3939,7 @@
 
     add-int/2addr v0, v1
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Collection;)I
 
@@ -3969,7 +3969,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     const-string v2, "DN:\n"
 
@@ -3995,7 +3995,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4010,7 +4010,7 @@
     move-result-object v0
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     const-string v4, "DNS:\n"
 
@@ -4034,7 +4034,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4049,7 +4049,7 @@
     move-result-object v0
 
     :cond_1
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     const-string v5, "Email:\n"
 
@@ -4073,7 +4073,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4088,7 +4088,7 @@
     move-result-object v0
 
     :cond_2
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     const-string v6, "URI:\n"
 
@@ -4112,7 +4112,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4127,7 +4127,7 @@
     move-result-object v0
 
     :cond_3
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     const-string v7, "IP:\n"
 
@@ -4151,7 +4151,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/bud;->bio(Ljava/util/Set;)Ljava/lang/String;
 
@@ -4166,7 +4166,7 @@
     move-result-object v0
 
     :cond_4
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     const-string v8, "OtherName:\n"
 
@@ -4190,7 +4190,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/bud;->igw(Ljava/util/Set;)Ljava/lang/String;
 
@@ -4219,7 +4219,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -4245,7 +4245,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4260,7 +4260,7 @@
     move-result-object v0
 
     :cond_6
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -4286,7 +4286,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4301,7 +4301,7 @@
     move-result-object v0
 
     :cond_7
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -4327,7 +4327,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4342,7 +4342,7 @@
     move-result-object v0
 
     :cond_8
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -4368,7 +4368,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -4383,7 +4383,7 @@
     move-result-object v0
 
     :cond_9
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -4409,7 +4409,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/bud;->bio(Ljava/util/Set;)Ljava/lang/String;
 
@@ -4424,7 +4424,7 @@
     move-result-object v0
 
     :cond_a
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
 
@@ -4450,7 +4450,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     invoke-direct {p0, v0}, Lorg/bouncycastle/asn1/x509/bud;->igw(Ljava/util/Set;)Ljava/lang/String;
 
@@ -4530,7 +4530,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->zta(Ljava/util/Set;[B)V
 
@@ -4562,7 +4562,7 @@
     throw p0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4594,7 +4594,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4613,7 +4613,7 @@
     goto :goto_0
 
     :cond_4
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/bud;->sis(Lorg/bouncycastle/asn1/x509/zgw;)Ljava/lang/String;
 
@@ -4624,7 +4624,7 @@
     goto :goto_0
 
     :cond_5
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4673,7 +4673,7 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4691,7 +4691,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->cNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->xNa:Ljava/util/Set;
 
     goto :goto_0
 
@@ -4721,7 +4721,7 @@
     throw p0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/bud;->sis(Lorg/bouncycastle/asn1/x509/zgw;)Ljava/lang/String;
 
@@ -4731,12 +4731,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->bNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->wNa:Ljava/util/Set;
 
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4752,12 +4752,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->ZMa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->tNa:Ljava/util/Set;
 
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/bud;->sis(Lorg/bouncycastle/asn1/x509/zgw;)Ljava/lang/String;
 
@@ -4767,12 +4767,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->_Ma:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->uNa:Ljava/util/Set;
 
     goto :goto_0
 
     :cond_4
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/bud;->sis(Lorg/bouncycastle/asn1/x509/zgw;)Ljava/lang/String;
 
@@ -4782,12 +4782,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->aNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->vNa:Ljava/util/Set;
 
     goto :goto_0
 
     :cond_5
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4801,7 +4801,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->dNa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/bud;->yNa:Ljava/util/Set;
 
     :goto_0
     return-void
@@ -4853,7 +4853,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     invoke-direct {p0, v0, p1}, Lorg/bouncycastle/asn1/x509/bud;->you(Ljava/util/Set;[B)V
 
@@ -4885,7 +4885,7 @@
     throw p0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4917,7 +4917,7 @@
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -4936,7 +4936,7 @@
     goto :goto_0
 
     :cond_4
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/asn1/x509/bud;->sis(Lorg/bouncycastle/asn1/x509/zgw;)Ljava/lang/String;
 
@@ -4947,7 +4947,7 @@
     goto :goto_0
 
     :cond_5
-    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     invoke-virtual {p1}, Lorg/bouncycastle/asn1/x509/zgw;->getName()Lorg/bouncycastle/asn1/ssp;
 
@@ -5070,7 +5070,7 @@
 
     if-ne v1, v2, :cond_2
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -5082,7 +5082,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->iNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->DNa:Ljava/util/Set;
 
     goto :goto_1
 
@@ -5108,7 +5108,7 @@
     throw p0
 
     :cond_3
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -5120,12 +5120,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->hNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->CNa:Ljava/util/Set;
 
     goto :goto_1
 
     :cond_4
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -5137,12 +5137,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->eNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->zNa:Ljava/util/Set;
 
     goto :goto_1
 
     :cond_5
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -5154,12 +5154,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->fNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ANa:Ljava/util/Set;
 
     goto :goto_1
 
     :cond_6
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -5171,12 +5171,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->gNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->BNa:Ljava/util/Set;
 
     goto/16 :goto_1
 
     :cond_7
-    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -5188,7 +5188,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->jNa:Ljava/util/Set;
+    iput-object v0, p0, Lorg/bouncycastle/asn1/x509/bud;->ENa:Ljava/util/Set;
 
     goto/16 :goto_1
 

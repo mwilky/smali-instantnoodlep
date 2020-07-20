@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public lL:Ljava/lang/String;
-
-.field public mL:Ljava/lang/String;
-
 .field public result:I
+
+.field public tL:Ljava/lang/String;
+
+.field public uL:Ljava/lang/String;
 
 
 # direct methods
@@ -40,9 +40,9 @@
 
     iput p1, p0, Lcom/android/server/engineer/oif$zta;->result:I
 
-    iput-object p2, p0, Lcom/android/server/engineer/oif$zta;->lL:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/engineer/oif$zta;->tL:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/engineer/oif$zta;->mL:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/server/engineer/oif$zta;->uL:Ljava/lang/String;
 
     return-void
 .end method

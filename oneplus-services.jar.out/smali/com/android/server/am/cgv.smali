@@ -1,11 +1,14 @@
 .class Lcom/android/server/am/cgv;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source ""
+
+# interfaces
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/am/les;
+    value = Lcom/android/server/am/OnePlusBGController;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,149 +16,61 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lcom/android/server/am/OnePlusBGController$wtn;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic this$0:Lcom/android/server/am/les;
+.field final synthetic this$0:Lcom/android/server/am/OnePlusBGController;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/server/am/les;)V
+.method constructor <init>(Lcom/android/server/am/OnePlusBGController;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/am/cgv;->this$0:Lcom/android/server/am/les;
+    iput-object p1, p0, Lcom/android/server/am/cgv;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 6
+.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
 
-    const-string p1, "OPBF"
+    check-cast p1, Lcom/android/server/am/OnePlusBGController$wtn;
 
-    if-nez p2, :cond_0
+    check-cast p2, Lcom/android/server/am/OnePlusBGController$wtn;
 
-    const-string p0, "# pkgChangeReceiver # onReceive # intent is null, return"
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/am/cgv;->zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
 
-    invoke-static {p1, p0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+    move-result p0
 
-    return-void
+    return p0
+.end method
 
-    :cond_0
-    invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+.method public zta(Lcom/android/server/am/OnePlusBGController$wtn;Lcom/android/server/am/OnePlusBGController$wtn;)I
+    .locals 2
 
-    move-result-object v0
+    invoke-virtual {p2}, Lcom/android/server/am/OnePlusBGController$wtn;->Qb()D
 
-    invoke-virtual {v0}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
+    move-result-wide v0
 
-    move-result-object v0
+    invoke-virtual {p1}, Lcom/android/server/am/OnePlusBGController$wtn;->Qb()D
 
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    move-result-wide p0
 
-    move-result-object v1
+    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
 
-    const-string v2, "android.intent.action.PACKAGE_ADDED"
+    move-result p0
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const-string v2, "com.android.tradefed.utils.wifi"
-
-    const-string v3, "pkg:"
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x0
-
-    if-eqz v1, :cond_1
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, " is installed"
-
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v4, p1}, Lcom/android/server/am/les;->tsu(ILjava/lang/String;)V
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    const-string p1, "detect pre-condition pkg installed, \'Both\' close Appboot & Background-freeze features"
-
-    invoke-static {v4, p1}, Lcom/android/server/am/les;->tsu(ILjava/lang/String;)V
-
-    :goto_0
-    iget-object p0, p0, Lcom/android/server/am/cgv;->this$0:Lcom/android/server/am/les;
-
-    invoke-static {p0}, Lcom/android/server/am/les;->oif(Lcom/android/server/am/les;)Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-static {p0, v5, v5}, Lcom/android/server/am/vdb;->zta(Landroid/content/Context;II)I
-
-    goto :goto_1
-
-    :cond_1
-    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object p2
-
-    const-string v1, "android.intent.action.PACKAGE_REPLACED"
-
-    invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, " is re-installed"
-
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {v4, p2}, Lcom/android/server/am/les;->tsu(ILjava/lang/String;)V
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2
-
-    const-string p2, "detect pre-condition pkg re-installed, \'Both\' close Appboot & Background-freeze features"
-
-    invoke-static {p1, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    return-void
+    return p0
 .end method

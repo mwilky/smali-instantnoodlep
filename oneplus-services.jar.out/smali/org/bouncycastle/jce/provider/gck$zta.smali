@@ -15,7 +15,7 @@
 
 
 # static fields
-.field private static final XTa:Lorg/bouncycastle/jce/provider/sis;
+.field private static final rUa:Lorg/bouncycastle/jce/provider/sis;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     invoke-direct {v0}, Lorg/bouncycastle/jce/provider/sis;-><init>()V
 
-    sput-object v0, Lorg/bouncycastle/jce/provider/gck$zta;->XTa:Lorg/bouncycastle/jce/provider/sis;
+    sput-object v0, Lorg/bouncycastle/jce/provider/gck$zta;->rUa:Lorg/bouncycastle/jce/provider/sis;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method static synthetic access$000()Lorg/bouncycastle/jce/provider/sis;
     .locals 1
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/gck$zta;->XTa:Lorg/bouncycastle/jce/provider/sis;
+    sget-object v0, Lorg/bouncycastle/jce/provider/gck$zta;->rUa:Lorg/bouncycastle/jce/provider/sis;
 
     return-object v0
 .end method

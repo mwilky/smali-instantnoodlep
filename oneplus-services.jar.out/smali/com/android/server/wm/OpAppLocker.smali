@@ -1933,17 +1933,17 @@
 
     invoke-virtual {v0, p1}, Lcom/android/server/wm/OnePlusPerfManager;->autoAcquireOrRelease(Z)Z
 
-    invoke-static {}, Lcom/android/server/am/qeg;->getInstance()Lcom/android/server/am/qeg;
+    invoke-static {}, Lcom/android/server/am/c;->getInstance()Lcom/android/server/am/c;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lcom/android/server/am/qeg;->getInstance()Lcom/android/server/am/qeg;
+    invoke-static {}, Lcom/android/server/am/c;->getInstance()Lcom/android/server/am/c;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/android/server/am/qeg;->screenStateChangedEvent(Z)V
+    invoke-virtual {v0, p1}, Lcom/android/server/am/c;->screenStateChangedEvent(Z)V
 
     :cond_0
     const/4 v0, 0x1
