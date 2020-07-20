@@ -16,6 +16,6 @@
 
 .field public static final select_logpersist_values:I = 0x7f030059
 
-.field public static final wifi_status:I = 0x7f03013f
+.field public static final wifi_status:I = 0x7f030141
 
-.field public static final wifi_status_with_ssid:I = 0x7f030140
+.field public static final wifi_status_with_ssid:I = 0x7f030142

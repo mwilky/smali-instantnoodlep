@@ -4,10 +4,10 @@
 
 
 # static fields
-.field public static final Theme_MediaRouter:I = 0x7f120404
+.field public static final Theme_MediaRouter:I = 0x7f130404
 
-.field public static final Theme_MediaRouter_Light:I = 0x7f120405
+.field public static final Theme_MediaRouter_Light:I = 0x7f130405
 
-.field public static final Theme_MediaRouter_LightControlPanel:I = 0x7f120407
+.field public static final Theme_MediaRouter_LightControlPanel:I = 0x7f130407
 
-.field public static final Theme_MediaRouter_Light_DarkControlPanel:I = 0x7f120406
+.field public static final Theme_MediaRouter_Light_DarkControlPanel:I = 0x7f130406

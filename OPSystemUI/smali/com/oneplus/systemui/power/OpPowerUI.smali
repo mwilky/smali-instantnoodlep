@@ -339,7 +339,7 @@
 
     aput-object v3, v2, v4
 
-    const-string v3, "shouldDismissHybridWarning"
+    const-string/jumbo v3, "shouldDismissHybridWarning"
 
     invoke-static {v0, v3, v2}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -383,7 +383,7 @@
 
     aput-object v3, v2, v5
 
-    const-string v3, "shouldDismissLowBatteryWarning"
+    const-string/jumbo v3, "shouldDismissLowBatteryWarning"
 
     invoke-static {v0, v3, v2}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -423,7 +423,7 @@
 
     aput-object v3, v2, v4
 
-    const-string v3, "shouldShowHybridWarning"
+    const-string/jumbo v3, "shouldShowHybridWarning"
 
     invoke-static {v0, v3, v2}, Lcom/oneplus/util/OpReflectionUtils;->getMethodWithParams(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 

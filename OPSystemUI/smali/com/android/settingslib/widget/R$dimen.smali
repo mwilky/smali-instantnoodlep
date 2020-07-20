@@ -4,6 +4,6 @@
 
 
 # static fields
-.field public static final dashboard_tile_foreground_image_inset:I = 0x7f07012e
+.field public static final dashboard_tile_foreground_image_inset:I = 0x7f07013f
 
-.field public static final settings_bar_view_max_height:I = 0x7f070714
+.field public static final settings_bar_view_max_height:I = 0x7f070725

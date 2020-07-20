@@ -643,23 +643,27 @@
 
 .field public static final tv_pip_settings_class_name:I = 0x7f030139
 
-.field public static final usb_configuration_titles:I = 0x7f03013a
+.field public static final type_clock_hours:I = 0x7f03013a
 
-.field public static final usb_configuration_values:I = 0x7f03013b
+.field public static final type_clock_minutes:I = 0x7f03013b
 
-.field public static final warp_anim:I = 0x7f03013c
+.field public static final usb_configuration_titles:I = 0x7f03013c
 
-.field public static final warpcharge_wired_anim:I = 0x7f03013d
+.field public static final usb_configuration_values:I = 0x7f03013d
 
-.field public static final warpcharge_wireless_anim:I = 0x7f03013e
+.field public static final warp_anim:I = 0x7f03013e
 
-.field public static final wifi_status:I = 0x7f03013f
+.field public static final warpcharge_wired_anim:I = 0x7f03013f
 
-.field public static final wifi_status_with_ssid:I = 0x7f030140
+.field public static final warpcharge_wireless_anim:I = 0x7f030140
 
-.field public static final window_animation_scale_entries:I = 0x7f030141
+.field public static final wifi_status:I = 0x7f030141
 
-.field public static final window_animation_scale_values:I = 0x7f030142
+.field public static final wifi_status_with_ssid:I = 0x7f030142
+
+.field public static final window_animation_scale_entries:I = 0x7f030143
+
+.field public static final window_animation_scale_values:I = 0x7f030144
 
 
 # direct methods

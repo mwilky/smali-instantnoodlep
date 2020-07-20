@@ -74,9 +74,7 @@
     goto :goto_1
 
     :cond_1
-    const/4 v0, 0x3
-
-    if-eq v4, v0, :cond_2
+    if-eq v4, v2, :cond_2
 
     move v1, v2
 
@@ -94,7 +92,7 @@
 .end method
 
 .method public static checkAodStyle(Landroid/content/Context;I)V
-    .locals 5
+    .locals 4
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -110,9 +108,7 @@
 
     const/4 v3, 0x1
 
-    const/4 v4, 0x3
-
-    if-ne v0, v4, :cond_1
+    if-ne v0, v3, :cond_1
 
     invoke-static {}, Lcom/oneplus/aod/OpAodUtils;->isCustomFingerprint()Z
 

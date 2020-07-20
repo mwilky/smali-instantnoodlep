@@ -7,6 +7,7 @@
 .implements Lcom/android/systemui/statusbar/policy/UserInfoController$OnUserInfoChangedListener;
 .implements Lcom/android/systemui/statusbar/policy/ConfigurationController$ConfigurationListener;
 .implements Lcom/android/systemui/statusbar/phone/HighlightHintController$OnHighlightHintStateChangeListener;
+.implements Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector$OnBurnInPreventListener;
 
 
 # instance fields
@@ -35,6 +36,8 @@
 .field private mHighlightHintView:Landroid/view/View;
 
 .field private mIconManager:Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;
+
+.field private mKeyguardHeader:Landroid/view/View;
 
 .field private mKeyguardUserSwitcher:Lcom/android/systemui/statusbar/policy/KeyguardUserSwitcher;
 
@@ -1108,6 +1111,14 @@
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->updateStatusBarPadding()V
 
+    invoke-static {}, Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector;->getInstance()Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroid/widget/RelativeLayout;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0, v1, p0}, Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector;->registerListener(Landroid/content/Context;Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector$OnBurnInPreventListener;)V
+
     return-void
 .end method
 
@@ -1121,6 +1132,21 @@
     iput-boolean p3, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBatteryCharging:Z
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->updateVisibilities()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onBurnInPreventTrigger(I)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mKeyguardHeader:Landroid/view/View;
+
+    if-eqz p0, :cond_0
+
+    int-to-float p1, p1
+
+    invoke-virtual {p0, p1}, Landroid/view/View;->setTranslationX(F)V
 
     :cond_0
     return-void
@@ -1428,6 +1454,12 @@
 
     invoke-interface {v0, p0}, Lcom/android/systemui/statusbar/policy/CallbackController;->removeCallback(Ljava/lang/Object;)V
 
+    invoke-static {}, Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector;->getInstance()Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector;->unregisterListener(Lcom/oneplus/systemui/statusbar/phone/OpScreenBurnInProtector$OnBurnInPreventListener;)V
+
     return-void
 .end method
 
@@ -1598,13 +1630,21 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBatteryView:Lcom/android/systemui/BatteryMeterView;
 
-    iget-object p0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBatteryController:Lcom/android/systemui/statusbar/policy/BatteryController;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mBatteryController:Lcom/android/systemui/statusbar/policy/BatteryController;
 
-    invoke-interface {p0}, Lcom/android/systemui/statusbar/policy/BatteryController;->isPowerSave()Z
+    invoke-interface {v1}, Lcom/android/systemui/statusbar/policy/BatteryController;->isPowerSave()Z
 
-    move-result p0
+    move-result v1
 
-    invoke-virtual {v0, p0}, Lcom/oneplus/systemui/OpBatteryMeterView;->setPowerSaveEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/oneplus/systemui/OpBatteryMeterView;->setPowerSaveEnabled(Z)V
+
+    sget v0, Lcom/android/systemui/R$id;->keyguard_header:I
+
+    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardStatusBarView;->mKeyguardHeader:Landroid/view/View;
 
     return-void
 .end method

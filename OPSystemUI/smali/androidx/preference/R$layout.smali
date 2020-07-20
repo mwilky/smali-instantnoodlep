@@ -4,10 +4,10 @@
 
 
 # static fields
-.field public static final expand_button:I = 0x7f0d0058
+.field public static final expand_button:I = 0x7f0e0058
 
-.field public static final preference:I = 0x7f0d0188
+.field public static final preference:I = 0x7f0e0188
 
-.field public static final preference_list_fragment:I = 0x7f0d0196
+.field public static final preference_list_fragment:I = 0x7f0e0196
 
-.field public static final preference_recyclerview:I = 0x7f0d0198
+.field public static final preference_recyclerview:I = 0x7f0e0198

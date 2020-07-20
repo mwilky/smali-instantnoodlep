@@ -4,4 +4,4 @@
 
 
 # static fields
-.field public static final coordinatorLayoutStyle:I = 0x7f0400b3
+.field public static final coordinatorLayoutStyle:I = 0x7f0400b5

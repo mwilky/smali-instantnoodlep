@@ -324,7 +324,7 @@
     <color name="divider_fine">@color/divider_fine_light</color>
     <color name="divider_fine_dark">#0fffffff</color>
     <color name="divider_fine_light">#0f000000</color>
-    <color name="docked_divider_background">#ff000000</color>
+    <color name="docked_divider_background">#ff7d7d7d</color>
     <color name="docked_divider_handle">#ffffffff</color>
     <color name="edittext_color">#dd000000</color>
     <color name="edittext_color_dark">#b7ffffff</color>
@@ -757,6 +757,9 @@
     <color name="oneplus_tab_indicator_color_dark">@color/oneplus_red_color</color>
     <color name="oneplus_tab_indicator_color_light">@color/oneplus_red_color</color>
     <color name="oneplus_white_color">#ffffffff</color>
+    <color name="op_aod_digitalclock_gradient_end">#ff525252</color>
+    <color name="op_aod_digitalclock_gradient_start">#ffbac0cf</color>
+    <color name="op_aod_textclock_top">#ffe8e8e8</color>
     <color name="op_btn_volume_media_icon_bg_dark">#33ffffff</color>
     <color name="op_btn_volume_media_icon_bg_light">@color/oneplus_contorl_bg_color_cardview_light</color>
     <color name="op_button_material_disable_dark">#28ffffff</color>

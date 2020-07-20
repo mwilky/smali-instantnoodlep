@@ -822,7 +822,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "shouldShowQL: isFingerDown: "
+    const-string/jumbo v3, "shouldShowQL: isFingerDown: "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -867,7 +867,7 @@
 
     if-eqz p0, :cond_4
 
-    const-string p0, "shouldShowQL: waiting to show..."
+    const-string/jumbo p0, "shouldShowQL: waiting to show..."
 
     invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
