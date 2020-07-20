@@ -38,7 +38,7 @@
 
     sget p0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const p0, 0x7f0a035a
+    const p0, 0x7f0a035f
 
     invoke-virtual {p1, p0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -77,7 +77,7 @@
 
     if-eqz p7, :cond_3
 
-    const p0, 0x7f0a035a
+    const p0, 0x7f0a035f
 
     invoke-virtual {p3, p0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

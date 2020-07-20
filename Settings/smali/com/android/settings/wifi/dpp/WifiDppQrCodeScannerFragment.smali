@@ -427,7 +427,7 @@
 
     iget-object p0, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mSummary:Landroid/widget/TextView;
 
-    const v0, 0x7f121920
+    const v0, 0x7f121938
 
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -446,7 +446,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f12192e
+    const v0, 0x7f121946
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -461,7 +461,7 @@
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f12192d
+    const v0, 0x7f121945
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -713,7 +713,7 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f121922
+    const v1, 0x7f12193a
 
     :try_start_0
     new-instance v2, Lcom/android/settings/wifi/dpp/WifiQrCode;
@@ -888,7 +888,7 @@
 
     iget-object p0, p1, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment$EasyConnectEnrolleeStatusCallback;->this$0:Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;
 
-    const p1, 0x7f12191b
+    const p1, 0x7f121933
 
     invoke-static {p0, p1}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;->access$1000(Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;I)V
 
@@ -940,7 +940,7 @@
 
     invoke-static {p0, p1, v0}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline31(Ljava/lang/String;ILjava/lang/String;)V
 
-    const p0, 0x7f121924
+    const p0, 0x7f12193c
 
     packed-switch p1, :pswitch_data_0
 
@@ -953,12 +953,12 @@
     throw p0
 
     :pswitch_0
-    const p0, 0x7f121922
+    const p0, 0x7f12193a
 
     goto :goto_0
 
     :pswitch_1
-    const p0, 0x7f121926
+    const p0, 0x7f12193e
 
     goto :goto_0
 
@@ -1003,12 +1003,12 @@
     throw p0
 
     :pswitch_3
-    const p0, 0x7f121928
+    const p0, 0x7f121940
 
     goto :goto_0
 
     :pswitch_4
-    const p0, 0x7f121925
+    const p0, 0x7f12193d
 
     :goto_0
     :pswitch_5
@@ -1096,7 +1096,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f121918
+    const v0, 0x7f121930
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->setTitle(I)V
 
@@ -1107,7 +1107,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12192c
+    const v0, 0x7f121944
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->setTitle(I)V
 
@@ -1232,7 +1232,7 @@
 .method public final onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
-    const p0, 0x7f0d0389
+    const p0, 0x7f0d038a
 
     const/4 p3, 0x0
 
@@ -1266,7 +1266,7 @@
 
     iget-object p1, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;->mHandler:Landroid/os/Handler;
 
-    const v0, 0x7f12191b
+    const v0, 0x7f121933
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -1450,7 +1450,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const p2, 0x7f0a058d
+    const p2, 0x7f0a058a
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1474,11 +1474,11 @@
 
     iput-object p2, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeScannerFragment;->mDecorateView:Lcom/android/settings/wifi/qrcode/QrDecorateView;
 
-    const p2, 0x7f080327
+    const p2, 0x7f080330
 
     invoke-virtual {p0, p2}, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->setHeaderIconImageResource(I)V
 
-    const p2, 0x7f0a0329
+    const p2, 0x7f0a032e
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1514,7 +1514,7 @@
 
     iget-object p2, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f121918
+    const v0, 0x7f121930
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -1536,7 +1536,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mSummary:Landroid/widget/TextView;
 
-    const v2, 0x7f12191a
+    const v2, 0x7f121932
 
     const/4 v3, 0x1
 
@@ -1568,7 +1568,7 @@
     :cond_2
     iget-object p2, p0, Lcom/android/settings/wifi/dpp/WifiDppQrCodeBaseFragment;->mTitle:Landroid/widget/TextView;
 
-    const v0, 0x7f12192c
+    const v0, 0x7f121944
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(I)V
 

@@ -194,7 +194,7 @@
 
     move-result-object v5
 
-    const v9, 0x7f120886
+    const v9, 0x7f12089e
 
     if-nez v5, :cond_2
 
@@ -456,7 +456,7 @@
 
     invoke-direct {v1, v2, v3}, Landroidx/preference/PreferenceCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v2, 0x7f1203cf
+    const v2, 0x7f1203d6
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setTitle(I)V
 

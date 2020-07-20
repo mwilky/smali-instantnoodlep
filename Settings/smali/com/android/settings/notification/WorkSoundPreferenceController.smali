@@ -149,7 +149,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/WorkSoundPreferenceController;->mWorkPhoneRingtonePreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f121a4f
+    const v1, 0x7f121a67
 
     if-eqz v0, :cond_0
 
@@ -230,7 +230,7 @@
     :goto_0
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f120a22
+    const p1, 0x7f120a3a
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

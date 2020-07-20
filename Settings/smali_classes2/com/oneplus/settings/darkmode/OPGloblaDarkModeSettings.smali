@@ -233,7 +233,7 @@
     :cond_0
     iget-object p1, p0, Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120dd8
+    const v0, 0x7f120df0
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -408,7 +408,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    const v0, 0x7f0a04b2
+    const v0, 0x7f0a04af
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -440,13 +440,13 @@
 
     move-result-object v0
 
-    const v3, 0x7f0d01dc
+    const v3, 0x7f0d01dd
 
     invoke-virtual {v0, v3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    const v3, 0x7f0a04d4
+    const v3, 0x7f0a04d1
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -462,7 +462,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setEnabled(Z)V
 
-    const v3, 0x7f0a06ed
+    const v3, 0x7f0a06ea
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -474,7 +474,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
 
-    const v4, 0x7f120dda
+    const v4, 0x7f120df2
 
     invoke-virtual {v3, v4, v4}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 
@@ -519,7 +519,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;)V
 
-    const v0, 0x7f0a03c9
+    const v0, 0x7f0a03ce
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -529,7 +529,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings;->mLoadingContainer:Landroid/view/View;
 
-    const v1, 0x7f0a03cb
+    const v1, 0x7f0a03d0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -2204,7 +2204,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120165
+    const v0, 0x7f12016c
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -2375,7 +2375,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12133a
+    const v1, 0x7f121352
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2408,9 +2408,9 @@
 
     iget-boolean v0, p0, Lcom/android/settings/network/ApnSettings;->mAllowAddingApns:Z
 
-    const v1, 0x7f080197
+    const v1, 0x7f0801a0
 
-    const v2, 0x7f120a6f
+    const v2, 0x7f120a87
 
     const/4 v3, 0x1
 
@@ -2480,7 +2480,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120a75
+    const v2, 0x7f120a8d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

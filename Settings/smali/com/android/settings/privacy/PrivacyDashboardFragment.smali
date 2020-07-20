@@ -111,7 +111,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120811
+    const p0, 0x7f120829
 
     return p0
 .end method
@@ -143,7 +143,7 @@
 .method initLoadingBar()V
     .locals 2
 
-    const v0, 0x7f0d02b6
+    const v0, 0x7f0d02b7
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsPreferenceFragment;->setPinnedHeaderView(I)Landroid/view/View;
 
@@ -153,7 +153,7 @@
 
     iget-object v0, p0, Lcom/android/settings/privacy/PrivacyDashboardFragment;->mProgressHeader:Landroid/view/View;
 
-    const v1, 0x7f0a05a2
+    const v1, 0x7f0a059f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

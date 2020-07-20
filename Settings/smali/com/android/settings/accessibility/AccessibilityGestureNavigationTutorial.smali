@@ -75,9 +75,9 @@
 
     const v4, 0x7f110017
 
-    const v5, 0x7f0a02b2
+    const v5, 0x7f0a02b7
 
-    const v6, 0x7f0a02b4
+    const v6, 0x7f0a02b9
 
     const-string v7, "accessibility"
 
@@ -90,7 +90,7 @@
     goto/16 :goto_4
 
     :cond_0
-    const p1, 0x7f0d035a
+    const p1, 0x7f0d035b
 
     invoke-virtual {v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -153,7 +153,7 @@
     goto :goto_4
 
     :cond_3
-    const p1, 0x7f0d035c
+    const p1, 0x7f0d035d
 
     invoke-virtual {v0, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -216,7 +216,7 @@
     goto :goto_4
 
     :cond_6
-    const p0, 0x7f0d035b
+    const p0, 0x7f0d035c
 
     invoke-virtual {v0, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -299,7 +299,7 @@
 
     add-int/lit8 v7, v5, 0x2
 
-    const v8, 0x7f080192
+    const v8, 0x7f08019b
 
     invoke-virtual {p0, v8}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

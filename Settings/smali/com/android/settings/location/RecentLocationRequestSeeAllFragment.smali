@@ -148,7 +148,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120959
+    const v0, 0x7f120971
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -158,7 +158,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0804a2
+    const v0, 0x7f0804ab
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -178,7 +178,7 @@
 
     const/4 v0, 0x2
 
-    const v1, 0x7f120a78
+    const v1, 0x7f120a90
 
     invoke-interface {p1, p2, v0, p2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -188,7 +188,7 @@
 
     const/4 v0, 0x3
 
-    const v1, 0x7f120a6e
+    const v1, 0x7f120a86
 
     invoke-interface {p1, p2, v0, p2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 

@@ -58,12 +58,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f1201a6
+    const p0, 0x7f1201ad
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f1201a7
+    const p0, 0x7f1201ae
 
     :goto_0
     return p0
@@ -156,7 +156,7 @@
 
     iget-object p1, p0, Lcom/android/settings/applications/specialaccess/pictureinpicture/PictureInPictureDetails;->mSwitchPref:Landroidx/preference/SwitchPreference;
 
-    const v0, 0x7f1211ee
+    const v0, 0x7f121206
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setTitle(I)V
 

@@ -90,7 +90,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
-    const v0, 0x7f0a063d
+    const v0, 0x7f0a063a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -571,7 +571,7 @@
 
     const-class v1, Ljava/lang/Boolean;
 
-    const v2, 0x7f0a0707
+    const v2, 0x7f0a0704
 
     const/16 v3, 0x1c
 
@@ -626,7 +626,7 @@
 
     const-class v1, Ljava/lang/CharSequence;
 
-    const v2, 0x7f0a0706
+    const v2, 0x7f0a0703
 
     const/16 v3, 0x8
 

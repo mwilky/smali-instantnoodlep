@@ -322,7 +322,7 @@
 
     iget-object v1, p0, Lcom/android/settings/users/UserDetailsSettings;->mPhonePref:Landroidx/preference/SwitchPreference;
 
-    const v3, 0x7f1217cf
+    const v3, 0x7f1217e7
 
     invoke-virtual {v1, v3}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -391,7 +391,7 @@
 
     const/high16 v2, 0x1040000
 
-    const v3, 0x7f120be3
+    const v3, 0x7f120bfb
 
     if-eq p1, v0, :cond_2
 
@@ -411,11 +411,11 @@
 
     invoke-direct {p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f1217d1
+    const p1, 0x7f1217e9
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f1217d0
+    const p1, 0x7f1217e8
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -455,11 +455,11 @@
 
     invoke-direct {p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f1217d3
+    const p1, 0x7f1217eb
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f1217d2
+    const p1, 0x7f1217ea
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 

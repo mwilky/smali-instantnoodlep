@@ -228,19 +228,19 @@
     :cond_3
     if-nez v0, :cond_4
 
-    const p0, 0x7f120982
+    const p0, 0x7f12099a
 
     goto :goto_2
 
     :cond_4
     if-eqz v1, :cond_5
 
-    const p0, 0x7f120985
+    const p0, 0x7f12099d
 
     goto :goto_2
 
     :cond_5
-    const p0, 0x7f120e28
+    const p0, 0x7f120e40
 
     :goto_2
     return p0
@@ -436,12 +436,12 @@
 
     if-eqz v1, :cond_6
 
-    const v0, 0x7f120986
+    const v0, 0x7f12099e
 
     goto :goto_2
 
     :cond_6
-    const v0, 0x7f120984
+    const v0, 0x7f12099c
 
     :goto_2
     iput v0, p0, Lcom/android/settings/notification/LockScreenNotificationPreferenceController;->mLockscreenSelectedValueProfile:I
@@ -570,7 +570,7 @@
 
     iget-object v5, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120985
+    const v6, 0x7f12099d
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -596,7 +596,7 @@
 
     iget-object v5, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f120e28
+    const v8, 0x7f120e40
 
     invoke-virtual {v5, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -615,7 +615,7 @@
     :cond_3
     iget-object v5, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f120982
+    const v8, 0x7f12099a
 
     invoke-virtual {v5, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -716,7 +716,7 @@
 
     iget-object v1, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120986
+    const v2, 0x7f12099e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -738,7 +738,7 @@
 
     iget-object v1, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120984
+    const v2, 0x7f12099c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -885,7 +885,7 @@
     return v3
 
     :cond_0
-    const p2, 0x7f120986
+    const p2, 0x7f12099e
 
     if-ne p1, p2, :cond_1
 
@@ -928,7 +928,7 @@
     return v3
 
     :cond_3
-    const p2, 0x7f120982
+    const p2, 0x7f12099a
 
     if-eq p1, p2, :cond_4
 
@@ -940,7 +940,7 @@
     move p2, v3
 
     :goto_0
-    const v0, 0x7f120985
+    const v0, 0x7f12099d
 
     if-ne p1, v0, :cond_5
 

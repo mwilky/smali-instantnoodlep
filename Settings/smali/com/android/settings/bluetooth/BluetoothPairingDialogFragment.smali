@@ -55,7 +55,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f12035f
+    const v3, 0x7f120366
 
     invoke-virtual {p0, v3, v2}, Landroidx/fragment/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -81,7 +81,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0567
+    const v3, 0x7f0a0564
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v5, 0x7f0a03fa
+    const v5, 0x7f0a03ff
 
     invoke-virtual {v2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -105,7 +105,7 @@
 
     check-cast v6, Landroid/widget/CheckBox;
 
-    const v7, 0x7f0a0562
+    const v7, 0x7f0a055f
 
     invoke-virtual {v2, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -123,7 +123,7 @@
 
     aput-object v9, v8, v4
 
-    const v9, 0x7f120360
+    const v9, 0x7f120367
 
     invoke-virtual {p0, v9, v8}, Landroidx/fragment/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -131,7 +131,7 @@
 
     invoke-virtual {v7, v8}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    const v8, 0x7f0a070c
+    const v8, 0x7f0a0709
 
     invoke-virtual {v2, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -313,7 +313,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0535
+    const v1, 0x7f0a0532
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -321,7 +321,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a0537
+    const v2, 0x7f0a0534
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -329,7 +329,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f0a0536
+    const v3, 0x7f0a0533
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -337,7 +337,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    const v4, 0x7f0a0561
+    const v4, 0x7f0a055e
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -359,7 +359,7 @@
 
     aput-object v6, v5, v7
 
-    const v6, 0x7f120360
+    const v6, 0x7f120367
 
     invoke-virtual {p0, v6, v5}, Landroidx/fragment/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -694,7 +694,7 @@
 
     if-eqz p1, :cond_2
 
-    const v1, 0x7f12035f
+    const v1, 0x7f120366
 
     const/4 v2, 0x1
 
@@ -792,7 +792,7 @@
 
     iget-object p1, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->mBuilder:Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f120351
+    const v1, 0x7f120358
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -802,7 +802,7 @@
 
     iget-object p1, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialogFragment;->mBuilder:Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f120353
+    const v1, 0x7f12035a
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

@@ -57,7 +57,7 @@
 
     const-wide/16 v1, 0x0
 
-    const v3, 0x7f0a0327
+    const v3, 0x7f0a032c
 
     if-ne p1, v3, :cond_0
 

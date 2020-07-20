@@ -253,7 +253,7 @@
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
-    const p1, 0x7f12140e
+    const p1, 0x7f121426
 
     invoke-virtual {p0, p1}, Lcom/android/settings/biometrics/BiometricEnrollBase;->setHeaderText(I)V
 
@@ -295,7 +295,7 @@
 
     invoke-direct {v0, p0}, Lcom/google/android/setupcompat/template/FooterButton$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1213fc
+    const v1, 0x7f121414
 
     invoke-virtual {v0, v1}, Lcom/google/android/setupcompat/template/FooterButton$Builder;->setText(I)Lcom/google/android/setupcompat/template/FooterButton$Builder;
 
@@ -377,12 +377,12 @@
 
     if-eq p1, v0, :cond_0
 
-    const v0, 0x7f1213fe
+    const v0, 0x7f121416
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f1213ff
+    const v0, 0x7f121417
 
     :goto_0
     iget-object v1, p0, Lcom/android/settings/biometrics/face/FaceEnrollEnrolling;->mPreviewFragment:Lcom/android/settings/biometrics/face/FaceEnrollPreviewFragment;

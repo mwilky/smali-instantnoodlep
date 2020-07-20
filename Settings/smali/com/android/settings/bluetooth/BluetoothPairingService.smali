@@ -125,7 +125,7 @@
 
     new-instance v1, Landroid/app/NotificationChannel;
 
-    const v2, 0x7f1202c8
+    const v2, 0x7f1202cf
 
     invoke-virtual {p0, v2}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 
@@ -199,7 +199,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f120347
+    const v3, 0x7f12034e
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -363,7 +363,7 @@
 
     new-instance p1, Landroid/app/Notification$Action$Builder;
 
-    const p3, 0x7f1202fe
+    const p3, 0x7f120305
 
     invoke-virtual {v0, p3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -389,7 +389,7 @@
 
     move-result-object p3
 
-    const v5, 0x7f120348
+    const v5, 0x7f12034f
 
     invoke-virtual {v0, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -399,7 +399,7 @@
 
     move-result-object v5
 
-    const v8, 0x7f120346
+    const v8, 0x7f12034d
 
     new-array v9, v3, [Ljava/lang/Object;
 

@@ -176,7 +176,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120425
+    const v2, 0x7f12042c
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -261,7 +261,7 @@
     :cond_3
     if-nez v1, :cond_5
 
-    const v1, 0x7f121501
+    const v1, 0x7f121519
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -447,7 +447,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f1203e8
+    const v6, 0x7f1203ef
 
     invoke-virtual {v2, v6}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -459,7 +459,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f1214bc
+    const v4, 0x7f1214d4
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -509,7 +509,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12151e
+    const v4, 0x7f121536
 
     invoke-virtual {v2, v4}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -539,7 +539,7 @@
     :cond_9
     if-nez v3, :cond_b
 
-    const v3, 0x7f121501
+    const v3, 0x7f121519
 
     invoke-virtual {v2, v3}, Landroidx/preference/Preference;->setSummary(I)V
 

@@ -110,12 +110,12 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f120995
+    const p1, 0x7f1209ad
 
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f1209b4
+    const p1, 0x7f1209cc
 
     :goto_0
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setTitle(I)V

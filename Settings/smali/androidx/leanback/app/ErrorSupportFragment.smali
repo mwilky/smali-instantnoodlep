@@ -102,7 +102,7 @@
 
     invoke-virtual {p0, p1, v2, p3}, Landroidx/leanback/app/BrandedSupportFragment;->installTitleView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)V
 
-    const p1, 0x7f0a0317
+    const p1, 0x7f0a031c
 
     invoke-virtual {v1, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -139,7 +139,7 @@
     invoke-virtual {p1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :cond_4
-    const p1, 0x7f0a03f9
+    const p1, 0x7f0a03fe
 
     invoke-virtual {v1, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -80,7 +80,7 @@
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
 
-    const v0, 0x7f0d036c
+    const v0, 0x7f0d036d
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsPreferenceFragment;->setPinnedHeaderView(I)Landroid/view/View;
 
@@ -218,7 +218,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f1212a0
+    const v5, 0x7f1212b8
 
     iget-object v7, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mUser:Landroid/os/UserHandle;
 

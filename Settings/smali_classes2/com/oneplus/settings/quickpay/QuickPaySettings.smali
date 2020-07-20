@@ -132,7 +132,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300d5
+    const v1, 0x7f0300d6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300d9
+    const v1, 0x7f0300da
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -160,7 +160,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300d7
+    const v1, 0x7f0300d8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -369,37 +369,6 @@
 
     move-result-object v0
 
-    const v1, 0x7f030086
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mHomeKeyActionName:[Ljava/lang/String;
-
-    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    const v1, 0x7f03008a
-
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mHomeKeyActionValue:[Ljava/lang/String;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
-
-    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
     const v1, 0x7f030087
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
@@ -422,6 +391,37 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mHomeKeyActionValue:[Ljava/lang/String;
 
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f030088
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mHomeKeyActionName:[Ljava/lang/String;
+
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f03008c
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mHomeKeyActionValue:[Ljava/lang/String;
+
     :goto_0
     sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
@@ -433,7 +433,7 @@
 
     sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v1, 0x7f1207b8
+    const v1, 0x7f1207d0
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -1352,7 +1352,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300d7
+    const v1, 0x7f0300d8
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1454,7 +1454,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mSwitchLockscreen:Landroidx/preference/SwitchPreference;
 
-    const v1, 0x7f120d68
+    const v1, 0x7f120d80
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1727,7 +1727,7 @@
 
     iget-object v3, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mActivity:Lcom/android/settings/SettingsActivity;
 
-    const v4, 0x7f120f33
+    const v4, 0x7f120f4b
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -1741,7 +1741,7 @@
 
     iget-object p2, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mActivity:Lcom/android/settings/SettingsActivity;
 
-    const v1, 0x7f121077
+    const v1, 0x7f12108f
 
     invoke-virtual {p2, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1755,7 +1755,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/quickpay/QuickPaySettings;->mActivity:Lcom/android/settings/SettingsActivity;
 
-    const p2, 0x7f121076
+    const p2, 0x7f12108e
 
     invoke-virtual {p1, p2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

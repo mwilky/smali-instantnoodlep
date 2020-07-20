@@ -29,7 +29,7 @@
 .method private showErrorAndFinish()V
     .locals 2
 
-    const v0, 0x7f12147c
+    const v0, 0x7f121494
 
     const/4 v1, 0x1
 
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    const v1, 0x7f12147b
+    const v1, 0x7f121493
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -110,7 +110,7 @@
 
     invoke-static {v0, v2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    const p1, 0x7f12147c
+    const p1, 0x7f121494
 
     invoke-static {p0, p1, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

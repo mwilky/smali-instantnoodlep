@@ -156,7 +156,7 @@
 
     check-cast p1, Landroidx/mediarouter/media/MediaRouter$RouteInfo;
 
-    const p3, 0x7f0a042a
+    const p3, 0x7f0a042f
 
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -164,7 +164,7 @@
 
     check-cast p3, Landroid/widget/TextView;
 
-    const v1, 0x7f0a0428
+    const v1, 0x7f0a042d
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -248,7 +248,7 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setEnabled(Z)V
 
-    const p3, 0x7f0a0429
+    const p3, 0x7f0a042e
 
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

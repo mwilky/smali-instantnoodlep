@@ -368,7 +368,7 @@
 
     invoke-virtual {p1, p0, p2}, Lcom/google/android/setupdesign/GlifRecyclerLayout;->setDividerInsets(II)V
 
-    const p0, 0x7f121812
+    const p0, 0x7f12182a
 
     invoke-virtual {p1, p0}, Lcom/google/android/setupdesign/GlifLayout;->setHeaderText(I)V
 

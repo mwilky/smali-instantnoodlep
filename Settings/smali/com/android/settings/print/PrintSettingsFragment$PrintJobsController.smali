@@ -203,7 +203,7 @@
 
     move-result v6
 
-    const v7, 0x7f121268
+    const v7, 0x7f121280
 
     const/4 v8, 0x6
 
@@ -228,7 +228,7 @@
     :cond_3
     iget-object v6, v0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsController;->this$0:Lcom/android/settings/print/PrintSettingsFragment;
 
-    const v7, 0x7f12126a
+    const v7, 0x7f121282
 
     new-array v13, v12, [Ljava/lang/Object;
 
@@ -255,7 +255,7 @@
 
     iget-object v6, v0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsController;->this$0:Lcom/android/settings/print/PrintSettingsFragment;
 
-    const v7, 0x7f121266
+    const v7, 0x7f12127e
 
     new-array v13, v12, [Ljava/lang/Object;
 
@@ -301,7 +301,7 @@
 
     iget-object v6, v0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsController;->this$0:Lcom/android/settings/print/PrintSettingsFragment;
 
-    const v7, 0x7f121277
+    const v7, 0x7f12128f
 
     new-array v13, v12, [Ljava/lang/Object;
 
@@ -339,7 +339,7 @@
     :goto_1
     iget-object v6, v0, Lcom/android/settings/print/PrintSettingsFragment$PrintJobsController;->this$0:Lcom/android/settings/print/PrintSettingsFragment;
 
-    const v7, 0x7f12126d
+    const v7, 0x7f121285
 
     new-array v13, v11, [Ljava/lang/Object;
 
@@ -431,7 +431,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f080356
+    const v6, 0x7f08035f
 
     invoke-virtual {v5, v6}, Landroid/app/Activity;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

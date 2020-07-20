@@ -39,12 +39,12 @@
 
     if-eqz p2, :cond_0
 
-    const p1, 0x7f1213fa
+    const p1, 0x7f121412
 
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f1213f9
+    const p1, 0x7f121411
 
     :goto_0
     iget-object v0, p0, Lcom/android/settings/biometrics/face/FaceEnrollEducation$1;->this$0:Lcom/android/settings/biometrics/face/FaceEnrollEducation;

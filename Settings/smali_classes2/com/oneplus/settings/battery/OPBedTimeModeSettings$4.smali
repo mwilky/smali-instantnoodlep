@@ -49,7 +49,7 @@
 
     const/4 p3, 0x1
 
-    const v0, 0x7f12169a
+    const v0, 0x7f1216b2
 
     const/4 v1, -0x2
 

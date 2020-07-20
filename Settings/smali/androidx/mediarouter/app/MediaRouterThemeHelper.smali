@@ -143,7 +143,7 @@
 .method static getCheckBoxDrawableIcon(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    const v0, 0x7f0803ef
+    const v0, 0x7f0803f8
 
     invoke-static {p0, v0}, Landroidx/mediarouter/app/MediaRouterThemeHelper;->getIconByDrawableId(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -302,7 +302,7 @@
 .method static getMuteButtonDrawableIcon(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    const v0, 0x7f0803f1
+    const v0, 0x7f0803fa
 
     invoke-static {p0, v0}, Landroidx/mediarouter/app/MediaRouterThemeHelper;->getIconByDrawableId(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 

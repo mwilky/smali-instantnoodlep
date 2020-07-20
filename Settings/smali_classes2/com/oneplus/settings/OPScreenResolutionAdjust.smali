@@ -613,7 +613,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120fa3
+    const v2, 0x7f120fbb
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -631,7 +631,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121478
+    const v2, 0x7f121490
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -789,7 +789,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0300dc
+    const v0, 0x7f0300dd
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -1190,7 +1190,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f121039
+    const v1, 0x7f121051
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1200,7 +1200,7 @@
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/settings/OPScreenResolutionAdjust$2;-><init>(Lcom/oneplus/settings/OPScreenResolutionAdjust;I)V
 
-    const p1, 0x7f121038    # 1.941515E38f
+    const p1, 0x7f121050
 
     invoke-virtual {v0, p1, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1210,7 +1210,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/settings/OPScreenResolutionAdjust$1;-><init>(Lcom/oneplus/settings/OPScreenResolutionAdjust;)V
 
-    const v1, 0x7f1203ef
+    const v1, 0x7f1203f6
 
     invoke-virtual {p1, v1, v0}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

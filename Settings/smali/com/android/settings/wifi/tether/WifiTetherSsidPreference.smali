@@ -55,15 +55,15 @@
 .method private initialize()V
     .locals 3
 
-    const v0, 0x7f0d021c
+    const v0, 0x7f0d021d
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const v0, 0x7f0d037b
+    const v0, 0x7f0d037c
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
-    const v0, 0x7f080321
+    const v0, 0x7f08032a
 
     :try_start_0
     invoke-virtual {p0}, Landroidx/preference/Preference;->getContext()Landroid/content/Context;
@@ -132,7 +132,7 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    const v1, 0x7f0a077a
+    const v1, 0x7f0a0777
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -154,7 +154,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121930
+    const v3, 0x7f121948
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

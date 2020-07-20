@@ -271,7 +271,7 @@
 
     invoke-virtual {p1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f120385
+    const v0, 0x7f12038c
 
     new-instance v1, Lcom/android/settings/bluetooth/-$$Lambda$BluetoothNameDialogFragment$pGuotXbZkr5ej_7pdbB840goZcw;
 

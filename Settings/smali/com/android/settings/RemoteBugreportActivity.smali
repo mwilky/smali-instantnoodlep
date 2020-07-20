@@ -39,7 +39,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f121498
+    const v0, 0x7f1214b0
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -91,18 +91,18 @@
 
     invoke-direct {v1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f121495
+    const v2, 0x7f1214ad
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
     if-ne p1, v0, :cond_3
 
-    const p1, 0x7f121493
+    const p1, 0x7f1214ab
 
     goto :goto_1
 
     :cond_3
-    const p1, 0x7f121494
+    const p1, 0x7f1214ac
 
     :goto_1
     invoke-virtual {v1, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
@@ -113,7 +113,7 @@
 
     invoke-virtual {v1, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f1205bb
+    const p1, 0x7f1205c2
 
     new-instance v0, Lcom/android/settings/RemoteBugreportActivity$4;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v1, p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f121492
+    const p1, 0x7f1214aa
 
     new-instance v0, Lcom/android/settings/RemoteBugreportActivity$3;
 

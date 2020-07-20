@@ -178,7 +178,7 @@
 
     iget-object p2, p0, Landroidx/mediarouter/media/SystemMediaRouteProvider$JellybeanImpl;->mRouterObj:Ljava/lang/Object;
 
-    const v0, 0x7f120ad5
+    const v0, 0x7f120aed
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -81,7 +81,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/RingerVibrateConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120f07
+    const v3, 0x7f120f1f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -109,7 +109,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/RingerVibrateConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120f06
+    const v2, 0x7f120f1e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -123,7 +123,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/conditional/RingerVibrateConditionController;->mAppContext:Landroid/content/Context;
 
-    const v1, 0x7f080397
+    const v1, 0x7f0803a0
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

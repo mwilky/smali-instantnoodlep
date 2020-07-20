@@ -88,7 +88,7 @@
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    const p1, 0x7f0a0583
+    const p1, 0x7f0a0580
 
     invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

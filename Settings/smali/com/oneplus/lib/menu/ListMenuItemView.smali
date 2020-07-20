@@ -350,7 +350,7 @@
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    const v0, 0x7f0a0744
+    const v0, 0x7f0a0741
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -373,7 +373,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     :cond_0
-    const v0, 0x7f0a0661
+    const v0, 0x7f0a065e
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -383,7 +383,7 @@
 
     iput-object v0, p0, Lcom/oneplus/lib/menu/ListMenuItemView;->mShortcutView:Landroid/widget/TextView;
 
-    const v0, 0x7f0a06c1
+    const v0, 0x7f0a06be
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -402,7 +402,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_1
-    const v0, 0x7f0a0748
+    const v0, 0x7f0a0745
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

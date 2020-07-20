@@ -105,7 +105,7 @@
 .method protected getDefaultLayoutResource()I
     .locals 0
 
-    const p0, 0x7f0d0322
+    const p0, 0x7f0d0323
 
     return p0
 .end method
@@ -153,7 +153,7 @@
 
     invoke-super {p0, p1}, Lcom/google/android/setupdesign/items/SwitchItem;->onBindView(Landroid/view/View;)V
 
-    const v0, 0x7f0a06cb
+    const v0, 0x7f0a06c8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -210,7 +210,7 @@
 
     if-eqz v0, :cond_4
 
-    const p0, 0x7f0a06d1
+    const p0, 0x7f0a06ce
 
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

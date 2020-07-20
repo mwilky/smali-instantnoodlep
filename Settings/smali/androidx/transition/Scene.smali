@@ -13,7 +13,7 @@
 .method public static getCurrentScene(Landroid/view/ViewGroup;)Landroidx/transition/Scene;
     .locals 1
 
-    const v0, 0x7f0a075e
+    const v0, 0x7f0a075b
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
 
@@ -31,7 +31,7 @@
 
     iget-object v0, p0, Landroidx/transition/Scene;->mSceneRoot:Landroid/view/ViewGroup;
 
-    const v1, 0x7f0a075e
+    const v1, 0x7f0a075b
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
 

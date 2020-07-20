@@ -203,7 +203,7 @@
 
     invoke-virtual {p0, p3}, Lcom/android/settings/widget/ChartSweepView;->setLabelColor(I)V
 
-    const p3, 0x7f08015c
+    const p3, 0x7f080165
 
     invoke-virtual {p0, p3}, Landroid/view/View;->setBackgroundResource(I)V
 

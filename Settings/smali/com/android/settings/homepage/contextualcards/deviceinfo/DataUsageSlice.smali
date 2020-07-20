@@ -64,7 +64,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f1202c6
+    const p1, 0x7f1202cd
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -85,7 +85,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f1202c5
+    const p1, 0x7f1202cc
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -165,7 +165,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120591
+    const v1, 0x7f120598
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -195,7 +195,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12058f
+    const v1, 0x7f120596
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -251,7 +251,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f08033f
+    const v1, 0x7f080348
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -259,7 +259,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f12057c
+    const v2, 0x7f120583
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -354,7 +354,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DataUsageSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120b5d
+    const v2, 0x7f120b75
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

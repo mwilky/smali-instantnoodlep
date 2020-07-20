@@ -269,7 +269,7 @@
 
     const/4 p3, 0x1
 
-    const v1, 0x7f0d0238
+    const v1, 0x7f0d0239
 
     invoke-virtual {p2, p3, v1}, Lcom/oneplus/lib/app/appcompat/TintTypedArray;->getResourceId(II)I
 
@@ -277,7 +277,7 @@
 
     invoke-virtual {p1, v1, p0, p3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    const p1, 0x7f0a0630
+    const p1, 0x7f0a062d
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -291,7 +291,7 @@
 
     invoke-virtual {p1, p0}, Lcom/oneplus/lib/widget/SearchView$SearchAutoComplete;->setSearchView(Lcom/oneplus/lib/widget/SearchView;)V
 
-    const p1, 0x7f0a062a
+    const p1, 0x7f0a0627
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -299,7 +299,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mSearchEditFrame:Landroid/view/View;
 
-    const p1, 0x7f0a062f
+    const p1, 0x7f0a062c
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -307,7 +307,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mSearchPlate:Landroid/view/View;
 
-    const p1, 0x7f0a06c2
+    const p1, 0x7f0a06bf
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -315,7 +315,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mSubmitArea:Landroid/view/View;
 
-    const p1, 0x7f0a0627
+    const p1, 0x7f0a0624
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -325,7 +325,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mSearchButton:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a062b
+    const p1, 0x7f0a0628
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -335,7 +335,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mGoButton:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a0628
+    const p1, 0x7f0a0625
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +345,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mCloseButton:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a0631
+    const p1, 0x7f0a062e
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -355,7 +355,7 @@
 
     iput-object p1, p0, Lcom/oneplus/lib/widget/SearchView;->mVoiceButton:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a062d
+    const p1, 0x7f0a062a
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -443,7 +443,7 @@
 
     const/16 p1, 0xc
 
-    const v1, 0x7f0d0236
+    const v1, 0x7f0d0237
 
     invoke-virtual {p2, p1, v1}, Lcom/oneplus/lib/app/appcompat/TintTypedArray;->getResourceId(II)I
 

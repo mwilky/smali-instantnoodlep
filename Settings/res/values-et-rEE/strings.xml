@@ -10,7 +10,7 @@
     <string name="activate_one_handed_mode_description">Nipsake vasakut või paremat serva, et kuva alla tõmmata. Kuva taastamiseks nipsake tagasisuunas</string>
     <string name="adb_over_network">Võrguülene ADB</string>
     <string name="adb_over_network_summary">Lubage TCP/IP võrguülene (Wi-Fi, USB-võrgud) silumine. Alglaadimisel see säte lähtestatakse</string>
-    <string name="adb_over_network_warning">"HOIATUS. Kui võrguülene ADB lubatakse, on teie telefon avatud sissetungikatsetele kõikidest ühendatud võrkudest, sh GSM andmesidevõrgust.
+    <string name="adb_over_network_warning">"HOIATUS! Kui võrguülene ADB lubatakse, on teie telefon avatud sissetungikatsetele kõikidest ühendatud võrkudest, sh GSM andmesidevõrgust.
 
 Kasutage seda funktsiooni ainult siis, kui olete loonud ühenduse usaldusväärse võrguga.
 
@@ -37,12 +37,19 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="alertslider_settings_soc_tri_state_summary">Hääletu, vibratsioon, helin</string>
     <string name="android_am">"AM "</string>
     <string name="android_pm">"PM "</string>
-    <string name="aod_clock_analog">Analoog</string>
+    <string name="aod_clock_analog">Analoogne 1</string>
+    <string name="aod_clock_analog_1">Analoogne 2</string>
+    <string name="aod_clock_analog_2">Analoogne 3</string>
+    <string name="aod_clock_bold">Poolpaks</string>
     <string name="aod_clock_default">Vaikimisi</string>
+    <string name="aod_clock_digital">Digitaalne 1</string>
+    <string name="aod_clock_digital_1">Digitaalne 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalism</string>
+    <string name="aod_clock_minimalism">Minimalism 1</string>
+    <string name="aod_clock_minimalism_1">Minimalism 2</string>
     <string name="aod_clock_none">Puudub</string>
     <string name="aod_clock_select_style_text">Valige kella stiil</string>
+    <string name="aod_clock_text_clock">Tekstiline kell</string>
     <string name="aod_horizon_light_effect_1">Sinine</string>
     <string name="aod_horizon_light_effect_2">Punane</string>
     <string name="aod_horizon_light_effect_3">Lilla</string>
@@ -147,6 +154,21 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="display_summary_on">Kohanduv heledus SEES</string>
     <string name="doze_summary">Ärata ekraan teavituse saabumisel</string>
     <string name="doze_title">Muutuv kuva</string>
+    <string name="earphone_function_control_click_left">Topeltklõpsake vasakt kuularit</string>
+    <string name="earphone_function_control_click_right">Topeltklõpsake paremat kuularit</string>
+    <string name="earphone_function_control_last_song">Eelmine lugu</string>
+    <string name="earphone_function_control_next_song">Järgmine lugu</string>
+    <string name="earphone_function_control_play_pause">Esita/paus</string>
+    <string name="earphone_function_introduction">Funktsiooni kirjeldus</string>
+    <string name="earphone_function_listening_breeno">Häälassistent</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: %1$s</string>
+    <string name="earphone_support_current_version">Praegune versioon:</string>
+    <string name="earphone_support_update_ota">Püsivara automaatne uuendamine</string>
+    <string name="earphone_support_wifi_data">Automaatuuenduste lubamine mobiilandmeside kaudu</string>
+    <string name="earphone_usage_guide_complete">Valmis</string>
     <string name="enable_otg_storage_summary">Luba välismälu lugemine OTG kaudu</string>
     <string name="enable_otg_storage_title">OTG mälu</string>
     <string name="enabled_fingerprint_unlock">Luba sõrmejäljega avamine</string>
@@ -155,6 +177,8 @@ Kas lennurežiim on sisse lülitada?"</string>
     <string name="exception_hints">Kuvasuhte muutmine võib põhjustada kuvamisvigasid.</string>
     <string name="extended_title">Võrgu laiendajad</string>
     <string name="feature_not_support_split_screen">Seda funktsiooni ei toetata jagatud kuval.</string>
+    <string name="find_my_bluetooth_earphone">Leia mu kuularid</string>
+    <string name="find_my_bluetooth_earphone_summary">Kuularite leidmine helisignaali abil, kui kuularid on leviulatuses, või viimase asukoha vaatamine, need on leviulatusest väljas</string>
     <string name="fingerprint_add_fingerprint">Lisa sõrmejälg</string>
     <string name="fingerprint_add_fingerprint_summary">Asetage oma sõrm andurile ja kui tunnete vibratsiooni, tõstke sõrm.</string>
     <string name="fingerprint_allset">Kõik seadistatud.</string>
@@ -730,7 +754,7 @@ Märkus. Sõrmejälg ei pruugi olla nii turvaline kui tugev muster või PIN-kood
     <string name="oneplus_manage_virtual_keyboard">Klaviatuuride haldus</string>
     <string name="oneplus_max_shortcuts_tips">Saate lisada kuni kuus otseteed</string>
     <string name="oneplus_media_ring_summary">Vaigista meediumi helitugevus</string>
-    <string name="oneplus_memc_close">Välja lülitatud</string>
+    <string name="oneplus_memc_close">Väljas</string>
     <string name="oneplus_memc_game">Mängu liikumiskompensatsioon</string>
     <string name="oneplus_memc_game_summary">Mängu liikumise kompensatsiooni sisselülitamiseks tuleb eraldusvõimeks määrata FHD+</string>
     <string name="oneplus_memc_more_support_apps">Rohkem toetatud rakendusi</string>
@@ -1516,7 +1540,7 @@ Kas soovite süsteemi sätted lähtestada? Seda toimingut ei saa tagasi võtta"<
     <string name="theme_switch_dark_mode_summary">Luba süsteemi tume teema</string>
     <string name="theme_switch_dark_mode_title">Öörežiim</string>
     <string name="theme_switch_default">vaikesäte</string>
-    <string name="theme_switch_description">Vahetate kohe teemaks %1$s</string>
+    <string name="theme_switch_description">Vahetad kohe teemaks %1$s</string>
     <string name="theme_switch_dialog_title">Muuda süsteemi teemat</string>
     <string name="time_picker_header_text">Määrake kellaaeg</string>
     <string name="time_picker_hour_label">tund</string>
@@ -1638,8 +1662,8 @@ Kas soovite süsteemi sätted lähtestada? Seda toimingut ei saa tagasi võtta"<
     <string name="wifi_wapi_cert_uninstall_button">Installi maha</string>
     <string name="wifi_wapi_certification_dont_exist">Sisestatud võrguparool on vale. Proovige uuesti.</string>
     <string name="wifi_wapi_user_cert">Kasutaja sertifikaat</string>
-    <string name="work_life_balance">Töö- ja eraelu tasakaal</string>
-    <string name="work_life_disabled_toast">Töö- ja eraelufunktsioon on keelatud.</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">Funktsioon Work Life Balance on keelatud.</string>
     <string name="zen_mode_alarm_info_new">Alarmid katkestavad alati</string>
     <string name="zen_mode_alarms_summary">Luba alarmiheli</string>
     <string name="zen_mode_media_sound">Meedium</string>

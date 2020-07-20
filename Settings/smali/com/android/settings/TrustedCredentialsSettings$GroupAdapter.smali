@@ -247,7 +247,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0356
+    const v1, 0x7f0d0357
 
     invoke-virtual {v0, v1, p5, p3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -255,7 +255,7 @@
 
     invoke-virtual {p5, p4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    const v0, 0x7f0a0767
+    const v0, 0x7f0a0764
 
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -265,7 +265,7 @@
 
     invoke-static {p4, v0}, Lcom/android/settings/TrustedCredentialsSettings$GroupAdapter$ViewHolder;->access$1402(Lcom/android/settings/TrustedCredentialsSettings$GroupAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    const v0, 0x7f0a0768
+    const v0, 0x7f0a0765
 
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -275,7 +275,7 @@
 
     invoke-static {p4, v0}, Lcom/android/settings/TrustedCredentialsSettings$GroupAdapter$ViewHolder;->access$1502(Lcom/android/settings/TrustedCredentialsSettings$GroupAdapter$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    const v0, 0x7f0a0766
+    const v0, 0x7f0a0763
 
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -512,14 +512,14 @@
 
     if-eqz p0, :cond_1
 
-    const p0, 0x7f120415
+    const p0, 0x7f12041c
 
     invoke-virtual {p2, p0}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
     :cond_1
-    const p0, 0x7f120414
+    const p0, 0x7f12041b
 
     invoke-virtual {p2, p0}, Landroid/widget/TextView;->setText(I)V
 

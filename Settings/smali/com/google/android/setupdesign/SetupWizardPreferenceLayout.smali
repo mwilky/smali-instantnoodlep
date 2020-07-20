@@ -35,7 +35,7 @@
 
     if-nez p1, :cond_0
 
-    const p1, 0x7f0a06d3
+    const p1, 0x7f0a06d0
 
     :cond_0
     invoke-super {p0, p1}, Lcom/google/android/setupdesign/SetupWizardRecyclerLayout;->findContainer(I)Landroid/view/ViewGroup;
@@ -50,7 +50,7 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d0338
+    const p2, 0x7f0d0339
 
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/google/android/setupdesign/SetupWizardRecyclerLayout;->onInflateTemplate(Landroid/view/LayoutInflater;I)Landroid/view/View;
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0335
+    const v1, 0x7f0d0336
 
     const/4 v2, 0x0
 

@@ -109,7 +109,7 @@
 
     if-eqz v6, :cond_0
 
-    const v6, 0x7f0801c3
+    const v6, 0x7f0801cc
 
     goto :goto_1
 
@@ -122,12 +122,12 @@
 
     if-eqz v6, :cond_1
 
-    const v6, 0x7f0801c8
+    const v6, 0x7f0801d1
 
     goto :goto_1
 
     :cond_1
-    const v6, 0x7f08016b
+    const v6, 0x7f080174
 
     :goto_1
     new-instance v7, Lcom/android/settings/accessibility/ShortcutServicePickerFragment$FrameworkCandidateInfo;

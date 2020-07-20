@@ -1201,7 +1201,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/settings/ResetSystemSettings$ResetSystemSettingsTask;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f121335
+    const p1, 0x7f12134d
 
     const/4 v0, 0x0
 

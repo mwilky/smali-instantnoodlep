@@ -298,7 +298,7 @@
 
     iget-object p1, p0, Lcom/android/settings/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12195f
+    const v1, 0x7f121977
 
     invoke-static {p1, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -361,7 +361,7 @@
 
     iget-object p0, p0, Lcom/android/settings/wifi/WifiEnabler;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f12193e
+    const p1, 0x7f121956
 
     invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

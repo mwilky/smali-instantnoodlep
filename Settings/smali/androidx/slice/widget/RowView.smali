@@ -245,7 +245,7 @@
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
-    const p1, 0x7f0a0307
+    const p1, 0x7f0a030c
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -285,7 +285,7 @@
 
     iput-object p1, p0, Landroidx/slice/widget/RowView;->mSecondaryText:Landroid/widget/TextView;
 
-    const p1, 0x7f0a0380
+    const p1, 0x7f0a0385
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

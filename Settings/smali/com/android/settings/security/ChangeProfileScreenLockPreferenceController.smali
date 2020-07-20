@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120997
+    const v1, 0x7f1209af
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -212,7 +212,7 @@
 
     iget-object p1, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f1209a1
+    const v0, 0x7f1209b9
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

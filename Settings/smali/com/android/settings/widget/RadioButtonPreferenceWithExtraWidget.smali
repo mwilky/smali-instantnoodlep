@@ -25,7 +25,7 @@
 
     iput p1, p0, Lcom/android/settings/widget/RadioButtonPreferenceWithExtraWidget;->mExtraWidgetVisibility:I
 
-    const p1, 0x7f0d0294
+    const p1, 0x7f0d0295
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -39,7 +39,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/widget/RadioButtonPreference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a05c3
+    const v0, 0x7f0a05c0
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -49,7 +49,7 @@
 
     iput-object v0, p0, Lcom/android/settings/widget/RadioButtonPreferenceWithExtraWidget;->mExtraWidget:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a05c5
+    const v0, 0x7f0a05c2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +145,7 @@
 
     iget-object p1, p0, Lcom/android/settings/widget/RadioButtonPreferenceWithExtraWidget;->mExtraWidget:Landroid/widget/ImageView;
 
-    const v0, 0x7f08032e
+    const v0, 0x7f080337
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -159,7 +159,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f120856
+    const v0, 0x7f12086e
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -176,7 +176,7 @@
 
     iget-object p1, p0, Lcom/android/settings/widget/RadioButtonPreferenceWithExtraWidget;->mExtraWidget:Landroid/widget/ImageView;
 
-    const v0, 0x7f08032f
+    const v0, 0x7f080338
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -190,7 +190,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f121478
+    const v0, 0x7f121490
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

@@ -166,7 +166,7 @@
 
     const/4 p2, 0x2
 
-    const p3, 0x7f0d023d
+    const p3, 0x7f0d023e
 
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -176,7 +176,7 @@
 
     const/4 p2, 0x3
 
-    const p3, 0x7f0d023e
+    const p3, 0x7f0d023f
 
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -186,7 +186,7 @@
 
     const/4 p2, 0x4
 
-    const p3, 0x7f0d0240
+    const p3, 0x7f0d0241
 
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -196,7 +196,7 @@
 
     const/4 p2, 0x1
 
-    const p3, 0x7f0d023c
+    const p3, 0x7f0d023d
 
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -751,13 +751,13 @@
 
     iget-object v0, p0, Lcom/oneplus/lib/app/OPAlertController;->mWindow:Landroid/view/Window;
 
-    const v2, 0x7f0a053d
+    const v2, 0x7f0a053a
 
     invoke-virtual {v0, v2}, Landroid/view/Window;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const v2, 0x7f0a0754
+    const v2, 0x7f0a0751
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -920,7 +920,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a061f
+    const v4, 0x7f0a061c
 
     invoke-virtual {v2, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1153,7 +1153,7 @@
     :cond_f
     iget-object v4, p0, Lcom/oneplus/lib/app/OPAlertController;->mCustomTitleView:Landroid/view/View;
 
-    const v5, 0x7f0a074b
+    const v5, 0x7f0a0748
 
     if-eqz v4, :cond_10
 
@@ -1510,7 +1510,7 @@
     :goto_10
     if-nez v6, :cond_1e
 
-    const v7, 0x7f0a070f
+    const v7, 0x7f0a070c
 
     invoke-virtual {v2, v7}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1735,7 +1735,7 @@
 
     iget-object v1, p0, Lcom/oneplus/lib/app/OPAlertController;->mWindow:Landroid/view/Window;
 
-    const v2, 0x7f0a053d
+    const v2, 0x7f0a053a
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->findViewById(I)Landroid/view/View;
 

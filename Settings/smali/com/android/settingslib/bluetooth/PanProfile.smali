@@ -222,7 +222,7 @@
 .method public getDrawableResource(Landroid/bluetooth/BluetoothClass;)I
     .locals 0
 
-    const p0, 0x7f0801b6
+    const p0, 0x7f0801bf
 
     return p0
 .end method
@@ -236,12 +236,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f12037e
+    const p0, 0x7f120385
 
     return p0
 
     :cond_0
-    const p0, 0x7f12037d
+    const p0, 0x7f120384
 
     return p0
 .end method

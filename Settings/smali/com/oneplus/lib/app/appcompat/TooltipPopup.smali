@@ -67,7 +67,7 @@
 
     iget-object p1, p0, Lcom/oneplus/lib/app/appcompat/TooltipPopup;->mContentView:Landroid/view/View;
 
-    const v0, 0x7f0a03f9
+    const v0, 0x7f0a03fe
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

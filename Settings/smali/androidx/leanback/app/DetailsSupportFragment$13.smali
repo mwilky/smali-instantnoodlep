@@ -76,7 +76,7 @@
 
     move-result p1
 
-    const p2, 0x7f0a07af
+    const p2, 0x7f0a07ac
 
     if-ne p1, p2, :cond_1
 

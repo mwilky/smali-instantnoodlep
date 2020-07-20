@@ -331,12 +331,19 @@
     <string name="angle_enabled_app_set">‏التطبيق الذي يستخدم ANGLE: %1$s</string>
     <string name="animator_duration_scale_title">طول مدة الرسوم المتحركة</string>
     <string name="another_migration_already_in_progress">هناك عملية ترحيل أخرى قيد التقدم حاليًا.</string>
-    <string name="aod_clock_analog">تناظري</string>
+    <string name="aod_clock_analog">تناظرية 1</string>
+    <string name="aod_clock_analog_1">تناظري 2</string>
+    <string name="aod_clock_analog_2">تناظرية 3</string>
+    <string name="aod_clock_bold">غامق</string>
     <string name="aod_clock_default">الافتراضي</string>
+    <string name="aod_clock_digital">رقمية 1</string>
+    <string name="aod_clock_digital_1">رقمية 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">الحد الأدنى</string>
+    <string name="aod_clock_minimalism">الحجم الصغير 1</string>
+    <string name="aod_clock_minimalism_1">الحجم الصغير 2</string>
     <string name="aod_clock_none">لا شيء</string>
     <string name="aod_clock_select_style_text">حدد نمط الساعة</string>
+    <string name="aod_clock_text_clock">ساعة نصية</string>
     <string name="aod_horizon_light_effect_1">أزرق</string>
     <string name="aod_horizon_light_effect_2">أحمر</string>
     <string name="aod_horizon_light_effect_3">أرجواني</string>
@@ -1651,6 +1658,21 @@
     <string name="dual_cdma_sim_warning_notification_channel_title">‏مجموعة بطاقة SIM</string>
     <string name="dual_cdma_sim_warning_notification_summary">قد يحد استخدام %1$s من أداء بعض الوظائف. انقر لمعرفة المزيد من المعلومات.</string>
     <string name="eab_provisioned_switch_string">‏توفير EAB/وجوده مسبقًا</string>
+    <string name="earphone_function_control_click_left">النقر مرتين على سماعة الأذن اليسرى</string>
+    <string name="earphone_function_control_click_right">النقر مرتين على يمين سماعات الأذن</string>
+    <string name="earphone_function_control_last_song">المقطع السابق</string>
+    <string name="earphone_function_control_next_song">المقطع التالي</string>
+    <string name="earphone_function_control_play_pause">تشغيل/إيقاف مؤقت</string>
+    <string name="earphone_function_introduction">وصف الوظيفة</string>
+    <string name="earphone_function_listening_breeno">المساعد الصوتي</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds Case: %1$s</string>
+    <string name="earphone_support_battery_info_left">يسار: %1$s</string>
+    <string name="earphone_support_battery_info_right">يمين: %1$s</string>
+    <string name="earphone_support_current_version">الإصدار الحالي:</string>
+    <string name="earphone_support_update_ota">التحديث التلقائي للبرامج الثابتة</string>
+    <string name="earphone_support_wifi_data">السماح بالتحديثات التلقائية باستخدام بيانات الجوال</string>
+    <string name="earphone_usage_guide_complete">تم</string>
     <string name="edge_to_edge_navigation_summary">للانتقال إلى \"الشاشة الرئيسية\"، مرّر سريعًا من أسفل الشاشة إلى أعلاها. للتبديل بين التطبيقات، مرّر سريعًا من أسفل الشاشة إلى أعلاها واضغط مع الاستمرار ثم ارفع إصبعك عن الشاشة. للرجوع، مرّر سريعًا من الحافة اليمنى أو اليسرى للشاشة.</string>
     <string name="edge_to_edge_navigation_title">التنقل بالإيماءات</string>
     <string name="emergency_address_summary">‏يتم اعتباره موقعك الجغرافي عند إجراء مكالمة طوارئ عبر Wi‑Fi</string>
@@ -1836,6 +1858,8 @@
     <string name="filter_personal_apps">شخصي</string>
     <string name="filter_work_apps">العمل</string>
     <string name="filter_write_settings_apps">إمكانية تعديل إعدادات النظام</string>
+    <string name="find_my_bluetooth_earphone">العثور على سماعاتي</string>
+    <string name="find_my_bluetooth_earphone_summary">يمكنك تشغيل الأصوات لتحديد موقع سماعات الأذن عندما تكون داخل النطاق، أو عرض الموقع الأخير عندما تكون خارج النطاق</string>
     <string name="fingerprint_add_fingerprint">إضافة بصمة إصبع</string>
     <string name="fingerprint_add_fingerprint_summary">ضع أصبعك على المستشعر ثم ارفع بعدما تشعر بالاهتزاز.</string>
     <string name="fingerprint_add_max">يمكنك إضافة ما يصل إلى %d بصمات الإصبع</string>
@@ -2985,7 +3009,7 @@
     <string name="oneplus_applock_pattern_header">ارسم النمط الخاص بك</string>
     <string name="oneplus_applock_wrong_pattern_header">نمط خاطئ</string>
     <string name="oneplus_apps_notifications">إشعارات &amp; التطبيقات</string>
-    <string name="oneplus_apps_title">تطبيقات</string>
+    <string name="oneplus_apps_title">التطبيقات</string>
     <string name="oneplus_aptx_hd_support">دعم aptX / aptX HD</string>
     <string name="oneplus_authentication_information">معلومات المصادقة</string>
     <string name="oneplus_auto_activate">تشغيل تلقائياً</string>
@@ -3006,8 +3030,8 @@
     <string name="oneplus_auto_turn_on_dnd">تشغيل وضع عدم الإزعاج تلقائيًا</string>
     <string name="oneplus_available_keyboard_category">لوحة مفاتيح متاحة</string>
     <string name="oneplus_available_keyboard_description">سيتم إضافة لوحات المفاتيح المثبتة والتي تم تمكيها هنا إلى قائمة \"لوحات المفاتيح المتاحة\"</string>
-    <string name="oneplus_back_home">الصفحة الرئيسية، السابق</string>
-    <string name="oneplus_back_home_o2">السابق، الصفحة الرئيسية</string>
+    <string name="oneplus_back_home">الصفحة الرئيسية، رجوع</string>
+    <string name="oneplus_back_home_o2">رجوع، الصفحة الرئيسية</string>
     <string name="oneplus_back_home_summary">مرر لأعلى على زر الصفحة الرئيسية</string>
     <string name="oneplus_back_topic_theme_summary">تبديل ثمة النظام عند فتح الموضوع مرة أخرى تلقائيًا</string>
     <string name="oneplus_back_topic_theme_title">ثمة الغلاف الخلفي</string>
@@ -3217,7 +3241,7 @@
     <string name="oneplus_fingerprint_settings_list_title">قائمة بصمات الأصابع</string>
     <string name="oneplus_fingerprint_swipe_for_notifications_summary">مرر لأسفل على مستشعر بصمة الإصبع لفحص الإخطارات، ومرر لأعلى لإغلاق لوحة الإخطارات</string>
     <string name="oneplus_fingerprint_swipe_for_notifications_title">المسح بصمة الإصبع لمطالعة الإخطارات</string>
-    <string name="oneplus_fixed_navigation_bar">الأخيرة، السابق، الصفحة الرئيسية</string>
+    <string name="oneplus_fixed_navigation_bar">الأخيرة، الصفحة الرئيسية، رجوع</string>
     <string name="oneplus_fixed_navigation_bar_o2">رجوع، الصفحة الرئيسية، الأخيرة</string>
     <string name="oneplus_fixed_navigation_bar_title">شريط التنقل الثابت</string>
     <string name="oneplus_floating_keyboard">لوحة مفاتيح عائمة</string>
@@ -3247,7 +3271,7 @@
     <string name="oneplus_front_camera_display_title">منطقة عرض الكاميرا الأمامية</string>
     <string name="oneplus_fullscreen_back_guide_summary">اسحب الحافة اليسرى أو اليمنى من الشاشة للداخل</string>
     <string name="oneplus_fullscreen_back_guide_summary_deprecated">مرر لأعلى من الجانب الأيمن أو الأيسر للشاشة</string>
-    <string name="oneplus_fullscreen_back_guide_title">السابق</string>
+    <string name="oneplus_fullscreen_back_guide_title">رجوع</string>
     <string name="oneplus_fullscreen_disable_this_feature">لا يمكن استخدام هذه الميزة عندما تكون إيماءات التنقل ممكّنة.</string>
     <string name="oneplus_fullscreen_gesture_guide_back">"هيا نجرب استخدام الإيماءات التي تحل محل زر الخلف.
 امسح لأعلى من الجانب الأيسر إلى الأيمن أسفل الشاشة."</string>
@@ -3405,7 +3429,7 @@
     <string name="oneplus_manage_virtual_keyboard">إدارة لوحات المفاتيح</string>
     <string name="oneplus_max_shortcuts_tips">يمكنك إضافة ما يصل إلى 6 اختصارات</string>
     <string name="oneplus_media_ring_summary">كتم صوت الوسائط</string>
-    <string name="oneplus_memc_close">إيقاف</string>
+    <string name="oneplus_memc_close">إيقاف تشغيل</string>
     <string name="oneplus_memc_game">تعويض الحركة في الألعاب</string>
     <string name="oneplus_memc_game_summary">يتطلب تشغيل تعويض الحركة في الألعاب تبديل الدقة إلى FHD+</string>
     <string name="oneplus_memc_more_support_apps">المزيد من التطبيقات المدعومة</string>
@@ -3476,7 +3500,7 @@
     <string name="oneplus_notch_display_area">الحز</string>
     <string name="oneplus_notch_display_choose_title">حدد طريقة عرض منطقة الحز</string>
     <string name="oneplus_notch_display_title">إظهار الحز</string>
-    <string name="oneplus_notice_vibrate_intensity">إخطارات</string>
+    <string name="oneplus_notice_vibrate_intensity">الإشعارات</string>
     <string name="oneplus_notification_advance_settings">إعدادات الإخطار المتقدمة</string>
     <string name="oneplus_notification_alert_title">مهم</string>
     <string name="oneplus_notification_channel_summary_low">الإشعارات الأقل أهمية دون إصدار صوت أو اهتزاز</string>
@@ -3494,7 +3518,7 @@
     <string name="oneplus_notification_sound_default">إخطار افتراضي</string>
     <string name="oneplus_notification_ways">وضع العرض</string>
     <string name="oneplus_notification_ways_title">كيفية إظهار الإشعارات</string>
-    <string name="oneplus_notifications">إخطارات</string>
+    <string name="oneplus_notifications">الإشعارات</string>
     <string name="oneplus_notifications_3rd_calls">إشعارات مكالمات الجهة الخارجية</string>
     <string name="oneplus_notifications_3rd_calls_summary">ستظهر المكالمات الصوتية أو مكالمات الفيديو من التطبيقات الاجتماعية كإشعارات</string>
     <string name="oneplus_notifications_and_vibration">صوت الإشعارات والاهتزاز</string>
@@ -3747,7 +3771,7 @@
     <string name="oneplus_shortcuts_add">إضافة اختصارات</string>
     <string name="oneplus_shortcuts_preview">معاينة الاختصارات</string>
     <string name="oneplus_shortcuts_settings">إعدادات الاختصارات</string>
-    <string name="oneplus_shortcuts_title">اختصارات</string>
+    <string name="oneplus_shortcuts_title">الاختصارات</string>
     <string name="oneplus_show_front_camera_display_summary">السماح بعرض المحتوى في هذه المنطقة</string>
     <string name="oneplus_show_front_camera_display_title">عرض الكامير الأمامية</string>
     <string name="oneplus_show_notch_display_summary">السماح للتطبيقات باستخدام منطقة الحز</string>
@@ -6217,8 +6241,8 @@
     <string name="wizard_finish">إنهاء</string>
     <string name="wizard_next">التالي</string>
     <string name="work_alarm_ringtone_title">الصوت التلقائي لمنبّه العمل</string>
-    <string name="work_life_balance">التوازن بين العمل والحياة</string>
-    <string name="work_life_disabled_toast">تم تمكين ميزة التوازن بين العمل والحياة.</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">تم تعطيل ميزة التوازن بين العمل والحياة.</string>
     <string name="work_mode_label">الملف الشخصي للعمل</string>
     <string name="work_mode_off_summary">التطبيقات والإشعارات غير مفعّلة</string>
     <string name="work_mode_on_summary">ملف شخصي للعمل تديره مؤسستك</string>

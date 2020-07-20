@@ -86,7 +86,7 @@
 
     iget-object p3, p2, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v1, 0x7f08062e
+    const v1, 0x7f080640
 
     invoke-virtual {p3, v1}, Landroidx/appcompat/widget/AppCompatImageView;->setImageResource(I)V
 
@@ -99,7 +99,7 @@
 
     iget-object p3, p2, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v1, 0x7f08062f
+    const v1, 0x7f080641
 
     invoke-virtual {p3, v1}, Landroidx/appcompat/widget/AppCompatImageView;->setImageResource(I)V
 
@@ -184,7 +184,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f08056e
+    const p2, 0x7f080577
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -198,7 +198,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f08056f
+    const p2, 0x7f080578
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -215,7 +215,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f080574
+    const p2, 0x7f08057d
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -229,7 +229,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f080575
+    const p2, 0x7f08057e
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -244,7 +244,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f080571
+    const p2, 0x7f08057a
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -258,7 +258,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f080572
+    const p2, 0x7f08057b
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -392,7 +392,7 @@
 
     iget-object v0, p1, Lcom/oneplus/settings/ui/OPCustomTonePreference$ToneViewHolder;->imageViewMask:Lcom/oneplus/settings/ui/RadiusImageView;
 
-    const v1, 0x7f08062e
+    const v1, 0x7f080640
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/widget/AppCompatImageView;->setImageResource(I)V
 

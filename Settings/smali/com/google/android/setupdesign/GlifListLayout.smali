@@ -179,12 +179,12 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d0310
+    const p2, 0x7f0d0311
 
     :cond_0
     if-nez p2, :cond_1
 
-    const p2, 0x7f0d031b
+    const p2, 0x7f0d031c
 
     :cond_1
     const v0, 0x7f13041a

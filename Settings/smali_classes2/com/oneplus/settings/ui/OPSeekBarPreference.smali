@@ -31,7 +31,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPSeekBarPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d023b
+    const p1, 0x7f0d023c
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPSeekBarPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d023b
+    const p1, 0x7f0d023c
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -63,7 +63,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPSeekBarPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d023b
+    const p1, 0x7f0d023c
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -77,7 +77,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ui/OPSeekBarPreference;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d023b
+    const p1, 0x7f0d023c
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -109,7 +109,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->setDividerAllowedAbove(Z)V
 
-    const v0, 0x7f0a0616
+    const v0, 0x7f0a0613
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

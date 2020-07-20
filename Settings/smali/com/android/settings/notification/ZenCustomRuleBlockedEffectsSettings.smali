@@ -199,7 +199,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207de
+    const p0, 0x7f1207f6
 
     return p0
 .end method
@@ -247,7 +247,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f121a9c
+    const p1, 0x7f121ab4
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setTitle(I)V
 

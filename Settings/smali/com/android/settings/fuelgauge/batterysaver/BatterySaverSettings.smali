@@ -78,7 +78,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207f7
+    const p0, 0x7f12080f
 
     return p0
 .end method
@@ -132,7 +132,7 @@
 
     iput-object v0, p0, Lcom/android/settings/fuelgauge/batterysaver/BatterySaverSettings;->mFooterText:Landroid/text/SpannableStringBuilder;
 
-    const v0, 0x7f1207f7
+    const v0, 0x7f12080f
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

@@ -938,7 +938,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/textfield/IndicatorViewController;->errorView:Landroid/widget/TextView;
 
-    const v2, 0x7f0a071a
+    const v2, 0x7f0a0717
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setId(I)V
 
@@ -1079,7 +1079,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/textfield/IndicatorViewController;->helperTextView:Landroid/widget/TextView;
 
-    const v2, 0x7f0a071b
+    const v2, 0x7f0a0718
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setId(I)V
 

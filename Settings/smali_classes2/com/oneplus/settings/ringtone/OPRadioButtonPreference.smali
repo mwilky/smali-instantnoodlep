@@ -9,7 +9,7 @@
 
     invoke-direct {p0, p1}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f0d02a6
+    const p1, 0x7f0d02a7
 
     invoke-virtual {p0, p1}, Landroid/preference/CheckBoxPreference;->setWidgetLayoutResource(I)V
 
@@ -21,7 +21,7 @@
 
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d02a6
+    const p1, 0x7f0d02a7
 
     invoke-virtual {p0, p1}, Landroid/preference/CheckBoxPreference;->setWidgetLayoutResource(I)V
 
@@ -33,7 +33,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f0d02a6
+    const p1, 0x7f0d02a7
 
     invoke-virtual {p0, p1}, Landroid/preference/CheckBoxPreference;->setWidgetLayoutResource(I)V
 

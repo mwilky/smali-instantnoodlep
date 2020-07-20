@@ -9,7 +9,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d01e1
+    const p1, 0x7f0d01e2
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -23,7 +23,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p1, 0x7f0d01e1
+    const p1, 0x7f0d01e2
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -37,7 +37,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/Preference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const p0, 0x7f0a0318
+    const p0, 0x7f0a031d
 
     invoke-virtual {p1, p0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -53,7 +53,7 @@
 
     if-eqz p0, :cond_0
 
-    const p1, 0x7f0805df
+    const p1, 0x7f0805e8
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 

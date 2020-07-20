@@ -58,7 +58,7 @@
     :goto_0
     iget-object p1, p0, Landroidx/transition/ChangeTransform$GhostListener;->mView:Landroid/view/View;
 
-    const v0, 0x7f0a0762
+    const v0, 0x7f0a075f
 
     const/4 v1, 0x0
 
@@ -66,7 +66,7 @@
 
     iget-object p0, p0, Landroidx/transition/ChangeTransform$GhostListener;->mView:Landroid/view/View;
 
-    const p1, 0x7f0a053e
+    const p1, 0x7f0a053b
 
     invoke-virtual {p0, p1, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

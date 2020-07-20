@@ -53,17 +53,17 @@
 
     if-eq v0, v1, :cond_0
 
-    const v0, 0x7f12125f
+    const v0, 0x7f121277
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f12125d
+    const v0, 0x7f121275
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f121261
+    const v0, 0x7f121279
 
     :goto_0
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;

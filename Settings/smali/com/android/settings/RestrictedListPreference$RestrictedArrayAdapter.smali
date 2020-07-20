@@ -34,9 +34,9 @@
 
     iput-object p1, p0, Lcom/android/settings/RestrictedListPreference$RestrictedArrayAdapter;->this$0:Lcom/android/settings/RestrictedListPreference;
 
-    const p1, 0x7f0d02c5
+    const p1, 0x7f0d02c6
 
-    const v0, 0x7f0a070d
+    const v0, 0x7f0a070a
 
     invoke-direct {p0, p2, p1, v0, p3}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
 
@@ -68,7 +68,7 @@
 
     check-cast p3, Ljava/lang/CharSequence;
 
-    const v0, 0x7f0a070d
+    const v0, 0x7f0a070a
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -76,7 +76,7 @@
 
     check-cast v0, Landroid/widget/CheckedTextView;
 
-    const v1, 0x7f0a05ee
+    const v1, 0x7f0a05eb
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -96,14 +96,14 @@
 
     if-eqz v2, :cond_0
 
-    const v2, 0x7f08046e
+    const v2, 0x7f080477
 
     invoke-virtual {v0, v2}, Landroid/widget/CheckedTextView;->setCheckMarkDrawable(I)V
 
     goto :goto_0
 
     :cond_0
-    const v2, 0x7f08046f
+    const v2, 0x7f080478
 
     invoke-virtual {v0, v2}, Landroid/widget/CheckedTextView;->setCheckMarkDrawable(I)V
 

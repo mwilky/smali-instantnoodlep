@@ -216,7 +216,7 @@
 
     invoke-virtual {v0, v2, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    const v0, 0x7f0a02be
+    const v0, 0x7f0a02c3
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -226,7 +226,7 @@
 
     iput-object v0, p0, Lcom/oneplus/lib/widget/AnimationGriditemView;->mImage:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a02bd
+    const v0, 0x7f0a02c2
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

@@ -828,6 +828,12 @@
         <item>net.oneplus.launcher</item>
         <item>net.oneplus.h2launcher</item>
     </string-array>
+    <string-array name="double_click_items">
+        <item>@string/earphone_function_control_play_pause</item>
+        <item>@string/earphone_function_listening_breeno</item>
+        <item>@string/earphone_function_control_last_song</item>
+        <item>@string/earphone_function_control_next_song</item>
+    </string-array>
     <string-array name="dream_timeout_entries">
         <item>Never</item>
         <item>15 seconds</item>

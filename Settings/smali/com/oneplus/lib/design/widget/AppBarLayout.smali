@@ -1168,14 +1168,14 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f080442
+    const p1, 0x7f08044b
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f080441
+    const p1, 0x7f08044a
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 

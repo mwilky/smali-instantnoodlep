@@ -105,7 +105,7 @@
 .method protected initViews()V
     .locals 5
 
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06d2
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -113,7 +113,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f0a06c9
+    const v1, 0x7f0a06c6
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -121,7 +121,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f0a045c
+    const v2, 0x7f0a0461
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -253,7 +253,7 @@
 
     if-eqz p1, :cond_5
 
-    const p1, 0x7f0a04cc
+    const p1, 0x7f0a04c9
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

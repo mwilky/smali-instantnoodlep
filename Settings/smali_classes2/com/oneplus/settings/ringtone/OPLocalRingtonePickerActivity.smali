@@ -1012,7 +1012,7 @@
     :cond_0
     invoke-super {p0, p1}, Lcom/oneplus/settings/ringtone/OPRingtoneBaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d0210
+    const p1, 0x7f0d0211
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceActivity;->setContentView(I)V
 
@@ -1032,7 +1032,7 @@
 
     invoke-virtual {p1, v0}, Landroid/app/ActionBar;->setDisplayShowTitleEnabled(Z)V
 
-    const v1, 0x7f0d0256
+    const v1, 0x7f0d0257
 
     const/4 v2, 0x0
 
@@ -1040,7 +1040,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a030f
+    const v2, 0x7f0a0314
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1052,7 +1052,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0300dd
+    const v4, 0x7f0300de
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1060,7 +1060,7 @@
 
     new-instance v4, Landroid/widget/ArrayAdapter;
 
-    const v5, 0x7f0d0252
+    const v5, 0x7f0d0253
 
     const v6, 0x1020014
 
@@ -1084,7 +1084,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ringtone/OPLocalRingtonePickerActivity;->mListView:Landroid/widget/ListView;
 
-    const p1, 0x7f0a030d
+    const p1, 0x7f0a0312
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceActivity;->findViewById(I)Landroid/view/View;
 
@@ -1094,7 +1094,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/ringtone/OPLocalRingtonePickerActivity;->mNofileView:Landroid/widget/TextView;
 
-    const p1, 0x7f0a030e
+    const p1, 0x7f0a0313
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceActivity;->findViewById(I)Landroid/view/View;
 

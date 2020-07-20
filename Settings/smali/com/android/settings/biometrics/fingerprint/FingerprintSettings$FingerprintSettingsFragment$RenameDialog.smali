@@ -175,11 +175,11 @@
 
     invoke-virtual {v3, v4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setView(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v4, 0x7f121420
+    const v4, 0x7f121438
 
     invoke-virtual {v3, v4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v4, 0x7f1203ef
+    const v4, 0x7f1203f6
 
     new-instance v5, Lcom/android/settings/biometrics/fingerprint/FingerprintSettings$FingerprintSettingsFragment$RenameDialog$1;
 
@@ -187,7 +187,7 @@
 
     invoke-virtual {v3, v4, v5}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v4, 0x7f121421
+    const v4, 0x7f121439
 
     invoke-virtual {v3, v4, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

@@ -775,7 +775,7 @@
 
     if-eqz v1, :cond_8
 
-    const v1, 0x7f12179e
+    const v1, 0x7f1217b6
 
     invoke-virtual {v2, v1}, Landroidx/preference/Preference;->setTitle(I)V
 

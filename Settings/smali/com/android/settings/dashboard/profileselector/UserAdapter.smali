@@ -216,7 +216,7 @@
     :cond_0
     iget-object p2, p0, Lcom/android/settings/dashboard/profileselector/UserAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0d036e
+    const v0, 0x7f0d036f
 
     const/4 v1, 0x0
 
@@ -276,13 +276,13 @@
     goto :goto_1
 
     :cond_1
-    const p0, 0x7f120415
+    const p0, 0x7f12041c
 
     goto :goto_2
 
     :cond_2
     :goto_1
-    const p0, 0x7f120414
+    const p0, 0x7f12041b
 
     :goto_2
     invoke-virtual {p1, p0}, Landroid/widget/TextView;->setText(I)V
@@ -383,7 +383,7 @@
     :cond_0
     iget-object p2, p0, Lcom/android/settings/dashboard/profileselector/UserAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0d036e
+    const v0, 0x7f0d036f
 
     const/4 v1, 0x0
 
@@ -443,13 +443,13 @@
     goto :goto_1
 
     :cond_1
-    const p0, 0x7f120415
+    const p0, 0x7f12041c
 
     goto :goto_2
 
     :cond_2
     :goto_1
-    const p0, 0x7f120414
+    const p0, 0x7f12041b
 
     :goto_2
     invoke-virtual {p1, p0}, Landroid/widget/TextView;->setText(I)V

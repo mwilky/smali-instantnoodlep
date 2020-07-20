@@ -167,7 +167,7 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f121b4a
+    const v2, 0x7f121b62
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -386,7 +386,7 @@
 
     invoke-virtual {v1, p2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f121b49
+    const v2, 0x7f121b61
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -406,7 +406,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121b4b    # 1.94209E38f
+    const v3, 0x7f121b63
 
     new-array p2, p2, [Ljava/lang/Object;
 
@@ -418,7 +418,7 @@
 
     invoke-virtual {v1, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const p1, 0x7f121b4c
+    const p1, 0x7f121b64
 
     new-instance p2, Lcom/android/settingslib/inputmethod/-$$Lambda$InputMethodPreference$pHt4-6FWRQ9Ts6PuJy_AB14MhJc;
 
@@ -512,7 +512,7 @@
 
     invoke-static {v3, v4, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    const v2, 0x7f12070c
+    const v2, 0x7f120722
 
     new-array v3, v0, [Ljava/lang/Object;
 

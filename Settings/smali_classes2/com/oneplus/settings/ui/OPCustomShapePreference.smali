@@ -146,7 +146,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPCustomShapePreference;->mPreviewImageView:Landroid/widget/ImageView;
 
-    const p1, 0x7f08056a
+    const p1, 0x7f080573
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -159,7 +159,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPCustomShapePreference;->mPreviewImageView:Landroid/widget/ImageView;
 
-    const p1, 0x7f08056b
+    const p1, 0x7f080574
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -172,7 +172,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPCustomShapePreference;->mPreviewImageView:Landroid/widget/ImageView;
 
-    const p1, 0x7f08056c
+    const p1, 0x7f080575
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -185,7 +185,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPCustomShapePreference;->mPreviewImageView:Landroid/widget/ImageView;
 
-    const p1, 0x7f080569
+    const p1, 0x7f080572
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -263,7 +263,7 @@
 
     invoke-virtual {v2, v3}, Lcom/oneplus/lib/widget/recyclerview/OPRecyclerView;->addOPItemDecoration(Lcom/oneplus/lib/widget/recyclerview/OPItemDecoration;)V
 
-    const v2, 0x7f0a0585
+    const v2, 0x7f0a0582
 
     invoke-virtual {p1, v2}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -279,7 +279,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121063
+    const v3, 0x7f12107b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -287,7 +287,7 @@
 
     const/4 v3, 0x1
 
-    const v4, 0x7f0802f2
+    const v4, 0x7f0802fb
 
     invoke-direct {p1, p0, v2, v4, v3}, Lcom/oneplus/settings/ui/OPCustomShapePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomShapePreference;Ljava/lang/String;II)V
 
@@ -297,7 +297,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f121065
+    const v5, 0x7f12107d
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -305,7 +305,7 @@
 
     const/4 v5, 0x2
 
-    const v6, 0x7f0802f6
+    const v6, 0x7f0802ff
 
     invoke-direct {v2, p0, v4, v6, v5}, Lcom/oneplus/settings/ui/OPCustomShapePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomShapePreference;Ljava/lang/String;II)V
 
@@ -315,7 +315,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f121066
+    const v7, 0x7f12107e
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -323,7 +323,7 @@
 
     const/4 v7, 0x3
 
-    const v8, 0x7f0802ff
+    const v8, 0x7f080308
 
     invoke-direct {v4, p0, v6, v8, v7}, Lcom/oneplus/settings/ui/OPCustomShapePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomShapePreference;Ljava/lang/String;II)V
 
@@ -333,7 +333,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f121064
+    const v9, 0x7f12107c
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -341,7 +341,7 @@
 
     const/4 v9, 0x4
 
-    const v10, 0x7f0802f9
+    const v10, 0x7f080302
 
     invoke-direct {v6, p0, v8, v10, v9}, Lcom/oneplus/settings/ui/OPCustomShapePreference$ItemEntity;-><init>(Lcom/oneplus/settings/ui/OPCustomShapePreference;Ljava/lang/String;II)V
 

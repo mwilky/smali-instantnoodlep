@@ -73,7 +73,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f12125a
+    const v0, 0x7f121272
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/EmptyTextSettings;->setEmptyText(I)V
 
@@ -135,7 +135,7 @@
 
     invoke-direct {p1, p0}, Lcom/oneplus/settings/widget/OPFooterPreference;-><init>(Landroid/content/Context;)V
 
-    const p0, 0x7f12125b
+    const p0, 0x7f121273
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setTitle(I)V
 

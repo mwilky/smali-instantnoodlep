@@ -116,7 +116,7 @@
 
     if-nez p1, :cond_0
 
-    const p1, 0x7f0a06df
+    const p1, 0x7f0a06dc
 
     :cond_0
     invoke-super {p0, p1}, Lcom/google/android/setupdesign/GlifLayout;->findContainer(I)Landroid/view/ViewGroup;
@@ -248,12 +248,12 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d0317
+    const p2, 0x7f0d0318
 
     :cond_0
     if-nez p2, :cond_1
 
-    const p2, 0x7f0d031b
+    const p2, 0x7f0d031c
 
     :cond_1
     const v0, 0x7f13041a
@@ -280,7 +280,7 @@
 .method protected onTemplateInflated()V
     .locals 2
 
-    const v0, 0x7f0a06df
+    const v0, 0x7f0a06dc
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

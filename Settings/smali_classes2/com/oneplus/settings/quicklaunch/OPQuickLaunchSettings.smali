@@ -77,7 +77,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0300d6
+    const v1, 0x7f0300d7
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -917,14 +917,14 @@
 
     :array_0
     .array-data 4
-        0x7f120f24
-        0x7f120f22
+        0x7f120f3c
+        0x7f120f3a
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f120f23
-        0x7f120f21
+        0x7f120f3b
+        0x7f120f39
     .end array-data
 .end method
 

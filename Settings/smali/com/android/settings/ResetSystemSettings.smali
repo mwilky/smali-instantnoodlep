@@ -57,7 +57,7 @@
 
     invoke-direct {v1, v2, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const p0, 0x7f121331
+    const p0, 0x7f121349
 
     invoke-virtual {v0, p0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -188,7 +188,7 @@
 
     invoke-virtual {p0, v0}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v0, 0x7f120a37
+    const v0, 0x7f120a4f
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -238,7 +238,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f121339
+    const p1, 0x7f121351
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setTitle(I)V
 
@@ -248,7 +248,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
-    const p2, 0x7f0d02c4
+    const p2, 0x7f0d02c5
 
     const/4 p3, 0x0
 
@@ -260,7 +260,7 @@
 
     iget-object p1, p0, Lcom/android/settings/ResetSystemSettings;->mContentView:Landroid/view/View;
 
-    const p2, 0x7f0a0336
+    const p2, 0x7f0a033b
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -309,7 +309,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121338
+    const v1, 0x7f121350
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -319,7 +319,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121337
+    const v2, 0x7f12134f
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -341,7 +341,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/settings/ResetSystemSettings$2;-><init>(Lcom/android/settings/ResetSystemSettings;)V
 
-    const v1, 0x7f120be3
+    const v1, 0x7f120bfb
 
     invoke-virtual {v2, v1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

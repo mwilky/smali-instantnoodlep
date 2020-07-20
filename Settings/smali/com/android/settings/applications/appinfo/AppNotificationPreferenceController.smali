@@ -40,7 +40,7 @@
     :cond_0
     iget-boolean v0, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->banned:Z
 
-    const v1, 0x7f120bca
+    const v1, 0x7f120be2
 
     if-eqz v0, :cond_1
 
@@ -88,7 +88,7 @@
     return-object p0
 
     :cond_4
-    const v0, 0x7f120bcc
+    const v0, 0x7f120be4
 
     const/4 v1, 0x2
 

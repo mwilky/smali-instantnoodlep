@@ -82,7 +82,7 @@
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_1
-    const v0, 0x7f121633
+    const v0, 0x7f12164b
 
     invoke-virtual {p0, v0}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 
@@ -178,7 +178,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/OPThemeService;->mLoadingDialog:Landroidx/appcompat/app/AlertDialog;
 
-    const v2, 0x7f121632
+    const v2, 0x7f12164a
 
     invoke-virtual {p0, v2}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 

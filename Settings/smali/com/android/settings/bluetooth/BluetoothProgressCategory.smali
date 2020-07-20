@@ -9,7 +9,7 @@
 
     invoke-direct {p0, p1}, Lcom/android/settings/ProgressCategory;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f120344
+    const p1, 0x7f12034b
 
     invoke-virtual {p0, p1}, Lcom/android/settings/ProgressCategory;->setEmptyTextRes(I)V
 
@@ -21,7 +21,7 @@
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/ProgressCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f120344
+    const p1, 0x7f12034b
 
     invoke-virtual {p0, p1}, Lcom/android/settings/ProgressCategory;->setEmptyTextRes(I)V
 
@@ -33,7 +33,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/ProgressCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f120344
+    const p1, 0x7f12034b
 
     invoke-virtual {p0, p1}, Lcom/android/settings/ProgressCategory;->setEmptyTextRes(I)V
 
@@ -45,7 +45,7 @@
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/ProgressCategory;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p1, 0x7f120344
+    const p1, 0x7f12034b
 
     invoke-virtual {p0, p1}, Lcom/android/settings/ProgressCategory;->setEmptyTextRes(I)V
 

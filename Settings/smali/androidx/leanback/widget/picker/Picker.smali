@@ -222,7 +222,7 @@
 
     check-cast p1, Landroid/view/ViewGroup;
 
-    const p2, 0x7f0a0564
+    const p2, 0x7f0a0561
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

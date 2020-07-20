@@ -81,7 +81,7 @@
 .method protected getActivityLayoutResId()I
     .locals 0
 
-    const p0, 0x7f0d02d4
+    const p0, 0x7f0d02d5
 
     return p0
 .end method
@@ -89,7 +89,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207fe
+    const p0, 0x7f120816
 
     return p0
 .end method
@@ -136,7 +136,7 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f0d02d5
+    const v1, 0x7f0d02d6
 
     aput v1, p0, v0
 
@@ -145,8 +145,8 @@
 
     :array_0
     .array-data 4
-        0x7f0d02d5
-        0x7f0d02d8
+        0x7f0d02d6
+        0x7f0d02d9
     .end array-data
 .end method
 
@@ -171,7 +171,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f12070f
+    const v1, 0x7f120725
 
     invoke-static {p1, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -216,7 +216,7 @@
 
     new-array v1, v1, [Ljava/lang/String;
 
-    const v2, 0x7f1213b6
+    const v2, 0x7f1213ce
 
     invoke-virtual {p0, v2}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -270,7 +270,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1213bb
+    const p1, 0x7f1213d3
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setTitle(I)V
 
@@ -286,7 +286,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12070f
+    const v0, 0x7f120725
 
     const/4 v1, 0x0
 

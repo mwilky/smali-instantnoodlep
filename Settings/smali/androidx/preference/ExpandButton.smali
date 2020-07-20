@@ -28,11 +28,11 @@
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const p1, 0x7f0801a2
+    const p1, 0x7f0801ab
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setIcon(I)V
 
-    const p1, 0x7f1206f6
+    const p1, 0x7f12070c
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -119,7 +119,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f12161c
+    const v3, 0x7f121634
 
     const/4 v4, 0x2
 

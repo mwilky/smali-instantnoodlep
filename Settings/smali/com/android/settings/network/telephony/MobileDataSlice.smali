@@ -109,7 +109,7 @@
 
     iget-object v0, p0, Lcom/android/settings/network/telephony/MobileDataSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0802cc
+    const v1, 0x7f0802d5
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -117,7 +117,7 @@
 
     iget-object v1, p0, Lcom/android/settings/network/telephony/MobileDataSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120a8e
+    const v2, 0x7f120aa6
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

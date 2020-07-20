@@ -279,7 +279,7 @@
 
     iget-object p1, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v0, 0x7f120b23
+    const v0, 0x7f120b3b
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -291,7 +291,7 @@
 
     if-nez v4, :cond_8
 
-    const v2, 0x7f120b21
+    const v2, 0x7f120b39
 
     invoke-virtual {p0, v2}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -320,7 +320,7 @@
     goto :goto_2
 
     :cond_8
-    const v2, 0x7f120b22
+    const v2, 0x7f120b3a
 
     invoke-virtual {p0, v2}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -361,7 +361,7 @@
     iput-object v1, p1, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
     :goto_2
-    const v1, 0x7f121a5d
+    const v1, 0x7f121a75
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 
@@ -369,7 +369,7 @@
 
     iput-object v1, p1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    const v1, 0x7f120b47
+    const v1, 0x7f120b5f
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/AlertActivity;->getString(I)Ljava/lang/String;
 

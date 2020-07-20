@@ -9,7 +9,7 @@
 
     invoke-direct {p0, p1, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d020d
+    const p1, 0x7f0d020e
 
     invoke-virtual {p0, p1}, Landroid/preference/Preference;->setLayoutResource(I)V
 
@@ -25,7 +25,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f0d020d
+    const p1, 0x7f0d020e
 
     invoke-virtual {p0, p1}, Landroid/preference/Preference;->setLayoutResource(I)V
 

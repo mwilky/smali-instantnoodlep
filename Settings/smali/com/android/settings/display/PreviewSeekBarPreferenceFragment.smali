@@ -123,7 +123,7 @@
 
     aput-object p1, v1, v2
 
-    const p1, 0x7f121262
+    const p1, 0x7f12127a
 
     invoke-virtual {p0, p1, v1}, Landroidx/fragment/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -320,7 +320,7 @@
 
     move-result p3
 
-    const v2, 0x7f0a063c
+    const v2, 0x7f0a0639
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -340,7 +340,7 @@
 
     invoke-virtual {v2, p3}, Landroid/widget/SeekBar;->setMax(I)V
 
-    const p3, 0x7f0a0683
+    const p3, 0x7f0a0680
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -356,7 +356,7 @@
 
     invoke-virtual {p3, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p3, 0x7f0a037e
+    const p3, 0x7f0a0383
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -439,7 +439,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f0a0586
+    const v5, 0x7f0a0583
 
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -483,7 +483,7 @@
 
     invoke-virtual {p3, v3}, Landroidx/viewpager/widget/ViewPager;->addOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$OnPageChangeListener;)V
 
-    const p3, 0x7f0a0533
+    const p3, 0x7f0a0530
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -84,7 +84,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/BackgroundDataConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120c87
+    const v2, 0x7f120c9f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -110,7 +110,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/BackgroundDataConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120cba
+    const v3, 0x7f120cd2
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -138,7 +138,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/BackgroundDataConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120cb9
+    const v2, 0x7f120cd1
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -152,7 +152,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/conditional/BackgroundDataConditionController;->mAppContext:Landroid/content/Context;
 
-    const v1, 0x7f0801c9
+    const v1, 0x7f0801d2
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

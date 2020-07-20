@@ -25,7 +25,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f1213b9
+    const v2, 0x7f1213d1
 
     aput v2, v0, v1
 
@@ -43,9 +43,9 @@
 
     :array_0
     .array-data 4
-        0x7f1213b8
-        0x7f1213ba
-        0x7f1213b7
+        0x7f1213d0
+        0x7f1213d2
+        0x7f1213cf
     .end array-data
 .end method
 
@@ -224,7 +224,7 @@
     :cond_5
     aput v3, v8, v9
 
-    const v6, 0x7f1213b6
+    const v6, 0x7f1213ce
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -346,7 +346,7 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    const v1, 0x7f1213b5
+    const v1, 0x7f1213cd
 
     new-array v5, v6, [Ljava/lang/Object;
 

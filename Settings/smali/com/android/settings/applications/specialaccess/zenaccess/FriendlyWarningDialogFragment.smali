@@ -81,7 +81,7 @@
 
     aput-object p1, v3, v4
 
-    const p1, 0x7f121a62
+    const p1, 0x7f121a7a
 
     invoke-virtual {v1, p1, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f121a61
+    const v3, 0x7f121a79
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -115,13 +115,13 @@
 
     invoke-direct {p1, p0, v0}, Lcom/android/settings/applications/specialaccess/zenaccess/-$$Lambda$FriendlyWarningDialogFragment$TJ-pmwUpJG1FTGf_jqUkr3JatE0;-><init>(Lcom/android/settings/applications/specialaccess/zenaccess/FriendlyWarningDialogFragment;Ljava/lang/String;)V
 
-    const p0, 0x7f120be3
+    const p0, 0x7f120bfb
 
     invoke-virtual {v3, p0, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
     sget-object p0, Lcom/android/settings/applications/specialaccess/zenaccess/-$$Lambda$FriendlyWarningDialogFragment$KdT2_3oqRqmf618hTquzzrCOct0;->INSTANCE:Lcom/android/settings/applications/specialaccess/zenaccess/-$$Lambda$FriendlyWarningDialogFragment$KdT2_3oqRqmf618hTquzzrCOct0;
 
-    const p1, 0x7f1203ef
+    const p1, 0x7f1203f6
 
     invoke-virtual {v3, p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

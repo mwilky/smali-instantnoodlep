@@ -359,7 +359,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f030135
+    const v2, 0x7f030136
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -371,7 +371,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f030136
+    const v1, 0x7f030137
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -379,7 +379,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/widget/OPHotspotApUpstreamSelectionPreference;->mNetworkTypeSummaries:[Ljava/lang/String;
 
-    const v0, 0x7f0a078d
+    const v0, 0x7f0a078a
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -401,7 +401,7 @@
 
     invoke-interface {v0, v2}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    const v0, 0x7f0a078f
+    const v0, 0x7f0a078c
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -423,7 +423,7 @@
 
     invoke-interface {v0, v2}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    const v0, 0x7f0a078e
+    const v0, 0x7f0a078b
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -822,15 +822,15 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f08046c
+    const p0, 0x7f080475
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f08046d
+    const p0, 0x7f080476
 
     :goto_0
-    const p2, 0x7f0a03e3
+    const p2, 0x7f0a03e8
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

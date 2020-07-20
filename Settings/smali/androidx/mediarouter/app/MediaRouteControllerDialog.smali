@@ -1046,7 +1046,7 @@
     goto :goto_1
 
     :cond_0
-    const v4, 0x7f0a07ba
+    const v4, 0x7f0a07b7
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1376,7 +1376,7 @@
 
     invoke-direct {p1, p0}, Landroidx/mediarouter/app/MediaRouteControllerDialog$ClickListener;-><init>(Landroidx/mediarouter/app/MediaRouteControllerDialog;)V
 
-    const v1, 0x7f0a0435
+    const v1, 0x7f0a043a
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1394,7 +1394,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0a0434
+    const v1, 0x7f0a0439
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1430,7 +1430,7 @@
 
     iget-object v2, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mDisconnectButton:Landroid/widget/Button;
 
-    const v3, 0x7f120ac9
+    const v3, 0x7f120ae1
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setText(I)V
 
@@ -1454,7 +1454,7 @@
 
     iget-object v2, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mStopCastingButton:Landroid/widget/Button;
 
-    const v3, 0x7f120ad0
+    const v3, 0x7f120ae8
 
     invoke-virtual {v2, v3}, Landroid/widget/Button;->setText(I)V
 
@@ -1466,7 +1466,7 @@
 
     invoke-virtual {v1, p1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0a0439
+    const v1, 0x7f0a043e
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1476,7 +1476,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mRouteNameTextView:Landroid/widget/TextView;
 
-    const v1, 0x7f0a042c
+    const v1, 0x7f0a0431
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1490,7 +1490,7 @@
 
     invoke-virtual {v1, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0a0432
+    const v1, 0x7f0a0437
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1500,7 +1500,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mCustomControlLayout:Landroid/widget/FrameLayout;
 
-    const v1, 0x7f0a0433
+    const v1, 0x7f0a0438
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1514,7 +1514,7 @@
 
     invoke-direct {v1, p0}, Landroidx/mediarouter/app/MediaRouteControllerDialog$4;-><init>(Landroidx/mediarouter/app/MediaRouteControllerDialog;)V
 
-    const v2, 0x7f0a0412
+    const v2, 0x7f0a0417
 
     invoke-virtual {p0, v2}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1528,7 +1528,7 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0a0431
+    const v2, 0x7f0a0436
 
     invoke-virtual {p0, v2}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1536,7 +1536,7 @@
 
     invoke-virtual {v2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v1, 0x7f0a0438
+    const v1, 0x7f0a043d
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1546,7 +1546,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mMediaMainControlLayout:Landroid/widget/LinearLayout;
 
-    const v1, 0x7f0a042d
+    const v1, 0x7f0a0432
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1554,7 +1554,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mDividerView:Landroid/view/View;
 
-    const v1, 0x7f0a0440
+    const v1, 0x7f0a0445
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1564,7 +1564,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mPlaybackControlLayout:Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0a0430
+    const v1, 0x7f0a0435
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1574,7 +1574,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mTitleView:Landroid/widget/TextView;
 
-    const v1, 0x7f0a042f
+    const v1, 0x7f0a0434
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1584,7 +1584,7 @@
 
     iput-object v1, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mSubtitleView:Landroid/widget/TextView;
 
-    const v1, 0x7f0a042e
+    const v1, 0x7f0a0433
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1598,7 +1598,7 @@
 
     invoke-virtual {v1, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a0442
+    const p1, 0x7f0a0447
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1612,7 +1612,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const p1, 0x7f0a0445
+    const p1, 0x7f0a044a
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1640,7 +1640,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    const p1, 0x7f0a0443
+    const p1, 0x7f0a0448
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -1720,7 +1720,7 @@
 
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const p1, 0x7f0a0436
+    const p1, 0x7f0a043b
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -2271,7 +2271,7 @@
 
     iget-object v2, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mTitleView:Landroid/widget/TextView;
 
-    const v3, 0x7f120ac6
+    const v3, 0x7f120ade
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -2297,7 +2297,7 @@
 
     iget-object v2, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mTitleView:Landroid/widget/TextView;
 
-    const v3, 0x7f120acb
+    const v3, 0x7f120ae3
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -2332,7 +2332,7 @@
     :goto_7
     iget-object v2, p0, Landroidx/mediarouter/app/MediaRouteControllerDialog;->mTitleView:Landroid/widget/TextView;
 
-    const v3, 0x7f120acc
+    const v3, 0x7f120ae4
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -2421,7 +2421,7 @@
 
     const v2, 0x7f0402be
 
-    const v5, 0x7f120acd
+    const v5, 0x7f120ae5
 
     goto :goto_e
 
@@ -2436,7 +2436,7 @@
 
     const v2, 0x7f0402c2
 
-    const v5, 0x7f120acf
+    const v5, 0x7f120ae7
 
     goto :goto_e
 
@@ -2451,7 +2451,7 @@
 
     const v2, 0x7f0402bf
 
-    const v5, 0x7f120ace
+    const v5, 0x7f120ae6
 
     goto :goto_e
 
@@ -3427,7 +3427,7 @@
 .method updateVolumeGroupItemHeight(Landroid/view/View;)V
     .locals 2
 
-    const v0, 0x7f0a07ba
+    const v0, 0x7f0a07b7
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3439,7 +3439,7 @@
 
     invoke-static {v0, v1}, Landroidx/mediarouter/app/MediaRouteControllerDialog;->setLayoutHeight(Landroid/view/View;I)V
 
-    const v0, 0x7f0a0444
+    const v0, 0x7f0a0449
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

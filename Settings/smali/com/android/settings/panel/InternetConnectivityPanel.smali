@@ -98,7 +98,7 @@
 
     iget-object p0, p0, Lcom/android/settings/panel/InternetConnectivityPanel;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120879
+    const v0, 0x7f120891
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

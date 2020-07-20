@@ -174,7 +174,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings$4;->this$0:Lcom/oneplus/settings/darkmode/OPGloblaDarkModeSettings;
 
-    const v2, 0x7f120e78
+    const v2, 0x7f120e90
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

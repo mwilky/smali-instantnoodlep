@@ -160,7 +160,7 @@
 
     iget-object p0, p0, Lcom/android/settings/nfc/AndroidBeamEnabler;->mPreference:Lcom/android/settingslib/RestrictedPreference;
 
-    const p1, 0x7f120b12
+    const p1, 0x7f120b2a
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

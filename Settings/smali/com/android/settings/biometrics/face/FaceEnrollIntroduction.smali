@@ -49,7 +49,7 @@
 
     if-lt p0, v0, :cond_0
 
-    const p0, 0x7f120704
+    const p0, 0x7f12071a
 
     return p0
 
@@ -59,7 +59,7 @@
     return p0
 
     :cond_1
-    const p0, 0x7f120705
+    const p0, 0x7f12071b
 
     return p0
 .end method
@@ -92,7 +92,7 @@
 .method protected getConfirmLockTitleResId()I
     .locals 0
 
-    const p0, 0x7f121411
+    const p0, 0x7f121429
 
     return p0
 .end method
@@ -100,7 +100,7 @@
 .method protected getDescriptionResDisabledByAdmin()I
     .locals 0
 
-    const p0, 0x7f12140b
+    const p0, 0x7f121423
 
     return p0
 .end method
@@ -148,7 +148,7 @@
 .method protected getHeaderResDefault()I
     .locals 0
 
-    const p0, 0x7f12140c
+    const p0, 0x7f121424
 
     return p0
 .end method
@@ -156,7 +156,7 @@
 .method protected getHeaderResDisabledByAdmin()I
     .locals 0
 
-    const p0, 0x7f12140d
+    const p0, 0x7f121425
 
     return p0
 .end method
@@ -290,7 +290,7 @@
 
     iget-object p1, p0, Lcom/android/settings/biometrics/BiometricEnrollIntroduction;->mBtnCancel:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v0, 0x7f12150d
+    const v0, 0x7f121525
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -307,7 +307,7 @@
     :cond_0
     iget-object p1, p0, Lcom/android/settings/biometrics/BiometricEnrollIntroduction;->mBtnCancel:Lcom/oneplus/lib/widget/button/OPButton;
 
-    const v0, 0x7f121405
+    const v0, 0x7f12141d
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 

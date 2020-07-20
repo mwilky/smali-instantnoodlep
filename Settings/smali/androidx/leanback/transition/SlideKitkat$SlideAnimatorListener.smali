@@ -105,7 +105,7 @@
 
     iget-object v0, p0, Landroidx/leanback/transition/SlideKitkat$SlideAnimatorListener;->mView:Landroid/view/View;
 
-    const v2, 0x7f0a03b2
+    const v2, 0x7f0a03b7
 
     invoke-virtual {v0, v2, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

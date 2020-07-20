@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121792
+    const v2, 0x7f1217aa
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121797
+    const v2, 0x7f1217af
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -91,7 +91,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12178c
+    const v2, 0x7f1217a4
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -107,7 +107,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f121794
+    const v2, 0x7f1217ac
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -129,7 +129,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12164e    # 1.941831E38f
+    const v2, 0x7f121666
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -146,7 +146,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f12178f
+    const v2, 0x7f1217a7
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -412,11 +412,11 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f120609
+    const v2, 0x7f120610
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f120607
+    const v2, 0x7f12060e
 
     new-instance v3, Lcom/android/settings/connecteddevice/usb/UsbDetailsFunctionsController$1;
 
@@ -424,7 +424,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f120608
+    const v2, 0x7f12060f
 
     new-instance v3, Lcom/android/settings/connecteddevice/usb/UsbDetailsFunctionsController$2;
 

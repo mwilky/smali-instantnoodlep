@@ -42,7 +42,7 @@
 
     const/4 p1, 0x0
 
-    const p2, 0x7f1216ba
+    const p2, 0x7f1216d2
 
     invoke-virtual {p0, p2, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

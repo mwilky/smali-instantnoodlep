@@ -127,7 +127,7 @@
     goto :goto_0
 
     :cond_1
-    const v2, 0x7f0806b4
+    const v2, 0x7f0806c6
 
     goto :goto_0
 
@@ -136,22 +136,22 @@
 
     if-eqz v2, :cond_3
 
-    const v2, 0x7f08036b
+    const v2, 0x7f080374
 
     goto :goto_0
 
     :cond_3
-    const v2, 0x7f0806b6
+    const v2, 0x7f0806c8
 
     goto :goto_0
 
     :cond_4
-    const v2, 0x7f0806b3
+    const v2, 0x7f0806c5
 
     goto :goto_0
 
     :cond_5
-    const v2, 0x7f0806b5
+    const v2, 0x7f0806c7
 
     :goto_0
     invoke-static {v0, p1, v1, v2, v4}, Lcom/android/settings/network/telephony/MobileNetworkUtils;->getSignalStrengthIcon(Landroid/content/Context;IIIZ)Landroid/graphics/drawable/Drawable;
@@ -228,7 +228,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f120765
+    const v2, 0x7f12077d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

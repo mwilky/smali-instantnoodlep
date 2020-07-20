@@ -822,7 +822,7 @@
 
     if-eqz v0, :cond_9
 
-    const v1, 0x7f0a02df
+    const v1, 0x7f0a02e4
 
     invoke-virtual {v12, v1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -915,9 +915,9 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f0a02dd
+    const v2, 0x7f0a02e2
 
-    const v3, 0x7f0a02de
+    const v3, 0x7f0a02e3
 
     const/4 v4, 0x0
 
@@ -1007,7 +1007,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02df
+    const v1, 0x7f0a02e4
 
     invoke-static {v0, v1}, Landroidx/leanback/transition/LeanbackTransitionHelper;->include(Ljava/lang/Object;I)V
 

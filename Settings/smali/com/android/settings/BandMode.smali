@@ -287,7 +287,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f12023e
+    const v1, 0x7f120245
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -317,7 +317,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12023c
+    const v0, 0x7f120243
 
     invoke-static {p0, v0, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -330,7 +330,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12023f
+    const v0, 0x7f120246
 
     invoke-static {p0, v0, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline9(Landroid/app/Activity;ILjava/lang/StringBuilder;)Ljava/lang/String;
 
@@ -409,7 +409,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const p1, 0x7f12023d
+    const p1, 0x7f120244
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

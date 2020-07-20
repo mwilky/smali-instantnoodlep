@@ -117,7 +117,7 @@
 
     if-nez v0, :cond_0
 
-    const p0, 0x7f121325
+    const p0, 0x7f12133d
 
     const/4 v0, 0x0
 
@@ -188,7 +188,7 @@
 
     invoke-virtual {p0, v0}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    const v0, 0x7f120a37
+    const v0, 0x7f120a4f
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -347,7 +347,7 @@
     return-object p1
 
     :cond_1
-    const p2, 0x7f0d02c2
+    const p2, 0x7f0d02c3
 
     invoke-virtual {p1, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -460,7 +460,7 @@
 
     iget-object p0, p0, Lcom/android/settings/ResetNetworkConfirm;->mContentView:Landroid/view/View;
 
-    const v0, 0x7f0a05e7
+    const v0, 0x7f0a05e4
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -468,7 +468,7 @@
 
     check-cast p0, Landroid/widget/TextView;
 
-    const v0, 0x7f121330
+    const v0, 0x7f121348
 
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(I)V
 

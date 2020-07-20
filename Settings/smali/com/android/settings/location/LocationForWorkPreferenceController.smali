@@ -90,12 +90,12 @@
 
     if-eqz p1, :cond_1
 
-    const p1, 0x7f121631
+    const p1, 0x7f121649
 
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f121630
+    const p1, 0x7f121648
 
     :goto_0
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
@@ -209,7 +209,7 @@
 
     invoke-virtual {p2, p1}, Lcom/android/settingslib/RestrictedSwitchPreference;->setEnabled(Z)V
 
-    const p2, 0x7f121630
+    const p2, 0x7f121648
 
     if-nez p1, :cond_3
 
@@ -231,7 +231,7 @@
     goto :goto_1
 
     :cond_4
-    const p1, 0x7f121631
+    const p1, 0x7f121649
 
     move p2, p1
 

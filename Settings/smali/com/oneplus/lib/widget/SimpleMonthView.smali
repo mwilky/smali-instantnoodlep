@@ -289,19 +289,19 @@
 
     invoke-direct {p0}, Lcom/oneplus/lib/widget/SimpleMonthView;->updateDayOfWeekLabels()V
 
-    const p4, 0x7f12059b
+    const p4, 0x7f1205a2
 
     invoke-virtual {p1, p4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p4
 
-    const v0, 0x7f120599
+    const v0, 0x7f1205a0
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const v1, 0x7f12059a
+    const v1, 0x7f1205a1
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

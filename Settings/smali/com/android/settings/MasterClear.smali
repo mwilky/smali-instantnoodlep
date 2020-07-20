@@ -122,7 +122,7 @@
 
     invoke-direct {v1, v2, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const p0, 0x7f120a39
+    const p0, 0x7f120a51
 
     invoke-virtual {v0, p0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -198,7 +198,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0374
+    const v1, 0x7f0d0375
 
     const/4 v2, 0x0
 
@@ -212,7 +212,7 @@
 
     invoke-direct {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f121804
+    const v2, 0x7f12181c
 
     invoke-virtual {v1, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -622,7 +622,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120a39
+    const v0, 0x7f120a51
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->setTitle(I)V
 
@@ -705,7 +705,7 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f120a2a
+    const v1, 0x7f120a42
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -815,7 +815,7 @@
 
     iget-object p0, p0, Lcom/android/settings/MasterClear;->mOPFactoryResetConfirmCategory:Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;
 
-    const p1, 0x7f120d32
+    const p1, 0x7f120d4a
 
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->setConfirmButtonText(I)V
 
@@ -824,7 +824,7 @@
     :cond_0
     iget-object p0, p0, Lcom/android/settings/MasterClear;->mOPFactoryResetConfirmCategory:Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;
 
-    const p1, 0x7f120a29
+    const p1, 0x7f120a41
 
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/OPFactoryResetConfirmCategory;->setConfirmButtonText(I)V
 
@@ -892,7 +892,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120a2b
+    const v1, 0x7f120a43
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

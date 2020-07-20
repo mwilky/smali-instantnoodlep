@@ -166,7 +166,7 @@
     :cond_1
     iget-object p0, p0, Lcom/android/settingslib/media/MediaDevice;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120317
+    const v0, 0x7f12031e
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

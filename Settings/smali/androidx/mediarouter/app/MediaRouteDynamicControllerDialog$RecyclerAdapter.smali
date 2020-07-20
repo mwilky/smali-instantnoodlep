@@ -777,7 +777,7 @@
 
     iget-object v6, v6, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mContext:Landroid/content/Context;
 
-    const v8, 0x7f120ad2
+    const v8, 0x7f120aea
 
     invoke-virtual {v6, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -872,7 +872,7 @@
 
     iget-object v5, v5, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f120ad3
+    const v6, 0x7f120aeb
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

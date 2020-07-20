@@ -484,11 +484,11 @@
     invoke-virtual {v5, v4}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
     :cond_3
-    const v6, 0x7f080325
+    const v6, 0x7f08032e
 
     invoke-virtual {v5, v6}, Landroidx/preference/Preference;->setIcon(I)V
 
-    const v6, 0x7f120182
+    const v6, 0x7f120189
 
     invoke-virtual {v5, v6}, Landroidx/preference/Preference;->setTitle(I)V
 

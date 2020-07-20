@@ -81,7 +81,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DeviceInfoSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1205ed
+    const v1, 0x7f1205f4
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1205ec
+    const v1, 0x7f1205f3
 
     if-nez v0, :cond_0
 
@@ -192,7 +192,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DeviceInfoSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080229
+    const v1, 0x7f080232
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -200,7 +200,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/DeviceInfoSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f1205ed
+    const v2, 0x7f1205f4
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

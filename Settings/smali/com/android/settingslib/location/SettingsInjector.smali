@@ -278,7 +278,7 @@
 
     invoke-virtual {v8, v9}, Landroidx/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
-    const v9, 0x7f12093f
+    const v9, 0x7f120957
 
     invoke-virtual {v8, v9}, Landroidx/preference/Preference;->setSummary(I)V
 

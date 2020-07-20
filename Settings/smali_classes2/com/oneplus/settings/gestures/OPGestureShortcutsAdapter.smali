@@ -120,7 +120,7 @@
 
     iget-object p2, p0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0d01da
+    const v0, 0x7f0d01db
 
     const/4 v1, 0x0
 
@@ -132,7 +132,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter;)V
 
-    const v1, 0x7f0a053c
+    const v1, 0x7f0a0539
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -140,7 +140,7 @@
 
     check-cast v1, Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0a076b
+    const v1, 0x7f0a0768
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -150,7 +150,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0305
+    const v1, 0x7f0a030a
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -160,7 +160,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a044b
+    const v1, 0x7f0a0450
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->bottomLine:Landroid/view/View;
 
-    const v1, 0x7f0a02c0
+    const v1, 0x7f0a02c5
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -186,7 +186,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v1, 0x7f0a05c2
+    const v1, 0x7f0a05bf
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -222,7 +222,7 @@
 
     iget-object v4, v0, Lcom/oneplus/settings/gestures/OPGestureShortcutsAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v5, 0x7f120dcf
+    const v5, 0x7f120de7
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 

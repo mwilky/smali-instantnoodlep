@@ -96,7 +96,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/multiapp/OPMultiAppListSettings$1;->this$0:Lcom/oneplus/settings/multiapp/OPMultiAppListSettings;
 
-    const v0, 0x7f0a04bc
+    const v0, 0x7f0a04b9
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120c40
+    const v1, 0x7f120c58
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -116,7 +116,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0804a2
+    const v1, 0x7f0804ab
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 

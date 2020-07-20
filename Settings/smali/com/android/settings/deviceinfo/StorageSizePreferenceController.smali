@@ -61,7 +61,7 @@
 
     invoke-static {v2, v1, v3}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline40(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    const v2, 0x7f1205ec
+    const v2, 0x7f1205f3
 
     if-eqz v1, :cond_1
 
@@ -119,7 +119,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12136c
+    const v0, 0x7f121384
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

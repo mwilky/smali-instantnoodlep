@@ -140,7 +140,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1203a8
+    const v1, 0x7f1203af
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1203a9
+    const v1, 0x7f1203b0
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -174,13 +174,13 @@
     :cond_2
     new-instance p1, Landroid/util/Pair;
 
-    const v0, 0x7f0801b0
+    const v0, 0x7f0801b9
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    const v1, 0x7f1203aa
+    const v1, 0x7f1203b1
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -193,13 +193,13 @@
     :cond_3
     new-instance p1, Landroid/util/Pair;
 
-    const v0, 0x7f0801b4
+    const v0, 0x7f0801bd
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    const v1, 0x7f1203a5
+    const v1, 0x7f1203ac
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -263,13 +263,13 @@
 
     new-instance p1, Landroid/util/Pair;
 
-    const v0, 0x7f0801b2
+    const v0, 0x7f0801bb
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    const v1, 0x7f1203a7
+    const v1, 0x7f1203ae
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -290,13 +290,13 @@
 
     new-instance p1, Landroid/util/Pair;
 
-    const v0, 0x7f0801b1
+    const v0, 0x7f0801ba
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    const v1, 0x7f1203a6
+    const v1, 0x7f1203ad
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -309,13 +309,13 @@
     :cond_8
     new-instance p1, Landroid/util/Pair;
 
-    const v0, 0x7f080339
+    const v0, 0x7f080342
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    const v1, 0x7f1203a4
+    const v1, 0x7f1203ab
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

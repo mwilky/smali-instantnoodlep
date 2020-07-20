@@ -118,7 +118,7 @@
 
     check-cast p1, Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v0, 0x7f0a0639
+    const v0, 0x7f0a0636
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

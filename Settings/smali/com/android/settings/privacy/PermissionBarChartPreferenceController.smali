@@ -543,15 +543,15 @@
 
     invoke-direct {p1}, Lcom/android/settingslib/widget/BarChartInfo$Builder;-><init>()V
 
-    const v0, 0x7f1211dc
+    const v0, 0x7f1211f4
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/BarChartInfo$Builder;->setTitle(I)Lcom/android/settingslib/widget/BarChartInfo$Builder;
 
-    const v0, 0x7f1211da
+    const v0, 0x7f1211f2
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/BarChartInfo$Builder;->setDetails(I)Lcom/android/settingslib/widget/BarChartInfo$Builder;
 
-    const v0, 0x7f1211db    # 1.9416E38f
+    const v0, 0x7f1211f3
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/BarChartInfo$Builder;->setEmptyText(I)Lcom/android/settingslib/widget/BarChartInfo$Builder;
 

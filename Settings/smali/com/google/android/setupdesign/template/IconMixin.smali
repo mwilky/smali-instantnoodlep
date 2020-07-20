@@ -175,7 +175,7 @@
 
     iget-object v1, p0, Lcom/google/android/setupdesign/template/IconMixin;->templateLayout:Lcom/google/android/setupcompat/internal/TemplateLayout;
 
-    const v2, 0x7f0a06d7
+    const v2, 0x7f0a06d4
 
     invoke-virtual {v1, v2}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -254,7 +254,7 @@
 
     iget-object p0, p0, Lcom/google/android/setupdesign/template/IconMixin;->templateLayout:Lcom/google/android/setupcompat/internal/TemplateLayout;
 
-    const v0, 0x7f0a06d7
+    const v0, 0x7f0a06d4
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 

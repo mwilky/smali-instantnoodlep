@@ -150,7 +150,7 @@
 
     iget-object p2, p0, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d01ef
+    const v1, 0x7f0d01f0
 
     invoke-virtual {p2, v1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -160,7 +160,7 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/multiapp/OPMultiAppAdapter;)V
 
-    const v2, 0x7f0a053c
+    const v2, 0x7f0a0539
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
 
     check-cast v2, Landroid/widget/RelativeLayout;
 
-    const v2, 0x7f0a076b
+    const v2, 0x7f0a0768
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -178,7 +178,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a0305
+    const v2, 0x7f0a030a
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v2, 0x7f0a044b
+    const v2, 0x7f0a0450
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -198,7 +198,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v2, 0x7f0a06e2
+    const v2, 0x7f0a06df
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -214,7 +214,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->bottomLine:Landroid/view/View;
 
-    const v2, 0x7f0a02c0
+    const v2, 0x7f0a02c5
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -222,7 +222,7 @@
 
     iput-object v2, v1, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->groupDivider:Landroid/view/View;
 
-    const v2, 0x7f0a06ee
+    const v2, 0x7f0a06eb
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -256,7 +256,7 @@
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
 
-    const v2, 0x7f120e75
+    const v2, 0x7f120e8d
 
     const/4 v5, 0x1
 
@@ -274,7 +274,7 @@
 
     iget-object v2, v1, Lcom/oneplus/settings/multiapp/OPMultiAppAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v6, 0x7f120e77
+    const v6, 0x7f120e8f
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setText(I)V
 

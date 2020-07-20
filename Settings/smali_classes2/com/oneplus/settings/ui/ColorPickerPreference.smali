@@ -162,7 +162,7 @@
 
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    const p1, 0x7f12045b
+    const p1, 0x7f120462
 
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/CustomDialogPreference;->setNeutralButtonText(I)V
 
@@ -174,7 +174,7 @@
 
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/CustomDialogPreference;->setPositiveButtonText(I)V
 
-    const p1, 0x7f0d0202
+    const p1, 0x7f0d0203
 
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/CustomDialogPreference;->setDialogLayoutResource(I)V
 
@@ -410,7 +410,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12045e
+    const v1, 0x7f120465
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -438,7 +438,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f120cb2
+    const v2, 0x7f120cca
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -483,7 +483,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f121194
+    const v2, 0x7f1211ac
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -528,7 +528,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f12119d
+    const v2, 0x7f1211b5
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -573,7 +573,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f12119f
+    const v2, 0x7f1211b7
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -594,7 +594,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12116f
+    const v1, 0x7f121187
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -844,7 +844,7 @@
 
     aget-object v3, v3, v2
 
-    const v4, 0x7f080482
+    const v4, 0x7f08048b
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -899,7 +899,7 @@
     goto/16 :goto_0
 
     :cond_6
-    const v0, 0x7f0a03f9
+    const v0, 0x7f0a03fe
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -918,7 +918,7 @@
     goto :goto_4
 
     :cond_7
-    const p1, 0x7f12045d
+    const p1, 0x7f120464
 
     invoke-virtual {p0, p1}, Lcom/oneplus/settings/ui/ColorPickerPreference;->setMessage(I)V
 
@@ -957,7 +957,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->setDividerAllowedAbove(Z)V
 
-    const v1, 0x7f0a0633
+    const v1, 0x7f0a0630
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

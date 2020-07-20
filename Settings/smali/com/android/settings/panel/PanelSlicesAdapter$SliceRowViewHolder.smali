@@ -37,7 +37,7 @@
 
     iput-boolean p1, p0, Lcom/android/settings/panel/PanelSlicesAdapter$SliceRowViewHolder;->mDividerAllowedAbove:Z
 
-    const v0, 0x7f0a067d
+    const v0, 0x7f0a067a
 
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

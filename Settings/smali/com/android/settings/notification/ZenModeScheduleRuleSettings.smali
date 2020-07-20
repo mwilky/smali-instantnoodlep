@@ -77,7 +77,7 @@
 
     invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f121afa
+    const v1, 0x7f121b12
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -99,7 +99,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f120661
+    const v1, 0x7f120668
 
     const/4 v2, 0x0
 
@@ -173,7 +173,7 @@
 
     iget-object v6, p0, Lcom/android/settings/notification/ZenModeRuleSettingsBase;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f12161d
+    const v7, 0x7f121635
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -227,7 +227,7 @@
     :cond_4
     iget-object v0, p0, Lcom/android/settings/notification/ZenModeScheduleRuleSettings;->mDays:Landroidx/preference/Preference;
 
-    const v1, 0x7f121afc
+    const v1, 0x7f121b14
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -365,7 +365,7 @@
 
     iget-object v2, p0, Lcom/android/settings/notification/ZenModeScheduleRuleSettings;->mStart:Lcom/android/settings/notification/ZenModeScheduleRuleSettings$TimePickerPreference;
 
-    const v3, 0x7f121b14
+    const v3, 0x7f121b2c
 
     invoke-virtual {v2, v3}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -409,7 +409,7 @@
 
     iget-object v1, p0, Lcom/android/settings/notification/ZenModeScheduleRuleSettings;->mEnd:Lcom/android/settings/notification/ZenModeScheduleRuleSettings$TimePickerPreference;
 
-    const v2, 0x7f121ab8
+    const v2, 0x7f121ad0
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -584,7 +584,7 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    const v0, 0x7f121ab9
+    const v0, 0x7f121ad1
 
     :cond_1
     iget-object p0, p0, Lcom/android/settings/notification/ZenModeScheduleRuleSettings;->mEnd:Lcom/android/settings/notification/ZenModeScheduleRuleSettings$TimePickerPreference;

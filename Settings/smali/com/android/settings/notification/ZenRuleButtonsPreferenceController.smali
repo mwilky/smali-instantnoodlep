@@ -103,7 +103,7 @@
 
     check-cast p1, Lcom/android/settingslib/widget/ActionButtonsPreference;
 
-    const v0, 0x7f121aee
+    const v0, 0x7f121b06
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton1Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
@@ -123,13 +123,13 @@
 
     move-result-object p1
 
-    const v0, 0x7f121ab0
+    const v0, 0x7f121ac8
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Text(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 
     move-result-object p1
 
-    const v0, 0x7f080341
+    const v0, 0x7f08034a
 
     invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/ActionButtonsPreference;->setButton2Icon(I)Lcom/android/settingslib/widget/ActionButtonsPreference;
 

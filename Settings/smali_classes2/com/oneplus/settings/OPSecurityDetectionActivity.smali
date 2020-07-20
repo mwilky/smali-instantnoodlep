@@ -32,7 +32,7 @@
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
-    const p1, 0x7f0a070b
+    const p1, 0x7f0a0708
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -40,7 +40,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const v0, 0x7f0a0524
+    const v0, 0x7f0a0521
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -48,13 +48,13 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v1, 0x7f1210f0
+    const v1, 0x7f121108
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v2, 0x7f1210f1
+    const v2, 0x7f121109
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -76,13 +76,13 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    const p1, 0x7f1210ee
+    const p1, 0x7f121106
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    const v1, 0x7f1210ef
+    const v1, 0x7f121107
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

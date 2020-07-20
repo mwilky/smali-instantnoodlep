@@ -160,7 +160,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter;)V
 
-    const v1, 0x7f0a053c
+    const v1, 0x7f0a0539
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -168,7 +168,7 @@
 
     check-cast v1, Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0a076b
+    const v1, 0x7f0a0768
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a0682
+    const v1, 0x7f0a067f
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -198,7 +198,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->smallAppIconIv:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a044b
+    const v1, 0x7f0a0450
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -208,7 +208,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v1, 0x7f0a06e2
+    const v1, 0x7f0a06df
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -220,7 +220,7 @@
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const v1, 0x7f0a02c0
+    const v1, 0x7f0a02c5
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -281,7 +281,7 @@
     :cond_1
     iget-object v4, v0, Lcom/oneplus/settings/quicklaunch/OPShortcutListAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v5, 0x7f120f32
+    const v5, 0x7f120f4a
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 

@@ -41,7 +41,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p3, 0x7f0d021c
+    const p3, 0x7f0d021d
 
     invoke-virtual {p0, p3}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -59,7 +59,7 @@
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p3, 0x7f0d021c
+    const p3, 0x7f0d021d
 
     invoke-virtual {p0, p3}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -101,7 +101,7 @@
 .method protected getSecondTargetResId()I
     .locals 0
 
-    const p0, 0x7f0d02c6
+    const p0, 0x7f0d02c7
 
     return p0
 .end method
@@ -139,7 +139,7 @@
 
     invoke-virtual {v0, p1}, Lcom/android/settingslib/RestrictedPreferenceHelper;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a05ed
+    const v0, 0x7f0a05ea
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

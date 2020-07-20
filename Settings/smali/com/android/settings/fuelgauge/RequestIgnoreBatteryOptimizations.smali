@@ -238,7 +238,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v1, 0x7f120832
+    const v1, 0x7f12084a
 
     invoke-virtual {p0, v1}, Lcom/android/internal/app/AlertActivity;->getText(I)Ljava/lang/CharSequence;
 
@@ -246,7 +246,7 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
-    const v1, 0x7f120831
+    const v1, 0x7f120849
 
     const/4 v3, 0x1
 
@@ -276,7 +276,7 @@
 
     iput-object p1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    const p1, 0x7f1205d9
+    const p1, 0x7f1205e0
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/AlertActivity;->getText(I)Ljava/lang/CharSequence;
 

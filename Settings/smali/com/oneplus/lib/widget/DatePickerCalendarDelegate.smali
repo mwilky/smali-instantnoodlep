@@ -419,7 +419,7 @@
 
     invoke-virtual {p3, p4}, Lcom/oneplus/lib/widget/YearPickerView;->setOnYearSelectedListener(Lcom/oneplus/lib/widget/YearPickerView$OnYearSelectedListener;)V
 
-    const p3, 0x7f12144e
+    const p3, 0x7f121466
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -427,7 +427,7 @@
 
     iput-object p3, p0, Lcom/oneplus/lib/widget/DatePickerCalendarDelegate;->mSelectDay:Ljava/lang/String;
 
-    const p3, 0x7f121463
+    const p3, 0x7f12147b
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

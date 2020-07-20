@@ -60,7 +60,7 @@
 .method private updateThemeSummary(I)V
     .locals 2
 
-    const v0, 0x7f12105e
+    const v0, 0x7f121076
 
     if-eqz p1, :cond_5
 
@@ -91,7 +91,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const p1, 0x7f12105f
+    const p1, 0x7f121077
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -106,7 +106,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const p1, 0x7f12119e
+    const p1, 0x7f1211b6
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -121,7 +121,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const p1, 0x7f121195
+    const p1, 0x7f1211ad
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -130,7 +130,7 @@
     :cond_3
     iget-object p0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const p1, 0x7f12105c
+    const p1, 0x7f121074
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -139,7 +139,7 @@
     :cond_4
     iget-object p0, p0, Lcom/oneplus/settings/OPThemeSettings;->mThemeModePreference:Lcom/oneplus/settings/widget/OPThemePresetDialogPreference;
 
-    const p1, 0x7f12105d
+    const p1, 0x7f121075
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -517,11 +517,11 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f12104a
+    const v1, 0x7f121062
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v1, 0x7f121049
+    const v1, 0x7f121061
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -529,13 +529,13 @@
 
     invoke-direct {v1, p0, p1}, Lcom/oneplus/settings/-$$Lambda$OPThemeSettings$AsO1ozfnDsTk_lbezIGWSfxxNGo;-><init>(Lcom/oneplus/settings/OPThemeSettings;I)V
 
-    const p1, 0x7f1201ba
+    const p1, 0x7f1201c1
 
     invoke-virtual {v0, p1, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     sget-object p1, Lcom/oneplus/settings/-$$Lambda$OPThemeSettings$QEX9kLB0ud0tfjfKljyzvaEhAzU;->INSTANCE:Lcom/oneplus/settings/-$$Lambda$OPThemeSettings$QEX9kLB0ud0tfjfKljyzvaEhAzU;
 
-    const v1, 0x7f1203ef
+    const v1, 0x7f1203f6
 
     invoke-virtual {v0, v1, p1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

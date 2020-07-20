@@ -33,7 +33,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207f0
+    const p0, 0x7f120808
 
     return p0
 .end method
@@ -73,7 +73,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f080320
+    const p1, 0x7f080329
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setIcon(I)V
 

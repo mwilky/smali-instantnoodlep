@@ -122,7 +122,7 @@
 
     if-eq v1, v2, :cond_1
 
-    const v1, 0x7f1203af
+    const v1, 0x7f1203b6
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -133,7 +133,7 @@
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f1203b0
+    const v1, 0x7f1203b7
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -155,7 +155,7 @@
 
     if-eqz v1, :cond_3
 
-    const v2, 0x7f1202db
+    const v2, 0x7f1202e2
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -168,7 +168,7 @@
     goto :goto_1
 
     :cond_3
-    const v1, 0x7f1202dc
+    const v1, 0x7f1202e3
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -184,7 +184,7 @@
 
     if-eqz v5, :cond_5
 
-    const v6, 0x7f1202d3
+    const v6, 0x7f1202da
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -203,7 +203,7 @@
     goto :goto_2
 
     :cond_5
-    const v2, 0x7f1202d4
+    const v2, 0x7f1202db
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -229,7 +229,7 @@
 
     invoke-virtual {v0, v1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f1205d9
+    const v1, 0x7f1205e0
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

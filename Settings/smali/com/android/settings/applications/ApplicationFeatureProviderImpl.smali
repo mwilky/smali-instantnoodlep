@@ -292,7 +292,7 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/ApplicationFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f12049a
+    const v3, 0x7f1204a1
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -302,7 +302,7 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/ApplicationFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120498
+    const v3, 0x7f12049f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -312,7 +312,7 @@
 
     iget-object v2, p0, Lcom/android/settings/applications/ApplicationFeatureProviderImpl;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120494
+    const v3, 0x7f12049b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

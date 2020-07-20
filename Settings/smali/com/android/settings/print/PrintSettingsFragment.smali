@@ -94,11 +94,11 @@
 
     invoke-direct {v2, p0, v1}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p0, 0x7f121270
+    const p0, 0x7f121288
 
     invoke-virtual {v2, p0}, Landroidx/preference/Preference;->setTitle(I)V
 
-    const p0, 0x7f080196
+    const p0, 0x7f08019f
 
     invoke-virtual {v2, p0}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -178,7 +178,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207e2
+    const p0, 0x7f1207fa
 
     return p0
 .end method
@@ -389,7 +389,7 @@
 
     move-result-object p2
 
-    const v1, 0x7f0a03f9
+    const v1, 0x7f0a03fe
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -397,7 +397,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f121274
+    const v2, 0x7f12128c
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 

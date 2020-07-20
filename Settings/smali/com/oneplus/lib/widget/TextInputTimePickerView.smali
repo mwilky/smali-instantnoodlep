@@ -115,11 +115,11 @@
 
     const/4 v0, 0x1
 
-    const v1, 0x7f0d0350
+    const v1, 0x7f0d0351
 
     invoke-virtual {p4, v1, p0, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    const p4, 0x7f0a0337
+    const p4, 0x7f0a033c
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -129,7 +129,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mAmPmParent:Landroid/widget/LinearLayout;
 
-    const p4, 0x7f0a0338
+    const p4, 0x7f0a033d
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -137,7 +137,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mInputBlock:Landroid/view/View;
 
-    const p4, 0x7f0a033a
+    const p4, 0x7f0a033f
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -147,7 +147,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mHourEditText:Landroid/widget/EditText;
 
-    const p4, 0x7f0a033b
+    const p4, 0x7f0a0340
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -157,7 +157,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mMinuteEditText:Landroid/widget/EditText;
 
-    const p4, 0x7f0a0756
+    const p4, 0x7f0a0753
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mHeaderLabel:Landroid/widget/TextView;
 
-    const p4, 0x7f0a0375
+    const p4, 0x7f0a037a
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -177,7 +177,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mErrorLabel:Landroid/widget/TextView;
 
-    const p4, 0x7f0a0377
+    const p4, 0x7f0a037c
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -187,7 +187,7 @@
 
     iput-object p4, p0, Lcom/oneplus/lib/widget/TextInputTimePickerView;->mHourLabel:Landroid/widget/TextView;
 
-    const p4, 0x7f0a0379
+    const p4, 0x7f0a037e
 
     invoke-virtual {p0, p4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
@@ -349,7 +349,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setMinimumWidth(I)V
 
-    const p2, 0x7f0a0576
+    const p2, 0x7f0a0573
 
     invoke-virtual {p0, p2}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 

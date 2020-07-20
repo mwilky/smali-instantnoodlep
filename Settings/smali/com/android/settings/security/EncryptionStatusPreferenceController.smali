@@ -113,7 +113,7 @@
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setFragment(Ljava/lang/String;)V
 
     :cond_0
-    const p0, 0x7f1204f9
+    const p0, 0x7f120500
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -139,7 +139,7 @@
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setFragment(Ljava/lang/String;)V
 
     :cond_2
-    const p0, 0x7f1205bc
+    const p0, 0x7f1205c3
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setSummary(I)V
 

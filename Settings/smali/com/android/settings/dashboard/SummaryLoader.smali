@@ -547,7 +547,7 @@
 
     iget-object v0, p0, Lcom/android/settings/dashboard/SummaryLoader;->mActivity:Landroid/app/Activity;
 
-    const v1, 0x7f120e18
+    const v1, 0x7f120e30
 
     const/4 v4, 0x2
 

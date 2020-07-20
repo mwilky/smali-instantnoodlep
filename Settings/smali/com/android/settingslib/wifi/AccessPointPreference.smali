@@ -229,7 +229,7 @@
 
     iput-object v0, p0, Lcom/android/settingslib/wifi/AccessPointPreference;->mNotifyChanged:Ljava/lang/Runnable;
 
-    const v0, 0x7f0d027b
+    const v0, 0x7f0d027c
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -523,7 +523,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a02a7
+    const v0, 0x7f0a02ac
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -603,7 +603,7 @@
 
     :cond_6
     :goto_1
-    const v0, 0x7f0a0309
+    const v0, 0x7f0a030e
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -687,7 +687,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080313
+    const v3, 0x7f08031c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -704,7 +704,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080312
+    const v3, 0x7f08031b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -723,7 +723,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :goto_3
-    const v0, 0x7f0a077a
+    const v0, 0x7f0a0777
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

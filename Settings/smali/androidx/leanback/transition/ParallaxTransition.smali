@@ -41,7 +41,7 @@
 .method createAnimator(Landroid/view/View;)Landroid/animation/Animator;
     .locals 2
 
-    const v0, 0x7f0a03a6
+    const v0, 0x7f0a03ab
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

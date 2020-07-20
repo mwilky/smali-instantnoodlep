@@ -519,7 +519,7 @@
 
     iget-object v3, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f1202a6
+    const v4, 0x7f1202ad
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -540,7 +540,7 @@
 
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120b4a
+    const v1, 0x7f120b62
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

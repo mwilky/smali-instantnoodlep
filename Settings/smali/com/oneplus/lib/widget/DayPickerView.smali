@@ -225,7 +225,7 @@
 
     const v6, 0x7f0d01a4
 
-    const v7, 0x7f0a040e
+    const v7, 0x7f0a0413
 
     invoke-direct {p2, p1, v6, v7}, Lcom/oneplus/lib/widget/DayPickerPagerAdapter;-><init>(Landroid/content/Context;II)V
 
@@ -279,7 +279,7 @@
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f0a0582
+    const p1, 0x7f0a057f
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -295,7 +295,7 @@
 
     invoke-virtual {p1, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a045b
+    const p1, 0x7f0a0460
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

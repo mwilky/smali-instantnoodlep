@@ -1252,7 +1252,7 @@
 
     if-gez p1, :cond_4
 
-    const p1, 0x7f121a65
+    const p1, 0x7f121a7d
 
     goto :goto_2
 
@@ -1263,7 +1263,7 @@
 
     :cond_5
     :goto_1
-    const p1, 0x7f121a66
+    const p1, 0x7f121a7e
 
     :goto_2
     if-nez p1, :cond_6
@@ -1355,13 +1355,13 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f121b0c
+    const v1, 0x7f121b24
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v1, 0x7f1203ef
+    const v1, 0x7f1203f6
 
     const/4 v2, 0x0
 
@@ -1373,7 +1373,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/settingslib/notification/EnableZenModeDialog$1;-><init>(Lcom/android/settingslib/notification/EnableZenModeDialog;)V
 
-    const v2, 0x7f121ab7
+    const v2, 0x7f121acf
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1486,7 +1486,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f0d0396
+    const v1, 0x7f0d0397
 
     const/4 v2, 0x0
 
@@ -1502,7 +1502,7 @@
 
     check-cast v1, Landroid/widget/ScrollView;
 
-    const v2, 0x7f0a0801
+    const v2, 0x7f0a07fe
 
     invoke-virtual {v1, v2}, Landroid/widget/ScrollView;->findViewById(I)Landroid/view/View;
 
@@ -1512,7 +1512,7 @@
 
     iput-object v2, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mZenRadioGroup:Landroid/widget/RadioGroup;
 
-    const v2, 0x7f0a0802
+    const v2, 0x7f0a07ff
 
     invoke-virtual {v1, v2}, Landroid/widget/ScrollView;->findViewById(I)Landroid/view/View;
 
@@ -1522,7 +1522,7 @@
 
     iput-object v2, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mZenRadioGroupContent:Landroid/widget/LinearLayout;
 
-    const v2, 0x7f0a07dd
+    const v2, 0x7f0a07da
 
     invoke-virtual {v1, v2}, Landroid/widget/ScrollView;->findViewById(I)Landroid/view/View;
 
@@ -1543,7 +1543,7 @@
 
     iget-object v3, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0d0394
+    const v4, 0x7f0d0395
 
     iget-object v5, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mZenRadioGroup:Landroid/widget/RadioGroup;
 
@@ -1559,7 +1559,7 @@
 
     iget-object v3, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0d0392
+    const v4, 0x7f0d0393
 
     iget-object v5, p0, Lcom/android/settingslib/notification/EnableZenModeDialog;->mZenRadioGroupContent:Landroid/widget/LinearLayout;
 

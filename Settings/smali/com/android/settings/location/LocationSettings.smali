@@ -34,10 +34,10 @@
 
     :array_0
     .array-data 4
-        0x7f0804a0
-        0x7f0804b7
-        0x7f0804b8
-        0x7f0804b9
+        0x7f0804a9
+        0x7f0804c0
+        0x7f0804c1
+        0x7f0804c2
     .end array-data
 .end method
 
@@ -237,7 +237,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120807
+    const p0, 0x7f12081f
 
     return p0
 .end method
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120962
+    const v1, 0x7f12097a
 
     invoke-virtual {v0, v1, v1}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

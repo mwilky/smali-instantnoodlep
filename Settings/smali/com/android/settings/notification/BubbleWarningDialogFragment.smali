@@ -99,7 +99,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1203c5
+    const v2, 0x7f1203cc
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -109,7 +109,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1203c4
+    const v3, 0x7f1203cb
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -135,7 +135,7 @@
 
     invoke-direct {v1, p0, v0, p1}, Lcom/android/settings/notification/-$$Lambda$BubbleWarningDialogFragment$SOMFEqqXI_4CCDbvcJugYVb9oWE;-><init>(Lcom/android/settings/notification/BubbleWarningDialogFragment;Ljava/lang/String;I)V
 
-    const v2, 0x7f1203c2
+    const v2, 0x7f1203c9
 
     invoke-virtual {v3, v2, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -143,7 +143,7 @@
 
     invoke-direct {v1, p0, v0, p1}, Lcom/android/settings/notification/-$$Lambda$BubbleWarningDialogFragment$Z_nzEFn9OFBeG9cn_sIHv_0h-8Y;-><init>(Lcom/android/settings/notification/BubbleWarningDialogFragment;Ljava/lang/String;I)V
 
-    const p0, 0x7f1203c3
+    const p0, 0x7f1203ca
 
     invoke-virtual {v3, p0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

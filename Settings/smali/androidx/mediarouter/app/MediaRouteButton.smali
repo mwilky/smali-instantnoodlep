@@ -465,17 +465,17 @@
 
     if-eq v0, v1, :cond_0
 
-    const v0, 0x7f120ac1
+    const v0, 0x7f120ad9
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120abf
+    const v0, 0x7f120ad7
 
     goto :goto_0
 
     :cond_1
-    const v0, 0x7f120ac0
+    const v0, 0x7f120ad8
 
     :goto_0
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -1154,7 +1154,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120abe
+    const v0, 0x7f120ad6
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -45,7 +45,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f120638
+    const v3, 0x7f12063f
 
     invoke-direct {v1, p0, v2, v3}, Lcom/android/settings/display/VrDisplayPreferencePicker$VrCandidateInfo;-><init>(Landroid/content/Context;II)V
 
@@ -55,7 +55,7 @@
 
     const/4 v2, 0x1
 
-    const v3, 0x7f120639
+    const v3, 0x7f120640
 
     invoke-direct {v1, p0, v2, v3}, Lcom/android/settings/display/VrDisplayPreferencePicker$VrCandidateInfo;-><init>(Landroid/content/Context;II)V
 

@@ -1125,7 +1125,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPGamingMode;->mNotificationWaysPreference:Landroidx/preference/Preference;
 
-    const v4, 0x7f121035
+    const v4, 0x7f12104d
 
     invoke-virtual {v0, v4}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1138,7 +1138,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPGamingMode;->mNotificationWaysPreference:Landroidx/preference/Preference;
 
-    const v4, 0x7f1210c4
+    const v4, 0x7f1210dc
 
     invoke-virtual {v0, v4}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1149,7 +1149,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPGamingMode;->mNotificationWaysPreference:Landroidx/preference/Preference;
 
-    const v4, 0x7f121008
+    const v4, 0x7f121020
 
     invoke-virtual {v0, v4}, Landroidx/preference/Preference;->setSummary(I)V
 

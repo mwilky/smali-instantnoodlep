@@ -213,7 +213,7 @@
     :cond_3
     iget-object p0, p0, Lcom/android/settings/accounts/AvatarViewMixin;->mAvatarView:Landroid/widget/ImageView;
 
-    const v0, 0x7f080194
+    const v0, 0x7f08019d
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 

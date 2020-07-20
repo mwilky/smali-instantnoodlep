@@ -6,17 +6,17 @@
 # static fields
 .field static final ID_CDMA_SETTINGS:I = 0x7f0a012e
 
-.field static final ID_GSM_SETTINGS:I = 0x7f0a02c3
+.field static final ID_GSM_SETTINGS:I = 0x7f0a02c8
 
-.field static final ID_IMEI_SV_VALUE:I = 0x7f0a031c
+.field static final ID_IMEI_SV_VALUE:I = 0x7f0a0321
 
-.field static final ID_IMEI_VALUE:I = 0x7f0a031d
+.field static final ID_IMEI_VALUE:I = 0x7f0a0322
 
-.field static final ID_MEID_NUMBER_VALUE:I = 0x7f0a03f5
+.field static final ID_MEID_NUMBER_VALUE:I = 0x7f0a03fa
 
-.field static final ID_MIN_NUMBER_VALUE:I = 0x7f0a0407
+.field static final ID_MIN_NUMBER_VALUE:I = 0x7f0a040c
 
-.field static final ID_PRL_VERSION_VALUE:I = 0x7f0a059e
+.field static final ID_PRL_VERSION_VALUE:I = 0x7f0a059b
 
 
 # instance fields
@@ -285,9 +285,9 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f0a031c
+    const v2, 0x7f0a0321
 
-    const v3, 0x7f0a031d
+    const v3, 0x7f0a0322
 
     if-ne v0, v1, :cond_5
 
@@ -319,13 +319,13 @@
     move-object v4, v5
 
     :goto_0
-    const v6, 0x7f0a03f5
+    const v6, 0x7f0a03fa
 
     invoke-virtual {v1, v6, v4}, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;->setText(ILjava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v4, 0x7f0a0407
+    const v4, 0x7f0a040c
 
     iget-object v6, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mSubscriptionInfo:Landroid/telephony/SubscriptionInfo;
 
@@ -354,9 +354,9 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v4, 0x7f0a0406
+    const v4, 0x7f0a040b
 
-    const v5, 0x7f121567
+    const v5, 0x7f12157f
 
     invoke-virtual {v0, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -367,7 +367,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v1, 0x7f0a059e
+    const v1, 0x7f0a059b
 
     invoke-virtual {p0}, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->getCdmaPrlVersion()Ljava/lang/String;
 
@@ -422,7 +422,7 @@
     :cond_4
     iget-object p0, p0, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogController;->mDialog:Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;
 
-    const v0, 0x7f0a02c3
+    const v0, 0x7f0a02c8
 
     invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/imei/ImeiInfoDialogFragment;->removeViewFromScreen(I)V
 

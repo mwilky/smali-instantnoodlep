@@ -120,11 +120,11 @@
 
     invoke-direct {v1, v2, v3}, Landroidx/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v2, 0x7f0d0214
+    const v2, 0x7f0d0215
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const v2, 0x7f0d0225
+    const v2, 0x7f0d0226
 
     invoke-virtual {v1, v2}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 
@@ -138,7 +138,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0300c7
+    const v4, 0x7f0300c8
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

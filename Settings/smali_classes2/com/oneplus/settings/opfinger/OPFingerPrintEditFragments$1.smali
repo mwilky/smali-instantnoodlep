@@ -69,7 +69,7 @@
     :pswitch_2
     sget-object p1, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const v0, 0x7f120ce7
+    const v0, 0x7f120cff
 
     invoke-static {p1, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -118,7 +118,7 @@
 
     sget-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const p1, 0x7f120ce8
+    const p1, 0x7f120d00
 
     invoke-static {p0, p1, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120ce9
+    const v1, 0x7f120d01
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

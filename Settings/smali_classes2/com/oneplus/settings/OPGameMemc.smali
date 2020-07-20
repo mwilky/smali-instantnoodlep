@@ -75,9 +75,9 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/OPGameMemc;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
 
-    const v0, 0x7f120e46
+    const v0, 0x7f120e5e
 
-    const v2, 0x7f120e41
+    const v2, 0x7f120e59
 
     invoke-virtual {p1, v0, v2}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 
@@ -272,7 +272,7 @@
     invoke-static {v3, v2, p1}, Lcom/android/tools/r8/GeneratedOutlineSupport;->outline35(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)V
 
     :cond_3
-    const p1, 0x7f120e48
+    const p1, 0x7f120e60
 
     const/4 v2, 0x0
 

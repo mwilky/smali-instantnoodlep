@@ -87,7 +87,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const p1, 0x7f120f4d
+    const p1, 0x7f120f65
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -98,7 +98,7 @@
     :cond_0
     if-nez p1, :cond_1
 
-    const p1, 0x7f120f51
+    const p1, 0x7f120f69
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -107,7 +107,7 @@
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f120f4b
+    const p1, 0x7f120f63
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -277,7 +277,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f120f53
+    const v2, 0x7f120f6b
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -291,7 +291,7 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/settings/better/ReadingModeEffectDetail$2;-><init>(Lcom/oneplus/settings/better/ReadingModeEffectDetail;)V
 
-    const v2, 0x7f0300da
+    const v2, 0x7f0300db
 
     invoke-virtual {p1, v2, v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setSingleChoiceItems(IILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

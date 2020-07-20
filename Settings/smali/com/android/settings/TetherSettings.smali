@@ -595,7 +595,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f121788
+    const v0, 0x7f1217a0
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -610,7 +610,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1203ab
+    const v0, 0x7f1203b2
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -678,7 +678,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f12165e
+    const v2, 0x7f121676
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -695,7 +695,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121660
+    const v3, 0x7f121678
 
     new-array v4, v0, [Ljava/lang/Object;
 
@@ -711,7 +711,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f12165f
+    const v4, 0x7f121677
 
     new-array v0, v0, [Ljava/lang/Object;
 
@@ -742,7 +742,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f121662
+    const v2, 0x7f12167a
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -752,7 +752,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f121661
+    const v3, 0x7f121679
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1189,7 +1189,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120819
+    const p0, 0x7f120831
 
     return p0
 .end method
@@ -1255,7 +1255,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f121521
+    const v0, 0x7f121539
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -1268,7 +1268,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f12166c
+    const v0, 0x7f121684
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -1721,11 +1721,11 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f120609
+    const v2, 0x7f120610
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f120607
+    const v2, 0x7f12060e
 
     new-instance v5, Lcom/android/settings/TetherSettings$1;
 
@@ -1733,7 +1733,7 @@
 
     invoke-virtual {v1, v2, v5}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const v2, 0x7f120608
+    const v2, 0x7f12060f
 
     new-instance v5, Lcom/android/settings/TetherSettings$2;
 
@@ -1892,7 +1892,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f121670
+    const v1, 0x7f121688
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

@@ -351,7 +351,7 @@
 
     invoke-virtual {v4, p0}, Landroidx/preference/Preference;->setOnPreferenceChangeListener(Landroidx/preference/Preference$OnPreferenceChangeListener;)V
 
-    const v3, 0x7f08016b
+    const v3, 0x7f080174
 
     invoke-virtual {v4, v3}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -564,7 +564,7 @@
 
     iget-object v7, v7, Lcom/android/settingslib/users/AppRestrictionsHelper$SelectableAppInfo;->packageName:Ljava/lang/String;
 
-    const v10, 0x7f08031f
+    const v10, 0x7f080328
 
     invoke-virtual {v11, v10}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -736,7 +736,7 @@
 
     if-eqz v14, :cond_b
 
-    const v14, 0x7f1201af
+    const v14, 0x7f1201b6
 
     new-array v13, v8, [Ljava/lang/Object;
 
@@ -751,7 +751,7 @@
     goto :goto_6
 
     :cond_b
-    const v13, 0x7f1217ef
+    const v13, 0x7f121807
 
     new-array v14, v8, [Ljava/lang/Object;
 
@@ -772,7 +772,7 @@
 
     if-eqz v13, :cond_d
 
-    const v13, 0x7f1201ae
+    const v13, 0x7f1201b5
 
     invoke-virtual {v0, v13}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

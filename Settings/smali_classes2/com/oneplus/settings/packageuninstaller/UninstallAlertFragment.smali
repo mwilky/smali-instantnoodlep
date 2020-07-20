@@ -150,7 +150,7 @@
 
     if-nez v6, :cond_0
 
-    const v6, 0x7f1216eb
+    const v6, 0x7f121703
 
     new-array v7, v4, [Ljava/lang/Object;
 
@@ -205,7 +205,7 @@
 
     if-eqz v3, :cond_2
 
-    const v3, 0x7f1216ff
+    const v3, 0x7f121717
 
     invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -216,7 +216,7 @@
     goto :goto_1
 
     :cond_2
-    const v3, 0x7f121700
+    const v3, 0x7f121718
 
     invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -237,7 +237,7 @@
 
     if-nez v3, :cond_4
 
-    const v3, 0x7f1216ef
+    const v3, 0x7f121707
 
     invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -270,7 +270,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f1216f0
+    const v6, 0x7f121708
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -287,7 +287,7 @@
     goto :goto_1
 
     :cond_5
-    const v3, 0x7f1216ee
+    const v3, 0x7f121706
 
     invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
 

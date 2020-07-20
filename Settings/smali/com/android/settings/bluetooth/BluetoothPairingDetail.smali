@@ -78,7 +78,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207f8
+    const p0, 0x7f120810
 
     return p0
 .end method
@@ -369,7 +369,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f1204af
+    const v0, 0x7f1204b6
 
     const/4 v1, 0x0
 
@@ -436,7 +436,7 @@
 
     iget-object p1, p0, Lcom/android/settings/bluetooth/BluetoothPairingDetail;->mAvailableDevicesCategory:Lcom/android/settings/bluetooth/BluetoothProgressCategory;
 
-    const v0, 0x7f12036c
+    const v0, 0x7f120373
 
     sget-object v1, Lcom/android/settingslib/bluetooth/BluetoothDeviceFilter;->ALL_FILTER:Lcom/android/settingslib/bluetooth/BluetoothDeviceFilter$Filter;
 

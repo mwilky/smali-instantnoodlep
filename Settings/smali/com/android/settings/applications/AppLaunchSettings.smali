@@ -368,7 +368,7 @@
 
     new-array v2, v0, [Ljava/lang/CharSequence;
 
-    const v4, 0x7f12017e
+    const v4, 0x7f120185
 
     invoke-virtual {p0, v4}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -376,7 +376,7 @@
 
     aput-object v4, v2, v1
 
-    const v4, 0x7f12017f
+    const v4, 0x7f120186
 
     invoke-virtual {p0, v4}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -384,7 +384,7 @@
 
     aput-object v4, v2, v3
 
-    const v4, 0x7f120180
+    const v4, 0x7f120187
 
     invoke-virtual {p0, v4}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

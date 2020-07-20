@@ -11,7 +11,7 @@
 
     invoke-direct {p0, p1, v0}, Lcom/android/settingslib/widget/FooterPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f080229
+    const p1, 0x7f080232
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setIcon(I)V
 
@@ -23,7 +23,7 @@
 
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/widget/FooterPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f080229
+    const p1, 0x7f080232
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setIcon(I)V
 

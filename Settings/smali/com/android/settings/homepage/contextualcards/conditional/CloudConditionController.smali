@@ -130,7 +130,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/CloudConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120473
+    const v2, 0x7f12047a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -156,7 +156,7 @@
 
     iget-object v2, p0, Lcom/android/settings/homepage/contextualcards/conditional/CloudConditionController;->mAppContext:Landroid/content/Context;
 
-    const v3, 0x7f120472
+    const v3, 0x7f120479
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -184,7 +184,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/conditional/CloudConditionController;->mAppContext:Landroid/content/Context;
 
-    const v2, 0x7f120471
+    const v2, 0x7f120478
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -198,7 +198,7 @@
 
     iget-object p0, p0, Lcom/android/settings/homepage/contextualcards/conditional/CloudConditionController;->mAppContext:Landroid/content/Context;
 
-    const v1, 0x7f08033d
+    const v1, 0x7f080346
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

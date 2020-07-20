@@ -97,12 +97,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f12086d
+    const v0, 0x7f120885
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120175
+    const v0, 0x7f12017c
 
     :goto_0
     iget-object v1, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;

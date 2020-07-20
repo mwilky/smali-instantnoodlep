@@ -41,7 +41,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207fa
+    const p0, 0x7f120812
 
     return p0
 .end method
@@ -132,7 +132,7 @@
 
     iget-object p1, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->mType:Landroidx/preference/ListPreference;
 
-    const v0, 0x7f12051b
+    const v0, 0x7f120522
 
     const/4 v1, 0x1
 
@@ -140,7 +140,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f12150a
+    const v3, 0x7f121522
 
     invoke-virtual {p0, v3}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

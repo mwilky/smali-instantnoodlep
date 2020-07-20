@@ -23,7 +23,7 @@
 
     iput-boolean p1, p0, Lcom/android/settings/ProgressCategory;->mProgress:Z
 
-    const p1, 0x7f0d0292
+    const p1, 0x7f0d0293
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -39,7 +39,7 @@
 
     iput-boolean p1, p0, Lcom/android/settings/ProgressCategory;->mProgress:Z
 
-    const p1, 0x7f0d0292
+    const p1, 0x7f0d0293
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -55,7 +55,7 @@
 
     iput-boolean p1, p0, Lcom/android/settings/ProgressCategory;->mProgress:Z
 
-    const p1, 0x7f0d0292
+    const p1, 0x7f0d0293
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -71,7 +71,7 @@
 
     iput-boolean p1, p0, Lcom/android/settings/ProgressCategory;->mProgress:Z
 
-    const p1, 0x7f0d0292
+    const p1, 0x7f0d0293
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -85,7 +85,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/PreferenceCategory;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a0613
+    const v0, 0x7f0a0610
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -172,7 +172,7 @@
 
     iget-object v0, p0, Lcom/android/settings/ProgressCategory;->mNoDeviceFoundPreference:Landroidx/preference/Preference;
 
-    const v1, 0x7f0d028a
+    const v1, 0x7f0d028b
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 

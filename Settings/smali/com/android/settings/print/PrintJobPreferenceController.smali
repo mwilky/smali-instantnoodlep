@@ -69,7 +69,7 @@
 
     if-eq v3, v8, :cond_7
 
-    const v10, 0x7f121268
+    const v10, 0x7f121280
 
     if-eq v3, v7, :cond_5
 
@@ -86,7 +86,7 @@
 
     iget-object v3, v0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f12126a
+    const v10, 0x7f121282
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -119,7 +119,7 @@
 
     iget-object v3, v0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f121266
+    const v10, 0x7f12127e
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -173,7 +173,7 @@
 
     iget-object v3, v0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f121277
+    const v10, 0x7f12128f
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -217,7 +217,7 @@
 
     iget-object v3, v0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f121269
+    const v10, 0x7f121281
 
     new-array v11, v8, [Ljava/lang/Object;
 
@@ -238,7 +238,7 @@
 
     iget-object v3, v0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f12126d
+    const v10, 0x7f121285
 
     new-array v11, v7, [Ljava/lang/Object;
 

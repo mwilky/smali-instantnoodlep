@@ -63,7 +63,7 @@
 
     if-ne v0, v1, :cond_0
 
-    const p0, 0x7f1202aa
+    const p0, 0x7f1202b1
 
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

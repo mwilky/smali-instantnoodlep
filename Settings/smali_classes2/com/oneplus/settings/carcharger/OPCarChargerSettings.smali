@@ -127,7 +127,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f120c77
+    const v0, 0x7f120c8f
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -138,7 +138,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120c76
+    const v0, 0x7f120c8e
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

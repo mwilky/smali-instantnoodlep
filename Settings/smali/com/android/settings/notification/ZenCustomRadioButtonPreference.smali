@@ -31,7 +31,7 @@
 
     invoke-direct {p0, p1}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;)V
 
-    const p1, 0x7f0d021f
+    const p1, 0x7f0d0220
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -43,7 +43,7 @@
 
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p1, 0x7f0d021f
+    const p1, 0x7f0d0220
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -55,7 +55,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f0d021f
+    const p1, 0x7f0d0220
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -67,7 +67,7 @@
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settingslib/TwoTargetPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p1, 0x7f0d021f
+    const p1, 0x7f0d0220
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -79,7 +79,7 @@
 .method protected getSecondTargetResId()I
     .locals 0
 
-    const p0, 0x7f0d02a1
+    const p0, 0x7f0d02a2
 
     return p0
 .end method
@@ -119,13 +119,13 @@
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     :cond_1
-    const v0, 0x7f0a0579
+    const v0, 0x7f0a0576
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f0a077a
+    const v1, 0x7f0a0777
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
 
     move-result v0
 
-    const v1, 0x7f0a0579
+    const v1, 0x7f0a0576
 
     if-ne v0, v1, :cond_0
 

@@ -79,7 +79,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f12186a
+    const v2, 0x7f121882
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -91,7 +91,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f12183f
+    const v1, 0x7f121857
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -101,7 +101,7 @@
 
     invoke-virtual {p0, v2, v1, p0}, Landroidx/appcompat/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    const v1, 0x7f12183c
+    const v1, 0x7f121854
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

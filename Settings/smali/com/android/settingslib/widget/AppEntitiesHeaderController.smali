@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Lcom/android/settingslib/widget/AppEntitiesHeaderController;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0a02eb
+    const p1, 0x7f0a02f0
 
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -57,7 +57,7 @@
 
     iput-object p1, p0, Lcom/android/settingslib/widget/AppEntitiesHeaderController;->mHeaderTitleView:Landroid/widget/TextView;
 
-    const p1, 0x7f0a02e7
+    const p1, 0x7f0a02ec
 
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

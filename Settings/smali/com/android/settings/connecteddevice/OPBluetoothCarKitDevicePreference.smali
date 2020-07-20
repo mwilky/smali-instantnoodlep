@@ -202,13 +202,13 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f08052e
+    const v0, 0x7f080537
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setIcon(I)V
 
     iget-object v0, p0, Lcom/android/settings/connecteddevice/OPBluetoothCarKitDevicePreference;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120f6c
+    const v2, 0x7f120f84
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -229,7 +229,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/connecteddevice/OPBluetoothCarKitDevicePreference;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f120c2a
+    const v2, 0x7f120c42
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -40,7 +40,7 @@
 
     invoke-virtual {p2, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f1204e3
+    const p1, 0x7f1204ea
 
     invoke-virtual {p2, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -144,7 +144,7 @@
 
     invoke-direct {v1, p1}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
-    const p1, 0x7f1204e8
+    const p1, 0x7f1204ef
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

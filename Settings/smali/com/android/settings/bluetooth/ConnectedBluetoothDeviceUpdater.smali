@@ -78,6 +78,16 @@
 
     invoke-interface {v0, v1}, Lcom/android/settings/connecteddevice/DevicePreferenceCallback;->onDeviceAdded(Landroidx/preference/Preference;)V
 
+    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDeviceUpdater;->mFragment:Lcom/android/settings/dashboard/DashboardFragment;
+
+    instance-of v3, v0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
+
+    if-eqz v3, :cond_1
+
+    check-cast v0, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;
+
+    invoke-virtual {v0, v1}, Lcom/android/settings/connecteddevice/BluetoothDashboardFragment;->checkOnePlusPods(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
+
     :cond_1
     invoke-virtual {p1}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 

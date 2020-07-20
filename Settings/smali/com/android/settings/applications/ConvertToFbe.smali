@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1204d1
+    const v1, 0x7f1204d8
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -81,7 +81,7 @@
 
     invoke-direct {v0, v1, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const v1, 0x7f1204d1
+    const v1, 0x7f1204d8
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -130,7 +130,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1204d1
+    const p1, 0x7f1204d8
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setTitle(I)V
 

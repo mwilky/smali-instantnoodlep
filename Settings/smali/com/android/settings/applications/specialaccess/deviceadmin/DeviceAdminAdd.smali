@@ -1368,7 +1368,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1212a2
+    const v1, 0x7f1212ba
 
     invoke-virtual {p0, v1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -1376,7 +1376,7 @@
 
     invoke-virtual {p1, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f0d02b5
+    const v1, 0x7f0d02b6
 
     invoke-virtual {p1, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setView(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -1388,7 +1388,7 @@
 
     invoke-virtual {p1, v1, v2}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f1203ef
+    const v1, 0x7f1203f6
 
     const/4 v2, 0x0
 
@@ -1452,7 +1452,7 @@
 
     iget-object p1, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminWarning:Landroid/widget/TextView;
 
-    const v0, 0x7f1205e9
+    const v0, 0x7f1205f0
 
     new-array v1, v6, [Ljava/lang/Object;
 
@@ -1503,7 +1503,7 @@
 
     iput-object p1, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminDescription:Landroid/widget/TextView;
 
-    const p1, 0x7f0a059f
+    const p1, 0x7f0a059c
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1611,7 +1611,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a0785
+    const p1, 0x7f0a0782
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1643,7 +1643,7 @@
 
     iput-object p1, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mActionButton:Landroid/widget/Button;
 
-    const p1, 0x7f0a05ec
+    const p1, 0x7f0a05e9
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -1749,7 +1749,7 @@
 
     invoke-virtual {p2, p1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p1, 0x7f120641
+    const p1, 0x7f120648
 
     new-instance v0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd$8;
 
@@ -1757,7 +1757,7 @@
 
     invoke-virtual {p2, p1, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const p0, 0x7f12063c
+    const p0, 0x7f120643
 
     const/4 p1, 0x0
 
@@ -1943,7 +1943,7 @@
 .method updateInterface()V
     .locals 8
 
-    const v0, 0x7f0a05ed
+    const v0, 0x7f0a05ea
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -2096,7 +2096,7 @@
 
     iget-object v3, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mActionButton:Landroid/widget/Button;
 
-    const v5, 0x7f12131b
+    const v5, 0x7f121333
 
     invoke-virtual {v3, v5}, Landroid/widget/Button;->setText(I)V
 
@@ -2136,7 +2136,7 @@
     goto/16 :goto_5
 
     :cond_3
-    const v0, 0x7f12131a
+    const v0, 0x7f121332
 
     if-nez v3, :cond_6
 
@@ -2165,7 +2165,7 @@
 
     iget-object v3, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminWarning:Landroid/widget/TextView;
 
-    const v5, 0x7f1205e7
+    const v5, 0x7f1205ee
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -2203,7 +2203,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mActionButton:Landroid/widget/Button;
 
-    const v3, 0x7f121319
+    const v3, 0x7f121331
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setText(I)V
 
@@ -2289,7 +2289,7 @@
 
     iget-object v0, p0, Lcom/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd;->mAdminWarning:Landroid/widget/TextView;
 
-    const v3, 0x7f1205e8
+    const v3, 0x7f1205ef
 
     new-array v5, v4, [Ljava/lang/Object;
 

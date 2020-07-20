@@ -56,7 +56,7 @@
 .method protected getDefaultLayoutResource()I
     .locals 0
 
-    const p0, 0x7f0d0324
+    const p0, 0x7f0d0325
 
     return p0
 .end method
@@ -66,7 +66,7 @@
 
     invoke-super {p0, p1}, Lcom/google/android/setupdesign/items/Item;->onBindView(Landroid/view/View;)V
 
-    const v0, 0x7f0a06cf
+    const v0, 0x7f0a06cc
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

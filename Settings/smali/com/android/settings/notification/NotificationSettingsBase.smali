@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0802d7
+    const v1, 0x7f0802e0
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -1454,7 +1454,7 @@
 
     move-result-object p3
 
-    const v1, 0x7f120b7a
+    const v1, 0x7f120b92
 
     invoke-virtual {p3, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -1600,7 +1600,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/NotificationSettingsBase;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f120188
+    const v1, 0x7f12018f
 
     const/4 v2, 0x0
 

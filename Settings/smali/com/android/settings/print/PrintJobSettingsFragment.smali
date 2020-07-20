@@ -102,7 +102,7 @@
 
     if-nez v0, :cond_1
 
-    const v0, 0x7f121267
+    const v0, 0x7f12127f
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -123,7 +123,7 @@
 
     const/4 p2, 0x2
 
-    const v0, 0x7f121278
+    const v0, 0x7f121290
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

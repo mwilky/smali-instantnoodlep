@@ -184,7 +184,7 @@
 
     const-string v11, "UninstallAppProgress"
 
-    const v12, 0x7f1216f7
+    const v12, 0x7f12170f
 
     if-eq v0, v6, :cond_d
 
@@ -221,7 +221,7 @@
     goto/16 :goto_5
 
     :cond_7
-    const v0, 0x7f1216f5
+    const v0, 0x7f12170d
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -369,7 +369,7 @@
 
     invoke-virtual {v0, v4}, Lcom/oneplus/settings/packageuninstaller/UninstallAppProgressFragment;->setDeviceManagerButtonVisible(Z)V
 
-    const v0, 0x7f1216f9
+    const v0, 0x7f121711
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -406,7 +406,7 @@
 
     invoke-virtual {v2, v5}, Lcom/oneplus/settings/packageuninstaller/UninstallAppProgressFragment;->setDeviceManagerButtonVisible(Z)V
 
-    const v2, 0x7f1216fa
+    const v2, 0x7f121712
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -487,7 +487,7 @@
     :cond_e
     add-int/lit8 v14, v14, 0x1
 
-    const v12, 0x7f1216f7
+    const v12, 0x7f12170f
 
     goto :goto_2
 
@@ -535,7 +535,7 @@
     :goto_4
     if-nez v0, :cond_11
 
-    const v0, 0x7f1216f2
+    const v0, 0x7f12170a
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -570,7 +570,7 @@
 
     invoke-static {v11, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v2, 0x7f1216f7
+    const v2, 0x7f12170f
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -583,7 +583,7 @@
 
     if-eqz v0, :cond_13
 
-    const v0, 0x7f1216ec
+    const v0, 0x7f121704
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -592,7 +592,7 @@
     goto :goto_5
 
     :cond_13
-    const v0, 0x7f1216f3
+    const v0, 0x7f12170b
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -609,7 +609,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a05aa
+    const v2, 0x7f0a05a7
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -619,7 +619,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    const v2, 0x7f0a06ad
+    const v2, 0x7f0a06aa
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -627,7 +627,7 @@
 
     invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
 
-    const v2, 0x7f0a06ac
+    const v2, 0x7f0a06a9
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -637,7 +637,7 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a0484
+    const v0, 0x7f0a0485
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -796,12 +796,12 @@
     :goto_1
     if-eqz v0, :cond_3
 
-    const v0, 0x7f121701
+    const v0, 0x7f121719
 
     goto :goto_2
 
     :cond_3
-    const v0, 0x7f1216f1
+    const v0, 0x7f121709
 
     :goto_2
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setTitle(I)V

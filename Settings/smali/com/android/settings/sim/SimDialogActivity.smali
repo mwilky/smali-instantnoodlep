@@ -110,7 +110,7 @@
 
     invoke-virtual {v1, p1}, Landroid/telephony/TelephonyManager;->setDataEnabled(Z)V
 
-    const v0, 0x7f12052e
+    const v0, 0x7f120535
 
     invoke-static {p0, v0, p1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -162,7 +162,7 @@
 
     const/4 v5, 0x2
 
-    const v6, 0x7f12145c    # 1.94173E38f
+    const v6, 0x7f121474
 
     if-eq v0, v5, :cond_3
 
@@ -222,7 +222,7 @@
 
     invoke-direct {p0}, Lcom/android/settings/sim/PreferredSimDialogFragment;-><init>()V
 
-    const v0, 0x7f1214fd
+    const v0, 0x7f121515
 
     invoke-static {v4, v0}, Lcom/android/settings/sim/SimDialogFragment;->initArguments(II)Landroid/os/Bundle;
 
@@ -253,7 +253,7 @@
     goto :goto_0
 
     :cond_4
-    const p0, 0x7f12145a
+    const p0, 0x7f121472
 
     invoke-static {v0, p0, v4}, Lcom/android/settings/sim/SimListDialogFragment;->newInstance(IIZ)Lcom/android/settings/sim/SimListDialogFragment;
 
@@ -262,7 +262,7 @@
     goto :goto_0
 
     :cond_5
-    const p0, 0x7f12145b
+    const p0, 0x7f121473
 
     invoke-static {v0, p0, v3}, Lcom/android/settings/sim/SimListDialogFragment;->newInstance(IIZ)Lcom/android/settings/sim/SimListDialogFragment;
 

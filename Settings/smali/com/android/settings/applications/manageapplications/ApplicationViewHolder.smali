@@ -73,7 +73,7 @@
 
     iput-object v0, p0, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->mDisabled:Landroid/widget/TextView;
 
-    const v0, 0x7f0a06ec
+    const v0, 0x7f0a06e9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -109,7 +109,7 @@
 
     iput-object v0, p0, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->mCheckBox:Landroid/widget/CheckBox;
 
-    const v0, 0x7f0a077a
+    const v0, 0x7f0a0777
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -167,7 +167,7 @@
 
     move-result-object p1
 
-    const v3, 0x7f0d02a5
+    const v3, 0x7f0d02a6
 
     const/4 v4, 0x1
 
@@ -181,7 +181,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0d029a
+    const p1, 0x7f0d029b
 
     invoke-virtual {p0, p1, v0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -260,7 +260,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f0d029f
+    const v2, 0x7f0d02a0
 
     const/4 v3, 0x1
 
@@ -466,7 +466,7 @@
 
     iget-object p0, p0, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->mDisabled:Landroid/widget/TextView;
 
-    const p1, 0x7f120b65
+    const p1, 0x7f120b7d
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
@@ -502,7 +502,7 @@
 
     iget-object p0, p0, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->mDisabled:Landroid/widget/TextView;
 
-    const p1, 0x7f120617
+    const p1, 0x7f12061e
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
@@ -575,7 +575,7 @@
 
     iget-object p1, p0, Lcom/android/settings/applications/manageapplications/ApplicationViewHolder;->mContext:Landroid/content/Context;
 
-    const p2, 0x7f120468
+    const p2, 0x7f12046f
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

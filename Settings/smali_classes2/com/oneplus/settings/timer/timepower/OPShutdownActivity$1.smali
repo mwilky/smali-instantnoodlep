@@ -102,7 +102,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/timer/timepower/OPShutdownActivity$1;->this$0:Lcom/oneplus/settings/timer/timepower/OPShutdownActivity;
 
-    const v3, 0x7f121013
+    const v3, 0x7f12102b
 
     new-array v4, v2, [Ljava/lang/Object;
 
@@ -127,7 +127,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/settings/timer/timepower/OPShutdownActivity$1;->this$0:Lcom/oneplus/settings/timer/timepower/OPShutdownActivity;
 
-    const v3, 0x7f121014
+    const v3, 0x7f12102c
 
     new-array v4, v2, [Ljava/lang/Object;
 

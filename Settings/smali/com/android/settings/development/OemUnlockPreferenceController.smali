@@ -571,7 +571,7 @@
 
     iget-object p0, p0, Lcom/android/settings/development/OemUnlockPreferenceController;->mChooseLockSettingsHelper:Lcom/android/settings/password/ChooseLockSettingsHelper;
 
-    const v0, 0x7f120bdd
+    const v0, 0x7f120bf5
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -643,7 +643,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f120bde
+    const p1, 0x7f120bf6
 
     goto :goto_2
 
@@ -686,7 +686,7 @@
     :goto_1
     if-eqz v0, :cond_3
 
-    const p1, 0x7f120be1
+    const p1, 0x7f120bf9
 
     goto :goto_2
 
@@ -697,12 +697,12 @@
 
     if-nez p1, :cond_4
 
-    const p1, 0x7f120be0
+    const p1, 0x7f120bf8
 
     goto :goto_2
 
     :cond_4
-    const p1, 0x7f120be2
+    const p1, 0x7f120bfa
 
     :goto_2
     iget-object v0, p0, Lcom/android/settings/development/OemUnlockPreferenceController;->mPreference:Lcom/android/settingslib/RestrictedSwitchPreference;

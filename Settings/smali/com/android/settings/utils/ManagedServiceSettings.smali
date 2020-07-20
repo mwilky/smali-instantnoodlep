@@ -244,7 +244,7 @@
 
     if-nez v2, :cond_1
 
-    const v2, 0x7f121a4b
+    const v2, 0x7f121a63
 
     invoke-virtual {v7, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -473,7 +473,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f120627
+    const v0, 0x7f12062e
 
     invoke-virtual {p0, v0}, Lcom/android/settings/widget/EmptyTextSettings;->setEmptyText(I)V
 

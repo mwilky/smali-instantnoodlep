@@ -133,7 +133,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207f6
+    const p0, 0x7f12080e
 
     return p0
 .end method
@@ -345,7 +345,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120260
+    const v1, 0x7f120267
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -744,7 +744,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mLastFullChargePref:Landroidx/preference/Preference;
 
-    const v2, 0x7f120261
+    const v2, 0x7f120268
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -783,7 +783,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mLastFullChargePref:Landroidx/preference/Preference;
 
-    const v4, 0x7f12026a
+    const v4, 0x7f120271
 
     invoke-virtual {v0, v4}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -838,7 +838,7 @@
 
     iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryLayoutPref:Lcom/android/settingslib/widget/LayoutPreference;
 
-    const v3, 0x7f0a06e3
+    const v3, 0x7f0a06e0
 
     invoke-virtual {v2, v3}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 

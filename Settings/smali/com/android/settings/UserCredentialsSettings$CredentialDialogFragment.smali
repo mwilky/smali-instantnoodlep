@@ -107,7 +107,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0d0367
+    const v2, 0x7f0d0368
 
     invoke-virtual {v0, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -121,7 +121,7 @@
 
     check-cast v2, Landroid/view/ViewGroup;
 
-    const v3, 0x7f0d0366
+    const v3, 0x7f0d0367
 
     const/4 v4, 0x1
 
@@ -141,11 +141,11 @@
 
     invoke-virtual {v2, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f1217b6
+    const v0, 0x7f1217ce
 
     invoke-virtual {v2, v0}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v0, 0x7f120660
+    const v0, 0x7f120667
 
     invoke-virtual {v2, v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 
@@ -169,7 +169,7 @@
 
     invoke-direct {v1, p0, v0, p1}, Lcom/android/settings/UserCredentialsSettings$CredentialDialogFragment$1;-><init>(Lcom/android/settings/UserCredentialsSettings$CredentialDialogFragment;ILcom/android/settings/UserCredentialsSettings$Credential;)V
 
-    const p0, 0x7f1216b7
+    const p0, 0x7f1216cf
 
     invoke-virtual {v2, p0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

@@ -70,7 +70,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f121706
+    const v2, 0x7f12171e
 
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -108,7 +108,7 @@
 
     sget v5, Lcom/oneplus/commonctrl/R$styleable;->OPToast_android_layout:I
 
-    const v6, 0x7f0d0269
+    const v6, 0x7f0d026a
 
     invoke-virtual {v3, v5, v6}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -488,7 +488,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1216fd
+    const v1, 0x7f121715
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -510,7 +510,7 @@
 
     invoke-direct {v0, v1, v3}, Landroidx/core/app/NotificationCompat$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    const v1, 0x7f08032d
+    const v1, 0x7f080336
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$Builder;->setSmallIcon(I)Landroidx/core/app/NotificationCompat$Builder;
 

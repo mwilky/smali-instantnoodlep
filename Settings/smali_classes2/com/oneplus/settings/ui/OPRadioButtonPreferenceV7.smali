@@ -29,11 +29,11 @@
 .method private initViews()V
     .locals 2
 
-    const v0, 0x7f0d0214
+    const v0, 0x7f0d0215
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
-    const v0, 0x7f0d02a6
+    const v0, 0x7f0d02a7
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setWidgetLayoutResource(I)V
 

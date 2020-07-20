@@ -198,7 +198,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f121451
+    const v4, 0x7f121469
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -206,7 +206,7 @@
 
     iput-object v5, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mSelectHours:Ljava/lang/String;
 
-    const v5, 0x7f121456
+    const v5, 0x7f12146e
 
     invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -216,7 +216,7 @@
 
     const/16 v3, 0xc
 
-    const v6, 0x7f0d0265
+    const v6, 0x7f0d0266
 
     invoke-virtual {v1, v3, v6}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -230,7 +230,7 @@
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setSaveFromParentEnabled(Z)V
 
-    const v6, 0x7f0a073d
+    const v6, 0x7f0a073a
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     invoke-virtual {v6, v7}, Landroid/widget/LinearLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const v6, 0x7f0a0300
+    const v6, 0x7f0a0305
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -286,7 +286,7 @@
 
     invoke-virtual {v6, v7}, Landroid/widget/TextView;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 
-    const v4, 0x7f0a064a
+    const v4, 0x7f0a0647
 
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -296,11 +296,11 @@
 
     iput-object v6, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mSeparatorView:Landroid/widget/TextView;
 
-    const v6, 0x7f0a064b
+    const v6, 0x7f0a0648
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const v6, 0x7f0a040b
+    const v6, 0x7f0a0410
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -422,7 +422,7 @@
 
     iget-object v5, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mAmPmLayout:Landroid/view/View;
 
-    const v6, 0x7f0a0575
+    const v6, 0x7f0a0572
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -485,7 +485,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a0339
+    const v6, 0x7f0a033e
 
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -536,7 +536,7 @@
 
     iput p2, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mRadialTimeViewAlpha:F
 
-    const p2, 0x7f0a05bc
+    const p2, 0x7f0a05b9
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -556,7 +556,7 @@
 
     invoke-virtual {p2, p3}, Lcom/oneplus/lib/widget/RadialTimePickerView;->setOnValueSelectedListener(Lcom/oneplus/lib/widget/RadialTimePickerView$OnValueSelectedListener;)V
 
-    const p2, 0x7f0a033c
+    const p2, 0x7f0a0341
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -572,7 +572,7 @@
 
     invoke-virtual {p2, p3}, Lcom/oneplus/lib/widget/TextInputTimePickerView;->setListener(Lcom/oneplus/lib/widget/TextInputTimePickerView$OnValueTypedListener;)V
 
-    const p2, 0x7f0a074f
+    const p2, 0x7f0a074c
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -653,7 +653,7 @@
 
     iget-object v2, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mRadialTimePickerHeader:Landroid/widget/LinearLayout;
 
-    const v3, 0x7f0a0300
+    const v3, 0x7f0a0305
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -681,7 +681,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a033a
+    const v5, 0x7f0a033f
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -879,7 +879,7 @@
 
     iget-object v0, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mRadialTimePickerModeButton:Landroid/widget/ImageButton;
 
-    const v1, 0x7f080466
+    const v1, 0x7f08046f
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
 
@@ -998,7 +998,7 @@
 
     iget-object v0, p0, Lcom/oneplus/lib/widget/TimePickerClockDelegate;->mRadialTimePickerModeButton:Landroid/widget/ImageButton;
 
-    const v2, 0x7f080471
+    const v2, 0x7f08047a
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 

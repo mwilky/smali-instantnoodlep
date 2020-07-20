@@ -147,7 +147,7 @@
 
     if-nez p1, :cond_1
 
-    const p1, 0x7f0a069f
+    const p1, 0x7f0a069c
 
     invoke-virtual {p0, p1}, Landroid/app/AlertDialog;->findViewById(I)Landroid/view/View;
 
@@ -250,7 +250,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d037f
+    const v1, 0x7f0d0380
 
     const/4 v2, 0x0
 
@@ -333,7 +333,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/settings/wifi/-$$Lambda$WifiDialog$A0XFUDDETwsfRxrVaOXME4wrgzI;-><init>(Lcom/android/settings/wifi/WifiDialog;)V
 
-    const v1, 0x7f0a06a0
+    const v1, 0x7f0a069d
 
     invoke-virtual {p0, v1}, Landroid/app/AlertDialog;->findViewById(I)Landroid/view/View;
 
@@ -343,7 +343,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v2, 0x7f0a0546
+    const v2, 0x7f0a0543
 
     invoke-virtual {p0, v2}, Landroid/app/AlertDialog;->findViewById(I)Landroid/view/View;
 
@@ -368,7 +368,7 @@
 
     if-eqz p0, :cond_1
 
-    const p0, 0x7f080366
+    const p0, 0x7f08036f
 
     invoke-virtual {v1, p0}, Landroid/widget/ImageButton;->setImageResource(I)V
 

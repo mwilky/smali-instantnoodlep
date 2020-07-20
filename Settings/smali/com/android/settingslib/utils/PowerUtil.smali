@@ -115,7 +115,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f121213
+    const p1, 0x7f12122b
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -124,7 +124,7 @@
     goto :goto_0
 
     :cond_0
-    const p1, 0x7f121214
+    const p1, 0x7f12122c
 
     new-array p2, v1, [Ljava/lang/Object;
 
@@ -158,7 +158,7 @@
 
     if-eqz p2, :cond_2
 
-    const p2, 0x7f121216
+    const p2, 0x7f12122e
 
     new-array p3, v1, [Ljava/lang/Object;
 
@@ -171,7 +171,7 @@
     goto :goto_1
 
     :cond_2
-    const p2, 0x7f121215
+    const p2, 0x7f12122d
 
     new-array p4, v5, [Ljava/lang/Object;
 
@@ -231,7 +231,7 @@
 
     if-eqz p4, :cond_4
 
-    const p3, 0x7f121218
+    const p3, 0x7f121230
 
     new-array p4, v1, [Ljava/lang/Object;
 
@@ -252,7 +252,7 @@
     goto :goto_2
 
     :cond_4
-    const p4, 0x7f121217
+    const p4, 0x7f12122f
 
     new-array v0, v5, [Ljava/lang/Object;
 
@@ -302,12 +302,12 @@
 
     if-eqz p4, :cond_6
 
-    const p2, 0x7f121211
+    const p2, 0x7f121229
 
     goto :goto_3
 
     :cond_6
-    const p2, 0x7f121210
+    const p2, 0x7f121228
 
     :goto_3
     new-array p3, v1, [Ljava/lang/Object;
@@ -323,12 +323,12 @@
     :cond_7
     if-eqz p4, :cond_8
 
-    const p2, 0x7f121207
+    const p2, 0x7f12121f
 
     goto :goto_4
 
     :cond_8
-    const p2, 0x7f121206
+    const p2, 0x7f12121e
 
     :goto_4
     new-array p4, v5, [Ljava/lang/Object;
@@ -357,12 +357,12 @@
 
     if-eqz p4, :cond_a
 
-    const p2, 0x7f121203
+    const p2, 0x7f12121b
 
     goto :goto_6
 
     :cond_a
-    const p2, 0x7f121202
+    const p2, 0x7f12121a
 
     :goto_6
     new-array p3, v1, [Ljava/lang/Object;
@@ -378,12 +378,12 @@
     :cond_b
     if-eqz p4, :cond_c
 
-    const p2, 0x7f121201
+    const p2, 0x7f121219
 
     goto :goto_7
 
     :cond_c
-    const p2, 0x7f121200
+    const p2, 0x7f121218
 
     :goto_7
     new-array p4, v5, [Ljava/lang/Object;
@@ -429,7 +429,7 @@
 
     if-gtz v0, :cond_1
 
-    const v0, 0x7f12121c
+    const v0, 0x7f121234
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -446,7 +446,7 @@
     return-object p0
 
     :cond_1
-    const v0, 0x7f121218
+    const v0, 0x7f121230
 
     sget-wide v3, Lcom/android/settingslib/utils/PowerUtil;->ONE_HOUR_MILLIS:J
 

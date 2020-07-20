@@ -250,7 +250,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0381
+    const v1, 0x7f0d0382
 
     const/4 v2, 0x0
 
@@ -258,7 +258,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a044b
+    const v1, 0x7f0a0450
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -292,17 +292,17 @@
 
     invoke-virtual {p1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setCancelable(Z)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p0, 0x7f121905
+    const p0, 0x7f12191d
 
     invoke-virtual {p1, p0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     invoke-virtual {p1, v0}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setView(Landroid/view/View;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p0, 0x7f121902
+    const p0, 0x7f12191a
 
     invoke-virtual {p1, p0, v2}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const p0, 0x7f121903
+    const p0, 0x7f12191b
 
     invoke-virtual {p1, p0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -533,7 +533,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mTipsPreference:Landroidx/preference/Preference;
 
-    const v3, 0x7f121128
+    const v3, 0x7f121140
 
     invoke-virtual {v0, v3}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -604,7 +604,7 @@
 
     iget-object v2, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mCertCategory:Landroidx/preference/PreferenceGroup;
 
-    const v4, 0x7f1218fa
+    const v4, 0x7f121912
 
     invoke-virtual {v2, v4}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -646,7 +646,7 @@
 
     invoke-direct {v0, v1, v3}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v1, 0x7f121908
+    const v1, 0x7f121920
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -692,7 +692,7 @@
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mCertCategory:Landroidx/preference/PreferenceGroup;
 
-    const v1, 0x7f0d035e
+    const v1, 0x7f0d035f
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -705,7 +705,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings$3;-><init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/content/Context;)V
 
-    const v1, 0x7f1218ff
+    const v1, 0x7f121917
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -725,7 +725,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings$4;-><init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/content/Context;)V
 
-    const v1, 0x7f1218f8
+    const v1, 0x7f121910
 
     invoke-virtual {v0, v1}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -797,7 +797,7 @@
 
     invoke-virtual {v0, v6}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v6, 0x7f12190e
+    const v6, 0x7f121926
 
     invoke-virtual {v0, v6}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -863,7 +863,7 @@
 
     invoke-virtual {v0, v11}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v11, 0x7f1218fe
+    const v11, 0x7f121916
 
     invoke-virtual {v0, v11}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -921,7 +921,7 @@
 
     invoke-virtual {v0, v3}, Landroidx/preference/Preference;->setKey(Ljava/lang/String;)V
 
-    const v3, 0x7f121901
+    const v3, 0x7f121919
 
     invoke-virtual {v0, v3}, Landroidx/preference/Preference;->setTitle(I)V
 
@@ -1481,7 +1481,7 @@
 
     iget-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mTipsPreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f121127
+    const v0, 0x7f12113f
 
     invoke-virtual {p1, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1524,7 +1524,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120812
+    const p0, 0x7f12082a
 
     return p0
 .end method
@@ -1695,7 +1695,7 @@
 
     iget-object v1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mSwitchBar:Lcom/android/settings/widget/SwitchBar;
 
-    const v2, 0x7f1218fd
+    const v2, 0x7f121915
 
     invoke-virtual {v1, v2, v2}, Lcom/android/settings/widget/SwitchBar;->setSwitchBarText(II)V
 

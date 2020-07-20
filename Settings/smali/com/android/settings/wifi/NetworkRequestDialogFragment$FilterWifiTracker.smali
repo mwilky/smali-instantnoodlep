@@ -188,7 +188,7 @@
     goto :goto_1
 
     :cond_4
-    const v4, 0x7f0a0454
+    const v4, 0x7f0a0459
 
     invoke-virtual {v0, v4}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 

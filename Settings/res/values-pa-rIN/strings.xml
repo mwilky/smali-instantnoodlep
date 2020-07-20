@@ -37,12 +37,19 @@
     <string name="alertslider_settings_soc_tri_state_summary">ਸ਼ਾਂਤ, ਕੰਪਨ, ਰਿੰਗ</string>
     <string name="android_am">"AM "</string>
     <string name="android_pm">"PM "</string>
-    <string name="aod_clock_analog">ਐਨਾਲਾਗ</string>
+    <string name="aod_clock_analog">ਐਨਾਲਾਗ 1</string>
+    <string name="aod_clock_analog_1">ਐਨਾਲਾਗ 2</string>
+    <string name="aod_clock_analog_2">ਐਨਾਲਾਗ 3</string>
+    <string name="aod_clock_bold">ਬੋਲਡ</string>
     <string name="aod_clock_default">ਪੂਰਵ-ਨਿਰਧਾਰਤ</string>
+    <string name="aod_clock_digital">ਡੀਜੀਟਲ 1</string>
+    <string name="aod_clock_digital_1">ਡੀਜੀਟਲ 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">ਨਿਊਨਤਮ</string>
+    <string name="aod_clock_minimalism">ਨਿਊਨਤਮਤਾ 1</string>
+    <string name="aod_clock_minimalism_1">ਨਿਊਨਤਮਤਾ 2</string>
     <string name="aod_clock_none">ਕੋਈ ਨਹੀਂ</string>
     <string name="aod_clock_select_style_text">ਘੜੀ ਦੀ ਸ਼ੈਲੀ ਚੁਣੋ</string>
+    <string name="aod_clock_text_clock">ਟੈਕਸਟ ਘੜੀ</string>
     <string name="aod_horizon_light_effect_1">ਨੀਲਾ</string>
     <string name="aod_horizon_light_effect_2">ਲਾਲ</string>
     <string name="aod_horizon_light_effect_3">ਬੈਂਗਣੀ</string>
@@ -147,6 +154,22 @@
     <string name="display_summary_on">ਅਨੁਸਾਰੀ ਚਮਕ ਚਾਲੂ ਹੈ</string>
     <string name="doze_summary">"ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਹੋਣ 'ਤੇ ਡਿਸਪਲੇ ਦਾ ਕਿਰਿਆਸ਼ੀਲ ਹੋਣਾ"</string>
     <string name="doze_title">ਐਂਬਿਐਂਟ ਡਿਸਪਲੇ</string>
+    <string name="earphone_function_control_click_left">ਖੱਬੇ ਈਅਰਬੱਡ ਉੱਤੇ ਡਬਲ-ਕਲਿੱਕ ਕਰੋ</string>
+    <string name="earphone_function_control_click_right">ਸੱਜੇ ਈਅਰਬੱਡ ਉੱਤੇ ਡਬਲ-ਕਲਿੱਕ ਕਰੋ</string>
+    <string name="earphone_function_control_last_song">ਪਿਛਲਾ ਟ੍ਰੈਕ</string>
+    <string name="earphone_function_control_next_song">ਅਗਲਾ ਟ੍ਰੈਕ</string>
+    <string name="earphone_function_control_play_pause">ਚਲਾਓ/ਰੋਕੋ</string>
+    <string name="earphone_function_introduction">ਫੰਕਸ਼ਨ ਦਾ ਵੇਰਵਾ</string>
+    <string name="earphone_function_listening_breeno">ਵਾਇਸ ਅਸਿਸਟੈਂਟ</string>
+    <string name="earphone_support_battery_dot">";
+"</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds ਕੇਸ: %1$s</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: &lt;xliff:g id=ਬੈਟਰੀ_ਪੱਧਰ_ਜਿਵੇਂ_ਪੑਤੀਸ਼ਤ_0>%1$s&lt;/xliff:</string>
+    <string name="earphone_support_current_version">ਮੌਜੂਦਾ ਸੰਸਕਰਨ:</string>
+    <string name="earphone_support_update_ota">ਆਟੋ-ਅਪਡੇਟ ਫਰਮਵੇਅਰ</string>
+    <string name="earphone_support_wifi_data">ਮੋਬਾਇਡ ਡਾਟਾ ਵਰਤਦੇ ਹੋਏ ਆਟੋਮੈਟਿਕ ਅਪਡੇਟ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+    <string name="earphone_usage_guide_complete">ਪੂਰਾ ਹੋਇਆ</string>
     <string name="enable_otg_storage_summary">ਬਾਹਰੀ ਸਟੋਰੇਜ ਨੂੰ OTG ਰਾਹੀਂ ਪੜ੍ਹਣਾ ਸਮਰੱਥ ਕਰੋ</string>
     <string name="enable_otg_storage_title">OTG ਸਟੋਰੇਜ</string>
     <string name="enabled_fingerprint_unlock">ਫਿੰਗਰਪ੍ਰਿਟ ਖੋਲਣਾ ਚਾਲੂ ਕਰੋ</string>
@@ -155,6 +178,8 @@
     <string name="exception_hints">ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਅਨੁਪਾਤ ਨੂੰ ਬਦਲਣ ਨਾਲ ਡਿਸਪਲੇ ਤਰੁਟੀਆਂ ਹੋ ਸਕਦੀਆਂ ਹਨ।</string>
     <string name="extended_title">ਨੈੱਟਵਰਕ ਵਿਸਤਾਰਕ</string>
     <string name="feature_not_support_split_screen">ਇਹ ਫੰਕਸ਼ਨ ਸਪਲਿੱਟ ਸਕ੍ਰੀਨ ਵਿੱਚ ਸਮਰਥਿਤ ਨਹੀਂ ਹੈ।</string>
+    <string name="find_my_bluetooth_earphone">ਮੇਰੇ ਬੱਡਸ ਲੱਭੋ</string>
+    <string name="find_my_bluetooth_earphone_summary">"ਜਦੋਂ ਰੇਂਜ ਵਿੱਚ ਹੋਵੇ ਈਅਰਬੱਡ ਲੱਭਣ ਲਈ ਆਵਾਜ ਚਲਾਓ, ਜਾਂ ਰੇਂਜ ਤੋਂ ਬਾਹਰ ਹੋਣ 'ਤੇ ਆਖਰੀ ਲੋਕੇਸ਼ਨ ਦੇਖੋ"</string>
     <string name="fingerprint_add_fingerprint">ਫਿੰਗਰਪ੍ਰਿੰਟ ਜੋੜੋ</string>
     <string name="fingerprint_add_fingerprint_summary">"ਸੈਂਸਰ ਉੱਪਰ ਆਪਣੀ ਉਂਗਲੀ ਰੱਖੋ ਅਤੇ ਵਾਈਬ੍ਰੇਸ਼ਨ ਮਹਿਸੂਸ ਹੋਣ 'ਤੇ ਚੁੱਕ ਲਵੋ।"</string>
     <string name="fingerprint_allset">ਸਭਕੁਝ ਤਿਆਰ ਹੈ!</string>
@@ -519,7 +544,7 @@
     <string name="oneplus_file_not_exist">ਫ਼ਾਈਲ ਮੌਜੂਦ ਨਹੀਂ ਹੈ!</string>
     <string name="oneplus_finger_input_error_tips">ਫਿੰਗਰਪ੍ਰਿੰਟ ਪੰਜੀਕਰਨ ਤਰੁੱਟੀ, ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
     <string name="oneplus_finger_input_fail_tips">ਇਨਪੁੱਟ ਅਸਫਲ ਹੋਈ, ਕਿਰਪਾ ਕਰਕੇ ਸਥਿਤੀ ਵਿਵਸਥਿਤ ਕਰੋ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ</string>
-    <string name="oneplus_finger_print_anim_save">ਸਹੇਜੋ</string>
+    <string name="oneplus_finger_print_anim_save">ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
     <string name="oneplus_fingerprint">ਫਿੰਗਰਪ੍ਰਿੰਟ</string>
     <string name="oneplus_fingerprint_acquired_imager_dirty">ਫਿੰਗਰਪ੍ਰਿੰਟ ਪਛਾਣ ਖੇਤਰ ਗੰਦਾ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਸਾਫ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="oneplus_fingerprint_acquired_partial">ਅਧੂਰਾ ਫਿੰਗਰਪ੍ਰਿੰਟ ਲੱਭਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਫਿੰਗਰਪ੍ਰਿੰਟ ਪਛਾਣ ਖੇਤਰ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਢਕੋ।</string>
@@ -801,7 +826,7 @@
     <string name="oneplus_notch_display_area">ਨੌਚ</string>
     <string name="oneplus_notch_display_choose_title">ਚੁਣੋ ਕਿ ਨੋਚ ਖੇਤਰ ਕਿਵੇਂ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ</string>
     <string name="oneplus_notch_display_title">ਨੋਚ ਡਿਸਪਲੇ</string>
-    <string name="oneplus_notice_vibrate_intensity">ਸੂਚਨਾਵਾਂ</string>
+    <string name="oneplus_notice_vibrate_intensity">ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ</string>
     <string name="oneplus_notification_advance_settings">ਸੂਚਨਾ ਐਡਵਾਂਸ ਸੈਟਿੰਗਾਂ</string>
     <string name="oneplus_notification_alert_title">ਮਹੱਤਵਪੂਰਨ</string>
     <string name="oneplus_notification_channel_summary_low">ਬਿਨਾਂ ਕਿਸੇ ਧੁਨੀ ਜਾਂ ਕੰਪਨ ਦੇ ਘੱਟ ਮਹੱਤਵਪੂਰਨ ਸੂਚਨਾਵਾਂ।</string>
@@ -819,7 +844,7 @@
     <string name="oneplus_notification_sound_default">ਪੂਰਵ-ਨਿਰਧਾਰਤ ਸੂਚਨਾ</string>
     <string name="oneplus_notification_ways">ਡਿਸਪਲੇ ਮੋਡ</string>
     <string name="oneplus_notification_ways_title">ਸੂਚਨਾਵਾਂ ਕਿਵੇਂ ਦਿਖਾਈਏ</string>
-    <string name="oneplus_notifications">ਸੂਚਨਾਵਾਂ</string>
+    <string name="oneplus_notifications">ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ</string>
     <string name="oneplus_notifications_3rd_calls">3ਜੀ ਧਿਰ ਦੀਆਂ ਕਾਲਾਂ ਲਈ ਸੂਚਨਾਵਾਂ</string>
     <string name="oneplus_notifications_3rd_calls_summary">ਸੋਸ਼ਲ ਐਪਾਂ ਤੋਂ ਵੌਇਸ ਜਾਂ ਵੀਡੀਓ ਕਾਲਾਂ ਸੂਚਨਾਵਾਂ ਵਜੋਂ ਦਿਖਾਈਆਂ ਜਾਣਗੀਆਂ</string>
     <string name="oneplus_notifications_and_vibration">ਸੂਚਨਾ ਧੁਨੀ ਅਤੇ ਕੰਪਨ</string>
@@ -1638,8 +1663,8 @@
     <string name="wifi_wapi_cert_uninstall_button">ਅਣਸਥਾਪਤ ਕਰੋ</string>
     <string name="wifi_wapi_certification_dont_exist">ਤੁਹਾਡੇ ਵੱਲੋਂ ਟਾਈਪ ਕੀਤਾ ਗਿਆ ਨੈੱਟਵਰਕ ਪਾਸਵਰਡ ਗਲਤ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
     <string name="wifi_wapi_user_cert">ਵਰਤੋਂਕਾਰ ਪ੍ਰਮਾਣਪੱਤਰ</string>
-    <string name="work_life_balance">ਕਾਰਜ-ਜੀਵਨ ਦਾ ਸੰਤੁਲਨ</string>
-    <string name="work_life_disabled_toast">ਕਾਰਜ ਜੀਵਨ ਸੰਤੁਲਨ ਵਿਸ਼ੇਸ਼ਤਾ ਅਸਮਰੱਥ ਕੀਤਾ ਗਿਆ ਹੈ।</string>
+    <string name="work_life_balance">Work-Life Balance</string>
+    <string name="work_life_disabled_toast">Work Life Balance ਫੀਚਰ ਬੰਦ ਹੋ ਗਿਆ ਹੈ।</string>
     <string name="zen_mode_alarm_info_new">ਅਲਾਰਮ ਹਮੇਸ਼ਾ ਵੱਜੇਗਾ</string>
     <string name="zen_mode_alarms_summary">ਅਲਾਰਮਾਂ ਲਈ ਸਾਊਂਡ ਸਮਰੱਥ ਕਰੋ</string>
     <string name="zen_mode_media_sound">ਮੀਡੀਆ</string>

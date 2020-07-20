@@ -59,7 +59,7 @@
 .method private init(Landroid/content/Context;)V
     .locals 2
 
-    const v0, 0x7f0d0299
+    const v0, 0x7f0d029a
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -157,7 +157,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     :goto_0
-    const v0, 0x7f0a077a
+    const v0, 0x7f0a0777
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

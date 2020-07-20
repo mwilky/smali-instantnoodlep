@@ -128,7 +128,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a079f
+    const v1, 0x7f0a079c
 
     invoke-virtual {p6, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -142,7 +142,7 @@
 
     invoke-virtual {v4, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f0a07a0
+    const v1, 0x7f0a079d
 
     invoke-virtual {p6, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -187,7 +187,7 @@
 
     invoke-direct {v0, p4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const p4, 0x7f1212a0
+    const p4, 0x7f1212b8
 
     invoke-virtual {v0, p4}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

@@ -331,12 +331,19 @@ Houd de apparaten bij elkaar (meestal met de achterkanten tegen elkaar aan) en t
     <string name="angle_enabled_app_set">App met ANGLE-functionaliteit: %1$s</string>
     <string name="animator_duration_scale_title">Duur van animatieschaal</string>
     <string name="another_migration_already_in_progress">Er wordt al een andere migratie uitgevoerd.</string>
-    <string name="aod_clock_analog">Analoog</string>
+    <string name="aod_clock_analog">Analoog 1</string>
+    <string name="aod_clock_analog_1">Analoog 2</string>
+    <string name="aod_clock_analog_2">Analoog 3</string>
+    <string name="aod_clock_bold">Vetgedrukt</string>
     <string name="aod_clock_default">Standaard</string>
+    <string name="aod_clock_digital">Digitaal 1</string>
+    <string name="aod_clock_digital_1">Digitaal 2</string>
     <string name="aod_clock_mcl">McLaren</string>
-    <string name="aod_clock_minimalism">Minimalisme</string>
+    <string name="aod_clock_minimalism">Minimalisme 1</string>
+    <string name="aod_clock_minimalism_1">Minimalisme 2</string>
     <string name="aod_clock_none">Geen</string>
     <string name="aod_clock_select_style_text">Selecteer de klokstijl</string>
+    <string name="aod_clock_text_clock">Tekstklok</string>
     <string name="aod_horizon_light_effect_1">Blauw</string>
     <string name="aod_horizon_light_effect_2">Rood</string>
     <string name="aod_horizon_light_effect_3">Paars</string>
@@ -1651,6 +1658,21 @@ Als dit blijft gebeuren, moet je de app mogelijk verwijderen om de prestaties va
     <string name="dual_cdma_sim_warning_notification_channel_title">Sim-combinatie</string>
     <string name="dual_cdma_sim_warning_notification_summary">Als je %1$s gebruikt, kan de functionaliteit worden beperkt. Tik voor meer informatie.</string>
     <string name="eab_provisioned_switch_string">EAB/aanwezigheid geregistreerd</string>
+    <string name="earphone_function_control_click_left">Dubbelklik op het linkeroortje</string>
+    <string name="earphone_function_control_click_right">Dubbelklik op het rechteroortje</string>
+    <string name="earphone_function_control_last_song">Vorig nummer</string>
+    <string name="earphone_function_control_next_song">Volgend nummer</string>
+    <string name="earphone_function_control_play_pause">Afspelen/Pauzeren</string>
+    <string name="earphone_function_introduction">Functiebeschrijving</string>
+    <string name="earphone_function_listening_breeno">Spraakassistent</string>
+    <string name="earphone_support_battery_dot">;</string>
+    <string name="earphone_support_battery_info_box">OnePlus Buds-doosje: %1$s</string>
+    <string name="earphone_support_battery_info_left">L: %1$s</string>
+    <string name="earphone_support_battery_info_right">R: %1$s</string>
+    <string name="earphone_support_current_version">Huidige versie:</string>
+    <string name="earphone_support_update_ota">Firmware automatisch updaten</string>
+    <string name="earphone_support_wifi_data">Automatische updates met mobiele data toestaan</string>
+    <string name="earphone_usage_guide_complete">Gereed</string>
     <string name="edge_to_edge_navigation_summary">Als je naar het startscherm wilt gaan, veeg je omhoog vanaf de onderkant van het scherm. Om tussen apps te schakelen veeg je omhoog vanaf de onderkant, houd vast en laat los. Om terug te gaan veeg je vanaf de linker- of rechterrand.</string>
     <string name="edge_to_edge_navigation_title">Navigatie met gebaren</string>
     <string name="emergency_address_summary">Dit adres wordt gebruikt als je locatie wanneer je het noodnummer belt via wifi</string>
@@ -1836,6 +1858,8 @@ Neem contact op met de beheerder van je organisatie voor meer informatie."</stri
     <string name="filter_personal_apps">Persoonlijk</string>
     <string name="filter_work_apps">Werk</string>
     <string name="filter_write_settings_apps">Kan systeeminstellingen aanpassen</string>
+    <string name="find_my_bluetooth_earphone">Zoek mijn Buds</string>
+    <string name="find_my_bluetooth_earphone_summary">Geluid afspelen om oortjes te vinden als ze binnen bereik zijn of laatste locatie weergeven als ze buiten bereik zijn</string>
     <string name="fingerprint_add_fingerprint">Vingerafdruk toevoegen</string>
     <string name="fingerprint_add_fingerprint_summary">Plaats uw vinger op de toets en hef op wanneer u een vibratie voelt.</string>
     <string name="fingerprint_add_max">Je kunt maximaal %d vingerafdrukken toevoegen</string>
@@ -3476,7 +3500,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_notch_display_area">Notch</string>
     <string name="oneplus_notch_display_choose_title">Selecteer hoe het notchgebied wordt weergegeven</string>
     <string name="oneplus_notch_display_title">Weergave notch</string>
-    <string name="oneplus_notice_vibrate_intensity">Notificaties</string>
+    <string name="oneplus_notice_vibrate_intensity">Meldingen</string>
     <string name="oneplus_notification_advance_settings">Melding geavanceerde instellingen</string>
     <string name="oneplus_notification_alert_title">Belangrijk</string>
     <string name="oneplus_notification_channel_summary_low">Minder belangrijke zonder geluid of trillingen</string>
@@ -3494,7 +3518,7 @@ Opmerking: uw vingerafdruk kan minder veilig zijn dan een sterk patroon of een p
     <string name="oneplus_notification_sound_default">Standaard melding</string>
     <string name="oneplus_notification_ways">Weergavemodus</string>
     <string name="oneplus_notification_ways_title">Meldingen weergeven</string>
-    <string name="oneplus_notifications">Notificaties</string>
+    <string name="oneplus_notifications">Meldingen</string>
     <string name="oneplus_notifications_3rd_calls">Meldingen voor oproepen van derden</string>
     <string name="oneplus_notifications_3rd_calls_summary">De spraak- of video-oproepen van socialemedia-apps worden getoond als meldingen</string>
     <string name="oneplus_notifications_and_vibration">Geluid en trilling bij melding</string>
@@ -3986,9 +4010,8 @@ De instellingen van uw router worden niet gewijzigd als u het netwerk als verbor
     <string name="op_fetch_data_in_process">Laden</string>
     <string name="op_fingerprint_enroll_note">Informatie over ontgrendeling met vingerafdruk</string>
     <string name="op_fingerprint_enroll_note_dialog_msg">Zorg ervoor dat uw vingertoppen en het identificatiegebied op uw telefoon schoon zijn tijdens het instellen of ontgrendelen. Schermbeschermers van derden kunnen het scannen van vingerafdrukken bemoeilijken.</string>
-    <string name="op_fingerprint_enroll_note_msg">"Zorg er bij het instellen of gebruiken van vingerafdrukontgrendeling voor dat uw vingertoppen en het telefoonscherm schoon zijn.
-Schermbeschermers van derden kunnen het ontgrendelen met een vingerafdruk onmogelijk maken.
-Terwijl de telefoon uw vingerafdrukken identificeert en koppelt, neemt de helderheid van het telefoonscherm toe en verandert het kleurprofiel tijdelijk."</string>
+    <string name="op_fingerprint_enroll_note_msg">"Zorg er bij het instellen of gebruiken van vingerafdrukontgrendeling voor dat uw vingertoppen en het telefoonscherm schoon zijn./nSchermbeschermers van derden kunnen het ontgrendelen met een vingerafdruk onmogelijk maken.
+ Terwijl de telefoon uw vingerafdrukken identificeert en koppelt, neemt de helderheid van het telefoonscherm toe en verandert het kleurprofiel tijdelijk."</string>
     <string name="op_fragment">Kort</string>
     <string name="op_gamespace">Game Space</string>
     <string name="op_high_power_app_manager">Apps met groot energieverbruik beheren</string>
@@ -6217,8 +6240,8 @@ Dit toestaan voor alle apps die willen scannen?"</string>
     <string name="wizard_finish">Voltooien</string>
     <string name="wizard_next">Volgende</string>
     <string name="work_alarm_ringtone_title">Standaard alarmgeluid voor werk</string>
-    <string name="work_life_balance">Balans werk-privé</string>
-    <string name="work_life_disabled_toast">De functie Balans werk-privé is uitgeschakeld.</string>
+    <string name="work_life_balance">Werk-privébalans</string>
+    <string name="work_life_disabled_toast">De functie Werk-privébalans is uitgeschakeld.</string>
     <string name="work_mode_label">Werkprofiel</string>
     <string name="work_mode_off_summary">Apps en meldingen zijn uitgeschakeld</string>
     <string name="work_mode_on_summary">Beheerd door je organisatie</string>

@@ -43,12 +43,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f120981
+    const p0, 0x7f120999
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f120980
+    const p0, 0x7f120998
 
     :goto_0
     const-string v1, ":settings:show_fragment_title_resid"

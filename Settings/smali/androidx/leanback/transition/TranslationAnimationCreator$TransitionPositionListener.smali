@@ -70,7 +70,7 @@
 
     iget-object p1, p0, Landroidx/leanback/transition/TranslationAnimationCreator$TransitionPositionListener;->mViewInHierarchy:Landroid/view/View;
 
-    const p2, 0x7f0a075d
+    const p2, 0x7f0a075a
 
     invoke-virtual {p1, p2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -156,7 +156,7 @@
 
     iget-object p1, p0, Landroidx/leanback/transition/TranslationAnimationCreator$TransitionPositionListener;->mViewInHierarchy:Landroid/view/View;
 
-    const v0, 0x7f0a075d
+    const v0, 0x7f0a075a
 
     iget-object p0, p0, Landroidx/leanback/transition/TranslationAnimationCreator$TransitionPositionListener;->mTransitionPosition:[I
 

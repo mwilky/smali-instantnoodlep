@@ -302,7 +302,7 @@
 
     iget-object v0, p0, Lcom/android/settings/notification/NotificationPreferenceController;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f1203c0
+    const v3, 0x7f1203c7
 
     new-array v2, v2, [Ljava/lang/Object;
 

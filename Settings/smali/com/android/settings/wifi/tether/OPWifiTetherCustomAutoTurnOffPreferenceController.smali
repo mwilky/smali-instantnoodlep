@@ -48,12 +48,12 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f030159
+    const v0, 0x7f03015a
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f030152
+    const v0, 0x7f030153
 
     :goto_0
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
@@ -233,12 +233,12 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f03015a
+    const v1, 0x7f03015b
 
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f030153
+    const v1, 0x7f030154
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;

@@ -4261,7 +4261,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout;->counterView:Landroid/widget/TextView;
 
-    const v2, 0x7f0a0719
+    const v2, 0x7f0a0716
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setId(I)V
 
@@ -4549,7 +4549,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f080405
+    const v2, 0x7f08040e
 
     invoke-static {p1, v2}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -4561,7 +4561,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f120446
+    const v2, 0x7f12044d
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -4586,7 +4586,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f080162
+    const v2, 0x7f08016b
 
     invoke-static {p1, v2}, Landroidx/appcompat/content/res/AppCompatResources;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -4598,7 +4598,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f1211d4
+    const v2, 0x7f1211ec
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -5555,12 +5555,12 @@
 
     if-eqz v6, :cond_3
 
-    const v6, 0x7f120431
+    const v6, 0x7f120438
 
     goto :goto_1
 
     :cond_3
-    const v6, 0x7f120430
+    const v6, 0x7f120437
 
     :goto_1
     const/4 v7, 0x2
@@ -5608,7 +5608,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f120432
+    const v5, 0x7f120439
 
     new-array v6, v7, [Ljava/lang/Object;
 

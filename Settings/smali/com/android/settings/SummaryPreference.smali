@@ -29,7 +29,7 @@
 
     iput-boolean p1, p0, Lcom/android/settings/SummaryPreference;->mChartEnabled:Z
 
-    const p1, 0x7f0d02ec
+    const p1, 0x7f0d02ed
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -91,7 +91,7 @@
     :goto_0
     iget-boolean v0, p0, Lcom/android/settings/SummaryPreference;->mChartEnabled:Z
 
-    const v1, 0x7f0a0372
+    const v1, 0x7f0a0377
 
     if-eqz v0, :cond_2
 
@@ -172,7 +172,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1215b0
+    const v0, 0x7f1215c8
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -233,7 +233,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1215b0
+    const v0, 0x7f1215c8
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

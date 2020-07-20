@@ -195,7 +195,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f120813
+    const p0, 0x7f12082b
 
     return p0
 .end method
@@ -219,7 +219,7 @@
 
     check-cast p1, Lcom/android/settings/SettingsActivity;
 
-    const v0, 0x7f12139b
+    const v0, 0x7f1213b3
 
     invoke-virtual {p1, v0}, Landroid/app/Activity;->setTitle(I)V
 
@@ -396,7 +396,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0d02d3
+    const v0, 0x7f0d02d4
 
     const/4 v1, 0x0
 
@@ -528,12 +528,12 @@
     goto :goto_1
 
     :cond_2
-    const v2, 0x7f12139d
+    const v2, 0x7f1213b5
 
     goto :goto_2
 
     :cond_3
-    const v2, 0x7f12139f
+    const v2, 0x7f1213b7
 
     goto :goto_2
 
@@ -550,13 +550,13 @@
 
     if-eqz v2, :cond_5
 
-    const v2, 0x7f12139e
+    const v2, 0x7f1213b6
 
     goto :goto_2
 
     :cond_5
     :goto_1
-    const v2, 0x7f12139c
+    const v2, 0x7f1213b4
 
     :goto_2
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setTitle(I)V

@@ -254,7 +254,7 @@
 .method private updateBackground()V
     .locals 2
 
-    const v0, 0x7f0a06c8
+    const v0, 0x7f0a06c5
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -322,7 +322,7 @@
 
     if-nez p1, :cond_0
 
-    const p1, 0x7f0a06d3
+    const p1, 0x7f0a06d0
 
     :cond_0
     invoke-super {p0, p1}, Lcom/google/android/setupcompat/PartnerCustomizationLayout;->findContainer(I)Landroid/view/ViewGroup;
@@ -447,7 +447,7 @@
 .method public getScrollView()Landroid/widget/ScrollView;
     .locals 1
 
-    const v0, 0x7f0a06e0
+    const v0, 0x7f0a06dd
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -471,7 +471,7 @@
 .method public inflateStickyHeader(I)Landroid/view/View;
     .locals 1
 
-    const v0, 0x7f0a06db
+    const v0, 0x7f0a06d8
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -493,7 +493,7 @@
 
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f0a06d5
+    const v0, 0x7f0a06d2
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -538,7 +538,7 @@
 
     if-nez p2, :cond_0
 
-    const p2, 0x7f0d031b
+    const p2, 0x7f0d031c
 
     :cond_0
     const v0, 0x7f13041a

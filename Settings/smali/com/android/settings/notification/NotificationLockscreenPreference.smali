@@ -162,7 +162,7 @@
 
     invoke-virtual {p1}, Landroid/app/Dialog;->create()V
 
-    const v0, 0x7f0a03d4
+    const v0, 0x7f0a03d9
 
     invoke-virtual {p1, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -196,7 +196,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/widget/CheckBox;->setEnabled(Z)V
 
-    const v1, 0x7f0a05ef
+    const v1, 0x7f0a05ec
 
     invoke-virtual {p1, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 

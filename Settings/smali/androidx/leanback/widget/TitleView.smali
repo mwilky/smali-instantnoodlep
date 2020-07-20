@@ -72,7 +72,7 @@
 
     move-result-object p1
 
-    const p3, 0x7f0a0747
+    const p3, 0x7f0a0744
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -82,7 +82,7 @@
 
     iput-object p3, p0, Landroidx/leanback/widget/TitleView;->mBadgeView:Landroid/widget/ImageView;
 
-    const p3, 0x7f0a074c
+    const p3, 0x7f0a0749
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -92,7 +92,7 @@
 
     iput-object p3, p0, Landroidx/leanback/widget/TitleView;->mTextView:Landroid/widget/TextView;
 
-    const p3, 0x7f0a0749
+    const p3, 0x7f0a0746
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

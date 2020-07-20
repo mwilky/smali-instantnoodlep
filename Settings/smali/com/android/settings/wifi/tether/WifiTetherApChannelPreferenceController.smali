@@ -71,7 +71,7 @@
 
     if-ne v1, v2, :cond_0
 
-    const v1, 0x7f030133
+    const v1, 0x7f030134
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -92,7 +92,7 @@
     goto :goto_0
 
     :cond_0
-    const v1, 0x7f030132
+    const v1, 0x7f030133
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -150,7 +150,7 @@
 
     iget v0, p0, Lcom/android/settings/wifi/tether/WifiTetherApChannelPreferenceController;->mBandIndex:I
 
-    const v1, 0x7f1218b5
+    const v1, 0x7f1218cd
 
     const/4 v2, 0x1
 

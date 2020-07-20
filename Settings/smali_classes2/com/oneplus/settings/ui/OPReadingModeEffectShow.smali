@@ -19,7 +19,7 @@
 
     invoke-direct {p0, p1, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d022b
+    const v0, 0x7f0d022c
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mLayoutResId:I
 
@@ -37,7 +37,7 @@
 
     invoke-direct {p0, p1, p2}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p2, 0x7f0d022b
+    const p2, 0x7f0d022c
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mLayoutResId:I
 
@@ -57,7 +57,7 @@
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    const p2, 0x7f0d022b
+    const p2, 0x7f0d022c
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mLayoutResId:I
 
@@ -159,7 +159,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mEffectImage:Landroid/widget/ImageView;
 
-    const p1, 0x7f0805c8
+    const p1, 0x7f0805d1
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -168,7 +168,7 @@
     :cond_2
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mEffectImage:Landroid/widget/ImageView;
 
-    const p1, 0x7f0805c9
+    const p1, 0x7f0805d2
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -188,7 +188,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mEffectImage:Landroid/widget/ImageView;
 
-    const p1, 0x7f0805ca
+    const p1, 0x7f0805d3
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -197,7 +197,7 @@
     :cond_4
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mEffectImage:Landroid/widget/ImageView;
 
-    const p1, 0x7f0805cb
+    const p1, 0x7f0805d4
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -217,7 +217,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mEffectImage:Landroid/widget/ImageView;
 
-    const p1, 0x7f0805c6
+    const p1, 0x7f0805cf
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -226,7 +226,7 @@
     :cond_6
     iget-object p0, p0, Lcom/oneplus/settings/ui/OPReadingModeEffectShow;->mEffectImage:Landroid/widget/ImageView;
 
-    const p1, 0x7f0805c7
+    const p1, 0x7f0805d0
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 

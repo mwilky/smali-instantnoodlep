@@ -194,7 +194,7 @@
 .method protected onFinishInflate()V
     .locals 3
 
-    const v0, 0x7f0a03fb
+    const v0, 0x7f0a0400
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -204,7 +204,7 @@
 
     iput-object v0, p0, Lcom/android/settings/display/ConversationMessageView;->mMessageBubble:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f0a03ff
+    const v0, 0x7f0a0404
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -214,7 +214,7 @@
 
     iput-object v0, p0, Lcom/android/settings/display/ConversationMessageView;->mMessageTextAndInfoView:Landroid/view/ViewGroup;
 
-    const v0, 0x7f0a03fe
+    const v0, 0x7f0a0403
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -224,7 +224,7 @@
 
     iput-object v0, p0, Lcom/android/settings/display/ConversationMessageView;->mMessageTextView:Landroid/widget/TextView;
 
-    const v0, 0x7f0a03fd
+    const v0, 0x7f0a0402
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -272,7 +272,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080157
+    const v1, 0x7f080160
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -488,12 +488,12 @@
 
     if-eqz v7, :cond_2
 
-    const v7, 0x7f080403
+    const v7, 0x7f08040c
 
     goto :goto_2
 
     :cond_2
-    const v7, 0x7f080404
+    const v7, 0x7f08040d
 
     :goto_2
     iget-boolean v8, p0, Lcom/android/settings/display/ConversationMessageView;->mIncoming:Z

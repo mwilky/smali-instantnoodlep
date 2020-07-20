@@ -49,7 +49,7 @@
 
     invoke-direct {p0, p1, v0}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const v0, 0x7f0d025b
+    const v0, 0x7f0d025c
 
     iput v0, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->resid:I
 
@@ -63,7 +63,7 @@
 
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p2, 0x7f0d025b
+    const p2, 0x7f0d025c
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->resid:I
 
@@ -77,7 +77,7 @@
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settingslib/RestrictedPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p2, 0x7f0d025b
+    const p2, 0x7f0d025c
 
     iput p2, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->resid:I
 
@@ -169,7 +169,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settingslib/RestrictedPreference;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a03b7
+    const v0, 0x7f0a03bc
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -179,7 +179,7 @@
 
     iput-object v0, p0, Lcom/oneplus/settings/ui/OPTextViewButtonPreference;->mLeftIcon:Landroid/widget/ImageView;
 
-    const v0, 0x7f0a05f4
+    const v0, 0x7f0a05f1
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -233,7 +233,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a03bd
+    const v0, 0x7f0a03c2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -249,7 +249,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0a06e2
+    const v0, 0x7f0a06df
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -281,7 +281,7 @@
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    const v0, 0x7f0a05f5
+    const v0, 0x7f0a05f2
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

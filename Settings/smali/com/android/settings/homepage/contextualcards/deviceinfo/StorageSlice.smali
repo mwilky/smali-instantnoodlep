@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/StorageSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f121591
+    const v1, 0x7f1215a9
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -110,7 +110,7 @@
 
     iget-object v0, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/StorageSlice;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f080222
+    const v1, 0x7f08022b
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/IconCompat;->createWithResource(Landroid/content/Context;I)Landroidx/core/graphics/drawable/IconCompat;
 
@@ -118,7 +118,7 @@
 
     iget-object v1, p0, Lcom/android/settings/homepage/contextualcards/deviceinfo/StorageSlice;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f121591
+    const v2, 0x7f1215a9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -218,7 +218,7 @@
 
     aput-object p1, v0, v1
 
-    const p1, 0x7f1215bd
+    const p1, 0x7f1215d5
 
     invoke-virtual {p0, p1, v0}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

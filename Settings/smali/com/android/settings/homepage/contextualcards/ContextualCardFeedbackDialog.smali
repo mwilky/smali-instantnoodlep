@@ -115,7 +115,7 @@
 
     iget-object p1, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    const v0, 0x7f1204c8
+    const v0, 0x7f1204cf
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getText(I)Ljava/lang/CharSequence;
 
@@ -123,7 +123,7 @@
 
     iput-object v0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mMessage:Ljava/lang/CharSequence;
 
-    const v0, 0x7f1204c9
+    const v0, 0x7f1204d0
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getText(I)Ljava/lang/CharSequence;
 
@@ -133,7 +133,7 @@
 
     iput-object p0, p1, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const v0, 0x7f12150d
+    const v0, 0x7f121525
 
     invoke-virtual {p0, v0}, Lcom/android/internal/app/AlertActivity;->getText(I)Ljava/lang/CharSequence;
 

@@ -188,7 +188,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f030134
+    const v1, 0x7f030135
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -196,7 +196,7 @@
 
     iput-object v1, p0, Lcom/android/settings/wifi/tether/WifiTetherUpstreamTypePreferenceController;->mUpstreamTypeEntries:[Ljava/lang/String;
 
-    const v1, 0x7f030136
+    const v1, 0x7f030137
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

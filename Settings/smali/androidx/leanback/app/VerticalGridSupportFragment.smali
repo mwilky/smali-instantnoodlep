@@ -103,7 +103,7 @@
 
     check-cast p2, Landroid/view/ViewGroup;
 
-    const v0, 0x7f0a02bc
+    const v0, 0x7f0a02c1
 
     invoke-virtual {p2, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -149,7 +149,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02bc
+    const v1, 0x7f0a02c1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

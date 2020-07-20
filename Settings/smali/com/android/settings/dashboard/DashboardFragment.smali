@@ -1185,9 +1185,9 @@
 
     const-string v8, "Chromebook"
 
-    const v9, 0x7f0805b4
+    const v9, 0x7f0805bd
 
-    const v10, 0x7f080644
+    const v10, 0x7f080656
 
     const-string v11, "privacy_google_autofill"
 
@@ -1333,7 +1333,7 @@
 
     if-eqz v7, :cond_c
 
-    const v7, 0x7f0805b4
+    const v7, 0x7f0805bd
 
     invoke-virtual {v14, v7}, Landroidx/preference/Preference;->setIcon(I)V
 

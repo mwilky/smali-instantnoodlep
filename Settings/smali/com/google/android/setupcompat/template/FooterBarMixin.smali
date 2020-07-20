@@ -92,7 +92,7 @@
 
     iput-object v1, p0, Lcom/google/android/setupcompat/template/FooterBarMixin;->context:Landroid/content/Context;
 
-    const v1, 0x7f0a06c7
+    const v1, 0x7f0a06c4
 
     invoke-virtual {p1, v1}, Lcom/google/android/setupcompat/internal/TemplateLayout;->findManagedViewById(I)Landroid/view/View;
 
@@ -373,7 +373,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0d0309
+    const v0, 0x7f0d030a
 
     invoke-virtual {p0, v0}, Lcom/google/android/setupcompat/template/FooterBarMixin;->inflateFooter(I)Landroid/view/View;
 
@@ -1019,7 +1019,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0d0308
+    const p1, 0x7f0d0309
 
     const/4 p2, 0x0
 

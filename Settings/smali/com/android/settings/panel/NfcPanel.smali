@@ -50,7 +50,7 @@
 
     iget-object v0, p0, Lcom/android/settings/panel/NfcPanel;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1204b1
+    const v1, 0x7f1204b8
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -124,7 +124,7 @@
 
     iget-object p0, p0, Lcom/android/settings/panel/NfcPanel;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f120b27
+    const v0, 0x7f120b3f
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

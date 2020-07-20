@@ -49,7 +49,7 @@
 
     invoke-super {p0, p1}, Landroidx/preference/PreferenceCategory;->onBindViewHolder(Landroidx/preference/PreferenceViewHolder;)V
 
-    const v0, 0x7f0a04cb
+    const v0, 0x7f0a04c8
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -57,7 +57,7 @@
 
     check-cast v0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionView;
 
-    const v0, 0x7f0a04c8
+    const v0, 0x7f0a04c5
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -65,7 +65,7 @@
 
     check-cast v0, Lcom/oneplus/settings/opfinger/OPFingerPrintRecognitionContinueView;
 
-    const v0, 0x7f0a051d
+    const v0, 0x7f0a051a
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -73,7 +73,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v0, 0x7f0a051c
+    const v0, 0x7f0a0519
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 
@@ -81,7 +81,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v0, 0x7f0a051b
+    const v0, 0x7f0a0518
 
     invoke-virtual {p1, v0}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

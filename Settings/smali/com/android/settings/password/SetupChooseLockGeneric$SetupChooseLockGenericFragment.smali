@@ -39,7 +39,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0d02ee
+    const v0, 0x7f0d02ef
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsPreferenceFragment;->setHeaderView(I)V
 
@@ -47,7 +47,7 @@
 
     :cond_1
     :goto_0
-    const v0, 0x7f0d02ed
+    const v0, 0x7f0d02ee
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsPreferenceFragment;->setHeaderView(I)V
 
@@ -355,7 +355,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f080510
+    const v0, 0x7f080519
 
     invoke-virtual {p2, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -367,12 +367,12 @@
 
     if-eqz p2, :cond_0
 
-    const p2, 0x7f120996
+    const p2, 0x7f1209ae
 
     goto :goto_0
 
     :cond_0
-    const p2, 0x7f12148e
+    const p2, 0x7f1214a6
 
     :goto_0
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

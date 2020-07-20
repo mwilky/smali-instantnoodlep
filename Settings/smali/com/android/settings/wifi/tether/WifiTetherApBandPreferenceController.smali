@@ -172,7 +172,7 @@
 
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f1218b7
+    const v0, 0x7f1218cf
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -343,7 +343,7 @@
 
     invoke-virtual {v2, v3}, Landroidx/preference/Preference;->setEnabled(Z)V
 
-    const p0, 0x7f1218b3
+    const p0, 0x7f1218cb
 
     invoke-virtual {v2, p0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -385,9 +385,9 @@
 
     if-eqz v1, :cond_0
 
-    const v1, 0x7f03012d
+    const v1, 0x7f03012e
 
-    const v2, 0x7f03012e
+    const v2, 0x7f03012f
 
     goto :goto_0
 
@@ -396,16 +396,16 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f030130
+    const v1, 0x7f030131
 
-    const v2, 0x7f030131
+    const v2, 0x7f030132
 
     goto :goto_0
 
     :cond_1
-    const v1, 0x7f03012c
+    const v1, 0x7f03012d
 
-    const v2, 0x7f03012f
+    const v2, 0x7f030130
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;

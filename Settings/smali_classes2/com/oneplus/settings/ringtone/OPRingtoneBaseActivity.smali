@@ -219,7 +219,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0d02fb
+    const v5, 0x7f0d02fc
 
     invoke-virtual {v4, v5, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -649,7 +649,7 @@
 
     if-ne p1, v2, :cond_3
 
-    const p1, 0x7f121019
+    const p1, 0x7f121031
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
 
@@ -662,7 +662,7 @@
 
     if-ne p1, v0, :cond_4
 
-    const p1, 0x7f12101a
+    const p1, 0x7f121032
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceActivity;->getString(I)Ljava/lang/String;
 

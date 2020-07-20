@@ -359,7 +359,7 @@
 
     move-result v6
 
-    const v10, 0x7f08036e
+    const v10, 0x7f080377
 
     const/4 v11, 0x0
 
@@ -493,7 +493,7 @@
 
     iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageSettings;->mInternalSummary:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
 
-    const v5, 0x7f1215b0
+    const v5, 0x7f1215c8
 
     invoke-virtual {p0, v5}, Landroidx/fragment/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -519,7 +519,7 @@
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings;->mInternalSummary:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
 
-    const v4, 0x7f1215bf
+    const v4, 0x7f1215d7
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -623,7 +623,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1215ac
+    const v1, 0x7f1215c4
 
     invoke-virtual {v0, v1}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -661,7 +661,7 @@
 .method public getHelpResource()I
     .locals 0
 
-    const p0, 0x7f1207e9
+    const p0, 0x7f120801
 
     return p0
 .end method
@@ -814,7 +814,7 @@
 
     if-ne v2, v3, :cond_2
 
-    const v0, 0x7f121583
+    const v0, 0x7f12159b
 
     invoke-virtual {p1}, Landroid/os/storage/VolumeInfo;->getDiskId()Ljava/lang/String;
 
@@ -873,7 +873,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f1215ac
+    const v2, 0x7f1215c4
 
     invoke-virtual {p1, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -989,7 +989,7 @@
 
     if-eqz p1, :cond_8
 
-    const p1, 0x7f121585
+    const p1, 0x7f12159d
 
     invoke-static {p0, p1, v0}, Lcom/android/settings/deviceinfo/StorageSettings$DiskInitFragment;->show(Landroidx/fragment/app/Fragment;ILjava/lang/String;)V
 
@@ -1022,7 +1022,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f121598
+    const v2, 0x7f1215b0
 
     invoke-virtual {v0, v2}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 

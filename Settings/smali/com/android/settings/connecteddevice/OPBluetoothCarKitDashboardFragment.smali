@@ -131,7 +131,7 @@
 .method updateFooterPreference(Landroidx/preference/Preference;)V
     .locals 0
 
-    const p0, 0x7f120c2c
+    const p0, 0x7f120c44
 
     invoke-virtual {p1, p0}, Landroidx/preference/Preference;->setTitle(I)V
 

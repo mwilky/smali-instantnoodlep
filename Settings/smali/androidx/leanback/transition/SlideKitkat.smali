@@ -196,7 +196,7 @@
         }
     .end annotation
 
-    const p0, 0x7f0a03b2
+    const p0, 0x7f0a03b7
 
     invoke-virtual {p1, p0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

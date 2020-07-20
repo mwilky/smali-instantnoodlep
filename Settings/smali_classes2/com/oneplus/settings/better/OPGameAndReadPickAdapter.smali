@@ -150,7 +150,7 @@
 
     iget-object p2, p0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0d01d7
+    const v0, 0x7f0d01d8
 
     const/4 v1, 0x0
 
@@ -162,7 +162,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;-><init>(Lcom/oneplus/settings/better/OPGameAndReadPickAdapter;)V
 
-    const v1, 0x7f0a053c
+    const v1, 0x7f0a0539
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -170,7 +170,7 @@
 
     check-cast v1, Landroid/widget/RelativeLayout;
 
-    const v1, 0x7f0a076b
+    const v1, 0x7f0a0768
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -180,7 +180,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v1, 0x7f0a0305
+    const v1, 0x7f0a030a
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -190,7 +190,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->appIconIv:Landroid/widget/ImageView;
 
-    const v1, 0x7f0a044b
+    const v1, 0x7f0a0450
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -200,7 +200,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->appNameTv:Landroid/widget/TextView;
 
-    const v1, 0x7f0a06e2
+    const v1, 0x7f0a06df
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const v1, 0x7f0a02c0
+    const v1, 0x7f0a02c5
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -242,7 +242,7 @@
     check-cast v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;
 
     :goto_0
-    const v1, 0x7f120efb
+    const v1, 0x7f120f13
 
     const/16 v2, 0x3ec
 
@@ -270,7 +270,7 @@
 
     iget-object v1, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v2, 0x7f120f60
+    const v2, 0x7f120f78
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -286,7 +286,7 @@
     :cond_2
     iget-object v1, v0, Lcom/oneplus/settings/better/OPGameAndReadPickAdapter$ItemViewHolder;->titleTv:Landroid/widget/TextView;
 
-    const v2, 0x7f120c3f
+    const v2, 0x7f120c57
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 

@@ -434,7 +434,7 @@
     goto :goto_7
 
     :cond_9
-    const v3, 0x7f120571
+    const v3, 0x7f120578
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -444,7 +444,7 @@
 
     iget-object v0, v1, Lcom/android/settingslib/net/UidDetailProvider;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f080383
+    const v3, 0x7f08038c
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -455,7 +455,7 @@
     goto :goto_7
 
     :cond_a
-    const v3, 0x7f12128c
+    const v3, 0x7f1212a4
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -478,12 +478,12 @@
 
     if-eqz v3, :cond_c
 
-    const v3, 0x7f120589
+    const v3, 0x7f120590
 
     goto :goto_6
 
     :cond_c
-    const v3, 0x7f120588
+    const v3, 0x7f12058f
 
     :goto_6
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

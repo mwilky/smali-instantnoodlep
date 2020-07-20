@@ -222,7 +222,7 @@
     invoke-virtual {p0, v0}, Lcom/android/settings/core/SettingsBaseActivity;->setContentView(I)V
 
     :goto_0
-    const v0, 0x7f0a040c
+    const v0, 0x7f0a0411
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -391,7 +391,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0a03dd
+    const v0, 0x7f0a03e2
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -483,7 +483,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f08035d
+    const v6, 0x7f080366
 
     invoke-interface {v5, v6}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

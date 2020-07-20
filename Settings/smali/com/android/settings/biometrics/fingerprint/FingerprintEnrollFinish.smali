@@ -218,7 +218,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a03f9
+    const v0, 0x7f0a03fe
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextSize(F)V
 
-    const v2, 0x7f0a03fc
+    const v2, 0x7f0a0401
 
     invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -255,7 +255,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0a06c9
+    const v0, 0x7f0a06c6
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -263,7 +263,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v3, 0x7f0a06d5
+    const v3, 0x7f0a06d2
 
     invoke-virtual {p0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -414,11 +414,11 @@
 
     move-result p1
 
-    const v1, 0x7f12142d
+    const v1, 0x7f121445
 
     if-eqz p1, :cond_6
 
-    const p1, 0x7f0a03f9
+    const p1, 0x7f0a03fe
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -436,7 +436,7 @@
 
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p1, 0x7f0a03fc
+    const p1, 0x7f0a0401
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -444,7 +444,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const v2, 0x7f120f61
+    const v2, 0x7f120f79
 
     invoke-virtual {p1, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -509,7 +509,7 @@
     invoke-virtual {p1, v0}, Landroid/app/ActionBar;->setElevation(F)V
 
     :cond_7
-    const p1, 0x7f0a045c
+    const p1, 0x7f0a0461
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -796,7 +796,7 @@
 .method protected setHeaderText(I)V
     .locals 1
 
-    const v0, 0x7f0a06c9
+    const v0, 0x7f0a06c6
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

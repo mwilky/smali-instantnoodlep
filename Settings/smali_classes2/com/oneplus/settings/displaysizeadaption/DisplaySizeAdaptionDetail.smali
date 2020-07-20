@@ -55,7 +55,7 @@
 
     move-result p0
 
-    const p1, 0x7f1205cb
+    const p1, 0x7f1205d2
 
     const/4 v0, 0x1
 
@@ -69,7 +69,7 @@
 
     sget-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const p1, 0x7f120cfb
+    const p1, 0x7f120d13
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -97,7 +97,7 @@
 
     sget-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const p1, 0x7f120cfc
+    const p1, 0x7f120d14
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -117,7 +117,7 @@
     :cond_3
     sget-object p0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
 
-    const p1, 0x7f120c3c
+    const p1, 0x7f120c54
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -261,7 +261,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f1206f5
+    const p2, 0x7f12070b
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -427,7 +427,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1203ef
+    const v0, 0x7f1203f6
 
     const/4 v1, 0x0
 
@@ -435,7 +435,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120660
+    const v0, 0x7f120667
 
     invoke-virtual {p1, v0, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -490,7 +490,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0312
+    const v1, 0x7f0a0317
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -508,7 +508,7 @@
 
     move-result v0
 
-    const v2, 0x7f0a0314
+    const v2, 0x7f0a0319
 
     const/4 v3, 0x0
 
@@ -556,7 +556,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0313
+    const v1, 0x7f0a0318
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -596,7 +596,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const v1, 0x7f120cfb
+    const v1, 0x7f120d13
 
     invoke-virtual {p2, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -609,7 +609,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const v1, 0x7f1205cb
+    const v1, 0x7f1205d2
 
     invoke-virtual {p2, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -624,7 +624,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const v1, 0x7f120cfc
+    const v1, 0x7f120d14
 
     invoke-virtual {p2, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -637,7 +637,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const v1, 0x7f120c3c
+    const v1, 0x7f120c54
 
     invoke-virtual {p2, v1}, Landroid/widget/TextView;->setText(I)V
 

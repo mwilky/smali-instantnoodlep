@@ -54,7 +54,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f0a02a3
+    const v2, 0x7f0a02a8
 
     invoke-virtual {p0, v2, v0, v1}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -128,7 +128,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f0a02a3
+    const v2, 0x7f0a02a8
 
     invoke-virtual {p0, v2, v0, v1}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -229,7 +229,7 @@
 
     invoke-super {p0, p1}, Lcom/android/settings/core/InstrumentedActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v0, 0x7f0d0383
+    const v0, 0x7f0d0384
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
 
@@ -374,7 +374,7 @@
     const/4 v1, -0x1
 
     :goto_1
-    const v2, 0x7f0a02a3
+    const v2, 0x7f0a02a8
 
     if-eqz v1, :cond_13
 

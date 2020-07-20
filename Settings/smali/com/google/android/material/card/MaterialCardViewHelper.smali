@@ -552,7 +552,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardViewHelper;->clickableForegroundDrawable:Landroid/graphics/drawable/LayerDrawable;
 
-    const v2, 0x7f0a0446
+    const v2, 0x7f0a044b
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/drawable/LayerDrawable;->setId(II)V
 
@@ -1294,7 +1294,7 @@
     :cond_1
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardViewHelper;->clickableForegroundDrawable:Landroid/graphics/drawable/LayerDrawable;
 
-    const v0, 0x7f0a0446
+    const v0, 0x7f0a044b
 
     invoke-virtual {p0, v0, p1}, Landroid/graphics/drawable/LayerDrawable;->setDrawableByLayerId(ILandroid/graphics/drawable/Drawable;)Z
 

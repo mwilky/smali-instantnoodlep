@@ -68,7 +68,7 @@
 
     iput-object p3, p0, Lcom/android/settings/notification/ZenRulePreference;->mOnCheckBoxClickListener:Landroid/view/View$OnClickListener;
 
-    const p3, 0x7f0d0284
+    const p3, 0x7f0d0285
 
     invoke-virtual {p0, p3}, Landroidx/preference/Preference;->setLayoutResource(I)V
 
@@ -198,7 +198,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f121631
+    const p1, 0x7f121649
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -214,7 +214,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f121630
+    const p1, 0x7f121648
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -233,7 +233,7 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f0d039b
+    const p0, 0x7f0d039c
 
     return p0
 
@@ -254,7 +254,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a077a
+    const v1, 0x7f0a0777
 
     invoke-virtual {p1, v1}, Landroidx/preference/PreferenceViewHolder;->findViewById(I)Landroid/view/View;
 

@@ -106,7 +106,7 @@
 
     iget-object p0, p0, Lcom/android/settings/media/MediaOutputSlice;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0801b1
+    const p1, 0x7f0801ba
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

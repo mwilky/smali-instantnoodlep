@@ -65,7 +65,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f12020b
+    const v0, 0x7f120212
 
     const/4 v1, 0x2
 
@@ -99,7 +99,7 @@
 
     :cond_1
     :goto_0
-    const p1, 0x7f12020f
+    const p1, 0x7f120216
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

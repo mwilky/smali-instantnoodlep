@@ -126,7 +126,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f1211ae
+    const v2, 0x7f1211c6
 
     invoke-virtual {p0, v2}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -211,7 +211,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f1211ae
+    const v4, 0x7f1211c6
 
     invoke-virtual {p0, v4}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
@@ -249,7 +249,7 @@
     invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V
 
     :goto_0
-    const v1, 0x7f0a05e9
+    const v1, 0x7f0a05e6
 
     invoke-virtual {p1, v1}, Lcom/android/settingslib/widget/LayoutPreference;->findViewById(I)Landroid/view/View;
 
@@ -325,11 +325,11 @@
 
     invoke-direct {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1211ad
+    const v1, 0x7f1211c5
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setTitle(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
-    const v1, 0x7f1211ac
+    const v1, 0x7f1211c4
 
     invoke-virtual {v0, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setMessage(I)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
@@ -337,13 +337,13 @@
 
     invoke-direct {v1, p0}, Lcom/oneplus/settings/aboutphone/-$$Lambda$OpenIdSettings$gH9zyX_fqtkhjBj1gsjo4pbq_5Y;-><init>(Lcom/oneplus/settings/aboutphone/OpenIdSettings;)V
 
-    const v2, 0x7f1211ab
+    const v2, 0x7f1211c3
 
     invoke-virtual {v0, v2, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 
     sget-object v1, Lcom/oneplus/settings/aboutphone/-$$Lambda$OpenIdSettings$zxn4_303Ql923k6ogE0guN_EXMA;->INSTANCE:Lcom/oneplus/settings/aboutphone/-$$Lambda$OpenIdSettings$zxn4_303Ql923k6ogE0guN_EXMA;
 
-    const v2, 0x7f1203ef
+    const v2, 0x7f1203f6
 
     invoke-virtual {v0, v2, v1}, Lcom/oneplus/lib/app/OPAlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lcom/oneplus/lib/app/OPAlertDialog$Builder;
 

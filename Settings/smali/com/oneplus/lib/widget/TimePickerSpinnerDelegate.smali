@@ -59,7 +59,7 @@
 
     const/16 p3, 0xd
 
-    const p4, 0x7f0d0264
+    const p4, 0x7f0d0265
 
     invoke-virtual {p2, p3, p4}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -83,7 +83,7 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setSaveFromParentEnabled(Z)V
 
-    const p2, 0x7f0a02ff
+    const p2, 0x7f0a0304
 
     invoke-virtual {p1, p2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -103,7 +103,7 @@
 
     iget-object p2, p0, Lcom/oneplus/lib/widget/TimePickerSpinnerDelegate;->mHourSpinner:Lcom/oneplus/lib/widget/NumberPicker;
 
-    const p4, 0x7f0a047f
+    const p4, 0x7f0a0480
 
     invoke-virtual {p2, p4}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -212,7 +212,7 @@
     :cond_4
     iget-object p2, p0, Lcom/oneplus/lib/widget/TimePicker$AbstractTimePickerDelegate;->mDelegator:Lcom/oneplus/lib/widget/TimePicker;
 
-    const v2, 0x7f0a040a
+    const v2, 0x7f0a040f
 
     invoke-virtual {p2, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -370,7 +370,7 @@
 
     if-eqz p4, :cond_6
 
-    const p4, 0x7f0a073c
+    const p4, 0x7f0a0739
 
     invoke-virtual {p1, p4}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

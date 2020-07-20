@@ -232,7 +232,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mWorkLifeBalancePreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f120b7f
+    const v0, 0x7f120b97
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -245,7 +245,7 @@
 
     iget-object p0, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mWorkLifeBalancePreference:Landroidx/preference/Preference;
 
-    const v0, 0x7f120b80
+    const v0, 0x7f120b98
 
     invoke-virtual {p0, v0}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -510,7 +510,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mQuickPayPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120d66
+    const v2, 0x7f120d7e
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -519,7 +519,7 @@
     :cond_4
     iget-object v0, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mQuickPayPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120f34
+    const v2, 0x7f120f4c
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -589,7 +589,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mAntiMisOperationTouch:Landroidx/preference/SwitchPreference;
 
-    const v2, 0x7f120f09
+    const v2, 0x7f120f21
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -614,7 +614,7 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/others/OPToolsSettings;->mTimerShutdownPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f121073
+    const v2, 0x7f12108b
 
     invoke-virtual {v0, v2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -1017,7 +1017,7 @@
 
     invoke-direct {v2, v0, p0}, Lcom/android/settings/password/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
-    const v0, 0x7f121189
+    const v0, 0x7f1211a1
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 

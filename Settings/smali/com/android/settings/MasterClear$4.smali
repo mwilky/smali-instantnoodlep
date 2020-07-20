@@ -43,7 +43,7 @@
 
     iget-object p1, p0, Lcom/android/settings/MasterClear$4;->val$passwordEntryView:Landroid/view/View;
 
-    const p2, 0x7f0a053f
+    const p2, 0x7f0a053c
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -754,11 +754,11 @@
 
     iput-object p0, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureActivity;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f0d01e4
+    const p1, 0x7f0d01e5
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
-    const p1, 0x7f0a04e7
+    const p1, 0x7f0a04e4
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -768,7 +768,7 @@
 
     iput-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureActivity;->mPluginHeadImageView:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a04e8
+    const p1, 0x7f0a04e5
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -788,7 +788,7 @@
 
     iget-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureActivity;->mPluginHeadImageView:Landroid/widget/ImageView;
 
-    const v0, 0x7f08043b
+    const v0, 0x7f080444
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -797,7 +797,7 @@
     :cond_0
     iget-object p1, p0, Lcom/oneplus/settings/laboratory/OPLabFeatureActivity;->mPluginHeadImageView:Landroid/widget/ImageView;
 
-    const v0, 0x7f08043c
+    const v0, 0x7f080445
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 

@@ -130,7 +130,7 @@
 
     iget-object v4, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f121b05
+    const v7, 0x7f121b1d
 
     new-array v8, v3, [Ljava/lang/Object;
 
@@ -147,7 +147,7 @@
 
     iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f121b09
+    const v0, 0x7f121b21
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -182,7 +182,7 @@
 
     iget-object v4, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
-    const v7, 0x7f121b08
+    const v7, 0x7f121b20
 
     new-array v8, v3, [Ljava/lang/Object;
 
@@ -232,7 +232,7 @@
 
     move-result v7
 
-    const v8, 0x7f121b04
+    const v8, 0x7f121b1c
 
     if-nez v7, :cond_4
 
@@ -504,7 +504,7 @@
 
     iget-object p0, p0, Lcom/android/settings/notification/OPZenModeTurnOnSettings;->mSwitchPreference:Landroidx/preference/SwitchPreference;
 
-    const p1, 0x7f1210e0
+    const p1, 0x7f1210f8
 
     invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setSummary(I)V
 

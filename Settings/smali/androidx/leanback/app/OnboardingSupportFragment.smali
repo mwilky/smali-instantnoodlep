@@ -701,7 +701,7 @@
     invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     :cond_3
-    const v4, 0x7f0a029a
+    const v4, 0x7f0a029f
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -720,7 +720,7 @@
     invoke-virtual {v4, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     :cond_4
-    const v2, 0x7f0a0532
+    const v2, 0x7f0a052f
 
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1016,7 +1016,7 @@
     :cond_3
     iput-boolean v0, p0, Landroidx/leanback/app/OnboardingSupportFragment;->mIsLtr:Z
 
-    const p2, 0x7f0a0533
+    const p2, 0x7f0a0530
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1058,7 +1058,7 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    const p2, 0x7f0a03df
+    const p2, 0x7f0a03e4
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1068,7 +1068,7 @@
 
     iput-object p2, p0, Landroidx/leanback/app/OnboardingSupportFragment;->mMainIconView:Landroid/widget/ImageView;
 
-    const p2, 0x7f0a03d6
+    const p2, 0x7f0a03db
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1078,7 +1078,7 @@
 
     iput-object p2, p0, Landroidx/leanback/app/OnboardingSupportFragment;->mLogoView:Landroid/widget/ImageView;
 
-    const p2, 0x7f0a0744
+    const p2, 0x7f0a0741
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 

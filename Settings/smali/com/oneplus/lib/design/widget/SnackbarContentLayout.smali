@@ -302,7 +302,7 @@
 
     invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
-    const v0, 0x7f0a04fd
+    const v0, 0x7f0a04fa
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -312,7 +312,7 @@
 
     iput-object v0, p0, Lcom/oneplus/lib/design/widget/SnackbarContentLayout;->mMessageView:Landroid/widget/TextView;
 
-    const v0, 0x7f0a04fc
+    const v0, 0x7f0a04f9
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

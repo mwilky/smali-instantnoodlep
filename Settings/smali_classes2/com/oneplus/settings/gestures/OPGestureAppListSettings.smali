@@ -244,7 +244,7 @@
 
     iget-object v1, p0, Lcom/oneplus/settings/gestures/OPGestureAppListSettings;->mGestureKey:Ljava/lang/String;
 
-    const v2, 0x7f120d14
+    const v2, 0x7f120d2c
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -361,7 +361,7 @@
 
     invoke-super/range {p0 .. p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const v1, 0x7f0d01db
+    const v1, 0x7f0d01dc
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -468,7 +468,7 @@
 
     iget-object v1, v0, Lcom/oneplus/settings/gestures/OPGestureAppListSettings;->mGestureKey:Ljava/lang/String;
 
-    const v2, 0x7f120d14
+    const v2, 0x7f120d2c
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -598,7 +598,7 @@
 
     invoke-virtual {v1, v6}, Landroid/app/ActionBar;->setHomeButtonEnabled(Z)V
 
-    const v1, 0x7f0a04d3
+    const v1, 0x7f0a04d0
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -626,7 +626,7 @@
 
     iput-object v1, v0, Lcom/oneplus/settings/gestures/OPGestureAppListSettings;->mOPApplicationLoader:Lcom/oneplus/settings/apploader/OPApplicationLoader;
 
-    const v1, 0x7f0a03c9
+    const v1, 0x7f0a03ce
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -670,7 +670,7 @@
 
     new-instance v2, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v4, 0x7f120dd1
+    const v4, 0x7f120de9
 
     invoke-virtual {v0, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -690,7 +690,7 @@
 
     new-instance v4, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v5, 0x7f120dd3
+    const v5, 0x7f120deb
 
     invoke-virtual {v0, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -708,7 +708,7 @@
 
     new-instance v5, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v7, 0x7f120dd5
+    const v7, 0x7f120ded
 
     invoke-virtual {v0, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -734,7 +734,7 @@
 
     aput-object v8, v6, v3
 
-    const v8, 0x7f120dd2
+    const v8, 0x7f120dea
 
     invoke-virtual {v0, v8, v6}, Landroid/app/Activity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -752,7 +752,7 @@
 
     new-instance v6, Lcom/oneplus/settings/better/OPAppModel;
 
-    const v8, 0x7f1207b8
+    const v8, 0x7f1207d0
 
     invoke-virtual {v0, v8}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

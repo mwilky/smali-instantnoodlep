@@ -21,11 +21,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f0d0365
+    const v1, 0x7f0d0366
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const v0, 0x7f0a0791
+    const v0, 0x7f0a078e
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -39,7 +39,7 @@
 
     new-array v1, v0, [Landroid/widget/TextView;
 
-    const v2, 0x7f0a0373
+    const v2, 0x7f0a0378
 
     invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -51,7 +51,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0a0378
+    const v2, 0x7f0a037d
 
     invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -63,7 +63,7 @@
 
     aput-object v2, v1, v4
 
-    const v2, 0x7f0a037b
+    const v2, 0x7f0a0380
 
     invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -79,7 +79,7 @@
 
     new-array v1, v5, [Landroid/widget/TextView;
 
-    const v2, 0x7f0a037a
+    const v2, 0x7f0a037f
 
     invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -89,7 +89,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0a0374
+    const v2, 0x7f0a0379
 
     invoke-virtual {p0, v2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -195,7 +195,7 @@
 
     if-ne p2, v0, :cond_4
 
-    const p2, 0x7f0a02bb
+    const p2, 0x7f0a02c0
 
     invoke-virtual {p0, p2}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -203,7 +203,7 @@
 
     check-cast p2, Landroid/widget/LinearLayout;
 
-    const v1, 0x7f0a0376
+    const v1, 0x7f0a037b
 
     invoke-virtual {p0, v1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -390,7 +390,7 @@
 .method public setSideLabelWeights(FF)V
     .locals 2
 
-    const v0, 0x7f0a0693
+    const v0, 0x7f0a0690
 
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -406,7 +406,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    const p1, 0x7f0a0694
+    const p1, 0x7f0a0691
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 

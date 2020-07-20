@@ -7,7 +7,7 @@
 .method static formatKernelVersion(Landroid/content/Context;Landroid/system/StructUtsname;)Ljava/lang/String;
     .locals 3
 
-    const v0, 0x7f121573
+    const v0, 0x7f12158b
 
     if-nez p1, :cond_0
 
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120bdb
+    const v1, 0x7f120bf3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

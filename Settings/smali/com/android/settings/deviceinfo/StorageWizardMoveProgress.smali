@@ -48,7 +48,7 @@
     return-void
 
     :cond_0
-    const p1, 0x7f0d0306
+    const p1, 0x7f0d0307
 
     invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/StorageWizardBase;->setContentView(I)V
 
@@ -84,11 +84,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f08037e
+    const v1, 0x7f080387
 
     invoke-virtual {p0, v1}, Lcom/android/settings/deviceinfo/StorageWizardBase;->setIcon(I)V
 
-    const v1, 0x7f1215ee
+    const v1, 0x7f121606
 
     const/4 v2, 0x1
 
@@ -100,7 +100,7 @@
 
     invoke-virtual {p0, v1, v3}, Lcom/android/settings/deviceinfo/StorageWizardBase;->setHeaderText(I[Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f1215ec
+    const v1, 0x7f121604
 
     const/4 v3, 0x2
 

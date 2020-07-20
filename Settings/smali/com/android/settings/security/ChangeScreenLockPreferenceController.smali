@@ -224,7 +224,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120996
+    const v0, 0x7f1209ae
 
     invoke-virtual {p1, v0}, Lcom/android/settings/core/SubSettingLauncher;->setTitleRes(I)Lcom/android/settings/core/SubSettingLauncher;
 
@@ -420,7 +420,7 @@
     goto :goto_0
 
     :cond_0
-    const p2, 0x7f121731
+    const p2, 0x7f121749
 
     invoke-virtual {p1, p2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -428,7 +428,7 @@
 
     :cond_1
     :goto_0
-    const p2, 0x7f121732
+    const p2, 0x7f12174a
 
     invoke-virtual {p1, p2}, Landroidx/preference/Preference;->setSummary(I)V
 
@@ -472,21 +472,21 @@
     goto :goto_1
 
     :cond_3
-    const p2, 0x7f121733
+    const p2, 0x7f12174b
 
     invoke-virtual {p1, p2}, Landroidx/preference/Preference;->setSummary(I)V
 
     goto :goto_1
 
     :cond_4
-    const p2, 0x7f121735
+    const p2, 0x7f12174d
 
     invoke-virtual {p1, p2}, Landroidx/preference/Preference;->setSummary(I)V
 
     goto :goto_1
 
     :cond_5
-    const p2, 0x7f121734
+    const p2, 0x7f12174c
 
     invoke-virtual {p1, p2}, Landroidx/preference/Preference;->setSummary(I)V
 

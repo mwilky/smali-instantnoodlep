@@ -540,7 +540,7 @@
 
     invoke-static {p1, p0}, Landroidx/mediarouter/app/MediaRouterThemeHelper;->setDialogBackgroundColor(Landroid/content/Context;Landroid/app/Dialog;)V
 
-    const p1, 0x7f0a0414
+    const p1, 0x7f0a0419
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -564,7 +564,7 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0a0424
+    const p1, 0x7f0a0429
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -592,7 +592,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mAdapter:Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog$RecyclerAdapter;
 
-    const p1, 0x7f0a041a
+    const p1, 0x7f0a041f
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -636,7 +636,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mUnmutedVolumeMap:Ljava/util/Map;
 
-    const p1, 0x7f0a041c
+    const p1, 0x7f0a0421
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -646,7 +646,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mMetadataBackground:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a041d
+    const p1, 0x7f0a0422
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -654,7 +654,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mMetadataBlackScrim:Landroid/view/View;
 
-    const p1, 0x7f0a041b
+    const p1, 0x7f0a0420
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -664,7 +664,7 @@
 
     iput-object p1, p0, Landroidx/mediarouter/app/MediaRouteDynamicControllerDialog;->mArtView:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a041f
+    const p1, 0x7f0a0424
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -678,7 +678,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const p1, 0x7f0a041e
+    const p1, 0x7f0a0423
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDialog;->findViewById(I)Landroid/view/View;
 
@@ -698,7 +698,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f120ac2
+    const v0, 0x7f120ada
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

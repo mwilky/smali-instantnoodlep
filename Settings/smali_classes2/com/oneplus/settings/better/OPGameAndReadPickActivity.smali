@@ -106,7 +106,7 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/settings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0d01d6
+    const p1, 0x7f0d01d7
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setContentView(I)V
 
@@ -140,7 +140,7 @@
 
     if-ne v0, v1, :cond_0
 
-    const v0, 0x7f120dac
+    const v0, 0x7f120dc4
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -155,7 +155,7 @@
 
     if-ne v0, v1, :cond_1
 
-    const v0, 0x7f120f45
+    const v0, 0x7f120f5d
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -170,7 +170,7 @@
 
     if-ne v0, v1, :cond_2
 
-    const v0, 0x7f120c41
+    const v0, 0x7f120c59
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -212,7 +212,7 @@
 
     invoke-virtual {p1, v0}, Lcom/oneplus/settings/apploader/OPApplicationLoader;->setAppType(I)V
 
-    const p1, 0x7f0a04b2
+    const p1, 0x7f0a04af
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -226,9 +226,9 @@
 
     iget-object v0, p0, Lcom/oneplus/settings/better/OPGameAndReadPickActivity;->mAppListView:Landroid/widget/ListView;
 
-    const v1, 0x7f08057c
+    const v1, 0x7f080585
 
-    const v2, 0x7f08057b
+    const v2, 0x7f080584
 
     const v3, 0x7f070385
 
@@ -252,7 +252,7 @@
 
     invoke-virtual {p1, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    const p1, 0x7f0a03c9
+    const p1, 0x7f0a03ce
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

@@ -491,7 +491,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0a0603
+    const p2, 0x7f0a0600
 
     invoke-virtual {p1, p2}, Landroidx/leanback/widget/BaseGridView;->setItemAlignmentViewId(I)V
 

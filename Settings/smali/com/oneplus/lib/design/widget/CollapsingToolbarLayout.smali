@@ -500,7 +500,7 @@
 .method static getViewOffsetHelper(Landroid/view/View;)Lcom/oneplus/lib/design/widget/ViewOffsetHelper;
     .locals 2
 
-    const v0, 0x7f0a07b2
+    const v0, 0x7f0a07af
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

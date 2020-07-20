@@ -157,7 +157,7 @@
 
     iget-object v0, p0, Lcom/android/settingslib/wifi/WifiStatusTracker;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1219f4
+    const v1, 0x7f121a0c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -178,7 +178,7 @@
 
     iget-object v0, p0, Lcom/android/settingslib/wifi/WifiStatusTracker;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f12196b
+    const v1, 0x7f121983
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -199,7 +199,7 @@
 
     iget-object v0, p0, Lcom/android/settingslib/wifi/WifiStatusTracker;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f1219f3
+    const v1, 0x7f121a0b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -203,7 +203,7 @@
     return v1
 
     :cond_0
-    const v0, 0x7f0a0573
+    const v0, 0x7f0a0570
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 

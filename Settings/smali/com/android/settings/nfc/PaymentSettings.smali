@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f120b1f
+    const v1, 0x7f120b37
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -92,7 +92,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0804a2
+    const v1, 0x7f0804ab
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -156,7 +156,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/android/settingslib/core/lifecycle/ObservablePreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
-    const p2, 0x7f120b1e
+    const p2, 0x7f120b36
 
     invoke-interface {p1, p2}, Landroid/view/Menu;->add(I)Landroid/view/MenuItem;
 

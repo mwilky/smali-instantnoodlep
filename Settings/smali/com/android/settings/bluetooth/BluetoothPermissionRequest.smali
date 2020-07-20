@@ -480,13 +480,13 @@
 
     if-eq v3, v6, :cond_13
 
-    const v3, 0x7f1202f2
+    const v3, 0x7f1202f9
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f1202f0
+    const v6, 0x7f1202f7
 
     new-array v7, v4, [Ljava/lang/Object;
 
@@ -501,13 +501,13 @@
     goto :goto_4
 
     :cond_13
-    const v3, 0x7f12038b
+    const v3, 0x7f120392
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f120388
+    const v6, 0x7f12038f
 
     new-array v7, v4, [Ljava/lang/Object;
 
@@ -522,13 +522,13 @@
     goto :goto_4
 
     :cond_14
-    const v3, 0x7f12033e
+    const v3, 0x7f120345
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f12033b
+    const v6, 0x7f120342
 
     new-array v7, v4, [Ljava/lang/Object;
 
@@ -543,13 +543,13 @@
     goto :goto_4
 
     :cond_15
-    const v3, 0x7f120367
+    const v3, 0x7f12036e
 
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    const v6, 0x7f120365
+    const v6, 0x7f12036c
 
     new-array v7, v4, [Ljava/lang/Object;
 
@@ -576,7 +576,7 @@
 
     new-instance v6, Landroid/app/NotificationChannel;
 
-    const v8, 0x7f1202c8
+    const v8, 0x7f1202cf
 
     invoke-virtual {p1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

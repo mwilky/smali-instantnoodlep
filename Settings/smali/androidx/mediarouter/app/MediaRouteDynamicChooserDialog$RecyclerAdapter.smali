@@ -364,7 +364,7 @@
 
     iget-object v2, v2, Landroidx/mediarouter/app/MediaRouteDynamicChooserDialog;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f120ac4
+    const v3, 0x7f120adc
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

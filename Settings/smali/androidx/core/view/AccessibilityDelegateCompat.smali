@@ -156,7 +156,7 @@
 .method public performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
     .locals 4
 
-    const v0, 0x7f0a0703
+    const v0, 0x7f0a0700
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -227,7 +227,7 @@
 
     move-result p0
 
-    const p2, 0x7f0a0704
+    const p2, 0x7f0a0701
 
     invoke-virtual {p1, p2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 

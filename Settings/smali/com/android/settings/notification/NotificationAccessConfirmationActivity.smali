@@ -223,7 +223,7 @@
 
     aput-object p1, v2, v3
 
-    const v4, 0x7f120b94
+    const v4, 0x7f120bac
 
     invoke-virtual {p0, v4, v2}, Landroid/app/Activity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -235,7 +235,7 @@
 
     aput-object p1, v1, v3
 
-    const p1, 0x7f120b93
+    const p1, 0x7f120bab
 
     invoke-virtual {p0, p1, v1}, Landroid/app/Activity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -257,7 +257,7 @@
 
     iput-object p1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    const p1, 0x7f1205d9
+    const p1, 0x7f1205e0
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

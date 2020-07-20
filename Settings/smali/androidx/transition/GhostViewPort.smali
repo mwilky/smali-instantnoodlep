@@ -74,7 +74,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a02b5
+    const v1, 0x7f0a02ba
 
     invoke-virtual {p0, v1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -232,7 +232,7 @@
 .method static getGhostView(Landroid/view/View;)Landroidx/transition/GhostViewPort;
     .locals 1
 
-    const v0, 0x7f0a02b5
+    const v0, 0x7f0a02ba
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -246,7 +246,7 @@
 .method static removeGhost(Landroid/view/View;)V
     .locals 1
 
-    const v0, 0x7f0a02b5
+    const v0, 0x7f0a02ba
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -287,7 +287,7 @@
 
     iget-object v0, p0, Landroidx/transition/GhostViewPort;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a02b5
+    const v1, 0x7f0a02ba
 
     invoke-virtual {v0, v1, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -350,7 +350,7 @@
 
     iget-object v0, p0, Landroidx/transition/GhostViewPort;->mView:Landroid/view/View;
 
-    const v1, 0x7f0a02b5
+    const v1, 0x7f0a02ba
 
     const/4 v2, 0x0
 

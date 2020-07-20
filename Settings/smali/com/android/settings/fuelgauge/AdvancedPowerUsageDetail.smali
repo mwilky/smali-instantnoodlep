@@ -511,7 +511,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/AdvancedPowerUsageDetail;->mForegroundPreference:Landroidx/preference/Preference;
 
-    const v6, 0x7f1202bf
+    const v6, 0x7f1202c6
 
     invoke-virtual {p0, v6}, Landroidx/fragment/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -539,7 +539,7 @@
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/AdvancedPowerUsageDetail;->mBackgroundPreference:Landroidx/preference/Preference;
 
-    const v2, 0x7f120248
+    const v2, 0x7f12024f
 
     invoke-virtual {p0, v2}, Landroidx/fragment/app/Fragment;->getText(I)Ljava/lang/CharSequence;
 

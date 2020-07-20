@@ -107,14 +107,14 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f08046e
+    const v1, 0x7f080477
 
     invoke-virtual {p3, v1}, Landroid/widget/CheckedTextView;->setCheckMarkDrawable(I)V
 
     goto :goto_1
 
     :cond_1
-    const v1, 0x7f08046f
+    const v1, 0x7f080478
 
     invoke-virtual {p3, v1}, Landroid/widget/CheckedTextView;->setCheckMarkDrawable(I)V
 

@@ -51,13 +51,13 @@
 
     invoke-super {p0, p1}, Lcom/oneplus/lib/preference/SwitchPreference;->onBindView(Landroid/view/View;)V
 
-    const v0, 0x7f0a03b9
+    const v0, 0x7f0a03be
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const v1, 0x7f0a05f8
+    const v1, 0x7f0a05f5
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -73,7 +73,7 @@
 
     if-eqz v0, :cond_2
 
-    const v1, 0x7f0a0757
+    const v1, 0x7f0a0754
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -85,7 +85,7 @@
 
     const/4 v0, 0x1
 
-    const v1, 0x7f0a0698
+    const v1, 0x7f0a0695
 
     if-ne p2, v1, :cond_0
 

@@ -104,7 +104,7 @@
 
     invoke-virtual {p1, v0, p0, p3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    const p1, 0x7f08015e
+    const p1, 0x7f080167
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->setBackgroundResource(I)V
 
@@ -116,7 +116,7 @@
 
     iput p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->defaultMargin:I
 
-    const p1, 0x7f0a0305
+    const p1, 0x7f0a030a
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -126,7 +126,7 @@
 
     iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->icon:Landroid/widget/ImageView;
 
-    const p1, 0x7f0a0681
+    const p1, 0x7f0a067e
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
@@ -136,7 +136,7 @@
 
     iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->smallLabel:Landroid/widget/TextView;
 
-    const p1, 0x7f0a037d
+    const p1, 0x7f0a0382
 
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
