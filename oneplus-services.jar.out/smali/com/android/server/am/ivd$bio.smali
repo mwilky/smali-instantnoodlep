@@ -81,7 +81,7 @@
     return-void
 .end method
 
-.method private Pn()Lcom/android/server/am/ivd$sis;
+.method private Qn()Lcom/android/server/am/ivd$sis;
     .locals 4
 
     monitor-enter p0
@@ -270,7 +270,7 @@
 
     if-gt v0, v1, :cond_1
 
-    iget v0, p1, Lcom/android/server/am/ivd$sis;->Mt:I
+    iget v0, p1, Lcom/android/server/am/ivd$sis;->Vt:I
 
     if-nez v0, :cond_0
 
@@ -285,7 +285,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/am/ivd$bio;->Pn()Lcom/android/server/am/ivd$sis;
+    invoke-direct {p0}, Lcom/android/server/am/ivd$bio;->Qn()Lcom/android/server/am/ivd$sis;
 
     move-result-object v0
 

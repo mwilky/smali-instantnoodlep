@@ -18,11 +18,11 @@
 
 
 # instance fields
+.field private EP:I
+
+.field private GP:F
+
 .field final synthetic this$0:Lcom/android/server/wm/p;
-
-.field private uP:I
-
-.field private wP:F
 
 
 # direct methods
@@ -74,13 +74,13 @@
     :cond_0
     iget-object p1, p0, Lcom/android/server/wm/m;->this$0:Lcom/android/server/wm/p;
 
-    iget v0, p0, Lcom/android/server/wm/m;->uP:I
+    iget v0, p0, Lcom/android/server/wm/m;->EP:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p2
 
-    iget v2, p0, Lcom/android/server/wm/m;->wP:F
+    iget v2, p0, Lcom/android/server/wm/m;->GP:F
 
     sub-float/2addr p2, v2
 
@@ -226,13 +226,13 @@
 
     invoke-static {p1, v0}, Lcom/android/server/wm/p;->tsu(Lcom/android/server/wm/p;I)I
 
-    iput v0, p0, Lcom/android/server/wm/m;->uP:I
+    iput v0, p0, Lcom/android/server/wm/m;->EP:I
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/wm/m;->wP:F
+    iput p1, p0, Lcom/android/server/wm/m;->GP:F
 
     return v1
 .end method

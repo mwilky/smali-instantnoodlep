@@ -25,17 +25,17 @@
 
 .field public static final PROP_MDM:Ljava/lang/String; = "persist.sys.optm.mdm"
 
-.field public static final Sla:Ljava/lang/String; = "com.antutu.benchmark.ui.test.activity.RefineryActivity"
-
 .field public static final TAG:Ljava/lang/String; = "OPTM"
 
-.field public static final Tla:Ljava/lang/String; = "com.antutu.benchmark.ui.test.activity.ActivityTestResultDetails"
+.field public static final ama:Ljava/lang/String; = "com.antutu.benchmark.ui.test.activity.RefineryActivity"
 
-.field public static final Ula:Ljava/lang/String; = "/sys/class/thermal/msm-therm/temp"
+.field public static final bma:Ljava/lang/String; = "com.antutu.benchmark.ui.test.activity.ActivityTestResultDetails"
 
-.field public static final Vla:Ljava/lang/String; = "/sys/class/thermal/skin-therm/temp"
+.field public static final cma:Ljava/lang/String; = "/sys/class/thermal/msm-therm/temp"
 
-.field public static final Yq:Ljava/lang/String; = "OPTM"
+.field public static final ema:Ljava/lang/String; = "/sys/class/thermal/skin-therm/temp"
+
+.field public static final gr:Ljava/lang/String; = "OPTM"
 
 .field private static instance:Lcom/oneplus/android/server/zta/sis; = null
 
@@ -47,11 +47,11 @@
 
 
 # instance fields
-.field private Pla:Z
+.field private Yla:Z
 
-.field private Qla:Lcom/oneplus/android/server/zta/sis$zta;
+.field private Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
-.field private Rla:Ljava/lang/Runnable;
+.field private _la:Ljava/lang/Runnable;
 
 .field private extraData:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -93,13 +93,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     new-instance v1, Lcom/oneplus/android/server/zta/sis$zta;
 
     invoke-direct {v1}, Lcom/oneplus/android/server/zta/sis$zta;-><init>()V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iput-object v1, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     new-instance v1, Ljava/util/HashMap;
 
@@ -119,7 +119,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/zta/you;-><init>(Lcom/oneplus/android/server/zta/sis;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta/sis;->Rla:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta/sis;->_la:Ljava/lang/Runnable;
 
     sget-boolean v0, Lcom/oneplus/android/server/zta/sis;->sEnable:Z
 
@@ -162,7 +162,7 @@
     return-void
 .end method
 
-.method private Gu()V
+.method private Hu()V
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/android/server/zta/sis;->mContext:Landroid/content/Context;
@@ -219,11 +219,11 @@
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     if-nez v1, :cond_1
 
-    iput-boolean v2, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     goto :goto_0
 
@@ -236,14 +236,14 @@
 
     if-eqz v1, :cond_3
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     if-eqz v1, :cond_3
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     :goto_0
-    iget-boolean p1, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     invoke-direct {p0, p1}, Lcom/oneplus/android/server/zta/sis;->yb(Z)Z
 
@@ -251,11 +251,11 @@
 
     if-eqz p1, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     if-nez p1, :cond_2
 
-    iget-object p1, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p1, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     const-string v0, "OPTM"
 
@@ -276,7 +276,7 @@
     return v0
 
     :cond_4
-    iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     return v0
 .end method
@@ -298,7 +298,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/zta/sis;->Pla:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/zta/sis;->Yla:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -308,7 +308,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/zta/sis$zta;->toString()Ljava/lang/String;
 
@@ -474,7 +474,7 @@
 
     new-instance p1, Ljava/lang/Thread;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Rla:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->_la:Ljava/lang/Runnable;
 
     invoke-direct {p1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -510,7 +510,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p1, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     if-nez v0, :cond_0
 
@@ -524,9 +524,9 @@
     move-result v0
 
     :goto_0
-    iput v0, p1, Lcom/oneplus/android/server/zta/sis$zta;->Lla:I
+    iput v0, p1, Lcom/oneplus/android/server/zta/sis$zta;->Ula:I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     if-nez v1, :cond_1
 
@@ -538,12 +538,12 @@
     move-result v2
 
     :goto_1
-    iput v2, p0, Lcom/oneplus/android/server/zta/sis$zta;->Mla:I
+    iput v2, p0, Lcom/oneplus/android/server/zta/sis$zta;->Vla:I
 
     goto :goto_4
 
     :cond_2
-    iget-object p1, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p1, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     if-nez v0, :cond_3
 
@@ -557,9 +557,9 @@
     move-result v0
 
     :goto_2
-    iput v0, p1, Lcom/oneplus/android/server/zta/sis$zta;->Nla:I
+    iput v0, p1, Lcom/oneplus/android/server/zta/sis$zta;->Wla:I
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     if-nez v1, :cond_4
 
@@ -571,7 +571,7 @@
     move-result v2
 
     :goto_3
-    iput v2, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ola:I
+    iput v2, p0, Lcom/oneplus/android/server/zta/sis$zta;->Xla:I
 
     :goto_4
     const/4 p0, 0x1
@@ -582,7 +582,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/zta/sis;)Lcom/oneplus/android/server/zta/sis$zta;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Qla:Lcom/oneplus/android/server/zta/sis$zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/sis;->Zla:Lcom/oneplus/android/server/zta/sis$zta;
 
     return-object p0
 .end method
@@ -744,7 +744,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis;->Gu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/sis;->Hu()V
 
     :cond_1
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;

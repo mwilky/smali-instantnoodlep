@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
-.field public static final enum wza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+.field public static final enum Fza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
-.field public static final enum xza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+.field public static final enum Gza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->wza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Fza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     new-instance v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
@@ -52,17 +52,17 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->xza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Gza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
-    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->wza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Fza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     aput-object v3, v0, v1
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->xza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Gza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     aput-object v1, v0, v2
 

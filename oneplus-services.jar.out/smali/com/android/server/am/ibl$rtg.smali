@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public hn:I
-
 .field public mAction:I
 
 .field public mPkgName:Ljava/lang/String;
+
+.field public sn:I
 
 .field final synthetic this$0:Lcom/android/server/am/ibl;
 
@@ -38,13 +38,13 @@
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/android/server/am/ibl$rtg;->hn:I
+    iput p1, p0, Lcom/android/server/am/ibl$rtg;->sn:I
 
     iput p1, p0, Lcom/android/server/am/ibl$rtg;->mAction:I
 
     iput-object p2, p0, Lcom/android/server/am/ibl$rtg;->mPkgName:Ljava/lang/String;
 
-    iput p3, p0, Lcom/android/server/am/ibl$rtg;->hn:I
+    iput p3, p0, Lcom/android/server/am/ibl$rtg;->sn:I
 
     iput p4, p0, Lcom/android/server/am/ibl$rtg;->mAction:I
 
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/am/ibl$rtg;->hn:I
+    iget v1, p0, Lcom/android/server/am/ibl$rtg;->sn:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

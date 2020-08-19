@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field EE:Ljava/util/HashMap;
+.field RE:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -26,9 +26,9 @@
     .end annotation
 .end field
 
-.field GE:Ljava/lang/String;
+.field SE:Ljava/lang/String;
 
-.field JE:J
+.field TE:J
 
 .field packageName:Ljava/lang/String;
 
@@ -63,13 +63,13 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/B$tsu;->EE:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/server/am/B$tsu;->RE:Ljava/util/HashMap;
 
-    iput-object p1, p0, Lcom/android/server/am/B$tsu;->GE:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/B$tsu;->SE:Ljava/lang/String;
 
     const-wide v0, 0x7fffffffffffffffL
 
-    iput-wide v0, p0, Lcom/android/server/am/B$tsu;->JE:J
+    iput-wide v0, p0, Lcom/android/server/am/B$tsu;->TE:J
 
     invoke-virtual {p2}, Lcom/android/server/job/controllers/JobStatus;->getSourceUid()I
 
@@ -118,40 +118,26 @@
     return p0
 .end method
 
-.method private pp()Ljava/lang/String;
+.method private qp()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/am/B$tsu;->GE:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/B$tsu;->SE:Ljava/lang/String;
 
     return-object p0
 .end method
 
-.method private qp()J
+.method private rp()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/B$tsu;->JE:J
+    iget-wide v0, p0, Lcom/android/server/am/B$tsu;->TE:J
 
     return-wide v0
-.end method
-
-.method private rp()V
-    .locals 2
-
-    const-string v0, ""
-
-    iput-object v0, p0, Lcom/android/server/am/B$tsu;->GE:Ljava/lang/String;
-
-    const-wide v0, 0x7fffffffffffffffL
-
-    iput-wide v0, p0, Lcom/android/server/am/B$tsu;->JE:J
-
-    return-void
 .end method
 
 .method static synthetic sis(Lcom/android/server/am/B$tsu;)Ljava/lang/String;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->pp()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->qp()Ljava/lang/String;
 
     move-result-object p0
 
@@ -159,18 +145,32 @@
 .end method
 
 .method private sp()V
+    .locals 2
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/android/server/am/B$tsu;->SE:Ljava/lang/String;
+
+    const-wide v0, 0x7fffffffffffffffL
+
+    iput-wide v0, p0, Lcom/android/server/am/B$tsu;->TE:J
+
+    return-void
+.end method
+
+.method private tp()V
     .locals 7
 
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->rp()V
+    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->sp()V
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iget-object v1, p0, Lcom/android/server/am/B$tsu;->EE:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/server/am/B$tsu;->RE:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
@@ -214,20 +214,20 @@
 
     if-lez v5, :cond_1
 
-    iget-wide v5, p0, Lcom/android/server/am/B$tsu;->JE:J
+    iget-wide v5, p0, Lcom/android/server/am/B$tsu;->TE:J
 
     cmp-long v5, v5, v3
 
     if-lez v5, :cond_0
 
-    iput-wide v3, p0, Lcom/android/server/am/B$tsu;->JE:J
+    iput-wide v3, p0, Lcom/android/server/am/B$tsu;->TE:J
 
-    iput-object v2, p0, Lcom/android/server/am/B$tsu;->GE:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/am/B$tsu;->SE:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_1
-    iget-object v3, p0, Lcom/android/server/am/B$tsu;->EE:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/server/am/B$tsu;->RE:Ljava/util/HashMap;
 
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -261,7 +261,7 @@
 .method static synthetic you(Lcom/android/server/am/B$tsu;)J
     .locals 2
 
-    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->qp()J
+    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->rp()J
 
     move-result-wide v0
 
@@ -288,7 +288,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/am/B$tsu;->EE:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/B$tsu;->RE:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -296,7 +296,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/am/B$tsu;->EE:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/B$tsu;->RE:Ljava/util/HashMap;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -340,7 +340,7 @@
 .method static synthetic zta(Lcom/android/server/am/B$tsu;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->sp()V
+    invoke-direct {p0}, Lcom/android/server/am/B$tsu;->tp()V
 
     return-void
 .end method
@@ -369,7 +369,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/am/B$tsu;->EE:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/server/am/B$tsu;->RE:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Lcom/android/server/job/controllers/JobStatus;->getTag()Ljava/lang/String;
 

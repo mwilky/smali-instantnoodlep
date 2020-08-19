@@ -18,93 +18,75 @@
 
 
 # static fields
-.field private static final Asa:I = 0x2
+.field private static final Asa:Ljava/lang/String; = "SCREEN OFF"
 
-.field private static final Bsa:I = 0x4
+.field private static final Bsa:Ljava/lang/String; = "com.netflix.mediaclient"
 
-.field private static final Csa:I = 0x5
+.field private static final Csa:I = 0xb
 
-.field private static final Dsa:I = 0x20
+.field private static final Dsa:I = 0x1
 
-.field private static final Esa:I = 0x1f4
+.field private static final Esa:I = 0x0
 
-.field private static final Fsa:I = 0x1
+.field private static final Fsa:I = 0x0
 
-.field private static final Gsa:I = 0x2
+.field private static final Gsa:I = 0x1
 
-.field private static final Hsa:I = 0x3
+.field private static final Hsa:I = 0x0
 
-.field private static final Isa:I = 0x4
+.field private static final Isa:I = 0x1
 
-.field private static final Jsa:J = 0x1f40L
+.field private static final Jsa:I = 0x2
 
-.field private static final Ksa:J = 0x3e8L
+.field private static final Ksa:I = 0x4
 
-.field private static final LZ:I = 0x3
+.field private static final Lsa:I = 0x5
 
-.field private static final Lsa:I = 0x18
+.field private static final Msa:I = 0x20
+
+.field private static final Nsa:I = 0x1f4
+
+.field private static final Osa:I = 0x1
+
+.field private static final Psa:I = 0x2
+
+.field private static final Qsa:I = 0x3
+
+.field private static final Rsa:I = 0x4
+
+.field private static final Ssa:J = 0x1f40L
+
+.field private static final Tsa:J = 0x3e8L
 
 .field private static final USER_OWNER:I = 0x0
 
-.field private static final msa:Ljava/lang/String; = "com.oneplus.gallery"
+.field private static final UZ:I = 0x3
 
-.field private static final nsa:Ljava/lang/String; = "com.oneplus.gallery/com.oneplus.gallery2.VideoPlayerActivity"
+.field private static final Usa:I = 0x18
 
-.field private static final osa:Ljava/lang/String; = "com.oneplus.gallery/com.oneplus.gallery.VideoPlayerActivity"
+.field private static final vsa:Ljava/lang/String; = "com.oneplus.gallery"
 
-.field private static final psa:Ljava/lang/String; = "com.android.systemui"
+.field private static final wsa:Ljava/lang/String; = "com.oneplus.gallery/com.oneplus.gallery2.VideoPlayerActivity"
 
-.field private static final qsa:Ljava/lang/String; = "com.android.systemui/com.android.systemui.pip.phone.PipMenuActivity"
+.field private static final xsa:Ljava/lang/String; = "com.oneplus.gallery/com.oneplus.gallery.VideoPlayerActivity"
 
-.field private static final rsa:Ljava/lang/String; = "SCREEN OFF"
+.field private static final ysa:Ljava/lang/String; = "com.android.systemui"
 
-.field private static final ssa:Ljava/lang/String; = "com.netflix.mediaclient"
-
-.field private static final tsa:I = 0xb
-
-.field private static final usa:I = 0x1
-
-.field private static final vsa:I = 0x0
-
-.field private static final wsa:I = 0x0
-
-.field private static final xsa:I = 0x1
-
-.field private static final ysa:I = 0x0
-
-.field private static final zsa:I = 0x1
+.field private static final zsa:Ljava/lang/String; = "com.android.systemui/com.android.systemui.pip.phone.PipMenuActivity"
 
 
 # instance fields
-.field private final Ara:Lcom/oneplus/android/server/iris/sis$zta;
+.field private final Jra:Lcom/oneplus/android/server/iris/sis$zta;
 
-.field private final Bra:Ljava/lang/Object;
+.field private final Kra:Ljava/lang/Object;
 
-.field private Cra:Lcom/oneplus/android/server/iris/qbh;
+.field private Lra:Lcom/oneplus/android/server/iris/qbh;
 
-.field private Dra:Lcom/oneplus/android/server/iris/dma;
+.field private Mra:Lcom/oneplus/android/server/iris/dma;
 
-.field private Era:Landroid/os/Handler;
+.field private Nra:Landroid/os/Handler;
 
-.field private Fra:I
-
-.field private Gra:Z
-
-.field private Hra:Z
-
-.field private Ira:Z
-
-.field private Jra:Z
-
-.field private Kra:Z
-
-.field private Lra:Z
-
-.field private Mra:Z
-
-.field private Nra:Z
-
-.field private Ora:Z
+.field private Ora:I
 
 .field private Pra:Z
 
@@ -140,19 +122,19 @@
 
 .field private esa:Z
 
-.field private fsa:Ljava/lang/Runnable;
+.field private fsa:Z
 
-.field private gsa:Lcom/oneplus/android/server/iris/sis$sis;
+.field private gsa:Z
 
-.field private hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+.field private hsa:Z
 
-.field private isa:Ljava/lang/String;
+.field private isa:Z
 
-.field private jsa:Ljava/lang/String;
+.field private jsa:Z
 
-.field private ksa:Ljava/lang/String;
+.field private ksa:Z
 
-.field private lsa:Lcom/oneplus/display/IOneplusColorDisplayManager;
+.field private lsa:Z
 
 .field private final mContext:Landroid/content/Context;
 
@@ -170,6 +152,24 @@
 
 .field private mWindowManager:Landroid/view/WindowManager;
 
+.field private msa:Z
+
+.field private nsa:Z
+
+.field private osa:Ljava/lang/Runnable;
+
+.field private psa:Lcom/oneplus/android/server/iris/sis$sis;
+
+.field private qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+
+.field private rsa:Ljava/lang/String;
+
+.field private ssa:Ljava/lang/String;
+
+.field private tsa:Ljava/lang/String;
+
+.field private usa:Lcom/oneplus/display/IOneplusColorDisplayManager;
+
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
@@ -181,29 +181,11 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Bra:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Gra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
+    iput v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
 
@@ -225,9 +207,7 @@
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
 
-    const/4 v1, 0x1
-
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
 
@@ -237,19 +217,39 @@
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->mScreenOn:Z
-
     iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Z
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Z
+
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->mScreenOn:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->msa:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->nsa:Z
 
     iput v0, p0, Lcom/oneplus/android/server/iris/sis;->mUserHandle:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->osa:Ljava/lang/Runnable;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Lcom/oneplus/android/server/iris/sis$sis;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->psa:Lcom/oneplus/android/server/iris/sis$sis;
 
     iput-object p1, p0, Lcom/oneplus/android/server/iris/sis;->mContext:Landroid/content/Context;
 
@@ -261,7 +261,7 @@
 
     invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/iris/sis;->Era:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Landroid/os/Handler;
 
     new-instance v1, Lcom/oneplus/android/server/iris/sis$you;
 
@@ -281,33 +281,33 @@
 
     invoke-direct {v0, p1}, Lcom/oneplus/android/server/iris/qbh;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Cra:Lcom/oneplus/android/server/iris/qbh;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Lcom/oneplus/android/server/iris/qbh;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Cra:Lcom/oneplus/android/server/iris/qbh;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Lcom/oneplus/android/server/iris/qbh;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/qbh;->ag()Lcom/oneplus/android/server/iris/dma;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/qbh;->bg()Lcom/oneplus/android/server/iris/dma;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     new-instance v0, Lcom/oneplus/android/server/iris/sis$zta;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/iris/sis$zta;-><init>(Lcom/oneplus/android/server/iris/sis;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Ara:Lcom/oneplus/android/server/iris/sis$zta;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Lcom/oneplus/android/server/iris/sis$zta;
 
     new-instance v0, Lcom/oneplus/android/server/iris/sis$sis;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/iris/sis$sis;-><init>(Lcom/oneplus/android/server/iris/sis;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Lcom/oneplus/android/server/iris/sis$sis;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->psa:Lcom/oneplus/android/server/iris/sis$sis;
 
     new-instance v0, Lcom/oneplus/iris/OpIrisWindowInfo;
 
     invoke-direct {v0}, Lcom/oneplus/iris/OpIrisWindowInfo;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     new-instance v0, Lcom/oneplus/android/server/iris/kth;
 
@@ -341,7 +341,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -349,7 +349,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -367,16 +367,16 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     if-nez v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     if-eqz v0, :cond_2
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
 
     :cond_2
     monitor-exit p0
@@ -464,12 +464,12 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/kth;->Of()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/kth;->Pf()V
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/kth;->Pf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/kth;->Qf()V
 
     :goto_0
     return-void
@@ -517,7 +517,7 @@
 .method private Jb(Z)V
     .locals 4
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Z
 
     if-eqz v0, :cond_0
 
@@ -546,7 +546,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v3, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Z
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -565,7 +565,7 @@
     invoke-static {v2, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Ljava/lang/Runnable;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->osa:Ljava/lang/Runnable;
 
     if-nez p1, :cond_3
 
@@ -573,18 +573,18 @@
 
     invoke-direct {p1, p0}, Lcom/oneplus/android/server/iris/you;-><init>(Lcom/oneplus/android/server/iris/sis;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Ljava/lang/Runnable;
+    iput-object p1, p0, Lcom/oneplus/android/server/iris/sis;->osa:Ljava/lang/Runnable;
 
     :cond_3
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->Era:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Ljava/lang/Runnable;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->osa:Ljava/lang/Runnable;
 
     invoke-virtual {p1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->Era:Landroid/os/Handler;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Landroid/os/Handler;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->osa:Ljava/lang/Runnable;
 
     invoke-virtual {p1, p0, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -597,7 +597,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Z
 
     if-ne v0, p1, :cond_0
 
@@ -606,7 +606,7 @@
     return-void
 
     :cond_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Z
 
     monitor-exit p0
     :try_end_0
@@ -682,7 +682,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Gra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -700,7 +700,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Gra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
 
     if-ne v0, p1, :cond_0
 
@@ -709,7 +709,7 @@
     :cond_0
     if-nez p1, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -727,7 +727,7 @@
     :cond_1
     if-nez p1, :cond_2
 
-    iget v0, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     if-nez v0, :cond_2
 
@@ -736,7 +736,7 @@
     goto :goto_0
 
     :cond_2
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Gra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
 
     if-eqz p1, :cond_3
 
@@ -744,14 +744,14 @@
 
     if-eqz p1, :cond_4
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     const-string p1, "56-1"
 
     goto :goto_1
 
     :cond_3
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     const-string p1, "56-0"
 
@@ -773,7 +773,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -787,7 +787,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v1, v1, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -805,7 +805,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     if-ne v0, p1, :cond_0
 
@@ -816,7 +816,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v2, v2, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -832,7 +832,7 @@
     :cond_1
     if-eqz p1, :cond_2
 
-    iget v2, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v2, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     const/4 v3, 0x4
 
@@ -845,23 +845,23 @@
     goto :goto_0
 
     :cond_2
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     if-eqz p1, :cond_6
 
     const/4 v0, 0x0
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Z
 
     if-eqz v1, :cond_3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Tf()Ljava/util/HashMap;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Uf()Ljava/util/HashMap;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/iris/sis;->you(Ljava/util/HashMap;Ljava/lang/String;)Ljava/lang/String;
 
@@ -870,20 +870,20 @@
     :cond_3
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Vf()Ljava/util/HashMap;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Wf()Ljava/util/HashMap;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/iris/sis;->you(Ljava/util/HashMap;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     :cond_4
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result v1
 
@@ -902,7 +902,7 @@
     const-string v0, "258-74-0"
 
     :cond_5
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     invoke-virtual {v1, v0}, Lcom/oneplus/android/server/iris/ssp;->setIrisCommand(Ljava/lang/String;)V
 
@@ -913,7 +913,7 @@
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     const-string v1, "258-0"
 
@@ -923,7 +923,7 @@
     :goto_1
     if-nez p1, :cond_8
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Z
 
     if-eqz p1, :cond_8
 
@@ -946,7 +946,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -960,7 +960,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v1, v1, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -978,7 +978,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     if-ne v0, p1, :cond_0
 
@@ -987,7 +987,7 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -1005,7 +1005,7 @@
     :cond_1
     if-eqz p1, :cond_2
 
-    iget v0, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     const/4 v2, 0x4
 
@@ -1020,19 +1020,19 @@
     goto :goto_0
 
     :cond_2
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Lcom/oneplus/display/IOneplusColorDisplayManager;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->usa:Lcom/oneplus/display/IOneplusColorDisplayManager;
 
     const/16 v0, 0xb
 
     invoke-interface {p1, v0}, Lcom/oneplus/display/IOneplusColorDisplayManager;->setActiveModesId(I)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/dma;->Zf()Ljava/util/HashMap;
+    invoke-virtual {p1}, Lcom/oneplus/android/server/iris/dma;->_f()Ljava/util/HashMap;
 
     move-result-object p1
 
@@ -1044,7 +1044,7 @@
 
     check-cast p1, Ljava/lang/String;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     :goto_1
     invoke-virtual {p0, p1}, Lcom/oneplus/android/server/iris/ssp;->setIrisCommand(Ljava/lang/String;)V
@@ -1052,7 +1052,7 @@
     goto :goto_2
 
     :cond_3
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Lcom/oneplus/display/IOneplusColorDisplayManager;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->usa:Lcom/oneplus/display/IOneplusColorDisplayManager;
 
     invoke-interface {p1}, Lcom/oneplus/display/IOneplusColorDisplayManager;->resumeColorMode()V
 
@@ -1060,7 +1060,7 @@
 
     if-eqz p1, :cond_4
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     const-string p1, "267-3-0"
 
@@ -1074,14 +1074,14 @@
 .method private Pb(Z)V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Z
 
     if-ne v0, p1, :cond_0
 
     return-void
 
     :cond_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Z
 
     sget-boolean p0, Lcom/oneplus/server/DynamicVsyncManager;->FEATURE_EXTREME_ENABLE:Z
 
@@ -1100,9 +1100,9 @@
 .method private Sc(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Xf()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Yf()Ljava/util/ArrayList;
 
     move-result-object p0
 
@@ -1116,9 +1116,9 @@
 .method private Tc(Ljava/lang/String;)Z
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Vf()Ljava/util/HashMap;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Wf()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -1128,9 +1128,9 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Vf()Ljava/util/HashMap;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Wf()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -1162,9 +1162,9 @@
 .method private Uc(Ljava/lang/String;)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Zf()Ljava/util/HashMap;
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->_f()Ljava/util/HashMap;
 
     move-result-object p0
 
@@ -1224,11 +1224,11 @@
 
     if-eqz p1, :cond_1
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-eqz v1, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->getMemcAppTypeMap()Ljava/util/HashMap;
 
@@ -1241,13 +1241,13 @@
     check-cast v0, Ljava/lang/String;
 
     :cond_0
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     if-eqz v1, :cond_1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Yf()Ljava/util/HashMap;
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Zf()Ljava/util/HashMap;
 
     move-result-object p0
 
@@ -1327,11 +1327,11 @@
 
     if-eqz p1, :cond_1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-eqz v0, :cond_1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->getMemcRateMap()Ljava/util/HashMap;
 
@@ -1369,7 +1369,7 @@
 .method private Yc(Ljava/lang/String;)I
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->getMemcAppTypeMap()Ljava/util/HashMap;
 
@@ -1391,9 +1391,9 @@
 .method private Zc(Ljava/lang/String;)I
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Yf()Ljava/util/HashMap;
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Zf()Ljava/util/HashMap;
 
     move-result-object p0
 
@@ -1428,7 +1428,7 @@
     goto :goto_2
 
     :cond_0
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v2}, Lcom/oneplus/android/server/iris/dma;->getMemcRateMap()Ljava/util/HashMap;
 
@@ -1486,7 +1486,7 @@
 
     if-ne v2, p1, :cond_3
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-eqz p0, :cond_3
 
@@ -1629,36 +1629,36 @@
 
     invoke-virtual {v0, p0}, Lcom/android/server/OnePlusUtil$zta;->zta(Lcom/android/server/OnePlusUtil$zta$you;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Ara:Lcom/oneplus/android/server/iris/sis$zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Lcom/oneplus/android/server/iris/sis$zta;
 
     invoke-virtual {v0, p0}, Lcom/oneplus/android/server/iris/ssp;->zta(Lsis/sis/zta/zta/zta/cno$you;)V
 
     return-void
 .end method
 
-.method private lv()V
+.method private mv()V
     .locals 2
 
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object v1, v1, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/oneplus/android/server/iris/sis;->qeg(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->uv()V
 
     :cond_0
     monitor-exit p0
@@ -1675,10 +1675,10 @@
     throw v0
 .end method
 
-.method private mv()Z
+.method private nv()Z
     .locals 1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     const/16 v0, 0x10c
 
@@ -1699,52 +1699,26 @@
     return v0
 .end method
 
-.method private nv()Z
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
-
-    if-nez v0, :cond_1
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
-
-    if-nez v0, :cond_1
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
-
-    if-nez v0, :cond_1
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
-
-    if-nez v0, :cond_1
-
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
-.end method
-
 .method private ov()Z
     .locals 1
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
+
+    if-nez v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
+
+    if-nez v0, :cond_1
 
     iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-nez v0, :cond_1
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
+
+    if-nez v0, :cond_1
+
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
 
     if-eqz p0, :cond_0
 
@@ -1766,11 +1740,11 @@
 .method private pv()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
     if-nez v0, :cond_1
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
 
     if-eqz p0, :cond_0
 
@@ -1861,7 +1835,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1871,10 +1845,10 @@
 
     if-nez v0, :cond_2
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Z
 
     :cond_2
-    iput-object p1, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iput-object p1, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/oneplus/android/server/iris/sis;->mCurrentPackageName:Ljava/lang/String;
 
@@ -1886,11 +1860,11 @@
 
     if-eqz v0, :cond_7
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
 
     if-nez v0, :cond_3
 
@@ -1903,16 +1877,16 @@
 
     if-ne v0, v2, :cond_4
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
 
     goto :goto_0
 
     :cond_4
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
 
     :goto_0
     const-string v0, "com.oneplus.gallery"
@@ -1951,15 +1925,15 @@
     move v0, v2
 
     :goto_2
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
 
     goto :goto_4
 
     :cond_7
     :goto_3
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
 
     :cond_8
     :goto_4
@@ -1975,15 +1949,15 @@
 
     if-eqz p1, :cond_d
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     if-nez p1, :cond_9
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
     if-nez p1, :cond_9
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-nez p1, :cond_9
 
@@ -1996,11 +1970,11 @@
 
     if-ne p1, v2, :cond_c
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     if-nez p1, :cond_b
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-eqz p1, :cond_a
 
@@ -2016,25 +1990,25 @@
     move p1, v2
 
     :goto_6
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
     goto :goto_8
 
     :cond_c
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
 
     goto :goto_8
 
     :cond_d
     :goto_7
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
 
     :goto_8
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result p1
 
@@ -2048,11 +2022,11 @@
 
     if-eqz p1, :cond_10
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     if-nez p1, :cond_e
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-eqz p1, :cond_f
 
@@ -2060,20 +2034,20 @@
     move v1, v2
 
     :cond_f
-    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
     :cond_10
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->qv()Z
+
+    move-result p1
+
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
+
     invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->pv()Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->ov()Z
-
-    move-result p1
-
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     monitor-exit p0
 
@@ -2094,26 +2068,28 @@
 .end method
 
 .method private qv()Z
-    .locals 2
+    .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
+    if-nez v0, :cond_1
 
-    if-eq v0, v1, :cond_0
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
-
-    if-eq v0, p0, :cond_0
-
-    const/4 p0, 0x1
+    if-eqz p0, :cond_0
 
     goto :goto_0
 
     :cond_0
     const/4 p0, 0x0
 
+    goto :goto_1
+
+    :cond_1
     :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
     return p0
 .end method
 
@@ -2133,26 +2109,28 @@
     return-void
 .end method
 
-.method private rv()V
+.method private rv()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
-    const/4 v1, 0x4
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+    if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    if-eq v0, p0, :cond_0
 
-    move-result-object v0
+    const/4 p0, 0x1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
+    goto :goto_0
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    :cond_0
+    const/4 p0, 0x0
 
-    return-void
+    :goto_0
+    return p0
 .end method
 
 .method static synthetic sis(Lcom/oneplus/android/server/iris/sis;)Lcom/oneplus/android/server/iris/sis$you;
@@ -2166,7 +2144,7 @@
 .method private sis(ZZ)V
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Bra:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -2196,7 +2174,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/iris/sis;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Z
 
     return p1
 .end method
@@ -2204,15 +2182,53 @@
 .method static synthetic ssp(Lcom/oneplus/android/server/iris/sis;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Z
 
     return p0
 .end method
 
 .method private sv()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+
+    move-result-object v0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
+
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    return-void
+.end method
+
+.method static synthetic tsu(Lcom/oneplus/android/server/iris/sis;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
+
+    return-void
+.end method
+
+.method static synthetic tsu(Lcom/oneplus/android/server/iris/sis;Z)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/oneplus/android/server/iris/sis;->Hb(Z)V
+
+    return-void
+.end method
+
+.method private uv()V
     .locals 10
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     if-nez v0, :cond_0
 
@@ -2222,18 +2238,18 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-nez v1, :cond_1
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     :cond_1
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     const/4 v2, 0x2
 
@@ -2241,7 +2257,7 @@
 
     if-eqz v1, :cond_2
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     if-nez v1, :cond_2
 
@@ -2253,43 +2269,43 @@
     move v1, v3
 
     :goto_0
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     const/4 v5, 0x3
 
     if-nez v4, :cond_3
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     if-eqz v4, :cond_3
 
     move v1, v5
 
     :cond_3
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     const/4 v6, 0x4
 
     if-eqz v4, :cond_4
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     if-eqz v4, :cond_4
 
     move v1, v6
 
     :cond_4
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     const/4 v7, 0x1
 
     if-nez v4, :cond_5
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     if-nez v4, :cond_5
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Z
 
     if-eqz v4, :cond_5
 
@@ -2306,18 +2322,18 @@
     move v1, v3
 
     :cond_7
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
 
     if-eqz v4, :cond_8
 
     move v1, v3
 
     :cond_8
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     if-eqz v4, :cond_9
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-boolean v4, v4, Lcom/oneplus/iris/OpIrisWindowInfo;->splitScreenMode:Z
 
@@ -2326,7 +2342,7 @@
     move v1, v3
 
     :cond_9
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
 
     if-eqz v4, :cond_a
 
@@ -2337,7 +2353,7 @@
 
     if-nez v4, :cond_b
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     if-nez v4, :cond_d
 
@@ -2347,7 +2363,7 @@
     goto :goto_2
 
     :cond_b
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     if-nez v4, :cond_d
 
@@ -2362,11 +2378,11 @@
     goto :goto_1
 
     :cond_c
-    iput-boolean v7, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iput-boolean v7, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     :cond_d
     :goto_2
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
 
     if-eqz v4, :cond_f
 
@@ -2380,7 +2396,7 @@
     move v1, v3
 
     :cond_f
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
 
     if-eqz v4, :cond_10
 
@@ -2394,17 +2410,17 @@
     move v1, v3
 
     :cond_11
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result v4
 
     if-eqz v4, :cond_15
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->msa:Z
 
     if-nez v4, :cond_13
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     if-nez v4, :cond_13
 
@@ -2418,11 +2434,11 @@
     move v1, v3
 
     :cond_13
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->nsa:Z
 
     if-eqz v4, :cond_15
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     if-eqz v4, :cond_15
 
@@ -2462,7 +2478,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v9, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v9, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2470,7 +2486,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2478,7 +2494,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2486,7 +2502,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Jra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2494,7 +2510,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2502,7 +2518,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2510,7 +2526,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2518,7 +2534,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2526,7 +2542,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2534,7 +2550,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2542,7 +2558,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2570,7 +2586,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2578,7 +2594,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2586,7 +2602,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2602,7 +2618,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2610,7 +2626,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->msa:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2618,7 +2634,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
+    iget-boolean v9, p0, Lcom/oneplus/android/server/iris/sis;->nsa:Z
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2626,11 +2642,11 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v9, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v9, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     if-eqz v9, :cond_16
 
-    iget-object v9, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v9, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-boolean v9, v9, Lcom/oneplus/iris/OpIrisWindowInfo;->splitScreenMode:Z
 
@@ -2653,9 +2669,9 @@
     invoke-static {v4, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_17
-    iput-boolean v3, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/iris/sis;->nsa:Z
 
-    iget v4, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v4, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     if-ne v4, v1, :cond_18
 
@@ -2674,7 +2690,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v9, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v9, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     invoke-direct {p0, v9}, Lcom/oneplus/android/server/iris/sis;->Hc(I)Ljava/lang/String;
 
@@ -2714,7 +2730,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v9, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iget-object v9, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2724,13 +2740,13 @@
 
     invoke-static {v4, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->Era:Landroid/os/Handler;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Landroid/os/Handler;
 
-    iget-object v8, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Ljava/lang/Runnable;
+    iget-object v8, p0, Lcom/oneplus/android/server/iris/sis;->osa:Ljava/lang/Runnable;
 
     invoke-virtual {v4, v8}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result v4
 
@@ -2752,7 +2768,7 @@
     move v0, v7
 
     :goto_5
-    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Ira:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
 
     if-nez v4, :cond_1b
 
@@ -2774,7 +2790,7 @@
     goto :goto_6
 
     :goto_7
-    iput v1, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iput v1, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     if-eqz v1, :cond_21
 
@@ -2826,22 +2842,6 @@
     throw v0
 .end method
 
-.method static synthetic tsu(Lcom/oneplus/android/server/iris/sis;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()V
-
-    return-void
-.end method
-
-.method static synthetic tsu(Lcom/oneplus/android/server/iris/sis;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/oneplus/android/server/iris/sis;->Hb(Z)V
-
-    return-void
-.end method
-
 .method private you(Ljava/util/HashMap;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -2884,7 +2884,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/iris/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->lv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->mv()V
 
     return-void
 .end method
@@ -2892,7 +2892,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/iris/sis;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
 
     return p1
 .end method
@@ -2900,7 +2900,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/iris/sis;)I
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget p0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     return p0
 .end method
@@ -2942,7 +2942,7 @@
 .method private zta(Lcom/oneplus/iris/OpIrisWindowInfo;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -2958,7 +2958,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v1, v1, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -2989,7 +2989,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v0, p1, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -3021,7 +3021,7 @@
 .method private zta(ZZZZ)V
     .locals 6
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Bra:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -3080,13 +3080,13 @@
 
     const-wide/16 v3, 0x20
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Z
 
     if-eqz p1, :cond_0
 
@@ -3205,7 +3205,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
 
     monitor-exit p0
     :try_end_0
@@ -3266,7 +3266,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Rra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
 
     monitor-exit p0
 
@@ -3306,9 +3306,9 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
 
     monitor-exit p0
 
@@ -3322,30 +3322,6 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
-.end method
-
-.method public Qf()Z
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Qf()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
 .end method
 
 .method public R(Z)V
@@ -3372,7 +3348,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
     monitor-exit p0
 
@@ -3388,51 +3364,28 @@
     throw p1
 .end method
 
-.method public Rf()V
-    .locals 2
+.method public Rf()Z
+    .locals 0
 
-    const-string v0, "OpIrisManager"
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    const-string v1, "setUserPresent"
+    if-eqz p0, :cond_0
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->Rf()Z
 
-    monitor-enter p0
+    move-result p0
 
-    const/4 v0, 0x1
+    if-eqz p0, :cond_0
 
-    :try_start_0
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    const/4 p0, 0x1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    goto :goto_0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Ljava/lang/String;
+    :cond_0
+    const/4 p0, 0x0
 
-    iput-object v1, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
-
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
-
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->isa:Ljava/lang/String;
-
-    iput-object v1, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()V
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
+    :goto_0
+    return p0
 .end method
 
 .method public S(Z)V
@@ -3459,7 +3412,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
 
     monitor-exit p0
 
@@ -3473,6 +3426,53 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
+.end method
+
+.method public Sf()V
+    .locals 2
+
+    const-string v0, "OpIrisManager"
+
+    const-string v1, "setUserPresent"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    monitor-enter p0
+
+    const/4 v0, 0x1
+
+    :try_start_0
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
+
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->ssa:Ljava/lang/String;
+
+    iput-object v1, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->rsa:Ljava/lang/String;
+
+    iput-object v1, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
 .end method
 
 .method public T(Z)V
@@ -3503,10 +3503,10 @@
     if-nez p1, :cond_0
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     :goto_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
 
     goto :goto_1
 
@@ -3548,7 +3548,7 @@
 
     if-nez v0, :cond_2
 
-    iput-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     goto :goto_0
 
@@ -3594,7 +3594,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     monitor-exit p0
     :try_end_0
@@ -3604,7 +3604,7 @@
 
     invoke-virtual {v0, p1}, Lcom/oneplus/android/server/iris/kth;->O(Z)V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
 
     return-void
 
@@ -3643,7 +3643,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     monitor-exit p0
 
@@ -3683,7 +3683,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
 
     monitor-exit p0
 
@@ -3760,7 +3760,7 @@
 
     invoke-virtual {p1, v2}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v2}, Lcom/oneplus/android/server/iris/dma;->getVersion()J
 
@@ -3792,7 +3792,7 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v4}, Lcom/oneplus/android/server/iris/dma;->getUrl()Ljava/lang/String;
 
@@ -3812,9 +3812,9 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Qf()Z
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Rf()Z
 
     move-result v0
 
@@ -3830,21 +3830,21 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->_f()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->ag()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v2}, Lcom/oneplus/android/server/iris/dma;->Yf()Ljava/util/HashMap;
+    invoke-virtual {v2}, Lcom/oneplus/android/server/iris/dma;->Zf()Ljava/util/HashMap;
 
     move-result-object v2
 
-    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v4, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v4}, Lcom/oneplus/android/server/iris/dma;->Zf()Ljava/util/HashMap;
+    invoke-virtual {v4}, Lcom/oneplus/android/server/iris/dma;->_f()Ljava/util/HashMap;
 
     move-result-object v4
 
@@ -3914,19 +3914,19 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Xf()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Yf()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v1}, Lcom/oneplus/android/server/iris/dma;->getMemcAppTypeMap()Ljava/util/HashMap;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v2}, Lcom/oneplus/android/server/iris/dma;->getMemcRateMap()Ljava/util/HashMap;
 
@@ -3996,9 +3996,9 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Wf()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Xf()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -4019,9 +4019,9 @@
 
     check-cast v2, Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v5, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v5}, Lcom/oneplus/android/server/iris/dma;->Vf()Ljava/util/HashMap;
+    invoke-virtual {v5}, Lcom/oneplus/android/server/iris/dma;->Wf()Ljava/util/HashMap;
 
     move-result-object v5
 
@@ -4058,9 +4058,9 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Uf()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/dma;->Vf()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -4079,9 +4079,9 @@
 
     check-cast v2, Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v5, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v5}, Lcom/oneplus/android/server/iris/dma;->Tf()Ljava/util/HashMap;
+    invoke-virtual {v5}, Lcom/oneplus/android/server/iris/dma;->Uf()Ljava/util/HashMap;
 
     move-result-object v5
 
@@ -4126,9 +4126,9 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->fsa:Z
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->zra:Lcom/oneplus/android/server/iris/ssp;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/bio;->Ira:Lcom/oneplus/android/server/iris/ssp;
 
     const-string p1, "56-0"
 
@@ -4173,7 +4173,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4213,7 +4213,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->ksa:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/android/server/iris/sis;->tsa:Ljava/lang/String;
 
     invoke-direct {p0, v2}, Lcom/oneplus/android/server/iris/sis;->Tc(Ljava/lang/String;)Z
 
@@ -4285,7 +4285,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v2, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     invoke-direct {p0, v2}, Lcom/oneplus/android/server/iris/sis;->Hc(I)Ljava/lang/String;
 
@@ -4307,7 +4307,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4325,7 +4325,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4343,7 +4343,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->bsa:Z
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4361,7 +4361,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4379,7 +4379,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Z
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4395,7 +4395,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result v0
 
@@ -4439,7 +4439,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4479,7 +4479,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4497,7 +4497,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4515,7 +4515,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Sra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->asa:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4539,7 +4539,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4557,7 +4557,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4575,7 +4575,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Xra:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4593,7 +4593,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4611,7 +4611,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Yra:Z
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4658,7 +4658,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v2, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4666,7 +4666,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4674,7 +4674,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4682,7 +4682,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4690,7 +4690,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4721,15 +4721,15 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-eqz v0, :cond_2
 
@@ -4823,15 +4823,15 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     if-eqz p2, :cond_1
 
-    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iput-object p1, p2, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
-    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     const-string p3, ""
 
@@ -4847,7 +4847,7 @@
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p4, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p4, p4, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
@@ -4857,7 +4857,7 @@
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p4, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p4, p4, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 
@@ -4870,15 +4870,15 @@
     invoke-static {p2, p3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget-boolean p2, p0, Lcom/oneplus/android/server/iris/sis;->Gra:Z
+    iget-boolean p2, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
 
     if-eqz p2, :cond_2
 
-    iget-boolean p2, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iget-boolean p2, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     if-nez p2, :cond_2
 
-    iget-boolean p2, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean p2, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-eqz p2, :cond_3
 
@@ -4940,7 +4940,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->getMemcAppTypeMap()Ljava/util/HashMap;
 
@@ -4961,7 +4961,7 @@
         }
     .end annotation
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->getMemcRateMap()Ljava/util/HashMap;
 
@@ -4976,15 +4976,15 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Ura:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Nra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Wra:Z
 
     if-nez v0, :cond_0
 
@@ -4993,7 +4993,7 @@
     return p1
 
     :cond_0
-    iget v0, p0, Lcom/oneplus/android/server/iris/sis;->Fra:I
+    iget v0, p0, Lcom/oneplus/android/server/iris/sis;->Ora:I
 
     if-nez v0, :cond_1
 
@@ -5002,11 +5002,11 @@
     return p1
 
     :cond_1
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-eqz v0, :cond_2
 
@@ -5048,7 +5048,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->Zra:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5094,7 +5094,7 @@
 .method public getUrl()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/iris/dma;->getUrl()Ljava/lang/String;
 
@@ -5118,7 +5118,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5139,15 +5139,15 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Lcom/oneplus/android/server/iris/sis$sis;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->psa:Lcom/oneplus/android/server/iris/sis$sis;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     if-nez p1, :cond_1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->gsa:Lcom/oneplus/android/server/iris/sis$sis;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->psa:Lcom/oneplus/android/server/iris/sis$sis;
 
-    iput-boolean p1, v0, Lcom/oneplus/android/server/iris/sis$sis;->rqa:Z
+    iput-boolean p1, v0, Lcom/oneplus/android/server/iris/sis$sis;->Aqa:Z
 
     iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->mHandler:Lcom/oneplus/android/server/iris/sis$you;
 
@@ -5161,7 +5161,7 @@
     monitor-enter p0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->_ra:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->isa:Z
 
     monitor-exit p0
 
@@ -5181,7 +5181,7 @@
 .method public onBootComplete()V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Cra:Lcom/oneplus/android/server/iris/qbh;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/sis;->Lra:Lcom/oneplus/android/server/iris/qbh;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/iris/qbh;->onBootComplete()V
 
@@ -5209,7 +5209,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5222,7 +5222,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->nv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->ov()Z
 
     move-result v0
 
@@ -5231,13 +5231,13 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Mra:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->Vra:Z
 
     const/4 v1, 0x3
 
@@ -5260,10 +5260,10 @@
 
     :cond_3
     :goto_0
-    iput-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/iris/sis;->msa:Z
 
     :cond_4
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->uv()V
 
     return-void
 .end method
@@ -5352,7 +5352,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->nv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->ov()Z
 
     move-result v0
 
@@ -5361,13 +5361,13 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Qf()Z
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/sis;->Rf()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->modeId:I
 
@@ -5377,7 +5377,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->nsa:Z
 
     :cond_2
     invoke-direct {p0, p1}, Lcom/oneplus/android/server/iris/sis;->zta(Lcom/oneplus/iris/OpIrisWindowInfo;)V
@@ -5410,19 +5410,19 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->dsa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->msa:Z
 
     iget-object v0, p1, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->jsa:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->ssa:Ljava/lang/String;
 
     iget-object v0, p1, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->isa:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->rsa:Ljava/lang/String;
 
     const-string v0, "com.android.systemui/com.android.systemui.pip.phone.PipMenuActivity"
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object v1, v1, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 
@@ -5438,7 +5438,7 @@
 
     const-string v0, "SCREEN OFF"
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object v1, v1, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
@@ -5451,11 +5451,11 @@
     goto :goto_0
 
     :cond_4
-    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p1, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p1, p1, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object v0, v0, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
@@ -5472,25 +5472,25 @@
     invoke-direct {p0, v0, p1}, Lcom/oneplus/android/server/iris/sis;->qeg(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->qv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->rv()Z
 
     move-result p1
 
     if-eqz p1, :cond_6
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->ov()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->pv()Z
 
     move-result p1
 
     if-eqz p1, :cond_7
 
     :cond_6
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->esa:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->nsa:Z
 
     if-eqz p1, :cond_8
 
     :cond_7
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->sv()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->uv()V
 
     :cond_8
     monitor-exit p0
@@ -5589,7 +5589,7 @@
 
     check-cast v0, Lcom/oneplus/display/IOneplusColorDisplayManager;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Lcom/oneplus/display/IOneplusColorDisplayManager;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/sis;->usa:Lcom/oneplus/display/IOneplusColorDisplayManager;
 
     iget-object v0, p0, Lcom/oneplus/android/server/iris/sis;->mContext:Landroid/content/Context;
 
@@ -5607,11 +5607,11 @@
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/iris/kth;->systemReady()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->mv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/sis;->nv()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->csa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/iris/sis;->lsa:Z
 
     return-void
 .end method
@@ -5645,17 +5645,17 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     if-eqz p2, :cond_1
 
-    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p4, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p4, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p4, p4, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
@@ -5683,7 +5683,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p3, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p3, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p3, p3, Lcom/oneplus/iris/OpIrisWindowInfo;->packageName:Ljava/lang/String;
 
@@ -5693,7 +5693,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p3, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p3, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p3, p3, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 
@@ -5706,22 +5706,22 @@
     invoke-static {p1, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Gra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Pra:Z
 
     if-eqz p1, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Hra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Qra:Z
 
     if-nez p1, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Kra:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/iris/sis;->Tra:Z
 
     if-eqz p1, :cond_3
 
     :cond_2
     const-string p1, "com.android.systemui/com.android.systemui.pip.phone.PipMenuActivity"
 
-    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->hsa:Lcom/oneplus/iris/OpIrisWindowInfo;
+    iget-object p2, p0, Lcom/oneplus/android/server/iris/sis;->qsa:Lcom/oneplus/iris/OpIrisWindowInfo;
 
     iget-object p2, p2, Lcom/oneplus/iris/OpIrisWindowInfo;->activityName:Ljava/lang/String;
 

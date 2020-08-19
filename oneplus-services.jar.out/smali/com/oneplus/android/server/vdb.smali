@@ -18,71 +18,87 @@
 
 
 # static fields
-.field private static final Aka:I = 0x1
+.field private static final Aka:I = 0xb9
 
-.field private static final Bka:I = 0x1
+.field private static final Bka:I = 0xba
 
-.field private static final Cka:I = 0x2bc
+.field private static final Cka:I = 0xbb
 
 .field private static final DATA_SIZE:I = 0x10
 
-.field private static final Dka:I = 0x2bf
+.field private static final Dka:I = 0xbc
 
-.field private static final Eka:I = 0x1fa2658
+.field private static final Eka:I = 0xbd
 
-.field private static final Fka:I = 0x32
+.field private static final Fka:I = 0xbe
 
-.field private static Gka:I = 0x0
+.field private static final Gka:I = 0x1388
 
-.field private static Hka:I = 0x0
+.field private static final Hka:I = 0x800
 
-.field private static Ika:I = 0x0
+.field private static final Ika:I = 0x0
 
-.field private static Jka:I = 0x0
+.field private static final Jka:I = 0x1
 
-.field private static Kka:I = 0x0
+.field private static final Kka:I = 0x1
 
-.field private static Lka:I = 0x0
+.field private static final Lka:I = 0x2bc
 
-.field private static Mka:I = 0x0
+.field private static final Mka:I = 0x2bf
 
-.field private static Nka:I = 0x0
+.field private static final Nka:I = 0x1fa2658
 
-.field private static Oea:Z = true
-
-.field private static Oka:I = 0x0
+.field private static final Oka:I = 0x32
 
 .field private static Pka:I = 0x0
 
 .field private static Qka:I = 0x0
 
-.field private static Rka:J = 0x0L
+.field private static Rka:I = 0x0
 
-.field private static Ska:J = 0x0L
+.field private static Ska:I = 0x0
 
 .field private static final TAG:Ljava/lang/String; = "OpMotorManagerService"
 
 .field private static final THREAD_NAME:Ljava/lang/String; = "OpMotorManager"
 
-.field private static Tka:J = 0x0L
+.field private static Tka:I = 0x0
 
-.field private static Uka:J = 0x0L
+.field private static Uka:I = 0x0
 
-.field private static Vka:J = 0x0L
+.field private static Vka:I = 0x0
 
-.field private static Wka:J = 0x0L
+.field private static Wka:I = 0x0
 
-.field private static Xka:Z = false
+.field private static Xea:Z = true
 
-.field private static Yka:Z = false
+.field private static Xka:I = 0x0
 
-.field private static Zka:Z = false
+.field private static Yka:I = 0x0
 
-.field private static _ka:Z = false
+.field private static Zka:I = 0x0
 
-.field private static ala:Z = false
+.field private static _ka:J = 0x0L
 
-.field private static bka:Ljava/util/List; = null
+.field private static ala:J = 0x0L
+
+.field private static bla:J = 0x0L
+
+.field private static dla:J = 0x0L
+
+.field private static ela:J = 0x0L
+
+.field private static fla:J = 0x0L
+
+.field private static gla:Z = false
+
+.field private static hla:Z = false
+
+.field private static ila:Z = false
+
+.field private static jla:Z = false
+
+.field private static kka:Ljava/util/List; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -92,81 +108,79 @@
     .end annotation
 .end field
 
-.field private static bla:Z = false
+.field private static kla:Z = false
 
-.field private static final cka:Ljava/lang/String; = "com.oneplus.action.CAMERA"
+.field private static final lka:Ljava/lang/String; = "com.oneplus.action.CAMERA"
 
-.field private static final dka:Ljava/lang/String; = "oneplus.intent.action.INCALLUI_ANSWER"
+.field private static lla:Z = false
 
-.field private static dla:Z = false
+.field private static final mka:Ljava/lang/String; = "oneplus.intent.action.INCALLUI_ANSWER"
 
-.field private static final eka:Ljava/lang/String; = "isVideo"
+.field private static mla:Z = false
 
-.field private static ela:Z = false
+.field private static final nka:Ljava/lang/String; = "isVideo"
 
-.field private static final fka:Ljava/lang/String; = "oneplus.permission.ONEPLUS_COMPONENT_SAFE"
+.field private static nla:Z = false
 
-.field private static fla:Z = false
+.field private static final oka:Ljava/lang/String; = "oneplus.permission.ONEPLUS_COMPONENT_SAFE"
 
-.field private static final gka:Ljava/lang/String; = "android.policy:POWER"
+.field private static ola:Z = false
 
-.field private static gla:Z = false
+.field private static final pka:Ljava/lang/String; = "android.policy:POWER"
 
-.field private static final hka:Ljava/lang/String; = "android.policy:DOUBLE_TAP"
+.field private static pla:Z = false
 
-.field private static hla:Z = false
+.field private static final qka:Ljava/lang/String; = "android.policy:DOUBLE_TAP"
 
-.field private static final ika:Ljava/lang/String; = "systemui_faceunlock"
+.field private static qla:Z = false
 
-.field private static ila:Z = false
+.field private static final rka:Ljava/lang/String; = "systemui_faceunlock"
 
-.field private static final jka:Ljava/lang/String; = "screenoff"
-
-.field private static jla:Z = false
-
-.field private static kI:Z = false
-
-.field private static final kka:Ljava/lang/String; = "persist.sys.motor.calibtime"
-
-.field private static final lka:Ljava/lang/String; = "org.codeaurora.ims"
-
-.field private static mka:Ljava/lang/String; = null
-
-.field private static nka:Ljava/lang/String; = null
-
-.field private static oka:Ljava/lang/String; = null
-
-.field private static final pka:I = 0xb7
-
-.field private static final qka:I = 0xb8
-
-.field private static final rka:I = 0xb9
+.field private static rla:Z = false
 
 .field private static sInstance:Lcom/oneplus/android/server/vdb; = null
 
-.field private static final ska:I = 0xba
+.field private static final ska:Ljava/lang/String; = "screenoff"
 
-.field private static final tka:I = 0xbb
+.field private static sla:Z = false
 
-.field private static final uka:I = 0xbc
+.field private static final tka:Ljava/lang/String; = "persist.sys.motor.calibtime"
 
-.field private static final vka:I = 0xbd
+.field private static uI:Z = false
 
-.field private static final wka:I = 0xbe
+.field private static final uka:Ljava/lang/String; = "org.codeaurora.ims"
 
-.field private static final xka:I = 0x1388
+.field private static vka:Ljava/lang/String; = null
 
-.field private static final yka:I = 0x800
+.field private static wka:Ljava/lang/String; = null
 
-.field private static final zka:I
+.field private static xka:Ljava/lang/String; = null
+
+.field private static final yka:I = 0xb7
+
+.field private static final zka:I = 0xb8
 
 
 # instance fields
-.field private Aja:Landroid/app/AlertDialog;
+.field private Cja:Landroid/hardware/SensorManager;
 
-.field private Bja:Lcom/oneplus/android/server/vdb$tsu;
+.field private Dja:Landroid/hardware/Sensor;
 
-.field private final Cja:Ljava/util/LinkedList;
+.field private Eja:Landroid/app/IActivityTaskManager;
+
+.field private Fja:Lcom/oneplus/android/server/scene/GameModeObserver;
+
+.field private Gja:Lcom/oneplus/android/server/vdb$zta;
+
+.field private Hja:Lsis/you/you/you/zta/zta;
+
+.field private final Ija:Lcom/oneplus/android/server/vdb$sis;
+
+.field private Jja:Landroid/app/AlertDialog;
+
+.field private Kja:Lcom/oneplus/android/server/vdb$tsu;
+
+.field private final Lja:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedList<",
@@ -176,7 +190,7 @@
     .end annotation
 .end field
 
-.field private final Dja:Ljava/util/List;
+.field private final Mja:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -186,41 +200,23 @@
     .end annotation
 .end field
 
-.field private Eja:[J
+.field private Nja:[J
 
-.field private Fja:Ljava/lang/String;
+.field private Oja:Ljava/lang/String;
 
-.field private Gja:Ljava/lang/String;
+.field private Pja:Ljava/lang/String;
 
-.field private Hja:Ljava/lang/String;
+.field private Qja:Ljava/lang/String;
 
-.field private Ija:Ljava/lang/String;
+.field private Rja:Ljava/lang/String;
 
-.field private Jja:Ljava/lang/String;
+.field private Sja:Ljava/lang/String;
 
-.field private Kja:I
+.field private Tja:I
 
-.field private Lja:I
+.field private Uja:I
 
-.field private Mja:I
-
-.field private Nja:Z
-
-.field private Oja:Z
-
-.field private Pja:Z
-
-.field private Qja:Z
-
-.field private Rja:Z
-
-.field private Sja:Z
-
-.field private Tja:Z
-
-.field private Uja:Z
-
-.field private Vja:Z
+.field private Vja:I
 
 .field private Wja:Z
 
@@ -228,15 +224,29 @@
 
 .field private Yja:Z
 
-.field private final Zja:Landroid/hardware/SensorEventListener;
+.field private Zja:Z
 
-.field private _ja:Landroid/media/AudioManager$AudioRecordingCallback;
+.field private _ja:Z
 
-.field private final aka:Landroid/content/BroadcastReceiver;
+.field private aka:Z
 
-.field private lC:Z
+.field private bka:Z
 
-.field private lv:Landroid/app/IProcessObserver;
+.field private cka:Z
+
+.field private dka:Z
+
+.field private eka:Z
+
+.field private fka:Z
+
+.field private gka:Z
+
+.field private final hka:Landroid/hardware/SensorEventListener;
+
+.field private ika:Landroid/media/AudioManager$AudioRecordingCallback;
+
+.field private final jka:Landroid/content/BroadcastReceiver;
 
 .field private mAudioManager:Landroid/media/AudioManager;
 
@@ -260,19 +270,9 @@
 
 .field private mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-.field private tja:Landroid/hardware/SensorManager;
+.field private uC:Z
 
-.field private uja:Landroid/hardware/Sensor;
-
-.field private vja:Landroid/app/IActivityTaskManager;
-
-.field private wja:Lcom/oneplus/android/server/scene/GameModeObserver;
-
-.field private xja:Lcom/oneplus/android/server/vdb$zta;
-
-.field private yja:Lsis/you/you/you/zta/zta;
-
-.field private final zja:Lcom/oneplus/android/server/vdb$sis;
+.field private uv:Landroid/app/IProcessObserver;
 
 
 # direct methods
@@ -283,93 +283,93 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sput-object v0, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     const-string v0, ""
 
-    sput-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sput-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
-    sput-object v0, Lcom/oneplus/android/server/vdb;->nka:Ljava/lang/String;
+    sput-object v0, Lcom/oneplus/android/server/vdb;->wka:Ljava/lang/String;
 
-    sput-object v0, Lcom/oneplus/android/server/vdb;->oka:Ljava/lang/String;
+    sput-object v0, Lcom/oneplus/android/server/vdb;->xka:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    sput v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sput v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
-    sput v0, Lcom/oneplus/android/server/vdb;->Hka:I
+    sput v0, Lcom/oneplus/android/server/vdb;->Qka:I
 
     const/4 v1, 0x1
 
-    sput v1, Lcom/oneplus/android/server/vdb;->Ika:I
+    sput v1, Lcom/oneplus/android/server/vdb;->Rka:I
 
-    sput v1, Lcom/oneplus/android/server/vdb;->Jka:I
+    sput v1, Lcom/oneplus/android/server/vdb;->Ska:I
 
     const/4 v2, 0x4
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Kka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Tka:I
 
     const/16 v2, 0x64
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Lka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Uka:I
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Mka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Vka:I
 
     const/16 v2, 0x1f4
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Nka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Wka:I
 
     const/16 v2, 0x7d0
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Oka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Xka:I
 
     const/16 v2, 0x3e8
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Pka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Yka:I
 
     const/16 v2, 0x5dc
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Qka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Zka:I
 
     const-wide/16 v2, 0x0
 
-    sput-wide v2, Lcom/oneplus/android/server/vdb;->Rka:J
+    sput-wide v2, Lcom/oneplus/android/server/vdb;->_ka:J
 
-    sput-wide v2, Lcom/oneplus/android/server/vdb;->Ska:J
+    sput-wide v2, Lcom/oneplus/android/server/vdb;->ala:J
 
-    sput-wide v2, Lcom/oneplus/android/server/vdb;->Tka:J
+    sput-wide v2, Lcom/oneplus/android/server/vdb;->bla:J
 
-    sput-wide v2, Lcom/oneplus/android/server/vdb;->Uka:J
+    sput-wide v2, Lcom/oneplus/android/server/vdb;->dla:J
 
-    sput-wide v2, Lcom/oneplus/android/server/vdb;->Vka:J
+    sput-wide v2, Lcom/oneplus/android/server/vdb;->ela:J
 
-    sput-wide v2, Lcom/oneplus/android/server/vdb;->Wka:J
+    sput-wide v2, Lcom/oneplus/android/server/vdb;->fla:J
 
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->Xka:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->Yka:Z
-
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->Zka:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->_ka:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ala:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->bla:Z
-
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->dla:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ela:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->fla:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->gla:Z
 
     sput-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ila:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->ila:Z
 
     sput-boolean v0, Lcom/oneplus/android/server/vdb;->jla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->kla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->lla:Z
+
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->mla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->nla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ola:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->qla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->rla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->sla:Z
 
     return-void
 .end method
@@ -381,7 +381,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->xja:Lcom/oneplus/android/server/vdb$zta;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Gja:Lcom/oneplus/android/server/vdb$zta;
 
     new-instance v0, Ljava/lang/Object;
 
@@ -393,95 +393,95 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Cja:Ljava/util/LinkedList;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Lja:Ljava/util/LinkedList;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Dja:Ljava/util/List;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Mja:Ljava/util/List;
 
     const/4 v0, 0x6
 
     new-array v0, v0, [J
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Eja:[J
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Nja:[J
 
     const-string v0, "temp"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Fja:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Ljava/lang/String;
 
     const-string v0, "focus"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     const-string v0, "backgroud"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Hja:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Ljava/lang/String;
 
     const-string v0, "backActivity"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Ija:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Rja:Ljava/lang/String;
 
     const-string v0, "focusActivity"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Sja:Ljava/lang/String;
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iput v0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iput v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
-    iput v0, p0, Lcom/oneplus/android/server/vdb;->Mja:I
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Nja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
-
-    const/4 v1, 0x1
-
-    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->lC:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Sja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Tja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iput v0, p0, Lcom/oneplus/android/server/vdb;->Vja:I
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
+
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->uC:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->aka:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->bka:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->cka:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->dka:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->eka:Z
+
+    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->fka:Z
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->gka:Z
 
     new-instance v0, Lcom/oneplus/android/server/gck;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/gck;-><init>(Lcom/oneplus/android/server/vdb;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Landroid/hardware/SensorEventListener;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->hka:Landroid/hardware/SensorEventListener;
 
     new-instance v0, Lcom/oneplus/android/server/dma;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/dma;-><init>(Lcom/oneplus/android/server/vdb;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->_ja:Landroid/media/AudioManager$AudioRecordingCallback;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->ika:Landroid/media/AudioManager$AudioRecordingCallback;
 
     new-instance v0, Lcom/oneplus/android/server/ywr;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/ywr;-><init>(Lcom/oneplus/android/server/vdb;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->aka:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->jka:Landroid/content/BroadcastReceiver;
 
     new-instance v0, Lcom/oneplus/android/server/qbh;
 
@@ -493,7 +493,7 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/OpMotorManagerService$16;-><init>(Lcom/oneplus/android/server/vdb;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->lv:Landroid/app/IProcessObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->uv:Landroid/app/IProcessObserver;
 
     new-instance v0, Lcom/oneplus/android/server/OpMotorManagerService$17;
 
@@ -535,9 +535,9 @@
 
     invoke-direct {p1, p0, p0, v0}, Lcom/oneplus/android/server/vdb$sis;-><init>(Lcom/oneplus/android/server/vdb;Lcom/oneplus/android/server/vdb;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->zja:Lcom/oneplus/android/server/vdb$sis;
+    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Ija:Lcom/oneplus/android/server/vdb$sis;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->zja:Lcom/oneplus/android/server/vdb$sis;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Ija:Lcom/oneplus/android/server/vdb$sis;
 
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
@@ -547,29 +547,96 @@
 .method static synthetic A(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/oneplus/android/server/vdb;->kI:Z
+    sput-boolean p0, Lcom/oneplus/android/server/vdb;->uI:Z
 
     return p0
 .end method
 
-.method private Au()V
+.method private Au()I
+    .locals 4
+
+    const-string v0, "OpMotorManagerService"
+
+    const-string v1, "upMotor"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->aka:Z
+
+    iget-boolean v2, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
+
+    if-nez v2, :cond_0
+
+    sget-boolean v2, Lcom/oneplus/android/server/vdb;->nla:Z
+
+    if-nez v2, :cond_0
+
+    sget-boolean v2, Lcom/oneplus/android/server/vdb;->ola:Z
+
+    if-nez v2, :cond_0
+
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v2
+
+    invoke-direct {p0, v2, v3}, Lcom/oneplus/android/server/vdb;->j(J)V
+
+    :cond_0
+    const/4 v2, 0x1
+
+    invoke-direct {p0, v2, v2, v2}, Lcom/oneplus/android/server/vdb;->bio(III)I
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    return v1
+
+    :cond_1
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Xea:Z
+
+    if-eqz v1, :cond_2
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "upMotor res: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    return p0
+.end method
+
+.method private Bu()V
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->dla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->mla:Z
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
 
     if-eqz v0, :cond_1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -583,13 +650,13 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Yt()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Zt()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v1, :cond_0
 
@@ -598,20 +665,20 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->zu()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Au()I
 
     :cond_1
     return-void
 .end method
 
-.method private Bu()V
+.method private Cu()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
 
     if-eqz v0, :cond_0
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_0
 
@@ -625,13 +692,13 @@
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->wb(Z)V
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->fka:Z
 
     :cond_0
     return-void
 .end method
 
-.method private Et()V
+.method private Ft()V
     .locals 2
 
     const-string v0, "OpMotorManagerService"
@@ -640,7 +707,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Zka:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->ila:Z
 
     if-eqz v1, :cond_0
 
@@ -648,17 +715,17 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Yt()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Zt()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->fu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->gu()V
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Sja:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->aka:Z
 
     const/4 v1, 0x0
 
@@ -668,7 +735,15 @@
     return-void
 .end method
 
-.method private Ft()V
+.method static synthetic G(I)I
+    .locals 0
+
+    sput p0, Lcom/oneplus/android/server/vdb;->Uka:I
+
+    return p0
+.end method
+
+.method private Gt()V
     .locals 4
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
@@ -683,7 +758,42 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    sget v2, Lcom/oneplus/android/server/vdb;->Mka:I
+    sget v2, Lcom/oneplus/android/server/vdb;->Vka:I
+
+    int-to-long v2, v2
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    :cond_0
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
+
+    return-void
+.end method
+
+.method static synthetic H(I)I
+    .locals 0
+
+    sput p0, Lcom/oneplus/android/server/vdb;->Tka:I
+
+    return p0
+.end method
+
+.method private Ht()V
+    .locals 4
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    const/4 v1, 0x3
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    sget v2, Lcom/oneplus/android/server/vdb;->Vka:I
 
     int-to-long v2, v2
 
@@ -695,84 +805,16 @@
     return-void
 .end method
 
-.method static synthetic G(I)I
-    .locals 0
-
-    sput p0, Lcom/oneplus/android/server/vdb;->Lka:I
-
-    return p0
-.end method
-
-.method private Gt()V
-    .locals 4
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    const/4 v1, 0x3
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    sget v2, Lcom/oneplus/android/server/vdb;->Mka:I
-
-    int-to-long v2, v2
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
-
-    :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ht()V
-
-    return-void
-.end method
-
-.method static synthetic H(I)I
-    .locals 0
-
-    sput p0, Lcom/oneplus/android/server/vdb;->Kka:I
-
-    return p0
-.end method
-
-.method private Ht()V
-    .locals 2
-
-    const/4 v0, 0x1
-
-    sput v0, Lcom/oneplus/android/server/vdb;->Jka:I
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    const/4 v1, 0x4
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    invoke-virtual {p0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    :cond_0
-    return-void
-.end method
-
 .method private It()V
     .locals 2
 
     const/4 v0, 0x1
 
-    sput v0, Lcom/oneplus/android/server/vdb;->Ika:I
+    sput v0, Lcom/oneplus/android/server/vdb;->Ska:I
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
@@ -789,107 +831,27 @@
 .end method
 
 .method private Jt()V
-    .locals 3
+    .locals 2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
+    const/4 v0, 0x1
 
-    const/4 v1, 0x0
+    sput v0, Lcom/oneplus/android/server/vdb;->Rka:I
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    const/4 v1, 0x3
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
+
+    move-result v0
 
     if-eqz v0, :cond_0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    return-void
+    invoke-virtual {p0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_0
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->cancel()V
-
-    :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ou()Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    return-void
-
-    :cond_2
-    new-instance v0, Landroid/app/AlertDialog$Builder;
-
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v2, 0x510000b
-
-    invoke-direct {v0, v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
-
-    move-result-object v0
-
-    const-string v1, "Motor Error"
-
-    invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
-
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    const/16 v1, 0x7d3
-
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setType(I)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    const/16 v1, 0x10
-
-    invoke-virtual {v0, v1}, Landroid/view/Window;->addPrivateFlags(I)V
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Landroid/app/AlertDialog;->setCancelable(Z)V
-
     return-void
 .end method
 
@@ -961,9 +923,157 @@
 .end method
 
 .method private Kt()V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->cancel()V
+
+    :cond_1
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->pu()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    return-void
+
+    :cond_2
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v2, 0x510000b
+
+    invoke-direct {v0, v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v0
+
+    const-string v1, "Motor Error"
+
+    invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
+
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/16 v1, 0x7d3
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setType(I)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/16 v1, 0x10
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->addPrivateFlags(I)V
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Landroid/app/AlertDialog;->setCancelable(Z)V
+
+    return-void
+.end method
+
+.method private Lc(Ljava/lang/String;)V
+    .locals 2
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "msg from socket = "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OpMotorManagerService"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Landroid/os/Message;->what:I
+
+    iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
+
+    return-void
+.end method
+
+.method private Lt()V
     .locals 6
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -974,9 +1084,9 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget v0, Lcom/oneplus/android/server/vdb;->Lka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Uka:I
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Jja:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Sja:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
@@ -988,7 +1098,7 @@
 
     if-eqz v1, :cond_1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Nka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Wka:I
 
     :cond_1
     iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mLock:Ljava/lang/Object;
@@ -1031,66 +1141,6 @@
     throw p0
 .end method
 
-.method private Lc(Ljava/lang/String;)V
-    .locals 2
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "msg from socket = "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OpMotorManagerService"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Landroid/os/Message;->what:I
-
-    iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
-
-    invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
-
-    return-void
-.end method
-
-.method private Lt()V
-    .locals 1
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->tja:Landroid/hardware/SensorManager;
-
-    if-eqz v0, :cond_0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Zja:Landroid/hardware/SensorEventListener;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
-
-    :cond_0
-    return-void
-.end method
-
 .method private Mc(Ljava/lang/String;)V
     .locals 2
 
@@ -1112,17 +1162,17 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iput v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     if-nez v0, :cond_0
 
@@ -1137,11 +1187,28 @@
 .method private Mt()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Cja:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->hka:Landroid/hardware/SensorEventListener;
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private Nt()V
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->dka:Z
+
+    if-eqz v0, :cond_0
+
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
     if-eqz p0, :cond_0
 
@@ -1157,7 +1224,7 @@
     return-void
 .end method
 
-.method private Nt()V
+.method private Ot()V
     .locals 3
 
     const/4 v0, 0x1
@@ -1168,16 +1235,16 @@
 
     if-eqz v1, :cond_0
 
-    sget v1, Lcom/oneplus/android/server/rtg;->lja:I
+    sget v1, Lcom/oneplus/android/server/rtg;->uja:I
 
     add-int/2addr v1, v0
 
-    sput v1, Lcom/oneplus/android/server/rtg;->lja:I
+    sput v1, Lcom/oneplus/android/server/rtg;->uja:I
 
     :cond_0
-    sget v1, Lcom/oneplus/android/server/rtg;->lja:I
+    sget v1, Lcom/oneplus/android/server/rtg;->uja:I
 
-    sget v2, Lcom/oneplus/android/server/vdb;->Kka:I
+    sget v2, Lcom/oneplus/android/server/vdb;->Tka:I
 
     if-le v1, v2, :cond_1
 
@@ -1187,32 +1254,32 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
     :cond_1
     return-void
 .end method
 
-.method private Ot()V
+.method private Pt()V
     .locals 4
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->fla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ola:Z
 
     if-eqz v0, :cond_3
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xka:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
 
     if-eqz v0, :cond_3
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Jka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Ska:I
 
     add-int/lit8 v0, v0, 0x1
 
-    sput v0, Lcom/oneplus/android/server/vdb;->Jka:I
+    sput v0, Lcom/oneplus/android/server/vdb;->Ska:I
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -1224,7 +1291,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/oneplus/android/server/vdb;->Jka:I
+    sget v1, Lcom/oneplus/android/server/vdb;->Ska:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1237,7 +1304,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget v0, Lcom/oneplus/android/server/vdb;->Jka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Ska:I
 
     const/4 v1, 0x4
 
@@ -1245,13 +1312,13 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    sget v2, Lcom/oneplus/android/server/vdb;->Pka:I
+    sget v2, Lcom/oneplus/android/server/vdb;->Yka:I
 
     int-to-long v2, v2
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->au()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->bu()V
 
     goto :goto_0
 
@@ -1284,10 +1351,10 @@
     return-void
 .end method
 
-.method private Pt()I
+.method private Qt()I
     .locals 3
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     const-string v1, "OpMotorManagerService"
 
@@ -1330,18 +1397,18 @@
     return p0
 .end method
 
-.method private Qt()V
+.method private Rt()V
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->bla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->lla:Z
 
     if-eqz v0, :cond_1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_1
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     const-string v1, "OpMotorManagerService"
 
@@ -1352,7 +1419,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Yt()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Zt()Z
 
     move-result v0
 
@@ -1362,11 +1429,11 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->fu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->gu()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Sja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->aka:Z
 
     const/4 v0, 0x0
 
@@ -1376,10 +1443,10 @@
     return-void
 .end method
 
-.method private Rt()V
+.method private St()V
     .locals 3
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -1408,14 +1475,14 @@
     :cond_0
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ila:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->rla:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
 
     return-void
 .end method
 
-.method private St()V
+.method private Tt()V
     .locals 2
 
     const/16 v0, -0xa
@@ -1424,19 +1491,19 @@
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->qla:Z
 
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->_ka:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->jla:Z
 
     if-eqz v1, :cond_0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Tja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->bka:Z
 
     :cond_0
     return-void
 .end method
 
-.method private Tt()V
+.method private Ut()V
     .locals 5
 
     :try_start_0
@@ -1444,7 +1511,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Landroid/app/ActivityManager$StackInfo;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Wt()Landroid/app/ActivityManager$StackInfo;
 
     move-result-object v1
 
@@ -1459,20 +1526,20 @@
     goto :goto_0
 
     :cond_0
-    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->eka:Z
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    iput-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/vdb;->eka:Z
 
     :goto_1
-    iget-boolean v4, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/vdb;->eka:Z
 
     if-eqz v4, :cond_3
 
-    sget-object v4, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v4, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     iget-object v0, v0, Landroid/app/ActivityManager$StackInfo;->topActivity:Landroid/content/ComponentName;
 
@@ -1486,14 +1553,14 @@
 
     if-eqz v0, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->vja:Landroid/app/IActivityTaskManager;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Eja:Landroid/app/IActivityTaskManager;
 
     invoke-interface {p0, v3}, Landroid/app/IActivityTaskManager;->dismissSplitScreenMode(Z)V
 
     goto :goto_2
 
     :cond_2
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     iget-object v1, v1, Landroid/app/ActivityManager$StackInfo;->topActivity:Landroid/content/ComponentName;
 
@@ -1507,14 +1574,14 @@
 
     if-eqz v0, :cond_4
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->vja:Landroid/app/IActivityTaskManager;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Eja:Landroid/app/IActivityTaskManager;
 
     invoke-interface {p0, v2}, Landroid/app/IActivityTaskManager;->dismissSplitScreenMode(Z)V
 
     goto :goto_2
 
     :cond_3
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Xt()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Yt()Z
 
     move-result v0
 
@@ -1562,10 +1629,10 @@
     return-void
 .end method
 
-.method private Ut()Lsis/you/you/you/zta/zta;
+.method private Vt()Lsis/you/you/you/zta/zta;
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     if-nez v0, :cond_0
 
@@ -1574,7 +1641,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1603,16 +1670,16 @@
 
     :cond_0
     :goto_0
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     return-object p0
 .end method
 
-.method private Vt()Landroid/app/ActivityManager$StackInfo;
+.method private Wt()Landroid/app/ActivityManager$StackInfo;
     .locals 2
 
     :try_start_0
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->vja:Landroid/app/IActivityTaskManager;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Eja:Landroid/app/IActivityTaskManager;
 
     const/4 v0, 0x4
 
@@ -1632,13 +1699,13 @@
     return-object p0
 .end method
 
-.method private Wt()V
+.method private Xt()V
     .locals 2
 
     const-string v0, "OpMotorManagerService"
 
     :try_start_0
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v1, :cond_0
 
@@ -1660,7 +1727,7 @@
     :catchall_0
     move-exception p0
 
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v1, :cond_1
 
@@ -1673,16 +1740,16 @@
     return-void
 .end method
 
-.method private Xt()Z
+.method private Yt()Z
     .locals 1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1701,16 +1768,16 @@
     return p0
 .end method
 
-.method private Yt()Z
+.method private Zt()Z
     .locals 2
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->Kc(Ljava/lang/String;)Z
 
     move-result v0
 
-    sget v1, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v1, Lcom/oneplus/android/server/vdb;->Pka:I
 
     invoke-direct {p0, v1}, Lcom/oneplus/android/server/vdb;->uc(I)Z
 
@@ -1731,10 +1798,10 @@
     return p0
 .end method
 
-.method private Zt()V
+.method private _t()V
     .locals 3
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     const-string v1, "OpMotorManagerService"
 
@@ -1745,13 +1812,13 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_4
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1759,7 +1826,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     const-string v2, "org.codeaurora.ims"
 
@@ -1769,7 +1836,7 @@
 
     if-nez v0, :cond_1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->uc(I)Z
 
@@ -1778,7 +1845,7 @@
     if-eqz v0, :cond_4
 
     :cond_1
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_2
 
@@ -1790,7 +1857,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/vdb;->gka:Z
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1801,13 +1868,13 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->pu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->qu()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->gka:Z
 
     if-nez v0, :cond_4
 
@@ -1827,7 +1894,119 @@
     return-void
 .end method
 
-.method private _m()V
+.method static synthetic a(Lcom/oneplus/android/server/vdb;)Ljava/util/List;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Mja:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method static synthetic access$000()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
+
+    return v0
+.end method
+
+.method static synthetic access$1200()I
+    .locals 1
+
+    sget v0, Lcom/oneplus/android/server/vdb;->Uka:I
+
+    return v0
+.end method
+
+.method static synthetic access$1900()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
+
+    return v0
+.end method
+
+.method static synthetic access$2200()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2202(Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    sput-object p0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic access$2302(I)I
+    .locals 0
+
+    sput p0, Lcom/oneplus/android/server/vdb;->Pka:I
+
+    return p0
+.end method
+
+.method static synthetic access$302(Z)Z
+    .locals 0
+
+    sput-boolean p0, Lcom/oneplus/android/server/vdb;->ila:Z
+
+    return p0
+.end method
+
+.method static synthetic access$3500()I
+    .locals 1
+
+    sget v0, Lcom/oneplus/android/server/vdb;->Wka:I
+
+    return v0
+.end method
+
+.method static synthetic access$400()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->mla:Z
+
+    return v0
+.end method
+
+.method static synthetic access$500()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->kla:Z
+
+    return v0
+.end method
+
+.method static synthetic access$6100()Ljava/util/List;
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method static synthetic access$800()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->lla:Z
+
+    return v0
+.end method
+
+.method static synthetic af()I
+    .locals 1
+
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
+
+    return v0
+.end method
+
+.method private an()V
     .locals 3
 
     const-string v0, "OpMotorManagerService"
@@ -1846,9 +2025,9 @@
 
     check-cast v0, Landroid/hardware/SensorManager;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->tja:Landroid/hardware/SensorManager;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Cja:Landroid/hardware/SensorManager;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->tja:Landroid/hardware/SensorManager;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Cja:Landroid/hardware/SensorManager;
 
     const v1, 0x1fa2658
 
@@ -1876,20 +2055,20 @@
 
     if-eqz v1, :cond_0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->uja:Landroid/hardware/Sensor;
+    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->Dja:Landroid/hardware/Sensor;
 
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Landroid/hardware/SensorEventListener;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->hka:Landroid/hardware/SensorEventListener;
 
     if-eqz v0, :cond_2
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->uja:Landroid/hardware/Sensor;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Dja:Landroid/hardware/Sensor;
 
     if-eqz v1, :cond_2
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->tja:Landroid/hardware/SensorManager;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Cja:Landroid/hardware/SensorManager;
 
     const/4 v2, 0x0
 
@@ -1899,7 +2078,7 @@
     return-void
 .end method
 
-.method private _t()V
+.method private au()V
     .locals 2
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mTelephonyManager:Landroid/telephony/TelephonyManager;
@@ -1916,258 +2095,18 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/oneplus/android/server/vdb;)Ljava/util/List;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Dja:Ljava/util/List;
-
-    return-object p0
-.end method
-
-.method static synthetic access$000()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
-
-    return v0
-.end method
-
-.method static synthetic access$1200()I
-    .locals 1
-
-    sget v0, Lcom/oneplus/android/server/vdb;->Lka:I
-
-    return v0
-.end method
-
-.method static synthetic access$1900()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Yka:Z
-
-    return v0
-.end method
-
-.method static synthetic access$2200()Ljava/lang/String;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method static synthetic access$2202(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    sput-object p0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method static synthetic access$2300()I
-    .locals 1
-
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
-
-    return v0
-.end method
-
-.method static synthetic access$2302(I)I
-    .locals 0
-
-    sput p0, Lcom/oneplus/android/server/vdb;->Gka:I
-
-    return p0
-.end method
-
-.method static synthetic access$302(Z)Z
-    .locals 0
-
-    sput-boolean p0, Lcom/oneplus/android/server/vdb;->Zka:Z
-
-    return p0
-.end method
-
-.method static synthetic access$3500()I
-    .locals 1
-
-    sget v0, Lcom/oneplus/android/server/vdb;->Nka:I
-
-    return v0
-.end method
-
-.method static synthetic access$400()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->dla:Z
-
-    return v0
-.end method
-
-.method static synthetic access$500()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ala:Z
-
-    return v0
-.end method
-
-.method static synthetic access$6100()Ljava/util/List;
-    .locals 1
-
-    sget-object v0, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
-
-    return-object v0
-.end method
-
-.method static synthetic access$800()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->bla:Z
-
-    return v0
-.end method
-
-.method static synthetic af()I
-    .locals 1
-
-    sget v0, Lcom/oneplus/android/server/vdb;->Qka:I
-
-    return v0
-.end method
-
-.method private au()V
-    .locals 3
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->dla:Z
-
-    const-string v1, "OpMotorManagerService"
-
-    if-nez v0, :cond_1
-
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
-
-    if-nez v0, :cond_1
-
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
-
-    if-nez v0, :cond_1
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "loopDetectMotor sMotorDownLocked: "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v2, Lcom/oneplus/android/server/vdb;->fla:Z
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
-
-    :cond_1
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
-
-    if-nez v0, :cond_5
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
-
-    if-nez v0, :cond_5
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->bla:Z
-
-    if-nez v0, :cond_5
-
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
-
-    if-eqz v0, :cond_2
-
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
-
-    const/4 v2, 0x1
-
-    if-eq v0, v2, :cond_3
-
-    :cond_2
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
-
-    if-eqz v0, :cond_5
-
-    :cond_3
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
-
-    if-eqz v0, :cond_4
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "loopDetectMotor sMotorUpLocked: "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-boolean v2, Lcom/oneplus/android/server/vdb;->ela:Z
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v2, " mAppMotorCommand: "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v2, p0, Lcom/oneplus/android/server/vdb;->Lja:I
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_4
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->zu()I
-
-    :cond_5
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
-
-    if-nez v0, :cond_6
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
-
-    if-eqz v0, :cond_7
-
-    :cond_6
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
-
-    :cond_7
-    return-void
-.end method
-
 .method static synthetic b(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Bu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Cu()V
 
     return-void
 .end method
 
-.method static synthetic bf()Z
+.method static synthetic bf()I
     .locals 1
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
+    sget v0, Lcom/oneplus/android/server/vdb;->Zka:I
 
     return v0
 .end method
@@ -2184,13 +2123,13 @@
     const/4 v1, -0x1
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()Lsis/you/you/you/zta/zta;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Lsis/you/you/you/zta/zta;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     invoke-interface {p0, p1, p2, p3}, Lsis/you/you/you/zta/zta;->sis(III)I
 
@@ -2229,7 +2168,7 @@
 .method static synthetic bio(Lcom/oneplus/android/server/vdb;)Landroid/app/ActivityManager$StackInfo;
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Landroid/app/ActivityManager$StackInfo;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Wt()Landroid/app/ActivityManager$StackInfo;
 
     move-result-object p0
 
@@ -2237,11 +2176,187 @@
 .end method
 
 .method private bu()V
+    .locals 3
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->mla:Z
+
+    const-string v1, "OpMotorManagerService"
+
+    if-nez v0, :cond_1
+
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
+
+    if-nez v0, :cond_1
+
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
+
+    if-nez v0, :cond_1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "loopDetectMotor sMotorDownLocked: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v2, Lcom/oneplus/android/server/vdb;->ola:Z
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
+
+    :cond_1
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    if-nez v0, :cond_5
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->qla:Z
+
+    if-nez v0, :cond_5
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->lla:Z
+
+    if-nez v0, :cond_5
+
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
+
+    if-eqz v0, :cond_2
+
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
+
+    const/4 v2, 0x1
+
+    if-eq v0, v2, :cond_3
+
+    :cond_2
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
+
+    if-eqz v0, :cond_5
+
+    :cond_3
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
+
+    if-eqz v0, :cond_4
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "loopDetectMotor sMotorUpLocked: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-boolean v2, Lcom/oneplus/android/server/vdb;->nla:Z
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v2, " mAppMotorCommand: "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v2, p0, Lcom/oneplus/android/server/vdb;->Uja:I
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_4
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Au()I
+
+    :cond_5
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    if-nez v0, :cond_6
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->qla:Z
+
+    if-eqz v0, :cond_7
+
+    :cond_6
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
+
+    :cond_7
+    return-void
+.end method
+
+.method static synthetic bud(Lcom/oneplus/android/server/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->eu()V
+
+    return-void
+.end method
+
+.method static synthetic bvj(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Qja:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic c(Lcom/oneplus/android/server/vdb;)Lcom/oneplus/android/server/scene/GameModeObserver;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Fja:Lcom/oneplus/android/server/scene/GameModeObserver;
+
+    return-object p0
+.end method
+
+.method static synthetic cf()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    return v0
+.end method
+
+.method static synthetic cgv(Lcom/oneplus/android/server/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->vu()V
+
+    return-void
+.end method
+
+.method static synthetic cjf(Lcom/oneplus/android/server/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->du()V
+
+    return-void
+.end method
+
+.method static synthetic cno(Lcom/oneplus/android/server/vdb;)I
+    .locals 0
+
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Vja:I
+
+    return p0
+.end method
+
+.method private cu()V
     .locals 4
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Hja:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Qja:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2252,7 +2367,7 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Xt()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Yt()Z
 
     move-result v0
 
@@ -2279,18 +2394,18 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_1
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
 
     if-nez v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
 
     if-eqz v0, :cond_6
 
     :cond_2
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Fja:Ljava/lang/String;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2298,7 +2413,7 @@
 
     if-eqz v0, :cond_6
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_3
 
@@ -2307,13 +2422,13 @@
     invoke-static {v2, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->pu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->qu()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->gka:Z
 
     if-nez v0, :cond_5
 
@@ -2332,22 +2447,22 @@
     :goto_0
     const-string v0, "temp"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Fja:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
 
     :cond_6
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_a
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Hja:Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Qja:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2355,11 +2470,11 @@
 
     if-eqz v0, :cond_a
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->eka:Z
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     const-string v3, "net.oneplus.launcher"
 
@@ -2370,7 +2485,7 @@
     if-eqz v0, :cond_8
 
     :cond_7
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Mja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Vja:I
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->tc(I)Z
 
@@ -2388,13 +2503,13 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    sget v2, Lcom/oneplus/android/server/vdb;->Lka:I
+    sget v2, Lcom/oneplus/android/server/vdb;->Uka:I
 
     int-to-long v2, v2
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->uc(I)Z
 
@@ -2406,7 +2521,7 @@
 
     const/16 v0, 0x14
 
-    sget v1, Lcom/oneplus/android/server/vdb;->Oka:I
+    sget v1, Lcom/oneplus/android/server/vdb;->Xka:I
 
     int-to-long v1, v1
 
@@ -2416,66 +2531,26 @@
     return-void
 .end method
 
-.method static synthetic bud(Lcom/oneplus/android/server/vdb;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->du()V
-
-    return-void
-.end method
-
-.method static synthetic bvj(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Hja:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method static synthetic c(Lcom/oneplus/android/server/vdb;)Lcom/oneplus/android/server/scene/GameModeObserver;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->wja:Lcom/oneplus/android/server/scene/GameModeObserver;
-
-    return-object p0
-.end method
-
-.method static synthetic cf()I
+.method static synthetic df()I
     .locals 1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Kka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Tka:I
 
     return v0
 .end method
 
-.method static synthetic cgv(Lcom/oneplus/android/server/vdb;)V
+.method static synthetic dma(Lcom/oneplus/android/server/vdb;)Lcom/oneplus/android/server/vdb$tsu;
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->uu()V
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Kja:Lcom/oneplus/android/server/vdb$tsu;
 
-    return-void
+    return-object p0
 .end method
 
-.method static synthetic cjf(Lcom/oneplus/android/server/vdb;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->cu()V
-
-    return-void
-.end method
-
-.method static synthetic cno(Lcom/oneplus/android/server/vdb;)I
-    .locals 0
-
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Mja:I
-
-    return p0
-.end method
-
-.method private cu()V
+.method private du()V
     .locals 4
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     const-string v1, "OpMotorManagerService"
 
@@ -2571,85 +2646,6 @@
     return-void
 .end method
 
-.method static synthetic dma(Lcom/oneplus/android/server/vdb;)Lcom/oneplus/android/server/vdb$tsu;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Bja:Lcom/oneplus/android/server/vdb$tsu;
-
-    return-object p0
-.end method
-
-.method private du()V
-    .locals 4
-
-    const-string v0, "OpMotorManagerService"
-
-    const-string v1, "show phoneFallDialog"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v2, 0x50f0136
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    const/4 v1, -0x2
-
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v3, 0x50f00ca
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/oneplus/android/server/igw;
-
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/igw;-><init>(Lcom/oneplus/android/server/vdb;)V
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    const/4 v1, -0x1
-
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v3, 0x50f001d
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/oneplus/android/server/wtn;
-
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/wtn;-><init>(Lcom/oneplus/android/server/vdb;)V
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
-
-    return-void
-.end method
-
 .method private dumpInternal(Ljava/io/PrintWriter;)V
     .locals 2
 
@@ -2665,7 +2661,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2683,7 +2679,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v1, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2701,7 +2697,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/oneplus/android/server/vdb;->nka:Ljava/lang/String;
+    sget-object v1, Lcom/oneplus/android/server/vdb;->wka:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2719,7 +2715,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v1, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2737,7 +2733,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2751,7 +2747,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget v1, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v1, Lcom/oneplus/android/server/vdb;->Pka:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2759,7 +2755,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v1, Lcom/oneplus/android/server/vdb;->Pka:I
 
     invoke-direct {p0, v1}, Lcom/oneplus/android/server/vdb;->uc(I)Z
 
@@ -2781,7 +2777,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -2807,7 +2803,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Lka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Uka:I
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2825,7 +2821,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->_ka:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->jla:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2843,7 +2839,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ala:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->kla:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2861,7 +2857,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->bla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->lla:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2879,7 +2875,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->dla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->mla:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2897,7 +2893,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ela:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->nla:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2915,7 +2911,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->fla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ola:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2933,7 +2929,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Zka:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ila:Z
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2949,21 +2945,78 @@
 .method static synthetic ear(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Rt()V
 
     return-void
 .end method
 
 .method private eu()V
-    .locals 1
+    .locals 4
 
-    const/4 v0, 0x1
+    const-string v0, "OpMotorManagerService"
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Pja:Z
+    const-string v1, "show phoneFallDialog"
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Fja:Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v2, 0x50f0136
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    const/4 v1, -0x2
+
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v3, 0x50f00ca
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/oneplus/android/server/igw;
+
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/igw;-><init>(Lcom/oneplus/android/server/vdb;)V
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    const/4 v1, -0x1
+
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v3, 0x50f001d
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/oneplus/android/server/wtn;
+
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/wtn;-><init>(Lcom/oneplus/android/server/vdb;)V
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -2971,7 +3024,7 @@
 .method static synthetic fto(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->tu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->uu()V
 
     return-void
 .end method
@@ -2981,11 +3034,11 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Fja:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Ljava/lang/String;
 
     return-void
 .end method
@@ -2993,7 +3046,7 @@
 .method static synthetic gck(Lcom/oneplus/android/server/vdb;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->gka:Z
 
     return p0
 .end method
@@ -3029,7 +3082,7 @@
     .locals 2
 
     :try_start_0
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->vja:Landroid/app/IActivityTaskManager;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Eja:Landroid/app/IActivityTaskManager;
 
     const/4 v0, 0x3
 
@@ -3050,6 +3103,36 @@
 .end method
 
 .method private gu()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
+
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
+
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Oja:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method static synthetic gwm(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Sja:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method static synthetic hmo(Lcom/oneplus/android/server/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->wu()V
+
+    return-void
+.end method
+
+.method private hu()V
     .locals 5
 
     const-string v0, "OpMotorManagerService"
@@ -3058,64 +3141,64 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Mt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Nt()V
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v1
 
-    sput-wide v1, Lcom/oneplus/android/server/vdb;->Uka:J
+    sput-wide v1, Lcom/oneplus/android/server/vdb;->dla:J
 
-    sget-wide v1, Lcom/oneplus/android/server/vdb;->Uka:J
+    sget-wide v1, Lcom/oneplus/android/server/vdb;->dla:J
 
-    sget-wide v3, Lcom/oneplus/android/server/vdb;->Tka:J
+    sget-wide v3, Lcom/oneplus/android/server/vdb;->bla:J
 
     sub-long/2addr v1, v3
 
-    sput-wide v1, Lcom/oneplus/android/server/vdb;->Wka:J
+    sput-wide v1, Lcom/oneplus/android/server/vdb;->fla:J
 
     const/4 v1, 0x1
 
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->dla:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->mla:Z
 
     const/4 v2, 0x0
 
-    sput-boolean v2, Lcom/oneplus/android/server/vdb;->ala:Z
+    sput-boolean v2, Lcom/oneplus/android/server/vdb;->kla:Z
 
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     if-nez v3, :cond_0
 
-    iget v3, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v3, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     if-eq v3, v1, :cond_0
 
-    iget v3, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v3, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     if-eqz v3, :cond_2
 
     :cond_0
-    sget-boolean v3, Lcom/oneplus/android/server/vdb;->hla:Z
+    sget-boolean v3, Lcom/oneplus/android/server/vdb;->qla:Z
 
     if-nez v3, :cond_2
 
-    sget-boolean v3, Lcom/oneplus/android/server/vdb;->gla:Z
+    sget-boolean v3, Lcom/oneplus/android/server/vdb;->pla:Z
 
     if-nez v3, :cond_2
 
-    sget-boolean v3, Lcom/oneplus/android/server/vdb;->ila:Z
+    sget-boolean v3, Lcom/oneplus/android/server/vdb;->rla:Z
 
     if-nez v3, :cond_2
 
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Nja:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
 
     if-nez v3, :cond_2
 
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->lC:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->uC:Z
 
     if-eqz v3, :cond_2
 
-    sget-boolean v3, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v3, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v3, :cond_1
 
@@ -3127,7 +3210,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v4, Lcom/oneplus/android/server/vdb;->gla:Z
+    sget-boolean v4, Lcom/oneplus/android/server/vdb;->pla:Z
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -3135,7 +3218,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v4, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3143,7 +3226,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v4, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3154,19 +3237,19 @@
     invoke-static {v0, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->zu()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Au()I
 
     :cond_2
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
 
     if-nez v0, :cond_3
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->qla:Z
 
     if-eqz v0, :cond_7
 
     :cond_3
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
 
     if-eqz v0, :cond_4
 
@@ -3180,15 +3263,15 @@
     goto :goto_1
 
     :cond_4
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->qla:Z
 
     if-eqz v0, :cond_6
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     if-eq v0, v1, :cond_5
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     if-eqz v0, :cond_6
 
@@ -3201,54 +3284,70 @@
 
     :cond_6
     :goto_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->eu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->fu()V
 
     :cond_7
-    sput-boolean v2, Lcom/oneplus/android/server/vdb;->jla:Z
+    sput-boolean v2, Lcom/oneplus/android/server/vdb;->sla:Z
 
-    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Nja:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
 
-    sput-boolean v2, Lcom/oneplus/android/server/vdb;->gla:Z
+    sput-boolean v2, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    sput-boolean v2, Lcom/oneplus/android/server/vdb;->qla:Z
+
+    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->bka:Z
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Mt()V
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
 
     sput-boolean v2, Lcom/oneplus/android/server/vdb;->hla:Z
 
-    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Tja:Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->It()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Lt()V
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Yka:Z
-
-    sput-boolean v2, Lcom/oneplus/android/server/vdb;->Yka:Z
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ht()V
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->dka:Z
 
     if-nez v0, :cond_8
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Nt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ot()V
 
     :cond_8
     return-void
 .end method
 
-.method static synthetic gwm(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
+.method static synthetic ibl(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Rja:Ljava/lang/String;
 
     return-object p0
 .end method
 
-.method static synthetic hmo(Lcom/oneplus/android/server/vdb;)V
+.method static synthetic igw(Lcom/oneplus/android/server/vdb;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->vu()V
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->eka:Z
+
+    return p0
+.end method
+
+.method static synthetic ire(Lcom/oneplus/android/server/vdb;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Bu()V
 
     return-void
 .end method
 
-.method private hu()V
+.method static synthetic irq(Lcom/oneplus/android/server/vdb;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->aka:Z
+
+    return p0
+.end method
+
+.method private iu()V
     .locals 2
 
     const-string v0, "OpMotorManagerService"
@@ -3259,127 +3358,27 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ala:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->kla:Z
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->fla:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ola:Z
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->Yka:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ft()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Gt()V
 
-    return-void
-.end method
-
-.method static synthetic ibl(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Ija:Ljava/lang/String;
-
-    return-object p0
-.end method
-
-.method static synthetic igw(Lcom/oneplus/android/server/vdb;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
-
-    return p0
-.end method
-
-.method static synthetic ire(Lcom/oneplus/android/server/vdb;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Au()V
-
-    return-void
-.end method
-
-.method static synthetic irq(Lcom/oneplus/android/server/vdb;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Sja:Z
-
-    return p0
-.end method
-
-.method private iu()V
-    .locals 3
-
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v0
-
-    sput-wide v0, Lcom/oneplus/android/server/vdb;->Tka:J
-
-    const/4 v0, 0x1
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ala:Z
-
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->bla:Z
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ela:Z
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "setMotorDowning mFocusPkg: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, " sCameraUserPkg: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v2, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "OpMotorManagerService"
-
-    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->fla:Z
-
-    if-nez v1, :cond_0
-
-    const/4 v1, -0x1
-
-    invoke-direct {p0, v1}, Lcom/oneplus/android/server/vdb;->vc(I)V
-
-    :cond_0
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->fla:Z
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
-
-    if-eqz v0, :cond_1
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Tt()V
-
-    :cond_1
     return-void
 .end method
 
 .method static synthetic ivd(Lcom/oneplus/android/server/vdb;)I
     .locals 2
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     add-int/lit8 v1, v0, -0x1
 
-    iput v1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iput v1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     return v0
 .end method
@@ -3387,7 +3386,7 @@
 .method private j(J)V
     .locals 6
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -3419,7 +3418,7 @@
 
     if-ge v1, v2, :cond_1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->Eja:[J
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->Nja:[J
 
     add-int/lit8 v3, v1, 0x1
 
@@ -3432,7 +3431,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Eja:[J
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Nja:[J
 
     aput-wide p1, v1, v2
 
@@ -3467,7 +3466,7 @@
 
     if-ge v0, p1, :cond_2
 
-    iget-object p1, p0, Lcom/oneplus/android/server/vdb;->Eja:[J
+    iget-object p1, p0, Lcom/oneplus/android/server/vdb;->Nja:[J
 
     aput-wide v3, p1, v0
 
@@ -3480,8 +3479,70 @@
 .end method
 
 .method private ju()V
-    .locals 0
+    .locals 3
 
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    sput-wide v0, Lcom/oneplus/android/server/vdb;->bla:J
+
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->kla:Z
+
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->lla:Z
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->nla:Z
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "setMotorDowning mFocusPkg: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, " sCameraUserPkg: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v2, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "OpMotorManagerService"
+
+    invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->ola:Z
+
+    if-nez v1, :cond_0
+
+    const/4 v1, -0x1
+
+    invoke-direct {p0, v1}, Lcom/oneplus/android/server/vdb;->vc(I)V
+
+    :cond_0
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ola:Z
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    if-eqz v0, :cond_1
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()V
+
+    :cond_1
     return-void
 .end method
 
@@ -3496,21 +3557,7 @@
 .end method
 
 .method private ku()V
-    .locals 2
-
-    const-string v0, "OpMotorManagerService"
-
-    const-string v1, "setMotorPush"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x1
-
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
-
-    const/16 v0, -0xa
-
-    invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->vc(I)V
+    .locals 0
 
     return-void
 .end method
@@ -3527,13 +3574,13 @@
     const/4 v1, -0x1
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()Lsis/you/you/you/zta/zta;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Lsis/you/you/you/zta/zta;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     invoke-interface {p0, p1, p2}, Lsis/you/you/you/zta/zta;->cno(II)I
 
@@ -3580,12 +3627,40 @@
 .method static synthetic lqr(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ru()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->su()V
 
     return-void
 .end method
 
 .method private lu()V
+    .locals 2
+
+    const-string v0, "OpMotorManagerService"
+
+    const-string v1, "setMotorPush"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v0, 0x1
+
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->pla:Z
+
+    const/16 v0, -0xa
+
+    invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->vc(I)V
+
+    return-void
+.end method
+
+.method static synthetic mc()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->uI:Z
+
+    return v0
+.end method
+
+.method private mu()V
     .locals 8
 
     const-string v0, "OpMotorManagerService"
@@ -3594,62 +3669,62 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->wu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->xu()V
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v1
 
-    sput-wide v1, Lcom/oneplus/android/server/vdb;->Ska:J
+    sput-wide v1, Lcom/oneplus/android/server/vdb;->ala:J
 
-    sget-wide v1, Lcom/oneplus/android/server/vdb;->Ska:J
+    sget-wide v1, Lcom/oneplus/android/server/vdb;->ala:J
 
-    sget-wide v3, Lcom/oneplus/android/server/vdb;->Rka:J
+    sget-wide v3, Lcom/oneplus/android/server/vdb;->_ka:J
 
     sub-long/2addr v1, v3
 
-    sput-wide v1, Lcom/oneplus/android/server/vdb;->Vka:J
+    sput-wide v1, Lcom/oneplus/android/server/vdb;->ela:J
 
     const/4 v1, 0x1
 
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->bla:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->lla:Z
 
     const/4 v2, 0x0
 
-    sput-boolean v2, Lcom/oneplus/android/server/vdb;->_ka:Z
+    sput-boolean v2, Lcom/oneplus/android/server/vdb;->jla:Z
 
-    sget v3, Lcom/oneplus/android/server/vdb;->Hka:I
+    sget v3, Lcom/oneplus/android/server/vdb;->Qka:I
 
     add-int/2addr v3, v1
 
-    sput v3, Lcom/oneplus/android/server/vdb;->Hka:I
+    sput v3, Lcom/oneplus/android/server/vdb;->Qka:I
 
-    sget v3, Lcom/oneplus/android/server/vdb;->Hka:I
+    sget v3, Lcom/oneplus/android/server/vdb;->Qka:I
 
     const/16 v4, 0x3c
 
     if-le v3, v4, :cond_0
 
-    sput v2, Lcom/oneplus/android/server/vdb;->Hka:I
+    sput v2, Lcom/oneplus/android/server/vdb;->Qka:I
 
     :cond_0
-    sget-boolean v3, Lcom/oneplus/android/server/vdb;->Yka:Z
+    sget-boolean v3, Lcom/oneplus/android/server/vdb;->hla:Z
 
-    sput-boolean v2, Lcom/oneplus/android/server/vdb;->Yka:Z
+    sput-boolean v2, Lcom/oneplus/android/server/vdb;->hla:Z
 
-    sget-boolean v3, Lcom/oneplus/android/server/vdb;->jla:Z
-
-    if-nez v3, :cond_1
-
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Tja:Z
+    sget-boolean v3, Lcom/oneplus/android/server/vdb;->sla:Z
 
     if-nez v3, :cond_1
 
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->bka:Z
+
+    if-nez v3, :cond_1
+
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     if-nez v3, :cond_2
 
-    iget v3, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v3, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     if-nez v3, :cond_2
 
@@ -3676,14 +3751,14 @@
     if-nez v3, :cond_2
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
 
     :cond_2
-    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Tja:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->bka:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->It()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
 
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
     if-eqz v3, :cond_5
 
@@ -3701,7 +3776,7 @@
 
     sub-long/2addr v3, v5
 
-    sget-boolean v5, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v5, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v5, :cond_3
 
@@ -3728,35 +3803,43 @@
 
     if-gez v0, :cond_4
 
-    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iput-boolean v2, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
     return-void
 
     :cond_4
     invoke-static {}, Lcom/oneplus/android/server/rtg;->Ye()Z
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->dka:Z
 
     :cond_5
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->dka:Z
 
     if-nez v0, :cond_6
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->xu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->yu()V
 
     :cond_6
     return-void
 .end method
 
-.method static synthetic mc()Z
-    .locals 1
+.method static synthetic na(Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->kI:Z
+    sput-object p0, Lcom/oneplus/android/server/vdb;->xka:Ljava/lang/String;
 
-    return v0
+    return-object p0
 .end method
 
-.method private mu()V
+.method static synthetic nc()Ljava/lang/String;
+    .locals 1
+
+    sget-object v0, Lcom/oneplus/android/server/vdb;->wka:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method private nu()V
     .locals 2
 
     const-string v0, "OpMotorManagerService"
@@ -3767,36 +3850,36 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->_ka:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->jla:Z
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->ela:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->nla:Z
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->Yka:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->hla:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Gt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ht()V
 
     return-void
 .end method
 
-.method static synthetic na(Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic obl(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    sput-object p0, Lcom/oneplus/android/server/vdb;->oka:Ljava/lang/String;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ft()V
 
-    return-object p0
+    return-void
 .end method
 
-.method static synthetic nc()Ljava/lang/String;
-    .locals 1
+.method static synthetic oif(Lcom/oneplus/android/server/vdb;)Z
+    .locals 0
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->nka:Ljava/lang/String;
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
-    return-object v0
+    return p0
 .end method
 
-.method private nu()V
+.method private ou()V
     .locals 3
 
     const-string v0, "OpMotorManagerService"
@@ -3809,49 +3892,41 @@
 
     move-result-wide v0
 
-    sput-wide v0, Lcom/oneplus/android/server/vdb;->Rka:J
+    sput-wide v0, Lcom/oneplus/android/server/vdb;->_ka:J
 
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/oneplus/android/server/vdb;->_ka:Z
+    sput-boolean v0, Lcom/oneplus/android/server/vdb;->jla:Z
 
     const/4 v1, 0x0
 
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->dla:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->mla:Z
 
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->fla:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->ola:Z
 
-    sget-boolean v2, Lcom/oneplus/android/server/vdb;->ela:Z
+    sget-boolean v2, Lcom/oneplus/android/server/vdb;->nla:Z
 
     if-nez v2, :cond_0
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->vc(I)V
 
     :cond_0
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->ela:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->nla:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->_m()V
-
-    return-void
-.end method
-
-.method static synthetic obl(Lcom/oneplus/android/server/vdb;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Et()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->an()V
 
     return-void
 .end method
 
-.method static synthetic oif(Lcom/oneplus/android/server/vdb;)Z
+.method static synthetic oxb(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Tt()V
 
-    return p0
+    return-void
 .end method
 
-.method private ou()Z
+.method private pu()Z
     .locals 0
 
     invoke-static {}, Lcom/android/server/pm/OpPackageManagerHelperInjector;->isInSpecialTesting()Z
@@ -3863,18 +3938,28 @@
     return p0
 .end method
 
-.method static synthetic oxb(Lcom/oneplus/android/server/vdb;)V
+.method static synthetic qbh(Lcom/oneplus/android/server/vdb;)Z
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->St()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->qu()Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method
 
-.method private pu()Z
+.method static synthetic qeg(Lcom/oneplus/android/server/vdb;)I
+    .locals 0
+
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
+
+    return p0
+.end method
+
+.method private qu()Z
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -3886,7 +3971,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -3894,7 +3979,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -3902,7 +3987,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v1, Lcom/oneplus/android/server/vdb;->Pka:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3910,7 +3995,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v1, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3918,7 +4003,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/vdb;->fka:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -3931,19 +4016,19 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     if-nez v0, :cond_1
 
-    sget v0, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget v0, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     const-string v1, "com.oneplus.camera"
 
@@ -3953,7 +4038,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     const-string v1, "com.oneplus.faceunlock"
 
@@ -3965,7 +4050,7 @@
 
     const/16 v0, 0x166
 
-    sget-object v1, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v1, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/android/server/pm/OpCompatibilityInjector;->isInConfigList(ILjava/lang/String;)Z
 
@@ -3973,7 +4058,7 @@
 
     if-nez v0, :cond_1
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->fka:Z
 
     if-eqz p0, :cond_1
 
@@ -3988,25 +4073,33 @@
     return p0
 .end method
 
-.method static synthetic qbh(Lcom/oneplus/android/server/vdb;)Z
+.method static synthetic rtg(Lcom/oneplus/android/server/vdb;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->pu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Au()I
 
     move-result p0
 
     return p0
 .end method
 
-.method static synthetic qeg(Lcom/oneplus/android/server/vdb;)I
+.method static synthetic rtg(Lcom/oneplus/android/server/vdb;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Rja:Ljava/lang/String;
 
-    return p0
+    return-object p1
 .end method
 
-.method private qu()V
+.method static synthetic rtg(Lcom/oneplus/android/server/vdb;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
+
+    return p1
+.end method
+
+.method private ru()V
     .locals 6
 
     const-string v0, "OpMotorManagerService"
@@ -4015,9 +4108,9 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -4043,7 +4136,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v4, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     invoke-virtual {v3, v4, v0}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
@@ -4066,7 +4159,7 @@
 
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
-    sget-object v2, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object v2, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     :goto_0
     if-eqz v2, :cond_3
@@ -4082,7 +4175,7 @@
     goto :goto_1
 
     :cond_1
-    iget v3, p0, Lcom/oneplus/android/server/vdb;->Mja:I
+    iget v3, p0, Lcom/oneplus/android/server/vdb;->Vja:I
 
     invoke-static {v3}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -4105,7 +4198,7 @@
     move-result-object v2
 
     :cond_2
-    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     iget-object v4, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
@@ -4125,7 +4218,7 @@
 
     invoke-virtual {v3, v0}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     const/4 v1, -0x2
 
@@ -4143,7 +4236,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     const/4 v1, -0x1
 
@@ -4161,7 +4254,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
@@ -4170,89 +4263,10 @@
     return-void
 .end method
 
-.method static synthetic rtg(Lcom/oneplus/android/server/vdb;)I
-    .locals 0
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->zu()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic rtg(Lcom/oneplus/android/server/vdb;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Ija:Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method static synthetic rtg(Lcom/oneplus/android/server/vdb;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Nja:Z
-
-    return p1
-.end method
-
-.method private ru()V
-    .locals 4
-
-    const-string v0, "OpMotorManagerService"
-
-    const-string v1, "showMotorCannotUpDialog"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v2, 0x50f004f
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    const/4 v1, -0x2
-
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v3, 0x50f014a
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/oneplus/android/server/ugm;
-
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/ugm;-><init>(Lcom/oneplus/android/server/vdb;)V
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
-
-    return-void
-.end method
-
 .method static synthetic sis(Lcom/oneplus/android/server/vdb;)I
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
 
     move-result p0
 
@@ -4276,7 +4290,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4284,7 +4298,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v1, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4319,7 +4333,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object v1, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -4327,15 +4341,15 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object v1, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget v1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     add-int/2addr v1, v2
 
-    iput v1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iput v1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -4348,9 +4362,9 @@
 
     invoke-direct {v1, p0, p1, p2, v2}, Lcom/oneplus/android/server/vdb$zta;-><init>(Lcom/oneplus/android/server/vdb;Ljava/lang/String;Landroid/os/IBinder;Lcom/oneplus/android/server/gck;)V
 
-    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->xja:Lcom/oneplus/android/server/vdb$zta;
+    iput-object v1, p0, Lcom/oneplus/android/server/vdb;->Gja:Lcom/oneplus/android/server/vdb$zta;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/vdb;->xja:Lcom/oneplus/android/server/vdb$zta;
+    iget-object p1, p0, Lcom/oneplus/android/server/vdb;->Gja:Lcom/oneplus/android/server/vdb$zta;
 
     const/4 v1, 0x0
 
@@ -4371,7 +4385,7 @@
 
     if-eqz p1, :cond_1
 
-    iput v2, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iput v2, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     :catch_0
     :cond_1
@@ -4442,31 +4456,31 @@
     invoke-virtual {p1, p2}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_5
-    iget-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     if-nez p1, :cond_6
 
-    iget-boolean p1, p0, Lcom/oneplus/android/server/vdb;->lC:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/vdb;->uC:Z
 
     if-eqz p1, :cond_7
 
     :cond_6
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->dla:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->mla:Z
 
     if-nez p1, :cond_8
 
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->ela:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->nla:Z
 
     if-nez p1, :cond_8
 
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->fla:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->ola:Z
 
     if-eqz p1, :cond_7
 
     goto :goto_1
 
     :cond_7
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     monitor-exit v0
 
@@ -4474,7 +4488,7 @@
 
     :cond_8
     :goto_1
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p1, :cond_9
 
@@ -4488,7 +4502,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->dla:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->mla:Z
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -4499,7 +4513,7 @@
     invoke-static {p1, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_9
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->zu()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Au()I
 
     move-result p0
 
@@ -4540,7 +4554,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/vdb;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     return p1
 .end method
@@ -4548,7 +4562,7 @@
 .method static synthetic ssp(Lcom/oneplus/android/server/vdb;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Jja:Ljava/lang/String;
+    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Sja:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -4556,7 +4570,7 @@
 .method static synthetic ssp(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Tt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()V
 
     return-void
 .end method
@@ -4566,13 +4580,13 @@
 
     const-string v0, "OpMotorManagerService"
 
-    const-string v1, "showMotorDownLockedDialog"
+    const-string v1, "showMotorCannotUpDialog"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -4581,7 +4595,7 @@
     :cond_0
     iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    const v2, 0x50f0012
+    const v2, 0x50f004f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4589,7 +4603,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     const/4 v1, -0x2
 
@@ -4601,13 +4615,13 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/oneplus/android/server/ssp;
+    new-instance v3, Lcom/oneplus/android/server/ugm;
 
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/ssp;-><init>(Lcom/oneplus/android/server/vdb;)V
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/ugm;-><init>(Lcom/oneplus/android/server/vdb;)V
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
@@ -4665,7 +4679,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/vdb;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Hja:Ljava/lang/String;
+    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Qja:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -4673,7 +4687,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/vdb;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Sja:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->aka:Z
 
     return p1
 .end method
@@ -4683,13 +4697,13 @@
 
     const-string v0, "OpMotorManagerService"
 
-    const-string v1, "showMotorUpLockedDialog"
+    const-string v1, "showMotorDownLockedDialog"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -4698,7 +4712,7 @@
     :cond_0
     iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    const v2, 0x50f0013
+    const v2, 0x50f0012
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4706,43 +4720,25 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     const/4 v1, -0x2
 
     iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f00c9
+    const v3, 0x50f014a
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    new-instance v3, Lcom/oneplus/android/server/ibl;
+    new-instance v3, Lcom/oneplus/android/server/ssp;
 
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/ibl;-><init>(Lcom/oneplus/android/server/vdb;)V
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    const/4 v1, -0x1
-
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
-
-    const v3, 0x50f001d
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Lcom/oneplus/android/server/gwm;
-
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/gwm;-><init>(Lcom/oneplus/android/server/vdb;)V
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/ssp;-><init>(Lcom/oneplus/android/server/vdb;)V
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
@@ -4857,7 +4853,7 @@
 
     const/4 p0, 0x2
 
-    sget-object p1, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
+    sget-object p1, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/pm/OpCompatibilityInjector;->isInConfigList(ILjava/lang/String;)Z
 
@@ -4884,7 +4880,7 @@
 .method static synthetic ugm(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->bu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->cu()V
 
     return-void
 .end method
@@ -4894,13 +4890,13 @@
 
     const-string v0, "OpMotorManagerService"
 
-    const-string v1, "showMotorDownLockedDialog"
+    const-string v1, "showMotorUpLockedDialog"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -4909,7 +4905,7 @@
     :cond_0
     iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    const v2, 0x50f000c
+    const v2, 0x50f0013
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4917,25 +4913,43 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     const/4 v1, -0x2
 
     iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    const v3, 0x50f014a
+    const v3, 0x50f00c9
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    new-instance v3, Lcom/oneplus/android/server/cno;
+    new-instance v3, Lcom/oneplus/android/server/ibl;
 
-    invoke-direct {v3, p0}, Lcom/oneplus/android/server/cno;-><init>(Lcom/oneplus/android/server/vdb;)V
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/ibl;-><init>(Lcom/oneplus/android/server/vdb;)V
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    const/4 v1, -0x1
+
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v3, 0x50f001d
+
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/oneplus/android/server/gwm;
+
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/gwm;-><init>(Lcom/oneplus/android/server/vdb;)V
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
@@ -4951,12 +4965,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Dja:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Mja:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Dja:Ljava/util/List;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Mja:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -4997,7 +5011,7 @@
 
     invoke-static {v4, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Dja:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/vdb;->Mja:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -5021,7 +5035,7 @@
 .method static synthetic vdb(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->yu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->zu()V
 
     return-void
 .end method
@@ -5029,7 +5043,7 @@
 .method static synthetic vdw(Lcom/oneplus/android/server/vdb;)Ljava/util/LinkedList;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Cja:Ljava/util/LinkedList;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Lja:Ljava/util/LinkedList;
 
     return-object p0
 .end method
@@ -5037,7 +5051,7 @@
 .method static synthetic veq(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->su()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->tu()V
 
     return-void
 .end method
@@ -5045,23 +5059,23 @@
 .method static synthetic vju(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->qu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ru()V
 
     return-void
 .end method
 
 .method private vu()V
-    .locals 12
+    .locals 4
 
     const-string v0, "OpMotorManagerService"
 
-    const-string v1, "showUpMotorWarning"
+    const-string v1, "showMotorDownLockedDialog"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Jt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -5070,7 +5084,7 @@
     :cond_0
     iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    const v2, 0x50f0134
+    const v2, 0x50f000c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5078,59 +5092,27 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+    const/4 v1, -0x2
 
-    const v2, 0x50f014a
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    const v3, 0x50f014a
 
-    move-result-object v1
+    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    new-instance v2, Lcom/oneplus/android/server/oif;
+    move-result-object v2
 
-    invoke-direct {v2, p0}, Lcom/oneplus/android/server/oif;-><init>(Lcom/oneplus/android/server/vdb;)V
+    new-instance v3, Lcom/oneplus/android/server/cno;
 
-    const/4 v3, -0x1
+    invoke-direct {v3, p0}, Lcom/oneplus/android/server/cno;-><init>(Lcom/oneplus/android/server/vdb;)V
 
-    invoke-virtual {v0, v3, v1, v2}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Aja:Landroid/app/AlertDialog;
-
-    invoke-virtual {v0, v3}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Landroid/widget/Button;->getCurrentTextColor()I
-
-    move-result v11
-
-    const v0, -0x777778
-
-    invoke-virtual {v10, v0}, Landroid/widget/Button;->setTextColor(I)V
-
-    const/4 v0, 0x0
-
-    invoke-virtual {v10, v0}, Landroid/widget/Button;->setClickable(Z)V
-
-    new-instance v0, Lcom/oneplus/android/server/bvj;
-
-    const-wide/16 v6, 0x1388
-
-    const-wide/16 v8, 0x3e8
-
-    move-object v4, v0
-
-    move-object v5, p0
-
-    invoke-direct/range {v4 .. v11}, Lcom/oneplus/android/server/bvj;-><init>(Lcom/oneplus/android/server/vdb;JJLandroid/widget/Button;I)V
-
-    invoke-virtual {v0}, Landroid/os/CountDownTimer;->start()Landroid/os/CountDownTimer;
+    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -5138,7 +5120,7 @@
 .method private wb(Z)V
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -5199,19 +5181,104 @@
 .method static synthetic wtn(Lcom/oneplus/android/server/vdb;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     return-object p0
 .end method
 
 .method private wu()V
+    .locals 12
+
+    const-string v0, "OpMotorManagerService"
+
+    const-string v1, "showUpMotorWarning"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v2, 0x50f0134
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
+
+    const v2, 0x50f014a
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/oneplus/android/server/oif;
+
+    invoke-direct {v2, p0}, Lcom/oneplus/android/server/oif;-><init>(Lcom/oneplus/android/server/vdb;)V
+
+    const/4 v3, -0x1
+
+    invoke-virtual {v0, v3, v1, v2}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
+
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Jja:Landroid/app/AlertDialog;
+
+    invoke-virtual {v0, v3}, Landroid/app/AlertDialog;->getButton(I)Landroid/widget/Button;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Landroid/widget/Button;->getCurrentTextColor()I
+
+    move-result v11
+
+    const v0, -0x777778
+
+    invoke-virtual {v10, v0}, Landroid/widget/Button;->setTextColor(I)V
+
+    const/4 v0, 0x0
+
+    invoke-virtual {v10, v0}, Landroid/widget/Button;->setClickable(Z)V
+
+    new-instance v0, Lcom/oneplus/android/server/bvj;
+
+    const-wide/16 v6, 0x1388
+
+    const-wide/16 v8, 0x3e8
+
+    move-object v4, v0
+
+    move-object v5, p0
+
+    invoke-direct/range {v4 .. v11}, Lcom/oneplus/android/server/bvj;-><init>(Lcom/oneplus/android/server/vdb;JJLandroid/widget/Button;I)V
+
+    invoke-virtual {v0}, Landroid/os/CountDownTimer;->start()Landroid/os/CountDownTimer;
+
+    return-void
+.end method
+
+.method private xu()V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->dka:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
     if-eqz v0, :cond_0
 
@@ -5227,13 +5294,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Vja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->dka:Z
 
-    sput v0, Lcom/oneplus/android/server/rtg;->lja:I
+    sput v0, Lcom/oneplus/android/server/rtg;->uja:I
 
-    sput v0, Lcom/oneplus/android/server/rtg;->mja:I
+    sput v0, Lcom/oneplus/android/server/rtg;->vja:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -5251,44 +5318,6 @@
     return-void
 .end method
 
-.method private xu()V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Lcom/oneplus/android/server/rtg;->x(Z)Z
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_0
-
-    sget v0, Lcom/oneplus/android/server/rtg;->mja:I
-
-    add-int/2addr v0, v1
-
-    sput v0, Lcom/oneplus/android/server/rtg;->mja:I
-
-    :cond_0
-    sget v0, Lcom/oneplus/android/server/rtg;->mja:I
-
-    sget v2, Lcom/oneplus/android/server/vdb;->Kka:I
-
-    if-le v0, v2, :cond_1
-
-    const-string v0, "OpMotorManagerService"
-
-    const-string v2, "upArrivedCalibDetect successed"
-
-    invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Uja:Z
-
-    :cond_1
-    return-void
-.end method
-
 .method private you(II)I
     .locals 3
 
@@ -5301,13 +5330,13 @@
     const/4 v1, -0x1
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()Lsis/you/you/you/zta/zta;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Lsis/you/you/you/zta/zta;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     invoke-interface {p0, p1, p2}, Lsis/you/you/you/zta/zta;->you(II)I
 
@@ -5356,7 +5385,7 @@
 .method private you(Ljava/lang/String;Landroid/os/IBinder;)I
     .locals 3
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -5364,7 +5393,7 @@
 
     if-eqz v0, :cond_6
 
-    sget-object v0, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object v0, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -5378,9 +5407,9 @@
 
     invoke-direct {p0, p2}, Lcom/oneplus/android/server/vdb;->you(Landroid/os/IBinder;)Lcom/oneplus/android/server/vdb$zta;
 
-    iget-object p2, p0, Lcom/oneplus/android/server/vdb;->Cja:Ljava/util/LinkedList;
+    iget-object p2, p0, Lcom/oneplus/android/server/vdb;->Lja:Ljava/util/LinkedList;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->xja:Lcom/oneplus/android/server/vdb$zta;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->Gja:Lcom/oneplus/android/server/vdb$zta;
 
     invoke-virtual {p2, v1}, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
 
@@ -5389,11 +5418,11 @@
     invoke-static {v0, p2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    sget-object p2, Lcom/oneplus/android/server/vdb;->bka:Ljava/util/List;
+    sget-object p2, Lcom/oneplus/android/server/vdb;->kka:Ljava/util/List;
 
     invoke-interface {p2, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    iget p2, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget p2, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     const/4 v1, 0x1
 
@@ -5401,10 +5430,10 @@
 
     sub-int/2addr p2, v1
 
-    iput p2, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iput p2, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     :cond_1
-    sget-boolean p2, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p2, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p2, :cond_2
 
@@ -5425,21 +5454,21 @@
     invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    iget-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     if-nez p1, :cond_3
 
-    iget p1, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget p1, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     if-eq p1, v1, :cond_4
 
     :cond_3
-    iget p1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget p1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     if-eqz p1, :cond_6
 
     :cond_4
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p1, :cond_5
 
@@ -5451,7 +5480,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -5467,7 +5496,7 @@
     return p0
 
     :cond_6
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     return p0
 .end method
@@ -5475,7 +5504,7 @@
 .method private you(Landroid/os/IBinder;)Lcom/oneplus/android/server/vdb$zta;
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Cja:Ljava/util/LinkedList;
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->Lja:Ljava/util/LinkedList;
 
     const/4 v1, 0x0
 
@@ -5517,7 +5546,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/vdb;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -5550,7 +5579,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->fu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->gu()V
 
     return-void
 .end method
@@ -5568,134 +5597,53 @@
 .method static synthetic you(Lcom/oneplus/android/server/vdb;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Yja:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->gka:Z
 
     return p1
 .end method
 
 .method private yu()V
-    .locals 6
+    .locals 3
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->ela:Z
+    const/4 v0, 0x0
 
-    if-eqz v0, :cond_5
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xka:Z
-
-    if-eqz v0, :cond_5
-
-    sget v0, Lcom/oneplus/android/server/vdb;->Ika:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    sput v0, Lcom/oneplus/android/server/vdb;->Ika:I
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
-
-    const-string v1, "OpMotorManagerService"
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "loopDetect sUpLoopDetectCount: "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget v2, Lcom/oneplus/android/server/vdb;->Ika:I
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    sget v0, Lcom/oneplus/android/server/vdb;->Ika:I
-
-    const/4 v2, 0x4
-
-    const/4 v3, 0x3
-
-    if-ge v0, v2, :cond_1
-
-    :goto_0
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    sget v1, Lcom/oneplus/android/server/vdb;->Pka:I
-
-    int-to-long v1, v1
-
-    invoke-virtual {v0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->au()V
-
-    goto :goto_2
-
-    :cond_1
-    const/4 v4, 0x0
-
-    const/4 v5, 0x5
-
-    if-ne v0, v2, :cond_3
-
-    invoke-direct {p0, v5}, Lcom/oneplus/android/server/vdb;->vc(I)V
-
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    invoke-virtual {v0, v3}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-static {v0}, Lcom/oneplus/android/server/rtg;->x(Z)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    const/4 v1, 0x1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
+    sget v0, Lcom/oneplus/android/server/rtg;->vja:I
 
-    :cond_2
-    invoke-direct {p0, v1, v4}, Lcom/oneplus/android/server/vdb;->zta(Ljava/lang/String;Landroid/os/IBinder;)I
+    add-int/2addr v0, v1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+    sput v0, Lcom/oneplus/android/server/rtg;->vja:I
 
-    const/16 v0, 0xf
+    :cond_0
+    sget v0, Lcom/oneplus/android/server/rtg;->vja:I
 
-    goto :goto_1
+    sget v2, Lcom/oneplus/android/server/vdb;->Tka:I
 
-    :cond_3
-    if-le v0, v2, :cond_4
+    if-le v0, v2, :cond_1
 
-    const/4 v2, 0x7
+    const-string v0, "OpMotorManagerService"
 
-    if-ge v0, v2, :cond_4
+    const-string v2, "upArrivedCalibDetect successed"
 
-    goto :goto_0
+    invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_4
-    invoke-direct {p0, v5}, Lcom/oneplus/android/server/vdb;->vc(I)V
+    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->cka:Z
 
-    invoke-direct {p0, v1, v4}, Lcom/oneplus/android/server/vdb;->zta(Ljava/lang/String;Landroid/os/IBinder;)I
-
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
-
-    const/16 v0, 0x10
-
-    :goto_1
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
-
-    :cond_5
-    :goto_2
+    :cond_1
     return-void
 .end method
 
 .method static synthetic ywr(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Kt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Lt()V
 
     return-void
 .end method
@@ -5703,7 +5651,7 @@
 .method static synthetic z(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/oneplus/android/server/vdb;->Xka:Z
+    sput-boolean p0, Lcom/oneplus/android/server/vdb;->gla:Z
 
     return p0
 .end method
@@ -5711,7 +5659,7 @@
 .method static synthetic zgw(Lcom/oneplus/android/server/vdb;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ot()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()V
 
     return-void
 .end method
@@ -5719,7 +5667,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/vdb;I)I
     .locals 0
 
-    iput p1, p0, Lcom/oneplus/android/server/vdb;->Mja:I
+    iput p1, p0, Lcom/oneplus/android/server/vdb;->Vja:I
 
     return p1
 .end method
@@ -5747,7 +5695,7 @@
 .method private zta(Ljava/lang/String;ILandroid/os/IBinder;)I
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -5826,7 +5774,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -5834,7 +5782,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -5863,7 +5811,7 @@
 
     if-eqz v0, :cond_0
 
-    iput v2, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iput v2, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     move v0, v1
 
@@ -5881,16 +5829,16 @@
 
     if-eqz v3, :cond_1
 
-    sput-boolean v1, Lcom/oneplus/android/server/vdb;->jla:Z
+    sput-boolean v1, Lcom/oneplus/android/server/vdb;->sla:Z
 
     :cond_1
-    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    iget-boolean v3, p0, Lcom/oneplus/android/server/vdb;->_ja:Z
 
     if-nez v3, :cond_9
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     if-nez v0, :cond_9
 
@@ -5915,20 +5863,20 @@
 
     if-eqz p1, :cond_5
 
-    sget p1, Lcom/oneplus/android/server/vdb;->Gka:I
+    sget p1, Lcom/oneplus/android/server/vdb;->Pka:I
 
     if-eqz p1, :cond_5
 
-    iget p1, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget p1, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     if-eq p1, v1, :cond_3
 
-    iget p1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget p1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     if-eqz p1, :cond_5
 
     :cond_3
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p1, :cond_4
 
@@ -5942,7 +5890,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget v1, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -5950,7 +5898,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -5966,22 +5914,22 @@
     return v2
 
     :cond_5
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->bla:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->lla:Z
 
     if-nez p1, :cond_7
 
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->ela:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->nla:Z
 
     if-nez p1, :cond_7
 
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->fla:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->ola:Z
 
     if-eqz p1, :cond_6
 
     goto :goto_1
 
     :cond_6
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Kja:I
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Tja:I
 
     monitor-exit p2
 
@@ -5989,7 +5937,7 @@
 
     :cond_7
     :goto_1
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p1, :cond_8
 
@@ -6003,7 +5951,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->bla:Z
+    sget-boolean v1, Lcom/oneplus/android/server/vdb;->lla:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -6014,7 +5962,7 @@
     invoke-static {p1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_8
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
 
     move-result p0
 
@@ -6024,7 +5972,7 @@
 
     :cond_9
     :goto_2
-    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p1, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p1, :cond_a
 
@@ -6038,7 +5986,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/oneplus/android/server/vdb;->Lja:I
+    iget p0, p0, Lcom/oneplus/android/server/vdb;->Uja:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -6066,7 +6014,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/vdb;Lcom/oneplus/android/server/vdb$tsu;)Lcom/oneplus/android/server/vdb$tsu;
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Bja:Lcom/oneplus/android/server/vdb$tsu;
+    iput-object p1, p0, Lcom/oneplus/android/server/vdb;->Kja:Lcom/oneplus/android/server/vdb$tsu;
 
     return-object p1
 .end method
@@ -6114,9 +6062,9 @@
     if-eqz v0, :cond_2
 
     :cond_1
-    iget-object p2, p0, Lcom/oneplus/android/server/vdb;->Gja:Ljava/lang/String;
+    iget-object p2, p0, Lcom/oneplus/android/server/vdb;->Pja:Ljava/lang/String;
 
-    iget-object p3, p0, Lcom/oneplus/android/server/vdb;->Jja:Ljava/lang/String;
+    iget-object p3, p0, Lcom/oneplus/android/server/vdb;->Sja:Ljava/lang/String;
 
     :cond_2
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
@@ -6153,76 +6101,128 @@
 .method static synthetic zta(Lcom/oneplus/android/server/vdb;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->Wja:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/vdb;->eka:Z
 
     return p1
 .end method
 
-.method private zu()I
-    .locals 4
+.method private zu()V
+    .locals 6
 
-    const-string v0, "OpMotorManagerService"
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->nla:Z
 
-    const-string v1, "upMotor"
+    if-eqz v0, :cond_5
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->gla:Z
 
-    const/4 v1, 0x0
+    if-eqz v0, :cond_5
 
-    iput-boolean v1, p0, Lcom/oneplus/android/server/vdb;->Sja:Z
+    sget v0, Lcom/oneplus/android/server/vdb;->Rka:I
 
-    iget-boolean v2, p0, Lcom/oneplus/android/server/vdb;->Rja:Z
+    add-int/lit8 v0, v0, 0x1
 
-    if-nez v2, :cond_0
+    sput v0, Lcom/oneplus/android/server/vdb;->Rka:I
 
-    sget-boolean v2, Lcom/oneplus/android/server/vdb;->ela:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
-    if-nez v2, :cond_0
+    const-string v1, "OpMotorManagerService"
 
-    sget-boolean v2, Lcom/oneplus/android/server/vdb;->fla:Z
+    if-eqz v0, :cond_0
 
-    if-nez v2, :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-wide v2
+    const-string v2, "loopDetect sUpLoopDetectCount: "
 
-    invoke-direct {p0, v2, v3}, Lcom/oneplus/android/server/vdb;->j(J)V
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget v2, Lcom/oneplus/android/server/vdb;->Rka:I
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    const/4 v2, 0x1
+    sget v0, Lcom/oneplus/android/server/vdb;->Rka:I
 
-    invoke-direct {p0, v2, v2, v2}, Lcom/oneplus/android/server/vdb;->bio(III)I
+    const/4 v2, 0x4
 
-    move-result p0
+    const/4 v3, 0x3
 
-    if-nez p0, :cond_1
+    if-ge v0, v2, :cond_1
 
-    return v1
+    :goto_0
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    sget v1, Lcom/oneplus/android/server/vdb;->Yka:I
+
+    int-to-long v1, v1
+
+    invoke-virtual {v0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->bu()V
+
+    goto :goto_2
 
     :cond_1
-    sget-boolean v1, Lcom/oneplus/android/server/vdb;->Oea:Z
+    const/4 v4, 0x0
 
-    if-eqz v1, :cond_2
+    const/4 v5, 0x5
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    if-ne v0, v2, :cond_3
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p0, v5}, Lcom/oneplus/android/server/vdb;->vc(I)V
 
-    const-string v2, "upMotor res: "
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Landroid/os/Handler;->hasMessages(I)Z
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result v0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-eqz v0, :cond_2
 
-    move-result-object v1
+    iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_2
-    return p0
+    invoke-direct {p0, v1, v4}, Lcom/oneplus/android/server/vdb;->zta(Ljava/lang/String;Landroid/os/IBinder;)I
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    const/16 v0, 0xf
+
+    goto :goto_1
+
+    :cond_3
+    if-le v0, v2, :cond_4
+
+    const/4 v2, 0x7
+
+    if-ge v0, v2, :cond_4
+
+    goto :goto_0
+
+    :cond_4
+    invoke-direct {p0, v5}, Lcom/oneplus/android/server/vdb;->vc(I)V
+
+    invoke-direct {p0, v1, v4}, Lcom/oneplus/android/server/vdb;->zta(Ljava/lang/String;Landroid/os/IBinder;)I
+
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
+
+    const/16 v0, 0x10
+
+    :goto_1
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+
+    :cond_5
+    :goto_2
+    return-void
 .end method
 
 
@@ -6251,13 +6251,13 @@
     const/4 v0, -0x1
 
     :try_start_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()Lsis/you/you/you/zta/zta;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Lsis/you/you/you/zta/zta;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     invoke-interface {p0, p1, p2}, Lsis/you/you/you/zta/zta;->zta(ILjava/lang/String;)I
 
@@ -6293,14 +6293,14 @@
     return v0
 .end method
 
-.method public df()V
+.method public ef()V
     .locals 1
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
 
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz p0, :cond_0
 
@@ -6314,10 +6314,10 @@
     return-void
 .end method
 
-.method public ef()V
+.method public ff()V
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -6330,58 +6330,13 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->fka:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Zt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->_t()V
 
     invoke-direct {p0, v0}, Lcom/oneplus/android/server/vdb;->wb(Z)V
-
-    return-void
-.end method
-
-.method public ff()V
-    .locals 2
-
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "OpMotorManagerService"
-
-    const-string v1, "notifyScreenOff"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->lC:Z
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Qja:Z
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Lcom/oneplus/android/server/vdb;->mka:Ljava/lang/String;
-
-    sput-object v0, Lcom/oneplus/android/server/vdb;->nka:Ljava/lang/String;
-
-    :cond_1
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->dla:Z
-
-    if-nez v0, :cond_2
-
-    const/4 v0, 0x0
-
-    const-string v1, "screenoff"
-
-    invoke-direct {p0, v1, v0}, Lcom/oneplus/android/server/vdb;->zta(Ljava/lang/String;Landroid/os/IBinder;)I
-
-    :cond_2
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Xja:Z
 
     return-void
 .end method
@@ -6389,7 +6344,7 @@
 .method public getMotorState()I
     .locals 0
 
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->_ka:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->jla:Z
 
     if-eqz p0, :cond_0
 
@@ -6398,7 +6353,7 @@
     return p0
 
     :cond_0
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->ala:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->kla:Z
 
     if-eqz p0, :cond_1
 
@@ -6407,7 +6362,7 @@
     return p0
 
     :cond_1
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->ela:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->nla:Z
 
     if-eqz p0, :cond_2
 
@@ -6416,7 +6371,7 @@
     return p0
 
     :cond_2
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->fla:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->ola:Z
 
     if-eqz p0, :cond_3
 
@@ -6425,7 +6380,7 @@
     return p0
 
     :cond_3
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->bla:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->lla:Z
 
     if-eqz p0, :cond_4
 
@@ -6434,7 +6389,7 @@
     return p0
 
     :cond_4
-    sget-boolean p0, Lcom/oneplus/android/server/vdb;->dla:Z
+    sget-boolean p0, Lcom/oneplus/android/server/vdb;->mla:Z
 
     if-eqz p0, :cond_5
 
@@ -6451,7 +6406,52 @@
 .method public gf()V
     .locals 2
 
-    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Oea:Z
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "OpMotorManagerService"
+
+    const-string v1, "notifyScreenOff"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->uC:Z
+
+    iget-boolean v0, p0, Lcom/oneplus/android/server/vdb;->Zja:Z
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Lcom/oneplus/android/server/vdb;->vka:Ljava/lang/String;
+
+    sput-object v0, Lcom/oneplus/android/server/vdb;->wka:Ljava/lang/String;
+
+    :cond_1
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->mla:Z
+
+    if-nez v0, :cond_2
+
+    const/4 v0, 0x0
+
+    const-string v1, "screenoff"
+
+    invoke-direct {p0, v1, v0}, Lcom/oneplus/android/server/vdb;->zta(Ljava/lang/String;Landroid/os/IBinder;)I
+
+    :cond_2
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->fka:Z
+
+    return-void
+.end method
+
+.method public hf()V
+    .locals 2
+
+    sget-boolean v0, Lcom/oneplus/android/server/vdb;->Xea:Z
 
     if-eqz v0, :cond_0
 
@@ -6464,9 +6464,9 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->lC:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/vdb;->uC:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Zt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->_t()V
 
     return-void
 .end method
@@ -6542,12 +6542,12 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->ef()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->ff()V
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->df()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->ef()V
 
     :goto_0
     return-void
@@ -6619,55 +6619,55 @@
     :pswitch_0
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->hu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->iu()V
 
     :cond_2
     :pswitch_1
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->gu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->hu()V
 
     goto :goto_3
 
     :pswitch_2
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->iu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ju()V
 
     goto :goto_3
 
     :pswitch_3
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->lu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->mu()V
 
     goto :goto_3
 
     :pswitch_4
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->mu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->nu()V
 
     goto :goto_3
 
     :pswitch_5
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->nu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ou()V
 
     goto :goto_3
 
     :pswitch_6
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ku()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->lu()V
 
     goto :goto_3
 
     :pswitch_7
     if-eqz v0, :cond_4
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ju()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->ku()V
 
     goto :goto_3
 
@@ -6697,7 +6697,7 @@
 .method public notifyPowerOff()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Rt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->St()V
 
     return-void
 .end method
@@ -6707,7 +6707,7 @@
 
     if-nez p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->ff()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->gf()V
 
     goto :goto_0
 
@@ -6716,7 +6716,7 @@
 
     if-ne p1, v0, :cond_1
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->gf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/vdb;->hf()V
 
     :cond_1
     :goto_0
@@ -6736,13 +6736,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->vja:Landroid/app/IActivityTaskManager;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Eja:Landroid/app/IActivityTaskManager;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Ut()Lsis/you/you/you/zta/zta;
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Vt()Lsis/you/you/you/zta/zta;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->yja:Lsis/you/you/you/zta/zta;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Hja:Lsis/you/you/you/zta/zta;
 
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
@@ -6784,7 +6784,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->wja:Lcom/oneplus/android/server/scene/GameModeObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/vdb;->Fja:Lcom/oneplus/android/server/scene/GameModeObserver;
 
     invoke-static {}, Lcom/oneplus/android/server/rtg;->Xe()Z
 
@@ -6796,13 +6796,13 @@
 
     if-eq v1, v0, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Pt()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Qt()I
 
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mIActivityManager:Landroid/app/IActivityManager;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->lv:Landroid/app/IProcessObserver;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->uv:Landroid/app/IProcessObserver;
 
     invoke-interface {v0, v1}, Landroid/app/IActivityManager;->registerProcessObserver(Landroid/app/IProcessObserver;)V
     :try_end_0
@@ -6822,7 +6822,7 @@
     :goto_0
     iget-object v0, p0, Lcom/oneplus/android/server/vdb;->mAudioManager:Landroid/media/AudioManager;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->_ja:Landroid/media/AudioManager$AudioRecordingCallback;
+    iget-object v1, p0, Lcom/oneplus/android/server/vdb;->ika:Landroid/media/AudioManager$AudioRecordingCallback;
 
     iget-object v2, p0, Lcom/oneplus/android/server/vdb;->mHandler:Lcom/oneplus/android/server/vdb$you;
 
@@ -6838,7 +6838,7 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/vdb;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->aka:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/oneplus/android/server/vdb;->jka:Landroid/content/BroadcastReceiver;
 
     const/4 v3, 0x0
 
@@ -6846,9 +6846,9 @@
 
     invoke-virtual {v1, v2, v0, v4, v3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Wt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->Xt()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->_t()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/vdb;->au()V
 
     return-void
 .end method

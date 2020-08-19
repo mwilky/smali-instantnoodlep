@@ -4,21 +4,21 @@
 
 
 # static fields
-.field public static final PRa:I = 0x1
+.field public static final YRa:I = 0x1
 
-.field public static final QRa:I = 0x2
+.field public static final ZRa:I = 0x2
 
 
 # instance fields
-.field private final _Na:I
+.field private final iOa:I
 
-.field private final aRa:I
-
-.field private final jDa:Ljava/security/SecureRandom;
+.field private final jRa:I
 
 .field private final l:I
 
 .field private final n:I
+
+.field private final sDa:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -51,18 +51,18 @@
 
     iput p2, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
 
-    iput p3, p0, Lorg/bouncycastle/crypto/wtn/dma;->_Na:I
+    iput p3, p0, Lorg/bouncycastle/crypto/wtn/dma;->iOa:I
 
-    iput p5, p0, Lorg/bouncycastle/crypto/wtn/dma;->aRa:I
+    iput p5, p0, Lorg/bouncycastle/crypto/wtn/dma;->jRa:I
 
-    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/dma;->jDa:Ljava/security/SecureRandom;
+    iput-object p4, p0, Lorg/bouncycastle/crypto/wtn/dma;->sDa:Ljava/security/SecureRandom;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Jj()I
+.method public Kj()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->n:I
@@ -70,10 +70,10 @@
     return p0
 .end method
 
-.method public _j()Ljava/security/SecureRandom;
+.method public ak()Ljava/security/SecureRandom;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->jDa:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->sDa:Ljava/security/SecureRandom;
 
     return-object p0
 .end method
@@ -81,7 +81,7 @@
 .method public getCertainty()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->_Na:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->iOa:I
 
     return p0
 .end method
@@ -94,10 +94,10 @@
     return p0
 .end method
 
-.method public pk()I
+.method public qk()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->aRa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/dma;->jRa:I
 
     return p0
 .end method

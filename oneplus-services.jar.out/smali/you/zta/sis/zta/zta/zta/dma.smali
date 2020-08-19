@@ -6,15 +6,15 @@
 # static fields
 .field static final P:[I
 
-.field static final ZVa:[I
+.field static final hWa:[I
 
-.field private static final _Va:[I
+.field private static final iWa:[I
 
-.field private static final cWa:I = 0x1a93
+.field private static final lWa:I = 0x1a93
 
-.field private static final dWa:I = -0x1
+.field private static final mWa:I = -0x1
 
-.field private static final eWa:I = -0x1
+.field private static final nWa:I = -0x1
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/dma;->ZVa:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/dma;->hWa:[I
 
     const/16 v0, 0x9
 
@@ -43,7 +43,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sput-object v0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     return-void
 
@@ -238,7 +238,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     array-length p1, p0
 
@@ -248,7 +248,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     array-length p0, p0
 
@@ -294,7 +294,7 @@
 .method public static igw([I[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/tsu;->bm()[I
+    invoke-static {}, Lyou/zta/sis/sis/tsu;->dm()[I
 
     move-result-object v0
 
@@ -346,7 +346,7 @@
 
     if-ne p0, v0, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->ZVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->hWa:[I
 
     invoke-static {p1, p2, p0}, Lyou/zta/sis/sis/kth;->ssp(I[I[I)Z
 
@@ -355,7 +355,7 @@
     if-eqz p0, :cond_1
 
     :cond_0
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     array-length v0, p0
 
@@ -365,7 +365,7 @@
 
     if-eqz p0, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     array-length p0, p0
 
@@ -394,7 +394,7 @@
 
     if-ne p0, p1, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->ZVa:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->hWa:[I
 
     invoke-static {v0, p2, p0}, Lyou/zta/sis/sis/kth;->ssp(I[I[I)Z
 
@@ -403,7 +403,7 @@
     if-eqz p0, :cond_1
 
     :cond_0
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     array-length p1, p0
 
@@ -413,7 +413,7 @@
 
     if-eqz p0, :cond_1
 
-    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->_Va:[I
+    sget-object p0, Lyou/zta/sis/zta/zta/zta/dma;->iWa:[I
 
     array-length p0, p0
 
@@ -481,7 +481,7 @@
 .method public static tsu([I[I[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/tsu;->bm()[I
+    invoke-static {}, Lyou/zta/sis/sis/tsu;->dm()[I
 
     move-result-object v0
 
@@ -569,7 +569,7 @@
 .method public static zta([II[I)V
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/sis/tsu;->bm()[I
+    invoke-static {}, Lyou/zta/sis/sis/tsu;->dm()[I
 
     move-result-object v0
 

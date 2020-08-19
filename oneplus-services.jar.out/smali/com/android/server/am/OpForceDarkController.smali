@@ -3108,7 +3108,7 @@
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p1, Lcom/android/server/am/OpForceDarkController$you;->gE:Z
+    iput-boolean p2, p1, Lcom/android/server/am/OpForceDarkController$you;->pE:Z
 
     invoke-direct {p0}, Lcom/android/server/am/OpForceDarkController;->parseOPFDVersionCode()V
 

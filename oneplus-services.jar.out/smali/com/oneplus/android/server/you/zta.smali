@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field private Uma:Lcom/oneplus/android/server/you/you;
+.field private cna:Lcom/oneplus/android/server/you/you;
 
 .field private mContext:Landroid/content/Context;
 
@@ -38,7 +38,7 @@
 
     invoke-direct {p1, v0, p2}, Lcom/oneplus/android/server/you/you;-><init>(Landroid/content/Context;Lcom/android/server/audio/AudioService;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/you/zta;->Uma:Lcom/oneplus/android/server/you/you;
+    iput-object p1, p0, Lcom/oneplus/android/server/you/zta;->cna:Lcom/oneplus/android/server/you/you;
 
     const-string p0, "OpAudioMonitorManager"
 
@@ -52,7 +52,7 @@
 .method public onAcquireScreenoffWakeLock()V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/zta;->Uma:Lcom/oneplus/android/server/you/you;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/zta;->cna:Lcom/oneplus/android/server/you/you;
 
     if-eqz p0, :cond_0
 
@@ -65,7 +65,7 @@
 .method public onReleaseScreenoffWakeLock()V
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/zta;->Uma:Lcom/oneplus/android/server/you/you;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/zta;->cna:Lcom/oneplus/android/server/you/you;
 
     if-eqz p0, :cond_0
 

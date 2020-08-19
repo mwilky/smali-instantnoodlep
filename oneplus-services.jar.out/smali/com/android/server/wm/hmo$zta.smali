@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field private final Iba:F
+.field private final Rba:F
 
-.field private final Jba:F
+.field private final Sba:F
 
 .field private final mDuration:J
 
@@ -49,11 +49,11 @@
 
     int-to-float p1, p3
 
-    iput p1, p0, Lcom/android/server/wm/hmo$zta;->Iba:F
+    iput p1, p0, Lcom/android/server/wm/hmo$zta;->Rba:F
 
     int-to-float p1, p4
 
-    iput p1, p0, Lcom/android/server/wm/hmo$zta;->Jba:F
+    iput p1, p0, Lcom/android/server/wm/hmo$zta;->Sba:F
 
     iput-wide p5, p0, Lcom/android/server/wm/hmo$zta;->mDuration:J
 
@@ -91,9 +91,9 @@
 
     add-float/2addr p4, v0
 
-    iget v0, p0, Lcom/android/server/wm/hmo$zta;->Jba:F
+    iget v0, p0, Lcom/android/server/wm/hmo$zta;->Sba:F
 
-    iget p0, p0, Lcom/android/server/wm/hmo$zta;->Iba:F
+    iget p0, p0, Lcom/android/server/wm/hmo$zta;->Rba:F
 
     sub-float/2addr v0, p0
 

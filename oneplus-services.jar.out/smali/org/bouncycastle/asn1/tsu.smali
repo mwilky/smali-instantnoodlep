@@ -6,11 +6,11 @@
 # static fields
 .field public static final FALSE:Lorg/bouncycastle/asn1/tsu;
 
+.field private static final HGa:[B
+
+.field private static final IGa:[B
+
 .field public static final TRUE:Lorg/bouncycastle/asn1/tsu;
-
-.field private static final yGa:[B
-
-.field private static final zGa:[B
 
 
 # instance fields
@@ -31,13 +31,13 @@
 
     aput-byte v3, v1, v2
 
-    sput-object v1, Lorg/bouncycastle/asn1/tsu;->yGa:[B
+    sput-object v1, Lorg/bouncycastle/asn1/tsu;->HGa:[B
 
     new-array v1, v0, [B
 
     aput-byte v2, v1, v2
 
-    sput-object v1, Lorg/bouncycastle/asn1/tsu;->zGa:[B
+    sput-object v1, Lorg/bouncycastle/asn1/tsu;->IGa:[B
 
     new-instance v1, Lorg/bouncycastle/asn1/tsu;
 
@@ -61,12 +61,12 @@
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->yGa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->HGa:[B
 
     goto :goto_0
 
     :cond_0
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->zGa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->IGa:[B
 
     :goto_0
     iput-object p1, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -91,7 +91,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->zGa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->IGa:[B
 
     :goto_0
     iput-object p1, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -107,7 +107,7 @@
 
     if-ne v0, v1, :cond_1
 
-    sget-object p1, Lorg/bouncycastle/asn1/tsu;->yGa:[B
+    sget-object p1, Lorg/bouncycastle/asn1/tsu;->HGa:[B
 
     goto :goto_0
 
@@ -363,7 +363,7 @@
 
 
 # virtual methods
-.method public Ah()Z
+.method public Bh()Z
     .locals 1
 
     iget-object p0, p0, Lorg/bouncycastle/asn1/tsu;->value:[B
@@ -422,7 +422,7 @@
     return-object p0
 .end method
 
-.method vh()I
+.method wh()I
     .locals 0
 
     const/4 p0, 0x3

@@ -25,15 +25,15 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
-.field public static final enum ICa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
-
-.field public static final enum JCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
-
-.field public static final enum KCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
-
-.field public static final enum LCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
-
 .field public static final enum NORMAL:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+
+.field public static final enum RCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+
+.field public static final enum SCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+
+.field public static final enum TCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+
+.field public static final enum UCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->ICa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->RCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     new-instance v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
@@ -68,7 +68,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->JCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->SCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     new-instance v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
@@ -78,7 +78,7 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->KCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->TCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     new-instance v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
@@ -88,7 +88,7 @@
 
     invoke-direct {v0, v6, v5}, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->LCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->UCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     const/4 v0, 0x5
 
@@ -98,19 +98,19 @@
 
     aput-object v6, v0, v1
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->ICa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->RCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->JCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->SCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->KCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->TCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->LCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;->UCa:Lcom/android/server/wm/OpPowerConsumpStats$PurposeType;
 
     aput-object v1, v0, v5
 

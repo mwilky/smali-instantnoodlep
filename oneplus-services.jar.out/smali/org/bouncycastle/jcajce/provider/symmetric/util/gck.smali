@@ -22,24 +22,24 @@
 
 .field public static final SHA512:I = 0x9
 
-.field public static final Thb:I = 0x0
+.field public static final bib:I = 0x0
 
-.field public static final Uhb:I = 0xa
+.field public static final cib:I = 0xa
 
-.field public static final Vhb:I = 0xb
+.field public static final dib:I = 0xb
 
-.field public static final Whb:I = 0xc
+.field public static final eib:I = 0xc
 
-.field public static final Xhb:I = 0xd
+.field public static final fib:I = 0xd
 
-.field public static final Yhb:I = 0x0
+.field public static final gib:I = 0x0
 
-.field public static final Zhb:I = 0x1
+.field public static final hib:I = 0x1
 
-.field public static final _hb:I = 0x2
+.field public static final iib:I = 0x2
 
-.field public static final aib:I = 0x3
+.field public static final jib:I = 0x3
 
-.field public static final bib:I = 0x4
+.field public static final kib:I = 0x4
 
-.field public static final cib:I = 0x5
+.field public static final lib:I = 0x5

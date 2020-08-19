@@ -6,19 +6,19 @@
 # static fields
 .field public static final CUSTOM:I = 0x1
 
+.field public static final CXa:I = 0x2
+
+.field public static final DXa:I = 0x3
+
+.field public static final EXa:I = 0x4
+
+.field public static final FXa:I = 0x5
+
+.field public static final GXa:I = 0x6
+
 .field public static final MAX:I = 0x8
 
 .field public static final SRGB:I = 0x7
-
-.field public static final tXa:I = 0x2
-
-.field public static final uXa:I = 0x3
-
-.field public static final vXa:I = 0x4
-
-.field public static final wXa:I = 0x5
-
-.field public static final xXa:I = 0x6
 
 
 # direct methods

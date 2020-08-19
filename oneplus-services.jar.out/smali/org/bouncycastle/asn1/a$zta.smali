@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private Oya:[B
+.field private Xya:[B
 
-.field private Pya:I
+.field private Yya:I
 
-.field private Qya:Lorg/bouncycastle/asn1/E;
+.field private Zya:Lorg/bouncycastle/asn1/E;
 
 .field final synthetic this$0:Lorg/bouncycastle/asn1/a;
 
@@ -32,19 +32,19 @@
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/a$zta;->Oya:[B
+    iput-object p2, p0, Lorg/bouncycastle/asn1/a$zta;->Xya:[B
 
     const/4 p2, 0x0
 
-    iput p2, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iput p2, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     new-instance p2, Lorg/bouncycastle/asn1/E;
 
-    iget-object p1, p1, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object p1, p1, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     invoke-direct {p2, p1}, Lorg/bouncycastle/asn1/E;-><init>(Ljava/io/OutputStream;)V
 
-    iput-object p2, p0, Lorg/bouncycastle/asn1/a$zta;->Qya:Lorg/bouncycastle/asn1/E;
+    iput-object p2, p0, Lorg/bouncycastle/asn1/a$zta;->Zya:Lorg/bouncycastle/asn1/E;
 
     return-void
 .end method
@@ -59,26 +59,26 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget v0, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     if-eqz v0, :cond_0
 
     new-array v1, v0, [B
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/a$zta;->Oya:[B
+    iget-object v2, p0, Lorg/bouncycastle/asn1/a$zta;->Xya:[B
 
     const/4 v3, 0x0
 
     invoke-static {v2, v3, v1, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/a$zta;->Qya:Lorg/bouncycastle/asn1/E;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/a$zta;->Zya:Lorg/bouncycastle/asn1/E;
 
     invoke-static {v0, v1}, Lorg/bouncycastle/asn1/C;->zta(Lorg/bouncycastle/asn1/E;[B)V
 
     :cond_0
     iget-object p0, p0, Lorg/bouncycastle/asn1/a$zta;->this$0:Lorg/bouncycastle/asn1/a;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdw;->sh()V
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/vdw;->th()V
 
     return-void
 .end method
@@ -91,31 +91,31 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/a$zta;->Oya:[B
+    iget-object v0, p0, Lorg/bouncycastle/asn1/a$zta;->Xya:[B
 
-    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iput v2, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     int-to-byte p1, p1
 
     aput-byte p1, v0, v1
 
-    iget p1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget p1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     array-length v1, v0
 
     if-ne p1, v1, :cond_0
 
-    iget-object p1, p0, Lorg/bouncycastle/asn1/a$zta;->Qya:Lorg/bouncycastle/asn1/E;
+    iget-object p1, p0, Lorg/bouncycastle/asn1/a$zta;->Zya:Lorg/bouncycastle/asn1/E;
 
     invoke-static {p1, v0}, Lorg/bouncycastle/asn1/C;->zta(Lorg/bouncycastle/asn1/E;[B)V
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iput p1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     :cond_0
     return-void
@@ -132,11 +132,11 @@
     :goto_0
     if-lez p3, :cond_1
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/a$zta;->Oya:[B
+    iget-object v0, p0, Lorg/bouncycastle/asn1/a$zta;->Xya:[B
 
     array-length v0, v0
 
-    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     sub-int/2addr v0, v1
 
@@ -144,21 +144,21 @@
 
     move-result v0
 
-    iget-object v1, p0, Lorg/bouncycastle/asn1/a$zta;->Oya:[B
+    iget-object v1, p0, Lorg/bouncycastle/asn1/a$zta;->Xya:[B
 
-    iget v2, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget v2, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     invoke-static {p1, p2, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     add-int/2addr v1, v0
 
-    iput v1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iput v1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
-    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iget v1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/a$zta;->Oya:[B
+    iget-object v2, p0, Lorg/bouncycastle/asn1/a$zta;->Xya:[B
 
     array-length v3, v2
 
@@ -167,13 +167,13 @@
     goto :goto_1
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/asn1/a$zta;->Qya:Lorg/bouncycastle/asn1/E;
+    iget-object v1, p0, Lorg/bouncycastle/asn1/a$zta;->Zya:Lorg/bouncycastle/asn1/E;
 
     invoke-static {v1, v2}, Lorg/bouncycastle/asn1/C;->zta(Lorg/bouncycastle/asn1/E;[B)V
 
     const/4 v1, 0x0
 
-    iput v1, p0, Lorg/bouncycastle/asn1/a$zta;->Pya:I
+    iput v1, p0, Lorg/bouncycastle/asn1/a$zta;->Yya:I
 
     add-int/2addr p2, v0
 

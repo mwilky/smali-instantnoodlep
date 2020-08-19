@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private T:[[J
+.field private DRa:[B
 
-.field private uRa:[B
+.field private T:[[J
 
 
 # direct methods
@@ -51,7 +51,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->uRa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->DRa:[B
 
     invoke-static {v0, p1}, Lorg/bouncycastle/util/zta;->sis([B[B)Z
 
@@ -67,9 +67,9 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->uRa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->DRa:[B
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->uRa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->DRa:[B
 
     iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/ssp;->T:[[J
 

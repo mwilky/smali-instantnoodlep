@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public Lla:I
+.field public Ula:I
 
-.field public Mla:I
+.field public Vla:I
 
-.field public Nla:I
+.field public Wla:I
 
-.field public Ola:I
+.field public Xla:I
 
 
 # direct methods
@@ -38,13 +38,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Lla:I
+    iput p1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ula:I
 
-    iput p2, p0, Lcom/oneplus/android/server/zta/sis$zta;->Mla:I
+    iput p2, p0, Lcom/oneplus/android/server/zta/sis$zta;->Vla:I
 
-    iput p3, p0, Lcom/oneplus/android/server/zta/sis$zta;->Nla:I
+    iput p3, p0, Lcom/oneplus/android/server/zta/sis$zta;->Wla:I
 
-    iput p4, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ola:I
+    iput p4, p0, Lcom/oneplus/android/server/zta/sis$zta;->Xla:I
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Lla:I
+    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ula:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -77,7 +77,7 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Mla:I
+    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Vla:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Nla:I
+    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Wla:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -97,7 +97,7 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget p0, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ola:I
+    iget p0, p0, Lcom/oneplus/android/server/zta/sis$zta;->Xla:I
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Lla:I
+    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ula:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -129,7 +129,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Mla:I
+    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Vla:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Nla:I
+    iget v1, p0, Lcom/oneplus/android/server/zta/sis$zta;->Wla:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -145,7 +145,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/oneplus/android/server/zta/sis$zta;->Ola:I
+    iget p0, p0, Lcom/oneplus/android/server/zta/sis$zta;->Xla:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

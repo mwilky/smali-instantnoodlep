@@ -18,11 +18,11 @@
 
 
 # instance fields
+.field final synthetic Hga:Ljava/lang/String;
+
+.field final synthetic Iga:Ljava/lang/Integer;
+
 .field final synthetic this$0:Lcom/android/server/wm/p;
-
-.field final synthetic yga:Ljava/lang/String;
-
-.field final synthetic zga:Ljava/lang/Integer;
 
 
 # direct methods
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lcom/android/server/wm/g;->this$0:Lcom/android/server/wm/p;
 
-    iput-object p2, p0, Lcom/android/server/wm/g;->yga:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/wm/g;->Hga:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/server/wm/g;->zga:Ljava/lang/Integer;
+    iput-object p3, p0, Lcom/android/server/wm/g;->Iga:Ljava/lang/Integer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,9 +87,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/g;->yga:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/g;->Hga:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/server/wm/g;->zga:Ljava/lang/Integer;
+    iget-object v3, p0, Lcom/android/server/wm/g;->Iga:Ljava/lang/Integer;
 
     const/4 v4, 0x1
 

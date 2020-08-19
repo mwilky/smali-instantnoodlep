@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/OpPowerControllerService$TriggerType;
 
-.field public static final enum Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
+.field public static final enum eza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
-.field public static final enum Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
+.field public static final enum fza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/OpPowerControllerService$TriggerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sput-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->eza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     new-instance v0, Lcom/android/server/OpPowerControllerService$TriggerType;
 
@@ -52,17 +52,17 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/OpPowerControllerService$TriggerType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sput-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->fza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/android/server/OpPowerControllerService$TriggerType;
 
-    sget-object v3, Lcom/android/server/OpPowerControllerService$TriggerType;->Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v3, Lcom/android/server/OpPowerControllerService$TriggerType;->eza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     aput-object v3, v0, v1
 
-    sget-object v1, Lcom/android/server/OpPowerControllerService$TriggerType;->Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v1, Lcom/android/server/OpPowerControllerService$TriggerType;->fza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     aput-object v1, v0, v2
 

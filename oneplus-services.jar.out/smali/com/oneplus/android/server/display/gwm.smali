@@ -12,11 +12,7 @@
 
 
 # static fields
-.field public static final Boa:I = 0x15d
-
 .field private static final COLOR_MATRIX_EVALUATOR:Lcom/oneplus/android/server/display/gwm$zta;
-
-.field public static final Coa:I = 0x15f
 
 .field public static final DALTONIZER_CORRECT_DEUTERANOMALY:I = 0xc
 
@@ -24,21 +20,7 @@
 
 .field private static final DEFAULT_NIGHT_COLORTEMPERA:I = 0x2e
 
-.field private static Doa:I = 0x0
-
-.field private static Eoa:F = 0.0f
-
-.field private static final Foa:I = 0x3e
-
-.field private static final Goa:I = -0x1
-
-.field private static final Hoa:[F
-
-.field private static Ioa:[F = null
-
-.field private static Joa:[F = null
-
-.field private static Koa:[F = null
+.field public static final Koa:I = 0x15d
 
 .field public static final LEVEL_COLOR_MATRIX_GRAYSCALE:I = 0xc8
 
@@ -48,41 +30,59 @@
 
 .field public static final LEVEL_COLOR_MATRIX_SATURATION:I = 0x96
 
-.field public static final Loa:[F
+.field public static final Loa:I = 0x15f
 
 .field private static final MATRIX_GRAYSCALE:[F
 
 .field private static final MATRIX_INVERT_COLOR:[F
 
-.field public static final Moa:[F
+.field private static Moa:I = 0x0
 
-.field private static Noa:[F = null
+.field private static Noa:F = 0.0f
 
-.field private static final Ooa:[F
+.field private static final Ooa:I = 0x3e
+
+.field private static final Poa:I = -0x1
+
+.field private static final Qoa:[F
+
+.field private static Roa:[F = null
+
+.field private static Soa:[F = null
 
 .field private static final TAG:Ljava/lang/String; = "OpColorTintManager"
 
 .field private static final TRANSITION_DURATION:J = 0xbb8L
 
+.field private static Toa:[F
+
+.field public static final Uoa:[F
+
+.field public static final Voa:[F
+
+.field private static Woa:[F
+
+.field private static final Xoa:[F
+
 .field public static mCurrentUser:I
 
 
 # instance fields
-.field private Aoa:Z
+.field private Goa:Z
 
-.field private final Dna:Lcom/oneplus/android/server/display/ugm;
+.field private Hoa:Z
+
+.field private Ioa:Z
+
+.field private Joa:Z
+
+.field private final Mna:Lcom/oneplus/android/server/display/ugm;
 
 .field private final mContext:Landroid/content/Context;
 
 .field private mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 
 .field private mScreenOff:Z
-
-.field private xoa:Z
-
-.field private yoa:Z
-
-.field private zoa:Z
 
 
 # direct methods
@@ -103,37 +103,37 @@
 
     fill-array-data v1, :array_0
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     new-array v1, v0, [F
 
     fill-array-data v1, :array_1
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     new-array v1, v0, [F
 
     fill-array-data v1, :array_2
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
     new-array v1, v0, [F
 
     fill-array-data v1, :array_3
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     new-array v1, v0, [F
 
     fill-array-data v1, :array_4
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Loa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Uoa:[F
 
     new-array v1, v0, [F
 
     fill-array-data v1, :array_5
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Moa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Voa:[F
 
     new-array v1, v0, [F
 
@@ -151,13 +151,13 @@
 
     fill-array-data v1, :array_8
 
-    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sput-object v1, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     new-array v0, v0, [F
 
     fill-array-data v0, :array_9
 
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Ooa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Xoa:[F
 
     return-void
 
@@ -371,13 +371,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->xoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Goa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->yoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Hoa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->zoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Ioa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->mScreenOff:Z
 
@@ -389,7 +389,7 @@
 
     invoke-direct {p2, p1}, Lcom/oneplus/android/server/display/ugm;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iput-object p2, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     new-instance p2, Lcom/oneplus/android/server/display/OpColorModeManager;
 
@@ -418,30 +418,30 @@
     return-void
 .end method
 
-.method private Yu()V
+.method private Zu()V
     .locals 7
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()I
 
     move-result v0
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()F
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()F
 
     move-result v0
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
-    sget v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sget v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    sget v1, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sget v1, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
     invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 
@@ -463,9 +463,9 @@
 
     if-nez v0, :cond_0
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
     const/4 v4, 0x0
 
@@ -481,7 +481,7 @@
     return-void
 .end method
 
-.method private Zu()I
+.method private _u()I
     .locals 3
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->mContext:Landroid/content/Context;
@@ -526,7 +526,7 @@
     return p0
 .end method
 
-.method private _u()F
+.method private av()F
     .locals 3
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->mContext:Landroid/content/Context;
@@ -562,7 +562,7 @@
     return p0
 .end method
 
-.method private av()I
+.method private bv()I
     .locals 5
 
     const/4 v0, 0x1
@@ -655,7 +655,7 @@
     return v2
 .end method
 
-.method private bv()Z
+.method private cv()Z
     .locals 4
 
     const/4 v0, 0x1
@@ -723,7 +723,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/display/gwm;)Lcom/oneplus/android/server/display/ugm;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     return-object p0
 .end method
@@ -743,7 +743,7 @@
 
     if-eqz p2, :cond_0
 
-    sput-object p3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object p3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :cond_0
     return-void
@@ -752,7 +752,7 @@
 .method static synthetic you([F)[F
     .locals 0
 
-    sput-object p0, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object p0, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     return-object p0
 .end method
@@ -772,7 +772,7 @@
 
     if-eqz p2, :cond_0
 
-    sput-object p3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object p3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :cond_0
     return-void
@@ -787,7 +787,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/display/wtn;->cancelAnimator()V
 
@@ -809,13 +809,13 @@
 
     if-eqz p5, :cond_0
 
-    sput-object p2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object p2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :cond_0
     return-void
 
     :cond_1
-    iget-object p3, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p3, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     sget-object v0, Lcom/oneplus/android/server/display/gwm;->COLOR_MATRIX_EVALUATOR:Lcom/oneplus/android/server/display/gwm$zta;
 
@@ -837,7 +837,7 @@
 
     invoke-virtual {p3, p1}, Lcom/oneplus/android/server/display/wtn;->setAnimator(Landroid/animation/ValueAnimator;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -847,7 +847,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -859,7 +859,7 @@
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -871,7 +871,7 @@
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -893,7 +893,7 @@
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -913,7 +913,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {v0}, Lcom/oneplus/android/server/display/wtn;->cancelAnimator()V
 
@@ -935,13 +935,13 @@
 
     if-eqz p5, :cond_0
 
-    sput-object p2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object p2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :cond_0
     return-void
 
     :cond_1
-    iget-object p3, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p3, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     sget-object v0, Lcom/oneplus/android/server/display/gwm;->COLOR_MATRIX_EVALUATOR:Lcom/oneplus/android/server/display/gwm$zta;
 
@@ -963,7 +963,7 @@
 
     invoke-virtual {p3, p1}, Lcom/oneplus/android/server/display/wtn;->setAnimator(Landroid/animation/ValueAnimator;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -971,7 +971,7 @@
 
     invoke-virtual {p1, p6, p7}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -983,7 +983,7 @@
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -995,7 +995,7 @@
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -1017,7 +1017,7 @@
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p0, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/display/wtn;->getAnimator()Landroid/animation/ValueAnimator;
 
@@ -1031,22 +1031,15 @@
 
 # virtual methods
 .method public Af()V
-    .locals 6
+    .locals 1
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
-    const/4 v1, 0x0
+    if-nez v0, :cond_0
 
-    const/4 v3, 0x1
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->setCustomColorTemperature()V
 
-    const/16 v4, 0x15e
-
-    const/4 v5, 0x1
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v5}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
-
+    :cond_0
     return-void
 .end method
 
@@ -1061,7 +1054,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 
@@ -1096,15 +1089,15 @@
     goto :goto_1
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->cv()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     const/4 v3, 0x0
 
@@ -1119,9 +1112,9 @@
     goto :goto_0
 
     :cond_1
-    sget-object v7, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v7, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v8, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object v8, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     const/4 v9, 0x0
 
@@ -1146,9 +1139,29 @@
 .end method
 
 .method public Bf()V
+    .locals 6
+
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x1
+
+    const/16 v4, 0x15e
+
+    const/4 v5, 0x1
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
+
+    return-void
+.end method
+
+.method public Cf()V
     .locals 7
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     if-eqz v0, :cond_1
 
@@ -1187,7 +1200,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     const/4 v4, 0x1
 
@@ -1206,10 +1219,10 @@
     return-void
 .end method
 
-.method public Cf()V
+.method public Df()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->Yu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->Zu()V
 
     return-void
 .end method
@@ -1225,9 +1238,9 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Loa:[F
+    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Uoa:[F
 
     const/4 v5, 0x0
 
@@ -1242,14 +1255,14 @@
     goto :goto_2
 
     :cond_0
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     if-eqz p1, :cond_1
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     :goto_0
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     const/4 v3, 0x0
 
@@ -1264,18 +1277,18 @@
     goto :goto_2
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->cv()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     goto :goto_1
 
     :cond_2
-    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     :goto_1
     move-object v2, p1
@@ -1321,12 +1334,12 @@
 
     if-eqz p1, :cond_0
 
-    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Ooa:[F
+    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Xoa:[F
 
     goto :goto_0
 
     :cond_0
-    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     :goto_0
     invoke-virtual {p0, v0, p1}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
@@ -1356,27 +1369,27 @@
 
     invoke-static {v3, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()I
 
     move-result v2
 
-    sput v2, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sput v2, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()F
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()F
 
     move-result v2
 
-    sput v2, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sput v2, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
-    sget v2, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sget v2, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    sget v3, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sget v3, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
     invoke-static {v2, v3}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
 
     move-result-object v2
 
-    sput-object v2, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sput-object v2, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
     iget-object v2, p0, Lcom/oneplus/android/server/display/gwm;->mContext:Landroid/content/Context;
 
@@ -1423,9 +1436,9 @@
 
     if-ge v2, v3, :cond_1
 
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
     const/4 v3, 0x0
 
@@ -1443,20 +1456,20 @@
     goto :goto_4
 
     :cond_1
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
     goto :goto_1
 
     :cond_2
-    iget-boolean v1, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     if-eqz v1, :cond_3
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :goto_1
     const/4 v3, 0x0
@@ -1473,18 +1486,18 @@
     goto :goto_4
 
     :cond_3
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->cv()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     goto :goto_3
 
     :cond_4
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     :goto_3
     move-object v5, v1
@@ -1493,7 +1506,7 @@
 
     if-ge v2, v3, :cond_5
 
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     const/4 v3, 0x0
 
@@ -1514,7 +1527,7 @@
     goto :goto_0
 
     :cond_5
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     const/4 v3, 0x0
 
@@ -1557,9 +1570,9 @@
 
     if-eqz p1, :cond_0
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Moa:[F
+    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Voa:[F
 
     const/4 v5, 0x0
 
@@ -1574,14 +1587,14 @@
     goto :goto_2
 
     :cond_0
-    iget-boolean p1, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     if-eqz p1, :cond_1
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     :goto_0
-    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v1, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     const/4 v3, 0x0
 
@@ -1596,18 +1609,18 @@
     goto :goto_2
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->cv()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     goto :goto_1
 
     :cond_2
-    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object p1, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     :goto_1
     move-object v2, p1
@@ -1647,7 +1660,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {p1}, Lcom/oneplus/android/server/display/wtn;->cancelAnimator()V
 
@@ -1734,13 +1747,13 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
     invoke-static {p1}, Lcom/oneplus/android/server/display/zgw;->ca(I)[F
 
     move-result-object p1
 
-    sput-object p1, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sput-object p1, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 
@@ -1775,9 +1788,9 @@
     goto :goto_0
 
     :cond_0
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     const/4 v5, 0x0
 
@@ -1808,14 +1821,14 @@
     return-void
 .end method
 
-.method public kf()V
+.method public lf()V
     .locals 7
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Joa:Z
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->Zu()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()I
 
     move-result v0
 
@@ -1823,7 +1836,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 
@@ -1858,9 +1871,9 @@
     goto :goto_0
 
     :cond_0
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Noa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Woa:[F
 
     const/4 v4, 0x0
 
@@ -1885,58 +1898,10 @@
     return-void
 .end method
 
-.method public qf()V
-    .locals 7
-
-    const-string v0, "OpColorTintManager"
-
-    const-string v1, "changeColorRead2Night"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()I
-
-    move-result v0
-
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()F
-
-    move-result v0
-
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Eoa:F
-
-    sget v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
-
-    sget v1, Lcom/oneplus/android/server/display/gwm;->Eoa:F
-
-    invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Joa:[F
-
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
-
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Joa:[F
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x15e
-
-    const/4 v6, 0x1
-
-    move-object v1, p0
-
-    invoke-direct/range {v1 .. v6}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
-
-    return-void
-.end method
-
 .method public recoverOneplusColorMatrix()V
     .locals 6
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     const/4 v1, 0x0
 
@@ -1954,27 +1919,49 @@
 .end method
 
 .method public rf()V
-    .locals 8
+    .locals 7
 
     const-string v0, "OpColorTintManager"
 
-    const-string v1, "changeColorRead2Read"
+    const-string v1, "changeColorRead2Night"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()I
 
-    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Moa:[F
+    move-result v0
 
-    const/4 v5, 0x0
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    const/16 v6, 0x15e
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()F
 
-    const/4 v7, 0x1
+    move-result v0
 
-    move-object v2, p0
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
-    invoke-direct/range {v2 .. v7}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
+    sget v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
+
+    sget v1, Lcom/oneplus/android/server/display/gwm;->Noa:F
+
+    invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Soa:[F
+
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
+
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Soa:[F
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0x15e
+
+    const/4 v6, 0x1
+
+    move-object v1, p0
+
+    invoke-direct/range {v1 .. v6}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
 
     return-void
 .end method
@@ -2024,7 +2011,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 
@@ -2059,9 +2046,9 @@
     goto :goto_0
 
     :cond_0
-    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v5, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sget-object v5, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     const/4 v6, 0x0
 
@@ -2087,55 +2074,33 @@
 .method public setNightBrightness()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->Yu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->Zu()V
 
     return-void
 .end method
 
 .method public sf()V
-    .locals 7
+    .locals 8
 
     const-string v0, "OpColorTintManager"
 
-    const-string v1, "changeNight2ColorRead"
+    const-string v1, "changeColorRead2Read"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()I
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    move-result v0
+    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Voa:[F
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    const/4 v5, 0x0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()F
+    const/16 v6, 0x15e
 
-    move-result v0
+    const/4 v7, 0x1
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    move-object v2, p0
 
-    sget v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
-
-    sget v1, Lcom/oneplus/android/server/display/gwm;->Eoa:F
-
-    invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
-
-    move-result-object v0
-
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Joa:[F
-
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
-
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Loa:[F
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x15e
-
-    const/4 v6, 0x1
-
-    move-object v1, p0
-
-    invoke-direct/range {v1 .. v6}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
+    invoke-direct/range {v2 .. v7}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
 
     return-void
 .end method
@@ -2145,35 +2110,35 @@
 
     const-string v0, "OpColorTintManager"
 
-    const-string v1, "changeNight2Reading"
+    const-string v1, "changeNight2ColorRead"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()I
 
     move-result v0
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()F
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()F
 
     move-result v0
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
-    sget v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sget v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    sget v1, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sget v1, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
     invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Moa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Uoa:[F
 
     const/4 v4, 0x0
 
@@ -2189,73 +2154,39 @@
 .end method
 
 .method public uf()V
-    .locals 8
-
-    const-string v0, "OpColorTintManager"
-
-    const-string v1, "changeRead2ColorRead"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
-
-    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Loa:[F
-
-    const/4 v5, 0x0
-
-    const/16 v6, 0x15e
-
-    const/4 v7, 0x1
-
-    move-object v2, p0
-
-    invoke-direct/range {v2 .. v7}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
-
-    return-void
-.end method
-
-.method public userSwitch(I)V
-    .locals 0
-
-    sput p1, Lcom/oneplus/android/server/display/gwm;->mCurrentUser:I
-
-    return-void
-.end method
-
-.method public vf()V
     .locals 7
 
     const-string v0, "OpColorTintManager"
 
-    const-string v1, "changeReading2Night"
+    const-string v1, "changeNight2Reading"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()I
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()I
 
     move-result v0
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->_u()F
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()F
 
     move-result v0
 
-    sput v0, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
-    sget v0, Lcom/oneplus/android/server/display/gwm;->Doa:I
+    sget v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
 
-    sget v1, Lcom/oneplus/android/server/display/gwm;->Eoa:F
+    sget v1, Lcom/oneplus/android/server/display/gwm;->Noa:F
 
     invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Soa:[F
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Joa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Voa:[F
 
     const/4 v4, 0x0
 
@@ -2270,7 +2201,89 @@
     return-void
 .end method
 
+.method public userSwitch(I)V
+    .locals 0
+
+    sput p1, Lcom/oneplus/android/server/display/gwm;->mCurrentUser:I
+
+    return-void
+.end method
+
+.method public vf()V
+    .locals 8
+
+    const-string v0, "OpColorTintManager"
+
+    const-string v1, "changeRead2ColorRead"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Roa:[F
+
+    sget-object v4, Lcom/oneplus/android/server/display/gwm;->Uoa:[F
+
+    const/4 v5, 0x0
+
+    const/16 v6, 0x15e
+
+    const/4 v7, 0x1
+
+    move-object v2, p0
+
+    invoke-direct/range {v2 .. v7}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
+
+    return-void
+.end method
+
 .method public wf()V
+    .locals 7
+
+    const-string v0, "OpColorTintManager"
+
+    const-string v1, "changeReading2Night"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()I
+
+    move-result v0
+
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->av()F
+
+    move-result v0
+
+    sput v0, Lcom/oneplus/android/server/display/gwm;->Noa:F
+
+    sget v0, Lcom/oneplus/android/server/display/gwm;->Moa:I
+
+    sget v1, Lcom/oneplus/android/server/display/gwm;->Noa:F
+
+    invoke-static {v0, v1}, Lcom/oneplus/android/server/display/zgw;->zta(IF)[F
+
+    move-result-object v0
+
+    sput-object v0, Lcom/oneplus/android/server/display/gwm;->Soa:[F
+
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
+
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Soa:[F
+
+    const/4 v4, 0x0
+
+    const/16 v5, 0x15e
+
+    const/4 v6, 0x1
+
+    move-object v1, p0
+
+    invoke-direct/range {v1 .. v6}, Lcom/oneplus/android/server/display/gwm;->zta([F[FZIZ)V
+
+    return-void
+.end method
+
+.method public xf()V
     .locals 6
 
     const-string v0, "OpColorTintManager"
@@ -2279,7 +2292,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object v1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {v1}, Lcom/oneplus/android/server/display/wtn;->cancelAnimator()V
 
@@ -2295,13 +2308,13 @@
 
     const/16 v2, 0x15e
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     invoke-virtual {v1, v2, v3}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
-    sput-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :cond_0
     iget-object v2, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
@@ -2329,7 +2342,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
     :cond_1
-    iput-boolean v4, p0, Lcom/oneplus/android/server/display/gwm;->zoa:Z
+    iput-boolean v4, p0, Lcom/oneplus/android/server/display/gwm;->Ioa:Z
 
     :cond_2
     iget-object v2, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
@@ -2355,7 +2368,7 @@
     invoke-virtual {v1, v2, v3}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
     :cond_3
-    iput-boolean v4, p0, Lcom/oneplus/android/server/display/gwm;->xoa:Z
+    iput-boolean v4, p0, Lcom/oneplus/android/server/display/gwm;->Goa:Z
 
     :cond_4
     iget-object v2, p0, Lcom/oneplus/android/server/display/gwm;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
@@ -2383,13 +2396,13 @@
     invoke-virtual {v1, v0, v3}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
     :cond_5
-    iput-boolean v4, p0, Lcom/oneplus/android/server/display/gwm;->yoa:Z
+    iput-boolean v4, p0, Lcom/oneplus/android/server/display/gwm;->Hoa:Z
 
     :cond_6
     return-void
 .end method
 
-.method public xf()V
+.method public yf()V
     .locals 6
 
     const-string v0, "OpColorTintManager"
@@ -2398,7 +2411,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v1, p0, Lcom/oneplus/android/server/display/gwm;->Dna:Lcom/oneplus/android/server/display/ugm;
+    iget-object v1, p0, Lcom/oneplus/android/server/display/gwm;->Mna:Lcom/oneplus/android/server/display/ugm;
 
     invoke-virtual {v1}, Lcom/oneplus/android/server/display/wtn;->cancelAnimator()V
 
@@ -2414,16 +2427,16 @@
 
     const/16 v2, 0x15e
 
-    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object v3, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     invoke-virtual {v1, v2, v3}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
-    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object v2, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
-    sput-object v2, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object v2, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     :cond_0
-    iget-boolean v2, p0, Lcom/oneplus/android/server/display/gwm;->zoa:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/display/gwm;->Ioa:Z
 
     const/4 v3, 0x0
 
@@ -2459,10 +2472,10 @@
     invoke-static {v4, v2, v3}, Lcom/oneplus/server/sis;->notifyModeChange(Ljava/lang/String;II)V
 
     :goto_0
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/gwm;->zoa:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/gwm;->Ioa:Z
 
     :cond_2
-    iget-boolean v2, p0, Lcom/oneplus/android/server/display/gwm;->xoa:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/display/gwm;->Goa:Z
 
     if-nez v2, :cond_3
 
@@ -2504,10 +2517,10 @@
     invoke-virtual {v1, v2, v4}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
     :cond_4
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/gwm;->xoa:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/gwm;->Goa:Z
 
     :cond_5
-    iget-boolean v2, p0, Lcom/oneplus/android/server/display/gwm;->yoa:Z
+    iget-boolean v2, p0, Lcom/oneplus/android/server/display/gwm;->Hoa:Z
 
     if-eqz v2, :cond_7
 
@@ -2544,29 +2557,29 @@
     invoke-virtual {v1, v0, v2}, Lcom/android/server/display/color/DisplayTransformManager;->setColorMatrix(I[F)V
 
     :cond_6
-    iput-boolean v3, p0, Lcom/oneplus/android/server/display/gwm;->yoa:Z
+    iput-boolean v3, p0, Lcom/oneplus/android/server/display/gwm;->Hoa:Z
 
     :cond_7
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->bv()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/gwm;->cv()Z
 
     move-result p0
 
     if-eqz p0, :cond_8
 
-    sget-object p0, Lcom/oneplus/android/server/display/gwm;->Koa:[F
+    sget-object p0, Lcom/oneplus/android/server/display/gwm;->Toa:[F
 
     goto :goto_1
 
     :cond_8
-    sget-object p0, Lcom/oneplus/android/server/display/gwm;->Hoa:[F
+    sget-object p0, Lcom/oneplus/android/server/display/gwm;->Qoa:[F
 
     :goto_1
-    sput-object p0, Lcom/oneplus/android/server/display/gwm;->Ioa:[F
+    sput-object p0, Lcom/oneplus/android/server/display/gwm;->Roa:[F
 
     return-void
 .end method
 
-.method public yf()V
+.method public zf()V
     .locals 2
 
     const-string v0, "OpColorTintManager"
@@ -2577,18 +2590,5 @@
 
     invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->recoverOneplusColorMatrix()V
 
-    return-void
-.end method
-
-.method public zf()V
-    .locals 1
-
-    iget-boolean v0, p0, Lcom/oneplus/android/server/display/gwm;->Aoa:Z
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->setCustomColorTemperature()V
-
-    :cond_0
     return-void
 .end method

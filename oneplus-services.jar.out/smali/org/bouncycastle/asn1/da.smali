@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field private Kya:I
+.field private Tya:I
 
-.field private Lya:I
+.field private Uya:I
 
-.field private Mya:Z
+.field private Vya:Z
 
-.field private Nya:Z
+.field private Wya:Z
 
 
 # direct methods
@@ -26,29 +26,29 @@
 
     const/4 p2, 0x0
 
-    iput-boolean p2, p0, Lorg/bouncycastle/asn1/da;->Mya:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/asn1/da;->Vya:Z
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p0, Lorg/bouncycastle/asn1/da;->Nya:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/asn1/da;->Wya:Z
 
     invoke-virtual {p1}, Ljava/io/InputStream;->read()I
 
     move-result p2
 
-    iput p2, p0, Lorg/bouncycastle/asn1/da;->Kya:I
+    iput p2, p0, Lorg/bouncycastle/asn1/da;->Tya:I
 
     invoke-virtual {p1}, Ljava/io/InputStream;->read()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iput p1, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
-    iget p1, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iget p1, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
     if-ltz p1, :cond_0
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->zw()Z
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->Aw()Z
 
     return-void
 
@@ -60,33 +60,33 @@
     throw p0
 .end method
 
-.method private zw()Z
+.method private Aw()Z
     .locals 1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Mya:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Vya:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Nya:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Wya:Z
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lorg/bouncycastle/asn1/da;->Kya:I
+    iget v0, p0, Lorg/bouncycastle/asn1/da;->Tya:I
 
     if-nez v0, :cond_0
 
-    iget v0, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iget v0, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Mya:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Vya:Z
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/asn1/ga;->fa(Z)V
 
     :cond_0
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/da;->Mya:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/da;->Vya:Z
 
     return p0
 .end method
@@ -96,9 +96,9 @@
 .method ga(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/da;->Nya:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/da;->Wya:Z
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->zw()Z
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->Aw()Z
 
     return-void
 .end method
@@ -111,7 +111,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->zw()Z
+    invoke-direct {p0}, Lorg/bouncycastle/asn1/da;->Aw()Z
 
     move-result v0
 
@@ -122,7 +122,7 @@
     return p0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->Gya:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->Pya:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
@@ -130,13 +130,13 @@
 
     if-ltz v0, :cond_1
 
-    iget v1, p0, Lorg/bouncycastle/asn1/da;->Kya:I
+    iget v1, p0, Lorg/bouncycastle/asn1/da;->Tya:I
 
-    iget v2, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iget v2, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
-    iput v2, p0, Lorg/bouncycastle/asn1/da;->Kya:I
+    iput v2, p0, Lorg/bouncycastle/asn1/da;->Tya:I
 
-    iput v0, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iput v0, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
     return v1
 
@@ -156,7 +156,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Nya:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Wya:Z
 
     if-nez v0, :cond_4
 
@@ -167,7 +167,7 @@
     goto :goto_0
 
     :cond_0
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Mya:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/da;->Vya:Z
 
     if-eqz v0, :cond_1
 
@@ -176,7 +176,7 @@
     return p0
 
     :cond_1
-    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->Gya:Ljava/io/InputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/ga;->Pya:Ljava/io/InputStream;
 
     add-int/lit8 v1, p2, 0x2
 
@@ -188,7 +188,7 @@
 
     if-ltz p3, :cond_3
 
-    iget v0, p0, Lorg/bouncycastle/asn1/da;->Kya:I
+    iget v0, p0, Lorg/bouncycastle/asn1/da;->Tya:I
 
     int-to-byte v0, v0
 
@@ -196,29 +196,29 @@
 
     add-int/lit8 p2, p2, 0x1
 
-    iget v0, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iget v0, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
     int-to-byte v0, v0
 
     aput-byte v0, p1, p2
 
-    iget-object p1, p0, Lorg/bouncycastle/asn1/ga;->Gya:Ljava/io/InputStream;
+    iget-object p1, p0, Lorg/bouncycastle/asn1/ga;->Pya:Ljava/io/InputStream;
 
     invoke-virtual {p1}, Ljava/io/InputStream;->read()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/da;->Kya:I
+    iput p1, p0, Lorg/bouncycastle/asn1/da;->Tya:I
 
-    iget-object p1, p0, Lorg/bouncycastle/asn1/ga;->Gya:Ljava/io/InputStream;
+    iget-object p1, p0, Lorg/bouncycastle/asn1/ga;->Pya:Ljava/io/InputStream;
 
     invoke-virtual {p1}, Ljava/io/InputStream;->read()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iput p1, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
-    iget p0, p0, Lorg/bouncycastle/asn1/da;->Lya:I
+    iget p0, p0, Lorg/bouncycastle/asn1/da;->Uya:I
 
     if-ltz p0, :cond_2
 

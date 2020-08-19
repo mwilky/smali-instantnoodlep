@@ -6,7 +6,7 @@
 # static fields
 .field static final P:[I
 
-.field private static final kWa:I = 0x1ff
+.field private static final tWa:I = 0x1ff
 
 
 # direct methods

@@ -97,7 +97,7 @@
 
     if-eqz p1, :cond_7
 
-    iget-object v2, p1, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object v2, p1, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     if-eqz v2, :cond_7
 
@@ -117,7 +117,7 @@
 
     move-result v2
 
-    iget-object p1, p1, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     int-to-long v2, v2
 
@@ -212,7 +212,7 @@
 
     move-result v0
 
-    iget-object p1, p1, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/am/AppRecordTransition$you;->this$0:Lcom/android/server/am/AppRecordTransition;
 
@@ -331,7 +331,7 @@
 
     move-result p4
 
-    iget-object p1, p1, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object p1, p1, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/AppRecordTransition$you;->this$0:Lcom/android/server/am/AppRecordTransition;
 

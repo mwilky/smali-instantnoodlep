@@ -319,7 +319,7 @@
 
     check-cast p0, Lorg/bouncycastle/asn1/cgv;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->Mh()Ljava/util/Date;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->Nh()Ljava/util/Date;
 
     move-result-object p0
 
@@ -377,7 +377,7 @@
 
     check-cast p0, Lorg/bouncycastle/asn1/cgv;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->Nh()Ljava/lang/String;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/cgv;->Oh()Ljava/lang/String;
 
     move-result-object p0
 

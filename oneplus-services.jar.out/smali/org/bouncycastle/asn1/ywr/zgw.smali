@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method protected Yj()Lorg/bouncycastle/asn1/ibl/vju;
+.method protected Zj()Lorg/bouncycastle/asn1/ibl/vju;
     .locals 13
 
     sget-object v5, Lyou/zta/sis/zta/sis;->ZERO:Ljava/math/BigInteger;

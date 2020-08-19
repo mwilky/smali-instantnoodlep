@@ -14,13 +14,13 @@
 
 
 # virtual methods
-.method Rj()Lorg/bouncycastle/asn1/ugm;
+.method Sj()Lorg/bouncycastle/asn1/ugm;
     .locals 0
 
     return-object p0
 .end method
 
-.method Sj()Lorg/bouncycastle/asn1/ugm;
+.method Tj()Lorg/bouncycastle/asn1/ugm;
     .locals 0
 
     return-object p0
@@ -40,7 +40,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/vdb;->wh()Lorg/bouncycastle/asn1/vdb;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/vdb;->xh()Lorg/bouncycastle/asn1/vdb;
 
     move-result-object p1
 

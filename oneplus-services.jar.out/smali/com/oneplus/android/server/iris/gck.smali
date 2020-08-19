@@ -52,7 +52,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/bio;->Rf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/iris/bio;->Sf()V
 
     goto :goto_1
 

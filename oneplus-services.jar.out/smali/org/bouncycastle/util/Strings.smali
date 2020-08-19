@@ -146,7 +146,7 @@
     throw p0
 .end method
 
-.method public static em()Lorg/bouncycastle/util/qbh;
+.method public static fm()Lorg/bouncycastle/util/qbh;
     .locals 2
 
     new-instance v0, Lorg/bouncycastle/util/Strings$StringListImpl;

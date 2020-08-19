@@ -206,151 +206,6 @@
     return-object v0
 .end method
 
-.method private ym()V
-    .locals 7
-
-    invoke-static {}, Lcom/android/server/OnePlusUtil;->access$000()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "notifyIfWindowRemovedLocked: mLastTouchWindow->"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v1, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, " mTouchWindow->"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v1, Lcom/android/server/OnePlusUtil$you;->Lf:Ljava/util/HashMap;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "OnePlusTouchWinJudge"
-
-    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    sget-object v0, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_1
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Integer;
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-
-    sget-object v2, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/android/server/OnePlusUtil$you$zta;
-
-    sget-object v3, Lcom/android/server/OnePlusUtil$you;->Lf:Ljava/util/HashMap;
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_2
-
-    invoke-direct {p0, v2}, Lcom/android/server/OnePlusUtil$you;->zta(Lcom/android/server/OnePlusUtil$you$zta;)V
-
-    goto :goto_0
-
-    :cond_2
-    sget-object v3, Lcom/android/server/OnePlusUtil$you;->Lf:Ljava/util/HashMap;
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/android/server/OnePlusUtil$you$zta;
-
-    iget-object v3, v2, Lcom/android/server/OnePlusUtil$you$zta;->mWindows:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :cond_3
-    :goto_1
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/android/server/OnePlusUtil$you$tsu;
-
-    invoke-virtual {v1, v4}, Lcom/android/server/OnePlusUtil$you$zta;->zta(Lcom/android/server/OnePlusUtil$you$tsu;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_3
-
-    iget v5, v2, Lcom/android/server/OnePlusUtil$you$zta;->mUid:I
-
-    iget-object v6, v2, Lcom/android/server/OnePlusUtil$you$zta;->mPkgName:Ljava/lang/String;
-
-    invoke-direct {p0, v4, v5, v6}, Lcom/android/server/OnePlusUtil$you;->zta(Lcom/android/server/OnePlusUtil$you$tsu;ILjava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_4
-    return-void
-.end method
-
 .method private you(IILjava/lang/String;)V
     .locals 4
 
@@ -511,6 +366,151 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
     throw p0
+.end method
+
+.method private zm()V
+    .locals 7
+
+    invoke-static {}, Lcom/android/server/OnePlusUtil;->access$000()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "notifyIfWindowRemovedLocked: mLastTouchWindow->"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v1, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " mTouchWindow->"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    sget-object v1, Lcom/android/server/OnePlusUtil$you;->Lf:Ljava/util/HashMap;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "OnePlusTouchWinJudge"
+
+    invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    sget-object v0, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_1
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    sget-object v2, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/android/server/OnePlusUtil$you$zta;
+
+    sget-object v3, Lcom/android/server/OnePlusUtil$you;->Lf:Ljava/util/HashMap;
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    invoke-direct {p0, v2}, Lcom/android/server/OnePlusUtil$you;->zta(Lcom/android/server/OnePlusUtil$you$zta;)V
+
+    goto :goto_0
+
+    :cond_2
+    sget-object v3, Lcom/android/server/OnePlusUtil$you;->Lf:Ljava/util/HashMap;
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/OnePlusUtil$you$zta;
+
+    iget-object v3, v2, Lcom/android/server/OnePlusUtil$you$zta;->mWindows:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_3
+    :goto_1
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/android/server/OnePlusUtil$you$tsu;
+
+    invoke-virtual {v1, v4}, Lcom/android/server/OnePlusUtil$you$zta;->zta(Lcom/android/server/OnePlusUtil$you$tsu;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
+    iget v5, v2, Lcom/android/server/OnePlusUtil$you$zta;->mUid:I
+
+    iget-object v6, v2, Lcom/android/server/OnePlusUtil$you$zta;->mPkgName:Ljava/lang/String;
+
+    invoke-direct {p0, v4, v5, v6}, Lcom/android/server/OnePlusUtil$you;->zta(Lcom/android/server/OnePlusUtil$you$tsu;ILjava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_4
+    return-void
 .end method
 
 .method private zta(Lcom/android/server/OnePlusUtil$you$tsu;ILjava/lang/String;)V
@@ -1318,7 +1318,7 @@
     monitor-enter v0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$you;->ym()V
+    invoke-direct {p0}, Lcom/android/server/OnePlusUtil$you;->zm()V
 
     sget-object p0, Lcom/android/server/OnePlusUtil$you;->Mf:Ljava/util/HashMap;
 

@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field private jDa:Ljava/security/SecureRandom;
-
 .field private parameters:Lorg/bouncycastle/crypto/kth;
+
+.field private sDa:Ljava/security/SecureRandom;
 
 
 # direct methods
 .method public constructor <init>(Lorg/bouncycastle/crypto/kth;)V
     .locals 1
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Zj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->_j()Ljava/security/SecureRandom;
 
     move-result-object v0
 
@@ -30,7 +30,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lorg/bouncycastle/crypto/wtn/hmo;->jDa:Ljava/security/SecureRandom;
+    iput-object p2, p0, Lorg/bouncycastle/crypto/wtn/hmo;->sDa:Ljava/security/SecureRandom;
 
     iput-object p1, p0, Lorg/bouncycastle/crypto/wtn/hmo;->parameters:Lorg/bouncycastle/crypto/kth;
 
@@ -39,10 +39,10 @@
 
 
 # virtual methods
-.method public _j()Ljava/security/SecureRandom;
+.method public ak()Ljava/security/SecureRandom;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/hmo;->jDa:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/hmo;->sDa:Ljava/security/SecureRandom;
 
     return-object p0
 .end method

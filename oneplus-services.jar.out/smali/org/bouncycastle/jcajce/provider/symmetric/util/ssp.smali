@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field protected MFa:Ljava/lang/String;
+.field protected VFa:Ljava/lang/String;
 
-.field protected RFa:Lorg/bouncycastle/asn1/bvj;
+.field protected _Fa:Lorg/bouncycastle/asn1/bvj;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljavax/crypto/SecretKeyFactorySpi;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->VFa:Ljava/lang/String;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->RFa:Lorg/bouncycastle/asn1/bvj;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->_Fa:Lorg/bouncycastle/asn1/bvj;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->VFa:Ljava/lang/String;
 
     invoke-direct {v0, p1, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
@@ -89,7 +89,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->VFa:Ljava/lang/String;
 
     invoke-direct {p2, p1, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
+    iget-object v1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->VFa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -189,7 +189,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->VFa:Ljava/lang/String;
 
     invoke-direct {v0, p1, p0}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
@@ -206,7 +206,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->MFa:Ljava/lang/String;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/ssp;->VFa:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -4,13 +4,19 @@
 
 
 # static fields
-.field private static final JW:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
+.field private static final PARAM_BACKCOVER_COLOR:I = 0x2
 
-.field private static final KW:I = 0x7
+.field private static final PARAM_INTRANET:I = 0x1
 
-.field private static final LW:I = 0x17
+.field private static final TAG:Ljava/lang/String; = "ParamReader"
 
-.field private static MW:Ljava/util/ArrayList; = null
+.field private static final TW:Ljava/lang/String; = "/sys/module/param_read_write/parameters/backcover_color"
+
+.field private static final UW:I = 0x7
+
+.field private static final VW:I = 0x17
+
+.field private static WW:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -20,13 +26,7 @@
     .end annotation
 .end field
 
-.field private static NW:Z = false
-
-.field private static final PARAM_BACKCOVER_COLOR:I = 0x2
-
-.field private static final PARAM_INTRANET:I = 0x1
-
-.field private static final TAG:Ljava/lang/String; = "ParamReader"
+.field private static XW:Z
 
 
 # direct methods
@@ -37,11 +37,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/server/secrecy/zta/zta/sis;->MW:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/server/secrecy/zta/zta/sis;->WW:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/sis;->NW:Z
+    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/sis;->XW:Z
 
     return-void
 .end method
@@ -200,7 +200,7 @@
 .method static synthetic cno(Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
-    sput-object p0, Lcom/android/server/secrecy/zta/zta/sis;->MW:Ljava/util/ArrayList;
+    sput-object p0, Lcom/android/server/secrecy/zta/zta/sis;->WW:Ljava/util/ArrayList;
 
     return-object p0
 .end method
@@ -625,7 +625,7 @@
 .method static synthetic u(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/android/server/secrecy/zta/zta/sis;->NW:Z
+    sput-boolean p0, Lcom/android/server/secrecy/zta/zta/sis;->XW:Z
 
     return p0
 .end method
@@ -650,7 +650,7 @@
 
     invoke-interface {v3, v4, v2}, Lsis/you/you/sis/zta/zta;->zta(ILsis/you/you/sis/zta/zta$sis;)V
 
-    sget-object v2, Lcom/android/server/secrecy/zta/zta/sis;->MW:Ljava/util/ArrayList;
+    sget-object v2, Lcom/android/server/secrecy/zta/zta/sis;->WW:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -663,7 +663,7 @@
     move v4, v3
 
     :goto_0
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->MW:Ljava/util/ArrayList;
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->WW:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -671,7 +671,7 @@
 
     if-ge v4, v5, :cond_1
 
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->MW:Ljava/util/ArrayList;
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->WW:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -688,7 +688,7 @@
     goto :goto_1
 
     :cond_0
-    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->MW:Ljava/util/ArrayList;
+    sget-object v5, Lcom/android/server/secrecy/zta/zta/sis;->WW:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

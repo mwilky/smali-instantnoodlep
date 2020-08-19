@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final aOa:Ljava/math/BigInteger;
+.field public final jOa:Ljava/math/BigInteger;
 
 .field public final v:Ljava/math/BigInteger;
 
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/sis/zta/vju;->aOa:Ljava/math/BigInteger;
+    iput-object p1, p0, Lyou/zta/sis/zta/vju;->jOa:Ljava/math/BigInteger;
 
     iput-object p2, p0, Lyou/zta/sis/zta/vju;->v:Ljava/math/BigInteger;
 

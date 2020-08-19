@@ -284,7 +284,7 @@
 
     iput p1, p0, Lcom/android/server/wtn;->vd:I
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->om()V
+    invoke-direct {p0}, Lcom/android/server/wtn;->pm()V
 
     iget-object p1, p0, Lcom/android/server/wtn;->mResolver:Landroid/content/ContentResolver;
 
@@ -468,7 +468,7 @@
 .method static synthetic cjf(Lcom/android/server/wtn;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->om()V
+    invoke-direct {p0}, Lcom/android/server/wtn;->pm()V
 
     return-void
 .end method
@@ -1016,49 +1016,10 @@
     return p0
 .end method
 
-.method private om()V
-    .locals 3
-
-    iget v0, p0, Lcom/android/server/wtn;->vd:I
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_1
-
-    if-eqz v0, :cond_1
-
-    invoke-direct {p0}, Lcom/android/server/wtn;->qm()Z
-
-    move-result v0
-
-    const-string v1, "charging_guarder_enabled"
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/server/wtn;->mResolver:Landroid/content/ContentResolver;
-
-    const/4 v2, -0x1
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/wtn;->mResolver:Landroid/content/ContentResolver;
-
-    const/4 v2, 0x2
-
-    :goto_0
-    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    iput v2, p0, Lcom/android/server/wtn;->vd:I
-
-    :cond_1
-    return-void
-.end method
-
 .method static synthetic oxb(Lcom/android/server/wtn;)Landroid/app/Notification;
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wtn;->pm()Landroid/app/Notification;
+    invoke-direct {p0}, Lcom/android/server/wtn;->qm()Landroid/app/Notification;
 
     move-result-object p0
 
@@ -1185,7 +1146,58 @@
     throw v3
 .end method
 
-.method private pm()Landroid/app/Notification;
+.method private pm()V
+    .locals 3
+
+    iget v0, p0, Lcom/android/server/wtn;->vd:I
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    if-eqz v0, :cond_1
+
+    invoke-direct {p0}, Lcom/android/server/wtn;->rm()Z
+
+    move-result v0
+
+    const-string v1, "charging_guarder_enabled"
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/server/wtn;->mResolver:Landroid/content/ContentResolver;
+
+    const/4 v2, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/wtn;->mResolver:Landroid/content/ContentResolver;
+
+    const/4 v2, 0x2
+
+    :goto_0
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    iput v2, p0, Lcom/android/server/wtn;->vd:I
+
+    :cond_1
+    return-void
+.end method
+
+.method static synthetic qbh(Lcom/android/server/wtn;)I
+    .locals 2
+
+    iget v0, p0, Lcom/android/server/wtn;->Gd:I
+
+    add-int/lit8 v1, v0, 0x1
+
+    iput v1, p0, Lcom/android/server/wtn;->Gd:I
+
+    return v0
+.end method
+
+.method private qm()Landroid/app/Notification;
     .locals 8
 
     new-instance v0, Landroid/content/Intent;
@@ -1345,19 +1357,7 @@
     return-object p0
 .end method
 
-.method static synthetic qbh(Lcom/android/server/wtn;)I
-    .locals 2
-
-    iget v0, p0, Lcom/android/server/wtn;->Gd:I
-
-    add-int/lit8 v1, v0, 0x1
-
-    iput v1, p0, Lcom/android/server/wtn;->Gd:I
-
-    return v0
-.end method
-
-.method private qm()Z
+.method private rm()Z
     .locals 6
 
     iget-object v0, p0, Lcom/android/server/wtn;->mTelephonyManager:Landroid/telephony/TelephonyManager;

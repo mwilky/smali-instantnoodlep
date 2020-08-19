@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private IRa:Ljava/util/Vector;
+.field private RRa:Ljava/util/Vector;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 .method private zd(I)V
     .locals 3
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -30,7 +30,7 @@
 
     if-gt v0, p1, :cond_1
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
     add-int/lit8 v2, v0, -0x1
 
@@ -47,7 +47,7 @@
 
     invoke-static {v1, v1}, Lorg/bouncycastle/crypto/bio/zta/tsu;->bio([J[J)V
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iget-object v2, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
     invoke-virtual {v2, v1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
@@ -68,7 +68,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
     if-eqz v0, :cond_0
 
@@ -95,9 +95,9 @@
 
     invoke-direct {v0, v1}, Ljava/util/Vector;-><init>(I)V
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
     invoke-virtual {p0, p1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 
@@ -107,7 +107,7 @@
 .method public zta(J[B)V
     .locals 6
 
-    invoke-static {}, Lorg/bouncycastle/crypto/bio/zta/tsu;->hk()[J
+    invoke-static {}, Lorg/bouncycastle/crypto/bio/zta/tsu;->ik()[J
 
     move-result-object v0
 
@@ -130,7 +130,7 @@
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/crypto/bio/zta/rtg;->zd(I)V
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->IRa:Ljava/util/Vector;
+    iget-object v2, p0, Lorg/bouncycastle/crypto/bio/zta/rtg;->RRa:Ljava/util/Vector;
 
     invoke-virtual {v2, v1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 

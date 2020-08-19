@@ -431,7 +431,159 @@
     return-void
 .end method
 
-.method private Am()Z
+.method private Am()V
+    .locals 6
+
+    iget-object v0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
+
+    if-eqz v0, :cond_5
+
+    iget-object v0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    new-instance v2, Landroid/os/Bundle;
+
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
+
+    new-array v3, v1, [I
+
+    const/16 v4, 0xd7
+
+    const/4 v5, 0x0
+
+    aput v4, v3, v5
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    iget-boolean v3, p0, Lcom/android/server/qeg;->Ug:Z
+
+    if-nez v3, :cond_0
+
+    const-string v3, "CONFIG_NAME_VIDEO_ENHANCEMENT"
+
+    const-string v4, "BlacklistVideoEnhancerConfig"
+
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
+    new-array v3, v1, [I
+
+    const/16 v4, 0x82
+
+    aput v4, v3, v5
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    iget-boolean v3, p0, Lcom/android/server/qeg;->Zg:Z
+
+    if-nez v3, :cond_1
+
+    const-string v3, "CONFIG_NAME_SMART5G"
+
+    const-string v4, "Whitelist5GConfig"
+
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_1
+    new-array v3, v1, [I
+
+    const/16 v4, 0x116
+
+    aput v4, v3, v5
+
+    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    iget-boolean v3, p0, Lcom/android/server/qeg;->ch:Z
+
+    if-nez v3, :cond_2
+
+    const-string v3, "CONFIG_NAME_FASTOUTPUT"
+
+    const-string v4, "WhitelistFastOutputConfig"
+
+    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_2
+    new-array v1, v1, [I
+
+    const/16 v3, 0x13a
+
+    aput v3, v1, v5
+
+    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    iget-boolean v1, p0, Lcom/android/server/qeg;->fh:Z
+
+    if-nez v1, :cond_3
+
+    const-string v1, "CONFIG_NAME_GAME_DOLBY"
+
+    const-string v3, "WhitelistGameDolbyConfig"
+
+    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_3
+    sget-boolean v1, Lcom/android/server/qeg;->Xh:Z
+
+    if-eqz v1, :cond_4
+
+    const-string v1, "CONFIG_NAME_LMKD_WATERMARK"
+
+    const-string v3, "LMKD_TUNE"
+
+    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_4
+    invoke-virtual {v0, v2}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
+
+    iget-object p0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+
+    goto :goto_0
+
+    :cond_5
+    sget-boolean p0, Lcom/android/server/qeg;->DBG:Z
+
+    if-eqz p0, :cond_6
+
+    const-string p0, "CommonFrontMonitor"
+
+    const-string v0, "fetchConfig: skip to fetch"
+
+    invoke-static {p0, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_6
+    :goto_0
+    return-void
+.end method
+
+.method private Bm()Z
     .locals 3
 
     iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
@@ -458,7 +610,7 @@
     return v0
 .end method
 
-.method private Bm()J
+.method private Cm()J
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/qeg;->oh:Ljava/lang/Object;
@@ -482,7 +634,7 @@
     throw p0
 .end method
 
-.method private Cm()Z
+.method private Dm()Z
     .locals 4
 
     iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
@@ -529,7 +681,7 @@
     return p0
 .end method
 
-.method private Dm()Z
+.method private Em()Z
     .locals 2
 
     iget-object p0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
@@ -555,7 +707,7 @@
     return p0
 .end method
 
-.method private Em()Z
+.method private Fm()Z
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/qeg;->oh:Ljava/lang/Object;
@@ -579,7 +731,7 @@
     throw p0
 .end method
 
-.method private declared-synchronized Fm()V
+.method private declared-synchronized Gm()V
     .locals 6
 
     monitor-enter p0
@@ -2844,162 +2996,10 @@
     throw p1
 .end method
 
-.method private zm()V
-    .locals 6
-
-    iget-object v0, p0, Lcom/android/server/qeg;->mContext:Landroid/content/Context;
-
-    if-eqz v0, :cond_5
-
-    iget-object v0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    iput v1, v0, Landroid/os/Message;->what:I
-
-    new-instance v2, Landroid/os/Bundle;
-
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
-
-    new-array v3, v1, [I
-
-    const/16 v4, 0xd7
-
-    const/4 v5, 0x0
-
-    aput v4, v3, v5
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    iget-boolean v3, p0, Lcom/android/server/qeg;->Ug:Z
-
-    if-nez v3, :cond_0
-
-    const-string v3, "CONFIG_NAME_VIDEO_ENHANCEMENT"
-
-    const-string v4, "BlacklistVideoEnhancerConfig"
-
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    new-array v3, v1, [I
-
-    const/16 v4, 0x82
-
-    aput v4, v3, v5
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-boolean v3, p0, Lcom/android/server/qeg;->Zg:Z
-
-    if-nez v3, :cond_1
-
-    const-string v3, "CONFIG_NAME_SMART5G"
-
-    const-string v4, "Whitelist5GConfig"
-
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    new-array v3, v1, [I
-
-    const/16 v4, 0x116
-
-    aput v4, v3, v5
-
-    invoke-static {v3}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    iget-boolean v3, p0, Lcom/android/server/qeg;->ch:Z
-
-    if-nez v3, :cond_2
-
-    const-string v3, "CONFIG_NAME_FASTOUTPUT"
-
-    const-string v4, "WhitelistFastOutputConfig"
-
-    invoke-virtual {v2, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_2
-    new-array v1, v1, [I
-
-    const/16 v3, 0x13a
-
-    aput v3, v1, v5
-
-    invoke-static {v1}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    iget-boolean v1, p0, Lcom/android/server/qeg;->fh:Z
-
-    if-nez v1, :cond_3
-
-    const-string v1, "CONFIG_NAME_GAME_DOLBY"
-
-    const-string v3, "WhitelistGameDolbyConfig"
-
-    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_3
-    sget-boolean v1, Lcom/android/server/qeg;->Xh:Z
-
-    if-eqz v1, :cond_4
-
-    const-string v1, "CONFIG_NAME_LMKD_WATERMARK"
-
-    const-string v3, "LMKD_TUNE"
-
-    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_4
-    invoke-virtual {v0, v2}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
-
-    iget-object p0, p0, Lcom/android/server/qeg;->mHandler:Landroid/os/Handler;
-
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    goto :goto_0
-
-    :cond_5
-    sget-boolean p0, Lcom/android/server/qeg;->DBG:Z
-
-    if-eqz p0, :cond_6
-
-    const-string p0, "CommonFrontMonitor"
-
-    const-string v0, "fetchConfig: skip to fetch"
-
-    invoke-static {p0, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_6
-    :goto_0
-    return-void
-.end method
-
 .method static synthetic zta(Lcom/android/server/qeg;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Fm()V
+    invoke-direct {p0}, Lcom/android/server/qeg;->Gm()V
 
     return-void
 .end method
@@ -3058,7 +3058,7 @@
 
     if-eqz p3, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Em()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Fm()Z
 
     move-result p3
 
@@ -3076,7 +3076,7 @@
 
     const-string p3, "/sys/module/memplus_core/parameters/memory_plus_wake_memex"
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Bm()J
+    invoke-direct {p0}, Lcom/android/server/qeg;->Cm()J
 
     move-result-wide v0
 
@@ -3118,7 +3118,7 @@
     invoke-static {p3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    invoke-direct {p0}, Lcom/android/server/qeg;->Am()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Bm()Z
 
     move-result p3
 
@@ -3153,7 +3153,7 @@
 
     if-eqz p3, :cond_6
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Dm()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Em()Z
 
     move-result p3
 
@@ -3514,7 +3514,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Dm()Z
+    invoke-direct {p0}, Lcom/android/server/qeg;->Em()Z
 
     move-result v1
 
@@ -3696,7 +3696,7 @@
 
     if-eqz p1, :cond_6
 
-    invoke-direct {p0}, Lcom/android/server/qeg;->Fm()V
+    invoke-direct {p0}, Lcom/android/server/qeg;->Gm()V
 
     new-instance p1, Lcom/android/server/qeg$rtg;
 
@@ -3897,7 +3897,7 @@
     invoke-virtual {p1}, Lcom/oneplus/config/ConfigObserver;->register()V
 
     :cond_e
-    invoke-direct {p0}, Lcom/android/server/qeg;->zm()V
+    invoke-direct {p0}, Lcom/android/server/qeg;->Am()V
 
     return-void
 

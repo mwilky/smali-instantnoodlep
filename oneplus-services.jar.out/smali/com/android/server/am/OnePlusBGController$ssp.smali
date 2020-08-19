@@ -864,7 +864,7 @@
     invoke-static {v1}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
     :cond_10
-    sget-object v1, Lcom/android/server/am/cjf;->tr:[I
+    sget-object v1, Lcom/android/server/am/cjf;->Cr:[I
 
     iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$ssp;->this$0:Lcom/android/server/am/OnePlusBGController;
 

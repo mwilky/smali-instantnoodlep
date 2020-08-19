@@ -19,9 +19,9 @@
 
 .field private mPath:Ljava/lang/String;
 
-.field private qba:Ljava/lang/String;
-
 .field final synthetic this$0:Lcom/android/server/wm/OnePlusPerfManager;
+
+.field private zba:Ljava/lang/String;
 
 
 # direct methods
@@ -40,13 +40,13 @@
 
     iput-object p1, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->qba:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->zba:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mPath:Ljava/lang/String;
 
     iput-object p3, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->mParam:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->qba:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->zba:Ljava/lang/String;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 .method public Me()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->qba:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->zba:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -100,7 +100,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->qba:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/wm/OnePlusPerfManager$cno;->zba:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

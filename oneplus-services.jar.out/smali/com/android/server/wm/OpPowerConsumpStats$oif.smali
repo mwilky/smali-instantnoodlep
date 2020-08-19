@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private fj:J
-
 .field private mStartTimeMs:J
+
+.field private oj:J
 
 .field final synthetic this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -86,7 +86,7 @@
 .method public isStopped()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
+    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->oj:J
 
     const-wide/16 v2, 0x0
 
@@ -139,7 +139,7 @@
 
     iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->mStartTimeMs:J
 
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->oj:J
 
     return-void
 .end method
@@ -176,10 +176,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
+    iput-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->oj:J
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->fj:J
+    iget-wide v0, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->oj:J
 
     iget-wide v2, p0, Lcom/android/server/wm/OpPowerConsumpStats$oif;->mStartTimeMs:J
 

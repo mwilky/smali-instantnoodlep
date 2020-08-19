@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private KRa:Ljava/math/BigInteger;
+.field private TRa:Ljava/math/BigInteger;
 
-.field private LRa:Ljava/math/BigInteger;
+.field private URa:Ljava/math/BigInteger;
 
-.field private MRa:Ljava/math/BigInteger;
+.field private VRa:Ljava/math/BigInteger;
 
 .field private e:Ljava/math/BigInteger;
 
@@ -31,11 +31,11 @@
 
     iput-object p5, p0, Lorg/bouncycastle/crypto/wtn/cgv;->q:Ljava/math/BigInteger;
 
-    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cgv;->KRa:Ljava/math/BigInteger;
+    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cgv;->TRa:Ljava/math/BigInteger;
 
-    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cgv;->LRa:Ljava/math/BigInteger;
+    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cgv;->URa:Ljava/math/BigInteger;
 
-    iput-object p8, p0, Lorg/bouncycastle/crypto/wtn/cgv;->MRa:Ljava/math/BigInteger;
+    iput-object p8, p0, Lorg/bouncycastle/crypto/wtn/cgv;->VRa:Ljava/math/BigInteger;
 
     return-void
 .end method
@@ -66,18 +66,10 @@
     return-object p0
 .end method
 
-.method public kk()Ljava/math/BigInteger;
-    .locals 0
-
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->KRa:Ljava/math/BigInteger;
-
-    return-object p0
-.end method
-
 .method public lk()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->LRa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->TRa:Ljava/math/BigInteger;
 
     return-object p0
 .end method
@@ -85,7 +77,15 @@
 .method public mk()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->MRa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->URa:Ljava/math/BigInteger;
+
+    return-object p0
+.end method
+
+.method public nk()Ljava/math/BigInteger;
+    .locals 0
+
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cgv;->VRa:Ljava/math/BigInteger;
 
     return-object p0
 .end method

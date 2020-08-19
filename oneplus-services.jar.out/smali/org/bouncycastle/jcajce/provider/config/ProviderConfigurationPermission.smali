@@ -14,23 +14,23 @@
 
 .field private static final EC_IMPLICITLY_CA:I = 0x2
 
-.field private static final TDa:Ljava/lang/String; = "threadlocalecimplicitlyca"
-
 .field private static final THREAD_LOCAL_DH_DEFAULT_PARAMS:I = 0x4
 
 .field private static final THREAD_LOCAL_EC_IMPLICITLY_CA:I = 0x1
 
-.field private static final UDa:Ljava/lang/String; = "ecimplicitlyca"
+.field private static final bEa:Ljava/lang/String; = "threadlocalecimplicitlyca"
 
-.field private static final VDa:Ljava/lang/String; = "threadlocaldhdefaultparams"
+.field private static final cEa:Ljava/lang/String; = "ecimplicitlyca"
 
-.field private static final WDa:Ljava/lang/String; = "dhdefaultparams"
+.field private static final dEa:Ljava/lang/String; = "threadlocaldhdefaultparams"
 
-.field private static final XDa:Ljava/lang/String; = "acceptableeccurves"
+.field private static final eEa:Ljava/lang/String; = "dhdefaultparams"
 
-.field private static final YDa:Ljava/lang/String; = "additionalecparameters"
+.field private static final fEa:Ljava/lang/String; = "acceptableeccurves"
 
-.field private static final ZDa:Ljava/lang/String; = "all"
+.field private static final gEa:Ljava/lang/String; = "additionalecparameters"
+
+.field private static final hEa:Ljava/lang/String; = "all"
 
 
 # instance fields

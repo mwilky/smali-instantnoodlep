@@ -39,7 +39,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/sis/zta$zta;->this$0:Lcom/oneplus/android/server/sis/zta;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/sis/zta;->jf()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/sis/zta;->kf()V
 
     iget-object p0, p0, Lcom/oneplus/android/server/sis/zta$zta;->this$0:Lcom/oneplus/android/server/sis/zta;
 

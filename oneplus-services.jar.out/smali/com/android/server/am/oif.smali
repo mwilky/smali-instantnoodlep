@@ -190,7 +190,7 @@
 
     if-eqz v0, :cond_7
 
-    sput-boolean v3, Lcom/android/server/am/ibl;->gp:Z
+    sput-boolean v3, Lcom/android/server/am/ibl;->rp:Z
 
     const-string p0, "persist.sys.appboot.blacklist"
 
@@ -205,7 +205,7 @@
 
     if-eqz v0, :cond_8
 
-    sput-boolean v4, Lcom/android/server/am/ibl;->gp:Z
+    sput-boolean v4, Lcom/android/server/am/ibl;->rp:Z
 
     const-string p0, "persist.sys.appboot.blacklist"
 
@@ -470,7 +470,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/oif;->this$0:Lcom/android/server/am/ibl;
 
-    iget-object p1, p1, Lcom/android/server/am/ibl;->bp:Lcom/android/server/am/ibl$you;
+    iget-object p1, p1, Lcom/android/server/am/ibl;->kp:Lcom/android/server/am/ibl$you;
 
     invoke-static {p1, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
@@ -480,7 +480,7 @@
 
     iget-object p2, p0, Lcom/android/server/am/oif;->this$0:Lcom/android/server/am/ibl;
 
-    iget-object p2, p2, Lcom/android/server/am/ibl;->bp:Lcom/android/server/am/ibl$you;
+    iget-object p2, p2, Lcom/android/server/am/ibl;->kp:Lcom/android/server/am/ibl$you;
 
     invoke-virtual {p2, p1}, Landroid/os/Handler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 
@@ -504,7 +504,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/oif;->this$0:Lcom/android/server/am/ibl;
 
-    iget-object p1, p1, Lcom/android/server/am/ibl;->bp:Lcom/android/server/am/ibl$you;
+    iget-object p1, p1, Lcom/android/server/am/ibl;->kp:Lcom/android/server/am/ibl$you;
 
     const/16 p2, 0x21
 
@@ -531,7 +531,7 @@
 
     iget-object p1, p0, Lcom/android/server/am/oif;->this$0:Lcom/android/server/am/ibl;
 
-    iget-object p1, p1, Lcom/android/server/am/ibl;->bp:Lcom/android/server/am/ibl$you;
+    iget-object p1, p1, Lcom/android/server/am/ibl;->kp:Lcom/android/server/am/ibl$you;
 
     invoke-static {p1, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
@@ -541,7 +541,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/oif;->this$0:Lcom/android/server/am/ibl;
 
-    iget-object p0, p0, Lcom/android/server/am/ibl;->bp:Lcom/android/server/am/ibl$you;
+    iget-object p0, p0, Lcom/android/server/am/ibl;->kp:Lcom/android/server/am/ibl$you;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 

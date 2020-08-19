@@ -7,29 +7,29 @@
 
 
 # static fields
-.field public static final kPa:Ljava/lang/String; = "org.bouncycastle.pkcs1.strict"
+.field public static final tPa:Ljava/lang/String; = "org.bouncycastle.pkcs1.strict"
 
-.field public static final lPa:Ljava/lang/String; = "org.bouncycastle.pkcs1.not_strict"
+.field public static final uPa:Ljava/lang/String; = "org.bouncycastle.pkcs1.not_strict"
 
-.field private static final mPa:I = 0xa
+.field private static final vPa:I = 0xa
 
 
 # instance fields
-.field private LNa:Z
+.field private BDa:Lorg/bouncycastle/crypto/zta;
 
-.field private fPa:Z
+.field private UNa:Z
 
-.field private gPa:Z
+.field private oPa:Z
 
-.field private hPa:I
+.field private pPa:Z
 
-.field private iPa:[B
+.field private qPa:I
 
-.field private jDa:Ljava/security/SecureRandom;
+.field private rPa:[B
 
-.field private jPa:[B
+.field private sDa:Ljava/security/SecureRandom;
 
-.field private sDa:Lorg/bouncycastle/crypto/zta;
+.field private sPa:[B
 
 
 # direct methods
@@ -40,19 +40,19 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->iPa:[B
+    iput-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->rPa:[B
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Pw()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Qw()Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->gPa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->pPa:Z
 
     return-void
 .end method
@@ -64,21 +64,21 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->iPa:[B
+    iput-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->rPa:[B
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Pw()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Qw()Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->gPa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->pPa:Z
 
-    iput p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iput p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     return-void
 .end method
@@ -90,30 +90,30 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->iPa:[B
+    iput-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->rPa:[B
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Pw()Z
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/tsu/tsu;->Qw()Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->gPa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->pPa:Z
 
-    iput-object p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->iPa:[B
+    iput-object p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->rPa:[B
 
     array-length p1, p2
 
-    iput p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iput p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     return-void
 .end method
 
-.method private Pw()Z
+.method private Qw()Z
     .locals 3
 
     new-instance v0, Lorg/bouncycastle/crypto/tsu/you;
@@ -257,34 +257,34 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->fPa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->oPa:Z
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/bouncycastle/crypto/zta;->you([BII)[B
 
     move-result-object p1
 
-    iget-object p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->iPa:[B
+    iget-object p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->rPa:[B
 
     if-nez p2, :cond_0
 
-    iget p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iget p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     new-array p2, p2, [B
 
-    iget-object p3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jDa:Ljava/security/SecureRandom;
+    iget-object p3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Ljava/security/SecureRandom;
 
     invoke-virtual {p3, p2}, Ljava/security/SecureRandom;->nextBytes([B)V
 
     :cond_0
-    iget-boolean p3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->gPa:Z
+    iget-boolean p3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->pPa:Z
 
     array-length v0, p1
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v1}, Lorg/bouncycastle/crypto/zta;->c()I
 
@@ -306,23 +306,23 @@
 
     if-eqz p3, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jPa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sPa:[B
 
     :cond_2
-    iget p3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iget p3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     invoke-static {p1, p3}, Lorg/bouncycastle/crypto/tsu/tsu;->bvj([BI)I
 
     move-result p3
 
-    iget v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     new-array v0, v0, [B
 
     move v1, v2
 
     :goto_1
-    iget v3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iget v3, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     if-ge v1, v3, :cond_3
 
@@ -375,7 +375,7 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     const/4 v1, -0x1
 
@@ -388,17 +388,17 @@
     return-object p0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v0, p1, p2, p3}, Lorg/bouncycastle/crypto/zta;->you([BII)[B
 
     move-result-object p1
 
-    iget-boolean p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->gPa:Z
+    iget-boolean p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->pPa:Z
 
     array-length p3, p1
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/zta;->c()I
 
@@ -428,12 +428,12 @@
 
     if-ge p3, v0, :cond_2
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jPa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sPa:[B
 
     :cond_2
     aget-byte p3, p1, v2
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->fPa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->oPa:Z
 
     if-eqz v0, :cond_4
 
@@ -528,7 +528,7 @@
 
     if-gt p3, v0, :cond_3
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/zta;->h()I
 
@@ -536,7 +536,7 @@
 
     new-array v0, v0, [B
 
-    iget-boolean v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->fPa:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->oPa:Z
 
     const/4 v2, 0x0
 
@@ -566,7 +566,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jDa:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Ljava/security/SecureRandom;
 
     invoke-virtual {v1, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
 
@@ -590,7 +590,7 @@
 
     if-nez v4, :cond_1
 
-    iget-object v4, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jDa:Ljava/security/SecureRandom;
+    iget-object v4, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Ljava/security/SecureRandom;
 
     invoke-virtual {v4}, Ljava/security/SecureRandom;->nextInt()I
 
@@ -622,7 +622,7 @@
 
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     array-length p1, v0
 
@@ -750,13 +750,13 @@
 .method public c()I
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/zta;->c()I
 
     move-result v0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->LNa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->UNa:Z
 
     if-eqz p0, :cond_0
 
@@ -771,7 +771,7 @@
 .method public e()Lorg/bouncycastle/crypto/zta;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     return-object p0
 .end method
@@ -779,13 +779,13 @@
 .method public h()I
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/zta;->h()I
 
     move-result v0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->LNa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->UNa:Z
 
     if-eqz p0, :cond_0
 
@@ -803,7 +803,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->LNa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->UNa:Z
 
     if-eqz v0, :cond_0
 
@@ -832,11 +832,11 @@
 
     check-cast v0, Lorg/bouncycastle/crypto/wtn/hmo;
 
-    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/hmo;->_j()Ljava/security/SecureRandom;
+    invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/hmo;->ak()Ljava/security/SecureRandom;
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jDa:Ljava/security/SecureRandom;
+    iput-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Ljava/security/SecureRandom;
 
     invoke-virtual {v0}, Lorg/bouncycastle/crypto/wtn/hmo;->getParameters()Lorg/bouncycastle/crypto/kth;
 
@@ -859,15 +859,15 @@
 
     if-eqz p1, :cond_1
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Zj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->_j()Ljava/security/SecureRandom;
 
     move-result-object v1
 
-    iput-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jDa:Ljava/security/SecureRandom;
+    iput-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Ljava/security/SecureRandom;
 
     :cond_1
     :goto_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {v1, p1, p2}, Lorg/bouncycastle/crypto/zta;->zta(ZLorg/bouncycastle/crypto/kth;)V
 
@@ -875,11 +875,11 @@
 
     move-result p2
 
-    iput-boolean p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->fPa:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/crypto/tsu/tsu;->oPa:Z
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->LNa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->UNa:Z
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Lorg/bouncycastle/crypto/zta;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->BDa:Lorg/bouncycastle/crypto/zta;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/zta;->c()I
 
@@ -887,17 +887,17 @@
 
     new-array p1, p1, [B
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jPa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sPa:[B
 
-    iget p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->hPa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->qPa:I
 
     if-lez p1, :cond_3
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->iPa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/tsu/tsu;->rPa:[B
 
     if-nez p1, :cond_3
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->jDa:Ljava/security/SecureRandom;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/tsu/tsu;->sDa:Ljava/security/SecureRandom;
 
     if-eqz p0, :cond_2
 

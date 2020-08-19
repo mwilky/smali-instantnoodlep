@@ -27,7 +27,7 @@
 
 .field public static final enum BASE:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
-.field public static final enum MCa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
+.field public static final enum VCa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
 .field public static final enum ZEN_MODE:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->MCa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->VCa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
     new-instance v0, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
@@ -70,7 +70,7 @@
 
     new-array v0, v0, [Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
-    sget-object v4, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->MCa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
+    sget-object v4, Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;->VCa:Lcom/oneplus/android/server/scene/OemSceneLightsController$LightsMode;
 
     aput-object v4, v0, v1
 

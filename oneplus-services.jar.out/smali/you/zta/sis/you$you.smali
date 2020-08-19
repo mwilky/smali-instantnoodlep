@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field private AUa:I
+.field private HUa:Ljava/math/BigInteger;
 
-.field private yUa:Ljava/math/BigInteger;
+.field private IUa:[B
 
-.field private zUa:[B
+.field private JUa:I
 
 
 # direct methods
@@ -28,11 +28,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lyou/zta/sis/you$you;->yUa:Ljava/math/BigInteger;
+    iput-object p1, p0, Lyou/zta/sis/you$you;->HUa:Ljava/math/BigInteger;
 
-    iput-object p2, p0, Lyou/zta/sis/you$you;->zUa:[B
+    iput-object p2, p0, Lyou/zta/sis/you$you;->IUa:[B
 
-    iput p3, p0, Lyou/zta/sis/you$you;->AUa:I
+    iput p3, p0, Lyou/zta/sis/you$you;->JUa:I
 
     return-void
 .end method
@@ -47,18 +47,18 @@
 
 
 # virtual methods
-.method public Lk()I
+.method public Mk()I
     .locals 0
 
-    iget p0, p0, Lyou/zta/sis/you$you;->AUa:I
+    iget p0, p0, Lyou/zta/sis/you$you;->JUa:I
 
     return p0
 .end method
 
-.method public Mk()[B
+.method public Nk()[B
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you$you;->zUa:[B
+    iget-object p0, p0, Lyou/zta/sis/you$you;->IUa:[B
 
     return-object p0
 .end method
@@ -66,7 +66,7 @@
 .method public getPrime()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you$you;->yUa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lyou/zta/sis/you$you;->HUa:Ljava/math/BigInteger;
 
     return-object p0
 .end method

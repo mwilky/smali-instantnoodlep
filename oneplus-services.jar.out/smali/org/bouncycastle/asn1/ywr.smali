@@ -269,7 +269,7 @@
 
 
 # virtual methods
-.method public Jh()Ljava/math/BigInteger;
+.method public Kh()Ljava/math/BigInteger;
     .locals 2
 
     new-instance v0, Ljava/math/BigInteger;
@@ -349,7 +349,7 @@
     return-object p0
 .end method
 
-.method vh()I
+.method wh()I
     .locals 1
 
     iget-object v0, p0, Lorg/bouncycastle/asn1/ywr;->bytes:[B

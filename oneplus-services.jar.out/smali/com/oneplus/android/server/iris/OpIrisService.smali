@@ -887,7 +887,7 @@
     :cond_0
     iget-object v0, p0, Lcom/oneplus/android/server/iris/OpIrisService;->mIrisManager:Lcom/oneplus/android/server/iris/bio;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/bio;->Qf()Z
+    invoke-virtual {v0}, Lcom/oneplus/android/server/iris/bio;->Rf()Z
 
     move-result v0
 

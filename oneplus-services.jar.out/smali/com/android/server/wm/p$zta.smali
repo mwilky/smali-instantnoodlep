@@ -139,7 +139,7 @@
 
     iget-object p1, p0, Lcom/android/server/wm/p$zta;->this$0:Lcom/android/server/wm/p;
 
-    iget-object v0, p1, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v0, p1, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -274,7 +274,7 @@
 
     iget-object v0, p0, Lcom/android/server/wm/p$zta;->this$0:Lcom/android/server/wm/p;
 
-    iget-object v0, v0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    iget-object v0, v0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

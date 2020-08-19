@@ -3623,7 +3623,7 @@
 
     if-eqz p0, :cond_4
 
-    sget-boolean p0, Lcom/android/server/am/obl;->qr:Z
+    sget-boolean p0, Lcom/android/server/am/obl;->Ar:Z
 
     if-eqz p0, :cond_4
 

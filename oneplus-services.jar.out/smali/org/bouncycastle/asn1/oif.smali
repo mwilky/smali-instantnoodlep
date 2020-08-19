@@ -179,7 +179,7 @@
 .method public abstract toASN1Primitive()Lorg/bouncycastle/asn1/vdb;
 .end method
 
-.method public uh()Lorg/bouncycastle/asn1/vdb;
+.method public vh()Lorg/bouncycastle/asn1/vdb;
     .locals 0
 
     invoke-virtual {p0}, Lorg/bouncycastle/asn1/oif;->toASN1Primitive()Lorg/bouncycastle/asn1/vdb;

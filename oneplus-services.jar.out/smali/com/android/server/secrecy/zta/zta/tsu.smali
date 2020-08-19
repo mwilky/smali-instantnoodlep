@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static OW:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
-
-.field private static PW:Ljava/lang/String; = "/sys/devices/download_info/intranet"
-
-.field private static QW:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
-
-.field private static RW:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
-
 .field private static final TAG:Ljava/lang/String; = "SecrecyService.Utils"
 
-.field private static final TW:I = 0x1
+.field private static YW:Ljava/lang/String; = "/sys/devices/download_info/upgrade_download_time1"
+
+.field private static ZW:Ljava/lang/String; = "/sys/devices/download_info/intranet"
+
+.field private static _W:Ljava/lang/String; = "[1-9][0-9]{3}/[0-9]{2}/[0-9]{2}"
+
+.field private static aX:Ljava/lang/String; = "[0-9]{2}:[0-9]{2}:[0-9]{2}"
+
+.field private static final bX:I = 0x1
 
 
 # direct methods
@@ -52,7 +52,7 @@
     return-object v0
 .end method
 
-.method private static Jq()Ljava/lang/String;
+.method private static Kq()Ljava/lang/String;
     .locals 1
 
     const-string v0, "none"
@@ -60,7 +60,7 @@
     return-object v0
 .end method
 
-.method private static Kq()Z
+.method private static Lq()Z
     .locals 2
 
     sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
@@ -161,7 +161,7 @@
 .method public static ia(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->QW:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->_W:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
@@ -211,7 +211,7 @@
 .method public static ja(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->RW:Ljava/lang/String;
+    sget-object v0, Lcom/android/server/secrecy/zta/zta/tsu;->aX:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 

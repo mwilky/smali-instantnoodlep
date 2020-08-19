@@ -21,29 +21,17 @@
 
 .field private static final VALUE_ON:Ljava/lang/String; = "1"
 
-.field private static jua:Z
-
 .field private static sInstance:Lcom/oneplus/android/server/scene/rtg;
+
+.field private static sua:Z
 
 
 # instance fields
-.field private aua:Landroid/widget/LinearLayout;
+.field private jua:Landroid/widget/LinearLayout;
 
-.field private bua:Landroid/widget/TextView;
+.field private kua:Landroid/widget/TextView;
 
-.field private cua:Landroid/view/View;
-
-.field private dua:Landroid/view/View;
-
-.field private eua:Landroid/widget/TextView;
-
-.field private fua:Landroid/widget/CheckBox;
-
-.field private gua:Z
-
-.field private hua:Lcom/oneplus/android/server/scene/vju;
-
-.field private iua:Z
+.field private lua:Landroid/view/View;
 
 .field private mContext:Landroid/content/Context;
 
@@ -57,6 +45,18 @@
 
 .field private mWindowManager:Landroid/view/WindowManager;
 
+.field private mua:Landroid/view/View;
+
+.field private nua:Landroid/widget/TextView;
+
+.field private oua:Landroid/widget/CheckBox;
+
+.field private pua:Z
+
+.field private qua:Lcom/oneplus/android/server/scene/vju;
+
+.field private rua:Z
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -68,7 +68,7 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/oneplus/android/server/scene/rtg;->jua:Z
+    sput-boolean v0, Lcom/oneplus/android/server/scene/rtg;->sua:Z
 
     const/4 v0, 0x0
 
@@ -86,13 +86,13 @@
 
     iput v0, p0, Lcom/oneplus/android/server/scene/rtg;->mRotation:I
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->gua:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->pua:Z
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->hua:Lcom/oneplus/android/server/scene/vju;
+    iput-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->qua:Lcom/oneplus/android/server/scene/vju;
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->iua:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->rua:Z
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/rtg;->mContext:Landroid/content/Context;
 
@@ -134,7 +134,7 @@
 .method static synthetic access$100()Z
     .locals 1
 
-    sget-boolean v0, Lcom/oneplus/android/server/scene/rtg;->jua:Z
+    sget-boolean v0, Lcom/oneplus/android/server/scene/rtg;->sua:Z
 
     return v0
 .end method
@@ -252,7 +252,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->cua:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->lua:Landroid/view/View;
 
     const v0, 0x5080057
 
@@ -260,7 +260,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->dua:Landroid/view/View;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->mua:Landroid/view/View;
 
     const v0, 0x5080155
 
@@ -270,9 +270,9 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->bua:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->kua:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->bua:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->kua:Landroid/widget/TextView;
 
     new-instance v1, Lcom/oneplus/android/server/scene/you;
 
@@ -288,7 +288,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->fua:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->oua:Landroid/widget/CheckBox;
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->mContext:Landroid/content/Context;
 
@@ -313,17 +313,17 @@
     move v1, v2
 
     :cond_0
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->fua:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->oua:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->fua:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->oua:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
-    sput-boolean v0, Lcom/oneplus/android/server/scene/rtg;->jua:Z
+    sput-boolean v0, Lcom/oneplus/android/server/scene/rtg;->sua:Z
 
     const v0, 0x5080076
 
@@ -333,9 +333,9 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->eua:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->nua:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->eua:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->nua:Landroid/widget/TextView;
 
     new-instance v1, Lcom/oneplus/android/server/scene/sis;
 
@@ -351,7 +351,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/scene/rtg;)Landroid/widget/CheckBox;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/rtg;->fua:Landroid/widget/CheckBox;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/rtg;->oua:Landroid/widget/CheckBox;
 
     return-object p0
 .end method
@@ -361,7 +361,7 @@
 .method public configurationChanged()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->iua:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->rua:Z
 
     if-eqz v0, :cond_0
 
@@ -374,23 +374,23 @@
 .method protected hide()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     if-eqz v0, :cond_1
 
     :try_start_0
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->hua:Lcom/oneplus/android/server/scene/vju;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->qua:Lcom/oneplus/android/server/scene/vju;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->hua:Lcom/oneplus/android/server/scene/vju;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->qua:Lcom/oneplus/android/server/scene/vju;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/vju;->ig()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/scene/vju;->jg()V
 
     :cond_0
     iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     invoke-interface {v0, v1}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
     :try_end_0
@@ -424,12 +424,12 @@
     :goto_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     :cond_1
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->iua:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->rua:Z
 
     return-void
 .end method
@@ -437,7 +437,7 @@
 .method public isAcquired()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/scene/rtg;->iua:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/scene/rtg;->rua:Z
 
     return p0
 .end method
@@ -458,7 +458,7 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/oneplus/android/server/scene/rtg$you;-><init>(Lcom/oneplus/android/server/scene/rtg;Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
 
@@ -500,7 +500,7 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/oneplus/android/server/scene/rtg$you;-><init>(Lcom/oneplus/android/server/scene/rtg;Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
 
@@ -519,7 +519,7 @@
     invoke-direct/range {v3 .. v8}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIII)V
 
     :cond_0
-    iget-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     invoke-direct {p0, v1}, Lcom/oneplus/android/server/scene/rtg;->you(Landroid/view/ViewGroup;)V
 
@@ -539,11 +539,11 @@
 
     iget-object v1, p0, Lcom/oneplus/android/server/scene/rtg;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v2, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     invoke-interface {v1, v2, v0}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->aua:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/rtg;->jua:Landroid/widget/LinearLayout;
 
     const/16 v1, 0x400
 
@@ -551,7 +551,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->iua:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/rtg;->rua:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -700,7 +700,7 @@
 .method public zta(Lcom/oneplus/android/server/scene/vju;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/oneplus/android/server/scene/rtg;->hua:Lcom/oneplus/android/server/scene/vju;
+    iput-object p1, p0, Lcom/oneplus/android/server/scene/rtg;->qua:Lcom/oneplus/android/server/scene/vju;
 
     return-void
 .end method

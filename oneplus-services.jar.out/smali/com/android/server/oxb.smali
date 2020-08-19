@@ -255,7 +255,7 @@
     return-object p0
 .end method
 
-.method private um()Z
+.method private vm()Z
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/oxb;->mLocationManager:Landroid/location/LocationManager;

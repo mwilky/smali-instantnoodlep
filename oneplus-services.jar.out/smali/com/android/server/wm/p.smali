@@ -17,7 +17,7 @@
 
 
 # static fields
-.field public static final Aha:I = 0x28
+.field public static final Aha:I = 0x30
 
 .field public static Bha:I = 0x0
 
@@ -25,15 +25,33 @@
 
 .field public static Dha:I = 0x0
 
-.field public static final Eha:I = 0x12c
+.field public static Eha:I = 0x0
 
-.field public static final Fha:I = 0x64
+.field public static Fha:I = 0x0
 
 .field public static Gha:I = 0x0
 
-.field public static Hha:I = 0x0
+.field public static final Hha:I = 0x28
 
-.field private static final Iha:Ljava/util/List;
+.field public static final Iha:I = 0x28
+
+.field public static final Jha:I = 0x28
+
+.field public static Kha:I = 0x0
+
+.field public static Lha:I = 0x0
+
+.field public static Mha:I = 0x0
+
+.field public static final Nha:I = 0x12c
+
+.field public static final Oha:I = 0x64
+
+.field public static Pha:I = 0x0
+
+.field public static Qha:I = 0x0
+
+.field private static final Rha:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -43,27 +61,7 @@
     .end annotation
 .end field
 
-.field private static final Jha:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static Kha:Ljava/util/List; = null
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static Lha:Ljava/util/List; = null
+.field private static final Sha:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -75,75 +73,77 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpQuickReply"
 
-.field private static eha:Ljava/lang/Object; = null
+.field public static Tha:Ljava/util/List; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private static final fha:Ljava/lang/String; = "Quick_Reply_Config"
+.field public static Uha:Ljava/util/List; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private static final gha:Ljava/lang/String; = "com.oneplus.action.QUICK_REPLY_SETTINGS"
+.field private static nha:Ljava/lang/Object; = null
 
-.field private static final hha:Ljava/lang/String; = "com.android.settings"
+.field private static final oha:Ljava/lang/String; = "Quick_Reply_Config"
 
-.field public static final iha:F = 0.4f
+.field private static final pha:Ljava/lang/String; = "com.oneplus.action.QUICK_REPLY_SETTINGS"
 
-.field public static final jha:I = 0x0
+.field private static final qha:Ljava/lang/String; = "com.android.settings"
 
-.field public static final kha:I = 0x1
-
-.field public static final lha:I = 0x2
-
-.field public static final mha:I = 0x30a
-
-.field public static final nha:I = 0x60
-
-.field public static final oha:I = 0x54
-
-.field public static final pha:I = 0x2a
-
-.field public static final qha:I = 0x3c
-
-.field public static final rha:I = 0x30
+.field public static final rha:F = 0.4f
 
 .field public static sIMELimitWidth:I = 0x0
 
 .field private static sInstance:Lcom/android/server/wm/p; = null
 
-.field public static sha:I = 0x0
+.field public static final sha:I = 0x0
 
-.field public static tha:I = 0x0
+.field public static final tha:I = 0x1
 
-.field public static uha:I = 0x0
+.field public static final uha:I = 0x2
 
-.field public static vha:I = 0x0
+.field public static final vha:I = 0x30a
 
-.field public static wha:I = 0x0
+.field public static final wha:I = 0x60
 
-.field public static xha:I = 0x0
+.field public static final xha:I = 0x54
 
-.field public static final yha:I = 0x28
+.field public static final yha:I = 0x2a
 
-.field public static final zha:I = 0x28
+.field public static final zha:I = 0x3c
 
 
 # instance fields
-.field private Aga:Z
+.field private Jga:Z
 
-.field private Bga:Z
+.field private Kga:Z
 
-.field private Cga:Lcom/android/server/wm/WindowManagerService;
+.field private Lga:Lcom/android/server/wm/WindowManagerService;
 
-.field private Dga:Landroid/view/WindowManager$LayoutParams;
+.field private Mga:Landroid/view/WindowManager$LayoutParams;
 
-.field private Ega:Landroid/view/WindowManager$LayoutParams;
+.field private Nga:Landroid/view/WindowManager$LayoutParams;
 
-.field private Fga:Landroid/view/WindowManager$LayoutParams;
+.field private Oga:Landroid/view/WindowManager$LayoutParams;
 
-.field private Gga:Landroid/view/WindowManager$LayoutParams;
+.field private Pga:Landroid/view/WindowManager$LayoutParams;
 
-.field private Hga:Lcom/android/server/wm/p$zta;
+.field private Qga:Lcom/android/server/wm/p$zta;
 
-.field private Iga:Lcom/android/server/wm/ActivityRecord;
+.field private Rga:Lcom/android/server/wm/ActivityRecord;
 
-.field private Jga:Ljava/util/ArrayList;
+.field private Sga:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -153,29 +153,29 @@
     .end annotation
 .end field
 
-.field private Kga:Z
+.field private Tga:Z
 
-.field private Lga:Lcom/android/internal/view/IInputMethodManager;
+.field private Uga:Lcom/android/internal/view/IInputMethodManager;
 
-.field private Mga:Lcom/oneplus/config/ConfigObserver;
+.field private Vga:Lcom/oneplus/config/ConfigObserver;
 
-.field private Nga:I
+.field private Wga:I
 
-.field private Oga:I
+.field private Xga:I
 
-.field private Pga:I
+.field private Yga:I
 
-.field private Qga:Lcom/android/server/wm/ActivityRecord;
+.field private Zga:Lcom/android/server/wm/ActivityRecord;
 
-.field private Rga:I
+.field private _ga:I
 
-.field private Sga:I
+.field private aha:I
 
-.field private Tga:I
+.field private bha:I
 
-.field private Uga:I
+.field private cha:I
 
-.field private final Vga:Landroid/util/ArrayMap;
+.field private final dha:Landroid/util/ArrayMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/ArrayMap<",
@@ -186,7 +186,7 @@
     .end annotation
 .end field
 
-.field private Wga:Ljava/util/ArrayList;
+.field private eha:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -196,7 +196,7 @@
     .end annotation
 .end field
 
-.field private Xga:Ljava/util/List;
+.field private fha:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -206,19 +206,17 @@
     .end annotation
 .end field
 
-.field Yga:Landroid/view/View;
+.field gha:Landroid/view/View;
 
-.field Zga:Landroid/view/View;
+.field hha:Landroid/view/View;
 
-.field _ga:Landroid/view/View;
+.field iha:Landroid/view/View;
 
-.field aha:Landroid/view/View;
+.field jha:Landroid/view/View;
 
-.field bha:Landroid/widget/FrameLayout;
+.field kha:Landroid/widget/FrameLayout;
 
-.field cha:Landroid/widget/FrameLayout;
-
-.field private dha:Z
+.field lha:Landroid/widget/FrameLayout;
 
 .field private mAMS:Lcom/android/server/am/ActivityManagerService;
 
@@ -238,6 +236,8 @@
 
 .field private mWindowManager:Landroid/view/WindowManager;
 
+.field private mha:Z
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -247,31 +247,31 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/server/wm/p;->eha:Ljava/lang/Object;
+    sput-object v0, Lcom/android/server/wm/p;->nha:Ljava/lang/Object;
 
     const/16 v0, 0x30a
 
-    sput v0, Lcom/android/server/wm/p;->sha:I
+    sput v0, Lcom/android/server/wm/p;->Bha:I
 
     const/16 v0, 0x60
 
-    sput v0, Lcom/android/server/wm/p;->tha:I
+    sput v0, Lcom/android/server/wm/p;->Cha:I
 
     const/16 v0, 0x54
 
-    sput v0, Lcom/android/server/wm/p;->uha:I
+    sput v0, Lcom/android/server/wm/p;->Dha:I
 
     const/16 v0, 0x2a
 
-    sput v0, Lcom/android/server/wm/p;->vha:I
+    sput v0, Lcom/android/server/wm/p;->Eha:I
 
     const/16 v0, 0x3c
 
-    sput v0, Lcom/android/server/wm/p;->wha:I
+    sput v0, Lcom/android/server/wm/p;->Fha:I
 
     const/16 v0, 0x30
 
-    sput v0, Lcom/android/server/wm/p;->xha:I
+    sput v0, Lcom/android/server/wm/p;->Gha:I
 
     const/16 v0, 0x438
 
@@ -279,19 +279,19 @@
 
     const/16 v0, 0x28
 
-    sput v0, Lcom/android/server/wm/p;->Bha:I
+    sput v0, Lcom/android/server/wm/p;->Kha:I
 
-    sput v0, Lcom/android/server/wm/p;->Cha:I
+    sput v0, Lcom/android/server/wm/p;->Lha:I
 
-    sput v0, Lcom/android/server/wm/p;->Dha:I
+    sput v0, Lcom/android/server/wm/p;->Mha:I
 
     const/16 v0, 0x12c
 
-    sput v0, Lcom/android/server/wm/p;->Gha:I
+    sput v0, Lcom/android/server/wm/p;->Pha:I
 
     const/16 v0, 0x64
 
-    sput v0, Lcom/android/server/wm/p;->Hha:I
+    sput v0, Lcom/android/server/wm/p;->Qha:I
 
     const-string v1, "com.google.android.packageinstaller"
 
@@ -313,7 +313,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wm/p;->Iha:Ljava/util/List;
+    sput-object v0, Lcom/android/server/wm/p;->Rha:Ljava/util/List;
 
     const-string v1, "com.google.android.packageinstaller"
 
@@ -357,7 +357,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wm/p;->Jha:Ljava/util/List;
+    sput-object v0, Lcom/android/server/wm/p;->Sha:Ljava/util/List;
 
     const-string v1, "com.baidu.input_yijia"
 
@@ -395,7 +395,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wm/p;->Kha:Ljava/util/List;
+    sput-object v0, Lcom/android/server/wm/p;->Tha:Ljava/util/List;
 
     const-string v1, "com.tencent.mm/.plugin.mmsight.ui.SightCaptureUI"
 
@@ -417,7 +417,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/server/wm/p;->Lha:Ljava/util/List;
+    sput-object v0, Lcom/android/server/wm/p;->Uha:Ljava/util/List;
 
     return-void
 .end method
@@ -429,9 +429,9 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
-    iput-boolean v0, p0, Lcom/android/server/wm/p;->Bga:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/p;->Kga:Z
 
     const/4 v1, -0x1
 
@@ -443,11 +443,11 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/wm/p;->Jga:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/wm/p;->Sga:Ljava/util/ArrayList;
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/wm/p;->Kga:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/p;->Tga:Z
 
     const-string v1, "persist.quickreply.imeside"
 
@@ -455,23 +455,23 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/server/wm/p;->Oga:I
+    iput v1, p0, Lcom/android/server/wm/p;->Xga:I
 
-    iput v0, p0, Lcom/android/server/wm/p;->Pga:I
+    iput v0, p0, Lcom/android/server/wm/p;->Yga:I
 
-    iput v0, p0, Lcom/android/server/wm/p;->Rga:I
+    iput v0, p0, Lcom/android/server/wm/p;->_ga:I
 
     new-instance v1, Landroid/util/ArrayMap;
 
     invoke-direct {v1}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/wm/p;->Vga:Landroid/util/ArrayMap;
+    iput-object v1, p0, Lcom/android/server/wm/p;->dha:Landroid/util/ArrayMap;
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/wm/p;->Wga:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/wm/p;->eha:Ljava/util/ArrayList;
 
     const-string v1, ""
 
@@ -483,9 +483,9 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/server/wm/p;->Xga:Ljava/util/List;
+    iput-object v1, p0, Lcom/android/server/wm/p;->fha:Ljava/util/List;
 
-    iput-boolean v0, p0, Lcom/android/server/wm/p;->dha:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/p;->mha:Z
 
     iput-object p1, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
@@ -499,7 +499,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/android/server/wm/p;->Pga:I
+    iput p1, p0, Lcom/android/server/wm/p;->Yga:I
 
     return-void
 .end method
@@ -507,7 +507,7 @@
 .method private Jc(Ljava/lang/String;)Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/wm/p;->Kha:Ljava/util/List;
+    sget-object p0, Lcom/android/server/wm/p;->Tha:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -519,7 +519,7 @@
 .method static synthetic bio(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->pt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->qt()V
 
     return-void
 .end method
@@ -527,7 +527,7 @@
 .method static synthetic bvj(Lcom/android/server/wm/p;)Lcom/android/server/wm/ActivityRecord;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     return-object p0
 .end method
@@ -535,7 +535,7 @@
 .method static synthetic cno(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->it()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->jt()V
 
     return-void
 .end method
@@ -543,7 +543,7 @@
 .method static synthetic dma(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->st()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->tt()V
 
     return-void
 .end method
@@ -551,7 +551,7 @@
 .method static synthetic gck(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->kt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->lt()V
 
     return-void
 .end method
@@ -647,40 +647,15 @@
 .method static synthetic gwm(Lcom/android/server/wm/p;)Lcom/android/server/wm/p$zta;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     return-object p0
-.end method
-
-.method private ht()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/server/wm/p;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/oneplus/sdk/utils/OpBoostFramework;
-
-    invoke-direct {v0}, Lcom/oneplus/sdk/utils/OpBoostFramework;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/wm/p;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
-
-    :cond_0
-    iget-object p0, p0, Lcom/android/server/wm/p;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0x5dc
-
-    invoke-virtual {p0, v0, v1}, Lcom/oneplus/sdk/utils/OpBoostFramework;->acquireBoostFor(II)I
-
-    return-void
 .end method
 
 .method static synthetic ibl(Lcom/android/server/wm/p;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wm/p;->Oga:I
+    iget p0, p0, Lcom/android/server/wm/p;->Xga:I
 
     return p0
 .end method
@@ -688,7 +663,7 @@
 .method static synthetic igw(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->qt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->rt()V
 
     return-void
 .end method
@@ -724,7 +699,7 @@
 
     sget p1, Lcom/android/server/wm/p;->sIMELimitWidth:I
 
-    sget v0, Lcom/android/server/wm/p;->Hha:I
+    sget v0, Lcom/android/server/wm/p;->Qha:I
 
     sub-int/2addr p1, v0
 
@@ -754,7 +729,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/internal/view/IInputMethodManager;
+    iput-object v0, p0, Lcom/android/server/wm/p;->Uga:Lcom/android/internal/view/IInputMethodManager;
 
     new-instance v0, Landroid/os/HandlerThread;
 
@@ -774,25 +749,50 @@
 
     invoke-direct {v1, p0, v0}, Lcom/android/server/wm/p$zta;-><init>(Lcom/android/server/wm/p;Landroid/os/Looper;)V
 
-    iput-object v1, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iput-object v1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     new-instance v0, Lcom/android/server/wm/p$sis;
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/wm/p$sis;-><init>(Lcom/android/server/wm/p;Lcom/android/server/wm/p$zta;)V
 
     iput-object v0, p0, Lcom/android/server/wm/p;->mSettingsObserver:Lcom/android/server/wm/p$sis;
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->st()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->tt()V
 
     return-void
 .end method
 
 .method private it()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/wm/p;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Lcom/oneplus/sdk/utils/OpBoostFramework;
+
+    invoke-direct {v0}, Lcom/oneplus/sdk/utils/OpBoostFramework;-><init>()V
+
+    iput-object v0, p0, Lcom/android/server/wm/p;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
+
+    :cond_0
+    iget-object p0, p0, Lcom/android/server/wm/p;->mPerfLock:Lcom/oneplus/sdk/utils/OpBoostFramework;
+
+    const/4 v0, 0x0
+
+    const/16 v1, 0x5dc
+
+    invoke-virtual {p0, v0, v1}, Lcom/oneplus/sdk/utils/OpBoostFramework;->acquireBoostFor(II)I
+
+    return-void
+.end method
+
+.method private jt()V
     .locals 5
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -800,11 +800,11 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->tt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
 
     iget-object v0, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
@@ -818,9 +818,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
     new-instance v3, Lcom/android/server/wm/i;
 
@@ -828,7 +828,7 @@
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -844,22 +844,22 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
-    iget-object v4, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v4, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {v0, v3, v4}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->tt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
 
     iget-object v0, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
@@ -873,9 +873,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
 
     new-instance v1, Lcom/android/server/wm/k;
 
@@ -887,18 +887,18 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
 
-    iget-object v3, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
+    iget-object v3, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {v0, v1, v3}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
 
     if-nez v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->tt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
 
     iget-object v0, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
@@ -912,9 +912,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
 
     new-instance v1, Lcom/android/server/wm/l;
 
@@ -926,9 +926,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -936,17 +936,25 @@
     return-void
 .end method
 
-.method private jt()V
+.method private kt()V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Wga:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wm/p;->eha:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
 
     return-void
 .end method
 
-.method private kt()V
+.method static synthetic kth(Lcom/android/server/wm/p;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->pt()V
+
+    return-void
+.end method
+
+.method private lt()V
     .locals 2
 
     const-string v0, "OpQuickReply"
@@ -980,18 +988,10 @@
     return-void
 .end method
 
-.method static synthetic kth(Lcom/android/server/wm/p;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ot()V
-
-    return-void
-.end method
-
-.method private lt()Ljava/lang/String;
+.method private mt()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, v0, Lcom/android/server/wm/WindowManagerService;->mRoot:Lcom/android/server/wm/RootWindowContainer;
 
@@ -1001,7 +1001,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object p0, p0, Lcom/android/server/wm/WindowManagerService;->mRoot:Lcom/android/server/wm/RootWindowContainer;
 
@@ -1022,10 +1022,10 @@
     return-object p0
 .end method
 
-.method private mt()V
+.method private nt()V
     .locals 7
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/internal/view/IInputMethodManager;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Uga:Lcom/android/internal/view/IInputMethodManager;
 
     const-string v1, "OpQuickReply"
 
@@ -1039,7 +1039,7 @@
 
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, v0, Lcom/android/server/wm/WindowManagerService;->mRoot:Lcom/android/server/wm/RootWindowContainer;
 
@@ -1071,7 +1071,7 @@
     const/4 v0, 0x0
 
     :goto_1
-    iget-object v3, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v3, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v3, v3, Lcom/android/server/wm/WindowManagerService;->mRoot:Lcom/android/server/wm/RootWindowContainer;
 
@@ -1081,7 +1081,7 @@
 
     iget-object v3, v3, Lcom/android/server/wm/DisplayContent;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ht()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->it()V
 
     sget-boolean v4, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
@@ -1092,7 +1092,7 @@
     invoke-static {v1, v4}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    invoke-direct {p0}, Lcom/android/server/wm/p;->jt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->kt()V
 
     invoke-direct {p0, v2}, Lcom/android/server/wm/p;->Jc(Ljava/lang/String;)Z
 
@@ -1140,7 +1140,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
-    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/internal/view/IInputMethodManager;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Uga:Lcom/android/internal/view/IInputMethodManager;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1240,118 +1240,10 @@
     return-void
 .end method
 
-.method private nt()V
-    .locals 9
-
-    iget-object v0, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v1, "quickreply_ime_unsupported"
-
-    invoke-static {v0, v1}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    const-string v1, ";"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    :goto_0
-    if-ge v3, v1, :cond_2
-
-    aget-object v4, v0, v3
-
-    const-string v5, ":"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v4
-
-    array-length v5, v4
-
-    const/4 v6, 0x2
-
-    if-ne v5, v6, :cond_1
-
-    iget-object v5, p0, Lcom/android/server/wm/p;->Vga:Landroid/util/ArrayMap;
-
-    aget-object v6, v4, v2
-
-    const/4 v7, 0x1
-
-    aget-object v8, v4, v7
-
-    invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v8
-
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    invoke-virtual {v5, v6, v8}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-boolean v5, Landroid/os/Build;->DEBUG_ONEPLUS:Z
-
-    if-eqz v5, :cond_1
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "loadImeRecord pkg="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    aget-object v6, v4, v2
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v6, " count="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    aget-object v4, v4, v7
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "OpQuickReply"
-
-    invoke-static {v5, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    return-void
-.end method
-
 .method static synthetic oif(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->mt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->nt()V
 
     return-void
 .end method
@@ -1525,7 +1417,7 @@
     goto/16 :goto_0
 
     :cond_5
-    sget-object p1, Lcom/android/server/wm/p;->eha:Ljava/lang/Object;
+    sget-object p1, Lcom/android/server/wm/p;->nha:Ljava/lang/Object;
 
     monitor-enter p1
     :try_end_0
@@ -1539,7 +1431,7 @@
 
     if-lez v1, :cond_6
 
-    sput-object p0, Lcom/android/server/wm/p;->Kha:Ljava/util/List;
+    sput-object p0, Lcom/android/server/wm/p;->Tha:Ljava/util/List;
 
     :cond_6
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1548,7 +1440,7 @@
 
     if-lez p0, :cond_7
 
-    sput-object v0, Lcom/android/server/wm/p;->Lha:Ljava/util/List;
+    sput-object v0, Lcom/android/server/wm/p;->Uha:Ljava/util/List;
 
     :cond_7
     monitor-exit p1
@@ -1629,95 +1521,127 @@
 .end method
 
 .method private ot()V
-    .locals 3
+    .locals 9
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->pt()V
+    iget-object v0, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    const-string v1, "quickreply_ime_unsupported"
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+    invoke-static {v0, v1}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    if-nez v0, :cond_0
 
-    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+    return-void
 
     :cond_0
-    iput-object v1, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
+    const-string v1, ";"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-ge v3, v1, :cond_2
+
+    aget-object v4, v0, v3
+
+    const-string v5, ":"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v4
+
+    array-length v5, v4
+
+    const/4 v6, 0x2
+
+    if-ne v5, v6, :cond_1
+
+    iget-object v5, p0, Lcom/android/server/wm/p;->dha:Landroid/util/ArrayMap;
+
+    aget-object v6, v4, v2
+
+    const/4 v7, 0x1
+
+    aget-object v8, v4, v7
+
+    invoke-static {v8}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v8
+
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    invoke-virtual {v5, v6, v8}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-boolean v5, Landroid/os/Build;->DEBUG_ONEPLUS:Z
+
+    if-eqz v5, :cond_1
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "loadImeRecord pkg="
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    aget-object v6, v4, v2
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v6, " count="
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    aget-object v4, v4, v7
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "OpQuickReply"
+
+    invoke-static {v5, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
+    add-int/lit8 v3, v3, 0x1
 
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v0
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
-
-    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+    goto :goto_0
 
     :cond_2
-    iput-object v1, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
-
-    :cond_3
-    iget-object v0, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v0
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
-
-    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
-
-    :cond_4
-    iput-object v1, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
-
-    :cond_5
     return-void
 .end method
 
 .method private pc(I)V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
     iput p1, v0, Landroid/view/WindowManager$LayoutParams;->height:I
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object p1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->vt()V
 
     if-nez p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
     const/high16 v0, 0x3f800000    # 1.0f
 
@@ -1729,7 +1653,7 @@
 
     move-result-object p1
 
-    iget v0, p0, Lcom/android/server/wm/p;->Oga:I
+    iget v0, p0, Lcom/android/server/wm/p;->Xga:I
 
     const/4 v1, 0x0
 
@@ -1747,9 +1671,9 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iput-object p1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object p1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     const v0, 0x5080167
 
@@ -1759,9 +1683,9 @@
 
     check-cast p1, Landroid/widget/FrameLayout;
 
-    iput-object p1, p0, Lcom/android/server/wm/p;->bha:Landroid/widget/FrameLayout;
+    iput-object p1, p0, Lcom/android/server/wm/p;->kha:Landroid/widget/FrameLayout;
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object p1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     const v0, 0x5080163
 
@@ -1771,9 +1695,9 @@
 
     check-cast p1, Landroid/widget/FrameLayout;
 
-    iput-object p1, p0, Lcom/android/server/wm/p;->cha:Landroid/widget/FrameLayout;
+    iput-object p1, p0, Lcom/android/server/wm/p;->lha:Landroid/widget/FrameLayout;
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->cha:Landroid/widget/FrameLayout;
+    iget-object p1, p0, Lcom/android/server/wm/p;->lha:Landroid/widget/FrameLayout;
 
     new-instance v0, Lcom/android/server/wm/m;
 
@@ -1781,7 +1705,7 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/FrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object p1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -1797,19 +1721,19 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {p1, v0, v1}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 v0, 0x5
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const-wide/16 v1, 0x1388
 
@@ -1820,15 +1744,13 @@
 .end method
 
 .method private pt()V
-    .locals 2
+    .locals 3
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    invoke-direct {p0}, Lcom/android/server/wm/p;->qt()V
 
-    const/4 v1, 0x5
+    iget-object v0, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
@@ -1842,16 +1764,58 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
-    invoke-interface {v0, v1}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
 
     :cond_0
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iput-object v1, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
     :cond_1
+    iget-object v0, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
+
+    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+
+    :cond_2
+    iput-object v1, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
+
+    :cond_3
+    iget-object v0, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
+
+    invoke-interface {v0, v2}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+
+    :cond_4
+    iput-object v1, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
+
+    :cond_5
     return-void
 .end method
 
@@ -1866,7 +1830,7 @@
 .method private qc(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Wga:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wm/p;->eha:Ljava/util/ArrayList;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1880,15 +1844,15 @@
 .method private qt()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
-    const v1, 0x3e99999a    # 0.3f
+    const/4 v1, 0x5
 
-    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -1900,20 +1864,23 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
-
-    invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-interface {v0, v1}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
 
     :cond_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
+
+    :cond_1
     return-void
 .end method
 
 .method private rc(I)V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -1923,7 +1890,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
@@ -1931,7 +1898,7 @@
 
     if-eq v0, p1, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object p0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
@@ -1957,7 +1924,72 @@
     return-void
 .end method
 
-.method private rt()Z
+.method private rt()V
+    .locals 2
+
+    iget-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    const v1, 0x3e99999a    # 0.3f
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
+
+    iget-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
+
+    iget-object p0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method static synthetic rtg(Lcom/android/server/wm/p;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->Jga:Z
+
+    return p0
+.end method
+
+.method static synthetic sis(Lcom/android/server/wm/p;)I
+    .locals 0
+
+    iget p0, p0, Lcom/android/server/wm/p;->bha:I
+
+    return p0
+.end method
+
+.method static synthetic sis(Lcom/android/server/wm/p;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/android/server/wm/p;->Xga:I
+
+    return p1
+.end method
+
+.method static synthetic ssp(Lcom/android/server/wm/p;)Lcom/android/server/am/ActivityManagerService;
+    .locals 0
+
+    iget-object p0, p0, Lcom/android/server/wm/p;->mAMS:Lcom/android/server/am/ActivityManagerService;
+
+    return-object p0
+.end method
+
+.method private st()Z
     .locals 1
 
     iget-object v0, p0, Lcom/android/server/wm/p;->mAMS:Lcom/android/server/am/ActivityManagerService;
@@ -1968,7 +2000,7 @@
 
     move-result-object v0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->dha:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->mha:Z
 
     if-eqz p0, :cond_0
 
@@ -1989,39 +2021,23 @@
     return p0
 .end method
 
-.method static synthetic rtg(Lcom/android/server/wm/p;)Z
+.method static synthetic tsu(Lcom/android/server/wm/p;I)I
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->Aga:Z
-
-    return p0
-.end method
-
-.method static synthetic sis(Lcom/android/server/wm/p;)I
-    .locals 0
-
-    iget p0, p0, Lcom/android/server/wm/p;->Tga:I
-
-    return p0
-.end method
-
-.method static synthetic sis(Lcom/android/server/wm/p;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/wm/p;->Oga:I
+    iput p1, p0, Lcom/android/server/wm/p;->aha:I
 
     return p1
 .end method
 
-.method static synthetic ssp(Lcom/android/server/wm/p;)Lcom/android/server/am/ActivityManagerService;
+.method static synthetic tsu(Lcom/android/server/wm/p;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->mAMS:Lcom/android/server/am/ActivityManagerService;
+    invoke-direct {p0}, Lcom/android/server/wm/p;->vt()V
 
-    return-object p0
+    return-void
 .end method
 
-.method private st()V
+.method private tt()V
     .locals 11
 
     new-instance v0, Landroid/util/DisplayMetrics;
@@ -2103,7 +2119,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->sha:I
+    sput v1, Lcom/android/server/wm/p;->Bha:I
 
     const/high16 v1, 0x42c00000    # 96.0f
 
@@ -2113,7 +2129,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->tha:I
+    sput v1, Lcom/android/server/wm/p;->Cha:I
 
     const/high16 v1, 0x42a80000    # 84.0f
 
@@ -2123,7 +2139,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->uha:I
+    sput v1, Lcom/android/server/wm/p;->Dha:I
 
     const/high16 v1, 0x42280000    # 42.0f
 
@@ -2133,7 +2149,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->vha:I
+    sput v1, Lcom/android/server/wm/p;->Eha:I
 
     const/high16 v1, 0x42700000    # 60.0f
 
@@ -2143,7 +2159,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->wha:I
+    sput v1, Lcom/android/server/wm/p;->Fha:I
 
     const/high16 v1, 0x42400000    # 48.0f
 
@@ -2153,7 +2169,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->xha:I
+    sput v1, Lcom/android/server/wm/p;->Gha:I
 
     const/high16 v1, 0x42200000    # 40.0f
 
@@ -2163,19 +2179,19 @@
 
     move-result v2
 
-    sput v2, Lcom/android/server/wm/p;->Bha:I
+    sput v2, Lcom/android/server/wm/p;->Kha:I
 
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v2
 
-    sput v2, Lcom/android/server/wm/p;->Cha:I
+    sput v2, Lcom/android/server/wm/p;->Lha:I
 
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->Dha:I
+    sput v1, Lcom/android/server/wm/p;->Mha:I
 
     const/high16 v1, 0x43960000    # 300.0f
 
@@ -2185,7 +2201,7 @@
 
     move-result v1
 
-    sput v1, Lcom/android/server/wm/p;->Gha:I
+    sput v1, Lcom/android/server/wm/p;->Pha:I
 
     const/high16 v1, 0x42c80000    # 100.0f
 
@@ -2195,7 +2211,7 @@
 
     move-result v0
 
-    sput v0, Lcom/android/server/wm/p;->Hha:I
+    sput v0, Lcom/android/server/wm/p;->Qha:I
 
     iget v0, p0, Lcom/android/server/wm/p;->mScreenHeight:I
 
@@ -2205,19 +2221,19 @@
 
     if-gt v0, v1, :cond_1
 
-    sput v2, Lcom/android/server/wm/p;->Dha:I
+    sput v2, Lcom/android/server/wm/p;->Mha:I
 
-    sput v2, Lcom/android/server/wm/p;->Cha:I
+    sput v2, Lcom/android/server/wm/p;->Lha:I
 
-    sput v2, Lcom/android/server/wm/p;->Bha:I
+    sput v2, Lcom/android/server/wm/p;->Kha:I
 
     const/16 v0, 0x30
 
-    sput v0, Lcom/android/server/wm/p;->xha:I
+    sput v0, Lcom/android/server/wm/p;->Gha:I
 
-    sput v0, Lcom/android/server/wm/p;->wha:I
+    sput v0, Lcom/android/server/wm/p;->Fha:I
 
-    sput v0, Lcom/android/server/wm/p;->vha:I
+    sput v0, Lcom/android/server/wm/p;->Eha:I
 
     goto :goto_0
 
@@ -2264,7 +2280,7 @@
     :cond_2
     if-lez v0, :cond_3
 
-    sput v0, Lcom/android/server/wm/p;->sha:I
+    sput v0, Lcom/android/server/wm/p;->Bha:I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2274,7 +2290,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/android/server/wm/p;->sha:I
+    sget v1, Lcom/android/server/wm/p;->Bha:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2317,7 +2333,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/android/server/wm/p;->sha:I
+    sget v1, Lcom/android/server/wm/p;->Bha:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2356,15 +2372,15 @@
 
     invoke-direct/range {v3 .. v10}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIIIII)V
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iput-object v0, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     const/16 v1, 0x33
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
-    sget v1, Lcom/android/server/wm/p;->vha:I
+    sget v1, Lcom/android/server/wm/p;->Eha:I
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->y:I
 
@@ -2376,7 +2392,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     iget v1, v0, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
@@ -2388,15 +2404,15 @@
 
     invoke-direct {v0}, Landroid/view/WindowManager$LayoutParams;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
+    iput-object v0, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->copyFrom(Landroid/view/WindowManager$LayoutParams;)I
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
     const-string v1, "QuickReplyGoSettings"
 
@@ -2406,15 +2422,15 @@
 
     invoke-direct {v0}, Landroid/view/WindowManager$LayoutParams;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
+    iput-object v0, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->copyFrom(Landroid/view/WindowManager$LayoutParams;)I
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
     const-string v1, "QuickReplySwitch"
 
@@ -2424,15 +2440,15 @@
 
     invoke-direct {v0}, Landroid/view/WindowManager$LayoutParams;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iput-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->copyFrom(Landroid/view/WindowManager$LayoutParams;)I
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
     const/16 v1, 0x7dc
 
@@ -2442,229 +2458,15 @@
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->vt()V
 
-    return-void
-.end method
-
-.method static synthetic tsu(Lcom/android/server/wm/p;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/android/server/wm/p;->Sga:I
-
-    return p1
-.end method
-
-.method static synthetic tsu(Lcom/android/server/wm/p;)V
-    .locals 0
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
-
-    return-void
-.end method
-
-.method private tt()V
-    .locals 5
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getAppBounds()Landroid/graphics/Rect;
-
-    move-result-object v0
-
-    iget v1, p0, Lcom/android/server/wm/p;->Oga:I
-
-    const/4 v2, 0x2
-
-    if-ne v1, v2, :cond_1
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
-
-    sget v2, Lcom/android/server/wm/p;->wha:I
-
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    if-eqz v0, :cond_0
-
-    iget v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    add-int/2addr v2, v0
-
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
-
-    iget v1, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    sget v2, Lcom/android/server/wm/p;->tha:I
-
-    add-int/2addr v1, v2
-
-    sget v3, Lcom/android/server/wm/p;->xha:I
-
-    add-int/2addr v1, v3
-
-    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    add-int/2addr v0, v2
-
-    add-int/2addr v0, v3
-
-    iput v0, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    goto :goto_1
-
-    :cond_1
-    if-eqz v0, :cond_2
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v0, v0, Landroid/graphics/Rect;->right:I
-
-    sget v3, Lcom/android/server/wm/p;->tha:I
-
-    mul-int/2addr v3, v2
-
-    sget v2, Lcom/android/server/wm/p;->wha:I
-
-    add-int/2addr v3, v2
-
-    sget v2, Lcom/android/server/wm/p;->xha:I
-
-    add-int/2addr v3, v2
-
-    sub-int/2addr v0, v3
-
-    iput v0, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    goto :goto_0
-
-    :cond_2
-    iget-object v0, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v1, p0, Lcom/android/server/wm/p;->mScreenHeight:I
-
-    sget v3, Lcom/android/server/wm/p;->tha:I
-
-    mul-int/2addr v3, v2
-
-    sget v2, Lcom/android/server/wm/p;->wha:I
-
-    add-int/2addr v3, v2
-
-    sget v2, Lcom/android/server/wm/p;->xha:I
-
-    add-int/2addr v3, v2
-
-    sub-int/2addr v1, v3
-
-    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :goto_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    sget v3, Lcom/android/server/wm/p;->tha:I
-
-    add-int/2addr v2, v3
-
-    sget v4, Lcom/android/server/wm/p;->xha:I
-
-    add-int/2addr v2, v4
-
-    iput v2, v0, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    iget-object v0, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v1, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    sub-int/2addr v1, v3
-
-    sub-int/2addr v1, v4
-
-    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :goto_1
-    iget-object v0, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Yga:Landroid/view/View;
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->Dga:Landroid/view/WindowManager$LayoutParams;
-
-    invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    :cond_3
-    iget-object v0, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->_ga:Landroid/view/View;
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->Ega:Landroid/view/WindowManager$LayoutParams;
-
-    invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    :cond_4
-    iget-object v0, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_5
-
-    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->aha:Landroid/view/View;
-
-    iget-object p0, p0, Lcom/android/server/wm/p;->Fga:Landroid/view/WindowManager$LayoutParams;
-
-    invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    :cond_5
     return-void
 .end method
 
 .method static synthetic ugm(Lcom/android/server/wm/p;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wm/p;->Sga:I
+    iget p0, p0, Lcom/android/server/wm/p;->aha:I
 
     return p0
 .end method
@@ -2694,15 +2496,15 @@
     const/4 v1, 0x0
 
     :goto_0
-    iget-boolean v2, p0, Lcom/android/server/wm/p;->Kga:Z
+    iget-boolean v2, p0, Lcom/android/server/wm/p;->Tga:Z
 
     const-string v3, "OpQuickReply"
 
     if-eq v2, v1, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/wm/p;->Kga:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/p;->Tga:Z
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->mt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->nt()V
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2712,7 +2514,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/android/server/wm/p;->Kga:Z
+    iget-boolean v2, p0, Lcom/android/server/wm/p;->Tga:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -2762,214 +2564,120 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Xga:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/server/wm/p;->fha:Ljava/util/List;
 
     :cond_3
     return-void
 .end method
 
 .method private ut()V
-    .locals 8
+    .locals 5
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getAppBounds()Landroid/graphics/Rect;
 
-    if-nez v0, :cond_0
+    move-result-object v0
 
-    return-void
+    iget v1, p0, Lcom/android/server/wm/p;->Xga:I
 
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    const/4 v2, 0x2
 
-    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->height:I
+    if-ne v1, v2, :cond_1
 
-    invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureButtonEnabled()Z
+    iget-object v1, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
-    move-result v1
-
-    invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureSideEnabled()Z
-
-    move-result v2
-
-    iget-object v3, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
-
-    invoke-virtual {v3}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayRotation()I
-
-    move-result v3
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x0
-
-    if-eqz v1, :cond_1
-
-    if-eqz v2, :cond_1
-
-    if-eq v3, v4, :cond_2
-
-    const/4 v1, 0x3
-
-    if-ne v3, v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    move v4, v5
-
-    :cond_2
-    :goto_0
-    iget v1, p0, Lcom/android/server/wm/p;->Oga:I
-
-    if-nez v1, :cond_8
-
-    iget-object v1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v2, p0, Lcom/android/server/wm/p;->mScreenHeight:I
+    sget v2, Lcom/android/server/wm/p;->Fha:I
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
-
-    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    iget v3, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    if-ge v2, v3, :cond_3
-
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :cond_3
-    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
-
-    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->right:I
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v3, v2, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    if-ge v1, v3, :cond_4
-
-    iput v1, v2, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :cond_4
-    if-eqz v4, :cond_5
-
-    iget v1, p0, Lcom/android/server/wm/p;->mScreenHeight:I
-
-    iget v2, p0, Lcom/android/server/wm/p;->Pga:I
-
-    sub-int v3, v1, v2
-
-    iget-object v6, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v7, v6, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    if-ge v3, v7, :cond_5
-
-    sub-int/2addr v1, v2
-
-    iput v1, v6, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :cond_5
-    iget-object v1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    if-eqz v0, :cond_0
 
     iget v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    sget v3, Lcom/android/server/wm/p;->Bha:I
+    iget v0, v0, Landroid/graphics/Rect;->left:I
 
-    sub-int/2addr v2, v3
-
-    sget v6, Lcom/android/server/wm/p;->sIMELimitWidth:I
-
-    sub-int/2addr v2, v6
-
-    sget v6, Lcom/android/server/wm/p;->uha:I
-
-    sub-int/2addr v2, v6
+    add-int/2addr v2, v0
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
 
     iget v1, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
+    sget v2, Lcom/android/server/wm/p;->Cha:I
+
+    add-int/2addr v1, v2
+
+    sget v3, Lcom/android/server/wm/p;->Gha:I
+
     add-int/2addr v1, v3
 
-    iput v1, p0, Lcom/android/server/wm/p;->Uga:I
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    if-eqz v4, :cond_6
+    iget-object v1, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
-    iget v5, p0, Lcom/android/server/wm/p;->Pga:I
+    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    :cond_6
-    iput v5, p0, Lcom/android/server/wm/p;->Tga:I
+    add-int/2addr v0, v2
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+    add-int/2addr v0, v3
 
-    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->left:I
-
-    iget v2, p0, Lcom/android/server/wm/p;->Tga:I
-
-    if-le v1, v2, :cond_7
-
-    iput v1, p0, Lcom/android/server/wm/p;->Tga:I
-
-    :cond_7
-    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
-
-    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->left:I
-
-    iget v2, p0, Lcom/android/server/wm/p;->Tga:I
-
-    if-le v1, v2, :cond_d
-
-    iput v1, p0, Lcom/android/server/wm/p;->Tga:I
+    iput v0, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
     goto :goto_1
 
-    :cond_8
-    const/4 v2, 0x2
+    :cond_1
+    if-eqz v0, :cond_2
 
-    if-ne v1, v2, :cond_d
+    iget-object v1, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget v0, v0, Landroid/graphics/Rect;->right:I
 
-    iput v5, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+    sget v3, Lcom/android/server/wm/p;->Cha:I
 
-    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+    mul-int/2addr v3, v2
 
-    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
+    sget v2, Lcom/android/server/wm/p;->Fha:I
 
-    iget v2, v2, Landroid/graphics/Rect;->left:I
+    add-int/2addr v3, v2
 
-    iget v3, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+    sget v2, Lcom/android/server/wm/p;->Gha:I
 
-    if-le v2, v3, :cond_9
+    add-int/2addr v3, v2
 
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+    sub-int/2addr v0, v3
 
-    :cond_9
-    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+    iput v0, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
+    goto :goto_0
 
-    iget v1, v1, Landroid/graphics/Rect;->left:I
+    :cond_2
+    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
-    iget-object v2, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget v1, p0, Lcom/android/server/wm/p;->mScreenHeight:I
 
-    iget v3, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+    sget v3, Lcom/android/server/wm/p;->Cha:I
 
-    if-le v1, v3, :cond_a
+    mul-int/2addr v3, v2
 
-    iput v1, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+    sget v2, Lcom/android/server/wm/p;->Fha:I
 
-    :cond_a
-    iget-object v1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    add-int/2addr v3, v2
+
+    sget v2, Lcom/android/server/wm/p;->Gha:I
+
+    add-int/2addr v3, v2
+
+    sub-int/2addr v1, v3
+
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :goto_0
+    iget-object v0, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
 
     iget v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
@@ -2977,118 +2685,86 @@
 
     add-int/2addr v2, v3
 
-    sget v5, Lcom/android/server/wm/p;->sIMELimitWidth:I
+    sget v4, Lcom/android/server/wm/p;->Gha:I
 
-    add-int/2addr v2, v5
+    add-int/2addr v2, v4
 
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+    iput v2, v0, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    iget-object v0, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
     iget v1, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
     sub-int/2addr v1, v3
 
-    iput v1, p0, Lcom/android/server/wm/p;->Tga:I
+    sub-int/2addr v1, v4
 
-    iget v1, p0, Lcom/android/server/wm/p;->mScreenHeight:I
+    iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    sget v2, Lcom/android/server/wm/p;->uha:I
-
-    sub-int/2addr v1, v2
-
-    iput v1, p0, Lcom/android/server/wm/p;->Uga:I
-
-    if-eqz v4, :cond_b
-
-    iget v1, p0, Lcom/android/server/wm/p;->Uga:I
-
-    iget v2, p0, Lcom/android/server/wm/p;->Pga:I
-
-    sub-int/2addr v1, v2
-
-    iput v1, p0, Lcom/android/server/wm/p;->Uga:I
-
-    :cond_b
-    iget v1, p0, Lcom/android/server/wm/p;->Uga:I
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
-
-    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    sget v3, Lcom/android/server/wm/p;->uha:I
-
-    sub-int v4, v2, v3
-
-    if-le v1, v4, :cond_c
-
-    sub-int/2addr v2, v3
-
-    iput v2, p0, Lcom/android/server/wm/p;->Uga:I
-
-    :cond_c
-    iget v1, p0, Lcom/android/server/wm/p;->Uga:I
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
-
-    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->right:I
-
-    sget v3, Lcom/android/server/wm/p;->uha:I
-
-    sub-int v4, v2, v3
-
-    if-le v1, v4, :cond_d
-
-    sub-int/2addr v2, v3
-
-    iput v2, p0, Lcom/android/server/wm/p;->Uga:I
-
-    :cond_d
     :goto_1
-    iget v1, p0, Lcom/android/server/wm/p;->Sga:I
+    iget-object v0, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
-    if-eqz v1, :cond_e
-
-    iget-object v2, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
-
-    iput v1, v2, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    :cond_e
-    iget-object v1, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
-
-    iget v2, p0, Lcom/android/server/wm/p;->mScreenWidth:I
-
-    sget v3, Lcom/android/server/wm/p;->Dha:I
-
-    sub-int/2addr v2, v3
-
-    sub-int/2addr v2, v0
-
-    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->y:I
-
-    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
-
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_3
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_3
 
     invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Zga:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/server/wm/p;->gha:Landroid/view/View;
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v2, p0, Lcom/android/server/wm/p;->Mga:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_3
+    iget-object v0, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->iha:Landroid/view/View;
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->Nga:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_4
+    iget-object v0, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->jha:Landroid/view/View;
+
+    iget-object p0, p0, Lcom/android/server/wm/p;->Oga:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    :cond_f
+    :cond_5
     return-void
 .end method
 
@@ -3151,7 +2827,7 @@
 
     move-result p1
 
-    sput p1, Lcom/android/server/wm/p;->Dha:I
+    sput p1, Lcom/android/server/wm/p;->Mha:I
 
     :cond_0
     invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureButtonWithoutHideBarEnabled()Z
@@ -3160,14 +2836,14 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object p1, p1, Lcom/android/server/wm/WindowManagerService;->mGlobalLock:Lcom/android/server/wm/WindowManagerGlobalLock;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     invoke-virtual {v0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
 
@@ -3191,11 +2867,11 @@
 
     move-result p1
 
-    sput p1, Lcom/android/server/wm/p;->Dha:I
+    sput p1, Lcom/android/server/wm/p;->Mha:I
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/android/server/wm/p;->Nga:I
+    iput p1, p0, Lcom/android/server/wm/p;->Wga:I
 
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -3205,7 +2881,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/wm/p;->Nga:I
+    iget p0, p0, Lcom/android/server/wm/p;->Wga:I
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3239,7 +2915,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget p1, Lcom/android/server/wm/p;->Dha:I
+    sget p1, Lcom/android/server/wm/p;->Mha:I
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3257,20 +2933,344 @@
 .method static synthetic vdb(Lcom/android/server/wm/p;)Landroid/view/WindowManager$LayoutParams;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
     return-object p0
 .end method
 
 .method private vt()V
+    .locals 8
+
+    iget-object v0, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v0, v0, Landroid/view/WindowManager$LayoutParams;->height:I
+
+    invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureButtonEnabled()Z
+
+    move-result v1
+
+    invoke-static {}, Lcom/android/server/policy/OpPhoneWindowManagerInjector;->isGestureSideEnabled()Z
+
+    move-result v2
+
+    iget-object v3, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
+
+    invoke-virtual {v3}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayRotation()I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    if-eqz v1, :cond_1
+
+    if-eqz v2, :cond_1
+
+    if-eq v3, v4, :cond_2
+
+    const/4 v1, 0x3
+
+    if-ne v3, v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v4, v5
+
+    :cond_2
+    :goto_0
+    iget v1, p0, Lcom/android/server/wm/p;->Xga:I
+
+    if-nez v1, :cond_8
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v2, p0, Lcom/android/server/wm/p;->mScreenHeight:I
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->right:I
+
+    iget v3, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    if-ge v2, v3, :cond_3
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_3
+    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->right:I
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v3, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    if-ge v1, v3, :cond_4
+
+    iput v1, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_4
+    if-eqz v4, :cond_5
+
+    iget v1, p0, Lcom/android/server/wm/p;->mScreenHeight:I
+
+    iget v2, p0, Lcom/android/server/wm/p;->Yga:I
+
+    sub-int v3, v1, v2
+
+    iget-object v6, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v7, v6, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    if-ge v3, v7, :cond_5
+
+    sub-int/2addr v1, v2
+
+    iput v1, v6, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_5
+    iget-object v1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    sget v3, Lcom/android/server/wm/p;->Kha:I
+
+    sub-int/2addr v2, v3
+
+    sget v6, Lcom/android/server/wm/p;->sIMELimitWidth:I
+
+    sub-int/2addr v2, v6
+
+    sget v6, Lcom/android/server/wm/p;->Dha:I
+
+    sub-int/2addr v2, v6
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    iget v1, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    add-int/2addr v1, v3
+
+    iput v1, p0, Lcom/android/server/wm/p;->cha:I
+
+    if-eqz v4, :cond_6
+
+    iget v5, p0, Lcom/android/server/wm/p;->Yga:I
+
+    :cond_6
+    iput v5, p0, Lcom/android/server/wm/p;->bha:I
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->left:I
+
+    iget v2, p0, Lcom/android/server/wm/p;->bha:I
+
+    if-le v1, v2, :cond_7
+
+    iput v1, p0, Lcom/android/server/wm/p;->bha:I
+
+    :cond_7
+    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->left:I
+
+    iget v2, p0, Lcom/android/server/wm/p;->bha:I
+
+    if-le v1, v2, :cond_d
+
+    iput v1, p0, Lcom/android/server/wm/p;->bha:I
+
+    goto :goto_1
+
+    :cond_8
+    const/4 v2, 0x2
+
+    if-ne v1, v2, :cond_d
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iput v5, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->left:I
+
+    iget v3, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    if-le v2, v3, :cond_9
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_9
+    iget-object v1, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v1, v1, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->left:I
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v3, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    if-le v1, v3, :cond_a
+
+    iput v1, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_a
+    iget-object v1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    sget v3, Lcom/android/server/wm/p;->Lha:I
+
+    add-int/2addr v2, v3
+
+    sget v5, Lcom/android/server/wm/p;->sIMELimitWidth:I
+
+    add-int/2addr v2, v5
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    iget v1, v1, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    sub-int/2addr v1, v3
+
+    iput v1, p0, Lcom/android/server/wm/p;->bha:I
+
+    iget v1, p0, Lcom/android/server/wm/p;->mScreenHeight:I
+
+    sget v2, Lcom/android/server/wm/p;->Dha:I
+
+    sub-int/2addr v1, v2
+
+    iput v1, p0, Lcom/android/server/wm/p;->cha:I
+
+    if-eqz v4, :cond_b
+
+    iget v1, p0, Lcom/android/server/wm/p;->cha:I
+
+    iget v2, p0, Lcom/android/server/wm/p;->Yga:I
+
+    sub-int/2addr v1, v2
+
+    iput v1, p0, Lcom/android/server/wm/p;->cha:I
+
+    :cond_b
+    iget v1, p0, Lcom/android/server/wm/p;->cha:I
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDisplayCutoutSafe:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->right:I
+
+    sget v3, Lcom/android/server/wm/p;->Dha:I
+
+    sub-int v4, v2, v3
+
+    if-le v1, v4, :cond_c
+
+    sub-int/2addr v2, v3
+
+    iput v2, p0, Lcom/android/server/wm/p;->cha:I
+
+    :cond_c
+    iget v1, p0, Lcom/android/server/wm/p;->cha:I
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->mDisplayFrames:Lcom/android/server/wm/DisplayFrames;
+
+    iget-object v2, v2, Lcom/android/server/wm/DisplayFrames;->mDock:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->right:I
+
+    sget v3, Lcom/android/server/wm/p;->Dha:I
+
+    sub-int v4, v2, v3
+
+    if-le v1, v4, :cond_d
+
+    sub-int/2addr v2, v3
+
+    iput v2, p0, Lcom/android/server/wm/p;->cha:I
+
+    :cond_d
+    :goto_1
+    iget v1, p0, Lcom/android/server/wm/p;->aha:I
+
+    if-eqz v1, :cond_e
+
+    iget-object v2, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iput v1, v2, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    :cond_e
+    iget-object v1, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    iget v2, p0, Lcom/android/server/wm/p;->mScreenWidth:I
+
+    sget v3, Lcom/android/server/wm/p;->Mha:I
+
+    sub-int/2addr v2, v3
+
+    sub-int/2addr v2, v0
+
+    iput v2, v1, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    iget-object v0, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
+
+    if-eqz v0, :cond_f
+
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_f
+
+    invoke-direct {p0}, Lcom/android/server/wm/p;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/p;->hha:Landroid/view/View;
+
+    iget-object p0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-interface {v0, v1, p0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_f
+    return-void
+.end method
+
+.method private wt()V
     .locals 4
 
     :try_start_0
-    iget-object v0, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
@@ -3280,7 +3280,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v0}, Lcom/android/server/wm/ActivityRecord;->getTaskRecord()Lcom/android/server/wm/TaskRecord;
 
@@ -3299,9 +3299,9 @@
     invoke-virtual {v1, v0, v2, v3}, Lcom/android/server/am/ActivityManagerService;->resizeTask(ILandroid/graphics/Rect;I)V
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->vt()V
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->tt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->ut()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3318,7 +3318,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lcom/android/server/wm/p;->Oga:I
+    iget p0, p0, Lcom/android/server/wm/p;->Xga:I
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3341,7 +3341,7 @@
 .method static synthetic wtn(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->vt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->wt()V
 
     return-void
 .end method
@@ -3349,7 +3349,7 @@
 .method static synthetic you(Lcom/android/server/wm/p;)Landroid/util/ArrayMap;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Vga:Landroid/util/ArrayMap;
+    iget-object p0, p0, Lcom/android/server/wm/p;->dha:Landroid/util/ArrayMap;
 
     return-object p0
 .end method
@@ -3365,7 +3365,7 @@
 .method static synthetic ywr(Lcom/android/server/wm/p;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->ht()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->it()V
 
     return-void
 .end method
@@ -3373,7 +3373,7 @@
 .method static synthetic zgw(Lcom/android/server/wm/p;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wm/p;->Uga:I
+    iget p0, p0, Lcom/android/server/wm/p;->cha:I
 
     return p0
 .end method
@@ -3389,7 +3389,7 @@
 .method private zta(Landroid/os/IBinder;)V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, v0, Lcom/android/server/wm/WindowManagerService;->mGlobalLock:Lcom/android/server/wm/WindowManagerGlobalLock;
 
@@ -3403,7 +3403,7 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v1, v1, Lcom/android/server/wm/WindowManagerService;->mRoot:Lcom/android/server/wm/RootWindowContainer;
 
@@ -3418,7 +3418,7 @@
     iput-boolean v1, p1, Lcom/android/server/wm/AppWindowToken;->mIsQuickReplyApp:Z
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     const/4 v2, 0x0
 
@@ -3428,7 +3428,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->reconfigureDisplayLocked(Lcom/android/server/wm/DisplayContent;)V
 
@@ -3450,14 +3450,14 @@
 .method private zta(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, v0, Lcom/android/server/wm/WindowManagerService;->mGlobalLock:Lcom/android/server/wm/WindowManagerGlobalLock;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     iget-object v1, v1, Lcom/android/server/wm/WindowManagerService;->mRoot:Lcom/android/server/wm/RootWindowContainer;
 
@@ -3540,11 +3540,11 @@
 .method private zta(Lcom/android/server/wm/ActivityRecord;)V
     .locals 6
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     if-eqz v0, :cond_6
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-nez v0, :cond_6
 
@@ -3558,9 +3558,9 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/wm/p;->Bga:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/p;->Kga:Z
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Jga:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Sga:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -3706,7 +3706,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v3, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -3719,13 +3719,13 @@
     goto/16 :goto_0
 
     :cond_5
-    iget-object p1, p0, Lcom/android/server/wm/p;->Jga:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Sga:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/wm/p;->Bga:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/p;->Kga:Z
 
     :cond_6
     return-void
@@ -3774,13 +3774,13 @@
 .method private zta(Ljava/lang/String;Lcom/android/server/wm/WindowState;)Z
     .locals 3
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->rt()Z
+    invoke-direct {p0}, Lcom/android/server/wm/p;->st()Z
 
     move-result v0
 
@@ -3821,7 +3821,7 @@
 
     move-result p1
 
-    sget v2, Lcom/android/server/wm/p;->Gha:I
+    sget v2, Lcom/android/server/wm/p;->Pha:I
 
     add-int/2addr p1, v2
 
@@ -3864,7 +3864,7 @@
     :cond_3
     if-nez p2, :cond_5
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3874,7 +3874,7 @@
 
     :cond_4
     :goto_2
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 p2, 0x4
 
@@ -3909,7 +3909,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Vga:Lcom/oneplus/config/ConfigObserver;
 
     const-string v1, "Quick_Reply_Config"
 
@@ -3919,7 +3919,7 @@
 
     iget-object v2, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v3, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     new-instance v4, Lcom/android/server/wm/p$you;
 
@@ -3927,9 +3927,9 @@
 
     invoke-direct {v0, v2, v3, v4, v1}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/p;->Mga:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/android/server/wm/p;->Vga:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Mga:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Vga:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
@@ -4116,7 +4116,7 @@
 
     if-eq v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v2, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     if-eqz v2, :cond_1
 
@@ -4127,13 +4127,13 @@
     if-ne v1, v2, :cond_1
 
     :cond_0
-    iget-object v2, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v2, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/16 v3, 0xa
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     invoke-virtual {p0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
@@ -4170,7 +4170,7 @@
 
     if-eqz p2, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->lt()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/wm/p;->mt()Ljava/lang/String;
 
     move-result-object p1
 
@@ -4180,7 +4180,7 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 v0, 0x7
 
@@ -4197,7 +4197,7 @@
     invoke-virtual {p1}, Landroid/os/Message;->sendToTarget()V
 
     :cond_0
-    iget-boolean p1, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean p1, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-eqz p1, :cond_1
 
@@ -4211,7 +4211,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 p1, 0x6
 
@@ -4244,7 +4244,7 @@
 
     if-eqz v1, :cond_1
 
-    iget p0, p0, Lcom/android/server/wm/p;->Oga:I
+    iget p0, p0, Lcom/android/server/wm/p;->Xga:I
 
     const/4 v2, 0x2
 
@@ -4260,7 +4260,7 @@
 
     iget p0, v0, Landroid/graphics/Rect;->right:I
 
-    sget v2, Lcom/android/server/wm/p;->sha:I
+    sget v2, Lcom/android/server/wm/p;->Bha:I
 
     sub-int/2addr p0, v2
 
@@ -4277,7 +4277,7 @@
 
     iget p0, v0, Landroid/graphics/Rect;->left:I
 
-    sget v2, Lcom/android/server/wm/p;->sha:I
+    sget v2, Lcom/android/server/wm/p;->Bha:I
 
     add-int/2addr p0, v2
 
@@ -4320,17 +4320,17 @@
     return-object v1
 
     :cond_0
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->Kga:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->Tga:Z
 
     if-eqz p0, :cond_1
 
-    sget-object v1, Lcom/android/server/wm/p;->Kha:Ljava/util/List;
+    sget-object v1, Lcom/android/server/wm/p;->Tha:Ljava/util/List;
 
     :cond_1
     return-object v1
 
     :cond_2
-    sget-object p0, Lcom/android/server/wm/p;->Jha:Ljava/util/List;
+    sget-object p0, Lcom/android/server/wm/p;->Sha:Ljava/util/List;
 
     return-object p0
 .end method
@@ -4338,7 +4338,7 @@
 .method public getQuickReplyOrientation(Lcom/android/server/wm/TaskStack;Lcom/android/server/wm/AppWindowToken;)I
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     const/4 v1, 0x1
 
@@ -4379,7 +4379,7 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayRotation()I
 
@@ -4410,7 +4410,7 @@
 .method public isBubbleExpanded()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->dha:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->mha:Z
 
     return p0
 .end method
@@ -4459,7 +4459,7 @@
 .method public isInCameraActivityList(Ljava/lang/String;)Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/wm/p;->Lha:Ljava/util/List;
+    sget-object p0, Lcom/android/server/wm/p;->Uha:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -4471,7 +4471,7 @@
 .method public isInIMEKilledList(I)Z
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Wga:Ljava/util/ArrayList;
+    iget-object p0, p0, Lcom/android/server/wm/p;->eha:Ljava/util/ArrayList;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -4487,7 +4487,7 @@
 .method public isQuickReplyExiting()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->Bga:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->Kga:Z
 
     return p0
 .end method
@@ -4522,7 +4522,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lcom/android/server/wm/p;->Lha:Ljava/util/List;
+    sget-object p0, Lcom/android/server/wm/p;->Uha:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -4570,7 +4570,7 @@
 .method public isQuickReplyIM(Ljava/lang/String;)Z
     .locals 1
 
-    sget-object v0, Lcom/android/server/wm/p;->Iha:Ljava/util/List;
+    sget-object v0, Lcom/android/server/wm/p;->Rha:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -4578,7 +4578,7 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lcom/android/server/wm/p;->Jha:Ljava/util/List;
+    sget-object v0, Lcom/android/server/wm/p;->Sha:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -4586,7 +4586,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Xga:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/wm/p;->fha:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -4612,11 +4612,11 @@
 .method public isQuickReplyIME(Ljava/lang/String;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->Kga:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->Tga:Z
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lcom/android/server/wm/p;->Kha:Ljava/util/List;
+    sget-object p0, Lcom/android/server/wm/p;->Tha:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -4717,7 +4717,7 @@
 
     move-result v1
 
-    iget-boolean v2, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v2, p0, Lcom/android/server/wm/p;->Jga:Z
 
     const/4 v3, 0x1
 
@@ -4771,7 +4771,7 @@
 .method public isQuickReplyRunning()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     return p0
 .end method
@@ -4779,7 +4779,7 @@
 .method public killApplicationProcess(Lcom/android/server/wm/ActivityTaskManagerService;Landroid/content/pm/ActivityInfo;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-eqz v0, :cond_0
 
@@ -4799,7 +4799,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     new-instance v1, Lcom/android/server/wm/o;
 
@@ -4814,7 +4814,7 @@
 .method public notifyImeShow(Ljava/lang/String;)V
     .locals 3
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Kga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Tga:Z
 
     if-eqz v0, :cond_1
 
@@ -4824,7 +4824,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Vga:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/server/wm/p;->dha:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, p1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4843,7 +4843,7 @@
     if-ge v1, v2, :cond_1
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     new-instance v2, Lcom/android/server/wm/g;
 
@@ -4860,18 +4860,18 @@
 
     if-eqz p1, :cond_3
 
-    iget-boolean p1, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean p1, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-nez p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->rt()Z
+    invoke-direct {p0}, Lcom/android/server/wm/p;->st()Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wm/p;->lt()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/wm/p;->mt()Ljava/lang/String;
 
     move-result-object p1
 
@@ -4896,9 +4896,9 @@
 
     if-eqz p1, :cond_2
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
-    iget p0, p0, Lcom/android/server/wm/p;->Nga:I
+    iget p0, p0, Lcom/android/server/wm/p;->Wga:I
 
     sub-int/2addr p2, p0
 
@@ -4913,9 +4913,9 @@
     goto :goto_0
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
-    sget p1, Lcom/android/server/wm/p;->Dha:I
+    sget p1, Lcom/android/server/wm/p;->Mha:I
 
     sub-int/2addr p2, p1
 
@@ -4933,7 +4933,7 @@
     goto :goto_1
 
     :cond_3
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 p1, 0x4
 
@@ -4946,7 +4946,7 @@
 .method public onConfigChanged()V
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     if-eqz v0, :cond_0
 
@@ -4956,7 +4956,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/16 v0, 0x9
 
@@ -4971,7 +4971,7 @@
 
     iput-object p1, p0, Lcom/android/server/wm/p;->mAMS:Lcom/android/server/am/ActivityManagerService;
 
-    iput-object p2, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iput-object p2, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     return-void
 .end method
@@ -4979,13 +4979,13 @@
 .method public setBubbleExpanded(Z)V
     .locals 7
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->dha:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->mha:Z
 
     if-eq v0, p1, :cond_7
 
-    iput-boolean p1, p0, Lcom/android/server/wm/p;->dha:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/p;->mha:Z
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     new-instance v1, Lcom/android/server/wm/f;
 
@@ -5031,7 +5031,7 @@
 
     if-nez v1, :cond_7
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     invoke-virtual {v1}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayRotation()I
 
@@ -5048,7 +5048,7 @@
     if-ne v1, v3, :cond_7
 
     :cond_1
-    iget-object v3, p0, Lcom/android/server/wm/p;->Cga:Lcom/android/server/wm/WindowManagerService;
+    iget-object v3, p0, Lcom/android/server/wm/p;->Lga:Lcom/android/server/wm/WindowManagerService;
 
     invoke-virtual {v3}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
 
@@ -5070,9 +5070,9 @@
 
     if-eqz p1, :cond_3
 
-    iput-object v3, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/ActivityRecord;
+    iput-object v3, p0, Lcom/android/server/wm/p;->Zga:Lcom/android/server/wm/ActivityRecord;
 
-    iput v4, p0, Lcom/android/server/wm/p;->Rga:I
+    iput v4, p0, Lcom/android/server/wm/p;->_ga:I
 
     if-ne v1, v2, :cond_2
 
@@ -5084,7 +5084,7 @@
     goto :goto_1
 
     :cond_3
-    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Zga:Lcom/android/server/wm/ActivityRecord;
 
     if-eqz v0, :cond_6
 
@@ -5098,18 +5098,18 @@
 
     if-nez v0, :cond_4
 
-    iget-object v3, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v3, p0, Lcom/android/server/wm/p;->Zga:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v3}, Lcom/android/server/wm/ActivityRecord;->getOrientation()I
 
     move-result v4
 
     :cond_4
-    iget v0, p0, Lcom/android/server/wm/p;->Rga:I
+    iget v0, p0, Lcom/android/server/wm/p;->_ga:I
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/ActivityRecord;
+    iput-object v1, p0, Lcom/android/server/wm/p;->Zga:Lcom/android/server/wm/ActivityRecord;
 
     :goto_1
     const-string v1, ", appBehind= "
@@ -5210,11 +5210,11 @@
 
     :cond_7
     :goto_2
-    iget-boolean p1, p0, Lcom/android/server/wm/p;->dha:Z
+    iget-boolean p1, p0, Lcom/android/server/wm/p;->mha:Z
 
     if-eqz p1, :cond_8
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 p1, 0x6
 
@@ -5237,11 +5237,11 @@
 .method public setIMEPosition(I)V
     .locals 0
 
-    iput p1, p0, Lcom/android/server/wm/p;->Oga:I
+    iput p1, p0, Lcom/android/server/wm/p;->Xga:I
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lcom/android/server/wm/p;->Sga:I
+    iput p1, p0, Lcom/android/server/wm/p;->aha:I
 
     return-void
 .end method
@@ -5256,17 +5256,17 @@
     if-nez p1, :cond_0
 
     :try_start_0
-    iget-boolean p1, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean p1, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object p1, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     if-eqz p1, :cond_0
 
     iget-object p1, p0, Lcom/android/server/wm/p;->mAMS:Lcom/android/server/am/ActivityManagerService;
 
-    iget-object v2, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iget-object v2, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
 
     iget-object v2, v2, Lcom/android/server/wm/ActivityRecord;->appToken:Landroid/view/IApplicationToken$Stub;
 
@@ -5315,20 +5315,20 @@
 .method public setQuickReplyRunning(Z)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->dha:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->mha:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-eq v0, p1, :cond_3
 
-    iput-boolean p1, p0, Lcom/android/server/wm/p;->Aga:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/p;->Jga:Z
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     new-instance v1, Lcom/android/server/wm/h;
 
@@ -5336,22 +5336,22 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iget-boolean v0, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/p;->Jga:Z
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     goto :goto_0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 v1, 0x2
 
@@ -5403,11 +5403,11 @@
     invoke-static {v0, p1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    iget-boolean p1, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean p1, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-eqz p1, :cond_4
 
-    iget-object p0, p0, Lcom/android/server/wm/p;->Hga:Lcom/android/server/wm/p$zta;
+    iget-object p0, p0, Lcom/android/server/wm/p;->Qga:Lcom/android/server/wm/p$zta;
 
     const/4 p1, 0x6
 
@@ -5452,11 +5452,11 @@
 
     invoke-direct {p0, v1, v2}, Lcom/android/server/wm/p;->zta(Landroid/os/IBinder;Ljava/lang/String;)V
 
-    iget-boolean v1, p0, Lcom/android/server/wm/p;->Aga:Z
+    iget-boolean v1, p0, Lcom/android/server/wm/p;->Jga:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Jga:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Sga:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5464,7 +5464,7 @@
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Lcom/android/server/wm/p;->Jga:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/server/wm/p;->Sga:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -5475,7 +5475,7 @@
 
     :cond_2
     :goto_0
-    iput-object p1, p0, Lcom/android/server/wm/p;->Iga:Lcom/android/server/wm/ActivityRecord;
+    iput-object p1, p0, Lcom/android/server/wm/p;->Rga:Lcom/android/server/wm/ActivityRecord;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -5519,7 +5519,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/wm/p;->Sga:I
+    iput v0, p0, Lcom/android/server/wm/p;->aha:I
 
     iget-object v0, p0, Lcom/android/server/wm/p;->mContext:Landroid/content/Context;
 
@@ -5533,9 +5533,9 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/wm/p;->Oga:I
+    iput v0, p0, Lcom/android/server/wm/p;->Xga:I
 
-    invoke-direct {p0}, Lcom/android/server/wm/p;->nt()V
+    invoke-direct {p0}, Lcom/android/server/wm/p;->ot()V
 
     return-void
 .end method
@@ -5551,7 +5551,7 @@
 
     sget p1, Lcom/android/server/wm/p;->sIMELimitWidth:I
 
-    iget-object v0, p0, Lcom/android/server/wm/p;->Gga:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/server/wm/p;->Pga:Landroid/view/WindowManager$LayoutParams;
 
     iget v0, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
@@ -5579,7 +5579,7 @@
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p2, p0, Lcom/android/server/wm/p;->Oga:I
+    iget p2, p0, Lcom/android/server/wm/p;->Xga:I
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -5592,11 +5592,11 @@
     invoke-static {v1, p2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget p0, p0, Lcom/android/server/wm/p;->Oga:I
+    iget p0, p0, Lcom/android/server/wm/p;->Xga:I
 
     if-nez p0, :cond_1
 
-    sget p0, Lcom/android/server/wm/p;->uha:I
+    sget p0, Lcom/android/server/wm/p;->Dha:I
 
     add-int/2addr v0, p0
 
@@ -5654,7 +5654,7 @@
     :goto_0
     iget p0, p7, Landroid/graphics/Rect;->bottom:I
 
-    sget p1, Lcom/android/server/wm/p;->Dha:I
+    sget p1, Lcom/android/server/wm/p;->Mha:I
 
     sub-int/2addr p0, p1
 

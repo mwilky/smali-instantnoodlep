@@ -634,7 +634,7 @@
     throw p0
 .end method
 
-.method private wm()V
+.method private xm()V
     .locals 4
 
     sget-boolean v0, Lcom/android/server/veq;->DEBUG_ONEPLUS:Z
@@ -685,7 +685,7 @@
     return-void
 .end method
 
-.method private xm()V
+.method private ym()V
     .locals 8
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -852,7 +852,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0}, Lcom/android/server/veq;->wm()V
+    invoke-direct {p0}, Lcom/android/server/veq;->xm()V
 
     :goto_1
     return-void
@@ -911,7 +911,7 @@
 .method static synthetic zta(Lcom/android/server/veq;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/veq;->xm()V
+    invoke-direct {p0}, Lcom/android/server/veq;->ym()V
 
     return-void
 .end method

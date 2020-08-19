@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/android/server/scene/vju;->ig()V
+    value = Lcom/oneplus/android/server/scene/vju;->jg()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

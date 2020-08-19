@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected final wWa:[I
+.field protected final FWa:[I
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lyou/zta/sis/you/tsu;->wWa:[I
+    iput-object p1, p0, Lyou/zta/sis/you/tsu;->FWa:[I
 
     return-void
 .end method
@@ -48,9 +48,9 @@
     :cond_1
     check-cast p1, Lyou/zta/sis/you/tsu;
 
-    iget-object p0, p0, Lyou/zta/sis/you/tsu;->wWa:[I
+    iget-object p0, p0, Lyou/zta/sis/you/tsu;->FWa:[I
 
-    iget-object p1, p1, Lyou/zta/sis/you/tsu;->wWa:[I
+    iget-object p1, p1, Lyou/zta/sis/you/tsu;->FWa:[I
 
     invoke-static {p0, p1}, Lorg/bouncycastle/util/zta;->bvj([I[I)Z
 
@@ -62,7 +62,7 @@
 .method public hashCode()I
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/tsu;->wWa:[I
+    iget-object p0, p0, Lyou/zta/sis/you/tsu;->FWa:[I
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->hashCode([I)I
 
@@ -74,7 +74,7 @@
 .method public o()[I
     .locals 0
 
-    iget-object p0, p0, Lyou/zta/sis/you/tsu;->wWa:[I
+    iget-object p0, p0, Lyou/zta/sis/you/tsu;->FWa:[I
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->oif([I)[I
 
@@ -86,7 +86,7 @@
 .method public p()I
     .locals 1
 
-    iget-object p0, p0, Lyou/zta/sis/you/tsu;->wWa:[I
+    iget-object p0, p0, Lyou/zta/sis/you/tsu;->FWa:[I
 
     array-length v0, p0
 

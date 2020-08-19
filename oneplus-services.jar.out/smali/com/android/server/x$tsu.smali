@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field hk:Lcom/android/server/x$kth;
-
 .field mIsCharging:Z
 
 .field mTime:J
+
+.field rk:Lcom/android/server/x$kth;
 
 .field final synthetic this$0:Lcom/android/server/x;
 
@@ -44,7 +44,7 @@
 
     invoke-direct {p1, v0, v1}, Lcom/android/server/x$kth;-><init>(Lcom/android/server/x;Lcom/android/server/w;)V
 
-    iput-object p1, p0, Lcom/android/server/x$tsu;->hk:Lcom/android/server/x$kth;
+    iput-object p1, p0, Lcom/android/server/x$tsu;->rk:Lcom/android/server/x$kth;
 
     return-void
 .end method
@@ -84,7 +84,7 @@
 
     iput-boolean v0, p0, Lcom/android/server/x$tsu;->mIsCharging:Z
 
-    iget-object p0, p0, Lcom/android/server/x$tsu;->hk:Lcom/android/server/x$kth;
+    iget-object p0, p0, Lcom/android/server/x$tsu;->rk:Lcom/android/server/x$kth;
 
     invoke-virtual {p0}, Lcom/android/server/x$kth;->reset()V
 
@@ -111,7 +111,7 @@
     :cond_0
     iput-boolean v1, p0, Lcom/android/server/x$tsu;->mIsCharging:Z
 
-    iget-object p0, p0, Lcom/android/server/x$tsu;->hk:Lcom/android/server/x$kth;
+    iget-object p0, p0, Lcom/android/server/x$tsu;->rk:Lcom/android/server/x$kth;
 
     invoke-virtual {p0}, Lcom/android/server/x$kth;->start()Lcom/android/server/x$kth;
 
@@ -140,7 +140,7 @@
 
     iget-wide v1, p0, Lcom/android/server/x$tsu;->mTime:J
 
-    iget-object v3, p0, Lcom/android/server/x$tsu;->hk:Lcom/android/server/x$kth;
+    iget-object v3, p0, Lcom/android/server/x$tsu;->rk:Lcom/android/server/x$kth;
 
     invoke-virtual {v3}, Lcom/android/server/x$kth;->stop()J
 
@@ -150,7 +150,7 @@
 
     iput-wide v1, p0, Lcom/android/server/x$tsu;->mTime:J
 
-    iget-object v1, p0, Lcom/android/server/x$tsu;->hk:Lcom/android/server/x$kth;
+    iget-object v1, p0, Lcom/android/server/x$tsu;->rk:Lcom/android/server/x$kth;
 
     invoke-virtual {v1}, Lcom/android/server/x$kth;->reset()V
 

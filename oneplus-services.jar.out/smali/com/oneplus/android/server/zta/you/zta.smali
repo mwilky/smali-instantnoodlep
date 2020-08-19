@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field private Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+.field private hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
 
 # direct methods
@@ -44,15 +44,15 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     return-void
 .end method
 
-.method private Hu()Z
+.method private Iu()Z
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     if-eqz p0, :cond_0
 
@@ -72,13 +72,13 @@
 .method public beginCpuStatistics()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->beginCpuStatistics()V
 
@@ -89,13 +89,13 @@
 .method public cancelBgDetectNotificationIfNeeded()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->cancelBgDetectNotificationIfNeeded()V
 
@@ -106,13 +106,13 @@
 .method public doCpuStatistics(Lcom/android/internal/os/ProcessCpuTracker$Stats;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/OnePlusHighPowerDetector;->doCpuStatistics(Lcom/android/internal/os/ProcessCpuTracker$Stats;)V
 
@@ -123,13 +123,13 @@
 .method public dumpBGCStats(Ljava/io/PrintWriter;Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->dumpBGCStats(Ljava/io/PrintWriter;Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;)V
 
@@ -140,13 +140,13 @@
 .method public dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->dumpDailyPowerFiles(Ljava/lang/String;Ljava/io/PrintWriter;)V
 
@@ -157,13 +157,13 @@
 .method public enableAggressive(ZLcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->enableAggressive(ZLcom/oneplus/android/server/am/highpower/IHighPowerDetector$RestrictType;)V
 
@@ -174,13 +174,13 @@
 .method public finishCpuStatistics()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->finishCpuStatistics()V
 
@@ -191,13 +191,13 @@
 .method public forceUpdateOnlineConfig()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->forceUpdateOnlineConfig()V
 
@@ -216,13 +216,13 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->getBgPowerHungryList()Ljava/util/List;
 
@@ -251,13 +251,13 @@
 .method public getResult(Ljava/io/PrintWriter;Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->getResult(Ljava/io/PrintWriter;Lcom/oneplus/android/server/am/highpower/IHighPowerDetector$BGCOrderType;)V
 
@@ -268,13 +268,13 @@
 .method public informBGCDailyReporting(Z)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/OnePlusHighPowerDetector;->informBGCDailyReporting(Z)V
 
@@ -285,13 +285,13 @@
 .method public informBatteryStatReset()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->informBatteryStatReset()V
 
@@ -302,13 +302,13 @@
 .method public informPkgRemoved(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->informPkgRemoved(Ljava/lang/String;I)V
 
@@ -339,7 +339,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
@@ -349,7 +349,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iput-object p1, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     :cond_0
     return-void
@@ -358,13 +358,13 @@
 .method public postProcessOfForceStop(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->postProcessOfForceStop(Ljava/lang/String;I)V
 
@@ -375,13 +375,13 @@
 .method public removeUidStats(I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/OnePlusHighPowerDetector;->removeUidStats(I)V
 
@@ -392,13 +392,13 @@
 .method public resetClean(Ljava/io/PrintWriter;)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/OnePlusHighPowerDetector;->resetClean(Ljava/io/PrintWriter;)V
 
@@ -409,13 +409,13 @@
 .method public shellCommand(Ljava/lang/String;I[Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/am/OnePlusHighPowerDetector;->shellCommand(Ljava/lang/String;I[Ljava/lang/String;)Z
 
@@ -432,13 +432,13 @@
 .method public startMonitor()V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0}, Lcom/android/server/am/OnePlusHighPowerDetector;->startMonitor()V
 
@@ -449,13 +449,13 @@
 .method public stopBgPowerHungryApp(Ljava/lang/String;I)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->stopBgPowerHungryApp(Ljava/lang/String;I)V
 
@@ -466,13 +466,13 @@
 .method public updateWidgetPackage(Ljava/lang/String;Z)V
     .locals 1
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/OnePlusHighPowerDetector;->updateWidgetPackage(Ljava/lang/String;Z)V
 
@@ -491,13 +491,13 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Hu()Z
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta/you/zta;->Iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->Yla:Lcom/android/server/am/OnePlusHighPowerDetector;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta/you/zta;->hma:Lcom/android/server/am/OnePlusHighPowerDetector;
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/OnePlusHighPowerDetector;->updateWidgetPackages(Ljava/util/HashSet;)V
 

@@ -22,13 +22,13 @@
 
 .field private static final TAG:Ljava/lang/String; = "OneplusPerfController"
 
-.field private static final XD:Ljava/lang/String; = "DoFrameInBG"
+.field private static final fE:Ljava/lang/String; = "DoFrameInBG"
 
 .field public static sEnable:Z = true
 
 
 # instance fields
-.field private WD:Landroid/os/HandlerThread;
+.field private eE:Landroid/os/HandlerThread;
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -53,7 +53,7 @@
 
     iput-object v0, p0, Lcom/android/server/am/o;->mHandler:Landroid/os/Handler;
 
-    iput-object v0, p0, Lcom/android/server/am/o;->WD:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/server/am/o;->eE:Landroid/os/HandlerThread;
 
     new-instance v0, Lcom/android/server/am/o$you;
 

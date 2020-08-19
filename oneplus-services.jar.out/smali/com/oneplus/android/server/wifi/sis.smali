@@ -17,21 +17,21 @@
 # static fields
 .field private static final DEBUG:Z = true
 
-.field private static Qwa:Lcom/oneplus/android/server/wifi/sis; = null
-
 .field private static final TAG:Ljava/lang/String; = "OnePlusQPowerManager"
+
+.field private static Zwa:Lcom/oneplus/android/server/wifi/sis;
 
 
 # instance fields
-.field private Kwa:Z
+.field private Twa:Z
 
-.field private Lwa:Z
+.field private Uwa:Z
 
-.field private Mwa:Z
+.field private Vwa:Z
 
-.field private Nwa:Z
+.field private Wwa:Z
 
-.field private final Owa:Ljava/util/ArrayList;
+.field private final Xwa:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -41,11 +41,9 @@
     .end annotation
 .end field
 
-.field Pwa:Ljava/lang/Runnable;
+.field Ywa:Ljava/lang/Runnable;
 
-.field private SH:Z
-
-.field private lC:Z
+.field private aI:Z
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -58,6 +56,8 @@
 .field private final mLock:Ljava/lang/Object;
 
 .field private mWifiManager:Landroid/net/wifi/WifiManager;
+
+.field private uC:Z
 
 
 # direct methods
@@ -74,13 +74,13 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->SH:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->aI:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Kwa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Twa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Lwa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Uwa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->lC:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->uC:Z
 
     const/4 v0, 0x0
 
@@ -88,21 +88,21 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Mwa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Vwa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Nwa:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Wwa:Z
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     new-instance v0, Lcom/oneplus/android/server/wifi/zta;
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/wifi/zta;-><init>(Lcom/oneplus/android/server/wifi/sis;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Pwa:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Ywa:Ljava/lang/Runnable;
 
     new-instance v0, Lcom/oneplus/android/server/wifi/you;
 
@@ -121,11 +121,11 @@
     monitor-enter v0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->SH:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->aI:Z
 
     if-eq p1, v1, :cond_1
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->SH:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->aI:Z
 
     if-nez p1, :cond_0
 
@@ -133,7 +133,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/wifi/sis;->Pwa:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/oneplus/android/server/wifi/sis;->Ywa:Ljava/lang/Runnable;
 
     invoke-virtual {p1, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -174,11 +174,11 @@
     monitor-enter v0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Lwa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Uwa:Z
 
     if-eq p1, v1, :cond_0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Lwa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Uwa:Z
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
@@ -213,11 +213,11 @@
     monitor-enter v0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Kwa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Twa:Z
 
     if-eq p1, v1, :cond_0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Kwa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Twa:Z
 
     invoke-static {}, Lcom/android/server/OnePlusUtil$zta;->getInstance()Lcom/android/server/OnePlusUtil$zta;
 
@@ -247,7 +247,7 @@
 .method public static getInstance()Lcom/oneplus/android/server/wifi/sis;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/android/server/wifi/sis;->Qwa:Lcom/oneplus/android/server/wifi/sis;
+    sget-object v0, Lcom/oneplus/android/server/wifi/sis;->Zwa:Lcom/oneplus/android/server/wifi/sis;
 
     if-nez v0, :cond_0
 
@@ -255,23 +255,23 @@
 
     invoke-direct {v0}, Lcom/oneplus/android/server/wifi/sis;-><init>()V
 
-    sput-object v0, Lcom/oneplus/android/server/wifi/sis;->Qwa:Lcom/oneplus/android/server/wifi/sis;
+    sput-object v0, Lcom/oneplus/android/server/wifi/sis;->Zwa:Lcom/oneplus/android/server/wifi/sis;
 
     :cond_0
-    sget-object v0, Lcom/oneplus/android/server/wifi/sis;->Qwa:Lcom/oneplus/android/server/wifi/sis;
+    sget-object v0, Lcom/oneplus/android/server/wifi/sis;->Zwa:Lcom/oneplus/android/server/wifi/sis;
 
     return-object v0
 .end method
 
-.method private jw()V
+.method private kw()V
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -311,14 +311,14 @@
 .method private ld(Ljava/lang/String;)V
     .locals 2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->SH:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->aI:Z
 
     if-nez v0, :cond_0
 
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Nwa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Wwa:Z
 
     if-nez v0, :cond_1
 
@@ -327,20 +327,20 @@
     goto :goto_0
 
     :cond_1
-    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->lC:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->uC:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Lwa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Uwa:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -360,7 +360,7 @@
     throw p0
 
     :cond_2
-    iget-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Kwa:Z
+    iget-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Twa:Z
 
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
@@ -371,7 +371,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Mwa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Vwa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -385,7 +385,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Nwa:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->Wwa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -393,7 +393,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->lC:Z
+    iget-boolean v1, p0, Lcom/oneplus/android/server/wifi/sis;->uC:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -405,7 +405,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Mwa:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/wifi/sis;->Vwa:Z
 
     if-eq p1, v0, :cond_3
 
@@ -413,7 +413,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/wifi/sis;->Pwa:Ljava/lang/Runnable;
+    iget-object p0, p0, Lcom/oneplus/android/server/wifi/sis;->Ywa:Ljava/lang/Runnable;
 
     invoke-virtual {p1, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -502,7 +502,7 @@
 
     move-result v3
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/wifi/sis;->Kwa:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/wifi/sis;->Twa:Z
 
     if-eq v3, v4, :cond_2
 
@@ -533,7 +533,7 @@
 
     move-result v3
 
-    iget-boolean v4, p0, Lcom/oneplus/android/server/wifi/sis;->Lwa:Z
+    iget-boolean v4, p0, Lcom/oneplus/android/server/wifi/sis;->Uwa:Z
 
     if-eq v3, v4, :cond_3
 
@@ -560,14 +560,14 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     monitor-enter v3
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    iget-object v4, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
@@ -584,7 +584,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -592,7 +592,7 @@
 
     if-nez v6, :cond_4
 
-    iget-object v6, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v6, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -617,7 +617,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/oneplus/android/server/wifi/sis;->Owa:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/oneplus/android/server/wifi/sis;->Xwa:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
@@ -680,7 +680,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/wifi/sis;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/android/server/wifi/sis;->Mwa:Z
+    iget-boolean p0, p0, Lcom/oneplus/android/server/wifi/sis;->Vwa:Z
 
     return p0
 .end method
@@ -688,7 +688,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/wifi/sis;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Nwa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Wwa:Z
 
     return p1
 .end method
@@ -696,7 +696,7 @@
 .method static synthetic tsu(Lcom/oneplus/android/server/wifi/sis;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/wifi/sis;->jw()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/wifi/sis;->kw()V
 
     return-void
 .end method
@@ -712,7 +712,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/wifi/sis;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->lC:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->uC:Z
 
     return p1
 .end method
@@ -752,7 +752,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/wifi/sis;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Mwa:Z
+    iput-boolean p1, p0, Lcom/oneplus/android/server/wifi/sis;->Vwa:Z
 
     return p1
 .end method
@@ -762,7 +762,7 @@
 .method public frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
     .locals 0
 
-    iget-boolean p2, p0, Lcom/oneplus/android/server/wifi/sis;->Lwa:Z
+    iget-boolean p2, p0, Lcom/oneplus/android/server/wifi/sis;->Uwa:Z
 
     if-eqz p2, :cond_0
 

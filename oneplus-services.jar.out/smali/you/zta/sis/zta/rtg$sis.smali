@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field protected IUa:I
+.field protected ARa:Lyou/zta/sis/zta/bio;
 
-.field protected JUa:Lyou/zta/sis/zta/you/zta;
+.field protected RUa:I
 
-.field protected rRa:Lyou/zta/sis/zta/bio;
+.field protected SUa:Lyou/zta/sis/zta/you/zta;
 
 .field final synthetic this$0:Lyou/zta/sis/zta/rtg;
 
@@ -32,11 +32,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Lyou/zta/sis/zta/rtg$sis;->IUa:I
+    iput p2, p0, Lyou/zta/sis/zta/rtg$sis;->RUa:I
 
-    iput-object p3, p0, Lyou/zta/sis/zta/rtg$sis;->JUa:Lyou/zta/sis/zta/you/zta;
+    iput-object p3, p0, Lyou/zta/sis/zta/rtg$sis;->SUa:Lyou/zta/sis/zta/you/zta;
 
-    iput-object p4, p0, Lyou/zta/sis/zta/rtg$sis;->rRa:Lyou/zta/sis/zta/bio;
+    iput-object p4, p0, Lyou/zta/sis/zta/rtg$sis;->ARa:Lyou/zta/sis/zta/bio;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/rtg$sis;->this$0:Lyou/zta/sis/zta/rtg;
 
-    iget v1, p0, Lyou/zta/sis/zta/rtg$sis;->IUa:I
+    iget v1, p0, Lyou/zta/sis/zta/rtg$sis;->RUa:I
 
     invoke-virtual {v0, v1}, Lyou/zta/sis/zta/rtg;->wa(I)Z
 
@@ -58,7 +58,7 @@
 
     iget-object v0, p0, Lyou/zta/sis/zta/rtg$sis;->this$0:Lyou/zta/sis/zta/rtg;
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->Nk()Lyou/zta/sis/zta/rtg;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/rtg;->Ok()Lyou/zta/sis/zta/rtg;
 
     move-result-object v0
 
@@ -69,17 +69,17 @@
     monitor-enter v0
 
     :try_start_0
-    iget v1, p0, Lyou/zta/sis/zta/rtg$sis;->IUa:I
+    iget v1, p0, Lyou/zta/sis/zta/rtg$sis;->RUa:I
 
-    iput v1, v0, Lyou/zta/sis/zta/rtg;->IUa:I
+    iput v1, v0, Lyou/zta/sis/zta/rtg;->RUa:I
 
-    iget-object v1, p0, Lyou/zta/sis/zta/rtg$sis;->JUa:Lyou/zta/sis/zta/you/zta;
+    iget-object v1, p0, Lyou/zta/sis/zta/rtg$sis;->SUa:Lyou/zta/sis/zta/you/zta;
 
-    iput-object v1, v0, Lyou/zta/sis/zta/rtg;->JUa:Lyou/zta/sis/zta/you/zta;
+    iput-object v1, v0, Lyou/zta/sis/zta/rtg;->SUa:Lyou/zta/sis/zta/you/zta;
 
-    iget-object p0, p0, Lyou/zta/sis/zta/rtg$sis;->rRa:Lyou/zta/sis/zta/bio;
+    iget-object p0, p0, Lyou/zta/sis/zta/rtg$sis;->ARa:Lyou/zta/sis/zta/bio;
 
-    iput-object p0, v0, Lyou/zta/sis/zta/rtg;->rRa:Lyou/zta/sis/zta/bio;
+    iput-object p0, v0, Lyou/zta/sis/zta/rtg;->ARa:Lyou/zta/sis/zta/bio;
 
     monitor-exit v0
 
@@ -116,7 +116,7 @@
 .method public va(I)Lyou/zta/sis/zta/rtg$sis;
     .locals 0
 
-    iput p1, p0, Lyou/zta/sis/zta/rtg$sis;->IUa:I
+    iput p1, p0, Lyou/zta/sis/zta/rtg$sis;->RUa:I
 
     return-object p0
 .end method
@@ -124,7 +124,7 @@
 .method public zta(Lyou/zta/sis/zta/bio;)Lyou/zta/sis/zta/rtg$sis;
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/sis/zta/rtg$sis;->rRa:Lyou/zta/sis/zta/bio;
+    iput-object p1, p0, Lyou/zta/sis/zta/rtg$sis;->ARa:Lyou/zta/sis/zta/bio;
 
     return-object p0
 .end method
@@ -132,7 +132,7 @@
 .method public zta(Lyou/zta/sis/zta/you/zta;)Lyou/zta/sis/zta/rtg$sis;
     .locals 0
 
-    iput-object p1, p0, Lyou/zta/sis/zta/rtg$sis;->JUa:Lyou/zta/sis/zta/you/zta;
+    iput-object p1, p0, Lyou/zta/sis/zta/rtg$sis;->SUa:Lyou/zta/sis/zta/you/zta;
 
     return-object p0
 .end method

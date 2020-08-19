@@ -26,37 +26,37 @@
 
 .field private static final VALUE_ON:Ljava/lang/String; = "1"
 
-.field private static final Xba:I = 0x1388
+.field private static final fca:I = 0x1388
 
-.field private static final Yba:I = 0x12c
+.field private static final gca:I = 0x12c
 
-.field private static final Zba:I = 0x1f4
+.field private static final hca:I = 0x1f4
 
-.field private static final _ba:I = 0x0
+.field private static final ica:I = 0x0
 
-.field private static final aca:I = 0x1
+.field private static final jca:I = 0x1
 
-.field private static final bca:I = 0x2
+.field private static final kca:I = 0x2
 
-.field private static final cca:Ljava/lang/String; = "one_hand_mode_status"
+.field private static final lca:Ljava/lang/String; = "one_hand_mode_status"
 
-.field private static final dca:J
+.field private static final mca:J
 
 
 # instance fields
-.field private Kba:Z
+.field private Tba:Z
 
-.field private Lba:Lcom/android/server/wm/hmo$you;
+.field private Uba:Lcom/android/server/wm/hmo$you;
 
-.field private Mba:I
+.field private Vba:I
 
-.field private Nba:Z
+.field private Wba:Z
 
-.field private Oba:I
+.field private Xba:I
 
-.field private Pba:J
+.field private Yba:J
 
-.field private final Qba:Ljava/util/function/Consumer;
+.field private final Zba:Ljava/util/function/Consumer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/function/Consumer<",
@@ -66,7 +66,7 @@
     .end annotation
 .end field
 
-.field private final Rba:Ljava/util/function/Consumer;
+.field private final _ba:Ljava/util/function/Consumer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/function/Consumer<",
@@ -76,7 +76,7 @@
     .end annotation
 .end field
 
-.field private final Sba:Ljava/util/function/Consumer;
+.field private final aca:Ljava/util/function/Consumer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/function/Consumer<",
@@ -86,7 +86,7 @@
     .end annotation
 .end field
 
-.field private final Tba:Ljava/util/function/Consumer;
+.field private final bca:Ljava/util/function/Consumer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/function/Consumer<",
@@ -96,7 +96,7 @@
     .end annotation
 .end field
 
-.field private final Uba:Ljava/util/function/Consumer;
+.field private final cca:Ljava/util/function/Consumer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/function/Consumer<",
@@ -106,7 +106,7 @@
     .end annotation
 .end field
 
-.field private final Vba:Ljava/util/function/Consumer;
+.field private final dca:Ljava/util/function/Consumer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/function/Consumer<",
@@ -116,7 +116,7 @@
     .end annotation
 .end field
 
-.field private final Wba:Lcom/android/internal/util/ToBooleanFunction;
+.field private final eca:Lcom/android/internal/util/ToBooleanFunction;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/android/internal/util/ToBooleanFunction<",
@@ -169,7 +169,7 @@
 
     int-to-long v0, v0
 
-    sput-wide v0, Lcom/android/server/wm/hmo;->dca:J
+    sput-wide v0, Lcom/android/server/wm/hmo;->mca:J
 
     return-void
 .end method
@@ -181,13 +181,13 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/wm/hmo;->Kba:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/hmo;->Tba:Z
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iput-object v1, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
-    iput v0, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iput v0, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -201,7 +201,7 @@
 
     iput v1, p0, Lcom/android/server/wm/hmo;->mScreenWidth:I
 
-    iput v0, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iput v0, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     new-instance v0, Landroid/view/SurfaceControl$Transaction;
 
@@ -211,7 +211,7 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/wm/hmo;->Pba:J
+    iput-wide v0, p0, Lcom/android/server/wm/hmo;->Yba:J
 
     new-instance v0, Ljava/lang/Object;
 
@@ -223,53 +223,53 @@
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/tsu;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Qba:Ljava/util/function/Consumer;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->Zba:Ljava/util/function/Consumer;
 
     new-instance v0, Lcom/android/server/wm/ssp;
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/ssp;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Rba:Ljava/util/function/Consumer;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->_ba:Ljava/util/function/Consumer;
 
     new-instance v0, Lcom/android/server/wm/sis;
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/sis;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Sba:Ljava/util/function/Consumer;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->aca:Ljava/util/function/Consumer;
 
     new-instance v0, Lcom/android/server/wm/cno;
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/cno;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Tba:Ljava/util/function/Consumer;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->bca:Ljava/util/function/Consumer;
 
     new-instance v0, Lcom/android/server/wm/zta;
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/zta;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Ljava/util/function/Consumer;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->cca:Ljava/util/function/Consumer;
 
     new-instance v0, Lcom/android/server/wm/rtg;
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/rtg;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Vba:Ljava/util/function/Consumer;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->dca:Ljava/util/function/Consumer;
 
     new-instance v0, Lcom/android/server/wm/you;
 
     invoke-direct {v0, p0}, Lcom/android/server/wm/you;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object v0, p0, Lcom/android/server/wm/hmo;->Wba:Lcom/android/internal/util/ToBooleanFunction;
+    iput-object v0, p0, Lcom/android/server/wm/hmo;->eca:Lcom/android/internal/util/ToBooleanFunction;
 
     return-void
 .end method
 
-.method private Pr()Z
+.method private Qr()Z
     .locals 3
 
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->Wba:Lcom/android/internal/util/ToBooleanFunction;
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->eca:Lcom/android/internal/util/ToBooleanFunction;
 
     const/4 v2, 0x1
 
@@ -314,7 +314,7 @@
     return p0
 .end method
 
-.method private Qr()V
+.method private Rr()V
     .locals 4
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
@@ -328,7 +328,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v1, 0x2
 
@@ -349,7 +349,7 @@
     return-void
 .end method
 
-.method private Rr()Landroid/graphics/Rect;
+.method private Sr()Landroid/graphics/Rect;
     .locals 3
 
     new-instance v0, Landroid/graphics/Rect;
@@ -365,7 +365,7 @@
     return-object v0
 .end method
 
-.method private Sr()Z
+.method private Tr()Z
     .locals 5
 
     iget-object p0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
@@ -440,18 +440,18 @@
     return p0
 .end method
 
-.method private Tr()Z
+.method private Ur()Z
     .locals 4
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/wm/hmo;->Pba:J
+    iget-wide v2, p0, Lcom/android/server/wm/hmo;->Yba:J
 
     sub-long/2addr v0, v2
 
-    sget-wide v2, Lcom/android/server/wm/hmo;->dca:J
+    sget-wide v2, Lcom/android/server/wm/hmo;->mca:J
 
     cmp-long p0, v0, v2
 
@@ -467,7 +467,7 @@
     return p0
 .end method
 
-.method private Ur()V
+.method private Vr()V
     .locals 2
 
     sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
@@ -483,32 +483,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Tba:Ljava/util/function/Consumer;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, p0, v1}, Lcom/android/server/wm/DisplayContent;->forAllWindows(Ljava/util/function/Consumer;Z)V
-
-    return-void
-.end method
-
-.method private Vr()V
-    .locals 2
-
-    sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "OpOneHandMode"
-
-    const-string v1, "notify viewRootImpl of windows that one-handed mode trigger failed"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
-
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Uba:Ljava/util/function/Consumer;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->bca:Ljava/util/function/Consumer;
 
     const/4 v1, 0x1
 
@@ -526,14 +501,14 @@
 
     const-string v0, "OpOneHandMode"
 
-    const-string v1, "notify viewRootImpl of windows that one-handed mode trigger success"
+    const-string v1, "notify viewRootImpl of windows that one-handed mode trigger failed"
 
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Vba:Ljava/util/function/Consumer;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->cca:Ljava/util/function/Consumer;
 
     const/4 v1, 0x1
 
@@ -543,6 +518,31 @@
 .end method
 
 .method private Xr()V
+    .locals 2
+
+    sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "OpOneHandMode"
+
+    const-string v1, "notify viewRootImpl of windows that one-handed mode trigger success"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->dca:Ljava/util/function/Consumer;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p0, v1}, Lcom/android/server/wm/DisplayContent;->forAllWindows(Ljava/util/function/Consumer;Z)V
+
+    return-void
+.end method
+
+.method private Yr()V
     .locals 2
 
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
@@ -556,13 +556,13 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v0, 0x3
 
@@ -571,7 +571,7 @@
     return-void
 .end method
 
-.method private Yr()V
+.method private Zr()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mLock:Ljava/lang/Object;
@@ -592,7 +592,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
-    iget-object v2, p0, Lcom/android/server/wm/hmo;->Sba:Ljava/util/function/Consumer;
+    iget-object v2, p0, Lcom/android/server/wm/hmo;->aca:Ljava/util/function/Consumer;
 
     const/4 v3, 0x1
 
@@ -600,7 +600,7 @@
 
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/server/wm/hmo;->Kba:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/hmo;->Tba:Z
 
     monitor-exit v0
 
@@ -616,7 +616,7 @@
     throw p0
 .end method
 
-.method private Zr()V
+.method private _r()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mWms:Lcom/android/server/wm/WindowManagerService;
@@ -626,11 +626,11 @@
     monitor-enter v0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Qr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Rr()V
 
     iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
-    iget-object v2, p0, Lcom/android/server/wm/hmo;->Qba:Ljava/util/function/Consumer;
+    iget-object v2, p0, Lcom/android/server/wm/hmo;->Zba:Ljava/util/function/Consumer;
 
     const/4 v3, 0x1
 
@@ -662,7 +662,15 @@
     throw p0
 .end method
 
-.method private _r()V
+.method static synthetic access$100()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
+
+    return v0
+.end method
+
+.method private as()V
     .locals 2
 
     sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
@@ -678,187 +686,12 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Rba:Ljava/util/function/Consumer;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->_ba:Ljava/util/function/Consumer;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, p0, v1}, Lcom/android/server/wm/DisplayContent;->forAllWindows(Ljava/util/function/Consumer;Z)V
 
-    return-void
-.end method
-
-.method static synthetic access$100()Z
-    .locals 1
-
-    sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
-
-    return v0
-.end method
-
-.method private as()V
-    .locals 3
-
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->mContext:Landroid/content/Context;
-
-    const-class v1, Landroid/hardware/display/DisplayManager;
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/hardware/display/DisplayManager;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplaySize:Landroid/graphics/Point;
-
-    invoke-virtual {v0, v1}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
-
-    new-instance v0, Landroid/util/DisplayMetrics;
-
-    invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
-
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->mWm:Landroid/view/WindowManager;
-
-    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/android/server/wm/hmo;->mDisplay:Landroid/view/Display;
-
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplay:Landroid/view/Display;
-
-    invoke-virtual {v1, v0}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
-
-    iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    iget v2, v0, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
-
-    move-result v1
-
-    iput v1, p0, Lcom/android/server/wm/hmo;->mScreenHeight:I
-
-    iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    invoke-static {v1, v0}, Ljava/lang/Math;->min(II)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/android/server/wm/hmo;->mScreenWidth:I
-
-    const-string v0, "ro.boot.project_name"
-
-    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "17819"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/16 v0, 0x4b
-
-    :goto_0
-    iput v0, p0, Lcom/android/server/wm/hmo;->mCornerRadius:I
-
-    goto :goto_1
-
-    :cond_0
-    const-string v1, "18865"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/16 v0, 0x50
-
-    goto :goto_0
-
-    :cond_1
-    const/high16 v0, 0x42200000    # 40.0f
-
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v1
-
-    iget v1, v1, Landroid/util/DisplayMetrics;->density:F
-
-    mul-float/2addr v1, v0
-
-    float-to-int v0, v1
-
-    goto :goto_0
-
-    :goto_1
-    sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
-
-    if-eqz v0, :cond_2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "updateDisplaySize(): mDisplaySize="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplaySize:Landroid/graphics/Point;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", mScreenHeight="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/wm/hmo;->mScreenHeight:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", mScreenWidth="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lcom/android/server/wm/hmo;->mScreenWidth:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", mCornerRadius="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget p0, p0, Lcom/android/server/wm/hmo;->mCornerRadius:I
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string v0, "OpOneHandMode"
-
-    invoke-static {v0, p0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_2
     return-void
 .end method
 
@@ -1026,6 +859,173 @@
 .method private cs()V
     .locals 3
 
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->mContext:Landroid/content/Context;
+
+    const-class v1, Landroid/hardware/display/DisplayManager;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/hardware/display/DisplayManager;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/hardware/display/DisplayManager;->getDisplay(I)Landroid/view/Display;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplaySize:Landroid/graphics/Point;
+
+    invoke-virtual {v0, v1}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
+
+    new-instance v0, Landroid/util/DisplayMetrics;
+
+    invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
+
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->mWm:Landroid/view/WindowManager;
+
+    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/android/server/wm/hmo;->mDisplay:Landroid/view/Display;
+
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplay:Landroid/view/Display;
+
+    invoke-virtual {v1, v0}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
+
+    iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iget v2, v0, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/server/wm/hmo;->mScreenHeight:I
+
+    iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    invoke-static {v1, v0}, Ljava/lang/Math;->min(II)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/server/wm/hmo;->mScreenWidth:I
+
+    const-string v0, "ro.boot.project_name"
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "17819"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/16 v0, 0x4b
+
+    :goto_0
+    iput v0, p0, Lcom/android/server/wm/hmo;->mCornerRadius:I
+
+    goto :goto_1
+
+    :cond_0
+    const-string v1, "18865"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/16 v0, 0x50
+
+    goto :goto_0
+
+    :cond_1
+    const/high16 v0, 0x42200000    # 40.0f
+
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/util/DisplayMetrics;->density:F
+
+    mul-float/2addr v1, v0
+
+    float-to-int v0, v1
+
+    goto :goto_0
+
+    :goto_1
+    sget-boolean v0, Lcom/android/server/wm/hmo;->DEBUG:Z
+
+    if-eqz v0, :cond_2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "updateDisplaySize(): mDisplaySize="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->mDisplaySize:Landroid/graphics/Point;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mScreenHeight="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/wm/hmo;->mScreenHeight:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mScreenWidth="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Lcom/android/server/wm/hmo;->mScreenWidth:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", mCornerRadius="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget p0, p0, Lcom/android/server/wm/hmo;->mCornerRadius:I
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "OpOneHandMode"
+
+    invoke-static {v0, p0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_2
+    return-void
+.end method
+
+.method private ds()V
+    .locals 3
+
     sget-boolean v0, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
     if-eqz v0, :cond_0
@@ -1037,7 +1037,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v0, 0x1
 
@@ -1055,7 +1055,7 @@
 .method private hc(I)Z
     .locals 3
 
-    iget p0, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iget p0, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     const/4 v0, 0x0
 
@@ -1343,15 +1343,15 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/wm/hmo;->Nba:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/hmo;->Wba:Z
 
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/server/wm/hmo;->Kba:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/hmo;->Tba:Z
 
-    iput v0, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iput v0, p0, Lcom/android/server/wm/hmo;->Xba:I
 
-    iput v1, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iput v1, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mWms:Lcom/android/server/wm/WindowManagerService;
 
@@ -1366,19 +1366,19 @@
 
     invoke-virtual {v0}, Lcom/android/server/wm/WallpaperController;->adjustWallpaperWindows()V
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Zr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->_r()V
 
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Xr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Yr()V
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/wm/hmo;->Pba:J
+    iput-wide v0, p0, Lcom/android/server/wm/hmo;->Yba:J
 
     sget-boolean p0, Lcom/android/server/wm/hmo;->DEBUG:Z
 
@@ -1426,7 +1426,7 @@
 .method static synthetic you(Lcom/android/server/wm/hmo;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iget p0, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     return p0
 .end method
@@ -1606,7 +1606,7 @@
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iget v2, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/server/wm/WindowFrames;->offsetFrames(II)V
 
@@ -1625,7 +1625,7 @@
 
     if-eqz v0, :cond_6
 
-    iget v1, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iget v1, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     const/4 v2, 0x0
 
@@ -1705,7 +1705,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v2, 0x2
 
@@ -1726,7 +1726,7 @@
     invoke-static {v1, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
@@ -1779,19 +1779,19 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/wm/hmo;->Nba:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/hmo;->Wba:Z
 
-    iput v0, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iput v0, p0, Lcom/android/server/wm/hmo;->Xba:I
 
-    iput v0, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iput v0, p0, Lcom/android/server/wm/hmo;->Vba:I
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Xr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Yr()V
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/wm/hmo;->Pba:J
+    iput-wide v0, p0, Lcom/android/server/wm/hmo;->Yba:J
 
     iget-object v0, p0, Lcom/android/server/wm/hmo;->mWms:Lcom/android/server/wm/WindowManagerService;
 
@@ -1806,9 +1806,9 @@
 
     invoke-virtual {v0}, Lcom/android/server/wm/WallpaperController;->adjustWallpaperWindows()V
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Yr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Zr()V
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Ur()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Vr()V
 
     monitor-exit v2
     :try_end_1
@@ -1866,17 +1866,17 @@
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/server/wm/hmo;->Kba:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/hmo;->Tba:Z
 
     if-nez v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Tr()Z
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Ur()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->cs()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->ds()V
 
     sget-boolean p0, Lcom/android/server/wm/hmo;->DEBUG:Z
 
@@ -1909,7 +1909,7 @@
 .method public getOffsetY()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iget p0, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     return p0
 .end method
@@ -1925,7 +1925,7 @@
 .method public getOneHandModeScreenSize()Landroid/graphics/Rect;
     .locals 4
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Rr()Landroid/graphics/Rect;
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Sr()Landroid/graphics/Rect;
 
     move-result-object v0
 
@@ -2012,7 +2012,7 @@
 .method public getStatus()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iget p0, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     return p0
 .end method
@@ -2050,7 +2050,7 @@
 
     invoke-direct {p1, p0}, Lcom/android/server/wm/hmo$you;-><init>(Lcom/android/server/wm/hmo;)V
 
-    iput-object p1, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iput-object p1, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     iget-object p1, p0, Lcom/android/server/wm/hmo;->mContext:Landroid/content/Context;
 
@@ -2100,7 +2100,7 @@
 
     iput p1, p0, Lcom/android/server/wm/hmo;->mScreenWidth:I
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->as()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->cs()V
 
     iget-object p1, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
@@ -2123,7 +2123,7 @@
 .method public isForceCancellingOneHandMode()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/hmo;->Kba:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/hmo;->Tba:Z
 
     return p0
 .end method
@@ -2139,7 +2139,7 @@
 
     if-eq v0, v1, :cond_1
 
-    iget-boolean p0, p0, Lcom/android/server/wm/hmo;->Kba:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/hmo;->Tba:Z
 
     if-eqz p0, :cond_0
 
@@ -2156,7 +2156,7 @@
 .method public isOneHandModeRunning()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/wm/hmo;->Nba:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/hmo;->Wba:Z
 
     return p0
 .end method
@@ -2191,7 +2191,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v2, 0x2
 
@@ -2250,7 +2250,7 @@
 
     invoke-direct {p0}, Lcom/android/server/wm/hmo;->hideInputMethod()V
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->_r()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->as()V
 
     goto :goto_0
 
@@ -2259,10 +2259,10 @@
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/hmo;->setStatus(I)Z
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Yr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Zr()V
 
     :goto_0
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Ur()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Vr()V
 
     monitor-exit v0
 
@@ -2299,9 +2299,9 @@
     invoke-static {v1, v2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v1, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
-    iget-object p0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object p0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     const/4 v2, 0x3
 
@@ -2338,7 +2338,7 @@
 
     if-nez p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->as()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->cs()V
 
     :cond_0
     return-void
@@ -2361,7 +2361,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->cs()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->ds()V
 
     :cond_0
     return-void
@@ -2402,7 +2402,7 @@
     invoke-static {v2, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Tr()Z
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Ur()Z
 
     move-result v2
 
@@ -2436,7 +2436,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    iget v3, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iget v3, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     const/4 v5, 0x2
 
@@ -2474,21 +2474,21 @@
 
     invoke-static {v3, v5, v7, v8}, Landroid/provider/Settings$Global;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Wr()V
-
-    iput-boolean v4, p0, Lcom/android/server/wm/hmo;->Nba:Z
-
-    iput v4, p0, Lcom/android/server/wm/hmo;->Oba:I
-
     invoke-direct {p0}, Lcom/android/server/wm/hmo;->Xr()V
+
+    iput-boolean v4, p0, Lcom/android/server/wm/hmo;->Wba:Z
+
+    iput v4, p0, Lcom/android/server/wm/hmo;->Xba:I
+
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Yr()V
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
 
-    iput-wide v3, p0, Lcom/android/server/wm/hmo;->Pba:J
+    iput-wide v3, p0, Lcom/android/server/wm/hmo;->Yba:J
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Zr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->_r()V
 
     monitor-exit v2
     :try_end_2
@@ -2614,7 +2614,7 @@
     if-ne p1, v3, :cond_1
 
     :try_start_1
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Vr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Wr()V
 
     monitor-exit v2
 
@@ -2722,7 +2722,7 @@
     invoke-static {v2, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Tr()Z
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Ur()Z
 
     move-result v2
 
@@ -2756,7 +2756,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     :try_start_2
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Sr()Z
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Tr()Z
 
     move-result v3
 
@@ -2783,13 +2783,13 @@
 
     :cond_4
     :try_start_3
-    iget v3, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iget v3, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     const/4 v5, 0x1
 
     if-nez v3, :cond_5
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Pr()Z
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Qr()Z
 
     move-result v3
 
@@ -2825,9 +2825,9 @@
 
     invoke-static {v3, v4, v6, v7}, Landroid/provider/Settings$Global;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Wr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Xr()V
 
-    iput-boolean v5, p0, Lcom/android/server/wm/hmo;->Nba:Z
+    iput-boolean v5, p0, Lcom/android/server/wm/hmo;->Wba:Z
 
     iget v3, p0, Lcom/android/server/wm/hmo;->mScreenHeight:I
 
@@ -2839,13 +2839,13 @@
 
     float-to-int v3, v3
 
-    iput v3, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iput v3, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
 
-    iput-wide v3, p0, Lcom/android/server/wm/hmo;->Pba:J
+    iput-wide v3, p0, Lcom/android/server/wm/hmo;->Yba:J
 
     iget-object v3, p0, Lcom/android/server/wm/hmo;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
@@ -2853,7 +2853,7 @@
 
     invoke-virtual {v3}, Lcom/android/server/wm/WallpaperController;->adjustWallpaperWindows()V
 
-    invoke-direct {p0}, Lcom/android/server/wm/hmo;->Zr()V
+    invoke-direct {p0}, Lcom/android/server/wm/hmo;->_r()V
 
     monitor-exit v2
     :try_end_3
@@ -3043,7 +3043,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     new-instance v1, Lcom/android/server/wm/ear;
 
@@ -3109,7 +3109,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v3, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iget v3, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     invoke-direct {p0, v3}, Lcom/android/server/wm/hmo;->statusToString(I)Ljava/lang/String;
 
@@ -3134,7 +3134,7 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
-    iput p1, p0, Lcom/android/server/wm/hmo;->Mba:I
+    iput p1, p0, Lcom/android/server/wm/hmo;->Vba:I
 
     return v2
 
@@ -3246,7 +3246,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     new-instance v1, Lcom/android/server/wm/ire;
 
@@ -3270,7 +3270,7 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/server/wm/hmo;->Nba:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/hmo;->Wba:Z
 
     if-nez v0, :cond_2
 
@@ -3303,7 +3303,7 @@
 
     iput-boolean v0, p1, Lcom/android/server/wm/WindowState;->mIsOneHandedModeRunning:Z
 
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     new-instance v1, Lcom/android/server/wm/oxb;
 
@@ -3321,7 +3321,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-boolean v0, p0, Lcom/android/server/wm/hmo;->Nba:Z
+    iget-boolean v0, p0, Lcom/android/server/wm/hmo;->Wba:Z
 
     if-eqz v0, :cond_3
 
@@ -3333,7 +3333,7 @@
 
     iput-boolean v0, p1, Lcom/android/server/wm/WindowState;->mIsOneHandedModeRunning:Z
 
-    iget-object v0, p0, Lcom/android/server/wm/hmo;->Lba:Lcom/android/server/wm/hmo$you;
+    iget-object v0, p0, Lcom/android/server/wm/hmo;->Uba:Lcom/android/server/wm/hmo$you;
 
     new-instance v1, Lcom/android/server/wm/cjf;
 
@@ -3482,7 +3482,7 @@
 
     if-eqz v0, :cond_2
 
-    iget v1, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iget v1, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     if-nez v1, :cond_1
 
@@ -3515,7 +3515,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Lcom/android/server/wm/hmo;->Oba:I
+    iget v3, p0, Lcom/android/server/wm/hmo;->Xba:I
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Rect;->offset(II)V
 

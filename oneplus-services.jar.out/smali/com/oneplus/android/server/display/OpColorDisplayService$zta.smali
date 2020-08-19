@@ -91,7 +91,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->kf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->lf()V
 
     goto/16 :goto_2
 
@@ -113,7 +113,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->yf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->zf()V
 
     goto/16 :goto_2
 
@@ -124,7 +124,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->xf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->yf()V
 
     goto/16 :goto_2
 
@@ -219,7 +219,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->uf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->vf()V
 
     goto/16 :goto_2
 
@@ -230,7 +230,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->rf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->sf()V
 
     goto/16 :goto_2
 
@@ -249,7 +249,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->sf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->tf()V
 
     goto/16 :goto_2
 
@@ -272,7 +272,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->qf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->rf()V
 
     goto/16 :goto_2
 
@@ -397,7 +397,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->vf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->wf()V
 
     goto :goto_2
 
@@ -416,7 +416,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->tf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->uf()V
 
     goto :goto_2
 

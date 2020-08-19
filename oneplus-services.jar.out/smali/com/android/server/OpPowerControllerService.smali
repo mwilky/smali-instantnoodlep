@@ -1921,7 +1921,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->Vi:Z
+    iput-boolean v5, v7, Lcom/android/server/OpPowerControllerService$sis;->dj:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mNetworkManagementService:Landroid/os/INetworkManagementService;
 
@@ -2046,7 +2046,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->Vi:Z
+    iget-boolean v7, v7, Lcom/android/server/OpPowerControllerService$sis;->dj:Z
 
     if-eqz v7, :cond_c
 
@@ -2058,7 +2058,7 @@
 
     check-cast v7, Lcom/android/server/OpPowerControllerService$sis;
 
-    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->Vi:Z
+    iput-boolean v6, v7, Lcom/android/server/OpPowerControllerService$sis;->dj:Z
 
     iget-object v7, p0, Lcom/android/server/OpPowerControllerService;->mContext:Landroid/content/Context;
 
@@ -2646,7 +2646,7 @@
 
     invoke-static {v2, v0}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->fza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     const/4 v3, 0x1
 
@@ -2687,7 +2687,7 @@
     goto :goto_3
 
     :cond_4
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->eza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     if-ne p1, v0, :cond_5
 
@@ -7585,11 +7585,11 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Lcom/android/server/j;->Rg()Z
+    invoke-virtual {v2}, Lcom/android/server/j;->Sg()Z
 
     move-result p0
 
-    invoke-virtual {v4}, Lcom/android/server/j;->Rg()Z
+    invoke-virtual {v4}, Lcom/android/server/j;->Sg()Z
 
     move-result v1
 

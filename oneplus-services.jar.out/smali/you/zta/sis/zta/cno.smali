@@ -28,13 +28,27 @@
 
 
 # virtual methods
-.method public abstract Zk()Lyou/zta/sis/zta/cno;
+.method public abstract _k()Lyou/zta/sis/zta/cno;
 .end method
 
-.method public abstract _k()Ljava/lang/String;
+.method public abstract al()Ljava/lang/String;
 .end method
 
-.method public al()Z
+.method public bitLength()I
+    .locals 0
+
+    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bl()Z
     .locals 1
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->bitLength()I
@@ -54,24 +68,10 @@
     return v0
 .end method
 
-.method public bitLength()I
-    .locals 0
-
-    invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
-
-    move-result p0
-
-    return p0
+.method public abstract cl()Lyou/zta/sis/zta/cno;
 .end method
 
-.method public abstract bl()Lyou/zta/sis/zta/cno;
-.end method
-
-.method public cl()Z
+.method public dl()Z
     .locals 1
 
     invoke-virtual {p0}, Lyou/zta/sis/zta/cno;->toBigInteger()Ljava/math/BigInteger;
