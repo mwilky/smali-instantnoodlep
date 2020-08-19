@@ -255,15 +255,15 @@
     :cond_7
     iget-boolean p0, p1, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->mIsGamingModeNotification:Z
 
+    iget-boolean v10, p2, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->mIsGamingModeNotification:Z
+
+    if-eq p0, v10, :cond_9
+
     if-eqz p0, :cond_8
 
     return v12
 
     :cond_8
-    iget-boolean p0, p2, Lcom/android/systemui/statusbar/notification/collection/NotificationEntry;->mIsGamingModeNotification:Z
-
-    if-eqz p0, :cond_9
-
     return v9
 
     :cond_9

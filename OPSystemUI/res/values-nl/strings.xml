@@ -1172,6 +1172,7 @@ Je bent ook verbonden met een VPN, waarmee je netwerkactiviteit kan worden gecon
     <string name="op_notification_channel_summary_low">Minder belangrijke meldingen zonder geluid of trillingen.</string>
     <string name="op_notification_section_header_gentle">Overige meldingen</string>
     <string name="op_notification_silence_title">Andere</string>
+    <string name="op_qs_dark_mode_tile_label">Donkere modus</string>
     <string name="op_quick_settings_night_display_label">Nachtmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nachtmodus uit, tap om in te schakelen</string>
     <string name="op_quick_settings_night_display_summary_on">Nachtmodus aan, tap om uit te schakelen</string>

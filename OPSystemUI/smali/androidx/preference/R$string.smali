@@ -10,6 +10,6 @@
 
 .field public static final not_set:I = 0x7f12046e
 
-.field public static final preference_copied:I = 0x7f120541
+.field public static final preference_copied:I = 0x7f120542
 
-.field public static final summary_collapsed_preference_list:I = 0x7f1206a6
+.field public static final summary_collapsed_preference_list:I = 0x7f1206a7

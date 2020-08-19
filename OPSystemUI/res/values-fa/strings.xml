@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">اعلان‌های کم‌اهمیت‌تر بدون صدا یا لرزش خواهد بود.</string>
     <string name="op_notification_section_header_gentle">سایر اعلان‌ها</string>
     <string name="op_notification_silence_title">سایر موارد</string>
+    <string name="op_qs_dark_mode_tile_label">حالت تاریک</string>
     <string name="op_quick_settings_night_display_label">حالت شب</string>
     <string name="op_quick_settings_night_display_summary_off">حالت شب خاموش است؛ برای روشن کردن، ضربه بزنید</string>
     <string name="op_quick_settings_night_display_summary_on">حالت شب روشن است؛ برای خاموش کردن، ضربه بزنید</string>

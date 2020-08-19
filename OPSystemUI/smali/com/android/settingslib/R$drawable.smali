@@ -40,4 +40,4 @@
 
 .field public static final op_ic_wifi_signal_4:I = 0x7f0809b1
 
-.field public static final stat_sys_wifi_signal_4:I = 0x7f080d18
+.field public static final stat_sys_wifi_signal_4:I = 0x7f080d19

@@ -150,6 +150,7 @@
     <string name="op_notification_channel_summary_low">எந்த ஒலி அல்லது அதிர்வு இல்லாத குறைந்த முக்கியத்துவம் கொண்ட அறிவிப்புகள்.</string>
     <string name="op_notification_section_header_gentle">மற்ற அறிவிப்புகள்</string>
     <string name="op_notification_silence_title">மற்றவை</string>
+    <string name="op_qs_dark_mode_tile_label">அடர் முறை</string>
     <string name="op_quick_settings_night_display_label">இரவு பயன்முறை</string>
     <string name="op_quick_settings_night_display_summary_off">இரவு பயன்முறை ஆஃப் ஆக உள்ளது, ஆன் செய்ய டேப் செய்யவும்</string>
     <string name="op_quick_settings_night_display_summary_on">இரவு பயன்முறை ஆன் ஆக உள்ளது, ஆஃப் செய்ய டேப் செய்யவும்</string>

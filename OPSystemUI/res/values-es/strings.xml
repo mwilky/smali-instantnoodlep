@@ -1172,6 +1172,7 @@ También estás conectado a una red VPN, que puede supervisar tu actividad de re
     <string name="op_notification_channel_summary_low">Notificaciones menos importantes sin sonido ni vibración.</string>
     <string name="op_notification_section_header_gentle">Otras notificaciones</string>
     <string name="op_notification_silence_title">Otro</string>
+    <string name="op_qs_dark_mode_tile_label">Modo oscuro</string>
     <string name="op_quick_settings_night_display_label">Modo noche</string>
     <string name="op_quick_settings_night_display_summary_off">Modo nocturno desactivado. Tocar para activar</string>
     <string name="op_quick_settings_night_display_summary_on">Modo nocturno activado. Tocar para desactivar</string>

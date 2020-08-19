@@ -1172,6 +1172,7 @@ Olet myös yhteydessä VPN:ään, joka voi valvoa toimintaasi verkossa."</string
     <string name="op_notification_channel_summary_low">Vähemmän tärkeät ilmoitukset ilman ääntä tai värinää.</string>
     <string name="op_notification_section_header_gentle">Muut ilmoitukset</string>
     <string name="op_notification_silence_title">Muut</string>
+    <string name="op_qs_dark_mode_tile_label">Pimeä tila</string>
     <string name="op_quick_settings_night_display_label">Yötila</string>
     <string name="op_quick_settings_night_display_summary_off">Yötila on pois käytöstä, ota käyttöön napauttamalla</string>
     <string name="op_quick_settings_night_display_summary_on">Yötila on käytössä, poista käytöstä napauttamalla</string>

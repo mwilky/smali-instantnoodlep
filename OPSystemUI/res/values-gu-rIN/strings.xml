@@ -150,6 +150,7 @@
     <string name="op_notification_channel_summary_low">ઓછી મહત્વપૂર્ણ સૂચનાઓ કોઈપણ ધ્વનિ અથવા વાઇબ્રેશન વિના.</string>
     <string name="op_notification_section_header_gentle">અન્ય સૂચનાઓ</string>
     <string name="op_notification_silence_title">અન્ય</string>
+    <string name="op_qs_dark_mode_tile_label">અંધકારમય પ્રકારમાં છે</string>
     <string name="op_quick_settings_night_display_label">રાત્રી મોડ</string>
     <string name="op_quick_settings_night_display_summary_off">રાત્રિ મોડ ચાલુ છે, ચાલુ કરવા માટે ટેપ કરો</string>
     <string name="op_quick_settings_night_display_summary_on">રાત્રિ મોડ ચાલુ છે, બંધ કરવા માટે ટેપ કરો</string>

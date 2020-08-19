@@ -1118,6 +1118,7 @@
     <string name="op_notification_channel_summary_low">不會發出提示音或震動，協助你保持專注</string>
     <string name="op_notification_section_header_gentle">次要通知</string>
     <string name="op_notification_silence_title">次要</string>
+    <string name="op_qs_dark_mode_tile_label">暗色模式</string>
     <string name="op_quick_settings_night_display_label">夜間模式</string>
     <string name="op_reverse_charge_notification_btn">斷開充電</string>
     <string name="op_reverse_charge_notification_discharging">正在給其他裝置充電</string>

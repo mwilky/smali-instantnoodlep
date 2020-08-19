@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">बिना किसी ध्वनि या कंपन के कम महत्वपूर्ण वाले नोटिफ़िकेशंस</string>
     <string name="op_notification_section_header_gentle">अन्य नोटिफिकेशंस</string>
     <string name="op_notification_silence_title">अन्य</string>
+    <string name="op_qs_dark_mode_tile_label">डार्क मोड</string>
     <string name="op_quick_settings_night_display_label">रात्रि मोड</string>
     <string name="op_quick_settings_night_display_summary_off">रात्रि मोड ऑफ़ है, ऑन करने के लिए टैप करें</string>
     <string name="op_quick_settings_night_display_summary_on">रात्रि मोड ऑन है, ऑफ़ करने के लिए टैप करें</string>

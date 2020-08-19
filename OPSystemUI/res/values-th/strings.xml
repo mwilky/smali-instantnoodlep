@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">การแจ้งเตือนที่สำคัญน้อยกว่าไม่มีเสียงหรือการสั่น</string>
     <string name="op_notification_section_header_gentle">การแจ้งเตือนอื่นๆ</string>
     <string name="op_notification_silence_title">อื่นๆ</string>
+    <string name="op_qs_dark_mode_tile_label">โหมดมืด</string>
     <string name="op_quick_settings_night_display_label">โหมดกลางคืน</string>
     <string name="op_quick_settings_night_display_summary_off">โหมดกลางคืนปิด แตะเพื่อเปิด</string>
     <string name="op_quick_settings_night_display_summary_on">โหมดกลางคืนเปิด แตะเพื่อปิด</string>

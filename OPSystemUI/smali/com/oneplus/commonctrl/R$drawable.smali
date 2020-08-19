@@ -130,6 +130,6 @@
 
 .field public static final op_minor_c_b_animation:I = 0x7f0809c6
 
-.field public static final op_rectangle_floating_action_button:I = 0x7f0809fe
+.field public static final op_rectangle_floating_action_button:I = 0x7f0809ff
 
-.field public static final op_switch_floating_action_button:I = 0x7f080a1a
+.field public static final op_switch_floating_action_button:I = 0x7f080a1b

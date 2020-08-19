@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">Менш важливі сповіщення без звуку й вібрації</string>
     <string name="op_notification_section_header_gentle">Інші сповіщення</string>
     <string name="op_notification_silence_title">Інше</string>
+    <string name="op_qs_dark_mode_tile_label">Темний режим</string>
     <string name="op_quick_settings_night_display_label">Нічний режим</string>
     <string name="op_quick_settings_night_display_summary_off">Нічний режим вимкнено. Торкніться, щоб увімкнути</string>
     <string name="op_quick_settings_night_display_summary_on">Нічний режим увімкнено. Торкніться, щоб вимкнути</string>

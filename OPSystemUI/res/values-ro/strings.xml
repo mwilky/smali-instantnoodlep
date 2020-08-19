@@ -1172,6 +1172,7 @@ De asemenea, sunteți conectat(ă) la o rețea VPN care vă poate monitoriza act
     <string name="op_notification_channel_summary_low">Notificările mai puțin importante fără sunet sau vibrații.</string>
     <string name="op_notification_section_header_gentle">Alte notificări</string>
     <string name="op_notification_silence_title">Altele</string>
+    <string name="op_qs_dark_mode_tile_label">Mod întunecat</string>
     <string name="op_quick_settings_night_display_label">Mod noapte</string>
     <string name="op_quick_settings_night_display_summary_off">Modul noapte este dezactivat, atingeți pentru a îl activa</string>
     <string name="op_quick_settings_night_display_summary_on">Modul noapte este activat, atingeți pentru a îl dezactiva</string>

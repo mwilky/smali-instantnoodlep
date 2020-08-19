@@ -1172,6 +1172,7 @@ Nakakonekta ka rin sa isang VPN, na may kakayahang subaybayan ang iyong aktibida
     <string name="op_notification_channel_summary_low">Mga hindi gaanong mahalagang notification na walang anumang tunog o pag-vibrate.</string>
     <string name="op_notification_section_header_gentle">Iba pang notification</string>
     <string name="op_notification_silence_title">Iba pa</string>
+    <string name="op_qs_dark_mode_tile_label">Dark mode</string>
     <string name="op_quick_settings_night_display_label">Mode sa gabi</string>
     <string name="op_quick_settings_night_display_summary_off">Ang Mode sa Gabi ay hindi gumagana, i-tap upang buksan ito</string>
     <string name="op_quick_settings_night_display_summary_on">Ang Mode sa Gabi ay gumagana, i-tap upang patayin ito</string>

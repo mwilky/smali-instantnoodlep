@@ -1172,6 +1172,7 @@ Anda juga tersambung ke VPN, yang dapat memantau aktivitas jaringan."</string>
     <string name="op_notification_channel_summary_low">Notifikasi yang kurang penting tanpa suara atau getar.</string>
     <string name="op_notification_section_header_gentle">Notifikasi lainnya</string>
     <string name="op_notification_silence_title">Lainnya</string>
+    <string name="op_qs_dark_mode_tile_label">Mode gelap</string>
     <string name="op_quick_settings_night_display_label">Mode malam</string>
     <string name="op_quick_settings_night_display_summary_off">Mode malam nonaktif, ketuk untuk mengaktifkan</string>
     <string name="op_quick_settings_night_display_summary_on">Mode malam aktif, ketuk untuk menonaktifkan</string>

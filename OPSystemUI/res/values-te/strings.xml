@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">అంతగా ప్రాముఖ్యత లేని నోటిఫికేషన్‌లను ధ్వని లేదా వైబ్రేషన్ లేకుండా.</string>
     <string name="op_notification_section_header_gentle">ఇతర నోటిఫికేషన్‌లు</string>
     <string name="op_notification_silence_title">ఇతరం</string>
+    <string name="op_qs_dark_mode_tile_label">డార్క్ మోడ్</string>
     <string name="op_quick_settings_night_display_label">నైట్ మోడ్</string>
     <string name="op_quick_settings_night_display_summary_off">నైట్ మోడ్ ఆఫ్ చేయబడింది, ఆన్ చేయడం కొరకు తట్టండి</string>
     <string name="op_quick_settings_night_display_summary_on">నైట్ మోడ్ ఆన్ చేయబడింది, ఆఫ్ చేయడం కొరకు తట్టండి</string>

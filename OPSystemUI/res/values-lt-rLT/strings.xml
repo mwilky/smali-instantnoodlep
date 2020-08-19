@@ -150,6 +150,7 @@ Jei norite užsisakyti mobiliojo interneto prieigos taško paslaugą, apsilankyk
     <string name="op_notification_channel_summary_low">Mažiau svarbūs pranešimai be jokio garso ar vibracijos.</string>
     <string name="op_notification_section_header_gentle">Kiti pranešimai</string>
     <string name="op_notification_silence_title">Kita</string>
+    <string name="op_qs_dark_mode_tile_label">Tamsusis režimas</string>
     <string name="op_quick_settings_night_display_label">Nakties režimas</string>
     <string name="op_quick_settings_night_display_summary_off">Nakties režimas išjungtas, bakstelėkite, kad įjungtumėte</string>
     <string name="op_quick_settings_night_display_summary_on">Nakties režimas įjungtas, bakstelėkite, kad išjungtumėte</string>

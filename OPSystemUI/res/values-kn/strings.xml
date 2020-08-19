@@ -1170,6 +1170,7 @@
     <string name="op_notification_channel_summary_low">ಯಾವುದೇ ಶಬ್ಧ ಅಥವಾ ಕಂಪನವಿಲ್ಲದೆಯೇ ಕಡಿಮೆ ಪ್ರಾಮುಖ್ಯತೆಯುಳ್ಳ ಅಧಿಸೂಚನೆಗಳು.</string>
     <string name="op_notification_section_header_gentle">ಇತರೆ ಅಧಿಸೂಚನೆಗಳು</string>
     <string name="op_notification_silence_title">ಇತರೆ</string>
+    <string name="op_qs_dark_mode_tile_label">ಡಾರ್ಕ್ ಮೋಡ್</string>
     <string name="op_quick_settings_night_display_label">ನೈಟ್ ಮೋಡ್</string>
     <string name="op_quick_settings_night_display_summary_off">ನೈಟ್ ಮೋಡ್ ಆಫ್ ಆಗಿದೆ. ಟರ್ನ್ ಆನ್ ಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
     <string name="op_quick_settings_night_display_summary_on">ನೈಟ್ ಮೋಡ್ ಆನ್ ಆಗಿದೆ. ಟರ್ನ್ ಆಫ್ ಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>

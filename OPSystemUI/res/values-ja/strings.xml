@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">重要性の低い通知は、サウンドまたはバイブを使用しません。</string>
     <string name="op_notification_section_header_gentle">その他の通知</string>
     <string name="op_notification_silence_title">その他</string>
+    <string name="op_qs_dark_mode_tile_label">ダークモード</string>
     <string name="op_quick_settings_night_display_label">おやすみモード</string>
     <string name="op_quick_settings_night_display_summary_off">おやすみモードがオフになっています。タップしてオンにします。</string>
     <string name="op_quick_settings_night_display_summary_on">おやすみモードがオンになっています。タップしてオフにします。</string>

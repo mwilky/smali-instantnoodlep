@@ -1172,6 +1172,7 @@ Du är även ansluten till ett VPN som kan övervaka nätverksaktivitet."</strin
     <string name="op_notification_channel_summary_low">Mindre viktiga aviseringar utan ljud eller vibration.</string>
     <string name="op_notification_section_header_gentle">Övriga aviseringar</string>
     <string name="op_notification_silence_title">Annan</string>
+    <string name="op_qs_dark_mode_tile_label">Mörkt läge</string>
     <string name="op_quick_settings_night_display_label">Nattläge</string>
     <string name="op_quick_settings_night_display_summary_off">Nattläge är av. Tryck för att sätta på</string>
     <string name="op_quick_settings_night_display_summary_on">Nattläge är på. Tryck för att stänga av</string>

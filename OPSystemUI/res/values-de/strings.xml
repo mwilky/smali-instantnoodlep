@@ -1170,6 +1170,7 @@ Außerdem bist du mit einem VPN verbunden, das deine Netzwerkaktivitäten erfass
     <string name="op_notification_channel_summary_low">Weniger wichtige Benachrichtigungen ohne Ton oder Vibration.</string>
     <string name="op_notification_section_header_gentle">Sonstige Benachrichtigungen</string>
     <string name="op_notification_silence_title">Sonstige</string>
+    <string name="op_qs_dark_mode_tile_label">Modus Dunkel</string>
     <string name="op_quick_settings_night_display_label">Nachtmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nacht-Modus deaktiviert, zum Aktivieren tippen</string>
     <string name="op_quick_settings_night_display_summary_on">Nacht-Modus aktiviert, zum Deaktivieren tippen</string>

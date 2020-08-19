@@ -1172,6 +1172,7 @@ YИсто така, поврзани сте на VPN којашто може д�
     <string name="op_notification_channel_summary_low">Помалку важните известувања без звук или вибрација.</string>
     <string name="op_notification_section_header_gentle">Други известувања</string>
     <string name="op_notification_silence_title">Друго</string>
+    <string name="op_qs_dark_mode_tile_label">Темен режим</string>
     <string name="op_quick_settings_night_display_label">Вечерен режим</string>
     <string name="op_quick_settings_night_display_summary_off">Исклучен е вечерниот режим, допрете за да се вклучи</string>
     <string name="op_quick_settings_night_display_summary_on">Вклучен е вечерниот режим, допрете за да се исклучи</string>

@@ -150,6 +150,7 @@
     <string name="op_notification_channel_summary_low">কম গুরুত্বপূর্ণ বিজ্ঞপ্তিগুলি কোনও শব্দ বা কম্পন ছাড়া।</string>
     <string name="op_notification_section_header_gentle">অন্যান্য বিজ্ঞপ্তি</string>
     <string name="op_notification_silence_title">অন্যান্য</string>
+    <string name="op_qs_dark_mode_tile_label">অন্ধকার মোড</string>
     <string name="op_quick_settings_night_display_label">রাত্রি মোড</string>
     <string name="op_quick_settings_night_display_summary_off">নাইট মোড বন্ধ, চালু করতে আলতো চাপুন</string>
     <string name="op_quick_settings_night_display_summary_on">নাইট মোড চালু, বন্ধ করতে আলতো চাপুন</string>

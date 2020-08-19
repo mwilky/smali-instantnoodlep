@@ -1172,6 +1172,7 @@ Du er også tilkoblet en VPN som kan overvåke nettverksaktiviteten din."</strin
     <string name="op_notification_channel_summary_low">Mindre viktige varsler uten noe lyd eller vibrasjon.</string>
     <string name="op_notification_section_header_gentle">Andre varsler</string>
     <string name="op_notification_silence_title">Annet</string>
+    <string name="op_qs_dark_mode_tile_label">Mørk modus</string>
     <string name="op_quick_settings_night_display_label">Nattmodus</string>
     <string name="op_quick_settings_night_display_summary_off">Nattmodus er av, trykk for å slå på</string>
     <string name="op_quick_settings_night_display_summary_on">Nattmodus er på, trykk for å slå av</string>
