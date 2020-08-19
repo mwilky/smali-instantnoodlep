@@ -4,6 +4,10 @@
 
 
 # static fields
+.field private static final Eoa:I = 0x0
+
+.field static final Foa:Ljava/lang/String; = "persist.sys.sf.color_mode"
+
 .field private static final OP_DISPLAY_HALSRGB_COLOR_MODE:I = 0x12
 
 .field private static final OP_DISPLAY_P3_COLOR_MODE:I = 0x10
@@ -21,10 +25,6 @@
 .field private static final SURFACE_FLINGER_TRANSACTION_DISPLAY_COLOR:I = 0x3ff
 
 .field private static final TAG:Ljava/lang/String; = "OpColorModeManager"
-
-.field private static final voa:I = 0x0
-
-.field static final woa:Ljava/lang/String; = "persist.sys.sf.color_mode"
 
 
 # instance fields
@@ -44,7 +44,7 @@
     return-void
 .end method
 
-.method private Xu()V
+.method private Yu()V
     .locals 1
 
     const/4 p0, 0x0
@@ -307,7 +307,7 @@
     goto :goto_0
 
     :pswitch_1
-    invoke-direct {p0}, Lcom/oneplus/android/server/display/OpColorModeManager;->Xu()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/display/OpColorModeManager;->Yu()V
 
     :goto_0
     invoke-static {p1, p2}, Lcom/oneplus/android/server/display/OpColorModeManager;->nativeSetPanelMode(IZ)V

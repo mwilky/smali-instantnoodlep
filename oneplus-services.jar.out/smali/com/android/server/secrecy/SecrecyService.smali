@@ -18,13 +18,19 @@
 
 .field public static final TAG:Ljava/lang/String; = "SecrecyService"
 
-.field private static final lm:Ljava/lang/String; = "oem.secrecy.support"
+.field private static final um:Ljava/lang/String; = "oem.secrecy.support"
 
 
 # instance fields
-.field private final cm:Lcom/android/server/ServiceThread;
+.field private final lm:Lcom/android/server/ServiceThread;
 
-.field private final hm:Ljava/util/concurrent/ConcurrentHashMap;
+.field private final mContext:Landroid/content/Context;
+
+.field private mPolicyManager:Lcom/android/server/secrecy/zta/sis;
+
+.field private mSystemReady:Z
+
+.field private final qm:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentHashMap<",
@@ -35,17 +41,11 @@
     .end annotation
 .end field
 
-.field private im:Z
+.field private rm:Z
 
-.field private jm:Lcom/android/server/secrecy/you/you;
+.field private sm:Lcom/android/server/secrecy/you/you;
 
-.field private km:Lcom/android/server/secrecy/you/sis;
-
-.field private final mContext:Landroid/content/Context;
-
-.field private mPolicyManager:Lcom/android/server/secrecy/zta/sis;
-
-.field private mSystemReady:Z
+.field private tm:Lcom/android/server/secrecy/you/sis;
 
 
 # direct methods
@@ -74,7 +74,7 @@
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->hm:Ljava/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->qm:Ljava/util/concurrent/ConcurrentHashMap;
 
     iput-object p1, p0, Lcom/android/server/secrecy/SecrecyService;->mContext:Landroid/content/Context;
 
@@ -88,18 +88,18 @@
 
     invoke-direct {p1, v0, v1, v2}, Lcom/android/server/ServiceThread;-><init>(Ljava/lang/String;IZ)V
 
-    iput-object p1, p0, Lcom/android/server/secrecy/SecrecyService;->cm:Lcom/android/server/ServiceThread;
+    iput-object p1, p0, Lcom/android/server/secrecy/SecrecyService;->lm:Lcom/android/server/ServiceThread;
 
-    iget-object p1, p0, Lcom/android/server/secrecy/SecrecyService;->cm:Lcom/android/server/ServiceThread;
+    iget-object p1, p0, Lcom/android/server/secrecy/SecrecyService;->lm:Lcom/android/server/ServiceThread;
 
     invoke-virtual {p1}, Lcom/android/server/ServiceThread;->start()V
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/SecrecyService;->Ym()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/SecrecyService;->Zm()V
 
     return-void
 .end method
 
-.method private Ym()V
+.method private Zm()V
     .locals 2
 
     new-instance v0, Lcom/android/server/secrecy/you/you;
@@ -108,7 +108,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/secrecy/you/you;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->jm:Lcom/android/server/secrecy/you/you;
+    iput-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->sm:Lcom/android/server/secrecy/you/you;
 
     new-instance v0, Lcom/android/server/secrecy/you/sis;
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/server/secrecy/you/sis;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->km:Lcom/android/server/secrecy/you/sis;
+    iput-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->tm:Lcom/android/server/secrecy/you/sis;
 
     return-void
 .end method
@@ -490,7 +490,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lcom/android/server/secrecy/SecrecyService;->im:Z
+    iget-boolean v0, p0, Lcom/android/server/secrecy/SecrecyService;->rm:Z
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -552,12 +552,12 @@
 
     if-nez p3, :cond_12
 
-    iget-object p3, p0, Lcom/android/server/secrecy/SecrecyService;->jm:Lcom/android/server/secrecy/you/you;
+    iget-object p3, p0, Lcom/android/server/secrecy/SecrecyService;->sm:Lcom/android/server/secrecy/you/you;
 
     invoke-virtual {p3, p1, p2, v0}, Lcom/android/server/secrecy/you/you;->zta(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;)V
 
     :cond_12
-    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->km:Lcom/android/server/secrecy/you/sis;
+    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->tm:Lcom/android/server/secrecy/you/sis;
 
     invoke-virtual {p0, p1, p2, v0}, Lcom/android/server/secrecy/you/tsu;->zta(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;)V
 
@@ -577,7 +577,7 @@
 
     iget-object v1, p0, Lcom/android/server/secrecy/SecrecyService;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/server/secrecy/SecrecyService;->cm:Lcom/android/server/ServiceThread;
+    iget-object v2, p0, Lcom/android/server/secrecy/SecrecyService;->lm:Lcom/android/server/ServiceThread;
 
     invoke-virtual {v2}, Lcom/android/server/ServiceThread;->getLooper()Landroid/os/Looper;
 
@@ -607,7 +607,7 @@
 .method static synthetic zta(Lcom/android/server/secrecy/SecrecyService;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->hm:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->qm:Ljava/util/concurrent/ConcurrentHashMap;
 
     return-object p0
 .end method
@@ -647,7 +647,7 @@
     return v1
 
     :cond_1
-    iget-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->jm:Lcom/android/server/secrecy/you/you;
+    iget-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->sm:Lcom/android/server/secrecy/you/you;
 
     invoke-virtual {v0, p1}, Lcom/android/server/secrecy/you/you;->sis(Landroid/content/pm/ActivityInfo;)Z
 
@@ -658,7 +658,7 @@
     return v1
 
     :cond_2
-    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->jm:Lcom/android/server/secrecy/you/you;
+    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->sm:Lcom/android/server/secrecy/you/you;
 
     invoke-virtual {p0, p1}, Lcom/android/server/secrecy/you/you;->you(Landroid/content/pm/ActivityInfo;)Z
 
@@ -682,7 +682,7 @@
 .method public La()Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/SecrecyService;->im:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/SecrecyService;->rm:Z
 
     return p0
 .end method
@@ -814,7 +814,7 @@
 .method public obl(Z)V
     .locals 1
 
-    iput-boolean p1, p0, Lcom/android/server/secrecy/SecrecyService;->im:Z
+    iput-boolean p1, p0, Lcom/android/server/secrecy/SecrecyService;->rm:Z
 
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -824,7 +824,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/SecrecyService;->im:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/SecrecyService;->rm:Z
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -924,7 +924,7 @@
 
     iget-object v0, p0, Lcom/android/server/secrecy/SecrecyService;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    iget-boolean p0, p0, Lcom/android/server/secrecy/SecrecyService;->im:Z
+    iget-boolean p0, p0, Lcom/android/server/secrecy/SecrecyService;->rm:Z
 
     invoke-virtual {v0, p0}, Lcom/android/server/secrecy/zta/sis;->systemReady(Z)V
 
@@ -960,7 +960,7 @@
 .method public zta(Ljava/util/Map;)V
     .locals 2
 
-    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->hm:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object p0, p0, Lcom/android/server/secrecy/SecrecyService;->qm:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
 

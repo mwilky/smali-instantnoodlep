@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field private cGa:Z
+.field private lGa:Z
 
-.field private dGa:Z
+.field private mGa:Z
 
-.field private eGa:I
+.field private nGa:I
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/vdw;->cGa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/vdw;->lGa:Z
 
     return-void
 .end method
@@ -31,15 +31,15 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/vdw;->cGa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/vdw;->lGa:Z
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/vdw;->cGa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/vdw;->lGa:Z
 
-    iput-boolean p3, p0, Lorg/bouncycastle/asn1/vdw;->dGa:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/asn1/vdw;->mGa:Z
 
-    iput p2, p0, Lorg/bouncycastle/asn1/vdw;->eGa:I
+    iput p2, p0, Lorg/bouncycastle/asn1/vdw;->nGa:I
 
     return-void
 .end method
@@ -52,11 +52,11 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     const/16 p1, 0x80
 
@@ -70,7 +70,7 @@
 .method public getRawOutputStream()Ljava/io/OutputStream;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     return-object p0
 .end method
@@ -83,15 +83,15 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->cGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->lGa:Z
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lorg/bouncycastle/asn1/vdw;->eGa:I
+    iget v0, p0, Lorg/bouncycastle/asn1/vdw;->nGa:I
 
     or-int/lit16 v0, v0, 0x80
 
-    iget-boolean v1, p0, Lorg/bouncycastle/asn1/vdw;->dGa:Z
+    iget-boolean v1, p0, Lorg/bouncycastle/asn1/vdw;->mGa:Z
 
     if-eqz v1, :cond_0
 
@@ -123,7 +123,7 @@
     return-void
 .end method
 
-.method protected sh()V
+.method protected th()V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -131,29 +131,29 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->cGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->lGa:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->dGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/vdw;->mGa:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object v0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->bGa:Ljava/io/OutputStream;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/gck;->kGa:Ljava/io/OutputStream;
 
     invoke-virtual {p0, v1}, Ljava/io/OutputStream;->write(I)V
 

@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field private final Vma:Ljava/lang/Object;
+.field private final dna:Ljava/lang/Object;
 
-.field private Wma:Lcom/oneplus/android/server/you/you$zta;
+.field private ena:Lcom/oneplus/android/server/you/you$zta;
 
-.field private Xma:Landroid/os/PowerManager$WakeLock;
+.field private fna:Landroid/os/PowerManager$WakeLock;
 
 .field private mAudioManager:Landroid/media/AudioManager;
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/you/you;->Vma:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/oneplus/android/server/you/you;->dna:Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/oneplus/android/server/you/you;->mContext:Landroid/content/Context;
 
@@ -83,13 +83,13 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/oneplus/android/server/you/you;->Xma:Landroid/os/PowerManager$WakeLock;
+    iput-object p1, p0, Lcom/oneplus/android/server/you/you;->fna:Landroid/os/PowerManager$WakeLock;
 
     new-instance p1, Lcom/oneplus/android/server/you/you$zta;
 
     invoke-direct {p1, p0}, Lcom/oneplus/android/server/you/you$zta;-><init>(Lcom/oneplus/android/server/you/you;)V
 
-    iput-object p1, p0, Lcom/oneplus/android/server/you/you;->Wma:Lcom/oneplus/android/server/you/you$zta;
+    iput-object p1, p0, Lcom/oneplus/android/server/you/you;->ena:Lcom/oneplus/android/server/you/you$zta;
 
     const-string p0, "OpAudioScreenoffMonitorManager"
 
@@ -103,7 +103,7 @@
 .method static synthetic sis(Lcom/oneplus/android/server/you/you;)Lcom/oneplus/android/server/you/you$zta;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->Wma:Lcom/oneplus/android/server/you/you$zta;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->ena:Lcom/oneplus/android/server/you/you$zta;
 
     return-object p0
 .end method
@@ -111,7 +111,7 @@
 .method static synthetic you(Lcom/oneplus/android/server/you/you;)Landroid/os/PowerManager$WakeLock;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->Xma:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->fna:Landroid/os/PowerManager$WakeLock;
 
     return-object p0
 .end method
@@ -119,7 +119,7 @@
 .method static synthetic zta(Lcom/oneplus/android/server/you/you;)Ljava/lang/Object;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->Vma:Ljava/lang/Object;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->dna:Ljava/lang/Object;
 
     return-object p0
 .end method
@@ -129,12 +129,12 @@
 .method public onAcquireScreenoffWakeLock()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/you/you;->Vma:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/android/server/you/you;->dna:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/you/you;->Xma:Landroid/os/PowerManager$WakeLock;
+    iget-object v1, p0, Lcom/oneplus/android/server/you/you;->fna:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -146,11 +146,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/you/you;->Wma:Lcom/oneplus/android/server/you/you$zta;
+    iget-object v2, p0, Lcom/oneplus/android/server/you/you;->ena:Lcom/oneplus/android/server/you/you$zta;
 
     invoke-virtual {v1, v2}, Lcom/android/server/OnePlusUtil$zta;->zta(Lcom/android/server/OnePlusUtil$zta$you;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->Xma:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->fna:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {p0}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
@@ -178,12 +178,12 @@
 .method public onReleaseScreenoffWakeLock()V
     .locals 3
 
-    iget-object v0, p0, Lcom/oneplus/android/server/you/you;->Vma:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/android/server/you/you;->dna:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/android/server/you/you;->Xma:Landroid/os/PowerManager$WakeLock;
+    iget-object v1, p0, Lcom/oneplus/android/server/you/you;->fna:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -195,11 +195,11 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/oneplus/android/server/you/you;->Wma:Lcom/oneplus/android/server/you/you$zta;
+    iget-object v2, p0, Lcom/oneplus/android/server/you/you;->ena:Lcom/oneplus/android/server/you/you$zta;
 
     invoke-virtual {v1, v2}, Lcom/android/server/OnePlusUtil$zta;->you(Lcom/android/server/OnePlusUtil$zta$you;)V
 
-    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->Xma:Landroid/os/PowerManager$WakeLock;
+    iget-object p0, p0, Lcom/oneplus/android/server/you/you;->fna:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {p0}, Landroid/os/PowerManager$WakeLock;->release()V
 

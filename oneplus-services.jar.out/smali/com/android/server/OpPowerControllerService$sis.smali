@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public Vi:Z
+.field public dj:Z
 
 .field public mPkg:Ljava/lang/String;
 
@@ -34,7 +34,7 @@
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/OpPowerControllerService$sis;->Vi:Z
+    iput-boolean p1, p0, Lcom/android/server/OpPowerControllerService$sis;->dj:Z
 
     iput-object p2, p0, Lcom/android/server/OpPowerControllerService$sis;->mPkg:Ljava/lang/String;
 
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/android/server/OpPowerControllerService$sis;->Vi:Z
+    iget-boolean p0, p0, Lcom/android/server/OpPowerControllerService$sis;->dj:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

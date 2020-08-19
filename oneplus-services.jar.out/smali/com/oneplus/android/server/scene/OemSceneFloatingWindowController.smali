@@ -12,7 +12,9 @@
 
 
 # static fields
-.field private static Aua:Ljava/util/HashSet; = null
+.field public static final DEBUG:Z
+
+.field private static Jua:Ljava/util/HashSet; = null
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -22,21 +24,19 @@
     .end annotation
 .end field
 
-.field public static final DEBUG:Z
-
 .field public static final TAG:Ljava/lang/String; = "OemSceneFloatingWindowController"
 
 .field private static sInstance:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;
 
 
 # instance fields
+.field private Iua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+
 .field private mBlock:Z
 
 .field private mContext:Landroid/content/Context;
 
 .field private mLock:Ljava/lang/Object;
-
-.field private zua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Aua:Ljava/util/HashSet;
+    sput-object v0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Jua:Ljava/util/HashSet;
 
     return-void
 .end method
@@ -228,7 +228,7 @@
     goto :goto_1
 
     :cond_3
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Aua:Ljava/util/HashSet;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Jua:Ljava/util/HashSet;
 
     invoke-virtual {p1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -278,7 +278,7 @@
     goto :goto_2
 
     :cond_4
-    sget-object p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Aua:Ljava/util/HashSet;
+    sget-object p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Jua:Ljava/util/HashSet;
 
     invoke-virtual {p0}, Ljava/util/HashSet;->clear()V
 
@@ -342,7 +342,7 @@
 
     if-nez p0, :cond_0
 
-    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Aua:Ljava/util/HashSet;
+    sget-object p1, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Jua:Ljava/util/HashSet;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -585,10 +585,10 @@
 
 
 # virtual methods
-.method public gg()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+.method public hg()Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->zua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Iua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     if-nez v0, :cond_0
 
@@ -596,10 +596,10 @@
 
     invoke-direct {v0, p0}, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;-><init>(Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->zua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Iua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->zua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController;->Iua:Lcom/oneplus/android/server/scene/OemSceneFloatingWindowController$FloatingWindowController;
 
     return-object p0
 .end method

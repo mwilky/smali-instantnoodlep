@@ -25,11 +25,11 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
-.field public static final enum jCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+.field public static final enum sCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
-.field public static final enum kCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+.field public static final enum tCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
-.field public static final enum lCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+.field public static final enum uCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->jCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->sCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->kCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->tCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
@@ -64,21 +64,21 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->lCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->uCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
-    sget-object v4, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->jCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+    sget-object v4, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->sCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
     aput-object v4, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->kCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->tCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->lCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;->uCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$StatisticType;
 
     aput-object v1, v0, v3
 

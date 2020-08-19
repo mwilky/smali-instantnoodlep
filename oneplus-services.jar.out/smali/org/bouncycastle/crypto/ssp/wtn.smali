@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final bOa:I = 0x1
+.field public static final kOa:I = 0x1
 
-.field public static final cOa:I = 0x2
+.field public static final lOa:I = 0x2
 
-.field public static final dOa:I = 0x3
+.field public static final mOa:I = 0x3
 
 
 # instance fields
-.field private aOa:I
-
 .field private digest:Lorg/bouncycastle/crypto/qbh;
+
+.field private jOa:I
 
 .field private v:I
 
@@ -35,7 +35,7 @@
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/crypto/ssp/wtn;->aOa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/ssp/wtn;->jOa:I
 
     check-cast p1, Lorg/bouncycastle/crypto/oif;
 
@@ -222,7 +222,7 @@
 
     new-array p1, p1, [B
 
-    iget v4, p0, Lorg/bouncycastle/crypto/ssp/wtn;->aOa:I
+    iget v4, p0, Lorg/bouncycastle/crypto/ssp/wtn;->jOa:I
 
     add-int/2addr p2, v4
 
@@ -317,7 +317,7 @@
     :cond_7
     add-int/lit8 v7, v6, -0x1
 
-    iget v8, p0, Lorg/bouncycastle/crypto/ssp/wtn;->aOa:I
+    iget v8, p0, Lorg/bouncycastle/crypto/ssp/wtn;->jOa:I
 
     if-ne v6, p2, :cond_8
 

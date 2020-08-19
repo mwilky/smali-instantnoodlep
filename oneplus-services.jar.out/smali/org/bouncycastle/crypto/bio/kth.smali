@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field private final ONa:I
+.field private final XNa:I
 
 .field private counter:[B
 
-.field private final dEa:Lorg/bouncycastle/crypto/rtg;
+.field private final mEa:Lorg/bouncycastle/crypto/rtg;
 
-.field private fOa:[B
+.field private oOa:[B
 
-.field private kOa:I
+.field private tOa:I
 
-.field private nOa:[B
+.field private wOa:[B
 
 
 # direct methods
@@ -26,21 +26,21 @@
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/cjf;-><init>(Lorg/bouncycastle/crypto/rtg;)V
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p1}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
     move-result p1
 
-    iput p1, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iput p1, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
-    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     new-array v0, p1, [B
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iput-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     new-array v0, p1, [B
 
@@ -48,30 +48,30 @@
 
     new-array p1, p1, [B
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->nOa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->wOa:[B
 
     const/4 p1, 0x0
 
-    iput p1, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput p1, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     return-void
 .end method
 
-.method private Nw()V
+.method private Ow()V
     .locals 3
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     array-length v0, v0
 
-    iget v1, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     if-ge v0, v1, :cond_1
 
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iget-object v1, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     array-length v2, v1
 
@@ -222,13 +222,13 @@
 
     if-ltz v2, :cond_2
 
-    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     int-to-long v0, v0
 
     add-long/2addr v0, p1
 
-    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     int-to-long v9, v2
 
@@ -268,13 +268,13 @@
 
     invoke-direct {p0, v2}, Lorg/bouncycastle/crypto/bio/kth;->ad(I)V
 
-    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     int-to-long v2, v2
 
     add-long/2addr p1, v2
 
-    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     int-to-long v2, v2
 
@@ -284,20 +284,20 @@
 
     long-to-int p1, p1
 
-    iput p1, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput p1, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     goto :goto_5
 
     :cond_2
     neg-long v9, p1
 
-    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     int-to-long v11, v2
 
     sub-long/2addr v9, v11
 
-    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     int-to-long v11, v2
 
@@ -347,13 +347,13 @@
     goto :goto_4
 
     :cond_5
-    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     int-to-long v0, v0
 
     add-long/2addr v0, p1
 
-    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     int-to-long p1, p1
 
@@ -365,18 +365,18 @@
 
     if-ltz p1, :cond_6
 
-    iput v3, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput v3, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     goto :goto_5
 
     :cond_6
     invoke-direct {p0, v3}, Lorg/bouncycastle/crypto/bio/kth;->_c(I)V
 
-    iget p2, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p2, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     add-int/2addr p2, p1
 
-    iput p2, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput p2, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     :goto_5
     return-void
@@ -387,7 +387,7 @@
 .method public getBlockSize()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/rtg;->getBlockSize()I
 
@@ -420,7 +420,7 @@
     :goto_0
     if-lt v0, v2, :cond_2
 
-    iget-object v3, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iget-object v3, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     array-length v4, v3
 
@@ -476,13 +476,13 @@
 
     move-result-wide v0
 
-    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget v2, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     int-to-long v2, v2
 
     mul-long/2addr v0, v2
 
-    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     int-to-long v2, p0
 
@@ -498,7 +498,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/rtg;->irq()Ljava/lang/String;
 
@@ -526,7 +526,7 @@
 
     invoke-static {v0, v1}, Lorg/bouncycastle/util/zta;->fill([BB)V
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     iget-object v2, p0, Lorg/bouncycastle/crypto/bio/kth;->counter:[B
 
@@ -534,11 +534,11 @@
 
     invoke-static {v0, v1, v2, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/rtg;->reset()V
 
-    iput v1, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput v1, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     return-void
 .end method
@@ -564,27 +564,27 @@
         }
     .end annotation
 
-    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     iget-object v2, p0, Lorg/bouncycastle/crypto/bio/kth;->counter:[B
 
-    iget-object v3, p0, Lorg/bouncycastle/crypto/bio/kth;->nOa:[B
+    iget-object v3, p0, Lorg/bouncycastle/crypto/bio/kth;->wOa:[B
 
     invoke-interface {v0, v2, v1, v3, v1}, Lorg/bouncycastle/crypto/rtg;->zta([BI[BI)I
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->nOa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->wOa:[B
 
-    iget v1, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v1, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput v2, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     aget-byte p0, v0, v1
 
@@ -595,11 +595,11 @@
     return p0
 
     :cond_0
-    iget-object v2, p0, Lorg/bouncycastle/crypto/bio/kth;->nOa:[B
+    iget-object v2, p0, Lorg/bouncycastle/crypto/bio/kth;->wOa:[B
 
     add-int/lit8 v3, v0, 0x1
 
-    iput v3, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput v3, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     aget-byte v0, v2, v0
 
@@ -607,7 +607,7 @@
 
     int-to-byte p1, p1
 
-    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iget v0, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     iget-object v2, p0, Lorg/bouncycastle/crypto/bio/kth;->counter:[B
 
@@ -615,11 +615,11 @@
 
     if-ne v0, v2, :cond_1
 
-    iput v1, p0, Lorg/bouncycastle/crypto/bio/kth;->kOa:I
+    iput v1, p0, Lorg/bouncycastle/crypto/bio/kth;->tOa:I
 
     invoke-direct {p0, v1}, Lorg/bouncycastle/crypto/bio/kth;->bd(I)V
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Nw()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Ow()V
 
     :cond_1
     return p1
@@ -630,13 +630,13 @@
 
     invoke-direct {p0, p1, p2}, Lorg/bouncycastle/crypto/bio/kth;->l(J)V
 
-    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Nw()V
+    invoke-direct {p0}, Lorg/bouncycastle/crypto/bio/kth;->Ow()V
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     iget-object v1, p0, Lorg/bouncycastle/crypto/bio/kth;->counter:[B
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/kth;->nOa:[B
+    iget-object p0, p0, Lorg/bouncycastle/crypto/bio/kth;->wOa:[B
 
     const/4 v2, 0x0
 
@@ -654,7 +654,7 @@
         }
     .end annotation
 
-    iget v3, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget v3, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     move-object v0, p0
 
@@ -668,7 +668,7 @@
 
     invoke-virtual/range {v0 .. v5}, Lorg/bouncycastle/crypto/cjf;->zta([BII[BI)I
 
-    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     return p0
 .end method
@@ -695,11 +695,11 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
-    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     array-length v0, v0
 
@@ -716,9 +716,9 @@
     div-int/lit8 v2, p1, 0x2
 
     :cond_0
-    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p1, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->fOa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/bio/kth;->oOa:[B
 
     array-length v0, v0
 
@@ -732,7 +732,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->dEa:Lorg/bouncycastle/crypto/rtg;
+    iget-object p1, p0, Lorg/bouncycastle/crypto/bio/kth;->mEa:Lorg/bouncycastle/crypto/rtg;
 
     const/4 v0, 0x1
 
@@ -758,7 +758,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     sub-int/2addr p0, v2
 
@@ -785,7 +785,7 @@
 
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->ONa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/bio/kth;->XNa:I
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

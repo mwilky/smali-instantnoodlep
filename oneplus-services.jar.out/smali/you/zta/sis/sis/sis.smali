@@ -16,22 +16,12 @@
     return-void
 .end method
 
-.method public static am()[J
+.method public static bm()[J
     .locals 1
 
     const/4 v0, 0x3
 
     new-array v0, v0, [J
-
-    return-object v0
-.end method
-
-.method public static bm()[I
-    .locals 1
-
-    const/16 v0, 0xc
-
-    new-array v0, v0, [I
 
     return-object v0
 .end method
@@ -53,7 +43,7 @@
 
     if-gt v0, v1, :cond_1
 
-    invoke-static {}, Lyou/zta/sis/sis/sis;->am()[J
+    invoke-static {}, Lyou/zta/sis/sis/sis;->bm()[J
 
     move-result-object v0
 
@@ -138,12 +128,12 @@
     return-object v0
 .end method
 
-.method public static dm()[J
+.method public static dm()[I
     .locals 1
 
-    const/4 v0, 0x6
+    const/16 v0, 0xc
 
-    new-array v0, v0, [J
+    new-array v0, v0, [I
 
     return-object v0
 .end method
@@ -550,6 +540,16 @@
     invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V
 
     throw p0
+.end method
+
+.method public static em()[J
+    .locals 1
+
+    const/4 v0, 0x6
+
+    new-array v0, v0, [J
+
+    return-object v0
 .end method
 
 .method public static gck([I[I[I)I

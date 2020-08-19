@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Ui:[[D
+.field private cj:[[D
 
 .field private mSize:I
 
@@ -42,7 +42,7 @@
 
     check-cast p1, [[D
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->Ui:[[D
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->cj:[[D
 
     const/4 p1, 0x0
 
@@ -56,7 +56,7 @@
 .method public ca()[[D
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$zta;->Ui:[[D
+    iget-object p0, p0, Lcom/android/server/OpPowerControllerService$zta;->cj:[[D
 
     return-object p0
 .end method
@@ -80,7 +80,7 @@
 .method public zta([[D)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->Ui:[[D
+    iput-object p1, p0, Lcom/android/server/OpPowerControllerService$zta;->cj:[[D
 
     return-void
 .end method

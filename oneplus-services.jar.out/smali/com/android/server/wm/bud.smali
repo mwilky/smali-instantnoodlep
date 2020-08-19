@@ -15,13 +15,13 @@
 
 
 # static fields
-.field static final synthetic eca:[I
+.field static final synthetic nca:[I
 
-.field static final synthetic fca:[I
+.field static final synthetic oca:[I
 
-.field static final synthetic gca:[I
+.field static final synthetic pca:[I
 
-.field static final synthetic hca:[I
+.field static final synthetic qca:[I
 
 
 # direct methods
@@ -36,12 +36,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/server/wm/bud;->hca:[I
+    sput-object v0, Lcom/android/server/wm/bud;->qca:[I
 
     const/4 v0, 0x1
 
     :try_start_0
-    sget-object v1, Lcom/android/server/wm/bud;->hca:[I
+    sget-object v1, Lcom/android/server/wm/bud;->qca:[I
 
     sget-object v2, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->UPDATE:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
@@ -57,9 +57,9 @@
     const/4 v1, 0x2
 
     :try_start_1
-    sget-object v2, Lcom/android/server/wm/bud;->hca:[I
+    sget-object v2, Lcom/android/server/wm/bud;->qca:[I
 
-    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->Cza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
+    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$SettleType;->Lza:Lcom/android/server/wm/OpPowerConsumpStats$SettleType;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -78,10 +78,10 @@
 
     new-array v2, v2, [I
 
-    sput-object v2, Lcom/android/server/wm/bud;->gca:[I
+    sput-object v2, Lcom/android/server/wm/bud;->pca:[I
 
     :try_start_2
-    sget-object v2, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v2, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v3, Lcom/android/internal/os/BatterySipper$DrainType;->AMBIENT_DISPLAY:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -95,7 +95,7 @@
 
     :catch_2
     :try_start_3
-    sget-object v2, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v2, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v3, Lcom/android/internal/os/BatterySipper$DrainType;->APP:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -111,7 +111,7 @@
     const/4 v2, 0x3
 
     :try_start_4
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->BLUETOOTH:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -125,7 +125,7 @@
 
     :catch_4
     :try_start_5
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->CAMERA:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -141,7 +141,7 @@
 
     :catch_5
     :try_start_6
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->CELL:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -157,7 +157,7 @@
 
     :catch_6
     :try_start_7
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->FLASHLIGHT:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -173,7 +173,7 @@
 
     :catch_7
     :try_start_8
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->IDLE:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -189,7 +189,7 @@
 
     :catch_8
     :try_start_9
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->MEMORY:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -205,7 +205,7 @@
 
     :catch_9
     :try_start_a
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->OVERCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -221,7 +221,7 @@
 
     :catch_a
     :try_start_b
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->PHONE:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -237,7 +237,7 @@
 
     :catch_b
     :try_start_c
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->SCREEN:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -253,7 +253,7 @@
 
     :catch_c
     :try_start_d
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->UNACCOUNTED:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -269,7 +269,7 @@
 
     :catch_d
     :try_start_e
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->USER:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -285,7 +285,7 @@
 
     :catch_e
     :try_start_f
-    sget-object v3, Lcom/android/server/wm/bud;->gca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->pca:[I
 
     sget-object v4, Lcom/android/internal/os/BatterySipper$DrainType;->WIFI:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -308,10 +308,10 @@
 
     new-array v3, v3, [I
 
-    sput-object v3, Lcom/android/server/wm/bud;->fca:[I
+    sput-object v3, Lcom/android/server/wm/bud;->oca:[I
 
     :try_start_10
-    sget-object v3, Lcom/android/server/wm/bud;->fca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->oca:[I
 
     sget-object v4, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->BY_DROP:Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
 
@@ -325,7 +325,7 @@
 
     :catch_10
     :try_start_11
-    sget-object v3, Lcom/android/server/wm/bud;->fca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->oca:[I
 
     sget-object v4, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->BY_RUN:Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
 
@@ -339,7 +339,7 @@
 
     :catch_11
     :try_start_12
-    sget-object v3, Lcom/android/server/wm/bud;->fca:[I
+    sget-object v3, Lcom/android/server/wm/bud;->oca:[I
 
     sget-object v4, Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;->BY_AC:Lcom/android/server/wm/IOpPowerConsumpStats$OrderType;
 
@@ -360,12 +360,12 @@
 
     new-array v2, v2, [I
 
-    sput-object v2, Lcom/android/server/wm/bud;->eca:[I
+    sput-object v2, Lcom/android/server/wm/bud;->nca:[I
 
     :try_start_13
-    sget-object v2, Lcom/android/server/wm/bud;->eca:[I
+    sget-object v2, Lcom/android/server/wm/bud;->nca:[I
 
-    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->wza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Fza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -377,9 +377,9 @@
 
     :catch_13
     :try_start_14
-    sget-object v0, Lcom/android/server/wm/bud;->eca:[I
+    sget-object v0, Lcom/android/server/wm/bud;->nca:[I
 
-    sget-object v2, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->xza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sget-object v2, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Gza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 

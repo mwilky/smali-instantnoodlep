@@ -16,31 +16,31 @@
 
 .field private static final TAG:Ljava/lang/String; = "OpIrisWhiteListManager"
 
-.field private static final Zsa:Ljava/lang/String; = "IrisWhiteListConfig"
+.field private static final hta:Ljava/lang/String; = "IrisWhiteListConfig"
 
-.field private static final _sa:J = 0x3e8L
+.field private static final ita:J = 0x3e8L
 
-.field private static final ata:I = 0x0
+.field private static final jta:I = 0x0
 
-.field private static final bta:I = 0x1
+.field private static final kta:I = 0x1
 
-.field private static final cta:I = 0xc8
+.field private static final lta:I = 0xc8
 
-.field private static final dta:Ljava/lang/String; = "0"
+.field private static final mta:Ljava/lang/String; = "0"
 
-.field private static final eta:Ljava/lang/String; = "net.oneplus.provider.appcategoryprovider.AppCategoryContentProvider"
+.field private static final nta:Ljava/lang/String; = "net.oneplus.provider.appcategoryprovider.AppCategoryContentProvider"
 
-.field private static final fta:Ljava/lang/String; = "category_id = 7"
+.field private static final ota:Ljava/lang/String; = "category_id = 7"
 
-.field private static final gta:Landroid/net/Uri;
+.field private static final pta:Landroid/net/Uri;
 
 
 # instance fields
-.field private Dra:Lcom/oneplus/android/server/iris/dma;
+.field private Mra:Lcom/oneplus/android/server/iris/dma;
 
-.field private Xsa:Lcom/oneplus/config/ConfigObserver;
+.field private fta:Lcom/oneplus/config/ConfigObserver;
 
-.field private Ysa:Lcom/oneplus/android/server/iris/oif;
+.field private gta:Lcom/oneplus/android/server/iris/oif;
 
 .field private final mContext:Landroid/content/Context;
 
@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/oneplus/android/server/iris/qbh;->gta:Landroid/net/Uri;
+    sput-object v0, Lcom/oneplus/android/server/iris/qbh;->pta:Landroid/net/Uri;
 
     return-void
 .end method
@@ -87,17 +87,57 @@
 
     invoke-direct {v0}, Lcom/oneplus/android/server/iris/dma;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     new-instance v0, Lcom/oneplus/android/server/iris/oif;
 
-    iget-object v1, p0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v1, p0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-direct {v0, v1}, Lcom/oneplus/android/server/iris/oif;-><init>(Lcom/oneplus/android/server/iris/dma;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->Ysa:Lcom/oneplus/android/server/iris/oif;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->gta:Lcom/oneplus/android/server/iris/oif;
 
     invoke-direct {p0, p1}, Lcom/oneplus/android/server/iris/qbh;->init(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method private Am()V
+    .locals 4
+
+    const-string v0, "OpIrisWhiteListManager"
+
+    const-string v1, "fetchConfig"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    iput v1, v0, Landroid/os/Message;->what:I
+
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    const-string v2, "config_name"
+
+    const-string v3, "IrisWhiteListConfig"
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
+
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/qbh;->mHandler:Landroid/os/Handler;
+
+    const-wide/16 v1, 0x3e8
+
+    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     return-void
 .end method
@@ -184,7 +224,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lcom/oneplus/android/server/iris/qbh;->gta:Landroid/net/Uri;
+    sget-object v5, Lcom/oneplus/android/server/iris/qbh;->pta:Landroid/net/Uri;
 
     const/4 v6, 0x0
 
@@ -238,17 +278,17 @@
     invoke-static {v1, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v3, p1}, Lcom/oneplus/android/server/iris/dma;->ta(Ljava/lang/String;)V
 
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     const-string v4, "267-3-1"
 
     invoke-virtual {v3, p1, v4}, Lcom/oneplus/android/server/iris/dma;->ugm(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v3, p0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v3, p0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     const-string v4, "0"
 
@@ -323,7 +363,7 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/qbh;->Ysa:Lcom/oneplus/android/server/iris/oif;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/qbh;->gta:Lcom/oneplus/android/server/iris/oif;
 
     const-string v0, "UTF-8"
 
@@ -443,7 +483,7 @@
 
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v9}, Lcom/oneplus/android/server/iris/dma;->getVersion()J
 
@@ -457,7 +497,7 @@
 
     invoke-static {v2, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v8}, Lcom/oneplus/android/server/iris/dma;->getVersion()J
 
@@ -470,11 +510,11 @@
     return-void
 
     :cond_1
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
-    invoke-virtual {v8}, Lcom/oneplus/android/server/iris/dma;->Sf()V
+    invoke-virtual {v8}, Lcom/oneplus/android/server/iris/dma;->Tf()V
 
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v8, v6, v7}, Lcom/oneplus/android/server/iris/dma;->lqr(J)V
 
@@ -490,7 +530,7 @@
 
     move-result v6
 
-    iget-object v7, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v7, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v7, v6}, Lcom/oneplus/android/server/iris/dma;->X(Z)V
 
@@ -517,7 +557,7 @@
 
     move-result-object v6
 
-    iget-object v7, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v7, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v7, v6}, Lcom/oneplus/android/server/iris/dma;->setUrl(Ljava/lang/String;)V
 
@@ -616,15 +656,15 @@
     invoke-static {v2, v9}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
-    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v9, v11}, Lcom/oneplus/android/server/iris/dma;->ta(Ljava/lang/String;)V
 
-    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v9, v11, v13}, Lcom/oneplus/android/server/iris/dma;->ugm(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v9, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v9, v11, v8}, Lcom/oneplus/android/server/iris/dma;->gwm(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -697,15 +737,15 @@
     invoke-static {v2, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_6
-    iget-object v1, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v1, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v1, v14}, Lcom/oneplus/android/server/iris/dma;->sa(Ljava/lang/String;)V
 
-    iget-object v1, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v1, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v1, v14, v8}, Lcom/oneplus/android/server/iris/dma;->bvj(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v1, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v1, v14, v15}, Lcom/oneplus/android/server/iris/dma;->ibl(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -774,11 +814,11 @@
     invoke-static {v2, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_8
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v8, v7}, Lcom/oneplus/android/server/iris/dma;->ra(Ljava/lang/String;)V
 
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v8, v7, v6}, Lcom/oneplus/android/server/iris/dma;->oif(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -839,11 +879,11 @@
     invoke-static {v2, v8}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_a
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v8, v6}, Lcom/oneplus/android/server/iris/dma;->qa(Ljava/lang/String;)V
 
-    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object v8, v0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     invoke-virtual {v8, v6, v5}, Lcom/oneplus/android/server/iris/dma;->qbh(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
@@ -880,46 +920,6 @@
     return-void
 .end method
 
-.method private zm()V
-    .locals 4
-
-    const-string v0, "OpIrisWhiteListManager"
-
-    const-string v1, "fetchConfig"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->mHandler:Landroid/os/Handler;
-
-    invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    iput v1, v0, Landroid/os/Message;->what:I
-
-    new-instance v1, Landroid/os/Bundle;
-
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
-
-    const-string v2, "config_name"
-
-    const-string v3, "IrisWhiteListConfig"
-
-    invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
-
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/qbh;->mHandler:Landroid/os/Handler;
-
-    const-wide/16 v1, 0x3e8
-
-    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
-
-    return-void
-.end method
-
 .method static synthetic zta(Lcom/oneplus/android/server/iris/qbh;)Landroid/os/Handler;
     .locals 0
 
@@ -946,10 +946,10 @@
 
 
 # virtual methods
-.method public ag()Lcom/oneplus/android/server/iris/dma;
+.method public bg()Lcom/oneplus/android/server/iris/dma;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/iris/qbh;->Dra:Lcom/oneplus/android/server/iris/dma;
+    iget-object p0, p0, Lcom/oneplus/android/server/iris/qbh;->Mra:Lcom/oneplus/android/server/iris/dma;
 
     return-object p0
 .end method
@@ -977,13 +977,13 @@
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->Xsa:Lcom/oneplus/config/ConfigObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->fta:Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->Xsa:Lcom/oneplus/config/ConfigObserver;
+    iget-object v0, p0, Lcom/oneplus/android/server/iris/qbh;->fta:Lcom/oneplus/config/ConfigObserver;
 
     invoke-virtual {v0}, Lcom/oneplus/config/ConfigObserver;->register()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/iris/qbh;->zm()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/iris/qbh;->Am()V
 
     return-void
 .end method

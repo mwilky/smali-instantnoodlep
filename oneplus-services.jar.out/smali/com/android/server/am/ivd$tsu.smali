@@ -252,11 +252,11 @@
     monitor-enter p1
 
     :try_start_0
-    iput-boolean v5, p1, Lcom/android/server/am/ivd$igw;->Cu:Z
+    iput-boolean v5, p1, Lcom/android/server/am/ivd$igw;->Lu:Z
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p1, Lcom/android/server/am/ivd$igw;->nu:J
+    iput-wide v0, p1, Lcom/android/server/am/ivd$igw;->wu:J
 
     monitor-exit p1
     :try_end_0

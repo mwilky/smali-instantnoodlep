@@ -16,20 +16,20 @@
     return-void
 .end method
 
-.method public static bm()[I
+.method public static create()[I
     .locals 1
 
-    const/16 v0, 0xe
+    const/4 v0, 0x7
 
     new-array v0, v0, [I
 
     return-object v0
 .end method
 
-.method public static create()[I
+.method public static dm()[I
     .locals 1
 
-    const/4 v0, 0x7
+    const/16 v0, 0xe
 
     new-array v0, v0, [I
 

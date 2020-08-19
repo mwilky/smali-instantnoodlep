@@ -360,7 +360,7 @@
 
     iget-object p0, p0, Lcom/android/server/wm/vdw;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
-    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->wza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
+    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStats$PersistType;->Fza:Lcom/android/server/wm/OpPowerConsumpStats$PersistType;
 
     if-eqz p2, :cond_7
 

@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method vh()I
+.method wh()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Kh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Lh()Ljava/util/Enumeration;
 
     move-result-object p0
 
@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->vh()I
+    invoke-virtual {v1}, Lorg/bouncycastle/asn1/vdb;->wh()I
 
     move-result v1
 
@@ -101,7 +101,7 @@
 
     invoke-virtual {p1, v0}, Lorg/bouncycastle/asn1/ugm;->write(I)V
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Kh()Ljava/util/Enumeration;
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/obl;->Lh()Ljava/util/Enumeration;
 
     move-result-object p0
 

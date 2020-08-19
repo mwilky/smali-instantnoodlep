@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private final CTa:[B
+.field private final LTa:[B
 
 
 # direct methods
@@ -20,17 +20,17 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/tsu;->CTa:[B
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/sis/tsu;->LTa:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Dk()[B
+.method public Ek()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/tsu;->CTa:[B
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/sis/tsu;->LTa:[B
 
     invoke-static {p0}, Lorg/bouncycastle/util/zta;->vdb([B)[B
 

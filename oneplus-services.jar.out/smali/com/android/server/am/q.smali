@@ -723,7 +723,7 @@
     return-void
 .end method
 
-.method private mp()V
+.method private np()V
     .locals 6
 
     const-string v0, "OpAntiBurnController"
@@ -1739,9 +1739,9 @@
 
     const/4 p2, 0x1
 
-    iput-boolean p2, p1, Lcom/android/server/am/q$you;->gE:Z
+    iput-boolean p2, p1, Lcom/android/server/am/q$you;->pE:Z
 
-    invoke-direct {p0}, Lcom/android/server/am/q;->mp()V
+    invoke-direct {p0}, Lcom/android/server/am/q;->np()V
 
     invoke-direct {p0}, Lcom/android/server/am/q;->initOnlineConfig()V
 

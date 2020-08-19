@@ -25,13 +25,13 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
-.field public static final enum cCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+.field public static final enum lCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
-.field public static final enum dCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+.field public static final enum mCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
-.field public static final enum eCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+.field public static final enum nCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
-.field public static final enum fCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+.field public static final enum oCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->cCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->lCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
@@ -56,7 +56,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->dCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->mCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
@@ -66,7 +66,7 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->eCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->nCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     new-instance v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
@@ -76,25 +76,25 @@
 
     invoke-direct {v0, v5, v4}, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->fCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sput-object v0, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->oCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
-    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->cCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sget-object v5, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->lCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     aput-object v5, v0, v1
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->dCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->mCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->eCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->nCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->fCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
+    sget-object v1, Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;->oCa:Lcom/android/server/power/OnePlusStandbyAnalyzer$RpmModeType;
 
     aput-object v1, v0, v4
 

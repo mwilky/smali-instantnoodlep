@@ -18,11 +18,11 @@
 
 
 # instance fields
+.field final synthetic JE:Z
+
+.field final synthetic KE:Landroid/view/View;
+
 .field final synthetic this$0:Lcom/android/server/am/OpForceDarkController;
-
-.field final synthetic vE:Z
-
-.field final synthetic wE:Landroid/view/View;
 
 
 # direct methods
@@ -31,9 +31,9 @@
 
     iput-object p1, p0, Lcom/android/server/am/w;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iput-boolean p2, p0, Lcom/android/server/am/w;->vE:Z
+    iput-boolean p2, p0, Lcom/android/server/am/w;->JE:Z
 
-    iput-object p3, p0, Lcom/android/server/am/w;->wE:Landroid/view/View;
+    iput-object p3, p0, Lcom/android/server/am/w;->KE:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +52,7 @@
 
     move-result-object p1
 
-    iget-boolean v1, p0, Lcom/android/server/am/w;->vE:Z
+    iget-boolean v1, p0, Lcom/android/server/am/w;->JE:Z
 
     if-eqz v1, :cond_0
 
@@ -72,7 +72,7 @@
     :goto_0
     invoke-virtual {p1, v1}, Landroid/view/ViewRootImpl;->opSysForceONOFF(I)V
 
-    iget-object p1, p0, Lcom/android/server/am/w;->wE:Landroid/view/View;
+    iget-object p1, p0, Lcom/android/server/am/w;->KE:Landroid/view/View;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
     :try_end_0

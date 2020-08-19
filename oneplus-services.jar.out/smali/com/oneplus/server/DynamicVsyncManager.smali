@@ -21,43 +21,31 @@
 
 .field public static final FEATURE_EXTREME_ENABLE:Z
 
-.field private static final Jxa:Ljava/lang/String; = "persist.sys.dynamic.minv"
-
-.field private static final Kxa:Ljava/lang/String; = "persist.sys.dynamic.vsync.systemui"
-
-.field public static final Lxa:Z
-
-.field private static final Mxa:I = 0x0
-
-.field private static final Nxa:I = 0x1
-
-.field private static final Oxa:I = 0x2
-
-.field private static final Pxa:I = 0x3
-
-.field private static final Qxa:Ljava/lang/String; = "persist.sys.dps.support"
-
-.field private static Rxa:Lcom/oneplus/server/DynamicVsyncManager; = null
+.field private static final Sxa:Ljava/lang/String; = "persist.sys.dynamic.minv"
 
 .field private static final TAG:Ljava/lang/String; = "DynamicVsyncManager"
 
+.field private static final Txa:Ljava/lang/String; = "persist.sys.dynamic.vsync.systemui"
+
+.field public static final Uxa:Z
+
+.field private static final Vxa:I = 0x0
+
+.field private static final Wxa:I = 0x1
+
+.field private static final Xxa:I = 0x2
+
+.field private static final Yxa:I = 0x3
+
+.field private static final Zxa:Ljava/lang/String; = "persist.sys.dps.support"
+
+.field private static _xa:Lcom/oneplus/server/DynamicVsyncManager;
+
 
 # instance fields
-.field private Axa:I
+.field private Axa:D
 
-.field private Bxa:I
-
-.field private Cxa:I
-
-.field private Dxa:Ljava/lang/String;
-
-.field private Exa:Z
-
-.field private Fxa:Z
-
-.field private Gxa:Z
-
-.field private final Hxa:Ljava/util/HashSet;
+.field private final BH:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -67,7 +55,46 @@
     .end annotation
 .end field
 
-.field private final Ixa:Ljava/util/HashSet;
+.field private Bxa:D
+
+.field private Cxa:Z
+
+.field private Dxa:I
+
+.field private Exa:J
+
+.field private Fxa:I
+
+.field private final Gxa:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private Hxa:Ljava/lang/Object;
+
+.field private Ixa:I
+
+.field private Jxa:I
+
+.field private Kxa:I
+
+.field private Lxa:I
+
+.field private Mxa:Ljava/lang/String;
+
+.field private Nxa:Z
+
+.field private Oxa:Z
+
+.field private Pxa:Z
+
+.field private final Qxa:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -77,25 +104,17 @@
     .end annotation
 .end field
 
-.field private cxa:Z
+.field private final Rxa:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private dxa:F
-
-.field private exa:Z
-
-.field private fxa:Z
-
-.field private gxa:Z
-
-.field private final hxa:I
-
-.field private final ixa:J
-
-.field private jxa:I
-
-.field private kxa:I
-
-.field private lxa:I
+.field private lxa:Z
 
 .field private mConfigObserver:Lcom/oneplus/config/ConfigObserver;
 
@@ -125,54 +144,35 @@
 
 .field private mTestReceiver:Landroid/content/BroadcastReceiver;
 
-.field private mxa:D
+.field private mxa:F
 
-.field private nxa:D
+.field private nxa:Z
 
-.field private oxa:D
+.field private oxa:Z
 
-.field private pxa:D
+.field private pxa:Z
 
-.field private qxa:D
+.field private final qxa:I
 
-.field private final rH:Ljava/util/HashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private final rxa:J
 
-.field private rxa:D
+.field private sxa:I
 
-.field private sxa:D
-
-.field private txa:Z
+.field private txa:I
 
 .field public final ugm:Landroid/net/Uri;
 
 .field private uxa:I
 
-.field private vxa:J
+.field private vxa:D
 
-.field private wxa:I
+.field private wxa:D
 
-.field private final xxa:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private xxa:D
 
-.field private yxa:Ljava/lang/Object;
+.field private yxa:D
 
-.field private zxa:I
+.field private zxa:D
 
 
 # direct methods
@@ -193,7 +193,7 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:Z
+    sput-boolean v1, Lcom/oneplus/server/DynamicVsyncManager;->Uxa:Z
 
     new-array v0, v0, [I
 
@@ -221,41 +221,41 @@
 
     sget-boolean v1, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
+    iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
 
     const v1, 0x7f7fffff    # Float.MAX_VALUE
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->dxa:F
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:F
 
-    sget-boolean v1, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:Z
+    sget-boolean v1, Lcom/oneplus/server/DynamicVsyncManager;->Uxa:Z
 
-    iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
     iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mEnable:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->fxa:Z
+    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
+    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
 
     const/16 v1, 0x3e8
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->hxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->qxa:I
 
     const-wide/32 v1, 0x3b9aca00
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->ixa:J
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->rxa:J
 
     const/16 v1, 0x78
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     const/16 v1, 0x4b
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
 
     int-to-double v1, v1
 
@@ -263,19 +263,19 @@
 
     div-double v1, v3, v1
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:D
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
     int-to-double v1, v1
 
     div-double/2addr v3, v1
 
-    iput-wide v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iput-wide v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     const-wide/16 v1, 0x0
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:D
 
     const-wide v1, 0x408f400000000000L    # 1000.0
 
@@ -287,25 +287,25 @@
 
     const-wide v1, 0x3fdae147ae147ae1L    # 0.42
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:D
 
     const-wide v1, 0x3fd3333333333333L    # 0.3
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->qxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:D
 
     const-wide v1, 0x3faeb851eb851eb8L    # 0.06
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->rxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:D
 
     const-wide v1, 0x3f947ae147ae147bL    # 0.02
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:D
 
-    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:Z
+    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:Z
 
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:I
 
     new-instance v1, Ljava/lang/Object;
 
@@ -317,19 +317,19 @@
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
+    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
 
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     const-string v1, "persist.sys.dps.support"
 
@@ -339,15 +339,15 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     const/16 v1, 0x7d0
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Jxa:I
 
     const/16 v1, 0xdac
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
 
     const/4 v1, 0x2
 
@@ -357,7 +357,7 @@
 
     iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mScreenRateSettings:I
 
-    iput v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:I
+    iput v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:I
 
     const-string v1, "oneplus_screen_refresh_rate"
 
@@ -371,25 +371,25 @@
 
     const-string v1, ""
 
-    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:Ljava/lang/String;
+    iput-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Mxa:Ljava/lang/String;
 
-    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:Z
+    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Nxa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
+    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
 
-    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Z
-
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iput-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Pxa:Z
 
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
+
+    new-instance v0, Ljava/util/HashSet;
+
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     new-instance v0, Lcom/oneplus/server/you;
 
@@ -413,7 +413,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -424,25 +424,25 @@
     invoke-virtual {v1, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
 
     const-string v1, "com.facebook.katana"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     const-string v1, "tv.danmaku.bili"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     const-string v1, "air.tv.douyu.android"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     const-string v1, "com.duowan.kiwi"
 
@@ -475,7 +475,7 @@
 
     const/16 p1, 0x3c
 
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
 
     const-string v1, "fatal when convertFpsToPeriod!"
 
@@ -494,7 +494,7 @@
 .method private Oc(I)V
     .locals 3
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->nw()Z
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->ow()Z
 
     move-result v0
 
@@ -593,13 +593,13 @@
     monitor-enter v0
 
     :try_start_0
-    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:I
+    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
     monitor-exit v0
 
@@ -687,14 +687,14 @@
 .method private Rc(I)V
     .locals 3
 
-    iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:I
+    iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
     :cond_0
-    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:I
+    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
 
     invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->getSurfaceFlinger()V
 
@@ -860,7 +860,7 @@
 .method static synthetic bio(Lcom/oneplus/server/DynamicVsyncManager;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:D
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:D
 
     return-wide p1
 .end method
@@ -868,7 +868,7 @@
 .method static synthetic cno(Lcom/oneplus/server/DynamicVsyncManager;)D
     .locals 2
 
-    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:D
+    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:D
 
     return-wide v0
 .end method
@@ -920,7 +920,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -928,7 +928,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -936,7 +936,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->fxa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -954,7 +954,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -962,7 +962,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -970,7 +970,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1004,7 +1004,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1012,7 +1012,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->qxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1030,7 +1030,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->rxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1048,7 +1048,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1056,7 +1056,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1064,7 +1064,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1082,7 +1082,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1090,7 +1090,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:D
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:D
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1104,12 +1104,12 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -1146,7 +1146,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     invoke-virtual {v4, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1171,12 +1171,12 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
 
     monitor-enter v1
 
     :try_start_1
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -1244,12 +1244,12 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_2
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
     invoke-virtual {v1}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -1295,12 +1295,12 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     monitor-enter v1
 
     :try_start_3
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -1368,7 +1368,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:Ljava/lang/String;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Mxa:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1386,7 +1386,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1422,7 +1422,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1440,7 +1440,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Jxa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1458,7 +1458,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1480,7 +1480,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1498,7 +1498,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Pxa:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1516,7 +1516,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:Z
+    iget-boolean p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Nxa:Z
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1572,7 +1572,7 @@
 .method static synthetic gck(Lcom/oneplus/server/DynamicVsyncManager;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->rw()V
 
     return-void
 .end method
@@ -1580,7 +1580,7 @@
 .method public static getInstance()Lcom/oneplus/server/DynamicVsyncManager;
     .locals 1
 
-    sget-object v0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Lcom/oneplus/server/DynamicVsyncManager;
+    sget-object v0, Lcom/oneplus/server/DynamicVsyncManager;->_xa:Lcom/oneplus/server/DynamicVsyncManager;
 
     if-nez v0, :cond_0
 
@@ -1588,10 +1588,10 @@
 
     invoke-direct {v0}, Lcom/oneplus/server/DynamicVsyncManager;-><init>()V
 
-    sput-object v0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Lcom/oneplus/server/DynamicVsyncManager;
+    sput-object v0, Lcom/oneplus/server/DynamicVsyncManager;->_xa:Lcom/oneplus/server/DynamicVsyncManager;
 
     :cond_0
-    sget-object v0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Lcom/oneplus/server/DynamicVsyncManager;
+    sget-object v0, Lcom/oneplus/server/DynamicVsyncManager;->_xa:Lcom/oneplus/server/DynamicVsyncManager;
 
     return-object v0
 .end method
@@ -1618,7 +1618,7 @@
 .method static synthetic igw(Lcom/oneplus/server/DynamicVsyncManager;)Ljava/lang/Object;
     .locals 0
 
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     return-object p0
 .end method
@@ -1710,17 +1710,17 @@
     return-wide p1
 .end method
 
-.method private kw()V
+.method private lw()V
     .locals 1
 
-    iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     invoke-direct {p0, v0}, Lcom/oneplus/server/DynamicVsyncManager;->Rc(I)V
 
     return-void
 .end method
 
-.method private lw()I
+.method private mw()I
     .locals 3
 
     iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mDebug:Z
@@ -1733,7 +1733,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Mxa:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1741,7 +1741,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:Z
+    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Nxa:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1749,7 +1749,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Z
+    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Pxa:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1765,7 +1765,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
+    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1784,7 +1784,7 @@
     return v1
 
     :cond_0
-    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Z
+    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Pxa:Z
 
     if-nez v2, :cond_1
 
@@ -1795,17 +1795,17 @@
     return v2
 
     :cond_1
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Nxa:Z
 
     if-nez v0, :cond_5
 
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Pxa:Z
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
-    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:Ljava/lang/String;
+    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Mxa:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -1816,13 +1816,13 @@
     goto :goto_1
 
     :cond_2
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Mxa:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -1846,7 +1846,20 @@
     return v1
 .end method
 
-.method private mw()I
+.method private myLog(ZLjava/lang/String;)V
+    .locals 0
+
+    if-eqz p1, :cond_0
+
+    const-string p0, "DynamicVsyncManager"
+
+    invoke-static {p0, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    return-void
+.end method
+
+.method private nw()I
     .locals 2
 
     iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mScreenRateSettings:I
@@ -1877,28 +1890,15 @@
     return v0
 .end method
 
-.method private myLog(ZLjava/lang/String;)V
-    .locals 0
-
-    if-eqz p1, :cond_0
-
-    const-string p0, "DynamicVsyncManager"
-
-    invoke-static {p0, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_0
-    return-void
-.end method
-
-.method private nw()Z
+.method private ow()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     const/4 v1, 0x1
 
@@ -1924,7 +1924,7 @@
     throw p0
 .end method
 
-.method private ow()V
+.method private pw()V
     .locals 2
 
     const-string v0, "com.android.systemui"
@@ -1944,7 +1944,7 @@
     return-void
 .end method
 
-.method private pw()V
+.method private qw()V
     .locals 5
 
     invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->getSurfaceFlinger()V
@@ -1961,12 +1961,12 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter v1
 
     :try_start_0
-    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
+    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1976,7 +1976,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iget v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1984,7 +1984,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
+    iget v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1992,7 +1992,7 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:I
+    iget v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Jxa:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2002,15 +2002,15 @@
 
     invoke-direct {p0, v2, v3}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
 
-    iget v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iget v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
+    iget v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:I
+    iget v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Jxa:I
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -2072,10 +2072,895 @@
     return-void
 .end method
 
-.method private qw()V
+.method private registerOnlineConfig()V
+    .locals 5
+
+    new-instance v0, Lcom/oneplus/server/DynamicVsyncManager$zta;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/oneplus/server/DynamicVsyncManager$zta;-><init>(Lcom/oneplus/server/DynamicVsyncManager;Lcom/oneplus/server/zta;)V
+
+    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigUpdater:Lcom/oneplus/server/DynamicVsyncManager$zta;
+
+    new-instance v0, Lcom/oneplus/config/ConfigObserver;
+
+    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mContext:Landroid/content/Context;
+
+    invoke-static {}, Lcom/android/internal/os/BackgroundThread;->getHandler()Landroid/os/Handler;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigUpdater:Lcom/oneplus/server/DynamicVsyncManager$zta;
+
+    const-string v4, "DynamicVsync"
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
+
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
+
+    invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
+
+    return-void
+.end method
+
+.method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
+    .locals 9
+
+    if-nez p1, :cond_0
+
+    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    const-string v0, "[OnlineConfig] config is null!"
+
+    invoke-direct {p0, p1, v0}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    move v2, v1
+
+    :goto_0
+    :try_start_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v3
+
+    if-ge v1, v3, :cond_11
+
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "feature"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    const-string v4, "value"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+
+    move-result v4
+
+    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
+
+    const-string v4, "persist.sys.dynamic.vsync"
+
+    iget-boolean v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
+
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->setPropValue(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
+
+    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->mEnable:Z
+
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->mEnable:Z
+
+    if-nez v4, :cond_1
+
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()V
+
+    :cond_1
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "[OnlineConfig] feature: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+
+    :cond_2
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "whitelist"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
+
+    monitor-enter v4
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
+
+    invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
+
+    const-string v5, "value"
+
+    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v5
+
+    move v6, v0
+
+    :goto_1
+    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
+
+    move-result v7
+
+    if-ge v6, v7, :cond_3
+
+    iget-object v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
+
+    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    monitor-exit v4
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "[OnlineConfig] mWhiteAppSet: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
+
+    invoke-virtual {v6}, Ljava/util/HashSet;->size()I
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    goto :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    :try_start_3
+    monitor-exit v4
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    :try_start_4
+    throw p1
+
+    :cond_4
+    :goto_2
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "support"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    const/4 v5, 0x1
+
+    if-eqz v4, :cond_5
+
+    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
+
+    monitor-enter v2
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
+
+    :try_start_5
+    const-string v4, "value"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v4
+
+    iput v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
+
+    const-string v4, "persist.sys.dps.support"
+
+    iget v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
+
+    invoke-static {v6}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v4, v6}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+
+    monitor-exit v2
+
+    move v2, v5
+
+    goto :goto_3
+
+    :catchall_1
+    move-exception p1
+
+    monitor-exit v2
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    :try_start_6
+    throw p1
+
+    :cond_5
+    :goto_3
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v6, "delay"
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_6
+
+    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
+
+    monitor-enter v2
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
+
+    :try_start_7
+    const-string v4, "value"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v4
+
+    iput v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
+
+    monitor-exit v2
+
+    move v2, v5
+
+    goto :goto_4
+
+    :catchall_2
+    move-exception p1
+
+    monitor-exit v2
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+
+    :try_start_8
+    throw p1
+
+    :cond_6
+    :goto_4
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v6, "allapp"
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    const-string v4, "value"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+
+    move-result v4
+
+    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
+
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "[OnlineConfig] mAllAppEnable: "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-direct {p0, v4, v6}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+
+    :cond_7
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v6, "fling"
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_9
+
+    const-string v4, "value"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+
+    move-result v4
+
+    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
+
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
+
+    if-nez v4, :cond_8
+
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()V
+
+    :cond_8
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "[OnlineConfig] mFlingEnable: "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-direct {p0, v4, v6}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+
+    :cond_9
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v6, "backlight"
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_a
+
+    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
+
+    monitor-enter v2
+    :try_end_8
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
+
+    :try_start_9
+    const-string v4, "value"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v4
+
+    iput v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Jxa:I
+
+    monitor-exit v2
+
+    move v2, v5
+
+    goto :goto_5
+
+    :catchall_3
+    move-exception p1
+
+    monitor-exit v2
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_3
+
+    :try_start_a
+    throw p1
+
+    :cond_a
+    :goto_5
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "eWhite"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_c
+
+    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
+
+    monitor-enter v4
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_0
+
+    :try_start_b
+    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
+
+    invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
+
+    const-string v5, "value"
+
+    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v5
+
+    move v6, v0
+
+    :goto_6
+    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
+
+    move-result v7
+
+    if-ge v6, v7, :cond_b
+
+    iget-object v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
+
+    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_6
+
+    :cond_b
+    monitor-exit v4
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_4
+
+    :try_start_c
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "[OnlineConfig] mExtremeWhiteSet: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
+
+    invoke-virtual {v6}, Ljava/util/HashSet;->size()I
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_0
+
+    goto :goto_7
+
+    :catchall_4
+    move-exception p1
+
+    :try_start_d
+    monitor-exit v4
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_4
+
+    :try_start_e
+    throw p1
+
+    :cond_c
+    :goto_7
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "eBlack"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_e
+
+    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
+
+    monitor-enter v4
+    :try_end_e
+    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_0
+
+    :try_start_f
+    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
+
+    invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
+
+    const-string v5, "value"
+
+    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v5
+
+    move v6, v0
+
+    :goto_8
+    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
+
+    move-result v7
+
+    if-ge v6, v7, :cond_d
+
+    iget-object v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
+
+    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_8
+
+    :cond_d
+    monitor-exit v4
+    :try_end_f
+    .catchall {:try_start_f .. :try_end_f} :catchall_5
+
+    :try_start_10
+    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "[OnlineConfig] mExtremeBlackSet: "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
+
+    invoke-virtual {v6}, Ljava/util/HashSet;->size()I
+
+    move-result v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+    :try_end_10
+    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_0
+
+    goto :goto_9
+
+    :catchall_5
+    move-exception p1
+
+    :try_start_11
+    monitor-exit v4
+    :try_end_11
+    .catchall {:try_start_11 .. :try_end_11} :catchall_5
+
+    :try_start_12
+    throw p1
+
+    :cond_e
+    :goto_9
+    const-string v4, "name"
+
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "limitPkgMap"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_10
+
+    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
+
+    monitor-enter v4
+    :try_end_12
+    .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_0
+
+    :try_start_13
+    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
+
+    invoke-virtual {v5}, Ljava/util/HashMap;->clear()V
+
+    const-string v5, "value"
+
+    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v3
+
+    move v5, v0
+
+    :goto_a
+    invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
+
+    move-result v6
+
+    if-ge v5, v6, :cond_f
+
+    invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v6
+
+    const-string v7, "pkg"
+
+    invoke-virtual {v6, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, "flag"
+
+    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    iget-object v8, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
+
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    invoke-virtual {v8, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_a
+
+    :cond_f
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pw()V
+
+    monitor-exit v4
+    :try_end_13
+    .catchall {:try_start_13 .. :try_end_13} :catchall_6
+
+    :try_start_14
+    iget-boolean v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "[OnlineConfig] limitPkgMap: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
+
+    invoke-virtual {v5}, Ljava/util/HashMap;->size()I
+
+    move-result v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {p0, v3, v4}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+    :try_end_14
+    .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_0
+
+    goto :goto_b
+
+    :catchall_6
+    move-exception p1
+
+    :try_start_15
+    monitor-exit v4
+    :try_end_15
+    .catchall {:try_start_15 .. :try_end_15} :catchall_6
+
+    :try_start_16
+    throw p1
+
+    :cond_10
+    :goto_b
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_0
+
+    :cond_11
+    if-eqz v2, :cond_12
+
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
+    :try_end_16
+    .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_16} :catch_0
+
+    goto :goto_c
+
+    :catch_0
+    move-exception p1
+
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "[OnlineConfig] Failed to process onlineconfig! \n"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, v0, p1}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
+
+    :cond_12
+    :goto_c
+    return-void
+.end method
+
+.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;D)D
+    .locals 0
+
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:D
+
+    return-wide p1
+.end method
+
+.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;I)I
+    .locals 0
+
+    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mScreenRateSettings:I
+
+    return p1
+.end method
+
+.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;)Landroid/content/Context;
+    .locals 0
+
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mContext:Landroid/content/Context;
+
+    return-object p0
+.end method
+
+.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
+
+    return p1
+.end method
+
+.method private rw()V
     .locals 4
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->nw()Z
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->ow()Z
 
     move-result v0
 
@@ -2084,18 +2969,18 @@
     return-void
 
     :cond_0
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()I
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->mw()I
 
     move-result v0
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:I
 
     if-ne v1, v0, :cond_1
 
     return-void
 
     :cond_1
-    iput v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:I
+    iput v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:I
 
     iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mDebug:Z
 
@@ -2107,7 +2992,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:I
+    iget v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->Lxa:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2177,891 +3062,6 @@
     return-void
 .end method
 
-.method private registerOnlineConfig()V
-    .locals 5
-
-    new-instance v0, Lcom/oneplus/server/DynamicVsyncManager$zta;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lcom/oneplus/server/DynamicVsyncManager$zta;-><init>(Lcom/oneplus/server/DynamicVsyncManager;Lcom/oneplus/server/zta;)V
-
-    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigUpdater:Lcom/oneplus/server/DynamicVsyncManager$zta;
-
-    new-instance v0, Lcom/oneplus/config/ConfigObserver;
-
-    iget-object v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mContext:Landroid/content/Context;
-
-    invoke-static {}, Lcom/android/internal/os/BackgroundThread;->getHandler()Landroid/os/Handler;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigUpdater:Lcom/oneplus/server/DynamicVsyncManager$zta;
-
-    const-string v4, "DynamicVsync"
-
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/oneplus/config/ConfigObserver;-><init>(Landroid/content/Context;Landroid/os/Handler;Lcom/oneplus/config/ConfigObserver$ConfigUpdater;Ljava/lang/String;)V
-
-    iput-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
-
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mConfigObserver:Lcom/oneplus/config/ConfigObserver;
-
-    invoke-virtual {p0}, Lcom/oneplus/config/ConfigObserver;->register()V
-
-    return-void
-.end method
-
-.method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
-    .locals 9
-
-    if-nez p1, :cond_0
-
-    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    const-string v0, "[OnlineConfig] config is null!"
-
-    invoke-direct {p0, p1, v0}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    move v2, v1
-
-    :goto_0
-    :try_start_0
-    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v3
-
-    if-ge v1, v3, :cond_11
-
-    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v3
-
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "feature"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    const-string v4, "value"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
-
-    move-result v4
-
-    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
-
-    const-string v4, "persist.sys.dynamic.vsync"
-
-    iget-boolean v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
-
-    invoke-static {v5}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->setPropValue(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
-
-    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->mEnable:Z
-
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->mEnable:Z
-
-    if-nez v4, :cond_1
-
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->kw()V
-
-    :cond_1
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "[OnlineConfig] feature: "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-
-    :cond_2
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "whitelist"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_4
-
-    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
-
-    monitor-enter v4
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :try_start_1
-    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
-
-    invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
-
-    const-string v5, "value"
-
-    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v5
-
-    move v6, v0
-
-    :goto_1
-    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
-
-    move-result v7
-
-    if-ge v6, v7, :cond_3
-
-    iget-object v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1
-
-    :cond_3
-    monitor-exit v4
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "[OnlineConfig] mWhiteAppSet: "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
-
-    invoke-virtual {v6}, Ljava/util/HashSet;->size()I
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception p1
-
-    :try_start_3
-    monitor-exit v4
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    :try_start_4
-    throw p1
-
-    :cond_4
-    :goto_2
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "support"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    const/4 v5, 0x1
-
-    if-eqz v4, :cond_5
-
-    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
-
-    monitor-enter v2
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
-
-    :try_start_5
-    const-string v4, "value"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v4
-
-    iput v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
-
-    const-string v4, "persist.sys.dps.support"
-
-    iget v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
-
-    invoke-static {v6}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v4, v6}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
-
-    monitor-exit v2
-
-    move v2, v5
-
-    goto :goto_3
-
-    :catchall_1
-    move-exception p1
-
-    monitor-exit v2
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    :try_start_6
-    throw p1
-
-    :cond_5
-    :goto_3
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v6, "delay"
-
-    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
-
-    monitor-enter v2
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
-
-    :try_start_7
-    const-string v4, "value"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v4
-
-    iput v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
-
-    monitor-exit v2
-
-    move v2, v5
-
-    goto :goto_4
-
-    :catchall_2
-    move-exception p1
-
-    monitor-exit v2
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
-
-    :try_start_8
-    throw p1
-
-    :cond_6
-    :goto_4
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v6, "allapp"
-
-    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_7
-
-    const-string v4, "value"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
-
-    move-result v4
-
-    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
-
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "[OnlineConfig] mAllAppEnable: "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-direct {p0, v4, v6}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-
-    :cond_7
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v6, "fling"
-
-    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_9
-
-    const-string v4, "value"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
-
-    move-result v4
-
-    iput-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
-
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
-
-    if-nez v4, :cond_8
-
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->kw()V
-
-    :cond_8
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "[OnlineConfig] mFlingEnable: "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-direct {p0, v4, v6}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-
-    :cond_9
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v6, "backlight"
-
-    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_a
-
-    iget-object v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
-
-    monitor-enter v2
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
-
-    :try_start_9
-    const-string v4, "value"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v4
-
-    iput v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:I
-
-    monitor-exit v2
-
-    move v2, v5
-
-    goto :goto_5
-
-    :catchall_3
-    move-exception p1
-
-    monitor-exit v2
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_3
-
-    :try_start_a
-    throw p1
-
-    :cond_a
-    :goto_5
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "eWhite"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_c
-
-    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
-
-    monitor-enter v4
-    :try_end_a
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_0
-
-    :try_start_b
-    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
-
-    invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
-
-    const-string v5, "value"
-
-    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v5
-
-    move v6, v0
-
-    :goto_6
-    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
-
-    move-result v7
-
-    if-ge v6, v7, :cond_b
-
-    iget-object v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_6
-
-    :cond_b
-    monitor-exit v4
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_4
-
-    :try_start_c
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "[OnlineConfig] mExtremeWhiteSet: "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
-
-    invoke-virtual {v6}, Ljava/util/HashSet;->size()I
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-    :try_end_c
-    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_0
-
-    goto :goto_7
-
-    :catchall_4
-    move-exception p1
-
-    :try_start_d
-    monitor-exit v4
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_4
-
-    :try_start_e
-    throw p1
-
-    :cond_c
-    :goto_7
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "eBlack"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_e
-
-    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
-
-    monitor-enter v4
-    :try_end_e
-    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_0
-
-    :try_start_f
-    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
-
-    invoke-virtual {v5}, Ljava/util/HashSet;->clear()V
-
-    const-string v5, "value"
-
-    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v5
-
-    move v6, v0
-
-    :goto_8
-    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
-
-    move-result v7
-
-    if-ge v6, v7, :cond_d
-
-    iget-object v7, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_8
-
-    :cond_d
-    monitor-exit v4
-    :try_end_f
-    .catchall {:try_start_f .. :try_end_f} :catchall_5
-
-    :try_start_10
-    iget-boolean v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "[OnlineConfig] mExtremeBlackSet: "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
-
-    invoke-virtual {v6}, Ljava/util/HashSet;->size()I
-
-    move-result v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {p0, v4, v5}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-    :try_end_10
-    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_0
-
-    goto :goto_9
-
-    :catchall_5
-    move-exception p1
-
-    :try_start_11
-    monitor-exit v4
-    :try_end_11
-    .catchall {:try_start_11 .. :try_end_11} :catchall_5
-
-    :try_start_12
-    throw p1
-
-    :cond_e
-    :goto_9
-    const-string v4, "name"
-
-    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "limitPkgMap"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_10
-
-    iget-object v4, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
-
-    monitor-enter v4
-    :try_end_12
-    .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_0
-
-    :try_start_13
-    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
-
-    invoke-virtual {v5}, Ljava/util/HashMap;->clear()V
-
-    const-string v5, "value"
-
-    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v3
-
-    move v5, v0
-
-    :goto_a
-    invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
-
-    move-result v6
-
-    if-ge v5, v6, :cond_f
-
-    invoke-virtual {v3, v5}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v6
-
-    const-string v7, "pkg"
-
-    invoke-virtual {v6, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v8, "flag"
-
-    invoke-virtual {v6, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    iget-object v8, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    invoke-virtual {v8, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_a
-
-    :cond_f
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->ow()V
-
-    monitor-exit v4
-    :try_end_13
-    .catchall {:try_start_13 .. :try_end_13} :catchall_6
-
-    :try_start_14
-    iget-boolean v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "[OnlineConfig] limitPkgMap: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
-
-    invoke-virtual {v5}, Ljava/util/HashMap;->size()I
-
-    move-result v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-direct {p0, v3, v4}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-    :try_end_14
-    .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_0
-
-    goto :goto_b
-
-    :catchall_6
-    move-exception p1
-
-    :try_start_15
-    monitor-exit v4
-    :try_end_15
-    .catchall {:try_start_15 .. :try_end_15} :catchall_6
-
-    :try_start_16
-    throw p1
-
-    :cond_10
-    :goto_b
-    add-int/lit8 v1, v1, 0x1
-
-    goto/16 :goto_0
-
-    :cond_11
-    if-eqz v2, :cond_12
-
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pw()V
-    :try_end_16
-    .catch Ljava/lang/Exception; {:try_start_16 .. :try_end_16} :catch_0
-
-    goto :goto_c
-
-    :catch_0
-    move-exception p1
-
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "[OnlineConfig] Failed to process onlineconfig! \n"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
-
-    :cond_12
-    :goto_c
-    return-void
-.end method
-
-.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;D)D
-    .locals 0
-
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:D
-
-    return-wide p1
-.end method
-
-.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;I)I
-    .locals 0
-
-    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mScreenRateSettings:I
-
-    return p1
-.end method
-
-.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;)Landroid/content/Context;
-    .locals 0
-
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->mContext:Landroid/content/Context;
-
-    return-object p0
-.end method
-
-.method static synthetic rtg(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
-    .locals 0
-
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
-
-    return p1
-.end method
-
 .method private setPropValue(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
 
@@ -3071,7 +3071,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3135,7 +3135,7 @@
 .method private sis(D)D
     .locals 4
 
-    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:D
+    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:D
 
     const-wide/16 v2, 0x0
 
@@ -3163,11 +3163,11 @@
 
     sub-double/2addr p1, v0
 
-    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->rxa:D
+    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:D
 
     mul-double/2addr p1, v0
 
-    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->qxa:D
+    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:D
 
     add-double/2addr p1, v0
 
@@ -3177,7 +3177,7 @@
 .method static synthetic sis(Lcom/oneplus/server/DynamicVsyncManager;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:D
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:D
 
     return-wide p1
 .end method
@@ -3185,7 +3185,7 @@
 .method static synthetic sis(Lcom/oneplus/server/DynamicVsyncManager;)I
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
     return p0
 .end method
@@ -3193,7 +3193,7 @@
 .method static synthetic sis(Lcom/oneplus/server/DynamicVsyncManager;I)I
     .locals 0
 
-    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     return p1
 .end method
@@ -3201,7 +3201,7 @@
 .method static synthetic sis(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:Z
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:Z
 
     return p1
 .end method
@@ -3209,7 +3209,7 @@
 .method static synthetic ssp(Lcom/oneplus/server/DynamicVsyncManager;)D
     .locals 2
 
-    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->qxa:D
+    iget-wide v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:D
 
     return-wide v0
 .end method
@@ -3217,7 +3217,7 @@
 .method static synthetic ssp(Lcom/oneplus/server/DynamicVsyncManager;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->rxa:D
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:D
 
     return-wide p1
 .end method
@@ -3225,7 +3225,7 @@
 .method static synthetic ssp(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:Z
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Nxa:Z
 
     return p1
 .end method
@@ -3233,7 +3233,7 @@
 .method static synthetic tsu(Lcom/oneplus/server/DynamicVsyncManager;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->qxa:D
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:D
 
     return-wide p1
 .end method
@@ -3241,7 +3241,7 @@
 .method static synthetic tsu(Lcom/oneplus/server/DynamicVsyncManager;)I
     .locals 0
 
-    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     return p0
 .end method
@@ -3257,7 +3257,7 @@
 .method static synthetic tsu(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->fxa:Z
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:Z
 
     return p1
 .end method
@@ -3272,15 +3272,15 @@
     :try_start_0
     const-string v1, "persist.sys.dynamic.vsync"
 
-    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iget-boolean v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
-    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iget-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
     iput-boolean v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mEnable:Z
 
@@ -3313,7 +3313,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     const-string v1, "persist.sys.dynamic.min"
 
@@ -3327,23 +3327,23 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iput v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
-
-    invoke-direct {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->Nc(I)D
-
-    move-result-wide v1
-
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:D
-
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     invoke-direct {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->Nc(I)D
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:D
+
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
+
+    invoke-direct {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->Nc(I)D
+
+    move-result-wide v1
+
+    iput-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     monitor-exit v0
 
@@ -3396,7 +3396,7 @@
 .method static synthetic wtn(Lcom/oneplus/server/DynamicVsyncManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:Z
+    iget-boolean p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Nxa:Z
 
     return p0
 .end method
@@ -3416,7 +3416,7 @@
 .method static synthetic you(Lcom/oneplus/server/DynamicVsyncManager;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:D
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:D
 
     return-wide p1
 .end method
@@ -3434,7 +3434,7 @@
 .method static synthetic you(Lcom/oneplus/server/DynamicVsyncManager;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->kw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()V
 
     return-void
 .end method
@@ -3442,7 +3442,7 @@
 .method static synthetic you(Lcom/oneplus/server/DynamicVsyncManager;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
     return p1
 .end method
@@ -3492,7 +3492,7 @@
 .method static synthetic zta(Lcom/oneplus/server/DynamicVsyncManager;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iput-wide p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     return-wide p1
 .end method
@@ -3500,7 +3500,7 @@
 .method static synthetic zta(Lcom/oneplus/server/DynamicVsyncManager;F)F
     .locals 0
 
-    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->dxa:F
+    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:F
 
     return p1
 .end method
@@ -3510,7 +3510,7 @@
 
     mul-double/2addr p1, p3
 
-    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     int-to-double p3, p0
 
@@ -3528,7 +3528,7 @@
 .method static synthetic zta(Lcom/oneplus/server/DynamicVsyncManager;I)I
     .locals 0
 
-    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iput p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
     return p1
 .end method
@@ -3560,7 +3560,7 @@
 
     invoke-virtual {v0, p7}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->txa:Z
+    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:Z
 
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -3633,7 +3633,7 @@
 .method static synthetic zta(Lcom/oneplus/server/DynamicVsyncManager;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
+    iget-boolean p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
 
     return p0
 .end method
@@ -3651,7 +3651,7 @@
 .method public da(Z)V
     .locals 3
 
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->exa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:Z
 
     if-eqz v0, :cond_1
 
@@ -3686,7 +3686,7 @@
 
     if-nez p1, :cond_1
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->kw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()V
 
     :cond_1
     :goto_0
@@ -3702,12 +3702,12 @@
 
     invoke-direct {p0, v0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
+    iget v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
 
     invoke-direct {p0, v1}, Lcom/oneplus/server/DynamicVsyncManager;->Oc(I)V
 
@@ -3728,14 +3728,14 @@
 .method public ea(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_0
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Z
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Pxa:Z
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->rw()V
 
     monitor-exit v0
 
@@ -3786,7 +3786,7 @@
     return-void
 
     :cond_1
-    invoke-direct/range {p0 .. p0}, Lcom/oneplus/server/DynamicVsyncManager;->nw()Z
+    invoke-direct/range {p0 .. p0}, Lcom/oneplus/server/DynamicVsyncManager;->ow()Z
 
     move-result v1
 
@@ -3803,11 +3803,11 @@
 
     if-eqz v1, :cond_7
 
-    iget-boolean v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
+    iget-boolean v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
 
     if-eqz v1, :cond_7
 
-    iget-object v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->rH:Ljava/util/HashSet;
+    iget-object v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->BH:Ljava/util/HashSet;
 
     invoke-virtual {v1, v8}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -3818,7 +3818,7 @@
     goto/16 :goto_2
 
     :cond_3
-    iget-boolean v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->fxa:Z
+    iget-boolean v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:Z
 
     if-eqz v1, :cond_4
 
@@ -3833,7 +3833,7 @@
 
     move-result-wide v12
 
-    iget-boolean v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->txa:Z
+    iget-boolean v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->Cxa:Z
 
     const-wide/high16 v14, 0x3ff0000000000000L    # 1.0
 
@@ -3844,16 +3844,16 @@
     goto :goto_0
 
     :cond_5
-    iget-wide v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:D
+    iget-wide v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:D
 
     :goto_0
     invoke-direct {v0, v10, v11, v1, v2}, Lcom/oneplus/server/DynamicVsyncManager;->zta(DD)I
 
     move-result v6
 
-    iget-wide v2, v0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:D
+    iget-wide v2, v0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:D
 
-    iget-wide v4, v0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iget-wide v4, v0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     mul-double v16, v10, v12
 
@@ -3877,9 +3877,9 @@
 
     invoke-direct {v4, v1}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    iget-wide v2, v0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iget-wide v2, v0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
-    iget v5, v0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget v5, v0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     move-object/from16 v1, p0
 
@@ -3901,7 +3901,7 @@
 
     mul-double/2addr v14, v10
 
-    iget-wide v3, v0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:D
+    iget-wide v3, v0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:D
 
     div-double/2addr v14, v3
 
@@ -3919,7 +3919,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v6, v0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget v6, v0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3927,7 +3927,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v6, v0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget v6, v0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -3941,7 +3941,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v6, v0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iget-wide v6, v0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     move-object/from16 v8, v19
 
@@ -4038,23 +4038,23 @@
     monitor-enter v10
 
     :try_start_0
-    iput v9, v0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:I
+    iput v9, v0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    iput-wide v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iput-wide v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
-    iget v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
-    iput v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:I
+    iput v1, v0, Lcom/oneplus/server/DynamicVsyncManager;->uxa:I
 
-    iget v2, v0, Lcom/oneplus/server/DynamicVsyncManager;->jxa:I
+    iget v2, v0, Lcom/oneplus/server/DynamicVsyncManager;->sxa:I
 
-    iget v3, v0, Lcom/oneplus/server/DynamicVsyncManager;->kxa:I
+    iget v3, v0, Lcom/oneplus/server/DynamicVsyncManager;->txa:I
 
-    iget-wide v4, v0, Lcom/oneplus/server/DynamicVsyncManager;->nxa:D
+    iget-wide v4, v0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:D
 
     const-wide v8, 0x3fee666666666666L    # 0.95
 
@@ -4089,16 +4089,16 @@
 .method public frontPackageChanged(Ljava/lang/String;IILjava/lang/String;II)V
     .locals 0
 
-    iget-object p3, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object p3, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter p3
 
     :try_start_0
-    iput-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Dxa:Ljava/lang/String;
+    iput-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Mxa:Ljava/lang/String;
 
     iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->mFrontUid:I
 
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->rw()V
 
     monitor-exit p3
 
@@ -4124,7 +4124,7 @@
     return v0
 
     :cond_0
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->xxa:Ljava/util/HashMap;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Gxa:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -4187,7 +4187,7 @@
     :catch_0
     move-exception p1
 
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->cxa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->lxa:Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -4268,7 +4268,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
+    iget-boolean v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
 
     if-nez v0, :cond_0
 
@@ -4280,7 +4280,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iget-wide v1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
     const-wide/16 v3, 0x0
 
@@ -4292,11 +4292,11 @@
 
     move-result-wide v1
 
-    iget-wide v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iget-wide v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
     sub-long/2addr v1, v5
 
-    iget v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:I
+    iget v5, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:I
 
     int-to-long v5, v5
 
@@ -4318,7 +4318,7 @@
 
     invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iget-wide v6, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
     invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -4326,7 +4326,7 @@
 
     invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:I
+    iget p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:I
 
     invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -4340,7 +4340,7 @@
 
     invoke-direct {p0, v1, p1}, Lcom/oneplus/server/DynamicVsyncManager;->myLog(ZLjava/lang/String;)V
 
-    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->fxa:Z
+    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:Z
 
     if-eqz p1, :cond_1
 
@@ -4349,13 +4349,13 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->kw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()V
 
     :cond_2
     :goto_0
-    iput-wide v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iput-wide v3, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
-    iput v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:I
+    iput v2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:I
 
     :cond_3
     monitor-exit v0
@@ -4379,20 +4379,20 @@
 .method public updateVelocity(Ljava/lang/String;FD)V
     .locals 0
 
-    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->gxa:Z
+    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->pxa:Z
 
     if-nez p1, :cond_0
 
     return-void
 
     :cond_0
-    iget p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->dxa:F
+    iget p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mxa:F
 
     cmpg-float p1, p2, p1
 
     if-gtz p1, :cond_2
 
-    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->fxa:Z
+    iget-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->oxa:Z
 
     const/4 p2, 0x0
 
@@ -4403,7 +4403,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->kw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->lw()V
 
     :goto_0
     iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->mLock:Ljava/lang/Object;
@@ -4413,9 +4413,9 @@
     const-wide/16 p3, 0x0
 
     :try_start_0
-    iput-wide p3, p0, Lcom/oneplus/server/DynamicVsyncManager;->vxa:J
+    iput-wide p3, p0, Lcom/oneplus/server/DynamicVsyncManager;->Exa:J
 
-    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->wxa:I
+    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:I
 
     monitor-exit p1
 
@@ -4509,7 +4509,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter p1
     :try_end_0
@@ -4522,14 +4522,14 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Bxa:I
+    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Kxa:I
 
     monitor-exit p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :try_start_2
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -4580,7 +4580,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter p1
     :try_end_4
@@ -4593,11 +4593,11 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     const-string p2, "persist.sys.dps.support"
 
-    iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->zxa:I
+    iget v0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:I
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -4610,7 +4610,7 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     :try_start_6
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
 
@@ -4638,7 +4638,7 @@
 
     if-eqz v0, :cond_5
 
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->yxa:Ljava/lang/Object;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/lang/Object;
 
     monitor-enter p1
     :try_end_8
@@ -4651,14 +4651,14 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Axa:I
+    iput p2, p0, Lcom/oneplus/server/DynamicVsyncManager;->Jxa:I
 
     monitor-exit p1
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
     :try_start_a
-    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->pw()V
+    invoke-direct {p0}, Lcom/oneplus/server/DynamicVsyncManager;->qw()V
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_0
 
@@ -4694,7 +4694,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Fxa:Z
+    iput-boolean p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Oxa:Z
 
     return v2
 
@@ -4735,14 +4735,14 @@
 
     if-eqz p1, :cond_7
 
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
     monitor-enter p1
     :try_end_c
     .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_0
 
     :try_start_d
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
     aget-object p2, p2, v3
 
@@ -4763,14 +4763,14 @@
     throw p0
 
     :cond_7
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     monitor-enter p1
     :try_end_e
     .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_0
 
     :try_start_f
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     aget-object p2, p2, v3
 
@@ -4812,14 +4812,14 @@
 
     if-eqz p1, :cond_9
 
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
     monitor-enter p1
     :try_end_10
     .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_0
 
     :try_start_11
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Hxa:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Qxa:Ljava/util/HashSet;
 
     aget-object p2, p2, v3
 
@@ -4840,14 +4840,14 @@
     throw p0
 
     :cond_9
-    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object p1, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     monitor-enter p1
     :try_end_12
     .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_0
 
     :try_start_13
-    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Ixa:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/oneplus/server/DynamicVsyncManager;->Rxa:Ljava/util/HashSet;
 
     aget-object p2, p2, v3
 

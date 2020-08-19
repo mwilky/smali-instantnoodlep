@@ -64,7 +64,7 @@
 
     invoke-static {v0}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean v0, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean v0, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez v0, :cond_4
 
@@ -222,7 +222,7 @@
 
     invoke-static {p2}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p2, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p2, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p2, :cond_0
 
@@ -295,7 +295,7 @@
 
     invoke-static {p4}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p4, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p4, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p4, :cond_1
 
@@ -334,7 +334,7 @@
 
     iget-object v1, v1, Lcom/android/server/am/AppRecordTransition;->mProcList:Ljava/util/Set;
 
-    iget-object v2, p5, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object v2, p5, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -346,7 +346,7 @@
 
     iget-object v1, v1, Lcom/android/server/am/AppRecordTransition;->mProcList:Ljava/util/Set;
 
-    iget-object p5, p5, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object p5, p5, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     invoke-interface {v1, p5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -391,7 +391,7 @@
 .method public notePSSChanged(II)V
     .locals 9
 
-    sget-boolean v0, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean v0, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez v0, :cond_2
 
@@ -439,7 +439,7 @@
 
     move-result-wide v7
 
-    iget-object v2, v0, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
@@ -451,7 +451,7 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v0, v0, Lcom/android/server/am/H;->JG:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/server/am/H;->SG:Ljava/lang/String;
 
     move-object v2, v0
 
@@ -543,7 +543,7 @@
 
     invoke-static {p2}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p2, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p2, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p2, :cond_0
 
@@ -606,7 +606,7 @@
 
     if-eqz p5, :cond_4
 
-    sget-boolean p5, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p5, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p5, :cond_3
 
@@ -779,7 +779,7 @@
 
     invoke-static {p3}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p3, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p3, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p3, :cond_0
 
@@ -828,7 +828,7 @@
 
     invoke-static {p3}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p3, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p3, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p3, :cond_0
 
@@ -891,7 +891,7 @@
 
     invoke-static {p0}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p0, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p0, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p0, :cond_0
 
@@ -936,7 +936,7 @@
 
     invoke-static {p3}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p3, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p3, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p3, :cond_0
 
@@ -993,7 +993,7 @@
 
     invoke-static {p3}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p3, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p3, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p3, :cond_0
 
@@ -1052,7 +1052,7 @@
 
     invoke-static {p3}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p3, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p3, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p3, :cond_0
 
@@ -1095,7 +1095,7 @@
 
     invoke-static {p2}, Lcom/android/server/am/gck;->a(Ljava/lang/String;)V
 
-    sget-boolean p2, Lcom/android/server/am/gck;->Nn:Z
+    sget-boolean p2, Lcom/android/server/am/gck;->Xn:Z
 
     if-nez p2, :cond_0
 

@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private mJa:Z
-
-.field private nJa:Z
-
-.field private oJa:Lorg/bouncycastle/asn1/x509/a;
-
-.field private pJa:Z
-
-.field private qJa:Z
-
-.field private rIa:Lorg/bouncycastle/asn1/x509/bvj;
+.field private AIa:Lorg/bouncycastle/asn1/x509/bvj;
 
 .field private seq:Lorg/bouncycastle/asn1/obl;
+
+.field private vJa:Z
+
+.field private wJa:Z
+
+.field private xJa:Lorg/bouncycastle/asn1/x509/a;
+
+.field private yJa:Z
+
+.field private zJa:Z
 
 
 # direct methods
@@ -76,11 +76,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ah()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Bh()Z
 
     move-result v2
 
-    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->qJa:Z
+    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->zJa:Z
 
     goto :goto_1
 
@@ -98,11 +98,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ah()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Bh()Z
 
     move-result v2
 
-    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->pJa:Z
+    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->yJa:Z
 
     goto :goto_1
 
@@ -115,7 +115,7 @@
 
     invoke-direct {v3, v2}, Lorg/bouncycastle/asn1/x509/a;-><init>(Lorg/bouncycastle/asn1/n;)V
 
-    iput-object v3, p0, Lorg/bouncycastle/asn1/x509/ire;->oJa:Lorg/bouncycastle/asn1/x509/a;
+    iput-object v3, p0, Lorg/bouncycastle/asn1/x509/ire;->xJa:Lorg/bouncycastle/asn1/x509/a;
 
     goto :goto_1
 
@@ -124,11 +124,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ah()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Bh()Z
 
     move-result v2
 
-    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->nJa:Z
+    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->wJa:Z
 
     goto :goto_1
 
@@ -137,11 +137,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Ah()Z
+    invoke-virtual {v2}, Lorg/bouncycastle/asn1/tsu;->Bh()Z
 
     move-result v2
 
-    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->mJa:Z
+    iput-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->vJa:Z
 
     goto :goto_1
 
@@ -150,7 +150,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lorg/bouncycastle/asn1/x509/ire;->rIa:Lorg/bouncycastle/asn1/x509/bvj;
+    iput-object v2, p0, Lorg/bouncycastle/asn1/x509/ire;->AIa:Lorg/bouncycastle/asn1/x509/bvj;
 
     :goto_1
     add-int/lit8 v1, v1, 0x1
@@ -188,17 +188,17 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/oif;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/ire;->rIa:Lorg/bouncycastle/asn1/x509/bvj;
+    iput-object p1, p0, Lorg/bouncycastle/asn1/x509/ire;->AIa:Lorg/bouncycastle/asn1/x509/bvj;
 
-    iput-boolean p5, p0, Lorg/bouncycastle/asn1/x509/ire;->pJa:Z
+    iput-boolean p5, p0, Lorg/bouncycastle/asn1/x509/ire;->yJa:Z
 
-    iput-boolean p6, p0, Lorg/bouncycastle/asn1/x509/ire;->qJa:Z
+    iput-boolean p6, p0, Lorg/bouncycastle/asn1/x509/ire;->zJa:Z
 
-    iput-boolean p3, p0, Lorg/bouncycastle/asn1/x509/ire;->nJa:Z
+    iput-boolean p3, p0, Lorg/bouncycastle/asn1/x509/ire;->wJa:Z
 
-    iput-boolean p2, p0, Lorg/bouncycastle/asn1/x509/ire;->mJa:Z
+    iput-boolean p2, p0, Lorg/bouncycastle/asn1/x509/ire;->vJa:Z
 
-    iput-object p4, p0, Lorg/bouncycastle/asn1/x509/ire;->oJa:Lorg/bouncycastle/asn1/x509/a;
+    iput-object p4, p0, Lorg/bouncycastle/asn1/x509/ire;->xJa:Lorg/bouncycastle/asn1/x509/a;
 
     new-instance v0, Lorg/bouncycastle/asn1/cno;
 
@@ -383,34 +383,26 @@
 
 
 # virtual methods
-.method public Vi()Lorg/bouncycastle/asn1/x509/bvj;
+.method public Wi()Lorg/bouncycastle/asn1/x509/bvj;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ire;->rIa:Lorg/bouncycastle/asn1/x509/bvj;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ire;->AIa:Lorg/bouncycastle/asn1/x509/bvj;
 
     return-object p0
 .end method
 
-.method public gj()Lorg/bouncycastle/asn1/x509/a;
+.method public hj()Lorg/bouncycastle/asn1/x509/a;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ire;->oJa:Lorg/bouncycastle/asn1/x509/a;
+    iget-object p0, p0, Lorg/bouncycastle/asn1/x509/ire;->xJa:Lorg/bouncycastle/asn1/x509/a;
 
     return-object p0
-.end method
-
-.method public hj()Z
-    .locals 0
-
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->pJa:Z
-
-    return p0
 .end method
 
 .method public ij()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->qJa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->yJa:Z
 
     return p0
 .end method
@@ -418,7 +410,7 @@
 .method public jj()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->nJa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->zJa:Z
 
     return p0
 .end method
@@ -426,7 +418,15 @@
 .method public kj()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->mJa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->wJa:Z
+
+    return p0
+.end method
+
+.method public lj()Z
+    .locals 0
+
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/x509/ire;->vJa:Z
 
     return p0
 .end method
@@ -456,7 +456,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ire;->rIa:Lorg/bouncycastle/asn1/x509/bvj;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ire;->AIa:Lorg/bouncycastle/asn1/x509/bvj;
 
     if-eqz v2, :cond_0
 
@@ -469,7 +469,7 @@
     invoke-direct {p0, v1, v0, v3, v2}, Lorg/bouncycastle/asn1/x509/ire;->zta(Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
-    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->mJa:Z
+    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->vJa:Z
 
     if-eqz v2, :cond_1
 
@@ -482,7 +482,7 @@
     invoke-direct {p0, v1, v0, v3, v2}, Lorg/bouncycastle/asn1/x509/ire;->zta(Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
-    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->nJa:Z
+    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->wJa:Z
 
     if-eqz v2, :cond_2
 
@@ -495,7 +495,7 @@
     invoke-direct {p0, v1, v0, v3, v2}, Lorg/bouncycastle/asn1/x509/ire;->zta(Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
-    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ire;->oJa:Lorg/bouncycastle/asn1/x509/a;
+    iget-object v2, p0, Lorg/bouncycastle/asn1/x509/ire;->xJa:Lorg/bouncycastle/asn1/x509/a;
 
     if-eqz v2, :cond_3
 
@@ -508,7 +508,7 @@
     invoke-direct {p0, v1, v0, v3, v2}, Lorg/bouncycastle/asn1/x509/ire;->zta(Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
-    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->qJa:Z
+    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->zJa:Z
 
     if-eqz v2, :cond_4
 
@@ -521,7 +521,7 @@
     invoke-direct {p0, v1, v0, v3, v2}, Lorg/bouncycastle/asn1/x509/ire;->zta(Ljava/lang/StringBuffer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
-    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->pJa:Z
+    iget-boolean v2, p0, Lorg/bouncycastle/asn1/x509/ire;->yJa:Z
 
     if-eqz v2, :cond_5
 

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private Br:Ljava/util/List;
+.field private Kr:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -36,7 +36,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     return-void
 .end method
@@ -54,12 +54,12 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     monitor-exit v0
 
@@ -78,12 +78,12 @@
 .method public cleanUp()V
     .locals 1
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object p0, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
@@ -104,7 +104,7 @@
 .method public dump()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     monitor-enter v0
 
@@ -112,7 +112,7 @@
 
     :goto_0
     :try_start_0
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -120,7 +120,7 @@
 
     if-ge v1, v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -158,7 +158,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     monitor-enter v1
 
@@ -195,7 +195,7 @@
 
     invoke-direct/range {v2 .. v18}, Lcom/android/server/am/OnePlusBGController$dma;-><init>(Ljava/lang/String;IDDDDLcom/android/server/am/OnePlusBGController$AppBucketRanking;Lcom/android/server/am/OnePlusBGController$MyDrainType;ZZZLcom/android/server/am/OnePlusBGController$OptType;)V
 
-    iget-object v0, v0, Lcom/android/server/am/OnePlusBGController$you;->Br:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/server/am/OnePlusBGController$you;->Kr:Ljava/util/List;
 
     move-object/from16 v2, v19
 

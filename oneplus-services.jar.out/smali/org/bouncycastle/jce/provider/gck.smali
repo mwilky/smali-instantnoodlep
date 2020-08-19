@@ -110,13 +110,13 @@
 
     check-cast v1, Lorg/bouncycastle/x509/tsu;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->dh()Z
+    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->eh()Z
 
     move-result v3
 
     invoke-virtual {v2, v3}, Lorg/bouncycastle/jcajce/wtn$zta;->ia(Z)Lorg/bouncycastle/jcajce/wtn$zta;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->bh()I
+    invoke-virtual {v1}, Lorg/bouncycastle/x509/tsu;->ch()I
 
     move-result v1
 
@@ -136,7 +136,7 @@
 
     check-cast v1, Lorg/bouncycastle/jcajce/bio;
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/bio;->tk()Lorg/bouncycastle/jcajce/wtn;
+    invoke-virtual {v1}, Lorg/bouncycastle/jcajce/bio;->uk()Lorg/bouncycastle/jcajce/wtn;
 
     move-result-object v1
 
@@ -437,13 +437,13 @@
 
     invoke-virtual {v3}, Lorg/bouncycastle/asn1/x509/zta;->getParameters()Lorg/bouncycastle/asn1/ssp;
 
-    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->_g()Lorg/bouncycastle/jcajce/cno;
+    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->ah()Lorg/bouncycastle/jcajce/cno;
 
     move-result-object v3
 
     if-eqz v3, :cond_b
 
-    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->_g()Lorg/bouncycastle/jcajce/cno;
+    invoke-virtual/range {v16 .. v16}, Lorg/bouncycastle/jcajce/wtn;->ah()Lorg/bouncycastle/jcajce/cno;
 
     move-result-object v3
 
@@ -740,27 +740,7 @@
 
     invoke-direct {v7, v6}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->ZTa:Ljava/lang/String;
-
-    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->UTa:Ljava/lang/String;
-
-    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->WTa:Ljava/lang/String;
-
-    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->_Ta:Ljava/lang/String;
-
-    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->aUa:Ljava/lang/String;
-
-    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->bUa:Ljava/lang/String;
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->hUa:Ljava/lang/String;
 
     invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
@@ -768,15 +748,35 @@
 
     invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->VTa:Ljava/lang/String;
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->eUa:Ljava/lang/String;
 
     invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->XTa:Ljava/lang/String;
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->iUa:Ljava/lang/String;
 
     invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->YTa:Ljava/lang/String;
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->jUa:Ljava/lang/String;
+
+    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->kUa:Ljava/lang/String;
+
+    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->lUa:Ljava/lang/String;
+
+    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->dUa:Ljava/lang/String;
+
+    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->fUa:Ljava/lang/String;
+
+    invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v6, Lorg/bouncycastle/jce/provider/oif;->gUa:Ljava/lang/String;
 
     invoke-interface {v7, v6}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
@@ -906,7 +906,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1}, Lorg/bouncycastle/jce/provider/AnnotatedException;->Tg()Ljava/lang/Throwable;
+    invoke-virtual {v1}, Lorg/bouncycastle/jce/provider/AnnotatedException;->Ug()Ljava/lang/Throwable;
 
     move-result-object v1
 
@@ -984,27 +984,7 @@
 
     invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->ZTa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->UTa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->WTa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->_Ta:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->aUa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->bUa:Ljava/lang/String;
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->hUa:Ljava/lang/String;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
@@ -1012,23 +992,43 @@
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->VTa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->XTa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->YTa:Ljava/lang/String;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
     sget-object v0, Lorg/bouncycastle/jce/provider/oif;->eUa:Ljava/lang/String;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    sget-object v0, Lorg/bouncycastle/asn1/x509/gwm;->MIa:Lorg/bouncycastle/asn1/bvj;
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->iUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->jUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->kUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->lUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->dUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->fUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->gUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/jce/provider/oif;->nUa:Ljava/lang/String;
+
+    invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
+
+    sget-object v0, Lorg/bouncycastle/asn1/x509/gwm;->VIa:Lorg/bouncycastle/asn1/bvj;
 
     invoke-virtual {v0}, Lorg/bouncycastle/asn1/bvj;->getId()Ljava/lang/String;
 
@@ -1150,7 +1150,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lorg/bouncycastle/jce/provider/AnnotatedException;->Tg()Ljava/lang/Throwable;
+    invoke-virtual {v0}, Lorg/bouncycastle/jce/provider/AnnotatedException;->Ug()Ljava/lang/Throwable;
 
     move-result-object v0
 

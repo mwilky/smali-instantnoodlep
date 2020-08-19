@@ -15,13 +15,15 @@
 
 
 # instance fields
-.field final AC:Ljava/lang/String;
+.field final JC:Z
 
-.field final CC:J
+.field final KC:Ljava/lang/String;
 
-.field final DC:Z
+.field final LC:J
 
-.field EC:Ljava/util/ArrayList;
+.field final MC:Z
+
+.field OC:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -37,8 +39,6 @@
 
 .field final mPss:J
 
-.field final zC:Z
-
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JJI)V
@@ -48,19 +48,19 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->zC:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->JC:Z
 
     iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mLabel:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->AC:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->KC:Ljava/lang/String;
 
     iput-wide p3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->CC:J
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->LC:J
 
     iput p7, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mId:I
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->DC:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->MC:Z
 
     return-void
 .end method
@@ -72,19 +72,19 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->zC:Z
+    iput-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->JC:Z
 
     iput-object p1, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mLabel:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->AC:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->KC:Ljava/lang/String;
 
     iput-wide p3, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mPss:J
 
-    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->CC:J
+    iput-wide p5, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->LC:J
 
     iput p7, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->mId:I
 
-    iput-boolean p8, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->DC:Z
+    iput-boolean p8, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->MC:Z
 
     return-void
 .end method
@@ -94,7 +94,7 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    iget-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->zC:Z
+    iget-boolean v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$you;->JC:Z
 
     const/4 v1, 0x1
 

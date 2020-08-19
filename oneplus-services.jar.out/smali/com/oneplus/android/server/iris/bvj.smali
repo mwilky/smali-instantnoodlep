@@ -32,7 +32,13 @@
     return-void
 .end method
 
-.method public Qf()Z
+.method public R(Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public Rf()Z
     .locals 0
 
     const/4 p0, 0x0
@@ -40,19 +46,13 @@
     return p0
 .end method
 
-.method public R(Z)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public Rf()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public S(Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public Sf()V
     .locals 0
 
     return-void

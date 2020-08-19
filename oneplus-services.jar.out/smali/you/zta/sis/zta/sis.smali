@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final CUa:Ljava/math/BigInteger;
-
-.field public static final JFa:Ljava/math/BigInteger;
+.field public static final LUa:Ljava/math/BigInteger;
 
 .field public static final ONE:Ljava/math/BigInteger;
 
+.field public static final SFa:Ljava/math/BigInteger;
+
 .field public static final ZERO:Ljava/math/BigInteger;
 
-.field public static final dib:Ljava/math/BigInteger;
+.field public static final mib:Ljava/math/BigInteger;
 
-.field public static final eib:Ljava/math/BigInteger;
+.field public static final nib:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lyou/zta/sis/zta/sis;->JFa:Ljava/math/BigInteger;
+    sput-object v0, Lyou/zta/sis/zta/sis;->SFa:Ljava/math/BigInteger;
 
     const-wide/16 v0, 0x3
 
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lyou/zta/sis/zta/sis;->CUa:Ljava/math/BigInteger;
+    sput-object v0, Lyou/zta/sis/zta/sis;->LUa:Ljava/math/BigInteger;
 
     const-wide/16 v0, 0x4
 
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lyou/zta/sis/zta/sis;->dib:Ljava/math/BigInteger;
+    sput-object v0, Lyou/zta/sis/zta/sis;->mib:Ljava/math/BigInteger;
 
     const-wide/16 v0, 0x8
 
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lyou/zta/sis/zta/sis;->eib:Ljava/math/BigInteger;
+    sput-object v0, Lyou/zta/sis/zta/sis;->nib:Ljava/math/BigInteger;
 
     return-void
 .end method

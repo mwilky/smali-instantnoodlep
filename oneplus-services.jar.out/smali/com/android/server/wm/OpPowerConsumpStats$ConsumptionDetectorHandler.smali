@@ -279,7 +279,7 @@
 
     move-result-object v0
 
-    sget-object v8, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->vga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+    sget-object v8, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->Ega:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
     if-ne v0, v8, :cond_1
 
@@ -741,7 +741,7 @@
 
     move-result-object v5
 
-    iput-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Sca:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->ada:Ljava/lang/String;
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 
@@ -753,7 +753,7 @@
 
     move-result-wide v6
 
-    iput-wide v6, v0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->Tca:J
+    iput-wide v6, v0, Lcom/android/server/wm/OpPowerConsumpStats$qbh;->bda:J
 
     iget-object v0, v1, Lcom/android/server/wm/OpPowerConsumpStats$ConsumptionDetectorHandler;->this$0:Lcom/android/server/wm/OpPowerConsumpStats;
 

@@ -25,9 +25,9 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
-.field public static final enum uga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+.field public static final enum Dga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
-.field public static final enum vga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+.field public static final enum Ega:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
 
 # instance fields
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v2, v1, v1}, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->uga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->Dga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
     new-instance v0, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
@@ -56,17 +56,17 @@
 
     invoke-direct {v0, v3, v2, v2}, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->vga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+    sput-object v0, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->Ega:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
-    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->uga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+    sget-object v3, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->Dga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
     aput-object v3, v0, v1
 
-    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->vga:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
+    sget-object v1, Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;->Ega:Lcom/android/server/wm/OpPowerConsumpStats$OccludedStatus;
 
     aput-object v1, v0, v2
 

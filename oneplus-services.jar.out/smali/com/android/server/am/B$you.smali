@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field AE:Ljava/lang/String;
+.field OE:Ljava/lang/String;
 
-.field DE:J
+.field QE:J
 
 .field final synthetic this$0:Lcom/android/server/am/B;
 
@@ -38,11 +38,11 @@
 
     const-string p1, ""
 
-    iput-object p1, p0, Lcom/android/server/am/B$you;->AE:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/B$you;->OE:Ljava/lang/String;
 
     const-wide v0, 0x7fffffffffffffffL
 
-    iput-wide v0, p0, Lcom/android/server/am/B$you;->DE:J
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->QE:J
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 
     if-eq v0, v1, :cond_1
 
-    iget-wide v0, p0, Lcom/android/server/am/B$you;->DE:J
+    iget-wide v0, p0, Lcom/android/server/am/B$you;->QE:J
 
     const-wide v2, 0x7fffffffffffffffL
 
@@ -78,10 +78,10 @@
     return p0
 .end method
 
-.method private op()V
+.method private pp()V
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/am/B$you;->DE:J
+    iget-wide v0, p0, Lcom/android/server/am/B$you;->QE:J
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -97,11 +97,11 @@
 
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/server/am/B$you;->AE:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/B$you;->OE:Ljava/lang/String;
 
     const-wide v0, 0x7fffffffffffffffL
 
-    iput-wide v0, p0, Lcom/android/server/am/B$you;->DE:J
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->QE:J
 
     :cond_0
     return-void
@@ -114,13 +114,13 @@
 
     iput v0, p0, Lcom/android/server/am/B$you;->uid:I
 
-    iget-object v0, p1, Lcom/android/server/am/B$you;->AE:Ljava/lang/String;
+    iget-object v0, p1, Lcom/android/server/am/B$you;->OE:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/server/am/B$you;->AE:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/B$you;->OE:Ljava/lang/String;
 
-    iget-wide v0, p1, Lcom/android/server/am/B$you;->DE:J
+    iget-wide v0, p1, Lcom/android/server/am/B$you;->QE:J
 
-    iput-wide v0, p0, Lcom/android/server/am/B$you;->DE:J
+    iput-wide v0, p0, Lcom/android/server/am/B$you;->QE:J
 
     return-void
 .end method
@@ -140,9 +140,9 @@
 
     iput p1, p0, Lcom/android/server/am/B$you;->uid:I
 
-    iput-object p2, p0, Lcom/android/server/am/B$you;->AE:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/server/am/B$you;->OE:Ljava/lang/String;
 
-    iput-wide p3, p0, Lcom/android/server/am/B$you;->DE:J
+    iput-wide p3, p0, Lcom/android/server/am/B$you;->QE:J
 
     return-void
 .end method
@@ -150,7 +150,7 @@
 .method static synthetic zta(Lcom/android/server/am/B$you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/B$you;->op()V
+    invoke-direct {p0}, Lcom/android/server/am/B$you;->pp()V
 
     return-void
 .end method
@@ -192,7 +192,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/am/B$you;->AE:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/am/B$you;->OE:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -200,7 +200,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/am/B$you;->DE:J
+    iget-wide v1, p0, Lcom/android/server/am/B$you;->QE:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

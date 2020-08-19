@@ -975,7 +975,7 @@
 
     iget-object p0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->Cf()V
+    invoke-virtual {p0}, Lcom/oneplus/android/server/display/gwm;->Df()V
 
     return-void
 .end method
@@ -1874,7 +1874,7 @@
     :goto_0
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Af()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Bf()V
 
     :cond_3
     :goto_1
@@ -1893,7 +1893,7 @@
     :goto_2
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Af()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Bf()V
 
     :cond_5
     :goto_3
@@ -1942,7 +1942,7 @@
 
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Af()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Bf()V
 
     new-array p1, v5, [I
 
@@ -2152,7 +2152,7 @@
     :cond_f
     iget-object p1, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->zf()V
+    invoke-virtual {p1}, Lcom/oneplus/android/server/display/gwm;->Af()V
 
     :cond_10
     :goto_6
@@ -3100,7 +3100,7 @@
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->Bf()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->Cf()V
 
     iget-boolean v0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->isTheSpecificPlane:Z
 
@@ -3175,7 +3175,7 @@
     :cond_a
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mColorTintManager:Lcom/oneplus/android/server/display/gwm;
 
-    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->wf()V
+    invoke-virtual {v0}, Lcom/oneplus/android/server/display/gwm;->xf()V
 
     iget-object v0, p0, Lcom/oneplus/android/server/display/OpColorDisplayService;->mOpColorModeManager:Lcom/oneplus/android/server/display/OpColorModeManager;
 

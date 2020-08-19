@@ -4,17 +4,17 @@
 
 
 # static fields
-.field public static final AXa:I = 0x4
-
 .field public static final HDMI:I = 0x2
+
+.field public static final HXa:I = 0x0
+
+.field public static final IXa:I = 0x1
+
+.field public static final JXa:I = 0x4
 
 .field public static final MAX:I = 0x5
 
 .field public static final MHL:I = 0x3
-
-.field public static final yXa:I = 0x0
-
-.field public static final zXa:I = 0x1
 
 
 # direct methods

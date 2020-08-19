@@ -20,9 +20,9 @@
 # instance fields
 .field config:Lcom/android/server/am/OpForceDarkController$zta;
 
-.field jE:Ljava/lang/String;
+.field sE:Ljava/lang/String;
 
-.field kE:I
+.field tE:I
 
 .field final synthetic this$0:Lcom/android/server/am/OpForceDarkController;
 
@@ -39,7 +39,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$sis;->jE:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {p2}, Lcom/android/server/am/OpForceDarkController$zta;->clone()Lcom/android/server/am/OpForceDarkController$zta;
 
@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Lcom/android/server/am/OpForceDarkController$sis;->config:Lcom/android/server/am/OpForceDarkController$zta;
 
-    iput p3, p0, Lcom/android/server/am/OpForceDarkController$sis;->kE:I
+    iput p3, p0, Lcom/android/server/am/OpForceDarkController$sis;->tE:I
 
     return-void
 .end method
@@ -81,9 +81,9 @@
     :try_start_1
     iget-object v2, p0, Lcom/android/server/am/OpForceDarkController$sis;->this$0:Lcom/android/server/am/OpForceDarkController;
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$sis;->jE:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$sis;->sE:Ljava/lang/String;
 
-    iget v4, p0, Lcom/android/server/am/OpForceDarkController$sis;->kE:I
+    iget v4, p0, Lcom/android/server/am/OpForceDarkController$sis;->tE:I
 
     invoke-static {v2, v3, v4}, Lcom/android/server/am/OpForceDarkController;->access$100(Lcom/android/server/am/OpForceDarkController;Ljava/lang/String;I)Ljava/util/List;
 
@@ -107,7 +107,7 @@
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$sis;->jE:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/OpForceDarkController$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -150,7 +150,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :try_start_4
-    iget v5, p0, Lcom/android/server/am/OpForceDarkController$sis;->kE:I
+    iget v5, p0, Lcom/android/server/am/OpForceDarkController$sis;->tE:I
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -160,7 +160,7 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v7, p0, Lcom/android/server/am/OpForceDarkController$sis;->jE:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/server/am/OpForceDarkController$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -172,7 +172,7 @@
 
     iget-object v5, p0, Lcom/android/server/am/OpForceDarkController$sis;->config:Lcom/android/server/am/OpForceDarkController$zta;
 
-    iget v6, p0, Lcom/android/server/am/OpForceDarkController$sis;->kE:I
+    iget v6, p0, Lcom/android/server/am/OpForceDarkController$sis;->tE:I
 
     invoke-virtual {v5, v6}, Lcom/android/server/am/OpForceDarkController$zta;->r(I)Ljava/lang/String;
 
@@ -190,11 +190,11 @@
 
     const/4 v8, 0x0
 
-    iget-object v9, p0, Lcom/android/server/am/OpForceDarkController$sis;->jE:Ljava/lang/String;
+    iget-object v9, p0, Lcom/android/server/am/OpForceDarkController$sis;->sE:Ljava/lang/String;
 
     aput-object v9, v7, v8
 
-    iget v8, p0, Lcom/android/server/am/OpForceDarkController$sis;->kE:I
+    iget v8, p0, Lcom/android/server/am/OpForceDarkController$sis;->tE:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -241,7 +241,7 @@
 
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$sis;->jE:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/OpForceDarkController$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

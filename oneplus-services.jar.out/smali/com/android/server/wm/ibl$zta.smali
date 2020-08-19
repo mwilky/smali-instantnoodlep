@@ -47,47 +47,47 @@
 
 .field private static final VALUE_ON:Ljava/lang/String; = "1"
 
-.field private static final aba:Ljava/lang/String; = "force-off"
+.field private static final jba:Ljava/lang/String; = "force-off"
 
-.field private static final bba:Ljava/lang/String; = "force-on"
+.field private static final kba:Ljava/lang/String; = "force-on"
 
-.field private static final cba:Ljava/lang/String; = "force-on-color"
+.field private static final lba:Ljava/lang/String; = "force-on-color"
 
-.field private static final dba:Ljava/lang/String; = "com.oneplus.camera"
+.field private static mNotificationManager:Landroid/app/NotificationManager; = null
 
-.field private static final eba:Ljava/lang/String; = "com.oneplus.gallery"
+.field private static mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService; = null
 
-.field private static final fba:Ljava/lang/String; = "com.amazon.avod.thirdpartyclient"
+.field private static final mba:Ljava/lang/String; = "com.oneplus.camera"
 
-.field private static final gba:Ljava/lang/String; = "com.netflix.mediaclient"
+.field private static final nba:Ljava/lang/String; = "com.oneplus.gallery"
 
-.field private static final hba:I = 0x1f4
+.field private static final oba:Ljava/lang/String; = "com.amazon.avod.thirdpartyclient"
 
-.field private static iba:Lcom/android/server/wm/ActivityRecord;
+.field private static final pba:Ljava/lang/String; = "com.netflix.mediaclient"
 
-.field private static jba:Lcom/android/server/wm/ActivityRecord;
+.field private static final qba:I = 0x1f4
 
-.field private static mNotificationManager:Landroid/app/NotificationManager;
+.field private static rba:Lcom/android/server/wm/ActivityRecord;
 
-.field private static mStatusBarService:Lcom/android/internal/statusbar/IStatusBarService;
+.field private static sba:Lcom/android/server/wm/ActivityRecord;
 
 
 # instance fields
-.field private Saa:Landroid/app/AlertDialog;
+.field private aba:Landroid/app/AlertDialog;
 
-.field private Taa:Landroid/content/Intent;
+.field private bba:Landroid/content/Intent;
 
-.field private Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+.field private cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
-.field Vaa:I
+.field dba:I
 
-.field private Waa:Ljava/lang/String;
+.field private eba:Ljava/lang/String;
 
-.field private Xaa:Z
+.field private fba:Z
 
-.field private Yaa:Ljava/lang/String;
+.field private gba:Ljava/lang/String;
 
-.field private Zaa:Ljava/util/ArrayList;
+.field private hba:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -97,7 +97,7 @@
     .end annotation
 .end field
 
-.field private _aa:Ljava/util/ArrayList;
+.field private iba:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -130,27 +130,27 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/wm/ibl$zta;->Vaa:I
+    iput v0, p0, Lcom/android/server/wm/ibl$zta;->dba:I
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
-    iput-boolean v0, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
-    iput-object v1, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
-
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->Zaa:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->hba:Ljava/util/ArrayList;
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
     new-instance v0, Lcom/android/server/wm/oif;
 
@@ -280,7 +280,7 @@
 .method static synthetic sis(Lcom/android/server/wm/ibl$zta;)Landroid/app/AlertDialog;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/ibl$zta;->Saa:Landroid/app/AlertDialog;
+    iget-object p0, p0, Lcom/android/server/wm/ibl$zta;->aba:Landroid/app/AlertDialog;
 
     return-object p0
 .end method
@@ -288,7 +288,7 @@
 .method static synthetic tsu(Lcom/android/server/wm/ibl$zta;)Landroid/content/Intent;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/ibl$zta;->Taa:Landroid/content/Intent;
+    iget-object p0, p0, Lcom/android/server/wm/ibl$zta;->bba:Landroid/content/Intent;
 
     return-object p0
 .end method
@@ -404,7 +404,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -420,7 +420,7 @@
 
     const/4 p1, 0x0
 
-    sput-object p1, Lcom/android/server/wm/ibl$zta;->jba:Lcom/android/server/wm/ActivityRecord;
+    sput-object p1, Lcom/android/server/wm/ibl$zta;->sba:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {p0, p1, v1}, Lcom/android/server/wm/ibl$zta;->startEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 
@@ -472,7 +472,7 @@
 .method static synthetic zta(Lcom/android/server/wm/ibl$zta;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->Saa:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->aba:Landroid/app/AlertDialog;
 
     return-object p1
 .end method
@@ -506,27 +506,27 @@
 .method public He()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Zaa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->hba:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
-    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     return-void
 .end method
@@ -658,7 +658,7 @@
     goto :goto_0
 
     :cond_0
-    sget-boolean v0, Lcom/oneplus/android/server/scene/a;->lwa:Z
+    sget-boolean v0, Lcom/oneplus/android/server/scene/a;->uwa:Z
 
     if-eqz v0, :cond_1
 
@@ -711,9 +711,9 @@
 
     iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
-    iput-object p2, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iput-object p2, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -727,7 +727,7 @@
 .method public packageChanged(Ljava/lang/String;I)V
     .locals 2
 
-    sget-boolean p0, Lcom/oneplus/android/server/scene/a;->lwa:Z
+    sget-boolean p0, Lcom/oneplus/android/server/scene/a;->uwa:Z
 
     if-eqz p0, :cond_1
 
@@ -826,19 +826,19 @@
 
     if-ne p2, v1, :cond_0
 
-    iput-boolean v1, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean v1, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     goto :goto_1
 
     :cond_0
     :goto_0
-    iput-boolean v0, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
-    iput-object v3, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     goto :goto_1
 
@@ -854,11 +854,11 @@
     goto :goto_1
 
     :cond_2
-    iget-boolean p2, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iget-boolean p2, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
     if-eqz p2, :cond_3
 
-    iget-object p2, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -870,7 +870,7 @@
 
     if-nez p2, :cond_3
 
-    iget-object p2, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityRecord;->launchedFromPackage:Ljava/lang/String;
 
@@ -890,14 +890,14 @@
 .method public sendReadModeNotification(Lcom/android/server/wm/ActivityRecord;)V
     .locals 12
 
-    sget-boolean v0, Lcom/oneplus/android/server/scene/a;->lwa:Z
+    sget-boolean v0, Lcom/oneplus/android/server/scene/a;->uwa:Z
 
     if-nez v0, :cond_0
 
     return-void
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -943,7 +943,7 @@
     return-void
 
     :cond_1
-    invoke-static {}, Lcom/oneplus/android/server/scene/a;->og()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/scene/a;->pg()Ljava/lang/String;
 
     move-result-object v4
 
@@ -984,7 +984,7 @@
 
     invoke-static {v1, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v4, v4, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1032,9 +1032,9 @@
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iput-object v3, p0, Lcom/android/server/wm/ibl$zta;->Taa:Landroid/content/Intent;
+    iput-object v3, p0, Lcom/android/server/wm/ibl$zta;->bba:Landroid/content/Intent;
 
-    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->Taa:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->bba:Landroid/content/Intent;
 
     const v4, 0x10008000
 
@@ -1298,7 +1298,7 @@
 
     iget-object v2, p0, Lcom/android/server/wm/ibl$zta;->mContext:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->Taa:Landroid/content/Intent;
+    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->bba:Landroid/content/Intent;
 
     const/high16 v4, 0x10000000
 
@@ -1332,7 +1332,7 @@
 .method public startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 7
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1370,7 +1370,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->Zaa:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->hba:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1396,7 +1396,7 @@
 
     if-nez v3, :cond_4
 
-    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->Zaa:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->hba:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1434,12 +1434,12 @@
     if-eqz v3, :cond_3
 
     :cond_2
-    iput-boolean v0, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean v0, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
-    iput-object v2, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     :cond_3
-    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->Zaa:Ljava/util/ArrayList;
+    iget-object v3, p0, Lcom/android/server/wm/ibl$zta;->hba:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1476,11 +1476,11 @@
     :goto_2
     if-eqz p1, :cond_5
 
-    iget-boolean v4, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iget-boolean v4, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
     if-eqz v4, :cond_5
 
-    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1506,7 +1506,7 @@
 
     if-nez v4, :cond_6
 
-    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1531,7 +1531,7 @@
     goto :goto_3
 
     :cond_5
-    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object v4, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1596,12 +1596,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     goto :goto_5
 
     :cond_9
-    iput-object v2, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     :goto_5
     iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
@@ -1655,7 +1655,7 @@
     :cond_a
     iput p1, v0, Landroid/os/Message;->arg1:I
 
-    iget-boolean v2, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iget-boolean v2, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
     if-eqz v2, :cond_b
 
@@ -1733,7 +1733,7 @@
 .method public startEvaluateReadingMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 5
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1771,7 +1771,7 @@
     return-void
 
     :cond_1
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -1811,11 +1811,11 @@
 
     invoke-virtual {v2, v1, v3, v4}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    sget-boolean v1, Lcom/oneplus/android/server/scene/a;->lwa:Z
+    sget-boolean v1, Lcom/oneplus/android/server/scene/a;->uwa:Z
 
     if-eqz v1, :cond_3
 
-    sget-object v1, Lcom/oneplus/android/server/scene/a;->twa:Ljava/lang/String;
+    sget-object v1, Lcom/oneplus/android/server/scene/a;->Cwa:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
@@ -1830,7 +1830,7 @@
     :cond_2
     iget-object v1, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
-    sput-object v1, Lcom/oneplus/android/server/scene/a;->twa:Ljava/lang/String;
+    sput-object v1, Lcom/oneplus/android/server/scene/a;->Cwa:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
 
@@ -1844,7 +1844,7 @@
 
     if-ne p1, v1, :cond_3
 
-    invoke-static {}, Lcom/oneplus/android/server/scene/a;->og()Ljava/lang/String;
+    invoke-static {}, Lcom/oneplus/android/server/scene/a;->pg()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1854,7 +1854,7 @@
 
     if-nez v1, :cond_3
 
-    sget-object v1, Lcom/oneplus/android/server/scene/a;->mwa:Ljava/util/ArrayList;
+    sget-object v1, Lcom/oneplus/android/server/scene/a;->vwa:Ljava/util/ArrayList;
 
     iget-object v3, p2, Lcom/android/server/wm/ActivityRecord;->packageName:Ljava/lang/String;
 
@@ -1890,7 +1890,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/oneplus/android/server/scene/a;->pwa:I
+    sget v2, Lcom/oneplus/android/server/scene/a;->ywa:I
 
     int-to-long v2, v2
 
@@ -1923,7 +1923,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object p1, Lcom/oneplus/android/server/scene/a;->twa:Ljava/lang/String;
+    sget-object p1, Lcom/oneplus/android/server/scene/a;->Cwa:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1983,7 +1983,7 @@
     invoke-static {v0, v1, v2, v3}, Lcom/android/server/wm/OpUtilInjector;->setFront(Ljava/lang/String;Ljava/lang/String;II)V
 
     :cond_2
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     invoke-virtual {v0}, Lcom/android/server/wm/ActivityStackSupervisor;->getKeyguardController()Lcom/android/server/wm/KeyguardController;
 
@@ -2047,7 +2047,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/wm/ibl$zta;->iba:Lcom/android/server/wm/ActivityRecord;
+    sget-object v1, Lcom/android/server/wm/ibl$zta;->rba:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2055,7 +2055,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/android/server/wm/ibl$zta;->jba:Lcom/android/server/wm/ActivityRecord;
+    sget-object v1, Lcom/android/server/wm/ibl$zta;->sba:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2076,7 +2076,7 @@
 
     if-eqz v0, :cond_8
 
-    sget-object v0, Lcom/android/server/wm/ibl$zta;->iba:Lcom/android/server/wm/ActivityRecord;
+    sget-object v0, Lcom/android/server/wm/ibl$zta;->rba:Lcom/android/server/wm/ActivityRecord;
 
     if-eq p1, v0, :cond_8
 
@@ -2094,7 +2094,7 @@
     return-void
 
     :cond_8
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v0, v0, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2103,7 +2103,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2113,7 +2113,7 @@
 
     if-eqz v1, :cond_a
 
-    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object v1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object v1, v1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 
@@ -2145,9 +2145,9 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    sget-object v0, Lcom/android/server/wm/ibl$zta;->jba:Lcom/android/server/wm/ActivityRecord;
+    sget-object v0, Lcom/android/server/wm/ibl$zta;->sba:Lcom/android/server/wm/ActivityRecord;
 
-    sget-object v1, Lcom/android/server/wm/ibl$zta;->iba:Lcom/android/server/wm/ActivityRecord;
+    sget-object v1, Lcom/android/server/wm/ibl$zta;->rba:Lcom/android/server/wm/ActivityRecord;
 
     if-eq v0, v1, :cond_c
 
@@ -2191,7 +2191,7 @@
     return-void
 
     :cond_e
-    sput-object p2, Lcom/android/server/wm/ibl$zta;->jba:Lcom/android/server/wm/ActivityRecord;
+    sput-object p2, Lcom/android/server/wm/ibl$zta;->sba:Lcom/android/server/wm/ActivityRecord;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/ibl$zta;->startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
 
@@ -2259,12 +2259,12 @@
 
     if-nez p2, :cond_2
 
-    sput-object p1, Lcom/android/server/wm/ibl$zta;->iba:Lcom/android/server/wm/ActivityRecord;
+    sput-object p1, Lcom/android/server/wm/ibl$zta;->rba:Lcom/android/server/wm/ActivityRecord;
 
     goto :goto_0
 
     :cond_2
-    sput-object v0, Lcom/android/server/wm/ibl$zta;->iba:Lcom/android/server/wm/ActivityRecord;
+    sput-object v0, Lcom/android/server/wm/ibl$zta;->rba:Lcom/android/server/wm/ActivityRecord;
 
     :goto_0
     invoke-direct {p0, p1, p2}, Lcom/android/server/wm/ibl$zta;->you(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)Z
@@ -2303,7 +2303,7 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->removeMessages(I)V
 
-    sput-object v0, Lcom/android/server/wm/ibl$zta;->jba:Lcom/android/server/wm/ActivityRecord;
+    sput-object v0, Lcom/android/server/wm/ibl$zta;->sba:Lcom/android/server/wm/ActivityRecord;
 
     :cond_5
     iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->mActivityStack:Lcom/android/server/wm/ActivityStack;
@@ -2324,7 +2324,7 @@
 
     invoke-virtual {p0, p2}, Landroid/os/Handler;->removeMessages(I)V
 
-    sput-object v0, Lcom/android/server/wm/ibl$zta;->jba:Lcom/android/server/wm/ActivityRecord;
+    sput-object v0, Lcom/android/server/wm/ibl$zta;->sba:Lcom/android/server/wm/ActivityRecord;
 
     :cond_6
     return-void
@@ -2558,9 +2558,9 @@
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -2568,35 +2568,35 @@
 
     if-nez p1, :cond_1
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->_aa:Ljava/util/ArrayList;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->iba:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->Waa:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/wm/ibl$zta;->eba:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     const/4 p1, 0x0
 
-    iput-boolean p1, p0, Lcom/android/server/wm/ibl$zta;->Xaa:Z
+    iput-boolean p1, p0, Lcom/android/server/wm/ibl$zta;->fba:Z
 
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->Yaa:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/wm/ibl$zta;->gba:Ljava/lang/String;
 
     :cond_1
     return-void
@@ -2605,7 +2605,7 @@
 .method public zta(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 5
 
-    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->Uaa:Lcom/android/server/wm/ActivityStackSupervisor;
+    iget-object p1, p0, Lcom/android/server/wm/ibl$zta;->cba:Lcom/android/server/wm/ActivityStackSupervisor;
 
     iget-object p1, p1, Lcom/android/server/wm/ActivityStackSupervisor;->mService:Lcom/android/server/wm/ActivityTaskManagerService;
 

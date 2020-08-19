@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private FC:J
+.field private PC:J
 
 .field public final mUid:I
 
@@ -46,7 +46,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->FC:J
+    iget-wide v2, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->PC:J
 
     sub-long/2addr v0, v2
 
@@ -76,7 +76,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->FC:J
+    iput-wide v0, p0, Lcom/android/server/am/OnePlusMemoryTracker$rtg;->PC:J
 
     return-void
 .end method

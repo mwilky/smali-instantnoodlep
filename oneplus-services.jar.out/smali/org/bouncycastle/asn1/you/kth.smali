@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private VGa:I
+.field private dHa:I
 
 .field private nonce:[B
 
@@ -63,7 +63,7 @@
     const/16 p1, 0xc
 
     :goto_0
-    iput p1, p0, Lorg/bouncycastle/asn1/you/kth;->VGa:I
+    iput p1, p0, Lorg/bouncycastle/asn1/you/kth;->dHa:I
 
     return-void
 .end method
@@ -79,7 +79,7 @@
 
     iput-object p1, p0, Lorg/bouncycastle/asn1/you/kth;->nonce:[B
 
-    iput p2, p0, Lorg/bouncycastle/asn1/you/kth;->VGa:I
+    iput p2, p0, Lorg/bouncycastle/asn1/you/kth;->dHa:I
 
     return-void
 .end method
@@ -116,10 +116,10 @@
 
 
 # virtual methods
-.method public Th()I
+.method public Uh()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/asn1/you/kth;->VGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/you/kth;->dHa:I
 
     return p0
 .end method
@@ -151,7 +151,7 @@
 
     invoke-virtual {v0, v1}, Lorg/bouncycastle/asn1/cno;->you(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget p0, p0, Lorg/bouncycastle/asn1/you/kth;->VGa:I
+    iget p0, p0, Lorg/bouncycastle/asn1/you/kth;->dHa:I
 
     const/16 v1, 0xc
 

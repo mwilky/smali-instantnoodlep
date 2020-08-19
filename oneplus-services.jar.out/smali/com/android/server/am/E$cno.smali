@@ -15,27 +15,27 @@
 
 
 # instance fields
-.field private fF:J
-
-.field private gF:J
-
-.field private hF:J
-
-.field private iF:J
-
-.field private jF:J
-
-.field private kF:J
-
-.field private lF:D
-
-.field private mF:D
-
 .field private mPackageName:Ljava/lang/String;
 
-.field private nF:D
+.field private oF:J
 
-.field private oF:Z
+.field private pF:J
+
+.field private qF:J
+
+.field private rF:J
+
+.field private sF:J
+
+.field private tF:J
+
+.field private uF:D
+
+.field private vF:D
+
+.field private wF:D
+
+.field private xF:Z
 
 
 # direct methods
@@ -46,15 +46,15 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->lF:D
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->uF:D
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->mF:D
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->vF:D
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->nF:D
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->wF:D
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/am/E$cno;->oF:Z
+    iput-boolean v0, p0, Lcom/android/server/am/E$cno;->xF:Z
 
     iput-object p1, p0, Lcom/android/server/am/E$cno;->mPackageName:Ljava/lang/String;
 
@@ -64,7 +64,7 @@
 .method static synthetic bio(Lcom/android/server/am/E$cno;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->iF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->rF:J
 
     return-wide v0
 .end method
@@ -72,7 +72,7 @@
 .method static synthetic cno(Lcom/android/server/am/E$cno;)D
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->nF:D
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->wF:D
 
     return-wide v0
 .end method
@@ -80,7 +80,7 @@
 .method static synthetic igw(Lcom/android/server/am/E$cno;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->hF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->qF:J
 
     return-wide v0
 .end method
@@ -96,7 +96,7 @@
 .method static synthetic rtg(Lcom/android/server/am/E$cno;)D
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->lF:D
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->uF:D
 
     return-wide v0
 .end method
@@ -104,7 +104,7 @@
 .method static synthetic rtg(Lcom/android/server/am/E$cno;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->gF:J
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->pF:J
 
     return-wide p1
 .end method
@@ -112,7 +112,7 @@
 .method static synthetic sis(Lcom/android/server/am/E$cno;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->nF:D
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->wF:D
 
     return-wide p1
 .end method
@@ -120,7 +120,7 @@
 .method static synthetic sis(Lcom/android/server/am/E$cno;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->fF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->oF:J
 
     return-wide v0
 .end method
@@ -128,7 +128,7 @@
 .method static synthetic sis(Lcom/android/server/am/E$cno;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->fF:J
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->oF:J
 
     return-wide p1
 .end method
@@ -136,7 +136,7 @@
 .method static synthetic ssp(Lcom/android/server/am/E$cno;)D
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->mF:D
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->vF:D
 
     return-wide v0
 .end method
@@ -144,7 +144,7 @@
 .method static synthetic tsu(Lcom/android/server/am/E$cno;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->iF:J
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->rF:J
 
     return-wide p1
 .end method
@@ -152,7 +152,7 @@
 .method static synthetic tsu(Lcom/android/server/am/E$cno;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/am/E$cno;->oF:Z
+    iget-boolean p0, p0, Lcom/android/server/am/E$cno;->xF:Z
 
     return p0
 .end method
@@ -160,7 +160,7 @@
 .method static synthetic wtn(Lcom/android/server/am/E$cno;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->gF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->pF:J
 
     return-wide v0
 .end method
@@ -168,7 +168,7 @@
 .method static synthetic you(Lcom/android/server/am/E$cno;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->mF:D
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->vF:D
 
     return-wide p1
 .end method
@@ -176,7 +176,7 @@
 .method static synthetic you(Lcom/android/server/am/E$cno;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->kF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->tF:J
 
     return-wide v0
 .end method
@@ -184,7 +184,7 @@
 .method static synthetic you(Lcom/android/server/am/E$cno;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->kF:J
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->tF:J
 
     return-wide p1
 .end method
@@ -192,7 +192,7 @@
 .method static synthetic zta(Lcom/android/server/am/E$cno;D)D
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->lF:D
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->uF:D
 
     return-wide p1
 .end method
@@ -200,7 +200,7 @@
 .method static synthetic zta(Lcom/android/server/am/E$cno;)J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->jF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->sF:J
 
     return-wide v0
 .end method
@@ -208,7 +208,7 @@
 .method static synthetic zta(Lcom/android/server/am/E$cno;J)J
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->jF:J
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->sF:J
 
     return-wide p1
 .end method
@@ -216,7 +216,7 @@
 .method static synthetic zta(Lcom/android/server/am/E$cno;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/E$cno;->oF:Z
+    iput-boolean p1, p0, Lcom/android/server/am/E$cno;->xF:Z
 
     return p1
 .end method
@@ -226,13 +226,13 @@
 .method public Tc()V
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->kF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->tF:J
 
     const-wide/16 v2, 0x1
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->kF:J
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->tF:J
 
     return-void
 .end method
@@ -240,13 +240,13 @@
 .method public Uc()V
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->kF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->tF:J
 
     const-wide/16 v2, 0x1
 
     add-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->kF:J
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->tF:J
 
     return-void
 .end method
@@ -256,11 +256,11 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->lF:D
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->uF:D
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->mF:D
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->vF:D
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->nF:D
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->wF:D
 
     return-void
 .end method
@@ -274,7 +274,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-wide v2, p0, Lcom/android/server/am/E$cno;->fF:J
+    iget-wide v2, p0, Lcom/android/server/am/E$cno;->oF:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -282,43 +282,43 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/E$cno;->kF:J
+    iget-wide v3, p0, Lcom/android/server/am/E$cno;->tF:J
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/E$cno;->iF:J
+    iget-wide v3, p0, Lcom/android/server/am/E$cno;->rF:J
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/E$cno;->jF:J
+    iget-wide v3, p0, Lcom/android/server/am/E$cno;->sF:J
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v3, p0, Lcom/android/server/am/E$cno;->oF:Z
+    iget-boolean v3, p0, Lcom/android/server/am/E$cno;->xF:Z
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/E$cno;->lF:D
+    iget-wide v3, p0, Lcom/android/server/am/E$cno;->uF:D
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v3, p0, Lcom/android/server/am/E$cno;->mF:D
+    iget-wide v3, p0, Lcom/android/server/am/E$cno;->vF:D
 
     invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Lcom/android/server/am/E$cno;->nF:D
+    iget-wide v2, p0, Lcom/android/server/am/E$cno;->wF:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -338,11 +338,11 @@
 .method public bvj(J)V
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->hF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->qF:J
 
     add-long/2addr v0, p1
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->hF:J
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->qF:J
 
     return-void
 .end method
@@ -350,7 +350,7 @@
 .method public ibl(J)V
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/am/E$cno;->kF:J
+    iput-wide p1, p0, Lcom/android/server/am/E$cno;->tF:J
 
     return-void
 .end method
@@ -358,7 +358,7 @@
 .method public qeg(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/am/E$cno;->oF:Z
+    iput-boolean p1, p0, Lcom/android/server/am/E$cno;->xF:Z
 
     return-void
 .end method
@@ -366,7 +366,7 @@
 .method public you(JLjava/lang/String;)V
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->jF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->sF:J
 
     const-wide/16 v2, 0x0
 
@@ -403,7 +403,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide p0, p0, Lcom/android/server/am/E$cno;->jF:J
+    iget-wide p0, p0, Lcom/android/server/am/E$cno;->sF:J
 
     invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -460,11 +460,11 @@
     invoke-static {v0, p3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/am/E$cno;->hF:J
+    iget-wide v0, p0, Lcom/android/server/am/E$cno;->qF:J
 
     add-long/2addr v0, p1
 
-    iput-wide v0, p0, Lcom/android/server/am/E$cno;->hF:J
+    iput-wide v0, p0, Lcom/android/server/am/E$cno;->qF:J
 
     return-void
 .end method

@@ -14,20 +14,12 @@
 # static fields
 .field private static TAG:Ljava/lang/String; = "SecrecyService.ResetCountDownTimer"
 
-.field private static kW:J = 0x15180L
+.field private static tW:J = 0x15180L
 
-.field private static lW:J = 0x278d00L
+.field private static uW:J = 0x278d00L
 
 
 # instance fields
-.field private final gW:Ljava/lang/String;
-
-.field private hW:Lcom/android/server/secrecy/zta/tsu$zta;
-
-.field private iW:J
-
-.field private jW:J
-
 .field private mAlarmIntent:Landroid/content/Intent;
 
 .field private mAlarmManager:Landroid/app/AlarmManager;
@@ -37,6 +29,14 @@
 .field private mPendingIntent:Landroid/app/PendingIntent;
 
 .field private final mPolicyManager:Lcom/android/server/secrecy/zta/sis;
+
+.field private final pW:Ljava/lang/String;
+
+.field private qW:Lcom/android/server/secrecy/zta/tsu$zta;
+
+.field private rW:J
+
+.field private sW:J
 
 
 # direct methods
@@ -71,41 +71,41 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->gW:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->pW:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/secrecy/zta/tsu;->mContext:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/android/server/secrecy/zta/tsu;->mPolicyManager:Lcom/android/server/secrecy/zta/sis;
 
-    invoke-direct {p0}, Lcom/android/server/secrecy/zta/tsu;->Iq()V
+    invoke-direct {p0}, Lcom/android/server/secrecy/zta/tsu;->Jq()V
 
     return-void
 .end method
 
-.method private Iq()V
+.method private Jq()V
     .locals 4
 
     new-instance v0, Lcom/android/server/secrecy/zta/tsu$zta;
 
     invoke-direct {v0, p0, p0}, Lcom/android/server/secrecy/zta/tsu$zta;-><init>(Lcom/android/server/secrecy/zta/tsu;Lcom/android/server/secrecy/zta/tsu;)V
 
-    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->hW:Lcom/android/server/secrecy/zta/tsu$zta;
+    iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->qW:Lcom/android/server/secrecy/zta/tsu$zta;
 
     new-instance v0, Landroid/content/IntentFilter;
 
-    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->gW:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->pW:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/server/secrecy/zta/tsu;->hW:Lcom/android/server/secrecy/zta/tsu$zta;
+    iget-object v2, p0, Lcom/android/server/secrecy/zta/tsu;->qW:Lcom/android/server/secrecy/zta/tsu$zta;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->gW:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/secrecy/zta/tsu;->pW:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -135,9 +135,9 @@
 
     iput-object v0, p0, Lcom/android/server/secrecy/zta/tsu;->mAlarmManager:Landroid/app/AlarmManager;
 
-    sget-wide v0, Lcom/android/server/secrecy/zta/tsu;->kW:J
+    sget-wide v0, Lcom/android/server/secrecy/zta/tsu;->tW:J
 
-    sget-wide v2, Lcom/android/server/secrecy/zta/tsu;->lW:J
+    sget-wide v2, Lcom/android/server/secrecy/zta/tsu;->uW:J
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/server/secrecy/zta/tsu;->you(JJ)V
 
@@ -165,7 +165,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->jW:J
+    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->sW:J
 
     return-wide p0
 
@@ -178,7 +178,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->iW:J
+    iget-wide p0, p0, Lcom/android/server/secrecy/zta/tsu;->rW:J
 
     return-wide p0
 
@@ -251,9 +251,9 @@
 .method public you(JJ)V
     .locals 0
 
-    iput-wide p1, p0, Lcom/android/server/secrecy/zta/tsu;->jW:J
+    iput-wide p1, p0, Lcom/android/server/secrecy/zta/tsu;->sW:J
 
-    iput-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->iW:J
+    iput-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->rW:J
 
     sget-object p1, Lcom/android/server/secrecy/zta/tsu;->TAG:Ljava/lang/String;
 
@@ -265,7 +265,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->jW:J
+    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->sW:J
 
     invoke-virtual {p2, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -285,7 +285,7 @@
 
     invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->iW:J
+    iget-wide p3, p0, Lcom/android/server/secrecy/zta/tsu;->rW:J
 
     invoke-virtual {p2, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -337,7 +337,7 @@
 
     invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->jW:J
+    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->sW:J
 
     invoke-virtual {p3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -357,7 +357,7 @@
 
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->iW:J
+    iget-wide v0, p0, Lcom/android/server/secrecy/zta/tsu;->rW:J
 
     invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

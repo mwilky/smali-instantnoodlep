@@ -205,7 +205,222 @@
     return v0
 .end method
 
-.method private km()Ljava/lang/String;
+.method private kth(Ljava/io/PrintWriter;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    const-string p0, "keyboxxml"
+
+    invoke-static {p0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    move v0, p0
+
+    :goto_0
+    const-string v1, "init.svc.keyboxxml"
+
+    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "stopped"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    const-wide/16 v3, 0x64
+
+    const-string v5, "ERROR"
+
+    const/16 v6, 0xa
+
+    if-eqz v1, :cond_7
+
+    sget-boolean v0, Lcom/android/server/engineer/qbh;->Lb:Z
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "chmodkeyboxxml"
+
+    invoke-static {v0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
+
+    move v0, p0
+
+    :goto_1
+    const-string v1, "init.svc.chmodkeyboxxml"
+
+    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_2
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    if-lt v0, v6, :cond_1
+
+    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_1
+    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
+
+    goto :goto_1
+
+    :cond_2
+    :goto_2
+    const-string v0, "ro.boot.project_name"
+
+    const-string v1, "18821"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v7, "18825"
+
+    invoke-virtual {v7, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    const-string v0, "KmInstallKeybox18827"
+
+    goto :goto_3
+
+    :cond_3
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "KmInstallKeybox"
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_3
+    invoke-static {v0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
+
+    :goto_4
+    invoke-virtual {v7, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const-string v0, "init.svc.KmInstallKeybox18827"
+
+    goto :goto_5
+
+    :cond_4
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "init.svc.KmInstallKeybox"
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_5
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    const-string p0, "rmkeyboxxml"
+
+    invoke-static {p0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
+
+    :try_start_0
+    new-instance p0, Lcom/android/server/engineer/zta;
+
+    invoke-direct {p0}, Lcom/android/server/engineer/zta;-><init>()V
+
+    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->nd()V
+
+    new-instance p0, Lcom/android/server/engineer/zta;
+
+    invoke-direct {p0}, Lcom/android/server/engineer/zta;-><init>()V
+
+    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->md()V
+
+    const-string p0, "OK"
+
+    invoke-virtual {p1, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_6
+
+    :catch_0
+    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    :goto_6
+    return-void
+
+    :cond_5
+    add-int/lit8 p0, p0, 0x1
+
+    if-lt p0, v6, :cond_6
+
+    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_6
+    const-wide/16 v3, 0x12c
+
+    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
+
+    goto :goto_4
+
+    :cond_7
+    add-int/lit8 v0, v0, 0x1
+
+    if-lt v0, v6, :cond_8
+
+    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_8
+    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
+
+    goto/16 :goto_0
+.end method
+
+.method private lm()Ljava/lang/String;
     .locals 11
 
     new-instance v0, Ljava/io/File;
@@ -450,221 +665,6 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method private kth(Ljava/io/PrintWriter;)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-
-    const-string p0, "keyboxxml"
-
-    invoke-static {p0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    move v0, p0
-
-    :goto_0
-    const-string v1, "init.svc.keyboxxml"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, "stopped"
-
-    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    const-wide/16 v3, 0x64
-
-    const-string v5, "ERROR"
-
-    const/16 v6, 0xa
-
-    if-eqz v1, :cond_7
-
-    sget-boolean v0, Lcom/android/server/engineer/qbh;->Lb:Z
-
-    if-eqz v0, :cond_2
-
-    const-string v0, "chmodkeyboxxml"
-
-    invoke-static {v0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
-
-    move v0, p0
-
-    :goto_1
-    const-string v1, "init.svc.chmodkeyboxxml"
-
-    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    goto :goto_2
-
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
-
-    if-lt v0, v6, :cond_1
-
-    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_1
-    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
-
-    goto :goto_1
-
-    :cond_2
-    :goto_2
-    const-string v0, "ro.boot.project_name"
-
-    const-string v1, "18821"
-
-    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v7, "18825"
-
-    invoke-virtual {v7, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string v0, "KmInstallKeybox18827"
-
-    goto :goto_3
-
-    :cond_3
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "KmInstallKeybox"
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_3
-    invoke-static {v0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
-
-    :goto_4
-    invoke-virtual {v7, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    const-string v0, "init.svc.KmInstallKeybox18827"
-
-    goto :goto_5
-
-    :cond_4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "init.svc.KmInstallKeybox"
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_5
-    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_5
-
-    const-string p0, "rmkeyboxxml"
-
-    invoke-static {p0}, Landroid/os/SystemService;->start(Ljava/lang/String;)V
-
-    :try_start_0
-    new-instance p0, Lcom/android/server/engineer/zta;
-
-    invoke-direct {p0}, Lcom/android/server/engineer/zta;-><init>()V
-
-    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->nd()V
-
-    new-instance p0, Lcom/android/server/engineer/zta;
-
-    invoke-direct {p0}, Lcom/android/server/engineer/zta;-><init>()V
-
-    invoke-virtual {p0}, Lcom/android/server/engineer/zta;->md()V
-
-    const-string p0, "OK"
-
-    invoke-virtual {p1, p0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_6
-
-    :catch_0
-    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    :goto_6
-    return-void
-
-    :cond_5
-    add-int/lit8 p0, p0, 0x1
-
-    if-lt p0, v6, :cond_6
-
-    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_6
-    const-wide/16 v3, 0x12c
-
-    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
-
-    goto :goto_4
-
-    :cond_7
-    add-int/lit8 v0, v0, 0x1
-
-    if-lt v0, v6, :cond_8
-
-    invoke-virtual {p1, v5}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_8
-    invoke-static {v3, v4}, Landroid/os/SystemClock;->sleep(J)V
-
-    goto/16 :goto_0
 .end method
 
 .method private rtg(Ljava/lang/String;Ljava/io/PrintWriter;)V
@@ -3228,7 +3228,7 @@
     goto/16 :goto_9
 
     :pswitch_1
-    invoke-direct {p0}, Lcom/android/server/engineer/qbh;->km()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/server/engineer/qbh;->lm()Ljava/lang/String;
 
     move-result-object p0
 

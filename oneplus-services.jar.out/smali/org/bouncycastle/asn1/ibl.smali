@@ -264,7 +264,7 @@
     return-object v0
 .end method
 
-.method wh()Lorg/bouncycastle/asn1/vdb;
+.method xh()Lorg/bouncycastle/asn1/vdb;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/C;
@@ -276,7 +276,7 @@
     return-object v0
 .end method
 
-.method xh()Lorg/bouncycastle/asn1/vdb;
+.method yh()Lorg/bouncycastle/asn1/vdb;
     .locals 1
 
     new-instance v0, Lorg/bouncycastle/asn1/C;

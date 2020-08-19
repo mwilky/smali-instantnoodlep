@@ -97,7 +97,7 @@
 
     iget-object p0, p0, Lcom/android/server/am/ear;->this$0:Lcom/android/server/am/OnePlusBGController;
 
-    iget-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Is:Ljava/util/List;
+    iget-object p1, p0, Lcom/android/server/am/OnePlusBGController;->Rs:Ljava/util/List;
 
     const-string p2, "ONESHOT"
 
@@ -126,7 +126,7 @@
 
     invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    sput-boolean v3, Lcom/android/server/am/OnePlusBGController;->it:Z
+    sput-boolean v3, Lcom/android/server/am/OnePlusBGController;->rt:Z
 
     goto/16 :goto_d
 
@@ -149,7 +149,7 @@
 
     invoke-static {p0}, Lcom/android/server/am/OnePlusBGController;->myLog(Ljava/lang/String;)V
 
-    sput-boolean v2, Lcom/android/server/am/OnePlusBGController;->it:Z
+    sput-boolean v2, Lcom/android/server/am/OnePlusBGController;->rt:Z
 
     goto/16 :goto_d
 
@@ -1210,7 +1210,7 @@
 
     invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v1, p2, Lcom/android/server/am/OnePlusBGController;->Is:Ljava/util/List;
+    iput-object v1, p2, Lcom/android/server/am/OnePlusBGController;->Rs:Ljava/util/List;
 
     new-instance p2, Ljava/lang/StringBuilder;
 

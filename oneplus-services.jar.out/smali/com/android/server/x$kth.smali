@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private fj:J
-
 .field private mStartTimeMs:J
+
+.field private oj:J
 
 .field final synthetic this$0:Lcom/android/server/x;
 
@@ -94,7 +94,7 @@
 .method public isStopped()Z
     .locals 4
 
-    iget-wide v0, p0, Lcom/android/server/x$kth;->fj:J
+    iget-wide v0, p0, Lcom/android/server/x$kth;->oj:J
 
     const-wide/16 v2, 0x0
 
@@ -147,7 +147,7 @@
 
     iput-wide v0, p0, Lcom/android/server/x$kth;->mStartTimeMs:J
 
-    iput-wide v0, p0, Lcom/android/server/x$kth;->fj:J
+    iput-wide v0, p0, Lcom/android/server/x$kth;->oj:J
 
     return-void
 .end method
@@ -184,10 +184,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/server/x$kth;->fj:J
+    iput-wide v0, p0, Lcom/android/server/x$kth;->oj:J
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/x$kth;->fj:J
+    iget-wide v0, p0, Lcom/android/server/x$kth;->oj:J
 
     iget-wide v2, p0, Lcom/android/server/x$kth;->mStartTimeMs:J
 

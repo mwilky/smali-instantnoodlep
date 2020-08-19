@@ -20,9 +20,9 @@
 # instance fields
 .field config:Lcom/android/server/am/q$zta;
 
-.field jE:Ljava/lang/String;
+.field sE:Ljava/lang/String;
 
-.field kE:I
+.field tE:I
 
 .field final synthetic this$0:Lcom/android/server/am/q;
 
@@ -39,7 +39,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/am/q$sis;->jE:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/q$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {p2}, Lcom/android/server/am/q$zta;->clone()Lcom/android/server/am/q$zta;
 
@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Lcom/android/server/am/q$sis;->config:Lcom/android/server/am/q$zta;
 
-    iput p3, p0, Lcom/android/server/am/q$sis;->kE:I
+    iput p3, p0, Lcom/android/server/am/q$sis;->tE:I
 
     return-void
 .end method
@@ -81,9 +81,9 @@
     :try_start_1
     iget-object v2, p0, Lcom/android/server/am/q$sis;->this$0:Lcom/android/server/am/q;
 
-    iget-object v3, p0, Lcom/android/server/am/q$sis;->jE:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/q$sis;->sE:Ljava/lang/String;
 
-    iget v4, p0, Lcom/android/server/am/q$sis;->kE:I
+    iget v4, p0, Lcom/android/server/am/q$sis;->tE:I
 
     invoke-static {v2, v3, v4}, Lcom/android/server/am/q;->zta(Lcom/android/server/am/q;Ljava/lang/String;I)Ljava/util/List;
 
@@ -107,7 +107,7 @@
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/am/q$sis;->jE:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/am/q$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -152,7 +152,7 @@
     :try_start_4
     iget-object v5, p0, Lcom/android/server/am/q$sis;->config:Lcom/android/server/am/q$zta;
 
-    iget v6, p0, Lcom/android/server/am/q$sis;->kE:I
+    iget v6, p0, Lcom/android/server/am/q$sis;->tE:I
 
     invoke-virtual {v5, v6}, Lcom/android/server/am/q$zta;->r(I)Ljava/lang/String;
 
@@ -170,11 +170,11 @@
 
     const/4 v8, 0x0
 
-    iget-object v9, p0, Lcom/android/server/am/q$sis;->jE:Ljava/lang/String;
+    iget-object v9, p0, Lcom/android/server/am/q$sis;->sE:Ljava/lang/String;
 
     aput-object v9, v7, v8
 
-    iget v8, p0, Lcom/android/server/am/q$sis;->kE:I
+    iget v8, p0, Lcom/android/server/am/q$sis;->tE:I
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -221,7 +221,7 @@
 
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/am/q$sis;->jE:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/am/q$sis;->sE:Ljava/lang/String;
 
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

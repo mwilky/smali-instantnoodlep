@@ -18,13 +18,31 @@
 
 
 # static fields
+.field private static AI:Z = false
+
+.field private static BI:Z = false
+
+.field private static final Bq:Ljava/lang/String; = ""
+
+.field private static CI:Z = false
+
 .field private static final CONFIG_NAME:Ljava/lang/String; = "OpProximityController"
 
 .field private static final DEBUG:Ljava/lang/String; = "persist.sys.oppc.debug"
 
+.field private static final DI:I = 0x2
+
+.field private static final EI:I = 0x3
+
 .field private static final ENABLE:Ljava/lang/String; = "persist.sys.oppc.enable"
 
-.field private static final HG:I = 0x1
+.field private static final FI:I = 0x4
+
+.field private static final GI:I = 0x5
+
+.field private static final Gv:Ljava/lang/String; = "com.OPPC.action.debug"
+
+.field private static final QG:I = 0x1
 
 .field private static final TAG:Ljava/lang/String; = "OpProximityController"
 
@@ -34,57 +52,39 @@
 
 .field private static final Ze:I = 0x5f5e100
 
-.field private static final fI:Ljava/lang/String; = "com.android.dialer"
+.field private static final pI:Ljava/lang/String; = "com.android.dialer"
 
-.field private static final gI:I = 0x1
+.field private static final qI:I = 0x1
 
-.field private static final hI:I = 0x2
-
-.field private static final iI:I = 0x3
-
-.field private static final jI:I = 0x4
-
-.field private static kI:Z = false
-
-.field private static lI:Z = false
-
-.field private static nI:I = 0x0
-
-.field private static oI:I = 0x0
-
-.field private static pI:Z = false
-
-.field private static qI:Z = false
-
-.field private static rI:Z = false
+.field private static final rI:I = 0x2
 
 .field private static sEnable:Z = false
 
 .field private static sHandler:Landroid/os/Handler; = null
 
-.field private static sI:Z = false
+.field private static final sI:I = 0x3
 
 .field private static sInstance:Lcom/android/server/display/rtg; = null
 
-.field private static final sq:Ljava/lang/String; = ""
+.field private static final tI:I = 0x4
 
-.field private static tI:Z = false
+.field private static uI:Z
 
-.field private static final uI:I = 0x2
+.field private static vI:Z
 
-.field private static final vI:I = 0x3
+.field private static wI:I
 
-.field private static final wI:I = 0x4
+.field private static xI:I
 
-.field private static final xI:I = 0x5
+.field private static yI:Z
 
-.field private static final xv:Ljava/lang/String; = "com.OPPC.action.debug"
+.field private static zI:Z
 
 
 # instance fields
-.field private EG:Ljava/lang/String;
+.field private NG:Ljava/lang/String;
 
-.field private WH:Ljava/util/HashSet;
+.field private eI:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -94,7 +94,7 @@
     .end annotation
 .end field
 
-.field private XH:Ljava/util/HashSet;
+.field private fI:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -104,7 +104,7 @@
     .end annotation
 .end field
 
-.field private YH:Ljava/util/HashSet;
+.field private gI:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
@@ -114,21 +114,15 @@
     .end annotation
 .end field
 
-.field private ZH:Landroid/hardware/Sensor;
+.field private hI:Landroid/hardware/Sensor;
 
-.field private _H:Landroid/hardware/Sensor;
+.field private iI:Landroid/hardware/Sensor;
 
-.field private aI:Landroid/hardware/Sensor;
+.field private jI:Landroid/hardware/Sensor;
 
-.field private bI:Ljava/lang/Object;
+.field private kI:Ljava/lang/Object;
 
-.field private cI:I
-
-.field private dI:Landroid/hardware/SensorEventListener;
-
-.field private eI:Landroid/hardware/SensorEventListener;
-
-.field private kv:Landroid/content/BroadcastReceiver;
+.field private lI:I
 
 .field private listener:Landroid/hardware/SensorEventListener;
 
@@ -143,6 +137,12 @@
 .field private mObserver:Lcom/oneplus/config/ConfigObserver;
 
 .field private mSensorManager:Landroid/hardware/SensorManager;
+
+.field private nI:Landroid/hardware/SensorEventListener;
+
+.field private oI:Landroid/hardware/SensorEventListener;
+
+.field private tv:Landroid/content/BroadcastReceiver;
 
 
 # direct methods
@@ -167,11 +167,11 @@
 
     move-result v2
 
-    sput-boolean v2, Lcom/android/server/display/rtg;->kI:Z
+    sput-boolean v2, Lcom/android/server/display/rtg;->uI:Z
 
     sget-boolean v2, Landroid/os/Build;->DEBUG_ONEPLUS:Z
 
-    sput-boolean v2, Lcom/android/server/display/rtg;->lI:Z
+    sput-boolean v2, Lcom/android/server/display/rtg;->vI:Z
 
     const/4 v2, 0x0
 
@@ -181,21 +181,21 @@
 
     const/16 v2, 0x3c
 
-    sput v2, Lcom/android/server/display/rtg;->nI:I
+    sput v2, Lcom/android/server/display/rtg;->wI:I
 
     const/16 v2, 0x7d0
 
-    sput v2, Lcom/android/server/display/rtg;->oI:I
+    sput v2, Lcom/android/server/display/rtg;->xI:I
 
-    sput-boolean v1, Lcom/android/server/display/rtg;->pI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->yI:Z
 
-    sput-boolean v0, Lcom/android/server/display/rtg;->qI:Z
+    sput-boolean v0, Lcom/android/server/display/rtg;->zI:Z
 
-    sput-boolean v1, Lcom/android/server/display/rtg;->rI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->AI:Z
 
-    sput-boolean v1, Lcom/android/server/display/rtg;->sI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->BI:Z
 
-    sput-boolean v1, Lcom/android/server/display/rtg;->tI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->CI:Z
 
     return-void
 .end method
@@ -219,7 +219,7 @@
 
     const-string v2, ""
 
-    iput-object v2, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     iput-object v1, p0, Lcom/android/server/display/rtg;->mContext:Landroid/content/Context;
 
@@ -229,39 +229,39 @@
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iput-object v2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iput-object v2, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v2, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iput-object v2, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
-    iput-object v1, p0, Lcom/android/server/display/rtg;->ZH:Landroid/hardware/Sensor;
+    iput-object v1, p0, Lcom/android/server/display/rtg;->hI:Landroid/hardware/Sensor;
 
-    iput-object v1, p0, Lcom/android/server/display/rtg;->_H:Landroid/hardware/Sensor;
+    iput-object v1, p0, Lcom/android/server/display/rtg;->iI:Landroid/hardware/Sensor;
 
-    iput-object v1, p0, Lcom/android/server/display/rtg;->aI:Landroid/hardware/Sensor;
+    iput-object v1, p0, Lcom/android/server/display/rtg;->jI:Landroid/hardware/Sensor;
 
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
-    iput-object v1, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iput-object v1, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     new-instance v1, Lcom/android/server/display/zta;
 
     invoke-direct {v1, p0}, Lcom/android/server/display/zta;-><init>(Lcom/android/server/display/rtg;)V
 
-    iput-object v1, p0, Lcom/android/server/display/rtg;->kv:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Lcom/android/server/display/rtg;->tv:Landroid/content/BroadcastReceiver;
 
-    iput v0, p0, Lcom/android/server/display/rtg;->cI:I
+    iput v0, p0, Lcom/android/server/display/rtg;->lI:I
 
     new-instance v0, Lcom/android/server/display/you;
 
@@ -273,13 +273,13 @@
 
     invoke-direct {v0, p0}, Lcom/android/server/display/sis;-><init>(Lcom/android/server/display/rtg;)V
 
-    iput-object v0, p0, Lcom/android/server/display/rtg;->dI:Landroid/hardware/SensorEventListener;
+    iput-object v0, p0, Lcom/android/server/display/rtg;->nI:Landroid/hardware/SensorEventListener;
 
     new-instance v0, Lcom/android/server/display/tsu;
 
     invoke-direct {v0, p0}, Lcom/android/server/display/tsu;-><init>(Lcom/android/server/display/rtg;)V
 
-    iput-object v0, p0, Lcom/android/server/display/rtg;->eI:Landroid/hardware/SensorEventListener;
+    iput-object v0, p0, Lcom/android/server/display/rtg;->oI:Landroid/hardware/SensorEventListener;
 
     const-string p0, "OpProximityController"
 
@@ -321,7 +321,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v2, Lcom/android/server/display/rtg;->nI:I
+    sget v2, Lcom/android/server/display/rtg;->wI:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -339,7 +339,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v2, Lcom/android/server/display/rtg;->oI:I
+    sget v2, Lcom/android/server/display/rtg;->xI:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -357,7 +357,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -393,9 +393,9 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -409,7 +409,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     const-string v2, "com.android.dialer"
 
@@ -427,7 +427,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     const/16 v3, 0x3e8
 
@@ -455,7 +455,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     goto :goto_0
 
@@ -468,7 +468,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     iget v3, p0, Lcom/android/server/display/rtg;->mFrontUid:I
 
@@ -496,7 +496,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     iget v3, p0, Lcom/android/server/display/rtg;->mFrontUid:I
 
@@ -525,7 +525,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/display/rtg;->pI:Z
+    sget-boolean v2, Lcom/android/server/display/rtg;->yI:Z
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -543,7 +543,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/display/rtg;->qI:Z
+    sget-boolean v2, Lcom/android/server/display/rtg;->zI:Z
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -561,7 +561,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v2, Lcom/android/server/display/rtg;->rI:Z
+    sget-boolean v2, Lcom/android/server/display/rtg;->AI:Z
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -579,7 +579,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -597,7 +597,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -615,7 +615,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -628,147 +628,147 @@
     return-void
 .end method
 
-.method private Mo()V
+.method private No()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.whatsapp"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.facebook.katana"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.instagram.android"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.facebook.orca"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.snapchat.android"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.linkedin.android"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "org.telegram.messenger"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.pinterest"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.viber.voip"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.discord"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.skype.raider"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.tencent.mm"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.bsb.hike"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.imo.android.imoim"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.tencent.mobileqq"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.yiyou.ga"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.soft.blued"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.zenmen.palmchat"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "im.yixin"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "im.chaoxin"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.cootek.smartdialer"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v2, "com.xiaomi.channel"
 
     invoke-virtual {v1, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     const-string v1, "my.maya.android"
 
@@ -871,7 +871,7 @@
 .method private Pb(I)V
     .locals 2
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->kI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->uI:Z
 
     if-eqz v0, :cond_0
 
@@ -883,7 +883,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/display/rtg;->sI:Z
+    sget-boolean v1, Lcom/android/server/display/rtg;->BI:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -891,7 +891,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/display/rtg;->pI:Z
+    sget-boolean v1, Lcom/android/server/display/rtg;->yI:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -899,7 +899,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/display/rtg;->qI:Z
+    sget-boolean v1, Lcom/android/server/display/rtg;->zI:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -907,7 +907,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v1, Lcom/android/server/display/rtg;->rI:Z
+    sget-boolean v1, Lcom/android/server/display/rtg;->AI:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -926,12 +926,12 @@
     invoke-static {v0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object p1, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iget-object p1, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     monitor-enter p1
 
     :try_start_0
-    sget-boolean v0, Lcom/android/server/display/rtg;->tI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->CI:Z
 
     if-nez v0, :cond_1
 
@@ -946,38 +946,38 @@
 
     const/4 p1, 0x0
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->pI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->yI:Z
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_2
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->rI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->AI:Z
 
     if-nez v0, :cond_2
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->qI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->zI:Z
 
     if-eqz v0, :cond_2
 
     move p1, v1
 
     :cond_2
-    sget-boolean v0, Lcom/android/server/display/rtg;->sI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->BI:Z
 
     if-eq p1, v0, :cond_3
 
-    sput-boolean p1, Lcom/android/server/display/rtg;->sI:Z
+    sput-boolean p1, Lcom/android/server/display/rtg;->BI:Z
 
     iget-object p0, p0, Lcom/android/server/display/rtg;->mDisplayPowerController:Lcom/android/server/display/IOpProximityController;
 
-    sget-boolean p1, Lcom/android/server/display/rtg;->sI:Z
+    sget-boolean p1, Lcom/android/server/display/rtg;->BI:Z
 
     xor-int/2addr p1, v1
 
     invoke-interface {p0, p1}, Lcom/android/server/display/IOpProximityController;->setProximityEventEnable(Z)V
 
-    sget-boolean p0, Lcom/android/server/display/rtg;->lI:Z
+    sget-boolean p0, Lcom/android/server/display/rtg;->vI:Z
 
     if-eqz p0, :cond_3
 
@@ -989,7 +989,7 @@
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean p1, Lcom/android/server/display/rtg;->sI:Z
+    sget-boolean p1, Lcom/android/server/display/rtg;->BI:Z
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1015,10 +1015,10 @@
     throw p0
 .end method
 
-.method private Pp()V
+.method private Qp()V
     .locals 5
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->lI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->vI:Z
 
     if-eqz v0, :cond_0
 
@@ -1030,7 +1030,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1043,14 +1043,14 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
     :try_start_0
-    sput-boolean v1, Lcom/android/server/display/rtg;->tI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->CI:Z
 
     monitor-exit v0
     :try_end_0
@@ -1060,7 +1060,7 @@
 
     iget-object v2, p0, Lcom/android/server/display/rtg;->listener:Landroid/hardware/SensorEventListener;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->ZH:Landroid/hardware/Sensor;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->hI:Landroid/hardware/Sensor;
 
     const/4 v4, 0x3
 
@@ -1068,25 +1068,25 @@
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->dI:Landroid/hardware/SensorEventListener;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->nI:Landroid/hardware/SensorEventListener;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->_H:Landroid/hardware/Sensor;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->iI:Landroid/hardware/Sensor;
 
     invoke-virtual {v0, v2, v3, v4}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->eI:Landroid/hardware/SensorEventListener;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->oI:Landroid/hardware/SensorEventListener;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->aI:Landroid/hardware/Sensor;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->jI:Landroid/hardware/Sensor;
 
     invoke-virtual {v0, v2, v3, v4}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
 
-    sput-boolean v1, Lcom/android/server/display/rtg;->sI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->BI:Z
 
     iget-object p0, p0, Lcom/android/server/display/rtg;->mDisplayPowerController:Lcom/android/server/display/IOpProximityController;
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->sI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->BI:Z
 
     xor-int/2addr v0, v1
 
@@ -1105,10 +1105,10 @@
     throw p0
 .end method
 
-.method private Qp()V
+.method private Rp()V
     .locals 3
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->lI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->vI:Z
 
     if-eqz v0, :cond_0
 
@@ -1120,7 +1120,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1133,14 +1133,14 @@
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x0
 
     :try_start_0
-    sput-boolean v1, Lcom/android/server/display/rtg;->tI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->CI:Z
 
     monitor-exit v0
     :try_end_0
@@ -1154,21 +1154,21 @@
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->dI:Landroid/hardware/SensorEventListener;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->nI:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, v2}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->eI:Landroid/hardware/SensorEventListener;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->oI:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, v2}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
-    sput-boolean v1, Lcom/android/server/display/rtg;->sI:Z
+    sput-boolean v1, Lcom/android/server/display/rtg;->BI:Z
 
     iget-object p0, p0, Lcom/android/server/display/rtg;->mDisplayPowerController:Lcom/android/server/display/IOpProximityController;
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->sI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->BI:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -1198,7 +1198,7 @@
 .method static synthetic access$1600()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->tI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->CI:Z
 
     return v0
 .end method
@@ -1206,7 +1206,7 @@
 .method static synthetic access$1800()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->pI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->yI:Z
 
     return v0
 .end method
@@ -1222,7 +1222,7 @@
 .method static synthetic access$2100()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->qI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->zI:Z
 
     return v0
 .end method
@@ -1230,7 +1230,7 @@
 .method static synthetic access$2102(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/android/server/display/rtg;->qI:Z
+    sput-boolean p0, Lcom/android/server/display/rtg;->zI:Z
 
     return p0
 .end method
@@ -1238,7 +1238,7 @@
 .method static synthetic access$2202(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/android/server/display/rtg;->rI:Z
+    sput-boolean p0, Lcom/android/server/display/rtg;->AI:Z
 
     return p0
 .end method
@@ -1246,7 +1246,7 @@
 .method static synthetic access$500()I
     .locals 1
 
-    sget v0, Lcom/android/server/display/rtg;->nI:I
+    sget v0, Lcom/android/server/display/rtg;->wI:I
 
     return v0
 .end method
@@ -1254,7 +1254,7 @@
 .method static synthetic access$502(I)I
     .locals 0
 
-    sput p0, Lcom/android/server/display/rtg;->nI:I
+    sput p0, Lcom/android/server/display/rtg;->wI:I
 
     return p0
 .end method
@@ -1262,7 +1262,7 @@
 .method static synthetic access$600()I
     .locals 1
 
-    sget v0, Lcom/android/server/display/rtg;->oI:I
+    sget v0, Lcom/android/server/display/rtg;->xI:I
 
     return v0
 .end method
@@ -1270,7 +1270,7 @@
 .method static synthetic access$602(I)I
     .locals 0
 
-    sput p0, Lcom/android/server/display/rtg;->oI:I
+    sput p0, Lcom/android/server/display/rtg;->xI:I
 
     return p0
 .end method
@@ -1278,7 +1278,7 @@
 .method static synthetic access$700()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/display/rtg;->kI:Z
+    sget-boolean v0, Lcom/android/server/display/rtg;->uI:Z
 
     return v0
 .end method
@@ -1286,7 +1286,7 @@
 .method static synthetic access$702(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/android/server/display/rtg;->kI:Z
+    sput-boolean p0, Lcom/android/server/display/rtg;->uI:Z
 
     return p0
 .end method
@@ -1314,7 +1314,7 @@
 .method static synthetic bio(Lcom/android/server/display/rtg;)Ljava/util/HashSet;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     return-object p0
 .end method
@@ -1331,7 +1331,7 @@
     :cond_0
     const/4 p1, 0x1
 
-    iget-object v0, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     const-string v1, "com.android.dialer"
 
@@ -1351,7 +1351,7 @@
     iget v0, p0, Lcom/android/server/display/rtg;->mFrontUid:I
 
     :goto_0
-    sget-boolean v2, Lcom/android/server/display/rtg;->kI:Z
+    sget-boolean v2, Lcom/android/server/display/rtg;->uI:Z
 
     if-eqz v2, :cond_2
 
@@ -1369,7 +1369,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1377,7 +1377,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1393,9 +1393,9 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
-    iget-object v4, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -1407,7 +1407,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1423,7 +1423,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->ZH:Landroid/hardware/Sensor;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->hI:Landroid/hardware/Sensor;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1436,12 +1436,12 @@
     invoke-static {v3, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
-    iget-object v2, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     monitor-enter v2
 
     :try_start_0
-    iget-object v3, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1455,7 +1455,7 @@
 
     if-nez v3, :cond_3
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1474,14 +1474,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     monitor-enter v1
 
     :try_start_1
-    iget-object v2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -1496,12 +1496,12 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    iget-object v2, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     monitor-enter v2
 
     :try_start_2
-    iget-object v1, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1520,12 +1520,12 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    iget-object v0, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     monitor-enter v0
 
     :try_start_3
-    sget-boolean v1, Lcom/android/server/display/rtg;->tI:Z
+    sget-boolean v1, Lcom/android/server/display/rtg;->CI:Z
 
     monitor-exit v0
     :try_end_3
@@ -1535,14 +1535,14 @@
 
     if-eqz p1, :cond_7
 
-    invoke-direct {p0}, Lcom/android/server/display/rtg;->Pp()V
+    invoke-direct {p0}, Lcom/android/server/display/rtg;->Qp()V
 
     goto :goto_1
 
     :cond_6
     if-nez p1, :cond_7
 
-    invoke-direct {p0}, Lcom/android/server/display/rtg;->Qp()V
+    invoke-direct {p0}, Lcom/android/server/display/rtg;->Rp()V
 
     :cond_7
     :goto_1
@@ -1623,7 +1623,7 @@
 .method static synthetic e(Z)Z
     .locals 0
 
-    sput-boolean p0, Lcom/android/server/display/rtg;->pI:Z
+    sput-boolean p0, Lcom/android/server/display/rtg;->yI:Z
 
     return p0
 .end method
@@ -1641,7 +1641,7 @@
 .method static synthetic igw(Lcom/android/server/display/rtg;)Ljava/util/HashSet;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     return-object p0
 .end method
@@ -1649,14 +1649,14 @@
 .method private igw(IZ)V
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     monitor-enter v0
 
     if-eqz p2, :cond_0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1667,7 +1667,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lcom/android/server/display/rtg;->YH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->gI:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1680,12 +1680,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     monitor-enter v1
 
     :try_start_1
-    iget-object v0, p0, Lcom/android/server/display/rtg;->XH:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->fI:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1755,7 +1755,7 @@
 
     if-ne p1, v0, :cond_4
 
-    iget-object p1, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object p1, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     const-string v0, "com.android.dialer"
 
@@ -1934,7 +1934,7 @@
     :goto_1
     invoke-static {v3, v4}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     monitor-enter v3
     :try_end_0
@@ -1943,7 +1943,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
     :try_start_1
-    sget-boolean v4, Lcom/android/server/display/rtg;->tI:Z
+    sget-boolean v4, Lcom/android/server/display/rtg;->CI:Z
 
     monitor-exit v3
     :try_end_1
@@ -1952,7 +1952,7 @@
     if-eqz v4, :cond_2
 
     :try_start_2
-    invoke-direct {p0}, Lcom/android/server/display/rtg;->Qp()V
+    invoke-direct {p0}, Lcom/android/server/display/rtg;->Rp()V
     :try_end_2
     .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
@@ -1997,7 +1997,7 @@
 
     move-result v3
 
-    sput v3, Lcom/android/server/display/rtg;->nI:I
+    sput v3, Lcom/android/server/display/rtg;->wI:I
 
     :cond_3
     const-string v3, "name"
@@ -2024,7 +2024,7 @@
 
     move-result v3
 
-    sput v3, Lcom/android/server/display/rtg;->oI:I
+    sput v3, Lcom/android/server/display/rtg;->xI:I
 
     :cond_4
     const-string v3, "name"
@@ -2047,7 +2047,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     monitor-enter v3
     :try_end_4
@@ -2056,7 +2056,7 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
     :try_start_5
-    iget-object v4, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {v4}, Ljava/util/HashSet;->clear()V
 
@@ -2078,7 +2078,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v5, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     monitor-enter v5
     :try_end_6
@@ -2087,7 +2087,7 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
     :try_start_7
-    iget-object v6, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {v6, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -2160,7 +2160,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/display/rtg;->nI:I
+    sget v0, Lcom/android/server/display/rtg;->wI:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2180,7 +2180,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/display/rtg;->oI:I
+    sget v0, Lcom/android/server/display/rtg;->xI:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2201,7 +2201,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2278,7 +2278,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/display/rtg;->nI:I
+    sget v0, Lcom/android/server/display/rtg;->wI:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2298,7 +2298,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/display/rtg;->oI:I
+    sget v0, Lcom/android/server/display/rtg;->xI:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2374,7 +2374,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/display/rtg;->nI:I
+    sget v0, Lcom/android/server/display/rtg;->wI:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2394,7 +2394,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v0, Lcom/android/server/display/rtg;->oI:I
+    sget v0, Lcom/android/server/display/rtg;->xI:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2444,7 +2444,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/android/server/display/rtg;->nI:I
+    sget v1, Lcom/android/server/display/rtg;->wI:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2464,7 +2464,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget v1, Lcom/android/server/display/rtg;->oI:I
+    sget v1, Lcom/android/server/display/rtg;->xI:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -2484,7 +2484,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2499,28 +2499,14 @@
     throw p1
 .end method
 
-.method private ro()V
-    .locals 2
-
-    const-string v0, "OpProximityController"
-
-    const-string v1, "initLists"
-
-    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    invoke-direct {p0}, Lcom/android/server/display/rtg;->Mo()V
-
-    return-void
-.end method
-
 .method static synthetic rtg(Lcom/android/server/display/rtg;)I
     .locals 2
 
-    iget v0, p0, Lcom/android/server/display/rtg;->cI:I
+    iget v0, p0, Lcom/android/server/display/rtg;->lI:I
 
     add-int/lit8 v1, v0, -0x1
 
-    iput v1, p0, Lcom/android/server/display/rtg;->cI:I
+    iput v1, p0, Lcom/android/server/display/rtg;->lI:I
 
     return v0
 .end method
@@ -2546,9 +2532,23 @@
 .method static synthetic sis(Lcom/android/server/display/rtg;)Ljava/lang/Object;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->bI:Ljava/lang/Object;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->kI:Ljava/lang/Object;
 
     return-object p0
+.end method
+
+.method private so()V
+    .locals 2
+
+    const-string v0, "OpProximityController"
+
+    const-string v1, "initLists"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-direct {p0}, Lcom/android/server/display/rtg;->No()V
+
+    return-void
 .end method
 
 .method static synthetic ssp(Lcom/android/server/display/rtg;)Landroid/content/Context;
@@ -2562,7 +2562,7 @@
 .method static synthetic tsu(Lcom/android/server/display/rtg;)I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/display/rtg;->cI:I
+    iget p0, p0, Lcom/android/server/display/rtg;->lI:I
 
     return p0
 .end method
@@ -2580,7 +2580,7 @@
 .method static synthetic you(Lcom/android/server/display/rtg;)Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -2620,7 +2620,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     monitor-enter v0
 
@@ -2631,14 +2631,14 @@
 
     if-eqz p2, :cond_0
 
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_0
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
@@ -2653,7 +2653,7 @@
 
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p0, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -2688,7 +2688,7 @@
 .method static synthetic zta(Lcom/android/server/display/rtg;I)I
     .locals 0
 
-    iput p1, p0, Lcom/android/server/display/rtg;->cI:I
+    iput p1, p0, Lcom/android/server/display/rtg;->lI:I
 
     return p1
 .end method
@@ -2776,16 +2776,16 @@
 
     invoke-static {p5, p3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object p3, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p3, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     monitor-enter p3
 
     :try_start_0
-    iput-object p1, p0, Lcom/android/server/display/rtg;->EG:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/display/rtg;->NG:Ljava/lang/String;
 
     iput p2, p0, Lcom/android/server/display/rtg;->mFrontUid:I
 
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -2793,7 +2793,7 @@
 
     if-eqz p2, :cond_0
 
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -2802,7 +2802,7 @@
     if-eqz p2, :cond_2
 
     :cond_0
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -2810,7 +2810,7 @@
 
     if-nez p2, :cond_1
 
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -2819,7 +2819,7 @@
     if-nez p2, :cond_2
 
     :cond_1
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -2827,7 +2827,7 @@
 
     if-eqz p2, :cond_3
 
-    iget-object p2, p0, Lcom/android/server/display/rtg;->WH:Ljava/util/HashSet;
+    iget-object p2, p0, Lcom/android/server/display/rtg;->eI:Ljava/util/HashSet;
 
     invoke-virtual {p2, p4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -2910,7 +2910,7 @@
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/server/display/rtg;->kv:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/server/display/rtg;->tv:Landroid/content/BroadcastReceiver;
 
     sget-object v2, Lcom/android/server/display/rtg;->sHandler:Landroid/os/Handler;
 
@@ -2930,13 +2930,13 @@
 
     iput-object p1, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
-    sget-object p1, Lcom/android/server/am/AppRecordManager$ListenerType;->mza:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p1, Lcom/android/server/am/AppRecordManager$ListenerType;->vza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mAppStateListener:Lcom/android/server/display/rtg$sis;
 
     invoke-static {p1, v0}, Lcom/android/server/am/AppRecordManager;->zta(Lcom/android/server/am/AppRecordManager$ListenerType;Lcom/android/server/am/qbh;)V
 
-    sget-object p1, Lcom/android/server/am/AppRecordManager$ListenerType;->_ya:Lcom/android/server/am/AppRecordManager$ListenerType;
+    sget-object p1, Lcom/android/server/am/AppRecordManager$ListenerType;->iza:Lcom/android/server/am/AppRecordManager$ListenerType;
 
     iget-object v0, p0, Lcom/android/server/display/rtg;->mAppStateListener:Lcom/android/server/display/rtg$sis;
 
@@ -2962,7 +2962,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/display/rtg;->ZH:Landroid/hardware/Sensor;
+    iput-object p1, p0, Lcom/android/server/display/rtg;->hI:Landroid/hardware/Sensor;
 
     iget-object p1, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
@@ -2972,7 +2972,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/display/rtg;->_H:Landroid/hardware/Sensor;
+    iput-object p1, p0, Lcom/android/server/display/rtg;->iI:Landroid/hardware/Sensor;
 
     iget-object p1, p0, Lcom/android/server/display/rtg;->mSensorManager:Landroid/hardware/SensorManager;
 
@@ -2982,9 +2982,9 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/android/server/display/rtg;->aI:Landroid/hardware/Sensor;
+    iput-object p1, p0, Lcom/android/server/display/rtg;->jI:Landroid/hardware/Sensor;
 
-    invoke-direct {p0}, Lcom/android/server/display/rtg;->ro()V
+    invoke-direct {p0}, Lcom/android/server/display/rtg;->so()V
 
     invoke-direct {p0}, Lcom/android/server/display/rtg;->initOnlineConfig()V
 

@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field private CEa:I
+.field private LEa:I
 
-.field private DEa:Z
+.field private MEa:Z
 
-.field private final LSa:Ljava/security/cert/PKIXParameters;
+.field private final USa:Ljava/security/cert/PKIXParameters;
 
-.field private MSa:Lorg/bouncycastle/jcajce/cno;
+.field private VSa:Lorg/bouncycastle/jcajce/cno;
 
-.field private NSa:Ljava/util/List;
+.field private WSa:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -33,7 +33,7 @@
     .end annotation
 .end field
 
-.field private OSa:Ljava/util/Map;
+.field private XSa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -44,7 +44,7 @@
     .end annotation
 .end field
 
-.field private PSa:Ljava/util/List;
+.field private YSa:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -54,7 +54,7 @@
     .end annotation
 .end field
 
-.field private QSa:Ljava/util/Map;
+.field private ZSa:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -65,9 +65,9 @@
     .end annotation
 .end field
 
-.field private RSa:Z
+.field private _Sa:Z
 
-.field private SSa:Ljava/util/Set;
+.field private aTa:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -90,31 +90,31 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->NSa:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->WSa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->OSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->XSa:Ljava/util/Map;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->PSa:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->YSa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->QSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->ZSa:Ljava/util/Map;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->CEa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LEa:I
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->DEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MEa:Z
 
     invoke-virtual {p1}, Ljava/security/cert/PKIXParameters;->clone()Ljava/lang/Object;
 
@@ -122,7 +122,7 @@
 
     check-cast v0, Ljava/security/cert/PKIXParameters;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LSa:Ljava/security/cert/PKIXParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->USa:Ljava/security/cert/PKIXParameters;
 
     invoke-virtual {p1}, Ljava/security/cert/PKIXParameters;->getTargetCertConstraints()Ljava/security/cert/CertSelector;
 
@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MSa:Lorg/bouncycastle/jcajce/cno;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->VSa:Lorg/bouncycastle/jcajce/cno;
 
     :cond_0
     invoke-virtual {p1}, Ljava/security/cert/PKIXParameters;->getDate()Ljava/util/Date;
@@ -158,13 +158,13 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->RSa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->_Sa:Z
 
     invoke-virtual {p1}, Ljava/security/cert/PKIXParameters;->getTrustAnchors()Ljava/util/Set;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->SSa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->aTa:Ljava/util/Set;
 
     return-void
 .end method
@@ -178,37 +178,37 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->NSa:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->WSa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->OSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->XSa:Ljava/util/Map;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->PSa:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->YSa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->QSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->ZSa:Ljava/util/Map;
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->CEa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LEa:I
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->DEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MEa:Z
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/wtn;->zta(Lorg/bouncycastle/jcajce/wtn;)Ljava/security/cert/PKIXParameters;
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LSa:Ljava/security/cert/PKIXParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->USa:Ljava/security/cert/PKIXParameters;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/wtn;->you(Lorg/bouncycastle/jcajce/wtn;)Ljava/util/Date;
 
@@ -220,7 +220,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MSa:Lorg/bouncycastle/jcajce/cno;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->VSa:Lorg/bouncycastle/jcajce/cno;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -230,7 +230,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->NSa:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->WSa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -240,7 +240,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->OSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->XSa:Ljava/util/Map;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -250,7 +250,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->PSa:Ljava/util/List;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->YSa:Ljava/util/List;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -260,31 +260,31 @@
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->QSa:Ljava/util/Map;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->ZSa:Ljava/util/Map;
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/wtn;->kth(Lorg/bouncycastle/jcajce/wtn;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->DEa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MEa:Z
 
     invoke-static {p1}, Lorg/bouncycastle/jcajce/wtn;->bio(Lorg/bouncycastle/jcajce/wtn;)I
 
     move-result v0
 
-    iput v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->CEa:I
+    iput v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LEa:I
 
     invoke-virtual {p1}, Lorg/bouncycastle/jcajce/wtn;->isRevocationEnabled()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->RSa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->_Sa:Z
 
     invoke-virtual {p1}, Lorg/bouncycastle/jcajce/wtn;->getTrustAnchors()Ljava/util/Set;
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->SSa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->aTa:Ljava/util/Set;
 
     return-void
 .end method
@@ -292,7 +292,7 @@
 .method static synthetic bio(Lorg/bouncycastle/jcajce/wtn$zta;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->DEa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MEa:Z
 
     return p0
 .end method
@@ -300,7 +300,7 @@
 .method static synthetic cno(Lorg/bouncycastle/jcajce/wtn$zta;)Lorg/bouncycastle/jcajce/cno;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MSa:Lorg/bouncycastle/jcajce/cno;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->VSa:Lorg/bouncycastle/jcajce/cno;
 
     return-object p0
 .end method
@@ -308,7 +308,7 @@
 .method static synthetic igw(Lorg/bouncycastle/jcajce/wtn$zta;)I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->CEa:I
+    iget p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LEa:I
 
     return p0
 .end method
@@ -316,7 +316,7 @@
 .method static synthetic kth(Lorg/bouncycastle/jcajce/wtn$zta;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->RSa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->_Sa:Z
 
     return p0
 .end method
@@ -324,7 +324,7 @@
 .method static synthetic rtg(Lorg/bouncycastle/jcajce/wtn$zta;)Ljava/util/List;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->PSa:Ljava/util/List;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->YSa:Ljava/util/List;
 
     return-object p0
 .end method
@@ -332,7 +332,7 @@
 .method static synthetic sis(Lorg/bouncycastle/jcajce/wtn$zta;)Ljava/util/List;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->NSa:Ljava/util/List;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->WSa:Ljava/util/List;
 
     return-object p0
 .end method
@@ -340,7 +340,7 @@
 .method static synthetic ssp(Lorg/bouncycastle/jcajce/wtn$zta;)Ljava/util/Map;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->QSa:Ljava/util/Map;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->ZSa:Ljava/util/Map;
 
     return-object p0
 .end method
@@ -348,7 +348,7 @@
 .method static synthetic tsu(Lorg/bouncycastle/jcajce/wtn$zta;)Ljava/util/Map;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->OSa:Ljava/util/Map;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->XSa:Ljava/util/Map;
 
     return-object p0
 .end method
@@ -356,7 +356,7 @@
 .method static synthetic wtn(Lorg/bouncycastle/jcajce/wtn$zta;)Ljava/util/Set;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->SSa:Ljava/util/Set;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->aTa:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -372,7 +372,7 @@
 .method static synthetic zta(Lorg/bouncycastle/jcajce/wtn$zta;)Ljava/security/cert/PKIXParameters;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LSa:Ljava/security/cert/PKIXParameters;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->USa:Ljava/security/cert/PKIXParameters;
 
     return-object p0
 .end method
@@ -394,7 +394,7 @@
 .method public ha(I)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 0
 
-    iput p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->CEa:I
+    iput p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->LEa:I
 
     return-object p0
 .end method
@@ -402,7 +402,7 @@
 .method public ia(Z)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->DEa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MEa:Z
 
     return-object p0
 .end method
@@ -410,7 +410,7 @@
 .method public setRevocationEnabled(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->RSa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->_Sa:Z
 
     return-void
 .end method
@@ -427,7 +427,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->SSa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->aTa:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -435,7 +435,7 @@
 .method public you(Lorg/bouncycastle/jcajce/cno;)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 0
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->MSa:Lorg/bouncycastle/jcajce/cno;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->VSa:Lorg/bouncycastle/jcajce/cno;
 
     return-object p0
 .end method
@@ -447,7 +447,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->SSa:Ljava/util/Set;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/wtn$zta;->aTa:Ljava/util/Set;
 
     return-object p0
 .end method
@@ -455,7 +455,7 @@
 .method public zta(Lorg/bouncycastle/asn1/x509/zgw;Lorg/bouncycastle/jcajce/rtg;)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->OSa:Ljava/util/Map;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->XSa:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -465,7 +465,7 @@
 .method public zta(Lorg/bouncycastle/asn1/x509/zgw;Lorg/bouncycastle/jcajce/you;)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->QSa:Ljava/util/Map;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->ZSa:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -475,7 +475,7 @@
 .method public zta(Lorg/bouncycastle/jcajce/rtg;)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->NSa:Ljava/util/List;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->WSa:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -485,7 +485,7 @@
 .method public zta(Lorg/bouncycastle/jcajce/you;)Lorg/bouncycastle/jcajce/wtn$zta;
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->PSa:Ljava/util/List;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/wtn$zta;->YSa:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

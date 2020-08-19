@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected final fGa:Z
+.field protected final oGa:Z
 
 .field protected final octets:[B
 
@@ -17,7 +17,7 @@
 
     invoke-direct {p0}, Lorg/bouncycastle/asn1/vdb;-><init>()V
 
-    iput-boolean p1, p0, Lorg/bouncycastle/asn1/zta;->fGa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/asn1/zta;->oGa:Z
 
     iput p2, p0, Lorg/bouncycastle/asn1/zta;->tag:I
 
@@ -353,7 +353,7 @@
 .method public hashCode()I
     .locals 2
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->fGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->oGa:Z
 
     iget v1, p0, Lorg/bouncycastle/asn1/zta;->tag:I
 
@@ -373,7 +373,7 @@
 .method public isConstructed()Z
     .locals 0
 
-    iget-boolean p0, p0, Lorg/bouncycastle/asn1/zta;->fGa:Z
+    iget-boolean p0, p0, Lorg/bouncycastle/asn1/zta;->oGa:Z
 
     return p0
 .end method
@@ -404,7 +404,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->yh()I
+    invoke-virtual {p0}, Lorg/bouncycastle/asn1/zta;->zh()I
 
     move-result v1
 
@@ -451,7 +451,7 @@
     return-object p0
 .end method
 
-.method vh()I
+.method wh()I
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -484,7 +484,7 @@
     return v0
 .end method
 
-.method public yh()I
+.method public zh()I
     .locals 0
 
     iget p0, p0, Lorg/bouncycastle/asn1/zta;->tag:I
@@ -500,7 +500,7 @@
         }
     .end annotation
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->fGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->oGa:Z
 
     if-eqz v0, :cond_0
 
@@ -535,9 +535,9 @@
     :cond_0
     check-cast p1, Lorg/bouncycastle/asn1/zta;
 
-    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->fGa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/asn1/zta;->oGa:Z
 
-    iget-boolean v2, p1, Lorg/bouncycastle/asn1/zta;->fGa:Z
+    iget-boolean v2, p1, Lorg/bouncycastle/asn1/zta;->oGa:Z
 
     if-ne v0, v2, :cond_1
 

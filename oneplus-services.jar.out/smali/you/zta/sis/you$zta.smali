@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private factor:Ljava/math/BigInteger;
+.field private GUa:Z
 
-.field private xUa:Z
+.field private factor:Ljava/math/BigInteger;
 
 
 # direct methods
@@ -26,14 +26,14 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p1, p0, Lyou/zta/sis/you$zta;->xUa:Z
+    iput-boolean p1, p0, Lyou/zta/sis/you$zta;->GUa:Z
 
     iput-object p2, p0, Lyou/zta/sis/you$zta;->factor:Ljava/math/BigInteger;
 
     return-void
 .end method
 
-.method private static Xw()Lyou/zta/sis/you$zta;
+.method private static Yw()Lyou/zta/sis/you$zta;
     .locals 3
 
     new-instance v0, Lyou/zta/sis/you$zta;
@@ -47,7 +47,7 @@
     return-object v0
 .end method
 
-.method private static Yw()Lyou/zta/sis/you$zta;
+.method private static Zw()Lyou/zta/sis/you$zta;
     .locals 3
 
     new-instance v0, Lyou/zta/sis/you$zta;
@@ -64,7 +64,7 @@
 .method static synthetic access$000()Lyou/zta/sis/you$zta;
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/you$zta;->Xw()Lyou/zta/sis/you$zta;
+    invoke-static {}, Lyou/zta/sis/you$zta;->Yw()Lyou/zta/sis/you$zta;
 
     move-result-object v0
 
@@ -74,7 +74,7 @@
 .method static synthetic access$200()Lyou/zta/sis/you$zta;
     .locals 1
 
-    invoke-static {}, Lyou/zta/sis/you$zta;->Yw()Lyou/zta/sis/you$zta;
+    invoke-static {}, Lyou/zta/sis/you$zta;->Zw()Lyou/zta/sis/you$zta;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
 
 # virtual methods
-.method public Ik()Ljava/math/BigInteger;
+.method public Jk()Ljava/math/BigInteger;
     .locals 0
 
     iget-object p0, p0, Lyou/zta/sis/you$zta;->factor:Ljava/math/BigInteger;
@@ -113,10 +113,10 @@
     return-object p0
 .end method
 
-.method public Jk()Z
+.method public Kk()Z
     .locals 1
 
-    iget-boolean v0, p0, Lyou/zta/sis/you$zta;->xUa:Z
+    iget-boolean v0, p0, Lyou/zta/sis/you$zta;->GUa:Z
 
     if-eqz v0, :cond_0
 
@@ -135,10 +135,10 @@
     return p0
 .end method
 
-.method public Kk()Z
+.method public Lk()Z
     .locals 0
 
-    iget-boolean p0, p0, Lyou/zta/sis/you$zta;->xUa:Z
+    iget-boolean p0, p0, Lyou/zta/sis/you$zta;->GUa:Z
 
     return p0
 .end method

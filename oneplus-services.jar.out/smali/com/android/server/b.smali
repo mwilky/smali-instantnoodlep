@@ -19,43 +19,61 @@
 
 .field private static final DEBUG:Z
 
-.field private static final Dm:Ljava/lang/String; = "WirelessChargeDisconnectDetector"
-
-.field private static final Em:Ljava/lang/String; = "/sys/class/power_supply/wireless/icon_delay"
-
 .field public static final FEATURE_SUPPORT:Z
 
-.field private static final Fm:I = 0x1
+.field private static final Mm:Ljava/lang/String; = "WirelessChargeDisconnectDetector"
 
-.field private static final Gm:I = 0x2
+.field private static final Nm:Ljava/lang/String; = "/sys/class/power_supply/wireless/icon_delay"
 
-.field private static final Hm:I = 0x3
+.field private static final Om:I = 0x1
 
-.field private static final Im:I = 0x4
+.field private static final Pm:I = 0x2
 
-.field private static final Jm:J = 0x1770L
+.field private static final Qm:I = 0x3
 
-.field private static final Km:J = 0x1f4L
+.field private static final Rm:I = 0x4
 
-.field private static final Lm:J = 0x320L
-
-.field private static final Mm:F = 0.2f
-
-.field private static final Nm:F = 0.2f
-
-.field private static final Om:F = 0.2f
-
-.field private static final Pm:I = 0x32
+.field private static final Sm:J = 0x1770L
 
 .field private static final TAG:Ljava/lang/String; = "WirelessChargeDisconnectDetector"
 
+.field private static final Tm:J = 0x1f4L
+
+.field private static final Um:J = 0x320L
+
+.field private static final Vm:F = 0.2f
+
+.field private static final Wm:F = 0.2f
+
+.field private static final Xm:F = 0.2f
+
+.field private static final Ym:I = 0x32
+
 
 # instance fields
-.field private Am:Z
+.field private Am:J
 
-.field private Bm:J
+.field private Bm:F
 
-.field private Cm:Z
+.field private Cm:F
+
+.field private Dm:F
+
+.field private Em:F
+
+.field private Fm:F
+
+.field private Gm:F
+
+.field private final Hm:Landroid/hardware/SensorEventListener;
+
+.field private Im:Z
+
+.field private Jm:Z
+
+.field private Km:J
+
+.field private Lm:Z
 
 .field private enable:Z
 
@@ -75,33 +93,15 @@
 
 .field private mSensorManager:Landroid/hardware/SensorManager;
 
-.field private mm:Landroid/content/Context;
+.field private vm:Landroid/content/Context;
 
-.field private nm:Landroid/content/Intent;
+.field private wm:Landroid/content/Intent;
 
-.field private om:Landroid/content/Intent;
+.field private xm:Landroid/content/Intent;
 
-.field private pm:Z
+.field private ym:Z
 
-.field private qm:J
-
-.field private rm:J
-
-.field private sm:F
-
-.field private tm:F
-
-.field private um:F
-
-.field private vm:F
-
-.field private wm:F
-
-.field private xm:F
-
-.field private final ym:Landroid/hardware/SensorEventListener;
-
-.field private zm:Z
+.field private zm:J
 
 
 # direct methods
@@ -142,23 +142,23 @@
 
     const-wide/16 v1, 0x1770
 
-    iput-wide v1, p0, Lcom/android/server/B;->Bm:J
+    iput-wide v1, p0, Lcom/android/server/B;->Km:J
 
     const-wide/16 v1, 0x1f4
 
-    iput-wide v1, p0, Lcom/android/server/B;->qm:J
+    iput-wide v1, p0, Lcom/android/server/B;->zm:J
 
     const-wide/16 v1, 0x320
 
-    iput-wide v1, p0, Lcom/android/server/B;->rm:J
+    iput-wide v1, p0, Lcom/android/server/B;->Am:J
 
     const v1, 0x3e4ccccd    # 0.2f
 
-    iput v1, p0, Lcom/android/server/B;->vm:F
+    iput v1, p0, Lcom/android/server/B;->Em:F
 
-    iput v1, p0, Lcom/android/server/B;->wm:F
+    iput v1, p0, Lcom/android/server/B;->Fm:F
 
-    iput v1, p0, Lcom/android/server/B;->xm:F
+    iput v1, p0, Lcom/android/server/B;->Gm:F
 
     const/16 v1, 0x32
 
@@ -168,7 +168,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/server/y;-><init>(Lcom/android/server/B;)V
 
-    iput-object v1, p0, Lcom/android/server/B;->ym:Landroid/hardware/SensorEventListener;
+    iput-object v1, p0, Lcom/android/server/B;->Hm:Landroid/hardware/SensorEventListener;
 
     new-instance v1, Lcom/android/server/z;
 
@@ -185,12 +185,12 @@
     return-void
 .end method
 
-.method private Zm()V
+.method private _m()V
     .locals 3
 
     new-instance v0, Lcom/oneplus/config/ConfigGrabber;
 
-    iget-object v1, p0, Lcom/android/server/B;->mm:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/server/B;->vm:Landroid/content/Context;
 
     const-string v2, "WirelessChargeDisconnect"
 
@@ -205,10 +205,10 @@
     return-void
 .end method
 
-.method private _m()V
+.method private an()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/server/B;->mm:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/server/B;->vm:Landroid/content/Context;
 
     const-class v1, Landroid/hardware/SensorManager;
 
@@ -233,7 +233,7 @@
     return-void
 .end method
 
-.method private an()V
+.method private bn()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
@@ -242,21 +242,21 @@
 
     invoke-direct {v1, p0}, Lcom/android/server/you;-><init>(Lcom/android/server/B;)V
 
-    iget-wide v2, p0, Lcom/android/server/B;->qm:J
+    iget-wide v2, p0, Lcom/android/server/B;->zm:J
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
 .end method
 
-.method private bn()V
+.method private cn()V
     .locals 4
 
     iget-object v0, p0, Lcom/android/server/B;->mGravitySensor:Landroid/hardware/Sensor;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/B;->Am:Z
+    iget-boolean v0, p0, Lcom/android/server/B;->Jm:Z
 
     if-nez v0, :cond_0
 
@@ -274,7 +274,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/B;->Am:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->Jm:Z
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
@@ -294,7 +294,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/server/B;->Bm:J
+    iget-wide v2, p0, Lcom/android/server/B;->Km:J
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
@@ -302,14 +302,22 @@
     return-void
 .end method
 
-.method private cn()V
+.method static synthetic cno(Lcom/android/server/B;)Z
+    .locals 0
+
+    iget-boolean p0, p0, Lcom/android/server/B;->ym:Z
+
+    return p0
+.end method
+
+.method private dn()V
     .locals 2
 
     iget-object v0, p0, Lcom/android/server/B;->mGravitySensor:Landroid/hardware/Sensor;
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/server/B;->Am:Z
+    iget-boolean v0, p0, Lcom/android/server/B;->Jm:Z
 
     if-eqz v0, :cond_0
 
@@ -327,18 +335,10 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/B;->Am:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->Jm:Z
 
     :cond_0
     return-void
-.end method
-
-.method static synthetic cno(Lcom/android/server/B;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Lcom/android/server/B;->pm:Z
-
-    return p0
 .end method
 
 .method private dump()V
@@ -370,7 +370,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/B;->Bm:J
+    iget-wide v1, p0, Lcom/android/server/B;->Km:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -388,7 +388,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/B;->qm:J
+    iget-wide v1, p0, Lcom/android/server/B;->zm:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -406,7 +406,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lcom/android/server/B;->rm:J
+    iget-wide v1, p0, Lcom/android/server/B;->Am:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -424,7 +424,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/B;->vm:F
+    iget v1, p0, Lcom/android/server/B;->Em:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -442,7 +442,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/B;->wm:F
+    iget v1, p0, Lcom/android/server/B;->Fm:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -460,7 +460,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/B;->xm:F
+    iget v1, p0, Lcom/android/server/B;->Gm:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -494,7 +494,7 @@
 .method private motionLocked()V
     .locals 4
 
-    iget-object v0, p0, Lcom/android/server/B;->nm:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/server/B;->wm:Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -512,10 +512,10 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iput-object v1, p0, Lcom/android/server/B;->nm:Landroid/content/Intent;
+    iput-object v1, p0, Lcom/android/server/B;->wm:Landroid/content/Intent;
 
     :cond_0
-    iget-object v0, p0, Lcom/android/server/B;->om:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/server/B;->xm:Landroid/content/Intent;
 
     if-eqz v0, :cond_1
 
@@ -531,7 +531,7 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iput-object v1, p0, Lcom/android/server/B;->om:Landroid/content/Intent;
+    iput-object v1, p0, Lcom/android/server/B;->xm:Landroid/content/Intent;
 
     :cond_1
     return-void
@@ -540,7 +540,7 @@
 .method private processSampleLocked(FFF)V
     .locals 2
 
-    iget v0, p0, Lcom/android/server/B;->sm:F
+    iget v0, p0, Lcom/android/server/B;->Bm:F
 
     sub-float v0, p1, v0
 
@@ -548,13 +548,13 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/server/B;->vm:F
+    iget v1, p0, Lcom/android/server/B;->Em:F
 
     cmpl-float v0, v0, v1
 
     if-gez v0, :cond_0
 
-    iget v0, p0, Lcom/android/server/B;->tm:F
+    iget v0, p0, Lcom/android/server/B;->Cm:F
 
     sub-float v0, p2, v0
 
@@ -562,13 +562,13 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/server/B;->wm:F
+    iget v1, p0, Lcom/android/server/B;->Fm:F
 
     cmpl-float v0, v0, v1
 
     if-gez v0, :cond_0
 
-    iget v0, p0, Lcom/android/server/B;->um:F
+    iget v0, p0, Lcom/android/server/B;->Dm:F
 
     sub-float v0, p3, v0
 
@@ -576,7 +576,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/server/B;->xm:F
+    iget v1, p0, Lcom/android/server/B;->Gm:F
 
     cmpl-float v0, v0, v1
 
@@ -589,13 +589,13 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    invoke-direct {p0}, Lcom/android/server/B;->cn()V
+    invoke-direct {p0}, Lcom/android/server/B;->dn()V
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/server/B;->zm:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->Im:Z
 
-    iput-boolean v0, p0, Lcom/android/server/B;->Cm:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->Lm:Z
 
     invoke-direct {p0}, Lcom/android/server/B;->motionLocked()V
 
@@ -838,7 +838,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/server/B;->xm:F
+    iput v2, p0, Lcom/android/server/B;->Gm:F
 
     goto :goto_4
 
@@ -855,7 +855,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/server/B;->wm:F
+    iput v2, p0, Lcom/android/server/B;->Fm:F
 
     goto :goto_4
 
@@ -872,7 +872,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/server/B;->vm:F
+    iput v2, p0, Lcom/android/server/B;->Em:F
 
     goto :goto_4
 
@@ -881,7 +881,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/server/B;->rm:J
+    iput-wide v2, p0, Lcom/android/server/B;->Am:J
 
     goto :goto_4
 
@@ -890,7 +890,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/server/B;->qm:J
+    iput-wide v2, p0, Lcom/android/server/B;->zm:J
 
     goto :goto_4
 
@@ -899,7 +899,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/server/B;->Bm:J
+    iput-wide v2, p0, Lcom/android/server/B;->Km:J
 
     goto :goto_4
 
@@ -1126,7 +1126,7 @@
 .method static synthetic sis(Lcom/android/server/B;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/B;->um:F
+    iput p1, p0, Lcom/android/server/B;->Dm:F
 
     return p1
 .end method
@@ -1134,7 +1134,7 @@
 .method static synthetic sis(Lcom/android/server/B;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/B;->cn()V
+    invoke-direct {p0}, Lcom/android/server/B;->dn()V
 
     return-void
 .end method
@@ -1158,7 +1158,7 @@
 .method static synthetic you(Lcom/android/server/B;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/B;->tm:F
+    iput p1, p0, Lcom/android/server/B;->Cm:F
 
     return p1
 .end method
@@ -1176,7 +1176,7 @@
 .method static synthetic you(Lcom/android/server/B;)Z
     .locals 0
 
-    iget-boolean p0, p0, Lcom/android/server/B;->Am:Z
+    iget-boolean p0, p0, Lcom/android/server/B;->Jm:Z
 
     return p0
 .end method
@@ -1184,7 +1184,7 @@
 .method static synthetic you(Lcom/android/server/B;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/B;->Cm:Z
+    iput-boolean p1, p0, Lcom/android/server/B;->Lm:Z
 
     return p1
 .end method
@@ -1192,7 +1192,7 @@
 .method static synthetic zta(Lcom/android/server/B;F)F
     .locals 0
 
-    iput p1, p0, Lcom/android/server/B;->sm:F
+    iput p1, p0, Lcom/android/server/B;->Bm:F
 
     return p1
 .end method
@@ -1200,7 +1200,7 @@
 .method static synthetic zta(Lcom/android/server/B;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/B;->Zm()V
+    invoke-direct {p0}, Lcom/android/server/B;->_m()V
 
     return-void
 .end method
@@ -1232,7 +1232,7 @@
 .method static synthetic zta(Lcom/android/server/B;Z)Z
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/B;->zm:Z
+    iput-boolean p1, p0, Lcom/android/server/B;->Im:Z
 
     return p1
 .end method
@@ -1251,7 +1251,7 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/android/server/B;->pm:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->ym:Z
 
     monitor-exit p0
     :try_end_0
@@ -1265,7 +1265,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/B;->sm:F
+    iget v1, p0, Lcom/android/server/B;->Bm:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -1283,7 +1283,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/B;->tm:F
+    iget v1, p0, Lcom/android/server/B;->Cm:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -1301,7 +1301,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/B;->um:F
+    iget v1, p0, Lcom/android/server/B;->Dm:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
@@ -1313,7 +1313,7 @@
 
     iget-object v0, p0, Lcom/android/server/B;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object p0, p0, Lcom/android/server/B;->ym:Landroid/hardware/SensorEventListener;
+    iget-object p0, p0, Lcom/android/server/B;->Hm:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
@@ -1338,15 +1338,15 @@
     const/4 v0, 0x1
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/android/server/B;->pm:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->ym:Z
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/server/B;->sm:F
+    iput v0, p0, Lcom/android/server/B;->Bm:F
 
-    iput v0, p0, Lcom/android/server/B;->tm:F
+    iput v0, p0, Lcom/android/server/B;->Cm:F
 
-    iput v0, p0, Lcom/android/server/B;->um:F
+    iput v0, p0, Lcom/android/server/B;->Dm:F
 
     monitor-exit p0
     :try_end_0
@@ -1358,7 +1358,7 @@
 
     iget-object v0, p0, Lcom/android/server/B;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v1, p0, Lcom/android/server/B;->ym:Landroid/hardware/SensorEventListener;
+    iget-object v1, p0, Lcom/android/server/B;->Hm:Landroid/hardware/SensorEventListener;
 
     iget-object v2, p0, Lcom/android/server/B;->mGravitySensor:Landroid/hardware/Sensor;
 
@@ -1374,7 +1374,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/server/sis;-><init>(Lcom/android/server/B;)V
 
-    iget-wide v2, p0, Lcom/android/server/B;->rm:J
+    iget-wide v2, p0, Lcom/android/server/B;->Am:J
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -1438,7 +1438,7 @@
 
     invoke-direct {v0, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
-    iput-object v0, p0, Lcom/android/server/B;->nm:Landroid/content/Intent;
+    iput-object v0, p0, Lcom/android/server/B;->wm:Landroid/content/Intent;
 
     monitor-exit p0
 
@@ -1486,7 +1486,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v1, p0, Lcom/android/server/B;->zm:Z
+    iget-boolean v1, p0, Lcom/android/server/B;->Im:Z
 
     if-nez v1, :cond_3
 
@@ -1504,7 +1504,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/android/server/B;->Cm:Z
+    iput-boolean p1, p0, Lcom/android/server/B;->Lm:Z
 
     :cond_2
     monitor-exit p0
@@ -1516,15 +1516,15 @@
 
     invoke-direct {v1, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
-    iput-object v1, p0, Lcom/android/server/B;->om:Landroid/content/Intent;
+    iput-object v1, p0, Lcom/android/server/B;->xm:Landroid/content/Intent;
 
     const-string v1, "wireless_fastcharge_type"
 
-    iget-boolean v4, p0, Lcom/android/server/B;->Cm:Z
+    iget-boolean v4, p0, Lcom/android/server/B;->Lm:Z
 
     invoke-virtual {p1, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    iput-boolean v0, p0, Lcom/android/server/B;->Cm:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->Lm:Z
 
     monitor-exit p0
     :try_end_0
@@ -1564,7 +1564,7 @@
 .method public initInstance(Landroid/content/Context;)V
     .locals 5
 
-    iput-object p1, p0, Lcom/android/server/B;->mm:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/server/B;->vm:Landroid/content/Context;
 
     const-string v0, "power"
 
@@ -1607,11 +1607,11 @@
 
     iput-object v1, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
-    invoke-direct {p0}, Lcom/android/server/B;->_m()V
+    invoke-direct {p0}, Lcom/android/server/B;->an()V
 
     new-instance p1, Lcom/oneplus/config/ConfigObserver;
 
-    iget-object v1, p0, Lcom/android/server/B;->mm:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/server/B;->vm:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
@@ -1652,7 +1652,7 @@
     return p0
 
     :cond_0
-    iget-boolean p0, p0, Lcom/android/server/B;->zm:Z
+    iget-boolean p0, p0, Lcom/android/server/B;->Im:Z
 
     return p0
 .end method
@@ -1672,7 +1672,7 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-direct {p0}, Lcom/android/server/B;->cn()V
+    invoke-direct {p0}, Lcom/android/server/B;->dn()V
 
     iget-object v0, p0, Lcom/android/server/B;->mHandler:Lcom/android/server/B$zta;
 
@@ -1686,17 +1686,17 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    iget-boolean v0, p0, Lcom/android/server/B;->zm:Z
+    iget-boolean v0, p0, Lcom/android/server/B;->Im:Z
 
-    iput-boolean v1, p0, Lcom/android/server/B;->zm:Z
+    iput-boolean v1, p0, Lcom/android/server/B;->Im:Z
 
     const/4 v2, 0x0
 
-    iput-object v2, p0, Lcom/android/server/B;->nm:Landroid/content/Intent;
+    iput-object v2, p0, Lcom/android/server/B;->wm:Landroid/content/Intent;
 
-    iput-object v2, p0, Lcom/android/server/B;->om:Landroid/content/Intent;
+    iput-object v2, p0, Lcom/android/server/B;->xm:Landroid/content/Intent;
 
-    iput-boolean v1, p0, Lcom/android/server/B;->Cm:Z
+    iput-boolean v1, p0, Lcom/android/server/B;->Lm:Z
 
     monitor-exit p0
     :try_end_0
@@ -1710,7 +1710,7 @@
 
     if-ne p1, v3, :cond_1
 
-    invoke-direct {p0}, Lcom/android/server/B;->an()V
+    invoke-direct {p0}, Lcom/android/server/B;->bn()V
 
     if-eqz v0, :cond_1
 
@@ -1747,15 +1747,15 @@
     monitor-enter p0
 
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/server/B;->pm:Z
+    iget-boolean v0, p0, Lcom/android/server/B;->ym:Z
 
     if-eqz v0, :cond_1
 
-    iput-boolean v1, p0, Lcom/android/server/B;->pm:Z
+    iput-boolean v1, p0, Lcom/android/server/B;->ym:Z
 
     iget-object v0, p0, Lcom/android/server/B;->mSensorManager:Landroid/hardware/SensorManager;
 
-    iget-object v2, p0, Lcom/android/server/B;->ym:Landroid/hardware/SensorEventListener;
+    iget-object v2, p0, Lcom/android/server/B;->Hm:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v0, v2}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
@@ -1768,11 +1768,11 @@
     return v1
 
     :cond_1
-    invoke-direct {p0}, Lcom/android/server/B;->bn()V
+    invoke-direct {p0}, Lcom/android/server/B;->cn()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/server/B;->zm:Z
+    iput-boolean v0, p0, Lcom/android/server/B;->Im:Z
 
     monitor-exit p0
 
@@ -1791,7 +1791,7 @@
 .method public synthetic zta(Landroid/content/Intent;)V
     .locals 1
 
-    iget-object p0, p0, Lcom/android/server/B;->mm:Landroid/content/Context;
+    iget-object p0, p0, Lcom/android/server/B;->vm:Landroid/content/Context;
 
     sget-object v0, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 

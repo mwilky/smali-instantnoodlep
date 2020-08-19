@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public oba:Lcom/android/server/wm/ibl$zta;
+.field public xba:Lcom/android/server/wm/ibl$zta;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 .method public handleEvaluateGameMode(ZZ)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -55,7 +55,7 @@
 .method public handleEvaluateReadMode(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -94,9 +94,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iput-object v0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/ibl$zta;->init(Lcom/android/server/wm/ActivityStack;Lcom/android/server/wm/ActivityStackSupervisor;)V
 
@@ -106,7 +106,7 @@
 .method public packageChanged(Ljava/lang/String;I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -121,7 +121,7 @@
 .method public putSceneMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -136,7 +136,7 @@
 .method public sendReadModeNotification(Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -161,7 +161,7 @@
 .method public startEvaluateGameMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -176,7 +176,7 @@
 .method public startEvaluateReadingMode(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -191,7 +191,7 @@
 .method public startEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -214,7 +214,7 @@
 .method public stopEvaluateSceneModes(Lcom/android/server/wm/ActivityRecord;Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -229,7 +229,7 @@
 .method public updateDisableSceneScreenEffectFlag(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -244,7 +244,7 @@
 .method public updateSceneScreenEffectFlag(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 
@@ -259,7 +259,7 @@
 .method public updateSceneScreenEffectFlag(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/wm/ActivityRecord;)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wm/gwm;->oba:Lcom/android/server/wm/ibl$zta;
+    iget-object p0, p0, Lcom/android/server/wm/gwm;->xba:Lcom/android/server/wm/ibl$zta;
 
     if-nez p0, :cond_0
 

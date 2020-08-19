@@ -12,15 +12,7 @@
 
 
 # static fields
-.field private static final AL:Ljava/lang/String; = "writeLogToPartition"
-
-.field private static final BL:Ljava/lang/String; = "cleanItem"
-
-.field private static final CL:Ljava/lang/String; = "syncCacheToEmmc"
-
-.field private static final DL:Ljava/lang/String; = "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
-
-.field private static final EL:Ljava/lang/String; = "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
+.field public static final EL:I = -0x2
 
 .field private static final ENG_RESULT_FILE_PATH:Ljava/lang/String; = "/mnt/vendor/persist/engineermode/ENG_RESULT"
 
@@ -32,29 +24,37 @@
 
 .field public static final ERROR_NOT_SUPPORTED:I = -0x1
 
-.field public static final FL:B = 0x0t
+.field private static final FL:I = 0x4
 
-.field public static final GL:B = 0x1t
+.field private static final GL:Ljava/lang/String; = "android.secrecy.SecrecyManagerInternal"
 
-.field public static final HL:B = 0x2t
+.field private static final HL:Ljava/lang/String; = "getSecrecyState"
 
-.field private static final IL:Ljava/io/File;
+.field private static final IL:Ljava/lang/String; = "android.os.OemManager"
+
+.field private static final KL:Ljava/lang/String; = "writeLogToPartition"
+
+.field private static final LL:Ljava/lang/String; = "cleanItem"
+
+.field private static final ML:Ljava/lang/String; = "syncCacheToEmmc"
+
+.field private static final NL:Ljava/lang/String; = "vendor.oem.hardware.cryptoeng.V1_0.ICryptoeng"
+
+.field private static final OL:Ljava/lang/String; = "vendor.oem.hardware.biometrics.fingerprintpay.V1_0.IFingerprintPay"
+
+.field public static final PL:B = 0x0t
+
+.field public static final QL:B = 0x1t
+
+.field public static final RL:B = 0x2t
+
+.field private static final SL:Ljava/io/File;
 
 .field public static final STATUS_OK:I = 0x0
 
 .field private static final TAG:Ljava/lang/String; = "OneplusEngineerUtils"
 
-.field private static final lm:Ljava/lang/String; = "oem.secrecy.support"
-
-.field public static final vL:I = -0x2
-
-.field private static final wL:I = 0x4
-
-.field private static final xL:Ljava/lang/String; = "android.secrecy.SecrecyManagerInternal"
-
-.field private static final yL:Ljava/lang/String; = "getSecrecyState"
-
-.field private static final zL:Ljava/lang/String; = "android.os.OemManager"
+.field private static final um:Ljava/lang/String; = "oem.secrecy.support"
 
 
 # direct methods
@@ -67,7 +67,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/server/engineer/oif;->IL:Ljava/io/File;
+    sput-object v0, Lcom/android/server/engineer/oif;->SL:Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -1594,7 +1594,7 @@
 
     :cond_3
     :goto_6
-    sget-object p0, Lcom/android/server/engineer/oif;->IL:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/oif;->SL:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -1608,7 +1608,7 @@
 
     invoke-static {p0, v0}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/engineer/oif;->IL:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/oif;->SL:Ljava/io/File;
 
     invoke-static {p0, v0}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
@@ -1722,7 +1722,7 @@
     return v1
 
     :cond_2
-    sget-object v4, Lcom/android/server/engineer/oif;->IL:Ljava/io/File;
+    sget-object v4, Lcom/android/server/engineer/oif;->SL:Ljava/io/File;
 
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
@@ -1935,7 +1935,7 @@
 
     invoke-static {p0, p1}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 
-    sget-object p0, Lcom/android/server/engineer/oif;->IL:Ljava/io/File;
+    sget-object p0, Lcom/android/server/engineer/oif;->SL:Ljava/io/File;
 
     invoke-static {p0, p1}, Lcom/android/server/engineer/oif;->zta(Ljava/io/File;Ljava/lang/String;)V
 

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/oneplus/server/theme/ssp;->ww()V
+    value = Lcom/oneplus/server/theme/ssp;->xw()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

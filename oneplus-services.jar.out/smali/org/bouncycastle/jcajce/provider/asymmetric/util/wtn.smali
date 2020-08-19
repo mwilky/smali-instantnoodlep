@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private eTa:Ljava/util/Hashtable;
+.field private nTa:Ljava/util/Hashtable;
 
-.field private fTa:Ljava/util/Vector;
+.field private oTa:Ljava/util/Vector;
 
 
 # direct methods
@@ -34,9 +34,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 .method getAttributes()Ljava/util/Hashtable;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     return-object p0
 .end method
@@ -54,7 +54,7 @@
 .method getOrdering()Ljava/util/Vector;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     return-object p0
 .end method
@@ -62,7 +62,7 @@
 .method public obl()Ljava/util/Enumeration;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     invoke-virtual {p0}, Ljava/util/Vector;->elements()Ljava/util/Enumeration;
 
@@ -90,7 +90,7 @@
 
     check-cast v0, Ljava/util/Hashtable;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     check-cast p1, Ljava/util/Vector;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     goto :goto_1
 
@@ -134,7 +134,7 @@
 .method size()I
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     invoke-virtual {p0}, Ljava/util/Vector;->size()I
 
@@ -151,7 +151,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -202,7 +202,7 @@
 
     invoke-virtual {v1, v3}, Lorg/bouncycastle/asn1/ugm;->sis(Lorg/bouncycastle/asn1/ssp;)V
 
-    iget-object v4, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iget-object v4, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     invoke-virtual {v4, v3}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -228,7 +228,7 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj;)Lorg/bouncycastle/asn1/ssp;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -242,7 +242,7 @@
 .method public zta(Lorg/bouncycastle/asn1/bvj;Lorg/bouncycastle/asn1/ssp;)V
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1}, Ljava/util/Hashtable;->containsKey(Ljava/lang/Object;)Z
 
@@ -250,18 +250,18 @@
 
     if-eqz v0, :cond_0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->eTa:Ljava/util/Hashtable;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->nTa:Ljava/util/Hashtable;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->fTa:Ljava/util/Vector;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/asymmetric/util/wtn;->oTa:Ljava/util/Vector;
 
     invoke-virtual {p0, p1}, Ljava/util/Vector;->addElement(Ljava/lang/Object;)V
 

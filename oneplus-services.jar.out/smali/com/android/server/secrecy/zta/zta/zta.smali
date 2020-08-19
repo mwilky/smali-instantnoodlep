@@ -4,33 +4,33 @@
 
 
 # static fields
-.field private static AW:I = 0x0
-
 .field private static DEBUG:Z = false
-
-.field private static DW:I = 0x0
 
 .field private static ERROR:Z = false
 
-.field static final EW:I = 0x10
-
-.field static final FW:I = 0x8
-
-.field static final GW:I = 0x4
-
-.field static final HW:I = 0x2
-
 .field private static INFO:Z = false
 
-.field static final IW:I = 0x0
+.field private static final JW:Ljava/lang/String; = "SecrecyService.LogUtil"
 
-.field private static VERBOSE:Z = false
+.field private static final KW:Z
 
-.field private static WARN:Z = false
+.field private static LW:I = 0x0
 
-.field private static final yW:Ljava/lang/String; = "SecrecyService.LogUtil"
+.field private static MW:I = 0x0
 
-.field private static final zW:Z
+.field static final NW:I = 0x10
+
+.field static final OW:I = 0x8
+
+.field static final PW:I = 0x4
+
+.field static final QW:I = 0x2
+
+.field static final RW:I
+
+.field private static VERBOSE:Z
+
+.field private static WARN:Z
 
 
 # direct methods
@@ -39,9 +39,9 @@
 
     sget-boolean v0, Lcom/android/server/secrecy/SecrecyService;->DEBUG:Z
 
-    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->zW:Z
+    sput-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->KW:Z
 
-    sget-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->zW:Z
+    sget-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->KW:Z
 
     const/4 v1, 0x2
 
@@ -57,9 +57,9 @@
     move v0, v2
 
     :goto_0
-    sput v0, Lcom/android/server/secrecy/zta/zta/zta;->AW:I
+    sput v0, Lcom/android/server/secrecy/zta/zta/zta;->LW:I
 
-    sget-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->zW:Z
+    sget-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->KW:Z
 
     if-eqz v0, :cond_1
 
@@ -71,9 +71,9 @@
     move v0, v2
 
     :goto_1
-    sput v0, Lcom/android/server/secrecy/zta/zta/zta;->DW:I
+    sput v0, Lcom/android/server/secrecy/zta/zta/zta;->MW:I
 
-    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->AW:I
+    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->LW:I
 
     const/4 v3, 0x1
 
@@ -91,7 +91,7 @@
     :goto_2
     sput-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->VERBOSE:Z
 
-    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->AW:I
+    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->LW:I
 
     if-gt v0, v1, :cond_3
 
@@ -105,7 +105,7 @@
     :goto_3
     sput-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->DEBUG:Z
 
-    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->AW:I
+    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->LW:I
 
     const/4 v1, 0x4
 
@@ -121,7 +121,7 @@
     :goto_4
     sput-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->INFO:Z
 
-    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->AW:I
+    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->LW:I
 
     const/16 v1, 0x8
 
@@ -137,7 +137,7 @@
     :goto_5
     sput-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->WARN:Z
 
-    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->AW:I
+    sget v0, Lcom/android/server/secrecy/zta/zta/zta;->LW:I
 
     if-gt v0, v2, :cond_6
 
@@ -241,7 +241,7 @@
 .method public static isDebug()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->zW:Z
+    sget-boolean v0, Lcom/android/server/secrecy/zta/zta/zta;->KW:Z
 
     return v0
 .end method

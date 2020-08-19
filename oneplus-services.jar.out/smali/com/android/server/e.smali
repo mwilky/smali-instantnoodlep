@@ -24,45 +24,55 @@
 
 .field private static final DEBUG:Z
 
-.field private static final Di:Z = false
+.field private static final Hi:Z = false
 
-.field private static final Ei:Ljava/lang/String; = "BatteryLed"
+.field private static final Ii:Ljava/lang/String; = "BatteryLed"
 
-.field private static final Fi:Ljava/lang/String; = "/sys/class/power_supply/battery/fastchg_status"
+.field private static final Ji:Ljava/lang/String; = "/sys/class/power_supply/battery/fastchg_status"
 
-.field private static final Gi:Ljava/lang/String; = "/proc/enhance_dash"
+.field private static final Ki:Ljava/lang/String; = "/proc/enhance_dash"
 
-.field private static final Hi:Ljava/lang/String; = "/sys/class/power_supply/wireless/real_type"
+.field private static final Li:Ljava/lang/String; = "/sys/class/power_supply/wireless/real_type"
 
-.field private static final Ii:Ljava/lang/String; = "/proc/wireless/enable_tx"
+.field private static final Mi:Ljava/lang/String; = "/proc/wireless/enable_tx"
 
-.field private static final Ji:Ljava/lang/String; = "sys/class/power_supply/usb/real_type"
+.field private static final Ni:Ljava/lang/String; = "sys/class/power_supply/usb/real_type"
 
-.field private static final Ki:Ljava/lang/String; = "/proc/wireless/deviated"
+.field private static final Oi:Ljava/lang/String; = "/proc/wireless/deviated"
 
-.field private static final Li:Ljava/lang/String; = "/proc/wireless/fast_skin_threld"
+.field private static final Pi:Ljava/lang/String; = "/proc/wireless/fast_skin_threld"
 
-.field private static final Mi:Ljava/lang/String; = "/proc/chg_skin_thermal_thd"
+.field private static final Qi:Ljava/lang/String; = "/proc/chg_skin_thermal_thd"
 
-.field private static final Ni:I = 0x1a4
-
-.field private static final Oi:I = 0x190
-
-.field private static final Pi:I = 0x29
-
-.field private static final Qi:I = 0x27
-
-.field private static final Ri:I = 0x26
+.field private static final Ri:Ljava/lang/String; = "/proc/chg_skin_lcdoff_thermal_thd"
 
 .field private static final Sd:Ljava/lang/String; = "/sys/class/power_supply/wireless/online"
 
-.field private static final Si:I = 0x24
+.field private static final Si:I = 0x1a4
 
 .field private static final TAG:Ljava/lang/String; = "FastCharge"
 
 .field private static final Td:Ljava/lang/String; = "/proc/wireless/quiet_mode"
 
-.field private static Ti:Lcom/android/server/e$sis;
+.field private static final Ti:I = 0x190
+
+.field private static final Ui:I = 0x29
+
+.field private static final Vi:I = 0x27
+
+.field private static final Wi:I = 0x26
+
+.field private static final Xi:I = 0x24
+
+.field private static final Yi:I = 0x29
+
+.field private static final Zi:I = 0x27
+
+.field private static final _i:I = 0x26
+
+.field private static final aj:I = 0x24
+
+.field private static bj:Lcom/android/server/e$sis;
 
 .field private static mContext:Landroid/content/Context;
 
@@ -73,6 +83,14 @@
 .field private Bi:I
 
 .field private Ci:I
+
+.field private Di:I
+
+.field private Ei:I
+
+.field private Fi:I
+
+.field private Gi:I
 
 .field private bi:Z
 
@@ -168,7 +186,7 @@
     return-void
 .end method
 
-.method private Gm()I
+.method private Hm()I
     .locals 6
 
     const-string p0, "getFastChargeType io close exception :"
@@ -407,7 +425,7 @@
     throw v1
 .end method
 
-.method private Hm()Z
+.method private Im()Z
     .locals 6
 
     const-string p0, "Failure in reading charger type"
@@ -473,7 +491,7 @@
     return v2
 .end method
 
-.method private Im()V
+.method private Jm()V
     .locals 4
 
     sget-object p0, Lcom/android/server/e;->mContext:Landroid/content/Context;
@@ -536,18 +554,18 @@
 
     move-result p0
 
-    sget-object v2, Lcom/android/server/e;->Ti:Lcom/android/server/e$sis;
+    sget-object v2, Lcom/android/server/e;->bj:Lcom/android/server/e$sis;
 
     invoke-virtual {v2, v0, v1, p0}, Lcom/android/server/e$sis;->tsu(III)V
 
-    sget-object p0, Lcom/android/server/e;->Ti:Lcom/android/server/e$sis;
+    sget-object p0, Lcom/android/server/e;->bj:Lcom/android/server/e$sis;
 
     invoke-virtual {p0}, Lcom/android/server/e$sis;->updateLightsLocked()V
 
     return-void
 .end method
 
-.method private Jm()V
+.method private Km()V
     .locals 3
 
     iget-boolean v0, p0, Lcom/android/server/e;->gi:Z
@@ -556,7 +574,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/server/e;->Hm()Z
+    invoke-direct {p0}, Lcom/android/server/e;->Im()Z
 
     move-result v0
 
@@ -616,7 +634,7 @@
     iput-boolean v1, p0, Lcom/android/server/e;->ji:Z
 
     :goto_2
-    invoke-direct {p0}, Lcom/android/server/e;->Gm()I
+    invoke-direct {p0}, Lcom/android/server/e;->Hm()I
 
     move-result v0
 
@@ -653,7 +671,7 @@
 .method static synthetic access$100()Lcom/android/server/e$sis;
     .locals 1
 
-    sget-object v0, Lcom/android/server/e;->Ti:Lcom/android/server/e$sis;
+    sget-object v0, Lcom/android/server/e;->bj:Lcom/android/server/e$sis;
 
     return-object v0
 .end method
@@ -677,7 +695,7 @@
 .method static synthetic bio(Lcom/android/server/e;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/e;->Im()V
+    invoke-direct {p0}, Lcom/android/server/e;->Jm()V
 
     return-void
 .end method
@@ -769,7 +787,7 @@
 .end method
 
 .method private resolveConfigFromJSON(Lorg/json/JSONArray;)V
-    .locals 10
+    .locals 12
 
     const-string v0, "FastCharge"
 
@@ -788,7 +806,7 @@
 
     move-result v3
 
-    if-ge v2, v3, :cond_9
+    if-ge v2, v3, :cond_c
 
     invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
@@ -806,9 +824,15 @@
 
     move-result v6
 
-    const v7, 0x5e6263cd
+    const v7, -0x34fe5a8e    # -8496498.0f
 
-    const/4 v8, 0x1
+    const/4 v8, 0x2
+
+    const/4 v9, 0x1
+
+    if-eq v6, v7, :cond_3
+
+    const v7, 0x5e6263cd
 
     if-eq v6, v7, :cond_2
 
@@ -825,9 +849,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_4
 
-    move v5, v8
+    move v5, v9
 
     goto :goto_1
 
@@ -837,103 +861,217 @@
     invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz v4, :cond_3
+    if-eqz v4, :cond_4
 
     move v5, v1
 
+    goto :goto_1
+
     :cond_3
+    const-string v6, "charge_lcd_off"
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-eqz v4, :cond_4
+
+    move v5, v8
+
+    :cond_4
     :goto_1
     const-string v4, " "
 
-    if-eqz v5, :cond_6
+    if-eqz v5, :cond_9
 
-    if-eq v5, v8, :cond_4
-
-    goto/16 :goto_3
-
-    :cond_4
-    :try_start_1
-    const-string v5, "temp_up_larger"
-
-    iget v6, p0, Lcom/android/server/e;->zi:I
-
-    invoke-virtual {v3, v5, v6}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
-
-    move-result v5
-
-    const-string v6, "temp_down_larger"
-
-    iget v7, p0, Lcom/android/server/e;->Ai:I
-
-    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
-
-    move-result v6
+    const-string v6, "temp_down_smaller"
 
     const-string v7, "temp_up_smaller"
 
-    iget v8, p0, Lcom/android/server/e;->Bi:I
+    const-string v10, "temp_down_larger"
 
-    invoke-virtual {v3, v7, v8}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+    const-string v11, "temp_up_larger"
+
+    if-eq v5, v9, :cond_7
+
+    if-eq v5, v8, :cond_5
+
+    goto/16 :goto_3
+
+    :cond_5
+    :try_start_1
+    iget v5, p0, Lcom/android/server/e;->Di:I
+
+    invoke-virtual {v3, v11, v5}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v5
+
+    iget v8, p0, Lcom/android/server/e;->Ei:I
+
+    invoke-virtual {v3, v10, v8}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v8
+
+    iget v9, p0, Lcom/android/server/e;->Fi:I
+
+    invoke-virtual {v3, v7, v9}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
     move-result v7
 
-    const-string v8, "temp_down_smaller"
+    iget v9, p0, Lcom/android/server/e;->Gi:I
 
-    iget v9, p0, Lcom/android/server/e;->Ci:I
-
-    invoke-virtual {v3, v8, v9}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+    invoke-virtual {v3, v6, v9}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
     move-result v3
 
-    iget v8, p0, Lcom/android/server/e;->zi:I
+    iget v6, p0, Lcom/android/server/e;->Di:I
 
-    if-ne v5, v8, :cond_5
+    if-ne v5, v6, :cond_6
 
-    iget v8, p0, Lcom/android/server/e;->Ai:I
+    iget v6, p0, Lcom/android/server/e;->Ei:I
 
-    if-ne v6, v8, :cond_5
+    if-ne v8, v6, :cond_6
 
-    iget v8, p0, Lcom/android/server/e;->Bi:I
+    iget v6, p0, Lcom/android/server/e;->Fi:I
 
-    if-ne v7, v8, :cond_5
+    if-ne v7, v6, :cond_6
 
-    iget v8, p0, Lcom/android/server/e;->Ci:I
+    iget v6, p0, Lcom/android/server/e;->Gi:I
 
-    if-eq v3, v8, :cond_8
+    if-eq v3, v6, :cond_b
 
-    :cond_5
-    new-instance v8, Ljava/lang/StringBuilder;
+    :cond_6
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v8, "/proc/chg_skin_thermal_thd"
+    const-string v6, "/proc/chg_skin_lcdoff_thermal_thd"
 
-    invoke-direct {p0, v8, v4}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v6, v4}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
+
+    iput v5, p0, Lcom/android/server/e;->Di:I
+
+    iput v8, p0, Lcom/android/server/e;->Ei:I
+
+    iput v7, p0, Lcom/android/server/e;->Fi:I
+
+    iput v3, p0, Lcom/android/server/e;->Gi:I
+
+    sget-boolean v3, Lcom/android/server/e;->DEBUG:Z
+
+    if-eqz v3, :cond_b
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "change charge power LCD off to"
+
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    :goto_2
+    invoke-static {v0, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_3
+
+    :cond_7
+    iget v5, p0, Lcom/android/server/e;->zi:I
+
+    invoke-virtual {v3, v11, v5}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v5
+
+    iget v8, p0, Lcom/android/server/e;->Ai:I
+
+    invoke-virtual {v3, v10, v8}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v8
+
+    iget v9, p0, Lcom/android/server/e;->Bi:I
+
+    invoke-virtual {v3, v7, v9}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v7
+
+    iget v9, p0, Lcom/android/server/e;->Ci:I
+
+    invoke-virtual {v3, v6, v9}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v3
+
+    iget v6, p0, Lcom/android/server/e;->zi:I
+
+    if-ne v5, v6, :cond_8
+
+    iget v6, p0, Lcom/android/server/e;->Ai:I
+
+    if-ne v8, v6, :cond_8
+
+    iget v6, p0, Lcom/android/server/e;->Bi:I
+
+    if-ne v7, v6, :cond_8
+
+    iget v6, p0, Lcom/android/server/e;->Ci:I
+
+    if-eq v3, v6, :cond_b
+
+    :cond_8
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v6, "/proc/chg_skin_thermal_thd"
+
+    invoke-direct {p0, v6, v4}, Lcom/android/server/e;->oxb(Ljava/lang/String;Ljava/lang/String;)V
 
     iput v5, p0, Lcom/android/server/e;->zi:I
 
-    iput v6, p0, Lcom/android/server/e;->Ai:I
+    iput v8, p0, Lcom/android/server/e;->Ai:I
 
     iput v7, p0, Lcom/android/server/e;->Bi:I
 
@@ -941,7 +1079,7 @@
 
     sget-boolean v3, Lcom/android/server/e;->DEBUG:Z
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_b
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -957,13 +1095,10 @@
 
     move-result-object v3
 
-    :goto_2
-    invoke-static {v0, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    goto :goto_2
 
-    goto :goto_3
-
-    :cond_6
-    new-array v5, v8, [I
+    :cond_9
+    new-array v5, v9, [I
 
     const/16 v6, 0x114
 
@@ -973,7 +1108,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_8
+    if-eqz v5, :cond_b
 
     const-string v5, "reduce_power"
 
@@ -993,13 +1128,13 @@
 
     iget v6, p0, Lcom/android/server/e;->xi:I
 
-    if-ne v5, v6, :cond_7
+    if-ne v5, v6, :cond_a
 
     iget v6, p0, Lcom/android/server/e;->yi:I
 
-    if-eq v3, v6, :cond_8
+    if-eq v3, v6, :cond_b
 
-    :cond_7
+    :cond_a
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1024,7 +1159,7 @@
 
     sget-boolean v3, Lcom/android/server/e;->DEBUG:Z
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_b
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1042,9 +1177,9 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    goto :goto_2
+    goto/16 :goto_2
 
-    :cond_8
+    :cond_b
     :goto_3
     add-int/lit8 v2, v2, 0x1
 
@@ -1059,7 +1194,7 @@
 
     invoke-static {v0, p0}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_9
+    :cond_c
     return-void
 .end method
 
@@ -1753,7 +1888,7 @@
 .end method
 
 .method public init(Landroid/content/Context;)V
-    .locals 3
+    .locals 4
 
     sget-boolean v0, Lcom/android/server/e;->DEBUG:Z
 
@@ -1840,17 +1975,25 @@
 
     iput v0, p0, Lcom/android/server/e;->zi:I
 
-    const/16 v0, 0x27
+    const/16 v1, 0x27
 
-    iput v0, p0, Lcom/android/server/e;->Ai:I
+    iput v1, p0, Lcom/android/server/e;->Ai:I
 
-    const/16 v0, 0x26
+    const/16 v2, 0x26
 
-    iput v0, p0, Lcom/android/server/e;->Bi:I
+    iput v2, p0, Lcom/android/server/e;->Bi:I
 
-    const/16 v0, 0x24
+    const/16 v3, 0x24
 
-    iput v0, p0, Lcom/android/server/e;->Ci:I
+    iput v3, p0, Lcom/android/server/e;->Ci:I
+
+    iput v0, p0, Lcom/android/server/e;->Di:I
+
+    iput v1, p0, Lcom/android/server/e;->Ei:I
+
+    iput v2, p0, Lcom/android/server/e;->Fi:I
+
+    iput v3, p0, Lcom/android/server/e;->Gi:I
 
     if-eqz p1, :cond_5
 
@@ -1882,7 +2025,7 @@
 
     invoke-direct {v0, p0, p1, v1}, Lcom/android/server/e$sis;-><init>(Lcom/android/server/e;Landroid/content/Context;Lcom/android/server/lights/LightsManager;)V
 
-    sput-object v0, Lcom/android/server/e;->Ti:Lcom/android/server/e$sis;
+    sput-object v0, Lcom/android/server/e;->bj:Lcom/android/server/e$sis;
 
     :cond_5
     return-void
@@ -1965,7 +2108,7 @@
 
     invoke-virtual {v3, v4, v1, v2, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
-    invoke-direct {p0}, Lcom/android/server/e;->Im()V
+    invoke-direct {p0}, Lcom/android/server/e;->Jm()V
 
     monitor-exit p1
 
@@ -2129,7 +2272,7 @@
 
     iput v0, p0, Lcom/android/server/e;->mBatteryStatus:I
 
-    invoke-direct {p0}, Lcom/android/server/e;->Jm()V
+    invoke-direct {p0}, Lcom/android/server/e;->Km()V
 
     invoke-static {}, Lcom/android/server/backlight/OpBacklightManager;->getInstance()Lcom/android/server/backlight/OpBacklightManager;
 
@@ -2204,7 +2347,7 @@
 .method public updateLightsLocked()Z
     .locals 0
 
-    sget-object p0, Lcom/android/server/e;->Ti:Lcom/android/server/e$sis;
+    sget-object p0, Lcom/android/server/e;->bj:Lcom/android/server/e$sis;
 
     if-eqz p0, :cond_0
 

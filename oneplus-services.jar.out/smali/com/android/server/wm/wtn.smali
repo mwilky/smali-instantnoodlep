@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field final synthetic Naa:Lcom/android/server/wm/ActivityRecord;
+.field final synthetic Waa:Lcom/android/server/wm/ActivityRecord;
 
-.field final synthetic Oaa:Z
+.field final synthetic Xaa:Z
 
 .field final synthetic this$0:Lcom/android/server/wm/OPAppSwitchManagerService;
 
@@ -35,9 +35,9 @@
 
     iput-object p2, p0, Lcom/android/server/wm/wtn;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iput-object p3, p0, Lcom/android/server/wm/wtn;->Naa:Lcom/android/server/wm/ActivityRecord;
+    iput-object p3, p0, Lcom/android/server/wm/wtn;->Waa:Lcom/android/server/wm/ActivityRecord;
 
-    iput-boolean p4, p0, Lcom/android/server/wm/wtn;->Oaa:Z
+    iput-boolean p4, p0, Lcom/android/server/wm/wtn;->Xaa:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,9 +54,9 @@
 
     iget-object v1, p0, Lcom/android/server/wm/wtn;->val$r:Lcom/android/server/wm/ActivityRecord;
 
-    iget-object v2, p0, Lcom/android/server/wm/wtn;->Naa:Lcom/android/server/wm/ActivityRecord;
+    iget-object v2, p0, Lcom/android/server/wm/wtn;->Waa:Lcom/android/server/wm/ActivityRecord;
 
-    iget-boolean p0, p0, Lcom/android/server/wm/wtn;->Oaa:Z
+    iget-boolean p0, p0, Lcom/android/server/wm/wtn;->Xaa:Z
 
     if-nez p0, :cond_0
 

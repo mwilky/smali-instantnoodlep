@@ -4,9 +4,9 @@
 
 
 # static fields
-.field private static final GRa:I = -0x1f000000
+.field private static final PRa:I = -0x1f000000
 
-.field private static final HRa:J = -0x1f00000000000000L
+.field private static final QRa:J = -0x1f00000000000000L
 
 
 # direct methods
@@ -164,7 +164,7 @@
     return-void
 .end method
 
-.method public static fk()[B
+.method public static gk()[B
     .locals 3
 
     const/16 v0, 0x10
@@ -180,7 +180,7 @@
     return-object v0
 .end method
 
-.method public static gk()[I
+.method public static hk()[I
     .locals 3
 
     const/4 v0, 0x4
@@ -192,22 +192,6 @@
     const/high16 v2, -0x80000000
 
     aput v2, v0, v1
-
-    return-object v0
-.end method
-
-.method public static hk()[J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [J
-
-    const/4 v1, 0x0
-
-    const-wide/high16 v2, -0x8000000000000000L
-
-    aput-wide v2, v0, v1
 
     return-object v0
 .end method
@@ -239,6 +223,22 @@
 .end method
 
 .method public static ik()[J
+    .locals 4
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [J
+
+    const/4 v1, 0x0
+
+    const-wide/high16 v2, -0x8000000000000000L
+
+    aput-wide v2, v0, v1
+
+    return-object v0
+.end method
+
+.method public static jk()[J
     .locals 4
 
     const/4 v0, 0x2

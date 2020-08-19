@@ -224,7 +224,7 @@
 
     move-result-object p2
 
-    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->HCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
+    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->QCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
 
     goto :goto_0
 
@@ -273,7 +273,7 @@
 
     move-result-object p1
 
-    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->HCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
+    sget-object v0, Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;->QCa:Lcom/android/server/wm/OpPowerConsumpStats$NetworkType;
 
     const/16 v1, 0xf
 

@@ -4,14 +4,14 @@
 
 
 # static fields
-.field private static volatile ETa:Ljava/security/Provider;
+.field private static volatile NTa:Ljava/security/Provider;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
 
-    invoke-static {}, Lorg/bouncycastle/jcajce/tsu/you;->Ww()Ljava/security/Provider;
+    invoke-static {}, Lorg/bouncycastle/jcajce/tsu/you;->Xw()Ljava/security/Provider;
 
     move-result-object v0
 
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method private static declared-synchronized Ww()Ljava/security/Provider;
+.method private static declared-synchronized Xw()Ljava/security/Provider;
     .locals 2
 
     const-class v0, Lorg/bouncycastle/jcajce/tsu/you;
@@ -50,11 +50,11 @@
 
     :cond_0
     :try_start_1
-    sget-object v1, Lorg/bouncycastle/jcajce/tsu/you;->ETa:Ljava/security/Provider;
+    sget-object v1, Lorg/bouncycastle/jcajce/tsu/you;->NTa:Ljava/security/Provider;
 
     if-eqz v1, :cond_1
 
-    sget-object v1, Lorg/bouncycastle/jcajce/tsu/you;->ETa:Ljava/security/Provider;
+    sget-object v1, Lorg/bouncycastle/jcajce/tsu/you;->NTa:Ljava/security/Provider;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -68,9 +68,9 @@
 
     invoke-direct {v1}, Lorg/bouncycastle/jce/provider/BouncyCastleProvider;-><init>()V
 
-    sput-object v1, Lorg/bouncycastle/jcajce/tsu/you;->ETa:Ljava/security/Provider;
+    sput-object v1, Lorg/bouncycastle/jcajce/tsu/you;->NTa:Ljava/security/Provider;
 
-    sget-object v1, Lorg/bouncycastle/jcajce/tsu/you;->ETa:Ljava/security/Provider;
+    sget-object v1, Lorg/bouncycastle/jcajce/tsu/you;->NTa:Ljava/security/Provider;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

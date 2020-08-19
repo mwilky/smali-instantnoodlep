@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field jDa:Ljava/security/SecureRandom;
+.field sDa:Ljava/security/SecureRandom;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/crypto/igw/cno;->jDa:Ljava/security/SecureRandom;
+    iput-object v0, p0, Lorg/bouncycastle/crypto/igw/cno;->sDa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/igw/cno;->jDa:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lorg/bouncycastle/crypto/igw/cno;->sDa:Ljava/security/SecureRandom;
 
     return-void
 .end method
@@ -94,7 +94,7 @@
 
     if-ge p2, v1, :cond_1
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/igw/cno;->jDa:Ljava/security/SecureRandom;
+    iget-object v1, p0, Lorg/bouncycastle/crypto/igw/cno;->sDa:Ljava/security/SecureRandom;
 
     if-nez v1, :cond_0
 

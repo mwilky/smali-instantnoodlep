@@ -4,8 +4,8 @@
 
 
 # static fields
-.field public static final __a:Ljava/lang/String; = "DER"
+.field public static final iab:Ljava/lang/String; = "DER"
 
-.field public static final aab:Ljava/lang/String; = "DL"
+.field public static final jab:Ljava/lang/String; = "DL"
 
-.field public static final bab:Ljava/lang/String; = "BER"
+.field public static final kab:Ljava/lang/String; = "BER"

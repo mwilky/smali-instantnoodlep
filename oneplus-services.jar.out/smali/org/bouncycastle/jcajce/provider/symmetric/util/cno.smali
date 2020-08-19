@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private cFa:[Ljava/lang/Class;
+.field private AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
-.field private dEa:Lorg/bouncycastle/crypto/ear;
+.field private CFa:I
+
+.field private DFa:I
+
+.field private GFa:Ljavax/crypto/spec/PBEParameterSpec;
+
+.field private HFa:Ljava/lang/String;
 
 .field private digest:I
 
-.field private rFa:Lorg/bouncycastle/crypto/wtn/ire;
+.field private lFa:[Ljava/lang/Class;
 
-.field private tFa:I
-
-.field private uFa:I
-
-.field private xFa:Ljavax/crypto/spec/PBEParameterSpec;
-
-.field private yFa:Ljava/lang/String;
+.field private mEa:Lorg/bouncycastle/crypto/ear;
 
 
 # direct methods
@@ -56,21 +56,21 @@
 
     aput-object v1, v0, v3
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->cFa:[Ljava/lang/Class;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->lFa:[Ljava/lang/Class;
 
-    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->uFa:I
+    iput v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->DFa:I
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->yFa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->HFa:Ljava/lang/String;
 
-    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iput-object p1, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
-    iput p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->uFa:I
+    iput p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->DFa:I
 
-    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->tFa:I
+    iput p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->CFa:I
 
     iput p4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->digest:I
 
@@ -95,7 +95,7 @@
 
     if-eqz p3, :cond_0
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     move-object v3, p1
 
@@ -110,7 +110,7 @@
     invoke-interface/range {v2 .. v7}, Lorg/bouncycastle/crypto/ear;->zta([BII[BI)I
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/ear;->reset()V
 
@@ -135,14 +135,14 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/ear;->reset()V
 
     return-object p1
 
     :cond_0
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {p0}, Lorg/bouncycastle/crypto/ear;->reset()V
 
@@ -164,7 +164,7 @@
 .method protected engineGetIV()[B
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->rFa:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
     if-eqz p0, :cond_0
 
@@ -204,22 +204,22 @@
 .method protected engineGetParameters()Ljava/security/AlgorithmParameters;
     .locals 4
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->dFa:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->mFa:Ljava/security/AlgorithmParameters;
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     if-eqz v0, :cond_0
 
     :try_start_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->yFa:Ljava/lang/String;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->HFa:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->za(Ljava/lang/String;)Ljava/security/AlgorithmParameters;
 
     move-result-object v0
 
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     invoke-virtual {v0, p0}, Ljava/security/AlgorithmParameters;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
     :try_end_0
@@ -233,11 +233,11 @@
     return-object p0
 
     :cond_0
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->rFa:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/ear;->irq()Ljava/lang/String;
 
@@ -331,13 +331,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->dFa:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->mFa:Ljava/security/AlgorithmParameters;
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->dFa:Ljava/security/AlgorithmParameters;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->mFa:Ljava/security/AlgorithmParameters;
 
     new-instance v1, Ljavax/crypto/spec/IvParameterSpec;
 
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->rFa:Lorg/bouncycastle/crypto/wtn/ire;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
     invoke-virtual {v2}, Lorg/bouncycastle/crypto/wtn/ire;->getIV()[B
 
@@ -366,7 +366,7 @@
 
     :cond_5
     :goto_1
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->dFa:Ljava/security/AlgorithmParameters;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->mFa:Ljava/security/AlgorithmParameters;
 
     return-object p0
 .end method
@@ -387,7 +387,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->cFa:[Ljava/lang/Class;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->lFa:[Ljava/lang/Class;
 
     array-length v3, v2
 
@@ -444,7 +444,7 @@
     :goto_2
     invoke-virtual {p0, p1, p2, v0, p4}, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->dFa:Ljava/security/AlgorithmParameters;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->mFa:Ljava/security/AlgorithmParameters;
 
     return-void
 .end method
@@ -491,11 +491,11 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->yFa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->HFa:Ljava/lang/String;
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->dFa:Ljava/security/AlgorithmParameters;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/BaseWrapCipher;->mFa:Ljava/security/AlgorithmParameters;
 
     instance-of v0, p2, Ljavax/crypto/SecretKey;
 
@@ -509,13 +509,13 @@
 
     check-cast p3, Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     instance-of p3, p2, Lorg/bouncycastle/jcajce/PKCS12KeyWithParameters;
 
     if-eqz p3, :cond_0
 
-    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     if-nez p3, :cond_0
 
@@ -535,7 +535,7 @@
 
     invoke-direct {p3, v1, v0}, Ljavax/crypto/spec/PBEParameterSpec;-><init>([BI)V
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     :cond_0
     invoke-virtual {p2}, Lorg/bouncycastle/jcajce/PKCS12Key;->getEncoded()[B
@@ -546,15 +546,15 @@
 
     iget v4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->digest:I
 
-    iget v5, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->tFa:I
+    iget v5, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->CFa:I
 
-    iget p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->uFa:I
+    iget p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->DFa:I
 
     mul-int/lit8 v6, p2, 0x8
 
-    iget-object v7, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iget-object v7, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
-    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {p2}, Lorg/bouncycastle/crypto/ear;->irq()Ljava/lang/String;
 
@@ -575,13 +575,13 @@
 
     check-cast p2, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Qj()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Rj()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Qj()Lorg/bouncycastle/asn1/bvj;
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Rj()Lorg/bouncycastle/asn1/bvj;
 
     move-result-object v0
 
@@ -597,7 +597,7 @@
     move-result-object v0
 
     :goto_0
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->yFa:Ljava/lang/String;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->HFa:Ljava/lang/String;
 
     invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Ke()Lorg/bouncycastle/crypto/kth;
 
@@ -621,7 +621,7 @@
 
     invoke-direct {v0, v1, v2}, Ljavax/crypto/spec/PBEParameterSpec;-><init>([BI)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     goto :goto_1
 
@@ -630,7 +630,7 @@
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {v0}, Lorg/bouncycastle/crypto/ear;->irq()Ljava/lang/String;
 
@@ -642,12 +642,12 @@
 
     check-cast p3, Ljavax/crypto/spec/PBEParameterSpec;
 
-    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->xFa:Ljavax/crypto/spec/PBEParameterSpec;
+    iput-object p3, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->GFa:Ljavax/crypto/spec/PBEParameterSpec;
 
     move-object p3, v0
 
     :goto_1
-    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Bk()I
+    invoke-virtual {p2}, Lorg/bouncycastle/jcajce/provider/symmetric/util/BCPBEKey;->Ck()I
 
     move-result p2
 
@@ -657,7 +657,7 @@
 
     check-cast p2, Lorg/bouncycastle/crypto/wtn/ire;
 
-    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->rFa:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
     goto :goto_2
 
@@ -719,13 +719,13 @@
 
     invoke-direct {v0, v1, p2}, Lorg/bouncycastle/crypto/wtn/ire;-><init>(Lorg/bouncycastle/crypto/kth;[B)V
 
-    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->rFa:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
     move-object p3, v0
 
     :cond_8
     :goto_2
-    iget p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->uFa:I
+    iget p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->DFa:I
 
     const/4 v0, 0x3
 
@@ -739,7 +739,7 @@
 
     if-nez p4, :cond_9
 
-    invoke-static {}, Lorg/bouncycastle/crypto/igw;->Zj()Ljava/security/SecureRandom;
+    invoke-static {}, Lorg/bouncycastle/crypto/igw;->_j()Ljava/security/SecureRandom;
 
     move-result-object p4
 
@@ -761,7 +761,7 @@
 
     :cond_b
     :goto_3
-    iget p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->uFa:I
+    iget p2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->DFa:I
 
     new-array p2, p2, [B
 
@@ -771,7 +771,7 @@
 
     invoke-direct {p4, p3, p2}, Lorg/bouncycastle/crypto/wtn/ire;-><init>(Lorg/bouncycastle/crypto/kth;[B)V
 
-    iput-object p4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->rFa:Lorg/bouncycastle/crypto/wtn/ire;
+    iput-object p4, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->AFa:Lorg/bouncycastle/crypto/wtn/ire;
 
     move-object p3, p4
 
@@ -823,7 +823,7 @@
 
     :cond_e
     :goto_4
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     const/4 p1, 0x0
 
@@ -832,7 +832,7 @@
     goto :goto_5
 
     :cond_f
-    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object p0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     invoke-interface {p0, v1, p3}, Lorg/bouncycastle/crypto/ear;->zta(ZLorg/bouncycastle/crypto/kth;)V
     :try_end_0
@@ -1002,7 +1002,7 @@
     if-gt v0, v1, :cond_0
 
     :try_start_0
-    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object v2, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     move-object v3, p1
 
@@ -1048,7 +1048,7 @@
 
     new-array v6, p3, [B
 
-    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->dEa:Lorg/bouncycastle/crypto/ear;
+    iget-object v0, p0, Lorg/bouncycastle/jcajce/provider/symmetric/util/cno;->mEa:Lorg/bouncycastle/crypto/ear;
 
     const/4 v5, 0x0
 

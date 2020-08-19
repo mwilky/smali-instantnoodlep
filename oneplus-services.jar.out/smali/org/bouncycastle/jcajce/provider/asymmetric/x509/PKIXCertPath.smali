@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static final kEa:Ljava/util/List;
+.field static final tEa:Ljava/util/List;
 
 
 # instance fields
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/PKIXCertPath;->kEa:Ljava/util/List;
+    sput-object v0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/PKIXCertPath;->tEa:Ljava/util/List;
 
     return-void
 .end method
@@ -79,7 +79,7 @@
 
     check-cast p1, Lorg/bouncycastle/asn1/obl;
 
-    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Kh()Ljava/util/Enumeration;
+    invoke-virtual {p1}, Lorg/bouncycastle/asn1/obl;->Lh()Ljava/util/Enumeration;
 
     move-result-object p1
 
@@ -890,7 +890,7 @@
 .method public getEncodings()Ljava/util/Iterator;
     .locals 0
 
-    sget-object p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/PKIXCertPath;->kEa:Ljava/util/List;
+    sget-object p0, Lorg/bouncycastle/jcajce/provider/asymmetric/x509/PKIXCertPath;->tEa:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 

@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field public ik:Z
-
-.field public jk:Z
-
-.field public kk:Z
-
-.field public lk:I
-
-.field public mk:I
-
-.field public nk:Ljava/lang/String;
+.field public sk:Z
 
 .field final synthetic this$0:Lcom/android/server/x;
+
+.field public tk:Z
+
+.field public uk:Z
+
+.field public vk:I
+
+.field public wk:I
+
+.field public xk:Ljava/lang/String;
 
 
 # direct methods
@@ -38,17 +38,17 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p2, p0, Lcom/android/server/x$cno;->ik:Z
+    iput-boolean p2, p0, Lcom/android/server/x$cno;->sk:Z
 
-    iput-boolean p3, p0, Lcom/android/server/x$cno;->jk:Z
+    iput-boolean p3, p0, Lcom/android/server/x$cno;->tk:Z
 
-    iput-boolean p4, p0, Lcom/android/server/x$cno;->kk:Z
+    iput-boolean p4, p0, Lcom/android/server/x$cno;->uk:Z
 
-    iput p5, p0, Lcom/android/server/x$cno;->lk:I
+    iput p5, p0, Lcom/android/server/x$cno;->vk:I
 
-    iput p6, p0, Lcom/android/server/x$cno;->mk:I
+    iput p6, p0, Lcom/android/server/x$cno;->wk:I
 
-    iput-object p7, p0, Lcom/android/server/x$cno;->nk:Ljava/lang/String;
+    iput-object p7, p0, Lcom/android/server/x$cno;->xk:Ljava/lang/String;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/x$cno;->ik:Z
+    iget-boolean v1, p0, Lcom/android/server/x$cno;->sk:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -74,7 +74,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/x$cno;->jk:Z
+    iget-boolean v1, p0, Lcom/android/server/x$cno;->tk:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/android/server/x$cno;->kk:Z
+    iget-boolean v1, p0, Lcom/android/server/x$cno;->uk:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -90,7 +90,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/x$cno;->lk:I
+    iget v1, p0, Lcom/android/server/x$cno;->vk:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -98,7 +98,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/android/server/x$cno;->mk:I
+    iget v1, p0, Lcom/android/server/x$cno;->wk:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -106,7 +106,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p0, p0, Lcom/android/server/x$cno;->nk:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/x$cno;->xk:Ljava/lang/String;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -120,17 +120,17 @@
 .method public zta(ZZZIILjava/lang/String;)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/android/server/x$cno;->ik:Z
+    iput-boolean p1, p0, Lcom/android/server/x$cno;->sk:Z
 
-    iput-boolean p2, p0, Lcom/android/server/x$cno;->jk:Z
+    iput-boolean p2, p0, Lcom/android/server/x$cno;->tk:Z
 
-    iput-boolean p3, p0, Lcom/android/server/x$cno;->kk:Z
+    iput-boolean p3, p0, Lcom/android/server/x$cno;->uk:Z
 
-    iput p4, p0, Lcom/android/server/x$cno;->lk:I
+    iput p4, p0, Lcom/android/server/x$cno;->vk:I
 
-    iput p5, p0, Lcom/android/server/x$cno;->mk:I
+    iput p5, p0, Lcom/android/server/x$cno;->wk:I
 
-    iput-object p6, p0, Lcom/android/server/x$cno;->nk:Ljava/lang/String;
+    iput-object p6, p0, Lcom/android/server/x$cno;->xk:Ljava/lang/String;
 
     return-void
 .end method

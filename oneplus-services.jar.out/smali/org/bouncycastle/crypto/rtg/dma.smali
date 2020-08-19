@@ -7,19 +7,17 @@
 
 
 # static fields
-.field private static final AQa:I = 0x1
-
 .field private static final BLOCK_SIZE:I = 0x10
 
-.field private static final BQa:I = 0x0
+.field private static final BQa:I = 0x1
 
-.field private static final CQa:I = 0x1
+.field private static final CQa:I = 0x0
 
-.field private static final DQa:I = 0x1
+.field private static final DQa:I = 0x0
 
-.field private static final EQa:I = 0x0
+.field private static final EQa:I = 0x1
 
-.field private static final FQa:I = 0x0
+.field private static final FQa:I = 0x1
 
 .field private static final GQa:I = 0x0
 
@@ -33,71 +31,73 @@
 
 .field private static final LQa:I = 0x1
 
-.field private static final MQa:I = 0x169
+.field private static final MQa:I = 0x1
 
-.field private static final NQa:I = 0xb4
+.field private static final NQa:I = 0x0
 
-.field private static final OQa:I = 0x5a
+.field private static final OQa:I = 0x0
 
 .field private static final P:[[B
 
-.field private static final PQa:I = 0x14d
+.field private static final PQa:I = 0x0
 
-.field private static final QQa:I = 0x10
+.field private static final QQa:I = 0x0
 
-.field private static final RQa:I = 0x100
+.field private static final RQa:I = 0x1
 
-.field private static final SQa:I = 0x0
+.field private static final SQa:I = 0x1
 
-.field private static final TQa:I = 0x4
+.field private static final TQa:I = 0x0
 
-.field private static final UQa:I = 0x8
+.field private static final UQa:I = 0x1
 
-.field private static final VQa:I = 0x28
+.field private static final VQa:I = 0x169
 
-.field private static final WQa:I = 0x2020202
+.field private static final WQa:I = 0xb4
 
-.field private static final XQa:I = 0x1010101
+.field private static final XQa:I = 0x5a
 
-.field private static final YQa:I = 0x9
+.field private static final YQa:I = 0x14d
 
-.field private static final nPa:I = 0x10
+.field private static final ZQa:I = 0x10
 
-.field private static final sQa:I = 0x1
+.field private static final _Qa:I = 0x100
 
-.field private static final tQa:I = 0x0
+.field private static final aRa:I = 0x0
 
-.field private static final uQa:I = 0x0
+.field private static final bRa:I = 0x4
 
-.field private static final vQa:I = 0x1
+.field private static final cRa:I = 0x8
 
-.field private static final wQa:I = 0x1
+.field private static final dRa:I = 0x28
 
-.field private static final xQa:I = 0x0
+.field private static final eRa:I = 0x2020202
 
-.field private static final yQa:I = 0x0
+.field private static final fRa:I = 0x1010101
 
-.field private static final zQa:I = 0x1
+.field private static final gRa:I = 0x9
+
+.field private static final wPa:I = 0x10
 
 
 # instance fields
-.field private GPa:[B
+.field private AQa:I
 
-.field private jOa:Z
+.field private PPa:[B
 
-.field private lQa:[I
+.field private sOa:Z
 
-.field private mQa:[I
+.field private uQa:[I
 
-.field private nQa:[I
+.field private vQa:[I
 
-.field private oQa:[I
+.field private wQa:[I
 
-.field private pQa:[I
+.field private xQa:[I
 
-.field private qQa:[I
+.field private yQa:[I
 
-.field private rQa:I
+.field private zQa:[I
 
 
 # direct methods
@@ -658,31 +658,31 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->jOa:Z
+    iput-boolean v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->sOa:Z
 
     const/16 v1, 0x100
 
     new-array v2, v1, [I
 
-    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->lQa:[I
+    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->uQa:[I
 
     new-array v2, v1, [I
 
-    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->mQa:[I
+    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->vQa:[I
 
     new-array v2, v1, [I
 
-    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->nQa:[I
+    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->wQa:[I
 
     new-array v2, v1, [I
 
-    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->oQa:[I
+    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->xQa:[I
 
-    iput v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iput v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     const/4 v2, 0x0
 
-    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->GPa:[B
+    iput-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->PPa:[B
 
     const/4 v2, 0x2
 
@@ -751,7 +751,7 @@
 
     aput v6, v2, v7
 
-    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->lQa:[I
+    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->uQa:[I
 
     aget v8, v3, v7
 
@@ -775,7 +775,7 @@
 
     aput v8, v6, v5
 
-    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->mQa:[I
+    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->vQa:[I
 
     aget v8, v2, v0
 
@@ -799,7 +799,7 @@
 
     aput v8, v6, v5
 
-    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->nQa:[I
+    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->wQa:[I
 
     aget v8, v4, v7
 
@@ -823,7 +823,7 @@
 
     aput v7, v6, v5
 
-    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->oQa:[I
+    iget-object v6, p0, Lorg/bouncycastle/crypto/rtg/dma;->xQa:[I
 
     aget v7, v4, v0
 
@@ -914,9 +914,9 @@
 
     new-array v6, v6, [I
 
-    iput-object v6, v0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iput-object v6, v0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
-    iget v6, v0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iget v6, v0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     const/4 v7, 0x1
 
@@ -929,7 +929,7 @@
     move v8, v6
 
     :goto_0
-    iget v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iget v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     if-ge v8, v9, :cond_0
 
@@ -949,7 +949,7 @@
 
     aput v9, v4, v8
 
-    iget v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iget v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     sub-int/2addr v9, v7
 
@@ -1001,7 +1001,7 @@
 
     add-int/2addr v8, v2
 
-    iget-object v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     mul-int/lit8 v10, v1, 0x2
 
@@ -1040,7 +1040,7 @@
 
     new-array v9, v9, [I
 
-    iput-object v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iput-object v9, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     move v9, v6
 
@@ -1049,7 +1049,7 @@
 
     if-ge v9, v10, :cond_6
 
-    iget v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iget v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     and-int/2addr v10, v8
 
@@ -1086,11 +1086,11 @@
     goto/16 :goto_4
 
     :cond_4
-    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     mul-int/lit8 v11, v9, 0x2
 
-    iget-object v12, v0, Lorg/bouncycastle/crypto/rtg/dma;->lQa:[I
+    iget-object v12, v0, Lorg/bouncycastle/crypto/rtg/dma;->uQa:[I
 
     sget-object v13, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1110,11 +1110,11 @@
 
     aput v12, v10, v11
 
-    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     add-int/lit8 v12, v11, 0x1
 
-    iget-object v13, v0, Lorg/bouncycastle/crypto/rtg/dma;->mQa:[I
+    iget-object v13, v0, Lorg/bouncycastle/crypto/rtg/dma;->vQa:[I
 
     sget-object v14, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1134,11 +1134,11 @@
 
     aput v13, v10, v12
 
-    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     add-int/lit16 v12, v11, 0x200
 
-    iget-object v13, v0, Lorg/bouncycastle/crypto/rtg/dma;->nQa:[I
+    iget-object v13, v0, Lorg/bouncycastle/crypto/rtg/dma;->wQa:[I
 
     sget-object v14, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1158,11 +1158,11 @@
 
     aput v13, v10, v12
 
-    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     add-int/lit16 v11, v11, 0x201
 
-    iget-object v12, v0, Lorg/bouncycastle/crypto/rtg/dma;->oQa:[I
+    iget-object v12, v0, Lorg/bouncycastle/crypto/rtg/dma;->xQa:[I
 
     sget-object v13, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1299,11 +1299,11 @@
     xor-int/2addr v13, v14
 
     :goto_4
-    iget-object v14, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v14, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     mul-int/lit8 v15, v9, 0x2
 
-    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->lQa:[I
+    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->uQa:[I
 
     sget-object v16, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1335,11 +1335,11 @@
 
     aput v3, v14, v15
 
-    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     add-int/lit8 v10, v15, 0x1
 
-    iget-object v14, v0, Lorg/bouncycastle/crypto/rtg/dma;->mQa:[I
+    iget-object v14, v0, Lorg/bouncycastle/crypto/rtg/dma;->vQa:[I
 
     sget-object v16, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1371,11 +1371,11 @@
 
     aput v11, v3, v10
 
-    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     add-int/lit16 v10, v15, 0x200
 
-    iget-object v11, v0, Lorg/bouncycastle/crypto/rtg/dma;->nQa:[I
+    iget-object v11, v0, Lorg/bouncycastle/crypto/rtg/dma;->wQa:[I
 
     sget-object v14, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1407,11 +1407,11 @@
 
     aput v11, v3, v10
 
-    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object v3, v0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     add-int/lit16 v15, v15, 0x201
 
-    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->oQa:[I
+    iget-object v10, v0, Lorg/bouncycastle/crypto/rtg/dma;->xQa:[I
 
     sget-object v11, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1475,7 +1475,7 @@
 .method private ld(I)I
     .locals 2
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     and-int/lit16 v0, p1, 0xff
 
@@ -1527,7 +1527,7 @@
 .method private md(I)I
     .locals 2
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/dma;->qQa:[I
+    iget-object p0, p0, Lorg/bouncycastle/crypto/rtg/dma;->zQa:[I
 
     ushr-int/lit8 v0, p1, 0x18
 
@@ -1666,7 +1666,7 @@
 
     aget p2, p2, v9
 
-    iget v10, p0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iget v10, p0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     and-int/2addr v10, v9
 
@@ -1681,7 +1681,7 @@
     goto/16 :goto_1
 
     :cond_0
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->lQa:[I
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->uQa:[I
 
     sget-object v6, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1699,7 +1699,7 @@
 
     aget p2, p2, v0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->mQa:[I
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->vQa:[I
 
     sget-object v6, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1719,7 +1719,7 @@
 
     xor-int/2addr p2, v0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->nQa:[I
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->wQa:[I
 
     sget-object v1, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1739,7 +1739,7 @@
 
     xor-int/2addr p2, v0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->oQa:[I
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->xQa:[I
 
     sget-object v1, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1874,7 +1874,7 @@
     xor-int/2addr p1, p2
 
     :cond_3
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->lQa:[I
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->uQa:[I
 
     sget-object v7, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1904,7 +1904,7 @@
 
     aget p2, p2, v0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->mQa:[I
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->vQa:[I
 
     sget-object v7, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1936,7 +1936,7 @@
 
     xor-int/2addr p2, v0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->nQa:[I
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->wQa:[I
 
     sget-object v1, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -1968,7 +1968,7 @@
 
     xor-int/2addr p2, v0
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->oQa:[I
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->xQa:[I
 
     sget-object v1, Lorg/bouncycastle/crypto/rtg/dma;->P:[[B
 
@@ -2143,7 +2143,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v2, 0x0
 
@@ -2157,7 +2157,7 @@
 
     move-result v1
 
-    iget-object v3, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v3, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v4, 0x1
 
@@ -2171,7 +2171,7 @@
 
     move-result v3
 
-    iget-object v4, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v4, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v5, 0x2
 
@@ -2185,7 +2185,7 @@
 
     move-result p1
 
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v4, 0x3
 
@@ -2210,7 +2210,7 @@
 
     add-int v7, v4, v6
 
-    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     add-int/lit8 v9, p2, 0x1
 
@@ -2254,7 +2254,7 @@
 
     add-int v7, v4, v6
 
-    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     add-int/lit8 v9, p2, 0x1
 
@@ -2299,7 +2299,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v2, 0x4
 
@@ -2309,7 +2309,7 @@
 
     invoke-direct {p0, p2, p3, p4}, Lorg/bouncycastle/crypto/rtg/dma;->rtg(I[BI)V
 
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v2, 0x5
 
@@ -2321,7 +2321,7 @@
 
     invoke-direct {p0, p1, p3, p2}, Lorg/bouncycastle/crypto/rtg/dma;->rtg(I[BI)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 p2, 0x6
 
@@ -2333,7 +2333,7 @@
 
     invoke-direct {p0, p1, p3, p2}, Lorg/bouncycastle/crypto/rtg/dma;->rtg(I[BI)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 p2, 0x7
 
@@ -2385,7 +2385,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v2, 0x4
 
@@ -2399,7 +2399,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v2, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v3, 0x5
 
@@ -2413,7 +2413,7 @@
 
     move-result v2
 
-    iget-object v3, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v3, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v4, 0x6
 
@@ -2427,7 +2427,7 @@
 
     move-result p1
 
-    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 v3, 0x7
 
@@ -2466,7 +2466,7 @@
 
     add-int/2addr v7, v5
 
-    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     add-int/lit8 v9, v4, -0x1
 
@@ -2510,7 +2510,7 @@
 
     add-int/2addr v7, v5
 
-    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object v8, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     add-int/lit8 v9, v4, -0x1
 
@@ -2547,7 +2547,7 @@
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     aget p1, p1, p2
 
@@ -2555,7 +2555,7 @@
 
     invoke-direct {p0, p1, p3, p4}, Lorg/bouncycastle/crypto/rtg/dma;->rtg(I[BI)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 p2, 0x1
 
@@ -2567,7 +2567,7 @@
 
     invoke-direct {p0, p1, p3, p2}, Lorg/bouncycastle/crypto/rtg/dma;->rtg(I[BI)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 p2, 0x2
 
@@ -2579,7 +2579,7 @@
 
     invoke-direct {p0, p1, p3, p2}, Lorg/bouncycastle/crypto/rtg/dma;->rtg(I[BI)V
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->pQa:[I
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->yQa:[I
 
     const/4 p2, 0x3
 
@@ -2655,7 +2655,7 @@
 .method public reset()V
     .locals 1
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->GPa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->PPa:[B
 
     if-eqz v0, :cond_0
 
@@ -2668,7 +2668,7 @@
 .method public zta([BI[BI)I
     .locals 2
 
-    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->GPa:[B
+    iget-object v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->PPa:[B
 
     if-eqz v0, :cond_3
 
@@ -2684,7 +2684,7 @@
 
     if-gt v0, v1, :cond_1
 
-    iget-boolean v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->jOa:Z
+    iget-boolean v0, p0, Lorg/bouncycastle/crypto/rtg/dma;->sOa:Z
 
     if-eqz v0, :cond_0
 
@@ -2735,7 +2735,7 @@
 
     if-eqz v0, :cond_0
 
-    iput-boolean p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->jOa:Z
+    iput-boolean p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->sOa:Z
 
     check-cast p2, Lorg/bouncycastle/crypto/wtn/cjf;
 
@@ -2743,15 +2743,15 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->GPa:[B
+    iput-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->PPa:[B
 
-    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->GPa:[B
+    iget-object p1, p0, Lorg/bouncycastle/crypto/rtg/dma;->PPa:[B
 
     array-length p2, p1
 
     div-int/lit8 p2, p2, 0x8
 
-    iput p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->rQa:I
+    iput p2, p0, Lorg/bouncycastle/crypto/rtg/dma;->AQa:I
 
     invoke-direct {p0, p1}, Lorg/bouncycastle/crypto/rtg/dma;->irq([B)V
 

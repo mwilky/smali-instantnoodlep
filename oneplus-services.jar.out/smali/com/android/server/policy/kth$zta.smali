@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field EN:Ljava/lang/String;
+.field PN:Ljava/lang/String;
 
 .field mPackageName:Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 .method public T(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/server/policy/kth$zta;->EN:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/policy/kth$zta;->PN:Ljava/lang/String;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
 .method public getAction()Ljava/lang/String;
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/policy/kth$zta;->EN:Ljava/lang/String;
+    iget-object p0, p0, Lcom/android/server/policy/kth$zta;->PN:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -137,7 +137,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/server/policy/kth$zta;->EN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/server/policy/kth$zta;->PN:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

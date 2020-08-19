@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public _la:Ljava/lang/String;
+.field public jma:Ljava/lang/String;
 
-.field public ama:Ljava/lang/String;
+.field public kma:Ljava/lang/String;
 
-.field public bma:Ljava/lang/String;
+.field public lma:Ljava/lang/String;
 
 .field public packageName:Ljava/lang/String;
 

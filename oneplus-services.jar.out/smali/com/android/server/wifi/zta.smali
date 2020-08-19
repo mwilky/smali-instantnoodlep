@@ -11,7 +11,7 @@
 
 
 # instance fields
-.field private WX:Lcom/android/server/wifi/ire;
+.field private eY:Lcom/android/server/wifi/ire;
 
 .field private mContext:Landroid/content/Context;
 
@@ -30,7 +30,7 @@
 .method public enableVerboseLogging(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wifi/zta;->WX:Lcom/android/server/wifi/ire;
+    iget-object p0, p0, Lcom/android/server/wifi/zta;->eY:Lcom/android/server/wifi/ire;
 
     invoke-virtual {p0, p1}, Lcom/android/server/wifi/ire;->enableVerboseLogging(I)V
 
@@ -48,7 +48,7 @@
 
     invoke-direct {p1, v0}, Lcom/android/server/wifi/ire;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/android/server/wifi/zta;->WX:Lcom/android/server/wifi/ire;
+    iput-object p1, p0, Lcom/android/server/wifi/zta;->eY:Lcom/android/server/wifi/ire;
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 .method public sendWifiScoreToKernel(I)V
     .locals 0
 
-    iget-object p0, p0, Lcom/android/server/wifi/zta;->WX:Lcom/android/server/wifi/ire;
+    iget-object p0, p0, Lcom/android/server/wifi/zta;->eY:Lcom/android/server/wifi/ire;
 
     invoke-virtual {p0, p1}, Lcom/android/server/wifi/ire;->sendWifiScoreToKernel(I)V
 

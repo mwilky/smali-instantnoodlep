@@ -7,15 +7,15 @@
 
 
 # static fields
-.field private static final ORa:I = 0xa0
+.field private static final XRa:I = 0xa0
 
 
 # instance fields
-.field private NRa:Lorg/bouncycastle/crypto/wtn/igw;
+.field private WRa:Lorg/bouncycastle/crypto/wtn/igw;
 
-.field private VFa:Ljava/math/BigInteger;
+.field private dGa:Ljava/math/BigInteger;
 
-.field private WFa:I
+.field private eGa:I
 
 .field private g:Ljava/math/BigInteger;
 
@@ -148,13 +148,13 @@
 
     iput-object p3, p0, Lorg/bouncycastle/crypto/wtn/cno;->q:Ljava/math/BigInteger;
 
-    iput p4, p0, Lorg/bouncycastle/crypto/wtn/cno;->WFa:I
+    iput p4, p0, Lorg/bouncycastle/crypto/wtn/cno;->eGa:I
 
     iput p5, p0, Lorg/bouncycastle/crypto/wtn/cno;->l:I
 
-    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cno;->VFa:Ljava/math/BigInteger;
+    iput-object p6, p0, Lorg/bouncycastle/crypto/wtn/cno;->dGa:Ljava/math/BigInteger;
 
-    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cno;->NRa:Lorg/bouncycastle/crypto/wtn/igw;
+    iput-object p7, p0, Lorg/bouncycastle/crypto/wtn/cno;->WRa:Lorg/bouncycastle/crypto/wtn/igw;
 
     return-void
 
@@ -310,7 +310,7 @@
 .method public getM()I
     .locals 0
 
-    iget p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->WFa:I
+    iget p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->eGa:I
 
     return p0
 .end method
@@ -377,18 +377,18 @@
     return p0
 .end method
 
-.method public nh()Ljava/math/BigInteger;
+.method public oh()Ljava/math/BigInteger;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->VFa:Ljava/math/BigInteger;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->dGa:Ljava/math/BigInteger;
 
     return-object p0
 .end method
 
-.method public nk()Lorg/bouncycastle/crypto/wtn/igw;
+.method public ok()Lorg/bouncycastle/crypto/wtn/igw;
     .locals 0
 
-    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->NRa:Lorg/bouncycastle/crypto/wtn/igw;
+    iget-object p0, p0, Lorg/bouncycastle/crypto/wtn/cno;->WRa:Lorg/bouncycastle/crypto/wtn/igw;
 
     return-object p0
 .end method

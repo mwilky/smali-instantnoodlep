@@ -6,15 +6,15 @@
 # static fields
 .field private static instance:Lcom/oneplus/android/server/scene/oif; = null
 
-.field private static final qua:Ljava/lang/String; = "game_mode_answer_no_incallui"
+.field private static final zua:Ljava/lang/String; = "game_mode_answer_no_incallui"
 
 
 # instance fields
 .field private mContext:Landroid/content/Context;
 
-.field private oua:Z
+.field private xua:Z
 
-.field private final pua:Landroid/database/ContentObserver;
+.field private final yua:Landroid/database/ContentObserver;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->oua:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->xua:Z
 
     new-instance v0, Lcom/oneplus/android/server/scene/qbh;
 
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, p0, v1}, Lcom/oneplus/android/server/scene/qbh;-><init>(Lcom/oneplus/android/server/scene/oif;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/scene/oif;->pua:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/oneplus/android/server/scene/oif;->yua:Landroid/database/ContentObserver;
 
     iput-object p1, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
 
@@ -52,16 +52,16 @@
     return-void
 .end method
 
-.method private Fv()V
+.method private Gv()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->oua:Z
+    iget-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->xua:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->oua:Z
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->xua:Z
 
     iget-object v0, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
 
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->pua:Landroid/database/ContentObserver;
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->yua:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, p0}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -140,58 +140,6 @@
 
 
 # virtual methods
-.method public eg()V
-    .locals 4
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "registerAnswerWithoutUIContentObServer "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/oif;->logd(Ljava/lang/String;)V
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/scene/oif;->Fv()V
-
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->oua:Z
-
-    iget-object v0, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v1, "game_mode_answer_no_incallui"
-
-    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->pua:Landroid/database/ContentObserver;
-
-    const/4 v2, 0x0
-
-    const/4 v3, -0x2
-
-    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
-
-    return-void
-.end method
-
 .method public fa(I)V
     .locals 3
 
@@ -240,5 +188,57 @@
     invoke-static {p0, p1}, Lcom/oneplus/server/sis;->removeFuncRule(Lcom/oneplus/core/oimc/OIMCRule;I)V
 
     :goto_0
+    return-void
+.end method
+
+.method public fg()V
+    .locals 4
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "registerAnswerWithoutUIContentObServer "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/oneplus/android/server/scene/oif;->logd(Ljava/lang/String;)V
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/scene/oif;->Gv()V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/oneplus/android/server/scene/oif;->xua:Z
+
+    iget-object v0, p0, Lcom/oneplus/android/server/scene/oif;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "game_mode_answer_no_incallui"
+
+    invoke-static {v1}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    iget-object p0, p0, Lcom/oneplus/android/server/scene/oif;->yua:Landroid/database/ContentObserver;
+
+    const/4 v2, 0x0
+
+    const/4 v3, -0x2
+
+    invoke-virtual {v0, v1, v2, p0, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
+
     return-void
 .end method

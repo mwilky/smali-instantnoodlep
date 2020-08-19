@@ -17,13 +17,13 @@
 # instance fields
 .field private _d:I
 
-.field private fk:I
-
-.field private gk:J
-
 .field private mCharging:Z
 
 .field private mTemp:I
+
+.field private pk:I
+
+.field private qk:J
 
 .field final synthetic this$0:Lcom/android/server/x;
 
@@ -44,7 +44,7 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/x$sis;->gk:J
+    iput-wide p1, p0, Lcom/android/server/x$sis;->qk:J
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 
     iput p3, p0, Lcom/android/server/x$sis;->mTemp:I
 
-    iput p5, p0, Lcom/android/server/x$sis;->fk:I
+    iput p5, p0, Lcom/android/server/x$sis;->pk:I
 
     iput-boolean p4, p0, Lcom/android/server/x$sis;->mCharging:Z
 
@@ -68,7 +68,7 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, Lcom/android/server/x$sis;->gk:J
+    iput-wide p1, p0, Lcom/android/server/x$sis;->qk:J
 
     return-void
 .end method
@@ -86,7 +86,7 @@
 .method getTime()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/android/server/x$sis;->gk:J
+    iget-wide v0, p0, Lcom/android/server/x$sis;->qk:J
 
     return-wide v0
 .end method
@@ -140,7 +140,7 @@
 
     new-instance v0, Ljava/util/Date;
 
-    iget-wide v1, p0, Lcom/android/server/x$sis;->gk:J
+    iget-wide v1, p0, Lcom/android/server/x$sis;->qk:J
 
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
@@ -188,7 +188,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lcom/android/server/x$sis;->fk:I
+    iget v0, p0, Lcom/android/server/x$sis;->pk:I
 
     invoke-virtual {p0, v0}, Lcom/android/server/x$sis;->ibl(I)Ljava/lang/String;
 
@@ -228,7 +228,7 @@
 .method ya()I
     .locals 0
 
-    iget p0, p0, Lcom/android/server/x$sis;->fk:I
+    iget p0, p0, Lcom/android/server/x$sis;->pk:I
 
     return p0
 .end method

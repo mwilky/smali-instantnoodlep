@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field It:J
+.field Rt:J
 
-.field Jt:Ljava/lang/String;
+.field St:Ljava/lang/String;
 
 .field cache:Lcom/android/server/am/ivd$igw;
 
@@ -56,9 +56,9 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iput-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
-    iput-object p1, p0, Lcom/android/server/am/ivd$you;->Jt:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/server/am/ivd$you;->St:Ljava/lang/String;
 
     new-instance p1, Ljava/util/ArrayList;
 
@@ -115,10 +115,10 @@
     throw p1
 .end method
 
-.method private Nn()V
+.method private On()V
     .locals 9
 
-    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     const-wide/16 v2, 0x0
 
@@ -142,7 +142,7 @@
 
     div-long/2addr v0, v4
 
-    iput-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iput-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     iget-object v0, p0, Lcom/android/server/am/ivd$you;->this$0:Lcom/android/server/am/ivd;
 
@@ -162,7 +162,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/server/am/ivd$you;->Jt:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/ivd$you;->St:Ljava/lang/String;
 
     monitor-enter p0
 
@@ -185,7 +185,7 @@
     throw v0
 
     :cond_0
-    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     const-wide/16 v6, -0x1
 
@@ -206,7 +206,7 @@
 
     div-long/2addr v0, v4
 
-    iget-wide v2, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v2, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     sub-long/2addr v0, v2
 
@@ -246,7 +246,7 @@
 
     iget-object v0, p0, Lcom/android/server/am/ivd$you;->cache:Lcom/android/server/am/ivd$igw;
 
-    iget-wide v2, v0, Lcom/android/server/am/ivd$igw;->nu:J
+    iget-wide v2, v0, Lcom/android/server/am/ivd$igw;->wu:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
 
@@ -264,7 +264,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/server/am/ivd$you;->Hb(Ljava/lang/String;)V
 
-    iput-wide v6, p0, Lcom/android/server/am/ivd$you;->It:J
+    iput-wide v6, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     invoke-direct {p0}, Lcom/android/server/am/ivd$you;->dump()V
 
@@ -277,11 +277,11 @@
 
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iput-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/server/am/ivd$you;->Jt:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/server/am/ivd$you;->St:Ljava/lang/String;
 
     return-void
 .end method
@@ -289,7 +289,7 @@
 .method private dump()V
     .locals 8
 
-    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     const-wide/16 v2, 0x0
 
@@ -302,7 +302,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/server/am/ivd$you;->cache:Lcom/android/server/am/ivd$igw;
 
-    iget-boolean v1, v0, Lcom/android/server/am/ivd$igw;->Pt:Z
+    iget-boolean v1, v0, Lcom/android/server/am/ivd$igw;->Yt:Z
 
     if-eqz v1, :cond_1
 
@@ -321,7 +321,7 @@
 
     div-long/2addr v0, v2
 
-    iget-wide v4, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v4, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     sub-long/2addr v0, v4
 
@@ -373,7 +373,7 @@
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, p0, Lcom/android/server/am/ivd$you;->Jt:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/server/am/ivd$you;->St:Ljava/lang/String;
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -381,7 +381,7 @@
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v6, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v6, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     invoke-virtual {v4, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -409,7 +409,7 @@
 
     invoke-static {v5, v0}, Lcom/android/server/am/ivd;->tsu(ILjava/lang/String;)V
 
-    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v0, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     const-wide/16 v6, -0x1
 
@@ -423,7 +423,7 @@
 
     div-long/2addr v0, v2
 
-    iget-wide v2, p0, Lcom/android/server/am/ivd$you;->It:J
+    iget-wide v2, p0, Lcom/android/server/am/ivd$you;->Rt:J
 
     sub-long/2addr v0, v2
 
@@ -566,7 +566,7 @@
 .method static synthetic zta(Lcom/android/server/am/ivd$you;)V
     .locals 0
 
-    invoke-direct {p0}, Lcom/android/server/am/ivd$you;->Nn()V
+    invoke-direct {p0}, Lcom/android/server/am/ivd$you;->On()V
 
     return-void
 .end method

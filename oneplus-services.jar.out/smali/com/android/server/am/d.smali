@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic dDa:J
+.field final synthetic mDa:J
 
 .field final synthetic this$0:Lcom/android/server/am/E;
 
@@ -26,7 +26,7 @@
 
     iput-object p1, p0, Lcom/android/server/am/D;->this$0:Lcom/android/server/am/E;
 
-    iput-wide p3, p0, Lcom/android/server/am/D;->dDa:J
+    iput-wide p3, p0, Lcom/android/server/am/D;->mDa:J
 
     invoke-direct {p0, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
@@ -42,7 +42,7 @@
 
     const-string v1, "OpRestartProcessManager"
 
-    iget-wide v2, p0, Lcom/android/server/am/D;->dDa:J
+    iget-wide v2, p0, Lcom/android/server/am/D;->mDa:J
 
     invoke-static {v2, v3}, Lcom/android/server/am/E;->zgw(J)J
 

@@ -337,7 +337,7 @@
 
     iget-object p0, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    sget-object p1, Lcom/android/server/OpPowerControllerService$TriggerType;->Wya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object p1, Lcom/android/server/OpPowerControllerService$TriggerType;->eza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     invoke-static {p0, p1}, Lcom/android/server/OpPowerControllerService;->access$4600(Lcom/android/server/OpPowerControllerService;Lcom/android/server/OpPowerControllerService$TriggerType;)V
 
@@ -688,7 +688,7 @@
 
     iget-object p1, p0, Lcom/android/server/OpPowerControllerService$cno;->this$0:Lcom/android/server/OpPowerControllerService;
 
-    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->Xya:Lcom/android/server/OpPowerControllerService$TriggerType;
+    sget-object v0, Lcom/android/server/OpPowerControllerService$TriggerType;->fza:Lcom/android/server/OpPowerControllerService$TriggerType;
 
     invoke-static {p1, v0}, Lcom/android/server/OpPowerControllerService;->access$4600(Lcom/android/server/OpPowerControllerService;Lcom/android/server/OpPowerControllerService$TriggerType;)V
 

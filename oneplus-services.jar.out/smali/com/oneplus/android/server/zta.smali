@@ -13,9 +13,21 @@
 
 
 # instance fields
+.field Aia:Ljava/util/List;
+
+.field Bia:Ljava/util/List;
+
+.field private Cia:Ljava/lang/String;
+
+.field private Dia:Ljava/lang/String;
+
+.field private Eia:Ljava/lang/String;
+
+.field private Fia:I
+
 .field private mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
-.field private pia:Ljava/util/Set;
+.field private yia:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -25,7 +37,7 @@
     .end annotation
 .end field
 
-.field private qia:Ljava/util/Set;
+.field private zia:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -34,18 +46,6 @@
         }
     .end annotation
 .end field
-
-.field ria:Ljava/util/List;
-
-.field sia:Ljava/util/List;
-
-.field private tia:Ljava/lang/String;
-
-.field private uia:Ljava/lang/String;
-
-.field private via:Ljava/lang/String;
-
-.field private wia:I
 
 
 # direct methods
@@ -78,29 +78,29 @@
 
     invoke-direct {v0}, Ljava/util/TreeSet;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->pia:Ljava/util/Set;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->yia:Ljava/util/Set;
 
     new-instance v0, Ljava/util/TreeSet;
 
     invoke-direct {v0}, Ljava/util/TreeSet;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->qia:Ljava/util/Set;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->zia:Ljava/util/Set;
 
     const-string v0, "/system/etc/bluetooth/china_carkit.json"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->tia:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->Cia:Ljava/lang/String;
 
     const-string v0, "/data/misc/carkit_user.json"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->uia:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->Dia:Ljava/lang/String;
 
     const-string v0, "/data/misc/carkit_cache.json"
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->via:Ljava/lang/String;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->Eia:Ljava/lang/String;
 
     const/16 v0, 0x4fc
 
-    iput v0, p0, Lcom/oneplus/android/server/zta;->wia:I
+    iput v0, p0, Lcom/oneplus/android/server/zta;->Fia:I
 
     sget-object v0, Lcom/oneplus/android/server/zta;->TAG:Ljava/lang/String;
 
@@ -118,24 +118,24 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/oneplus/android/server/zta;->sia:Ljava/util/List;
-
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Ct()V
+    iput-object v0, p0, Lcom/oneplus/android/server/zta;->Bia:Ljava/util/List;
 
     invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Dt()V
 
-    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Bt()V
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Et()V
+
+    invoke-direct {p0}, Lcom/oneplus/android/server/zta;->Ct()V
 
     return-void
 .end method
 
-.method private declared-synchronized Bt()V
+.method private declared-synchronized Ct()V
     .locals 6
 
     monitor-enter p0
@@ -163,7 +163,7 @@
     :try_start_1
     new-instance v2, Ljava/io/File;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/zta;->via:Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/android/server/zta;->Eia:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -437,7 +437,7 @@
     throw v0
 .end method
 
-.method private Ct()V
+.method private Dt()V
     .locals 6
 
     sget-boolean v0, Lcom/oneplus/android/server/zta;->DBG:Z
@@ -460,7 +460,7 @@
     :try_start_0
     new-instance v2, Ljava/io/File;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/zta;->tia:Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/android/server/zta;->Cia:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -614,7 +614,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/oneplus/android/server/zta;->pia:Ljava/util/Set;
+    iget-object v3, p0, Lcom/oneplus/android/server/zta;->yia:Ljava/util/Set;
 
     const-string v4, "name"
 
@@ -669,7 +669,7 @@
     throw p0
 .end method
 
-.method private declared-synchronized Dt()V
+.method private declared-synchronized Et()V
     .locals 6
 
     monitor-enter p0
@@ -697,7 +697,7 @@
     :try_start_1
     new-instance v2, Ljava/io/File;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/zta;->uia:Ljava/lang/String;
+    iget-object v3, p0, Lcom/oneplus/android/server/zta;->Dia:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -893,7 +893,7 @@
 
     if-eqz v2, :cond_4
 
-    iget-object v2, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object v2, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-virtual {v1, v0}, Lorg/json/JSONArray;->get(I)Ljava/lang/Object;
 
@@ -985,7 +985,7 @@
     :try_start_0
     new-instance v2, Lorg/json/JSONArray;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-direct {v2, v3}, Lorg/json/JSONArray;-><init>(Ljava/util/Collection;)V
 
@@ -999,7 +999,7 @@
 
     new-instance v2, Ljava/io/File;
 
-    iget-object v4, p0, Lcom/oneplus/android/server/zta;->uia:Ljava/lang/String;
+    iget-object v4, p0, Lcom/oneplus/android/server/zta;->Dia:Ljava/lang/String;
 
     invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -1159,7 +1159,7 @@
     :try_start_9
     new-instance v2, Lorg/json/JSONArray;
 
-    iget-object v3, p0, Lcom/oneplus/android/server/zta;->sia:Ljava/util/List;
+    iget-object v3, p0, Lcom/oneplus/android/server/zta;->Bia:Ljava/util/List;
 
     invoke-direct {v2, v3}, Lorg/json/JSONArray;-><init>(Ljava/util/Collection;)V
 
@@ -1173,7 +1173,7 @@
 
     new-instance v2, Ljava/io/File;
 
-    iget-object p0, p0, Lcom/oneplus/android/server/zta;->via:Ljava/lang/String;
+    iget-object p0, p0, Lcom/oneplus/android/server/zta;->Eia:Ljava/lang/String;
 
     invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -1420,7 +1420,7 @@
 
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/oneplus/android/server/zta;->sia:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/zta;->Bia:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1488,7 +1488,7 @@
 
     invoke-virtual {p1, p2, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/zta;->sia:Ljava/util/List;
+    iget-object p1, p0, Lcom/oneplus/android/server/zta;->Bia:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_1
@@ -1594,7 +1594,7 @@
 
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1662,7 +1662,7 @@
 
     invoke-virtual {p1, p2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object p1, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_1
@@ -1765,7 +1765,7 @@
     const/4 v1, 0x1
 
     :try_start_1
-    iget-object v2, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object v2, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1844,7 +1844,7 @@
     :cond_6
     :goto_1
     :try_start_3
-    iget-object v2, p0, Lcom/oneplus/android/server/zta;->sia:Ljava/util/List;
+    iget-object v2, p0, Lcom/oneplus/android/server/zta;->Bia:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1981,7 +1981,7 @@
 
     move-result v2
 
-    iget v3, p0, Lcom/oneplus/android/server/zta;->wia:I
+    iget v3, p0, Lcom/oneplus/android/server/zta;->Fia:I
 
     and-int/2addr v3, v2
 
@@ -2113,7 +2113,7 @@
 
     :cond_12
     :try_start_8
-    iget-object v2, p0, Lcom/oneplus/android/server/zta;->pia:Ljava/util/Set;
+    iget-object v2, p0, Lcom/oneplus/android/server/zta;->yia:Ljava/util/Set;
 
     invoke-interface {v2, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
@@ -2200,7 +2200,7 @@
 
     :cond_0
     :try_start_1
-    iget-object v0, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object v0, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -2272,7 +2272,7 @@
 
     invoke-virtual {p1, p2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    iget-object p1, p0, Lcom/oneplus/android/server/zta;->ria:Ljava/util/List;
+    iget-object p1, p0, Lcom/oneplus/android/server/zta;->Aia:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_1

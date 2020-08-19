@@ -92,13 +92,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->bl()Lyou/zta/sis/zta/cno;
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->cl()Lyou/zta/sis/zta/cno;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->cl()Z
+    invoke-virtual {v0}, Lyou/zta/sis/zta/cno;->dl()Z
 
     move-result v1
 

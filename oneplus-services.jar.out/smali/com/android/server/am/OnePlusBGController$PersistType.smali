@@ -25,11 +25,11 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/android/server/am/OnePlusBGController$PersistType;
 
-.field public static final enum vza:Lcom/android/server/am/OnePlusBGController$PersistType;
+.field public static final enum Eza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
-.field public static final enum wza:Lcom/android/server/am/OnePlusBGController$PersistType;
+.field public static final enum Fza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
-.field public static final enum xza:Lcom/android/server/am/OnePlusBGController$PersistType;
+.field public static final enum Gza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v2, v1}, Lcom/android/server/am/OnePlusBGController$PersistType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$PersistType;->vza:Lcom/android/server/am/OnePlusBGController$PersistType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$PersistType;->Eza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$PersistType;
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v3, v2}, Lcom/android/server/am/OnePlusBGController$PersistType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$PersistType;->wza:Lcom/android/server/am/OnePlusBGController$PersistType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$PersistType;->Fza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
     new-instance v0, Lcom/android/server/am/OnePlusBGController$PersistType;
 
@@ -64,21 +64,21 @@
 
     invoke-direct {v0, v4, v3}, Lcom/android/server/am/OnePlusBGController$PersistType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/server/am/OnePlusBGController$PersistType;->xza:Lcom/android/server/am/OnePlusBGController$PersistType;
+    sput-object v0, Lcom/android/server/am/OnePlusBGController$PersistType;->Gza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/android/server/am/OnePlusBGController$PersistType;
 
-    sget-object v4, Lcom/android/server/am/OnePlusBGController$PersistType;->vza:Lcom/android/server/am/OnePlusBGController$PersistType;
+    sget-object v4, Lcom/android/server/am/OnePlusBGController$PersistType;->Eza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
     aput-object v4, v0, v1
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$PersistType;->wza:Lcom/android/server/am/OnePlusBGController$PersistType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$PersistType;->Fza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/server/am/OnePlusBGController$PersistType;->xza:Lcom/android/server/am/OnePlusBGController$PersistType;
+    sget-object v1, Lcom/android/server/am/OnePlusBGController$PersistType;->Gza:Lcom/android/server/am/OnePlusBGController$PersistType;
 
     aput-object v1, v0, v3
 
