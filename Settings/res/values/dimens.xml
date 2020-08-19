@@ -1168,11 +1168,11 @@
     <dimen name="op_bottom_navigation_height_with_bottom_softkey_navigation">64.0dip</dimen>
     <dimen name="op_control_button_radius">6.0dip</dimen>
     <item type="dimen" name="op_control_dialog_radius">@dimen/oneplus_contorl_radius_r12</item>
-    <dimen name="op_control_empty_image_height">600.0px</dimen>
+    <dimen name="op_control_empty_image_height">400.0px</dimen>
     <dimen name="op_control_empty_image_margin_bottom">32.0px</dimen>
     <dimen name="op_control_empty_image_margin_top">236.0px</dimen>
     <dimen name="op_control_empty_image_view_size">490.0px</dimen>
-    <dimen name="op_control_empty_image_width">1080.0px</dimen>
+    <dimen name="op_control_empty_image_width">720.0px</dimen>
     <dimen name="op_control_empty_temp_height">680.0px</dimen>
     <item type="dimen" name="op_control_letter_space_body1">0.0</item>
     <item type="dimen" name="op_control_letter_space_body2">0.0</item>
