@@ -35,7 +35,7 @@
 .end method
 
 .method static synthetic access$000(Lcom/android/settings/accounts/AccountTypePreferenceLoader;Landroid/content/pm/PackageManager;Landroid/content/Intent;Ljava/lang/String;)Z
-    .locals 3
+    .locals 1
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountTypePreferenceLoader;->mAuthenticatorHelper:Lcom/android/settingslib/accounts/AuthenticatorHelper;
 
@@ -57,56 +57,31 @@
 
     if-nez p0, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
     iget-object p0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    iget-object p2, p0, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object p0, p0, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     :try_start_0
-    iget-boolean v1, p0, Landroid/content/pm/ActivityInfo;->exported:Z
+    iget-object p2, p3, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
 
-    const/4 v2, 0x1
+    invoke-virtual {p1, p2, v0}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
-    if-eqz v1, :cond_2
-
-    iget-object p0, p0, Landroid/content/pm/ActivityInfo;->permission:Ljava/lang/String;
-
-    if-nez p0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    iget-object v1, p3, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
-
-    invoke-virtual {p1, p0, v1}, Landroid/content/pm/PackageManager;->checkPermission(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-result p0
-
-    if-nez p0, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    iget-object p0, p3, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
-
-    invoke-virtual {p1, p0, v0}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
-
-    move-result-object p0
-
-    iget p1, p2, Landroid/content/pm/ApplicationInfo;->uid:I
+    move-result-object p1
 
     iget p0, p0, Landroid/content/pm/ApplicationInfo;->uid:I
+
+    iget p1, p1, Landroid/content/pm/ApplicationInfo;->uid:I
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-ne p1, p0, :cond_3
+    if-ne p0, p1, :cond_1
 
-    :goto_0
-    move v0, v2
+    const/4 v0, 0x1
 
-    goto :goto_1
+    goto :goto_0
 
     :catch_0
     move-exception p0
@@ -117,8 +92,8 @@
 
     invoke-static {p1, p2, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    :cond_3
-    :goto_1
+    :cond_1
+    :goto_0
     return v0
 .end method
 
