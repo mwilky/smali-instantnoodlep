@@ -1172,6 +1172,7 @@ Povezani ste tudi z omrežjem VPN, ki lahko nadzira vašo omrežno dejavnost."</
     <string name="op_notification_channel_summary_low">Manj pomembna obvestila brez zvoka ali vibriranja.</string>
     <string name="op_notification_section_header_gentle">Druga obvestila</string>
     <string name="op_notification_silence_title">Drugo</string>
+    <string name="op_qs_dark_mode_tile_label">Zatemnjeni način</string>
     <string name="op_quick_settings_night_display_label">Nočni način</string>
     <string name="op_quick_settings_night_display_summary_off">Izključen nočni način, tapnite za vklop</string>
     <string name="op_quick_settings_night_display_summary_on">Vključen nočni način, tapnite za izklop</string>

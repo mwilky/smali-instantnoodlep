@@ -1172,6 +1172,7 @@ Selection ട്രിഗ്ഗര്‍ ചെയ്യുക"</string>
     <string name="op_notification_channel_summary_low">ശബ്ദമോ വൈബ്രേഷനോ ഇല്ലാത്ത പ്രാധാന്യം കുറഞ്ഞ അറിയിപ്പുകൾ.</string>
     <string name="op_notification_section_header_gentle">മറ്റ് അറിയിപ്പുകള്‍</string>
     <string name="op_notification_silence_title">മറ്റുള്ളവ</string>
+    <string name="op_qs_dark_mode_tile_label">ഡാർക്ക് മോഡ്</string>
     <string name="op_quick_settings_night_display_label">നൈറ്റ് മോഡ്</string>
     <string name="op_quick_settings_night_display_summary_off">നൈറ്റ് മോഡ് ഓഫാണ്, ഓണ്‍ ചെയ്യാന്‍ ടാപ് ചെയ്യുക</string>
     <string name="op_quick_settings_night_display_summary_on">നൈറ്റ് മോഡ് ഓണാണ്, ഓഫ് ചെയ്യാന്‍ ടാപ് ചെയ്യുക</string>

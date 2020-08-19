@@ -104,4 +104,4 @@
 
 .field public static final ok:I = 0x7f12049e
 
-.field public static final sim_status_uss_network_roam:I = 0x7f12066e
+.field public static final sim_status_uss_network_roam:I = 0x7f12066f

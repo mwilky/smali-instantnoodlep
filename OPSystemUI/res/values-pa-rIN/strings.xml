@@ -150,6 +150,7 @@
     <string name="op_notification_channel_summary_low">ਬਿਨਾਂ ਕਿਸੇ ਧੁਨੀ ਜਾਂ ਕੰਪਨ ਦੇ ਘੱਟ ਮਹੱਤਵਪੂਰਨ ਸੂਚਨਾਵਾਂ।</string>
     <string name="op_notification_section_header_gentle">ਹੋਰ ਸੂਚਨਾਵਾਂ</string>
     <string name="op_notification_silence_title">ਹੋਰ</string>
+    <string name="op_qs_dark_mode_tile_label">ਹਨੇਰਾ ਮੋਡ</string>
     <string name="op_quick_settings_night_display_label">ਰਾਤਰੀ ਮੋਡ</string>
     <string name="op_quick_settings_night_display_summary_off">ਰਾਤਰੀ ਮੋਡ ਬੰਦ ਹੈ, ਚਾਲੂ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
     <string name="op_quick_settings_night_display_summary_on">ਰਾਤਰੀ ਮੋਡ ਚਾਲੂ ਹੈ, ਬੰਦ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>

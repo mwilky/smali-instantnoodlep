@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">הודעות חשובות פחות ללא צליל או רטט.</string>
     <string name="op_notification_section_header_gentle">הודעות אחרות</string>
     <string name="op_notification_silence_title">אחר</string>
+    <string name="op_qs_dark_mode_tile_label">מצב כהה</string>
     <string name="op_quick_settings_night_display_label">מצב לילה</string>
     <string name="op_quick_settings_night_display_summary_off">מצב לילה כבוי, לחץ כדי להפעיל</string>
     <string name="op_quick_settings_night_display_summary_on">מצב לילה פועל, לחץ כדי להפסיק</string>

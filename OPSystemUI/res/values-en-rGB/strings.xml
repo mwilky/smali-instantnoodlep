@@ -1172,6 +1172,7 @@ You're also connected to a VPN, which can monitor your network activity."</strin
     <string name="op_notification_channel_summary_low">Less important notifications without any sound or vibration.</string>
     <string name="op_notification_section_header_gentle">Other notifications</string>
     <string name="op_notification_silence_title">Other</string>
+    <string name="op_qs_dark_mode_tile_label">Dark mode</string>
     <string name="op_quick_settings_night_display_label">Night mode</string>
     <string name="op_quick_settings_night_display_summary_off">Night mode off. Tap to turn on</string>
     <string name="op_quick_settings_night_display_summary_on">Night mode on. Tap to turn off</string>

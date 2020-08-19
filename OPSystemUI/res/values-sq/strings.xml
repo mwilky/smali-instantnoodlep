@@ -1172,6 +1172,7 @@ Je i lidhur edhe me një VPN, që mund të monitorojë aktivitetin tënd të rrj
     <string name="op_notification_channel_summary_low">Njoftimet më pak të rëndësishme pa tinguj ose dridhje.</string>
     <string name="op_notification_section_header_gentle">Njoftime të tjera</string>
     <string name="op_notification_silence_title">Tjetër</string>
+    <string name="op_qs_dark_mode_tile_label">Modaliteti i errët</string>
     <string name="op_quick_settings_night_display_label">Modaliteti i natës</string>
     <string name="op_quick_settings_night_display_summary_off">Modaliteti i lojërave është joaktiv, shtypeni për ta aktivizuar</string>
     <string name="op_quick_settings_night_display_summary_on">Modaliteti i lojërave është aktiv, shtypeni për ta çaktivizuar</string>

@@ -10051,7 +10051,7 @@
     return-void
 .end method
 
-.method public notifyNavBarColorChanged(ILjava/lang/String;)V
+.method public notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     invoke-static {}, Lcom/oneplus/util/OpNavBarUtils;->isSupportCustomNavBar()Z
@@ -10062,7 +10062,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mNavigationBarController:Lcom/android/systemui/statusbar/NavigationBarController;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/systemui/statusbar/NavigationBarController;->notifyNavBarColorChanged(ILjava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/statusbar/NavigationBarController;->notifyNavBarColorChanged(ILjava/lang/String;Ljava/lang/String;)V
 
     iget-object p0, p0, Lcom/android/systemui/statusbar/phone/StatusBar;->mStatusBarView:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 

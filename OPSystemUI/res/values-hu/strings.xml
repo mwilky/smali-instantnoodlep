@@ -1172,6 +1172,7 @@ VPN-hez is kapcsolódik, amely szintén figyelheti hálózati tevékenységét."
     <string name="op_notification_channel_summary_low">Kevésbé fontos értesítések hang és rezgés nélkül.</string>
     <string name="op_notification_section_header_gentle">Egyéb értesítések</string>
     <string name="op_notification_silence_title">Egyéb</string>
+    <string name="op_qs_dark_mode_tile_label">Sötét mód</string>
     <string name="op_quick_settings_night_display_label">Éjszakai mód</string>
     <string name="op_quick_settings_night_display_summary_off">Éjszakai mód nem aktív, koppintásra bekapcsol</string>
     <string name="op_quick_settings_night_display_summary_on">Éjszakai mód aktív, koppintásra kikapcsol</string>

@@ -28,8 +28,6 @@
 
 .field public static final data_usage_graph_warning:I = 0x7f06011d
 
-.field public static final date_view_white:I = 0x7f06011e
-
 .field public static final default_remote_input_background:I = 0x7f06014e
 
 .field public static final docked_divider_handle:I = 0x7f060168

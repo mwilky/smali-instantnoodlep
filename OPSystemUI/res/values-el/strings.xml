@@ -1171,6 +1171,7 @@
     <string name="op_notification_channel_summary_low">Λιγότερο σημαντικές ειδοποιήσεις χωρίς ήχο ή δόνηση.</string>
     <string name="op_notification_section_header_gentle">Άλλες ειδοποιήσεις</string>
     <string name="op_notification_silence_title">Άλλες</string>
+    <string name="op_qs_dark_mode_tile_label">Λειτουργία σκούρων χρωμάτων</string>
     <string name="op_quick_settings_night_display_label">Νυχτερινή λειτουργία</string>
     <string name="op_quick_settings_night_display_summary_off">Η νυχτερινή λειτουργία είναι απενεργοποιημένη, πατήστε για να την ενεργοποιήσετε</string>
     <string name="op_quick_settings_night_display_summary_on">Η νυχτερινή λειτουργία είναι ενεργοποιημένη, πατήστε για να την απενεργοποιήσετε</string>

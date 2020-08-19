@@ -150,6 +150,7 @@ Lai abonētu mobilo tīklāju, apmeklējiet My Verizon vai zvaniet klientu apkal
     <string name="op_notification_channel_summary_low">Mazāk svarīgiem paziņojumiem netiek lietota ne skaņa, ne vibrācija.</string>
     <string name="op_notification_section_header_gentle">Citi paziņojumi</string>
     <string name="op_notification_silence_title">Cits</string>
+    <string name="op_qs_dark_mode_tile_label">Tumšais režīms</string>
     <string name="op_quick_settings_night_display_label">Nakts režīms</string>
     <string name="op_quick_settings_night_display_summary_off">Nakts režīms ir izslēgts, pieskarieties, lai to aktivizētu</string>
     <string name="op_quick_settings_night_display_summary_on">Nakts režīms ir aktivizēts, pieskarieties, lai to izslēgtu</string>

@@ -1172,6 +1172,7 @@ Du har også forbindelse til et VPN, som kan overvåge din netværksaktivitet."<
     <string name="op_notification_channel_summary_low">Mindre vigtige meddelelser uden lyd eller vibration.</string>
     <string name="op_notification_section_header_gentle">Andre meddelelser</string>
     <string name="op_notification_silence_title">Andet</string>
+    <string name="op_qs_dark_mode_tile_label">Mørk tilstand</string>
     <string name="op_quick_settings_night_display_label">Nattetilstand</string>
     <string name="op_quick_settings_night_display_summary_off">Nattetilstand slået fra, tryk for at slå til</string>
     <string name="op_quick_settings_night_display_summary_on">Nattetilstand slået til, tryk for at slå fra</string>

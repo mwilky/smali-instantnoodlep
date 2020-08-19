@@ -150,6 +150,7 @@
     <string name="op_notification_channel_summary_low">कोणताही ध्‍वनी किंवा कंपनाशिवाय कमी महत्‍त्‍वाच्‍या सूचना.</string>
     <string name="op_notification_section_header_gentle">इतर सूचना</string>
     <string name="op_notification_silence_title">इतर</string>
+    <string name="op_qs_dark_mode_tile_label">डार्क मोड</string>
     <string name="op_quick_settings_night_display_label">रात्र स्वरूप</string>
     <string name="op_quick_settings_night_display_summary_off">रात्र स्वरूप बंद आहे, चालू करण्यासाठी टॅप करा</string>
     <string name="op_quick_settings_night_display_summary_on">रात्र स्वरूप चालू आहे, बंद करण्यासाठी टॅप करा</string>

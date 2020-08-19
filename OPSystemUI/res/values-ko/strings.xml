@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">소리 또는 진동이 없는 덜 중요한 알림.</string>
     <string name="op_notification_section_header_gentle">기타 알림</string>
     <string name="op_notification_silence_title">기타</string>
+    <string name="op_qs_dark_mode_tile_label">다크 모드</string>
     <string name="op_quick_settings_night_display_label">야간 모드</string>
     <string name="op_quick_settings_night_display_summary_off">야간 모드 꺼짐, 탭하여 켜기</string>
     <string name="op_quick_settings_night_display_summary_on">야간 모드 켜짐, 탭하여 끄기</string>

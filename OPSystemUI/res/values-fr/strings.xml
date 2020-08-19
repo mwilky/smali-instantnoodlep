@@ -1172,6 +1172,7 @@ Vous êtes également connecté à un VPN qui peut contrôler votre activité su
     <string name="op_notification_channel_summary_low">Des notifications moins importantes sans aucun son ni vibration.</string>
     <string name="op_notification_section_header_gentle">Autres notifications</string>
     <string name="op_notification_silence_title">Autre</string>
+    <string name="op_qs_dark_mode_tile_label">Mode Sombre</string>
     <string name="op_quick_settings_night_display_label">Mode Nuit</string>
     <string name="op_quick_settings_night_display_summary_off">"Mode Nuit désactivé. Appuyez pour l'activer"</string>
     <string name="op_quick_settings_night_display_summary_on">Mode Nuit activé. Appuyez pour le désactiver</string>

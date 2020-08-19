@@ -150,6 +150,7 @@ Untuk melanggan Hotspot Mudah Alih, kunjungi Verizon saya atau hubungi khidmat p
     <string name="op_notification_channel_summary_low">Pemberitahuan yang kurang penting tanpa apa-apa bunyi atau getaran.</string>
     <string name="op_notification_section_header_gentle">Pemberitahuan lain</string>
     <string name="op_notification_silence_title">Lain-lain</string>
+    <string name="op_qs_dark_mode_tile_label">Mod gelap</string>
     <string name="op_quick_settings_night_display_label">Mod malam</string>
     <string name="op_quick_settings_night_display_summary_off">Mod Malam dipadam, ketik untuk menghidupkan</string>
     <string name="op_quick_settings_night_display_summary_on">Mod malam dihidupkan, ketik untuk memadamkan</string>

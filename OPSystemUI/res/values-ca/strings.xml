@@ -1172,6 +1172,7 @@ A més, estàs connectat a una VPN, que també pot supervisar la teva activitat 
     <string name="op_notification_channel_summary_low">Notificacions menys importants sense so o vibració.</string>
     <string name="op_notification_section_header_gentle">Altres notificacions</string>
     <string name="op_notification_silence_title">Altres</string>
+    <string name="op_qs_dark_mode_tile_label">Mode fosc</string>
     <string name="op_quick_settings_night_display_label">Mode nocturn</string>
     <string name="op_quick_settings_night_display_summary_off">Mode nocturn desactivat. Toqueu per activar</string>
     <string name="op_quick_settings_night_display_summary_on">Mode nocturn activat. Toqueu per desactivar</string>

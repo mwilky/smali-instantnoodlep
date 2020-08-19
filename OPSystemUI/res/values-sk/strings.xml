@@ -1172,6 +1172,7 @@ Máte tiež aktívne pripojenie k sieti VPN, ktorá môže sledovať vašu akti
     <string name="op_notification_channel_summary_low">Menej dôležité oznámenia bez zvuku alebo vibrácie.</string>
     <string name="op_notification_section_header_gentle">Ostatné oznámenia</string>
     <string name="op_notification_silence_title">Ostatné</string>
+    <string name="op_qs_dark_mode_tile_label">Tmavý režim</string>
     <string name="op_quick_settings_night_display_label">Nočný režim</string>
     <string name="op_quick_settings_night_display_summary_off">Nočný režim je vypnutý, ťuknutím sa zapne</string>
     <string name="op_quick_settings_night_display_summary_on">Nočný režim je zapnutý, ťuknutím sa vypne</string>

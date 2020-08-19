@@ -1171,6 +1171,7 @@ Aby dowiedzieć się więcej, skontaktuj się z administratorem.
     <string name="op_notification_channel_summary_low">Mniej ważne powiadomienia bez jakiegokolwiek dźwięku lub wibracji.</string>
     <string name="op_notification_section_header_gentle">Inne powiadomienia</string>
     <string name="op_notification_silence_title">Inne</string>
+    <string name="op_qs_dark_mode_tile_label">Ciemny tryb</string>
     <string name="op_quick_settings_night_display_label">Tryb nocny</string>
     <string name="op_quick_settings_night_display_summary_off">Tryb nocny jest wyłączony. Dotknij, aby włączyć</string>
     <string name="op_quick_settings_night_display_summary_on">Tryb nocny jest włączony. Dotknij, aby wyłączyć</string>

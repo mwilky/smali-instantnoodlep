@@ -150,6 +150,7 @@ Mobiilse kuupunkti tellimuse tühistamiseks külastage veebisaiti My Verizon võ
     <string name="op_notification_channel_summary_low">Vähem olulised teavitused ilma heli või vibratsioonita.</string>
     <string name="op_notification_section_header_gentle">Muud teavitused</string>
     <string name="op_notification_silence_title">Muu</string>
+    <string name="op_qs_dark_mode_tile_label">Tume režiim</string>
     <string name="op_quick_settings_night_display_label">Öörežiim</string>
     <string name="op_quick_settings_night_display_summary_off">Öörežiim on väljas, sisse lülitamiseks toksake</string>
     <string name="op_quick_settings_night_display_summary_on">Öörežiim on sees, välja lülitamiseks toksake</string>

@@ -601,7 +601,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p1, "shouldBubbleUpWithoutOrientation: not allowed to bubble: "
+    const-string/jumbo p1, "shouldBubbleUpWithoutOrientation: not allowed to bubble: "
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -650,7 +650,7 @@
 
     if-nez p0, :cond_3
 
-    const-string p0, "shouldBubbleUpWithoutOrientation: no heads up"
+    const-string/jumbo p0, "shouldBubbleUpWithoutOrientation: no heads up"
 
     invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -677,7 +677,7 @@
 
     if-nez p0, :cond_4
 
-    const-string p0, "shouldBubbleUpWithoutOrientation: isn\'t quick reply notification"
+    const-string/jumbo p0, "shouldBubbleUpWithoutOrientation: isn\'t quick reply notification"
 
     invoke-static {v2, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -710,7 +710,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p1, "shouldBubbleUpWithoutOrientation: No bubble up for group summary: "
+    const-string/jumbo p1, "shouldBubbleUpWithoutOrientation: No bubble up for group summary: "
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -743,7 +743,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string p1, "shouldBubbleUpWithoutOrientation: notification: "
+    const-string/jumbo p1, "shouldBubbleUpWithoutOrientation: notification: "
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

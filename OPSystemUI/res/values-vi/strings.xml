@@ -1172,6 +1172,7 @@ Bạn cũng được kết nối với VPN. Dịch vụ này có thể giám sá
     <string name="op_notification_channel_summary_low">Những thông báo ít quan trọng hơn không có âm thanh hoặc rung.</string>
     <string name="op_notification_section_header_gentle">Thông báo khác</string>
     <string name="op_notification_silence_title">Khác</string>
+    <string name="op_qs_dark_mode_tile_label">Chế độ tối</string>
     <string name="op_quick_settings_night_display_label">Chế độ ban đêm</string>
     <string name="op_quick_settings_night_display_summary_off">Chế độ Ban đêm đang tắt, chạm để bật</string>
     <string name="op_quick_settings_night_display_summary_on">Chế độ Ban đêm đang bật, chạm để tắt</string>

@@ -1172,6 +1172,7 @@
     <string name="op_notification_channel_summary_low">الإشعارات الأقل أهمية دون إصدار صوت أو اهتزاز.</string>
     <string name="op_notification_section_header_gentle">إشعارات أخرى</string>
     <string name="op_notification_silence_title">أخرى</string>
+    <string name="op_qs_dark_mode_tile_label">الوضع الليلي</string>
     <string name="op_quick_settings_night_display_label">الوضع الليلي</string>
     <string name="op_quick_settings_night_display_summary_off">الوضع الليلي قيد إيقاف التشغيل، المس للتشغيل</string>
     <string name="op_quick_settings_night_display_summary_on">الوضع الليلي قيد التشغيل، المس لإيقاف التشغيل</string>
