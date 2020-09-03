@@ -16,6 +16,10 @@
 
 
 # instance fields
+.field private mDarkIconColor:I
+
+.field private mClockColor:I
+
 .field private final mAmPmStyle:I
 
 .field private mAttached:Z
@@ -1137,28 +1141,30 @@
     check-cast v0, Lcom/android/systemui/statusbar/phone/HighlightHintController;
 
     invoke-interface {v0, p0}, Lcom/android/systemui/statusbar/policy/CallbackController;->addCallback(Ljava/lang/Object;)V
+    
+    const/4 v0, 0x0
+
+    int-to-float v0, v0
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/policy/Clock;->updateViews(F)V
 
     return-void
 .end method
 
 .method public onDarkChanged(Landroid/graphics/Rect;FI)V
-    .locals 0
+    .locals 2
 
-    invoke-static {p1, p0, p3}, Lcom/android/systemui/plugins/DarkIconDispatcher;->getTint(Landroid/graphics/Rect;Landroid/view/View;I)I
+    float-to-int v0, p2
 
-    move-result p1
+    iget v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mDarkIconColor:I #dark color
 
-    iput p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mNonAdaptedColor:I
+    if-nez v0, :cond_mw
 
-    iget-boolean p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mUseWallpaperTextColor:Z
+    iget v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockColor:I #custom color
 
-    if-nez p1, :cond_0
+    :cond_mw
+    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    iget p1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mNonAdaptedColor:I
-
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTextColor(I)V
-
-    :cond_0
     return-void
 .end method
 
@@ -1640,5 +1646,38 @@
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
     :goto_0
+    return-void
+.end method
+
+.method public updateViews(F)V
+    .locals 3
+
+    float-to-int v0, p1
+
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/Clock;->readRenovateMods()V
+
+    iget v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mDarkIconColor:I #dark color
+
+    if-nez v0, :cond_dark #set to grey if dark intensity is 1
+
+    iget v1, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockColor:I #custom color
+
+    :cond_dark
+    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/policy/Clock;->setTextColor(I)V
+
+    return-void
+.end method
+
+.method public readRenovateMods()V
+    .locals 1
+
+    sget v0, Lcom/android/mwilky/Renovate;->mClockColor:I
+
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mClockColor:I
+
+    sget v0, Lcom/android/mwilky/Renovate;->mDarkIconColor:I
+
+    iput v0, p0, Lcom/android/systemui/statusbar/policy/Clock;->mDarkIconColor:I
+
     return-void
 .end method

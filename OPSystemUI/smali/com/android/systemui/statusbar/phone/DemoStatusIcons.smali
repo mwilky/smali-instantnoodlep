@@ -1161,3 +1161,11 @@
     :goto_0
     return-void
 .end method
+
+.method public updateViews(F)V
+    .registers 6
+    .param p1, "f"    # F
+
+    .line 161
+    return-void
+.end method

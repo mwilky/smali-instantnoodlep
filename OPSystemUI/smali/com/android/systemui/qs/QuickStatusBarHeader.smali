@@ -48,7 +48,7 @@
 
 .field protected mHost:Lcom/android/systemui/qs/QSTileHost;
 
-.field private mIconManager:Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;
+.field public mIconManager:Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;
 
 .field private mListening:Z
 
@@ -841,8 +841,8 @@
     return-void
 .end method
 
-.method private updateThemeColor()V
-    .locals 5
+.method public updateThemeColor()V
+    .locals 6
 
     sget v0, Lcom/oneplus/util/ThemeColorUtils;->QS_TEXT:I
 
@@ -899,6 +899,18 @@
     iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mBatteryRemainingIcon:Lcom/android/systemui/BatteryMeterView;
 
     invoke-virtual {v3, v0, v1, v0}, Lcom/android/systemui/BatteryMeterView;->updateColors(III)V
+    
+    iget-object v5, v3, Lcom/android/systemui/BatteryMeterView;->mBatteryPercentView:Landroid/widget/TextView;
+    
+    sget v3, Lcom/android/mwilky/Renovate;->mBatteryPercentColor:I
+    
+    invoke-virtual {v5, v3}, Landroid/widget/TextView;->setTextColor(I)V
+    
+    iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mClockView:Lcom/android/systemui/statusbar/policy/Clock;
+    
+    sget v0, Lcom/android/mwilky/Renovate;->mClockColor:I
+
+    invoke-virtual {v3, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     iget-object p0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mIconManager:Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;
 
@@ -1597,7 +1609,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setSelected(Z)V
 
-    invoke-direct {p0}, Lcom/android/systemui/qs/QuickStatusBarHeader;->updateThemeColor()V
+    invoke-virtual {p0}, Lcom/android/systemui/qs/QuickStatusBarHeader;->updateThemeColor()V
 
     return-void
 .end method
@@ -1879,18 +1891,6 @@
     invoke-virtual {v0, p1, v1}, Lcom/android/systemui/qs/QuickQSPanel;->setHost(Lcom/android/systemui/qs/QSTileHost;Lcom/android/systemui/qs/customize/QSCustomizer;)V
     
     invoke-virtual {p0}, Lcom/android/systemui/qs/QuickStatusBarHeader;->updateClockPosition()V
-
-    iget-object p0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mBatteryRemainingIcon:Lcom/android/systemui/BatteryMeterView;
-
-    new-instance p1, Landroid/graphics/Rect;
-
-    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
-
-    const/4 v0, 0x0
-
-    const/4 v1, -0x1
-
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/systemui/BatteryMeterView;->onDarkChanged(Landroid/graphics/Rect;FI)V
 
     return-void
 .end method
