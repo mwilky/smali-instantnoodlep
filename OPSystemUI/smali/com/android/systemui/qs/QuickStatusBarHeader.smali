@@ -868,10 +868,13 @@
 
     iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mDateView:Lcom/android/systemui/statusbar/policy/DateView;
     
+    if-eqz v3, :cond_nodate
+
     sget v5, Lcom/android/mwilky/Renovate;->mQsDateColor:I
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
+    :cond_nodate
     iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mNextAlarmIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setColorFilter(I)V
@@ -910,10 +913,13 @@
     
     iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mClockView:Lcom/android/systemui/statusbar/policy/Clock;
     
+    if-eqz v3, :cond_noclock
+    
     sget v0, Lcom/android/mwilky/Renovate;->mClockColor:I
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
+    :cond_noclock
     iget-object p0, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mIconManager:Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;
 
     invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/phone/StatusBarIconController$TintedIconManager;->setTint(I)V

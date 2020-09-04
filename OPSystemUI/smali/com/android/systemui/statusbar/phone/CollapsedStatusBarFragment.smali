@@ -607,6 +607,8 @@
     invoke-virtual {p2}, Lcom/android/systemui/statusbar/phone/ClockController;->getClock()Lcom/android/systemui/statusbar/policy/Clock;
 
     move-result-object p2
+    
+    if-eqz p2, :cond_7
 
     invoke-virtual {p2}, Landroid/view/View;->getVisibility()I
 
@@ -645,6 +647,8 @@
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/ClockController;->getClock()Lcom/android/systemui/statusbar/policy/Clock;
 
     move-result-object v0
+    
+    if-eqz v0, :cond_exit
     
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mKeyguardMonitor:Lcom/android/systemui/statusbar/policy/KeyguardMonitor;
 
@@ -1116,9 +1120,12 @@
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/ClockController;->getClock()Lcom/android/systemui/statusbar/policy/Clock;
 
     move-result-object v0
+    
+    if-eqz v0, :cond_exit
 
     invoke-direct {p0, v0, p1}, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->animateShow(Landroid/view/View;Z)V
 
+    :cond_exit
     return-void
 .end method
 
