@@ -867,8 +867,10 @@
     invoke-static {v3}, Lcom/oneplus/util/ThemeColorUtils;->getColor(I)I
 
     iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mDateView:Lcom/android/systemui/statusbar/policy/DateView;
+    
+    sget v5, Lcom/android/mwilky/Renovate;->mQsDateColor:I
 
-    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
     iget-object v3, p0, Lcom/android/systemui/qs/QuickStatusBarHeader;->mNextAlarmIcon:Landroid/widget/ImageView;
 
