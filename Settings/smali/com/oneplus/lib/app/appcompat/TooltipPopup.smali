@@ -488,20 +488,31 @@
 
     add-int/2addr p2, v0
 
-    if-eqz p4, :cond_c
+    if-eqz p4, :cond_d
 
-    if-ltz v2, :cond_b
+    invoke-static {}, Lcom/oneplus/lib/util/OPFeaturesUtils;->isBillie2OrBillie8Products()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_b
+
+    iput p2, p5, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    goto :goto_7
+
+    :cond_b
+    if-ltz v2, :cond_c
 
     iput v2, p5, Landroid/view/WindowManager$LayoutParams;->y:I
 
     goto :goto_7
 
-    :cond_b
+    :cond_c
     iput p2, p5, Landroid/view/WindowManager$LayoutParams;->y:I
 
     goto :goto_7
 
-    :cond_c
+    :cond_d
     add-int/2addr p1, p2
 
     iget-object p3, p0, Lcom/oneplus/lib/app/appcompat/TooltipPopup;->mTmpDisplayFrame:Landroid/graphics/Rect;
@@ -510,13 +521,13 @@
 
     move-result p3
 
-    if-gt p1, p3, :cond_d
+    if-gt p1, p3, :cond_e
 
     iput p2, p5, Landroid/view/WindowManager$LayoutParams;->y:I
 
     goto :goto_7
 
-    :cond_d
+    :cond_e
     iput v2, p5, Landroid/view/WindowManager$LayoutParams;->y:I
 
     :goto_7
