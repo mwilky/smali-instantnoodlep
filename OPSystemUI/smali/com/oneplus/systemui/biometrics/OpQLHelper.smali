@@ -2055,7 +2055,7 @@
     return p0
 
     :cond_1
-    const-string p1, "shortcut service is null"
+    const-string/jumbo p1, "shortcut service is null"
 
     invoke-static {p4, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
