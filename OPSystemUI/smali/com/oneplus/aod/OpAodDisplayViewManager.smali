@@ -583,6 +583,8 @@
 
     iget-object v0, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mLightEffectContainer:Lcom/oneplus/aod/OpAodLightEffectContainer;
 
+    invoke-virtual {v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->setCustomEdgeColors()V
+
     invoke-virtual {v0}, Lcom/oneplus/aod/OpAodLightEffectContainer;->showLight()V
 
     iput-boolean v1, p0, Lcom/oneplus/aod/OpAodDisplayViewManager;->mShouldPlayLightEffect:Z
