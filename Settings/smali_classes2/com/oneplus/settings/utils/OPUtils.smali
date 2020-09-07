@@ -7428,3 +7428,69 @@
 
     return v0
 .end method
+
+.method public static isOp8()Z
+    .registers 4
+
+    .line 77
+    sget-object v0, Lcom/oneplus/settings/SettingsBaseApplication;->mApplication:Landroid/app/Application;
+
+    invoke-virtual {v0}, Landroid/app/Application;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v1, "oneplus_model_19821"
+
+    const-string v2, "array"
+
+    invoke-static {v1, v2}, Lcom/android/wubydax/GearUtils;->getIdentifier(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 78
+    .local v0, "op8":[Ljava/lang/String;
+    const/4 v1, 0x0
+
+    .local v1, "i":I
+    :goto_13
+    array-length v2, v0
+
+    if-ge v1, v2, :cond_29
+
+    .line 79
+    aget-object v2, v0, v1
+
+    if-eqz v2, :cond_26
+
+    aget-object v2, v0, v1
+
+    sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_26
+
+    .line 80
+    const/4 v2, 0x1
+
+    return v2
+
+    .line 78
+    :cond_26
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_13
+
+    .line 83
+    .end local v1    # "i":I
+    :cond_29
+    const/4 v1, 0x0
+
+    return v1
+.end method

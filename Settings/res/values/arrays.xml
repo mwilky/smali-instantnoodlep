@@ -2542,6 +2542,13 @@
         <item>IN2023</item>
         <item>IN2025</item>
     </string-array>
+    <array name="oneplus_model_19811" />
+    <string-array name="oneplus_model_19821">
+        <item>IN2010</item>
+        <item>IN2011</item>
+        <item>IN2013</item>
+        <item>IN2015</item>
+    </string-array>
     <array name="oneplus_model_19821" />
     <array name="oneplus_model_19855" />
     <array name="oneplus_model_19867" />

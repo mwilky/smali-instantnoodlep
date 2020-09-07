@@ -1026,7 +1026,28 @@
 
     :goto_9
     move-object v14, v0
+    
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isOp8()Z
 
+    move-result v0
+    
+    if-eqz v0, :cond_8pro
+    
+    const-string v0, "oneplus_in_project_camera_info_op8"
+
+    const-string v14, "string"
+
+    invoke-static {v0, v14}, Lcom/android/wubydax/GearUtils;->getIdentifier(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v14
+    
+    iget-object v0, v1, Lcom/oneplus/settings/aboutphone/AboutPhonePresenter;->mActivity:Landroid/app/Activity;
+
+    invoke-virtual {v0, v14}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v14
+
+    :cond_8pro
     :goto_a
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
@@ -1357,7 +1378,30 @@
 
     :goto_10
     move-object/from16 v16, v0
+    
+    invoke-static {}, Lcom/oneplus/settings/utils/OPUtils;->isOp8()Z
 
+    move-result v0
+    
+    if-eqz v0, :cond_8pro2
+    
+    const-string v0, "oneplus_in_project_screen_info_op8"
+
+    const-string v4, "string"
+
+    invoke-static {v0, v4}, Lcom/android/wubydax/GearUtils;->getIdentifier(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v4
+    
+    iget-object v0, v1, Lcom/oneplus/settings/aboutphone/AboutPhonePresenter;->mActivity:Landroid/app/Activity;
+
+    invoke-virtual {v0, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+    
+    move-object/from16 v16, v4
+
+    :cond_8pro2
     :goto_11
     const-string v0, "/proc/meminfo"
 

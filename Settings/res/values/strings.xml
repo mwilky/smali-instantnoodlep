@@ -7393,4 +7393,6 @@ Update settings to:
     <string name="hardware_keys_action_app">Launch custom app (select app in RiCE)</string>
     <string name="hardware_keys_action_previous_app">Switch to previous app</string>
     <string name="hardware_keys_action_torch">Toggle flashlight</string>
+    <string name="oneplus_in_project_camera_info_op8">48+16+2 MP Triple Camera</string>
+    <string name="oneplus_in_project_screen_info_op8">90Hz Fluid AMOLED 6.55″ Display</string>
 </resources>
