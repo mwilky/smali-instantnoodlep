@@ -1167,7 +1167,7 @@
 .end method
 
 .method public onTuningChanged(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+    .locals 3
 
     const-string v0, "icon_blacklist"
 
@@ -1180,6 +1180,25 @@
     return-void
 
     :cond_0
+    invoke-static {p2}, Lcom/android/systemui/statusbar/phone/StatusBarIconController;->getIconBlacklist(Ljava/lang/String;)Landroid/util/ArraySet;
+
+    move-result-object v0
+
+    const-string v1, "clock"
+
+    invoke-virtual {v0, v1}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+    
+    if-eqz v0, :cond_clock
+    
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/CollapsedStatusBarFragment;->mClockController:Lcom/android/systemui/statusbar/phone/ClockController;
+    
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/ClockController;->hideClock()V
+
+    goto :goto_mw
+    
+    :cond_clock
     invoke-static {}, Lcom/android/systemui/SystemUIApplication;->getContext()Landroid/content/Context;
     
     move-result-object v0
@@ -1192,6 +1211,7 @@
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/StatusBar;->updateClockView()V
     
+    :goto_mw
     :cond_mw
     return-void
 .end method

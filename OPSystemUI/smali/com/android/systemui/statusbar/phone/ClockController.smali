@@ -228,3 +228,29 @@
     :goto_6a
     return-void
 .end method
+
+.method public hideClock()V
+    .registers 5
+
+    .line 25
+    const/4 v2, 0x0
+
+    iput-object v2, p0, Lcom/android/systemui/statusbar/phone/ClockController;->mActiveClock:Lcom/android/systemui/statusbar/policy/Clock;
+
+    .line 37
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/ClockController;->mLeftClock:Lcom/android/systemui/statusbar/policy/Clock;
+
+    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/policy/Clock;->setClockVisibleByUser(Z)V
+
+    .line 38
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/ClockController;->mCenterClock:Lcom/android/systemui/statusbar/policy/Clock;
+
+    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/policy/Clock;->setClockVisibleByUser(Z)V
+
+    .line 39
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/ClockController;->mRightClock:Lcom/android/systemui/statusbar/policy/Clock;
+
+    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/policy/Clock;->setClockVisibleByUser(Z)V
+
+    return-void
+.end method
